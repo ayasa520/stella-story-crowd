@@ -1,0 +1,30 @@
+{
+  "resource_root": "../..",
+  "reference_directory": "data/localization/ja-originals",
+  "transition_manifest": "data/story_player/extracted/transitions.json",
+  "lighting_manifest": "data/story_player/extracted/lighting.json",
+  "effect_manifest": "data/story_player/extracted/effects.json",
+  "preview": {"quake":{"states":["CardQuake","CardQuakeMiddle"],"default_scale":"M","default_directions":{"CardQuake":"H","CardQuakeMiddle":"V"}},"music":{"fade_seconds":1}},
+  "sources": ["logs/adv.html: ADVCmdSequence / CmdSequence.Exec / CardProc / MovieProc", "APK 1.19.7: Stella.Scenes.ADV2.CommandUtil / CardQuakeController"],
+  "definitions": [
+    {"name":"Quake","label":"卡片震动","preview":"quake","description":"启动震动后立即执行下一条，不等待震动结束。单次震动使用原动画曲线；持续震动暂只记录。","params":[{"label":"震动状态","type":"string","required":true,"default":"CardQuake","choices":["CardQuake","CardQuakeMiddle","CardQuakeLoopOn","CardQuakeLoopOff"]},{"label":"强度（留空使用原版默认）","type":"symbol","choices":["S","M","L"]},{"label":"方向（留空使用状态默认）","type":"symbol","choices":["H","V"]}]},
+    {"name":"Wait","label":"等待","preview":"wait","description":"单位为毫秒。默认可点击跳过；关闭后必须等到时间结束。工作台按正常速度预览。","params":[{"label":"等待毫秒数","type":"number","required":true,"min":0,"default":500},{"label":"允许点击跳过（默认允许）","type":"boolean"}]},
+    {"name":"Tap","label":"等待点击","preview":"tap","description":"暂停指令队列，点击预览区的继续按钮后执行下一条。","params":[]},
+    {"name":"StopBGM","label":"停止背景音乐","preview":"music","description":"按指定秒数渐变停止，原版默认 1 秒。","params":[{"label":"渐变秒数（默认 1）","type":"number","min":0}]},
+    {"name":"SE","label":"播放环境音／音效","preview":"sound","description":"从原版 se_adv 独立音效通道播放，不占用角色语音，启动后立即执行下一条。需要延迟时在前面添加 Wait；倒地声可放在正文结束后，再接 CardOut。循环方式与循环点来自原音库；循环环境音跨节点持续，直到同名 StopSE。分块混音按原波形与跳转图播放，固定多轨音效一次播放完整原轨道时序；其他未解析的序列会明确提示。","params":[{"label":"音效名称","type":"string","required":true,"resource":"sound_effects"}]},
+    {"name":"StopSE","label":"停止指定环境音／音效","preview":"sound","description":"按原音库的释放包络停止指定音效：有释放时间则渐隐，没有则立即结束。不影响 BGM 或其他音效。原版只接受音效名称，不支持另填渐隐秒数；留空不会停止任何音效。","params":[{"label":"音效名称","type":"string","resource":"sound_effects"}]},
+    {"name":"WipeOut","label":"转场遮住画面","preview":"wipe","description":"使用原版遮罩纹理与透明度公式；眨眼与血迹读取各自的原动画曲线。开始进度是 0–1 的归一化位置，不是秒数。未指定图片时使用黑色遮罩。","params":[{"label":"转场资源","type":"string"},{"label":"遮罩图片","type":"string","choices":["fade_color_black","fade_color_white"]},{"label":"开始进度","type":"number","min":0,"max":1}]},
+    {"name":"WipeIn","label":"转场揭开画面","preview":"wipe","description":"移除遮罩。资源或图片留空时沿用前一次 WipeOut 的对应设置。","params":[{"label":"转场资源（可留空）","type":"string"},{"label":"遮罩图片（可留空）","type":"string","choices":["fade_color_black","fade_color_white"]},{"label":"开始进度","type":"number","min":0,"max":1}]},
+    {"name":"CardOut","label":"卡片退场","preview":"card_out","description":"按原版 DropProc 透明度速度退场。完成后不再等待额外点击；后续卡片按原版 Card_in 动画入场。","params":[]},
+    {"name":"End","label":"结束本段指令并保持卡片","preview":"record","terminates_block":true,"description":"调用 CardStay 并终止当前指令段，本段剩余指令不再执行。","params":[]},
+    {"name":"PlayFX","label":"显示卡片特效","preview":"fx","description":"播放原版粒子或道具展示。粒子启动后立即执行下一条；道具入场后等待点击，自动模式停留 3 秒，退场触发时继续指令。X 向右、Y 向上，Z 改变透视距离，留空均为 0。退场、停止和重播会清理。","params":[{"label":"特效资源","type":"string","required":true,"resource":"visual_effects"},{"label":"偏移 X","type":"number"},{"label":"偏移 Y","type":"number"},{"label":"偏移 Z","type":"number"}]},
+    {"name":"PlayFXState","label":"切换特效状态","preview":"record","description":"向原生 ADVPlayer 传递资源和状态值，工作台原样保存。","params":[{"label":"特效资源","type":"string","required":true},{"label":"状态值","type":"number","required":true}]},
+    {"name":"CreateCardSpaceObject","label":"创建卡片舞台对象","preview":"record","description":"在卡片空间创建指定资源，并随卡片退场清理。","params":[{"label":"对象资源","type":"string","required":true},{"label":"偏移 X","type":"number"},{"label":"偏移 Y","type":"number"},{"label":"偏移 Z","type":"number"}]},
+    {"name":"ProfileSet","label":"切换画面风格","preview":"record","description":"依次设置后处理配置与调色 LUT；资源名按原文保存。","params":[{"label":"风格资源","type":"string","required":true}]},
+    {"name":"PPSProfile","label":"后处理配置","preview":"record","description":"设置原生卡片渲染的后处理资源。","params":[{"label":"后处理资源","type":"string","required":true}]},
+    {"name":"SetCLUT","label":"角色光照／调色 LUT","preview":"lighting","description":"设置原版角色光照和调色表，跨节点保留；重新指定背景会加载该背景的光照。OFF 不执行设置。幽灵等特殊着色模式尚未支持。","params":[{"label":"光照资源","type":"string","required":true}]},
+    {"name":"LensFlare","label":"镜头光晕","preview":"record","description":"在卡片空间创建光晕资源，退场时清理；OFF 不创建对象。","params":[{"label":"光晕资源","type":"string","required":true}]},
+    {"name":"Lensflere","label":"镜头光晕（原始别名）","preview":"record","description":"原播放器中存在的拼写别名，原样保留。","params":[{"label":"光晕资源","type":"string","required":true}]},
+    {"name":"SetJunction","label":"显示分歧发生提示","preview":"junction","description":"标记下一次选择显示原版分歧提示。提示在选项出现时显示，确认选择后清除；不会建立分支或补全解锁条件。","params":[]}
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "inputProjectSha256": "ebd974d90f89088fa3a504c1f419ae01c352a24e6bd80209c5ec651295d38522",
+  "workspaceRevision": 2656,
+  "nativePayload": "scenario_list, video_list, branch_work_list, chartmap.scene_list",
+  "scope": [
+    10010020,
+    10010001,
+    10010016,
+    10140002,
+    10140003
+  ],
+  "language": "zh-CN",
+  "expectedUnresolvedBranchCount": 7,
+  "sceneResults": [
+    {
+      "id": 10010020,
+      "nodeCount": 2,
+      "source": "original",
+      "readyForGame": true,
+      "blockers": 0
+    },
+    {
+      "id": 10010001,
+      "nodeCount": 32,
+      "source": "original",
+      "readyForGame": true,
+      "blockers": 0
+    },
+    {
+      "id": 10010016,
+      "nodeCount": 23,
+      "source": "reconstructed",
+      "readyForGame": false,
+      "blockers": 3
+    },
+    {
+      "id": 10140002,
+      "nodeCount": 58,
+      "source": "reconstructed",
+      "readyForGame": false,
+      "blockers": 11
+    },
+    {
+      "id": 10140003,
+      "nodeCount": 47,
+      "source": "reconstructed",
+      "readyForGame": false,
+      "blockers": 8
+    }
+  ],
+  "files": {
+    "native/scenes/10010020.json": "45d2e25deb4ca6bb19fcca9954fed198defd82b46f8e88bd31034c6f5aa4d081",
+    "review/scenes/10010020.json": "9faad4ebc4bade948b16acad9941813395b428ba4bf363d5f347e5c1cb6d08b0",
+    "native/scenes/10010001.json": "b2bc79587a1ef0248d191a8cfcb537dc1c089a8e271067466f60e15b780da1d4",
+    "review/scenes/10010001.json": "8fce7017d2c5595025f00eac8aadc27d7563d520007f50eaded8839f3f4d3cc8",
+    "native/scenes/10010016.json": "f73458c9b4f08e652edf105ad74ee9f9b8f3612e4e43f7d3d8b80a2fb56409c5",
+    "review/scenes/10010016.json": "2d5ce93c0c908f61c95d7e02df567a6ac6bcdb09c8b5735b72b9611a4a7f4466",
+    "native/scenes/10140002.json": "6b9c73e67bc6929816a2f3a500ce1f36c7f535dfb9f6431ee18c4519f9a1c27b",
+    "review/scenes/10140002.json": "f1891351bc5a25c1f01808910617f392ae607d8b632d587c6103c80e1e2b0e7c",
+    "native/scenes/10140003.json": "2af31f3f7f849d81754d97592ce7a432c7f7a45f526b347c2fa4e23c64232b7b",
+    "review/scenes/10140003.json": "f3337951fafd00ab82c149565ac4d50c676dcc95ddc25663d3e5cc80a06af388",
+    "manifest.json": "125975efc1c67f2082a5c14985b0f0acbe9da62f06379f709457e590831bf0c8"
+  },
+  "limitations": [
+    "重建场景没有原始数组顺序、分支奖励与条件的完整证据。",
+    "缺失分支保持空转移草稿，不能发布为完整游戏内容。",
+    "语音延迟、粒子时序覆盖及多角色仿射投影仅在审核记录保留。",
+    "格式与引用检查不等于在原版游戏中完成逐条播放验证。"
+  ]
+}

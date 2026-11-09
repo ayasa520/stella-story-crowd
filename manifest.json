@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "title": "Stella 剧情共修 · 主线前两话",
+  "language": "zh-CN",
+  "source": {
+    "workspaceRevision": 2656,
+    "workspaceSha256": "ebd974d90f89088fa3a504c1f419ae01c352a24e6bd80209c5ec651295d38522"
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "王都的一日篇",
+      "sections": [
+        {
+          "id": 1001,
+          "title": "第 1 话 · 异世界召唤",
+          "titleJa": "異世界召喚",
+          "sceneIds": [
+            10010020,
+            10010001,
+            10010016
+          ]
+        },
+        {
+          "id": 1014,
+          "title": "第 2 话 · 银发的少女",
+          "titleJa": "銀髪の少女",
+          "sceneIds": [
+            10140002,
+            10140003
+          ]
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": 10010020,
+      "chapterId": 1,
+      "sectionId": 1001,
+      "title": "序章",
+      "titleJa": "序章",
+      "path": "native/scenes/10010020.json",
+      "reviewPath": "review/scenes/10010020.json",
+      "nodeCount": 2,
+      "source": "original",
+      "issues": [],
+      "readyForGame": true
+    },
+    {
+      "id": 10010001,
+      "chapterId": 1,
+      "sectionId": 1001,
+      "title": "异世界召唤",
+      "titleJa": "異世界召喚",
+      "path": "native/scenes/10010001.json",
+      "reviewPath": "review/scenes/10010001.json",
+      "nodeCount": 32,
+      "source": "original",
+      "issues": [
+        {
+          "code": "native_graph_preserved",
+          "severity": "warning",
+          "message": "工作台连接与原稿不同；保留原稿连接并列出差异供审核。",
+          "scenarioId": 3,
+          "branchId": 4
+        },
+        {
+          "code": "native_graph_preserved",
+          "severity": "warning",
+          "message": "工作台连接与原稿不同；保留原稿连接并列出差异供审核。",
+          "scenarioId": 14,
+          "branchId": 17
+        },
+        {
+          "code": "native_graph_preserved",
+          "severity": "warning",
+          "message": "工作台连接与原稿不同；保留原稿连接并列出差异供审核。",
+          "scenarioId": 30,
+          "branchId": 35
+        }
+      ],
+      "readyForGame": true
+    },
+    {
+      "id": 10010016,
+      "chapterId": 1,
+      "sectionId": 1001,
+      "title": "与拉姆相遇",
+      "titleJa": "ラムとの出会い",
+      "path": "native/scenes/10010016.json",
+      "reviewPath": "review/scenes/10010016.json",
+      "nodeCount": 23,
+      "source": "reconstructed",
+      "issues": [
+        {
+          "code": "native_metadata_unrecovered",
+          "severity": "blocker",
+          "message": "未取得此场景原稿：原生分支编号为稳定编写编号，奖励向量暂为零，分支运行条件未恢复。"
+        },
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 10,
+          "branchId": 103
+        },
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 16,
+          "branchId": 163
+        }
+      ],
+      "readyForGame": false
+    },
+    {
+      "id": 10140002,
+      "chapterId": 1,
+      "sectionId": 1014,
+      "title": "与少女相遇",
+      "titleJa": "少女との出会い",
+      "path": "native/scenes/10140002.json",
+      "reviewPath": "review/scenes/10140002.json",
+      "nodeCount": 58,
+      "source": "reconstructed",
+      "issues": [
+        {
+          "code": "native_metadata_unrecovered",
+          "severity": "blocker",
+          "message": "未取得此场景原稿：原生分支编号为稳定编写编号，奖励向量暂为零，分支运行条件未恢复。"
+        },
+        {
+          "code": "studio_extension_unmapped",
+          "severity": "blocker",
+          "message": "多角色屏幕仿射投影尚无已验证的原生表达；完整意图保存在审核记录中。",
+          "scenarioId": 52,
+          "field": "actors"
+        },
+        {
+          "code": "studio_extension_unmapped",
+          "severity": "blocker",
+          "message": "多角色屏幕仿射投影尚无已验证的原生表达；完整意图保存在审核记录中。",
+          "scenarioId": 13,
+          "field": "actors"
+        },
+        {
+          "code": "video_metadata_unrecovered",
+          "severity": "blocker",
+          "message": "视频的原生字幕／时序元数据未恢复。",
+          "scenarioId": 49
+        },
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 14,
+          "branchId": 142
+        },
+        {
+          "code": "studio_extension_unmapped",
+          "severity": "blocker",
+          "message": "多角色屏幕仿射投影尚无已验证的原生表达；完整意图保存在审核记录中。",
+          "scenarioId": 18,
+          "field": "actors"
+        },
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 23,
+          "branchId": 232
+        },
+        {
+          "code": "video_metadata_unrecovered",
+          "severity": "blocker",
+          "message": "视频的原生字幕／时序元数据未恢复。",
+          "scenarioId": 50
+        },
+        {
+          "code": "studio_extension_unmapped",
+          "severity": "blocker",
+          "message": "语音相对正文的延迟尚无已验证的原生表达；完整意图保存在审核记录中。",
+          "scenarioId": 35,
+          "field": "voice_delay_ms"
+        },
+        {
+          "code": "studio_extension_unmapped",
+          "severity": "blocker",
+          "message": "粒子发射时点覆盖尚无已验证的原生表达；完整意图保存在审核记录中。",
+          "scenarioId": 35,
+          "field": "fx_emission_times"
+        },
+        {
+          "code": "video_metadata_unrecovered",
+          "severity": "blocker",
+          "message": "视频的原生字幕／时序元数据未恢复。",
+          "scenarioId": 51
+        }
+      ],
+      "readyForGame": false
+    },
+    {
+      "id": 10140003,
+      "chapterId": 1,
+      "sectionId": 1014,
+      "title": "魔法与精灵",
+      "titleJa": "魔法と精霊",
+      "path": "native/scenes/10140003.json",
+      "reviewPath": "review/scenes/10140003.json",
+      "nodeCount": 47,
+      "source": "reconstructed",
+      "issues": [
+        {
+          "code": "native_metadata_unrecovered",
+          "severity": "blocker",
+          "message": "未取得此场景原稿：原生分支编号为稳定编写编号，奖励向量暂为零，分支运行条件未恢复。"
+        },
+        {
+          "code": "studio_extension_unmapped",
+          "severity": "blocker",
+          "message": "语音相对正文的延迟尚无已验证的原生表达；完整意图保存在审核记录中。",
+          "scenarioId": 5,
+          "field": "voice_delay_ms"
+        },
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 7,
+          "branchId": 73
+        },
+        {
+          "code": "video_metadata_unrecovered",
+          "severity": "blocker",
+          "message": "视频的原生字幕／时序元数据未恢复。",
+          "scenarioId": 45
+        },
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 18,
+          "branchId": 182
+        },
+        {
+          "code": "studio_extension_unmapped",
+          "severity": "blocker",
+          "message": "多角色屏幕仿射投影尚无已验证的原生表达；完整意图保存在审核记录中。",
+          "scenarioId": 23,
+          "field": "actors"
+        },
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 23
+        },
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 27,
+          "branchId": 272
+        }
+      ],
+      "readyForGame": false
+    }
+  ],
+  "recordings": [
+    {
+      "id": "bili-capital-02",
+      "provider": "bilibili",
+      "bvid": "BV1bK4y1a7Fm",
+      "cid": 235287283,
+      "p": 2,
+      "title": "1本编「异世界召唤」",
+      "duration": 247
+    },
+    {
+      "id": "bili-capital-03",
+      "provider": "bilibili",
+      "bvid": "BV1bK4y1a7Fm",
+      "cid": 235290839,
+      "p": 3,
+      "title": "1本编「异世界召唤」Ver拉姆",
+      "duration": 167
+    },
+    {
+      "id": "bili-capital-04",
+      "provider": "bilibili",
+      "bvid": "BV1bK4y1a7Fm",
+      "cid": 235293693,
+      "p": 4,
+      "title": "2本编「银发的少女」",
+      "duration": 561
+    }
+  ],
+  "recordingMetadataSource": "https://api.bilibili.com/x/player/pagelist?bvid=BV1bK4y1a7Fm"
+}
