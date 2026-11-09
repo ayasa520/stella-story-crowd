@@ -2,6 +2,10 @@
 
 本仓库保存主线前两话的原生剧情脚本、独立校对证据和浏览器预览资源，供在线工作台提交 Pull Request。
 
+[打开在线工作台](https://stella-story-crowd-pilot.poisedwaxwing2.chatgpt.site) · [维护者连接 GitHub](https://stella-story-crowd-pilot.poisedwaxwing2.chatgpt.site/setup)
+
+试点网站当前仅限维护者访问。完成 GitHub App 仓库授权后，网页提交会创建独立分支、commit 和 PR；维护者审核合并后，工作台刷新读取新版本。可以在「原生 JSON」中导入本地初稿，先检查差异再提交。普通草稿保存不会修改仓库。
+
 - `native/scenes/<scene_id>.json`：游戏原生静态剧情内容，直接使用 `scenario_list`、`video_list`、`branch_work_list`、`chartmap`。不包含 Studio 节点外壳或玩家账户数据。
 - `review/scenes/<scene_id>.json`：日文参考、录像时间、待恢复分支、转换差异和审核备注。
 - `manifest.json`：五个场景的目录、来源与结构就绪状态。
