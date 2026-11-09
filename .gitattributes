@@ -5,3 +5,5 @@
 *.wav binary
 *.ogg binary
 *.mp4 binary
+# Preserve exact extracted bytes: the package manifest hashes model JSON too.
+assets/** -text
