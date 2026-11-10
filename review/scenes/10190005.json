@@ -1,0 +1,5934 @@
+{
+  "version": 1,
+  "sceneId": 10190005,
+  "provenance": {
+    "source": "reconstructed",
+    "language": "zh-CN",
+    "workspaceRevision": 2656,
+    "workspaceSha256": "ebd974d90f89088fa3a504c1f419ae01c352a24e6bd80209c5ec651295d38522",
+    "workspaceFile": "data/story_studio/project.json",
+    "arrayOrder": "authored-saved-route",
+    "recoveredOriginalOrder": false,
+    "nativeIdentifierAllocation": "scene*100000+scenario; branch_id=scenario*10+type; branch_uid=scene*100000+10000+branch_id; transition_id=branch_id*100+1",
+    "fallbackScenarioIds": [],
+    "originalOnlyScenarioIds": [],
+    "excludedStudioNodes": []
+  },
+  "scenarios": {
+    "1": {
+      "status": "reviewed",
+      "sourceText": "徽章を探しに",
+      "sourceSpeaker": "",
+      "translation": "寻找徽章",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:21；原始录像 132.9997–138.833 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:21）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 132.9997,
+          "end": 138.833,
+          "visualTime": 134.4997,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_a45a72d9941e",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.3278,
+            "track_time": 118.651,
+            "time": 132.9997,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          },
+          {
+            "id": "bgm_adv_every01_cd2_04",
+            "score": 0.2993,
+            "track_time": 10.456,
+            "time": 132.9997,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "heading",
+        "start": 132.9997,
+        "end": 138.833,
+        "time": 137.6663,
+        "text": "徽章を探しに",
+        "speaker": "",
+        "frame": "logs/capital-03/main/analysis/frames/004130.jpg",
+        "observations": 6,
+        "variants": [
+          {
+            "text": "徽章を探しに",
+            "count": 4
+          },
+          {
+            "text": "徽章を探し",
+            "count": 2
+          }
+        ],
+        "recovery_key": "main:21",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9995,
+      "critical": false,
+      "sourceTime": 137.6663,
+      "sourceUpdatedAt": "2026-10-07T06:23:29.665334+00:00",
+      "backgroundTime": 134.4997,
+      "bgmTime": 132.9997,
+      "frame": "evidence/node_a45a72d9941e.jpg",
+      "overlays": [
+        {
+          "field": "command",
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "StopBGM",
+            "",
+            ""
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 11,
+          "studioEdgeId": "edge_d09117038722",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:21 → main:22",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:43.395042+00:00"
+        }
+      ]
+    },
+    "2": {
+      "status": "reviewed",
+      "sourceText": "盗まれた徽章探しに忙しいはずなのに、自分を助けてくれた少女。その少女の質問にスバルは何も答えられず……",
+      "sourceSpeaker": "",
+      "translation": "明明急着寻找被盗的徽章，少女却还是出手救了自己。然而，对于她的问题，昴却什么都答不出来……",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:22；原始录像 139.433–145.933 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:22）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 139.433,
+          "end": 145.933,
+          "visualTime": 140.933,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_8471cbfaf964",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.9427,
+            "inliers": 257,
+            "color_agreement": 0.958,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7638,
+            "method": "sift_geometry_color",
+            "time": 140.933
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.9682,
+            "track_time": 38.691,
+            "time": 139.433,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 139.433,
+        "end": 145.933,
+        "time": 145.933,
+        "text": "盗まれた徽章探しに忙しいはずなのに、自分を助けてくれた少女。その少女の質問にスバルは何も答えられず",
+        "speaker": "",
+        "frame": "logs/capital-03/main/analysis/frames/004378.jpg",
+        "observations": 6,
+        "variants": [
+          {
+            "text": "盗まれた徽章探し",
+            "count": 1
+          },
+          {
+            "text": "盗まれた徽章探しに忙しいはずなのに、自",
+            "count": 1
+          },
+          {
+            "text": "盗まれた徽章探しに忙しいはずなのに、自分を助けてくれた少女。",
+            "count": 1
+          },
+          {
+            "text": "盗まれた徽章探しに忙しいはずなのに、自分を助けてくれた少女。その少女の質問にスバ",
+            "count": 1
+          },
+          {
+            "text": "盗まれた徽章探しに忙しいはずなのに、自分を助けてくれた少女。その少女の質問にスバルは何も答えられず",
+            "count": 2
+          }
+        ],
+        "recovery_key": "main:22",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.99,
+      "critical": false,
+      "sourceTime": 145.933,
+      "sourceUpdatedAt": "2026-10-07T06:23:29.835254+00:00",
+      "backgroundTime": 140.933,
+      "bgmTime": 139.433,
+      "frame": "evidence/node_8471cbfaf964.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg010a_backstreet"
+        },
+        {
+          "field": "bg_music",
+          "before": "",
+          "after": "bgm_adv_comical01_cd2_06"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 21,
+          "studioEdgeId": "edge_e990477a44f7",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:22 → main:23",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:43.556293+00:00"
+        }
+      ]
+    },
+    "3": {
+      "status": "reviewed",
+      "sourceText": "――王都の裏通り・昼",
+      "sourceSpeaker": "",
+      "translation": "——王都小巷·白天",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:23；原始录像 146.1663–148.5663 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:23）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 146.1663,
+          "end": 148.5663,
+          "visualTime": 147.6663,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_4d836474e2b9",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.9396,
+            "inliers": 271,
+            "color_agreement": 0.9577,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7818,
+            "method": "sift_geometry_color",
+            "time": 147.6663
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.8751,
+            "track_time": 131.817,
+            "time": 146.1663,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 146.1663,
+        "end": 148.5663,
+        "time": 148.5663,
+        "text": "王都の裏通り・昼",
+        "speaker": "",
+        "frame": "logs/capital-03/main/analysis/frames/004457.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "王都の裏通り",
+            "count": 1
+          },
+          {
+            "text": "王都の裏通り・昼",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:23",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9904,
+      "critical": false,
+      "sourceTime": 148.5663,
+      "sourceUpdatedAt": "2026-10-07T06:23:30.010906+00:00",
+      "backgroundTime": 147.6663,
+      "bgmTime": 146.1663,
+      "frame": "evidence/node_4d836474e2b9.jpg",
+      "branches": [
+        {
+          "branchId": 31,
+          "studioEdgeId": "edge_358813d63539",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:23 → main:24",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:43.725420+00:00"
+        }
+      ]
+    },
+    "4": {
+      "status": "reviewed",
+      "sourceText": "俺の治療で手間かけたのに、手掛かりなしで、ホントにすまねえ",
+      "sourceSpeaker": "スバル",
+      "translation": "让你费心替我治疗，却没能给你提供线索，真的很抱歉。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:24；原始录像 149.1663–153.4663 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：149 秒前后入场帧与随后台词持续为认真眉眼，普通表情会清除。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:24）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 149.1663,
+          "end": 153.4663,
+          "visualTime": 150.6663,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_ac08a3a3bc69",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.9279,
+            "inliers": 202,
+            "color_agreement": 0.9535,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7377,
+            "method": "sift_geometry_color",
+            "time": 150.6663
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.7621,
+            "track_time": 134.817,
+            "time": 149.1663,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 149.1663,
+        "end": 153.4663,
+        "time": 153.4663,
+        "text": "俺の治療で手間かけたのに、手掛かりなしで、ホントにすまねえ",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/004604.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "俺の治療で手間かけたの",
+            "count": 1
+          },
+          {
+            "text": "俺の治療で手間かけたのに、手掛かりなしで、ホントにす",
+            "count": 1
+          },
+          {
+            "text": "俺の治療で手間かけたのに、手掛かりなしで、ホントにすまねえ",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:24",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9912,
+      "critical": false,
+      "sourceTime": 153.4663,
+      "sourceUpdatedAt": "2026-10-07T10:51:18.084594+00:00",
+      "backgroundTime": 150.6663,
+      "bgmTime": 149.1663,
+      "frame": "evidence/node_ac08a3a3bc69.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_shinken"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 41,
+          "studioEdgeId": "edge_a2a3c6cd49ec",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:24 → main:25",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:43.887640+00:00"
+        }
+      ]
+    },
+    "5": {
+      "status": "reviewed",
+      "sourceText": "謝ることなんてないわよ",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "用不着道歉啦。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:25；原始录像 154.1663–156.5996 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:25）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 154.1663,
+          "end": 156.5996,
+          "visualTime": 155.6663,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_aa7179965b64",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.8891,
+            "inliers": 188,
+            "color_agreement": 0.9552,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7511,
+            "method": "sift_geometry_color",
+            "time": 155.6663
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.735,
+            "track_time": 139.817,
+            "time": 154.1663,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 154.1663,
+        "end": 156.5996,
+        "time": 156.5996,
+        "text": "謝ることなんてないわよ",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/004698.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "謝ることなんてないわよ",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:25",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9983,
+      "critical": false,
+      "sourceTime": 156.5996,
+      "sourceUpdatedAt": "2026-10-07T06:23:30.365399+00:00",
+      "backgroundTime": 155.6663,
+      "bgmTime": 154.1663,
+      "frame": "evidence/node_aa7179965b64.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 51,
+          "studioEdgeId": "edge_1893fcbd14ef",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:25 → main:26",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:44.043552+00:00"
+        }
+      ]
+    },
+    "6": {
+      "status": "reviewed",
+      "sourceText": "あなたは何にも知らないって情報を私にくれたでしょ？ちゃんと、治療のお礼は受け取りました",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "你不是告诉我，你什么都不知道了吗？治疗的谢礼，我已经好好收下了。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:26；原始录像 156.8329–162.6996 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：156.5–157.6 秒认真表情；原生参考与多帧候选一致。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:26）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 156.8329,
+          "end": 162.6996,
+          "visualTime": 158.3329,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_75185b20b8db",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_emilia",
+            "cue": "advg_emilia_aiduchi",
+            "score": 0.884746,
+            "time": 157.0264,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.8803,
+            "inliers": 189,
+            "color_agreement": 0.9559,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7336,
+            "method": "sift_geometry_color",
+            "time": 158.3329
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.7849,
+            "track_time": 56.092,
+            "time": 156.8329,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 156.8329,
+        "end": 162.6996,
+        "time": 162.6996,
+        "text": "あなたは何にも知らないって情報を私にくれたでしょ？ちゃんと、治療のお礼は受け取りました",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/004881.jpg",
+        "observations": 4,
+        "variants": [
+          {
+            "text": "あなたは何にも知らない",
+            "count": 1
+          },
+          {
+            "text": "あなたは何にも知らないって情報を私にくれたでしょ?ち",
+            "count": 1
+          },
+          {
+            "text": "あなたは何にも知らないって情報を私にくれたでしょ?ちゃんと、治療のお礼は受け",
+            "count": 1
+          },
+          {
+            "text": "あなたは何にも知らないって情報を私にくれたでしょ?ちゃんと、治療のお礼は受け取りました",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:26",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9788,
+      "critical": false,
+      "sourceTime": 162.6996,
+      "sourceUpdatedAt": "2026-10-07T10:52:05.770017+00:00",
+      "backgroundTime": 158.3329,
+      "bgmTime": 156.8329,
+      "frame": "evidence/node_75185b20b8db.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_shinken"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advg_emilia_aiduchi"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 61,
+          "studioEdgeId": "edge_b8bdd30fd6eb",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:26 → main:27",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:44.222990+00:00"
+        }
+      ]
+    },
+    "7": {
+      "status": "reviewed",
+      "sourceText": "じゃあ、急いでるからもういくわね。これは心配じゃなくて忠告だけど、こんな人気のない路地に一人で入るなんて危ないわよ",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "那我赶时间，先走了。这不是担心，是忠告：独自走进这种没人的小巷很危险哦。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:27；原始录像 162.9329–170.1996 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：162.6–163.7 秒延续认真表情，原生参考与多帧候选一致。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:27）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 162.9329,
+          "end": 170.1996,
+          "visualTime": 164.4329,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_f0e8b2b049f5",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.9103,
+            "inliers": 185,
+            "color_agreement": 0.955,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7119,
+            "method": "sift_geometry_color",
+            "time": 164.4329
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.8159,
+            "track_time": 62.191,
+            "time": 162.9329,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 162.9329,
+        "end": 170.1996,
+        "time": 170.1996,
+        "text": "じゃあ、急いでるからもういくわね。これは心配じゃなくて忠告だけど、こんな人気のない路地に一人で入るなんて危ないわよ",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/005106.jpg",
+        "observations": 4,
+        "variants": [
+          {
+            "text": "じゃあ、急いでるからもういくわね。こ",
+            "count": 1
+          },
+          {
+            "text": "じゃあ、急いでるからもういくわね。これは心配じやなくて忠告だけど、",
+            "count": 1
+          },
+          {
+            "text": "じゃあ、急いでるからもういくわね。これは心配じゃなくて忠告だけど、こんな人気のない路地に一人で入る",
+            "count": 1
+          },
+          {
+            "text": "じゃあ、急いでるからもういくわね。これは心配じゃなくて忠告だけど、こんな人気のない路地に一人で入るなんて危ないわよ",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:27",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.997,
+      "critical": false,
+      "sourceTime": 170.1996,
+      "sourceUpdatedAt": "2026-10-07T12:57:23.888740+00:00",
+      "backgroundTime": 164.4329,
+      "bgmTime": 162.9329,
+      "frame": "evidence/node_f0e8b2b049f5.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal,face_shinken"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 71,
+          "studioEdgeId": "edge_7cd724820e15",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:27 → main:28",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:44.386077+00:00"
+        }
+      ]
+    },
+    "8": {
+      "status": "reviewed",
+      "sourceText": "次、同じような場面に出くわしても、私があなたを助ける理由がないもの。だから、期待しちゃダメだからね",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "下次遇上同样的事，我就没有救你的理由了。所以可别有所期待哦。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:28；原始录像 170.4329–176.8662 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：斜头、压眉的严肃表情，与原生生气表情样本对照。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:28）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 170.4329,
+          "end": 176.8662,
+          "visualTime": 171.9329,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_ece3b4ac5269",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_emilia",
+            "cue": "advk_emilia_hitei",
+            "score": 0.876117,
+            "time": 170.6376,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.8971,
+            "inliers": 199,
+            "color_agreement": 0.9578,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7395,
+            "method": "sift_geometry_color",
+            "time": 171.9329
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.6875,
+            "track_time": 69.692,
+            "time": 170.4329,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 170.4329,
+        "end": 176.8662,
+        "time": 176.8662,
+        "text": "次、同じような場面に出くわしても、私があなたを助ける理由がないもの。だから、期待しちゃダメだからね",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/005306.jpg",
+        "observations": 4,
+        "variants": [
+          {
+            "text": "次、同じような場面に出くわしても、",
+            "count": 1
+          },
+          {
+            "text": "次、同じような場面に出くわしても、私があなたを助ける理由がな",
+            "count": 1
+          },
+          {
+            "text": "次、同じような場面に出くわしても、私があなたを助ける理由がないもの。だから、期待しちゃダメだ",
+            "count": 1
+          },
+          {
+            "text": "次、同じような場面に出くわしても、私があなたを助ける理由がないもの。だから、期待しちゃダメだからね",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:28",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9946,
+      "critical": false,
+      "sourceTime": 176.8662,
+      "sourceUpdatedAt": "2026-10-07T13:00:11.264687+00:00",
+      "backgroundTime": 171.9329,
+      "bgmTime": 170.4329,
+      "frame": "evidence/node_ece3b4ac5269.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_punpun,face_ikaru"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advk_emilia_hitei"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 81,
+          "studioEdgeId": "edge_7f372b497f38",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:28 → main:29",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T13:00:54.445185+00:00"
+        }
+      ]
+    },
+    "37": {
+      "status": "reviewed",
+      "sourceText": "",
+      "sourceSpeaker": "",
+      "translation": "",
+      "notes": "手动添加",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 170.4329,
+          "end": 170.4329,
+          "visualTime": 170.4329,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_f873f1afd003",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "origin": "manual"
+      },
+      "ocrScore": null,
+      "critical": false,
+      "sourceTime": 170.4329,
+      "sourceUpdatedAt": "2026-10-07T13:01:41.974211+00:00",
+      "backgroundTime": 170.4329,
+      "bgmTime": 170.4329,
+      "frame": "",
+      "overlays": [
+        {
+          "field": "command",
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "",
+            "SE,\"walk01\"\nCardOut",
+            ""
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 371,
+          "studioEdgeId": "edge_081d6b94d859",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T13:00:45.513542+00:00"
+        }
+      ]
+    },
+    "9": {
+      "status": "reviewed",
+      "sourceText": "……えっ、と",
+      "sourceSpeaker": "スバル",
+      "translation": "……呃，那个……",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:29；原始录像 179.6662–181.8329 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:29）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 179.6662,
+          "end": 181.8329,
+          "visualTime": 181.1662,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_515b23e79b90",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_subaru",
+            "cue": "advg_subaru_tamerai",
+            "score": 0.963437,
+            "time": 179.8749,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.9367,
+            "inliers": 220,
+            "color_agreement": 0.9547,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7205,
+            "method": "sift_geometry_color",
+            "time": 181.1662
+          }
+        ],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 179.6662,
+        "end": 181.8329,
+        "time": 181.8329,
+        "text": "……えつ、と",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/005455.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "......えつ、と",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:29",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.8727,
+      "critical": false,
+      "sourceTime": 181.8329,
+      "sourceUpdatedAt": "2026-10-07T06:23:31.119446+00:00",
+      "backgroundTime": 181.1662,
+      "bgmTime": 179.6662,
+      "frame": "evidence/node_515b23e79b90.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_odoroku"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_tamerai"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 91,
+          "studioEdgeId": "edge_110a2f7c442c",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:29 → main:30",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:44.704897+00:00"
+        }
+      ]
+    },
+    "10": {
+      "status": "reviewed",
+      "sourceText": "ごめんね。素直じゃないんだよ、うちの子。変に思わないであげて",
+      "sourceSpeaker": "喋る小猫",
+      "translation": "抱歉啊，我家孩子就是不坦率。别觉得她奇怪。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:30；原始录像 182.4662–186.9995 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:30）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 182.4662,
+          "end": 186.9995,
+          "visualTime": 183.9662,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_f37b830a8f89",
+      "candidates": {
+        "model": [
+          {
+            "model": "pack01",
+            "label": "パック",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_pack",
+            "cue": "advg_pack_damage",
+            "score": 0.986277,
+            "time": 182.6612,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.9158,
+            "inliers": 215,
+            "color_agreement": 0.9535,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7469,
+            "method": "sift_geometry_color",
+            "time": 183.9662
+          }
+        ],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 182.4662,
+        "end": 186.9995,
+        "time": 186.9995,
+        "text": "ごめんね。素直じゃないんだよ、うちの子。変に思わないであげて",
+        "speaker": "喋る小猫",
+        "frame": "logs/capital-03/main/analysis/frames/005610.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "ごめんね。素直じゃないんだよ、う",
+            "count": 1
+          },
+          {
+            "text": "ごめんね。素直じゃないんだよ、うちの子。変に思わないであげて",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:30",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9962,
+      "critical": false,
+      "sourceTime": 186.9995,
+      "sourceUpdatedAt": "2026-10-07T13:04:47.149373+00:00",
+      "backgroundTime": 183.9662,
+      "bgmTime": 182.4662,
+      "frame": "evidence/node_f37b830a8f89.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_pack,advg_pack_damage"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_pack01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 101,
+          "studioEdgeId": "edge_fe48269bf75b",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:30 → main:31",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:44.861061+00:00"
+        }
+      ]
+    },
+    "11": {
+      "status": "reviewed",
+      "sourceText": "素直じゃないって……、そんなレベルじゃねえだろ",
+      "sourceSpeaker": "スバル",
+      "translation": "不坦率……这已经不是那种程度了吧。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:31；原始录像 187.6995–191.4328 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：187.4–188.5 秒压眉的认真表情，与 main:15、24 对照。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:31）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 187.6995,
+          "end": 191.4328,
+          "visualTime": 189.1995,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_75b04bb68929",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_subaru",
+            "cue": "advg_subaru_kangaeru",
+            "score": 0.969454,
+            "time": 187.8205,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.9207,
+            "inliers": 188,
+            "color_agreement": 0.9517,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7521,
+            "method": "sift_geometry_color",
+            "time": 189.1995
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_every03_cd2_11",
+            "score": 0.4814,
+            "track_time": 0.209,
+            "time": 187.6995,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 187.6995,
+        "end": 191.4328,
+        "time": 191.4328,
+        "text": "素直じゃないってそんなレベルじゃねえだろ",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/005743.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "素直じゃないって・そんなレベル",
+            "count": 1
+          },
+          {
+            "text": "素直じゃないってそんなレベルじゃねえだろ",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:31",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9806,
+      "critical": false,
+      "sourceTime": 191.4328,
+      "sourceUpdatedAt": "2026-10-07T10:56:22.180787+00:00",
+      "backgroundTime": 189.1995,
+      "bgmTime": 187.6995,
+      "frame": "evidence/node_75b04bb68929.jpg",
+      "overlays": [
+        {
+          "field": "bg_music",
+          "before": "",
+          "after": "bgm_adv_every03_cd2_11,1,false"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_tameiki,face_shinken"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_kangaeru"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 111,
+          "studioEdgeId": "edge_99471cdd668c",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:31 → main:32",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:45.017371+00:00"
+        }
+      ]
+    },
+    "12": {
+      "status": "reviewed",
+      "sourceText": "大切なもの盗まれて、急いでんのに俺のこと助けてくれて",
+      "sourceSpeaker": "スバル",
+      "translation": "明明重要的东西被偷走了，正赶着找，却还是来救我……",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:32；原始录像 191.6328–195.9328 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：191.3–192.4 秒继续认真眉眼。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:32）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 191.6328,
+          "end": 195.9328,
+          "visualTime": 193.1328,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_96ad00bc4798",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.9222,
+            "inliers": 194,
+            "color_agreement": 0.9551,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7526,
+            "method": "sift_geometry_color",
+            "time": 193.1328
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_every03_cd2_11",
+            "score": 0.9762,
+            "track_time": 128.141,
+            "time": 191.6328,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 191.6328,
+        "end": 195.9328,
+        "time": 195.9328,
+        "text": "大切なもの盗まれて、急いでんのに俺のこと助けてくれて",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/005878.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "大切なもの盗まれて、",
+            "count": 1
+          },
+          {
+            "text": "大切なもの盗まれて、急いでんのに俺のこと助けてく",
+            "count": 1
+          },
+          {
+            "text": "大切なもの盗まれて、急いでんのに俺のこと助けてくれて",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:32",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9774,
+      "critical": false,
+      "sourceTime": 195.9328,
+      "sourceUpdatedAt": "2026-10-07T06:23:31.677398+00:00",
+      "backgroundTime": 193.1328,
+      "bgmTime": 191.6328,
+      "frame": "evidence/node_96ad00bc4798.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal,face_shinken"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 121,
+          "studioEdgeId": "edge_6ff7b31142a0",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:32 → main:33",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:45.175673+00:00"
+        }
+      ]
+    },
+    "13": {
+      "status": "reviewed",
+      "sourceText": "おまけに、見ず知らずの俺に負い目を感じさせないように、ヘタクソすぎるフォローまでして",
+      "sourceSpeaker": "スバル",
+      "translation": "还为了不让素不相识的我觉得亏欠她，费劲说出那种拙劣的借口……",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:33；原始录像 196.1662–202.1328 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：195.9–197.0 秒继续认真眉眼。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:33）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 196.1662,
+          "end": 202.1328,
+          "visualTime": 197.6662,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_b1fb809957c6",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.8969,
+            "inliers": 186,
+            "color_agreement": 0.9433,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.4549,
+            "method": "sift_geometry_color",
+            "time": 197.6662
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_every03_cd2_11",
+            "score": 0.6593,
+            "track_time": 8.675,
+            "time": 196.1662,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 196.1662,
+        "end": 202.1328,
+        "time": 201.7328,
+        "text": "おまけに、見ず知らずの俺に負い目を感じさせないように、ヘタクソすぎるフォローまでして",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/006052.jpg",
+        "observations": 4,
+        "variants": [
+          {
+            "text": "おまけに、見ず知らずの",
+            "count": 1
+          },
+          {
+            "text": "おまけに、見ず知らずの俺に負い目を感じさせないよう",
+            "count": 1
+          },
+          {
+            "text": "おまけに、見ず知らずの俺に負い目を感じさせないように、ヘタクソすぎるフォローまでして",
+            "count": 2
+          }
+        ],
+        "recovery_key": "main:33",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9915,
+      "critical": false,
+      "sourceTime": 201.7328,
+      "sourceUpdatedAt": "2026-10-07T06:23:31.853927+00:00",
+      "backgroundTime": 197.6662,
+      "bgmTime": 196.1662,
+      "frame": "evidence/node_b1fb809957c6.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal,face_shinken"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 131,
+          "studioEdgeId": "edge_6deee0d5fb55",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:33 → main:34",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:45.326770+00:00"
+        }
+      ]
+    },
+    "14": {
+      "status": "reviewed",
+      "sourceText": "そんな生き方、めちゃくちゃ損するばっかじゃねえか！",
+      "sourceSpeaker": "スバル",
+      "translation": "这样活着，不是只会吃大亏吗！",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:34；原始录像 202.3328–207.1661 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：206.7–207.1 秒黑色遮罩从右向左擦除，正文面板保留；匹配原版 wipe_side_L 遮罩。未用黑屏时长猜写 Wait。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 逐帧复核修正：202.0–203.1 秒继续认真眉眼；保留已核对的正文后擦除转场。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:34）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 202.3328,
+          "end": 207.1661,
+          "visualTime": 203.8328,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_f003fdacdbf5",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_subaru",
+            "cue": "advk_subaru_hitei",
+            "score": 0.988479,
+            "time": 202.5194,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg010a_backstreet",
+            "score": 0.9169,
+            "inliers": 201,
+            "color_agreement": 0.9523,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7593,
+            "method": "sift_geometry_color",
+            "time": 203.8328
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_every03_cd2_11",
+            "score": 0.6107,
+            "track_time": 138.841,
+            "time": 202.3328,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 202.3328,
+        "end": 207.1661,
+        "time": 204.9661,
+        "text": "そんな生き方、めちゃくちゃ損するばっかじゃねえか！",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/006149.jpg",
+        "observations": 6,
+        "variants": [
+          {
+            "text": "そんな生き方、めちゃく",
+            "count": 1
+          },
+          {
+            "text": "そんな生き方、めちゃくちゃ損するばっかじゃねえか!",
+            "count": 4
+          },
+          {
+            "text": "そんな生き方、めちゃくちゃ損するぱっかじゃねえか!",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:34",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9742,
+      "critical": false,
+      "sourceTime": 204.9661,
+      "sourceUpdatedAt": "2026-10-07T13:06:26.451443+00:00",
+      "backgroundTime": 203.8328,
+      "bgmTime": 202.3328,
+      "frame": "evidence/node_f003fdacdbf5.jpg",
+      "overlays": [
+        {
+          "field": "command",
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "",
+            "",
+            "Tap\nWipeOut,\"wipe_side_L\"\nCardOut"
+          ]
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_shinken"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advk_subaru_hitei"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 141,
+          "studioEdgeId": "edge_197d34fcf7f8",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:34 → main:35",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T13:07:01.976002+00:00"
+        }
+      ]
+    },
+    "38": {
+      "status": "reviewed",
+      "sourceText": "",
+      "sourceSpeaker": "",
+      "translation": "",
+      "notes": "手动添加",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 208.558689,
+          "end": 208.558689,
+          "visualTime": 208.558689,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_7a6cfdf3f80b",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "origin": "manual"
+      },
+      "ocrScore": null,
+      "critical": false,
+      "sourceTime": 208.558689,
+      "sourceUpdatedAt": "2026-10-07T13:07:33.923537+00:00",
+      "backgroundTime": 208.558689,
+      "bgmTime": 208.558689,
+      "frame": "",
+      "overlays": [
+        {
+          "field": "command",
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "",
+            "",
+            "Wait,500\nCardOut"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 381,
+          "studioEdgeId": "edge_1843876af51b",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T13:06:53.086124+00:00"
+        }
+      ]
+    },
+    "15": {
+      "status": "reviewed",
+      "sourceText": "――王都の商業街・昼",
+      "sourceSpeaker": "",
+      "translation": "——王都商业街·白天",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:35；原始录像 211.3661–213.6995 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：210.7 秒相同横向遮罩揭开商业街；在背景更换后、显示本句前解除遮罩。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:35）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 211.3661,
+          "end": 213.6995,
+          "visualTime": 212.8661,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_5988d5995535",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.9151,
+            "inliers": 335,
+            "color_agreement": 0.9416,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8414,
+            "method": "sift_geometry_color",
+            "time": 212.8661
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5961,
+            "inliers": 242,
+            "color_agreement": 0.2898,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8156,
+            "method": "sift_geometry_color",
+            "time": 212.8661
+          },
+          {
+            "id": "bg/bg013c_street",
+            "score": 0.2427,
+            "inliers": 33,
+            "color_agreement": 0,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.2587,
+            "method": "sift_geometry_color",
+            "time": 212.8661
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.7875,
+            "track_time": 173.924,
+            "time": 211.3661,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 211.3661,
+        "end": 213.6995,
+        "time": 213.6995,
+        "text": "王都の商業街・昼",
+        "speaker": "",
+        "frame": "logs/capital-03/main/analysis/frames/006411.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "王都の商業街",
+            "count": 1
+          },
+          {
+            "text": "王都の商業街・昼",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:35",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9948,
+      "critical": false,
+      "sourceTime": 213.6995,
+      "sourceUpdatedAt": "2026-10-07T06:23:32.194081+00:00",
+      "backgroundTime": 212.8661,
+      "bgmTime": 211.3661,
+      "frame": "evidence/node_5988d5995535.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "bg_music",
+          "before": "",
+          "after": "bgm_adv_comical01_cd2_06"
+        },
+        {
+          "field": "command",
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "",
+            "WipeIn",
+            ""
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 151,
+          "studioEdgeId": "edge_dfeefb7e8143",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:35 → main:36",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:45.641868+00:00"
+        }
+      ]
+    },
+    "16": {
+      "status": "reviewed",
+      "sourceText": "おーい！　待ってくれよ！",
+      "sourceSpeaker": "スバル",
+      "translation": "喂——！等一下！",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:36；原始录像 214.3661–216.8994 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:36）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 214.3661,
+          "end": 216.8994,
+          "visualTime": 215.8661,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_a9f54a1fd6e4",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8585,
+            "inliers": 139,
+            "color_agreement": 0.9351,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7272,
+            "method": "sift_geometry_color",
+            "time": 215.8661
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5558,
+            "inliers": 93,
+            "color_agreement": 0.3358,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.6663,
+            "method": "sift_geometry_color",
+            "time": 215.8661
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.7771,
+            "track_time": 90.531,
+            "time": 214.3661,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 214.3661,
+        "end": 216.8994,
+        "time": 216.8994,
+        "text": "おーい!待ってくれよ!",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/006507.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "おーい!待ってくれよ!",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:36",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9567,
+      "critical": false,
+      "sourceTime": 216.8994,
+      "sourceUpdatedAt": "2026-10-07T06:23:32.365277+00:00",
+      "backgroundTime": 215.8661,
+      "bgmTime": 214.3661,
+      "frame": "evidence/node_a9f54a1fd6e4.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_shinken"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 161,
+          "studioEdgeId": "edge_c0d7f1db8ef2",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:36 → main:37",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:45.793863+00:00"
+        }
+      ]
+    },
+    "17": {
+      "status": "reviewed",
+      "sourceText": "なに？　言っておくけど、これ以上は私もちょっとしか付き合ってあげられないから",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "怎么了？先说好，我也只能再陪你一小会儿了。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:37；原始录像 217.5328–222.8661 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:37）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 217.5328,
+          "end": 222.8661,
+          "visualTime": 219.0328,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_57bf5b5b54eb",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_emilia",
+            "cue": "advk_emilia_kougi",
+            "score": 0.84418,
+            "time": 217.6921,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [
+          {
+            "token": "act_hohoemu03",
+            "label": "微笑",
+            "score": 0.1688,
+            "model": "emilia01",
+            "time": 219.0328,
+            "phase": 2.4,
+            "box": [
+              -48,
+              300,
+              507,
+              945
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 2.5,
+            "onset_offset": 1.0,
+            "frame_scores": [
+              0.428,
+              0.2932,
+              0.2848,
+              0.292,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.4155
+            ],
+            "ambiguous": true,
+            "margin": 0.0054,
+            "alternative": false
+          },
+          {
+            "token": "act_egao",
+            "label": "笑容",
+            "score": 0.1634,
+            "model": "emilia01",
+            "time": 219.0328,
+            "phase": 1.525131282820705,
+            "box": [
+              -48,
+              300,
+              507,
+              945
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 1,
+            "onset_offset": 0.35,
+            "frame_scores": [
+              0.3461,
+              0.3085,
+              0.1702,
+              0.1643,
+              0.136,
+              0.119,
+              0.1125,
+              0.1252,
+              0.1262
+            ],
+            "ambiguous": true,
+            "margin": 0.0054,
+            "alternative": false
+          },
+          {
+            "token": "act_egao03",
+            "label": "笑容",
+            "score": 0.1629,
+            "model": "emilia01",
+            "time": 219.0328,
+            "phase": 1.525131282820705,
+            "box": [
+              -48,
+              300,
+              507,
+              945
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 1,
+            "onset_offset": 0.35,
+            "frame_scores": [
+              0.3464,
+              0.3089,
+              0.1699,
+              0.1642,
+              0.1354,
+              0.1182,
+              0.1115,
+              0.124,
+              0.125
+            ],
+            "ambiguous": true,
+            "margin": 0.0054,
+            "alternative": false
+          },
+          {
+            "token": "act_egao02",
+            "label": "笑容",
+            "score": 0.1628,
+            "model": "emilia01",
+            "time": 219.0328,
+            "phase": 1.525131282820705,
+            "box": [
+              -48,
+              300,
+              507,
+              945
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 1,
+            "onset_offset": 0.35,
+            "frame_scores": [
+              0.3464,
+              0.3089,
+              0.1697,
+              0.1645,
+              0.1346,
+              0.1182,
+              0.1115,
+              0.124,
+              0.125
+            ],
+            "ambiguous": true,
+            "margin": 0.0054,
+            "alternative": false
+          },
+          {
+            "token": "act_hohoemu",
+            "label": "微笑",
+            "score": 0.1619,
+            "model": "emilia01",
+            "time": 219.0328,
+            "phase": 2.4,
+            "box": [
+              -48,
+              300,
+              507,
+              945
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 2.5,
+            "onset_offset": 1.0,
+            "frame_scores": [
+              0.4206,
+              0.2792,
+              0.27,
+              0.2785,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.4033
+            ],
+            "ambiguous": true,
+            "margin": 0.0054,
+            "alternative": false
+          },
+          {
+            "token": "act_hohoemu02",
+            "label": "微笑",
+            "score": 0.1616,
+            "model": "emilia01",
+            "time": 219.0328,
+            "phase": 2.4,
+            "box": [
+              -48,
+              300,
+              507,
+              945
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 2.5,
+            "onset_offset": 1.0,
+            "frame_scores": [
+              0.4203,
+              0.2783,
+              0.2697,
+              0.2778,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.4024
+            ],
+            "ambiguous": true,
+            "margin": 0.0054,
+            "alternative": false
+          }
+        ],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.896,
+            "inliers": 183,
+            "color_agreement": 0.9352,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.829,
+            "method": "sift_geometry_color",
+            "time": 219.0328
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5668,
+            "inliers": 128,
+            "color_agreement": 0.291,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7991,
+            "method": "sift_geometry_color",
+            "time": 219.0328
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.367,
+            "track_time": 7.305,
+            "time": 217.5328,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 217.5328,
+        "end": 222.8661,
+        "time": 222.8661,
+        "text": "なに?言っておくけど、これ以上は私もちよっとしか付き合ってあげられないから",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/006686.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "なに?言っておくけど、己",
+            "count": 1
+          },
+          {
+            "text": "なに?言っておくけど、これ以上は私もちょっとしか付き",
+            "count": 1
+          },
+          {
+            "text": "なに?言っておくけど、これ以上は私もちよっとしか付き合ってあげられないから",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:37",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9825,
+      "critical": false,
+      "sourceTime": 222.8661,
+      "sourceUpdatedAt": "2026-10-07T11:01:00.037423+00:00",
+      "backgroundTime": 219.0328,
+      "bgmTime": 217.5328,
+      "frame": "evidence/node_57bf5b5b54eb.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_shinken02,face_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advk_emilia_kougi"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 171,
+          "studioEdgeId": "edge_61435555e8c9",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:37 → main:38",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:45.951045+00:00"
+        }
+      ]
+    },
+    "18": {
+      "status": "reviewed",
+      "sourceText": "若干甘さ見えてるけど！？　それより大切なものなんだろ？　俺にも手伝わせてくれ",
+      "sourceSpeaker": "スバル",
+      "translation": "这不还是心软了吗！？先不说这个，那是很重要的东西吧？也让我帮忙。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:38；原始录像 223.4994–228.6661 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：原录像双臂下垂、半闭眼皱眉；原设置 tameiki02 会转成侧身叉腰。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:38）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 223.4994,
+          "end": 228.6661,
+          "visualTime": 224.9994,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_9b49c5e20c30",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_subaru",
+            "cue": "advk_subaru_akireru",
+            "score": 0.98686,
+            "time": 223.6481,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8778,
+            "inliers": 167,
+            "color_agreement": 0.9366,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7794,
+            "method": "sift_geometry_color",
+            "time": 224.9994
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5678,
+            "inliers": 124,
+            "color_agreement": 0.3173,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.6898,
+            "method": "sift_geometry_color",
+            "time": 224.9994
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.5575,
+            "track_time": 13.271,
+            "time": 223.4994,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 223.4994,
+        "end": 228.6661,
+        "time": 228.6661,
+        "text": "若干甘さ見えてるけど!？それより大切なものなんだろ？俺にも手伝わせてくれ",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/006860.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "若干甘さ見えてるけど!?$そra",
+            "count": 1
+          },
+          {
+            "text": "若干甘さ見えてるけど!?それより大切なものなんだろ?",
+            "count": 1
+          },
+          {
+            "text": "若干甘さ見えてるけど!?それより大切なものなんだろ?俺にも手伝わせてくれ",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:38",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.975,
+      "critical": false,
+      "sourceTime": 228.6661,
+      "sourceUpdatedAt": "2026-10-07T11:02:06.794478+00:00",
+      "backgroundTime": 224.9994,
+      "bgmTime": 223.4994,
+      "frame": "evidence/node_9b49c5e20c30.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_tameiki,face_punpun"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advk_subaru_akireru"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 181,
+          "studioEdgeId": "edge_6ad9ab8d226d",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:38 → main:39",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:46.131649+00:00"
+        }
+      ]
+    },
+    "19": {
+      "status": "reviewed",
+      "sourceText": "でも、あなたは何も知らないって",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "可是，你说你什么都不知道……",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:39；原始录像 229.2994–243.766 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：怀疑的斜头压眉表情，需明确脸部覆盖。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:39）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 229.2994,
+          "end": 243.766,
+          "visualTime": 231,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 19,
+          "branchId": 192
+        }
+      ],
+      "studioNodeId": "node_aae50000b06a",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8766,
+            "inliers": 185,
+            "color_agreement": 0.9395,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.827,
+            "method": "sift_geometry_color",
+            "time": 230.7994
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5509,
+            "inliers": 126,
+            "color_agreement": 0.2937,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7973,
+            "method": "sift_geometry_color",
+            "time": 230.7994
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.9703,
+            "track_time": 19.072,
+            "time": 229.2994,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 229.2994,
+        "end": 243.766,
+        "time": 240.166,
+        "text": "でも、あなたは何も知らないって",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/007205.jpg",
+        "observations": 9,
+        "variants": [
+          {
+            "text": "でも、あなたは何も知らな",
+            "count": 1
+          },
+          {
+            "text": "でも、あなたは何も知らないって",
+            "count": 8
+          }
+        ],
+        "recovery_key": "main:39",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.995,
+      "critical": false,
+      "sourceTime": 240.166,
+      "sourceUpdatedAt": "2026-10-07T11:02:48.830333+00:00",
+      "backgroundTime": 230.7994,
+      "bgmTime": 229.2994,
+      "frame": "evidence/node_aae50000b06a.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_nayamu,face_nayamu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 192,
+          "studioEdgeId": "edge_2ab635c3ea93",
+          "sourceLabel": "ほどほどに主張",
+          "sourceQuote": "",
+          "labelTranslation": "适度坚持",
+          "quoteTranslation": "",
+          "state": "missing",
+          "sourceState": "missing",
+          "notes": "录像确认：main:39；此后续未录到，保留缺失。",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:46.302988+00:00"
+        },
+        {
+          "branchId": 193,
+          "studioEdgeId": "edge_2b5bfaea2943",
+          "sourceLabel": "強く主張",
+          "sourceQuote": "確かに、盗んだ奴の名前もどこ中かも知らねぇけど、少なくとも顔は覚えてる！　もっぺん見ればわかる！",
+          "labelTranslation": "强烈坚持",
+          "quoteTranslation": "我确实不知道那家伙的名字，也不知道是哪个学校的，但至少记得长相！再见一次肯定认得出来！",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:39 → main:40",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:46.470665+00:00"
+        }
+      ]
+    },
+    "20": {
+      "status": "reviewed",
+      "sourceText": "顔は覚えてる……。それって本当？　信じられる？",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "记得长相……真的吗？可以相信你吗？",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:40；原始录像 246.1994–249.9327 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：上一句怀疑表情延续。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:40）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 246.1994,
+          "end": 249.9327,
+          "visualTime": 247.6994,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_7787be0b6e47",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8806,
+            "inliers": 174,
+            "color_agreement": 0.9339,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8259,
+            "method": "sift_geometry_color",
+            "time": 247.6994
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5551,
+            "inliers": 124,
+            "color_agreement": 0.3079,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7778,
+            "method": "sift_geometry_color",
+            "time": 247.6994
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.8202,
+            "track_time": 35.971,
+            "time": 246.1994,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 246.1994,
+        "end": 249.9327,
+        "time": 249.9327,
+        "text": "顔は覚えてるそれって本当？信じられる？",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/007498.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "顔は覚えてるそれって",
+            "count": 1
+          },
+          {
+            "text": "顔は覚えてるそれって本当?信じられる?",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:40",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9793,
+      "critical": false,
+      "sourceTime": 249.9327,
+      "sourceUpdatedAt": "2026-10-07T11:03:43.305418+00:00",
+      "backgroundTime": 247.6994,
+      "bgmTime": 246.1994,
+      "frame": "evidence/node_7787be0b6e47.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_nayamu,face_nayamu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 201,
+          "studioEdgeId": "edge_6d82ebc51070",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:40 → main:41",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:46.635265+00:00"
+        }
+      ]
+    },
+    "21": {
+      "status": "reviewed",
+      "sourceText": "本当も本当、一点の曇りもなく、俺が無一文だってのと同じぐらいに",
+      "sourceSpeaker": "スバル",
+      "translation": "千真万确，绝对没错，就跟我身无分文一样确定。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:41；原始录像 250.5994–255.1327 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:41）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 250.5994,
+          "end": 255.1327,
+          "visualTime": 252.0994,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_9453da4ffe8c",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_subaru",
+            "cue": "advg_subaru_aiduchi",
+            "score": 0.911661,
+            "time": 250.7574,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8631,
+            "inliers": 152,
+            "color_agreement": 0.9364,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.786,
+            "method": "sift_geometry_color",
+            "time": 252.0994
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5518,
+            "inliers": 112,
+            "color_agreement": 0.3213,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.6951,
+            "method": "sift_geometry_color",
+            "time": 252.0994
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.6875,
+            "track_time": 40.371,
+            "time": 250.5994,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 250.5994,
+        "end": 255.1327,
+        "time": 255.1327,
+        "text": "本当も本当、一点の曇りもなく、俺が無一文だってのと同じぐらいに",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/007654.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "本当も本当、一点の曇りもな",
+            "count": 1
+          },
+          {
+            "text": "本当も本当、一点の曇りもなく、俺が無一文だってのと同じ",
+            "count": 1
+          },
+          {
+            "text": "本当も本当、一点の曇りもなく、俺が無一文だってのと同じぐらいに",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:41",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9897,
+      "critical": false,
+      "sourceTime": 255.1327,
+      "sourceUpdatedAt": "2026-10-07T11:04:44.642693+00:00",
+      "backgroundTime": 252.0994,
+      "bgmTime": 250.5994,
+      "frame": "evidence/node_9453da4ffe8c.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_kangaeru"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_aiduchi"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 211,
+          "studioEdgeId": "edge_e3215771a053",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:41 → main:42",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:46.918648+00:00"
+        }
+      ]
+    },
+    "22": {
+      "status": "reviewed",
+      "sourceText": "変な人。言っておくけど、本当に何のお礼もできないからね",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "真是个怪人。先说好，我真的给不了你任何谢礼哦。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:42；原始录像 255.7993–260.1327 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:42）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 255.7993,
+          "end": 260.1327,
+          "visualTime": 257.2993,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_1d0efd0d7735",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_emilia",
+            "cue": "advg_emilia_kangaeru",
+            "score": 0.93609,
+            "time": 255.9586,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8936,
+            "inliers": 179,
+            "color_agreement": 0.9337,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8274,
+            "method": "sift_geometry_color",
+            "time": 257.2993
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5686,
+            "inliers": 128,
+            "color_agreement": 0.3032,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7921,
+            "method": "sift_geometry_color",
+            "time": 257.2993
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.5283,
+            "track_time": 45.572,
+            "time": 255.7993,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 255.7993,
+        "end": 260.1327,
+        "time": 260.1327,
+        "text": "変な人。言っておくけど、本当に何のお礼もできないからね",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/007804.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "変な人。言っておくけど、本",
+            "count": 1
+          },
+          {
+            "text": "変な人。言っておくけど、本当に何のお礼もできないから",
+            "count": 1
+          },
+          {
+            "text": "変な人。言っておくけど、本当に何のお礼もできないからね",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:42",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9949,
+      "critical": false,
+      "sourceTime": 260.1327,
+      "sourceUpdatedAt": "2026-10-07T11:05:20.076752+00:00",
+      "backgroundTime": 257.2993,
+      "bgmTime": 255.7993,
+      "frame": "evidence/node_1d0efd0d7735.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_shinken"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advg_emilia_kangaeru"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 221,
+          "studioEdgeId": "edge_b677097714d6",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:42 → main:43",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:47.108309+00:00"
+        }
+      ]
+    },
+    "23": {
+      "status": "reviewed",
+      "sourceText": "安心しろ、お礼なんていらない。むしろ俺が君に礼をしたい。だから手伝いたいんだ",
+      "sourceSpeaker": "スバル",
+      "translation": "放心，我不要谢礼。倒不如说，我想向你道谢，所以才想帮忙。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:43；原始录像 260.7993–266.166 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:43）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 260.7993,
+          "end": 266.166,
+          "visualTime": 262.2993,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_28861214e7b9",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_subaru",
+            "cue": "advk_subaru_hagemasu",
+            "score": 0.944983,
+            "time": 260.9857,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8736,
+            "inliers": 164,
+            "color_agreement": 0.9362,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7725,
+            "method": "sift_geometry_color",
+            "time": 262.2993
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.561,
+            "inliers": 118,
+            "color_agreement": 0.3232,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.6788,
+            "method": "sift_geometry_color",
+            "time": 262.2993
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.6628,
+            "track_time": 50.572,
+            "time": 260.7993,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 260.7993,
+        "end": 266.166,
+        "time": 266.166,
+        "text": "安心しろ、お礼なんていらない。むしろ俺が君に礼をしたい。だから手伝いたいんだ",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/007985.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "安心しろ、お礼なんていらない。",
+            "count": 1
+          },
+          {
+            "text": "安心しろ、お礼なんていらない。むしろ俺が君に礼をしたい。だから",
+            "count": 1
+          },
+          {
+            "text": "安心しろ、お礼なんていらない。むしろ俺が君に礼をしたい。だから手伝いたいんだ",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:43",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9928,
+      "critical": false,
+      "sourceTime": 266.166,
+      "sourceUpdatedAt": "2026-10-07T13:12:47.430357+00:00",
+      "backgroundTime": 262.2993,
+      "bgmTime": 260.7993,
+      "frame": "evidence/node_28861214e7b9.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advk_subaru_hagemasu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 231,
+          "studioEdgeId": "edge_b61e6e420456",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:43 → main:44",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:47.310254+00:00"
+        }
+      ]
+    },
+    "24": {
+      "status": "reviewed",
+      "sourceText": "お礼をされるようなことなんてしてない。言ったでしょ？ケガのことなら、もうちゃんと対価はもらってるんだから",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "我没做什么值得道谢的事。不是说了吗？治伤的报酬，我已经收到了。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:44；原始录像 266.8326–284.5993 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:44）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 266.8326,
+          "end": 284.5993,
+          "visualTime": 270,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 24,
+          "branchId": 243
+        }
+      ],
+      "studioNodeId": "node_9d176f1ec98d",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8974,
+            "inliers": 176,
+            "color_agreement": 0.9355,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8102,
+            "method": "sift_geometry_color",
+            "time": 268.3326
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5531,
+            "inliers": 120,
+            "color_agreement": 0.2834,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7724,
+            "method": "sift_geometry_color",
+            "time": 268.3326
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.9774,
+            "track_time": 142.998,
+            "time": 266.8326,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 266.8326,
+        "end": 284.5993,
+        "time": 281.3993,
+        "text": "お礼をされるようなことなんてしてない。言ったでしょ？ケガのことなら、もうちゃんと対価はもらってるんだから",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/008442.jpg",
+        "observations": 9,
+        "variants": [
+          {
+            "text": "お礼をされるようなことなんてしてない",
+            "count": 1
+          },
+          {
+            "text": "お礼をされるようなことなんてしてない。言ったでしょ?ケガのことなら、も",
+            "count": 1
+          },
+          {
+            "text": "お礼をされるようなことなんてしてない。言ったでしょ?ケガのことなら、もうちゃんと対価はもらってるんだか",
+            "count": 1
+          },
+          {
+            "text": "お礼をされるようなことなんてしてない。言ったでしょ?ケガのことなら、もうちゃんと対価はもらってるんだから",
+            "count": 6
+          }
+        ],
+        "recovery_key": "main:44",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9911,
+      "critical": false,
+      "sourceTime": 281.3993,
+      "sourceUpdatedAt": "2026-10-07T11:06:47.500078+00:00",
+      "backgroundTime": 268.3326,
+      "bgmTime": 266.8326,
+      "frame": "evidence/node_9d176f1ec98d.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_punpun,face_punpun"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 242,
+          "studioEdgeId": "edge_0cf2cc97b7df",
+          "sourceLabel": "感情で押す",
+          "sourceQuote": "俺も、俺のために君を手伝いたいんだ！",
+          "labelTranslation": "以感情说服",
+          "quoteTranslation": "我也是为了自己，才想帮你的！",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:44 → main:45",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:47.491268+00:00"
+        },
+        {
+          "branchId": 243,
+          "studioEdgeId": "edge_ceeb192342e2",
+          "sourceLabel": "理屈で押す",
+          "sourceQuote": "",
+          "labelTranslation": "以道理说服",
+          "quoteTranslation": "",
+          "state": "missing",
+          "sourceState": "missing",
+          "notes": "录像确认：main:44；此后续未录到，保留缺失。",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:47.644211+00:00"
+        }
+      ]
+    },
+    "25": {
+      "status": "reviewed",
+      "sourceText": "あなたの……ため？　言ってることがめちゃくちゃだけど……どうしてそこまでしてくれるの？",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "为了……你自己？你说的话乱七八糟的……为什么愿意帮我到这个地步？",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:45；原始录像 287.1326–292.8992 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 逐帧复核修正：录像从思考切回压眉质疑，原生脸部样本核对。 证据：logs/capital-03/review-20261007；待连续播放核验。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:45）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 287.1326,
+          "end": 292.8992,
+          "visualTime": 288.6326,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_bdc19257eb6f",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8825,
+            "inliers": 183,
+            "color_agreement": 0.9371,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8169,
+            "method": "sift_geometry_color",
+            "time": 288.6326
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5472,
+            "inliers": 115,
+            "color_agreement": 0.2896,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7706,
+            "method": "sift_geometry_color",
+            "time": 288.6326
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.7733,
+            "track_time": 163.298,
+            "time": 287.1326,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 287.1326,
+        "end": 292.8992,
+        "time": 292.8992,
+        "text": "あなたの……ため?言ってることがめちゃくちゃだけど……どうしてそこまでしてくれるの？",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/008787.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "あなたの......ため?言ってることがめ",
+            "count": 1
+          },
+          {
+            "text": "あなたの......ため?言ってることがめちゃくちゃだけど......どうしてそこまでし",
+            "count": 1
+          },
+          {
+            "text": "あなたの......ため?言ってることがめちゃくちゃだけど......どうしてそこまでしてくれるの?",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:45",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9806,
+      "critical": false,
+      "sourceTime": 292.8992,
+      "sourceUpdatedAt": "2026-10-07T11:07:35.436136+00:00",
+      "backgroundTime": 288.6326,
+      "bgmTime": 287.1326,
+      "frame": "evidence/node_bdc19257eb6f.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_nayamu,face_nayamu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 251,
+          "studioEdgeId": "edge_459b6824555c",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:45 → main:46",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:47.823527+00:00"
+        }
+      ]
+    },
+    "26": {
+      "status": "reviewed",
+      "sourceText": "ええと、俺の目的か。……そうだなあ。うん！　一日一善だ！",
+      "sourceSpeaker": "スバル",
+      "translation": "呃，我的目的嘛……让我想想。对了！日行一善！",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:46；原始录像 293.5659–297.9992 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:46）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 293.5659,
+          "end": 297.9992,
+          "visualTime": 295.0659,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_fac810f382e5",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_subaru",
+            "cue": "advg_subaru_aiduchi",
+            "score": 0.959304,
+            "time": 293.7455,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8683,
+            "inliers": 159,
+            "color_agreement": 0.9366,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7555,
+            "method": "sift_geometry_color",
+            "time": 295.0659
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.569,
+            "inliers": 125,
+            "color_agreement": 0.3221,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.5893,
+            "method": "sift_geometry_color",
+            "time": 295.0659
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.4705,
+            "track_time": 83.338,
+            "time": 293.5659,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 293.5659,
+        "end": 297.9992,
+        "time": 297.9992,
+        "text": "ええと、俺の目的か。……そうだなあうん！一日一善だ!",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/008940.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "ええと、俺の目的か。......そうだ",
+            "count": 1
+          },
+          {
+            "text": "ええと、俺の目的か。......そうだなあうん!一日一善だ!",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:46",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9429,
+      "critical": false,
+      "sourceTime": 297.9992,
+      "sourceUpdatedAt": "2026-10-07T11:08:22.921460+00:00",
+      "backgroundTime": 295.0659,
+      "bgmTime": 293.5659,
+      "frame": "evidence/node_fac810f382e5.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_kangaeru"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_aiduchi"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 261,
+          "studioEdgeId": "edge_80307de63aa2",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:46 → main:47",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:47.982695+00:00"
+        }
+      ]
+    },
+    "27": {
+      "status": "reviewed",
+      "sourceText": "一日一善？",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "日行一善？",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:47；原始录像 298.6659–300.4992 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:47）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 298.6659,
+          "end": 300.4992,
+          "visualTime": 300.1659,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_33553a565049",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_emilia",
+            "cue": "advk_emilia_ozuozu",
+            "score": 0.959522,
+            "time": 298.8539,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8936,
+            "inliers": 174,
+            "color_agreement": 0.934,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.821,
+            "method": "sift_geometry_color",
+            "time": 300.1659
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5736,
+            "inliers": 119,
+            "color_agreement": 0.3023,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7772,
+            "method": "sift_geometry_color",
+            "time": 300.1659
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.4891,
+            "track_time": 2.045,
+            "time": 298.6659,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 298.6659,
+        "end": 300.4992,
+        "time": 300.4992,
+        "text": "一日一善？",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/009015.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "一日一善?",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:47",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9375,
+      "critical": false,
+      "sourceTime": 300.4992,
+      "sourceUpdatedAt": "2026-10-07T11:10:43.526325+00:00",
+      "backgroundTime": 300.1659,
+      "bgmTime": 298.6659,
+      "frame": "evidence/node_33553a565049.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_nayamu,face_normal02"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advk_emilia_ozuozu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 271,
+          "studioEdgeId": "edge_0ac62915e1e0",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:47 → main:48",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:48.129072+00:00"
+        }
+      ]
+    },
+    "28": {
+      "status": "reviewed",
+      "sourceText": "そう、一日に一個いいことをする。すると、死んだあとに天国へゴーだ。そこで夢の食っちゃ寝ライフを満喫するのさ",
+      "sourceSpeaker": "スバル",
+      "translation": "对，每天做一件好事，死后就能上天堂，在那里尽享梦想中的吃睡生活！",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:48；原始录像 301.1326–307.9992 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:48）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 301.1326,
+          "end": 307.9992,
+          "visualTime": 302.6326,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_6733a3fa410b",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_subaru",
+            "cue": "advg_subaru_aiduchi",
+            "score": 0.960533,
+            "time": 301.3559,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8604,
+            "inliers": 156,
+            "color_agreement": 0.9288,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8192,
+            "method": "sift_geometry_color",
+            "time": 302.6326
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5514,
+            "inliers": 112,
+            "color_agreement": 0.3115,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.5928,
+            "method": "sift_geometry_color",
+            "time": 302.6326
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.5897,
+            "track_time": 90.904,
+            "time": 301.1326,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 301.1326,
+        "end": 307.9992,
+        "time": 307.9992,
+        "text": "そう、一日に一個いいことをする。すると、死んだあとに天国へゴーだ。そこで夢の食っちゃ寝ライフを満喫するのさ",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/009240.jpg",
+        "observations": 4,
+        "variants": [
+          {
+            "text": "そう、一日に一個いいことをする。",
+            "count": 1
+          },
+          {
+            "text": "そう、一日に一個いいことをする。すると、死んだあとに天国へゴーだ。",
+            "count": 1
+          },
+          {
+            "text": "そう、一日に一個いいことをする。すると、死んだあとに天国へゴーだ。そこで夢の食っちゃ寝ライフ",
+            "count": 1
+          },
+          {
+            "text": "そう、一日に一個いいことをする。すると、死んだあとに天国へゴーだ。そこで夢の食っちゃ寝ライフを満喫するのさ",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:48",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9848,
+      "critical": false,
+      "sourceTime": 307.9992,
+      "sourceUpdatedAt": "2026-10-07T11:12:54.502920+00:00",
+      "backgroundTime": 302.6326,
+      "bgmTime": 301.1326,
+      "frame": "evidence/node_6733a3fa410b.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_doya"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_aiduchi"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 281,
+          "studioEdgeId": "edge_cee4b211dfb3",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:48 → main:49",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:48.285315+00:00"
+        }
+      ]
+    },
+    "29": {
+      "status": "reviewed",
+      "sourceText": "だからその私利私欲のために君を手伝う",
+      "sourceSpeaker": "スバル",
+      "translation": "所以，为了满足我的私欲，我要帮你。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:49；原始录像 308.2325–311.3659 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:49）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 308.2325,
+          "end": 311.3659,
+          "visualTime": 309.7325,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_10affafcab2c",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8674,
+            "inliers": 158,
+            "color_agreement": 0.9411,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7756,
+            "method": "sift_geometry_color",
+            "time": 309.7325
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5474,
+            "inliers": 119,
+            "color_agreement": 0.3131,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7521,
+            "method": "sift_geometry_color",
+            "time": 309.7325
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.6615,
+            "track_time": 98.004,
+            "time": 308.2325,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 308.2325,
+        "end": 311.3659,
+        "time": 311.3659,
+        "text": "だからその私利私欲のために君を手伝う",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/009341.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "だからその私利私",
+            "count": 1
+          },
+          {
+            "text": "だからその私利私欲のために君を手伝う",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:49",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9863,
+      "critical": false,
+      "sourceTime": 311.3659,
+      "sourceUpdatedAt": "2026-10-07T11:13:51.553626+00:00",
+      "backgroundTime": 309.7325,
+      "bgmTime": 308.2325,
+      "frame": "evidence/node_10affafcab2c.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal,face_doya"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 291,
+          "studioEdgeId": "edge_b0e0fe7ec203",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:49 → main:50",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:48.436128+00:00"
+        }
+      ]
+    },
+    "30": {
+      "status": "reviewed",
+      "sourceText": "この子の話だけど、悪意は感じないし、素直に受け入れてもいいと思うよ？",
+      "sourceSpeaker": "喋る小猫",
+      "translation": "虽然只是这孩子的一面之词，但也感觉不到恶意，坦率地接受不也挺好吗？",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:50；原始录像 312.0325–316.8659 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:50）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 312.0325,
+          "end": 316.8659,
+          "visualTime": 313.5325,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_acf93a1fb0e7",
+      "candidates": {
+        "model": [
+          {
+            "model": "pack01",
+            "label": "パック",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_pack",
+            "cue": "advk_pack_koekake",
+            "score": 0.967554,
+            "time": 312.2286,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.9034,
+            "inliers": 228,
+            "color_agreement": 0.9384,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8356,
+            "method": "sift_geometry_color",
+            "time": 313.5325
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5717,
+            "inliers": 165,
+            "color_agreement": 0.2881,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7771,
+            "method": "sift_geometry_color",
+            "time": 313.5325
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.6319,
+            "track_time": 101.805,
+            "time": 312.0325,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 312.0325,
+        "end": 316.8659,
+        "time": 316.8659,
+        "text": "この子の話だけど、悪意は感じないし、素直に受け入れてもいいと思うよ？",
+        "speaker": "喋る小猫",
+        "frame": "logs/capital-03/main/analysis/frames/009506.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "この子の話だけど、悪意は",
+            "count": 1
+          },
+          {
+            "text": "この子の話だけど、悪意は感じないし、素直に受け入れて",
+            "count": 1
+          },
+          {
+            "text": "この子の話だけど、悪意は感じないし、素直に受け入れてもいいと思うよ?",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:50",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.995,
+      "critical": false,
+      "sourceTime": 316.8659,
+      "sourceUpdatedAt": "2026-10-07T11:15:34.402360+00:00",
+      "backgroundTime": 313.5325,
+      "bgmTime": 312.0325,
+      "frame": "evidence/node_acf93a1fb0e7.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_pack,advk_pack_koekake"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_pack01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 301,
+          "studioEdgeId": "edge_9861344626d5",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:50 → main:51",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:48.606425+00:00"
+        }
+      ]
+    },
+    "31": {
+      "status": "reviewed",
+      "sourceText": "……わかった。でも本当に、何のお礼もできないからね",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "……我明白了。但我真的给不了你任何谢礼哦。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:51；原始录像 317.5325–321.4992 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:51）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 317.5325,
+          "end": 321.4992,
+          "visualTime": 319.0325,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_5b16d326c186",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_emilia",
+            "cue": "advk_emilia_rakutan",
+            "score": 0.930685,
+            "time": 317.7593,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [
+          {
+            "token": "act_egao",
+            "label": "笑容",
+            "score": 0.1058,
+            "model": "emilia01",
+            "time": 319.0325,
+            "phase": 2.05026256564141,
+            "box": [
+              -42,
+              298,
+              496,
+              928
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 2.5,
+            "onset_offset": 0.35,
+            "frame_scores": [
+              0.4294,
+              0.0914,
+              0.0868,
+              0.0964,
+              0.0871,
+              0.0953,
+              0.0983,
+              0.1071,
+              0.1027
+            ],
+            "ambiguous": true,
+            "margin": 0.0,
+            "alternative": false
+          },
+          {
+            "token": "act_egao02",
+            "label": "笑容",
+            "score": 0.1058,
+            "model": "emilia01",
+            "time": 319.0325,
+            "phase": 2.05026256564141,
+            "box": [
+              -42,
+              298,
+              496,
+              928
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 2.5,
+            "onset_offset": 0.35,
+            "frame_scores": [
+              0.4294,
+              0.0914,
+              0.0868,
+              0.0964,
+              0.0871,
+              0.0953,
+              0.0983,
+              0.1071,
+              0.1027
+            ],
+            "ambiguous": true,
+            "margin": 0.0,
+            "alternative": false
+          },
+          {
+            "token": "act_egao03",
+            "label": "笑容",
+            "score": 0.1058,
+            "model": "emilia01",
+            "time": 319.0325,
+            "phase": 2.05026256564141,
+            "box": [
+              -42,
+              298,
+              496,
+              928
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 2.5,
+            "onset_offset": 0.35,
+            "frame_scores": [
+              0.4294,
+              0.0914,
+              0.0868,
+              0.0964,
+              0.0871,
+              0.0953,
+              0.0983,
+              0.1071,
+              0.1027
+            ],
+            "ambiguous": true,
+            "margin": 0.0,
+            "alternative": false
+          },
+          {
+            "token": "act_hohoemu",
+            "label": "微笑",
+            "score": 0.0792,
+            "model": "emilia01",
+            "time": 319.0325,
+            "phase": 2.4,
+            "box": [
+              -42,
+              298,
+              496,
+              928
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 2.5,
+            "onset_offset": 0.35,
+            "frame_scores": [
+              0.5122,
+              0.0647,
+              0.0659,
+              0.0633,
+              0.0656,
+              0.0645,
+              0.0661,
+              0.0679,
+              0.0672
+            ],
+            "ambiguous": false,
+            "margin": 0.0,
+            "alternative": false
+          },
+          {
+            "token": "act_hohoemu02",
+            "label": "微笑",
+            "score": 0.0792,
+            "model": "emilia01",
+            "time": 319.0325,
+            "phase": 2.4,
+            "box": [
+              -42,
+              298,
+              496,
+              928
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 2.5,
+            "onset_offset": 0.35,
+            "frame_scores": [
+              0.5122,
+              0.0647,
+              0.0659,
+              0.0633,
+              0.0656,
+              0.0645,
+              0.0661,
+              0.0679,
+              0.0672
+            ],
+            "ambiguous": false,
+            "margin": 0.0,
+            "alternative": false
+          },
+          {
+            "token": "act_hohoemu03",
+            "label": "微笑",
+            "score": 0.0792,
+            "model": "emilia01",
+            "time": 319.0325,
+            "phase": 2.4,
+            "box": [
+              -42,
+              298,
+              496,
+              928
+            ],
+            "method": "registered_native_trajectory",
+            "frames": 9,
+            "rate": 2.5,
+            "onset_offset": 0.35,
+            "frame_scores": [
+              0.5122,
+              0.0647,
+              0.0659,
+              0.0633,
+              0.0656,
+              0.0645,
+              0.0661,
+              0.0679,
+              0.0672
+            ],
+            "ambiguous": false,
+            "margin": 0.0,
+            "alternative": false
+          }
+        ],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8853,
+            "inliers": 181,
+            "color_agreement": 0.9364,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.836,
+            "method": "sift_geometry_color",
+            "time": 319.0325
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5682,
+            "inliers": 128,
+            "color_agreement": 0.2984,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7963,
+            "method": "sift_geometry_color",
+            "time": 319.0325
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.5657,
+            "track_time": 107.305,
+            "time": 317.5325,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 317.5325,
+        "end": 321.4992,
+        "time": 321.4992,
+        "text": "……わかった。でも本当に、何のお礼もできないからね",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/009645.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "......わかった。でも本当に、何の",
+            "count": 1
+          },
+          {
+            "text": "......わかった。でも本当に、何のお礼もできないからね",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:51",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9896,
+      "critical": false,
+      "sourceTime": 321.4992,
+      "sourceUpdatedAt": "2026-10-07T11:17:40.578619+00:00",
+      "backgroundTime": 319.0325,
+      "bgmTime": 317.5325,
+      "frame": "evidence/node_5b16d326c186.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_nayamu,face_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advk_emilia_rakutan"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 311,
+          "studioEdgeId": "edge_6f5d2193f5e4",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:51 → main:52",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:48.795951+00:00"
+        }
+      ]
+    },
+    "32": {
+      "status": "reviewed",
+      "sourceText": "ああ、俺も本当にお礼がしたいんだ。大丈夫。俺に任せとけ！",
+      "sourceSpeaker": "スバル",
+      "translation": "嗯，我也真的只是想向你道谢。放心，交给我吧！",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:52；原始录像 322.1658–326.3992 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:52）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 322.1658,
+          "end": 326.3992,
+          "visualTime": 323.6658,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_dc0f7f8d3a1b",
+      "candidates": {
+        "model": [
+          {
+            "model": "subaru01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_after20y01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_butler01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_quest01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "subaru_winter01",
+            "label": "スバル",
+            "score": 1.0,
+            "method": "speaker_name"
+          },
+          {
+            "model": "beatrice02",
+            "label": "スバル&ベアトリス",
+            "score": 0.5455,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_subaru",
+            "cue": "advk_subaru_hagemasu",
+            "score": 0.985022,
+            "time": 322.3344,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8853,
+            "inliers": 169,
+            "color_agreement": 0.9361,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7853,
+            "method": "sift_geometry_color",
+            "time": 323.6658
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5759,
+            "inliers": 119,
+            "color_agreement": 0.3208,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.6792,
+            "method": "sift_geometry_color",
+            "time": 323.6658
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.5893,
+            "track_time": 25.545,
+            "time": 322.1658,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 322.1658,
+        "end": 326.3992,
+        "time": 324.9658,
+        "text": "ああ、俺も本当にお礼がしたいんだ。大丈夫。俺に任せとけ！",
+        "speaker": "スバル",
+        "frame": "logs/capital-03/main/analysis/frames/009749.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "ああ、俺も本当にお礼がした",
+            "count": 1
+          },
+          {
+            "text": "ああ、俺も本当にお礼がしたいんだ。大丈夫。俺に任せとけ!",
+            "count": 2
+          }
+        ],
+        "recovery_key": "main:52",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9822,
+      "critical": false,
+      "sourceTime": 324.9658,
+      "sourceUpdatedAt": "2026-10-07T13:14:18.673477+00:00",
+      "backgroundTime": 323.6658,
+      "bgmTime": 322.1658,
+      "frame": "evidence/node_dc0f7f8d3a1b.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advk_subaru_hagemasu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 321,
+          "studioEdgeId": "edge_9cdd7d3b6ac0",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:52 → main:53",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:48.972899+00:00"
+        }
+      ]
+    },
+    "33": {
+      "status": "reviewed",
+      "sourceText": "もう……。じゃあ、まずはどうするつもりなの？",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "真是的……那你打算先做什么？",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:53；原始录像 326.9992–346.8658 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:53）。原稿动作命令仍属画面重建；未录制分支保持待恢复。\n2026-10-16 前四话 SetJunction 审核：05录像330/334秒，路上へ／酒場へ双选菜单明确有分岐発生。补入阶段1显式SetJunction；原critical识别标记保留。证据 logs/capital-04/review-20261016/set-junction/recording-ledger.json。\n2026-11-01 分歧横幅接入核验：保留原有真实分歧标记与 command[1]=SetJunction；已在 Chrome 实际播放核验横幅出现、已恢复路线确认后清除及下一节点。截图与日志：logs/junction-command-20261101/node_4fad51ae2b60.png；审核记录见同目录 audit.json。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 326.9992,
+          "end": 346.8658,
+          "visualTime": 329,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_4fad51ae2b60",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.885,
+            "inliers": 178,
+            "color_agreement": 0.9391,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8315,
+            "method": "sift_geometry_color",
+            "time": 328.4992
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5542,
+            "inliers": 127,
+            "color_agreement": 0.2955,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7845,
+            "method": "sift_geometry_color",
+            "time": 328.4992
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.7671,
+            "track_time": 30.378,
+            "time": 326.9992,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 326.9992,
+        "end": 346.8658,
+        "time": 346.8658,
+        "text": "もうじゃあ、まずはどうするつもりなの？",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/010406.jpg",
+        "observations": 9,
+        "variants": [
+          {
+            "text": "もうじゃあ、まずはどう",
+            "count": 1
+          },
+          {
+            "text": "もうじゃあ、まずはどうするつもりなの?",
+            "count": 7
+          },
+          {
+            "text": "もう・じゃあ、まずはどうするつもりなの?",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:53",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9962,
+      "critical": true,
+      "sourceTime": 346.8658,
+      "sourceUpdatedAt": "2026-11-01T14:50:50.442704+00:00",
+      "backgroundTime": 328.4992,
+      "bgmTime": 326.9992,
+      "frame": "evidence/node_4fad51ae2b60.jpg",
+      "overlays": [
+        {
+          "field": "command",
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "",
+            "SetJunction",
+            ""
+          ]
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_nayamu,face_nayamu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 332,
+          "studioEdgeId": "edge_c1207a99a3dd",
+          "sourceLabel": "路上へ",
+          "sourceQuote": "人通りの多い道でなるべくたくさんの人に話を聞こう",
+          "labelTranslation": "去街上",
+          "quoteTranslation": "去人多的街道，尽量多找些人打听吧。",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:53 → main:54",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:49.164349+00:00"
+        },
+        {
+          "branchId": 333,
+          "studioEdgeId": "edge_8acb01062695",
+          "sourceLabel": "酒場へ",
+          "sourceQuote": "酒場とかさ、情報が集まってるところにいこうぜ",
+          "labelTranslation": "去酒馆",
+          "quoteTranslation": "去酒馆之类消息集中的地方吧。",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:53 → wilhelm:1",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:49.347498+00:00"
+        }
+      ]
+    },
+    "34": {
+      "status": "reviewed",
+      "sourceText": "人に聞いて回る……うん、納得。そうね、とにかく大通りに出ましょう",
+      "sourceSpeaker": "銀髪の少女",
+      "translation": "四处找人打听……嗯，有道理。那我们先去大街上吧。",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/main-review.json，main:54；原始录像 348.0324–352.6658 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（main:54）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-05",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 238062181,
+          "p": 5,
+          "start": 348.0324,
+          "end": 352.6658,
+          "visualTime": 349.5324,
+          "localDuration": 647.888,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_92889915ef96"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_65395bc4eee8",
+      "candidates": {
+        "model": [
+          {
+            "model": "emilia01",
+            "label": "エミリア",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_emilia",
+            "cue": "advg_emilia_nattoku",
+            "score": 0.861645,
+            "time": 348.2055,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.8996,
+            "inliers": 179,
+            "color_agreement": 0.9325,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8261,
+            "method": "sift_geometry_color",
+            "time": 349.5324
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5521,
+            "inliers": 122,
+            "color_agreement": 0.3053,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7904,
+            "method": "sift_geometry_color",
+            "time": 349.5324
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.7376,
+            "track_time": 160.527,
+            "time": 348.0324,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 348.0324,
+        "end": 352.6658,
+        "time": 352.6658,
+        "text": "人に聞いて回る……うん、納得。そうね、とにかく大通りに出ましょう",
+        "speaker": "銀髪の少女",
+        "frame": "logs/capital-03/main/analysis/frames/010580.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "人に聞いて回る......うん、納得",
+            "count": 1
+          },
+          {
+            "text": "人に聞いて回る......うん、納得。そうね、とにかく大通りに出",
+            "count": 1
+          },
+          {
+            "text": "人に聞いて回る......うん、納得。そうね、とにかく大通りに出ましょう",
+            "count": 1
+          }
+        ],
+        "recovery_key": "main:54",
+        "review_source": "logs/capital-03/main-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9934,
+      "critical": false,
+      "sourceTime": 352.6658,
+      "sourceUpdatedAt": "2026-10-07T13:15:49.457410+00:00",
+      "backgroundTime": 349.5324,
+      "bgmTime": 348.0324,
+      "frame": "evidence/node_65395bc4eee8.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_unazuku,face_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advg_emilia_nattoku"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 341,
+          "studioEdgeId": "edge_cd6ffa649542",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：main:54 → main:interview_title",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:49.512262+00:00"
+        }
+      ]
+    },
+    "35": {
+      "status": "reviewed",
+      "sourceText": "うーん、酒場なら確かに怪しい情報も聞けると思うけど……",
+      "sourceSpeaker": "喋る小猫",
+      "translation": "嗯，酒馆里确实可能打听到些可疑的消息……",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/wilhelm-review.json，wilhelm:1；原始录像 9.3–13.4666 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（wilhelm:1）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-06",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 235823157,
+          "p": 6,
+          "start": 9.3,
+          "end": 13.4666,
+          "visualTime": 10.8,
+          "localDuration": 320.156077,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_f4a26705cdab"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_7eab60aa56bd",
+      "candidates": {
+        "model": [
+          {
+            "model": "pack01",
+            "label": "パック",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [
+          {
+            "bank": "vo_adv_pack",
+            "cue": "advk_pack_aratamete",
+            "score": 0.971104,
+            "time": 9.5041,
+            "method": "waveform_correlation"
+          }
+        ],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.9257,
+            "inliers": 230,
+            "color_agreement": 0.9395,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8394,
+            "method": "sift_geometry_color",
+            "time": 10.8
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5883,
+            "inliers": 170,
+            "color_agreement": 0.2793,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7951,
+            "method": "sift_geometry_color",
+            "time": 10.8
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.5358,
+            "track_time": 48.636,
+            "time": 9.3,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 9.3,
+        "end": 13.4666,
+        "time": 13.4666,
+        "text": "う一ん、酒場なら確かに怪しい情報も聞けると思うけど……",
+        "speaker": "喋る小猫",
+        "frame": "logs/capital-03/wilhelm/analysis/frames/000404.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "うーん、酒場なら",
+            "count": 1
+          },
+          {
+            "text": "うーん、酒場なら確かに怪しい情報も聞け",
+            "count": 1
+          },
+          {
+            "text": "う一ん、酒場なら確かに怪しい情報も聞けると思うけど......",
+            "count": 1
+          }
+        ],
+        "recovery_key": "wilhelm:1",
+        "review_source": "logs/capital-03/wilhelm-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9625,
+      "critical": false,
+      "sourceTime": 13.4666,
+      "sourceUpdatedAt": "2026-10-07T06:23:46.023002+00:00",
+      "backgroundTime": 10.8,
+      "bgmTime": 9.3,
+      "frame": "evidence/node_7eab60aa56bd.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "bg_music",
+          "before": "",
+          "after": "bgm_adv_comical01_cd2_06"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_kangaeru"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_pack,advk_pack_aratamete"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_pack01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 351,
+          "studioEdgeId": "edge_d8173ae6353d",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：wilhelm:1 → wilhelm:2",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:58.994659+00:00"
+        }
+      ]
+    },
+    "36": {
+      "status": "reviewed",
+      "sourceText": "うちの娘をそんな場所に連れていくなら、君には暴漢相手の弾除けになってもらうよ？",
+      "sourceSpeaker": "喋る小猫",
+      "translation": "不过，要带我家女儿去那种地方的话，你可得替她挡住那些暴徒哦？",
+      "notes": "第三话录像还原；待人工审核。证据：logs/capital-03/wilhelm-review.json，wilhelm:2；原始录像 13.7–19.0333 秒。 原稿缺失，scenario_id 为 Studio 编号；动作按源帧与原生参考图重建，不声称为原稿命令。\n2026-10-07 AI 录像审核完成：对白、素材、动作/表情及进入/结束演出已对照相邻源帧，并在 Studio 连续播放核验。 证据：logs/capital-03/review-20261007/audit.json（wilhelm:2）。原稿动作命令仍属画面重建；未录制分支保持待恢复。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-06",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 235823157,
+          "p": 6,
+          "start": 13.7,
+          "end": 19.0333,
+          "visualTime": 15.2,
+          "localDuration": 320.156077,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_f4a26705cdab"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [],
+      "studioNodeId": "node_09086d8d4d8f",
+      "candidates": {
+        "model": [
+          {
+            "model": "pack01",
+            "label": "パック",
+            "score": 1.0,
+            "method": "speaker_name"
+          }
+        ],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [
+          {
+            "id": "bg/bg013a_street",
+            "score": 0.9105,
+            "inliers": 233,
+            "color_agreement": 0.9433,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.8394,
+            "method": "sift_geometry_color",
+            "time": 15.2
+          },
+          {
+            "id": "bg/bg013b_street",
+            "score": 0.5741,
+            "inliers": 170,
+            "color_agreement": 0.2734,
+            "screen_coverage": 1.0,
+            "evidence_coverage": 0.7835,
+            "method": "sift_geometry_color",
+            "time": 15.2
+          }
+        ],
+        "bgm": [
+          {
+            "id": "bgm_adv_comical01_cd2_06",
+            "score": 0.905,
+            "track_time": 53.036,
+            "time": 13.7,
+            "duration": 8.0,
+            "method": "excerpt_waveform_correlation"
+          }
+        ],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 13.7,
+        "end": 19.0333,
+        "time": 19.0333,
+        "text": "うちの娘をそんな場所に連れていくなら、君には暴漢相手の弾除けになってもらうよ？",
+        "speaker": "喋る小猫",
+        "frame": "logs/capital-03/wilhelm/analysis/frames/000571.jpg",
+        "observations": 4,
+        "variants": [
+          {
+            "text": "うちの娘を",
+            "count": 1
+          },
+          {
+            "text": "うちの娘をそんな場所に連れていく",
+            "count": 1
+          },
+          {
+            "text": "うちの娘をそんな場所に連れていくなら、君には暴漢相手の",
+            "count": 1
+          },
+          {
+            "text": "うちの娘をそんな場所に連れていくなら、君には暴漢相手の弾除けになってもらうよ?",
+            "count": 1
+          }
+        ],
+        "recovery_key": "wilhelm:2",
+        "review_source": "logs/capital-03/wilhelm-review.json",
+        "native_scenario_id_recovered": false,
+        "human_review": "pending"
+      },
+      "ocrScore": 0.9737,
+      "critical": false,
+      "sourceTime": 19.0333,
+      "sourceUpdatedAt": "2026-10-07T06:23:46.231469+00:00",
+      "backgroundTime": 15.2,
+      "bgmTime": 13.7,
+      "frame": "evidence/node_09086d8d4d8f.jpg",
+      "overlays": [
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_nayamu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_pack01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 361,
+          "studioEdgeId": "edge_3fb1c81df700",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像确认：wilhelm:2 → wilhelm:4",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-07T04:05:59.161374+00:00"
+        }
+      ]
+    }
+  },
+  "unresolvedBranches": [
+    {
+      "branchId": 192,
+      "studioEdgeId": "edge_2ab635c3ea93",
+      "sourceLabel": "ほどほどに主張",
+      "sourceQuote": "",
+      "labelTranslation": "适度坚持",
+      "quoteTranslation": "",
+      "state": "missing",
+      "scenarioId": 19,
+      "notes": "录像确认：main:39；此后续未录到，保留缺失。"
+    },
+    {
+      "branchId": 243,
+      "studioEdgeId": "edge_ceeb192342e2",
+      "sourceLabel": "理屈で押す",
+      "sourceQuote": "",
+      "labelTranslation": "以道理说服",
+      "quoteTranslation": "",
+      "state": "missing",
+      "scenarioId": 24,
+      "notes": "录像确认：main:44；此后续未录到，保留缺失。"
+    }
+  ],
+  "issues": [
+    {
+      "code": "native_metadata_unrecovered",
+      "severity": "blocker",
+      "message": "未取得此场景原稿：原生分支编号为稳定编写编号，奖励向量暂为零，分支运行条件未恢复。"
+    },
+    {
+      "code": "missing_transition",
+      "severity": "blocker",
+      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+      "scenarioId": 19,
+      "branchId": 192
+    },
+    {
+      "code": "missing_transition",
+      "severity": "blocker",
+      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+      "scenarioId": 24,
+      "branchId": 243
+    }
+  ],
+  "excludedStudioNodes": []
+}

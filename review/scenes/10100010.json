@@ -1,0 +1,3530 @@
+{
+  "version": 1,
+  "sceneId": 10100010,
+  "provenance": {
+    "source": "reconstructed",
+    "language": "zh-CN",
+    "workspaceRevision": 2656,
+    "workspaceSha256": "ebd974d90f89088fa3a504c1f419ae01c352a24e6bd80209c5ec651295d38522",
+    "workspaceFile": "data/story_studio/project.json",
+    "arrayOrder": "authored-saved-route",
+    "recoveredOriginalOrder": false,
+    "nativeIdentifierAllocation": "scene*100000+scenario; branch_id=scenario*10+type; branch_uid=scene*100000+10000+branch_id; transition_id=branch_id*100+1",
+    "fallbackScenarioIds": [],
+    "originalOnlyScenarioIds": [],
+    "excludedStudioNodes": []
+  },
+  "scenarios": {
+    "1": {
+      "status": "draft",
+      "sourceText": "",
+      "sourceSpeaker": "",
+      "translation": "",
+      "notes": "手动添加\n录像 0–4 秒为开场门动画；对照第三话开场资源 adv_dive01_in。接入第四话场景入口。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 0.0,
+          "end": 4.0,
+          "visualTime": 0.0,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 1
+        }
+      ],
+      "studioNodeId": "node_1f184ad9b3f2",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "origin": "manual"
+      },
+      "ocrScore": null,
+      "critical": false,
+      "sourceTime": 0.0,
+      "sourceUpdatedAt": "2026-10-13T15:03:25.674429+00:00",
+      "backgroundTime": 0.0,
+      "bgmTime": 0.0,
+      "frame": "",
+      "overlays": [
+        {
+          "field": "video",
+          "before": "",
+          "after": "adv_dive01_in"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 11,
+          "studioEdgeId": "edge_ea0b4df06203",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "\n录像 0–10 秒：门动画 → 流程图 → 迷子の女の子标题。",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:41.360608+00:00"
+        }
+      ]
+    },
+    "2": {
+      "status": "draft",
+      "sourceText": "迷子の女の子",
+      "sourceSpeaker": "",
+      "translation": "迷路的小女孩",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 10.0000–10.0000 秒。 标题文字按 Studio 原生场景目录规范化；原始 OCR 标题保留在 evidence。\n2026-10-13：标题原画面 10 秒核对；场景归属由 Adv.d 目录和录像流程图共同确认。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 10.0,
+          "end": 10.0,
+          "visualTime": 10.0,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 2
+        }
+      ],
+      "studioNodeId": "node_55d0d067385f",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "heading",
+        "start": 10.0,
+        "end": 10.0,
+        "time": 10.0,
+        "text": "迷子の女の子",
+        "speaker": "",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/000300.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "迷子の女の子",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9998
+      },
+      "ocrScore": 0.9998,
+      "critical": false,
+      "sourceTime": 10.0,
+      "sourceUpdatedAt": "2026-10-13T15:03:29.084936+00:00",
+      "backgroundTime": 10.0,
+      "bgmTime": 10.0,
+      "frame": "evidence/node_55d0d067385f.jpg",
+      "branches": [
+        {
+          "branchId": 21,
+          "studioEdgeId": "edge_052101595fbb",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "3": {
+      "status": "draft",
+      "sourceText": "互いの自己紹介が終わり、捜索を再開したスバルとサテラ。なかなか成果が出ない中、サテラは小さな女の子に目を留め……",
+      "sourceSpeaker": "",
+      "translation": "互相介绍之后，昴与莎缇拉重新开始寻找。迟迟没有收获时，莎缇拉注意到了一个小女孩……",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 12.0000–20.0000 秒。\n2026-10-13：旁白面板应为 TEXT；录像与 music-candidates.json 确认本场景 BGM。只在起始节点设置曲目，后续继承。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 12.0,
+          "end": 20.0,
+          "visualTime": 13.5,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 3
+        }
+      ],
+      "studioNodeId": "node_157c4c1e1243",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 12.0,
+        "end": 20.0,
+        "time": 20.0,
+        "text": "互いの自己紹介が終わり、捜索を再開したスバルとサテラ。なかなか成果が出ない中、サテラは小さな女の子に目を留め……",
+        "speaker": "",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/000600.jpg",
+        "observations": 4,
+        "variants": [
+          {
+            "text": "互いの",
+            "count": 1
+          },
+          {
+            "text": "互いの自己紹介が終わり、捜索を再開したスバルと",
+            "count": 1
+          },
+          {
+            "text": "互いの自己紹介が終わり、捜索を再開したスバルとサテラ。なかなか成果が出ない中、サテラは",
+            "count": 1
+          },
+          {
+            "text": "互いの自己紹介が終わり、捜索を再開したスバルとサテラ。なかなか成果が出ない中、サテラは小さな女の子に目を留め......",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9766
+      },
+      "ocrScore": 0.9766,
+      "critical": false,
+      "sourceTime": 20.0,
+      "sourceUpdatedAt": "2026-10-13T15:03:29.504221+00:00",
+      "backgroundTime": 13.5,
+      "bgmTime": 20.0,
+      "frame": "evidence/node_157c4c1e1243.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "bg_music",
+          "before": "",
+          "after": "bgm_adv_every02_cd2_07"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 31,
+          "studioEdgeId": "edge_1ba7d1b37bf7",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "4": {
+      "status": "draft",
+      "sourceText": "――王都の商業街・昼",
+      "sourceSpeaker": "",
+      "translation": "——王都商业街·白天",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 22.0000–22.0000 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 22.0,
+          "end": 22.0,
+          "visualTime": 22.0,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 4
+        }
+      ],
+      "studioNodeId": "node_585be9ad3c2b",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 22.0,
+        "end": 22.0,
+        "time": 22.0,
+        "text": "王都の商業街・昼",
+        "speaker": "",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/000660.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "王都の商業街・昼",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9926
+      },
+      "ocrScore": 0.9926,
+      "critical": false,
+      "sourceTime": 22.0,
+      "sourceUpdatedAt": "2026-10-13T15:03:29.988591+00:00",
+      "backgroundTime": 22.0,
+      "bgmTime": 22.0,
+      "frame": "evidence/node_585be9ad3c2b.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 41,
+          "studioEdgeId": "edge_0d1bd98127d5",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "5": {
+      "status": "draft",
+      "sourceText": "ねえ、スバル。あの子、迷子になってる気がしない？",
+      "sourceSpeaker": "サテラ",
+      "translation": "喂，昴。那个孩子是不是迷路了？",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 24.0000–26.0000 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 23.2,
+          "end": 26.0,
+          "visualTime": 25.8,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 5
+        }
+      ],
+      "studioNodeId": "node_3a54dbc2ef80",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 24.0,
+        "end": 26.0,
+        "time": 26.0,
+        "text": "ねえ、スバル。あの子、迷子になってる気がしない？",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/000780.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "ねえ、スバル。",
+            "count": 1
+          },
+          {
+            "text": "ねえ、スバル。あの子、迷子になってる気がしない?",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.983
+      },
+      "ocrScore": 0.983,
+      "critical": false,
+      "sourceTime": 26.0,
+      "sourceUpdatedAt": "2026-10-13T15:03:30.471968+00:00",
+      "backgroundTime": 25.5,
+      "bgmTime": 26.0,
+      "frame": "evidence/node_3a54dbc2ef80.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advg_emilia_subaru"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 51,
+          "studioEdgeId": "edge_60d45038096b",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像中的相邻对白；待人工审核。\n录像 27.7–29.4 秒无对白女孩卡片。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:41.768531+00:00"
+        }
+      ]
+    },
+    "29": {
+      "status": "draft",
+      "sourceText": "",
+      "sourceSpeaker": "",
+      "translation": "",
+      "notes": "手动添加\n录像 27.7–29.4 秒：无文字面板，切到绿发女孩哭泣的卡片；不能跳过这张无对白角色卡。模型与哭泣表情由 green01-body/face.png 核实；身体入场动作仍待多帧精核。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 27.7,
+          "end": 29.4,
+          "visualTime": 29,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 29
+        }
+      ],
+      "studioNodeId": "node_baf1771e0b32",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "origin": "manual"
+      },
+      "ocrScore": null,
+      "critical": false,
+      "sourceTime": 27.7,
+      "sourceUpdatedAt": "2026-10-13T15:03:26.411366+00:00",
+      "backgroundTime": 27.7,
+      "bgmTime": 27.7,
+      "frame": "",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal,face_naku"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_green01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 291,
+          "studioEdgeId": "edge_69f03750fb6b",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:42.484979+00:00"
+        }
+      ]
+    },
+    "6": {
+      "status": "draft",
+      "sourceText": "迷子……あー、確かに。とはいえ、俺たちも現在進行形で、探し物をしてる真っ最中なんだけど……",
+      "sourceSpeaker": "スバル",
+      "translation": "迷路……啊，确实。不过，我们自己也正在找东西啊……",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 31.9999–35.9999 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 30.0,
+          "end": 35.9999,
+          "visualTime": 33.4999,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 6
+        }
+      ],
+      "studioNodeId": "node_af7176da76ad",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 31.9999,
+        "end": 35.9999,
+        "time": 35.9999,
+        "text": "迷子……あ一、確かに。とはいえ、俺たちも現在進行形で、探し物をしてる真っ最中なんだけど……",
+        "speaker": "スバル",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/001080.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "迷子......あ一、確かに。とはいえ、俺たち",
+            "count": 1
+          },
+          {
+            "text": "迷子......あ一、確かに。とはいえ、俺たちも現在進行形で、探し物をしてる真っ最中なんだけど......",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9654
+      },
+      "ocrScore": 0.9654,
+      "critical": false,
+      "sourceTime": 35.9999,
+      "sourceUpdatedAt": "2026-10-13T15:03:30.911913+00:00",
+      "backgroundTime": 33.4999,
+      "bgmTime": 35.9999,
+      "frame": "evidence/node_af7176da76ad.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advk_subaru_aratamete"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 61,
+          "studioEdgeId": "edge_9a3f9e2ef58c",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "7": {
+      "status": "draft",
+      "sourceText": "そんなこと言ってる間に、あの子がどこかいっちゃったらどうするの。早く声をかけてあげないと……",
+      "sourceSpeaker": "サテラ",
+      "translation": "说这些的时候，要是那孩子跑到别处去了怎么办？得赶紧过去问问她……",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 37.9999–61.9999 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 36.5,
+          "end": 61.9999,
+          "visualTime": 39.4999,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 7
+        },
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 7,
+          "branchId": 73
+        }
+      ],
+      "studioNodeId": "node_4f65c6e61a33",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 37.9999,
+        "end": 61.9999,
+        "time": 61.9999,
+        "text": "そんなこと言ってる間に、あの子がどこかいっちゃったらどうするの。早く声をかけてあげないと……",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/001860.jpg",
+        "observations": 8,
+        "variants": [
+          {
+            "text": "そんなこと言ってる間に、あ",
+            "count": 1
+          },
+          {
+            "text": "そんなこと言ってる間に、あの子がどこかいっちゃったらどうするの。早く声をかけてあげないと......",
+            "count": 2
+          },
+          {
+            "text": "そんなこと言ってる間に、あの子がどこかいっちゃったらどうするの。早く声をかけてあげないと",
+            "count": 5
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9797
+      },
+      "ocrScore": 0.9797,
+      "critical": false,
+      "sourceTime": 61.9999,
+      "sourceUpdatedAt": "2026-10-13T15:03:31.340052+00:00",
+      "backgroundTime": 39.4999,
+      "bgmTime": 61.9999,
+      "frame": "evidence/node_4f65c6e61a33.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 72,
+          "studioEdgeId": "edge_c7125a035e69",
+          "sourceLabel": "認識を確認する",
+          "sourceQuote": "その優しさは超美徳だし、実際に助けられた俺が言うのもなんだけど、今の置かれた状況とかわかってる？",
+          "labelTranslation": "确认她的认识",
+          "quoteTranslation": "你的善良是很棒的美德。我明明受过你的帮助，说这些不太合适，但你明白自己现在的处境吗？",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "第一章第四话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-04/half-hz/transcript.json；菜单约 44.0000 秒。\n2026-10-13 人工核对：62 秒左选项气泡确认后收起，64.7 秒进入「うん……わかってる」。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:46.445950+00:00",
+          "selection_evidence": "未确定；录像只证明选项文字存在。"
+        },
+        {
+          "branchId": 73,
+          "studioEdgeId": "edge_fbdab22800bf",
+          "sourceLabel": "状況を説明する",
+          "sourceQuote": "わかるけど、現状、犯人とは差が広がるばっかりだ。ここでさらに時間を食ったら、徽章を取り戻せなくなるかもしれないぞ",
+          "labelTranslation": "说明状况",
+          "quoteTranslation": "我理解，可是我们和犯人的距离正在不断拉大。再在这里耽搁，说不定就找不回徽章了。",
+          "state": "missing",
+          "sourceState": "missing",
+          "notes": "第一章第四话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-04/half-hz/transcript.json；菜单约 44.0000 秒。\n48/52 秒可见右选项预览气泡；未选中，未录像的后续保留 missing。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:46.835767+00:00",
+          "selection_evidence": "未确定；录像只证明选项文字存在。"
+        }
+      ]
+    },
+    "8": {
+      "status": "draft",
+      "sourceText": "うん……わかってる。わかってる、けど……",
+      "sourceSpeaker": "サテラ",
+      "translation": "嗯……我知道。我知道，可是……",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 65.9999–67.9999 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 64.4,
+          "end": 67.9999,
+          "visualTime": 66.5,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 8
+        }
+      ],
+      "studioNodeId": "node_8cec5d13a10b",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 65.9999,
+        "end": 67.9999,
+        "time": 67.9999,
+        "text": "うん……わかってる。わかってる、けど",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/002040.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "うん......わかってる。わかってる",
+            "count": 1
+          },
+          {
+            "text": "うん......わかってる。わかってる、けど",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9824
+      },
+      "ocrScore": 0.9824,
+      "critical": false,
+      "sourceTime": 67.9999,
+      "sourceUpdatedAt": "2026-10-13T15:03:31.784467+00:00",
+      "backgroundTime": 67.4999,
+      "bgmTime": 67.9999,
+      "frame": "evidence/node_8cec5d13a10b.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_nayamu"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advg_emilia_kangaeru"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 81,
+          "studioEdgeId": "edge_d2c7bdfa3ae1",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "9": {
+      "status": "draft",
+      "sourceText": "でもあの子は、今、泣いてる。そうでしょ、スバル？",
+      "sourceSpeaker": "サテラ",
+      "translation": "可是那孩子现在正在哭。对吧，昴？",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 71.9999–73.9999 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 71.9999,
+          "end": 73.9999,
+          "visualTime": 73.4999,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 9
+        }
+      ],
+      "studioNodeId": "node_509c9e82c1f0",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 71.9999,
+        "end": 73.9999,
+        "time": 73.9999,
+        "text": "でもあの子は、今、泣いてる。そうでしょ、スバル？",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/002220.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "でもあの子は、今、泣いてる。そうでしょ、スバル?",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9794
+      },
+      "ocrScore": 0.9794,
+      "critical": false,
+      "sourceTime": 73.9999,
+      "sourceUpdatedAt": "2026-10-13T15:03:32.241968+00:00",
+      "backgroundTime": 73.4999,
+      "bgmTime": 73.9999,
+      "frame": "evidence/node_509c9e82c1f0.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 91,
+          "studioEdgeId": "edge_50f1e442d931",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "10": {
+      "status": "draft",
+      "sourceText": "付き合いきれないって言うならそれでもいいわ",
+      "sourceSpeaker": "サテラ",
+      "translation": "你要是不愿意陪我，那也没关系。",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 75.9999–85.9999 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 75.9999,
+          "end": 85.9999,
+          "visualTime": 77.4999,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 10
+        },
+        {
+          "code": "missing_transition",
+          "severity": "blocker",
+          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+          "scenarioId": 10,
+          "branchId": 102
+        }
+      ],
+      "studioNodeId": "node_41435157b693",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 75.9999,
+        "end": 85.9999,
+        "time": 83.9999,
+        "text": "付き合いきれないって言うならそれでもいいわ",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/002520.jpg",
+        "observations": 4,
+        "variants": [
+          {
+            "text": "付き合いきれないって言うならそれでもいいわ",
+            "count": 4
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9947
+      },
+      "ocrScore": 0.9947,
+      "critical": false,
+      "sourceTime": 83.9999,
+      "sourceUpdatedAt": "2026-10-13T15:03:32.673614+00:00",
+      "backgroundTime": 77.4999,
+      "bgmTime": 83.9999,
+      "frame": "evidence/node_41435157b693.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 102,
+          "studioEdgeId": "edge_6044c9318271",
+          "sourceLabel": "説得する",
+          "sourceQuote": "",
+          "labelTranslation": "劝说",
+          "quoteTranslation": "",
+          "state": "missing",
+          "sourceState": "missing",
+          "notes": "第一章第四话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-04/half-hz/transcript.json；菜单约 80.0000 秒。\n左选项未选中，缺少后续录像；不把未见路线接到已知路线。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:47.605867+00:00",
+          "selection_evidence": "未确定；录像只证明选项文字存在。"
+        },
+        {
+          "branchId": 103,
+          "studioEdgeId": "edge_89ef0482db7f",
+          "sourceLabel": "同意する",
+          "sourceQuote": "わかったわかった！　付き合うよ",
+          "labelTranslation": "同意",
+          "quoteTranslation": "知道啦，知道啦！我陪你就是了。",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "第一章第四话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-04/half-hz/transcript.json；菜单约 80.0000 秒。\n86 秒右选项确认高亮，90 秒进入后续。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:47.226224+00:00",
+          "selection_evidence": "未确定；录像只证明选项文字存在。"
+        }
+      ]
+    },
+    "11": {
+      "status": "draft",
+      "sourceText": "ここまでありがと、スバル……って、え？　付き合うって……",
+      "sourceSpeaker": "サテラ",
+      "translation": "谢谢你陪我到这里，昴……咦？你说愿意陪我……？",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 89.9999–91.9999 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 89.9999,
+          "end": 91.9999,
+          "visualTime": 91.4999,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 11
+        }
+      ],
+      "studioNodeId": "node_e8f852ec3e91",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 89.9999,
+        "end": 91.9999,
+        "time": 91.9999,
+        "text": "ここまでありがと、スバル……って、え?付き合うって",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/002760.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "ここまでありがと、",
+            "count": 1
+          },
+          {
+            "text": "ここまでありがと、スバル......って、え?付き合うって",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9315
+      },
+      "ocrScore": 0.9315,
+      "critical": false,
+      "sourceTime": 91.9999,
+      "sourceUpdatedAt": "2026-10-13T15:03:33.083146+00:00",
+      "backgroundTime": 91.4999,
+      "bgmTime": 91.9999,
+      "frame": "evidence/node_e8f852ec3e91.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 111,
+          "studioEdgeId": "edge_eff07854efd6",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "12": {
+      "status": "draft",
+      "sourceText": "言葉通りの意味だよ。……言ったろ？俺は手伝いたいから手伝ってるんだ",
+      "sourceSpeaker": "スバル",
+      "translation": "就是字面上的意思啊。……我不是说了吗？我想帮忙，所以才帮你的。",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 93.9998–97.9998 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 93.9998,
+          "end": 97.9998,
+          "visualTime": 95.4998,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 12
+        }
+      ],
+      "studioNodeId": "node_471fa661b02e",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 93.9998,
+        "end": 97.9998,
+        "time": 97.9998,
+        "text": "言葉通りの意味だよ。……言ったろ？俺は手伝いたいから手伝ってるんだ",
+        "speaker": "スバル",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/002940.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "言",
+            "count": 1
+          },
+          {
+            "text": "言葉通りの意味だよ。......言ったろ?俺は",
+            "count": 1
+          },
+          {
+            "text": "言葉通りの意味だよ。......言ったろ?俺は手伝いたいから手伝ってるんだ",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9803
+      },
+      "ocrScore": 0.9803,
+      "critical": false,
+      "sourceTime": 97.9998,
+      "sourceUpdatedAt": "2026-10-13T15:03:33.509074+00:00",
+      "backgroundTime": 95.4998,
+      "bgmTime": 97.9998,
+      "frame": "evidence/node_471fa661b02e.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_doui"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 121,
+          "studioEdgeId": "edge_0f6ed0901fd6",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "13": {
+      "status": "draft",
+      "sourceText": "――！",
+      "sourceSpeaker": "緑の髪の女の子",
+      "translation": "——！",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 101.9998–101.9998 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 99.6,
+          "end": 101.9998,
+          "visualTime": 101.9998,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 13
+        }
+      ],
+      "studioNodeId": "node_35b58292cc6f",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 101.9998,
+        "end": 101.9998,
+        "time": 101.9998,
+        "text": "—!",
+        "speaker": "緑の髪の女の子",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/003060.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "—!",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.8446
+      },
+      "ocrScore": 0.8446,
+      "critical": false,
+      "sourceTime": 101.9998,
+      "sourceUpdatedAt": "2026-10-13T15:03:34.065798+00:00",
+      "backgroundTime": 101.9998,
+      "bgmTime": 101.9998,
+      "frame": "evidence/node_35b58292cc6f.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal,face_naku"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_green01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 131,
+          "studioEdgeId": "edge_c63c9f48d9ce",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "14": {
+      "status": "draft",
+      "sourceText": "探してた相手じゃなくて、ごめんね？",
+      "sourceSpeaker": "サテラ",
+      "translation": "抱歉，我不是你在找的人。",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 103.9998–103.9998 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 103.9998,
+          "end": 105.2,
+          "visualTime": 104.8,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 14
+        }
+      ],
+      "studioNodeId": "node_cfa9dced9011",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 103.9998,
+        "end": 103.9998,
+        "time": 103.9998,
+        "text": "探してた相手じゃなくて、ごめ",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/003120.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "探してた相手じゃなくて、ごめ",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9681
+      },
+      "ocrScore": 0.9681,
+      "critical": false,
+      "sourceTime": 103.9998,
+      "sourceUpdatedAt": "2026-10-13T15:03:34.473425+00:00",
+      "backgroundTime": 103.9998,
+      "bgmTime": 103.9998,
+      "frame": "evidence/node_cfa9dced9011.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 141,
+          "studioEdgeId": "edge_1f64eac016a4",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "15": {
+      "status": "draft",
+      "sourceText": "ねえ、どうしたの？　お父さんかお母さんは？　一緒じゃないの？",
+      "sourceSpeaker": "サテラ",
+      "translation": "怎么了？爸爸妈妈呢？没有和你在一起吗？",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 105.9998–109.9998 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 105.9998,
+          "end": 109.9998,
+          "visualTime": 107.4998,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 15
+        }
+      ],
+      "studioNodeId": "node_6eb222a0db0d",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 105.9998,
+        "end": 109.9998,
+        "time": 109.9998,
+        "text": "ねえ、どうしたの?お父さんかお母さんは？一緒じゃないの?",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/003300.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "ね",
+            "count": 1
+          },
+          {
+            "text": "ねえ、どうしたの?お父さんかお母さんは?一緒じゃないの?",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9629
+      },
+      "ocrScore": 0.9629,
+      "critical": false,
+      "sourceTime": 109.9998,
+      "sourceUpdatedAt": "2026-10-13T15:03:34.888742+00:00",
+      "backgroundTime": 107.4998,
+      "bgmTime": 109.9998,
+      "frame": "evidence/node_6eb222a0db0d.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advk_emilia_koekake"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 151,
+          "studioEdgeId": "edge_f5c385669d41",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "16": {
+      "status": "draft",
+      "sourceText": "ううっ……うっ……うえっ……えっ……",
+      "sourceSpeaker": "緑の髪の女の子",
+      "translation": "呜呜……呜……呜哇……呜……",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 111.9998–113.9998 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 111.0,
+          "end": 113.9998,
+          "visualTime": 113.4998,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 16
+        }
+      ],
+      "studioNodeId": "node_7dde100df577",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 111.9998,
+        "end": 113.9998,
+        "time": 113.9998,
+        "text": "ううっ……うっうえつ……えつ",
+        "speaker": "緑の髪の女の子",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/003420.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "ううっ......うっうえつ......えつ",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.8635
+      },
+      "ocrScore": 0.8635,
+      "critical": false,
+      "sourceTime": 113.9998,
+      "sourceUpdatedAt": "2026-10-13T15:03:35.387981+00:00",
+      "backgroundTime": 113.4998,
+      "bgmTime": 113.9998,
+      "frame": "evidence/node_7dde100df577.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal,face_naku"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_green,advg_plum_kanasii"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_green01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 161,
+          "studioEdgeId": "edge_077d1e3e923d",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "17": {
+      "status": "draft",
+      "sourceText": "えっと、その、泣かないで？お姉ちゃんはあなたに何もしたりしないから",
+      "sourceSpeaker": "サテラ",
+      "translation": "呃，那个，别哭了好吗？姐姐不会伤害你的。",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 115.9998–139.9998 秒。\n2026-10-16 前四话 SetJunction 审核：07录像122秒可见分岐発生，补入选择节点的显式 SetJunction 命令（与第一话原稿的阶段1用法一致）。原critical标记保留；显示在选择打开时、确认任一分支后清除。证据 logs/capital-04/review-20261016/flow-direct-review/recording-review.md。\n2026-11-01 分歧横幅接入核验：保留原有真实分歧标记与 command[1]=SetJunction；已在 Chrome 实际播放核验横幅出现、已恢复路线确认后清除及下一节点。截图与日志：logs/junction-command-20261101/node_787e134bf833.png；审核记录见同目录 audit.json。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 114.9,
+          "end": 139.9998,
+          "visualTime": 117.4998,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 17
+        }
+      ],
+      "studioNodeId": "node_787e134bf833",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 115.9998,
+        "end": 139.9998,
+        "time": 135.9998,
+        "text": "えっと、その、泣かないで？お姉ちゃんはあなたに何もしたりしないから",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/004080.jpg",
+        "observations": 7,
+        "variants": [
+          {
+            "text": "えっと、その、泣かない",
+            "count": 1
+          },
+          {
+            "text": "えっと、その、泣かないで?お姉ちゃんはあなたに何もしたりしないから",
+            "count": 6
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9927
+      },
+      "ocrScore": 0.9927,
+      "critical": true,
+      "sourceTime": 135.9998,
+      "sourceUpdatedAt": "2026-11-01T14:50:50.986244+00:00",
+      "backgroundTime": 117.4998,
+      "bgmTime": 135.9998,
+      "frame": "evidence/node_787e134bf833.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "command",
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "",
+            "SetJunction",
+            ""
+          ]
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advk_emilia_ozuozu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 172,
+          "studioEdgeId": "edge_97358fc0f7f1",
+          "sourceLabel": "スナックを出す",
+          "sourceQuote": "まずは落ち着いてもらわないとな。そんなとき……こいつだ！",
+          "labelTranslation": "拿出零食",
+          "quoteTranslation": "得先让她冷静下来。这种时候……就靠这个！",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "第一章第四话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-04/half-hz/transcript.json；菜单约 122.0000 秒。\n140 秒左选项确认高亮；144–148 秒实测零食道具；204/544 秒流程图标注「スナックを出した」。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:48.077998+00:00",
+          "selection_evidence": "未确定；录像只证明选项文字存在。"
+        },
+        {
+          "branchId": 173,
+          "studioEdgeId": "edge_bf1ffa5aebe2",
+          "sourceLabel": "コインを出す",
+          "sourceQuote": "ここに取り出しましたるは、１枚のギザ十にございまーす",
+          "labelTranslation": "拿出硬币",
+          "quoteTranslation": "现在拿出来的，是一枚带锯齿边的十元硬币——！",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "第一章第四话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-04/half-hz/transcript.json；菜单约 122.0000 秒。\n134 秒原尺寸画面核对右侧硬币气泡；此选项未选中，后续 missing。\n2026-10-16 按用户明确指示连接可播放分歧：コインを出す → ハーフエルフ（场景3已登记入口）。保留原选项气泡与译文，使用 FINISH/root，不硬编码当前入口节点。录像图证实1→3直线；这条实际选项转移依据用户指示建立，未声称恢复原生 scenario_list。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-16T13:09:53.122215+00:00",
+          "selection_evidence": "未确定；录像只证明选项文字存在。"
+        }
+      ]
+    },
+    "18": {
+      "status": "draft",
+      "sourceText": "これ、なに……？　へんてこで、見たことない……",
+      "sourceSpeaker": "緑の髪の女の子",
+      "translation": "这是什么……？怪怪的，从来没见过……",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 141.9998–147.9998 秒。\n录像 144–148 秒在台词完成后显示玉米浓汤零食道具，原素材 ADV_cutin_item007.png；与第三话道具演出的 Tap / SE / PlayFX / CardOut 流程对照，未把插图误建成全屏 CG。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 141.4,
+          "end": 147.9998,
+          "visualTime": 143.4998,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 18
+        }
+      ],
+      "studioNodeId": "node_2929335cc220",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 141.9998,
+        "end": 147.9998,
+        "time": 143.9998,
+        "text": "これ、なに……?へんてこで、見たことない……",
+        "speaker": "緑の髪の女の子",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/004320.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "これ、なに......?へんてこで、見たことない......",
+            "count": 2
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.986
+      },
+      "ocrScore": 0.986,
+      "critical": false,
+      "sourceTime": 143.9998,
+      "sourceUpdatedAt": "2026-10-13T15:03:36.308349+00:00",
+      "backgroundTime": 143.4998,
+      "bgmTime": 143.9998,
+      "frame": "evidence/node_2929335cc220.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "command",
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "",
+            "",
+            "Tap\nSE,\"cutin_item01\"\nPlayFX,\"adv_cutin_item007\"\nCardOut"
+          ]
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_ikaru"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_green,advg_plum_gimon"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_green01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 181,
+          "studioEdgeId": "edge_1ddae20908be",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "19": {
+      "status": "draft",
+      "sourceText": "そんじょそこらじゃ売ってない、珍しい食い物だ！　うまいぞ？",
+      "sourceSpeaker": "スバル",
+      "translation": "这可是一般地方买不到的稀罕零食！很好吃哦？",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 149.9998–151.9998 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 149.9998,
+          "end": 151.9998,
+          "visualTime": 151.4998,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 19
+        }
+      ],
+      "studioNodeId": "node_14ef44e3dbc3",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 149.9998,
+        "end": 151.9998,
+        "time": 151.9998,
+        "text": "そんじょそこらじゃ売ってない、珍しい食い物だ!うまいぞ?",
+        "speaker": "スバル",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/004560.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "そんじょそこらじゃ売っ",
+            "count": 1
+          },
+          {
+            "text": "そんじょそこらじゃ売ってない、珍しい食い物だ!うまいぞ?",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9592
+      },
+      "ocrScore": 0.9592,
+      "critical": false,
+      "sourceTime": 151.9998,
+      "sourceUpdatedAt": "2026-10-13T15:03:36.740736+00:00",
+      "backgroundTime": 151.4998,
+      "bgmTime": 151.9998,
+      "frame": "evidence/node_14ef44e3dbc3.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_egao_kuzu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 191,
+          "studioEdgeId": "edge_9c56ea7ac37b",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "20": {
+      "status": "draft",
+      "sourceText": "……なんか、不思議な味……でも、おいしい",
+      "sourceSpeaker": "緑の髪の女の子",
+      "translation": "……味道好神奇……不过，很好吃。",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 155.9997–155.9997 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 153.9,
+          "end": 155.9997,
+          "visualTime": 155.9997,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 20
+        }
+      ],
+      "studioNodeId": "node_1115a7101673",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 155.9997,
+        "end": 155.9997,
+        "time": 155.9997,
+        "text": "……なんか、不思議な味……でも、おいしい",
+        "speaker": "緑の髪の女の子",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/004680.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "......なんか、不思議な味......でも、おいしい",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9851
+      },
+      "ocrScore": 0.9851,
+      "critical": false,
+      "sourceTime": 155.9997,
+      "sourceUpdatedAt": "2026-10-13T15:03:37.198967+00:00",
+      "backgroundTime": 155.9997,
+      "bgmTime": 155.9997,
+      "frame": "evidence/node_1115a7101673.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_hohoemu"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_green,advg_plum_kantan"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_green01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 201,
+          "studioEdgeId": "edge_f9c05a503e54",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:43.012138+00:00"
+        }
+      ]
+    },
+    "30": {
+      "status": "draft",
+      "sourceText": "泣き止んでくれた……！",
+      "sourceSpeaker": "サテラ",
+      "translation": "终于不哭了……！",
+      "notes": "手动添加\n录像 159.3 秒完整台词；原 OCR 漏句。语音 158.3433 秒，相关分数 0.815518。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 157.7,
+          "end": 159.4,
+          "visualTime": 159.3,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 30
+        }
+      ],
+      "studioNodeId": "node_8e19f4a8cfe5",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "origin": "manual"
+      },
+      "ocrScore": null,
+      "critical": false,
+      "sourceTime": 157.7,
+      "sourceUpdatedAt": "2026-10-13T15:03:27.182089+00:00",
+      "backgroundTime": 157.7,
+      "bgmTime": 157.7,
+      "frame": "",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advg_emilia_warai"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 301,
+          "studioEdgeId": "edge_f550208e6ac7",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:43.688878+00:00"
+        }
+      ]
+    },
+    "21": {
+      "status": "draft",
+      "sourceText": "よしよし、子供にお菓子は鉄板だな",
+      "sourceSpeaker": "スバル",
+      "translation": "好，好，哄小孩果然还是零食最管用。",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 159.9997–163.9997 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 159.8,
+          "end": 163.9997,
+          "visualTime": 161.4997,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 21
+        }
+      ],
+      "studioNodeId": "node_f2e140c411e0",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 159.9997,
+        "end": 163.9997,
+        "time": 163.9997,
+        "text": "よしよし、子供にお菓子は鉄板だな",
+        "speaker": "スバル",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/004920.jpg",
+        "observations": 2,
+        "variants": [
+          {
+            "text": "よしよし、子供にお",
+            "count": 1
+          },
+          {
+            "text": "よしよし、子供にお菓子は鉄板だな",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9918
+      },
+      "ocrScore": 0.9918,
+      "critical": false,
+      "sourceTime": 163.9997,
+      "sourceUpdatedAt": "2026-10-13T15:03:37.631172+00:00",
+      "backgroundTime": 161.4997,
+      "bgmTime": 163.9997,
+      "frame": "evidence/node_f2e140c411e0.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_warai"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 211,
+          "studioEdgeId": "edge_97b2303191b2",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "22": {
+      "status": "draft",
+      "sourceText": "あっ！　お母さーん！",
+      "sourceSpeaker": "緑の髪の女の子",
+      "translation": "啊！妈妈——！",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 165.9997–165.9997 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 164.8,
+          "end": 165.9997,
+          "visualTime": 165.9997,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 22
+        }
+      ],
+      "studioNodeId": "node_82dbad4e6e3d",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 165.9997,
+        "end": 165.9997,
+        "time": 165.9997,
+        "text": "あっ!お母さーん!",
+        "speaker": "緑の髪の女の子",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/004980.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "あっ!お母さーん!",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9587
+      },
+      "ocrScore": 0.9587,
+      "critical": false,
+      "sourceTime": 165.9997,
+      "sourceUpdatedAt": "2026-10-13T15:03:38.010845+00:00",
+      "backgroundTime": 165.9997,
+      "bgmTime": 165.9997,
+      "frame": "evidence/node_82dbad4e6e3d.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_green,advk_plum_mother"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_green01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 221,
+          "studioEdgeId": "edge_b0612d29b64f",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:44.075582+00:00"
+        }
+      ]
+    },
+    "31": {
+      "status": "draft",
+      "sourceText": "……見つかったみたいだな",
+      "sourceSpeaker": "スバル",
+      "translation": "……看来找到妈妈了。",
+      "notes": "手动添加\n录像 171.3 秒完整台词；原 OCR 漏句。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 169.6,
+          "end": 171.4,
+          "visualTime": 171.3,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 31
+        }
+      ],
+      "studioNodeId": "node_2ef678a2b18a",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "origin": "manual"
+      },
+      "ocrScore": null,
+      "critical": false,
+      "sourceTime": 169.6,
+      "sourceUpdatedAt": "2026-10-13T15:03:27.877877+00:00",
+      "backgroundTime": 169.6,
+      "bgmTime": 169.6,
+      "frame": "",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 311,
+          "studioEdgeId": "edge_3339f66ef3df",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:44.883692+00:00"
+        }
+      ]
+    },
+    "23": {
+      "status": "draft",
+      "sourceText": "うん、よかった……",
+      "sourceSpeaker": "サテラ",
+      "translation": "嗯，太好了……",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 171.9997–173.9997 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 171.9997,
+          "end": 173.9997,
+          "visualTime": 173.4997,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 23
+        }
+      ],
+      "studioNodeId": "node_497a1a0b6122",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 171.9997,
+        "end": 173.9997,
+        "time": 173.9997,
+        "text": "うん。よかった……",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/005220.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "うん。よかった......",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9848
+      },
+      "ocrScore": 0.9848,
+      "critical": false,
+      "sourceTime": 173.9997,
+      "sourceUpdatedAt": "2026-10-13T15:03:38.395453+00:00",
+      "backgroundTime": 173.4997,
+      "bgmTime": 173.9997,
+      "frame": "evidence/node_497a1a0b6122.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advg_emilia_aiduchi"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 231,
+          "studioEdgeId": "edge_c8b837430d24",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "24": {
+      "status": "draft",
+      "sourceText": "じゃ、改めて聞き込みを再開しますか。俺はあっちの方にいってくるから、君はこの辺りを頼む",
+      "sourceSpeaker": "スバル",
+      "translation": "那就继续打听吧。我去那边，这附近就拜托你了。",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 177.9997–181.9997 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 175.9,
+          "end": 181.9997,
+          "visualTime": 179.4997,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 24
+        }
+      ],
+      "studioNodeId": "node_e29abb4f7330",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 177.9997,
+        "end": 181.9997,
+        "time": 181.9997,
+        "text": "じゃ、改めて聞き込みを再開しますか。俺はあっちの方にいってくるから、君はこの辺りを頼む",
+        "speaker": "スバル",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/005460.jpg",
+        "observations": 3,
+        "variants": [
+          {
+            "text": "じや、改めて聞き込みを再開しますか。俺",
+            "count": 1
+          },
+          {
+            "text": "じゃ、改めて聞き込みを再開しますか。俺はあっちの方にいってくるから、君はこの",
+            "count": 1
+          },
+          {
+            "text": "じゃ、改めて聞き込みを再開しますか。俺はあっちの方にいってくるから、君はこの辺りを頼む",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9903
+      },
+      "ocrScore": 0.9903,
+      "critical": false,
+      "sourceTime": 181.9997,
+      "sourceUpdatedAt": "2026-10-13T15:03:38.802078+00:00",
+      "backgroundTime": 179.4997,
+      "bgmTime": 181.9997,
+      "frame": "evidence/node_e29abb4f7330.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_yorokobi"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 241,
+          "studioEdgeId": "edge_049e193b059f",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "25": {
+      "status": "draft",
+      "sourceText": "わかったわ。ねえ、スバル……",
+      "sourceSpeaker": "サテラ",
+      "translation": "我知道了。那个，昴……",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 183.9997–183.9997 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 182.4,
+          "end": 183.9997,
+          "visualTime": 183.9997,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 25
+        }
+      ],
+      "studioNodeId": "node_b851d65e48d1",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 183.9997,
+        "end": 183.9997,
+        "time": 183.9997,
+        "text": "わかったわ。ねえ、スバル…",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/005520.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "わかったわ。ねえ、スバル...",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9928
+      },
+      "ocrScore": 0.9928,
+      "critical": false,
+      "sourceTime": 183.9997,
+      "sourceUpdatedAt": "2026-10-13T15:03:39.299886+00:00",
+      "backgroundTime": 183.9997,
+      "bgmTime": 183.9997,
+      "frame": "evidence/node_b851d65e48d1.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advg_emilia_nattoku"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 251,
+          "studioEdgeId": "edge_9da3bfcb7181",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:45.286166+00:00"
+        }
+      ]
+    },
+    "32": {
+      "status": "draft",
+      "sourceText": "ん？",
+      "sourceSpeaker": "スバル",
+      "translation": "嗯？",
+      "notes": "手动添加\n录像 187.1 秒短句；原 OCR 漏句。语音 186.4379 秒，相关分数 0.851799。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 185.7,
+          "end": 187.4,
+          "visualTime": 187.1,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 32
+        }
+      ],
+      "studioNodeId": "node_8f111f9af76b",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "origin": "manual"
+      },
+      "ocrScore": null,
+      "critical": false,
+      "sourceTime": 185.7,
+      "sourceUpdatedAt": "2026-10-13T15:03:28.699663+00:00",
+      "backgroundTime": 185.7,
+      "bgmTime": 185.7,
+      "frame": "",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_gimon"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 321,
+          "studioEdgeId": "edge_d018c3580afd",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "",
+          "origin": "manual",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:45.964699+00:00"
+        }
+      ]
+    },
+    "26": {
+      "status": "draft",
+      "sourceText": "あの子のために、ありがとう。すごーく助かっちゃった",
+      "sourceSpeaker": "サテラ",
+      "translation": "谢谢你为那孩子做的事。真是帮了大忙。",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 189.9997–191.9997 秒。\n188–192秒原画面为双臂垂下的温和微笑；仅重建表情，不把候选当原命令身份。多帧body诊断act_hohoemu/02仅0.6915/0.6914且trajectory_supported=false，未据此替换body或标为reviewed。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 188.3,
+          "end": 191.9997,
+          "visualTime": 191.4997,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 26
+        }
+      ],
+      "studioNodeId": "node_60f6eace1a1e",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 189.9997,
+        "end": 191.9997,
+        "time": 191.9997,
+        "text": "あの子のために、ありがとう。すごーく助かっちゃった",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/005760.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "あの子のために、ありがとう。すごーく助かっちゃった",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.98
+      },
+      "ocrScore": 0.98,
+      "critical": false,
+      "sourceTime": 191.9997,
+      "sourceUpdatedAt": "2026-10-16T04:59:39.974295+00:00",
+      "backgroundTime": 191.4997,
+      "bgmTime": 191.9997,
+      "frame": "evidence/node_60f6eace1a1e.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal,face_hohoemu"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_emilia,advg_emilia_kansya"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 261,
+          "studioEdgeId": "edge_e5a9073d989d",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "27": {
+      "status": "draft",
+      "sourceText": "た、大したことは、してないから……",
+      "sourceSpeaker": "スバル",
+      "translation": "我、我也没做什么了不起的事啦……",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 193.9997–195.9997 秒。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 192.9,
+          "end": 195.9997,
+          "visualTime": 195.4997,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 27
+        }
+      ],
+      "studioNodeId": "node_5688ac117ca9",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 193.9997,
+        "end": 195.9997,
+        "time": 195.9997,
+        "text": "た、大したことは、してないから",
+        "speaker": "スバル",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/005880.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "た、大したことは、してないから",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.989
+      },
+      "ocrScore": 0.989,
+      "critical": false,
+      "sourceTime": 195.9997,
+      "sourceUpdatedAt": "2026-10-13T15:03:40.108857+00:00",
+      "backgroundTime": 195.4997,
+      "bgmTime": 195.9997,
+      "frame": "evidence/node_5688ac117ca9.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_odoroku"
+        },
+        {
+          "field": "voice",
+          "before": "",
+          "after": "vo_adv_subaru,advg_subaru_tamerai"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_subaru01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 271,
+          "studioEdgeId": "edge_5df02a2a2e39",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "proposed",
+          "sourceState": "proposed",
+          "notes": "录像中的相邻对白；待人工审核。",
+          "origin": "video",
+          "score": null
+        }
+      ]
+    },
+    "28": {
+      "status": "draft",
+      "sourceText": "それでも、ありがとう。じゃあ、気をつけてね、スバル",
+      "sourceSpeaker": "サテラ",
+      "translation": "即使这样，也要谢谢你。那么，路上小心，昴。",
+      "notes": "第一章第四话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-04/half-hz/transcript.json；录像区间 197.9997–199.9997 秒。\n200秒原图确认道别仍为温和微笑，补face_hohoemu；身体保持可见的双臂垂下，原脚本身份未确认，保留draft。",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-07",
+          "bvid": "BV1bK4y1a7Fm",
+          "cid": 236036395,
+          "p": 7,
+          "start": 197.9997,
+          "end": 199.9997,
+          "visualTime": 199.4997,
+          "localDuration": 1239.643061,
+          "timeMapping": "same-recording-seconds",
+          "sourceVideoId": "video_2513e7bc92d4"
+        }
+      ],
+      "nativeIdOrigin": "authored",
+      "issues": [
+        {
+          "code": "node_review_pending",
+          "severity": "blocker",
+          "message": "当前工作台节点仍未审核。",
+          "scenarioId": 28
+        }
+      ],
+      "studioNodeId": "node_d05bc17e35ce",
+      "candidates": {
+        "model": [],
+        "voice": [],
+        "body": [],
+        "face": [],
+        "background": [],
+        "bgm": [],
+        "cast": []
+      },
+      "evidence": {
+        "region": "dialogue",
+        "start": 197.9997,
+        "end": 199.9997,
+        "time": 199.9997,
+        "text": "それでも、ありがとう。じゃあ、気をつけてね、スバル",
+        "speaker": "サテラ",
+        "frame": "data/video_recovery/capital-04/half-hz/frames/006000.jpg",
+        "observations": 1,
+        "variants": [
+          {
+            "text": "それでも、ありがとう。じゃあ、気をつけてね、スバル",
+            "count": 1
+          }
+        ],
+        "transcript": "data/video_recovery/capital-04/half-hz/transcript.json",
+        "ocr_sample": "data/video_recovery/capital-04/half-hz/ocr-rapid.jsonl",
+        "ocr_score": 0.9977
+      },
+      "ocrScore": 0.9977,
+      "critical": false,
+      "sourceTime": 199.9997,
+      "sourceUpdatedAt": "2026-10-16T04:59:40.424276+00:00",
+      "backgroundTime": 199.4997,
+      "bgmTime": 199.9997,
+      "frame": "evidence/node_d05bc17e35ce.jpg",
+      "overlays": [
+        {
+          "field": "bg_picture",
+          "before": "",
+          "after": "bg/bg013a_street"
+        },
+        {
+          "field": "motion",
+          "before": "",
+          "after": "act_normal,face_hohoemu"
+        },
+        {
+          "field": "character",
+          "before": "",
+          "after": "live2d/AC_emilia01"
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 281,
+          "studioEdgeId": "edge_fffc2f8c2cf5",
+          "sourceLabel": "继续",
+          "sourceQuote": "",
+          "labelTranslation": "",
+          "quoteTranslation": "",
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "notes": "录像按场景标题顺序进入下一场景；FINISH 目标待人工审核。 目标场景入口已登记；转移仍待人工审核。\n录像 202–206 秒流程图明确从迷子の女の子进入子猫娘；零食路线确认。",
+          "origin": "video",
+          "score": null,
+          "updated_at": "2026-10-13T15:03:48.913240+00:00"
+        }
+      ]
+    }
+  },
+  "unresolvedBranches": [
+    {
+      "branchId": 73,
+      "studioEdgeId": "edge_fbdab22800bf",
+      "sourceLabel": "状況を説明する",
+      "sourceQuote": "わかるけど、現状、犯人とは差が広がるばっかりだ。ここでさらに時間を食ったら、徽章を取り戻せなくなるかもしれないぞ",
+      "labelTranslation": "说明状况",
+      "quoteTranslation": "我理解，可是我们和犯人的距离正在不断拉大。再在这里耽搁，说不定就找不回徽章了。",
+      "state": "missing",
+      "scenarioId": 7,
+      "notes": "第一章第四话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-04/half-hz/transcript.json；菜单约 44.0000 秒。\n48/52 秒可见右选项预览气泡；未选中，未录像的后续保留 missing。"
+    },
+    {
+      "branchId": 102,
+      "studioEdgeId": "edge_6044c9318271",
+      "sourceLabel": "説得する",
+      "sourceQuote": "",
+      "labelTranslation": "劝说",
+      "quoteTranslation": "",
+      "state": "missing",
+      "scenarioId": 10,
+      "notes": "第一章第四话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-04/half-hz/transcript.json；菜单约 80.0000 秒。\n左选项未选中，缺少后续录像；不把未见路线接到已知路线。"
+    }
+  ],
+  "issues": [
+    {
+      "code": "native_metadata_unrecovered",
+      "severity": "blocker",
+      "message": "未取得此场景原稿：原生分支编号为稳定编写编号，奖励向量暂为零，分支运行条件未恢复。"
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 1
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 2
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 3
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 4
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 5
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 29
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 6
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 7
+    },
+    {
+      "code": "missing_transition",
+      "severity": "blocker",
+      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+      "scenarioId": 7,
+      "branchId": 73
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 8
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 9
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 10
+    },
+    {
+      "code": "missing_transition",
+      "severity": "blocker",
+      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
+      "scenarioId": 10,
+      "branchId": 102
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 11
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 12
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 13
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 14
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 15
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 16
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 17
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 18
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 19
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 20
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 30
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 21
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 22
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 31
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 23
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 24
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 25
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 32
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 26
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 27
+    },
+    {
+      "code": "node_review_pending",
+      "severity": "blocker",
+      "message": "当前工作台节点仍未审核。",
+      "scenarioId": 28
+    }
+  ],
+  "excludedStudioNodes": []
+}
