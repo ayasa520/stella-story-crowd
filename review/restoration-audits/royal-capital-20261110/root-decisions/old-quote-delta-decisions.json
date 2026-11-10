@@ -1,0 +1,27 @@
+{
+  "version":1,
+  "reviewer":"root",
+  "sourceRequest":"plans/09-20/remaining-quote-deltas-root-review.json",
+  "scope":"Personally read all five delta contacts and all18complete source frames. No independent new quote, choice or dialogue card is established by these detections. Ordinary dialogue remains represented by the existing signed parent dialogue; battle UI and duplicate choice animation detections do not add executable nodes.",
+  "nativeChangesRequired":false,
+  "entries":[
+    {"part":9,"time":263,"classification":"battle-ui","observation":"Combatants, health bars and red skill bannerこらしめる; no story quote."},
+    {"part":9,"time":269,"classification":"battle-ui","observation":"Combatants and red斬りつけbanner; no story quote."},
+    {"part":9,"time":286,"classification":"battle-ui","observation":"Combatants and blue鉄の打撃と収奪banner; no story quote."},
+    {"part":9,"time":354,"classification":"ordinary-dialogue-typewriter-prefix","observation":"Subaru white panelビビんな！ ビビんなよ俺！ begins the existing complete356panel; no lower quote bubble."},
+    {"part":9,"time":356,"classification":"ordinary-dialogue","observation":"Subaru white panel includesこうして迷ってる間にもサテラは！; no choice UI or lower quote bubble."},
+    {"part":9,"time":447.999,"classification":"existing-choice-animation","observation":"Existing Rom parent prompt and心情的な理由/即物的な理由choice UI; the newly detected region is character/Chinese overlay pixels, not an additional quote."},
+    {"part":10,"time":214,"classification":"existing-choice-animation","observation":"Existing thug parentさもねえと、痛い目見るぞ！ andselectedleftSWIPE; no additional lower quote bubble yet."},
+    {"part":10,"time":274,"classification":"battle-ui","observation":"Combat skill大蛇斬りanddamage numbers; no story quote."},
+    {"part":10,"time":526,"classification":"prefix-of-already-signed-quote527","observation":"A fading-in lower quote beginsそう、でな、ええと……爺さん、ここで銀髪の女の子を見なかったか？. Existing527completedquote was already signed; retain it once."},
+    {"part":10,"time":620,"classification":"ordinary-dialogue","observation":"Subaru'ssinglewhiteラム？panel; no lower quote bubble."},
+    {"part":11,"time":56,"classification":"ordinary-dialogue","observation":"Subaru white――っ、きたかpanel; no lower quote bubble."},
+    {"part":11,"time":122,"classification":"ordinary-silent-dialogue","observation":"Subaru white long-dash silent panel, completed diamond visible; no lower quote bubble."},
+    {"part":11,"time":321,"classification":"ordinary-dialogue","observation":"Subaru whiteえ？panel; no lower quote bubble."},
+    {"part":11,"time":453.999,"classification":"ordinary-dialogue-fade","observation":"Elsa character and fading single white panel; no lower quote bubble."},
+    {"part":11,"time":948.998,"classification":"ordinary-silent-dialogue-prefix","observation":"Subaru'sincominglong-dashwhitepanel at the fruit stand; no lower quote bubble."},
+    {"part":21,"time":316,"classification":"ordinary-dialogue-transition","observation":"Subaru at the fruit stand with no completed panel yet; no quote UI."},
+    {"part":21,"time":317,"classification":"ordinary-silent-dialogue","observation":"Subaru completed white――――。panel; no lower quote bubble."},
+    {"part":21,"time":318,"classification":"same-persisting-silent-dialogue","observation":"Same completed white silent panel as317; no lower quote bubble."}
+  ]
+}

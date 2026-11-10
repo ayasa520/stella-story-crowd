@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "recordingPart": 22,
+  "reviewer": "root",
+  "scope": "Personally reviewed all nine uncertain dialogue panels and all seven structure contact sheets, plus opening frames 002.00/004.00/006.00.jpg for the missing gold choice bubble. Match source/region/time, never merged event number.",
+  "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+  "dialogueDecisions": [
+    {"interval":[0,7.5],"action":"replace","speaker":"痩せぎすなチンピラ","text":"ち、ちげーよ！ こいつが勝手に\n自分からぶつかってきて――","witnessTime":4,"sceneId":10030002,"sharedPrompt":{"recordingPart":21,"interval":[224,237.5]}},
+    {"interval":[23,29.5],"action":"replace","speaker":"","text":"――路地裏でチンピラ三人に絡まれ、刺されてしまったスバル。意識を取り戻すと、そこは見知らぬ邸宅のベッドの上だった……","witnessTime":29},
+    {"interval":[46,48],"action":"replace","speaker":"スバル","text":"君は……って、うおおお！？","witnessTime":47},
+    {"interval":[67,83.5],"action":"replace","speaker":"猫耳の少女","text":"で、気分は？ どっか変なとこはにゃい？","witnessTime":79},
+    {"interval":[184,187.5],"action":"replace","speaker":"スバル","text":"俺ちょっと状況見えてねえんだけど\nそっちの美人のお姉さんは……？","witnessTime":187},
+    {"interval":[189,194],"action":"replace","speaker":"クルシュ","text":"挨拶が遅れたな。\n私はクルシュ・カルステン。\nカルステン家の当主にしてこの屋敷の主だ","witnessTime":193},
+    {"interval":[194.5,201],"action":"replace","speaker":"クルシュ","text":"そして、これは私の騎士であるフェリス。\n治癒術師としては王国一の腕を持つ。\n卿の一時の安静と、当家への逗留を歓迎する","witnessTime":200},
+    {"interval":[202,207.5],"action":"replace","speaker":"スバル","text":"なんか、すげぇ話が一気に飛び出したな！？\nお姉さんがクルシュさんで\n公爵で当主で美人！？","witnessTime":207.5},
+    {"interval":[315,320],"action":"replace","speaker":"フェリス","text":"何か手伝うことはないかって聞かれて、\nもうちょっと安静にしてにゃって\n言ってたところです","witnessTime":320},
+    {"interval":[334,339.5],"action":"replace","speaker":"フェリス","text":"そうそう。それに中途半端な状態で\nうろうろされても困るし、\nちゃんと治るまで大人しくしててネ","witnessTime":339}
+  ],
+  "choiceDecisions": [
+    {"promptInterval":[0,7.5],"left":"苦悶する","right":"助けを願う","selected":"right","quote":"だれ……か……たすけ……","junction":true,"witnessTimes":[0,2,4,6],"sceneId":10030002,"sharedPrompt":{"recordingPart":21,"interval":[224,237.5]},"note":"The gold bubble is plainly visible in the three full frames but absent from the OCR quote events. The spelling is Japanese text read directly, not a translation of the burned-in Chinese subtitle."},
+    {"promptInterval":[67,83.5],"left":"ここどこだ？","right":"ネコミミだ！","selected":"right","quote":"おお……何度見直しても本物だ……。\n一流のモフリストの俺の目から見て、\n最上級のモフモフ具合……！","junction":false,"witnessTimes":[71,79]},
+    {"promptInterval":[112,132.5],"left":"『様』に留意","right":"猫耳に留意","selected":"left","quote":"『様』ってことは……。\n君は、そっちの猫耳の子のご主人様？","junction":false,"witnessTimes":[121,122,130]},
+    {"promptInterval":[149,176],"left":"偉い人に感謝","right":"フェリスに驚嘆","selected":"right","quote":"つまり、猫耳で魔法使いってことか！\nすげぇな、属性山盛りどころじゃねえぞ","junction":false,"witnessTimes":[155,159,174,176],"note":"174 and176 are the same selected bubble before/after card removal, not two dialogue nodes."}
+  ],
+  "structureDecisions": [
+    {"interval":[0,13],"action":"prelude-in-source-scene","sceneId":10030002,"verification":"reviewed","note":"The post-selection thug dialogue still precedes the map and new scene title. Keep it in the source scene's alternative route."},
+    {"time":18,"action":"map-not-dialogue","fromSceneId":10030002,"toSceneId":10030005,"verification":"reviewed"},
+    {"time":20,"action":"scene-title","sceneId":10030005,"title":"……生きてる？","route":"IFルート：クルシュ","verification":"reviewed"},
+    {"time":50,"action":"cg-not-heading","verification":"reviewed","note":"Full-screen Ferris illustration with no Japanese title; resource identity still needs asset matching."},
+    {"time":227,"action":"scene-title","sceneId":10030006,"title":"クルシュ邸にて","route":"IFルート：クルシュ","verification":"reviewed"},
+    {"time":351,"action":"ending-title","title":"CLEAR","route":"IFルート：クルシュ","verification":"reviewed"},
+    {"times":[12,117,119,120,228,307,351],"action":"discard-false-region-detection","note":"Image/body fragments falsely classified as headings at12/117/119/120/307; title at228 is not quote and CLEAR at351 is not choice. Keep actual dialogue/title once."}
+  ]
+}

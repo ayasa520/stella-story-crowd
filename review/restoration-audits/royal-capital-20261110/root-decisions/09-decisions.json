@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "recordingPart": 9,
+  "reviewer": "root",
+  "scope": "Personal visual review of the first scene, uncertain dialogue up to 634s, and choice/structure frames through 650s. Later tail and any new refinement candidates still require reconciliation.",
+  "sourceIdentities": [
+    {"sha256":"3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463","use":"Original pre-corruption evidence"},
+    {"sha256":"5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f","path":"data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4","use":"Supplemental full frames and repaired tail"}
+  ],
+  "matching": "Match recording, region, source time and text context. Merged event numbers are deliberately not identities because regrouping changes them.",
+  "approvedSample": {
+    "plan":"data/native_recovery/royal-capital-20261110/plans/09-20/p09-first-scene.sample.plan.json",
+    "sceneId":10020001,
+    "rowCount":18,
+    "additionalTitleSceneId":10020002,
+    "approvedFields":["msg_text","msg_character","visible choice subject","selected choice quote","scene identity and observed continuity"],
+    "witnesses":["plans/09-20/evidence/p09-first-scene/text-contact-1.jpg","plans/09-20/evidence/p09-first-scene/text-contact-2.jpg","plans/09-20/evidence/p09-first-scene/text-contact-3.jpg","plans/09-20/evidence/p09-first-scene/0064.00.jpg","plans/09-20/evidence/p09-first-scene/0143.00.jpg","plans/09-20/evidence/p09-first-scene/0149.00.jpg","plans/09-20/evidence/p09-first-scene/0153.50.jpg"],
+    "note":"The three visible divergence prompts may use reconstructed phase-1 SetJunction, following the preserved native example at scene10010001/scenario5. This establishes the desired banner behavior, not recovery of the missing original command phases or other performance fields."
+  },
+  "dialogueDecisions": [
+    {"interval":[163,164],"action":"replace","speaker":"","text":"――王都の裏通り・昼","scenarioType":1,"witnessTime":163},
+    {"interval":[166,169],"action":"replace","speaker":"スバル","text":"はぁ、はぁ……っ！\n間に合え！ 間に合ってくれ！","witnessTime":168,"frame":"root-review/09-supplement/0168.00.jpg","reason":"The coarse sample ended during the typewriter reveal."},
+    {"interval":[174,198],"action":"merge-identical-prompt","speaker":"痩せぎすなチンピラ","text":"痛え思いしたくなきゃ、出すもん出しな","witnessTime":185,"reason":"痩/瘦 OCR variants are the same displayed speaker and persistent choice prompt; do not create repeated dialogue rows."},
+    {"interval":[205,224],"action":"merge-identical-prompt","speaker":"痩せぎすなチンピラ","text":"御託はいいから出すもん出しな！\nそれとも痛え目にあわなきゃわからねえか？","witnessTime":221},
+    {"interval":[226,231],"action":"merge-identical-prompt","speaker":"痩せぎすなチンピラ","text":"……なんだぁ、こいつ？\n状況が見えていやがらねえのかよ","witnessTime":230},
+    {"interval":[294.5,296],"action":"confirm","speaker":"スバル","text":"どらああっ！","witnessTime":295},
+    {"interval":[302.5,306],"action":"merge-typewriter-parts","speaker":"スバル","text":"こんなことしてる暇はないんだ！\n二度と邪魔すんじゃねえ！","witnessTime":305,"reason":"The second complete line exists in the original OCR raw_lines but was rejected by a 24px height threshold; the complete source panel was personally read."},
+    {"interval":[342.5,344],"action":"replace","speaker":"","text":"――盗品蔵の前・昼","scenarioType":1,"witnessTime":343},
+    {"interval":[346,350],"action":"replace","speaker":"スバル","text":"や、やっと辿り着いた……。\n思ったより時間を食っちまった、クソ……","witnessTime":349,"frame":"root-review/09-supplement/0349.00.jpg"},
+    {"interval":[350,352.5],"action":"replace","speaker":"スバル","text":"――この中に、サテラが","witnessTime":352,"frame":"root-review/09-supplement/0352.00.jpg","reason":"This short line is complete on screen before the next card; do not invent a continuation."},
+    {"interval":[358.5,361],"action":"keep-separate-row","speaker":"スバル","text":"誰か、いますか？","witnessTime":359.5,"frame":"root-review/09-supplement/0359.50.jpg","reason":"An empty panel at 361s separates this complete line from the next call; prefix grouping must not swallow it."},
+    {"interval":[361.5,365],"action":"keep-separate-row","speaker":"スバル","text":"誰か！\n誰かいるんだろ？","witnessTime":363,"frame":"root-review/09-supplement/0363.00.jpg"},
+    {"interval":[374,378],"action":"replace","speaker":"巨大な体躯の老人","text":"――じゃっかましいわぁ！\n合図と合言葉も知らんで、\n扉をぶっ壊す気か！！","witnessTime":377},
+    {"interval":[391,396],"action":"replace","speaker":"スバル","text":"……俺の名前はナツキ・スバル。\n応接不暇の風来坊……とりあえず、\n顔、近すぎ……","witnessTime":395},
+    {"interval":[400.5,404],"action":"replace","speaker":"","text":"――盗品蔵・昼","scenarioType":1,"witnessTime":402,"frame":"root-review/09-supplement/0402.00.jpg"},
+    {"interval":[405,426],"action":"replace","speaker":"巨大な体躯の老人","text":"……ったく、人の晩酌を邪魔しおって。\nこれでつまらん用事なら、ひどいぞい","witnessTime":425},
+    {"interval":[537,543.5],"action":"keep-separate-row","speaker":"","text":"――盗品蔵に着くと、なぜか死んでいたはずの蔵主が生きていた。スバルは混乱するが、徽章らしき品が持ち込まれる予定と聞き……","witnessTime":543,"frame":"root-review/09-supplement/0543.00.jpg","reason":"The following location is a new panel, not an OCR variant of this synopsis."},
+    {"interval":[543.5,546.8],"action":"keep-separate-row","speaker":"","text":"――盗品蔵内・昼","scenarioType":1,"witnessTime":545,"frame":"root-review/09-supplement/0545.00.jpg"},
+    {"interval":[547,553],"action":"replace","speaker":"スバル","text":"それより、爺さん。\nその約束した相手ってのは、\nひょっとして……フェルトって子か？","witnessTime":551,"reason":"The dimmed speaker name remains a name, not part of msg_text."},
+    {"interval":[553,557],"action":"replace","speaker":"巨大な体躯の老人","text":"なんじゃ、\n盗った相手の名前までわかっとるのか。\n準備万端じゃの","witnessTime":556},
+    {"interval":[558,577],"action":"replace","speaker":"巨大な体躯の老人","text":"じゃが、持ち込まれてきたもんを\nお前さんが買い取れるかどうかは、\nまた別の話じゃぞ？","witnessTime":574},
+    {"interval":[589,592],"action":"merge-identical-prompt","speaker":"巨大な体躯の老人","text":"話にならんじゃろうが！","witnessTime":591},
+    {"interval":[592,596],"action":"replace","speaker":"スバル","text":"いーや、この世には\n物々交換って手がある！","witnessTime":594}
+  ],
+  "choiceDecisions": [
+    {"promptInterval":[66,89],"left":"サテラを探す","right":"盗品蔵に向かう","selected":"right","quote":"とにかく、あの店に戻らねえと――","junction":true,"witnessTimes":[77,84,88]},
+    {"promptInterval":[94,116],"left":"盗品蔵へ急ぐ","right":"手助けが要る","selected":"left","quote":"盗品蔵に向かうのが最優先だ！","junction":true,"witnessTimes":[99,108.5,110,113],"note":"Faded labels and a center-image Z at108s are duplicate animation observations, not new choices or titles."},
+    {"promptInterval":[121,137],"left":"記憶に頼る","right":"他人に頼る","selected":"left","quote":"大丈夫、覚えてる……！","junction":true,"witnessTimes":[123,126,130,137]},
+    {"promptInterval":[175,198],"left":"うんざりする","right":"言い返す","selected":"right","quote":"な……！ ふざけやがって……。\nお前ら、俺が一人と見て\nさっきの仕返しか！？","junction":false,"witnessTimes":[185,191,192]},
+    {"promptInterval":[205,224],"left":"焦りながら","right":"苛立ちながら","selected":"right","quote":"勝手なこと言ってんじゃねえ！\nてめぇらに構ってる暇なんかねえんだよ！","junction":false,"witnessTimes":[210,211,215]},
+    {"promptInterval":[231,245],"left":"面倒を避ける","right":"下手に出る","selected":"right","quote":"それでいいなら助かる！\n服以外、でいいよな？","junction":false,"witnessTimes":[234,240,243]},
+    {"promptInterval":[312,324],"left":"記憶通り","right":"記憶が怪しい","selected":"left","quote":"貧民街はこの路地の先だったな","junction":true,"witnessTimes":[315,316,320,321]},
+    {"promptInterval":[405,426],"left":"相手の話","right":"女の子の話","selected":"left","quote":"日のあるうちから飲んでちゃ早死にするぞ。\nつか、馬鹿げた話なんだが、爺さん……\n最近、死んだことないか？","junction":false,"witnessTimes":[410,411,425]},
+    {"promptInterval":[443,458],"left":"心情的な理由","right":"即物的な理由","selected":"left","quote":"俺がここにきた理由……\n何があったのか知りたくて、かな？","junction":false,"witnessTimes":[446,447,454]},
+    {"promptInterval":[489,514],"left":"展開に喜ぶ","right":"展開を考える","selected":"right","quote":"ってことは、徽章は存在するんだ。\nなら、あれは夢じゃねえってことだよな。\nいや、だったらこの爺さんは……","junction":false,"witnessTimes":[499,502,508]},
+    {"promptInterval":[558,577],"left":"不平を漏らす","right":"決意を述べる","selected":"right","quote":"いいや。絶対、取り戻す！\n――どんだけ大損してでもな！","junction":false,"witnessTimes":[564,565,567]},
+    {"promptInterval":[596,621],"left":"プライドを煽る","right":"もったいつける","selected":"left","quote":"爺さん、ここの蔵主やってるぐらい\nなんだから、目利きなんだろ？\n俺の服見て、何か気付かないか？","junction":false,"witnessTimes":[602,619]},
+    {"promptInterval":[634,655],"selected":"right","quote":"ん？ 『ケータイ』のことか？\nまだ出してもいねえのに、\nなかなか目ざとい爺さんだな！","witnessTimes":[643,650],"note":"The selected quote was personally read; both option subjects still need the earlier complete choice frame."}
+  ],
+  "structureDecisions": [
+    {"interval":[258,294],"action":"exclude-battle-ui-text","note":"Battle skill labels, status labels and VICTORY are not story dialogue. One explicit battle placeholder with unknown battle_stage_id may retain the observed boundary; no gameplay data is inferred.","witnessTimes":[269,271,284,286,288,292]},
+    {"time":329,"action":"map-not-dialogue","fromSceneId":10020002,"toSceneId":10020003,"nextTitle":"盗品蔵の主","verification":"reviewed","note":"The highlighted vertical line and NEXT target are visible; the 334s title confirms the main route identity."},
+    {"time":534,"action":"scene-title","sceneId":10020004,"title":"異世界の味","route":"本編","verification":"reviewed"},
+    {"interval":[233,252],"region":"heading","action":"discard-nontext-image-detection","note":"The W candidate comes from the actor image/choice layout, not a scene title."}
+  ]
+}
