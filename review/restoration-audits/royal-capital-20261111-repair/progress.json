@@ -59,6 +59,18 @@
     "availableMusicResources": 18,
     "v13NewMusicResources": ["bgm_adv_every06_cd3_10", "bgm_adv_battle02_cd2_17", "bgm_adv_kinpaku03_cd2_21"],
     "v13MusicScope": "Resource availability only: original ACB sample/loop metadata and native waveform durations verified, existing assets and native fields preserved; recorded node onset, phase, fade and restart remain separate pending review",
+    "p25P26MusicContinuityReview": {
+      "sourceWindows": 16,
+      "sourceFrames": 26,
+      "nestedReceiptsVerified": 137,
+      "every06": "Six source windows share first-pass offset202.920750s; repeated long rendered references do not prove restart",
+      "battle02": "Five source windows share continuous native clock through32.697329s loop seam; direct seam full correlation.99016/held-out.98938, no restart inferred",
+      "kinpaku03": "Identity and later continuous clock supported;57.4955-57.495625s alignment is not proof of exact first-second onset or crossfade",
+      "nodeChanges": 0,
+      "originalCsvPhaseFadeRestartAndWaitRecovered": false,
+      "browserOpened": false,
+      "historicalAndCurrentCatalogSnapshotsKeptSeparate": true
+    },
     "reviewedVoiceFields": 12,
     "v25VoiceScope": "Five additional exact catalog payloads and original card assignments independently reviewed by full-cue/held-out numerical evidence, original bank provenance and direct full-interface sequences; actual/player READY→PLAY→natural ended with currentTime progress passed for all five, original CSV/phase/delay and subjective tone remain unclaimed",
     "reviewedBgmFields": 32,
