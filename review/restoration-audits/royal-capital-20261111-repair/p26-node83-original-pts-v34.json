@@ -1,0 +1,33 @@
+{
+  "reviewer": "/root/felt_entry_offline_review",
+  "sceneId": 10180005,
+  "scenarioId": 83,
+  "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/26-remote-qn32.mp4",
+  "sourceVideoSha256": "8377d19a60e10e8886ec60e23ac709c2567575af619b641ac5d9bab8e87efff1",
+  "stream": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "r_frame_rate": "30/1",
+        "time_base": "1/16000",
+        "start_time": "0.023000"
+      }
+    ]
+  },
+  "requestedTimeSeconds": 510.0,
+  "decodedOriginalPts": 8160352,
+  "decodedOriginalPtsSeconds": 510.022,
+  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p26-identity-v1/original-earlier-10180005-83-510.0000.png",
+  "frameSha256": "ee39543b65ce58e22f11c73d248ea020ac780bc7f4672a8557f2077eb58232cc",
+  "copytsDecodedFrame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p26-identity-v1/original-pts-verified-10180005-83-510.0000.png",
+  "copytsDecodedFrameSha256": "ee39543b65ce58e22f11c73d248ea020ac780bc7f4672a8557f2077eb58232cc",
+  "exactPngBytesEqual": true,
+  "showinfoLog": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p26-identity-v1/earlier-83-copyts-showinfo.log",
+    "sha256": "6a2a0d7e7fab612aac7ea15e68582e0967a238bc20d41a594fb5337b86e915fb"
+  },
+  "decoderPolicy": "nice19; taskset22,23; decoder/output threads1; one output frame",
+  "meaning": "copyts retains original decoded frame PTS. Requested510.0s selects decoded PTS8160352 at1/16000=510.022s, inside the bound507.9..512.5 node. The copied-PTS decode produces exactly the same PNG bytes as the directly inspected earlier witness.",
+  "diagnostic": "An initial assertion that requested510.0 must equal decoded PTS failed; original showinfo and ffprobe logs establish actual510.022 and stream start0.023. No current PNG bytes or prior frame hashes were overwritten."
+}
