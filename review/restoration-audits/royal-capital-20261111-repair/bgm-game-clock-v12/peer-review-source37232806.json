@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "status": "textual-peer-review-no-blocking-findings",
+  "reviewer": "/root/p15_p16_voice_evidence",
+  "sourceCommit": "37232806a8180375a4b7a178e27157bb16d12201",
+  "sourceFiles": [
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_player.js",
+      "bytes": 7120,
+      "sha256": "af60e047f8a1fb510f9bf66d75792f0e0ea1746eed497b7d7091d548a7cf1d8c"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/visual_frame_clock.js",
+      "bytes": 5674,
+      "sha256": "b9a0694500c05e9175395c308fc9866530cb1c8e61caa81cce4073e97f05fbc2"
+    }
+  ],
+  "nativeReport": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/REPORT.md",
+    "bytes": 3286,
+    "sha256": "08e2a816da742a0a189ec977057b2cb663554ff8ca58d33d9b80b8ce079932ca"
+  },
+  "reviewScope": "Textual REPORT and source diff review only; no repeated native disassembly or browser runtime QA.",
+  "findings": {
+    "blocking": [],
+    "reportBoundary": "REPORT explicitly states SendScenarioID is not awaited, InitScenario belongs to its background completion callback, loader callbacks may run immediately or later, and no total order between all resource completions and CardIn/text is proved.",
+    "clockChange": "A gain-only shared game-frame ramp is consistent with ProcCrossFade accumulating Unity Time.deltaTime and Lerp. Web Audio retains its independent sample clock.",
+    "lifecycle": "The diff removes the subscription on supersession, Stop, and completion; fade0 completes synchronously. Loading await is an independent unresolved behavior.",
+    "nonBlockingWordingSuggestions": [
+      "Narrow the header on a future source edit to the ordinary SetupBGM path supplies one-second fade/reset=false; do not generalize to every explicit PlayBGM call.",
+      "Describe the REPORT player comparison as its audit baseline because the subsequently published player changes the ramp clock."
+    ]
+  },
+  "preciseOriginalFrameBoundary": {
+    "directImageReviewPerformed": true,
+    "reviewer": "/root/p15_p16_voice_evidence",
+    "before": {
+      "sourcePTS": 202.889,
+      "image": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/entry-frames/frame-011.jpg",
+        "bytes": 79849,
+        "sha256": "cc2eea36cbc2f1f0da1ae1aec473d0951c2508463070faba2bd44bd5a7e6cc90"
+      },
+      "originalPts": 3246224,
+      "timeBase": [
+        1,
+        16000
+      ],
+      "visibleJapaneseDialogue": "つま",
+      "wholeCardTextComplete": false
+    },
+    "after": {
+      "sourcePTS": 202.923,
+      "image": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/entry-frames/frame-012.jpg",
+        "bytes": 79733,
+        "sha256": "ea37f68cff8e6c6be3470cd579bd0856913ca7a6641c7969c421d2b40d10d9ac"
+      },
+      "originalPts": 3246768,
+      "timeBase": [
+        1,
+        16000
+      ],
+      "visibleJapaneseDialogue": "つまり",
+      "wholeCardTextComplete": false
+    },
+    "measuredReferenceZeroSeconds": 202.92075,
+    "referenceZeroMinusBeforeSeconds": 0.03175,
+    "afterMinusReferenceZeroSeconds": 0.00225,
+    "fullSourceTextGuard": "つまり、これはあれだ。タイムリープ",
+    "conclusion": "The cue-reference zero lies between two adjacent directly inspected original frames that both show incomplete card8 text. This does not support assigning reference-zero after the entire card8 text completes; the exact first fully complete-text frame remains pending.",
+    "firstFullTextCompletionSeconds": null,
+    "nativePhaseRecovered": false,
+    "nativeLoadingOrderInferred": false,
+    "decodeLog": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/entry-frames/decode.log",
+      "bytes": 9678,
+      "sha256": "52c1b60ecf1c153867ba726329450c99f8d42d6f8cec875b69dff0708ab7b488"
+    },
+    "referenceZeroEvidence": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/measured-evidence.json",
+      "bytes": 351606,
+      "sha256": "f87f7b5a4e257b4aa85c7028a141874d4a48d199880fe1d26da35381848fba35"
+    }
+  },
+  "actions": {
+    "sourceChanged": false,
+    "formalDataChanged": false,
+    "newFramesDecoded": false,
+    "browserOpened": false
+  }
+}
