@@ -1,0 +1,185 @@
+
+Stella.Scenes.ADV2.Control.SetupAdvPlayer: 0x170de74..0x170ded0 (upper bound)
+0x170de74: str x21, [sp, #-0x30]!
+0x170de78: stp x20, x19, [sp, #0x10]
+0x170de7c: stp x29, x30, [sp, #0x20]
+0x170de80: add x29, sp, #0x20
+0x170de84: cbz x2, #0x170decc
+0x170de88: ldr x8, [x2, #0x10]
+0x170de8c: mov x19, x2
+0x170de90: mov x20, x1
+0x170de94: cbz x8, #0x170dea0
+0x170de98: ldr w21, [x8, #0x10]
+0x170de9c: b #0x170dea4
+0x170dea0: mov w21, wzr
+0x170dea4: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170dea8: cbz x0, #0x170decc
+0x170deac: mov x1, x20
+0x170deb0: mov x2, x19
+0x170deb4: ldp x29, x30, [sp, #0x20]
+0x170deb8: ldp x20, x19, [sp, #0x10]
+0x170debc: mov w3, w21
+0x170dec0: mov x4, xzr
+0x170dec4: ldr x21, [sp], #0x30
+0x170dec8: b #0x124c69c // Stella.Scenes.ADV2.ADVPlayer.SetUp
+0x170decc: bl #0xd418ec
+
+Stella.Scenes.ADV2.Director.Init: 0x1710308..0x17103bc (upper bound)
+0x1710308: stp x20, x19, [sp, #-0x20]!
+0x171030c: stp x29, x30, [sp, #0x10]
+0x1710310: add x29, sp, #0x10
+0x1710314: adrp x20, #0x2f3b000
+0x1710318: ldrb w8, [x20, #0x3ab]
+0x171031c: mov x19, x0
+0x1710320: tbnz w8, #0, #0x171033c
+0x1710324: adrp x8, #0x2d3f000
+0x1710328: ldr x8, [x8, #0x9c0]
+0x171032c: ldr w0, [x8]
+0x1710330: bl #0xd4181c
+0x1710334: mov w8, #1
+0x1710338: strb w8, [x20, #0x3ab]
+0x171033c: adrp x20, #0x2d36000
+0x1710340: ldr x20, [x20, #0x6e0]
+0x1710344: ldr x0, [x20]
+0x1710348: ldrb w8, [x0, #0x12f]
+0x171034c: tbz w8, #1, #0x171035c
+0x1710350: ldr w8, [x0, #0xe0]
+0x1710354: cbnz w8, #0x171035c
+0x1710358: bl #0xd418c8
+0x171035c: bl #0x170c5f0 // Stella.Scenes.ADV2.Director.Destroy
+0x1710360: cbz x19, #0x17103b8
+0x1710364: mov x0, x19
+0x1710368: mov x1, xzr
+0x171036c: bl #0x1d3fd24 // UnityEngine.Component.get_gameObject
+0x1710370: adrp x8, #0x2cda000
+0x1710374: ldr x8, [x8, #0xbc0]
+0x1710378: ldr x1, [x8]
+0x171037c: bl #0x212aea4
+0x1710380: ldr x8, [x20]
+0x1710384: ldr x8, [x8, #0xb8]
+0x1710388: str x0, [x8]
+0x171038c: ldr x8, [x20]
+0x1710390: ldr x8, [x8, #0xb8]
+0x1710394: ldr x0, [x8]
+0x1710398: cbz x0, #0x17103b8
+0x171039c: bl #0x1711a10 // Stella.Scenes.ADV2.Director.Setup
+0x17103a0: ldr x8, [x20]
+0x17103a4: ldp x29, x30, [sp, #0x10]
+0x17103a8: ldr x8, [x8, #0xb8]
+0x17103ac: ldr x0, [x8]
+0x17103b0: ldp x20, x19, [sp], #0x20
+0x17103b4: ret
+0x17103b8: bl #0xd418ec
+
+Stella.Scenes.ADV2.Director.Play: 0x17103bc..0x17103c4 (upper bound)
+0x17103bc: mov w1, #1
+0x17103c0: b #0x1711aac // Stella.Scenes.ADV2.Director.ChangePhase
+
+Stella.Scenes.ADV2.Director.Init_Init: 0x1711b7c..0x1711bd8 (upper bound)
+0x1711b7c: stp x20, x19, [sp, #-0x20]!
+0x1711b80: stp x29, x30, [sp, #0x10]
+0x1711b84: add x29, sp, #0x10
+0x1711b88: mov x19, x0
+0x1711b8c: bl #0x1711970 // Stella.Scenes.ADV2.Director.get_IsFromBattle
+0x1711b90: mov w20, w0
+0x1711b94: bl #0x17117cc // Stella.Scenes.ADV2.Director.get_AdvPlayer
+0x1711b98: cbz x0, #0x1711bd4
+0x1711b9c: mov x1, xzr
+0x1711ba0: tbz w20, #0, #0x1711bac
+0x1711ba4: bl #0x124e8c8 // Stella.Scenes.ADV2.ADVPlayer.GetScenarioDataForBattleResult
+0x1711ba8: b #0x1711bb0
+0x1711bac: bl #0x124e7c0 // Stella.Scenes.ADV2.ADVPlayer.GetScenarioData
+0x1711bb0: bl #0x17117cc // Stella.Scenes.ADV2.Director.get_AdvPlayer
+0x1711bb4: cbz x0, #0x1711bd4
+0x1711bb8: mov x1, xzr
+0x1711bbc: bl #0x124dd94 // Stella.Scenes.ADV2.ADVPlayer.GetSaveData
+0x1711bc0: ldp x29, x30, [sp, #0x10]
+0x1711bc4: mov w1, #2
+0x1711bc8: mov x0, x19
+0x1711bcc: ldp x20, x19, [sp], #0x20
+0x1711bd0: b #0x1711aac // Stella.Scenes.ADV2.Director.ChangePhase
+0x1711bd4: bl #0xd418ec
+
+Stella.ScriptSystem.ScriptManager.SetReturnCallback: 0x159f210..0x159f220 (upper bound)
+0x159f210: mov w8, #1
+0x159f214: str x1, [x0, #0x78]
+0x159f218: strb w8, [x0, #0x80]
+0x159f21c: ret
+
+Stella.ScriptSystem.ScriptManager.ResetReturnSuccess: 0x159f208..0x159f210 (upper bound)
+0x159f208: strb wzr, [x0, #0x70]
+0x159f20c: ret
+
+Stella.Scenes.ADV2.TextPanel.get_CanPlay: 0x1685a3c..0x1685b5c (upper bound)
+0x1685a3c: stp x20, x19, [sp, #-0x20]!
+0x1685a40: stp x29, x30, [sp, #0x10]
+0x1685a44: add x29, sp, #0x10
+0x1685a48: adrp x20, #0x2f3a000
+0x1685a4c: ldrb w8, [x20, #0xeb8]
+0x1685a50: mov x19, x0
+0x1685a54: tbnz w8, #0, #0x1685a70
+0x1685a58: adrp x8, #0x2d17000
+0x1685a5c: ldr x8, [x8, #0x5e8]
+0x1685a60: ldr w0, [x8]
+0x1685a64: bl #0xd4181c
+0x1685a68: mov w8, #1
+0x1685a6c: strb w8, [x20, #0xeb8]
+0x1685a70: ldrb w8, [x19, #0x45]
+0x1685a74: cbz w8, #0x1685b48
+0x1685a78: ldr x0, [x19, #0x58]
+0x1685a7c: mov x1, xzr
+0x1685a80: bl #0x1eefbb0
+0x1685a84: tbnz w0, #0, #0x1685b48
+0x1685a88: adrp x20, #0x2d32000
+0x1685a8c: ldr x20, [x20, #0x170]
+0x1685a90: ldr x8, [x20]
+0x1685a94: ldr x19, [x8, #0x18]
+0x1685a98: ldrb w8, [x19, #0x12e]
+0x1685a9c: tbnz w8, #0, #0x1685aa8
+0x1685aa0: mov x0, x19
+0x1685aa4: bl #0xd5dfc0
+0x1685aa8: ldr x8, [x19, #0xc0]
+0x1685aac: ldr x19, [x8]
+0x1685ab0: ldrb w8, [x19, #0x12e]
+0x1685ab4: tbnz w8, #0, #0x1685ac0
+0x1685ab8: mov x0, x19
+0x1685abc: bl #0xd5dfc0
+0x1685ac0: adrp x8, #0x2ca1000
+0x1685ac4: ldr x8, [x8, #0x690]
+0x1685ac8: ldr x0, [x8]
+0x1685acc: ldr x8, [x19, #0xb8]
+0x1685ad0: ldrb w9, [x0, #0x12f]
+0x1685ad4: ldr x19, [x8]
+0x1685ad8: tbz w9, #1, #0x1685ae8
+0x1685adc: ldr w8, [x0, #0xe0]
+0x1685ae0: cbnz w8, #0x1685ae8
+0x1685ae4: bl #0xd418c8
+0x1685ae8: mov x0, x19
+0x1685aec: mov x1, xzr
+0x1685af0: mov x2, xzr
+0x1685af4: bl #0x1b497dc // UnityEngine.Object.op_Inequality
+0x1685af8: tbz w0, #0, #0x1685b48
+0x1685afc: ldr x8, [x20]
+0x1685b00: ldr x19, [x8, #0x18]
+0x1685b04: ldrb w8, [x19, #0x12e]
+0x1685b08: tbnz w8, #0, #0x1685b14
+0x1685b0c: mov x0, x19
+0x1685b10: bl #0xd5dfc0
+0x1685b14: ldr x8, [x19, #0xc0]
+0x1685b18: ldr x19, [x8]
+0x1685b1c: ldrb w8, [x19, #0x12e]
+0x1685b20: tbnz w8, #0, #0x1685b2c
+0x1685b24: mov x0, x19
+0x1685b28: bl #0xd5dfc0
+0x1685b2c: ldr x8, [x19, #0xb8]
+0x1685b30: ldr x0, [x8]
+0x1685b34: cbz x0, #0x1685b58
+0x1685b38: ldp x29, x30, [sp, #0x10]
+0x1685b3c: mov x1, xzr
+0x1685b40: ldp x20, x19, [sp], #0x20
+0x1685b44: b #0x1d3b0e4 // UnityEngine.Behaviour.get_enabled
+0x1685b48: ldp x29, x30, [sp, #0x10]
+0x1685b4c: mov w0, wzr
+0x1685b50: ldp x20, x19, [sp], #0x20
+0x1685b54: ret
+0x1685b58: bl #0xd418ec

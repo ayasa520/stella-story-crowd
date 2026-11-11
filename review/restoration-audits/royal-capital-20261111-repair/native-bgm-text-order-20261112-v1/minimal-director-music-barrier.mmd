@@ -1,0 +1,12 @@
+flowchart LR
+  A["Director.Main_Init step0"] --> B["SendScenarioID / SetBG"]
+  B -->|"when BG completion callback runs"| C["InitScenario ordinary path"]
+  C --> D["SetupBGM: submit loader"]
+  D --> E["SetLive2D submission; return"]
+  E --> F["BG callback ReturnSuccess: isReturn=true"]
+  A -->|"after SendScenarioID call returns"| W["Wait NextStep: isWait=true"]
+  F --> G["ScriptManager.Update: isWait AND isReturn"]
+  W --> G
+  G --> H["Context.WaitFrame 1: NextStep"]
+  H --> I["Main step1: ExecCommand 0"]
+  D -.->|"separate loader success"| J["CrossFade / Play"]

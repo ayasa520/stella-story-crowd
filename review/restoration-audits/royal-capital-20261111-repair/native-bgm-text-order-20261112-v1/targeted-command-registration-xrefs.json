@@ -1,0 +1,127 @@
+{
+  "status": "targeted_direct_branch_xrefs_only",
+  "source": {
+    "path": "data/libil2cpp-offline.so",
+    "bytes": 49492360,
+    "sha256": "54c97bce616bdb062f12b0bccba47b1c6ff17f61da450d8bd0efa403f8822c05"
+  },
+  "inspector": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/inspect_native_bgm.py",
+    "bytes": 11526,
+    "sha256": "1185f1b1f377b850cae5c2415bfaed291684868812a9f2b540eac2fae119d923"
+  },
+  "module": {
+    "name": "Assembly-CSharp.dll",
+    "table": "0x2eb00d8",
+    "count": 34806,
+    "imageRecordOffset": 7853968,
+    "imageRecord": [
+      686785,
+      62,
+      5844,
+      6147,
+      -1,
+      0,
+      -1,
+      1,
+      8550,
+      13853
+    ]
+  },
+  "targets": {
+    "0x159e518": "Stella.ScriptSystem.ScriptManager.SetFuncTbl",
+    "0x1250558": "Stella.Scenes.ADV2.ADVPlayer.SetTextPanel",
+    "0x124d4c4": "Stella.Scenes.ADV2.ADVPlayer.SendScenarioID"
+  },
+  "scannedExecutableBounds": [
+    {
+      "fileOffset": "0x0",
+      "virtualAddress": "0x0",
+      "bytes": 44138288
+    }
+  ],
+  "hits": [
+    {
+      "at": "0xf9e654",
+      "opcode": "bl",
+      "target": "0x159e518",
+      "targetName": "Stella.ScriptSystem.ScriptManager.SetFuncTbl",
+      "enclosingIndexedCandidateStart": "0xf9e2bc",
+      "nextIndexedUpperBound": "0xf9e6b0",
+      "candidateNames": [
+        "Stella.ScriptSystem.SGNFWAPI.Start"
+      ]
+    },
+    {
+      "at": "0x159e510",
+      "opcode": "b",
+      "target": "0x159e518",
+      "targetName": "Stella.ScriptSystem.ScriptManager.SetFuncTbl",
+      "enclosingIndexedCandidateStart": "0x159de70",
+      "nextIndexedUpperBound": "0x159e518",
+      "candidateNames": [
+        "Stella.ScriptSystem.ScriptManager.OnSingletonAwake"
+      ]
+    },
+    {
+      "at": "0x15a5750",
+      "opcode": "bl",
+      "target": "0x159e518",
+      "targetName": "Stella.ScriptSystem.ScriptManager.SetFuncTbl",
+      "enclosingIndexedCandidateStart": "0x15a5500",
+      "nextIndexedUpperBound": "0x15a582c",
+      "candidateNames": [
+        "Stella.ScriptSystem.Sound.Start"
+      ]
+    },
+    {
+      "at": "0x15a80ac",
+      "opcode": "bl",
+      "target": "0x159e518",
+      "targetName": "Stella.ScriptSystem.ScriptManager.SetFuncTbl",
+      "enclosingIndexedCandidateStart": "0x15a7edc",
+      "nextIndexedUpperBound": "0x15a8188",
+      "candidateNames": [
+        "Stella.ScriptSystem.WipeAPI.Start"
+      ]
+    },
+    {
+      "at": "0x1711c30",
+      "opcode": "bl",
+      "target": "0x124d4c4",
+      "targetName": "Stella.Scenes.ADV2.ADVPlayer.SendScenarioID",
+      "enclosingIndexedCandidateStart": "0x1711bd8",
+      "nextIndexedUpperBound": "0x1711d28",
+      "candidateNames": [
+        "Stella.Scenes.ADV2.Director.Main_Init"
+      ]
+    },
+    {
+      "at": "0x1712378",
+      "opcode": "bl",
+      "target": "0x1250558",
+      "targetName": "Stella.Scenes.ADV2.ADVPlayer.SetTextPanel",
+      "enclosingIndexedCandidateStart": "0x171227c",
+      "nextIndexedUpperBound": "0x1712440",
+      "candidateNames": [
+        "Stella.Scenes.ADV2.Director.Card_Init"
+      ]
+    },
+    {
+      "at": "0x171280c",
+      "opcode": "bl",
+      "target": "0x1250558",
+      "targetName": "Stella.Scenes.ADV2.ADVPlayer.SetTextPanel",
+      "enclosingIndexedCandidateStart": "0x1712720",
+      "nextIndexedUpperBound": "0x17128c0",
+      "candidateNames": [
+        "Stella.Scenes.ADV2.Director.Movie_Init"
+      ]
+    }
+  ],
+  "elapsedSeconds": 1.5379005180002423,
+  "limits": [
+    "Direct B/BL only; indirect or inlined references are not covered.",
+    "Nearest indexed method labels are candidates within an upper bound, not recovered function-size symbols."
+  ]
+}

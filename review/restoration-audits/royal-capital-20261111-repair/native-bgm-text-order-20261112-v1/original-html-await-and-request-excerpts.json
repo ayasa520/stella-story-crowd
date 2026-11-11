@@ -1,0 +1,88 @@
+{
+  "source": {
+    "path": "logs/adv.html",
+    "bytes": 690087,
+    "sha256": "79e45d5f771ca407cfd80b34ac7ef29bcc4350b658ea17b4d984cdb54e941d6e"
+  },
+  "excerpts": [
+    {
+      "firstLine": 1295,
+      "lastLine": 1327,
+      "purpose": "Per-call next resolver storage",
+      "text": "/*!*****************************!*\\\n  !*** ./src/lib/callback.ts ***!\n  \\*****************************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar logger_1 = __webpack_require__(/*! ./logger */ \"./src/lib/logger.ts\");\n// Unityからのコールバック関数設定\n//\n// unityからの呼び出し食らった時に差し出す物をまとめる\nvar Callback = /** @class */ (function () {\n    function Callback() {\n    }\n    Callback.setNexts = function (resolve, id) {\n        if (this.nextResolves[id]) {\n            delete this.nextResolves[id];\n        }\n        this.setCount++;\n        // このメソッドが実行されてresolveの引数がreturnされる\n        this.nextResolves[id] = function (obj) {\n            try {\n                resolve(obj ? obj : {});\n            }\n            catch (e) {\n                logger_1.logger.outputThrow(e);\n            }\n        };\n        if (this.isNow()) {\n            // TODO 引数渡したい場合はglobal変数とか渡すか?\n            this.nextResolves[id]();\n        }\n    };"
+    },
+    {
+      "firstLine": 1378,
+      "lastLine": 1393,
+      "purpose": "Native-facing window.next callback",
+      "text": "    };\n    Callback.Init = function () {\n        var _this = this;\n        window.ScriptStart = function () {\n            _this.startExec();\n        };\n        window.next = function (id, obj) {\n            _this.nextExec(id, obj);\n        };\n        window.onTrigger = function (obj) {\n            _this.onTriggerExec(obj);\n        };\n    };\n    // callbackに積んだ処理をすぐ実行\n    Callback.isNow = function () {\n        return [\"debugger\"].indexOf(\"development\") !== -1;"
+    },
+    {
+      "firstLine": 1573,
+      "lastLine": 1583,
+      "purpose": "Phase0 Exec1st awaits Exec(command0)",
+      "text": "    ADVCmdSequence.prototype.Exec1st = function (sceneid, scenario) {\n        return __awaiter(this, void 0, void 0, function () {\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0: return [4 /*yield*/, this.Exec(scenario.command[0])];\n                    case 1:\n                        _a.sent();\n                        return [2 /*return*/];\n                }\n            });\n        });"
+    },
+    {
+      "firstLine": 2179,
+      "lastLine": 2193,
+      "purpose": "HTML SetBG is conditional on card state",
+      "text": "    ADVFuncs.prototype.SetBG = function (currentScenario) {\n        return __awaiter(this, void 0, void 0, function () {\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0:\n                        if (!(this.cardState === CardState.Out || this.cardState === CardState.Stay)) return [3 /*break*/, 2];\n                        return [4 /*yield*/, this.CardSetBG(currentScenario.bg_picture.toLowerCase())];\n                    case 1:\n                        _a.sent();\n                        _a.label = 2;\n                    case 2: return [2 /*return*/];\n                }\n            });\n        });\n    };"
+    },
+    {
+      "firstLine": 2233,
+      "lastLine": 2250,
+      "purpose": "TextPanel request is awaited by PanelSequence",
+      "text": "    ADVFuncs.prototype.PanelSequence = function (currentScenario) {\n        return __awaiter(this, void 0, void 0, function () {\n            var args;\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0:\n                        args = {};\n                        if (!currentScenario.msg_text) return [3 /*break*/, 2];\n                        args.to = \"ADVPlayer\";\n                        args.cmd = \"TextPanel\";\n                        return [4 /*yield*/, this.app.turn(args)]; // ラスト1\n                    case 1:\n                        _a.sent(); // ラスト1\n                        _a.label = 2;\n                    case 2: return [2 /*return*/];\n                }\n            });\n        });"
+    },
+    {
+      "firstLine": 2563,
+      "lastLine": 2574,
+      "purpose": "SendScenarioID returns app.turn Promise",
+      "text": "    ADVFuncs.prototype.SendScenarioID = function (uniqID) {\n        return __awaiter(this, void 0, void 0, function () {\n            var args;\n            return __generator(this, function (_a) {\n                args = {};\n                args.cmd = \"SendScenarioID\";\n                args.to = this.CMD_TO;\n                args.uniq_id = uniqID;\n                return [2 /*return*/, this.app.turn(args)];\n            });\n        });\n    };"
+    },
+    {
+      "firstLine": 2597,
+      "lastLine": 2613,
+      "purpose": "CardIn request is awaited",
+      "text": "    ADVFuncs.prototype.CardIn = function () {\n        return __awaiter(this, void 0, void 0, function () {\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0:\n                        this.cardState = CardState.In;\n                        return [4 /*yield*/, this.app.turn({\n                                to: \"ADVPlayer\",\n                                cmd: \"CardIn\",\n                            })];\n                    case 1:\n                        _a.sent();\n                        return [2 /*return*/];\n                }\n            });\n        });\n    };"
+    },
+    {
+      "firstLine": 2727,
+      "lastLine": 2738,
+      "purpose": "CardSetBG request producer",
+      "text": "    ADVFuncs.prototype.CardSetBG = function (path) {\n        return __awaiter(this, void 0, void 0, function () {\n            var args;\n            return __generator(this, function (_a) {\n                args = {};\n                args.cmd = \"CardSetBG\";\n                args.to = this.CMD_TO;\n                args.path = path;\n                return [2 /*return*/, this.app.turn(args)];\n            });\n        });\n    };"
+    },
+    {
+      "firstLine": 6031,
+      "lastLine": 6048,
+      "purpose": "App.turn delegates to Toroste",
+      "text": "    /**\n     * 指定コマンドのAPIを呼び出す\n     * awaitすると最低でも1フレーム待つので注意\n     *\n     * @param {{ [index: string]: any; }} [param={}] コマンドパラメータ\n     * @returns\n     * @memberof ADVPlayer\n     */\n    App.prototype.turn = function (param) {\n        if (param === void 0) { param = {}; }\n        return __awaiter(this, void 0, void 0, function () {\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0: return [4 /*yield*/, this.ts.turn(param)];\n                    case 1: return [2 /*return*/, _a.sent()];\n                }\n            });\n        });"
+    },
+    {
+      "firstLine": 6681,
+      "lastLine": 6729,
+      "purpose": "Independent callId/wait per Toroste.turn",
+      "text": "var Toroste = /** @class */ (function () {\n    function Toroste() {\n        this.fetchMethod = null;\n        // unityから `next(<id>, <obj>)` の実行で呼び出された時の<obj>が返る\n        this.unityReturn = {};\n        this.callId = 1; // TODO 複数ライン対応時には乱数等の被らないように\n    }\n    // スクリプトの開始待ち。unityが `ScriptStart()` の実行で開始\n    Toroste.prototype.waitStart = function () {\n        var _this = this;\n        return new Promise(function (resolve) {\n            logger_1.logger.log(\"Toroste.waitStart() ...\");\n            callback_1.Callback.setScriptStart(function () {\n                _this.turn({ to: \"\", cmd: \"ScriptStartRecive\" });\n                resolve();\n            });\n        }).catch(logger_1.logger.outputThrow);\n    };\n    // unityからの`next()`実行待ち\n    Toroste.prototype.wait = function () {\n        var _this = this;\n        return new Promise(function (resolve) {\n            logger_1.logger.info(\"Toroste.wait() ... id: %s\", _this.callId);\n            callback_1.Callback.setNexts(resolve, _this.callId);\n            _this.callId++; // setした後にインクリメント TODO テスト書きましょう\n        }).catch(logger_1.logger.outputThrow);\n    };\n    Toroste.prototype.delay = function (millisec) {\n        return new Promise(function (resolve) {\n            // logger.info(\"Toroste.delay(%s) ...\", millisec)\n            setTimeout(resolve, millisec);\n        }).catch(logger_1.logger.outputThrow);\n    };\n    Toroste.prototype.turn = function (json) {\n        return __awaiter(this, void 0, void 0, function () {\n            var _a;\n            return __generator(this, function (_b) {\n                switch (_b.label) {\n                    case 0:\n                        this.call({ id: this.callId, data: json });\n                        _a = this;\n                        return [4 /*yield*/, this.wait()];\n                    case 1:\n                        _a.unityReturn = _b.sent();\n                        return [2 /*return*/, this.unityReturn];\n                }\n            });\n        });\n    };"
+    },
+    {
+      "firstLine": 6747,
+      "lastLine": 6753,
+      "purpose": "Unity.call producer",
+      "text": "    Toroste.prototype.call = function (json) {\n        var str = JSON.stringify(json);\n        logger_1.logger.info(\"Unity.call(%s)\", str);\n        if (typeof Unity !== \"undefined\" && Unity) {\n            Unity.call(str);\n        }\n    };"
+    },
+    {
+      "firstLine": 7000,
+      "lastLine": 7035,
+      "purpose": "PlayScenario does not yield SendScenarioID, then awaits phase0/card procedure",
+      "text": "function PlayScenario() {\n    return __awaiter(this, void 0, void 0, function () {\n        var ret;\n        return __generator(this, function (_a) {\n            switch (_a.label) {\n                case 0:\n                    funcs.SendScenarioID(currentScenario.uniq_id);\n                    console.log(\"-------------------------\");\n                    console.log(currentScenario);\n                    console.log(\"scenario.id:\" + currentScenario.scenario_id);\n                    if (!(currentScenario.scenario_type !== GameDef_1.default.ADVENTURE_SCENARIO_TYPE_TUTORIAL)) return [3 /*break*/, 2];\n                    return [4 /*yield*/, cmdSequence.Exec1st(currentSceneID, currentScenario)]; // 事前処理\n                case 1:\n                    _a.sent(); // 事前処理\n                    _a.label = 2;\n                case 2:\n                    if (!scenarioTypeFuncs[currentScenario.scenario_type]) return [3 /*break*/, 4];\n                    return [4 /*yield*/, scenarioTypeFuncs[currentScenario.scenario_type]()];\n                case 3:\n                    ret = _a.sent();\n                    return [3 /*break*/, 6];\n                case 4: return [4 /*yield*/, scenarioTypeFuncs[GameDef_1.default.ADVENTURE_SCENARIO_TYPE_CARD]()];\n                case 5:\n                    ret = _a.sent();\n                    _a.label = 6;\n                case 6: \n                // Stateを再設定\n                return [4 /*yield*/, SetState()];\n                case 7:\n                    // Stateを再設定\n                    _a.sent();\n                    return [2 /*return*/, ret];\n            }\n        });\n    });\n}"
+    },
+    {
+      "firstLine": 7216,
+      "lastLine": 7255,
+      "purpose": "HTML ordinary CardProc await chain",
+      "text": "function CardProc() {\n    return __awaiter(this, void 0, void 0, function () {\n        var promiseList, selectbranch;\n        return __generator(this, function (_a) {\n            switch (_a.label) {\n                case 0:\n                    promiseList = [];\n                    promiseList.push(funcs.SetBG(currentScenario)); // 背景\n                    promiseList.push(funcs.SetImage(currentScenario)); // Image\n                    return [4 /*yield*/, Promise.all(promiseList)];\n                case 1:\n                    _a.sent();\n                    return [4 /*yield*/, funcs.CardIn()];\n                case 2:\n                    _a.sent(); // カードIN\n                    return [4 /*yield*/, cmdSequence.Exec(currentScenario.command[1])]; // カードIN後演出\n                case 3:\n                    _a.sent(); // カードIN後演出\n                    return [4 /*yield*/, funcs.PanelSequence(currentScenario)];\n                case 4:\n                    _a.sent(); // 文章パネル処理\n                    return [4 /*yield*/, cmdSequence.Exec(currentScenario.command[2])]; // 文章パネル処理後演出\n                case 5:\n                    _a.sent(); // 文章パネル処理後演出\n                    return [4 /*yield*/, funcs.SelectSequence(currentScenario)];\n                case 6:\n                    select = _a.sent(); // 選択肢処理\n                    isChoice = select !== -1;\n                    if (!(!isChoice && !funcs.isCardOut)) return [3 /*break*/, 8];\n                    // 選択肢の無い時はユーザードロップ待ち\n                    return [4 /*yield*/, funcs.CardDrop()];\n                case 7:\n                    // 選択肢の無い時はユーザードロップ待ち\n                    _a.sent();\n                    // 選択の無いときはそのまま次へ\n                    select = 0;\n                    _a.label = 8;\n                case 8:\n                    funcs.isCardOut = false;\n                    selectbranch = ScenarioFuncs_1.default.GetSelectBranch(currentScenario, select);"
+    }
+  ],
+  "limit": "Original script contents prove producer/await structure. The exact deployment/Unity.call receiving route for the reference recording is not dynamically established."
+}

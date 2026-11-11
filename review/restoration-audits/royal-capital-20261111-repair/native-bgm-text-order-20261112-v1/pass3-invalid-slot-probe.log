@@ -1,0 +1,10 @@
+Bounded probe failure retained; no runtime was started and no source input was changed.
+Command: nice -n 19 taskset -c 22,23 uv run --offline --no-project --with capstone python inspect_text_boundary.py --prefix text-boundary-pass3 [11 named methods] --slot 0x2cb4bf0 --slot 0x2ca4308 --slot 0x2d090c88
+Error: StopIteration in NativeImage.offset(address), called by qword(slot).
+Invalid supplied VA: 0x2d090c88. The intended instruction operands were adrp0x2d09000 plus0xc88, which sum to0x2d09c88.
+The existing text-boundary-pass3-capstone.txt is a partial output preserved from this attempt; no pass3 evidence JSON was produced. Retry uses a new prefix, never overwrites this output.
+Traceback (retained from tool output):
+  inspect_text_boundary.py line80: slot = int(slot_text,0); destination = usages[image.qword(slot)]
+  inspect_native_actor_grammar.py line34: struct.unpack_from("<Q",self.raw,self.offset(address))[0]
+  inspect_native_actor_grammar.py line30: next(row for row in self.segments if row[0]==1 and row[3]<=address<row[3]+row[5])
+StopIteration

@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "status": "minimal_static_native_director_completion_gate_proven_music_success_not_the_shown_gate",
+  "reviewer": "/root/p15_p16_voice_evidence",
+  "createdUtc": "2026-11-11T20:13:42.191582+00:00",
+  "scope": "Ordinary non-tutorial native Director Main step0→step1, conditional on the matched background-completion chain. This is not a runtime trace or an authored phase decision.",
+  "diagram": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/minimal-director-music-barrier.mmd",
+    "bytes": 568,
+    "sha256": "7aae0efeb82952ee7940727bbf24a7cf4a7d92dd56035ebf61aa5baef79652b2"
+  },
+  "originalBuildInputs": [
+    {
+      "path": "data/libil2cpp-offline.so",
+      "bytes": 49492360,
+      "sha256": "54c97bce616bdb062f12b0bccba47b1c6ff17f61da450d8bd0efa403f8822c05"
+    },
+    {
+      "path": "logs/metadata-decrypted.dat",
+      "bytes": 9860704,
+      "sha256": "2cde31e37d9c6c58f3a1bb7bae6b12e51d456af7de03d604bc953116887b1b3e"
+    },
+    {
+      "path": "logs/metadata-types.json",
+      "bytes": 2955492,
+      "sha256": "b45d0eedc7f4fbb7a341134965c8dfdb8699144c6c04b58b069857575a99b6bb"
+    },
+    {
+      "path": "lost_in_memories/config/metadata_layout.json",
+      "bytes": 606,
+      "sha256": "6a4805e3b4137c2a7dd1dd2034d29b42f4a88a6598ac0262f82220b0338f29ec"
+    }
+  ],
+  "rawWitnesses": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/text-boundary-pass5-capstone.txt",
+      "bytes": 16629,
+      "sha256": "1913bc3f06c7c0e9fa4e7ff619f0adaf9da3a7703607fda7ed249846fea93f07"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/text-boundary-pass6-capstone.txt",
+      "bytes": 6074,
+      "sha256": "391c9df5a4248c6f15133afb19034d31ca1ec0b01ed330139a11bc14cb461bb3"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/text-boundary-pass6-evidence.json",
+      "bytes": 330698,
+      "sha256": "393412ee9dbcd8c9b6010ac30e299f60b948d4a559fab816499489a883e53e20"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/text-boundary-pass2-capstone.txt",
+      "bytes": 30061,
+      "sha256": "a5bc2e5e22715fb9f4f32d2149d3bda6dd988283cb3cdacc01a151afb349ce68"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/text-boundary-pass1-capstone.txt",
+      "bytes": 12784,
+      "sha256": "86afdcb758cd501945d1beeb2406fad506a51f321d7f0de350d1cad8c282bf52"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/text-boundary-pass1-evidence.json",
+      "bytes": 336508,
+      "sha256": "6140b4f0cc6003696c8cd50c8c6ba5e48b005aa73ab3ff2df998b931394cb50f"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/entry-order-native-capstone.txt",
+      "bytes": 82862,
+      "sha256": "56ee9148b89589a4d8ccff6a85408e73028568e880951c5338cfa040e314140f"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/bgm-entry-evidence.json",
+      "bytes": 13402,
+      "sha256": "70c1eb298e7446291d4b29d1aab2815b07028d6659ea8ff44ab361a2f320ba51"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/bgm-entry-capstone.txt",
+      "bytes": 7697,
+      "sha256": "e254c0ddfb4dd578be62f656f0615fbdd54067431c825fd8aa52a2b092d9e1fa"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/bgm-loader-crossfade-evidence.json",
+      "bytes": 15796,
+      "sha256": "59b0d8062a5255a20823cedfc5cb4e94f3b5730e3dc6ce0001ee573bd2298fe2"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/bgm-loader-crossfade-capstone.txt",
+      "bytes": 9274,
+      "sha256": "169f26bbf3f4f9391576a3b68d23d3acdf304167d5057fc636013ecff7590062"
+    }
+  ],
+  "steps": [
+    {
+      "at": "0x1711c30;0x1711c6c",
+      "fact": "Director.Main_Init step0 calls SendScenarioID then Director.Wait(NextStep). Delegate GOT0x2cfb8a8 resolves via original MethodDef usage to Director.NextStep(token0x06003e00)."
+    },
+    {
+      "at": "0x124d588;0x1251328;0x125137c",
+      "fact": "SendScenarioID supplies the bound BG callback(slot0x2cad600→<SendScenarioID>b__176_0). When invoked, that callback calls InitScenario, then ReturnSuccess."
+    },
+    {
+      "at": "0x124d86c;0x124d950",
+      "fact": "Ordinary InitScenario calls SetupBGM before SetLive2D. SetupBGM submits the already audited PlayBGM→Loader.Download chain; it does not join that success callback before returning."
+    },
+    {
+      "at": "0x159f210..0x159f21c;0x159c9fc;0x159edfc..0x159ee60",
+      "fact": "Wait registers callback+isWait. ReturnSuccess sets isReturn. ScriptManager.Update later checks both flags, resets them, and calls Context.WaitFrame(1,on_finish). Context.WaitFrame signature is int frame,Action on_finish; this is an internal continuation, not a script Wait CSV."
+    },
+    {
+      "at": "0x17125b0..0x1712604;0x1711cac",
+      "fact": "NextStep increments the native step and clears completion state; Main step1 enters ExecCommand(0)."
+    },
+    {
+      "at": "PlayBGM loader callback0x15ac50c",
+      "fact": "The success callback separately invokes CrossFade/Play. No inspected Main completion condition requires this callback or a BGM-ready flag."
+    }
+  ],
+  "preciseConclusion": {
+    "nativeDirectorExplicitCompletionWaitExists": true,
+    "matchingBgCallbackRunsInitBeforeItSignalsSuccess": true,
+    "setupBgmSubmissionOccursBeforeMatchedInitCompletionSignal": true,
+    "bgmLoaderSuccessIsTheShownContinuationGate": false,
+    "callbackMustBeDelayedUntilAfterWaitRegistration": false,
+    "safeToRemoveCurrentAwaitWithoutFurtherDesign": false
+  },
+  "limits": [
+    "The completion latch is global. This proves the shown matched callback/control-flow relation, not correlation of every possible concurrent/stale completion.",
+    "An already-ready BG callback may run inline before Wait is registered; the flag remains a latch. Actual loader timings were not measured.",
+    "The reference recording runtime choice between native Director and the archived HTML producer remains unproven. HTML awaits, native dispatch and native Director Wait are separate paths.",
+    "No universal order of background/model/music/CardIn/text-layout completions is established, and no phase, Wait, fade, restart or native CSV is approved.",
+    "No website/runtime/registry/scene was changed. No browser or original process was started."
+  ],
+  "preservedFailure": {
+    "failureLog": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/pass3-invalid-slot-probe.log",
+      "bytes": 1063,
+      "sha256": "b15ed6f3a87fda2436904756cb20c7f63b965f6412646fceb1b753842140ddfe"
+    },
+    "partialDump": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/text-boundary-pass3-capstone.txt",
+      "bytes": 28101,
+      "sha256": "a46d16b87286da7dfba4683825e651f89e1eac5145da161badb53f68e0c1feb3"
+    },
+    "reason": "Supplied VA0x2d090c88 was outside ELF load segments; intended adrp+offset is0x2d09c88.",
+    "correctedEvidence": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/text-boundary-pass3-corrected-evidence.json",
+      "bytes": 353150,
+      "sha256": "73be4e4a986374c4ecd093528922470ffcd3b60e3e5268b2dcdc8862f8439bfb"
+    },
+    "originalPartialOutputOverwritten": false
+  },
+  "fullSupplement": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/boundary-supplement-evidence.json",
+    "bytes": 39084,
+    "sha256": "560ad005668dd0060305af84e4b7da9a8fe789f24a73b331658b00d5ea695cf1"
+  }
+}
