@@ -8,7 +8,7 @@
       "stableKey": "s10270041-p13-title",
       "sourceText": "麗しき依頼人",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "美丽的委托人",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -94,7 +94,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "2": {
       "status": "draft",
@@ -102,7 +109,7 @@
       "stableKey": "s10270041-p13-at0411",
       "sourceText": "――フェルトに徽章を盗むよう依頼した人\n物、その相手と徽章を競り合うことになり、\nやがて姿を見せたのは……",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "——昴决定与委托菲鲁特偷徽章的人竞价，随后出现在他面前的是……",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -136,7 +143,6 @@
       ],
       "unknownFields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -206,7 +212,65 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-bg-variants.json",
+            "fields": [
+              "bg_picture"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewImage": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/background-variants-four-scenes.jpg",
+              "reviewDecision": "Root directly compared the source full frame and the three original variants. Composition and warm lighting confirm bg031b. The geometry-first top candidate was rejected after image review.",
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/background-entries/frames/p13-00416.349.jpg",
+              "recordingPart": 13,
+              "time": 416.349,
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+              "sourceSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+              "candidates": [
+                {
+                  "id": "bg/bg031c_stealshop",
+                  "score": 0.1993,
+                  "inliers": 9,
+                  "color_agreement": 0.626,
+                  "screen_coverage": 1.0,
+                  "evidence_coverage": 0.1588,
+                  "method": "sift_geometry_color",
+                  "time": 416.349
+                },
+                {
+                  "id": "bg/bg031b_stealshop",
+                  "score": 0.1931,
+                  "inliers": 7,
+                  "color_agreement": 0.9654,
+                  "screen_coverage": 1.0,
+                  "evidence_coverage": 0.1529,
+                  "method": "sift_geometry_color",
+                  "time": 416.349
+                },
+                {
+                  "id": "bg/bg031a_stealshop",
+                  "score": 0.1512,
+                  "inliers": 7,
+                  "color_agreement": 0.6449,
+                  "screen_coverage": 1.0,
+                  "evidence_coverage": 0.1088,
+                  "method": "sift_geometry_color",
+                  "time": 416.349
+                }
+              ],
+              "originalCandidateImage": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/background-entry-review/native-backgrounds/bg_bg031b_stealshop.png"
+            }
+          }
+        ]
+      }
     },
     "3": {
       "status": "draft",
@@ -214,7 +278,7 @@
       "stableKey": "s10270041-p13-at0418",
       "sourceText": "――盗品蔵・夕刻",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "——赃物库·傍晚",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -330,7 +394,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "4": {
       "status": "draft",
@@ -338,7 +409,7 @@
       "stableKey": "s10270041-p13-at0421",
       "sourceText": "見たところ、部外者が多い気がするのだけれど？",
       "sourceSpeaker": "黒衣の女性",
-      "translation": "",
+      "translation": "看起来，无关的人似乎有点多呢？",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -446,7 +517,9 @@
               "recordingId": "bili-capital-13"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "",
+          "sourceLabel": "美貌に驚く"
         },
         {
           "branchId": 43,
@@ -486,9 +559,18 @@
               "recordingId": "bili-capital-13"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "あ、いや、俺は部外者じゃなくて……",
+          "sourceLabel": "話を切り出す"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "5": {
       "status": "draft",
@@ -496,7 +578,7 @@
       "stableKey": "s10270041-p13-at0440",
       "sourceText": "部外者ではない？\nそれは、どういう意味かしら？",
       "sourceSpeaker": "黒衣の女性",
-      "translation": "",
+      "translation": "不是无关的人？这是什么意思？",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -606,7 +688,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "6": {
       "status": "draft",
@@ -614,7 +703,7 @@
       "stableKey": "s10270041-p13-at0445",
       "sourceText": "踏み倒されたら困るかんな。アタシら弱者なりの知恵だよ",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "万一你赖账，我可受不了。这算是我们这些弱者的智慧吧。",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -704,7 +793,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "7": {
       "status": "draft",
@@ -712,7 +808,7 @@
       "stableKey": "s10270041-p13-at0449",
       "sourceText": "そちらのご老人はわかるのだけれど、こちらのお兄さんは？",
       "sourceSpeaker": "黒衣の女性",
-      "translation": "",
+      "translation": "那边的老人我能理解，可这位小哥呢？",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -802,7 +898,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "8": {
       "status": "draft",
@@ -810,7 +913,7 @@
       "stableKey": "s10270041-p13-at0454",
       "sourceText": "この小僧はフェルトの交渉相手じゃ\nつまり、お前さんの競争相手じゃな",
       "sourceSpeaker": "ロム爺",
-      "translation": "",
+      "translation": "这小子也是和菲鲁特谈生意的。也就是说，是你的竞争对手。",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -927,7 +1030,9 @@
               "recordingId": "bili-capital-13"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "爺さん、公正に頼むぜ！",
+          "sourceLabel": "公正さを求める"
         },
         {
           "branchId": 83,
@@ -967,9 +1072,18 @@
               "recordingId": "bili-capital-13"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "",
+          "sourceLabel": "有利さを求める"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "9": {
       "status": "draft",
@@ -977,7 +1091,7 @@
       "stableKey": "s10270041-p13-at0474",
       "sourceText": "もちろんじゃ。この商売、信用が大事じゃからな",
       "sourceSpeaker": "ロム爺",
-      "translation": "",
+      "translation": "当然。这一行，信用最重要。",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -1083,7 +1197,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "10": {
       "status": "draft",
@@ -1091,7 +1212,7 @@
       "stableKey": "s10270041-p13-at0479",
       "sourceText": "……なるほど、事情は飲み込めたわ",
       "sourceSpeaker": "黒衣の女性",
-      "translation": "",
+      "translation": "……原来如此，情况我明白了。",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -1181,7 +1302,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "11": {
       "status": "draft",
@@ -1189,7 +1317,7 @@
       "stableKey": "s10270041-p13-at0482",
       "sourceText": "ま、そんなわけで交渉開始だ。高く買ってくれる方に売るから、どんどん張り込んでくれよな！",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "总之，开始谈吧。谁出价高我就卖给谁，你们尽管加价啊！",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -1297,7 +1425,9 @@
               "recordingId": "bili-capital-13"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "頼むから、\nあんま欲かかねえでくれよ。\n相場で決めようぜ。相場で",
+          "sourceLabel": "懇願する"
         },
         {
           "branchId": 113,
@@ -1337,9 +1467,18 @@
               "recordingId": "bili-capital-13"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "",
+          "sourceLabel": "忠告する"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "12": {
       "status": "draft",
@@ -1347,7 +1486,7 @@
       "stableKey": "s10270041-p13-at0511",
       "sourceText": "ビビッてんじゃねーよ!アタシだって生活かかってんだ。それなりに苦労もしてんだからな！",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "别怂啊！我也得养活自己。这东西可是费了我不少工夫！",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -1437,7 +1576,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "13": {
       "status": "draft",
@@ -1445,7 +1591,7 @@
       "stableKey": "s10270041-p13-at0518",
       "sourceText": "いい性格だわ、嫌いじゃない。いいわ、交渉を始めましょう？",
       "sourceSpeaker": "黒衣の女性",
-      "translation": "",
+      "translation": "性格真不错，我不讨厌。好，开始谈吧？",
       "recordings": [
         {
           "segmentId": "p13-s10270041",
@@ -1538,7 +1684,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     }
   },
   "issues": [
@@ -2214,5 +2367,79 @@
     }
   ],
   "visualTransitions": [],
-  "transitionEvidence": []
+  "transitionEvidence": [],
+  "repairEvidence": {
+    "maps": [
+      {
+        "sourceSceneId": 10270041,
+        "additions": [
+          {
+            "native": {
+              "section_id": 1027,
+              "scene_id": 10270042
+            },
+            "evidenceRoutes": [
+              {
+                "sourceSceneId": 10270041,
+                "scenarioId": 13,
+                "branchId": 131,
+                "stableKey": "s10270041-p13-at0518",
+                "transition": {
+                  "uniq_id": 1027004110131,
+                  "transition_id": 13101,
+                  "next_scenario_id": 0,
+                  "next_scenario_label": "FINISH",
+                  "next_section_id": 1027,
+                  "next_scene_id": 10270042
+                },
+                "targetSectionId": 1027,
+                "targetSceneId": 10270042,
+                "targetTitle": "タフ・ネゴシエーション",
+                "owned": true,
+                "chartPresent": false,
+                "state": "confirmed",
+                "verification": "observed",
+                "evidence": [
+                  {
+                    "segmentId": "p13-s10270041",
+                    "start": 517.999,
+                    "end": 521.499,
+                    "sourceAnchorSeconds": 517.999,
+                    "ocrReviewed": false,
+                    "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/13/coarse-1hz/crops/015630-dialogue.png",
+                    "ocrEventId": "merged-0119",
+                    "sourceSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+                    "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+                    "originalOCRText": "いい性格だわ、嫌いじゃない。いいわ、交渉を始めましょう？",
+                    "ocrConfidence": 0.99653,
+                    "ocrReviewReasons": [],
+                    "mapFrame": null,
+                    "nextTitleFrame": "data/native_recovery/royal-capital-20261110/ocr/13/root-review/frames/f46e3f21f826-015690.jpg",
+                    "handoffKind": "direct-title",
+                    "previousDialogueFrame": null,
+                    "basis": "Explicitly reviewed source-to-named-title handoff; not inferred from IDs or map coordinates.",
+                    "recordingId": "bili-capital-13"
+                  }
+                ],
+                "frames": [
+                  {
+                    "role": "frame",
+                    "path": "data/native_recovery/royal-capital-20261110/ocr/13/coarse-1hz/crops/015630-dialogue.png",
+                    "exists": true
+                  },
+                  {
+                    "role": "nextTitleFrame",
+                    "path": "data/native_recovery/royal-capital-20261110/ocr/13/root-review/frames/f46e3f21f826-015690.jpg",
+                    "exists": true
+                  }
+                ],
+                "overlayEligible": true
+              }
+            ]
+          }
+        ],
+        "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/result-v2/chart-overlay.json"
+      }
+    ]
+  }
 }

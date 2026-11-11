@@ -8,7 +8,7 @@
       "stableKey": "s10280014-p11-title",
       "sourceText": "フリフリ",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "荷叶边",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -94,7 +94,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "2": {
       "status": "draft",
@@ -102,7 +109,7 @@
       "stableKey": "s10280014-p11-at0012",
       "sourceText": "――ラムと一緒に盗品蔵で待っていると、や\nがてフェルトが現れる。ところが、彼女はス\nバルのことを覚えていなかった。",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "——昴与拉姆一起在赃物库等待，不久，菲鲁特终于出现了。然而，她却不记得昴。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -136,7 +143,6 @@
       ],
       "unknownFields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -206,7 +212,69 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-patches.json",
+            "fields": [
+              "bg_picture"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "The full recording frame and original 031a/031b assets were visually compared. The evening color and positions of the shield, armor, table, and chairs confirm 031b.",
+              "recordingPart": 11,
+              "videoSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "frames": [
+                {
+                  "time": 19.35,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-background-pilot/frames/p11-00019.350.jpg",
+                  "match": {
+                    "id": "bg/bg031b_stealshop",
+                    "score": 0.3068,
+                    "inliers": 12,
+                    "color_agreement": 0.9623,
+                    "screen_coverage": 1.0,
+                    "evidence_coverage": 0.1672,
+                    "method": "sift_geometry_color"
+                  },
+                  "competingMatch": {
+                    "id": "bg/bg031a_stealshop",
+                    "score": 0.2391,
+                    "inliers": 11,
+                    "color_agreement": 0.6437
+                  }
+                },
+                {
+                  "time": 21.85,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-background-pilot/frames/p11-00021.850.jpg",
+                  "match": {
+                    "id": "bg/bg031b_stealshop",
+                    "score": 0.2638,
+                    "inliers": 10,
+                    "color_agreement": 0.9661,
+                    "screen_coverage": 1.0,
+                    "evidence_coverage": 0.1453,
+                    "method": "sift_geometry_color"
+                  },
+                  "competingMatch": {
+                    "id": "bg/bg031a_stealshop",
+                    "score": 0.2217,
+                    "inliers": 10,
+                    "color_agreement": 0.6524
+                  }
+                }
+              ],
+              "inheritanceDecision": "Write the background only at the first body row. The 21-second location caption and later unchanged backgrounds retain their authored empty fields. Other scenes require independent review."
+            }
+          }
+        ]
+      }
     },
     "3": {
       "status": "draft",
@@ -214,7 +282,7 @@
       "stableKey": "s10280014-p11-at0021",
       "sourceText": "――盗品蔵・夕刻",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "——赃物库·傍晚",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -248,7 +316,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character",
         "character_image",
@@ -328,7 +395,83 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/root-reviewed-p11-music-entry-stop.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/opening-boundary-candidates.json",
+              "cardBoundaryIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/index.json",
+              "contact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/opening-contact.jpg",
+              "frameObservations": [
+                {
+                  "sourcePTS": 19.723,
+                  "event": "The preceding summary panel remains visible."
+                },
+                {
+                  "sourcePTS": 19.823,
+                  "event": "The summary panel has left."
+                },
+                {
+                  "sourcePTS": 19.923,
+                  "event": "The new location panel starts appearing."
+                },
+                {
+                  "sourcePTS": 20.023,
+                  "event": "The location caption starts typing."
+                },
+                {
+                  "sourcePTS": 20.823,
+                  "event": "The location caption reads 盗品蔵・夕刻 in full."
+                }
+              ],
+              "waveformObservations": [
+                {
+                  "queryStart": 19,
+                  "queryDuration": 1,
+                  "candidate": null
+                },
+                {
+                  "queryStart": 20,
+                  "queryDuration": 1,
+                  "resource": "bgm_adv_comical02_cd2_09",
+                  "correlation": 0.7111
+                },
+                {
+                  "queryStart": 21,
+                  "queryDuration": 1,
+                  "resource": "bgm_adv_comical02_cd2_09",
+                  "correlation": 0.9801
+                },
+                {
+                  "queryStart": 24,
+                  "queryDuration": 1,
+                  "resource": "bgm_adv_comical02_cd2_09",
+                  "correlation": 0.9863
+                }
+              ],
+              "decision": "Root personally reviewed all consecutive boundary frames and the waveform evidence, confirming this music resource at the location-card entry. The earlier 14-second result used an eight-second query and did not establish music during the summary.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "fadeSeconds": 1,
+              "fadeDurationProvenance": "Authoring convention: the default one-second fade used by the accepted first three episodes. Recording evidence does not uniquely recover the original CSV, command phase, or exact native fade duration.",
+              "inheritanceDecision": "Write only the location entry; do not fill inherited music into surrounding empty native fields."
+            }
+          }
+        ]
+      }
     },
     "4": {
       "status": "draft",
@@ -336,7 +479,7 @@
       "stableKey": "s10280014-p11-at0024",
       "sourceText": "……もう夕方だぞ。爺さん！まだフェルトはこないのか？",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "……都已经傍晚了。老爷子！菲鲁特还没来吗？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -357,17 +500,14 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
-        "motion",
         "native_array_order",
         "original_scenario_id",
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ],
       "issues": [
         {
@@ -426,7 +566,123 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-patches.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root inspected the full 26.3-second recording frame and confirmed Subaru. The speaker label was not an input to model recognition.",
+              "recordingPart": 11,
+              "time": 26.3,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-pilot/cast-26.3000.png",
+              "registration": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-pilot/registration.json",
+              "match": {
+                "model": "subaru01",
+                "score": 0.5516196199934144,
+                "inliers": 22,
+                "coverage": 0.02314951377255576,
+                "method": "registered_native_actor"
+              },
+              "rejectedModel": "rom01",
+              "unresolved": [
+                "body command",
+                "independent face override",
+                "additional layers"
+              ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-motion-p11-at24.json",
+            "fields": [
+              "motion"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root directly reviewed the source and native top-six comparison for both windows. The arms-down posture and frowning eyebrows uniquely fit act_punpun among the tested body poses. Author this command to reproduce the observed pose; do not claim that the exact original script command was recovered.",
+              "recordingPart": 11,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "bodyReviews": [
+                {
+                  "interval": [
+                    24,
+                    27
+                  ],
+                  "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/motions/p11-at24-body/candidate-review.jpg",
+                  "token": "act_punpun",
+                  "score": 0.7006,
+                  "runnerUp": "act_kessin",
+                  "runnerUpScore": 0.504,
+                  "trajectorySupported": false
+                },
+                {
+                  "interval": [
+                    22.5,
+                    26.5
+                  ],
+                  "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/motions/p11-at24-body-entry/candidate-review.jpg",
+                  "token": "act_punpun",
+                  "score": 0.6398,
+                  "runnerUp": "act_kessin",
+                  "runnerUpScore": 0.4975,
+                  "trajectoryCoverage": 0.9,
+                  "motionSignal": 0.0005,
+                  "trajectorySupported": false
+                }
+              ],
+              "entryEvidence": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-entry-frames/contact.jpg",
+              "entryObservation": "The source character appears at approximately 22.5 seconds with closed eyes, followed by the visible frown at approximately 22.9 seconds. The OCR completion anchor at 24 seconds omitted this entry.",
+              "faceReview": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-at24-settled-face/settled-face-review.jpg",
+              "faceDecision": "An explicit face_punpun and the body's own facial curves have the same settled score 0.9157478754442563. Leave the independent face command empty; its unique original identity is not established.",
+              "additionalLayerDecision": "No cheek or option-layer command is authorized by this patch. Partial option tracks remain separate from whole-expression hypotheses.",
+              "recoveryClassification": "manual_recording_verified_pose_reproduction_not_exact_original_script_identity"
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-voices.json",
+            "fields": [
+              "voice"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "matching": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/p11-voice-pilot.json",
+              "member": "LIMEOS/audio/vo_adv_subaru/advk_subaru_koekake.wav",
+              "hit": {
+                "time_seconds": 23.0237,
+                "score": 0.971167,
+                "active_duration": 0.3759
+              },
+              "sourceSpeaker": "スバル",
+              "recording": {
+                "segmentId": "p11-s10280014",
+                "start": 24.0,
+                "end": 27.0,
+                "sourceAnchorSeconds": 24,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/11/coarse-1hz/crops/000810-dialogue.png",
+                "ocrEventId": "merged-0004",
+                "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+                "originalOCRText": "……もう夕方だぞ。爺さん！まだフェルトはこないのか？",
+                "ocrConfidence": 0.99331,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-11"
+              },
+              "decision": "Original cue waveform matches the aligned dialogue card; no long-form voice is inferred."
+            }
+          }
+        ]
+      }
     },
     "5": {
       "status": "draft",
@@ -434,7 +690,7 @@
       "stableKey": "s10280014-p11-at0028",
       "sourceText": "そう急かすでないわ。待つ時間は長く感じるもんじゃろうよ",
       "sourceSpeaker": "巨大な体躯の老人",
-      "translation": "",
+      "translation": "别这么催嘛。等人的时候，总会觉得时间过得慢啊。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -455,7 +711,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -464,8 +719,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ],
       "issues": [
         {
@@ -524,7 +778,75 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-patches.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root inspected the full 30.8-second recording frame and confirmed Rom. The speaker label was not an input to model recognition.",
+              "recordingPart": 11,
+              "time": 30.8,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-pilot/cast-30.8000.png",
+              "registration": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-pilot/registration.json",
+              "match": {
+                "model": "rom01",
+                "score": 0.5602311731084624,
+                "inliers": 78,
+                "coverage": 0.08368974072592598,
+                "method": "registered_native_actor"
+              },
+              "rejectedModel": "subaru01",
+              "unresolved": [
+                "body command",
+                "independent face override"
+              ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-voices.json",
+            "fields": [
+              "voice"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "matching": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/p11-voice-pilot.json",
+              "member": "LIMEOS/audio/vo_adv_rom/advg_rom_ando.wav",
+              "hit": {
+                "time_seconds": 27.8354,
+                "score": 0.886934,
+                "active_duration": 0.786
+              },
+              "sourceSpeaker": "巨大な体躯の老人",
+              "recording": {
+                "segmentId": "p11-s10280014",
+                "start": 28.0,
+                "end": 31.5,
+                "sourceAnchorSeconds": 28,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/11/coarse-1hz/crops/000930-dialogue.png",
+                "ocrEventId": "merged-0005",
+                "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+                "originalOCRText": "そう急かすでないわ。待つ時間は長く感じるもんじゃろうよ",
+                "ocrConfidence": 0.9999,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-11"
+              },
+              "decision": "Original cue waveform matches the aligned dialogue card; no long-form voice is inferred."
+            }
+          }
+        ]
+      }
     },
     "6": {
       "status": "draft",
@@ -532,7 +854,7 @@
       "stableKey": "s10280014-p11-at0033",
       "sourceText": "そりゃそうだけど……。早くしないと、俺よりラムが限界にくる。ラムが、暴れたら手がつけられねえぞ",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "话是这么说……再不快点，拉姆就要先撑不住了。她要是闹起来，可没人制得住啊。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -553,7 +875,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -562,8 +883,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ],
       "issues": [
         {
@@ -622,7 +942,76 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-patches.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root inspected the full 35-second recording frame and confirmed Subaru. The speaker label was not an input to model recognition.",
+              "recordingPart": 11,
+              "time": 35,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-pilot/cast-35.0000.png",
+              "registration": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-pilot/registration.json",
+              "match": {
+                "model": "subaru01",
+                "score": 0.7422214406172277,
+                "inliers": 35,
+                "coverage": 0.044917983668191094,
+                "method": "registered_native_actor"
+              },
+              "rejectedModel": "rom01",
+              "unresolved": [
+                "body command",
+                "independent face override",
+                "additional layers"
+              ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-voices.json",
+            "fields": [
+              "voice"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "matching": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/p11-voice-pilot.json",
+              "member": "LIMEOS/audio/vo_adv_subaru/advg_subaru_kangaeru.wav",
+              "hit": {
+                "time_seconds": 32.6056,
+                "score": 0.978237,
+                "active_duration": 1.2038
+              },
+              "sourceSpeaker": "スバル",
+              "recording": {
+                "segmentId": "p11-s10280014",
+                "start": 33.0,
+                "end": 38.5,
+                "sourceAnchorSeconds": 33,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/11/dialogue-completion-2hz/crops/001155-dialogue.png",
+                "ocrEventId": "merged-0006",
+                "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+                "originalOCRText": "そりゃそうだけど……。早くしないと、俺よりラムが限界にくる。ラムが、暴れたら手がつけられねえぞ",
+                "ocrConfidence": 0.99171,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-11"
+              },
+              "decision": "Original cue waveform matches the aligned dialogue card; no long-form voice is inferred."
+            }
+          }
+        ]
+      }
     },
     "7": {
       "status": "draft",
@@ -630,7 +1019,7 @@
       "stableKey": "s10280014-p11-at0040",
       "sourceText": "ずいぶんと不愉快な発言ね。ラムのか弱い心がいたく傷付いたわ",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "真是让人不快的发言呢。拉姆脆弱的心灵受到了深深的伤害。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -651,7 +1040,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -720,7 +1108,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 43.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-10-prefilter/cast-43.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-01.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.630348207940031,
+                "inliers": 47,
+                "coverage": 0.05275065132549831,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0040",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "8": {
       "status": "draft",
@@ -728,7 +1149,7 @@
       "stableKey": "s10280014-p11-at0044",
       "sourceText": "もう許さない",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "这下绝不原谅你。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -749,7 +1170,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -818,7 +1238,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 45.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-10-prefilter/cast-45.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-01.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.561624594974452,
+                "inliers": 84,
+                "coverage": 0.043980922017778666,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0044",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "9": {
       "status": "draft",
@@ -826,7 +1279,7 @@
       "stableKey": "s10280014-p11-at0047",
       "sourceText": "……本気っぽくてすげぇ怖い",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "……感觉你是认真的，好可怕。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -847,7 +1300,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -916,7 +1368,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 48.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-10-prefilter/cast-48.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-01.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.7735226920600524,
+                "inliers": 30,
+                "coverage": 0.0562992308820997,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0047",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "10": {
       "status": "draft",
@@ -924,7 +1409,7 @@
       "stableKey": "s10280014-p11-at0050",
       "sourceText": "……む、どうやらきたようじゃな。ちと待っておれ",
       "sourceSpeaker": "巨大な体躯の老人",
-      "translation": "",
+      "translation": "……唔，好像来了。你们等一会儿。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -943,9 +1428,7 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -954,8 +1437,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ],
       "issues": [
         {
@@ -1014,7 +1496,158 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-voices.json",
+            "fields": [
+              "voice"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "matching": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/p11-voice-pilot.json",
+              "member": "LIMEOS/audio/vo_adv_rom/advg_rom_gimon.wav",
+              "hit": {
+                "time_seconds": 50.0336,
+                "score": 0.842501,
+                "active_duration": 0.4209
+              },
+              "sourceSpeaker": "巨大な体躯の老人",
+              "recording": {
+                "segmentId": "p11-s10280014",
+                "start": 50.0,
+                "end": 53.5,
+                "sourceAnchorSeconds": 50,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/11/coarse-1hz/crops/001590-dialogue.png",
+                "ocrEventId": "merged-0010",
+                "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+                "originalOCRText": "……む、どうやらきたようじゃな。ちと待っておれ",
+                "ocrConfidence": 0.9995,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-11"
+              },
+              "decision": "Original cue waveform matches the aligned dialogue card; no long-form voice is inferred."
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/root-reviewed-p11-music-entry-stop.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/opening-boundary-candidates.json",
+              "cardBoundaryIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/index.json",
+              "contact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/stop-contact.jpg",
+              "frameObservations": [
+                {
+                  "sourcePTS": 49.123,
+                  "event": "The preceding Subaru card remains visible."
+                },
+                {
+                  "sourcePTS": 49.223,
+                  "event": "The Subaru card leaves."
+                },
+                {
+                  "sourcePTS": 49.323,
+                  "event": "No actor is visible."
+                },
+                {
+                  "sourcePTS": 49.423,
+                  "event": "Rom starts fading in."
+                },
+                {
+                  "sourcePTS": 49.523,
+                  "event": "Rom is clearly visible."
+                },
+                {
+                  "sourcePTS": 49.723,
+                  "event": "Rom's dialogue panel starts appearing."
+                }
+              ],
+              "waveformObservations": [
+                {
+                  "queryStart": 48.5,
+                  "queryDuration": 1,
+                  "resource": "bgm_adv_comical02_cd2_09",
+                  "correlation": 0.9798
+                },
+                {
+                  "queryStart": 49,
+                  "queryDuration": 1,
+                  "resource": "bgm_adv_comical02_cd2_09",
+                  "correlation": 0.9075
+                },
+                {
+                  "queryStart": 49.25,
+                  "queryDuration": 1,
+                  "resource": "bgm_adv_comical02_cd2_09",
+                  "correlation": 0.7016
+                },
+                {
+                  "queryStart": 49.5,
+                  "queryDuration": 1,
+                  "resource": "bgm_adv_comical02_cd2_09",
+                  "correlation": 0.4017
+                },
+                {
+                  "queryStart": 50,
+                  "queryDuration": 1,
+                  "candidate": null
+                },
+                {
+                  "sourceInterval": [
+                    52.2,
+                    53.9
+                  ],
+                  "event": "The decoded source mixture contains successive all-zero 0.1-second windows before the next audio event."
+                }
+              ],
+              "sourceVoiceOnset": 50.0336,
+              "decision": "Root personally reviewed all consecutive boundary frames and the continuous correlation drop, confirming a reconstructed music stop at Rom's card entry, rather than deriving a node from OCR's rounded 50-second anchor alone.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "fadeSeconds": 1,
+              "fadeDurationProvenance": "Authoring convention: the default one-second fade used by the accepted first three episodes. Recording evidence does not uniquely recover the original CSV, command phase, or exact native fade duration.",
+              "inheritanceDecision": "Write only this stop event; subsequent empty fields retain native inheritance semantics."
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 53.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-10-prefilter/cast-53.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-01.jpg",
+              "match": {
+                "model": "rom01",
+                "score": 0.8564629825226586,
+                "inliers": 96,
+                "coverage": 0.08138813291277204,
+                "character": "live2d/AC_rom01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0050",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "11": {
       "status": "draft",
@@ -1022,7 +1655,7 @@
       "stableKey": "s10280014-p11-at0055",
       "sourceText": "っ、きたか",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "终于来了吗。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1043,7 +1676,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1052,8 +1684,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ],
       "issues": [
         {
@@ -1112,7 +1743,73 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-voices.json",
+            "fields": [
+              "voice"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "matching": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/p11-voice-pilot.json",
+              "member": "LIMEOS/audio/vo_adv_subaru/advg_subaru_kantan.wav",
+              "hit": {
+                "time_seconds": 54.399,
+                "score": 0.998431,
+                "active_duration": 0.2707
+              },
+              "sourceSpeaker": "スバル",
+              "recording": {
+                "segmentId": "p11-s10280014",
+                "start": 55.0,
+                "end": 56.0,
+                "sourceAnchorSeconds": 55,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/11/coarse-1hz/crops/001650-dialogue.png",
+                "ocrEventId": "merged-0011",
+                "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+                "originalOCRText": "っ、きたか",
+                "ocrConfidence": 0.97183,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-11"
+              },
+              "decision": "Original cue waveform matches the aligned dialogue card; no long-form voice is inferred."
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 55.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-10-prefilter/cast-55.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-01.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.7724588500172426,
+                "inliers": 28,
+                "coverage": 0.04493476663316999,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0055",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "12": {
       "status": "draft",
@@ -1120,7 +1817,7 @@
       "stableKey": "s10280014-p11-at0057",
       "sourceText": "いよいよ、バルスの発言の真偽が問われる瞬間が迫ってきたわね。自分の舌とお別れする準備はできた？",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "终于到了验证巴鲁斯所言真假的时刻呢。做好和自己的舌头告别的准备了吗？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1141,7 +1838,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1210,7 +1906,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 62.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-10-prefilter/cast-62.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-01.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.8956283368725173,
+                "inliers": 115,
+                "coverage": 0.07601824828556605,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0057",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "13": {
       "status": "draft",
@@ -1218,7 +1947,7 @@
       "stableKey": "s10280014-p11-at0064",
       "sourceText": "嘘をつく奴は舌を切る的な発言か……。できてねぇよ！怖いよ！",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "你是想说，撒谎的人就要割舌头吗……没准备好啊！太吓人了！",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1239,7 +1968,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1248,8 +1976,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ],
       "issues": [
         {
@@ -1308,7 +2035,73 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-voices.json",
+            "fields": [
+              "voice"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "matching": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/p11-voice-pilot.json",
+              "member": "LIMEOS/audio/vo_adv_subaru/advk_subaru_kougi02_normal.wav",
+              "hit": {
+                "time_seconds": 64.0106,
+                "score": 0.993543,
+                "active_duration": 0.6663
+              },
+              "sourceSpeaker": "スバル",
+              "recording": {
+                "segmentId": "p11-s10280014",
+                "start": 64.0,
+                "end": 68.0,
+                "sourceAnchorSeconds": 64,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/11/coarse-1hz/crops/002040-dialogue.png",
+                "ocrEventId": "merged-0014",
+                "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+                "originalOCRText": "嘘をつく奴は舌を切る的な発言か……。できてねぇよ！怖いよ！",
+                "ocrConfidence": 0.95744,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-11"
+              },
+              "decision": "Original cue waveform matches the aligned dialogue card; no long-form voice is inferred."
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 67.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-10-prefilter/cast-67.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-01.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.5061191666501366,
+                "inliers": 19,
+                "coverage": 0.0481341438634055,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0064",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "14": {
       "status": "draft",
@@ -1316,7 +2109,7 @@
       "stableKey": "s10280014-p11-at0069",
       "sourceText": "そう。それならせいぜい、ドジを踏まないようにすることね",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "是吗。那你最好小心点，别出岔子。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1337,7 +2130,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1346,8 +2138,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ],
       "issues": [
         {
@@ -1406,7 +2197,73 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-voices.json",
+            "fields": [
+              "voice"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "matching": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/p11-voice-pilot.json",
+              "member": "LIMEOS/audio/vo_adv_ram/advg_ram_kanasii.wav",
+              "hit": {
+                "time_seconds": 69.1074,
+                "score": 0.999661,
+                "active_duration": 0.36
+              },
+              "sourceSpeaker": "ラム",
+              "recording": {
+                "segmentId": "p11-s10280014",
+                "start": 69.0,
+                "end": 73.0,
+                "sourceAnchorSeconds": 69,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/11/coarse-1hz/crops/002160-dialogue.png",
+                "ocrEventId": "merged-0015",
+                "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+                "originalOCRText": "そう。それならせいぜい、ドジを踏まないようにすることね",
+                "ocrConfidence": 0.99988,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-11"
+              },
+              "decision": "Original cue waveform matches the aligned dialogue card; no long-form voice is inferred."
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 72.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-72.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-01.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.5769952446671124,
+                "inliers": 45,
+                "coverage": 0.037736011402947564,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0069",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "15": {
       "status": "draft",
@@ -1414,7 +2271,7 @@
       "stableKey": "s10280014-p11-at0075",
       "sourceText": "あー、疲れた疲れた。\nったく、しつこいったらねーぜ",
       "sourceSpeaker": "金髪の少女",
-      "translation": "",
+      "translation": "啊——累死了累死了。真是的，没完没了地缠着我。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1449,7 +2306,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1526,7 +2382,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 78.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-78.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-01.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.4531631457782185,
+                "inliers": 27,
+                "coverage": 0.05685745818274362,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0075",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "16": {
       "status": "draft",
@@ -1534,7 +2423,7 @@
       "stableKey": "s10280014-p11-at0079",
       "sourceText": "けど、これでようやく一息つける……って、ああ？誰だよ、お前ら",
       "sourceSpeaker": "金髪の少女",
-      "translation": "",
+      "translation": "不过，这下终于能喘口气了……咦？你们谁啊？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1555,7 +2444,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1624,7 +2512,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 83.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-83.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.6677426423903602,
+                "inliers": 66,
+                "coverage": 0.0762784481048584,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0079",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "17": {
       "status": "draft",
@@ -1632,7 +2553,7 @@
       "stableKey": "s10280014-p11-at0084",
       "sourceText": "ロム爺！ 知らねー連中がいるぞ！\n人払いしてくれって言っといたじゃねーか",
       "sourceSpeaker": "金髪の少女",
-      "translation": "",
+      "translation": "罗姆爷！这里怎么有几个不认识的家伙！不是叫你把人都打发走吗！",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1670,7 +2591,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1750,7 +2670,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 88.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-88.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.7011647089655406,
+                "inliers": 17,
+                "coverage": 0.020423180290630887,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0084",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "18": {
       "status": "draft",
@@ -1758,7 +2711,7 @@
       "stableKey": "s10280014-p11-at0090",
       "sourceText": "すまんすまん、フェルト。じゃが、この二人はお前さんの客じゃよ",
       "sourceSpeaker": "ロム爺",
-      "translation": "",
+      "translation": "抱歉抱歉，菲鲁特。不过这两位是来找你的。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1789,7 +2742,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1862,7 +2814,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 93.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-93.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "rom01",
+                "score": 0.8469393860846965,
+                "inliers": 104,
+                "coverage": 0.08688015597207206,
+                "character": "live2d/AC_rom01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0090",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "19": {
       "status": "draft",
@@ -1870,7 +2855,7 @@
       "stableKey": "s10280014-p11-at0095",
       "sourceText": "アタシの客だぁ？",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "来找我的？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1891,7 +2876,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1960,7 +2944,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 96.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-96.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.5209954498414595,
+                "inliers": 25,
+                "coverage": 0.02927774829523904,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0095",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "20": {
       "status": "draft",
@@ -1968,7 +2985,7 @@
       "stableKey": "s10280014-p11-at0098",
       "sourceText": "なんでも、お前さんの盗んできた品物に用があるらしい。徽章、じゃったか？",
       "sourceSpeaker": "ロム爺",
-      "translation": "",
+      "translation": "听说是为了你偷来的东西。是叫徽章来着？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -1999,7 +3016,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2072,7 +3088,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 101.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-101.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "rom01",
+                "score": 0.5772656521679257,
+                "inliers": 78,
+                "coverage": 0.07694659914289202,
+                "character": "live2d/AC_rom01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0098",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "21": {
       "status": "draft",
@@ -2080,7 +3129,7 @@
       "stableKey": "s10280014-p11-at0103",
       "sourceText": "……へえ。やけに詳しいじゃねーか。いいぜ、話は聞いてやるよ",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "……哦？知道得还挺清楚嘛。好啊，我就听听你们怎么说。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -2101,7 +3150,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2170,7 +3218,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 106.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-106.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.7506857630008779,
+                "inliers": 50,
+                "coverage": 0.052807045834405084,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0103",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "22": {
       "status": "draft",
@@ -2178,7 +3259,7 @@
       "stableKey": "s10280014-p11-at0107p5",
       "sourceText": "よお、兄ちゃんたち。アタシに用があるんだって？",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "喂，哥哥，你们找我有事？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -2199,7 +3280,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2268,7 +3348,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 110.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-110.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.6875718084071122,
+                "inliers": 24,
+                "coverage": 0.04541181240762983,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0107p5",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "23": {
       "status": "draft",
@@ -2276,7 +3389,7 @@
       "stableKey": "s10280014-p11-at0112",
       "sourceText": "ああ、そうなんだ。お前がフェルト、でいいんだよな？",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "嗯，没错。你就是菲鲁特吧？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -2297,7 +3410,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2366,7 +3478,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 115.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-115.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.7408642621159826,
+                "inliers": 51,
+                "coverage": 0.07478806802204677,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0112",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "24": {
       "status": "draft",
@@ -2374,7 +3519,7 @@
       "stableKey": "s10280014-p11-at0117",
       "sourceText": "そうだぜ?兄ちゃんのお望みの品はアタシが持ってる",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "是啊。哥哥想要的东西就在我手上。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -2395,7 +3540,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2464,7 +3608,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 119.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-119.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.5091029106238072,
+                "inliers": 27,
+                "coverage": 0.03529171432767596,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0117",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "25": {
       "status": "draft",
@@ -2472,7 +3649,7 @@
       "stableKey": "s10280014-p11-at0122",
       "sourceText": "―――。",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "——。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -2508,7 +3685,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2586,7 +3762,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 122.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-122.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.5860532009561522,
+                "inliers": 21,
+                "coverage": 0.06446242332458496,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0122",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "26": {
       "status": "draft",
@@ -2594,7 +3803,7 @@
       "stableKey": "s10280014-p11-at0124",
       "sourceText": "?なんだよ。アタシの顔になんかついてるか？",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "嗯？怎么了，我脸上有东西吗？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -2615,7 +3824,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2684,7 +3892,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 126.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-126.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.6691143954995518,
+                "inliers": 63,
+                "coverage": 0.0762784481048584,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0124",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "27": {
       "status": "draft",
@@ -2692,7 +3933,7 @@
       "stableKey": "s10280014-p11-at0128",
       "sourceText": "いや、お前……俺に見覚えとかないのか？",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "不，你……对我一点印象都没有吗？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -2713,7 +3954,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2782,7 +4022,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 130.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-130.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-02.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.4113676152766314,
+                "inliers": 53,
+                "coverage": 0.052429531301770894,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0128",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "28": {
       "status": "draft",
@@ -2790,7 +4063,7 @@
       "stableKey": "s10280014-p11-at0132",
       "sourceText": "兄ちゃんに？……いや、ねーよ？どっかで会ったことあったか？",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "对哥哥？……没有啊。我们在哪儿见过吗？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -2811,7 +4084,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2880,7 +4152,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 135.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-135.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.7267510258118066,
+                "inliers": 45,
+                "coverage": 0.06931575281279427,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0132",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "29": {
       "status": "draft",
@@ -2888,7 +4193,7 @@
       "stableKey": "s10280014-p11-at0137",
       "sourceText": "アタシも暇じゃねーし、よっぽど衝撃的な出会い方でもしてね一限りは覚えちゃいねーよ",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "我也不是闲得没事干，除非见面的方式特别震撼，否则哪记得住啊。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -2909,7 +4214,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2978,7 +4282,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 141.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-141.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.45687030540027274,
+                "inliers": 24,
+                "coverage": 0.0525787217276437,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0137",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "30": {
       "status": "draft",
@@ -2986,7 +4323,7 @@
       "stableKey": "s10280014-p11-at0143",
       "sourceText": "まあ、当然ね。バルスは没個性的な顔をしているもの",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "这也难怪。毕竟巴鲁斯长着一张毫无特色的脸。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3007,7 +4344,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3076,7 +4412,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 146.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-146.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.873719249676756,
+                "inliers": 107,
+                "coverage": 0.07347135884421212,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0143",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "31": {
       "status": "draft",
@@ -3084,7 +4453,7 @@
       "stableKey": "s10280014-p11-at0148",
       "sourceText": "あんま言いたくないけど、この目つきで没個性的は初めて言われたわ",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "虽然不太想这么说，可顶着这副眼神，我还是头一次被人说毫无特色。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3105,7 +4474,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3174,7 +4542,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 151.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-151.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.5499415965941957,
+                "inliers": 20,
+                "coverage": 0.032759591937065125,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0148",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "32": {
       "status": "draft",
@@ -3182,7 +4583,7 @@
       "stableKey": "s10280014-p11-at0153",
       "sourceText": "そうね、今のは嘘だったわ。バルスの目つきの悪さは歴史上に名を遺すような壮大なものよ",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "是呢，刚才我说谎了。巴鲁斯凶恶的眼神，伟大得足以名留青史。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3203,7 +4604,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3272,7 +4672,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 157.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-157.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.5122531898791947,
+                "inliers": 33,
+                "coverage": 0.03211730718612671,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0153",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "33": {
       "status": "draft",
@@ -3280,7 +4713,7 @@
       "stableKey": "s10280014-p11-at0159",
       "sourceText": "歴史に残る目つきってなんだよ！！",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "什么叫能名留青史的眼神啊！！",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3301,7 +4734,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3370,7 +4802,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 161.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-161.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.7471295402393199,
+                "inliers": 44,
+                "coverage": 0.05880245992115566,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0159",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "34": {
       "status": "draft",
@@ -3378,7 +4843,7 @@
       "stableKey": "s10280014-p11-at0163",
       "sourceText": "あー、待てよ、お二人さん。勝手に盛り上がられてちゃ置いてけぼりだ。アタシに話があるんだろ？",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "喂，等等，你们两个。别自顾自地聊得热火朝天，把我晾在一边啊。你们不是找我有事吗？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3399,7 +4864,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3468,7 +4932,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 167.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-167.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.46143774788074254,
+                "inliers": 29,
+                "coverage": 0.07845961196081978,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0163",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "35": {
       "status": "draft",
@@ -3476,7 +4973,7 @@
       "stableKey": "s10280014-p11-at0169",
       "sourceText": "差し当たり、アタシの持ち物の件だ。こいつは頼まれ仕事なんだが……とりあえず、兄ちゃんはいくら出す？",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "先说说我手里的东西吧。这是别人委托我偷的……总之，哥哥愿意出多少钱？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3497,7 +4994,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3566,7 +5062,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 174.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-174.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.7884873070189442,
+                "inliers": 48,
+                "coverage": 0.06546788130487714,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0169",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "36": {
       "status": "draft",
@@ -3574,7 +5103,7 @@
       "stableKey": "s10280014-p11-at0176",
       "sourceText": "話が早いのは助かる。なんだが……",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "你这么爽快倒是帮了大忙。不过……",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3595,7 +5124,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3681,7 +5209,9 @@
               "recordingId": "bili-capital-11"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "実は金がない。\nなんで、俺が出せる条件は物々交換だ",
+          "sourceLabel": "モノはある"
         },
         {
           "branchId": 363,
@@ -3720,9 +5250,38 @@
               "recordingId": "bili-capital-11"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "",
+          "sourceLabel": "カネはない"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root directly reviewed the earlier same-card choice frame at 180 seconds. Subaru is visible before the 192.35-second exit; the exit-frame no-fit is not actor absence.",
+              "recordingPart": 11,
+              "time": 180,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/graphs/choice-witnesses/10280014-36-180.000.jpg",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": null,
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0176",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "37": {
       "status": "draft",
@@ -3730,7 +5289,7 @@
       "stableKey": "s10280014-p11-at0195",
       "sourceText": "物々交換だぁ？\nおいおい、そんな話に乗れるかよ",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "以物易物？喂喂，这种交易谁会答应啊。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3765,7 +5324,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3842,7 +5400,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 198.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-198.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.6782325659009176,
+                "inliers": 68,
+                "coverage": 0.07412769964763097,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0195",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "38": {
       "status": "draft",
@@ -3850,7 +5441,7 @@
       "stableKey": "s10280014-p11-at0200",
       "sourceText": "バルスにイラつく気持ちはわかるけど、ひとまずは穏便に話をしましょう",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "我能理解你被巴鲁斯惹得不耐烦，不过还是先心平气和地谈吧。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3871,7 +5462,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3940,7 +5530,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 203.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-203.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.8152379707404698,
+                "inliers": 79,
+                "coverage": 0.055068833487374444,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0200",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "39": {
       "status": "draft",
@@ -3948,7 +5571,7 @@
       "stableKey": "s10280014-p11-at0205",
       "sourceText": "……さっきっから気になってたんだが、これ、兄ちゃんのメイドか？",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "……从刚才起我就在想了，这位是哥哥你的女仆吗？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -3969,7 +5592,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4038,7 +5660,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 208.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-208.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-03.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.4772580888472981,
+                "inliers": 14,
+                "coverage": 0.0216689727136067,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0205",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "40": {
       "status": "draft",
@@ -4046,7 +5701,7 @@
       "stableKey": "s10280014-p11-at0210",
       "sourceText": "おぞましいことを言わないで。張り倒すわよ",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "别说这么恶心的话。我会把你打趴下的。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4067,7 +5722,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4136,7 +5790,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 212.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-212.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.41473814013219323,
+                "inliers": 85,
+                "coverage": 0.08239310128348214,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0210",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "41": {
       "status": "draft",
@@ -4144,7 +5831,7 @@
       "stableKey": "s10280014-p11-at0214",
       "sourceText": "穏便な話し合いは！？",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "说好的心平气和呢！？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4165,7 +5852,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4234,7 +5920,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 215.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-215.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.7371997653918976,
+                "inliers": 39,
+                "coverage": 0.07393809727260045,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0214",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "42": {
       "status": "draft",
@@ -4242,7 +5961,7 @@
       "stableKey": "s10280014-p11-at0217",
       "sourceText": "そうね、冷静さを欠いたのは認めるわ。バルス、謝っておきなさい",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "也是，我承认自己失去了冷静。巴鲁斯，去道歉。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4263,7 +5982,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4332,7 +6050,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 220.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-220.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.5570509334234864,
+                "inliers": 107,
+                "coverage": 0.0714783753667559,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0217",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "43": {
       "status": "draft",
@@ -4340,7 +6091,7 @@
       "stableKey": "s10280014-p11-at0222",
       "sourceText": "ああ、このたびは俺の不始末で……なんでだよ!",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "好，这次都是我管教无方……为什么是我啊！",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4361,7 +6112,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4430,7 +6180,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 225.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-225.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.6544475494382597,
+                "inliers": 25,
+                "coverage": 0.05098797593797956,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0222",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "44": {
       "status": "draft",
@@ -4438,7 +6221,7 @@
       "stableKey": "s10280014-p11-at0227",
       "sourceText": "誰が漫才しろって言ったよ。つたく、調子の狂う連中だな……",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "谁让你们说相声了。真是的，一群让人乱了节奏的家伙……",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4459,7 +6242,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4528,7 +6310,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 230.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-230.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.5040188808435382,
+                "inliers": 10,
+                "coverage": 0.021377486842019216,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0227",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "45": {
       "status": "draft",
@@ -4536,7 +6351,7 @@
       "stableKey": "s10280014-p11-at0232",
       "sourceText": "一緒にしないでちょうだい",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "请别把我和他混为一谈。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4557,7 +6372,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4626,7 +6440,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 233.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-233.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "ram01",
+                "score": 0.41556812911435037,
+                "inliers": 27,
+                "coverage": 0.02350571964468275,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0232",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "46": {
       "status": "draft",
@@ -4634,7 +6481,7 @@
       "stableKey": "s10280014-p11-at0235",
       "sourceText": "兄ちゃん、こんな態度悪いメイド、さっさとクビにした方がいいぞ",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "哥哥，这种态度恶劣的女仆，还是赶紧辞了吧。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4655,7 +6502,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4724,7 +6570,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 238.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-238.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.4679302172367506,
+                "inliers": 30,
+                "coverage": 0.0442489641053336,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0235",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "47": {
       "status": "draft",
@@ -4732,7 +6611,7 @@
       "stableKey": "s10280014-p11-at0240",
       "sourceText": "雇用形態については、あとで適度に見直すことにするよ。それよりも……",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "雇佣关系的问题，之后我会适当重新考虑的。比起这个……",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4753,7 +6632,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4822,7 +6700,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 244.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-244.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.7134557973957902,
+                "inliers": 28,
+                "coverage": 0.05958164589745658,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0240",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "48": {
       "status": "draft",
@@ -4830,7 +6741,7 @@
       "stableKey": "s10280014-p11-at0246",
       "sourceText": "あー、徽章だろ？ほら、これだ",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "哦，徽章是吧？喏，就是这个。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4851,7 +6762,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4920,7 +6830,34 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed blonde hair, red scarf, and body identifying Felt while the badge obscures her face. Preserve the independent item layer.",
+              "recordingPart": 11,
+              "time": 250.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-250.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": null,
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0246",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "49": {
       "status": "draft",
@@ -4928,7 +6865,7 @@
       "stableKey": "s10280014-p11-at0253",
       "sourceText": "これが……。なんだかんだで実物は初めて見るな。もっとよく見せてくれ",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "这就是……说起来，我还是第一次看见实物呢。让我再仔细看看。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -4949,7 +6886,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5018,7 +6954,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 256.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-256.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "subaru01",
+                "score": 0.7959799048939329,
+                "inliers": 38,
+                "coverage": 0.06959547741072518,
+                "character": "live2d/AC_subaru01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0253",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "50": {
       "status": "draft",
@@ -5026,7 +6995,7 @@
       "stableKey": "s10280014-p11-at0258",
       "sourceText": "馬鹿言えよ。それで取られたら笑い話にもならね一",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "说什么傻话。要是就这么被你抢走了，可一点都不好笑。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -5047,7 +7016,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5116,7 +7084,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 260.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-260.8500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.5760473926326111,
+                "inliers": 57,
+                "coverage": 0.0827352489743914,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0258",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "51": {
       "status": "draft",
@@ -5124,7 +7125,7 @@
       "stableKey": "s10280014-p11-at0262",
       "sourceText": "じっくり見たけりゃ、それこそアタシから買い取るこったな。ただし……",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "想仔细看，就从我手里买下来。不过……",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -5145,7 +7146,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5214,7 +7214,40 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-001-048.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root reviewed every source card in contacts 01-04 and confirmed that the registered model matches the visible person. Speaker labels were not recognition inputs.",
+              "recordingPart": 11,
+              "time": 266.35,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-266.3500.png",
+              "reviewedContact": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-review/cast-04.jpg",
+              "match": {
+                "model": "felt01",
+                "score": 0.7911232776966567,
+                "inliers": 55,
+                "coverage": 0.06645810604095459,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0262",
+              "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
+            }
+          }
+        ]
+      }
     },
     "52": {
       "status": "draft",
@@ -5222,7 +7255,7 @@
       "stableKey": "s10280014-p11-at0268",
       "sourceText": "ただし？",
       "sourceSpeaker": "ラム",
-      "translation": "",
+      "translation": "不过？",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -5243,7 +7276,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5312,7 +7344,41 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-049-096.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root personally reviewed source/native-model pairs in contacts 05-08 and confirmed the visible model identity. The native reference is a neutral identity anchor; no body or face recovery is asserted.",
+              "recordingPart": 11,
+              "time": 268.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-268.8500.png",
+              "reviewedContact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/cast-05.jpg",
+              "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/native-s10280014-p11-at0268.png",
+              "match": {
+                "model": "ram01",
+                "score": 0.4188895802475806,
+                "inliers": 26,
+                "coverage": 0.03754346711294992,
+                "character": "live2d/AC_ram01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0268",
+              "bodyFaceStatus": "Identity-only patch. Independent body, face, and added layers remain unresolved."
+            }
+          }
+        ]
+      }
     },
     "53": {
       "status": "draft",
@@ -5320,7 +7386,7 @@
       "stableKey": "s10280014-p11-at0270",
       "sourceText": "こいつには他に買い手がいんだよ。そっちと比べて、どっちの条件がいいか。アタシはそれで決めさせてもらうぜ",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "这东西还有别的买家。你们和对方谁的条件更好，我就卖给谁。",
       "recordings": [
         {
           "segmentId": "p11-s10280014",
@@ -5341,7 +7407,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5413,7 +7478,41 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280014.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-cast-p11-049-096.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewDecision": "Root personally reviewed source/native-model pairs in contacts 05-08 and confirmed the visible model identity. The native reference is a neutral identity anchor; no body or face recovery is asserted.",
+              "recordingPart": 11,
+              "time": 275.85,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-275.8500.png",
+              "reviewedContact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/cast-05.jpg",
+              "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/native-s10280014-p11-at0270.png",
+              "match": {
+                "model": "felt01",
+                "score": 0.5138465590624706,
+                "inliers": 22,
+                "coverage": 0.029810667037963867,
+                "character": "live2d/AC_felt01"
+              },
+              "fullCandidateScopeIndex": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-native-review/index.json",
+              "scopeEntryStableKey": "s10280014-p11-at0270",
+              "bodyFaceStatus": "Identity-only patch. Independent body, face, and added layers remain unresolved."
+            }
+          }
+        ]
+      }
     }
   },
   "issues": [
@@ -7334,5 +9433,84 @@
       "nativeCommandIdentityRecovered": false
     }
   ],
-  "transitionEvidence": []
+  "transitionEvidence": [],
+  "repairEvidence": {
+    "maps": [
+      {
+        "sourceSceneId": 10280014,
+        "additions": [
+          {
+            "native": {
+              "section_id": 1028,
+              "scene_id": 10280015
+            },
+            "evidenceRoutes": [
+              {
+                "sourceSceneId": 10280014,
+                "scenarioId": 53,
+                "branchId": 531,
+                "stableKey": "s10280014-p11-at0270",
+                "transition": {
+                  "uniq_id": 1028001410531,
+                  "transition_id": 53101,
+                  "next_scenario_id": 0,
+                  "next_scenario_label": "FINISH",
+                  "next_section_id": 1028,
+                  "next_scene_id": 10280015
+                },
+                "targetSectionId": 1028,
+                "targetSceneId": 10280015,
+                "targetTitle": "黒衣の女性登場[♪]",
+                "owned": true,
+                "chartPresent": false,
+                "state": "confirmed",
+                "verification": "observed",
+                "evidence": [
+                  {
+                    "segmentId": "p11-s10280014",
+                    "start": 270.0,
+                    "end": 276.0,
+                    "sourceAnchorSeconds": 270,
+                    "ocrReviewed": false,
+                    "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/11/coarse-1hz/crops/008250-dialogue.png",
+                    "ocrEventId": "merged-0060",
+                    "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+                    "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+                    "originalOCRText": "こいつには他に買い手がいんだよ。そっちと比べて、どっちの条件がいいか。アタシはそれで決めさせてもらうぜ",
+                    "ocrConfidence": 0.99942,
+                    "ocrReviewReasons": [],
+                    "mapFrame": null,
+                    "nextTitleFrame": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p11-boundaries/0279.00.jpg",
+                    "handoffKind": "direct-title",
+                    "previousDialogueFrame": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p11-boundaries/0276.00.jpg",
+                    "basis": "Explicitly reviewed source-to-named-title handoff; not inferred from IDs or map coordinates.",
+                    "recordingId": "bili-capital-11"
+                  }
+                ],
+                "frames": [
+                  {
+                    "role": "frame",
+                    "path": "data/native_recovery/royal-capital-20261110/ocr/11/coarse-1hz/crops/008250-dialogue.png",
+                    "exists": true
+                  },
+                  {
+                    "role": "nextTitleFrame",
+                    "path": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p11-boundaries/0279.00.jpg",
+                    "exists": true
+                  },
+                  {
+                    "role": "previousDialogueFrame",
+                    "path": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p11-boundaries/0276.00.jpg",
+                    "exists": true
+                  }
+                ],
+                "overlayEligible": true
+              }
+            ]
+          }
+        ],
+        "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/result-v2/chart-overlay.json"
+      }
+    ]
+  }
 }

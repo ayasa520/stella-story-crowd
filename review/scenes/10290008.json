@@ -8,7 +8,7 @@
       "stableKey": "s10290008-p20-title",
       "sourceText": "タフ・ネゴシエーション",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "艰难的谈判",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -94,7 +94,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "2": {
       "status": "draft",
@@ -102,7 +109,7 @@
       "stableKey": "s10290008-p20-at0013",
       "sourceText": "――エルザと名乗る黒衣の女性と、徽章を競\nり合うことになったスバル。交渉に不慣れな\nスバルは、ロム爺の見立てを信じて……",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "——与自称艾尔莎的黑衣女子竞购徽章。不擅长谈判的昴，决定相信罗姆爷的判断……",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -141,7 +148,6 @@
       ],
       "unknownFields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -224,7 +230,65 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-bg-variants.json",
+            "fields": [
+              "bg_picture"
+            ],
+            "evidence": {
+              "reviewer": "root",
+              "reviewImage": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/background-variants-four-scenes.jpg",
+              "reviewDecision": "Root directly compared the source full frame and the three original variants. Composition and warm lighting confirm bg031b. The geometry-first top candidate was rejected after image review.",
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/background-entries/frames/p20-00020.350.jpg",
+              "recordingPart": 20,
+              "time": 20.35,
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "candidates": [
+                {
+                  "id": "bg/bg031a_stealshop",
+                  "score": 0.2452,
+                  "inliers": 11,
+                  "color_agreement": 0.6858,
+                  "screen_coverage": 1.0,
+                  "evidence_coverage": 0.1515,
+                  "method": "sift_geometry_color",
+                  "time": 20.35
+                },
+                {
+                  "id": "bg/bg031b_stealshop",
+                  "score": 0.2403,
+                  "inliers": 10,
+                  "color_agreement": 0.9612,
+                  "screen_coverage": 1.0,
+                  "evidence_coverage": 0.1645,
+                  "method": "sift_geometry_color",
+                  "time": 20.35
+                },
+                {
+                  "id": "bg/bg031c_stealshop",
+                  "score": 0.2176,
+                  "inliers": 10,
+                  "color_agreement": 0.6219,
+                  "screen_coverage": 1.0,
+                  "evidence_coverage": 0.1296,
+                  "method": "sift_geometry_color",
+                  "time": 20.35
+                }
+              ],
+              "originalCandidateImage": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/background-entry-review/native-backgrounds/bg_bg031b_stealshop.png"
+            }
+          }
+        ]
+      }
     },
     "3": {
       "status": "draft",
@@ -232,7 +296,7 @@
       "stableKey": "s10290008-p20-at0021",
       "sourceText": "――盗品蔵・夕刻",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "——赃物库·傍晚",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -348,7 +412,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "4": {
       "status": "draft",
@@ -356,7 +427,7 @@
       "stableKey": "s10290008-p20-at0024",
       "sourceText": "それで、あなたはいくら付けたの？",
       "sourceSpeaker": "エルザ",
-      "translation": "",
+      "translation": "那么，你出了多少？",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -464,7 +535,9 @@
               "recordingId": "bili-capital-20"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "フェルトの話じゃ、エルザさんは確か、\n聖金貨十枚だったよな？",
+          "sourceLabel": "確認する"
         },
         {
           "branchId": 43,
@@ -504,9 +577,18 @@
               "recordingId": "bili-capital-20"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "",
+          "sourceLabel": "予告する"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "5": {
       "status": "draft",
@@ -514,7 +596,7 @@
       "stableKey": "s10290008-p20-at0045",
       "sourceText": "そうね。そうそう出せる金額じゃないと思うのだけれど？",
       "sourceSpeaker": "エルザ",
-      "translation": "",
+      "translation": "没错。这个数目，可不是随便就能拿得出来的吧？",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -604,7 +686,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "6": {
       "status": "draft",
@@ -612,7 +701,7 @@
       "stableKey": "s10290008-p20-at0050",
       "sourceText": "俺が出すのは、この『ミーティア』だ。そこの巨大な爺さんの話じゃ、聖金貨二十枚は下らないってお墨付きだぜ",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "我拿出来的是这个『魔法器』。那边那位大个子老爷子已经担保，至少值二十枚圣金币。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -702,7 +791,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "7": {
       "status": "draft",
@@ -710,7 +806,7 @@
       "stableKey": "s10290008-p20-at0060",
       "sourceText": "そっちの提示額と比べたら、圧倒的に俺の方が勝つと思うんだけど、諦めてもらえねえか？",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "和你的报价相比，怎么看都是我压倒性地胜出，能不能请你放弃呢？",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -800,7 +896,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "8": {
       "status": "draft",
@@ -808,7 +911,7 @@
       "stableKey": "s10290008-p20-at0066",
       "sourceText": "『ミーティア』……面白いわね、あなた。そんな物を出してくるなんて",
       "sourceSpeaker": "エルザ",
-      "translation": "",
+      "translation": "『魔法器』……你真有意思，居然会拿出这种东西。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -898,7 +1001,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "9": {
       "status": "draft",
@@ -906,7 +1016,7 @@
       "stableKey": "s10290008-p20-at0071",
       "sourceText": "実は私も、依頼主からある程度、余分なお金を渡されているの。少しの上乗せも考える意味でね",
       "sourceSpeaker": "エルザ",
-      "translation": "",
+      "translation": "其实，雇主也给了我一些额外的钱，就是为了必要的时候稍微加价。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -1014,7 +1124,9 @@
               "recordingId": "bili-capital-20"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "",
+          "sourceLabel": "警戒する"
         },
         {
           "branchId": 93,
@@ -1054,9 +1166,18 @@
               "recordingId": "bili-capital-20"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "まあ、普通そうだよな。けど、\nさすがに二倍の額は無理なんじゃねえの？",
+          "sourceLabel": "楽観する"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "10": {
       "status": "draft",
@@ -1064,7 +1185,7 @@
       "stableKey": "s10290008-p20-at0095",
       "sourceText": "いいえ。聖金貨二十枚、ちょうど出せるわ",
       "sourceSpeaker": "エルザ",
-      "translation": "",
+      "translation": "不，二十枚圣金币，我刚好拿得出来。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -1154,7 +1275,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "11": {
       "status": "draft",
@@ -1162,7 +1290,7 @@
       "stableKey": "s10290008-p20-at0100",
       "sourceText": "私が雇い主から渡されている聖金貨は、これで全部。少し厳しいかしら？",
       "sourceSpeaker": "エルザ",
-      "translation": "",
+      "translation": "雇主交给我的圣金币，全都在这里了。这样是不是有点难办呢？",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -1252,7 +1380,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "12": {
       "status": "draft",
@@ -1260,7 +1395,7 @@
       "stableKey": "s10290008-p20-at0107p5",
       "sourceText": "……二十枚ちょうどか",
       "sourceSpeaker": "ロム爺",
-      "translation": "",
+      "translation": "……正好二十枚啊。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -1378,7 +1513,9 @@
               "recordingId": "bili-capital-20"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "",
+          "sourceLabel": "悲観する"
         },
         {
           "branchId": 123,
@@ -1418,9 +1555,18 @@
               "recordingId": "bili-capital-20"
             }
           ],
-          "gainPointsRecovered": false
+          "gainPointsRecovered": false,
+          "sourceQuote": "それが上限なら、確かに厳しいかもな！\n……あんたの方が",
+          "sourceLabel": "楽観する"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "13": {
       "status": "draft",
@@ -1428,7 +1574,7 @@
       "stableKey": "s10290008-p20-at0121",
       "sourceText": "小僧……意外に胆が据わっとるのう",
       "sourceSpeaker": "ロム爺",
-      "translation": "",
+      "translation": "小子……想不到你胆子还挺大。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -1534,7 +1680,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "14": {
       "status": "draft",
@@ -1542,7 +1695,7 @@
       "stableKey": "s10290008-p20-at0125p5",
       "sourceText": "この『ミーティア』は、最低でも\n聖金貨二十枚の代物。儂の見立てじゃ、\nこの交渉はこの小僧に傾く",
       "sourceSpeaker": "ロム爺",
-      "translation": "",
+      "translation": "这件『魔法器』，至少值二十枚圣金币。依老夫看，这场谈判，还是这小子更有优势。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -1658,7 +1811,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "15": {
       "status": "draft",
@@ -1666,7 +1826,7 @@
       "stableKey": "s10290008-p20-at0131",
       "sourceText": "お前さんと雇い主には悪いが、\nこの金貨は袋に戻して帰ることじゃな",
       "sourceSpeaker": "ロム爺",
-      "translation": "",
+      "translation": "虽然对不起你和你的雇主，不过还是把金币装回袋子里，回去吧。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -1782,7 +1942,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "16": {
       "status": "draft",
@@ -1790,7 +1957,7 @@
       "stableKey": "s10290008-p20-at0137p5",
       "sourceText": "っしゃあ！",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "好耶！",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -1906,7 +2073,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "17": {
       "status": "draft",
@@ -1914,7 +2088,7 @@
       "stableKey": "s10290008-p20-at0141",
       "sourceText": "…………",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "…………",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -2024,7 +2198,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "18": {
       "status": "draft",
@@ -2032,7 +2213,7 @@
       "stableKey": "s10290008-p20-at0143",
       "sourceText": "な、なんだよ！いいだろ別に、ガッツポーズぐらい！嬉しかったんだよ！",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "干、干嘛啊！握个拳庆祝一下也没什么吧！我就是高兴嘛！",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -2122,7 +2303,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "19": {
       "status": "draft",
@@ -2130,7 +2318,7 @@
       "stableKey": "s10290008-p20-at0149",
       "sourceText": "別に何も言ってね一だろ。存分にはしゃげよ。アタシは儲かればそれでいーし",
       "sourceSpeaker": "フェルト",
-      "translation": "",
+      "translation": "我又没说什么。你尽管高兴呗，反正我只要有钱赚就行。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -2220,7 +2408,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "20": {
       "status": "draft",
@@ -2228,7 +2423,7 @@
       "stableKey": "s10290008-p20-at0154",
       "sourceText": "それじゃ、交渉はおしまいね。残念だけど、私は引き上げさせてもらうわ",
       "sourceSpeaker": "エルザ",
-      "translation": "",
+      "translation": "那么，谈判结束了呢。虽然很遗憾，不过我就先告辞了。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -2318,7 +2513,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "21": {
       "status": "draft",
@@ -2326,7 +2528,7 @@
       "stableKey": "s10290008-p20-at0160",
       "sourceText": "あー、悪いな、エルザさん。たぶん、怒られたりしちまうよな……",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "啊，真不好意思，艾尔莎小姐。你大概会被骂吧……",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -2416,7 +2618,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     },
     "22": {
       "status": "draft",
@@ -2424,7 +2633,7 @@
       "stableKey": "s10290008-p20-at0165",
       "sourceText": "仕方のない話よ。雇い主が支払いを少なく済まそうなんて考えたのが悪いのだし",
       "sourceSpeaker": "エルザ",
-      "translation": "",
+      "translation": "这也是没办法的。谁让雇主想着少花点钱呢。",
       "recordings": [
         {
           "segmentId": "p20-s10290008",
@@ -2517,7 +2726,14 @@
           ],
           "gainPointsRecovered": false
         }
-      ]
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290008.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
     }
   },
   "issues": [
@@ -3457,5 +3673,79 @@
     }
   ],
   "visualTransitions": [],
-  "transitionEvidence": []
+  "transitionEvidence": [],
+  "repairEvidence": {
+    "maps": [
+      {
+        "sourceSceneId": 10290008,
+        "additions": [
+          {
+            "native": {
+              "section_id": 1029,
+              "scene_id": 10290009
+            },
+            "evidenceRoutes": [
+              {
+                "sourceSceneId": 10290008,
+                "scenarioId": 22,
+                "branchId": 221,
+                "stableKey": "s10290008-p20-at0165",
+                "transition": {
+                  "uniq_id": 1029000810221,
+                  "transition_id": 22101,
+                  "next_scenario_id": 0,
+                  "next_scenario_label": "FINISH",
+                  "next_section_id": 1029,
+                  "next_scene_id": 10290009
+                },
+                "targetSectionId": 1029,
+                "targetSceneId": 10290009,
+                "targetTitle": "最悪の失言",
+                "owned": true,
+                "chartPresent": false,
+                "state": "confirmed",
+                "verification": "observed",
+                "evidence": [
+                  {
+                    "segmentId": "p20-s10290008",
+                    "start": 165.0,
+                    "end": 169.5,
+                    "sourceAnchorSeconds": 165,
+                    "ocrReviewed": false,
+                    "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/dialogue-completion-2hz/crops/005085-dialogue.png",
+                    "ocrEventId": "merged-0038",
+                    "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                    "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                    "originalOCRText": "仕方のない話よ。雇い主が支払いを少なく済まそうなんて考えたのが悪いのだし",
+                    "ocrConfidence": 0.99983,
+                    "ocrReviewReasons": [],
+                    "mapFrame": null,
+                    "nextTitleFrame": "data/native_recovery/royal-capital-20261110/ocr/20/root-review/frames/d80adcb3669d-005310.jpg",
+                    "handoffKind": "direct-title",
+                    "previousDialogueFrame": null,
+                    "basis": "Explicitly reviewed source-to-named-title handoff; not inferred from IDs or map coordinates.",
+                    "recordingId": "bili-capital-20"
+                  }
+                ],
+                "frames": [
+                  {
+                    "role": "frame",
+                    "path": "data/native_recovery/royal-capital-20261110/ocr/20/dialogue-completion-2hz/crops/005085-dialogue.png",
+                    "exists": true
+                  },
+                  {
+                    "role": "nextTitleFrame",
+                    "path": "data/native_recovery/royal-capital-20261110/ocr/20/root-review/frames/d80adcb3669d-005310.jpg",
+                    "exists": true
+                  }
+                ],
+                "overlayEligible": true
+              }
+            ]
+          }
+        ],
+        "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/result-v2/chart-overlay.json"
+      }
+    ]
+  }
 }
