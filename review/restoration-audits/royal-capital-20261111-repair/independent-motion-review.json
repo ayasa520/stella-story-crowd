@@ -1,0 +1,119 @@
+{
+  "status": "independent_direct_image_temporal_review_completed",
+  "reviewer": "/root/visual_review_low",
+  "directImagesReviewed": true,
+  "authoredFilesModified": 0,
+  "method": "New original-video frames at 0.1-second spacing and new native controller samples through entry and reachable loop were viewed directly. No source-to-command match score is promoted to acceptance; original script identities and exact timing remain unknown.",
+  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+  "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+  "sampler": {
+    "url": "http://127.0.0.1:18768/reference.html",
+    "projectPath": "/tmp/stella-motion-review-workspace",
+    "modelAssets": "Original local model/controller assets via Studio API",
+    "renderIntegrationStepSeconds": 0.025,
+    "entryRetainedStepSeconds": 0.08,
+    "minimumDurationSeconds": 4
+  },
+  "items": [
+    {
+      "sceneId": 10280014,
+      "scenarioId": 5,
+      "installedMotion": ",face_nayamu",
+      "decision": "retain_existing_recording_based_face_reproduction",
+      "settledFaceSupported": true,
+      "entryOrderSupportedQualitatively": true,
+      "exactEntryTimingVerified": false,
+      "exactOriginalScriptRecovered": false,
+      "directObservations": [
+        "Original Rom is first visibly fading in near 27.3 seconds, with a nearly upright head before the later tilt.",
+        "A brief closed-eye phase is visible near 27.7 seconds, followed by the head tilting and settling into the worried/downturned-mouth expression from about 27.8 seconds.",
+        "New native face_nayamu samples show an initial upright expression, a brief closed-eye phase near native 0.56 seconds, then the same tilt and downturned worried mouth by native 1.0–1.45 seconds.",
+        "The empty-face control stays upright and does not produce this head tilt. The stable actual player screenshot reproduces the source frown and tilt."
+      ],
+      "evidence": [
+        "rom5-source-chronology.jpg",
+        "rom5-face-detail.jpg",
+        "rom01-face_nayamu-face-detail.jpg",
+        "rom01-empty-face-face-detail.jpg"
+      ],
+      "limits": [
+        "A previous early closed-eye frame near 27.3 seconds and recorded mouth openings may include idle blinking/voice motion; their individual ownership is not established.",
+        "No exact native/video speed or onset fit was accepted. No body or extra-layer command is signed."
+      ]
+    },
+    {
+      "sceneId": 10280014,
+      "scenarioId": 20,
+      "installedMotion": ",face_nayamu",
+      "decision": "retain_existing_recording_based_face_reproduction",
+      "settledFaceSupported": true,
+      "entryOrderSupportedQualitatively": true,
+      "exactEntryTimingVerified": false,
+      "exactOriginalScriptRecovered": false,
+      "directObservations": [
+        "Original Rom is first visibly fading in near 96.8 seconds with an upright head.",
+        "The original briefly closes his eyes near 97.2 seconds, then starts tilting the head around 97.4–97.5 seconds and holds the worried downturned expression.",
+        "The new native face_nayamu sequence has the same upright → brief closed eyes → tilt → worried hold order; the independent empty-face control lacks that progression.",
+        "Actual player screenshot p11-rom-face-return-20.png has the same stable worried face and tilt as the recording."
+      ],
+      "evidence": [
+        "rom20-source-chronology.jpg",
+        "rom20-face-detail.jpg",
+        "rom01-face_nayamu-face-detail.jpg",
+        "rom01-empty-face-face-detail.jpg"
+      ],
+      "limits": [
+        "Qualitative animation progression is supported; exact entry clock and the recording's effective animation speed remain unverified.",
+        "Body motion and extra layers remain unresolved."
+      ]
+    },
+    {
+      "sceneId": 10280014,
+      "scenarioId": 4,
+      "installedMotion": "act_punpun",
+      "decision": "retain_existing_visible_pose_reproduction_with_timing_limit",
+      "settledPoseSupported": true,
+      "entryOrderSupportedQualitatively": true,
+      "exactEntryTimingVerified": false,
+      "exactOriginalScriptRecovered": false,
+      "directObservations": [
+        "Source Subaru appears near 22.5 seconds with closed eyes and a lowered/tilted head, then opens into the frowning expression near 22.9 seconds.",
+        "New native act_punpun samples visibly pass through the same closed-eye/head gesture before settling into frowning brows, sideways/downturned mouth, and the same visible upper-body posture.",
+        "The directly viewed top-six original-asset comparison distinguishes this held pose from the bent-arm/raised-energy kessin/egao/shinken alternatives.",
+        "No independent face token is added: body-owned face curves can produce the recorded stable expression."
+      ],
+      "evidence": [
+        "subaru4-source-chronology.jpg",
+        "subaru01-act_punpun-native-chronology.jpg",
+        "subaru-native-face-detail.jpg"
+      ],
+      "limits": [
+        "The old automated trajectory record explicitly had trajectory_supported=false; this review does not overwrite that result or turn it into exact timing evidence.",
+        "The sampled source and native orders agree qualitatively, but onset, card alpha reveal and speed were not numerically aligned.",
+        "A different lost script composition may reproduce the same visible result; this remains authored pose reproduction."
+      ]
+    }
+  ],
+  "recommendedDataAction": "No rollback or additional motion/face/extra fields. Retain the three existing authored reproduction values while recording these limits. Mark independent temporal-order review separately from exact timing validation.",
+  "protectedStudio": {
+    "path": "/home/rikka/Projects/stella/data/story_studio/project.json",
+    "sha256": "ebd974d90f89088fa3a504c1f419ae01c352a24e6bd80209c5ec651295d38522",
+    "revision": 2656
+  },
+  "evidenceFiles": {
+    "rom01-face-nayamu-full-entry.json.gz": "7740e3ea67f4b4118f42813c90301c9ddd91c2e9defdc3325c3ae5b5055eb0ab",
+    "subaru01-act-punpun-full-entry.json.gz": "2d6b9518c42ac7df43828ee804aab3564f68b3e8b974dbc57af8557e5801aca1",
+    "subaru4-source-chronology.jpg": "190a1334369d19ca646de377e2286b3b6c961bcbf640e9def4efb9c325575baf",
+    "rom5-source-chronology.jpg": "752d989bf8b2971131b10bf645977c763791bbbecd57dfa7fbaaf843be8aa1a8",
+    "rom20-source-chronology.jpg": "5e5065d55b3b2ed1b91f2cd04688d51f2afaa6a8094d11d68fbaeea4a1d3fd36",
+    "rom01-face_nayamu-native-chronology.jpg": "c9f26f931be2dd07b56cb369dd1ba340e4a2c5d20db09361ab0adce6c7fad617",
+    "rom01-empty-face-native-chronology.jpg": "8c1257211b4c1f520c7679b345e215eedfbd6ea10ccb7d7bb261d488869bc575",
+    "subaru01-act_punpun-native-chronology.jpg": "8f8b85e4c6a31d013426b06477eecdb590031fec44fb5b9e81a4dc504814b1ce",
+    "evidence-index.json": "6a85baa3f6f66e769b8b2f673abfe1a2b8afa6b09d38b4eff9045402f88d1566",
+    "rom01-face_nayamu-face-detail.jpg": "08a563c0f8032f7144d4efe9220a1edf663864f7bb17e9246ac5422a5b105669",
+    "rom01-empty-face-face-detail.jpg": "cd12bda706bae87579fcfef61380471fe2adff309cf0d9ef14682df2ff87dd67",
+    "rom5-face-detail.jpg": "1a38a904235949aa1fd85337b26aff0dd34edb514f59cb0d0960feeaf259c18f",
+    "rom20-face-detail.jpg": "2b4971a5e75d82624022a206f862de228bebda7884a1df654fd96bb80645e0ac",
+    "subaru-native-face-detail.jpg": "de54f085f458f053f0d511a6eca3e28461746c20e1d143184747dbf0a9da47f9"
+  }
+}

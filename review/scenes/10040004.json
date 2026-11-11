@@ -164,7 +164,6 @@
           "scenarioId": 2,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -1951,6 +1950,11 @@
       "message": "The draft uses authored IDs, zero default gain vectors and no invented branch lock rules."
     },
     {
+      "code": "draft_not_playback_verified",
+      "severity": "warning",
+      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -1978,7 +1982,6 @@
       "scenarioId": 2,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -2128,6 +2131,13 @@
       ]
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 7,
+      "branchId": 72
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -2174,6 +2184,13 @@
         "video",
         "voice"
       ]
+    },
+    {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 9,
+      "branchId": 92
     },
     {
       "code": "performance_unrecovered",
@@ -2332,6 +2349,13 @@
       ]
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 15,
+      "branchId": 152
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -2361,27 +2385,6 @@
     {
       "code": "missing_transition",
       "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 7,
-      "branchId": 72
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 9,
-      "branchId": 92
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 15,
-      "branchId": 152
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
       "message": "CLEAR is observed at581s, but its original executable ending identity and following section entry are not recovered.",
       "scenarioId": 16,
       "branchId": 161
@@ -2392,11 +2395,6 @@
       "message": "This explicit route still needs evidence review.",
       "scenarioId": 16,
       "branchId": 161
-    },
-    {
-      "code": "draft_not_playback_verified",
-      "severity": "warning",
-      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     }
   ],
   "unresolvedBranches": [

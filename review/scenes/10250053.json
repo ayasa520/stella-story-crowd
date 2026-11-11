@@ -165,7 +165,6 @@
           "scenarioId": 2,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -8682,20 +8681,6 @@
             "video",
             "voice"
           ]
-        },
-        {
-          "code": "missing_transition",
-          "severity": "warning",
-          "message": "CLEAR/map is recorded after the final panel; no subsequent section entry is evidenced.",
-          "scenarioId": 77,
-          "branchId": 771
-        },
-        {
-          "code": "transition_review_pending",
-          "severity": "warning",
-          "message": "This explicit route still needs evidence review.",
-          "scenarioId": 77,
-          "branchId": 771
         }
       ],
       "branches": [
@@ -8703,41 +8688,181 @@
           "branchId": 771,
           "stableKey": "s10250053-p18-at0863-next",
           "nativeIdOrigin": "authored",
-          "verification": "pending",
-          "state": "missing",
+          "verification": "observed",
+          "state": "confirmed",
           "evidence": [
             {
+              "recordingId": "bili-capital-18",
               "segmentId": "p18-s10250053",
-              "start": 862.9,
-              "end": 864.0,
-              "sourceAnchorSeconds": 862.998,
-              "ocrReviewed": true,
-              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/18/coarse-1hz/crops/025890-dialogue.png",
-              "ocrEventId": "merged-0191",
-              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
               "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
-              "originalOCRText": "............",
-              "ocrConfidence": 1.0,
-              "ocrReviewReasons": [],
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
               "visualReviewer": "root",
-              "rootDecision": {
-                "interval": [
-                  862.9,
-                  864
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 866.998,
+              "end": 872.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
                 ],
-                "canonicalAnchorSeconds": 862.998,
-                "action": "keep-separate-final-silent-panel",
-                "speaker": "スバル",
-                "text": "…………",
-                "witnessTimes": [
-                  862.998,
-                  863.8
-                ],
-                "note": "863.80 fullframe still contains only twelve dots.865.00 is entirely black. Noいったい何がsentence is visible in this recording."
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
               },
-              "rootReviewWitnessTime": null,
-              "recordingId": "bili-capital-18"
-            }
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-18",
+              "segmentId": "p18-s10250053",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 872.998,
+              "end": 874.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-025.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 18,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-871.4980",
+                      "bgm_time": 871.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7133,
+                      "track_time": 0.252,
+                      "time": 871.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-871.9980",
+                      "bgm_time": 871.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7764,
+                      "track_time": 0.752,
+                      "time": 871.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.4980",
+                      "bgm_time": 872.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.793,
+                      "track_time": 1.252,
+                      "time": 872.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.9980",
+                      "bgm_time": 872.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8095,
+                      "track_time": 1.752,
+                      "time": 872.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-873.4980",
+                      "bgm_time": 873.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7868,
+                      "track_time": 2.252,
+                      "time": 873.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
           ],
           "gainPointsRecovered": false
         }
@@ -8749,6 +8874,956 @@
           "originalSourcePreserved": true
         }
       }
+    },
+    "78": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10250053-p18-ending-door-out",
+      "sourceText": "",
+      "translation": "",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-18",
+          "segmentId": "p18-s10250053",
+          "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+          "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+          "visualReviewer": "root",
+          "ocrReviewed": true,
+          "originalPhaseRecovered": false,
+          "originalScriptNodeIdsRecovered": false,
+          "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+          "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+          "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+          "reconstructionLimits": [
+            "Original script IDs, array positions and command phases remain unknown.",
+            "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+            "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+          ],
+          "start": 866.998,
+          "end": 872.998,
+          "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-013.jpg",
+          "resource": "adv_dive01_out",
+          "originalResource": {
+            "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+            "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+            "fullDuration": 5.034,
+            "referenceFrames": [
+              {
+                "index": 0,
+                "resourceTime": 0.0,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+              },
+              {
+                "index": 1,
+                "resourceTime": 0.5,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+              },
+              {
+                "index": 2,
+                "resourceTime": 1.0,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+              },
+              {
+                "index": 4,
+                "resourceTime": 2.0,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+              },
+              {
+                "index": 6,
+                "resourceTime": 3.0,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+              },
+              {
+                "index": 10,
+                "resourceTime": 4.966667,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+              }
+            ],
+            "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+          },
+          "commandConvention": {
+            "reference": "accepted scene10010001:30",
+            "phase0": "StopBGM",
+            "phase2": "Wait,500\nCardOut",
+            "originalParametersRecovered": false
+          }
+        }
+      ],
+      "unknownFields": [
+        "bg_music",
+        "bg_picture",
+        "character",
+        "character_image",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 781,
+          "stableKey": "s10250053-p18-ending-door-out-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "observed",
+          "evidence": [
+            {
+              "recordingId": "bili-capital-18",
+              "segmentId": "p18-s10250053",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 866.998,
+              "end": 872.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
+                ],
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+              },
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-18",
+              "segmentId": "p18-s10250053",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 872.998,
+              "end": 874.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-025.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 18,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-871.4980",
+                      "bgm_time": 871.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7133,
+                      "track_time": 0.252,
+                      "time": 871.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-871.9980",
+                      "bgm_time": 871.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7764,
+                      "track_time": 0.752,
+                      "time": 871.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.4980",
+                      "bgm_time": 872.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.793,
+                      "track_time": 1.252,
+                      "time": 872.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.9980",
+                      "bgm_time": 872.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8095,
+                      "track_time": 1.752,
+                      "time": 872.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-873.4980",
+                      "bgm_time": 873.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7868,
+                      "track_time": 2.252,
+                      "time": 873.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
+          ]
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/endings/root-reviewed-unique-v2/p18.json",
+          "evidence": [
+            {
+              "recordingId": "bili-capital-18",
+              "segmentId": "p18-s10250053",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 866.998,
+              "end": 872.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
+                ],
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+              },
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-18",
+              "segmentId": "p18-s10250053",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 872.998,
+              "end": 874.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-025.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 18,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-871.4980",
+                      "bgm_time": 871.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7133,
+                      "track_time": 0.252,
+                      "time": 871.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-871.9980",
+                      "bgm_time": 871.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7764,
+                      "track_time": 0.752,
+                      "time": 871.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.4980",
+                      "bgm_time": 872.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.793,
+                      "track_time": 1.252,
+                      "time": 872.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.9980",
+                      "bgm_time": 872.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8095,
+                      "track_time": 1.752,
+                      "time": 872.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-873.4980",
+                      "bgm_time": 873.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7868,
+                      "track_time": 2.252,
+                      "time": 873.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
+          ],
+          "originalScenarioIdRecovered": false
+        }
+      }
+    },
+    "79": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10250053-p18-ending-clear",
+      "sourceText": "CLEAR",
+      "translation": "通关",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-18",
+          "segmentId": "p18-s10250053",
+          "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+          "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+          "visualReviewer": "root",
+          "ocrReviewed": true,
+          "originalPhaseRecovered": false,
+          "originalScriptNodeIdsRecovered": false,
+          "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+          "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+          "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+          "reconstructionLimits": [
+            "Original script IDs, array positions and command phases remain unknown.",
+            "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+            "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+          ],
+          "start": 872.998,
+          "end": 874.498,
+          "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-025.jpg",
+          "resource": "bgm_btl_adv_win01",
+          "matching": {
+            "part": 18,
+            "endingOrdinal": 1,
+            "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/clear-short-window-music.json",
+            "win01Matches": [
+              {
+                "query": {
+                  "id": "clear-871.4980",
+                  "bgm_time": 871.498
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.7133,
+                  "track_time": 0.252,
+                  "time": 871.498,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              },
+              {
+                "query": {
+                  "id": "clear-871.9980",
+                  "bgm_time": 871.998
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.7764,
+                  "track_time": 0.752,
+                  "time": 871.998,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              },
+              {
+                "query": {
+                  "id": "clear-872.4980",
+                  "bgm_time": 872.498
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.793,
+                  "track_time": 1.252,
+                  "time": 872.498,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              },
+              {
+                "query": {
+                  "id": "clear-872.9980",
+                  "bgm_time": 872.998
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.8095,
+                  "track_time": 1.752,
+                  "time": 872.998,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              },
+              {
+                "query": {
+                  "id": "clear-873.4980",
+                  "bgm_time": 873.498
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.7868,
+                  "track_time": 2.252,
+                  "time": 873.498,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "unknownFields": [
+        "bg_picture",
+        "character",
+        "character_image",
+        "command",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "video",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 791,
+          "stableKey": "s10250053-p18-ending-clear-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "original",
+          "evidence": [
+            {
+              "recordingId": "bili-capital-18",
+              "segmentId": "p18-s10250053",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 866.998,
+              "end": 872.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
+                ],
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+              },
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-18",
+              "segmentId": "p18-s10250053",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 872.998,
+              "end": 874.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-025.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 18,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-871.4980",
+                      "bgm_time": 871.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7133,
+                      "track_time": 0.252,
+                      "time": 871.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-871.9980",
+                      "bgm_time": 871.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7764,
+                      "track_time": 0.752,
+                      "time": 871.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.4980",
+                      "bgm_time": 872.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.793,
+                      "track_time": 1.252,
+                      "time": 872.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.9980",
+                      "bgm_time": 872.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8095,
+                      "track_time": 1.752,
+                      "time": 872.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-873.4980",
+                      "bgm_time": 873.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7868,
+                      "track_time": 2.252,
+                      "time": 873.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
+          ]
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/endings/root-reviewed-unique-v2/p18.json",
+          "evidence": [
+            {
+              "recordingId": "bili-capital-18",
+              "segmentId": "p18-s10250053",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 866.998,
+              "end": 872.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
+                ],
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+              },
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-18",
+              "segmentId": "p18-s10250053",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/18-remote-qn32.mp4",
+              "sourceSha256": "08705190ab12fc4b6cfbbfb1e1dfe30632cf5a96deb84f82f5354f8558a96f5d",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-04.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 872.998,
+              "end": 874.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/source-frames/frame-025.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 18,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p18-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-871.4980",
+                      "bgm_time": 871.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7133,
+                      "track_time": 0.252,
+                      "time": 871.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-871.9980",
+                      "bgm_time": 871.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7764,
+                      "track_time": 0.752,
+                      "time": 871.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.4980",
+                      "bgm_time": 872.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.793,
+                      "track_time": 1.252,
+                      "time": 872.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-872.9980",
+                      "bgm_time": 872.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8095,
+                      "track_time": 1.752,
+                      "time": 872.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-873.4980",
+                      "bgm_time": 873.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7868,
+                      "track_time": 2.252,
+                      "time": 873.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
+          ],
+          "originalScenarioIdRecovered": false
+        }
+      }
     }
   },
   "issues": [
@@ -8756,6 +9831,11 @@
       "code": "native_metadata_unrecovered",
       "severity": "warning",
       "message": "The draft uses authored IDs, zero default gain vectors and no invented branch lock rules."
+    },
+    {
+      "code": "draft_not_playback_verified",
+      "severity": "warning",
+      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     },
     {
       "code": "performance_unrecovered",
@@ -8785,7 +9865,6 @@
       "scenarioId": 2,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -10667,35 +11746,9 @@
         "video",
         "voice"
       ]
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "CLEAR/map is recorded after the final panel; no subsequent section entry is evidenced.",
-      "scenarioId": 77,
-      "branchId": 771
-    },
-    {
-      "code": "transition_review_pending",
-      "severity": "warning",
-      "message": "This explicit route still needs evidence review.",
-      "scenarioId": 77,
-      "branchId": 771
-    },
-    {
-      "code": "draft_not_playback_verified",
-      "severity": "warning",
-      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     }
   ],
-  "unresolvedBranches": [
-    {
-      "scenarioId": 77,
-      "branchId": 771,
-      "stableKey": "s10250053-p18-at0863-next",
-      "reason": "CLEAR/map is recorded after the final panel; no subsequent section entry is evidenced."
-    }
-  ],
+  "unresolvedBranches": [],
   "restorationStatus": "rough",
   "structuralValidation": "passed",
   "playbackValidation": "not-run",
@@ -11084,6 +12137,16 @@
       "stableKey": "s10250053-p18-at0863",
       "scenarioId": 77,
       "order": 8729.98
+    },
+    {
+      "stableKey": "s10250053-p18-ending-door-out",
+      "scenarioId": 78,
+      "order": 8730.98
+    },
+    {
+      "stableKey": "s10250053-p18-ending-clear",
+      "scenarioId": 79,
+      "order": 8731.98
     }
   ],
   "sceneSegments": [
@@ -11346,5 +12409,18 @@
       "scopeMeaning": "Recording-wide root observation; scoped to this recording's authored scene fragments."
     }
   ],
-  "transitionEvidence": []
+  "transitionEvidence": [],
+  "repairEvidence": {
+    "maps": [
+      {
+        "sourceSceneId": 10250053,
+        "target": {
+          "section_id": 1003,
+          "scene_id": 10030001
+        },
+        "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/endings/root-reviewed-unique-v2/p18.json",
+        "basis": "Root-reviewed ending and explicit original-master successor/root"
+      }
+    ]
+  }
 }

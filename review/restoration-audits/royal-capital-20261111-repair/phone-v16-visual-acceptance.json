@@ -1,0 +1,87 @@
+{
+  "reviewer": "/root/visual_review_high",
+  "directImageInspection": true,
+  "status": "accepted_for_authored_phone_reproduction_visible_ordering_and_cleanup",
+  "installationBatch": "9d6d8d1f5bef94963ab1",
+  "node": "10270039:22",
+  "nextNode": "10270039:23",
+  "screenshots": [
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/p13-phone-v16-text-before.png",
+      "sha256": "a41e1d6d59ede21c82aa8361c74884dfc372ffaa453ed2dede0bb88f1f32dad4",
+      "directlyInspected": true,
+      "acceptedForScope": true,
+      "decision": "The node22 Chinese text is still being revealed, no phone is present, and Subaru's tracksuit and amber store interior remain visible. This agrees with the source's pre-overlay content ordering."
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/p13-phone-v16-visible.png",
+      "sha256": "a05a5b73ac0f4371af6767da43b7c8538f9786c139077fc8bc0a6eb5de389ab0",
+      "directlyInspected": true,
+      "acceptedForScope": true,
+      "decision": "The full node22 text is visible. The white flip phone, black strap and purple framed square match original adv_cutin_item006 and overlay Subaru's face/upper torso without replacing the actor or amber background. Visual scale/placement is consistent with the retained source; no quantitative projection or exact-time claim is made."
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/p13-phone-v16-after-effect.png",
+      "sha256": "15a5e07e103f68b24db5eeb9b8758cf95bca077ea3b8423193861624f0232f05",
+      "directlyInspected": true,
+      "acceptedForScope": true,
+      "decision": "The phone texture and frame are fully gone. The current Subaru card and amber room remain; there is no leaked item overlay or black replacement background. This is a lifecycle inspection state before advancing, not a claimed exact native source frame or newly authored wait."
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/p13-phone-v16-next-felt.png",
+      "sha256": "18ba2c853ab98e04cd3353ba541974b8b709af06c0a682e064c712f88787746d",
+      "directlyInspected": true,
+      "acceptedForScope": true,
+      "decision": "Node23 shows the original blond/red-eyed Felt with red scarf, brown vest and black top in the same amber room. No phone texture/frame remains. Body pose and facial expression are not accepted by this identity/cleanup check."
+    }
+  ],
+  "originalPhoneTexture": {
+    "path": "/home/rikka/Projects/stella/story_crowd_data/assets/cutins/ADV_cutin_item006.png",
+    "sha256": "4f90dcc1b77864ada344d4ccbf0788132f05bf3423dd0766486ae0edc4678e81",
+    "directlyInspected": true
+  },
+  "sourceChain": {
+    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/targeted-background-review-v14/p13-phone-boundaries/source-chain/provenance.json",
+    "sha256": "54b051671640a3e10df1faa31b116879b0a40d7b6e5f8d1f3b6afe25abe90c09"
+  },
+  "sourceOriginalReplacementContact": {
+    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/targeted-background-review-v14/p13-phone-boundaries/source-chain/same-time-phone-region.jpg",
+    "sha256": "d929b142625e112dd4c62fa54df6e3277d4c6bcfb23f7437fc4ed3ace5f668cc",
+    "directlyInspected": true
+  },
+  "sourceRefinedSequence": {
+    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/targeted-background-review-v14/p13-phone-boundaries/refined/source-sequence.json",
+    "sha256": "ce213453859eaeed1812d9403d4d5e11cdf377b5e7ba4eaea2cf7d06fac6fdd3"
+  },
+  "productionExecution": {
+    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/p13-phone-v16-result.json",
+    "sha256": "4ca6eb7052194da4e60c31e85524055b2938b9708576172a654f9342330a4f43",
+    "nodes": 3,
+    "failure": null
+  },
+  "originalCommandPhaseRecovered": false,
+  "reconstructedCommandPhase": 2,
+  "exactRecordingTimingValidated": false,
+  "nativeTimersRecovered": false,
+  "authoredWaitAdded": false,
+  "retainedUnknownFields": [
+    "bg_music",
+    "bg_picture",
+    "character_image",
+    "command",
+    "motion",
+    "native_array_order",
+    "original_scenario_id",
+    "position",
+    "se",
+    "talk_chara",
+    "video",
+    "voice"
+  ],
+  "scopeLimits": [
+    "Original command CSV/phase and exact timing remain unknown",
+    "Full-text-to-phone source gap may contain user/autoplay dwell and is not a Wait",
+    "No body/face/expression/voice acceptance",
+    "No whole-scene or chapter completion claim"
+  ]
+}

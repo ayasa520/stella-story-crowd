@@ -2,14 +2,142 @@
   "version": 1,
   "status": "in-progress",
   "fullRestorationAccepted": false,
-  "scope": {"recordingParts": [9, 43], "ownedScenes": 121, "ownedNodes": 4968},
-  "translation": {"nonemptyTexts": 4949, "textBranches": 402, "sourcePreserved": true, "emptyBattleNodes": 13, "emptyMovieNodes": 6},
-  "directory": {"addedEvidenceBackedMapEdges": 77, "p11Section1028": "Four scene cards and three links verified in the actual player"},
-  "visual": {"reviewedSparseEntryBackgrounds": 121, "p11ReviewedCharacterFields": 188, "reviewedMotionFields": 1, "p11ClothingVariant": "elsa_nomantle01 is used for the visibly uncloaked variant"},
-  "audio": {"reviewedVoiceFields": 7, "reviewedBgmFields": 2, "remainingCandidates": "Pending per-card source review"},
-  "effects": {"p11Phone": "Original texture and animation program are present; phase-2 entry, continuation, exit and the following Ram card were verified", "phoneProjection": "Further source-size comparison pending"},
-  "player": {"speakerTranslations": 69, "speakerCoverage": "All 69 observed source labels across 140 library scenes", "ordinaryChoiceBadge": "Derived from actual outgoing choice edges; SetJunction semantics preserved", "effectCompilation": "Uses the effect inventory of the same immutable asset revision"},
-  "protected": {"originalBaselineFiles": 38, "originalStudioRevision": 2656, "originalStudioSha256": "ebd974d90f89088fa3a504c1f419ae01c352a24e6bd80209c5ec651295d38522", "unchanged": true},
-  "verification": {"localProductionCompilerAndPlayer": ["Baseline 10010001:5", "10280014:3 -> 4 -> 5 -> 6", "10280017:11 -> phone 12 -> 13", "1028 connected scene chart"], "authenticatedOnlinePlayback": "Not claimed"},
-  "knownRemainingWork": ["Remaining Live2D identities and exact clothing variants", "Body, face and additional layers for nearly all cards", "Multi-character composition and native mapping", "Scene-internal background changes", "Remaining voices, music and sound effects", "Effects, transitions, door movies, CLEAR titles and continuous end routes", "Full recording comparison and chapter acceptance"]
+  "scope": {
+    "recordingParts": [
+      9,
+      43
+    ],
+    "ownedScenes": 121,
+    "ownedNodes": 4998
+  },
+  "translation": {
+    "nonemptyTexts": 4963,
+    "textBranches": 402,
+    "sourcePreserved": true,
+    "emptyBattleNodes": 13,
+    "emptyMovieNodes": 22
+  },
+  "directory": {
+    "addedEvidenceBackedMapEdges": 91,
+    "p11Section1028": "Four scene cards and three links verified in the actual player",
+    "repairedEndingHandoffs": 14,
+    "ambiguousMasterSuccessors": "Pending concrete route evidence"
+  },
+  "visual": {
+    "reviewedSparseEntryBackgrounds": 121,
+    "reviewedInternalBackgroundChanges": 10,
+    "reviewedCharacterFields": 754,
+    "p09CharacterFields": 66,
+    "p10CharacterFields": 113,
+    "p11ReviewedCharacterFields": 189,
+    "p12CharacterFields": 116,
+    "p13CharacterFields": 70,
+    "p14CharacterFields": 121,
+    "p21CharacterFields": 38,
+    "p22CharacterFields": 41,
+    "reviewedBodyFields": 1,
+    "reviewedIndependentFaceFields": 2,
+    "delegatedImageReview": "All 383 new identity fields were directly inspected by named subagents; root checked witness digests and installed-source preconditions without viewing images",
+    "independentMotionRecheck": "Subaru10280014:4 and Rom:5/:20 independently rechecked against new original-video/controller entry sequences; qualitative order and held pose supported, exact original CSV and exact timing still unknown",
+    "p11ClothingVariant": "elsa_nomantle01 is used for the visibly uncloaked variant; the original cloaked elsa01 is separately packaged"
+  },
+  "audio": {
+    "reviewedVoiceFields": 7,
+    "reviewedBgmFields": 32,
+    "sparseP11Events": 16,
+    "originalP11CsvAndPhaseRecovered": false,
+    "remainingCandidates": "All35 source passes complete; remaining cues require per-card source review"
+  },
+  "effects": {
+    "p11Phone": "Original texture and animation program are present; phase-2 entry, continuation, exit and the following Ram card were verified in the earlier Studio copy",
+    "p13Phone": "Actual/player route verified21 ->22 text -> original item006 entry -> continuation/out -> Felt23; subagent image review confirms the visible sequence",
+    "p13OriginalCommandPhaseRecovered": false,
+    "p13AuthoredPhase": 2,
+    "p13WaitAdded": false,
+    "p13CommandWarningPreserved": true,
+    "phoneProjection": "Source/preview normalized height difference0.184 percent; original projection retained"
+  },
+  "endings": {
+    "repairedSequences": 14,
+    "appendedNodes": 30,
+    "completeAdditionalMovies": [
+      "adv_movie_10302",
+      "adv_movie_10305"
+    ],
+    "continuousPlayback": "All13 new endings independently passed automatic complete-movie/door/CLEAR/section-completion playback through the actual/player route; P11 was earlier checked in the Studio copy",
+    "exactOriginalCommandPhases": "Unknown; accepted first-episode conventions are explicitly identified"
+  },
+  "player": {
+    "speakerTranslations": 69,
+    "speakerCoverage": "All 69 observed source labels across 140 library scenes",
+    "ordinaryChoiceBadge": "Derived from actual outgoing choice edges; SetJunction semantics preserved",
+    "effectCompilation": "Uses the effect inventory of the same immutable asset revision"
+  },
+  "protected": {
+    "originalBaselineFiles": 38,
+    "originalStudioRevision": 2656,
+    "originalStudioSha256": "ebd974d90f89088fa3a504c1f419ae01c352a24e6bd80209c5ec651295d38522",
+    "unchanged": true
+  },
+  "verification": {
+    "earlierStudioCopyOnly": [
+      "Baseline10010001:5",
+      "P11 phone and Rom routes",
+      "P12 actors and active music",
+      "Thirteen new ending sequences"
+    ],
+    "actualProductionPlayerRoute": {
+      "path": "/player/player.html",
+      "routes": 7,
+      "nodeVisits": 32,
+      "failure": null,
+      "coverage": [
+        "P11 initial voice and Rom face",
+        "P10 Ram choice card",
+        "P13 phone-card actor",
+        "P21 Chin choice",
+        "P22 gown/Crusch/Ferris",
+        "P14 uncloaked Elsa",
+        "P11 running fuon02 -> STOP -> comical02"
+      ],
+      "fullVisualAcceptance": false,
+      "foundRemainingGaps": [
+        "Other still-unreviewed scene-internal backgrounds and effects",
+        "P13 original command phases and exact timing remain unknown"
+      ],
+      "correctedAfterImageReview": [
+        "10020013:13 exterior027a and:34 interior031a",
+        "10270039:15 interior031b and:22 original phone overlay",
+        "10030005:3 bedroom076a_roswaal"
+      ]
+    },
+    "initialSoundEntry": "10010001:3 completed phase0 SE and displayed text; observed AudioContext was running, so no suspended-SE fix is claimed",
+    "explicitResources": "All140 installed scene documents resolve their catalog identities and payloads",
+    "authenticatedOnlinePlayback": "Not claimed",
+    "playerAudioStartup": "Shared dialogue/music channels and interaction resume now reach the actual/player iframe; production-route playback passed",
+    "siteSourceCommit": "6309c1a72137377d6af25bbe2f8ad5b93938c93c",
+    "backgroundBoundaryReview": {
+      "routes": 4,
+      "nodeVisits": 13,
+      "failure": null,
+      "subagentVisualAcceptance": true
+    },
+    "phoneReview": {
+      "nodeVisits": 3,
+      "failure": null,
+      "subagentVisualAcceptance": true,
+      "originalCommandPhaseRecovered": false,
+      "exactTimingValidated": false
+    }
+  },
+  "knownRemainingWork": [
+    "Remaining Live2D identities and exact clothing variants",
+    "Body, face and additional layers for nearly all cards",
+    "Multi-character composition and native mapping",
+    "Remaining scene-internal background changes",
+    "Remaining voices, music and sound effects",
+    "Effects, transitions, ambiguous or terminal ending routes",
+    "Original main/IF CLEAR collage presentation",
+    "Full recording comparison and chapter acceptance"
+  ]
 }

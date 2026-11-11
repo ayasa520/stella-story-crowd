@@ -151,7 +151,6 @@
           "scenarioId": 2,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -411,7 +410,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -432,7 +430,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -498,7 +495,169 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 168.0,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "originalSourceSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-168.0000.png",
+                "frameSha256": "1e05476ded83f85073dd9478df7c707bec7c1076c45cd6d48d94083a95adfed7",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0165.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.6953760632202923,
+                          0.004115049705492773,
+                          -183.25981872134577
+                        ],
+                        [
+                          -0.004115049705492773,
+                          1.6953760632202923,
+                          223.13440714243694
+                        ]
+                      ],
+                      "inliers": 25,
+                      "scale": 1.6953810572772174,
+                      "rotation": -0.13906915563655958,
+                      "coverage": 0.06185492021696908,
+                      "landmark_center": [
+                        263.8856201171875,
+                        181.4157257080078
+                      ],
+                      "landmark_bounds": [
+                        [
+                          187.31275939941406,
+                          45.24259567260742
+                        ],
+                        [
+                          320.7144470214844,
+                          257.9540710449219
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4981479777553927,
+                      "face_score": 0.8436965087157868,
+                      "score": 0.8436965087157868
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 168.0,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "originalSourceSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-168.0000.png",
+                "frameSha256": "1e05476ded83f85073dd9478df7c707bec7c1076c45cd6d48d94083a95adfed7",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0165.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.6953760632202923,
+                          0.004115049705492773,
+                          -183.25981872134577
+                        ],
+                        [
+                          -0.004115049705492773,
+                          1.6953760632202923,
+                          223.13440714243694
+                        ]
+                      ],
+                      "inliers": 25,
+                      "scale": 1.6953810572772174,
+                      "rotation": -0.13906915563655958,
+                      "coverage": 0.06185492021696908,
+                      "landmark_center": [
+                        263.8856201171875,
+                        181.4157257080078
+                      ],
+                      "landmark_bounds": [
+                        [
+                          187.31275939941406,
+                          45.24259567260742
+                        ],
+                        [
+                          320.7144470214844,
+                          257.9540710449219
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4981479777553927,
+                      "face_score": 0.8436965087157868,
+                      "score": 0.8436965087157868
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": null,
+              "recordingId": "bili-capital-09",
+              "selection": "primary_fullframe",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "5": {
@@ -648,7 +807,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -669,7 +827,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -779,7 +936,169 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 174.65,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental/cast-174.6500.png",
+                "frameSha256": "1c23ac426adac54fa803932695cfcb67b9711592adb57be7778ed01a40099f38",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/native-s10020002-p09-at0175.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/identity-01.jpg",
+                "candidates": [
+                  {
+                    "model": "chin01",
+                    "character": "live2d/AC_chin01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.989105515979591,
+                          -0.00011437774044863507,
+                          -293.22922342668403
+                        ],
+                        [
+                          0.00011437774044863507,
+                          1.989105515979591,
+                          92.0197134765148
+                        ]
+                      ],
+                      "inliers": 20,
+                      "scale": 1.9891055192680709,
+                      "rotation": 0.003294627528846446,
+                      "coverage": 0.010873960597174508,
+                      "landmark_center": [
+                        273.7989807128906,
+                        195.2967071533203
+                      ],
+                      "landmark_bounds": [
+                        [
+                          248.70281982421875,
+                          142.39865112304688
+                        ],
+                        [
+                          290.65655517578125,
+                          261.3022766113281
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4532159557987756,
+                      "face_score": 0.8269242952080551,
+                      "score": 0.8269242952080551
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 185.0,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-185.0000.png",
+                "frameSha256": "d5665d84560825dff202249c1d7c161a6d7978fb100c44207a3fa0e01e344984",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0175.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          0.7035462343246472,
+                          -0.005195612482225328,
+                          64.97268316448576
+                        ],
+                        [
+                          0.005195612482225328,
+                          0.7035462343246472,
+                          560.8210575141063
+                        ]
+                      ],
+                      "inliers": 14,
+                      "scale": 0.7035654185798623,
+                      "rotation": 0.42311541340509146,
+                      "coverage": 0.01270515684570585,
+                      "landmark_center": [
+                        253.5521240234375,
+                        107.09162139892578
+                      ],
+                      "landmark_bounds": [
+                        [
+                          219.25640869140625,
+                          59.77912521362305
+                        ],
+                        [
+                          283.8721618652344,
+                          149.98184204101562
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.21105994832759056,
+                      "face_score": 0.5127519319888988,
+                      "score": 0.5127519319888988
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/index.json",
+              "recordingId": "bili-capital-09",
+              "selection": "supplemental_earlier_visible_body",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "7": {
@@ -809,7 +1128,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -830,7 +1148,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -884,7 +1201,169 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 203.85,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "originalSourceSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-203.8500.png",
+                "frameSha256": "efa7abc514ab2d65da39a1213393661868a6bb97c36d353aba2a83515ac994af",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0201.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [
+                  {
+                    "model": "kan01",
+                    "character": "live2d/AC_kan01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.2762968904851175,
+                          -0.0048190308869268785,
+                          -83.26457754714524
+                        ],
+                        [
+                          0.0048190308869268785,
+                          1.2762968904851175,
+                          194.75514006809007
+                        ]
+                      ],
+                      "inliers": 22,
+                      "scale": 1.2763059882805021,
+                      "rotation": 0.21633588634671608,
+                      "coverage": 0.028903848358563015,
+                      "landmark_center": [
+                        262.52191162109375,
+                        321.0375061035156
+                      ],
+                      "landmark_bounds": [
+                        [
+                          231.89047241210938,
+                          249.5647430419922
+                        ],
+                        [
+                          316.5818786621094,
+                          406.1296081542969
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.26173966174109287,
+                      "face_score": 0.4858398964795419,
+                      "score": 0.4858398964795419
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 203.85,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "originalSourceSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-203.8500.png",
+                "frameSha256": "efa7abc514ab2d65da39a1213393661868a6bb97c36d353aba2a83515ac994af",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0201.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [
+                  {
+                    "model": "kan01",
+                    "character": "live2d/AC_kan01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.2762968904851175,
+                          -0.0048190308869268785,
+                          -83.26457754714524
+                        ],
+                        [
+                          0.0048190308869268785,
+                          1.2762968904851175,
+                          194.75514006809007
+                        ]
+                      ],
+                      "inliers": 22,
+                      "scale": 1.2763059882805021,
+                      "rotation": 0.21633588634671608,
+                      "coverage": 0.028903848358563015,
+                      "landmark_center": [
+                        262.52191162109375,
+                        321.0375061035156
+                      ],
+                      "landmark_bounds": [
+                        [
+                          231.89047241210938,
+                          249.5647430419922
+                        ],
+                        [
+                          316.5818786621094,
+                          406.1296081542969
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.26173966174109287,
+                      "face_score": 0.4858398964795419,
+                      "score": 0.4858398964795419
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": null,
+              "recordingId": "bili-capital-09",
+              "selection": "primary_fullframe",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "8": {
@@ -928,7 +1407,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -949,7 +1427,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1059,7 +1536,165 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 205.65,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental/cast-205.6500.png",
+                "frameSha256": "d8324f903c65b38b94045de5890225dc1e364d48967c010ffefedab51810c559",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/native-s10020002-p09-at0205.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/identity-01.jpg",
+                "candidates": [],
+                "bestRejectedHypothesis": {
+                  "model": "chin01",
+                  "searched": true,
+                  "accepted": false,
+                  "fit": {
+                    "matrix": [
+                      [
+                        2.0455691541455003,
+                        -0.060309325270424326,
+                        -292.6015532623502
+                      ],
+                      [
+                        0.060309325270424326,
+                        2.0455691541455003,
+                        72.5649797588241
+                      ]
+                    ],
+                    "inliers": 11,
+                    "scale": 2.0464580081462977,
+                    "rotation": 1.6887569433616585,
+                    "coverage": 0.005323675061975207,
+                    "landmark_center": [
+                      272.5155944824219,
+                      233.63880920410156
+                    ],
+                    "landmark_bounds": [
+                      [
+                        263.6574401855469,
+                        160.56735229492188
+                      ],
+                      [
+                        282.3124084472656,
+                        291.4840393066406
+                      ]
+                    ],
+                    "canvas_center": [
+                      256.0,
+                      448.0
+                    ],
+                    "body_score": 0.3348061108726153,
+                    "face_score": 0.5600111377634802,
+                    "score": 0.5600111377634802
+                  }
+                }
+              },
+              "primaryWitness": {
+                "time": 221.0,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-221.0000.png",
+                "frameSha256": "39df84175ae6eccec47fbcf59c64d91c56d4f8dc1cb3aa5bffe3478eca66242e",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0205.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [],
+                "bestRejectedHypothesis": {
+                  "model": "chin01",
+                  "searched": true,
+                  "accepted": false,
+                  "fit": {
+                    "matrix": [
+                      [
+                        1.6602353946247699,
+                        -0.21008362567001115,
+                        -121.54253871416853
+                      ],
+                      [
+                        0.21008362567001115,
+                        1.6602353946247699,
+                        130.7543461825293
+                      ]
+                    ],
+                    "inliers": 7,
+                    "scale": 1.6734744382091777,
+                    "rotation": 7.2117908554712935,
+                    "coverage": 0.008799738117626734,
+                    "landmark_center": [
+                      263.3216552734375,
+                      208.137939453125
+                    ],
+                    "landmark_bounds": [
+                      [
+                        240.9073028564453,
+                        156.5202178955078
+                      ],
+                      [
+                        286.0285339355469,
+                        245.98802185058594
+                      ]
+                    ],
+                    "canvas_center": [
+                      256.0,
+                      448.0
+                    ],
+                    "body_score": 0.26146215198177714,
+                    "face_score": 0.4410792837088904,
+                    "score": 0.4410792837088904
+                  }
+                }
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/index.json",
+              "recordingId": "bili-capital-09",
+              "selection": "supplemental_earlier_visible_body",
+              "decisionBasis": "root_explicit_visual_confirmation_after_matcher_rejection",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "9": {
@@ -1105,7 +1740,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1126,7 +1760,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1190,7 +1823,165 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 226.65,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental/cast-226.6500.png",
+                "frameSha256": "0f6394b508a991858f0923101c3c82d78219e07ed3f289e876c9593c5d53f116",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/native-s10020002-p09-at0226.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/identity-01.jpg",
+                "candidates": [],
+                "bestRejectedHypothesis": {
+                  "model": "chin01",
+                  "searched": true,
+                  "accepted": false,
+                  "fit": {
+                    "matrix": [
+                      [
+                        2.0383377044737823,
+                        -0.05698511446582152,
+                        -291.51619407714253
+                      ],
+                      [
+                        0.05698511446582152,
+                        2.0383377044737823,
+                        75.29192214803022
+                      ]
+                    ],
+                    "inliers": 11,
+                    "scale": 2.0391341056316357,
+                    "rotation": 1.6013815226991892,
+                    "coverage": 0.005400769412517548,
+                    "landmark_center": [
+                      273.2511291503906,
+                      221.83995056152344
+                    ],
+                    "landmark_bounds": [
+                      [
+                        263.6574401855469,
+                        150.07456970214844
+                      ],
+                      [
+                        282.3124084472656,
+                        282.8871154785156
+                      ]
+                    ],
+                    "canvas_center": [
+                      256.0,
+                      448.0
+                    ],
+                    "body_score": 0.2735949145467413,
+                    "face_score": 0.41976142391976434,
+                    "score": 0.41976142391976434
+                  }
+                }
+              },
+              "primaryWitness": {
+                "time": 230.0,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-230.0000.png",
+                "frameSha256": "9d1fb78b30092577ea171edd58596a19cadcd5ca23415424d20a997004c2c286",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0226.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [],
+                "bestRejectedHypothesis": {
+                  "model": "chin01",
+                  "searched": true,
+                  "accepted": false,
+                  "fit": {
+                    "matrix": [
+                      [
+                        1.989226780102587,
+                        0.001906232915828517,
+                        -294.390898026904
+                      ],
+                      [
+                        -0.001906232915828517,
+                        1.989226780102587,
+                        94.29899034800485
+                      ]
+                    ],
+                    "inliers": 10,
+                    "scale": 1.9892276934532243,
+                    "rotation": -0.05490528707260117,
+                    "coverage": 0.0036590751260519028,
+                    "landmark_center": [
+                      272.8409118652344,
+                      211.4569091796875
+                    ],
+                    "landmark_bounds": [
+                      [
+                        263.6574401855469,
+                        160.56735229492188
+                      ],
+                      [
+                        282.6053771972656,
+                        249.15789794921875
+                      ]
+                    ],
+                    "canvas_center": [
+                      256.0,
+                      448.0
+                    ],
+                    "body_score": 0.26353848691741666,
+                    "face_score": 0.4969488320456585,
+                    "score": 0.4969488320456585
+                  }
+                }
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/index.json",
+              "recordingId": "bili-capital-09",
+              "selection": "supplemental_earlier_visible_body",
+              "decisionBasis": "root_explicit_visual_confirmation_after_matcher_rejection",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "10": {
@@ -1220,7 +2011,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1241,7 +2031,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1357,7 +2146,124 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 231.6493,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental/cast-231.6493.png",
+                "frameSha256": "249368096e50485282d62b78aadfa866b1aa0d662d0e639c24d98793e806dbbb",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/native-s10020002-p09-at0231.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/identity-01.jpg",
+                "candidates": [
+                  {
+                    "model": "ton01",
+                    "character": "live2d/AC_ton01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          2.1233873706049198,
+                          -0.0025640207629832094,
+                          -301.91408084536806
+                        ],
+                        [
+                          0.0025640207629832094,
+                          2.1233873706049198,
+                          99.72000922571293
+                        ]
+                      ],
+                      "inliers": 38,
+                      "scale": 2.1233889186503134,
+                      "rotation": 0.069185443473524,
+                      "coverage": 0.04581231730324881,
+                      "landmark_center": [
+                        251.25115966796875,
+                        168.16957092285156
+                      ],
+                      "landmark_bounds": [
+                        [
+                          185.64707946777344,
+                          100.24044799804688
+                        ],
+                        [
+                          298.3169250488281,
+                          286.7720947265625
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4526558226924352,
+                      "face_score": 0.8559910929248407,
+                      "score": 0.8559910929248407
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 245.35,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-245.3500.png",
+                "frameSha256": "ab8f892dc0d4ca32e295ea0fcce4a4bc14cf1ec9760a5a9e9ba0d001ad1e5884",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0231.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [],
+                "bestRejectedHypothesis": null
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/index.json",
+              "recordingId": "bili-capital-09",
+              "selection": "supplemental_earlier_visible_body",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "11": {
@@ -1387,7 +2293,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1408,7 +2313,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1462,7 +2366,167 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 248.6493,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental/cast-248.6493.png",
+                "frameSha256": "f482e218afc24beb6d2a2a42ae676cfcce27d4b1b8575aa8f5b7352b98f72d89",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/native-s10020002-p09-at0248.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/identity-01.jpg",
+                "candidates": [
+                  {
+                    "model": "ton01",
+                    "character": "live2d/AC_ton01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          2.139035288135842,
+                          0.02905554902184703,
+                          -312.9159947325056
+                        ],
+                        [
+                          -0.02905554902184703,
+                          2.139035288135842,
+                          107.37834437974905
+                        ]
+                      ],
+                      "inliers": 20,
+                      "scale": 2.139232616808968,
+                      "rotation": -0.7782283733638792,
+                      "coverage": 0.04021083031381879,
+                      "landmark_center": [
+                        260.54241943359375,
+                        169.63221740722656
+                      ],
+                      "landmark_bounds": [
+                        [
+                          212.86849975585938,
+                          127.73588562011719
+                        ],
+                        [
+                          345.1747741699219,
+                          267.1608581542969
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.32614150374919615,
+                      "face_score": 0.4078338625900665,
+                      "score": 0.4078338625900665
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 251.85,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-251.8500.png",
+                "frameSha256": "8ad40aa4918ea1bf90ef0fb7e685ba575d5c2b5e27d0b1dee7f97f0347a9f8eb",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0248.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [],
+                "bestRejectedHypothesis": {
+                  "model": "ton01",
+                  "searched": true,
+                  "accepted": false,
+                  "fit": {
+                    "matrix": [
+                      [
+                        2.113032458819824,
+                        0.0010480925847212769,
+                        -299.5222955396826
+                      ],
+                      [
+                        -0.0010480925847212769,
+                        2.113032458819824,
+                        95.61728268550492
+                      ]
+                    ],
+                    "inliers": 42,
+                    "scale": 2.1130327187538334,
+                    "rotation": -0.028419476694756734,
+                    "coverage": 0.07169714144298009,
+                    "landmark_center": [
+                      256.86419677734375,
+                      155.9664764404297
+                    ],
+                    "landmark_bounds": [
+                      [
+                        189.43885803222656,
+                        86.51043701171875
+                      ],
+                      [
+                        363.36444091796875,
+                        275.6212463378906
+                      ]
+                    ],
+                    "canvas_center": [
+                      256.0,
+                      448.0
+                    ],
+                    "body_score": 0.17832572610857425,
+                    "face_score": 0.2063243778370321,
+                    "score": 0.2063243778370321
+                  }
+                }
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/index.json",
+              "recordingId": "bili-capital-09",
+              "selection": "supplemental_earlier_visible_body",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "12": {
@@ -1492,7 +2556,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1513,7 +2576,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1567,7 +2629,169 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 256.85,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-256.8500.png",
+                "frameSha256": "e63d58c177b901411d30d9515937de3dc8eed5851cb1520d14518a929fdc8fa1",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0253.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7186297072044285,
+                          0.004597521678628249,
+                          -189.8377009542243
+                        ],
+                        [
+                          -0.004597521678628249,
+                          1.7186297072044285,
+                          218.08200792459928
+                        ]
+                      ],
+                      "inliers": 19,
+                      "scale": 1.718635856629078,
+                      "rotation": -0.15327208586257735,
+                      "coverage": 0.06029087730816433,
+                      "landmark_center": [
+                        263.714111328125,
+                        218.0644989013672
+                      ],
+                      "landmark_bounds": [
+                        [
+                          183.09107971191406,
+                          57.15293502807617
+                        ],
+                        [
+                          321.5027160644531,
+                          256.9812316894531
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4335198907248253,
+                      "face_score": 0.6117828669013311,
+                      "score": 0.6117828669013311
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 256.85,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-256.8500.png",
+                "frameSha256": "e63d58c177b901411d30d9515937de3dc8eed5851cb1520d14518a929fdc8fa1",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0253.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-02.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7186297072044285,
+                          0.004597521678628249,
+                          -189.8377009542243
+                        ],
+                        [
+                          -0.004597521678628249,
+                          1.7186297072044285,
+                          218.08200792459928
+                        ]
+                      ],
+                      "inliers": 19,
+                      "scale": 1.718635856629078,
+                      "rotation": -0.15327208586257735,
+                      "coverage": 0.06029087730816433,
+                      "landmark_center": [
+                        263.714111328125,
+                        218.0644989013672
+                      ],
+                      "landmark_bounds": [
+                        [
+                          183.09107971191406,
+                          57.15293502807617
+                        ],
+                        [
+                          321.5027160644531,
+                          256.9812316894531
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4335198907248253,
+                      "face_score": 0.6117828669013311,
+                      "score": 0.6117828669013311
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": null,
+              "recordingId": "bili-capital-09",
+              "selection": "primary_fullframe",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "13": {
@@ -1710,7 +2934,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1731,7 +2954,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1793,7 +3015,165 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 295.15,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental/cast-295.1500.png",
+                "frameSha256": "3715b998c38779583c1088002691ffe5cad7572fc03d267dacf7366117550a13",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/native-s10020002-p09-at0295.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/identity-01.jpg",
+                "candidates": [],
+                "bestRejectedHypothesis": {
+                  "model": "subaru01",
+                  "searched": true,
+                  "accepted": false,
+                  "fit": {
+                    "matrix": [
+                      [
+                        1.7201968640029108,
+                        -0.004440816372184577,
+                        -188.2322125250561
+                      ],
+                      [
+                        0.004440816372184577,
+                        1.7201968640029108,
+                        216.4424322897031
+                      ]
+                    ],
+                    "inliers": 35,
+                    "scale": 1.72020259614253,
+                    "rotation": 0.1479129951952867,
+                    "coverage": 0.053442767688206265,
+                    "landmark_center": [
+                      308.74896240234375,
+                      187.5328826904297
+                    ],
+                    "landmark_bounds": [
+                      [
+                        219.3515167236328,
+                        97.07247924804688
+                      ],
+                      [
+                        355.8924255371094,
+                        276.6302185058594
+                      ]
+                    ],
+                    "canvas_center": [
+                      256.0,
+                      448.0
+                    ],
+                    "body_score": 0.15193532640900229,
+                    "face_score": 0.139344008372215,
+                    "score": 0.15193532640900229
+                  }
+                }
+              },
+              "primaryWitness": {
+                "time": 295.0,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-295.0000.png",
+                "frameSha256": "cb03164edb0c6887a258efdf3ff7ae2e38541e1e69a48fda214813dc59620596",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0295.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-03.jpg",
+                "candidates": [],
+                "bestRejectedHypothesis": {
+                  "model": "subaru01",
+                  "searched": true,
+                  "accepted": false,
+                  "fit": {
+                    "matrix": [
+                      [
+                        1.721454008865253,
+                        -0.00864786729354208,
+                        -187.80015071584856
+                      ],
+                      [
+                        0.00864786729354208,
+                        1.721454008865253,
+                        215.1564040964294
+                      ]
+                    ],
+                    "inliers": 28,
+                    "scale": 1.7214757303682726,
+                    "rotation": 0.28782768934047726,
+                    "coverage": 0.0532973621572767,
+                    "landmark_center": [
+                      310.92449951171875,
+                      179.917236328125
+                    ],
+                    "landmark_bounds": [
+                      [
+                        219.3209228515625,
+                        96.88213348388672
+                      ],
+                      [
+                        355.890869140625,
+                        275.91326904296875
+                      ]
+                    ],
+                    "canvas_center": [
+                      256.0,
+                      448.0
+                    ],
+                    "body_score": 0.16848792067505944,
+                    "face_score": 0.17953084975903283,
+                    "score": 0.17953084975903283
+                  }
+                }
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/index.json",
+              "recordingId": "bili-capital-09",
+              "selection": "supplemental_earlier_visible_body",
+              "decisionBasis": "root_explicit_visual_confirmation_after_matcher_rejection",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "15": {
@@ -1949,7 +3329,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1970,7 +3349,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2035,7 +3413,169 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 305.0,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "originalSourceSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-305.0000.png",
+                "frameSha256": "e9a921db914308e96ad87057aa3c69bffabf3e2bdd6948b6fcff39b5373ac776",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0303.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-03.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.6814409940149067,
+                          -0.29232631519773195,
+                          -104.01880583207306
+                        ],
+                        [
+                          0.29232631519773195,
+                          1.6814409940149067,
+                          156.48238612965397
+                        ]
+                      ],
+                      "inliers": 12,
+                      "scale": 1.7066629693383872,
+                      "rotation": 9.862558761756217,
+                      "coverage": 0.016885888363633837,
+                      "landmark_center": [
+                        244.1314239501953,
+                        120.6405258178711
+                      ],
+                      "landmark_bounds": [
+                        [
+                          223.8145751953125,
+                          55.27769088745117
+                        ],
+                        [
+                          275.0435791015625,
+                          206.48959350585938
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.23797114348021794,
+                      "face_score": 0.5912824643522409,
+                      "score": 0.5912824643522409
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 305.0,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "originalSourceSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-305.0000.png",
+                "frameSha256": "e9a921db914308e96ad87057aa3c69bffabf3e2bdd6948b6fcff39b5373ac776",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0303.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-03.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.6814409940149067,
+                          -0.29232631519773195,
+                          -104.01880583207306
+                        ],
+                        [
+                          0.29232631519773195,
+                          1.6814409940149067,
+                          156.48238612965397
+                        ]
+                      ],
+                      "inliers": 12,
+                      "scale": 1.7066629693383872,
+                      "rotation": 9.862558761756217,
+                      "coverage": 0.016885888363633837,
+                      "landmark_center": [
+                        244.1314239501953,
+                        120.6405258178711
+                      ],
+                      "landmark_bounds": [
+                        [
+                          223.8145751953125,
+                          55.27769088745117
+                        ],
+                        [
+                          275.0435791015625,
+                          206.48959350585938
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.23797114348021794,
+                      "face_score": 0.5912824643522409,
+                      "score": 0.5912824643522409
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": null,
+              "recordingId": "bili-capital-09",
+              "selection": "primary_fullframe",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "17": {
@@ -2065,7 +3605,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2086,7 +3625,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2140,7 +3678,169 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 310.8491,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-310.8491.png",
+                "frameSha256": "7f3b666aa0ba7573fbbb11af36a0772c313d14a1f332b5ce5bfe43478a220a63",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0307.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-03.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.714809049661213,
+                          0.047103124247517086,
+                          -199.08549984454555
+                        ],
+                        [
+                          -0.047103124247517086,
+                          1.714809049661213,
+                          227.10445755060263
+                        ]
+                      ],
+                      "inliers": 25,
+                      "scale": 1.7154558522777172,
+                      "rotation": -1.5734298606736545,
+                      "coverage": 0.049657085112163,
+                      "landmark_center": [
+                        242.52171325683594,
+                        172.85694885253906
+                      ],
+                      "landmark_bounds": [
+                        [
+                          181.5858154296875,
+                          57.05291748046875
+                        ],
+                        [
+                          295.13372802734375,
+                          257.67559814453125
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4639727520554936,
+                      "face_score": 0.7235917634564196,
+                      "score": 0.7235917634564196
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 310.8491,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-310.8491.png",
+                "frameSha256": "7f3b666aa0ba7573fbbb11af36a0772c313d14a1f332b5ce5bfe43478a220a63",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0307.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-03.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.714809049661213,
+                          0.047103124247517086,
+                          -199.08549984454555
+                        ],
+                        [
+                          -0.047103124247517086,
+                          1.714809049661213,
+                          227.10445755060263
+                        ]
+                      ],
+                      "inliers": 25,
+                      "scale": 1.7154558522777172,
+                      "rotation": -1.5734298606736545,
+                      "coverage": 0.049657085112163,
+                      "landmark_center": [
+                        242.52171325683594,
+                        172.85694885253906
+                      ],
+                      "landmark_bounds": [
+                        [
+                          181.5858154296875,
+                          57.05291748046875
+                        ],
+                        [
+                          295.13372802734375,
+                          257.67559814453125
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4639727520554936,
+                      "face_score": 0.7235917634564196,
+                      "score": 0.7235917634564196
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": null,
+              "recordingId": "bili-capital-09",
+              "selection": "primary_fullframe",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "18": {
@@ -2201,7 +3901,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "motion",
         "native_array_order",
@@ -2223,7 +3922,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "motion",
             "native_array_order",
@@ -2411,7 +4109,124 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 312.15,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental/cast-312.1500.png",
+                "frameSha256": "28664e69ff8723d19e81e887c34687594f15fcfa9a38dd63164eb8dfd6b5a6dc",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/native-s10020002-p09-at0312.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/identity-01.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7252362497701772,
+                          0.016496235256507518,
+                          -194.34711754102213
+                        ],
+                        [
+                          -0.016496235256507518,
+                          1.7252362497701772,
+                          226.55194957608467
+                        ]
+                      ],
+                      "inliers": 22,
+                      "scale": 1.7253151142034036,
+                      "rotation": -0.5478298148233398,
+                      "coverage": 0.04410049319267273,
+                      "landmark_center": [
+                        264.0137023925781,
+                        154.9202117919922
+                      ],
+                      "landmark_bounds": [
+                        [
+                          219.98794555664062,
+                          57.07918167114258
+                        ],
+                        [
+                          321.1379089355469,
+                          257.09100341796875
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4298667239295676,
+                      "face_score": 0.6788347223017779,
+                      "score": 0.6788347223017779
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 322.8491,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-322.8491.png",
+                "frameSha256": "a9b5d519b03378c240c8a455adc925d4a6b70b2be5571dbcbc5bc7b4d2288fc5",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0312.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-03.jpg",
+                "candidates": [],
+                "bestRejectedHypothesis": null
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-supplemental-review/index.json",
+              "recordingId": "bili-capital-09",
+              "selection": "supplemental_earlier_visible_body",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "19": {
@@ -2441,7 +4256,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2462,7 +4276,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2519,7 +4332,169 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p09-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "selectedWitness": {
+                "time": 326.35,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-326.3500.png",
+                "frameSha256": "129babaecc0202663cdaaa1a64cb9191dedc69f509237f944ead9f39b501f489",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0324.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-03.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.6926984452622174,
+                          0.0057821916565602245,
+                          -183.5976103666913
+                        ],
+                        [
+                          -0.0057821916565602245,
+                          1.6926984452622174,
+                          224.26190945019442
+                        ]
+                      ],
+                      "inliers": 31,
+                      "scale": 1.6927083211036333,
+                      "rotation": -0.19571937966179484,
+                      "coverage": 0.059729431356702535,
+                      "landmark_center": [
+                        261.1253662109375,
+                        157.12884521484375
+                      ],
+                      "landmark_bounds": [
+                        [
+                          187.33233642578125,
+                          54.415672302246094
+                        ],
+                        [
+                          322.60211181640625,
+                          256.9812316894531
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.5020978438604098,
+                      "face_score": 0.8493550583247561,
+                      "score": 0.8493550583247561
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryWitness": {
+                "time": 326.35,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                "videoSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                "sourceMapping": {
+                  "originalSourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                  "originalSourceSha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                  "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/09-remote-qn32.mp4",
+                  "replacementSha256": "5c983351b6eea1cc89344669b3db2984908e9ac38b516a906bedfeff4519163f",
+                  "authorization": "Root authorized unique recordingId mapping and identical-second recovery from the verified replacement after reviewing original quality evidence.",
+                  "basis": "CID 236682523; matching size and duration; first different byte chunk at 73924608; old NAL corruption after approximately 634 seconds; replacement tail from 630 seconds visually reviewed by root.",
+                  "qualityReports": [
+                    "data/native_recovery/royal-capital-20261110/inventory-quality-09.json",
+                    "data/native_recovery/royal-capital-20261110/source-quality/09-byte-comparison.json"
+                  ]
+                },
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-all/cast-326.3500.png",
+                "frameSha256": "129babaecc0202663cdaaa1a64cb9191dedc69f509237f944ead9f39b501f489",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/native-s10020002-p09-at0324.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/identity-03.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.6926984452622174,
+                          0.0057821916565602245,
+                          -183.5976103666913
+                        ],
+                        [
+                          -0.0057821916565602245,
+                          1.6926984452622174,
+                          224.26190945019442
+                        ]
+                      ],
+                      "inliers": 31,
+                      "scale": 1.6927083211036333,
+                      "rotation": -0.19571937966179484,
+                      "coverage": 0.059729431356702535,
+                      "landmark_center": [
+                        261.1253662109375,
+                        157.12884521484375
+                      ],
+                      "landmark_bounds": [
+                        [
+                          187.33233642578125,
+                          54.415672302246094
+                        ],
+                        [
+                          322.60211181640625,
+                          256.9812316894531
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.5020978438604098,
+                      "face_score": 0.8493550583247561,
+                      "score": 0.8493550583247561
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null
+              },
+              "primaryIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-fullscope-review/index.json",
+              "supplementalIndex": null,
+              "recordingId": "bili-capital-09",
+              "selection": "primary_fullframe",
+              "decisionBasis": "root_fullframe_visual_confirmation_of_native_candidate",
+              "originalUnsignedPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-unsigned.json",
+              "originalUnsignedPacketSha256": "514c5dfa85a77d07cb9302a8d81a604f9f244da33b4704ad0b267efd1ba9ac67",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected fullscope identity sheets01-06 and supplemental sheets01-02, all eight pages. Approve the66 single visible actors only. Prefer earlier same-card witnesses where later selection/transition frames hide the actor. Reject UI portraits: blue-haired Chin is the body on10020002:6 and Rom remains the body on10020004:14. Visual original-resource comparison explicitly confirms rejected-matcher Chin8/9 and Subaru14. The two simultaneous three-thug cards remain pending and receive no single character assignment. No body, face, voice or additional-layer command is inferred.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p09-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "1e221c7e1c627deaa6ee69e3c244b333946dcfeb2a4acf70e21811d78983df3c",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "20": {
@@ -2563,7 +4538,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2584,7 +4558,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2649,7 +4622,199 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10020002.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/root-reviewed-p12-character-only.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "recordingId": "bili-capital-12",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p12-all-review/index.json",
+              "selectedWitness": {
+                "sceneId": 10020002,
+                "scenarioId": 20,
+                "stableKey": "s10020002-p12-at0017",
+                "time": 20.5,
+                "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/12 6本篇「不可理解的再会」Ver蜜蜜.mp4",
+                "videoSha256": "4f1cfc79da7623d634642d83ea7574ef4ded5cddc7798f87c4eacee334b42c13",
+                "sourceMapping": null,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p12-all/cast-20.5000.png",
+                "frameSha256": "95aabfc058c4ff24ce83ca58e2ccec5cba7d4195ebad85fbb596079082969260",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p12-all-review/native-s10020002-p12-at0017.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p12-all-review/identity-01.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.6185630890217035,
+                          -0.005737429941391904,
+                          -176.06085566160044
+                        ],
+                        [
+                          0.005737429941391904,
+                          1.6185630890217035,
+                          229.45305009992225
+                        ]
+                      ],
+                      "inliers": 20,
+                      "scale": 1.6185732579175436,
+                      "rotation": 0.2030993702126865,
+                      "coverage": 0.034128278493881226,
+                      "landmark_center": [
+                        262.4412536621094,
+                        156.72024536132812
+                      ],
+                      "landmark_bounds": [
+                        [
+                          217.57501220703125,
+                          55.27769088745117
+                        ],
+                        [
+                          295.091796875,
+                          257.2522277832031
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.35709516341074626,
+                      "face_score": 0.6080576570789216,
+                      "score": 0.6080576570789216
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null,
+                "allModelDiagnostics": [
+                  {
+                    "model": "subaru01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.6185630890217035,
+                          -0.005737429941391904,
+                          -176.06085566160044
+                        ],
+                        [
+                          0.005737429941391904,
+                          1.6185630890217035,
+                          229.45305009992225
+                        ]
+                      ],
+                      "inliers": 20,
+                      "scale": 1.6185732579175436,
+                      "rotation": 0.2030993702126865,
+                      "coverage": 0.034128278493881226,
+                      "landmark_center": [
+                        262.4412536621094,
+                        156.72024536132812
+                      ],
+                      "landmark_bounds": [
+                        [
+                          217.57501220703125,
+                          55.27769088745117
+                        ],
+                        [
+                          295.091796875,
+                          257.2522277832031
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.35709516341074626,
+                      "face_score": 0.6080576570789216,
+                      "score": 0.6080576570789216
+                    }
+                  },
+                  {
+                    "model": "rom01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "mimi01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "ricardo01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  }
+                ],
+                "searchScope": {
+                  "requested_models": [
+                    "subaru01",
+                    "rom01",
+                    "mimi01",
+                    "ricardo01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "votes": [],
+                  "fallback_reason": "shortlist_disabled_or_unnecessary",
+                  "evaluated_models": [
+                    "subaru01",
+                    "rom01",
+                    "mimi01",
+                    "ricardo01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "deferred_models": [],
+                  "complete_requested_scope": true,
+                  "absence_supported": true
+                },
+                "reviewStatus": "pending_root_fullframe_identity_and_costume_review",
+                "sourceObservationNote": null,
+                "unrecovered": [
+                  "body_command",
+                  "facial_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "absenceClaim": false
+              },
+              "decisionBasis": "root_fullframe_confirmation_of_native_candidate",
+              "rootReviewPendingSignature": "Root reported reviewing all eleven P12 source/native contact pages and explicitly confirmed this identity.",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly inspected all eleven P12 identity sheets01-11 against original model projections. Approve only these116 single-body identities, including Subaru behind the chip-bag cutin, partly entering Rom, and visually distinct Mimi despite rejected neutral-face fits. Elsa10/11 visibly wear the cloak: useelsa01, not the same-face uncloaked hypothesis. Retain background-only34:11, six blurred choices awaiting earlier witnesses, and the already installed shared18 unchanged. This signs model identity only; gestures, faces, silhouette lighting and item FX remain independent unknowns.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p12-character-only-node-fields-unsigned.json",
+                "sourcePacketSha256": "77e1cf178bf2321329c5e8de846715484a554e5acd95e118e5ef2b8f571d5735",
+                "scope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     }
   },
@@ -2658,6 +4823,11 @@
       "code": "native_metadata_unrecovered",
       "severity": "warning",
       "message": "The draft uses authored IDs, zero default gain vectors and no invented branch lock rules."
+    },
+    {
+      "code": "draft_not_playback_verified",
+      "severity": "warning",
+      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     },
     {
       "code": "performance_unrecovered",
@@ -2687,7 +4857,6 @@
       "scenarioId": 2,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -2736,7 +4905,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2784,7 +4952,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2798,6 +4965,13 @@
       ]
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 6,
+      "branchId": 62
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -2805,7 +4979,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2832,7 +5005,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2846,6 +5018,13 @@
       ]
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 8,
+      "branchId": 82
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -2853,7 +5032,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2874,7 +5052,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2894,6 +5071,13 @@
       "scenarioId": 10
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 10,
+      "branchId": 102
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -2901,7 +5085,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2928,7 +5111,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2977,7 +5159,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3025,7 +5206,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3046,7 +5226,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3073,7 +5252,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "motion",
         "native_array_order",
@@ -3101,7 +5279,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3128,7 +5305,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3140,32 +5316,6 @@
         "video",
         "voice"
       ]
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 6,
-      "branchId": 62
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 8,
-      "branchId": 82
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 10,
-      "branchId": 102
-    },
-    {
-      "code": "draft_not_playback_verified",
-      "severity": "warning",
-      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     }
   ],
   "unresolvedBranches": [

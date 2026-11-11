@@ -163,7 +163,6 @@
           "scenarioId": 2,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -612,7 +611,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -633,7 +631,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -694,7 +691,288 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/accepted-p13-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "recordingId": "bili-capital-13",
+              "reviewer": "/root/visual_review_low",
+              "directImageReview": true,
+              "decisionBasis": "Explicit costume selection after directly viewing the full original frame and both native anchors: shoulder cape, circular gold clasp, purple flower and feather trim are all visible; elsa01 is the cloaked model.",
+              "selectedWitness": {
+                "sceneId": 10270041,
+                "scenarioId": 5,
+                "stableKey": "s10270041-p13-at0440",
+                "time": 442.999,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+                "videoSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+                "sourceMapping": null,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all/cast-442.9990.png",
+                "frameSha256": "c238483aab514c36f7415262bdec7bb38d9d1de255c77688fb5f544c80966274",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/native-s10270041-p13-at0440.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/identity-05.jpg",
+                "candidates": [
+                  {
+                    "model": "elsa01",
+                    "character": "live2d/AC_elsa01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7258386291295278,
+                          0.0026389622038191602,
+                          -197.4406974044187
+                        ],
+                        [
+                          -0.0026389622038191602,
+                          1.7258386291295278,
+                          196.33027858233538
+                        ]
+                      ],
+                      "inliers": 114,
+                      "scale": 1.7258406467334118,
+                      "rotation": -0.08761032241333952,
+                      "coverage": 0.09536400011607579,
+                      "landmark_center": [
+                        255.64427185058594,
+                        164.43577575683594
+                      ],
+                      "landmark_bounds": [
+                        [
+                          163.5587921142578,
+                          62.263065338134766
+                        ],
+                        [
+                          351.9265441894531,
+                          294.5131530761719
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.57653069984887,
+                      "face_score": 0.8675671519462884,
+                      "score": 0.8675671519462884
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "character": "live2d/AC_elsa_nomantle01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7244304779887587,
+                          -0.0009044710329555858,
+                          -196.62016885436847
+                        ],
+                        [
+                          0.0009044710329555858,
+                          1.7244304779887587,
+                          195.14883981961577
+                        ]
+                      ],
+                      "inliers": 37,
+                      "scale": 1.7244307151881715,
+                      "rotation": 0.030051874395332738,
+                      "coverage": 0.05418512650898525,
+                      "landmark_center": [
+                        267.7549133300781,
+                        202.19509887695312
+                      ],
+                      "landmark_bounds": [
+                        [
+                          209.55026245117188,
+                          93.36044311523438
+                        ],
+                        [
+                          333.2771301269531,
+                          294.2669677734375
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.511913674995939,
+                      "face_score": 0.6658180041814603,
+                      "score": 0.6658180041814603
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null,
+                "allModelDiagnostics": [
+                  {
+                    "model": "subaru01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "rom01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "felt01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7258386291295278,
+                          0.0026389622038191602,
+                          -197.4406974044187
+                        ],
+                        [
+                          -0.0026389622038191602,
+                          1.7258386291295278,
+                          196.33027858233538
+                        ]
+                      ],
+                      "inliers": 114,
+                      "scale": 1.7258406467334118,
+                      "rotation": -0.08761032241333952,
+                      "coverage": 0.09536400011607579,
+                      "landmark_center": [
+                        255.64427185058594,
+                        164.43577575683594
+                      ],
+                      "landmark_bounds": [
+                        [
+                          163.5587921142578,
+                          62.263065338134766
+                        ],
+                        [
+                          351.9265441894531,
+                          294.5131530761719
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.57653069984887,
+                      "face_score": 0.8675671519462884,
+                      "score": 0.8675671519462884
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7244304779887587,
+                          -0.0009044710329555858,
+                          -196.62016885436847
+                        ],
+                        [
+                          0.0009044710329555858,
+                          1.7244304779887587,
+                          195.14883981961577
+                        ]
+                      ],
+                      "inliers": 37,
+                      "scale": 1.7244307151881715,
+                      "rotation": 0.030051874395332738,
+                      "coverage": 0.05418512650898525,
+                      "landmark_center": [
+                        267.7549133300781,
+                        202.19509887695312
+                      ],
+                      "landmark_bounds": [
+                        [
+                          209.55026245117188,
+                          93.36044311523438
+                        ],
+                        [
+                          333.2771301269531,
+                          294.2669677734375
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.511913674995939,
+                      "face_score": 0.6658180041814603,
+                      "score": 0.6658180041814603
+                    }
+                  }
+                ],
+                "searchScope": {
+                  "requested_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "votes": [],
+                  "fallback_reason": "shortlist_disabled_or_unnecessary",
+                  "evaluated_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "deferred_models": [],
+                  "complete_requested_scope": true,
+                  "absence_supported": true
+                },
+                "reviewStatus": "pending_root_fullframe_identity_and_costume_review",
+                "sourceObservationNote": null,
+                "unrecovered": [
+                  "body_command",
+                  "facial_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "absenceClaim": false
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/index.json",
+              "candidateIndexSha256": "8eb9ec9b22ab86ae0981bd7dd21ee98de0d960fdc53930f5e905804ab7352a09",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-image-decisions-v1.json",
+                "sha256": "36f8ed3eb636cd87d62fe5a3b4b17762bff057d1f5cc4a838ebcc2bf3243ce28"
+              },
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_low",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-character-packet-v1.json",
+                "sourcePacketSha256": "769c9efa3bfc509c18f46ca2ae2f6f6b3d131cdd74eb5691d8bcd6e5ef92fdc9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "6": {
@@ -724,7 +1002,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -745,7 +1022,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -799,7 +1075,244 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/accepted-p13-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "recordingId": "bili-capital-13",
+              "reviewer": "/root/visual_review_low",
+              "directImageReview": true,
+              "decisionBasis": "Direct full-frame/native-reference review: blond braided/cropped hair with black bow, red scarf, brown fur-trimmed vest and black bandeau match felt01. This decision identifies the full stage actor, not a UI portrait.",
+              "selectedWitness": {
+                "sceneId": 10270041,
+                "scenarioId": 6,
+                "stableKey": "s10270041-p13-at0445",
+                "time": 447.849,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+                "videoSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+                "sourceMapping": null,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all/cast-447.8490.png",
+                "frameSha256": "53544e40dde87b700226aae10d9674252181d7716a488b7b07525135bb44bb0a",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/native-s10270041-p13-at0445.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/identity-05.jpg",
+                "candidates": [
+                  {
+                    "model": "felt01",
+                    "character": "live2d/AC_felt01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7170257795423285,
+                          -0.0617466109784164,
+                          -165.37912448525068
+                        ],
+                        [
+                          0.0617466109784164,
+                          1.7170257795423285,
+                          133.28934453894018
+                        ]
+                      ],
+                      "inliers": 38,
+                      "scale": 1.718135667396571,
+                      "rotation": 2.059547603772157,
+                      "coverage": 0.029902187841279165,
+                      "landmark_center": [
+                        243.0099639892578,
+                        166.46493530273438
+                      ],
+                      "landmark_bounds": [
+                        [
+                          200.00146484375,
+                          94.31136322021484
+                        ],
+                        [
+                          300.80389404296875,
+                          230.39627075195312
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.40090258850891214,
+                      "face_score": 0.49900662609343144,
+                      "score": 0.49900662609343144
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null,
+                "allModelDiagnostics": [
+                  {
+                    "model": "subaru01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "rom01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "felt01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7170257795423285,
+                          -0.0617466109784164,
+                          -165.37912448525068
+                        ],
+                        [
+                          0.0617466109784164,
+                          1.7170257795423285,
+                          133.28934453894018
+                        ]
+                      ],
+                      "inliers": 38,
+                      "scale": 1.718135667396571,
+                      "rotation": 2.059547603772157,
+                      "coverage": 0.029902187841279165,
+                      "landmark_center": [
+                        243.0099639892578,
+                        166.46493530273438
+                      ],
+                      "landmark_bounds": [
+                        [
+                          200.00146484375,
+                          94.31136322021484
+                        ],
+                        [
+                          300.80389404296875,
+                          230.39627075195312
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.40090258850891214,
+                      "face_score": 0.49900662609343144,
+                      "score": 0.49900662609343144
+                    }
+                  },
+                  {
+                    "model": "elsa01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": {
+                      "matrix": [
+                        [
+                          0.4572578448923496,
+                          0.047690322581157164,
+                          146.89392421740595
+                        ],
+                        [
+                          -0.047690322581157164,
+                          0.4572578448923496,
+                          451.21205670253556
+                        ]
+                      ],
+                      "inliers": 5,
+                      "scale": 0.45973808150238205,
+                      "rotation": -5.954213300292094,
+                      "coverage": 0.14508652687072754,
+                      "landmark_center": [
+                        146.5144805908203,
+                        604.6064453125
+                      ],
+                      "landmark_bounds": [
+                        [
+                          80.15760040283203,
+                          362.92584228515625
+                        ],
+                        [
+                          244.8168182373047,
+                          767.14697265625
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.0680087432469326,
+                      "face_score": 0.11393994551859127,
+                      "score": 0.11393994551859127
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  }
+                ],
+                "searchScope": {
+                  "requested_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "votes": [],
+                  "fallback_reason": "shortlist_disabled_or_unnecessary",
+                  "evaluated_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "deferred_models": [],
+                  "complete_requested_scope": true,
+                  "absence_supported": true
+                },
+                "reviewStatus": "pending_root_fullframe_identity_and_costume_review",
+                "sourceObservationNote": null,
+                "unrecovered": [
+                  "body_command",
+                  "facial_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "absenceClaim": false
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/index.json",
+              "candidateIndexSha256": "8eb9ec9b22ab86ae0981bd7dd21ee98de0d960fdc53930f5e905804ab7352a09",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-image-decisions-v1.json",
+                "sha256": "36f8ed3eb636cd87d62fe5a3b4b17762bff057d1f5cc4a838ebcc2bf3243ce28"
+              },
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_low",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-character-packet-v1.json",
+                "sourcePacketSha256": "769c9efa3bfc509c18f46ca2ae2f6f6b3d131cdd74eb5691d8bcd6e5ef92fdc9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "7": {
@@ -829,7 +1342,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -850,7 +1362,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -904,7 +1415,288 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/accepted-p13-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "recordingId": "bili-capital-13",
+              "reviewer": "/root/visual_review_low",
+              "directImageReview": true,
+              "decisionBasis": "Directly reviewed source: the mantle crosses the shoulders and circular gold clasp sits below the neck; this is cloaked elsa01 despite same-face nomantle geometry.",
+              "selectedWitness": {
+                "sceneId": 10270041,
+                "scenarioId": 7,
+                "stableKey": "s10270041-p13-at0449",
+                "time": 452.349,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+                "videoSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+                "sourceMapping": null,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all/cast-452.3490.png",
+                "frameSha256": "2b3d047d164448b30b4e56d75faff973485097985f42582334fa7efc3300257d",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/native-s10270041-p13-at0449.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/identity-05.jpg",
+                "candidates": [
+                  {
+                    "model": "elsa01",
+                    "character": "live2d/AC_elsa01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7263310014410067,
+                          -0.047488052799583375,
+                          -179.69213092660394
+                        ],
+                        [
+                          0.047488052799583375,
+                          1.7263310014410067,
+                          183.11498437466017
+                        ]
+                      ],
+                      "inliers": 114,
+                      "scale": 1.7269840305269197,
+                      "rotation": 1.575699575565077,
+                      "coverage": 0.12085904393877302,
+                      "landmark_center": [
+                        261.16461181640625,
+                        176.7633514404297
+                      ],
+                      "landmark_bounds": [
+                        [
+                          154.98069763183594,
+                          59.878597259521484
+                        ],
+                        [
+                          333.4655456542969,
+                          370.5174560546875
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.3242538721571718,
+                      "face_score": 0.4235078402437346,
+                      "score": 0.4235078402437346
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "character": "live2d/AC_elsa_nomantle01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7426923486858734,
+                          -0.001997501081959827,
+                          -199.92778933004243
+                        ],
+                        [
+                          0.001997501081959827,
+                          1.7426923486858734,
+                          195.6389445102674
+                        ]
+                      ],
+                      "inliers": 20,
+                      "scale": 1.7426934934689056,
+                      "rotation": 0.06567328509493339,
+                      "coverage": 0.06230305348123823,
+                      "landmark_center": [
+                        247.7757568359375,
+                        239.2675323486328
+                      ],
+                      "landmark_bounds": [
+                        [
+                          208.839599609375,
+                          80.95730590820312
+                        ],
+                        [
+                          308.8641662597656,
+                          366.70361328125
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.43621128633496287,
+                      "face_score": 0.5525893175880392,
+                      "score": 0.5525893175880392
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null,
+                "allModelDiagnostics": [
+                  {
+                    "model": "subaru01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "rom01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "felt01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7263310014410067,
+                          -0.047488052799583375,
+                          -179.69213092660394
+                        ],
+                        [
+                          0.047488052799583375,
+                          1.7263310014410067,
+                          183.11498437466017
+                        ]
+                      ],
+                      "inliers": 114,
+                      "scale": 1.7269840305269197,
+                      "rotation": 1.575699575565077,
+                      "coverage": 0.12085904393877302,
+                      "landmark_center": [
+                        261.16461181640625,
+                        176.7633514404297
+                      ],
+                      "landmark_bounds": [
+                        [
+                          154.98069763183594,
+                          59.878597259521484
+                        ],
+                        [
+                          333.4655456542969,
+                          370.5174560546875
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.3242538721571718,
+                      "face_score": 0.4235078402437346,
+                      "score": 0.4235078402437346
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7426923486858734,
+                          -0.001997501081959827,
+                          -199.92778933004243
+                        ],
+                        [
+                          0.001997501081959827,
+                          1.7426923486858734,
+                          195.6389445102674
+                        ]
+                      ],
+                      "inliers": 20,
+                      "scale": 1.7426934934689056,
+                      "rotation": 0.06567328509493339,
+                      "coverage": 0.06230305348123823,
+                      "landmark_center": [
+                        247.7757568359375,
+                        239.2675323486328
+                      ],
+                      "landmark_bounds": [
+                        [
+                          208.839599609375,
+                          80.95730590820312
+                        ],
+                        [
+                          308.8641662597656,
+                          366.70361328125
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.43621128633496287,
+                      "face_score": 0.5525893175880392,
+                      "score": 0.5525893175880392
+                    }
+                  }
+                ],
+                "searchScope": {
+                  "requested_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "votes": [],
+                  "fallback_reason": "shortlist_disabled_or_unnecessary",
+                  "evaluated_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "deferred_models": [],
+                  "complete_requested_scope": true,
+                  "absence_supported": true
+                },
+                "reviewStatus": "pending_root_fullframe_identity_and_costume_review",
+                "sourceObservationNote": null,
+                "unrecovered": [
+                  "body_command",
+                  "facial_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "absenceClaim": false
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/index.json",
+              "candidateIndexSha256": "8eb9ec9b22ab86ae0981bd7dd21ee98de0d960fdc53930f5e905804ab7352a09",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-image-decisions-v1.json",
+                "sha256": "36f8ed3eb636cd87d62fe5a3b4b17762bff057d1f5cc4a838ebcc2bf3243ce28"
+              },
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_low",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-character-packet-v1.json",
+                "sourcePacketSha256": "769c9efa3bfc509c18f46ca2ae2f6f6b3d131cdd74eb5691d8bcd6e5ef92fdc9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "8": {
@@ -949,7 +1741,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -970,7 +1761,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1082,7 +1872,326 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/accepted-p13-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "recordingId": "bili-capital-13",
+              "reviewer": "/root/visual_review_low",
+              "directImageReview": true,
+              "decisionBasis": "Directly viewed the 459.999-second full original frame. Rom's bald head, fur shoulders and torso fill the stage; Subaru appears only as a small choice-selector portrait. No simultaneous Subaru actor is signed.",
+              "selectedWitness": {
+                "sceneId": 10270041,
+                "scenarioId": 8,
+                "stableKey": "s10270041-p13-at0454",
+                "time": 459.999,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+                "videoSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+                "sourceMapping": null,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all/cast-459.9990.png",
+                "frameSha256": "9374a69692c43f3dacaa329534f24d07715e2f713cfc381351e4b17130cdf9a4",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/native-s10270041-p13-at0454.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/identity-05.jpg",
+                "candidates": [
+                  {
+                    "model": "subaru01",
+                    "character": "live2d/AC_subaru01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          0.6912563081618732,
+                          -0.009552581449527024,
+                          68.69032405140369
+                        ],
+                        [
+                          0.009552581449527024,
+                          0.6912563081618732,
+                          560.7314134018214
+                        ]
+                      ],
+                      "inliers": 17,
+                      "scale": 0.691322309336197,
+                      "rotation": 0.7917291422293647,
+                      "coverage": 0.018910691142082214,
+                      "landmark_center": [
+                        259.44091796875,
+                        106.97270965576172
+                      ],
+                      "landmark_bounds": [
+                        [
+                          224.53985595703125,
+                          56.05647277832031
+                        ],
+                        [
+                          291.09100341796875,
+                          186.412109375
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.22714923288472627,
+                      "face_score": 0.506226277049207,
+                      "score": 0.506226277049207
+                    }
+                  },
+                  {
+                    "model": "rom01",
+                    "character": "live2d/AC_rom01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          2.5324000595032787,
+                          -0.0020595767135162175,
+                          -413.7240433644136
+                        ],
+                        [
+                          0.0020595767135162175,
+                          2.5324000595032787,
+                          -345.29870893467046
+                        ]
+                      ],
+                      "inliers": 39,
+                      "scale": 2.5324008970201475,
+                      "rotation": 0.04659809843522702,
+                      "coverage": 0.08311728920255389,
+                      "landmark_center": [
+                        255.74679565429688,
+                        323.35321044921875
+                      ],
+                      "landmark_bounds": [
+                        [
+                          173.12640380859375,
+                          235.52281188964844
+                        ],
+                        [
+                          350.9227294921875,
+                          449.9829406738281
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.3369721339957581,
+                      "face_score": 0.8179297809777133,
+                      "score": 0.8179297809777133
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null,
+                "allModelDiagnostics": [
+                  {
+                    "model": "subaru01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          0.6912563081618732,
+                          -0.009552581449527024,
+                          68.69032405140369
+                        ],
+                        [
+                          0.009552581449527024,
+                          0.6912563081618732,
+                          560.7314134018214
+                        ]
+                      ],
+                      "inliers": 17,
+                      "scale": 0.691322309336197,
+                      "rotation": 0.7917291422293647,
+                      "coverage": 0.018910691142082214,
+                      "landmark_center": [
+                        259.44091796875,
+                        106.97270965576172
+                      ],
+                      "landmark_bounds": [
+                        [
+                          224.53985595703125,
+                          56.05647277832031
+                        ],
+                        [
+                          291.09100341796875,
+                          186.412109375
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.22714923288472627,
+                      "face_score": 0.506226277049207,
+                      "score": 0.506226277049207
+                    }
+                  },
+                  {
+                    "model": "rom01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          2.5324000595032787,
+                          -0.0020595767135162175,
+                          -413.7240433644136
+                        ],
+                        [
+                          0.0020595767135162175,
+                          2.5324000595032787,
+                          -345.29870893467046
+                        ]
+                      ],
+                      "inliers": 39,
+                      "scale": 2.5324008970201475,
+                      "rotation": 0.04659809843522702,
+                      "coverage": 0.08311728920255389,
+                      "landmark_center": [
+                        255.74679565429688,
+                        323.35321044921875
+                      ],
+                      "landmark_bounds": [
+                        [
+                          173.12640380859375,
+                          235.52281188964844
+                        ],
+                        [
+                          350.9227294921875,
+                          449.9829406738281
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.3369721339957581,
+                      "face_score": 0.8179297809777133,
+                      "score": 0.8179297809777133
+                    }
+                  },
+                  {
+                    "model": "felt01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": {
+                      "matrix": [
+                        [
+                          0.6487497313103259,
+                          0.12343713912606345,
+                          147.6223528999392
+                        ],
+                        [
+                          -0.12343713912606345,
+                          0.6487497313103259,
+                          198.33456114693598
+                        ]
+                      ],
+                      "inliers": 5,
+                      "scale": 0.6603884774818888,
+                      "rotation": -10.772856954703375,
+                      "coverage": 0.021441851343427385,
+                      "landmark_center": [
+                        187.2017059326172,
+                        313.05743408203125
+                      ],
+                      "landmark_bounds": [
+                        [
+                          181.0028533935547,
+                          161.9176788330078
+                        ],
+                        [
+                          197.51962280273438,
+                          757.4634399414062
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.0986453154418231,
+                      "face_score": 0.0765351176261902,
+                      "score": 0.0986453154418231
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  }
+                ],
+                "searchScope": {
+                  "requested_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "votes": [],
+                  "fallback_reason": "shortlist_disabled_or_unnecessary",
+                  "evaluated_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "deferred_models": [],
+                  "complete_requested_scope": true,
+                  "absence_supported": true
+                },
+                "reviewStatus": "pending_root_fullframe_identity_and_costume_review",
+                "sourceObservationNote": null,
+                "unrecovered": [
+                  "body_command",
+                  "facial_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "absenceClaim": false
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/index.json",
+              "candidateIndexSha256": "8eb9ec9b22ab86ae0981bd7dd21ee98de0d960fdc53930f5e905804ab7352a09",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-image-decisions-v1.json",
+                "sha256": "36f8ed3eb636cd87d62fe5a3b4b17762bff057d1f5cc4a838ebcc2bf3243ce28"
+              },
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_low",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-character-packet-v1.json",
+                "sourcePacketSha256": "769c9efa3bfc509c18f46ca2ae2f6f6b3d131cdd74eb5691d8bcd6e5ef92fdc9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "9": {
@@ -1123,7 +2232,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1144,7 +2252,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1203,7 +2310,206 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/accepted-p13-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "recordingId": "bili-capital-13",
+              "reviewer": "/root/visual_review_low",
+              "directImageReview": true,
+              "decisionBasis": "Direct full-frame/native-reference review: bald head with red spiral, long white side hair/beard, fur shoulders, bare marked torso and chain match rom01. Orange interior lighting is separate from identity.",
+              "selectedWitness": {
+                "sceneId": 10270041,
+                "scenarioId": 9,
+                "stableKey": "s10270041-p13-at0474",
+                "time": 477.349,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+                "videoSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+                "sourceMapping": null,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all/cast-477.3490.png",
+                "frameSha256": "a7fc15c9abf8233d4f847e7485b691395f9f26c3852ace5a0a47f5aa2e9b20c6",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/native-s10270041-p13-at0474.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/identity-05.jpg",
+                "candidates": [
+                  {
+                    "model": "rom01",
+                    "character": "live2d/AC_rom01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          2.5259685176643067,
+                          -0.001537561728911243,
+                          -412.4556707876778
+                        ],
+                        [
+                          0.001537561728911243,
+                          2.5259685176643067,
+                          -340.51701909002725
+                        ]
+                      ],
+                      "inliers": 97,
+                      "scale": 2.5259689856226037,
+                      "rotation": 0.03487604311417001,
+                      "coverage": 0.08430131844111852,
+                      "landmark_center": [
+                        261.4939270019531,
+                        343.8863830566406
+                      ],
+                      "landmark_bounds": [
+                        [
+                          173.12640380859375,
+                          232.46116638183594
+                        ],
+                        [
+                          350.9227294921875,
+                          449.9763488769531
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.6614496675560142,
+                      "face_score": 0.8426616182899429,
+                      "score": 0.8426616182899429
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null,
+                "allModelDiagnostics": [
+                  {
+                    "model": "subaru01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "rom01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          2.5259685176643067,
+                          -0.001537561728911243,
+                          -412.4556707876778
+                        ],
+                        [
+                          0.001537561728911243,
+                          2.5259685176643067,
+                          -340.51701909002725
+                        ]
+                      ],
+                      "inliers": 97,
+                      "scale": 2.5259689856226037,
+                      "rotation": 0.03487604311417001,
+                      "coverage": 0.08430131844111852,
+                      "landmark_center": [
+                        261.4939270019531,
+                        343.8863830566406
+                      ],
+                      "landmark_bounds": [
+                        [
+                          173.12640380859375,
+                          232.46116638183594
+                        ],
+                        [
+                          350.9227294921875,
+                          449.9763488769531
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.6614496675560142,
+                      "face_score": 0.8426616182899429,
+                      "score": 0.8426616182899429
+                    }
+                  },
+                  {
+                    "model": "felt01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  }
+                ],
+                "searchScope": {
+                  "requested_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "votes": [],
+                  "fallback_reason": "shortlist_disabled_or_unnecessary",
+                  "evaluated_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "deferred_models": [],
+                  "complete_requested_scope": true,
+                  "absence_supported": true
+                },
+                "reviewStatus": "pending_root_fullframe_identity_and_costume_review",
+                "sourceObservationNote": null,
+                "unrecovered": [
+                  "body_command",
+                  "facial_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "absenceClaim": false
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/index.json",
+              "candidateIndexSha256": "8eb9ec9b22ab86ae0981bd7dd21ee98de0d960fdc53930f5e905804ab7352a09",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-image-decisions-v1.json",
+                "sha256": "36f8ed3eb636cd87d62fe5a3b4b17762bff057d1f5cc4a838ebcc2bf3243ce28"
+              },
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_low",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-character-packet-v1.json",
+                "sourcePacketSha256": "769c9efa3bfc509c18f46ca2ae2f6f6b3d131cdd74eb5691d8bcd6e5ef92fdc9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "10": {
@@ -1233,7 +2539,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1254,7 +2559,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1308,7 +2612,326 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/accepted-p13-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "recordingId": "bili-capital-13",
+              "reviewer": "/root/visual_review_low",
+              "directImageReview": true,
+              "decisionBasis": "Directly reviewed source: shoulder mantle and gold clasp remain visible, establishing cloaked elsa01.",
+              "selectedWitness": {
+                "sceneId": 10270041,
+                "scenarioId": 10,
+                "stableKey": "s10270041-p13-at0479",
+                "time": 480.849,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+                "videoSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+                "sourceMapping": null,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all/cast-480.8490.png",
+                "frameSha256": "145a2ae8871e47278f26ced4d1e840b655a62a258050257285691c11f755fb29",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/native-s10270041-p13-at0479.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/identity-05.jpg",
+                "candidates": [
+                  {
+                    "model": "elsa01",
+                    "character": "live2d/AC_elsa01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.731072284344889,
+                          -0.024479687597954634,
+                          -190.44997092783788
+                        ],
+                        [
+                          0.024479687597954634,
+                          1.731072284344889,
+                          189.0783009252237
+                        ]
+                      ],
+                      "inliers": 76,
+                      "scale": 1.7312453635264775,
+                      "rotation": 0.8101852892099097,
+                      "coverage": 0.07947855336325509,
+                      "landmark_center": [
+                        255.7284393310547,
+                        219.2891082763672
+                      ],
+                      "landmark_bounds": [
+                        [
+                          164.80831909179688,
+                          92.08348083496094
+                        ],
+                        [
+                          343.4326477050781,
+                          296.2043151855469
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.5248108312306121,
+                      "face_score": 0.7576100486049111,
+                      "score": 0.7576100486049111
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "character": "live2d/AC_elsa_nomantle01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7468344328664829,
+                          -0.013973285567008192,
+                          -197.70424371198825
+                        ],
+                        [
+                          0.013973285567008192,
+                          1.7468344328664829,
+                          188.86549337850659
+                        ]
+                      ],
+                      "inliers": 15,
+                      "scale": 1.7468903195557253,
+                      "rotation": 0.45831087264152587,
+                      "coverage": 0.0489958439554487,
+                      "landmark_center": [
+                        276.3181457519531,
+                        236.5714874267578
+                      ],
+                      "landmark_bounds": [
+                        [
+                          210.03160095214844,
+                          96.4976577758789
+                        ],
+                        [
+                          326.4623718261719,
+                          289.5474853515625
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4375412392713297,
+                      "face_score": 0.533023602087544,
+                      "score": 0.533023602087544
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null,
+                "allModelDiagnostics": [
+                  {
+                    "model": "subaru01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "rom01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": {
+                      "matrix": [
+                        [
+                          6.21368199455427,
+                          -0.05188294012775314,
+                          -1159.602743193991
+                        ],
+                        [
+                          0.05188294012775314,
+                          6.21368199455427,
+                          -1898.087999553248
+                        ]
+                      ],
+                      "inliers": 5,
+                      "scale": 6.2138985966077875,
+                      "rotation": 0.47839661244491005,
+                      "coverage": 0.011803519512925829,
+                      "landmark_center": [
+                        234.4610137939453,
+                        380.40576171875
+                      ],
+                      "landmark_bounds": [
+                        [
+                          198.01303100585938,
+                          344.75018310546875
+                        ],
+                        [
+                          258.7596740722656,
+                          433.8890686035156
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.12686028728425988,
+                      "face_score": 0.0,
+                      "score": 0.12686028728425988
+                    }
+                  },
+                  {
+                    "model": "felt01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.731072284344889,
+                          -0.024479687597954634,
+                          -190.44997092783788
+                        ],
+                        [
+                          0.024479687597954634,
+                          1.731072284344889,
+                          189.0783009252237
+                        ]
+                      ],
+                      "inliers": 76,
+                      "scale": 1.7312453635264775,
+                      "rotation": 0.8101852892099097,
+                      "coverage": 0.07947855336325509,
+                      "landmark_center": [
+                        255.7284393310547,
+                        219.2891082763672
+                      ],
+                      "landmark_bounds": [
+                        [
+                          164.80831909179688,
+                          92.08348083496094
+                        ],
+                        [
+                          343.4326477050781,
+                          296.2043151855469
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.5248108312306121,
+                      "face_score": 0.7576100486049111,
+                      "score": 0.7576100486049111
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7468344328664829,
+                          -0.013973285567008192,
+                          -197.70424371198825
+                        ],
+                        [
+                          0.013973285567008192,
+                          1.7468344328664829,
+                          188.86549337850659
+                        ]
+                      ],
+                      "inliers": 15,
+                      "scale": 1.7468903195557253,
+                      "rotation": 0.45831087264152587,
+                      "coverage": 0.0489958439554487,
+                      "landmark_center": [
+                        276.3181457519531,
+                        236.5714874267578
+                      ],
+                      "landmark_bounds": [
+                        [
+                          210.03160095214844,
+                          96.4976577758789
+                        ],
+                        [
+                          326.4623718261719,
+                          289.5474853515625
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.4375412392713297,
+                      "face_score": 0.533023602087544,
+                      "score": 0.533023602087544
+                    }
+                  }
+                ],
+                "searchScope": {
+                  "requested_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "votes": [],
+                  "fallback_reason": "shortlist_disabled_or_unnecessary",
+                  "evaluated_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "deferred_models": [],
+                  "complete_requested_scope": true,
+                  "absence_supported": true
+                },
+                "reviewStatus": "pending_root_fullframe_identity_and_costume_review",
+                "sourceObservationNote": null,
+                "unrecovered": [
+                  "body_command",
+                  "facial_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "absenceClaim": false
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/index.json",
+              "candidateIndexSha256": "8eb9ec9b22ab86ae0981bd7dd21ee98de0d960fdc53930f5e905804ab7352a09",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-image-decisions-v1.json",
+                "sha256": "36f8ed3eb636cd87d62fe5a3b4b17762bff057d1f5cc4a838ebcc2bf3243ce28"
+              },
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_low",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-character-packet-v1.json",
+                "sourcePacketSha256": "769c9efa3bfc509c18f46ca2ae2f6f6b3d131cdd74eb5691d8bcd6e5ef92fdc9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "11": {
@@ -1507,7 +3130,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1528,7 +3150,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1582,7 +3203,206 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/accepted-p13-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "recordingId": "bili-capital-13",
+              "reviewer": "/root/visual_review_low",
+              "directImageReview": true,
+              "decisionBasis": "Direct full-frame/native-reference review: blond braided/cropped hair with black bow, red scarf, brown fur-trimmed vest and black bandeau match felt01. This decision identifies the full stage actor, not a UI portrait.",
+              "selectedWitness": {
+                "sceneId": 10270041,
+                "scenarioId": 12,
+                "stableKey": "s10270041-p13-at0511",
+                "time": 516.349,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+                "videoSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+                "sourceMapping": null,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all/cast-516.3490.png",
+                "frameSha256": "4e8259c75adeb53bacd967ed3efd21cdab360734341a884c0e36c595a6d744c9",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/native-s10270041-p13-at0511.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/identity-06.jpg",
+                "candidates": [
+                  {
+                    "model": "felt01",
+                    "character": "live2d/AC_felt01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7134067854841797,
+                          0.34087923547107424,
+                          -282.8248763846306
+                        ],
+                        [
+                          -0.34087923547107424,
+                          1.7134067854841797,
+                          238.93137651327916
+                        ]
+                      ],
+                      "inliers": 17,
+                      "scale": 1.7469863954016853,
+                      "rotation": -11.25197617930721,
+                      "coverage": 0.02760351768561772,
+                      "landmark_center": [
+                        247.12979125976562,
+                        158.60693359375
+                      ],
+                      "landmark_bounds": [
+                        [
+                          204.9397430419922,
+                          110.0946044921875
+                        ],
+                        [
+                          303.11810302734375,
+                          239.07586669921875
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.3944980667514633,
+                      "face_score": 0.6385490424389916,
+                      "score": 0.6385490424389916
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null,
+                "allModelDiagnostics": [
+                  {
+                    "model": "subaru01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "rom01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "felt01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7134067854841797,
+                          0.34087923547107424,
+                          -282.8248763846306
+                        ],
+                        [
+                          -0.34087923547107424,
+                          1.7134067854841797,
+                          238.93137651327916
+                        ]
+                      ],
+                      "inliers": 17,
+                      "scale": 1.7469863954016853,
+                      "rotation": -11.25197617930721,
+                      "coverage": 0.02760351768561772,
+                      "landmark_center": [
+                        247.12979125976562,
+                        158.60693359375
+                      ],
+                      "landmark_bounds": [
+                        [
+                          204.9397430419922,
+                          110.0946044921875
+                        ],
+                        [
+                          303.11810302734375,
+                          239.07586669921875
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.3944980667514633,
+                      "face_score": 0.6385490424389916,
+                      "score": 0.6385490424389916
+                    }
+                  },
+                  {
+                    "model": "elsa01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  }
+                ],
+                "searchScope": {
+                  "requested_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "votes": [],
+                  "fallback_reason": "shortlist_disabled_or_unnecessary",
+                  "evaluated_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "deferred_models": [],
+                  "complete_requested_scope": true,
+                  "absence_supported": true
+                },
+                "reviewStatus": "pending_root_fullframe_identity_and_costume_review",
+                "sourceObservationNote": null,
+                "unrecovered": [
+                  "body_command",
+                  "facial_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "absenceClaim": false
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/index.json",
+              "candidateIndexSha256": "8eb9ec9b22ab86ae0981bd7dd21ee98de0d960fdc53930f5e905804ab7352a09",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-image-decisions-v1.json",
+                "sha256": "36f8ed3eb636cd87d62fe5a3b4b17762bff057d1f5cc4a838ebcc2bf3243ce28"
+              },
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_low",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-character-packet-v1.json",
+                "sourcePacketSha256": "769c9efa3bfc509c18f46ca2ae2f6f6b3d131cdd74eb5691d8bcd6e5ef92fdc9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "13": {
@@ -1612,7 +3432,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1633,7 +3452,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1690,7 +3508,288 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10270041.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/accepted-p13-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "recordingId": "bili-capital-13",
+              "reviewer": "/root/visual_review_low",
+              "directImageReview": true,
+              "decisionBasis": "Directly reviewed source: purple feather/flower trim and the draped mantle with gold clasp establish cloaked elsa01.",
+              "selectedWitness": {
+                "sceneId": 10270041,
+                "scenarioId": 13,
+                "stableKey": "s10270041-p13-at0518",
+                "time": 521.349,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/13-remote-qn32.mp4",
+                "videoSha256": "f46e3f21f826150b04032cefc2166a5c8b7699ebed8428089232c87319b6b70b",
+                "sourceMapping": null,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all/cast-521.3490.png",
+                "frameSha256": "2c3a46f9a38d8b73cd1f3f63595ff90996751b6bdc70c4406a169424605ba3db",
+                "nativeModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/native-s10270041-p13-at0518.png",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/identity-06.jpg",
+                "candidates": [
+                  {
+                    "model": "elsa01",
+                    "character": "live2d/AC_elsa01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.728028444639136,
+                          -0.02662409672045979,
+                          -189.39688434387426
+                        ],
+                        [
+                          0.02662409672045979,
+                          1.728028444639136,
+                          190.21121522087026
+                        ]
+                      ],
+                      "inliers": 91,
+                      "scale": 1.7282335339901642,
+                      "rotation": 0.882698252237733,
+                      "coverage": 0.07804563215800694,
+                      "landmark_center": [
+                        250.84390258789062,
+                        214.6624298095703
+                      ],
+                      "landmark_bounds": [
+                        [
+                          157.84507751464844,
+                          93.04458618164062
+                        ],
+                        [
+                          335.8756408691406,
+                          294.15380859375
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.5096946160576692,
+                      "face_score": 0.7345128830359227,
+                      "score": 0.7345128830359227
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "character": "live2d/AC_elsa_nomantle01",
+                    "acceptedByMatcher": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7324225989182482,
+                          -0.0025403629426276075,
+                          -197.3343999277691
+                        ],
+                        [
+                          0.0025403629426276075,
+                          1.7324225989182482,
+                          194.86159810916692
+                        ]
+                      ],
+                      "inliers": 20,
+                      "scale": 1.7324244614662245,
+                      "rotation": 0.08401643502676023,
+                      "coverage": 0.06230305348123823,
+                      "landmark_center": [
+                        253.7897491455078,
+                        218.4658203125
+                      ],
+                      "landmark_bounds": [
+                        [
+                          208.839599609375,
+                          80.95730590820312
+                        ],
+                        [
+                          308.8641662597656,
+                          366.70361328125
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.451736304152355,
+                      "face_score": 0.6118046623469438,
+                      "score": 0.6118046623469438
+                    }
+                  }
+                ],
+                "bestRejectedHypothesis": null,
+                "allModelDiagnostics": [
+                  {
+                    "model": "subaru01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "rom01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "felt01",
+                    "searched": true,
+                    "accepted": false,
+                    "fit": null
+                  },
+                  {
+                    "model": "elsa01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.728028444639136,
+                          -0.02662409672045979,
+                          -189.39688434387426
+                        ],
+                        [
+                          0.02662409672045979,
+                          1.728028444639136,
+                          190.21121522087026
+                        ]
+                      ],
+                      "inliers": 91,
+                      "scale": 1.7282335339901642,
+                      "rotation": 0.882698252237733,
+                      "coverage": 0.07804563215800694,
+                      "landmark_center": [
+                        250.84390258789062,
+                        214.6624298095703
+                      ],
+                      "landmark_bounds": [
+                        [
+                          157.84507751464844,
+                          93.04458618164062
+                        ],
+                        [
+                          335.8756408691406,
+                          294.15380859375
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.5096946160576692,
+                      "face_score": 0.7345128830359227,
+                      "score": 0.7345128830359227
+                    }
+                  },
+                  {
+                    "model": "elsa_nomantle01",
+                    "searched": true,
+                    "accepted": true,
+                    "fit": {
+                      "matrix": [
+                        [
+                          1.7324225989182482,
+                          -0.0025403629426276075,
+                          -197.3343999277691
+                        ],
+                        [
+                          0.0025403629426276075,
+                          1.7324225989182482,
+                          194.86159810916692
+                        ]
+                      ],
+                      "inliers": 20,
+                      "scale": 1.7324244614662245,
+                      "rotation": 0.08401643502676023,
+                      "coverage": 0.06230305348123823,
+                      "landmark_center": [
+                        253.7897491455078,
+                        218.4658203125
+                      ],
+                      "landmark_bounds": [
+                        [
+                          208.839599609375,
+                          80.95730590820312
+                        ],
+                        [
+                          308.8641662597656,
+                          366.70361328125
+                        ]
+                      ],
+                      "canvas_center": [
+                        256.0,
+                        448.0
+                      ],
+                      "body_score": 0.451736304152355,
+                      "face_score": 0.6118046623469438,
+                      "score": 0.6118046623469438
+                    }
+                  }
+                ],
+                "searchScope": {
+                  "requested_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "votes": [],
+                  "fallback_reason": "shortlist_disabled_or_unnecessary",
+                  "evaluated_models": [
+                    "subaru01",
+                    "rom01",
+                    "felt01",
+                    "elsa01",
+                    "elsa_nomantle01"
+                  ],
+                  "deferred_models": [],
+                  "complete_requested_scope": true,
+                  "absence_supported": true
+                },
+                "reviewStatus": "pending_root_fullframe_identity_and_costume_review",
+                "sourceObservationNote": null,
+                "unrecovered": [
+                  "body_command",
+                  "facial_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "absenceClaim": false
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-all-review/index.json",
+              "candidateIndexSha256": "8eb9ec9b22ab86ae0981bd7dd21ee98de0d960fdc53930f5e905804ab7352a09",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-image-decisions-v1.json",
+                "sha256": "36f8ed3eb636cd87d62fe5a3b4b17762bff057d1f5cc4a838ebcc2bf3243ce28"
+              },
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_low",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p13-subagent-character-packet-v1.json",
+                "sourcePacketSha256": "769c9efa3bfc509c18f46ca2ae2f6f6b3d131cdd74eb5691d8bcd6e5ef92fdc9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     }
   },
@@ -1699,6 +3798,11 @@
       "code": "native_metadata_unrecovered",
       "severity": "warning",
       "message": "The draft uses authored IDs, zero default gain vectors and no invented branch lock rules."
+    },
+    {
+      "code": "draft_not_playback_verified",
+      "severity": "warning",
+      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     },
     {
       "code": "performance_unrecovered",
@@ -1728,7 +3832,6 @@
       "scenarioId": 2,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -1797,6 +3900,13 @@
       "scenarioId": 4
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 4,
+      "branchId": 42
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -1804,7 +3914,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1825,7 +3934,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1852,7 +3960,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1879,7 +3986,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1893,6 +3999,13 @@
       ]
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 8,
+      "branchId": 83
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -1900,7 +4013,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1921,7 +4033,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1968,6 +4079,13 @@
       "scenarioId": 11
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 11,
+      "branchId": 113
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -1975,7 +4093,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2002,7 +4119,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2020,32 +4136,6 @@
       "severity": "warning",
       "message": "Some text evidence still needs visual review.",
       "scenarioId": 13
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 4,
-      "branchId": 42
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 8,
-      "branchId": 83
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 11,
-      "branchId": 113
-    },
-    {
-      "code": "draft_not_playback_verified",
-      "severity": "warning",
-      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     }
   ],
   "unresolvedBranches": [

@@ -163,7 +163,6 @@
           "scenarioId": 2,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -336,7 +335,6 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 3,
           "fields": [
-            "bg_music",
             "bg_picture",
             "character",
             "character_image",
@@ -518,17 +516,14 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
-            "motion",
             "native_array_order",
             "original_scenario_id",
             "position",
             "se",
             "talk_chara",
-            "video",
-            "voice"
+            "video"
           ]
         },
         {
@@ -713,7 +708,8 @@
         "bg_picture",
         "character_image",
         "command",
-        "motion",
+        "motion.body",
+        "motion.extra",
         "native_array_order",
         "original_scenario_id",
         "position",
@@ -730,7 +726,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -739,8 +734,7 @@
             "position",
             "se",
             "talk_chara",
-            "video",
-            "voice"
+            "video"
           ]
         },
         {
@@ -844,6 +838,167 @@
               },
               "decision": "Original cue waveform matches the aligned dialogue card; no long-form voice is inferred."
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-p11-rom-face-two.json",
+            "fields": [
+              "motion"
+            ],
+            "evidence": {
+              "recordingPart": 11,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "time": 31.35,
+              "sourceFrame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-10-prefilter/cast-31.3500.png",
+              "sourceFrameSha256": "af94b8dee57dc41ae322398521587844b3b627534d0f6623d2e7d13501ae2632",
+              "reviewFull": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-face-pilot-review/face-10280014-05.jpg",
+              "reviewFaceCrop": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-face-pilot-review/face-10280014-05-close.jpg",
+              "referenceDescriptor": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/face-reference-descriptors/rom01-face-act_hohoemu-bg031b_stealshop.json",
+              "referenceGzipSha256": "c9461388f8ab3e37147f58ad7e7d16aad84aebe30b27d9f9895538de6e77b037",
+              "faceCandidates": [
+                {
+                  "token": "face_nayamu",
+                  "nativeTime": 4,
+                  "score": 0.877826,
+                  "evidence": 0.89815,
+                  "visiblePixels": 4686,
+                  "visibleDifferenceToTop": 0.0,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_bikkuri",
+                  "nativeTime": 4,
+                  "score": 0.625447,
+                  "evidence": 0.897383,
+                  "visiblePixels": 4682,
+                  "visibleDifferenceToTop": 0.1368377991409286,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_hohoemu",
+                  "nativeTime": 4,
+                  "score": 0.569276,
+                  "evidence": 0.897,
+                  "visiblePixels": 4680,
+                  "visibleDifferenceToTop": 0.1560646348946615,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "",
+                  "nativeTime": 4,
+                  "score": 0.569276,
+                  "evidence": 0.897,
+                  "visiblePixels": 4680,
+                  "visibleDifferenceToTop": 0.1560646348946615,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_normal",
+                  "nativeTime": 4,
+                  "score": 0.511389,
+                  "evidence": 0.897,
+                  "visiblePixels": 4680,
+                  "visibleDifferenceToTop": 0.1675189200245449,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_egao",
+                  "nativeTime": 4,
+                  "score": 0.507101,
+                  "evidence": 0.897192,
+                  "visiblePixels": 4681,
+                  "visibleDifferenceToTop": 0.15156473716506444,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_shinken",
+                  "nativeTime": 4,
+                  "score": 0.50623,
+                  "evidence": 0.897,
+                  "visiblePixels": 4680,
+                  "visibleDifferenceToTop": 0.1714051953364696,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_ikaru",
+                  "nativeTime": 4,
+                  "score": 0.500444,
+                  "evidence": 0.896808,
+                  "visiblePixels": 4679,
+                  "visibleDifferenceToTop": 0.18101861321333607,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_odoroku",
+                  "nativeTime": 4,
+                  "score": 0.495154,
+                  "evidence": 0.897,
+                  "visiblePixels": 4680,
+                  "visibleDifferenceToTop": 0.16076907343014932,
+                  "equivalentToTop": false
+                }
+              ],
+              "sameCameraRegistration": {
+                "matrix": [
+                  [
+                    2.5277915281153294,
+                    -0.0026639187237435004,
+                    -412.5490321669752
+                  ],
+                  [
+                    0.0026639187237435004,
+                    2.5277915281153294,
+                    -340.85569523475044
+                  ]
+                ],
+                "inliers": 57,
+                "scale": 2.5277929318032752,
+                "rotation": 0.060381262313146146,
+                "coverage": 0.05522243891443525,
+                "landmark_center": [
+                  262.1155700683594,
+                  365.4143981933594
+                ],
+                "landmark_bounds": [
+                  [
+                    173.19229125976562,
+                    285.6526184082031
+                  ],
+                  [
+                    350.93505859375,
+                    428.18109130859375
+                  ]
+                ],
+                "canvas_center": [
+                  256.0,
+                  448.0
+                ]
+              },
+              "neutralBodyControl": {
+                "label": "act_normal + face_nayamu",
+                "score": 0.8778264512221079,
+                "evidence": 0.89815
+              },
+              "crossBodyVisibleDifference": {
+                "commonVisiblePixels": 266801,
+                "changedVisibleFraction": 0.0
+              },
+              "interpretation": "An explicit named face independently reproduces the visible brows, mouth and head tilt. Normal plus this face and provisional hohoemu plus this face have identical shared visible pixels. This candidate authors the face only; no hohoemu/nod/sigh body command is inferred.",
+              "recoveryClassification": "unsigned_recording_based_face_reproduction_not_exact_lost_script_identity",
+              "limitations": [
+                "Entry trajectory and face-layer transition timing are not established by the settled comparison.",
+                "No additional expression/cheek layer is inferred."
+              ],
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly viewed both full projections and both face crops, alongside the earlier four strict-camera overlays. face_nayamu reproduces the recorded frown and head tilt and is visibly better than the empty face. It produces identical visible pixels on normal versus hohoemu body contexts, so preserve the empty body CSV slot and approve only the independent face layer. Entry body gesture and additional layers remain unresolved.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/pending-p11-rom-face-two.json",
+                "sourcePacketSha256": "5337c43fe99fdad889cc607d8541096403d4d478f2b2eb85a6a047fc068329a7",
+                "scope": [
+                  "motion"
+                ]
+              }
+            }
           }
         ]
       }
@@ -894,7 +1049,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -903,8 +1057,7 @@
             "position",
             "se",
             "talk_chara",
-            "video",
-            "voice"
+            "video"
           ]
         },
         {
@@ -1060,7 +1213,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1190,7 +1342,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1320,7 +1471,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1446,9 +1596,7 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 10,
           "fields": [
-            "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1457,8 +1605,7 @@
             "position",
             "se",
             "talk_chara",
-            "video",
-            "voice"
+            "video"
           ]
         },
         {
@@ -1695,7 +1842,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1704,8 +1850,7 @@
             "position",
             "se",
             "talk_chara",
-            "video",
-            "voice"
+            "video"
           ]
         },
         {
@@ -1858,7 +2003,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1987,7 +2131,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1996,8 +2139,7 @@
             "position",
             "se",
             "talk_chara",
-            "video",
-            "voice"
+            "video"
           ]
         },
         {
@@ -2149,7 +2291,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2158,8 +2299,7 @@
             "position",
             "se",
             "talk_chara",
-            "video",
-            "voice"
+            "video"
           ]
         },
         {
@@ -2326,7 +2466,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2464,7 +2603,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2611,7 +2749,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2762,7 +2899,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2896,7 +3032,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3018,7 +3153,8 @@
         "bg_picture",
         "character_image",
         "command",
-        "motion",
+        "motion.body",
+        "motion.extra",
         "native_array_order",
         "original_scenario_id",
         "position",
@@ -3036,7 +3172,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3119,6 +3254,167 @@
               "scopeEntryStableKey": "s10280014-p11-at0098",
               "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/root-reviewed-p11-rom-face-two.json",
+            "fields": [
+              "motion"
+            ],
+            "evidence": {
+              "recordingPart": 11,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "time": 101.85,
+              "sourceFrame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-cast-rest/cast-101.8500.png",
+              "sourceFrameSha256": "d5e5f2c405147526d9a7b7abb14592b994aa2fbb092374d886b562e3e596feb3",
+              "reviewFull": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-face-pilot-review/face-10280014-20.jpg",
+              "reviewFaceCrop": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/p11-face-pilot-review/face-10280014-20-close.jpg",
+              "referenceDescriptor": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual/face-reference-descriptors/rom01-face-act_hohoemu-bg031b_stealshop.json",
+              "referenceGzipSha256": "c9461388f8ab3e37147f58ad7e7d16aad84aebe30b27d9f9895538de6e77b037",
+              "faceCandidates": [
+                {
+                  "token": "face_nayamu",
+                  "nativeTime": 4,
+                  "score": 0.884574,
+                  "evidence": 0.893742,
+                  "visiblePixels": 4663,
+                  "visibleDifferenceToTop": 0.0,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_bikkuri",
+                  "nativeTime": 4,
+                  "score": 0.657908,
+                  "evidence": 0.893358,
+                  "visiblePixels": 4661,
+                  "visibleDifferenceToTop": 0.13347064881565396,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_hohoemu",
+                  "nativeTime": 4,
+                  "score": 0.57629,
+                  "evidence": 0.893358,
+                  "visiblePixels": 4661,
+                  "visibleDifferenceToTop": 0.1540679711637487,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "",
+                  "nativeTime": 4,
+                  "score": 0.57629,
+                  "evidence": 0.893358,
+                  "visiblePixels": 4661,
+                  "visibleDifferenceToTop": 0.1540679711637487,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_egao",
+                  "nativeTime": 4,
+                  "score": 0.533879,
+                  "evidence": 0.893358,
+                  "visiblePixels": 4661,
+                  "visibleDifferenceToTop": 0.14809474768280123,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_normal",
+                  "nativeTime": 4,
+                  "score": 0.522751,
+                  "evidence": 0.893358,
+                  "visiblePixels": 4661,
+                  "visibleDifferenceToTop": 0.16436663233779608,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_shinken",
+                  "nativeTime": 4,
+                  "score": 0.521391,
+                  "evidence": 0.893358,
+                  "visiblePixels": 4661,
+                  "visibleDifferenceToTop": 0.1691040164778579,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_ikaru",
+                  "nativeTime": 4,
+                  "score": 0.518499,
+                  "evidence": 0.893358,
+                  "visiblePixels": 4661,
+                  "visibleDifferenceToTop": 0.1779608650875386,
+                  "equivalentToTop": false
+                },
+                {
+                  "token": "face_odoroku",
+                  "nativeTime": 4,
+                  "score": 0.512876,
+                  "evidence": 0.893358,
+                  "visiblePixels": 4661,
+                  "visibleDifferenceToTop": 0.15818743563336765,
+                  "equivalentToTop": false
+                }
+              ],
+              "sameCameraRegistration": {
+                "matrix": [
+                  [
+                    2.526289632877453,
+                    -0.0003215596070376013,
+                    -412.9857914996982
+                  ],
+                  [
+                    0.0003215596070376013,
+                    2.526289632877453,
+                    -342.7589368968227
+                  ]
+                ],
+                "inliers": 50,
+                "scale": 2.526289653342363,
+                "rotation": 0.007292912105511668,
+                "coverage": 0.06336935928889684,
+                "landmark_center": [
+                  260.85614013671875,
+                  358.88421630859375
+                ],
+                "landmark_bounds": [
+                  [
+                    173.19229125976562,
+                    251.95883178710938
+                  ],
+                  [
+                    350.93505859375,
+                    415.514404296875
+                  ]
+                ],
+                "canvas_center": [
+                  256.0,
+                  448.0
+                ]
+              },
+              "neutralBodyControl": {
+                "label": "act_normal + face_nayamu",
+                "score": 0.8845738617129505,
+                "evidence": 0.8937416666666665
+              },
+              "crossBodyVisibleDifference": {
+                "commonVisiblePixels": 267714,
+                "changedVisibleFraction": 0.0
+              },
+              "interpretation": "An explicit named face independently reproduces the visible brows, mouth and head tilt. Normal plus this face and provisional hohoemu plus this face have identical shared visible pixels. This candidate authors the face only; no hohoemu/nod/sigh body command is inferred.",
+              "recoveryClassification": "unsigned_recording_based_face_reproduction_not_exact_lost_script_identity",
+              "limitations": [
+                "Entry trajectory and face-layer transition timing are not established by the settled comparison.",
+                "No additional expression/cheek layer is inferred."
+              ],
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly viewed both full projections and both face crops, alongside the earlier four strict-camera overlays. face_nayamu reproduces the recorded frown and head tilt and is visibly better than the empty face. It produces identical visible pixels on normal versus hohoemu body contexts, so preserve the empty body CSV slot and approve only the independent face layer. Entry body gesture and additional layers remain unresolved.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/pending-p11-rom-face-two.json",
+                "sourcePacketSha256": "5337c43fe99fdad889cc607d8541096403d4d478f2b2eb85a6a047fc068329a7",
+                "scope": [
+                  "motion"
+                ]
+              }
+            }
           }
         ]
       }
@@ -3148,7 +3444,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character_image",
         "command",
@@ -3168,9 +3463,7 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 21,
           "fields": [
-            "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3249,6 +3542,130 @@
               "scopeEntryStableKey": "s10280014-p11-at0103",
               "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-music-sparse.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "proposalReviewer": "repair_graphs",
+              "rootSignoffRequired": true,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "sourceText": "……へえ。やけに詳しいじゃねーか。いいぜ、話は聞いてやるよ",
+              "sourceSpeaker": "フェルト",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/remaining-music-boundaries/first-fuon-entry.json",
+              "waveformAnchors": [
+                {
+                  "query": {
+                    "id": "first-fuon-entry-104.00",
+                    "bgm_time": 104.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_fuon02_cd2_14",
+                      "score": 0.8621,
+                      "track_time": 1.409,
+                      "time": 104.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "first-fuon-entry-104.50",
+                    "bgm_time": 104.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_fuon02_cd2_14",
+                      "score": 0.9023,
+                      "track_time": 1.909,
+                      "time": 104.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                }
+              ],
+              "adjacentCardContact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry-focused-v2.jpg",
+              "adjacentCardFrames": [
+                {
+                  "index": 10,
+                  "sourceTime": 102.023,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry/frame-011.jpg",
+                  "sha256": "7472190d0dc5890324cf3a077c9a86ae782ca80a0a8c98663d931f53d8d21997"
+                },
+                {
+                  "index": 12,
+                  "sourceTime": 102.223,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry/frame-013.jpg",
+                  "sha256": "ed6714f735c500d74d17884c65b6f07b8c0715bf2f65c332088b9021ec5db58b"
+                },
+                {
+                  "index": 14,
+                  "sourceTime": 102.423,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry/frame-015.jpg",
+                  "sha256": "8b24e4cd90985a055fe65151b5226104cb12f48f6c63a995c216a9da1969d560"
+                },
+                {
+                  "index": 16,
+                  "sourceTime": 102.623,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry/frame-017.jpg",
+                  "sha256": "a6e198eb22a1eb7777268f36d03b7593722baf87e8253c161fe497726da5c366"
+                },
+                {
+                  "index": 18,
+                  "sourceTime": 102.823,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry/frame-019.jpg",
+                  "sha256": "b52ba642e508f93a811f1deeff2ea02a8d4f6f3c8ae48d5e498e2a89ec170bdc"
+                },
+                {
+                  "index": 20,
+                  "sourceTime": 103.023,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry/frame-021.jpg",
+                  "sha256": "5af6cd6529e87847816d9b9022b39757ef523c52098b5dfa4c3148b759e23381"
+                },
+                {
+                  "index": 22,
+                  "sourceTime": 103.223,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry/frame-023.jpg",
+                  "sha256": "63b1ab8bd05218fa4831f8b2b600c41e8b920716588a6ce3c0894e77964e61b6"
+                },
+                {
+                  "index": 24,
+                  "sourceTime": 103.423,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry/frame-025.jpg",
+                  "sha256": "6a08d38c457a49e3e2bebf16189139f1161e617126db7fed986d219632bf70dd"
+                },
+                {
+                  "index": 26,
+                  "sourceTime": 103.623,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-entry/frame-027.jpg",
+                  "sha256": "55fa05bb1bec1adcb593f858c56feac33f26a63ff85bf3c2d228b16e9c1b355d"
+                }
+              ],
+              "personallyReadFrameObservation": "Rom's preceding panel leaves after102.223; Felt enters102.423–102.623 and her new panel starts102.823. This is the card『……へえ。やけに詳しいじゃねーか』.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "authoringConvention": {
+                "fadeSeconds": 1,
+                "csvFinalFlag": false,
+                "basis": "Proposed use of the default one-second authoring convention accepted for the first three episodes; recording does not uniquely recover original phase, CSV or exact fade duration."
+              },
+              "inheritanceDecision": "Write only this sparse resource change/stop event; retain empty inherited fields elsewhere.",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root personally viewed all thirteen focused source card-boundary sheets and inspected the multiple original-track waveform correlations and exact-zero intervals. Approve only these sparse track/stop events at the identified cards. One-second fade and false restart are the accepted native authoring convention, not recovered original P11 CSV or exact command phases. Resource loading and previous/current/next playback remain required.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-sparse-music-proposals.json",
+                "sourcePacketSha256": "4708e4fbbfc0c92c424ca84026c05e0a3210049f64c5721e6897be46b6f76b49",
+                "scope": [
+                  "bg_music"
+                ]
+              }
+            }
           }
         ]
       }
@@ -3300,7 +3717,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3430,7 +3846,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3560,7 +3975,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3705,7 +4119,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3844,7 +4257,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3974,7 +4386,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4104,7 +4515,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4234,7 +4644,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4342,7 +4751,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character_image",
         "command",
@@ -4362,9 +4770,7 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 30,
           "fields": [
-            "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4443,6 +4849,155 @@
               "scopeEntryStableKey": "s10280014-p11-at0143",
               "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-music-sparse.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "proposalReviewer": "repair_graphs",
+              "rootSignoffRequired": true,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "sourceText": "まあ、当然ね。バルスは没個性的な顔をしているもの",
+              "sourceSpeaker": "ラム",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/remaining-music-boundaries/first-fuon-stop.json",
+              "waveformAnchors": [
+                {
+                  "query": {
+                    "id": "first-fuon-stop-142.00",
+                    "bgm_time": 142.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_fuon02_cd2_14",
+                      "score": 0.9051,
+                      "track_time": 39.409,
+                      "time": 142.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "first-fuon-stop-142.50",
+                    "bgm_time": 142.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_fuon02_cd2_14",
+                      "score": 0.6828,
+                      "track_time": 39.909,
+                      "time": 142.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "first-fuon-stop-143.00",
+                    "bgm_time": 143.0
+                  },
+                  "candidates": []
+                },
+                {
+                  "query": {
+                    "id": "first-fuon-stop-144.00",
+                    "bgm_time": 144.0
+                  },
+                  "candidates": []
+                }
+              ],
+              "adjacentCardContact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop-focused-v2.jpg",
+              "adjacentCardFrames": [
+                {
+                  "index": 40,
+                  "sourceTime": 142.023,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop/frame-041.jpg",
+                  "sha256": "d6732b15bce2bdef75f5189cacf311ede270338613da885f20a69e4594a8ea86"
+                },
+                {
+                  "index": 42,
+                  "sourceTime": 142.223,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop/frame-043.jpg",
+                  "sha256": "c70f6ef53a3c8545427cf019b98ac946bb997a8da7f0d01c5392edb146ee3c8b"
+                },
+                {
+                  "index": 44,
+                  "sourceTime": 142.423,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop/frame-045.jpg",
+                  "sha256": "a5ed3be5f938330de926238a16575e7cb1c17dceef96fccbae935b5af720ec1c"
+                },
+                {
+                  "index": 46,
+                  "sourceTime": 142.623,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop/frame-047.jpg",
+                  "sha256": "d7a09c5a7b3abeeb65f2ce0a115cea61e61a7505fbaea22b831004d8f46faf49"
+                },
+                {
+                  "index": 48,
+                  "sourceTime": 142.823,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop/frame-049.jpg",
+                  "sha256": "7afaad109b23ed4823e68b242e960d81db799143e8ba8a8cb09b143c2caa49d3"
+                },
+                {
+                  "index": 50,
+                  "sourceTime": 143.023,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop/frame-051.jpg",
+                  "sha256": "3031bc3aa16b487ca36c45f7e58f51f7173b27a734703f4335fea2b2471600a3"
+                },
+                {
+                  "index": 52,
+                  "sourceTime": 143.223,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop/frame-053.jpg",
+                  "sha256": "a502534b6cff42a400e91f61046062e7d49e91afe477220d2b82ebdfe8475c58"
+                },
+                {
+                  "index": 54,
+                  "sourceTime": 143.423,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop/frame-055.jpg",
+                  "sha256": "fff62dbe445a5c281a9ea84e1a36b56d3a4a654151bd7c0333496f299c515011"
+                },
+                {
+                  "index": 56,
+                  "sourceTime": 143.623,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/first-fuon-stop/frame-057.jpg",
+                  "sha256": "4a072ae8c13363478f06c612f5f524caf58271556c51ff0dba8c1316433535e8"
+                }
+              ],
+              "personallyReadFrameObservation": "Felt's preceding panel leaves142.223; Ram enters142.423–142.623 and the『まあ、当然ね』panel appears142.823.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "authoringConvention": {
+                "fadeSeconds": 1,
+                "csvFinalFlag": false,
+                "basis": "Proposed use of the default one-second authoring convention accepted for the first three episodes; recording does not uniquely recover original phase, CSV or exact fade duration."
+              },
+              "inheritanceDecision": "Write only this sparse resource change/stop event; retain empty inherited fields elsewhere.",
+              "sourceEnergyEvidence": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/stop-energy/first-fuon-stop.json",
+              "measuredExactZeroIntervals": [
+                [
+                  143.9,
+                  143.95
+                ],
+                [
+                  144.05,
+                  146.9
+                ]
+              ],
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root personally viewed all thirteen focused source card-boundary sheets and inspected the multiple original-track waveform correlations and exact-zero intervals. Approve only these sparse track/stop events at the identified cards. One-second fade and false restart are the accepted native authoring convention, not recovered original P11 CSV or exact command phases. Resource loading and previous/current/next playback remain required.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-sparse-music-proposals.json",
+                "sourcePacketSha256": "4708e4fbbfc0c92c424ca84026c05e0a3210049f64c5721e6897be46b6f76b49",
+                "scope": [
+                  "bg_music"
+                ]
+              }
+            }
           }
         ]
       }
@@ -4472,7 +5027,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character_image",
         "command",
@@ -4492,9 +5046,7 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 31,
           "fields": [
-            "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4573,6 +5125,162 @@
               "scopeEntryStableKey": "s10280014-p11-at0148",
               "bodyFaceStatus": "Character identity only. Body, face, and added layers require independent evidence."
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-music-sparse.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "proposalReviewer": "repair_graphs",
+              "rootSignoffRequired": true,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "sourceText": "あんま言いたくないけど、この目つきで没個性的は初めて言われたわ",
+              "sourceSpeaker": "スバル",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/remaining-music-boundaries/comical-return.json",
+              "waveformAnchors": [
+                {
+                  "query": {
+                    "id": "comical-return-148.00",
+                    "bgm_time": 148.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_comical02_cd2_09",
+                      "score": 0.4734,
+                      "track_time": 177.31,
+                      "time": 148.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "comical-return-148.50",
+                    "bgm_time": 148.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_comical02_cd2_09",
+                      "score": 0.9852,
+                      "track_time": 177.81,
+                      "time": 148.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "comical-return-149.00",
+                    "bgm_time": 149.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_comical02_cd2_09",
+                      "score": 0.9884,
+                      "track_time": 178.31,
+                      "time": 149.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "comical-return-150.00",
+                    "bgm_time": 150.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_comical02_cd2_09",
+                      "score": 0.9754,
+                      "track_time": 179.31,
+                      "time": 150.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                }
+              ],
+              "adjacentCardContact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return-focused-v2.jpg",
+              "adjacentCardFrames": [
+                {
+                  "index": 0,
+                  "sourceTime": 146.523,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return/frame-001.jpg",
+                  "sha256": "3ba7e9ee0463404a106be263512c53d1cc0c06706377767642882796b41941bd"
+                },
+                {
+                  "index": 3,
+                  "sourceTime": 146.823,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return/frame-004.jpg",
+                  "sha256": "c6ce6b2cd967e6de50da599aa4c910a88a81b08ef606a19b7c140e353ba92824"
+                },
+                {
+                  "index": 6,
+                  "sourceTime": 147.123,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return/frame-007.jpg",
+                  "sha256": "9150562b228aaef27f88cc66186c41b5beae037a1c22fc0ab285a98ee9370620"
+                },
+                {
+                  "index": 9,
+                  "sourceTime": 147.423,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return/frame-010.jpg",
+                  "sha256": "a7cc6632e79d5025a25557b4dba0e19bdd03128da23a2c69b521e65ca572f9f5"
+                },
+                {
+                  "index": 12,
+                  "sourceTime": 147.723,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return/frame-013.jpg",
+                  "sha256": "bff70f2cdbc819383f4271d82a9bccbdb0807948e07658298fc0d031b0ef1fa4"
+                },
+                {
+                  "index": 15,
+                  "sourceTime": 148.023,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return/frame-016.jpg",
+                  "sha256": "d5f0ab31a4029bb04edd8a4c6e75ca9f568c956ea821af27b506a09b2b5293d8"
+                },
+                {
+                  "index": 18,
+                  "sourceTime": 148.323,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return/frame-019.jpg",
+                  "sha256": "90921262644b430817b7d0c168e013e102a5de51698605661bc21e254c17e3fc"
+                },
+                {
+                  "index": 21,
+                  "sourceTime": 148.623,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return/frame-022.jpg",
+                  "sha256": "ff559fde4df7f34e7830a31c44212139e7e52b628d76ee20b55975022153470e"
+                },
+                {
+                  "index": 24,
+                  "sourceTime": 148.923,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/comical-return/frame-025.jpg",
+                  "sha256": "52b16815a1577ae658589a8d3708f2e309b85341c97e712ce11cf1e20b8f25c3"
+                }
+              ],
+              "personallyReadFrameObservation": "The new Subaru card is visible during147–149 with the text『あんま言いたくないけど、この目つきで没個性的は初めて言われたわ』. The preceding Ram card's music has already stopped.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "authoringConvention": {
+                "fadeSeconds": 1,
+                "csvFinalFlag": false,
+                "basis": "Proposed use of the default one-second authoring convention accepted for the first three episodes; recording does not uniquely recover original phase, CSV or exact fade duration."
+              },
+              "inheritanceDecision": "Write only this sparse resource change/stop event; retain empty inherited fields elsewhere.",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root personally viewed all thirteen focused source card-boundary sheets and inspected the multiple original-track waveform correlations and exact-zero intervals. Approve only these sparse track/stop events at the identified cards. One-second fade and false restart are the accepted native authoring convention, not recovered original P11 CSV or exact command phases. Resource loading and previous/current/next playback remain required.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-sparse-music-proposals.json",
+                "sourcePacketSha256": "4708e4fbbfc0c92c424ca84026c05e0a3210049f64c5721e6897be46b6f76b49",
+                "scope": [
+                  "bg_music"
+                ]
+              }
+            }
           }
         ]
       }
@@ -4624,7 +5332,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4754,7 +5461,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4884,7 +5590,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5014,7 +5719,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5144,7 +5848,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5344,7 +6047,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5482,7 +6184,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5612,7 +6313,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5742,7 +6442,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5872,7 +6571,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6002,7 +6700,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6132,7 +6829,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6262,7 +6958,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6392,7 +7087,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6522,7 +7216,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6652,7 +7345,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6782,7 +7474,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6906,7 +7597,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -7036,7 +7726,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -7166,7 +7855,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -7296,7 +7984,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -7405,7 +8092,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character_image",
         "command",
@@ -7425,9 +8111,7 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 53,
           "fields": [
-            "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -7510,6 +8194,155 @@
               "scopeEntryStableKey": "s10280014-p11-at0270",
               "bodyFaceStatus": "Identity-only patch. Independent body, face, and added layers remain unresolved."
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-music-stops.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "proposalReviewer": "repair_graphs",
+              "rootSignoffRequired": true,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "sourceText": "こいつには他に買い手がいんだよ。そっちと比べて、どっちの条件がいいか。アタシはそれで決めさせてもらうぜ",
+              "sourceSpeaker": "フェルト",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/remaining-music-boundaries/scene14-finish-comical-stop.json",
+              "waveformAnchors": [
+                {
+                  "query": {
+                    "id": "scene14-finish-comical-stop-269.00",
+                    "bgm_time": 269.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_comical02_cd2_09",
+                      "score": 0.8505,
+                      "track_time": 121.608,
+                      "time": 269.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "scene14-finish-comical-stop-269.50",
+                    "bgm_time": 269.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_comical02_cd2_09",
+                      "score": 0.3266,
+                      "track_time": 122.108,
+                      "time": 269.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "scene14-finish-comical-stop-270.00",
+                    "bgm_time": 270.0
+                  },
+                  "candidates": []
+                },
+                {
+                  "query": {
+                    "id": "scene14-finish-comical-stop-270.50",
+                    "bgm_time": 270.5
+                  },
+                  "candidates": []
+                }
+              ],
+              "adjacentCardContact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop-focused-v3.jpg",
+              "adjacentCardFrames": [
+                {
+                  "index": 4,
+                  "sourceTime": 268.923,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop/frame-005.jpg",
+                  "sha256": "c6c4204d943db70f47cfb4b401a8cf0ebabebb42844a9a9987281acc748c9e6a"
+                },
+                {
+                  "index": 6,
+                  "sourceTime": 269.123,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop/frame-007.jpg",
+                  "sha256": "e56cdbc0d9c53bea1aae48344d157f2a2f01d7fc49514eca662bac484d4ebccd"
+                },
+                {
+                  "index": 8,
+                  "sourceTime": 269.323,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop/frame-009.jpg",
+                  "sha256": "70541704b9ed4683f33daa09f3217a2cbde66613c3a61629abe5af26a52a5691"
+                },
+                {
+                  "index": 10,
+                  "sourceTime": 269.523,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop/frame-011.jpg",
+                  "sha256": "2c9b00aef63ad34339f46ce76db79e90082911372eb94924ddd3111533e0b1d6"
+                },
+                {
+                  "index": 12,
+                  "sourceTime": 269.723,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop/frame-013.jpg",
+                  "sha256": "21fc7a7a6793674947cba9f7d36bb96276c1553314017f1063b2e0da3fbabc8c"
+                },
+                {
+                  "index": 14,
+                  "sourceTime": 269.923,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop/frame-015.jpg",
+                  "sha256": "542cc03c916d79e492499f02866d8cd983cb6f25b0e00c01ead073e7c72476a9"
+                },
+                {
+                  "index": 16,
+                  "sourceTime": 270.123,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop/frame-017.jpg",
+                  "sha256": "e39371b374552a7ad4c7ff425164c6b63efdc6db84704a6d073124127bb47bc7"
+                },
+                {
+                  "index": 18,
+                  "sourceTime": 270.323,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop/frame-019.jpg",
+                  "sha256": "44ffd470f6978fe1a3aaf5b84c68c8a507640707256fc5f3c1566bfe77ab4eb3"
+                },
+                {
+                  "index": 20,
+                  "sourceTime": 270.523,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene14-last-felt-stop/frame-021.jpg",
+                  "sha256": "23561f5891bd510dfa1c39a1c68b7c885bf8c0d69fcc85d25abecae7728a95fb"
+                }
+              ],
+              "personallyReadFrameObservation": "Ram's『ただし？』card remains268.923, the screen transitions269.123, Felt is visible269.323 and her『こいつには他に買い手がいんだよ』panel appears269.523–269.723. The old comical track disappears across this entry, before the subsequent FINISH/title.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "authoringConvention": {
+                "fadeSeconds": 1,
+                "csvFinalFlag": false,
+                "basis": "Proposed use of the default one-second authoring convention accepted for the first three episodes; recording does not uniquely recover original phase, CSV or exact fade duration."
+              },
+              "inheritanceDecision": "Write only this sparse resource change/stop event; retain empty inherited fields elsewhere.",
+              "sourceEnergyEvidence": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/stop-energy/scene14-last-felt-stop.json",
+              "measuredExactZeroIntervals": [
+                [
+                  270.7,
+                  270.75
+                ],
+                [
+                  270.85,
+                  276.0
+                ]
+              ],
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly viewed all three focused-v3 source boundary sheets and inspected decaying original-cue waveform correlations plus subsequent exact-zero audio intervals. In particular the 816s voice-occluded dip is not a stop: the cue is still strongly present at819.5/820 and fades on Elsa card51. Approve these sparse stops with accepted one-second convention; original P11 command phases and exact fade durations remain unknown.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-supplement-music-proposals.json",
+                "sourcePacketSha256": "cc9bf2d878abe904328d6c0df0532a25ae65a8419702a981061c2cf17919077a",
+                "scope": [
+                  "bg_music"
+                ]
+              }
+            }
           }
         ]
       }
@@ -7520,6 +8353,11 @@
       "code": "native_metadata_unrecovered",
       "severity": "warning",
       "message": "The draft uses authored IDs, zero default gain vectors and no invented branch lock rules."
+    },
+    {
+      "code": "draft_not_playback_verified",
+      "severity": "warning",
+      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     },
     {
       "code": "performance_unrecovered",
@@ -7549,7 +8387,6 @@
       "scenarioId": 2,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -7575,7 +8412,6 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 3,
       "fields": [
-        "bg_music",
         "bg_picture",
         "character",
         "character_image",
@@ -7598,17 +8434,14 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
-        "motion",
         "native_array_order",
         "original_scenario_id",
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ]
     },
     {
@@ -7625,7 +8458,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7634,8 +8466,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ]
     },
     {
@@ -7652,7 +8483,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7661,8 +8491,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ]
     },
     {
@@ -7679,7 +8508,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7706,7 +8534,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7733,7 +8560,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7758,9 +8584,7 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 10,
       "fields": [
-        "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7769,8 +8593,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ]
     },
     {
@@ -7787,7 +8610,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7796,8 +8618,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ]
     },
     {
@@ -7814,7 +8635,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7841,7 +8661,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7850,8 +8669,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ]
     },
     {
@@ -7868,7 +8686,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7877,8 +8694,7 @@
         "position",
         "se",
         "talk_chara",
-        "video",
-        "voice"
+        "video"
       ]
     },
     {
@@ -7895,7 +8711,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7916,7 +8731,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7943,7 +8757,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7964,7 +8777,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7985,7 +8797,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8012,7 +8823,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8031,9 +8841,7 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 21,
       "fields": [
-        "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8060,7 +8868,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8087,7 +8894,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8114,7 +8920,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8141,7 +8946,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8162,7 +8966,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8189,7 +8992,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8216,7 +9018,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8243,7 +9044,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8268,9 +9068,7 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 30,
       "fields": [
-        "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8295,9 +9093,7 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 31,
       "fields": [
-        "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8324,7 +9120,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8351,7 +9146,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8378,7 +9172,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8405,7 +9198,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8432,7 +9224,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8452,6 +9243,13 @@
       "scenarioId": 36
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 36,
+      "branchId": 363
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -8459,7 +9257,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8480,7 +9277,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8507,7 +9303,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8534,7 +9329,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8561,7 +9355,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8588,7 +9381,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8615,7 +9407,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8642,7 +9433,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8669,7 +9459,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8696,7 +9485,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8723,7 +9511,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8750,7 +9537,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8777,7 +9563,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8804,7 +9589,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8831,7 +9615,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8858,7 +9641,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8883,9 +9665,7 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 53,
       "fields": [
-        "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -8903,18 +9683,6 @@
       "severity": "warning",
       "message": "Some text evidence still needs visual review.",
       "scenarioId": 53
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 36,
-      "branchId": 363
-    },
-    {
-      "code": "draft_not_playback_verified",
-      "severity": "warning",
-      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     }
   ],
   "unresolvedBranches": [

@@ -1,0 +1,256 @@
+{
+  "status": "independent_direct_temporal_review_completed_candidates_remain_unsigned",
+  "reviewer": "/root/visual_review_low",
+  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+  "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+  "authoredFilesModified": 0,
+  "originalUnsignedPacket": "visual/pending-p11-felt-odoroku-two.json",
+  "originalUnsignedPacketSha256": "02971fa1e21e60b0143dd4649c691c1bbc77f47dd7801d0852bf69d3a2f0237d",
+  "reviewMethod": "Directly viewed original video frames requested every 0.05 seconds with actual decoder timestamps recorded, four new native chronological controller sequences through entry and loop, and the former source/top-six/entry contact evidence. Complete native samples were regenerated into this durable directory because the old descriptor referred to a missing temporary gzip. No nearest-time selection was used to manufacture an accepted command sequence.",
+  "items": [
+    {
+      "sceneId": 10280014,
+      "scenarioId": 16,
+      "candidate": "act_odoroku",
+      "decision": "pending_contextual_entry_layer_review_no_csv_signature",
+      "body": {
+        "heldPoseSupported": true,
+        "completeEntrySupported": false,
+        "observations": [
+          "The source inherits the prior card's long closed-eye pose through decoded 78.900 seconds.",
+          "The eyes are partly open near decoded 78.966 seconds and fully open near 79.0 seconds, then the held posture and surprised expression are close to the odoroku body candidate.",
+          "The new isolated act_odoroku body animation begins with open eyes and expands its arms over the first roughly 0.5 native seconds. That isolated start does not reproduce the source's inherited closed-eye phase."
+        ],
+        "limits": "The upper-body held pose alone cannot establish the complete body transition or original authored body token."
+      },
+      "face": {
+        "settledMatchesMultipleContexts": true,
+        "independentTokenProved": false,
+        "observations": [
+          "The new explicit face_odoroku override and the empty-face body context settle into the same visible expression.",
+          "Unlike the empty-face body sequence, the explicit face_odoroku reference briefly closes its eyes at native 0.08 seconds before reopening. Their entry images therefore are not equivalent.",
+          "The source's continuous prior closed-eye hold must be resolved with the actual prior card's body/face state before choosing a CSV face slot."
+        ],
+        "limits": "Do not author either a forced named face or a newly cleared face slot based on the stable image."
+      },
+      "evidence": [
+        "felt16-source-chronology.jpg",
+        "body-act_odoroku-native-chronology.jpg",
+        "body-act_normal-native-chronology.jpg",
+        "face-face_odoroku-native-chronology.jpg",
+        "face-empty-face-native-chronology.jpg"
+      ]
+    },
+    {
+      "sceneId": 10280014,
+      "scenarioId": 26,
+      "candidate": "act_odoroku",
+      "decision": "pending_card_reveal_entry_review_no_csv_signature",
+      "body": {
+        "heldPoseSupported": true,
+        "completeEntrySupported": false,
+        "observations": [
+          "The former Subaru card disappears around 122.75–122.9 seconds; Felt first appears dimly near decoded 122.966 seconds.",
+          "The visible arm/shoulder shape moves toward the surprised pose as she fades in, while the native odoroku reference opens the arms and reaches its surprised hold during its short entry.",
+          "The earliest motion is largely obscured by low alpha, and no independent speed/onset alignment has established the complete transition."
+        ],
+        "limits": "This is strong held-pose evidence with partial compatible entry, but it remains insufficient under the current requirement to sign a CSV only after actual transition review."
+      },
+      "face": {
+        "settledMatchesMultipleContexts": true,
+        "independentTokenProved": false,
+        "observations": [
+          "After reveal, the source surprised face is consistent with body-owned odoroku curves as well as the named face override's settled expression.",
+          "The first visible frames do not distinguish the different independent-face entry trajectories."
+        ],
+        "limits": "Keep the independent face command unresolved; a matching stable face does not identify its layer ownership."
+      },
+      "evidence": [
+        "felt26-source-chronology.jpg",
+        "body-act_odoroku-native-chronology.jpg",
+        "face-face_odoroku-native-chronology.jpg",
+        "face-empty-face-native-chronology.jpg"
+      ]
+    }
+  ],
+  "followupEvidenceRequired": [
+    "Restore or independently audit the preceding Felt card 15's actual body/face state before comparing card 15 → 16 layer inheritance.",
+    "Log the player's incoming/outgoing animator layer states, start clocks and card alpha/reveal at 15 → 16 and 25 → 26; use an ephemeral preview override for candidates while leaving installed data unchanged.",
+    "Compare a fixed continuous candidate run with the original entry, rather than selecting a separate best native frame per recorded timestamp."
+  ],
+  "faceComparison": [
+    {
+      "nativeTime": 0,
+      "changedVisiblePixelsThreshold12": 4,
+      "visiblePixels": 99682,
+      "exactEqual": false
+    },
+    {
+      "nativeTime": 0.08,
+      "changedVisiblePixelsThreshold12": 6134,
+      "visiblePixels": 100207,
+      "exactEqual": false
+    },
+    {
+      "nativeTime": 0.16,
+      "changedVisiblePixelsThreshold12": 6556,
+      "visiblePixels": 100353,
+      "exactEqual": false
+    },
+    {
+      "nativeTime": 0.24,
+      "changedVisiblePixelsThreshold12": 1872,
+      "visiblePixels": 99280,
+      "exactEqual": false
+    },
+    {
+      "nativeTime": 0.32,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98701,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 0.4,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98277,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 0.48,
+      "changedVisiblePixelsThreshold12": 3232,
+      "visiblePixels": 98647,
+      "exactEqual": false
+    },
+    {
+      "nativeTime": 0.5203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98477,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 0.56,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98470,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 0.7203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98590,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 0.9203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98751,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 1.1203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98947,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 1.3203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 99206,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 1.5203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 99245,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 1.7203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 99009,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 1.9203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98840,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 2.1203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98606,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 2.3203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98503,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 2.5203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98477,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 2.7203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98590,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 2.9203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98751,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 3.1203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98947,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 3.3203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 99206,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 3.5203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 99245,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 3.7203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 99009,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 3.9203,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98840,
+      "exactEqual": true
+    },
+    {
+      "nativeTime": 4,
+      "changedVisiblePixelsThreshold12": 0,
+      "visiblePixels": 98735,
+      "exactEqual": true
+    }
+  ],
+  "evidenceFiles": {
+    "felt-body-odoroku-normal-entry.json.gz": "2a42c70123e7e1a1442fb5256304062e8599cdeff02ef105fcdc3ed9c452d78a",
+    "felt-face-odoroku-vs-body-entry.json.gz": "9aa3b3ede97dea1b440bc59408856d92cc509714d587760bd81acaa6fc6fb987",
+    "felt16-source-chronology.jpg": "bc72677bddbe3f87b5892a93bdd11cc143665351e0b9a72b594017b7899c8fde",
+    "felt26-source-chronology.jpg": "0acc64ce6db54564e9a67fafebf355a80efa972d2b019f09332fbfbe3265842d",
+    "body-act_normal-native-chronology.jpg": "90b550941892ac953c1921b995d1faceba13517d68415975f15eb45e0caa7dd3",
+    "body-act_odoroku-native-chronology.jpg": "1458b4acc64f40d06d7b9c0cc2b291a382e436b0b8014f0717e5a388671b8362",
+    "face-face_odoroku-native-chronology.jpg": "c889879b1244d9883b413f2234e5385087e36c66b1ea2261b90a65a8a8593aff",
+    "face-empty-face-native-chronology.jpg": "abd8df1496ab186bd9a8e6cc28c8bb72f696046b2dc2033339a4cbc78ccd41da",
+    "evidence-index.json": "ccd780622fb73665ce6287079ec9c55d97f0b84f1c9e7178325b0882639f2ec9"
+  }
+}

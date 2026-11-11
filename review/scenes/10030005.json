@@ -177,7 +177,6 @@
           "scenarioId": 2,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -295,7 +294,6 @@
       ],
       "unknownFields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -316,7 +314,6 @@
           "scenarioId": 3,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -371,7 +368,88 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p22-bedroom-v15.json",
+            "fields": [
+              "bg_picture"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "sourceWitness": {
+                "sceneId": 10030005,
+                "scenarioId": 3,
+                "stableKey": "s10030005-p22-at0034",
+                "sourceText": "クルシュ邸の客室・昼",
+                "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "time": 35.35,
+                "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/targeted-background-review-v14/s10030005-n3-35.3500.png",
+                "sha256": "dcaa7681bd4b390231abd72452e45564d7e8b77294132088ae87d7bfef8bf4eb",
+                "originalEvidence": {
+                  "segmentId": "p22-s10030005",
+                  "start": 34.0,
+                  "end": 35.5,
+                  "sourceAnchorSeconds": 34,
+                  "ocrReviewed": false,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/001050-dialogue.png",
+                  "ocrEventId": "merged-0011",
+                  "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                  "originalOCRText": "クルシュ邸の客室・昼",
+                  "ocrConfidence": 0.98338,
+                  "ocrReviewReasons": [],
+                  "recordingId": "bili-capital-22"
+                }
+              },
+              "originalPlate": {
+                "id": "bg/bg076a_roswaal",
+                "member": "LIMEOS/assets/downloadassets/assetbundle/images/adv_bg/ADV_bg076a_roswaal.png",
+                "label": "bg076a_roswaal",
+                "rank": {
+                  "id": "bg/bg076a_roswaal",
+                  "score": 0.9109,
+                  "inliers": 127,
+                  "color_agreement": 0.9565,
+                  "screen_coverage": 1.0,
+                  "evidence_coverage": 0.6676,
+                  "method": "sift_geometry_color",
+                  "time": 35.35
+                },
+                "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/targeted-background-review-v14/p22-bedroom-candidates/bg_bg076a_roswaal.png",
+                "sha256": "d63c8fe128859412221e6cad11fd29e005c869e1b737f23f4e93a9c83a6c45c1"
+              },
+              "sourceBoundaryContact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/targeted-background-review-v14/boundary-contact.jpg",
+              "sourceBoundaryContactSha256": "e2a14e88266bac73cba0eb1b70be40d1ce5b72368fabaabe0e5d023ad07df22b",
+              "originalPlateContact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/targeted-background-review-v14/p22-bedroom-candidates/original-plate-contact.jpg",
+              "originalPlateContactSha256": "05d82704bf6681e4fa36fd9d6c17872684af46e8ebccf44effb789c5d95d6a55",
+              "decision": "Original plate bg076a_roswaal directly matches the golden curved headboard, pale wall with three gold flower/leaf ornaments, teal curtains, right lamp/nightstand and blue floor rug. Daylight colors exclude bg076b sunset and bg076d night. The video labels the location Crusch guest room, but it visibly reuses this original roswaal-namespaced plate; no ID is inferred from that location label.",
+              "earliestObservedNode": "10030005:3 already displays the bedroom under the location title at35.350s; node2 is black recap and node4 retains the same bedroom. Set a single sparse provider at3, inherited by9-12.",
+              "originalCommandPhaseRecovered": false,
+              "motionAndExpressionVerified": false,
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/targeted-background-review-v14/p22-bedroom-background-only-packet.json",
+                "sourcePacketSha256": "a8a7fcfe255b4880389d4ccb083b5d534470ed4ffca4c5a8894173d5d717ce67",
+                "acceptedScope": [
+                  "bg_picture"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "4": {
@@ -401,7 +479,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -422,7 +499,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -476,7 +552,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 41.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 40.0,
+                "end": 41.5,
+                "sourceAnchorSeconds": 40,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/dialogue-completion-2hz/crops/001245-dialogue.png",
+                "ocrEventId": "merged-0012",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "……知らない天井だ",
+                "ocrConfidence": 0.93771,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-41.3500.png",
+              "frameSha256": "afa3e4643486076bcd35c80f2348657f5423925fa2e359b2e9b7d5bd6fd34da6",
+              "previousObservationFrameSha256": "0a157b3544c2554e1db32bff2b0bec16689962135da65f87e700f4395597dc29",
+              "candidateIndexFrameSha256": "afa3e4643486076bcd35c80f2348657f5423925fa2e359b2e9b7d5bd6fd34da6",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-01.jpg",
+              "contactSha256": "2163fd6d75a227cdb0efe72fd0f7e0eb1cbb1756d57b912ef9dd231ae1dfda0a",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "subaru_gown01",
+              "reason": "Black swept hair and the visible loose gray cross-collar sleeping gown agree with the original subaru_gown01 projection; no black/orange tracksuit or butler uniform is present.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0040.png",
+              "originalModelProjectionSha256": "1845f76a0d505b06557a0bbbdfc6bf42c0d5a85de11868c8e95d1a8ab94d5da3",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "5": {
@@ -625,7 +776,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -646,7 +796,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -708,7 +857,96 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 47.0,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 46.0,
+                "end": 48.0,
+                "sourceAnchorSeconds": 46,
+                "ocrReviewed": true,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/001410-dialogue.png",
+                "ocrEventId": "merged-0014",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "君は……って、うおおお!？",
+                "ocrConfidence": 0.96553,
+                "ocrReviewReasons": [
+                  "content_variant_conflict"
+                ],
+                "visualReviewer": "root",
+                "rootDecision": {
+                  "interval": [
+                    46,
+                    48
+                  ],
+                  "action": "replace",
+                  "speaker": "スバル",
+                  "text": "君は……って、うおおお！？",
+                  "witnessTime": 47
+                },
+                "rootReviewWitnessTime": 47,
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/root-review/frames/83e08bb46ec7-001410.jpg",
+              "frameSha256": "9c5e980da827526c48f79e49d40c8611c1f2c917e39ac12fb8c21d0d61b48c83",
+              "previousObservationFrameSha256": "9c5e980da827526c48f79e49d40c8611c1f2c917e39ac12fb8c21d0d61b48c83",
+              "candidateIndexFrameSha256": "9c5e980da827526c48f79e49d40c8611c1f2c917e39ac12fb8c21d0d61b48c83",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-01.jpg",
+              "contactSha256": "2163fd6d75a227cdb0efe72fd0f7e0eb1cbb1756d57b912ef9dd231ae1dfda0a",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "subaru_gown01",
+              "reason": "Black swept hair and the visible loose gray cross-collar sleeping gown agree with the original subaru_gown01 projection; no black/orange tracksuit or butler uniform is present.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0046.png",
+              "originalModelProjectionSha256": "7dc8e62fa6082d832caed62753c5fe96ccfd74e0dd5902107270504df8380939",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "7": {
@@ -962,7 +1200,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -983,7 +1220,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1091,7 +1327,96 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 79.0,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 67.0,
+                "end": 83.5,
+                "sourceAnchorSeconds": 67,
+                "ocrReviewed": true,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/002370-dialogue.png",
+                "ocrEventId": "merged-0018",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "で、気分は？どっか変なとこはにゃい？",
+                "ocrConfidence": 0.98044,
+                "ocrReviewReasons": [
+                  "content_variant_conflict"
+                ],
+                "visualReviewer": "root",
+                "rootDecision": {
+                  "interval": [
+                    67,
+                    83.5
+                  ],
+                  "action": "replace",
+                  "speaker": "猫耳の少女",
+                  "text": "で、気分は？ どっか変なとこはにゃい？",
+                  "witnessTime": 79
+                },
+                "rootReviewWitnessTime": 79,
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/root-review/frames/83e08bb46ec7-002370.jpg",
+              "frameSha256": "dd7bccec709c2562aff31e3eebc24a06a5ce3d93703657414c48369063195758",
+              "previousObservationFrameSha256": "dd7bccec709c2562aff31e3eebc24a06a5ce3d93703657414c48369063195758",
+              "candidateIndexFrameSha256": "dd7bccec709c2562aff31e3eebc24a06a5ce3d93703657414c48369063195758",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-01.jpg",
+              "contactSha256": "2163fd6d75a227cdb0efe72fd0f7e0eb1cbb1756d57b912ef9dd231ae1dfda0a",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "ferris_dress01",
+              "reason": "Brown cat ears/hair, blue-white hair ribbons, open shoulders and blue-white dress agree with the original ferris_dress01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0067.png",
+              "originalModelProjectionSha256": "d2454c6dd0c4d4dcc54d4e1f48db43062da8506af763cdade49d7c314c2192f6",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "10": {
@@ -1121,7 +1446,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1142,7 +1466,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1196,7 +1519,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 91.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 86.0,
+                "end": 91.5,
+                "sourceAnchorSeconds": 86,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/dialogue-completion-2hz/crops/002745-dialogue.png",
+                "ocrEventId": "merged-0022",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "命拾いして目が覚めて、最初に気にするのがそれにゃわけ？変な子、見つけちゃったかな？",
+                "ocrConfidence": 0.9944,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-91.3500.png",
+              "frameSha256": "5de3e2658a45eecafe79ac9ef9aa80981085d6980bec45e6282585c49a77988b",
+              "previousObservationFrameSha256": "d4a00e0af3e30534f5197d657ea63e3b017756e22e3fc6c2282981eb38e1a89d",
+              "candidateIndexFrameSha256": "5de3e2658a45eecafe79ac9ef9aa80981085d6980bec45e6282585c49a77988b",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-01.jpg",
+              "contactSha256": "2163fd6d75a227cdb0efe72fd0f7e0eb1cbb1756d57b912ef9dd231ae1dfda0a",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "ferris_dress01",
+              "reason": "Brown cat ears/hair, blue-white hair ribbons, open shoulders and blue-white dress agree with the original ferris_dress01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0086.png",
+              "originalModelProjectionSha256": "8345fbaa70b8471916fab393c0633ce61123565e9bc053b462600ce6cd450c0e",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "11": {
@@ -1226,7 +1624,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1247,7 +1644,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1301,7 +1697,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 96.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 93.0,
+                "end": 96.5,
+                "sourceAnchorSeconds": 93,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/002880-dialogue.png",
+                "ocrEventId": "merged-0023",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "そうだ！俺、路地裏で刺されてでも、腹の傷はない……",
+                "ocrConfidence": 0.99354,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-96.3500.png",
+              "frameSha256": "8fe85e52148bedf6278db43ccd312612d07979fb40c2b087e4a836f9a2baf53d",
+              "previousObservationFrameSha256": "0891c1b3b1a924e9637b483187aa47ad979e806ed7aa1d771b0d9806d3bf3f92",
+              "candidateIndexFrameSha256": "8fe85e52148bedf6278db43ccd312612d07979fb40c2b087e4a836f9a2baf53d",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-01.jpg",
+              "contactSha256": "2163fd6d75a227cdb0efe72fd0f7e0eb1cbb1756d57b912ef9dd231ae1dfda0a",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "subaru_gown01",
+              "reason": "Black swept hair and the visible loose gray cross-collar sleeping gown agree with the original subaru_gown01 projection; no black/orange tracksuit or butler uniform is present.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0093.png",
+              "originalModelProjectionSha256": "dd308eaeb34a43900c06e0e003671bfe849a58a1b73350e792f9d4c97eb4fb93",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "12": {
@@ -1331,7 +1802,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1352,7 +1822,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1406,7 +1875,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 100.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 99.0,
+                "end": 100.5,
+                "sourceAnchorSeconds": 99,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/003000-dialogue.png",
+                "ocrEventId": "merged-0024",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "目が覚めたようだな",
+                "ocrConfidence": 0.99995,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-100.3500.png",
+              "frameSha256": "f62a78f5be5ad8e08ca22311e7432f9d44e27fd9af96675ec0db0f4effdf756a",
+              "previousObservationFrameSha256": "d87b32d608b0483dd8e187a058bed421fe4b156e9b5d48bb0ee9dfd2b4a7da60",
+              "candidateIndexFrameSha256": "f62a78f5be5ad8e08ca22311e7432f9d44e27fd9af96675ec0db0f4effdf756a",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-01.jpg",
+              "contactSha256": "2163fd6d75a227cdb0efe72fd0f7e0eb1cbb1756d57b912ef9dd231ae1dfda0a",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "crusch01",
+              "reason": "Long green hair, small navy cap, gold epaulettes, white cravat, red armband and navy uniform agree with the original crusch01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0099.png",
+              "originalModelProjectionSha256": "a363f48aea0ec918765197469855c89692f5ae7d655690b057d95a1c3074d198",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "13": {
@@ -1436,7 +1980,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1457,7 +2000,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1511,7 +2053,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 110.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 104.0,
+                "end": 110.5,
+                "sourceAnchorSeconds": 104,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/003300-dialogue.png",
+                "ocrEventId": "merged-0025",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "卿のことはフェリスが発見して治療した。傷が深く危険な状態だったそうだ。フェリスの治療なら問題ないと思うが……",
+                "ocrConfidence": 0.99064,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-110.3500.png",
+              "frameSha256": "fc8bfffe0e6acff17a8d597c266c338800134c430245c04a25c63e5233a7ebe8",
+              "previousObservationFrameSha256": "8e999261d1d4dc92ab1124f29211b9926618fc1883f1dcbe881c3854b4ca77c9",
+              "candidateIndexFrameSha256": "fc8bfffe0e6acff17a8d597c266c338800134c430245c04a25c63e5233a7ebe8",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-01.jpg",
+              "contactSha256": "2163fd6d75a227cdb0efe72fd0f7e0eb1cbb1756d57b912ef9dd231ae1dfda0a",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "crusch01",
+              "reason": "Long green hair, small navy cap, gold epaulettes, white cravat, red armband and navy uniform agree with the original crusch01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0104.png",
+              "originalModelProjectionSha256": "358c235ea8aee5fbb5ce6d24dc1358fca55a16f0bf463d4296bd70acc3b6bf61",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "14": {
@@ -1541,7 +2158,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1562,7 +2178,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1678,7 +2293,83 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-choices-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingPart": 22,
+              "recordingId": "bili-capital-22",
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 112.65,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-agent-choice-supplement/cast-112.6500.png",
+              "frameSha256": "69cb5c476a5588a4099196523cb74fae81ce6abb70b5763e7787a58104001a4f",
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 112.0,
+                "end": 132.5,
+                "sourceAnchorSeconds": 112,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/003720-dialogue.png",
+                "ocrEventId": "merged-0026",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "やーん、クルシュ様ってば褒めすぎですよ。そんな真っ直ぐ凛々しく言われたら、もうフェリちゃんメロメロ〜",
+                "ocrConfidence": 0.98145,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "sourceMapping": null,
+              "primaryObservation": {
+                "time": 132.35,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-132.3500.png",
+                "frameSha256": "f39928d3172ffd7ee5393b54f557597955b20e4f20a46ea0076be401aa3784a6",
+                "timeBasis": "evidence_end_minus_150ms"
+              },
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-agent-choice-supplement/source-contact-01.jpg",
+              "contactSha256": "83c5c904f9d58ae1a6c7c9606cb729737253be16d0c20d2a5f5fcbc625743ac8",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-agent-choice-supplement/observation-evidence.json",
+              "sourceObservationIndexSha256": "deec0fc18b6219fb2e72784d6f900ac40796d406c1d082d14f8e0f8db6b394df",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0142.png",
+              "originalModelProjectionSha256": "e18fa61db1005e0c92b59a5fad6a830428773ab43e859e5bc017e1452f533601",
+              "decisionBasis": "direct_original_frame_and_original_model_identity_review_at_earlier_same_card_phase",
+              "reason": "Brown cat ears/hair, blue-white hair ribbons, open shoulders and blue-white dress agree with the original ferris_dress01 projection. The earlier same-card source frame clearly shows the stage actor before the late blurred text/choice phase.",
+              "selectedModel": "ferris_dress01",
+              "unrecovered": [
+                "body_command",
+                "facial_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22-choices/character-only-packet.json",
+                "sourcePacketSha256": "e352ffd7127031f682cc8e8ec98aba61ea5e7807a4a263ac7a0b694ac4e05cd7",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "15": {
@@ -1708,7 +2399,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1729,7 +2419,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1783,7 +2472,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 140.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 135.0,
+                "end": 140.5,
+                "sourceAnchorSeconds": 135,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/dialogue-completion-2hz/crops/004215-dialogue.png",
+                "ocrEventId": "merged-0033",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "頭ははっきりしているようだな。それにしても、『君』とはな。何とも新鮮な呼ばれ方だ",
+                "ocrConfidence": 0.99719,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-140.3500.png",
+              "frameSha256": "11c50b40dd38c542f3b237899ad7661b500d83e0d2bea598d72da21c212d3985",
+              "previousObservationFrameSha256": "c5dc80209a83a7f4c8d76d3c1485a0879379519766f600f9c5282579dbaac072",
+              "candidateIndexFrameSha256": "11c50b40dd38c542f3b237899ad7661b500d83e0d2bea598d72da21c212d3985",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "crusch01",
+              "reason": "Long green hair, small navy cap, gold epaulettes, white cravat, red armband and navy uniform agree with the original crusch01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0135.png",
+              "originalModelProjectionSha256": "9bec54bde9efa48e00fb366e474c5c4a548e62aab0b2a981c70c6a87c64b15d1",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "16": {
@@ -1813,7 +2577,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1834,7 +2597,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1888,7 +2650,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 145.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 142.0,
+                "end": 145.5,
+                "sourceAnchorSeconds": 142,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/004350-dialogue.png",
+                "ocrEventId": "merged-0034",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "クルシュ様、クルシュ様、気にするところってそこですかあ？",
+                "ocrConfidence": 0.9685,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-145.3500.png",
+              "frameSha256": "ef2f871b2ce25deb50fe44c3d6c979e119a6a0ec0f41a1ce8827bae763fc4f62",
+              "previousObservationFrameSha256": "e1e66d7a0d91499e5c11316e029432213ecebfe3b46c20b7196b29ff224c6e18",
+              "candidateIndexFrameSha256": "ef2f871b2ce25deb50fe44c3d6c979e119a6a0ec0f41a1ce8827bae763fc4f62",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "ferris_dress01",
+              "reason": "Brown cat ears/hair, blue-white hair ribbons, open shoulders and blue-white dress agree with the original ferris_dress01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0142.png",
+              "originalModelProjectionSha256": "e18fa61db1005e0c92b59a5fad6a830428773ab43e859e5bc017e1452f533601",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "17": {
@@ -1918,7 +2755,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -1939,7 +2775,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1993,7 +2828,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 147.85,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 147.0,
+                "end": 148.0,
+                "sourceAnchorSeconds": 147,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/004410-dialogue.png",
+                "ocrEventId": "merged-0035",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "ってことは……",
+                "ocrConfidence": 0.94852,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-147.8500.png",
+              "frameSha256": "026bed110270866527e3a38e9eb81f72525e823159ecd9d7828cacf6033c2bc6",
+              "previousObservationFrameSha256": "d724487712c7166fac654b795956765cd7fe36d80d8bf6297ee76dd300564f8b",
+              "candidateIndexFrameSha256": "026bed110270866527e3a38e9eb81f72525e823159ecd9d7828cacf6033c2bc6",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "subaru_gown01",
+              "reason": "Black swept hair and the visible loose gray cross-collar sleeping gown agree with the original subaru_gown01 projection; no black/orange tracksuit or butler uniform is present.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0147.png",
+              "originalModelProjectionSha256": "af349222f60f4005be9665737f3c32d66b8137235cfee250783f1e4eb314fabc",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "18": {
@@ -2023,7 +2933,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2044,7 +2953,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2164,7 +3072,83 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-choices-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingPart": 22,
+              "recordingId": "bili-capital-22",
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 149.65,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-agent-choice-supplement/cast-149.6500.png",
+              "frameSha256": "c67f17a413862c8afba1b96d3661075f3089e709745994dcff101d487df7c5fb",
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 149.0,
+                "end": 176.0,
+                "sourceAnchorSeconds": 149,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/005070-dialogue.png",
+                "ocrEventId": "merged-0036",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "お腹の傷はフェリちゃんが魔法で治したげたってわけ。で、あとは豪華なお屋敷で療養中ってとこ",
+                "ocrConfidence": 0.99884,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "sourceMapping": null,
+              "primaryObservation": {
+                "time": 175.85,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-175.8500.png",
+                "frameSha256": "4f07ac6f3e0f58c0efd79490e432e5993a8313e0a628d40f8b969f4acbfef905",
+                "timeBasis": "evidence_end_minus_150ms"
+              },
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-agent-choice-supplement/source-contact-01.jpg",
+              "contactSha256": "83c5c904f9d58ae1a6c7c9606cb729737253be16d0c20d2a5f5fcbc625743ac8",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-agent-choice-supplement/observation-evidence.json",
+              "sourceObservationIndexSha256": "deec0fc18b6219fb2e72784d6f900ac40796d406c1d082d14f8e0f8db6b394df",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0142.png",
+              "originalModelProjectionSha256": "e18fa61db1005e0c92b59a5fad6a830428773ab43e859e5bc017e1452f533601",
+              "decisionBasis": "direct_original_frame_and_original_model_identity_review_at_earlier_same_card_phase",
+              "reason": "Brown cat ears/hair, blue-white hair ribbons, open shoulders and blue-white dress agree with the original ferris_dress01 projection. The earlier same-card source frame clearly shows the stage actor before the late blurred text/choice phase.",
+              "selectedModel": "ferris_dress01",
+              "unrecovered": [
+                "body_command",
+                "facial_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22-choices/character-only-packet.json",
+                "sourcePacketSha256": "e352ffd7127031f682cc8e8ec98aba61ea5e7807a4a263ac7a0b694ac4e05cd7",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "19": {
@@ -2194,7 +3178,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2215,7 +3198,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2269,7 +3251,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 182.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 179.0,
+                "end": 182.5,
+                "sourceAnchorSeconds": 179,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/dialogue-completion-2hz/crops/005475-dialogue.png",
+                "ocrEventId": "merged-0041",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "それ褒めてるの？ふざけてるの？よくわかんにゃいんだけど",
+                "ocrConfidence": 0.98738,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-182.3500.png",
+              "frameSha256": "d829a1471da04c67942c31540e618fd7368135dda010a0389db99460568dc49f",
+              "previousObservationFrameSha256": "b2608e4deba0481dd978aaaa436897c93c94c951b00b4ac853f6689bf4cbc340",
+              "candidateIndexFrameSha256": "d829a1471da04c67942c31540e618fd7368135dda010a0389db99460568dc49f",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "ferris_dress01",
+              "reason": "Brown cat ears/hair, blue-white hair ribbons, open shoulders and blue-white dress agree with the original ferris_dress01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0179.png",
+              "originalModelProjectionSha256": "7e0a21b5a17f369255d9f1974215035f01e951a605ab618510c40a8dcff42f5d",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "20": {
@@ -2313,7 +3370,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2334,7 +3390,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2396,7 +3451,96 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 187.0,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 184.0,
+                "end": 187.5,
+                "sourceAnchorSeconds": 184,
+                "ocrReviewed": true,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/005610-dialogue.png",
+                "ocrEventId": "merged-0042",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "俺ちょっと状況見えてねえんだけどそっちの美人のお姉さんは……？",
+                "ocrConfidence": 0.98879,
+                "ocrReviewReasons": [
+                  "content_variant_conflict"
+                ],
+                "visualReviewer": "root",
+                "rootDecision": {
+                  "interval": [
+                    184,
+                    187.5
+                  ],
+                  "action": "replace",
+                  "speaker": "スバル",
+                  "text": "俺ちょっと状況見えてねえんだけど\nそっちの美人のお姉さんは……？",
+                  "witnessTime": 187
+                },
+                "rootReviewWitnessTime": 187,
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/root-review/frames/83e08bb46ec7-005610.jpg",
+              "frameSha256": "e6d3ea5599a4f437ad0657dc10af52380ce20cf72cf77d78541cf6de4d463f16",
+              "previousObservationFrameSha256": "e6d3ea5599a4f437ad0657dc10af52380ce20cf72cf77d78541cf6de4d463f16",
+              "candidateIndexFrameSha256": "e6d3ea5599a4f437ad0657dc10af52380ce20cf72cf77d78541cf6de4d463f16",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "subaru_gown01",
+              "reason": "Black swept hair and the visible loose gray cross-collar sleeping gown agree with the original subaru_gown01 projection; no black/orange tracksuit or butler uniform is present.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0184.png",
+              "originalModelProjectionSha256": "c57732df9fc6451b48aeb160310037de4312b5235505a43c235a4d052c26b7bf",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "21": {
@@ -2440,7 +3584,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2461,7 +3604,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2523,7 +3665,96 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 193.0,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 189.0,
+                "end": 194.0,
+                "sourceAnchorSeconds": 189,
+                "ocrReviewed": true,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/005790-dialogue.png",
+                "ocrEventId": "merged-0043",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "挨拶が遅れたな。私はクルシュ・カルステン。カルステン家の当主にしてこの屋敷の主だ",
+                "ocrConfidence": 0.9904,
+                "ocrReviewReasons": [
+                  "content_variant_conflict"
+                ],
+                "visualReviewer": "root",
+                "rootDecision": {
+                  "interval": [
+                    189,
+                    194
+                  ],
+                  "action": "replace",
+                  "speaker": "クルシュ",
+                  "text": "挨拶が遅れたな。\n私はクルシュ・カルステン。\nカルステン家の当主にしてこの屋敷の主だ",
+                  "witnessTime": 193
+                },
+                "rootReviewWitnessTime": 193,
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/root-review/frames/83e08bb46ec7-005790.jpg",
+              "frameSha256": "a58978ca414a2640ab34e073ebf454ec1ca8ad246c738c0ce20e273aafb15fe0",
+              "previousObservationFrameSha256": "a58978ca414a2640ab34e073ebf454ec1ca8ad246c738c0ce20e273aafb15fe0",
+              "candidateIndexFrameSha256": "a58978ca414a2640ab34e073ebf454ec1ca8ad246c738c0ce20e273aafb15fe0",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "crusch01",
+              "reason": "Long green hair, small navy cap, gold epaulettes, white cravat, red armband and navy uniform agree with the original crusch01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0189.png",
+              "originalModelProjectionSha256": "54460780e1b402f953eadc4b5524fbea4525f2e71872a3a03c0ca3a59054c029",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "22": {
@@ -2567,7 +3798,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2588,7 +3818,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2650,7 +3879,96 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 200.0,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 194.5,
+                "end": 201.0,
+                "sourceAnchorSeconds": 194.5,
+                "ocrReviewed": true,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/006000-dialogue.png",
+                "ocrEventId": "merged-0044",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "そして、これは私の騎士であるフェリス。治癒術師としては王国一の腕を持つ。卿の一時の安静と、当家への逗留を歓迎する",
+                "ocrConfidence": 0.98816,
+                "ocrReviewReasons": [
+                  "content_variant_conflict"
+                ],
+                "visualReviewer": "root",
+                "rootDecision": {
+                  "interval": [
+                    194.5,
+                    201
+                  ],
+                  "action": "replace",
+                  "speaker": "クルシュ",
+                  "text": "そして、これは私の騎士であるフェリス。\n治癒術師としては王国一の腕を持つ。\n卿の一時の安静と、当家への逗留を歓迎する",
+                  "witnessTime": 200
+                },
+                "rootReviewWitnessTime": 200,
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/root-review/frames/83e08bb46ec7-006000.jpg",
+              "frameSha256": "9071a9ecb5a4ecdd9fe2581ae729e4ba72a3793e052bca19bc561069224f29cf",
+              "previousObservationFrameSha256": "9071a9ecb5a4ecdd9fe2581ae729e4ba72a3793e052bca19bc561069224f29cf",
+              "candidateIndexFrameSha256": "9071a9ecb5a4ecdd9fe2581ae729e4ba72a3793e052bca19bc561069224f29cf",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "crusch01",
+              "reason": "Long green hair, small navy cap, gold epaulettes, white cravat, red armband and navy uniform agree with the original crusch01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0194p5.png",
+              "originalModelProjectionSha256": "581465742e20f8084b82910e5de1e025e2053084be98e865a0699dfc8e389fda",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "23": {
@@ -2694,7 +4012,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2715,7 +4032,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2777,7 +4093,96 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 207.5,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 202.0,
+                "end": 207.5,
+                "sourceAnchorSeconds": 202,
+                "ocrReviewed": true,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/dialogue-completion-2hz/crops/006225-dialogue.png",
+                "ocrEventId": "merged-0045",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "なんか、すげぇ話が一気に飛び出したな！？お姉さんがクルシュさんで公爵で当主で美人！？",
+                "ocrConfidence": 0.96706,
+                "ocrReviewReasons": [
+                  "content_variant_conflict"
+                ],
+                "visualReviewer": "root",
+                "rootDecision": {
+                  "interval": [
+                    202,
+                    207.5
+                  ],
+                  "action": "replace",
+                  "speaker": "スバル",
+                  "text": "なんか、すげぇ話が一気に飛び出したな！？\nお姉さんがクルシュさんで\n公爵で当主で美人！？",
+                  "witnessTime": 207.5
+                },
+                "rootReviewWitnessTime": 207.5,
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/root-review/frames/83e08bb46ec7-006225.jpg",
+              "frameSha256": "42e6991515f092a683b70785d19967d4fa2ed2d24f31c9ec60b5df9cabb4fa0b",
+              "previousObservationFrameSha256": "42e6991515f092a683b70785d19967d4fa2ed2d24f31c9ec60b5df9cabb4fa0b",
+              "candidateIndexFrameSha256": "42e6991515f092a683b70785d19967d4fa2ed2d24f31c9ec60b5df9cabb4fa0b",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "subaru_gown01",
+              "reason": "Black swept hair and the visible loose gray cross-collar sleeping gown agree with the original subaru_gown01 projection; no black/orange tracksuit or butler uniform is present.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0202.png",
+              "originalModelProjectionSha256": "7465990f3743cb3e75fe8ed2b2ee1fba090f72cef435a761c2286792977d0339",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "24": {
@@ -2807,7 +4212,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2828,7 +4232,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2882,7 +4285,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 214.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 209.0,
+                "end": 214.5,
+                "sourceAnchorSeconds": 209,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/dialogue-completion-2hz/crops/006435-dialogue.png",
+                "ocrEventId": "merged-0046",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "あはは、混乱してる混乱してる。いいよいいよ、どんどん悩みにゃさい。で、そんにゃ君のお名前は？",
+                "ocrConfidence": 0.98205,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-214.3500.png",
+              "frameSha256": "778e5d927b432e3d4540c363a7d59153d561e2c3a33d03c5fe257265d912f3c3",
+              "previousObservationFrameSha256": "074f7827e566834eaadd3e42ef81fbee8ce9a18612c937c6f1b6c2cca194c5ef",
+              "candidateIndexFrameSha256": "778e5d927b432e3d4540c363a7d59153d561e2c3a33d03c5fe257265d912f3c3",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "ferris_dress01",
+              "reason": "Brown cat ears/hair, blue-white hair ribbons, open shoulders and blue-white dress agree with the original ferris_dress01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0209.png",
+              "originalModelProjectionSha256": "b487a229b936ff7081d9fbd5ecb218e9ca43fb63692e7365a02c637e511f769b",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "25": {
@@ -2912,7 +4390,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -2933,7 +4410,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2987,7 +4463,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 219.35,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 216.0,
+                "end": 219.5,
+                "sourceAnchorSeconds": 216,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/006570-dialogue.png",
+                "ocrEventId": "merged-0047",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "あ……俺の名前は、ナツキ・スバルだ。一気呵成の一文無し、かな？",
+                "ocrConfidence": 0.98918,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-219.3500.png",
+              "frameSha256": "a3b2ed9ce77b0abb57ad030c6069c735d8e1e1fe3b7a38ce768aa6bb3cef168c",
+              "previousObservationFrameSha256": "7fe8d8037df62e8ac36dab5717d778d40580f966c477ff71fd46037574769c82",
+              "candidateIndexFrameSha256": "a3b2ed9ce77b0abb57ad030c6069c735d8e1e1fe3b7a38ce768aa6bb3cef168c",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-02.jpg",
+              "contactSha256": "593ccc6e73299c5d28b274377c0e2ca37c3047532fd728c0e2ca1b7db465b890",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "subaru_gown01",
+              "reason": "Black swept hair and the visible loose gray cross-collar sleeping gown agree with the original subaru_gown01 projection; no black/orange tracksuit or butler uniform is present.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0216.png",
+              "originalModelProjectionSha256": "238775cf311e05501d9a0b16fd357b0123832fa9137d6241c674d5ac01f1774c",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "26": {
@@ -3017,7 +4568,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3038,7 +4588,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3095,7 +4644,82 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030005.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p21-p22-character-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-22",
+              "recordingPart": 22,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+              "videoSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+              "time": 224.85,
+              "sourceMapping": null,
+              "originalEvidence": {
+                "segmentId": "p22-s10030005",
+                "start": 221.0,
+                "end": 225.0,
+                "sourceAnchorSeconds": 221,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/006720-dialogue.png",
+                "ocrEventId": "merged-0048",
+                "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
+                "originalOCRText": "別に、そんな不安がらなくても、お金取ったりしにゃいってば～、もう",
+                "ocrConfidence": 0.97949,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-22"
+              },
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/cast-224.8500.png",
+              "frameSha256": "d37c7944689dfaf29ba1b05b5a346e4ac1d05f1237b5c4156a7a2a2449e6c41c",
+              "previousObservationFrameSha256": "0abbcd1c44dddac8f2989bda02532da7657680cbc4b163e58bf59caad278c721",
+              "candidateIndexFrameSha256": "d37c7944689dfaf29ba1b05b5a346e4ac1d05f1237b5c4156a7a2a2449e6c41c",
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/identity-03.jpg",
+              "contactSha256": "d80347c31177893798c451a31973c1e65329b9a1cf0574b5cc9975d6cb55bc39",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/index.json",
+              "candidateIndexSha256": "d96bfb2c12610a1561d19a643f9cc34449b4d130873521eafc871a5b8b437219",
+              "sourceObservationIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all/observation-evidence.json",
+              "sourceObservationIndexSha256": "62a4dac2016dc33025771d62f71b008961320c4afd0961e60cd7999b23976317",
+              "unrecovered": [
+                "motion",
+                "face_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_confirmed",
+              "selectedModel": "ferris_dress01",
+              "reason": "Brown cat ears/hair, blue-white hair ribbons, open shoulders and blue-white dress agree with the original ferris_dress01 projection.",
+              "decisionBasis": "direct_stage_and_original_model_projection_review",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p22-all-review/native-s10030005-p22-at0221.png",
+              "originalModelProjectionSha256": "0f1bfb52d67a2b9ba9d612337c34495edf6702a0d2b992763dbb43b567ff44cd",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p21-p22/character-only-packet.json",
+                "sourcePacketSha256": "e941dcb84cd987ebbdddd63cea17bc994129d9d7e640a4dcb3a597e611bf82f9",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     }
   },
@@ -3104,6 +4728,11 @@
       "code": "native_metadata_unrecovered",
       "severity": "warning",
       "message": "The draft uses authored IDs, zero default gain vectors and no invented branch lock rules."
+    },
+    {
+      "code": "draft_not_playback_verified",
+      "severity": "warning",
+      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     },
     {
       "code": "performance_unrecovered",
@@ -3133,7 +4762,6 @@
       "scenarioId": 2,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -3154,7 +4782,6 @@
       "scenarioId": 3,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -3182,7 +4809,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3236,7 +4862,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3311,7 +4936,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3325,6 +4949,13 @@
       ]
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 9,
+      "branchId": 92
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -3332,7 +4963,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3359,7 +4989,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3386,7 +5015,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3413,7 +5041,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3440,7 +5067,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3460,6 +5086,13 @@
       "scenarioId": 14
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 14,
+      "branchId": 143
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -3467,7 +5100,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3494,7 +5126,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3521,7 +5152,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3548,7 +5178,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3568,6 +5197,13 @@
       "scenarioId": 18
     },
     {
+      "code": "missing_transition",
+      "severity": "warning",
+      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
+      "scenarioId": 18,
+      "branchId": 182
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -3575,7 +5211,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3602,7 +5237,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3623,7 +5257,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3644,7 +5277,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3665,7 +5297,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3686,7 +5317,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3713,7 +5343,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3740,7 +5369,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3758,32 +5386,6 @@
       "severity": "warning",
       "message": "Some text evidence still needs visual review.",
       "scenarioId": 26
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 9,
-      "branchId": 92
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 14,
-      "branchId": 143
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination.",
-      "scenarioId": 18,
-      "branchId": 182
-    },
-    {
-      "code": "draft_not_playback_verified",
-      "severity": "warning",
-      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     }
   ],
   "unresolvedBranches": [

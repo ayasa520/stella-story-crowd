@@ -163,7 +163,6 @@
           "scenarioId": 2,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -289,7 +288,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character",
         "character_image",
@@ -310,7 +308,6 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 3,
           "fields": [
-            "bg_music",
             "bg_picture",
             "character",
             "character_image",
@@ -375,7 +372,149 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280015.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-music-sparse.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "proposalReviewer": "repair_graphs",
+              "rootSignoffRequired": true,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "sourceText": "――盗品蔵・夕刻",
+              "sourceSpeaker": "",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/remaining-music-boundaries/scene15-comical-entry.json",
+              "waveformAnchors": [
+                {
+                  "query": {
+                    "id": "scene15-comical-entry-287.00",
+                    "bgm_time": 287.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_comical02_cd2_09",
+                      "score": 0.5994,
+                      "track_time": 176.07,
+                      "time": 287.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "scene15-comical-entry-287.50",
+                    "bgm_time": 287.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_comical02_cd2_09",
+                      "score": 0.854,
+                      "track_time": 0.168,
+                      "time": 287.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "scene15-comical-entry-288.00",
+                    "bgm_time": 288.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_comical02_cd2_09",
+                      "score": 0.9412,
+                      "track_time": 177.07,
+                      "time": 288.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                }
+              ],
+              "adjacentCardContact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry-focused-v2.jpg",
+              "adjacentCardFrames": [
+                {
+                  "index": 32,
+                  "sourceTime": 286.723,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry/frame-033.jpg",
+                  "sha256": "ddea8e7d74c8c018b7630baa5a46e6d1e09adaaa32b1d2faa21549436680df5b"
+                },
+                {
+                  "index": 34,
+                  "sourceTime": 286.923,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry/frame-035.jpg",
+                  "sha256": "e4b4c91706800e31e219dcf4cb7fedbf8d479f43deeadb8c178af10db8adee21"
+                },
+                {
+                  "index": 36,
+                  "sourceTime": 287.123,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry/frame-037.jpg",
+                  "sha256": "b92455ba5fb5ace93019369a606f084099725f9b0c0961a73a7a02a7403aef1e"
+                },
+                {
+                  "index": 38,
+                  "sourceTime": 287.323,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry/frame-039.jpg",
+                  "sha256": "8407d3fc04f384fcb0f7e438d2c75c4513b41473afb7c54a9baad94eb82196cd"
+                },
+                {
+                  "index": 40,
+                  "sourceTime": 287.523,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry/frame-041.jpg",
+                  "sha256": "633ec5f46dc78c635801c2b264f7ac00aa86ae9e91b3cd557c10d8b92e123cde"
+                },
+                {
+                  "index": 42,
+                  "sourceTime": 287.723,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry/frame-043.jpg",
+                  "sha256": "e4191f470b43633361d3a73f3b1d4a1481afe20a36912dea878f0a14ca488888"
+                },
+                {
+                  "index": 44,
+                  "sourceTime": 287.923,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry/frame-045.jpg",
+                  "sha256": "e61cef2d39e4a50ab104a2b17bcb76fd3cff501695a504ffc16c9fa3a627e9db"
+                },
+                {
+                  "index": 46,
+                  "sourceTime": 288.123,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry/frame-047.jpg",
+                  "sha256": "e790b19db35c0e4e4a625c9d2de81a9a0e324fa902396ed259f6d7c63a928fad"
+                },
+                {
+                  "index": 48,
+                  "sourceTime": 288.323,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-comical-entry/frame-049.jpg",
+                  "sha256": "bf772140b9391693e681a2015bdde19578dc54a6aa2bc923524989b8fd8b33f4"
+                }
+              ],
+              "personallyReadFrameObservation": "The summary remains through286.923; the location panel starts287.123 and types『盗品蔵・夕刻』during287.323–287.923.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "authoringConvention": {
+                "fadeSeconds": 1,
+                "csvFinalFlag": false,
+                "basis": "Proposed use of the default one-second authoring convention accepted for the first three episodes; recording does not uniquely recover original phase, CSV or exact fade duration."
+              },
+              "inheritanceDecision": "Write only this sparse resource change/stop event; retain empty inherited fields elsewhere.",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root personally viewed all thirteen focused source card-boundary sheets and inspected the multiple original-track waveform correlations and exact-zero intervals. Approve only these sparse track/stop events at the identified cards. One-second fade and false restart are the accepted native authoring convention, not recovered original P11 CSV or exact command phases. Resource loading and previous/current/next playback remain required.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-sparse-music-proposals.json",
+                "sourcePacketSha256": "4708e4fbbfc0c92c424ca84026c05e0a3210049f64c5721e6897be46b6f76b49",
+                "scope": [
+                  "bg_music"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "4": {
@@ -425,7 +564,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -556,7 +694,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -702,7 +839,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -842,7 +978,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -973,7 +1108,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1104,7 +1238,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1227,7 +1360,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character_image",
         "command",
@@ -1247,9 +1379,7 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 10,
           "fields": [
-            "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1337,6 +1467,153 @@
               "scopeEntryStableKey": "s10280015-p11-at0320",
               "bodyFaceStatus": "Identity-only patch. Independent body, face, and added layers remain unresolved."
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-music-sparse.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "proposalReviewer": "repair_graphs",
+              "rootSignoffRequired": true,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "sourceText": "え？",
+              "sourceSpeaker": "スバル",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/remaining-music-boundaries/next-scene-fuon-entry.json",
+              "waveformAnchors": [
+                {
+                  "query": {
+                    "id": "next-scene-fuon-entry-320.00",
+                    "bgm_time": 320.0
+                  },
+                  "candidates": []
+                },
+                {
+                  "query": {
+                    "id": "next-scene-fuon-entry-320.50",
+                    "bgm_time": 320.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_fuon02_cd2_14",
+                      "score": 0.7987,
+                      "track_time": 250.554,
+                      "time": 320.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "next-scene-fuon-entry-321.00",
+                    "bgm_time": 321.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_fuon02_cd2_14",
+                      "score": 0.8153,
+                      "track_time": 251.054,
+                      "time": 321.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "next-scene-fuon-entry-321.50",
+                    "bgm_time": 321.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_fuon02_cd2_14",
+                      "score": 0.8513,
+                      "track_time": 251.554,
+                      "time": 321.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                }
+              ],
+              "adjacentCardContact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry-focused-v2.jpg",
+              "adjacentCardFrames": [
+                {
+                  "index": 0,
+                  "sourceTime": 318.523,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry/frame-001.jpg",
+                  "sha256": "ce72229d3a1eb2aa8c0ef210fe13b581403881b75d483f418d549aad23248641"
+                },
+                {
+                  "index": 4,
+                  "sourceTime": 318.923,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry/frame-005.jpg",
+                  "sha256": "f6d4329da4114174865205bf0d56522212c1dc74612af7cbbcd49cf60aa300f9"
+                },
+                {
+                  "index": 8,
+                  "sourceTime": 319.323,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry/frame-009.jpg",
+                  "sha256": "d4df87a918e18ccd40a45ee8c503228feb55bc025d99cb81e96bf19ab0fdc70d"
+                },
+                {
+                  "index": 12,
+                  "sourceTime": 319.723,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry/frame-013.jpg",
+                  "sha256": "a2c791a3071ac3fd349a166d0671d0b7acb7c927bf674491df65ead5789e8449"
+                },
+                {
+                  "index": 16,
+                  "sourceTime": 320.123,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry/frame-017.jpg",
+                  "sha256": "26f4165545f076a2b71adfb52d53a2c47c5e0f6d3bb1ec7f5066ca0a88ac57d9"
+                },
+                {
+                  "index": 20,
+                  "sourceTime": 320.523,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry/frame-021.jpg",
+                  "sha256": "5d35eb997392ed10542af1a8767c5c4b0f30dedffef8167d5ce54bda349af2b6"
+                },
+                {
+                  "index": 24,
+                  "sourceTime": 320.923,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry/frame-025.jpg",
+                  "sha256": "57ef3ba351b004457ecd82b2431cadb70a8240699cae3b2d29244c038a78e2a3"
+                },
+                {
+                  "index": 28,
+                  "sourceTime": 321.323,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry/frame-029.jpg",
+                  "sha256": "18667f99e81186dd4fda40326cce24e019fb6a7afc63f5ca2646451e8f533449"
+                },
+                {
+                  "index": 32,
+                  "sourceTime": 321.723,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-entry/frame-033.jpg",
+                  "sha256": "4d02aafa4ede13de47d52a4d497899e8f59de0a05510604ee91f4211a43f716c"
+                }
+              ],
+              "personallyReadFrameObservation": "Subaru enters during319.6 and the『え？』panel is visible319.823–321.223 while the new track is already strongly matched. This belongs to Subaru's card, before the subsequent Ram card at322.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "authoringConvention": {
+                "fadeSeconds": 1,
+                "csvFinalFlag": false,
+                "basis": "Proposed use of the default one-second authoring convention accepted for the first three episodes; recording does not uniquely recover original phase, CSV or exact fade duration."
+              },
+              "inheritanceDecision": "Write only this sparse resource change/stop event; retain empty inherited fields elsewhere.",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root personally viewed all thirteen focused source card-boundary sheets and inspected the multiple original-track waveform correlations and exact-zero intervals. Approve only these sparse track/stop events at the identified cards. One-second fade and false restart are the accepted native authoring convention, not recovered original P11 CSV or exact command phases. Resource loading and previous/current/next playback remain required.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-sparse-music-proposals.json",
+                "sourcePacketSha256": "4708e4fbbfc0c92c424ca84026c05e0a3210049f64c5721e6897be46b6f76b49",
+                "scope": [
+                  "bg_music"
+                ]
+              }
+            }
           }
         ]
       }
@@ -1388,7 +1665,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1519,7 +1795,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1665,7 +1940,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1805,7 +2079,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1936,7 +2209,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2067,7 +2339,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2198,7 +2469,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2343,7 +2613,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2497,7 +2766,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2651,7 +2919,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2790,7 +3057,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2921,7 +3187,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3052,7 +3317,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3183,7 +3447,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3314,7 +3577,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3445,7 +3707,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3576,7 +3837,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3707,7 +3967,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3838,7 +4097,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3983,7 +4241,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4122,7 +4379,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4253,7 +4509,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4398,7 +4653,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4537,7 +4791,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4682,7 +4935,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4799,7 +5051,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character_image",
         "command",
@@ -4819,9 +5070,7 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 36,
           "fields": [
-            "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4901,6 +5150,174 @@
               "scopeEntryStableKey": "s10280015-p11-at0433",
               "bodyFaceStatus": "Identity-only patch. Independent body, face, and added layers remain unresolved."
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-music-stops.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "proposalReviewer": "repair_graphs",
+              "rootSignoffRequired": true,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "sourceText": "それに、敵意を隠せていないわ",
+              "sourceSpeaker": "黒衣の女性",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/remaining-music-boundaries/attack-music-change.json",
+              "waveformAnchors": [
+                {
+                  "query": {
+                    "id": "attack-music-change-431.00",
+                    "bgm_time": 431.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_fuon02_cd2_14",
+                      "score": 0.7368,
+                      "track_time": 110.766,
+                      "time": 431.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    },
+                    {
+                      "id": "bgm_adv_kinpaku01_cd2_23",
+                      "score": 0.2668,
+                      "track_time": 101.025,
+                      "time": 431.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "attack-music-change-431.50",
+                    "bgm_time": 431.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_fuon02_cd2_14",
+                      "score": 0.4811,
+                      "track_time": 111.266,
+                      "time": 431.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "attack-music-change-432.00",
+                    "bgm_time": 432.0
+                  },
+                  "candidates": []
+                },
+                {
+                  "query": {
+                    "id": "attack-music-change-432.50",
+                    "bgm_time": 432.5
+                  },
+                  "candidates": []
+                },
+                {
+                  "query": {
+                    "id": "attack-music-change-434.00",
+                    "bgm_time": 434.0
+                  },
+                  "candidates": []
+                }
+              ],
+              "adjacentCardContact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop-focused-v3.jpg",
+              "adjacentCardFrames": [
+                {
+                  "index": 5,
+                  "sourceTime": 431.222,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop/frame-006.jpg",
+                  "sha256": "b414e90344ac972da26e322e49a9b352640bcd4c246859396cfbd05e1bdbaac4"
+                },
+                {
+                  "index": 7,
+                  "sourceTime": 431.422,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop/frame-008.jpg",
+                  "sha256": "b20d1146a8b591d376307e95f640e7bd021b25a01a642d15d3ff45628401b510"
+                },
+                {
+                  "index": 9,
+                  "sourceTime": 431.622,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop/frame-010.jpg",
+                  "sha256": "e5a38a60666a8ee886021c57d864422f9f9ec1c6df6f7bf70bd90f95ba2df345"
+                },
+                {
+                  "index": 11,
+                  "sourceTime": 431.822,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop/frame-012.jpg",
+                  "sha256": "56204aa41d8c5d4ab6819d3c970cec4c0e1dde11df43095e9c5a7c9f6ee366bd"
+                },
+                {
+                  "index": 13,
+                  "sourceTime": 432.022,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop/frame-014.jpg",
+                  "sha256": "91ccfa8dbd4860f77eaa226ad1db7dfd9e06916c79af420c6d13f2a96d8b74c5"
+                },
+                {
+                  "index": 15,
+                  "sourceTime": 432.222,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop/frame-016.jpg",
+                  "sha256": "e4f65adca1f78b151e44f874fbf6df72a1241071b6780c6a7f4b2abbb81614b4"
+                },
+                {
+                  "index": 17,
+                  "sourceTime": 432.422,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop/frame-018.jpg",
+                  "sha256": "14585f23f2ed74c8ae2aa098655742df80ebc7a44623768e52851f4e1a910df4"
+                },
+                {
+                  "index": 19,
+                  "sourceTime": 432.622,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop/frame-020.jpg",
+                  "sha256": "b9fbbd1f1d58fe4fc0fbf0f504bb92a316644f639062961b6249431683377967"
+                },
+                {
+                  "index": 21,
+                  "sourceTime": 432.822,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene15-fuon-stop/frame-022.jpg",
+                  "sha256": "99a47ad9b1114fb59e9cdfda52eaa4eceb74c8f4ada33f2d6c913a6ea16eec37"
+                }
+              ],
+              "personallyReadFrameObservation": "Elsa remains visible with no panel431.222–431.822; her new『それに、敵意を隠せていないわ』panel appears432.022–432.222. This is distinct from the subsequent Ram warning and attack.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "authoringConvention": {
+                "fadeSeconds": 1,
+                "csvFinalFlag": false,
+                "basis": "Proposed use of the default one-second authoring convention accepted for the first three episodes; recording does not uniquely recover original phase, CSV or exact fade duration."
+              },
+              "inheritanceDecision": "Write only this sparse resource change/stop event; retain empty inherited fields elsewhere.",
+              "sourceEnergyEvidence": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/stop-energy/scene15-fuon-stop.json",
+              "measuredExactZeroIntervals": [
+                [
+                  432.15,
+                  432.2
+                ],
+                [
+                  432.3,
+                  435.3
+                ],
+                [
+                  438.6,
+                  438.65
+                ]
+              ],
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root directly viewed all three focused-v3 source boundary sheets and inspected decaying original-cue waveform correlations plus subsequent exact-zero audio intervals. In particular the 816s voice-occluded dip is not a stop: the cue is still strongly present at819.5/820 and fades on Elsa card51. Approve these sparse stops with accepted one-second convention; original P11 command phases and exact fade durations remain unknown.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-supplement-music-proposals.json",
+                "sourcePacketSha256": "cc9bf2d878abe904328d6c0df0532a25ae65a8419702a981061c2cf17919077a",
+                "scope": [
+                  "bg_music"
+                ]
+              }
+            }
           }
         ]
       }
@@ -4966,7 +5383,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5083,7 +5499,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character_image",
         "command",
@@ -5103,9 +5518,7 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 38,
           "fields": [
-            "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5185,6 +5598,153 @@
               "scopeEntryStableKey": "s10280015-p11-at0441",
               "bodyFaceStatus": "Identity-only patch. Independent body, face, and added layers remain unresolved."
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-music-sparse.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "proposalReviewer": "repair_graphs",
+              "rootSignoffRequired": true,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "sourceText": "うおお!？なんだなんだなんだ!？",
+              "sourceSpeaker": "スバル",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/remaining-music-boundaries/attack-music-change.json",
+              "waveformAnchors": [
+                {
+                  "query": {
+                    "id": "attack-music-change-440.50",
+                    "bgm_time": 440.5
+                  },
+                  "candidates": []
+                },
+                {
+                  "query": {
+                    "id": "attack-music-change-441.00",
+                    "bgm_time": 441.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_kinpaku01_cd2_23",
+                      "score": 0.6784,
+                      "track_time": 227.627,
+                      "time": 441.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "attack-music-change-441.50",
+                    "bgm_time": 441.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_kinpaku01_cd2_23",
+                      "score": 0.9855,
+                      "track_time": 228.127,
+                      "time": 441.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "attack-music-change-442.00",
+                    "bgm_time": 442.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_kinpaku01_cd2_23",
+                      "score": 0.9951,
+                      "track_time": 228.627,
+                      "time": 442.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                }
+              ],
+              "adjacentCardContact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry-focused-v2.jpg",
+              "adjacentCardFrames": [
+                {
+                  "index": 0,
+                  "sourceTime": 439.522,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry/frame-001.jpg",
+                  "sha256": "6801580c775dd8cb4d7ebeb93717b2421a8b3b4e3e4a6fd57556f2a5d80af33e"
+                },
+                {
+                  "index": 3,
+                  "sourceTime": 439.822,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry/frame-004.jpg",
+                  "sha256": "c9379cf634744d0703e758cadc5880be9bb25bbd9acf88f111609de72cfb13dd"
+                },
+                {
+                  "index": 6,
+                  "sourceTime": 440.122,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry/frame-007.jpg",
+                  "sha256": "0aab89bd21b5fd643bd978926b1dc5e3e42714ddd17035fbf94e0311d6e8dfdf"
+                },
+                {
+                  "index": 9,
+                  "sourceTime": 440.422,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry/frame-010.jpg",
+                  "sha256": "2986f932526448accc829c154037d02613b16a51de510ea63b17c238c9be11aa"
+                },
+                {
+                  "index": 12,
+                  "sourceTime": 440.722,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry/frame-013.jpg",
+                  "sha256": "1c50d132b5fc5ecf710a7acfea2a138458355732d261c0b7bcd05ef7eaa895de"
+                },
+                {
+                  "index": 15,
+                  "sourceTime": 441.022,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry/frame-016.jpg",
+                  "sha256": "4107c5d60bd6921979cfcee04e688bb95eaa9f65a182100c96396444b08aa5b9"
+                },
+                {
+                  "index": 18,
+                  "sourceTime": 441.322,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry/frame-019.jpg",
+                  "sha256": "c6320f54fedb22be42c9bee7e61c322c26e6b13ba78316ad6b136046809c4347"
+                },
+                {
+                  "index": 21,
+                  "sourceTime": 441.622,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry/frame-022.jpg",
+                  "sha256": "440c8188c327e5b428b8b9891e468357af36b7e9415f17dce4e41c7dc30c7a09"
+                },
+                {
+                  "index": 24,
+                  "sourceTime": 441.922,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/attack-kinpaku-entry/frame-025.jpg",
+                  "sha256": "53480911237bb32b16f9df39d581469b7593339602fbc9dae4a793ba8f026f2c"
+                }
+              ],
+              "personallyReadFrameObservation": "After the attack, Subaru's『うおお！？なんだなんだなんだ！？』card is visible440.422–442.022 while the new track starts. The proposal does not place this track on the earlier Ram warning.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "authoringConvention": {
+                "fadeSeconds": 1,
+                "csvFinalFlag": false,
+                "basis": "Proposed use of the default one-second authoring convention accepted for the first three episodes; recording does not uniquely recover original phase, CSV or exact fade duration."
+              },
+              "inheritanceDecision": "Write only this sparse resource change/stop event; retain empty inherited fields elsewhere.",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root personally viewed all thirteen focused source card-boundary sheets and inspected the multiple original-track waveform correlations and exact-zero intervals. Approve only these sparse track/stop events at the identified cards. One-second fade and false restart are the accepted native authoring convention, not recovered original P11 CSV or exact command phases. Resource loading and previous/current/next playback remain required.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-sparse-music-proposals.json",
+                "sourcePacketSha256": "4708e4fbbfc0c92c424ca84026c05e0a3210049f64c5721e6897be46b6f76b49",
+                "scope": [
+                  "bg_music"
+                ]
+              }
+            }
           }
         ]
       }
@@ -5236,7 +5796,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5367,7 +5926,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5498,7 +6056,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5629,7 +6186,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5760,7 +6316,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -5891,7 +6446,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6022,7 +6576,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -6117,6 +6670,11 @@
       "message": "The draft uses authored IDs, zero default gain vectors and no invented branch lock rules."
     },
     {
+      "code": "draft_not_playback_verified",
+      "severity": "warning",
+      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -6144,7 +6702,6 @@
       "scenarioId": 2,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -6170,7 +6727,6 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 3,
       "fields": [
-        "bg_music",
         "bg_picture",
         "character",
         "character_image",
@@ -6193,7 +6749,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6220,7 +6775,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6247,7 +6801,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6268,7 +6821,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6295,7 +6847,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6322,7 +6873,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6347,9 +6897,7 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 10,
       "fields": [
-        "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6370,7 +6918,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6397,7 +6944,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6424,7 +6970,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6445,7 +6990,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6472,7 +7016,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6499,7 +7042,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6526,7 +7068,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6553,7 +7094,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6574,7 +7114,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6595,7 +7134,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6616,7 +7154,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6643,7 +7180,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6670,7 +7206,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6697,7 +7232,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6724,7 +7258,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6751,7 +7284,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6778,7 +7310,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6805,7 +7336,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6832,7 +7362,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6859,7 +7388,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6880,7 +7408,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6907,7 +7434,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6934,7 +7460,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6955,7 +7480,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -6982,7 +7506,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7001,9 +7524,7 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 36,
       "fields": [
-        "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7030,7 +7551,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7049,9 +7569,7 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 38,
       "fields": [
-        "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7078,7 +7596,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7105,7 +7622,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7132,7 +7648,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7159,7 +7674,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7186,7 +7700,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7213,7 +7726,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7240,7 +7752,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -7258,11 +7769,6 @@
       "severity": "warning",
       "message": "Some text evidence still needs visual review.",
       "scenarioId": 45
-    },
-    {
-      "code": "draft_not_playback_verified",
-      "severity": "warning",
-      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     }
   ],
   "unresolvedBranches": [],

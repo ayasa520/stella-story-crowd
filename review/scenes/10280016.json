@@ -163,7 +163,6 @@
           "scenarioId": 2,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -289,7 +288,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character",
         "character_image",
@@ -310,7 +308,6 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 3,
           "fields": [
-            "bg_music",
             "bg_picture",
             "character",
             "character_image",
@@ -375,7 +372,140 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10280016.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/root-reviewed-p11-music-sparse.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "proposalReviewer": "repair_graphs",
+              "rootSignoffRequired": true,
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+              "sourceSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+              "sourceText": "――盗品蔵・夕刻",
+              "sourceSpeaker": "",
+              "matching": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/remaining-music-boundaries/scene16-kinpaku-entry.json",
+              "waveformAnchors": [
+                {
+                  "query": {
+                    "id": "scene16-kinpaku-entry-480.50",
+                    "bgm_time": 480.5
+                  },
+                  "candidates": []
+                },
+                {
+                  "query": {
+                    "id": "scene16-kinpaku-entry-481.00",
+                    "bgm_time": 481.0
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_kinpaku01_cd2_23",
+                      "score": 0.9687,
+                      "track_time": 0.27,
+                      "time": 481.0,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                },
+                {
+                  "query": {
+                    "id": "scene16-kinpaku-entry-481.50",
+                    "bgm_time": 481.5
+                  },
+                  "candidates": [
+                    {
+                      "id": "bgm_adv_kinpaku01_cd2_23",
+                      "score": 0.969,
+                      "track_time": 0.77,
+                      "time": 481.5,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  ]
+                }
+              ],
+              "adjacentCardContact": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry-focused-v2.jpg",
+              "adjacentCardFrames": [
+                {
+                  "index": 11,
+                  "sourceTime": 480.122,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry/frame-012.jpg",
+                  "sha256": "f3c9d39a4c3f331263cffd99a14a0fd30476c02be1b219c5f993aac13d46bc4b"
+                },
+                {
+                  "index": 13,
+                  "sourceTime": 480.322,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry/frame-014.jpg",
+                  "sha256": "3bff2d5fc111d45ca12b2ff1b0d1415f5a32134f7c588a0bb30989d7c38de1ea"
+                },
+                {
+                  "index": 15,
+                  "sourceTime": 480.522,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry/frame-016.jpg",
+                  "sha256": "fad2d45607a6189e4f8584422824d40b809ffd62f27afc328ce94c7116cf473a"
+                },
+                {
+                  "index": 17,
+                  "sourceTime": 480.722,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry/frame-018.jpg",
+                  "sha256": "bf0919d7b71ace6df2017319f7e2e71a2104c036dd72e12f40f3c1a97b05d1cd"
+                },
+                {
+                  "index": 19,
+                  "sourceTime": 480.922,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry/frame-020.jpg",
+                  "sha256": "1fbf0884a2bf0c41028a2f710f76461db4f412b565a0a2684ab033daef9bacfc"
+                },
+                {
+                  "index": 21,
+                  "sourceTime": 481.122,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry/frame-022.jpg",
+                  "sha256": "febc73194f335813d7cb3c1c61cbfb667a5cea50adc2aa657b628cfe5bbdcf2c"
+                },
+                {
+                  "index": 23,
+                  "sourceTime": 481.322,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry/frame-024.jpg",
+                  "sha256": "5f30725665a6953b89eabb9c24ba6eed1ea8495c75dffd74db088b14ae4cb23e"
+                },
+                {
+                  "index": 25,
+                  "sourceTime": 481.522,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry/frame-026.jpg",
+                  "sha256": "30c53c9b126ad35fc73f36299ea98987de4e216f7ffeba0d8c6b90c61d9500f6"
+                },
+                {
+                  "index": 27,
+                  "sourceTime": 481.722,
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/card-boundary-frames/scene16-kinpaku-entry/frame-028.jpg",
+                  "sha256": "c754e1e68afe0701e7f2c30fba608d8c97f2d9509e8c8ff8c5158dbfc02be640"
+                }
+              ],
+              "personallyReadFrameObservation": "The summary remains480.322; the location panel appears480.522 and types『盗品蔵・夕刻』during480.722–481.322.",
+              "originalPhaseRecovered": false,
+              "originalCsvRecovered": false,
+              "authoringConvention": {
+                "fadeSeconds": 1,
+                "csvFinalFlag": false,
+                "basis": "Proposed use of the default one-second authoring convention accepted for the first three episodes; recording does not uniquely recover original phase, CSV or exact fade duration."
+              },
+              "inheritanceDecision": "Write only this sparse resource change/stop event; retain empty inherited fields elsewhere.",
+              "rootReview": {
+                "reviewer": "root",
+                "decision": "Root personally viewed all thirteen focused source card-boundary sheets and inspected the multiple original-track waveform correlations and exact-zero intervals. Approve only these sparse track/stop events at the identified cards. One-second fade and false restart are the accepted native authoring convention, not recovered original P11 CSV or exact command phases. Resource loading and previous/current/next playback remain required.",
+                "sourcePacket": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-sparse-music-proposals.json",
+                "sourcePacketSha256": "4708e4fbbfc0c92c424ca84026c05e0a3210049f64c5721e6897be46b6f76b49",
+                "scope": [
+                  "bg_music"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "4": {
@@ -425,7 +555,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -556,7 +685,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -687,7 +815,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -818,7 +945,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -949,7 +1075,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1080,7 +1205,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1211,7 +1335,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1342,7 +1465,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1473,7 +1595,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1614,7 +1735,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1749,7 +1869,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -1880,7 +1999,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2011,7 +2129,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2142,7 +2259,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2273,7 +2389,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2404,7 +2519,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2549,7 +2663,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -2688,7 +2801,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3057,7 +3169,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3188,7 +3299,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3319,7 +3429,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3450,7 +3559,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3581,7 +3689,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3712,7 +3819,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3843,7 +3949,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3974,7 +4079,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4105,7 +4209,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -4299,6 +4402,11 @@
       "message": "The draft uses authored IDs, zero default gain vectors and no invented branch lock rules."
     },
     {
+      "code": "draft_not_playback_verified",
+      "severity": "warning",
+      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
+    },
+    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -4326,7 +4434,6 @@
       "scenarioId": 2,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -4352,7 +4459,6 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 3,
       "fields": [
-        "bg_music",
         "bg_picture",
         "character",
         "character_image",
@@ -4375,7 +4481,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4402,7 +4507,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4429,7 +4533,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4456,7 +4559,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4483,7 +4585,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4510,7 +4611,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4537,7 +4637,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4564,7 +4663,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4591,7 +4689,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4618,7 +4715,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4639,7 +4735,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4666,7 +4761,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4693,7 +4787,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4720,7 +4813,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4747,7 +4839,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4774,7 +4865,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4801,7 +4891,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4822,7 +4911,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4903,7 +4991,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4930,7 +5017,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4957,7 +5043,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4984,7 +5069,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5011,7 +5095,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5038,7 +5121,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5065,7 +5147,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5092,7 +5173,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5119,7 +5199,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -5159,11 +5238,6 @@
         "video",
         "voice"
       ]
-    },
-    {
-      "code": "draft_not_playback_verified",
-      "severity": "warning",
-      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     }
   ],
   "unresolvedBranches": [],

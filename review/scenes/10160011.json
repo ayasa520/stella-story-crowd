@@ -163,7 +163,6 @@
           "scenarioId": 2,
           "fields": [
             "bg_music",
-            "bg_picture",
             "character",
             "character_image",
             "command",
@@ -8544,20 +8543,6 @@
           "severity": "warning",
           "message": "Some text evidence still needs visual review.",
           "scenarioId": 77
-        },
-        {
-          "code": "missing_transition",
-          "severity": "warning",
-          "message": "CLEAR observed at1341s, original executable ending identity and subsequent section entry remain unknown.",
-          "scenarioId": 77,
-          "branchId": 771
-        },
-        {
-          "code": "transition_review_pending",
-          "severity": "warning",
-          "message": "This explicit route still needs evidence review.",
-          "scenarioId": 77,
-          "branchId": 771
         }
       ],
       "branches": [
@@ -8565,24 +8550,181 @@
           "branchId": 771,
           "stableKey": "s10160011-p24-at1332-next",
           "nativeIdOrigin": "authored",
-          "verification": "pending",
-          "state": "missing",
+          "verification": "observed",
+          "state": "confirmed",
           "evidence": [
             {
+              "recordingId": "bili-capital-24",
               "segmentId": "p24-s10160011",
-              "start": 1331.998,
-              "end": 1333.498,
-              "sourceAnchorSeconds": 1332,
-              "ocrReviewed": false,
-              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/24/dialogue-completion-2hz/crops/040005-dialogue.png",
-              "ocrEventId": "merged-0306",
-              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
               "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
-              "originalOCRText": "見いつけた",
-              "ocrConfidence": 0.9868,
-              "ocrReviewReasons": [],
-              "recordingId": "bili-capital-24"
-            }
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1335.998,
+              "end": 1340.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
+                ],
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+              },
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-24",
+              "segmentId": "p24-s10160011",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1340.998,
+              "end": 1343.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-023.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 24,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-1340.4980",
+                      "bgm_time": 1340.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7962,
+                      "track_time": 0.256,
+                      "time": 1340.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1340.9980",
+                      "bgm_time": 1340.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.833,
+                      "track_time": 0.756,
+                      "time": 1340.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.4980",
+                      "bgm_time": 1341.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8456,
+                      "track_time": 1.256,
+                      "time": 1341.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.9980",
+                      "bgm_time": 1341.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8575,
+                      "track_time": 1.756,
+                      "time": 1341.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1342.4980",
+                      "bgm_time": 1342.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8401,
+                      "track_time": 2.256,
+                      "time": 1342.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
           ],
           "gainPointsRecovered": false
         }
@@ -8594,6 +8736,956 @@
           "originalSourcePreserved": true
         }
       }
+    },
+    "78": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10160011-p24-ending-door-out",
+      "sourceText": "",
+      "translation": "",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-24",
+          "segmentId": "p24-s10160011",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+          "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+          "visualReviewer": "root",
+          "ocrReviewed": true,
+          "originalPhaseRecovered": false,
+          "originalScriptNodeIdsRecovered": false,
+          "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+          "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+          "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+          "reconstructionLimits": [
+            "Original script IDs, array positions and command phases remain unknown.",
+            "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+            "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+          ],
+          "start": 1335.998,
+          "end": 1340.998,
+          "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-013.jpg",
+          "resource": "adv_dive01_out",
+          "originalResource": {
+            "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+            "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+            "fullDuration": 5.034,
+            "referenceFrames": [
+              {
+                "index": 0,
+                "resourceTime": 0.0,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+              },
+              {
+                "index": 1,
+                "resourceTime": 0.5,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+              },
+              {
+                "index": 2,
+                "resourceTime": 1.0,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+              },
+              {
+                "index": 4,
+                "resourceTime": 2.0,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+              },
+              {
+                "index": 6,
+                "resourceTime": 3.0,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+              },
+              {
+                "index": 10,
+                "resourceTime": 4.966667,
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+              }
+            ],
+            "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+          },
+          "commandConvention": {
+            "reference": "accepted scene10010001:30",
+            "phase0": "StopBGM",
+            "phase2": "Wait,500\nCardOut",
+            "originalParametersRecovered": false
+          }
+        }
+      ],
+      "unknownFields": [
+        "bg_music",
+        "bg_picture",
+        "character",
+        "character_image",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 781,
+          "stableKey": "s10160011-p24-ending-door-out-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "observed",
+          "evidence": [
+            {
+              "recordingId": "bili-capital-24",
+              "segmentId": "p24-s10160011",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1335.998,
+              "end": 1340.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
+                ],
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+              },
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-24",
+              "segmentId": "p24-s10160011",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1340.998,
+              "end": 1343.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-023.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 24,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-1340.4980",
+                      "bgm_time": 1340.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7962,
+                      "track_time": 0.256,
+                      "time": 1340.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1340.9980",
+                      "bgm_time": 1340.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.833,
+                      "track_time": 0.756,
+                      "time": 1340.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.4980",
+                      "bgm_time": 1341.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8456,
+                      "track_time": 1.256,
+                      "time": 1341.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.9980",
+                      "bgm_time": 1341.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8575,
+                      "track_time": 1.756,
+                      "time": 1341.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1342.4980",
+                      "bgm_time": 1342.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8401,
+                      "track_time": 2.256,
+                      "time": 1342.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
+          ]
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/endings/root-reviewed-unique-v2/p24.json",
+          "evidence": [
+            {
+              "recordingId": "bili-capital-24",
+              "segmentId": "p24-s10160011",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1335.998,
+              "end": 1340.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
+                ],
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+              },
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-24",
+              "segmentId": "p24-s10160011",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1340.998,
+              "end": 1343.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-023.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 24,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-1340.4980",
+                      "bgm_time": 1340.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7962,
+                      "track_time": 0.256,
+                      "time": 1340.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1340.9980",
+                      "bgm_time": 1340.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.833,
+                      "track_time": 0.756,
+                      "time": 1340.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.4980",
+                      "bgm_time": 1341.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8456,
+                      "track_time": 1.256,
+                      "time": 1341.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.9980",
+                      "bgm_time": 1341.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8575,
+                      "track_time": 1.756,
+                      "time": 1341.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1342.4980",
+                      "bgm_time": 1342.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8401,
+                      "track_time": 2.256,
+                      "time": 1342.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
+          ],
+          "originalScenarioIdRecovered": false
+        }
+      }
+    },
+    "79": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10160011-p24-ending-clear",
+      "sourceText": "CLEAR",
+      "translation": "通关",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-24",
+          "segmentId": "p24-s10160011",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+          "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+          "visualReviewer": "root",
+          "ocrReviewed": true,
+          "originalPhaseRecovered": false,
+          "originalScriptNodeIdsRecovered": false,
+          "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+          "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+          "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+          "reconstructionLimits": [
+            "Original script IDs, array positions and command phases remain unknown.",
+            "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+            "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+          ],
+          "start": 1340.998,
+          "end": 1343.498,
+          "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-023.jpg",
+          "resource": "bgm_btl_adv_win01",
+          "matching": {
+            "part": 24,
+            "endingOrdinal": 1,
+            "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/clear-short-window-music.json",
+            "win01Matches": [
+              {
+                "query": {
+                  "id": "clear-1340.4980",
+                  "bgm_time": 1340.498
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.7962,
+                  "track_time": 0.256,
+                  "time": 1340.498,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              },
+              {
+                "query": {
+                  "id": "clear-1340.9980",
+                  "bgm_time": 1340.998
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.833,
+                  "track_time": 0.756,
+                  "time": 1340.998,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              },
+              {
+                "query": {
+                  "id": "clear-1341.4980",
+                  "bgm_time": 1341.498
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.8456,
+                  "track_time": 1.256,
+                  "time": 1341.498,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              },
+              {
+                "query": {
+                  "id": "clear-1341.9980",
+                  "bgm_time": 1341.998
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.8575,
+                  "track_time": 1.756,
+                  "time": 1341.998,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              },
+              {
+                "query": {
+                  "id": "clear-1342.4980",
+                  "bgm_time": 1342.498
+                },
+                "match": {
+                  "id": "bgm_btl_adv_win01",
+                  "score": 0.8401,
+                  "track_time": 2.256,
+                  "time": 1342.498,
+                  "duration": 1.0,
+                  "method": "excerpt_waveform_correlation"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "unknownFields": [
+        "bg_picture",
+        "character",
+        "character_image",
+        "command",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "video",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 791,
+          "stableKey": "s10160011-p24-ending-clear-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "original",
+          "evidence": [
+            {
+              "recordingId": "bili-capital-24",
+              "segmentId": "p24-s10160011",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1335.998,
+              "end": 1340.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
+                ],
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+              },
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-24",
+              "segmentId": "p24-s10160011",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1340.998,
+              "end": 1343.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-023.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 24,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-1340.4980",
+                      "bgm_time": 1340.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7962,
+                      "track_time": 0.256,
+                      "time": 1340.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1340.9980",
+                      "bgm_time": 1340.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.833,
+                      "track_time": 0.756,
+                      "time": 1340.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.4980",
+                      "bgm_time": 1341.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8456,
+                      "track_time": 1.256,
+                      "time": 1341.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.9980",
+                      "bgm_time": 1341.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8575,
+                      "track_time": 1.756,
+                      "time": 1341.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1342.4980",
+                      "bgm_time": 1342.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8401,
+                      "track_time": 2.256,
+                      "time": 1342.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
+          ]
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/endings/root-reviewed-unique-v2/p24.json",
+          "evidence": [
+            {
+              "recordingId": "bili-capital-24",
+              "segmentId": "p24-s10160011",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1335.998,
+              "end": 1340.998,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-013.jpg",
+              "resource": "adv_dive01_out",
+              "originalResource": {
+                "resource": "data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+                "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+                "fullDuration": 5.034,
+                "referenceFrames": [
+                  {
+                    "index": 0,
+                    "resourceTime": 0.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-001.jpg",
+                    "sha256": "27d487ea127bf855cbf32865d374c884d1a54ce45d33e0f5a9346b3323690ac9"
+                  },
+                  {
+                    "index": 1,
+                    "resourceTime": 0.5,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-002.jpg",
+                    "sha256": "f3716a10c19d3b386e492ad200f1641c379d1ca6e39075b2d1f27e7a8f535b25"
+                  },
+                  {
+                    "index": 2,
+                    "resourceTime": 1.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-003.jpg",
+                    "sha256": "731d7e02d1f1555f80aea12b6b95f5dbcb42509a34c29c194a03b4e777761ef8"
+                  },
+                  {
+                    "index": 4,
+                    "resourceTime": 2.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-005.jpg",
+                    "sha256": "f30649e9bf517ef9d6878ec6a46805883fafbc869a0bb8ee2f952ed046ce1cc8"
+                  },
+                  {
+                    "index": 6,
+                    "resourceTime": 3.0,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-007.jpg",
+                    "sha256": "f3b53dbb29c1a7e3d9661a0367616c5e6972a326e381cc2b9463897f14569934"
+                  },
+                  {
+                    "index": 10,
+                    "resourceTime": 4.966667,
+                    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p11-bbd6cb2936a9/door-original-comparison/native-011.jpg",
+                    "sha256": "e5d9389d0b4d893f408742671ee96bc7bcd99a0c82d9693ccbdc6257067cf452"
+                  }
+                ],
+                "recognitionStatus": "visual-comparison-pending-no-resource-assignment"
+              },
+              "commandConvention": {
+                "reference": "accepted scene10010001:30",
+                "phase0": "StopBGM",
+                "phase2": "Wait,500\nCardOut",
+                "originalParametersRecovered": false
+              }
+            },
+            {
+              "recordingId": "bili-capital-24",
+              "segmentId": "p24-s10160011",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "visualReviewer": "root",
+              "ocrReviewed": true,
+              "originalPhaseRecovered": false,
+              "originalScriptNodeIdsRecovered": false,
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/ending-proposals-reviewed.json",
+              "sourcePacketSha256": "af61a5c7861fa6d6d4dbcc2070ec98bd99dd2e61999dadb72b092ae708e091b0",
+              "rootReviewSheet": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/root-review-sheet-06.jpg",
+              "reconstructionLimits": [
+                "Original script IDs, array positions and command phases remain unknown.",
+                "Movie-to-door exact timing is not recovered; no source-timestamp Wait is invented.",
+                "Native main/IF CLEAR collage presentation remains a separate renderer gap."
+              ],
+              "start": 1340.998,
+              "end": 1343.498,
+              "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/source-frames/frame-023.jpg",
+              "resource": "bgm_btl_adv_win01",
+              "matching": {
+                "part": 24,
+                "endingOrdinal": 1,
+                "rawResult": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/endings/p24-ending-1/clear-short-window-music.json",
+                "win01Matches": [
+                  {
+                    "query": {
+                      "id": "clear-1340.4980",
+                      "bgm_time": 1340.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.7962,
+                      "track_time": 0.256,
+                      "time": 1340.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1340.9980",
+                      "bgm_time": 1340.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.833,
+                      "track_time": 0.756,
+                      "time": 1340.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.4980",
+                      "bgm_time": 1341.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8456,
+                      "track_time": 1.256,
+                      "time": 1341.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1341.9980",
+                      "bgm_time": 1341.998
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8575,
+                      "track_time": 1.756,
+                      "time": 1341.998,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  },
+                  {
+                    "query": {
+                      "id": "clear-1342.4980",
+                      "bgm_time": 1342.498
+                    },
+                    "match": {
+                      "id": "bgm_btl_adv_win01",
+                      "score": 0.8401,
+                      "track_time": 2.256,
+                      "time": 1342.498,
+                      "duration": 1.0,
+                      "method": "excerpt_waveform_correlation"
+                    }
+                  }
+                ]
+              }
+            },
+            "data/native_recovery/royal-capital-20261110/native-directory.json"
+          ],
+          "originalScenarioIdRecovered": false
+        }
+      }
     }
   },
   "issues": [
@@ -8601,6 +9693,11 @@
       "code": "native_metadata_unrecovered",
       "severity": "warning",
       "message": "The draft uses authored IDs, zero default gain vectors and no invented branch lock rules."
+    },
+    {
+      "code": "draft_not_playback_verified",
+      "severity": "warning",
+      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     },
     {
       "code": "performance_unrecovered",
@@ -8630,7 +9727,6 @@
       "scenarioId": 2,
       "fields": [
         "bg_music",
-        "bg_picture",
         "character",
         "character_image",
         "command",
@@ -10560,35 +11656,9 @@
       "severity": "warning",
       "message": "Some text evidence still needs visual review.",
       "scenarioId": 77
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "CLEAR observed at1341s, original executable ending identity and subsequent section entry remain unknown.",
-      "scenarioId": 77,
-      "branchId": 771
-    },
-    {
-      "code": "transition_review_pending",
-      "severity": "warning",
-      "message": "This explicit route still needs evidence review.",
-      "scenarioId": 77,
-      "branchId": 771
-    },
-    {
-      "code": "draft_not_playback_verified",
-      "severity": "warning",
-      "message": "Native schema validation does not establish original authorship, reviewed text, or verified playback."
     }
   ],
-  "unresolvedBranches": [
-    {
-      "scenarioId": 77,
-      "branchId": 771,
-      "stableKey": "s10160011-p24-at1332-next",
-      "reason": "CLEAR observed at1341s, original executable ending identity and subsequent section entry remain unknown."
-    }
-  ],
+  "unresolvedBranches": [],
   "restorationStatus": "rough",
   "structuralValidation": "passed",
   "playbackValidation": "not-run",
@@ -10977,6 +12047,16 @@
       "stableKey": "s10160011-p24-at1332",
       "scenarioId": 77,
       "order": 13420.0
+    },
+    {
+      "stableKey": "s10160011-p24-ending-door-out",
+      "scenarioId": 78,
+      "order": 13421.0
+    },
+    {
+      "stableKey": "s10160011-p24-ending-clear",
+      "scenarioId": 79,
+      "order": 13422.0
     }
   ],
   "sceneSegments": [
@@ -11232,5 +12312,18 @@
       "scopeMeaning": "Recording-wide visual note/catalog; applies only to this recording's observed scene fragments."
     }
   ],
-  "transitionEvidence": []
+  "transitionEvidence": [],
+  "repairEvidence": {
+    "maps": [
+      {
+        "sourceSceneId": 10160011,
+        "target": {
+          "section_id": 1017,
+          "scene_id": 10170001
+        },
+        "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/endings/root-reviewed-unique-v2/p24.json",
+        "basis": "Root-reviewed ending and explicit original-master successor/root"
+      }
+    ]
+  }
 }
