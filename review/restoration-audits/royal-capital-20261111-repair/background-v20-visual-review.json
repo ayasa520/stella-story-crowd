@@ -1,0 +1,3207 @@
+{
+  "schema": "native_repair.agent_visual_receipt",
+  "reviewer": "/root/visual_review_high",
+  "status": "six_sparse_bg_providers_and_visited_inheritance_accepted_separate_scene_gaps_retained",
+  "directImageInspection": true,
+  "productionDataWrites": false,
+  "installedBatchReportedByRoot": "5310e1de3edb97fc8383",
+  "input": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/index.json",
+    "sha256": "5f312ab1455072e5bf939a66e114de19d1bcffb42ea8078ebbc4c588c974bd71"
+  },
+  "playbackResult": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/background-boundaries-v20-result.json",
+    "sha256": "55e9c192e0c7d3ee96a6d9178b2990984c0c39ebc3b9bbf575da3d068bf77043"
+  },
+  "bgPacket": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/backgrounds-p19-p20-v1/background-only-packet.json",
+    "sha256": "5fff9812caa7e685e6b8deac417b6bd62be0f027e00b739b4327b4ccfea7f396"
+  },
+  "nodes": 18,
+  "routes": 2,
+  "actorCounts": {
+    "pass_identity_and_costume_only": 15,
+    "not_applicable_location_title": 2,
+    "not_applicable_movie_image": 1
+  },
+  "backgroundCounts": {
+    "pass_original_background_and_inheritance": 16,
+    "pending_preceding_black_title_performance": 1,
+    "not_applicable_movie_presentation": 1
+  },
+  "comparisonSheets": [
+    {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-01.jpg",
+      "sha256": "2577a58e33b2c46439c9db629a3dc39b3b859faa30009b03c3bb659dd865868f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-02.jpg",
+      "sha256": "0e2142656d663bf2f1c73330c7c441a8bb499e259129d8929c6b65219b13383e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-03.jpg",
+      "sha256": "371060f07c223849ebf8bf53f20a6c36df6089752dde1f138899ec8be7e64a83"
+    }
+  ],
+  "originalPlates": [
+    {
+      "file": "/home/rikka/Projects/stella/story_crowd_data/assets/backgrounds/ADV_bg031b_stealshop.png",
+      "sha256": "be0cb9f08a752bbf06925edfd726483ebc783d745bfde9f5cd836e300022b342",
+      "directlyViewedInImmediatelyPrecedingProviderReview": true
+    },
+    {
+      "file": "/home/rikka/Projects/stella/story_crowd_data/assets/backgrounds/ADV_bg008a_fruitshop.png",
+      "sha256": "6d0a70395ba0c9f0a67d580348cc7c94e469bd53a02dc2527d80f8a07b715544",
+      "directlyViewedInImmediatelyPrecedingProviderReview": true
+    },
+    {
+      "file": "/home/rikka/Projects/stella/story_crowd_data/assets/backgrounds/ADV_bg009a_fruitshop.png",
+      "sha256": "061743653cb639358528ba098abb6e556a042899aac2be104c64ac22dca32a2c",
+      "directlyViewedInImmediatelyPrecedingProviderReview": true
+    },
+    {
+      "file": "/home/rikka/Projects/stella/story_crowd_data/assets/backgrounds/ADV_bg013a_street.png",
+      "sha256": "2468779254d8fd151cc995fc7a3577fdd7dcd62b2783641afc5cb63384f2122a",
+      "directlyViewedInImmediatelyPrecedingProviderReview": true
+    }
+  ],
+  "movieEvidence": {
+    "node": "10290010:63",
+    "screenshotProvesCompleteMovie": false,
+    "visibleImageContentAndBlackContainAccepted": true,
+    "runtimeStartEvent": {
+      "node": "10290010:63",
+      "resource": "adv_movie_10113",
+      "source": [
+        576,
+        576
+      ],
+      "viewport": [
+        523,
+        930
+      ],
+      "presentation": "anime",
+      "fit": "contain",
+      "background": "bg/bg001_black",
+      "duration": 7.04
+    },
+    "runtimeCompletionEvent": {
+      "node": "10290010:63",
+      "stage": "movie_play_complete",
+      "milliseconds": 7947
+    },
+    "programLevelMovieResourceCompletionReported": true,
+    "qualification": "Runtime reports original resource duration7.04s, contain presentation on black, and movie_play_complete at7947ms including player overhead. The latter is a runtime observation, not a native7.947s timer or source timing recovery. A screenshot of a held movie frame does not prove all movie frames, original lighting/flash or exact original start/end timing. Source63's retained missing-video/hash metadata stays unchanged."
+  },
+  "acceptanceLimits": [
+    "Six sparse providers and all visited following background inheritance pass; P20 black-title performance55 remains a separate pending gap.",
+    "Fifteen Live2D actors pass identity/costume only. Two titles and one movie image are not Live2D identity observations.",
+    "Body/face visibly differ and are unsigned. Water splash, P17 clothing-swap CG, props outside these samples, original CSV/phase, exact timing and complete scene performance remain unaccepted.",
+    "The complete existing movie was exercised according to runtime logs; this visual receipt accepts sampled movie content/contain layout and post-movie cleanup only."
+  ],
+  "observations": [
+    {
+      "sceneId": 10210005,
+      "scenarioId": 20,
+      "route": "v20-p19-exterior-to-interior",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p19-10210005-20-83.650.png",
+        "sha256": "9cfec51dddc36b0a120e0e84fec36d3a0b2a6ca0c22c652a0d5c64d04c7156d0",
+        "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+        "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+        "time": 83.65,
+        "sourceText": "待たせちまったな、口ム爺。意外としつこい相手でさ。撒くの手間取っちまったぜ",
+        "stableKey": "s10210005-p19-at0083",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "83.65",
+          "-i",
+          "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-supplement/p19-earlier-subagent-character-packet-v1.json",
+          "sha256": "597cf765efaaec647d08d6df27ed2610a7f7a31524b7765318c2bde0fc3105ae",
+          "record": {
+            "sceneId": 10210005,
+            "scenarioId": 20,
+            "stableKey": "s10210005-p19-at0083",
+            "sourceText": "待たせちまったな、口ム爺。意外としつこい相手でさ。撒くの手間取っちまったぜ",
+            "rootConfirmed": false,
+            "subagentConfirmed": true,
+            "expected": {
+              "character": ""
+            },
+            "fields": {
+              "character": "live2d/AC_felt01"
+            },
+            "evidence": {
+              "recordingId": "bili-capital-19",
+              "reviewer": "/root/visual_review_low_17_20",
+              "directImageReview": true,
+              "decisionBasis": "Earlier same-node full-frame witness directly reviewed; the late primary witness is retained separately. Direct costume review: blond hair with a black bow, red scarf, cropped brown fur-trimmed vest and black bandeau agree with extracted original felt01. The full stage torso establishes the model, not a choice portrait. This specific83.650s witness visibly shows Felt's blond hair, red scarf, cropped fur-trimmed brown vest and bandeau; a Subaru identity would be a false attribution from the supplied textual speaker. The image and guarded source text/time interval, not the speaker name, determine this character field.",
+              "selectedWitness": {
+                "sceneId": 10210005,
+                "scenarioId": 20,
+                "stableKey": "s10210005-p19-at0083",
+                "recordingId": "bili-capital-19",
+                "recordingPart": 19,
+                "node_id": "s10210005-p19-at0083",
+                "time": 83.65,
+                "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+                "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+                "sourceMapping": null,
+                "sourceText": "待たせちまったな、口ム爺。意外としつこい相手でさ。撒くの手間取っちまったぜ",
+                "originalEvidence": {
+                  "segmentId": "p19-s10210005",
+                  "start": 83.0,
+                  "end": 89.0,
+                  "sourceAnchorSeconds": 83,
+                  "ocrReviewed": false,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/19/coarse-1hz/crops/002610-dialogue.png",
+                  "ocrEventId": "merged-0023",
+                  "sourceSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+                  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+                  "originalOCRText": "待たせちまったな、口ム爺。意外としつこい相手でさ。撒くの手間取っちまったぜ",
+                  "ocrConfidence": 0.99581,
+                  "ocrReviewReasons": [],
+                  "recordingId": "bili-capital-19"
+                },
+                "timeBasis": "supplemental_same_interval_start_plus_650ms_or_midpoint",
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-witnesses/cast-83.6500.png",
+                "frameSha256": "9cfec51dddc36b0a120e0e84fec36d3a0b2a6ca0c22c652a0d5c64d04c7156d0",
+                "primaryObservation": {
+                  "time": 88.85,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/cast-88.8500.png",
+                  "frameSha256": "50422b90e5eecd5a901edb77664faab7fca9c813df209c1a19a2a4bb71baf098",
+                  "timeBasis": "evidence_end_minus_150ms"
+                },
+                "supplementReason": "primary_no_fit_or_annotated_obscuration_not_an_actor_absence_claim",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-witnesses/source-contact-01.jpg",
+                "candidates": [],
+                "absenceClaim": false,
+                "originalAssetComparison": {
+                  "model": "felt01",
+                  "originalExtractedFiles": [
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                      "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549",
+                      "bytes": 5680
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                      "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935",
+                      "bytes": 536128
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                      "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6",
+                      "bytes": 1012102
+                    }
+                  ]
+                },
+                "resolvedPriorPending": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19/p19-subagent-character-packet-v1.json",
+                  "sha256": "5b44b467ef3ae64848e88602e443290a9da2bc57bab5cf5f3ca08a43b22f2ce5"
+                },
+                "reviewStatus": "direct_source_same_node_earlier_stage_body_verified",
+                "unrecovered": [
+                  "motion",
+                  "face_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ]
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-supplement/manual-identity-index.json",
+              "candidateIndexSha256": "8323813c07eeb48fbc7f9233deb49df648e6e4b1fa36ed69c9b18b8449f742e4",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-supplement/p19-earlier-subagent-image-decisions-v1.json",
+                "sha256": "6ca91c7bb231526ff5334cecbe25088c31fd791f988e380ac4e60e03cab948d6"
+              }
+            }
+          }
+        },
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/observation-evidence.json",
+          "sha256": "58f602a753f5a97ea9939d6359ec921a39547829a8f708b01bcbd97b756718c1",
+          "record": {
+            "sceneId": 10210005,
+            "scenarioId": 20,
+            "stableKey": "s10210005-p19-at0083",
+            "recordingId": "bili-capital-19",
+            "recordingPart": 19,
+            "node_id": "s10210005-p19-at0083",
+            "time": 88.85,
+            "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+            "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+            "sourceMapping": null,
+            "sourceText": "待たせちまったな、口ム爺。意外としつこい相手でさ。撒くの手間取っちまったぜ",
+            "originalEvidence": {
+              "segmentId": "p19-s10210005",
+              "start": 83.0,
+              "end": 89.0,
+              "sourceAnchorSeconds": 83,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/19/coarse-1hz/crops/002610-dialogue.png",
+              "ocrEventId": "merged-0023",
+              "sourceSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+              "originalOCRText": "待たせちまったな、口ム爺。意外としつこい相手でさ。撒くの手間取っちまったぜ",
+              "ocrConfidence": 0.99581,
+              "ocrReviewReasons": [],
+              "recordingId": "bili-capital-19"
+            },
+            "timeBasis": "evidence_end_minus_150ms",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/cast-88.8500.png",
+            "frameSha256": "50422b90e5eecd5a901edb77664faab7fca9c813df209c1a19a2a4bb71baf098"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p19-exterior-to-interior-20.png",
+        "sha256": "7f7aafd1275ef3d2772118dc636dd964fef861668afbc0cef754d9d262548569"
+      },
+      "installedFields": {
+        "character": "live2d/AC_felt01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-01.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg027b_stealshop",
+      "reason": "Original20 is still the sunset stolen-goods-store exterior.21 changes on the location title to the original amber interior;22/23 retain that interior. The actual screenshots reproduce this visible boundary and inheritance.",
+      "effectiveBackgroundEvent": {
+        "node": "10210005:20",
+        "scenario": 20,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg027b_stealshop",
+        "source_scenario_id": 2,
+        "effective": "bg/bg027b_stealshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10210005,
+      "scenarioId": 21,
+      "route": "v20-p19-exterior-to-interior",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p19-10210005-21-92.850.png",
+        "sha256": "e9ab687e5809a845faf6788d00abf98994683a32666c8f93711d14eda797bd60",
+        "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+        "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+        "time": 92.85,
+        "sourceText": "――盗品蔵・夕刻",
+        "stableKey": "s10210005-p19-at0092",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "92.85",
+          "-i",
+          "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/story_crowd_data/review/scenes/10210005.json",
+          "sha256": "22980485b33d4fff11a876f688c53770cdc0f4319640626ba57cb3c900b21de6",
+          "record": {
+            "sceneId": 10210005,
+            "scenarioId": 21,
+            "stableKey": "s10210005-p19-at0092",
+            "sourceText": "――盗品蔵・夕刻",
+            "time": 92.85,
+            "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+            "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+            "timeBasis": "own_node_original_evidence_end_minus150ms",
+            "originalEvidence": {
+              "segmentId": "p19-s10210005",
+              "start": 92.0,
+              "end": 93.0,
+              "sourceAnchorSeconds": 92,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/19/coarse-1hz/crops/002790-dialogue.png",
+              "ocrEventId": "merged-0024",
+              "sourceSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+              "originalOCRText": "——盗品蔵·夕刻",
+              "ocrConfidence": 0.8238,
+              "ocrReviewReasons": [
+                "low_confidence"
+              ],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  92,
+                  93
+                ],
+                "canonicalAnchorSeconds": 92,
+                "action": "replace",
+                "speaker": "",
+                "text": "――盗品蔵・夕刻",
+                "scenarioType": 1,
+                "witnessTime": 93
+              },
+              "rootReviewWitnessTime": 93,
+              "recordingId": "bili-capital-19"
+            }
+          }
+        },
+        "primaryObservationMetadata": null
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p19-exterior-to-interior-21.png",
+        "sha256": "a0dae63a1ad018d3a01ef11fe31375ee58c4514f8dc4b44a72b1f75a000de33e"
+      },
+      "installedFields": {
+        "character": "",
+        "bg_picture": "bg/bg031b_stealshop",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-01.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "not_applicable_location_title",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg031b_stealshop",
+      "reason": "Original20 is still the sunset stolen-goods-store exterior.21 changes on the location title to the original amber interior;22/23 retain that interior. The actual screenshots reproduce this visible boundary and inheritance.",
+      "effectiveBackgroundEvent": {
+        "node": "10210005:21",
+        "scenario": 21,
+        "authored": "bg/bg031b_stealshop",
+        "mode": "native_array",
+        "resource": "bg/bg031b_stealshop",
+        "source_scenario_id": 21,
+        "effective": "bg/bg031b_stealshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10210005,
+      "scenarioId": 22,
+      "route": "v20-p19-exterior-to-interior",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p19-10210005-22-94.650.png",
+        "sha256": "e9de8ad2348ff0fa6e67ff57d1c2a38e6dab7415d4b3a51dc8057dc103cce459",
+        "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+        "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+        "time": 94.65,
+        "sourceText": "で、この徽章が欲しいんだろ？\n兄ちゃん、いくら出すんだ？",
+        "stableKey": "s10210005-p19-at0094",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "94.65",
+          "-i",
+          "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-supplement/p19-earlier-subagent-character-packet-v1.json",
+          "sha256": "597cf765efaaec647d08d6df27ed2610a7f7a31524b7765318c2bde0fc3105ae",
+          "record": {
+            "sceneId": 10210005,
+            "scenarioId": 22,
+            "stableKey": "s10210005-p19-at0094",
+            "sourceText": "で、この徽章が欲しいんだろ？\n兄ちゃん、いくら出すんだ？",
+            "rootConfirmed": false,
+            "subagentConfirmed": true,
+            "expected": {
+              "character": ""
+            },
+            "fields": {
+              "character": "live2d/AC_felt01"
+            },
+            "evidence": {
+              "recordingId": "bili-capital-19",
+              "reviewer": "/root/visual_review_low_17_20",
+              "directImageReview": true,
+              "decisionBasis": "Earlier same-node full-frame witness directly reviewed; the late primary witness is retained separately. Direct costume review: blond hair with a black bow, red scarf, cropped brown fur-trimmed vest and black bandeau agree with extracted original felt01. The full stage torso establishes the model, not a choice portrait.",
+              "selectedWitness": {
+                "sceneId": 10210005,
+                "scenarioId": 22,
+                "stableKey": "s10210005-p19-at0094",
+                "recordingId": "bili-capital-19",
+                "recordingPart": 19,
+                "node_id": "s10210005-p19-at0094",
+                "time": 94.65,
+                "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+                "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+                "sourceMapping": null,
+                "sourceText": "で、この徽章が欲しいんだろ？\n兄ちゃん、いくら出すんだ？",
+                "originalEvidence": {
+                  "segmentId": "p19-s10210005",
+                  "start": 94.0,
+                  "end": 116.0,
+                  "sourceAnchorSeconds": 94,
+                  "ocrReviewed": true,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/19/coarse-1hz/crops/003150-dialogue.png",
+                  "ocrEventId": "merged-0025",
+                  "sourceSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+                  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+                  "originalOCRText": "で、この徽章が欲しいんだろ？兄ちゃん、いくら出すんだ？",
+                  "ocrConfidence": 0.99853,
+                  "ocrReviewReasons": [],
+                  "visualReviewer": "root",
+                  "rootDecision": {
+                    "interval": [
+                      94,
+                      116
+                    ],
+                    "canonicalAnchorSeconds": 94,
+                    "action": "replace",
+                    "speaker": "フェルト",
+                    "text": "で、この徽章が欲しいんだろ？\n兄ちゃん、いくら出すんだ？",
+                    "witnessTimes": [
+                      104,
+                      105
+                    ]
+                  },
+                  "rootReviewWitnessTime": null,
+                  "recordingId": "bili-capital-19"
+                },
+                "timeBasis": "supplemental_same_interval_start_plus_650ms_or_midpoint",
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-witnesses/cast-94.6500.png",
+                "frameSha256": "e9de8ad2348ff0fa6e67ff57d1c2a38e6dab7415d4b3a51dc8057dc103cce459",
+                "primaryObservation": {
+                  "time": 115.85,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/cast-115.8500.png",
+                  "frameSha256": "4b17462442d9d50f22ac90213e93df477da921a20466f21ce7404d2d37d104f0",
+                  "timeBasis": "evidence_end_minus_150ms"
+                },
+                "supplementReason": "primary_no_fit_or_annotated_obscuration_not_an_actor_absence_claim",
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-witnesses/source-contact-01.jpg",
+                "candidates": [],
+                "absenceClaim": false,
+                "originalAssetComparison": {
+                  "model": "felt01",
+                  "originalExtractedFiles": [
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                      "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549",
+                      "bytes": 5680
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                      "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935",
+                      "bytes": 536128
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                      "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6",
+                      "bytes": 1012102
+                    }
+                  ]
+                },
+                "resolvedPriorPending": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19/p19-subagent-character-packet-v1.json",
+                  "sha256": "5b44b467ef3ae64848e88602e443290a9da2bc57bab5cf5f3ca08a43b22f2ce5"
+                },
+                "reviewStatus": "direct_source_same_node_earlier_stage_body_verified",
+                "unrecovered": [
+                  "motion",
+                  "face_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ]
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-supplement/manual-identity-index.json",
+              "candidateIndexSha256": "8323813c07eeb48fbc7f9233deb49df648e6e4b1fa36ed69c9b18b8449f742e4",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19-earlier-supplement/p19-earlier-subagent-image-decisions-v1.json",
+                "sha256": "6ca91c7bb231526ff5334cecbe25088c31fd791f988e380ac4e60e03cab948d6"
+              }
+            }
+          }
+        },
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/observation-evidence.json",
+          "sha256": "58f602a753f5a97ea9939d6359ec921a39547829a8f708b01bcbd97b756718c1",
+          "record": {
+            "sceneId": 10210005,
+            "scenarioId": 22,
+            "stableKey": "s10210005-p19-at0094",
+            "recordingId": "bili-capital-19",
+            "recordingPart": 19,
+            "node_id": "s10210005-p19-at0094",
+            "time": 115.85,
+            "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+            "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+            "sourceMapping": null,
+            "sourceText": "で、この徽章が欲しいんだろ？\n兄ちゃん、いくら出すんだ？",
+            "originalEvidence": {
+              "segmentId": "p19-s10210005",
+              "start": 94.0,
+              "end": 116.0,
+              "sourceAnchorSeconds": 94,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/19/coarse-1hz/crops/003150-dialogue.png",
+              "ocrEventId": "merged-0025",
+              "sourceSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+              "originalOCRText": "で、この徽章が欲しいんだろ？兄ちゃん、いくら出すんだ？",
+              "ocrConfidence": 0.99853,
+              "ocrReviewReasons": [],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  94,
+                  116
+                ],
+                "canonicalAnchorSeconds": 94,
+                "action": "replace",
+                "speaker": "フェルト",
+                "text": "で、この徽章が欲しいんだろ？\n兄ちゃん、いくら出すんだ？",
+                "witnessTimes": [
+                  104,
+                  105
+                ]
+              },
+              "rootReviewWitnessTime": null,
+              "recordingId": "bili-capital-19"
+            },
+            "timeBasis": "evidence_end_minus_150ms",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/cast-115.8500.png",
+            "frameSha256": "4b17462442d9d50f22ac90213e93df477da921a20466f21ce7404d2d37d104f0"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p19-exterior-to-interior-22.png",
+        "sha256": "135a602d1bc97e217a60d9f877ad639d4cf8484a2abf8c859edef719e19d4506"
+      },
+      "installedFields": {
+        "character": "live2d/AC_felt01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-01.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg031b_stealshop",
+      "reason": "Original20 is still the sunset stolen-goods-store exterior.21 changes on the location title to the original amber interior;22/23 retain that interior. The actual screenshots reproduce this visible boundary and inheritance.",
+      "effectiveBackgroundEvent": {
+        "node": "10210005:22",
+        "scenario": 22,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg031b_stealshop",
+        "source_scenario_id": 21,
+        "effective": "bg/bg031b_stealshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10210005,
+      "scenarioId": 23,
+      "route": "v20-p19-exterior-to-interior",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p19-10210005-23-121.350.png",
+        "sha256": "f6da11706868808e10c058ff2b5000f28ebae0a58ff7cba74fac167a73fe3a3a",
+        "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+        "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+        "time": 121.35,
+        "sourceText": "ああ?そりゃ、どーいうことだよ？",
+        "stableKey": "s10210005-p19-at0119",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "121.35",
+          "-i",
+          "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19/p19-subagent-character-packet-v1.json",
+          "sha256": "5b44b467ef3ae64848e88602e443290a9da2bc57bab5cf5f3ca08a43b22f2ce5",
+          "record": {
+            "sceneId": 10210005,
+            "scenarioId": 23,
+            "stableKey": "s10210005-p19-at0119",
+            "sourceText": "ああ?そりゃ、どーいうことだよ？",
+            "rootConfirmed": false,
+            "subagentConfirmed": true,
+            "expected": {
+              "character": ""
+            },
+            "fields": {
+              "character": "live2d/AC_felt01"
+            },
+            "evidence": {
+              "recordingId": "bili-capital-19",
+              "reviewer": "/root/visual_review_low_17_20",
+              "directImageReview": true,
+              "decisionBasis": "Direct costume review: blond hair with a black bow, red scarf, cropped brown fur-trimmed vest and black bandeau agree with extracted original felt01. The full stage torso establishes the model, not a choice portrait.",
+              "selectedWitness": {
+                "sceneId": 10210005,
+                "scenarioId": 23,
+                "stableKey": "s10210005-p19-at0119",
+                "time": 121.35,
+                "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+                "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/cast-121.3500.png",
+                "frameSha256": "f6da11706868808e10c058ff2b5000f28ebae0a58ff7cba74fac167a73fe3a3a",
+                "sourceText": "ああ?そりゃ、どーいうことだよ？",
+                "sourceMapping": null,
+                "sourceEvidence": {
+                  "segmentId": "p19-s10210005",
+                  "start": 119.0,
+                  "end": 121.5,
+                  "sourceAnchorSeconds": 119,
+                  "ocrReviewed": false,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/19/coarse-1hz/crops/003630-dialogue.png",
+                  "ocrEventId": "merged-0029",
+                  "sourceSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+                  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+                  "originalOCRText": "ああ?そりゃ、どーいうことだよ？",
+                  "ocrConfidence": 0.93826,
+                  "ocrReviewReasons": [],
+                  "recordingId": "bili-capital-19"
+                },
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/source-contact-02.jpg",
+                "observationNumber": 19,
+                "candidates": [],
+                "reviewStatus": "subagent_direct_stage_body_review",
+                "absenceClaim": false,
+                "unrecovered": [
+                  "motion",
+                  "face_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "originalAssetIndex": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19/original-asset-index.json",
+                  "sha256": "273c992ccef9b39baaa50e9cd324ac50f6dc8e46e1d42f1b547ebad78de8f7b5"
+                },
+                "originalAssetComparison": {
+                  "model": "felt01",
+                  "originalExtractedFiles": [
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                      "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549",
+                      "bytes": 5680
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                      "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935",
+                      "bytes": 536128
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                      "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6",
+                      "bytes": 1012102
+                    }
+                  ]
+                }
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19/manual-identity-index.json",
+              "candidateIndexSha256": "777317a37224d00b95283c4eff845bff072f0321704280b0ffbba4c8a51dd45c",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p19/p19-subagent-image-decisions-v1.json",
+                "sha256": "ef005263996acc198fdd01b6c378273fc4d7393da19b3337951a629b952c9f42"
+              }
+            }
+          }
+        },
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/observation-evidence.json",
+          "sha256": "58f602a753f5a97ea9939d6359ec921a39547829a8f708b01bcbd97b756718c1",
+          "record": {
+            "sceneId": 10210005,
+            "scenarioId": 23,
+            "stableKey": "s10210005-p19-at0119",
+            "recordingId": "bili-capital-19",
+            "recordingPart": 19,
+            "node_id": "s10210005-p19-at0119",
+            "time": 121.35,
+            "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+            "videoSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+            "sourceMapping": null,
+            "sourceText": "ああ?そりゃ、どーいうことだよ？",
+            "originalEvidence": {
+              "segmentId": "p19-s10210005",
+              "start": 119.0,
+              "end": 121.5,
+              "sourceAnchorSeconds": 119,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/19/coarse-1hz/crops/003630-dialogue.png",
+              "ocrEventId": "merged-0029",
+              "sourceSha256": "f9109786c700858ed84d70704cf35099a43b61ccb091c25f4fb1a20939758af2",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/19 7本篇·前篇「交涉的王牌」.mp4",
+              "originalOCRText": "ああ?そりゃ、どーいうことだよ？",
+              "ocrConfidence": 0.93826,
+              "ocrReviewReasons": [],
+              "recordingId": "bili-capital-19"
+            },
+            "timeBasis": "evidence_end_minus_150ms",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p19-all/cast-121.3500.png",
+            "frameSha256": "f6da11706868808e10c058ff2b5000f28ebae0a58ff7cba74fac167a73fe3a3a"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p19-exterior-to-interior-23.png",
+        "sha256": "97250751e3bf444d3892e96ba836dac27111903ea1f5ada05f70306fa8f258f8"
+      },
+      "installedFields": {
+        "character": "live2d/AC_felt01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-01.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg031b_stealshop",
+      "reason": "Original20 is still the sunset stolen-goods-store exterior.21 changes on the location title to the original amber interior;22/23 retain that interior. The actual screenshots reproduce this visible boundary and inheritance.",
+      "effectiveBackgroundEvent": {
+        "node": "10210005:23",
+        "scenario": 23,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg031b_stealshop",
+        "source_scenario_id": 21,
+        "effective": "bg/bg031b_stealshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 55,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p20-10290010-55-638.350.png",
+        "sha256": "41a07afb2b7b51f4dbf8b6d8264a5e317e3045ff0bbce6bb7866c75f6d114acf",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "time": 638.35,
+        "sourceText": "――果物屋の前・昼",
+        "stableKey": "s10290010-p20-at0637",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "638.35",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/story_crowd_data/review/scenes/10290010.json",
+          "sha256": "4122bd1a62dfd8e6498a2c3b019a75124a2fb2090a60339fea4dbceeef47957c",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 55,
+            "stableKey": "s10290010-p20-at0637",
+            "sourceText": "――果物屋の前・昼",
+            "time": 638.35,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "timeBasis": "own_node_original_evidence_end_minus150ms",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 637.0,
+              "end": 638.5,
+              "sourceAnchorSeconds": 637,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/019110-dialogue.png",
+              "ocrEventId": "merged-0154",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "果物屋の前・昼",
+              "ocrConfidence": 0.9943,
+              "ocrReviewReasons": [],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  637,
+                  638.5
+                ],
+                "canonicalAnchorSeconds": 637,
+                "action": "replace",
+                "speaker": "",
+                "text": "――果物屋の前・昼",
+                "scenarioType": 1,
+                "witnessTime": 636.999
+              },
+              "rootReviewWitnessTime": 636.999,
+              "recordingId": "bili-capital-20"
+            }
+          }
+        },
+        "primaryObservationMetadata": null
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-55.png",
+        "sha256": "f272544bfc5d475c844094be550efb2169c7439980fe0cda89cebf613f219395"
+      },
+      "installedFields": {
+        "character": "",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-01.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "not_applicable_location_title",
+      "backgroundVerdict": "pending_preceding_black_title_performance",
+      "expectedVisibleBackgroundResource": null,
+      "reason": "Original638.350s location title is on black; the actual screenshot retains the dim amber store interior. There is no premature orange stall at55. Keep the preceding death/fade/title mechanism pending independently of the correctly restored providers56 onward; do not author black BG or Wait to mask the gap.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:55",
+        "scenario": 55,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg031b_stealshop",
+        "source_scenario_id": 2,
+        "effective": "bg/bg031b_stealshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 56,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p20-10290010-56-644.849.png",
+        "sha256": "7cafc7fd3a45e3b098511a06bb16f62a33a9998fa1b3d6a139512014912d2acf",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "time": 644.849,
+        "sourceText": "どうしたよ、兄ちゃん。急に呆けた面して",
+        "stableKey": "s10290010-p20-at0643",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "644.849",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-character-packet-v1.json",
+          "sha256": "f51b2c06ceb72778432273f522bbef1ec52c6efddfd3aa752d998c9dfee57d53",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 56,
+            "stableKey": "s10290010-p20-at0643",
+            "sourceText": "どうしたよ、兄ちゃん。急に呆けた面して",
+            "rootConfirmed": false,
+            "subagentConfirmed": true,
+            "expected": {
+              "character": ""
+            },
+            "fields": {
+              "character": "live2d/AC_kadomon01"
+            },
+            "evidence": {
+              "recordingId": "bili-capital-20",
+              "reviewer": "/root/visual_review_low_17_20",
+              "directImageReview": true,
+              "decisionBasis": "Direct stage-body review: broad bare muscular chest, patterned red/black headband, long dark hair, green chin beard, black vest and purple forearm wraps agree with extracted original kadomon01.",
+              "selectedWitness": {
+                "sceneId": 10290010,
+                "scenarioId": 56,
+                "stableKey": "s10290010-p20-at0643",
+                "time": 644.849,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-644.8490.png",
+                "frameSha256": "7cafc7fd3a45e3b098511a06bb16f62a33a9998fa1b3d6a139512014912d2acf",
+                "sourceText": "どうしたよ、兄ちゃん。急に呆けた面して",
+                "sourceMapping": null,
+                "sourceEvidence": {
+                  "segmentId": "p20-s10290010",
+                  "start": 642.999,
+                  "end": 644.999,
+                  "sourceAnchorSeconds": 642.999,
+                  "ocrReviewed": false,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/019320-dialogue.png",
+                  "ocrEventId": "merged-0155",
+                  "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                  "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                  "originalOCRText": "どうしたよ、兄ちゃん。急に呆けた面して",
+                  "ocrConfidence": 0.99886,
+                  "ocrReviewReasons": [],
+                  "recordingId": "bili-capital-20"
+                },
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/source-contact-07.jpg",
+                "observationNumber": 79,
+                "candidates": [],
+                "reviewStatus": "subagent_direct_stage_body_review",
+                "absenceClaim": false,
+                "unrecovered": [
+                  "motion",
+                  "face_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "originalAssetIndex": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/original-asset-index.json",
+                  "sha256": "80abe32d40bc9e62ffd9467bf28bc4313197e98727246ebf34fb58a577970b3b"
+                },
+                "originalAssetComparison": {
+                  "model": "kadomon01",
+                  "originalExtractedFiles": [
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_kadomon01/ac/ac.model3.json",
+                      "sha256": "9c59648a64916dc90790e47b9f9b252a921a694b64312e23a05679f9fbc0db87",
+                      "bytes": 3405
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_kadomon01/ac/ac.moc3",
+                      "sha256": "5701e2bd8a77c1ada2ccc6b56302690bc783d1d76ef39c1815043fae0f478be7",
+                      "bytes": 444608
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_kadomon01/ac/textures/texture_00.png",
+                      "sha256": "c9212f213c2e308fb4fd10769eefecbc3b766ab027ceabda78e1facc1b52eeed",
+                      "bytes": 1052830
+                    }
+                  ]
+                }
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/manual-identity-index.json",
+              "candidateIndexSha256": "a23ca66f8245d2197484dd31c3d075c45472d486931b76c39819c5444246ea95",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-image-decisions-v1.json",
+                "sha256": "1583dd7b57baa68163d2047733a9bef706b45fbcf260486749e54dd88cfe6e22"
+              }
+            }
+          }
+        },
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 56,
+            "stableKey": "s10290010-p20-at0643",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0643",
+            "time": 644.849,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "どうしたよ、兄ちゃん。急に呆けた面して",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 642.999,
+              "end": 644.999,
+              "sourceAnchorSeconds": 642.999,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/019320-dialogue.png",
+              "ocrEventId": "merged-0155",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "どうしたよ、兄ちゃん。急に呆けた面して",
+              "ocrConfidence": 0.99886,
+              "ocrReviewReasons": [],
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "evidence_end_minus_150ms",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-644.8490.png",
+            "frameSha256": "7cafc7fd3a45e3b098511a06bb16f62a33a9998fa1b3d6a139512014912d2acf"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-56.png",
+        "sha256": "c4ce2913247eab8ffdb050556dda00f0b725d582deb17c44c4447b4e1656ac73"
+      },
+      "installedFields": {
+        "character": "live2d/AC_kadomon01",
+        "bg_picture": "bg/bg008a_fruitshop",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-01.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg008a_fruitshop",
+      "reason": "Orange awning, hanging apple sign, produce displays and pavement match the original plate/source.56 provides,57 inherits,60 switches back from the green angle.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:56",
+        "scenario": 56,
+        "authored": "bg/bg008a_fruitshop",
+        "mode": "native_array",
+        "resource": "bg/bg008a_fruitshop",
+        "source_scenario_id": 56,
+        "effective": "bg/bg008a_fruitshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 57,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p20-10290010-57-650.849.png",
+        "sha256": "c4b37a271b80d5936a11428c2498dcef74a8e30bb8724c2f4d75a46daad9e852",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "time": 650.849,
+        "sourceText": "おい、兄ちゃん?大丈夫か?",
+        "stableKey": "s10290010-p20-at0649",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "650.849",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-character-packet-v1.json",
+          "sha256": "f51b2c06ceb72778432273f522bbef1ec52c6efddfd3aa752d998c9dfee57d53",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 57,
+            "stableKey": "s10290010-p20-at0649",
+            "sourceText": "おい、兄ちゃん?大丈夫か?",
+            "rootConfirmed": false,
+            "subagentConfirmed": true,
+            "expected": {
+              "character": ""
+            },
+            "fields": {
+              "character": "live2d/AC_kadomon01"
+            },
+            "evidence": {
+              "recordingId": "bili-capital-20",
+              "reviewer": "/root/visual_review_low_17_20",
+              "directImageReview": true,
+              "decisionBasis": "Direct stage-body review: broad bare muscular chest, patterned red/black headband, long dark hair, green chin beard, black vest and purple forearm wraps agree with extracted original kadomon01.",
+              "selectedWitness": {
+                "sceneId": 10290010,
+                "scenarioId": 57,
+                "stableKey": "s10290010-p20-at0649",
+                "time": 650.849,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-650.8490.png",
+                "frameSha256": "c4b37a271b80d5936a11428c2498dcef74a8e30bb8724c2f4d75a46daad9e852",
+                "sourceText": "おい、兄ちゃん?大丈夫か?",
+                "sourceMapping": null,
+                "sourceEvidence": {
+                  "segmentId": "p20-s10290010",
+                  "start": 648.999,
+                  "end": 650.999,
+                  "sourceAnchorSeconds": 648.999,
+                  "ocrReviewed": false,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/019530-dialogue.png",
+                  "ocrEventId": "merged-0156",
+                  "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                  "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                  "originalOCRText": "おい、兄ちゃん?大丈夫か?",
+                  "ocrConfidence": 0.95182,
+                  "ocrReviewReasons": [],
+                  "recordingId": "bili-capital-20"
+                },
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/source-contact-07.jpg",
+                "observationNumber": 80,
+                "candidates": [],
+                "reviewStatus": "subagent_direct_stage_body_review",
+                "absenceClaim": false,
+                "unrecovered": [
+                  "motion",
+                  "face_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "originalAssetIndex": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/original-asset-index.json",
+                  "sha256": "80abe32d40bc9e62ffd9467bf28bc4313197e98727246ebf34fb58a577970b3b"
+                },
+                "originalAssetComparison": {
+                  "model": "kadomon01",
+                  "originalExtractedFiles": [
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_kadomon01/ac/ac.model3.json",
+                      "sha256": "9c59648a64916dc90790e47b9f9b252a921a694b64312e23a05679f9fbc0db87",
+                      "bytes": 3405
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_kadomon01/ac/ac.moc3",
+                      "sha256": "5701e2bd8a77c1ada2ccc6b56302690bc783d1d76ef39c1815043fae0f478be7",
+                      "bytes": 444608
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_kadomon01/ac/textures/texture_00.png",
+                      "sha256": "c9212f213c2e308fb4fd10769eefecbc3b766ab027ceabda78e1facc1b52eeed",
+                      "bytes": 1052830
+                    }
+                  ]
+                }
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/manual-identity-index.json",
+              "candidateIndexSha256": "a23ca66f8245d2197484dd31c3d075c45472d486931b76c39819c5444246ea95",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-image-decisions-v1.json",
+                "sha256": "1583dd7b57baa68163d2047733a9bef706b45fbcf260486749e54dd88cfe6e22"
+              }
+            }
+          }
+        },
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 57,
+            "stableKey": "s10290010-p20-at0649",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0649",
+            "time": 650.849,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "おい、兄ちゃん?大丈夫か?",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 648.999,
+              "end": 650.999,
+              "sourceAnchorSeconds": 648.999,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/019530-dialogue.png",
+              "ocrEventId": "merged-0156",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "おい、兄ちゃん?大丈夫か?",
+              "ocrConfidence": 0.95182,
+              "ocrReviewReasons": [],
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "evidence_end_minus_150ms",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-650.8490.png",
+            "frameSha256": "c4b37a271b80d5936a11428c2498dcef74a8e30bb8724c2f4d75a46daad9e852"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-57.png",
+        "sha256": "f3534929f8efc5dc9ac2d5ede89c156a2ceb84bdeff1f196b3500a9d2e1836c1"
+      },
+      "installedFields": {
+        "character": "live2d/AC_kadomon01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-02.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg008a_fruitshop",
+      "reason": "Orange awning, hanging apple sign, produce displays and pavement match the original plate/source.56 provides,57 inherits,60 switches back from the green angle.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:57",
+        "scenario": 57,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg008a_fruitshop",
+        "source_scenario_id": 56,
+        "effective": "bg/bg008a_fruitshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 58,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p20-10290010-58-654.999.png",
+        "sha256": "75623ef784e954cbfde04104f203a92a608c1987724e61b6932f402df6aed72a",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "time": 654.999,
+        "sourceText": "もう、わけわっかんねぇ……",
+        "stableKey": "s10290010-p20-at0652",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "654.999",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-character-packet-v1.json",
+          "sha256": "f51b2c06ceb72778432273f522bbef1ec52c6efddfd3aa752d998c9dfee57d53",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 58,
+            "stableKey": "s10290010-p20-at0652",
+            "sourceText": "もう、わけわっかんねぇ……",
+            "rootConfirmed": false,
+            "subagentConfirmed": true,
+            "expected": {
+              "character": ""
+            },
+            "fields": {
+              "character": "live2d/AC_subaru01"
+            },
+            "evidence": {
+              "recordingId": "bili-capital-20",
+              "reviewer": "/root/visual_review_low_17_20",
+              "directImageReview": true,
+              "decisionBasis": "Direct stage-body review: short dark spiky hair and the orange collar/shoulder piping, white front, black sleeves and N chest emblem agree with the extracted original subaru01 texture. Choice UI portraits are excluded. No body or face instruction is inferred.",
+              "selectedWitness": {
+                "sceneId": 10290010,
+                "scenarioId": 58,
+                "stableKey": "s10290010-p20-at0652",
+                "time": 654.999,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-654.9990.png",
+                "frameSha256": "75623ef784e954cbfde04104f203a92a608c1987724e61b6932f402df6aed72a",
+                "sourceText": "もう、わけわっかんねぇ……",
+                "sourceMapping": null,
+                "sourceEvidence": {
+                  "segmentId": "p20-s10290010",
+                  "start": 652.0,
+                  "end": 658.0,
+                  "sourceAnchorSeconds": 652,
+                  "ocrReviewed": true,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/019650-dialogue.png",
+                  "ocrEventId": "merged-0157",
+                  "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                  "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                  "originalOCRText": "もう、わけわっかんねぇ……",
+                  "ocrConfidence": 0.9856,
+                  "ocrReviewReasons": [],
+                  "visualReviewer": "root",
+                  "rootDecision": {
+                    "interval": [
+                      652,
+                      658
+                    ],
+                    "canonicalAnchorSeconds": 652,
+                    "action": "replace",
+                    "speaker": "スバル",
+                    "text": "もう、わけわっかんねぇ……",
+                    "witnessTime": 654.999
+                  },
+                  "rootReviewWitnessTime": 654.999,
+                  "recordingId": "bili-capital-20"
+                },
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/source-contact-07.jpg",
+                "observationNumber": 81,
+                "candidates": [],
+                "reviewStatus": "subagent_direct_stage_body_review",
+                "absenceClaim": false,
+                "unrecovered": [
+                  "motion",
+                  "face_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "originalAssetIndex": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/original-asset-index.json",
+                  "sha256": "80abe32d40bc9e62ffd9467bf28bc4313197e98727246ebf34fb58a577970b3b"
+                },
+                "originalAssetComparison": {
+                  "model": "subaru01",
+                  "originalExtractedFiles": [
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                      "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2",
+                      "bytes": 14595
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                      "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149",
+                      "bytes": 1156992
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                      "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c",
+                      "bytes": 1273039
+                    }
+                  ]
+                }
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/manual-identity-index.json",
+              "candidateIndexSha256": "a23ca66f8245d2197484dd31c3d075c45472d486931b76c39819c5444246ea95",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-image-decisions-v1.json",
+                "sha256": "1583dd7b57baa68163d2047733a9bef706b45fbcf260486749e54dd88cfe6e22"
+              }
+            }
+          }
+        },
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 58,
+            "stableKey": "s10290010-p20-at0652",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0652",
+            "time": 654.999,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "もう、わけわっかんねぇ……",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 652.0,
+              "end": 658.0,
+              "sourceAnchorSeconds": 652,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/019650-dialogue.png",
+              "ocrEventId": "merged-0157",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "もう、わけわっかんねぇ……",
+              "ocrConfidence": 0.9856,
+              "ocrReviewReasons": [],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  652,
+                  658
+                ],
+                "canonicalAnchorSeconds": 652,
+                "action": "replace",
+                "speaker": "スバル",
+                "text": "もう、わけわっかんねぇ……",
+                "witnessTime": 654.999
+              },
+              "rootReviewWitnessTime": 654.999,
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "root_visual_witness",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-654.9990.png",
+            "frameSha256": "75623ef784e954cbfde04104f203a92a608c1987724e61b6932f402df6aed72a"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-58.png",
+        "sha256": "836bb9fa0fca2ee502390eee74bd54400f7fa77f7baf86598eca0f0ba02e3e2e"
+      },
+      "installedFields": {
+        "character": "live2d/AC_subaru01",
+        "bg_picture": "bg/bg009a_fruitshop",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-02.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg009a_fruitshop",
+      "reason": "Green awning, shutters, sacks and display trays match the original plate/source.58/61 provide the two green switches,59/62 inherit, and64/65 visibly return to that same green stage after movie63 without retaining the film.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:58",
+        "scenario": 58,
+        "authored": "bg/bg009a_fruitshop",
+        "mode": "native_array",
+        "resource": "bg/bg009a_fruitshop",
+        "source_scenario_id": 58,
+        "effective": "bg/bg009a_fruitshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 59,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p20-10290010-59-665.999.png",
+        "sha256": "ec7b37b82b2c996fe6b1e137aeee6df9c8e7aa506a2adeeeaedf97a04fc888a8",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "time": 665.999,
+        "sourceText": "ひ……！",
+        "stableKey": "s10290010-p20-at0666",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "665.999",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-character-packet-v1.json",
+          "sha256": "f51b2c06ceb72778432273f522bbef1ec52c6efddfd3aa752d998c9dfee57d53",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 59,
+            "stableKey": "s10290010-p20-at0666",
+            "sourceText": "ひ……！",
+            "rootConfirmed": false,
+            "subagentConfirmed": true,
+            "expected": {
+              "character": ""
+            },
+            "fields": {
+              "character": "live2d/AC_subaru01"
+            },
+            "evidence": {
+              "recordingId": "bili-capital-20",
+              "reviewer": "/root/visual_review_low_17_20",
+              "directImageReview": true,
+              "decisionBasis": "Direct stage-body review: short dark spiky hair and the orange collar/shoulder piping, white front, black sleeves and N chest emblem agree with the extracted original subaru01 texture. Choice UI portraits are excluded. No body or face instruction is inferred.",
+              "selectedWitness": {
+                "sceneId": 10290010,
+                "scenarioId": 59,
+                "stableKey": "s10290010-p20-at0666",
+                "time": 665.999,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-665.9990.png",
+                "frameSha256": "ec7b37b82b2c996fe6b1e137aeee6df9c8e7aa506a2adeeeaedf97a04fc888a8",
+                "sourceText": "ひ……！",
+                "sourceMapping": null,
+                "sourceEvidence": {
+                  "segmentId": "p20-s10290010",
+                  "start": 666.0,
+                  "end": 667.0,
+                  "sourceAnchorSeconds": 666,
+                  "ocrReviewed": true,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/019980-dialogue.png",
+                  "ocrEventId": "merged-0158",
+                  "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                  "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                  "originalOCRText": "ひ……!",
+                  "ocrConfidence": 0.7136,
+                  "ocrReviewReasons": [
+                    "low_confidence"
+                  ],
+                  "visualReviewer": "root",
+                  "rootDecision": {
+                    "interval": [
+                      666,
+                      667
+                    ],
+                    "canonicalAnchorSeconds": 666,
+                    "action": "keep-separate-short-panel",
+                    "speaker": "スバル",
+                    "text": "ひ……！",
+                    "witnessTime": 665.999
+                  },
+                  "rootReviewWitnessTime": 665.999,
+                  "recordingId": "bili-capital-20"
+                },
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/source-contact-07.jpg",
+                "observationNumber": 82,
+                "candidates": [],
+                "reviewStatus": "subagent_direct_stage_body_review",
+                "absenceClaim": false,
+                "unrecovered": [
+                  "motion",
+                  "face_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "originalAssetIndex": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/original-asset-index.json",
+                  "sha256": "80abe32d40bc9e62ffd9467bf28bc4313197e98727246ebf34fb58a577970b3b"
+                },
+                "originalAssetComparison": {
+                  "model": "subaru01",
+                  "originalExtractedFiles": [
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                      "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2",
+                      "bytes": 14595
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                      "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149",
+                      "bytes": 1156992
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                      "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c",
+                      "bytes": 1273039
+                    }
+                  ]
+                }
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/manual-identity-index.json",
+              "candidateIndexSha256": "a23ca66f8245d2197484dd31c3d075c45472d486931b76c39819c5444246ea95",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-image-decisions-v1.json",
+                "sha256": "1583dd7b57baa68163d2047733a9bef706b45fbcf260486749e54dd88cfe6e22"
+              }
+            }
+          }
+        },
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 59,
+            "stableKey": "s10290010-p20-at0666",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0666",
+            "time": 665.999,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "ひ……！",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 666.0,
+              "end": 667.0,
+              "sourceAnchorSeconds": 666,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/019980-dialogue.png",
+              "ocrEventId": "merged-0158",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "ひ……!",
+              "ocrConfidence": 0.7136,
+              "ocrReviewReasons": [
+                "low_confidence"
+              ],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  666,
+                  667
+                ],
+                "canonicalAnchorSeconds": 666,
+                "action": "keep-separate-short-panel",
+                "speaker": "スバル",
+                "text": "ひ……！",
+                "witnessTime": 665.999
+              },
+              "rootReviewWitnessTime": 665.999,
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "root_visual_witness",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-665.9990.png",
+            "frameSha256": "ec7b37b82b2c996fe6b1e137aeee6df9c8e7aa506a2adeeeaedf97a04fc888a8"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-59.png",
+        "sha256": "40b39f05a5b459847241916606ccc61d5f899569a187d9919e5df38751cfc58c"
+      },
+      "installedFields": {
+        "character": "live2d/AC_subaru01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-02.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg009a_fruitshop",
+      "reason": "Green awning, shutters, sacks and display trays match the original plate/source.58/61 provide the two green switches,59/62 inherit, and64/65 visibly return to that same green stage after movie63 without retaining the film.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:59",
+        "scenario": 59,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg009a_fruitshop",
+        "source_scenario_id": 58,
+        "effective": "bg/bg009a_fruitshop"
+      },
+      "additionalVisibleEvidence": [
+        "Source59 has water droplets/splash over Subaru, not visible in this actual ready-state screenshot. Original asset/command phase/lifecycle and corresponding renderer moment remain pending; no complete-playback absence claim is made."
+      ],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 60,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/source-p20-10290010-60-672.499.png",
+        "sha256": "dcb0d9f4ee92441b1dc19c95a222556e2cccdb43269688f6f0e71ef897aa70d7",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "time": 672.499,
+        "sourceText": "大丈夫か、兄ちゃん。\n金はいらねえ。とりあえず、ほれ。\n水とリンガ",
+        "stableKey": "s10290010-p20-at0668",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "672.499",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "selectedSourceMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-character-packet-v1.json",
+          "sha256": "f51b2c06ceb72778432273f522bbef1ec52c6efddfd3aa752d998c9dfee57d53",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 60,
+            "stableKey": "s10290010-p20-at0668",
+            "sourceText": "大丈夫か、兄ちゃん。\n金はいらねえ。とりあえず、ほれ。\n水とリンガ",
+            "rootConfirmed": false,
+            "subagentConfirmed": true,
+            "expected": {
+              "character": ""
+            },
+            "fields": {
+              "character": "live2d/AC_kadomon01"
+            },
+            "evidence": {
+              "recordingId": "bili-capital-20",
+              "reviewer": "/root/visual_review_low_17_20",
+              "directImageReview": true,
+              "decisionBasis": "Direct stage-body review: broad bare muscular chest, patterned red/black headband, long dark hair, green chin beard, black vest and purple forearm wraps agree with extracted original kadomon01.",
+              "selectedWitness": {
+                "sceneId": 10290010,
+                "scenarioId": 60,
+                "stableKey": "s10290010-p20-at0668",
+                "time": 672.499,
+                "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-672.4990.png",
+                "frameSha256": "dcb0d9f4ee92441b1dc19c95a222556e2cccdb43269688f6f0e71ef897aa70d7",
+                "sourceText": "大丈夫か、兄ちゃん。\n金はいらねえ。とりあえず、ほれ。\n水とリンガ",
+                "sourceMapping": null,
+                "sourceEvidence": {
+                  "segmentId": "p20-s10290010",
+                  "start": 668.0,
+                  "end": 672.5,
+                  "sourceAnchorSeconds": 668,
+                  "ocrReviewed": true,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/dialogue-completion-2hz/crops/020175-dialogue.png",
+                  "ocrEventId": "merged-0159",
+                  "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+                  "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+                  "originalOCRText": "大丈夫か、兄ちゃん。金はいらねえ。とりあえず、ほれ。水とリンガ",
+                  "ocrConfidence": 0.9912,
+                  "ocrReviewReasons": [
+                    "content_variant_conflict"
+                  ],
+                  "visualReviewer": "root",
+                  "rootDecision": {
+                    "interval": [
+                      668,
+                      672.5
+                    ],
+                    "canonicalAnchorSeconds": 668,
+                    "action": "replace",
+                    "speaker": "果物屋の店主",
+                    "text": "大丈夫か、兄ちゃん。\n金はいらねえ。とりあえず、ほれ。\n水とリンガ",
+                    "witnessTime": 672.499
+                  },
+                  "rootReviewWitnessTime": 672.499,
+                  "recordingId": "bili-capital-20"
+                },
+                "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/source-contact-07.jpg",
+                "observationNumber": 83,
+                "candidates": [],
+                "reviewStatus": "subagent_direct_stage_body_review",
+                "absenceClaim": false,
+                "unrecovered": [
+                  "motion",
+                  "face_expression",
+                  "lighting",
+                  "extra_layers",
+                  "front_back_order"
+                ],
+                "originalAssetIndex": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/original-asset-index.json",
+                  "sha256": "80abe32d40bc9e62ffd9467bf28bc4313197e98727246ebf34fb58a577970b3b"
+                },
+                "originalAssetComparison": {
+                  "model": "kadomon01",
+                  "originalExtractedFiles": [
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_kadomon01/ac/ac.model3.json",
+                      "sha256": "9c59648a64916dc90790e47b9f9b252a921a694b64312e23a05679f9fbc0db87",
+                      "bytes": 3405
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_kadomon01/ac/ac.moc3",
+                      "sha256": "5701e2bd8a77c1ada2ccc6b56302690bc783d1d76ef39c1815043fae0f478be7",
+                      "bytes": 444608
+                    },
+                    {
+                      "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_kadomon01/ac/textures/texture_00.png",
+                      "sha256": "c9212f213c2e308fb4fd10769eefecbc3b766ab027ceabda78e1facc1b52eeed",
+                      "bytes": 1052830
+                    }
+                  ]
+                }
+              },
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/manual-identity-index.json",
+              "candidateIndexSha256": "a23ca66f8245d2197484dd31c3d075c45472d486931b76c39819c5444246ea95",
+              "decisionDocument": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p17-p20-subagent-character-review-v1/p20/p20-subagent-image-decisions-v1.json",
+                "sha256": "1583dd7b57baa68163d2047733a9bef706b45fbcf260486749e54dd88cfe6e22"
+              }
+            }
+          }
+        },
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 60,
+            "stableKey": "s10290010-p20-at0668",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0668",
+            "time": 672.499,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "大丈夫か、兄ちゃん。\n金はいらねえ。とりあえず、ほれ。\n水とリンガ",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 668.0,
+              "end": 672.5,
+              "sourceAnchorSeconds": 668,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/dialogue-completion-2hz/crops/020175-dialogue.png",
+              "ocrEventId": "merged-0159",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "大丈夫か、兄ちゃん。金はいらねえ。とりあえず、ほれ。水とリンガ",
+              "ocrConfidence": 0.9912,
+              "ocrReviewReasons": [
+                "content_variant_conflict"
+              ],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  668,
+                  672.5
+                ],
+                "canonicalAnchorSeconds": 668,
+                "action": "replace",
+                "speaker": "果物屋の店主",
+                "text": "大丈夫か、兄ちゃん。\n金はいらねえ。とりあえず、ほれ。\n水とリンガ",
+                "witnessTime": 672.499
+              },
+              "rootReviewWitnessTime": 672.499,
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "root_visual_witness",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-672.4990.png",
+            "frameSha256": "dcb0d9f4ee92441b1dc19c95a222556e2cccdb43269688f6f0e71ef897aa70d7"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-60.png",
+        "sha256": "9f01e97185e84af9c6591232befa8a92db70fd354611567837c58a211acc11a2"
+      },
+      "installedFields": {
+        "character": "live2d/AC_kadomon01",
+        "bg_picture": "bg/bg008a_fruitshop",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-02.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg008a_fruitshop",
+      "reason": "Orange awning, hanging apple sign, produce displays and pavement match the original plate/source.56 provides,57 inherits,60 switches back from the green angle.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:60",
+        "scenario": 60,
+        "authored": "bg/bg008a_fruitshop",
+        "mode": "native_array",
+        "resource": "bg/bg008a_fruitshop",
+        "source_scenario_id": 60,
+        "effective": "bg/bg008a_fruitshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 61,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/backgrounds-p19-p20-v1/source-10290010-61-673.999.png",
+        "sha256": "d006182924af64a5ad4e507a1e99ae19498e54c7166e58ce5949ca520192d2ae",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "time": 673.999,
+        "stableKey": "s10290010-p20-at0674",
+        "sourceText": "――――。",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "673.999",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 61,
+            "stableKey": "s10290010-p20-at0674",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0674",
+            "time": 673.999,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": {
+              "originalSourceVideo": null,
+              "originalSourceSha256": null,
+              "replacementSourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "replacementSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "authorization": "Apply root's unique-recording and original-reviewed-frame source-resolution rule without rewriting the original sidecar.",
+              "basis": "bili-capital-20 scene10290010:61 has time673.999–674.999. The original root-reviewed frame filename embeds the actual unique P20 source SHA prefix and a674s time anchor; explicitly sourced P20 rows identify the same clip.",
+              "qualityReports": [
+                "data/native_recovery/royal-capital-20261110/ocr/20/root-review/frames/d80adcb3669d-020220.jpg"
+              ],
+              "sourceResolution": "recordingId + original reviewed frame"
+            },
+            "sourceText": "――――。",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 673.999,
+              "end": 674.999,
+              "sourceAnchorSeconds": 674,
+              "ocrReviewed": true,
+              "frame": "data/native_recovery/royal-capital-20261110/ocr/20/root-review/frames/d80adcb3669d-020220.jpg",
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  673.999,
+                  674.999
+                ],
+                "canonicalAnchorSeconds": 674,
+                "action": "keep-separate-silent-panel",
+                "speaker": "スバル",
+                "text": "――――。",
+                "witnessTime": 673.999,
+                "frame": "data/native_recovery/royal-capital-20261110/ocr/20/root-review/frames/d80adcb3669d-020220.jpg",
+                "rootConfirmed": true,
+                "note": "This existing full frame was personally reviewed by root. The following675.999inner monologue is a different panel and is not OCR provenance for this silence."
+              },
+              "rootReviewWitnessTime": 673.999,
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "root_visual_witness",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-673.9990.png",
+            "frameSha256": "d006182924af64a5ad4e507a1e99ae19498e54c7166e58ce5949ca520192d2ae"
+          }
+        },
+        "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/backgrounds-p19-p20-v1/source-10290010-61-673.999.png",
+        "frameSha256": "d006182924af64a5ad4e507a1e99ae19498e54c7166e58ce5949ca520192d2ae"
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-61.png",
+        "sha256": "5ab46bd43c8befaaad90dfa0a512e534f2c3d0ba0040b55b333a7771743fad01"
+      },
+      "installedFields": {
+        "character": "live2d/AC_subaru01",
+        "bg_picture": "bg/bg009a_fruitshop",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-02.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg009a_fruitshop",
+      "reason": "Green awning, shutters, sacks and display trays match the original plate/source.58/61 provide the two green switches,59/62 inherit, and64/65 visibly return to that same green stage after movie63 without retaining the film.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:61",
+        "scenario": 61,
+        "authored": "bg/bg009a_fruitshop",
+        "mode": "native_array",
+        "resource": "bg/bg009a_fruitshop",
+        "source_scenario_id": 61,
+        "effective": "bg/bg009a_fruitshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 62,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-10290010-62-678.349.png",
+        "sha256": "532d2b137e591aa676211a721f67f6ae029322a1d48370fa450a5755ae3f838f",
+        "time": 678.349,
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "678.349",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "metadataSource": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 62,
+            "stableKey": "s10290010-p20-at0676",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0676",
+            "time": 678.349,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "(いったい、何が、どうなって……)",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 675.999,
+              "end": 678.499,
+              "sourceAnchorSeconds": 675.999,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/020340-dialogue.png",
+              "ocrEventId": "merged-0161",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "(いったい、何が、どうなって……)",
+              "ocrConfidence": 0.96323,
+              "ocrReviewReasons": [],
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "evidence_end_minus_150ms",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-678.3490.png",
+            "frameSha256": "532d2b137e591aa676211a721f67f6ae029322a1d48370fa450a5755ae3f838f"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-62.png",
+        "sha256": "f8810c0c5cbcf10061f8be30385a10daf682888177608b28c40c6971d7470fd6"
+      },
+      "installedFields": {
+        "character": "live2d/AC_subaru01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-02.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg009a_fruitshop",
+      "reason": "Green awning, shutters, sacks and display trays match the original plate/source.58/61 provide the two green switches,59/62 inherit, and64/65 visibly return to that same green stage after movie63 without retaining the film.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:62",
+        "scenario": 62,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg009a_fruitshop",
+        "source_scenario_id": 61,
+        "effective": "bg/bg009a_fruitshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 63,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p20-missing-text/0686.00.jpg",
+        "sha256": "7ea8b981bb829a6e9e1d58d28b1ecb6ed032a9f5325ed94fe688dce1b5456524",
+        "time": 686.0,
+        "metadataSource": {
+          "file": "/home/rikka/Projects/stella/story_crowd_data/review/scenes/10290010.json",
+          "sha256": "de23fae930abb4f1b02c327b0b246993881542226f2bd81c65dfb1579e273512",
+          "record": {
+            "status": "draft",
+            "nativeIdOrigin": "authored",
+            "stableKey": "s10290010-p20-at0686",
+            "sourceText": "",
+            "sourceSpeaker": "",
+            "translation": "",
+            "recordings": [
+              {
+                "segmentId": "p20-s10290010",
+                "start": 686.0,
+                "end": 686.0,
+                "sourceAnchorSeconds": 686,
+                "ocrReviewed": true,
+                "frame": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p20-missing-text/0686.00.jpg",
+                "visualReviewer": "root",
+                "rootDecision": {
+                  "sceneId": 10290010,
+                  "anchor": 686,
+                  "rootConfirmed": true,
+                  "action": "root-signed-complete-video-resource",
+                  "scenarioType": 3,
+                  "text": "",
+                  "speaker": "",
+                  "frame": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p20-missing-text/0686.00.jpg",
+                  "resourceDurationSeconds": 7.04,
+                  "sourceEvidenceInterval": [
+                    679,
+                    691
+                  ]
+                },
+                "rootReviewWitnessTime": null,
+                "fieldReconstructions": [
+                  {
+                    "anchor": 686,
+                    "rootConfirmed": true,
+                    "nativeFields": {
+                      "video": "adv_movie_10113"
+                    },
+                    "originalPhaseRecovered": false,
+                    "basis": "Source686 and resource10113at5.5seconds show the same Subaru/corn-snack shot. The complete7.04-second resource is retained."
+                  }
+                ],
+                "recordingId": "bili-capital-20"
+              }
+            ],
+            "unknownFields": [
+              "bg_music",
+              "bg_picture",
+              "character",
+              "character_image",
+              "command",
+              "motion",
+              "native_array_order",
+              "original_scenario_id",
+              "position",
+              "se",
+              "talk_chara",
+              "voice"
+            ],
+            "issues": [
+              {
+                "code": "performance_unrecovered",
+                "severity": "warning",
+                "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
+                "scenarioId": 63,
+                "fields": [
+                  "bg_music",
+                  "bg_picture",
+                  "character",
+                  "character_image",
+                  "command",
+                  "motion",
+                  "native_array_order",
+                  "original_scenario_id",
+                  "position",
+                  "se",
+                  "talk_chara",
+                  "voice"
+                ]
+              },
+              {
+                "code": "video_metadata_unrecovered",
+                "severity": "warning",
+                "message": "Movie timing/subtitle metadata remains unrecovered.",
+                "scenarioId": 63
+              }
+            ],
+            "branches": [
+              {
+                "branchId": 631,
+                "stableKey": "s10290010-p20-at0686-next",
+                "nativeIdOrigin": "authored",
+                "verification": "observed",
+                "state": "confirmed",
+                "evidence": [
+                  {
+                    "segmentId": "p20-s10290010",
+                    "start": 686.0,
+                    "end": 686.0,
+                    "sourceAnchorSeconds": 686,
+                    "ocrReviewed": true,
+                    "frame": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p20-missing-text/0686.00.jpg",
+                    "visualReviewer": "root",
+                    "rootDecision": {
+                      "sceneId": 10290010,
+                      "anchor": 686,
+                      "rootConfirmed": true,
+                      "action": "root-signed-complete-video-resource",
+                      "scenarioType": 3,
+                      "text": "",
+                      "speaker": "",
+                      "frame": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p20-missing-text/0686.00.jpg",
+                      "resourceDurationSeconds": 7.04,
+                      "sourceEvidenceInterval": [
+                        679,
+                        691
+                      ]
+                    },
+                    "rootReviewWitnessTime": null,
+                    "fieldReconstructions": [
+                      {
+                        "anchor": 686,
+                        "rootConfirmed": true,
+                        "nativeFields": {
+                          "video": "adv_movie_10113"
+                        },
+                        "originalPhaseRecovered": false,
+                        "basis": "Source686 and resource10113at5.5seconds show the same Subaru/corn-snack shot. The complete7.04-second resource is retained."
+                      }
+                    ],
+                    "nextStableKey": "s10290010-p20-at0691",
+                    "basis": "Consecutive fixed recording anchors inside one manually identified scene.",
+                    "recordingId": "bili-capital-20"
+                  }
+                ],
+                "gainPointsRecovered": false
+              }
+            ],
+            "repairEvidence": {
+              "translation": {
+                "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-low/10290010.json",
+                "language": "zh-CN",
+                "originalSourcePreserved": true
+              }
+            }
+          }
+        },
+        "qualification": "Retained original686.00s JPEG, not a newly resolved source-video claim. This row's original missing video/hash fields remain unchanged. Clip content and complete runtime log are assessed separately."
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-63.png",
+        "sha256": "f3e32904f9600a11e88061cd1a839004776d65cf32a5597d9e793927b345fbdb"
+      },
+      "installedFields": {
+        "character": "",
+        "bg_picture": "",
+        "video": "adv_movie_10113",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-03.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "not_applicable_movie_image",
+      "backgroundVerdict": "not_applicable_movie_presentation",
+      "expectedVisibleBackgroundResource": null,
+      "reason": "The actual screenshot holds an animated Subaru/corn-snack image on a square canvas with black contain bars, visibly agreeing with the content/presentation of the retained original686s JPEG. Different sampled frames/lighting are not treated as pixel equivalence. The screenshot alone cannot prove the whole movie played; runtime events are separately retained.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:63",
+        "scenario": 63,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg009a_fruitshop",
+        "source_scenario_id": 61,
+        "effective": "bg/bg009a_fruitshop"
+      },
+      "additionalVisibleEvidence": [
+        "Underlying native BG log retains green bg009a provided by61. The movie overlays it;64 visibly returns to the green stage without movie residue."
+      ],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 64,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-10290010-64-690.999.png",
+        "sha256": "49898cc305c2452d85c70a7b6f4a35d4acb295eaa54b84a1415f95cf69c69f25",
+        "time": 690.999,
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "690.999",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "metadataSource": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 64,
+            "stableKey": "s10290010-p20-at0691",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0691",
+            "time": 690.999,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "ま――",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 690.9,
+              "end": 691.1,
+              "sourceAnchorSeconds": 691,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/020730-dialogue.png",
+              "ocrEventId": "merged-0162",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "ま",
+              "ocrConfidence": 0.99951,
+              "ocrReviewReasons": [
+                "single_observation"
+              ],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  690.9,
+                  691.1
+                ],
+                "canonicalAnchorSeconds": 691,
+                "action": "keep-separate-short-panel",
+                "speaker": "スバル",
+                "text": "ま――",
+                "witnessTime": 690.999,
+                "note": "This completed short interruption precedes a different plea beginningちょ; do not merge them as typewriter prefixes."
+              },
+              "rootReviewWitnessTime": 690.999,
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "root_visual_witness",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-690.9990.png",
+            "frameSha256": "49898cc305c2452d85c70a7b6f4a35d4acb295eaa54b84a1415f95cf69c69f25"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-64.png",
+        "sha256": "b84d6448814b28285f62ddcb92a83e9b2fe0fd920f4291eaab0167b6b7393661"
+      },
+      "installedFields": {
+        "character": "live2d/AC_subaru01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-03.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg009a_fruitshop",
+      "reason": "Green awning, shutters, sacks and display trays match the original plate/source.58/61 provide the two green switches,59/62 inherit, and64/65 visibly return to that same green stage after movie63 without retaining the film.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:64",
+        "scenario": 64,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg009a_fruitshop",
+        "source_scenario_id": 61,
+        "effective": "bg/bg009a_fruitshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 65,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-10290010-65-693.999.png",
+        "sha256": "4ac0d60ba580169a7a0659c5153b0901a9f6a97d2b92e7cb9aa934c022f895ae",
+        "time": 693.999,
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "693.999",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "metadataSource": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 65,
+            "stableKey": "s10290010-p20-at0691p5",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0691p5",
+            "time": 693.999,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "ちょ、待って……待ってくれ……頼む、\n待って……",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 691.4,
+              "end": 695.0,
+              "sourceAnchorSeconds": 691.5,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/020820-dialogue.png",
+              "ocrEventId": "merged-0163",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "ちょ、待って……待ってくれ……頼む、待って",
+              "ocrConfidence": 0.9287,
+              "ocrReviewReasons": [],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  691.4,
+                  695
+                ],
+                "canonicalAnchorSeconds": 691.5,
+                "action": "replace",
+                "speaker": "スバル",
+                "text": "ちょ、待って……待ってくれ……頼む、\n待って……",
+                "witnessTime": 693.999
+              },
+              "rootReviewWitnessTime": 693.999,
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "root_visual_witness",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-693.9990.png",
+            "frameSha256": "4ac0d60ba580169a7a0659c5153b0901a9f6a97d2b92e7cb9aa934c022f895ae"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-65.png",
+        "sha256": "51e368cb9896d682921feb307e41b5c3932b5ba11327dd576e11960eb287e74d"
+      },
+      "installedFields": {
+        "character": "live2d/AC_subaru01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-03.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg009a_fruitshop",
+      "reason": "Green awning, shutters, sacks and display trays match the original plate/source.58/61 provide the two green switches,59/62 inherit, and64/65 visibly return to that same green stage after movie63 without retaining the film.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:65",
+        "scenario": 65,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg009a_fruitshop",
+        "source_scenario_id": 61,
+        "effective": "bg/bg009a_fruitshop"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 66,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/backgrounds-p19-p20-v1/source-10290010-66-699.999.png",
+        "sha256": "0ff7b63ba95a386fcc5745cac14f796b43d65ab36b94d485f4979ea8e5d8c602",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "time": 699.999,
+        "stableKey": "s10290010-p20-at0698",
+        "sourceText": "待ってくれ、\nサテラぁ――！",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "699.999",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "primaryObservationMetadata": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 66,
+            "stableKey": "s10290010-p20-at0698",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0698",
+            "time": 699.999,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "待ってくれ、\nサテラぁ――！",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 698.0,
+              "end": 700.5,
+              "sourceAnchorSeconds": 698,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/021000-dialogue.png",
+              "ocrEventId": "merged-0164",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "待ってくれ、サテラぁ",
+              "ocrConfidence": 0.97792,
+              "ocrReviewReasons": [
+                "content_variant_conflict"
+              ],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  698,
+                  700.5
+                ],
+                "canonicalAnchorSeconds": 698,
+                "action": "replace",
+                "speaker": "スバル",
+                "text": "待ってくれ、\nサテラぁ――！",
+                "witnessTime": 699.999
+              },
+              "rootReviewWitnessTime": 699.999,
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "root_visual_witness",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-699.9990.png",
+            "frameSha256": "0ff7b63ba95a386fcc5745cac14f796b43d65ab36b94d485f4979ea8e5d8c602"
+          }
+        },
+        "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v18-cast-review/backgrounds-p19-p20-v1/source-10290010-66-699.999.png",
+        "frameSha256": "0ff7b63ba95a386fcc5745cac14f796b43d65ab36b94d485f4979ea8e5d8c602"
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-66.png",
+        "sha256": "919b93bb9d3ef859a4437e8eba8a77ca02a13621739d7e4a2577111ae88da0bb"
+      },
+      "installedFields": {
+        "character": "live2d/AC_subaru01",
+        "bg_picture": "bg/bg013a_street",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-03.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg013a_street",
+      "reason": "Only from66 do the actual main-street pennants, red roof/green windows, cobblestones and blue parasol appear, matching the original source.67 Emilia and68 Subaru retain that street.65 is still green.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:66",
+        "scenario": 66,
+        "authored": "bg/bg013a_street",
+        "mode": "native_array",
+        "resource": "bg/bg013a_street",
+        "source_scenario_id": 66,
+        "effective": "bg/bg013a_street"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 67,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-10290010-67-701.999.png",
+        "sha256": "6b90c0961620cbd715782ed871a5b75ba3f8005ab28c720b1b2f1658fe350837",
+        "time": 701.999,
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "701.999",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "metadataSource": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 67,
+            "stableKey": "s10290010-p20-at0702",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0702",
+            "time": 701.999,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "――――。",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 702.0,
+              "end": 703.0,
+              "sourceAnchorSeconds": 702,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/021060-dialogue.png",
+              "ocrEventId": "merged-0165",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "。",
+              "ocrConfidence": 0.38588,
+              "ocrReviewReasons": [
+                "low_confidence"
+              ],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  702,
+                  703
+                ],
+                "canonicalAnchorSeconds": 702,
+                "action": "keep-separate-silent-panel",
+                "speaker": "銀髪の少女",
+                "text": "――――。",
+                "witnessTime": 701.999
+              },
+              "rootReviewWitnessTime": 701.999,
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "root_visual_witness",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-701.9990.png",
+            "frameSha256": "6b90c0961620cbd715782ed871a5b75ba3f8005ab28c720b1b2f1658fe350837"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-67.png",
+        "sha256": "e873b844370121694646d9ef59f4d08b80eef694cc1d2656a3a9d0de8cca23cd"
+      },
+      "installedFields": {
+        "character": "live2d/AC_emilia01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-03.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg013a_street",
+      "reason": "Only from66 do the actual main-street pennants, red roof/green windows, cobblestones and blue parasol appear, matching the original source.67 Emilia and68 Subaru retain that street.65 is still green.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:67",
+        "scenario": 67,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg013a_street",
+        "source_scenario_id": 66,
+        "effective": "bg/bg013a_street"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    },
+    {
+      "sceneId": 10290010,
+      "scenarioId": 68,
+      "route": "v20-p20-fruitshop-movie-street",
+      "source": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-10290010-68-708.849.png",
+        "sha256": "77245d0904a830a1b338ab10330b6397fee6167c6e8c7957f6e902c66dcb675b",
+        "time": 708.849,
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+        "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+        "extractionCommand": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-ss",
+          "708.849",
+          "-i",
+          "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-filter_complex_threads",
+          "1",
+          "-frames:v",
+          "1",
+          "-f",
+          "image2pipe",
+          "-vcodec",
+          "png",
+          "-"
+        ],
+        "metadataSource": {
+          "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/observation-evidence.json",
+          "sha256": "84e0dad59bac5859af8980efca69e4a45e93010c3eadbca95fdccd4422e1131a",
+          "record": {
+            "sceneId": 10290010,
+            "scenarioId": 68,
+            "stableKey": "s10290010-p20-at0704",
+            "recordingId": "bili-capital-20",
+            "recordingPart": 20,
+            "node_id": "s10290010-p20-at0704",
+            "time": 708.849,
+            "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+            "videoSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+            "sourceMapping": null,
+            "sourceText": "無視、しないでくれ。いなくなったのも言うことを聞かなかったのも俺が悪かった",
+            "originalEvidence": {
+              "segmentId": "p20-s10290010",
+              "start": 703.999,
+              "end": 708.999,
+              "sourceAnchorSeconds": 703.999,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/20/coarse-1hz/crops/021240-dialogue.png",
+              "ocrEventId": "merged-0166",
+              "sourceSha256": "d80adcb3669d16b440a2863b439b35abbabc8400a701defbda07993b6b490c0c",
+              "sourceVideo": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/20-remote-qn32.mp4",
+              "originalOCRText": "無視、しないでくれ。いなくなったのも言うことを聞かなかったのも俺が悪かった",
+              "ocrConfidence": 0.99735,
+              "ocrReviewReasons": [],
+              "recordingId": "bili-capital-20"
+            },
+            "timeBasis": "evidence_end_minus_150ms",
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p20-all/cast-708.8490.png",
+            "frameSha256": "77245d0904a830a1b338ab10330b6397fee6167c6e8c7957f6e902c66dcb675b"
+          }
+        }
+      },
+      "actualPlayer": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/v20-p20-fruitshop-movie-street-68.png",
+        "sha256": "c5220eee14f20d55238bcc42da3ae86b91a58aae906b3ca993a908c4d4d9603b"
+      },
+      "installedFields": {
+        "character": "live2d/AC_subaru01",
+        "bg_picture": "",
+        "video": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "comparisonSheet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/production-v20-background-review/source-vs-player-03.jpg",
+      "reviewer": "/root/visual_review_high",
+      "directImageInspection": true,
+      "actorVerdict": "pass_identity_and_costume_only",
+      "backgroundVerdict": "pass_original_background_and_inheritance",
+      "expectedVisibleBackgroundResource": "bg/bg013a_street",
+      "reason": "Only from66 do the actual main-street pennants, red roof/green windows, cobblestones and blue parasol appear, matching the original source.67 Emilia and68 Subaru retain that street.65 is still green.",
+      "effectiveBackgroundEvent": {
+        "node": "10290010:68",
+        "scenario": 68,
+        "authored": "",
+        "mode": "native_array",
+        "resource": "bg/bg013a_street",
+        "source_scenario_id": 66,
+        "effective": "bg/bg013a_street"
+      },
+      "additionalVisibleEvidence": [],
+      "bodyAccepted": false,
+      "faceAccepted": false,
+      "waterSplashAccepted": false,
+      "cgAccepted": false,
+      "originalPhaseAccepted": false,
+      "originalCsvAccepted": false,
+      "exactTimingAccepted": false,
+      "wholeSceneAccepted": false
+    }
+  ]
+}

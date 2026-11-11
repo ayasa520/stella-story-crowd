@@ -1,0 +1,98 @@
+{
+  "status": "production_review_partial16_reproduction_supported_15_entry_and17_performance_pending",
+  "reviewer": "/root/motion_review_felt_context",
+  "sceneId": 10280014,
+  "fullChapterAccepted": false,
+  "installedChanges": 0,
+  "productionSourceFilesEdited": false,
+  "originalCsvRecovered": false,
+  "actualPlayer": {
+    "url": "http://127.0.0.1:5184/",
+    "iframe": "/player/player.html?embedded=1",
+    "adapterPid": 72490,
+    "browserSession": "stella-felt-production-review",
+    "browserExecutable": "/usr/bin/google-chrome-canary",
+    "processPolicy": "nice19 taskset22,23",
+    "memoryOnlyOverrides": true,
+    "guardedBeforeFields": {"character": "live2d/AC_felt01", "motion": ""},
+    "reviewOnlyOverridesPersisted": false,
+    "formalComparisonRuns": [
+      {"key": "felt-15-nayamu-16-explicit-odoroku", "route": [14, 15, 16, 17], "readyVisits": 4, "playerErrors": 0, "cdpCompositedFrames": 62},
+      {"key": "felt-15-nayamu-16-body-only-control", "route": [14, 15, 16, 17], "readyVisits": 4, "playerErrors": 0, "cdpCompositedFrames": 58}
+    ],
+    "additionalDiagnosticRuns": [
+      {"key": "explicit-face-raf-alpha-diagnostic", "route": [14, 15, 16, 17], "rafRecords": 187, "actorCanvasImages": 54, "playerErrors": 0, "cdpScreencast": false},
+      {"key": "no-capture-render-duration-diagnostic", "route": [14, 15, 16, 17], "renderRecords": 193, "rafRecords": 193, "playerErrors": 0, "cdpScreencast": false, "canvasReadback": false, "entryScreenshots": false}
+    ],
+    "instrumentationLimits": [
+      "CDP screencast frames are actual composed pages with real timestamps; their spacing is variable and is not an original fixed animation timer.",
+      "The actor-canvas diagnostic copies pixels inside actual requestAnimationFrame callbacks, including hidden frames. Opacity is recorded separately; a hidden actor image does not prove it was visible in the compositor.",
+      "The no-capture diagnostic wraps PIXI.Renderer.render for start/end timing, calls the original exactly once, and restores it. It changes no transport, motion, or animation clock. Callback logging still has overhead.",
+      "There is no claim that any instrumented run has zero overhead, or that a browser scheduling gap is authored game waiting."
+    ]
+  },
+  "evidenceLevels": {
+    "originalUnityAndBinary": "../original-felt-controller.json and ../native-motion-bindings.json establish layer defaults, trigger transitions and nonempty-command clearing. They do not establish missing source CSV or clocks.",
+    "independentSampler": "../felt15-continuous-hypotheses-index.json preserves fixed controller hypotheses. It does not validate actual production CardIn or scheduler behavior.",
+    "actualProduction": "complete-entry-index.json, raf-alpha-evidence-index.json and the four raw JSON.gz payloads establish this production/player's observed layers, pixels, alpha and scheduling."
+  },
+  "directlyReviewedImages": [
+    "source15-entry.jpg",
+    "source16-entry.jpg",
+    "source17-context.jpg",
+    "run2-felt-15-nayamu-16-explicit-odoroku-15-held.png",
+    "run2-felt-15-nayamu-16-explicit-odoroku-17.png",
+    "complete-entries/felt-15-nayamu-16-explicit-odoroku-node15-complete.jpg",
+    "complete-entries/felt-15-nayamu-16-explicit-odoroku-node16-complete.jpg",
+    "complete-entries/felt-15-nayamu-16-body-only-control-node16-complete.jpg",
+    "raf-alpha/node15-actual-raf-canvas.jpg",
+    "raf-alpha/node16-actual-raf-canvas.jpg"
+  ],
+  "findings": {
+    "15": {
+      "candidate": {"body": "act_normal", "face": "face_nayamu"},
+      "verifiedMotionComponents": ["body.held_lowered_arms", "face.held_lowered_head_closed_eyes_inward_brows"],
+      "fullEntryAccepted": false,
+      "originalSequence": "First dim Felt is closed-eyed around73.4s, clearly open-eyed around73.5-73.8s, then closes around73.9-74.0s and retains the lowered closed-eye hold.",
+      "productionSequence": "The first retained actor image after motion_ready is open-eyed while card opacity0. After the long callback gap, images are closed-eyed while opacity0; first clearly visible sampled actor remains closed-eyed through the subsequent hold. The source's visible open-eye interval is absent in these actual production runs.",
+      "decision": "Retain the authored held-pose reproduction proposal, but do not sign complete15 entrance or install the two-node package as fully accepted. Do not change candidate tokens or add Wait to conceal the scheduler/visibility difference."
+    },
+    "16": {
+      "candidate": {"body": "act_odoroku", "face": "face_odoroku"},
+      "requiredContext": "15 is visibly in the reviewed lowered closed-eye face_nayamu hold over the normal body loop.",
+      "verifiedMotionComponents": ["body.visible_arm_opening_entry", "body.surprised_held_pose", "face.continuous_closed_to_partly_open_to_open_entry", "face.surprised_held_expression"],
+      "originalCsvIdentity": "unknown",
+      "exactTiming": "unknown",
+      "extraLayers": "unknown",
+      "decision": "Accept the observed16 body/face combination as a context-dependent authored visual reproduction proposal. Its exact original CSV identity is not claimed. Current15 entrance remains pending, so this is not an unconditional installation packet.",
+      "control": "Actual body-only control emits STORY_EXPRESSION_CLEAR felt01 face face_nayamu_w and retains only motion act_odoroku. Its visible face jumps to the normal open-eyed body expression before the surprised pose, rather than preserving the source's initial lowered closed-eye interval."
+    },
+    "17": {
+      "sourceInterval": [83.2, 84.6],
+      "originalSequence": "From83.8s Felt begins to bend the elbows; by84.0-84.6s she is hands-on-hips with an angry brow/expression.",
+      "productionSequence": "Installed17 has empty motion and inherits16's surprised lowered-arm pose.",
+      "decision": "Performance remains pending. act_ikaru is a concrete body candidate from the earlier full Felt inventory, but its full entry and independent face have not been reviewed for17 and are not approved here."
+    },
+    "26": {"decision": "Unchanged pending. No transfer of16's context-dependent evidence to26."}
+  },
+  "schedulingEvidence": {
+    "clock": "All values below are observed browser monotonic milliseconds relative to that run's15 motion_ready.",
+    "cdpExplicit": {"motionReadyAbsolute": 20256.7, "voiceReady": 0.3, "textReady": 3.9, "commandResourcesReady": 4.0, "phase0End": 4.4, "cardWaitStart": 5.0, "cardInStart": 62.0, "cardInComplete": 2132.4, "textBegin": 2139.2, "screencastGap": [87.6, 2087.5]},
+    "cdpControl": {"motionReadyAbsolute": 21351.7, "commandResourcesReady": 10.4, "cardInStart": 64.4, "cardInComplete": 2053.9},
+    "noCdpActorCopy": {"motionReadyAbsolute": 11317.4, "commandResourcesReady": 13.1, "cardWaitStart": 13.7, "cardInStart": 2475.2, "cardInComplete": 3131.2, "largestRafCallbackGap": 2311.0, "firstObservedPositiveAlpha": {"time": 2653.7, "alpha": 0.0569008}, "firstRetainedVisibleActor": {"time": 2661.4, "alpha": 0.0569008, "eyes": "closed"}},
+    "noCapture": {"motionReadyAbsolute": 11113.1, "cardWaitStart": 11.4, "cardInStart": 85.8, "cardInComplete": 2418.1, "largestRafCallbackGap": 2308.0, "tinyPositiveAlpha": {"time": 110.0, "alpha": 0.000187706}, "nextAlpha": {"time": 2418.0, "alpha": 1.0}, "renderBeforeGap": {"start": 107.5, "end": 109.9}, "renderAfterGap": {"start": 2413.2, "end": 2417.9}},
+    "conclusions": [
+      "Resource-ready events complete within roughly4-14ms of motion_ready in the measured runs; they do not explain the following roughly2.3-second gap.",
+      "The gap also occurs without CDP, canvas readback or entry screenshots. Recording/readback is therefore not its sole demonstrated prerequisite.",
+      "The no-capture gap lies between short Renderer.render calls. These logs do not identify its cause; no source repair is justified solely from this observation.",
+      "15 therefore cannot be signed as a complete original-visible entrance under the current production scheduling.16 is already visible, has no CardIn at the same-model boundary, and supports its narrower reproduction review."
+    ]
+  },
+  "nextActions": [
+    "Use the supplied monotonic timing summary to independently check original InitScenario/SetLive2D and CardProc order without treating a browser scheduler gap as native waiting.",
+    "If further runtime attribution is needed, instrument ticker/model-update/render scheduling around the gap; preserve actual start/end and alpha. Do not insert authored delays or select a different candidate merely to hide the interval.",
+    "After any justified player-timing change, rerun only the affected14_to15 entry plus15_to16 continuity before accepting15's complete entrance.",
+    "Review17's hands-on-hips angry body/face entry against original83.8-84.6s separately. The complete chapter and full restoration goal remain active."
+  ],
+  "lifecycle": {"server5184MustRemainRunning": true, "serverPid": 72490, "otherServicesStopped": false}
+}

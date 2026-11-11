@@ -590,7 +590,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -611,7 +610,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -665,7 +663,89 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10150004.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/accepted-p23-character-v17.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "reviewer": "/root/visual_review_high",
+              "directImageInspection": true,
+              "recordingId": "bili-capital-23",
+              "recordingPart": 23,
+              "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+              "videoSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+              "sourceMapping": null,
+              "time": 399.849,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-all/cast-399.8490.png",
+              "frameSha256": "d1ad0fe5eb25c257370a86488312dcb7ea1a3b7e8fc8d9858a89fb4e6199ac5f",
+              "primaryFrame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-all/cast-399.8490.png",
+              "primaryFrameSha256": "d1ad0fe5eb25c257370a86488312dcb7ea1a3b7e8fc8d9858a89fb4e6199ac5f",
+              "originalEvidence": {
+                "segmentId": "p23-s10150004",
+                "start": 397.999,
+                "end": 399.999,
+                "sourceAnchorSeconds": 398,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/012000-dialogue.png",
+                "ocrEventId": "merged-0101",
+                "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+                "originalOCRText": "朝から精が出ますな、スバル殿",
+                "ocrConfidence": 0.99992,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-23"
+              },
+              "contact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-completed-prefix-review/identity-06.jpg",
+              "contactSha256": "d1faba415b547c037d511a81ef08035c0a3b828e436bb9eb29ac9fc3aad306ee",
+              "candidateIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-completed-prefix-review/index.json",
+              "candidateIndexSha256": "6af2a2cf8ba49b06c3dd3268a13df849094c7e40f388260ea1829f75557209a1",
+              "candidateModels": [
+                "wilhelm01",
+                "wilhelm_weapon01",
+                "wilhelm_weapon02"
+              ],
+              "originalModelResourceIndex": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-original-models/index.json",
+              "originalModelResourceIndexSha256": "00e029d0ef9073ab8d1d8b5d106801166880d1b66a08786bc1493c974629a87a",
+              "originalModelResourceContact": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-original-models/original-resource-contact.jpg",
+              "unrecovered": [
+                "body_command",
+                "facial_expression",
+                "lighting",
+                "extra_layers",
+                "front_back_order",
+                "original_character_csv_parameters"
+              ],
+              "decision": "stage_identity_and_costume_confirmed",
+              "selectedModel": "wilhelm01",
+              "decisionBasis": "direct_original_frame_visible_garment_and_original_model_comparison",
+              "reason": "White combed hair/mustache, black bow, white waistcoat and blue-edged black coat agree with original wilhelm01. The clearly visible chest has no brown diagonal weapon harness or shoulder armor, excluding weapon01 and weapon02 despite their shared face.",
+              "originalModelProjection": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-completed-prefix-review/native-s10150003-p23-at0196.png",
+              "originalModelProjectionSha256": "001a7e672b3ca31013143bee291c881cda1f56984268be69a188a093df5ceb5e",
+              "competingCandidateDecision": "The original frame contains a single stage actor. Other same-face costume hypotheses are rejected by visible clothing, not by choosing the largest fit score.",
+              "rootIntegration": {
+                "reviewer": "/root",
+                "visualReviewer": "/root/visual_review_high",
+                "mainThreadViewedImages": false,
+                "authorization": "User explicitly delegated all image inspection to subagents",
+                "checks": [
+                  "packet SHA-256",
+                  "unique owned node and stable key",
+                  "Japanese source",
+                  "field preconditions",
+                  "image witness SHA-256"
+                ],
+                "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p23-prefix/character-only-packet.json",
+                "sourcePacketSha256": "121d0289d81a8b6df6604f695e601abb73c796a3f526c07a003d645dc26aeaa1",
+                "acceptedScope": [
+                  "character"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "7": {
@@ -5676,7 +5756,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
