@@ -1,0 +1,662 @@
+{
+  "status": "static_evidence_only_no_runtime_or_native_field_changes",
+  "imagesOpened": false,
+  "sources": [
+    {
+      "path": "data/libil2cpp-offline.so",
+      "bytes": 49492360,
+      "sha256": "54c97bce616bdb062f12b0bccba47b1c6ff17f61da450d8bd0efa403f8822c05"
+    },
+    {
+      "path": "logs/metadata-decrypted.dat",
+      "bytes": 9860704,
+      "sha256": "2cde31e37d9c6c58f3a1bb7bae6b12e51d456af7de03d604bc953116887b1b3e"
+    },
+    {
+      "path": "lost_in_memories/config/metadata_layout.json",
+      "bytes": 606,
+      "sha256": "6a4805e3b4137c2a7dd1dd2034d29b42f4a88a6598ac0262f82220b0338f29ec"
+    },
+    {
+      "path": "logs/metadata-types.json",
+      "bytes": 2955492,
+      "sha256": "b45d0eedc7f4fbb7a341134965c8dfdb8699144c6c04b58b069857575a99b6bb"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/inspect_native_actor_grammar.py",
+      "bytes": 9321,
+      "sha256": "7631842695fb7e58db67f6d11a07d37550ef2ec24db40c77e3df5cfbe16b96fc"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/entry-order-evidence.json",
+      "bytes": 236968,
+      "sha256": "c03148946de285f67837a7f5d61d5ae55edc1d8d440b3e1c17ed42c4d1163f72"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/inspect_native_bgm.py",
+      "bytes": 11526,
+      "sha256": "1185f1b1f377b850cae5c2415bfaed291684868812a9f2b540eac2fae119d923"
+    }
+  ],
+  "module": {
+    "name": "Assembly-CSharp.dll",
+    "table": "0x2eb00d8",
+    "count": 34806,
+    "imageRecordOffset": 7853968,
+    "imageRecord": [
+      686785,
+      62,
+      5844,
+      6147,
+      -1,
+      0,
+      -1,
+      1,
+      8550,
+      13853
+    ]
+  },
+  "bindingModules": [
+    {
+      "name": "Assembly-CSharp.dll",
+      "table": "0x2eb00d8",
+      "count": 34806,
+      "imageRecordOffset": 7853968,
+      "imageRecord": [
+        686785,
+        62,
+        5844,
+        6147,
+        -1,
+        0,
+        -1,
+        1,
+        8550,
+        13853
+      ]
+    },
+    {
+      "name": "UnityEngine.CoreModule.dll",
+      "table": "0x2f09230",
+      "count": 2716,
+      "imageRecordOffset": 7851768,
+      "imageRecord": [
+        320208,
+        7,
+        2577,
+        546,
+        -1,
+        0,
+        -1,
+        1,
+        2067,
+        1446
+      ]
+    }
+  ],
+  "usageSlots": [
+    {
+      "name": "setup_command_prefix",
+      "slot": "0x2d25da0",
+      "destination": 43906,
+      "kind": 5,
+      "index": 2603,
+      "encoded": "0xa0000a2b",
+      "literal": "stopbgm"
+    },
+    {
+      "name": "play_bgm_callback",
+      "slot": "0x2d36948",
+      "destination": 23975,
+      "kind": 3,
+      "index": 67713,
+      "encoded": "0x60010881",
+      "method": "Stella.Sound.Player+<>c__DisplayClass2_0.<PlayBGM>b__0",
+      "token": "0x6008702"
+    },
+    {
+      "name": "download_join_callback",
+      "slot": "0x2d31cf8",
+      "destination": 23966,
+      "kind": 3,
+      "index": 67676,
+      "encoded": "0x6001085c",
+      "method": "Stella.Sound.Loader+<>c__DisplayClass1_0.<Download>b__0",
+      "token": "0x60086ef"
+    },
+    {
+      "name": "download_first_callback",
+      "slot": "0x2cc1bb0",
+      "destination": 23967,
+      "kind": 3,
+      "index": 67677,
+      "encoded": "0x6001085d",
+      "method": "Stella.Sound.Loader+<>c__DisplayClass1_0.<Download>b__1",
+      "token": "0x60086f0"
+    },
+    {
+      "name": "download_second_callback",
+      "slot": "0x2cf3ca8",
+      "destination": 23968,
+      "kind": 3,
+      "index": 67678,
+      "encoded": "0x6001085e",
+      "method": "Stella.Sound.Loader+<>c__DisplayClass1_0.<Download>b__2",
+      "token": "0x60086f1"
+    }
+  ],
+  "selectedMethods": [
+    {
+      "owner": "Stella.Scenes.ADV2.ADVPlayer",
+      "name": "get_IsSpeedMode",
+      "qualified": "Stella.Scenes.ADV2.ADVPlayer.get_IsSpeedMode",
+      "token": "0x6003c2f",
+      "address": "0x124b710",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9571,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Boolean",
+      "endExclusiveUpperBound": "0x124b718",
+      "nextIndexedAddress": "0x124b718"
+    },
+    {
+      "owner": "Stella.Scenes.ADV2.ADVPlayer",
+      "name": "set_IsSpeedMode",
+      "qualified": "Stella.Scenes.ADV2.ADVPlayer.set_IsSpeedMode",
+      "token": "0x6003c30",
+      "address": "0x124b718",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9571,
+      "parameters": 1,
+      "signatureParameters": [
+        {
+          "name": "value",
+          "type": "System.Boolean"
+        }
+      ],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x124b724",
+      "nextIndexedAddress": "0x124b724"
+    },
+    {
+      "owner": "Stella.Scenes.ADV2.ADVPlayer",
+      "name": "get_SpeedModeTimeScale",
+      "qualified": "Stella.Scenes.ADV2.ADVPlayer.get_SpeedModeTimeScale",
+      "token": "0x6003c31",
+      "address": "0x124b724",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9571,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Single",
+      "endExclusiveUpperBound": "0x124b72c",
+      "nextIndexedAddress": "0x124b72c"
+    },
+    {
+      "owner": "Stella.Scenes.ADV2.Control",
+      "name": "SwitchSpeedMode",
+      "qualified": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "token": "0x6003dda",
+      "address": "0x170f5a0",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9631,
+      "parameters": 1,
+      "signatureParameters": [
+        {
+          "name": "is_on",
+          "type": "System.Boolean"
+        }
+      ],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x170f6c0",
+      "nextIndexedAddress": "0x170f6c0"
+    },
+    {
+      "owner": "Stella.Scenes.ADV2.Control",
+      "name": "RestartAutoSpeed",
+      "qualified": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "token": "0x6003dd5",
+      "address": "0x170bd80",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9631,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x170beb0",
+      "nextIndexedAddress": "0x170beb0"
+    },
+    {
+      "owner": "Stella.Scenes.ADV2.ADVPlayer",
+      "name": "ClearAutoSpeedSetting",
+      "qualified": "Stella.Scenes.ADV2.ADVPlayer.ClearAutoSpeedSetting",
+      "token": "0x6003c74",
+      "address": "0x124d45c",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9571,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x124d4c4",
+      "nextIndexedAddress": "0x124d4c4"
+    },
+    {
+      "owner": "Stella.Scenes.ADV2.TextPanel",
+      "name": "GetTextSpeed",
+      "qualified": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "token": "0x6003e61",
+      "address": "0x1686ccc",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9659,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Single",
+      "endExclusiveUpperBound": "0x1686ddc",
+      "nextIndexedAddress": "0x1686ddc"
+    }
+  ],
+  "calls": [
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f5b8",
+      "mnemonic": "bl",
+      "target": "0x170f4a4",
+      "names": [
+        "Stella.Scenes.ADV2.Control.UpdateSpeedModeView"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f5bc",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f5d4",
+      "mnemonic": "bl",
+      "target": "0x170f41c",
+      "names": [
+        "Stella.Scenes.ADV2.Control.UpdateAutoModeView"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f5d8",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f608",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f618",
+      "mnemonic": "bl",
+      "target": "0x124c8fc",
+      "names": [
+        "Stella.Scenes.ADV2.ADVPlayer.UpdateTimeScale"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f630",
+      "mnemonic": "bl",
+      "target": "0x1688b08",
+      "names": [
+        "Stella.Scenes.ADV2.UIController.EnableCardDrop"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f640",
+      "mnemonic": "bl",
+      "target": "0x1689d10",
+      "names": [
+        "Stella.Scenes.ADV2.UIController.CardClick"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f64c",
+      "mnemonic": "bl",
+      "target": "0x1b46878",
+      "names": [
+        "UnityEngine.MonoBehaviour.StopAllCoroutines"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f650",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f680",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f694",
+      "mnemonic": "b",
+      "target": "0x124cf80",
+      "names": [
+        "Stella.Scenes.ADV2.ADVPlayer.SetSilent"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f698",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f6ac",
+      "mnemonic": "b",
+      "target": "0x124d04c",
+      "names": [
+        "Stella.Scenes.ADV2.ADVPlayer.ResetSilent"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.SwitchSpeedMode",
+      "at": "0x170f6bc",
+      "mnemonic": "bl",
+      "target": "0xd418ec",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170bda8",
+      "mnemonic": "bl",
+      "target": "0xd4181c",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170bdc4",
+      "mnemonic": "bl",
+      "target": "0x1323fc0",
+      "names": [
+        "Stella.Common.SaveData.GetBool"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170bdcc",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170bde8",
+      "mnemonic": "bl",
+      "target": "0x1688e9c",
+      "names": [
+        "Stella.Scenes.ADV2.UIController.PlayAutoMode"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170bdfc",
+      "mnemonic": "bl",
+      "target": "0x1323fc0",
+      "names": [
+        "Stella.Common.SaveData.GetBool"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170be04",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170be14",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170be44",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170be50",
+      "mnemonic": "bl",
+      "target": "0x124cf80",
+      "names": [
+        "Stella.Scenes.ADV2.ADVPlayer.SetSilent"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170be54",
+      "mnemonic": "bl",
+      "target": "0x170b654",
+      "names": [
+        "Stella.Scenes.ADV2.Control.get_AdvPlayer"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170be64",
+      "mnemonic": "bl",
+      "target": "0x124c8fc",
+      "names": [
+        "Stella.Scenes.ADV2.ADVPlayer.UpdateTimeScale"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170be74",
+      "mnemonic": "bl",
+      "target": "0x16880d0",
+      "names": [
+        "Stella.Scenes.ADV2.UIController.get_Card"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170be84",
+      "mnemonic": "bl",
+      "target": "0x12566cc",
+      "names": [
+        "Stella.Scenes.ADV2.CardBehaviour.SetActiveState"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170be9c",
+      "mnemonic": "b",
+      "target": "0x1689d10",
+      "names": [
+        "Stella.Scenes.ADV2.UIController.CardClick"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.Control.RestartAutoSpeed",
+      "at": "0x170beac",
+      "mnemonic": "bl",
+      "target": "0xd418ec",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVPlayer.ClearAutoSpeedSetting",
+      "at": "0x124d480",
+      "mnemonic": "bl",
+      "target": "0xd4181c",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVPlayer.ClearAutoSpeedSetting",
+      "at": "0x124d4a0",
+      "mnemonic": "bl",
+      "target": "0x1323eec",
+      "names": [
+        "Stella.Common.SaveData.SetBool"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVPlayer.ClearAutoSpeedSetting",
+      "at": "0x124d4c0",
+      "mnemonic": "b",
+      "target": "0x1323eec",
+      "names": [
+        "Stella.Common.SaveData.SetBool"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "at": "0x1686cf8",
+      "mnemonic": "bl",
+      "target": "0xd4181c",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "at": "0x1686d20",
+      "mnemonic": "bl",
+      "target": "0xd5dfc0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "at": "0x1686d38",
+      "mnemonic": "bl",
+      "target": "0xd5dfc0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "at": "0x1686d60",
+      "mnemonic": "bl",
+      "target": "0xd418c8",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "at": "0x1686d70",
+      "mnemonic": "bl",
+      "target": "0x1b46a98",
+      "names": [
+        "UnityEngine.Object.op_Equality"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "at": "0x1686d90",
+      "mnemonic": "b",
+      "target": "0x1686dc0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "at": "0x1686d98",
+      "mnemonic": "bl",
+      "target": "0x127bdf4",
+      "names": [
+        "Stella.Common.AdvOptionManager.get_TextSpeed"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "at": "0x1686db0",
+      "mnemonic": "b",
+      "target": "0x1686dbc",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.TextPanel.GetTextSpeed",
+      "at": "0x1686dd8",
+      "mnemonic": "bl",
+      "target": "0xd418ec",
+      "names": []
+    }
+  ],
+  "disassembly": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/adv-speed-mode-capstone.txt",
+    "bytes": 8974,
+    "sha256": "b6cc64454d7019279997c7a2b8a5a96309646dc974131833e1f95e79146fec9a"
+  },
+  "externalCallBindings": [
+    {
+      "owner": "UnityEngine.MonoBehaviour",
+      "name": "StopAllCoroutines",
+      "qualified": "UnityEngine.MonoBehaviour.StopAllCoroutines",
+      "token": "0x6000625",
+      "address": "0x1b46878",
+      "module": "UnityEngine.CoreModule.dll",
+      "typeIndex": 2781,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Void"
+    },
+    {
+      "owner": "UnityEngine.Object",
+      "name": "op_Equality",
+      "qualified": "UnityEngine.Object.op_Equality",
+      "token": "0x6000676",
+      "address": "0x1b46a98",
+      "module": "UnityEngine.CoreModule.dll",
+      "typeIndex": 2798,
+      "parameters": 2,
+      "signatureParameters": [
+        {
+          "name": "x",
+          "type": "UnityEngine.Object"
+        },
+        {
+          "name": "y",
+          "type": "UnityEngine.Object"
+        }
+      ],
+      "returnType": "System.Boolean"
+    }
+  ],
+  "limits": [
+    "No native process was run or instrumented.",
+    "Method end bounds come from the next indexed assembly address.",
+    "Unlabelled or indirect calls require further evidence.",
+    "Static submission order does not measure audible playback onset."
+  ]
+}

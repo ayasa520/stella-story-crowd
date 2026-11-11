@@ -1,0 +1,263 @@
+
+Stella.Scenes.ADV2.ADVPlayer.get_IsSpeedMode: 0x124b710..0x124b718 (upper bound)
+0x124b710: ldrb w0, [x0, #0x99]
+0x124b714: ret
+
+Stella.Scenes.ADV2.ADVPlayer.set_IsSpeedMode: 0x124b718..0x124b724 (upper bound)
+0x124b718: and w8, w1, #1
+0x124b71c: strb w8, [x0, #0x99]
+0x124b720: ret
+
+Stella.Scenes.ADV2.ADVPlayer.get_SpeedModeTimeScale: 0x124b724..0x124b72c (upper bound)
+0x124b724: ldr s0, [x0, #0x1c]
+0x124b728: ret
+
+Stella.Scenes.ADV2.Control.SwitchSpeedMode: 0x170f5a0..0x170f6c0 (upper bound)
+0x170f5a0: stp x20, x19, [sp, #-0x20]!
+0x170f5a4: stp x29, x30, [sp, #0x10]
+0x170f5a8: add x29, sp, #0x10
+0x170f5ac: mov w20, w1
+0x170f5b0: and w1, w1, #1
+0x170f5b4: mov x19, x0
+0x170f5b8: bl #0x170f4a4 // Stella.Scenes.ADV2.Control.UpdateSpeedModeView
+0x170f5bc: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170f5c0: cbz x0, #0x170f6bc
+0x170f5c4: ldrb w8, [x0, #0x98]
+0x170f5c8: cbz w8, #0x170f5d8
+0x170f5cc: mov x0, x19
+0x170f5d0: mov w1, wzr
+0x170f5d4: bl #0x170f41c // Stella.Scenes.ADV2.Control.UpdateAutoModeView
+0x170f5d8: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170f5dc: cbz x0, #0x170f6bc
+0x170f5e0: ldr x8, [x0, #0x78]
+0x170f5e4: cbz x8, #0x170f608
+0x170f5e8: ldr x9, [x8, #0xa0]
+0x170f5ec: cbz x9, #0x170f608
+0x170f5f0: ldr w9, [x9, #0x18]
+0x170f5f4: cmp w9, #2
+0x170f5f8: b.lt #0x170f608
+0x170f5fc: ldr x8, [x8, #0x20]
+0x170f600: cmp x8, #4
+0x170f604: b.ne #0x170f61c
+0x170f608: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170f60c: cbz x0, #0x170f6bc
+0x170f610: mov w1, wzr
+0x170f614: mov x2, xzr
+0x170f618: bl #0x124c8fc // Stella.Scenes.ADV2.ADVPlayer.UpdateTimeScale
+0x170f61c: tbz w20, #0, #0x170f698
+0x170f620: ldr x0, [x19, #0x68]
+0x170f624: cbz x0, #0x170f6bc
+0x170f628: mov w1, #1
+0x170f62c: mov x2, xzr
+0x170f630: bl #0x1688b08 // Stella.Scenes.ADV2.UIController.EnableCardDrop
+0x170f634: ldr x0, [x19, #0x68]
+0x170f638: cbz x0, #0x170f6bc
+0x170f63c: mov x1, xzr
+0x170f640: bl #0x1689d10 // Stella.Scenes.ADV2.UIController.CardClick
+0x170f644: mov x0, x19
+0x170f648: mov x1, xzr
+0x170f64c: bl #0x1b46878 // UnityEngine.MonoBehaviour.StopAllCoroutines
+0x170f650: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170f654: cbz x0, #0x170f6bc
+0x170f658: ldr x8, [x0, #0x78]
+0x170f65c: cbz x8, #0x170f680
+0x170f660: ldr x9, [x8, #0xa0]
+0x170f664: cbz x9, #0x170f680
+0x170f668: ldr w9, [x9, #0x18]
+0x170f66c: cmp w9, #2
+0x170f670: b.lt #0x170f680
+0x170f674: ldr x8, [x8, #0x20]
+0x170f678: cmp x8, #4
+0x170f67c: b.ne #0x170f6b0
+0x170f680: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170f684: cbz x0, #0x170f6bc
+0x170f688: ldp x29, x30, [sp, #0x10]
+0x170f68c: mov x1, xzr
+0x170f690: ldp x20, x19, [sp], #0x20
+0x170f694: b #0x124cf80 // Stella.Scenes.ADV2.ADVPlayer.SetSilent
+0x170f698: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170f69c: cbz x0, #0x170f6bc
+0x170f6a0: ldp x29, x30, [sp, #0x10]
+0x170f6a4: mov x1, xzr
+0x170f6a8: ldp x20, x19, [sp], #0x20
+0x170f6ac: b #0x124d04c // Stella.Scenes.ADV2.ADVPlayer.ResetSilent
+0x170f6b0: ldp x29, x30, [sp, #0x10]
+0x170f6b4: ldp x20, x19, [sp], #0x20
+0x170f6b8: ret
+0x170f6bc: bl #0xd418ec
+
+Stella.Scenes.ADV2.Control.RestartAutoSpeed: 0x170bd80..0x170beb0 (upper bound)
+0x170bd80: stp x20, x19, [sp, #-0x20]!
+0x170bd84: stp x29, x30, [sp, #0x10]
+0x170bd88: add x29, sp, #0x10
+0x170bd8c: adrp x20, #0x2f3b000
+0x170bd90: ldrb w8, [x20, #0x38c]
+0x170bd94: mov x19, x0
+0x170bd98: tbnz w8, #0, #0x170bdb4
+0x170bd9c: adrp x8, #0x2cef000
+0x170bda0: ldr x8, [x8, #0x748]
+0x170bda4: ldr w0, [x8]
+0x170bda8: bl #0xd4181c
+0x170bdac: mov w8, #1
+0x170bdb0: strb w8, [x20, #0x38c]
+0x170bdb4: adrp x8, #0x2cca000
+0x170bdb8: ldr x8, [x8, #0x4a0]
+0x170bdbc: mov x1, xzr
+0x170bdc0: ldr x0, [x8]
+0x170bdc4: bl #0x1323fc0 // Stella.Common.SaveData.GetBool
+0x170bdc8: tbz w0, #0, #0x170bdec
+0x170bdcc: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170bdd0: cbz x0, #0x170beac
+0x170bdd4: mov w8, #1
+0x170bdd8: strb w8, [x0, #0x98]
+0x170bddc: ldr x0, [x19, #0x68]
+0x170bde0: cbz x0, #0x170beac
+0x170bde4: mov x1, xzr
+0x170bde8: bl #0x1688e9c // Stella.Scenes.ADV2.UIController.PlayAutoMode
+0x170bdec: adrp x8, #0x2d17000
+0x170bdf0: ldr x8, [x8, #0x7a8]
+0x170bdf4: mov x1, xzr
+0x170bdf8: ldr x0, [x8]
+0x170bdfc: bl #0x1323fc0 // Stella.Common.SaveData.GetBool
+0x170be00: tbz w0, #0, #0x170bea0
+0x170be04: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170be08: cbz x0, #0x170beac
+0x170be0c: mov w8, #1
+0x170be10: strb w8, [x0, #0x99]
+0x170be14: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170be18: cbz x0, #0x170beac
+0x170be1c: ldr x8, [x0, #0x78]
+0x170be20: cbz x8, #0x170be44
+0x170be24: ldr x9, [x8, #0xa0]
+0x170be28: cbz x9, #0x170be44
+0x170be2c: ldr w9, [x9, #0x18]
+0x170be30: cmp w9, #2
+0x170be34: b.lt #0x170be44
+0x170be38: ldr x8, [x8, #0x20]
+0x170be3c: cmp x8, #4
+0x170be40: b.ne #0x170be54
+0x170be44: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170be48: cbz x0, #0x170beac
+0x170be4c: mov x1, xzr
+0x170be50: bl #0x124cf80 // Stella.Scenes.ADV2.ADVPlayer.SetSilent
+0x170be54: bl #0x170b654 // Stella.Scenes.ADV2.Control.get_AdvPlayer
+0x170be58: cbz x0, #0x170beac
+0x170be5c: mov w1, wzr
+0x170be60: mov x2, xzr
+0x170be64: bl #0x124c8fc // Stella.Scenes.ADV2.ADVPlayer.UpdateTimeScale
+0x170be68: ldr x0, [x19, #0x68]
+0x170be6c: cbz x0, #0x170beac
+0x170be70: mov x1, xzr
+0x170be74: bl #0x16880d0 // Stella.Scenes.ADV2.UIController.get_Card
+0x170be78: cbz x0, #0x170beac
+0x170be7c: mov w1, #1
+0x170be80: mov x2, xzr
+0x170be84: bl #0x12566cc // Stella.Scenes.ADV2.CardBehaviour.SetActiveState
+0x170be88: ldr x0, [x19, #0x68]
+0x170be8c: cbz x0, #0x170beac
+0x170be90: ldp x29, x30, [sp, #0x10]
+0x170be94: mov x1, xzr
+0x170be98: ldp x20, x19, [sp], #0x20
+0x170be9c: b #0x1689d10 // Stella.Scenes.ADV2.UIController.CardClick
+0x170bea0: ldp x29, x30, [sp, #0x10]
+0x170bea4: ldp x20, x19, [sp], #0x20
+0x170bea8: ret
+0x170beac: bl #0xd418ec
+
+Stella.Scenes.ADV2.ADVPlayer.ClearAutoSpeedSetting: 0x124d45c..0x124d4c4 (upper bound)
+0x124d45c: str x19, [sp, #-0x20]!
+0x124d460: stp x29, x30, [sp, #0x10]
+0x124d464: add x29, sp, #0x10
+0x124d468: adrp x19, #0x2f36000
+0x124d46c: ldrb w8, [x19, #0x73f]
+0x124d470: tbnz w8, #0, #0x124d48c
+0x124d474: adrp x8, #0x2cbe000
+0x124d478: ldr x8, [x8, #0xb00]
+0x124d47c: ldr w0, [x8]
+0x124d480: bl #0xd4181c
+0x124d484: mov w8, #1
+0x124d488: strb w8, [x19, #0x73f]
+0x124d48c: adrp x8, #0x2cca000
+0x124d490: ldr x8, [x8, #0x4a0]
+0x124d494: mov w1, wzr
+0x124d498: mov x2, xzr
+0x124d49c: ldr x0, [x8]
+0x124d4a0: bl #0x1323eec // Stella.Common.SaveData.SetBool
+0x124d4a4: adrp x8, #0x2d17000
+0x124d4a8: ldr x8, [x8, #0x7a8]
+0x124d4ac: ldp x29, x30, [sp, #0x10]
+0x124d4b0: mov w1, wzr
+0x124d4b4: mov x2, xzr
+0x124d4b8: ldr x0, [x8]
+0x124d4bc: ldr x19, [sp], #0x20
+0x124d4c0: b #0x1323eec // Stella.Common.SaveData.SetBool
+
+Stella.Scenes.ADV2.TextPanel.GetTextSpeed: 0x1686ccc..0x1686ddc (upper bound)
+0x1686ccc: str d8, [sp, #-0x30]!
+0x1686cd0: stp x20, x19, [sp, #0x10]
+0x1686cd4: stp x29, x30, [sp, #0x20]
+0x1686cd8: add x29, sp, #0x20
+0x1686cdc: adrp x20, #0x2f3a000
+0x1686ce0: ldrb w8, [x20, #0xecb]
+0x1686ce4: mov x19, x0
+0x1686ce8: tbnz w8, #0, #0x1686d04
+0x1686cec: adrp x8, #0x2ca5000
+0x1686cf0: ldr x8, [x8, #0xe78]
+0x1686cf4: ldr w0, [x8]
+0x1686cf8: bl #0xd4181c
+0x1686cfc: mov w8, #1
+0x1686d00: strb w8, [x20, #0xecb]
+0x1686d04: adrp x8, #0x2d32000
+0x1686d08: ldr x8, [x8, #0x170]
+0x1686d0c: ldr x8, [x8]
+0x1686d10: ldr x20, [x8, #0x18]
+0x1686d14: ldrb w8, [x20, #0x12e]
+0x1686d18: tbnz w8, #0, #0x1686d24
+0x1686d1c: mov x0, x20
+0x1686d20: bl #0xd5dfc0
+0x1686d24: ldr x8, [x20, #0xc0]
+0x1686d28: ldr x20, [x8]
+0x1686d2c: ldrb w8, [x20, #0x12e]
+0x1686d30: tbnz w8, #0, #0x1686d3c
+0x1686d34: mov x0, x20
+0x1686d38: bl #0xd5dfc0
+0x1686d3c: adrp x8, #0x2ca1000
+0x1686d40: ldr x8, [x8, #0x690]
+0x1686d44: ldr x0, [x8]
+0x1686d48: ldr x8, [x20, #0xb8]
+0x1686d4c: ldrb w9, [x0, #0x12f]
+0x1686d50: ldr x20, [x8]
+0x1686d54: tbz w9, #1, #0x1686d64
+0x1686d58: ldr w8, [x0, #0xe0]
+0x1686d5c: cbnz w8, #0x1686d64
+0x1686d60: bl #0xd418c8
+0x1686d64: mov x0, x20
+0x1686d68: mov x1, xzr
+0x1686d6c: mov x2, xzr
+0x1686d70: bl #0x1b46a98 // UnityEngine.Object.op_Equality
+0x1686d74: fmov s8, wzr
+0x1686d78: tbnz w0, #0, #0x1686dc4
+0x1686d7c: ldrb w8, [x19, #0x46]
+0x1686d80: cbz w8, #0x1686d94
+0x1686d84: cbz x20, #0x1686dd8
+0x1686d88: ldr s0, [x20, #0x20]
+0x1686d8c: fmov s1, #7.00000000
+0x1686d90: b #0x1686dc0
+0x1686d94: mov x0, xzr
+0x1686d98: bl #0x127bdf4 // Stella.Common.AdvOptionManager.get_TextSpeed
+0x1686d9c: cmp w0, #1
+0x1686da0: b.eq #0x1686db4
+0x1686da4: cbnz w0, #0x1686dc4
+0x1686da8: cbz x20, #0x1686dd8
+0x1686dac: ldr s0, [x20, #0x20]
+0x1686db0: b #0x1686dbc
+0x1686db4: cbz x20, #0x1686dd8
+0x1686db8: ldr s0, [x20, #0x24]
+0x1686dbc: fmov s1, #10.00000000
+0x1686dc0: fmul s8, s0, s1
+0x1686dc4: ldp x29, x30, [sp, #0x20]
+0x1686dc8: ldp x20, x19, [sp, #0x10]
+0x1686dcc: mov v0.16b, v8.16b
+0x1686dd0: ldr d8, [sp], #0x30
+0x1686dd4: ret
+0x1686dd8: bl #0xd418ec
