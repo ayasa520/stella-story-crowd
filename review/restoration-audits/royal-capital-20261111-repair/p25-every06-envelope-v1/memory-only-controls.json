@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "status": "two-mutually-exclusive-memory-only-envelope-controls",
+  "reviewer": "/root/p15_p16_voice_evidence",
+  "rootConfirmed": false,
+  "installAllowed": false,
+  "resource": "bgm_adv_every06_cd3_10",
+  "examples": [
+    {
+      "id": "p25-node8-every06-extra-fade-0s",
+      "memoryOnly": true,
+      "rootConfirmed": false,
+      "installAllowed": false,
+      "hypothesisOnly": true,
+      "sceneId": 10170002,
+      "entryScenarioId": 7,
+      "routeScenarioIds": [
+        7,
+        8,
+        9
+      ],
+      "targetScenarioId": 8,
+      "guards": [
+        {
+          "sceneId": 10170002,
+          "scenarioId": 7,
+          "stableKey": "s10170002-p25-at0196",
+          "sourceText": "明日、俺はフェリスと一緒に、\n竜車でエミリアの屋敷に向かうことになる。\nそして、そこであの女、エルザに……",
+          "sourceSpeaker": "スバル",
+          "expected": {
+            "bg_music": "",
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "character": "",
+            "motion": "",
+            "voice": ""
+          }
+        },
+        {
+          "sceneId": 10170002,
+          "scenarioId": 8,
+          "stableKey": "s10170002-p25-at0203",
+          "sourceText": "つまり、これはあれだ。タイムリープ",
+          "sourceSpeaker": "スバル",
+          "expected": {
+            "bg_music": "",
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "character": "",
+            "motion": "",
+            "voice": ""
+          }
+        },
+        {
+          "sceneId": 10170002,
+          "scenarioId": 9,
+          "stableKey": "s10170002-p25-at0206p5",
+          "sourceText": "俺は死んで、それから死ぬ前に時間を遡ってる。名付けて、『死に戻り』",
+          "sourceSpeaker": "スバル",
+          "expected": {
+            "bg_music": "",
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "character": "",
+            "motion": "",
+            "voice": ""
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "10170002:7",
+          "target": "10170002:8",
+          "branchId": 71,
+          "transition": {
+            "uniq_id": 1017000210071,
+            "transition_id": 7101,
+            "next_scenario_id": 8,
+            "next_scenario_label": ""
+          }
+        },
+        {
+          "source": "10170002:8",
+          "target": "10170002:9",
+          "branchId": 81,
+          "transition": {
+            "uniq_id": 1017000210081,
+            "transition_id": 8101,
+            "next_scenario_id": 9,
+            "next_scenario_label": ""
+          }
+        }
+      ],
+      "fieldsHypothesis": {
+        "bg_music": "bgm_adv_every06_cd3_10,0,false"
+      },
+      "variedParameter": {
+        "name": "extra fade seconds",
+        "value": 0
+      },
+      "restartFlagFixedTestHypothesis": false,
+      "originalRestartRecovered": false,
+      "originalCsvRecovered": false,
+      "originalCommandPhaseRecovered": false,
+      "originalFadeRecovered": false,
+      "playerSchedulingValidated": false,
+      "expectedComparison": "Use the original resource first pass, preserve its intrinsic quiet head, fit one global output scale using the late plateau, then compare held-out source-relative0.5–1.1sec gain. Do not restart music again on node9.",
+      "schedulingControl": "Both hypotheses must share the same cue-reference-zero alignment. The current production bg_music field scheduling is a separate behavior to measure; changing this envelope alone does not validate its relation to first text.",
+      "observedReferenceZeroAfterFirstGlyphMillisecondsRange": [
+        197.75,
+        231.75
+      ],
+      "formalWrites": false
+    },
+    {
+      "id": "p25-node8-every06-extra-fade-1s",
+      "memoryOnly": true,
+      "rootConfirmed": false,
+      "installAllowed": false,
+      "hypothesisOnly": true,
+      "sceneId": 10170002,
+      "entryScenarioId": 7,
+      "routeScenarioIds": [
+        7,
+        8,
+        9
+      ],
+      "targetScenarioId": 8,
+      "guards": [
+        {
+          "sceneId": 10170002,
+          "scenarioId": 7,
+          "stableKey": "s10170002-p25-at0196",
+          "sourceText": "明日、俺はフェリスと一緒に、\n竜車でエミリアの屋敷に向かうことになる。\nそして、そこであの女、エルザに……",
+          "sourceSpeaker": "スバル",
+          "expected": {
+            "bg_music": "",
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "character": "",
+            "motion": "",
+            "voice": ""
+          }
+        },
+        {
+          "sceneId": 10170002,
+          "scenarioId": 8,
+          "stableKey": "s10170002-p25-at0203",
+          "sourceText": "つまり、これはあれだ。タイムリープ",
+          "sourceSpeaker": "スバル",
+          "expected": {
+            "bg_music": "",
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "character": "",
+            "motion": "",
+            "voice": ""
+          }
+        },
+        {
+          "sceneId": 10170002,
+          "scenarioId": 9,
+          "stableKey": "s10170002-p25-at0206p5",
+          "sourceText": "俺は死んで、それから死ぬ前に時間を遡ってる。名付けて、『死に戻り』",
+          "sourceSpeaker": "スバル",
+          "expected": {
+            "bg_music": "",
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "character": "",
+            "motion": "",
+            "voice": ""
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "10170002:7",
+          "target": "10170002:8",
+          "branchId": 71,
+          "transition": {
+            "uniq_id": 1017000210071,
+            "transition_id": 7101,
+            "next_scenario_id": 8,
+            "next_scenario_label": ""
+          }
+        },
+        {
+          "source": "10170002:8",
+          "target": "10170002:9",
+          "branchId": 81,
+          "transition": {
+            "uniq_id": 1017000210081,
+            "transition_id": 8101,
+            "next_scenario_id": 9,
+            "next_scenario_label": ""
+          }
+        }
+      ],
+      "fieldsHypothesis": {
+        "bg_music": "bgm_adv_every06_cd3_10,1,false"
+      },
+      "variedParameter": {
+        "name": "extra fade seconds",
+        "value": 1
+      },
+      "restartFlagFixedTestHypothesis": false,
+      "originalRestartRecovered": false,
+      "originalCsvRecovered": false,
+      "originalCommandPhaseRecovered": false,
+      "originalFadeRecovered": false,
+      "playerSchedulingValidated": false,
+      "expectedComparison": "Use the original resource first pass, preserve its intrinsic quiet head, fit one global output scale using the late plateau, then compare held-out source-relative0.5–1.1sec gain. Do not restart music again on node9.",
+      "schedulingControl": "Both hypotheses must share the same cue-reference-zero alignment. The current production bg_music field scheduling is a separate behavior to measure; changing this envelope alone does not validate its relation to first text.",
+      "observedReferenceZeroAfterFirstGlyphMillisecondsRange": [
+        197.75,
+        231.75
+      ],
+      "formalWrites": false
+    }
+  ],
+  "actualResource": {
+    "catalog": {
+      "path": "story_crowd_data/assets/catalog.json",
+      "bytes": 4149116,
+      "sha256": "ab756f9fd142fc60cbb89d47da48357d9523ad43b5028ae36c0df3901b1df373"
+    },
+    "record": {
+      "label": "bgm_adv_every06_cd3_10",
+      "url": "music/bgm_adv_every06_cd3_10.opus",
+      "metadata_url": "music/bgm_adv_every06_cd3_10.json",
+      "metadata": {
+        "resource": "bgm_adv_every06_cd3_10",
+        "native_cue_id": 0,
+        "sample_rate": 44100,
+        "samples": 8007280,
+        "loop": true,
+        "loop_start": 8.964852607709751,
+        "loop_end": 181.57097505668935,
+        "startup_events": [],
+        "source": "ACB CueTable / SequenceTable / TrackEventTable / SynthTable / WaveformExtensionDataTable"
+      },
+      "preview": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "decoded_samples": 8715407,
+        "channels": 2,
+        "duration": 181.57097916666666,
+        "bitrate": "128k"
+      }
+    },
+    "payload": {
+      "path": "story_crowd_data/assets/music/bgm_adv_every06_cd3_10.opus",
+      "bytes": 3065599,
+      "sha256": "e5413ea5151f0869bceb0fce5617bb6344acfbb3d8331d4f19ece429ba99e844"
+    },
+    "metadata": {
+      "path": "story_crowd_data/assets/music/bgm_adv_every06_cd3_10.json",
+      "bytes": 287,
+      "sha256": "4e5b2602ff94c95fef7fca436baa090158baf7eedaa011c92803a26913d8b1e1"
+    },
+    "originalRenderedPayload": {
+      "path": "data/extracted_archives/limeos/LIMEOS/audio/bgm_adv_every06_cd3_10/bgm_adv_every06_cd3_10.wav",
+      "bytes": 64240884,
+      "sha256": "17618fbe92d54c5a56dae4b10cfc6e29edabf02c51340c55c9a358f49c2123b8"
+    }
+  },
+  "caution": "The false restart flag and fade0/fade1 values are test hypotheses held constant or varied only to isolate behavior; they are not claims about the original script.",
+  "experimentalReferenceZeroSeconds": 202.92075,
+  "formalNodeChanges": [],
+  "formalWrites": false
+}
