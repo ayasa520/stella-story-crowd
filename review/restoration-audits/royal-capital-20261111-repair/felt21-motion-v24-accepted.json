@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "status": "delegated_image_review_accepted_for_guarded_install",
+  "reviewer": "/root/felt_entry_offline_review",
+  "rootConfirmed": true,
+  "originalCsvRecovered": false,
+  "exactTimingValidated": false,
+  "changes": [
+    {
+      "sceneId": 10280014,
+      "scenarioId": 21,
+      "stableKey": "s10280014-p11-at0103",
+      "sourceText": "……へえ。やけに詳しいじゃねーか。いいぜ、話は聞いてやるよ",
+      "rootConfirmed": true,
+      "expected": {
+        "character": "live2d/AC_felt01",
+        "motion": ""
+      },
+      "fields": {
+        "motion": "act_normal,face_shinken"
+      },
+      "verifiedMotionComponents": [
+        "body",
+        "face"
+      ],
+      "directImageReview": true,
+      "evidence": {
+        "status": "direct_subagent_complete_entry_review_passed_as_authored_reproduction",
+        "reviewer": "/root/felt_entry_offline_review",
+        "directImageReview": true,
+        "selectedWitness": {
+          "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt-independent-batch-v1/felt21-entry-102.4000.png",
+          "frameSha256": "b6a861e048137f18aa2ec663f7c936ee4c582d7881f258c3dff70283e570eaf7",
+          "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/11 7本篇Ver拉姆 「只属于两个人的奋斗」.mp4",
+          "videoSha256": "bbd6cb2936a937540d679b67b8a9e4f0a40e38cda0fc8c0442ff5e49bc63f876",
+          "requestedTimeSeconds": 102.4,
+          "decodedTimeSeconds": 102.4,
+          "sceneId": 10280014,
+          "scenarioId": 21,
+          "stableKey": "s10280014-p11-at0103",
+          "observation": "Full original recording frame: first low-alpha Felt, forward stern face, open eyes, both arms lowered."
+        },
+        "temporalReview": {
+          "sourceEntryIndex": {
+            "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt-independent-batch-v1/source-dense-evidence.json",
+            "sha256": "0418e9f662885cf53da75b0ca6622711eb05c66a497f0ec8fcb62ff6216b4e2f",
+            "sequenceId": "felt21-entry",
+            "frames": 67
+          },
+          "actualEntryIndex": {
+            "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/production-evidence-index.json",
+            "sha256": "c4b47858fde2ad08f8264b3a175cf569ca983bf9ffbb406c6e0d64f00940ddf2",
+            "exampleId": "felt-21-normal-shinken-22-tameiki02-shinken-control",
+            "run": "tameiki02-shinken-control",
+            "node": 21,
+            "nodeId": "10280014:21",
+            "frames": 78
+          },
+          "reviewReceipt": {
+            "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/offline-direct-review-receipt-v1.json",
+            "sha256": "3c7d57a9d8048ec6ef1c3c1e4cf80c8669121650d5b54914bf79a65da0ace5b1"
+          },
+          "fullVisibleEntryPassed": true,
+          "independentFromFormalPredecessor": true,
+          "verifiedMotionComponents": [
+            "body",
+            "face"
+          ],
+          "originalCsvRecovered": false,
+          "exactTimingValidated": false,
+          "requiredContext": "Guard 20 Rom face_nayamu -> new felt01 at 21; 21 identical across all four captured compiled snapshots. Primary 21 low-alpha witness is tameiki02 control before its future 22 override executes. Node 22 remains pending and is excluded from this change."
+        },
+        "originalCsvRecovered": false,
+        "exactTimingValidated": false,
+        "originalController": {
+          "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt-predecessor15-review-v2/original-felt-controller.json",
+          "sha256": "2d11cc04093deebb24a10a5f6983524d447fdb0fe5496df10ccc91682541d26d"
+        },
+        "originalClipBindings": {
+          "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt-independent-batch-v1/original-candidate-binding-proof.json",
+          "sha256": "b2e3cffbc3cd50aa70ab7d8e11f6fb9906a0eff51a8d1a480281d59960d04f25"
+        },
+        "originalClipCurves": {
+          "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt-independent-batch-v1/candidate-curve-analysis.json",
+          "sha256": "55ef39942e0d9aaad27d50718b774f59ac3cc964add366715d8e0c65a3b1a692"
+        },
+        "integrity": {
+          "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/offline-review-integrity-v1.json",
+          "sha256": "ce436e69b4770003b54a4e39d4fa341f7a9e655a7aa083784eb364dd9aef9d33"
+        },
+        "compiledNodeSnapshots": {
+          "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/offline-reviewed-node21-compiled-snapshots.json",
+          "sha256": "fc497bbcfbc4ec82da855d68abbba77bb6ca149aa9ab487d3dfe7075cf6097af"
+        },
+        "actualPayload": {
+          "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/tameiki02-shinken-control-shared-clock.json.gz",
+          "sha256": "a3bf0ac0a2d1c2f6e0232684910d41002c566d9587f48f6499bb156ac7984626"
+        },
+        "sourceBinding": {
+          "canonicalCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+          "servedBefore": {
+            "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/served-source-before.json",
+            "sha256": "6bc23471c366e20aae3cc764c88f880c45bfeb5dbc8a49e65d699338ad6109af"
+          },
+          "servedAfter": {
+            "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/served-source-after.json",
+            "sha256": "b0869e85005d48810d8c759c3e43bf56e0362cd7267a803ea9fe6d0b491b8b79"
+          },
+          "eightServedSourceArchivesAndCurrentFilesMatch": true,
+          "packet": {
+            "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt-independent-batch-v1/production-preview-proposal-packet.json",
+            "sha256": "1eeff04c803b6f692f1072d0a4570980068246da58489f8bcc750d781b9999a9"
+          },
+          "protectedInputHashes": {
+            "packetSha256": "1eeff04c803b6f692f1072d0a4570980068246da58489f8bcc750d781b9999a9",
+            "registrySha256": "25c6f46875c5e3e9156a18097d3725e7dd8bc1b473675f57d042578425309d67",
+            "nativeSceneSha256": "fb1c83a2a2ef9ccd4fc4dc98aa8081436f6929a2a2d604136c33be67aa64aae1",
+            "protectedStudioSha256": "ebd974d90f89088fa3a504c1f419ae01c352a24e6bd80209c5ec651295d38522"
+          },
+          "browserCloseReceipt": {
+            "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/browser-close-receipt.json",
+            "sha256": "3a5ad5e592dfbef8ca61c29d5af4baab5f94bf514343e193a974dd2af9f5bd8b"
+          }
+        },
+        "unknownMotionComponents": [
+          "extra"
+        ],
+        "acceptanceBoundary": "Only body and face of complete visible 21 entry are supported as reproduction. Original CSV, native onset, exact timing, extra layer and whole chapter remain unknown. No 22 CSV or face-only write is authorized by this packet.",
+        "rootIntegration": {
+          "reviewer": "/root",
+          "visualReviewer": "/root/felt_entry_offline_review",
+          "mainThreadViewedImages": false,
+          "authorization": "User explicitly delegated all image inspection to subagents",
+          "checks": [
+            "packet SHA-256",
+            "unique owned node and stable key",
+            "Japanese source",
+            "field preconditions",
+            "image witness SHA-256"
+          ],
+          "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/offline-reviewed-node21-node-fields-draft-v1.json",
+          "sourcePacketSha256": "f74d9809ed825c770b97459ca3aeccd57a60abbca62f8ec21f7396cb338d976a",
+          "acceptedScope": [
+            "motion"
+          ],
+          "temporalChecks": {
+            "originalEntryFrames": 67,
+            "playerEntryFrames": 78,
+            "servedSourceFiles": 8,
+            "verifiedMotionComponents": [
+              "body",
+              "face"
+            ],
+            "fullVisibleEntryPassed": true,
+            "originalCsvRecovered": false,
+            "exactTimingValidated": false
+          }
+        }
+      }
+    }
+  ]
+}

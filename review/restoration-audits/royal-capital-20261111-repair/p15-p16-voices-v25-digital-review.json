@@ -1,0 +1,2811 @@
+{
+  "version": 1,
+  "status": "five-cues-reviewed-unsigned-draft-only",
+  "reviewer": "/root/p15_p16_voice_evidence",
+  "rootConfirmed": false,
+  "cases": [
+    {
+      "id": "p15-0012.6118-10020001-20",
+      "reviewer": "/root/p15_p16_voice_evidence",
+      "rootConfirmed": false,
+      "verdict": {
+        "digitalIdentity": "supported-for-the-exact-catalog-payload",
+        "cardAssignment": "supported-by-direct-original-full-interface-sequence-review",
+        "nativeTiming": "unrecovered",
+        "originalCsv": "unrecovered",
+        "subjectiveTone": "not-assessed-audio-input-unsupported"
+      },
+      "scope": "Unsigned voice-only reconstruction candidate; no formal native/Studio write, asset change, or runtime verification.",
+      "source": {
+        "path": "data/native_recovery/royal-capital-20261110/source-quality/15-remote-qn32.mp4",
+        "bytes": 78107083,
+        "sha256": "7aec9d0064529fd6201facc2a4c9d8b34e6df10b9e16714f343a4c4c3c9857be"
+      },
+      "guard": {
+        "sceneId": 10020001,
+        "scenarioId": 20,
+        "stableKey": "s10020001-p15-at0013",
+        "sourceText": "道に迷ってる暇はねえ。\nとにかく、貧民街まで急げ、俺！",
+        "sourceSpeaker": "スバル",
+        "character": "live2d/AC_subaru01",
+        "voice": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "proposedVoice": "vo_adv_subaru,advg_subaru_yorokobi",
+      "actualCatalogPayload": {
+        "catalog": {
+          "path": "story_crowd_data/assets/voices/vo_adv_subaru/index.json",
+          "bytes": 18728,
+          "sha256": "758d8a84c6d8269f1ae0ad0881ebd03f9caba19936de6c0dd4b67c588e1b7a21"
+        },
+        "entry": {
+          "cue": "advg_subaru_yorokobi",
+          "label": "",
+          "member": "LIMEOS/audio/vo_adv_subaru/advg_subaru_yorokobi.wav",
+          "url": "voices/vo_adv_subaru/advg_subaru_yorokobi.wav"
+        },
+        "payload": {
+          "path": "story_crowd_data/assets/voices/vo_adv_subaru/advg_subaru_yorokobi.wav",
+          "bytes": 36578,
+          "sha256": "344774ad7c2ce9be000cc148ef99e19139fd680971f6c1c4488206e33c29d42f"
+        },
+        "byteIdenticalToMatchedLimeosCue": true
+      },
+      "sourceClipProvenance": {
+        "existing": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p15-7aec9d006452/audible-review/source-0012.6118-86e1c8e4a3.wav",
+          "bytes": 16376,
+          "sha256": "4bd83599c06159b07a57fe9ff4847d99419265c6df50f2097627e39879f8fea2"
+        },
+        "sourceStartSeconds": 12.411800000000001,
+        "durationSeconds": 1.0208,
+        "freshDecodedPCM": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/source-existing-clip-fresh-pcm.i16",
+          "bytes": 16332,
+          "sha256": "e35f3c742daf2abfb10a241d3cae9d3dede2fce1b590866d67680b5b75bfb282"
+        },
+        "freshPCMIdenticalToExistingClip": true,
+        "freshSamples": 8166,
+        "existingSamples": 8166
+      },
+      "recordedSourceToCatalog": {
+        "signedFullCorrelation": 0.9633008903155629,
+        "positiveFirstHalfGain": 0.17472513444996537,
+        "measuredFullCueStartSeconds": 12.611300000000002,
+        "measuredFullCueEndSeconds": 13.182175,
+        "details": {
+          "sampleRate": 16000,
+          "alignmentMethod": "first half only, +/-80 ms; locked lag and first-half gain",
+          "fullReferenceSamples": 9134,
+          "fullReferenceDuration": 0.570875,
+          "sourceOffsetSamples": 7192,
+          "sourceOffsetSeconds": 0.4495,
+          "fullCorrelation": 0.9633008903155629,
+          "heldOutSecondHalfCorrelation": 0.836450069611763,
+          "firstHalfGain": 0.17472513444996537,
+          "fullResidualEnergyFraction": 0.07206091826000606,
+          "quarterCoverage": [
+            {
+              "startSeconds": 0.0,
+              "endSeconds": 0.14275,
+              "referenceEnergyFraction": 0.6374712341182845,
+              "correlation": 0.9861042269398659
+            },
+            {
+              "startSeconds": 0.14275,
+              "endSeconds": 0.2855,
+              "referenceEnergyFraction": 0.31968052588642604,
+              "correlation": 0.9411730712105308
+            },
+            {
+              "startSeconds": 0.2855,
+              "endSeconds": 0.4281875,
+              "referenceEnergyFraction": 0.042844163526867436,
+              "correlation": 0.8897095929047145
+            },
+            {
+              "startSeconds": 0.4281875,
+              "endSeconds": 0.570875,
+              "referenceEnergyFraction": 4.076468425373273e-06,
+              "correlation": 0.031672577799366046
+            }
+          ],
+          "frequencyBands": [
+            {
+              "hz": [
+                100,
+                500
+              ],
+              "correlation": 0.9865389817572865,
+              "referenceEnergyFraction": 0.43755224042604807
+            },
+            {
+              "hz": [
+                500,
+                1500
+              ],
+              "correlation": 0.48116622824592953,
+              "referenceEnergyFraction": 0.005186378894821997
+            },
+            {
+              "hz": [
+                1500,
+                3500
+              ],
+              "correlation": 0.990655931866782,
+              "referenceEnergyFraction": 0.22821075777077762
+            },
+            {
+              "hz": [
+                3500,
+                7000
+              ],
+              "correlation": 0.9789102493054491,
+              "referenceEnergyFraction": 0.23405365405123107
+            }
+          ],
+          "powerWeightedCoherence100to7000Hz": 0.9787522940077165,
+          "alignedObservedSha256": "d383057f979f5bfacac735ca54f284829ac4fbed0d8c8a87795e44312daf09da",
+          "residualSha256": "645a7fadf2fe1f95eba284430af86cada63923dc43f3a8f530dd33c11073fb7a"
+        },
+        "limitation": "The recording is the original AAC game mix. Residual remains; the result is waveform identity evidence for the short catalog cue, not byte equality with the mixed recording or original whole-line dubbing."
+      },
+      "nativeBankToCatalog": {
+        "signedFullCorrelationAtOriginalSampleRate": -0.9999999813072266,
+        "signedGainFromNativeDecodeToCatalog": -0.9999074792809698,
+        "residualRmsInteger16Lsb": 0.6284801093682822,
+        "originalSampleRate": 32000,
+        "catalogSamples": 18267,
+        "nativeDecodedSamples": 18267,
+        "authoredAcbSamples": 18267,
+        "nativeBank": {
+          "waveId": 27,
+          "hca": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/native-bank-member.hca",
+            "bytes": 4704,
+            "sha256": "4cd16f5d8571e4014132b0168a3bcdb4ad91587d1627fc92b88be6691658bc12"
+          },
+          "decoded": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/native-bank-member.wav",
+            "bytes": 36612,
+            "sha256": "b7d00944c004989fd04257c6c151ff6597dd6d05ae696178b284c1198090f80e"
+          },
+          "decodedInfo": {
+            "sampleRate": 32000,
+            "channels": 1,
+            "samples": 18267,
+            "duration": 0.57084375,
+            "pcmSha256": "c694201aa10da4f418898a71c337e30d9e6a72742dcf2a61a47b18abf8be7487"
+          },
+          "encoderDelaySamples": 128,
+          "encoderPaddingSamples": 37,
+          "afs2Subkey": 0,
+          "acb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_subaru.acb",
+            "bytes": 18272,
+            "sha256": "8177e08e2385e048c9789799ad84572552f91075ef838696b7f0961fe8708f82"
+          },
+          "awb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_subaru.awb",
+            "bytes": 948864,
+            "sha256": "e745a0f1bda14fa3dcf10962161f21badbe863b0125b29655d314df1856d10a6"
+          },
+          "acbVolume": 1.0,
+          "graph": {
+            "cue": {
+              "CueId": 23,
+              "ReferenceType": 3,
+              "ReferenceIndex": 23,
+              "UserData": "",
+              "Worksize": 0,
+              "AisacControlMap": {
+                "hex": ""
+              },
+              "Length": 570,
+              "NumAisacControlMaps": 0,
+              "HeaderVisibility": 1
+            },
+            "sequence": {
+              "PlaybackRatio": 100,
+              "NumTracks": 1,
+              "TrackIndex": {
+                "hex": "0017"
+              },
+              "CommandIndex": 0,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0,
+              "TrackValues": {
+                "hex": ""
+              },
+              "Type": 0,
+              "ControlWorkArea1": 23,
+              "ControlWorkArea2": 23
+            },
+            "track": {
+              "EventIndex": 23,
+              "CommandIndex": 65535,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "TargetType": 0,
+              "TargetName": "",
+              "TargetId": 4294967295,
+              "TargetAcbName": "",
+              "Scope": 0,
+              "TargetTrackNo": 65535
+            },
+            "synth": {
+              "Type": 0,
+              "VoiceLimitGroupName": "",
+              "CommandIndex": 65535,
+              "ReferenceItems": {
+                "hex": "00010017"
+              },
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ControlWorkArea1": 23,
+              "ControlWorkArea2": 23,
+              "TrackValues": {
+                "hex": ""
+              },
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0
+            },
+            "wave": {
+              "MemoryAwbId": 65535,
+              "EncodeType": 2,
+              "Streaming": 1,
+              "NumChannels": 1,
+              "LoopFlag": 1,
+              "SamplingRate": 32000,
+              "NumSamples": 18267,
+              "ExtensionData": 65535,
+              "StreamAwbPortNo": 0,
+              "StreamAwbId": 27
+            },
+            "waveIndex": 23,
+            "trackIndex": 23,
+            "synthIndex": 23,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          },
+          "metadata": {
+            "loop": false,
+            "loop_start": 0,
+            "loop_end": 0,
+            "preview_error": "",
+            "native_cue_id": 23,
+            "sample_rate": 32000,
+            "samples": 18267,
+            "release": {
+              "seconds": 0,
+              "curve": 0
+            }
+          },
+          "limeosReferenceCorrelation": -0.9999999862125326,
+          "limeosRelativeGain": -0.9999110695777131,
+          "waveformAliases": [
+            {
+              "cue": "advg_subaru_yorokobi",
+              "nativeCueId": 23,
+              "commands": {
+                "sequence": [
+                  {
+                    "opcode": 65,
+                    "data": [
+                      0,
+                      0,
+                      0,
+                      2
+                    ]
+                  },
+                  {
+                    "opcode": 111,
+                    "data": [
+                      0,
+                      0,
+                      39,
+                      16
+                    ]
+                  }
+                ],
+                "track": [],
+                "synth": []
+              }
+            }
+          ]
+        },
+        "interpretation": "Measured full-length negative polarity relation only. No decoder/game cause is inferred and no audio is altered.",
+        "authoredGain": "unknown; AcbVolume and raw command bytes are preserved separately",
+        "authoredPitch": "unknown; no raw parameter opcode is assigned an unverified meaning"
+      },
+      "ambiguityAudit": {
+        "banks": 5,
+        "allComparedCues": 309,
+        "excludedCues": 0,
+        "targetFixedEventCorrelation": 0.6411264812673242,
+        "bestOther": {
+          "member": "LIMEOS/audio/vo_adv_wilhelm/advg_wilhelm_aiduchi.wav",
+          "status": "compared",
+          "duration": 0.441375,
+          "sourceOffsetSeconds": 0.3490625,
+          "fixedEventCorrelation": 0.21873368610417174,
+          "explainedFixedEventEnergy": 0.04784442543671833
+        },
+        "signedCorrelationGap": 0.4223927951631524,
+        "samePCM": [
+          "LIMEOS/audio/vo_adv_subaru/advg_subaru_yorokobi.wav"
+        ],
+        "sameWaveformAliases": [
+          {
+            "cue": "advg_subaru_yorokobi",
+            "nativeCueId": 23,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          }
+        ],
+        "fullAudit": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/runner-up-audit.json",
+          "bytes": 88411,
+          "sha256": "a6f04e628e77b0adfd5c68590bff2fea94c50ebad3ef8c7dd5d566cb7b556235"
+        },
+        "limitation": "The unique result is bounded to the five banks in the original P15/P16 search profiles; no entire game corpus was searched."
+      },
+      "directFrameReview": {
+        "performed": true,
+        "reviewer": "/root/p15_p16_voice_evidence",
+        "contact": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/full-interface-contact.jpg",
+          "bytes": 965774,
+          "sha256": "c02834d80aff707e33f198b3c54d349b17b3c71559af618bcad66ca1b645b0dd"
+        },
+        "frames": [
+          {
+            "requestedSeconds": 12.011800000000001,
+            "actualPTS": 12.023,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-01.jpg",
+              "bytes": 39191,
+              "sha256": "78cc597089833de39d259e7aa3b9a11bb026d823dd91f722803b0c8031adb942"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-01.log",
+              "bytes": 4963,
+              "sha256": "50ee401fb22af08cafca294ec3fcce8f02ef2eefd63481e9df5cd5938482cb78"
+            }
+          },
+          {
+            "requestedSeconds": 12.4618,
+            "actualPTS": 12.489,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-02.jpg",
+              "bytes": 113267,
+              "sha256": "8251b06ca584316330fc501223b9297fae12fc6a319da4f1b9b7ab6c55a30cb3"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-02.log",
+              "bytes": 4970,
+              "sha256": "83c749d5ae54a11f65734fa22bb19a29b1ea70b984bb5a9d7036bcd4a1997e22"
+            }
+          },
+          {
+            "requestedSeconds": 12.6118,
+            "actualPTS": 12.623,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-03.jpg",
+              "bytes": 113079,
+              "sha256": "806a427c03a2b8fbcb568f88be9dd91d919151b33431953b817ddd6c640e4184"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-03.log",
+              "bytes": 4970,
+              "sha256": "d5a968be240a2d2ad4e0ec74b617081ce38075962d3093705e52967df615edc6"
+            }
+          },
+          {
+            "requestedSeconds": 12.761800000000001,
+            "actualPTS": 12.789,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-04.jpg",
+              "bytes": 114558,
+              "sha256": "07090538887c92b61ab5787d11a47ad3960f2c7109841382a495c0017fcfb1b8"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-04.log",
+              "bytes": 4970,
+              "sha256": "4e650bbfb4f1659c149e9c1a6b7d3b5224f98182d575b918940bbdb58b95ad92"
+            }
+          },
+          {
+            "requestedSeconds": 13.011800000000001,
+            "actualPTS": 13.023,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-05.jpg",
+              "bytes": 115107,
+              "sha256": "0c17f492d53d282a4525d8cbd248a750c97c7ebd6b0ce63016ea005e6d664440"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-05.log",
+              "bytes": 4970,
+              "sha256": "2ce33d46897bb17db701372c6c63ca78eaa584da239dd2b65bf2e0f2f584c8a5"
+            }
+          },
+          {
+            "requestedSeconds": 18.3,
+            "actualPTS": 18.323,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-06.jpg",
+              "bytes": 118048,
+              "sha256": "4337fd0c8185da772774952bac91bca14957c087e46c7005b30b047a090e35f3"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-06.log",
+              "bytes": 4970,
+              "sha256": "20e92dbdddc677f8c94d6daac53ba0f1db06819a1aadf44f89eb2845d5935998"
+            }
+          },
+          {
+            "requestedSeconds": 19.2,
+            "actualPTS": 19.223,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-07.jpg",
+              "bytes": 27084,
+              "sha256": "69359a8af99c8c3dee3184d2b7f7c5b7a3857db1bcd4262b7298e75a3310ebd9"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/frame-07.log",
+              "bytes": 4963,
+              "sha256": "eea48e8e7b45d99eb9d3daf0104b78b424a6846d12cead20766c81ac1d3dacb3"
+            }
+          }
+        ],
+        "observations": {
+          "before": "12.023: blurred street and route-change banner, no dialogue card.",
+          "entry": "12.489: Subaru card already reveals 道に; 12.623 and 12.789 continue the same line.",
+          "full": "18.323: スバル / 道に迷ってる暇はねえ。とにかく、貧民街まで急げ、俺！",
+          "after": "19.223: blurred Connecting handoff, no different card overlapping the full cue.",
+          "textMatch": "Japanese game card matches the guarded sourceText after normalizing display line wraps.",
+          "timing": "The measured full-cue start is during this card's reveal, before the 13.0 OCR anchor; the anchor is not a voiceDelay reference.",
+          "coverage": "The last quarter contains only 0.0004076% of reference energy. Its near-zero correlation is a silent reference tail, not a missing voiced quarter; the first three quarters and their harmonic trajectories match."
+        },
+        "burnedInTranslationUsedForJapaneseApproval": false,
+        "timeFrequencyPlotDirectlyInspected": true,
+        "identityPlot": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/locked-waveform-and-time-frequency.png",
+          "bytes": 243877,
+          "sha256": "b6d41d9b199066d57bb56ea64303b9edccc7b1d585a3fc5ec9b117a81833d1ed"
+        }
+      },
+      "decisionBasis": "Exact playing payload, independently decoded full-cue coverage and held-out alignment, coherent spectral trajectory, native ACB/member/sample provenance, unique bounded alternatives/PCM audit, and original card entry/full-text/neighbor exclusion agree. No score alone supplies approval.",
+      "unknowns": [
+        "originalCSV",
+        "originalScenarioId",
+        "commandPhase",
+        "voiceDelay",
+        "nativeAuthoredGain",
+        "nativeAuthoredPitch",
+        "subjectiveTone"
+      ],
+      "preparedEvidence": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0012.6118-10020001-20/evidence.json",
+        "bytes": 18768,
+        "sha256": "14c88eb1d900c3357e632cd14acff856ffef1f638500f179b546aeb930e52271"
+      }
+    },
+    {
+      "id": "p15-0038.4831-10020021-4",
+      "reviewer": "/root/p15_p16_voice_evidence",
+      "rootConfirmed": false,
+      "verdict": {
+        "digitalIdentity": "supported-for-the-exact-catalog-payload",
+        "cardAssignment": "supported-by-direct-original-full-interface-sequence-review",
+        "nativeTiming": "unrecovered",
+        "originalCsv": "unrecovered",
+        "subjectiveTone": "not-assessed-audio-input-unsupported"
+      },
+      "scope": "Unsigned voice-only reconstruction candidate; no formal native/Studio write, asset change, or runtime verification.",
+      "source": {
+        "path": "data/native_recovery/royal-capital-20261110/source-quality/15-remote-qn32.mp4",
+        "bytes": 78107083,
+        "sha256": "7aec9d0064529fd6201facc2a4c9d8b34e6df10b9e16714f343a4c4c3c9857be"
+      },
+      "guard": {
+        "sceneId": 10020021,
+        "scenarioId": 4,
+        "stableKey": "s10020021-p15-at0039",
+        "sourceText": "よし！道は大体わかった、あとは急ぐだけだ",
+        "sourceSpeaker": "スバル",
+        "character": "live2d/AC_subaru01",
+        "voice": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "proposedVoice": "vo_adv_subaru,advk_subaru_syoudaku",
+      "actualCatalogPayload": {
+        "catalog": {
+          "path": "story_crowd_data/assets/voices/vo_adv_subaru/index.json",
+          "bytes": 18728,
+          "sha256": "758d8a84c6d8269f1ae0ad0881ebd03f9caba19936de6c0dd4b67c588e1b7a21"
+        },
+        "entry": {
+          "cue": "advk_subaru_syoudaku",
+          "label": "",
+          "member": "LIMEOS/audio/vo_adv_subaru/advk_subaru_syoudaku.wav",
+          "url": "voices/vo_adv_subaru/advk_subaru_syoudaku.wav"
+        },
+        "payload": {
+          "path": "story_crowd_data/assets/voices/vo_adv_subaru/advk_subaru_syoudaku.wav",
+          "bytes": 68210,
+          "sha256": "b45773423862e1cc1ee893661f54cdbb155ef25919106ce6f8c03ed52a44b3ce"
+        },
+        "byteIdenticalToMatchedLimeosCue": true
+      },
+      "sourceClipProvenance": {
+        "existing": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p15-7aec9d006452/audible-review/source-0038.4831-e1d9a8fe4e.wav",
+          "bytes": 25992,
+          "sha256": "36115666850e7f07f9a78ec3ba6f2b7bd0ee74282dae36516c1bab4f2522a802"
+        },
+        "sourceStartSeconds": 38.2831,
+        "durationSeconds": 1.6217000000000001,
+        "freshDecodedPCM": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/source-existing-clip-fresh-pcm.i16",
+          "bytes": 25948,
+          "sha256": "290d6d3a71db48f93a90d9089ab9ea8789920873291639ae81ab26f61b621798"
+        },
+        "freshPCMIdenticalToExistingClip": true,
+        "freshSamples": 12974,
+        "existingSamples": 12974
+      },
+      "recordedSourceToCatalog": {
+        "signedFullCorrelation": 0.9741390939148609,
+        "positiveFirstHalfGain": 0.18155712230936272,
+        "measuredFullCueStartSeconds": 38.482662499999996,
+        "measuredFullCueEndSeconds": 39.5477875,
+        "details": {
+          "sampleRate": 16000,
+          "alignmentMethod": "first half only, +/-80 ms; locked lag and first-half gain",
+          "fullReferenceSamples": 17042,
+          "fullReferenceDuration": 1.065125,
+          "sourceOffsetSamples": 7193,
+          "sourceOffsetSeconds": 0.4495625,
+          "fullCorrelation": 0.9741390939148609,
+          "heldOutSecondHalfCorrelation": 0.9774895422822167,
+          "firstHalfGain": 0.18155712230936272,
+          "fullResidualEnergyFraction": 0.05109727664184764,
+          "quarterCoverage": [
+            {
+              "startSeconds": 0.0,
+              "endSeconds": 0.2663125,
+              "referenceEnergyFraction": 0.3694850810306419,
+              "correlation": 0.9850678387080658
+            },
+            {
+              "startSeconds": 0.2663125,
+              "endSeconds": 0.532625,
+              "referenceEnergyFraction": 0.19354571194867695,
+              "correlation": 0.9452199559131548
+            },
+            {
+              "startSeconds": 0.532625,
+              "endSeconds": 0.798875,
+              "referenceEnergyFraction": 0.2929477161633544,
+              "correlation": 0.982438661328279
+            },
+            {
+              "startSeconds": 0.798875,
+              "endSeconds": 1.065125,
+              "referenceEnergyFraction": 0.14402149085733548,
+              "correlation": 0.9676523590083292
+            }
+          ],
+          "frequencyBands": [
+            {
+              "hz": [
+                100,
+                500
+              ],
+              "correlation": 0.9831566961384932,
+              "referenceEnergyFraction": 0.26082844277850215
+            },
+            {
+              "hz": [
+                500,
+                1500
+              ],
+              "correlation": 0.9879278050647067,
+              "referenceEnergyFraction": 0.514819313845866
+            },
+            {
+              "hz": [
+                1500,
+                3500
+              ],
+              "correlation": 0.9520172590362775,
+              "referenceEnergyFraction": 0.14142440652495336
+            },
+            {
+              "hz": [
+                3500,
+                7000
+              ],
+              "correlation": 0.9329415495916887,
+              "referenceEnergyFraction": 0.05642922014890734
+            }
+          ],
+          "powerWeightedCoherence100to7000Hz": 0.9773973728017994,
+          "alignedObservedSha256": "5bb05b894a7ef7a760f0e1616e2c000be6b34725e6aa1c7d959b35db75d90d13",
+          "residualSha256": "08f6e6b0001b834976d1fbed24f45a48b97f3377b62b3b95dbd6f478df5ad5d4"
+        },
+        "limitation": "The recording is the original AAC game mix. Residual remains; the result is waveform identity evidence for the short catalog cue, not byte equality with the mixed recording or original whole-line dubbing."
+      },
+      "nativeBankToCatalog": {
+        "signedFullCorrelationAtOriginalSampleRate": -0.9999999856751766,
+        "signedGainFromNativeDecodeToCatalog": -0.9999126454426412,
+        "residualRmsInteger16Lsb": 0.626096472704082,
+        "originalSampleRate": 32000,
+        "catalogSamples": 34083,
+        "nativeDecodedSamples": 34083,
+        "authoredAcbSamples": 34083,
+        "nativeBank": {
+          "waveId": 106,
+          "hca": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/native-bank-member.hca",
+            "bytes": 8800,
+            "sha256": "f8bed76597ba04cfd3010af9b4ed1a552b25dbaac0142b7787e10209fa07b86b"
+          },
+          "decoded": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/native-bank-member.wav",
+            "bytes": 68244,
+            "sha256": "5e5336ddcfb14e2015cb56a1e9cb16473515a715c22c8942103f48cf1482dded"
+          },
+          "decodedInfo": {
+            "sampleRate": 32000,
+            "channels": 1,
+            "samples": 34083,
+            "duration": 1.06509375,
+            "pcmSha256": "b28bc8d22fa32dd15fc9871eebe68300d5055a2db5e4615ae6a2abb649e1d7fc"
+          },
+          "encoderDelaySamples": 128,
+          "encoderPaddingSamples": 605,
+          "afs2Subkey": 0,
+          "acb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_subaru.acb",
+            "bytes": 18272,
+            "sha256": "8177e08e2385e048c9789799ad84572552f91075ef838696b7f0961fe8708f82"
+          },
+          "awb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_subaru.awb",
+            "bytes": 948864,
+            "sha256": "e745a0f1bda14fa3dcf10962161f21badbe863b0125b29655d314df1856d10a6"
+          },
+          "acbVolume": 1.0,
+          "graph": {
+            "cue": {
+              "CueId": 69,
+              "ReferenceType": 3,
+              "ReferenceIndex": 69,
+              "UserData": "",
+              "Worksize": 0,
+              "AisacControlMap": {
+                "hex": ""
+              },
+              "Length": 1065,
+              "NumAisacControlMaps": 0,
+              "HeaderVisibility": 1
+            },
+            "sequence": {
+              "PlaybackRatio": 100,
+              "NumTracks": 1,
+              "TrackIndex": {
+                "hex": "0045"
+              },
+              "CommandIndex": 0,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0,
+              "TrackValues": {
+                "hex": ""
+              },
+              "Type": 0,
+              "ControlWorkArea1": 69,
+              "ControlWorkArea2": 69
+            },
+            "track": {
+              "EventIndex": 69,
+              "CommandIndex": 65535,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "TargetType": 0,
+              "TargetName": "",
+              "TargetId": 4294967295,
+              "TargetAcbName": "",
+              "Scope": 0,
+              "TargetTrackNo": 65535
+            },
+            "synth": {
+              "Type": 0,
+              "VoiceLimitGroupName": "",
+              "CommandIndex": 65535,
+              "ReferenceItems": {
+                "hex": "00010045"
+              },
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ControlWorkArea1": 69,
+              "ControlWorkArea2": 69,
+              "TrackValues": {
+                "hex": ""
+              },
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0
+            },
+            "wave": {
+              "MemoryAwbId": 65535,
+              "EncodeType": 2,
+              "Streaming": 1,
+              "NumChannels": 1,
+              "LoopFlag": 1,
+              "SamplingRate": 32000,
+              "NumSamples": 34083,
+              "ExtensionData": 65535,
+              "StreamAwbPortNo": 0,
+              "StreamAwbId": 106
+            },
+            "waveIndex": 69,
+            "trackIndex": 69,
+            "synthIndex": 69,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          },
+          "metadata": {
+            "loop": false,
+            "loop_start": 0,
+            "loop_end": 0,
+            "preview_error": "",
+            "native_cue_id": 69,
+            "sample_rate": 32000,
+            "samples": 34083,
+            "release": {
+              "seconds": 0,
+              "curve": 0
+            }
+          },
+          "limeosReferenceCorrelation": -0.9999999903081779,
+          "limeosRelativeGain": -0.9999140284345213,
+          "waveformAliases": [
+            {
+              "cue": "advk_subaru_syoudaku",
+              "nativeCueId": 69,
+              "commands": {
+                "sequence": [
+                  {
+                    "opcode": 65,
+                    "data": [
+                      0,
+                      0,
+                      0,
+                      2
+                    ]
+                  },
+                  {
+                    "opcode": 111,
+                    "data": [
+                      0,
+                      0,
+                      39,
+                      16
+                    ]
+                  }
+                ],
+                "track": [],
+                "synth": []
+              }
+            }
+          ]
+        },
+        "interpretation": "Measured full-length negative polarity relation only. No decoder/game cause is inferred and no audio is altered.",
+        "authoredGain": "unknown; AcbVolume and raw command bytes are preserved separately",
+        "authoredPitch": "unknown; no raw parameter opcode is assigned an unverified meaning"
+      },
+      "ambiguityAudit": {
+        "banks": 5,
+        "allComparedCues": 309,
+        "excludedCues": 0,
+        "targetFixedEventCorrelation": 0.9005170591131024,
+        "bestOther": {
+          "member": "LIMEOS/audio/vo_adv_subaru/advg_subaru_kiduki.wav",
+          "status": "compared",
+          "duration": 0.2815,
+          "sourceOffsetSeconds": 0.6169375,
+          "fixedEventCorrelation": 0.22066058795477814,
+          "explainedFixedEventEnergy": 0.048691095076548375
+        },
+        "signedCorrelationGap": 0.6798564711583243,
+        "samePCM": [
+          "LIMEOS/audio/vo_adv_subaru/advk_subaru_syoudaku.wav"
+        ],
+        "sameWaveformAliases": [
+          {
+            "cue": "advk_subaru_syoudaku",
+            "nativeCueId": 69,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          }
+        ],
+        "fullAudit": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/runner-up-audit.json",
+          "bytes": 88299,
+          "sha256": "743ce0dd8ba2f1f58643cc0a5754efeb9512b881b5ca60aa4caf6531c2547086"
+        },
+        "limitation": "The unique result is bounded to the five banks in the original P15/P16 search profiles; no entire game corpus was searched."
+      },
+      "directFrameReview": {
+        "performed": true,
+        "reviewer": "/root/p15_p16_voice_evidence",
+        "contact": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/full-interface-contact.jpg",
+          "bytes": 897111,
+          "sha256": "d1dd07273e14c48f9ca49513c27c0ca065af45c0c47c06cdbb6c8441bf5a92df"
+        },
+        "frames": [
+          {
+            "requestedSeconds": 37.8831,
+            "actualPTS": 37.889,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-01.jpg",
+              "bytes": 31798,
+              "sha256": "05d925f3efb22a34f7278d2ab6072741d4db6500af7605f406e53e9c1626a1ae"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-01.log",
+              "bytes": 4961,
+              "sha256": "c5197f7a1983600f1d46a2cf117111a8de131675b7105f1c167993f690dac239"
+            }
+          },
+          {
+            "requestedSeconds": 38.3331,
+            "actualPTS": 38.356,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-02.jpg",
+              "bytes": 92655,
+              "sha256": "24d31de125f91e1b0357f07de097b90a8690950c80fdcfe0cd62d4783c4809c4"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-02.log",
+              "bytes": 4967,
+              "sha256": "202beee32143795ae60b607bce7cd3587c790097ab0f295ce70ce3f7298eeb8d"
+            }
+          },
+          {
+            "requestedSeconds": 38.4831,
+            "actualPTS": 38.489,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-03.jpg",
+              "bytes": 93500,
+              "sha256": "eee61cee0d70c89b8d50c3eab8514ef3ef3babe43c5eb394c064bc6d8217c5b8"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-03.log",
+              "bytes": 4967,
+              "sha256": "e043cc6d3d494a01c6d2532f630bf88435dc16611e6c6abe2d06e76dfc3f135d"
+            }
+          },
+          {
+            "requestedSeconds": 38.6331,
+            "actualPTS": 38.656,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-04.jpg",
+              "bytes": 92246,
+              "sha256": "e3aeaf0b0fb54795abd8ccb08b80fcc574a6446333e19c89fdba39fd64514bf2"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-04.log",
+              "bytes": 4967,
+              "sha256": "8f5a7a2b9829ad15388dce9b81644fc480ef02ee116266c42efbac6f9f3a0825"
+            }
+          },
+          {
+            "requestedSeconds": 38.8831,
+            "actualPTS": 38.889,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-05.jpg",
+              "bytes": 93747,
+              "sha256": "7bb0872283aee441b8b3fb2f9a27f96663934aedde6a2a2bc57363754226e27a"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-05.log",
+              "bytes": 4967,
+              "sha256": "58f3df576ab9240ce8d832941bec5c17b4ee2ad8af2892e4d6df815d5041d953"
+            }
+          },
+          {
+            "requestedSeconds": 41.3,
+            "actualPTS": 41.323,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-06.jpg",
+              "bytes": 96866,
+              "sha256": "a35219f034c284e68b621f523f219173a27bc31540beb567ca70fda2ffc13760"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-06.log",
+              "bytes": 4967,
+              "sha256": "696ec9a91b14aa75183c8f26baf29d9f6d8a6fcab0eb4b62744443ac9c76d2b4"
+            }
+          },
+          {
+            "requestedSeconds": 42.2,
+            "actualPTS": 42.223,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-07.jpg",
+              "bytes": 89084,
+              "sha256": "6c089409ebeefe3f0fe0d9a74ef90a0b586abbf43e4c661956fb3ee5ffe84d8e"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/frame-07.log",
+              "bytes": 4967,
+              "sha256": "e694ab3dcf092d4ba74bfc5ff30a7020aa2805e2b641cd7f0543f9cb703ead93"
+            }
+          }
+        ],
+        "observations": {
+          "before": "37.889: blurred street transition, no dialogue card.",
+          "entry": "38.356: Subaru card reveals よ; 38.489 shows よし！ on the same card.",
+          "full": "41.323: スバル / よし！道は大体わかった、あとは急ぐだけだ",
+          "after": "42.223: a new Subaru card starts 待って; the target full cue ends about 39.548, before this new card.",
+          "textMatch": "Japanese game card matches the guarded sourceText after normalizing display line wraps.",
+          "timing": "The cue starts during reveal of よし！, before the 39.0 OCR anchor. No native command phase or authored delay is recovered.",
+          "coverage": "All four full-reference quarters carry substantial energy and match at the one locked alignment; their harmonic changes and pauses agree."
+        },
+        "burnedInTranslationUsedForJapaneseApproval": false,
+        "timeFrequencyPlotDirectlyInspected": true,
+        "identityPlot": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/locked-waveform-and-time-frequency.png",
+          "bytes": 332967,
+          "sha256": "e821ab6dd468e39ced36f65a203dbc28a08c9ae86d4055c1f48caadbd29f6008"
+        }
+      },
+      "decisionBasis": "Exact playing payload, independently decoded full-cue coverage and held-out alignment, coherent spectral trajectory, native ACB/member/sample provenance, unique bounded alternatives/PCM audit, and original card entry/full-text/neighbor exclusion agree. No score alone supplies approval.",
+      "unknowns": [
+        "originalCSV",
+        "originalScenarioId",
+        "commandPhase",
+        "voiceDelay",
+        "nativeAuthoredGain",
+        "nativeAuthoredPitch",
+        "subjectiveTone"
+      ],
+      "preparedEvidence": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0038.4831-10020021-4/evidence.json",
+        "bytes": 18685,
+        "sha256": "8486b079feffd908e46c3789e6d634db1c0dab0ca399109971124c766a04bce9"
+      }
+    },
+    {
+      "id": "p15-0049.0446-10020021-7",
+      "reviewer": "/root/p15_p16_voice_evidence",
+      "rootConfirmed": false,
+      "verdict": {
+        "digitalIdentity": "supported-for-the-exact-catalog-payload",
+        "cardAssignment": "supported-by-direct-original-full-interface-sequence-review",
+        "nativeTiming": "unrecovered",
+        "originalCsv": "unrecovered",
+        "subjectiveTone": "not-assessed-audio-input-unsupported"
+      },
+      "scope": "Unsigned voice-only reconstruction candidate; no formal native/Studio write, asset change, or runtime verification.",
+      "source": {
+        "path": "data/native_recovery/royal-capital-20261110/source-quality/15-remote-qn32.mp4",
+        "bytes": 78107083,
+        "sha256": "7aec9d0064529fd6201facc2a4c9d8b34e6df10b9e16714f343a4c4c3c9857be"
+      },
+      "guard": {
+        "sceneId": 10020021,
+        "scenarioId": 7,
+        "stableKey": "s10020021-p15-at0052",
+        "sourceText": "いたた……も～、なんなの！\nちゃんと前見て走らなきゃダメでしょ！",
+        "sourceSpeaker": "フェリちゃん",
+        "character": "live2d/AC_ferris_dress01",
+        "voice": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "proposedVoice": "vo_adv_ferris,advk_ferris_akireru",
+      "actualCatalogPayload": {
+        "catalog": {
+          "path": "story_crowd_data/assets/voices/vo_adv_ferris/index.json",
+          "bytes": 7799,
+          "sha256": "fab468ee1fb4c2b44c7d24b093415888d3aaf4d4f5882cd1680ea34ac180f701"
+        },
+        "entry": {
+          "cue": "advk_ferris_akireru",
+          "label": "",
+          "member": "LIMEOS/audio/vo_adv_ferris/advk_ferris_akireru.wav",
+          "url": "voices/vo_adv_ferris/advk_ferris_akireru.wav"
+        },
+        "payload": {
+          "path": "story_crowd_data/assets/voices/vo_adv_ferris/advk_ferris_akireru.wav",
+          "bytes": 61402,
+          "sha256": "a19e645f06c8223af62b322cd9d9d78aa8eea9853b3e1405763ef9759a9517ad"
+        },
+        "byteIdenticalToMatchedLimeosCue": true
+      },
+      "sourceClipProvenance": {
+        "existing": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p15-7aec9d006452/audible-review/source-0049.0446-ec71fa2001.wav",
+          "bytes": 22882,
+          "sha256": "b1182ad3335264ee0b811e11a2df724dac20086fec9744e72930e14127dbc388"
+        },
+        "sourceStartSeconds": 48.8446,
+        "durationSeconds": 1.4274,
+        "freshDecodedPCM": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/source-existing-clip-fresh-pcm.i16",
+          "bytes": 22838,
+          "sha256": "d58972e36f1229922db41015b75c6ddb95f05b3084ba252d10604abb51d95782"
+        },
+        "freshPCMIdenticalToExistingClip": true,
+        "freshSamples": 11419,
+        "existingSamples": 11419
+      },
+      "recordedSourceToCatalog": {
+        "signedFullCorrelation": 0.9451249233929255,
+        "positiveFirstHalfGain": 0.18684832748569197,
+        "measuredFullCueStartSeconds": 49.0441,
+        "measuredFullCueEndSeconds": 50.00285,
+        "details": {
+          "sampleRate": 16000,
+          "alignmentMethod": "first half only, +/-80 ms; locked lag and first-half gain",
+          "fullReferenceSamples": 15340,
+          "fullReferenceDuration": 0.95875,
+          "sourceOffsetSamples": 7192,
+          "sourceOffsetSeconds": 0.4495,
+          "fullCorrelation": 0.9451249233929255,
+          "heldOutSecondHalfCorrelation": 0.9616420584788273,
+          "firstHalfGain": 0.18684832748569197,
+          "fullResidualEnergyFraction": 0.10682974330456546,
+          "quarterCoverage": [
+            {
+              "startSeconds": 0.0,
+              "endSeconds": 0.2396875,
+              "referenceEnergyFraction": 0.20821297958509055,
+              "correlation": 0.9193832785778763
+            },
+            {
+              "startSeconds": 0.2396875,
+              "endSeconds": 0.479375,
+              "referenceEnergyFraction": 0.29035687175398295,
+              "correlation": 0.9381122556328694
+            },
+            {
+              "startSeconds": 0.479375,
+              "endSeconds": 0.7190625,
+              "referenceEnergyFraction": 0.47745820638962827,
+              "correlation": 0.961968823309737
+            },
+            {
+              "startSeconds": 0.7190625,
+              "endSeconds": 0.95875,
+              "referenceEnergyFraction": 0.02397194227130161,
+              "correlation": 0.9551645858448706
+            }
+          ],
+          "frequencyBands": [
+            {
+              "hz": [
+                100,
+                500
+              ],
+              "correlation": 0.8524276107649598,
+              "referenceEnergyFraction": 0.1211409799215558
+            },
+            {
+              "hz": [
+                500,
+                1500
+              ],
+              "correlation": 0.9669741397691952,
+              "referenceEnergyFraction": 0.8322643967986172
+            },
+            {
+              "hz": [
+                1500,
+                3500
+              ],
+              "correlation": 0.9423641595779138,
+              "referenceEnergyFraction": 0.03482950073305227
+            },
+            {
+              "hz": [
+                3500,
+                7000
+              ],
+              "correlation": 0.6425623281994902,
+              "referenceEnergyFraction": 0.01171078591387045
+            }
+          ],
+          "powerWeightedCoherence100to7000Hz": 0.9595704785438112,
+          "alignedObservedSha256": "28e7769a636f6536f820e98037684afc1c99b962998e8b301b985f5c0d59a4ce",
+          "residualSha256": "84626604789976acb0d4ea0a351ab29ff2ca52b8c68b0cce5c48b70ff14ee353"
+        },
+        "limitation": "The recording is the original AAC game mix. Residual remains; the result is waveform identity evidence for the short catalog cue, not byte equality with the mixed recording or original whole-line dubbing."
+      },
+      "nativeBankToCatalog": {
+        "signedFullCorrelationAtOriginalSampleRate": -0.99999999130144,
+        "signedGainFromNativeDecodeToCatalog": -0.9999254580371001,
+        "residualRmsInteger16Lsb": 0.6036957418383191,
+        "originalSampleRate": 32000,
+        "catalogSamples": 30679,
+        "nativeDecodedSamples": 30679,
+        "authoredAcbSamples": 30679,
+        "nativeBank": {
+          "waveId": 25,
+          "hca": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/native-bank-member.hca",
+            "bytes": 8032,
+            "sha256": "58022e1a76208ff1ca3e541b61a59354fc07d333e97c28afedc12b9168b471d9"
+          },
+          "decoded": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/native-bank-member.wav",
+            "bytes": 61436,
+            "sha256": "fc99c3f44db50675a21b41709ce9fa45bf25848f4814006ef7c1ffec8903ac36"
+          },
+          "decodedInfo": {
+            "sampleRate": 32000,
+            "channels": 1,
+            "samples": 30679,
+            "duration": 0.95871875,
+            "pcmSha256": "163278231bb86140688489ea8a77e99cd69f728a0864fece97f98556ea360a55"
+          },
+          "encoderDelaySamples": 128,
+          "encoderPaddingSamples": 937,
+          "afs2Subkey": 0,
+          "acb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_ferris.acb",
+            "bytes": 11072,
+            "sha256": "d896863c956dce5729910657fb7d39f0a110e87640627f7cd24f7732cd269d6f"
+          },
+          "awb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_ferris.awb",
+            "bytes": 399872,
+            "sha256": "390a4cfaef6ddcf6c422310670944d3e96e9b382752496c6d7c01f7998ccfc61"
+          },
+          "acbVolume": 1.0,
+          "graph": {
+            "cue": {
+              "CueId": 25,
+              "ReferenceType": 3,
+              "ReferenceIndex": 25,
+              "UserData": "",
+              "Worksize": 0,
+              "AisacControlMap": {
+                "hex": ""
+              },
+              "Length": 958,
+              "NumAisacControlMaps": 0,
+              "HeaderVisibility": 1
+            },
+            "sequence": {
+              "PlaybackRatio": 100,
+              "NumTracks": 1,
+              "TrackIndex": {
+                "hex": "0019"
+              },
+              "CommandIndex": 0,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0,
+              "TrackValues": {
+                "hex": ""
+              },
+              "Type": 0,
+              "ControlWorkArea1": 25,
+              "ControlWorkArea2": 25
+            },
+            "track": {
+              "EventIndex": 25,
+              "CommandIndex": 65535,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "TargetType": 0,
+              "TargetName": "",
+              "TargetId": 4294967295,
+              "TargetAcbName": "",
+              "Scope": 0,
+              "TargetTrackNo": 65535
+            },
+            "synth": {
+              "Type": 0,
+              "VoiceLimitGroupName": "",
+              "CommandIndex": 65535,
+              "ReferenceItems": {
+                "hex": "00010019"
+              },
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ControlWorkArea1": 25,
+              "ControlWorkArea2": 25,
+              "TrackValues": {
+                "hex": ""
+              },
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0
+            },
+            "wave": {
+              "MemoryAwbId": 65535,
+              "EncodeType": 2,
+              "Streaming": 1,
+              "NumChannels": 1,
+              "LoopFlag": 1,
+              "SamplingRate": 32000,
+              "NumSamples": 30679,
+              "ExtensionData": 65535,
+              "StreamAwbPortNo": 0,
+              "StreamAwbId": 25
+            },
+            "waveIndex": 25,
+            "trackIndex": 25,
+            "synthIndex": 25,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          },
+          "metadata": {
+            "loop": false,
+            "loop_start": 0,
+            "loop_end": 0,
+            "preview_error": "",
+            "native_cue_id": 25,
+            "sample_rate": 32000,
+            "samples": 30679,
+            "release": {
+              "seconds": 0,
+              "curve": 0
+            }
+          },
+          "limeosReferenceCorrelation": -0.999999994784501,
+          "limeosRelativeGain": -0.9999254704122412,
+          "waveformAliases": [
+            {
+              "cue": "advk_ferris_akireru",
+              "nativeCueId": 25,
+              "commands": {
+                "sequence": [
+                  {
+                    "opcode": 65,
+                    "data": [
+                      0,
+                      0,
+                      0,
+                      2
+                    ]
+                  },
+                  {
+                    "opcode": 111,
+                    "data": [
+                      0,
+                      0,
+                      39,
+                      16
+                    ]
+                  }
+                ],
+                "track": [],
+                "synth": []
+              }
+            }
+          ]
+        },
+        "interpretation": "Measured full-length negative polarity relation only. No decoder/game cause is inferred and no audio is altered.",
+        "authoredGain": "unknown; AcbVolume and raw command bytes are preserved separately",
+        "authoredPitch": "unknown; no raw parameter opcode is assigned an unverified meaning"
+      },
+      "ambiguityAudit": {
+        "banks": 5,
+        "allComparedCues": 309,
+        "excludedCues": 0,
+        "targetFixedEventCorrelation": 0.744787374929195,
+        "bestOther": {
+          "member": "LIMEOS/audio/vo_adv_subaru/advk_subaru_damage10.wav",
+          "status": "compared",
+          "duration": 0.473375,
+          "sourceOffsetSeconds": 0.507125,
+          "fixedEventCorrelation": 0.12518672757908714,
+          "explainedFixedEventEnergy": 0.015671716761960577
+        },
+        "signedCorrelationGap": 0.6196006473501079,
+        "samePCM": [
+          "LIMEOS/audio/vo_adv_ferris/advk_ferris_akireru.wav"
+        ],
+        "sameWaveformAliases": [
+          {
+            "cue": "advk_ferris_akireru",
+            "nativeCueId": 25,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          }
+        ],
+        "fullAudit": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/runner-up-audit.json",
+          "bytes": 88386,
+          "sha256": "5b3de3edd3c879e36821fd8a8c4ecddb151907f04eeb6e9e95de2cd45e271845"
+        },
+        "limitation": "The unique result is bounded to the five banks in the original P15/P16 search profiles; no entire game corpus was searched."
+      },
+      "directFrameReview": {
+        "performed": true,
+        "reviewer": "/root/p15_p16_voice_evidence",
+        "contact": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/full-interface-contact.jpg",
+          "bytes": 1055128,
+          "sha256": "8a445dc3288135d8a9df2f68deab676c7947072b779e60e08df237ed3fc4be24"
+        },
+        "frames": [
+          {
+            "requestedSeconds": 48.4446,
+            "actualPTS": 48.456,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-01.jpg",
+              "bytes": 95985,
+              "sha256": "43303667be4fc3876e9c6cbc8522489ffa1fc3c04b66d7e924dff8dc11bb54c4"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-01.log",
+              "bytes": 4967,
+              "sha256": "80f4074af5fedb954661a148f78f8e182048ccd49f72e5ba8e9a78d941d51304"
+            }
+          },
+          {
+            "requestedSeconds": 48.894600000000004,
+            "actualPTS": 48.923,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-02.jpg",
+              "bytes": 103844,
+              "sha256": "e2bbf2b92e14b1ad07d56f6e03f42c82ddbc76291bbead68e35788760a27628b"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-02.log",
+              "bytes": 4968,
+              "sha256": "6fbd0b20c6b4cf465eea3efb912733cc8b19f0efe5f13d459e912bfd5b82dba3"
+            }
+          },
+          {
+            "requestedSeconds": 49.0446,
+            "actualPTS": 49.056,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-03.jpg",
+              "bytes": 104676,
+              "sha256": "73dae9d3d4d9be65a15a621e1a9e11b3449a8535664315b536c2e95be3aff5e2"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-03.log",
+              "bytes": 4968,
+              "sha256": "b68504d8729ccaf44d35f9c2036d4350a59c06c43cbdd36805b43233b574ab50"
+            }
+          },
+          {
+            "requestedSeconds": 49.1946,
+            "actualPTS": 49.223,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-04.jpg",
+              "bytes": 103758,
+              "sha256": "470d156a56e5b3417acf1702b7e6c892ec4cacaee3d40d861e9bb3c81acb54a3"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-04.log",
+              "bytes": 4968,
+              "sha256": "39a8bd5c88c2b9bcfe279af396a568cfa34c4fb2caaa7101b051757b6728520c"
+            }
+          },
+          {
+            "requestedSeconds": 49.4446,
+            "actualPTS": 49.456,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-05.jpg",
+              "bytes": 104598,
+              "sha256": "5e989c48322d161b362ffcc9d0363dae272944b957eb9c934978a4e2806f8180"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-05.log",
+              "bytes": 4968,
+              "sha256": "8151cc0f8d61f710db58776eb36770a38dd4f95e06b0175a74b5e33d7594d01e"
+            }
+          },
+          {
+            "requestedSeconds": 53.3,
+            "actualPTS": 53.323,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-06.jpg",
+              "bytes": 109042,
+              "sha256": "732e50e9ea7ef21fe5d90e9e16d3f8f92f4de403f9e02692f512e60504d408aa"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-06.log",
+              "bytes": 4968,
+              "sha256": "1c94cf65df23ca40ef0e23310c54ec923ffcc2e583a6c367a82a99883a4cc3e4"
+            }
+          },
+          {
+            "requestedSeconds": 54.2,
+            "actualPTS": 54.223,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-07.jpg",
+              "bytes": 92174,
+              "sha256": "8d67c8bd5984d510c226d9fc8c6f6d29edb87642dee46dfdda6d125a5cf348be"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/frame-07.log",
+              "bytes": 4967,
+              "sha256": "f118ac2a155075b0f7c666695f9ebe8ada3f04e989eefa87cb3357427cf5e63d"
+            }
+          }
+        ],
+        "observations": {
+          "before": "48.456: Ferris model visible without a dialogue card.",
+          "entry": "48.923: フェリちゃん card reveals い; 49.056 shows いた and 49.223 shows いたた…. ",
+          "full": "53.323: フェリちゃん / いたた……も～、なんなの！ちゃんと前見て走らなきゃダメでしょ！",
+          "after": "54.223: next Subaru card begins 悪い; the target full cue ends about 50.003, before the speaker/card change.",
+          "textMatch": "Japanese game card matches the guarded sourceText after normalizing display line wraps.",
+          "timing": "The cue begins during the same target card's reveal. Neither the 49.0 interval start nor 52.0 source anchor specifies native playback timing.",
+          "coverage": "All four reference quarters align, including the low-energy final tail. The dominant 500–1500 Hz band and changing harmonic ridges agree."
+        },
+        "burnedInTranslationUsedForJapaneseApproval": false,
+        "timeFrequencyPlotDirectlyInspected": true,
+        "identityPlot": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/locked-waveform-and-time-frequency.png",
+          "bytes": 295715,
+          "sha256": "b208539739c4758a56c22b9269240d90733d380cd58e7deea23ec4c4b250db20"
+        }
+      },
+      "decisionBasis": "Exact playing payload, independently decoded full-cue coverage and held-out alignment, coherent spectral trajectory, native ACB/member/sample provenance, unique bounded alternatives/PCM audit, and original card entry/full-text/neighbor exclusion agree. No score alone supplies approval.",
+      "unknowns": [
+        "originalCSV",
+        "originalScenarioId",
+        "commandPhase",
+        "voiceDelay",
+        "nativeAuthoredGain",
+        "nativeAuthoredPitch",
+        "subjectiveTone"
+      ],
+      "preparedEvidence": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-0049.0446-10020021-7/evidence.json",
+        "bytes": 18762,
+        "sha256": "e4aa01a6015ca91b41a8a901b92ebda3e7ddf5380e3eccda7a8eceee615a9082"
+      }
+    },
+    {
+      "id": "p16-0032.2709-10260024-6",
+      "reviewer": "/root/p15_p16_voice_evidence",
+      "rootConfirmed": false,
+      "verdict": {
+        "digitalIdentity": "supported-for-the-exact-catalog-payload",
+        "cardAssignment": "supported-by-direct-original-full-interface-sequence-review",
+        "nativeTiming": "unrecovered",
+        "originalCsv": "unrecovered",
+        "subjectiveTone": "not-assessed-audio-input-unsupported"
+      },
+      "scope": "Unsigned voice-only reconstruction candidate; no formal native/Studio write, asset change, or runtime verification.",
+      "source": {
+        "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/16 7本篇Ver威尔海姆「剑鬼、参上」.mp4",
+        "bytes": 107527759,
+        "sha256": "979969a8cf82d42d20b1baaf2b63b99f998ec04eec3da973a5ecc8d3677d3f44"
+      },
+      "guard": {
+        "sceneId": 10260024,
+        "scenarioId": 6,
+        "stableKey": "s10260024-p16-at0033",
+        "sourceText": "おお、フェルトか。待っとったぞ",
+        "sourceSpeaker": "ロム爺",
+        "character": "live2d/AC_rom01",
+        "voice": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "proposedVoice": "vo_adv_rom,advk_rom_felt_normal",
+      "actualCatalogPayload": {
+        "catalog": {
+          "path": "story_crowd_data/assets/voices/vo_adv_rom/index.json",
+          "bytes": 5618,
+          "sha256": "a3544daa4a0be8030152a3e6a4bbca18ac622a47e467bd1e18741e51bd3037be"
+        },
+        "entry": {
+          "cue": "advk_rom_felt_normal",
+          "label": "",
+          "member": "LIMEOS/audio/vo_adv_rom/advk_rom_felt_normal.wav",
+          "url": "voices/vo_adv_rom/advk_rom_felt_normal.wav"
+        },
+        "payload": {
+          "path": "story_crowd_data/assets/voices/vo_adv_rom/advk_rom_felt_normal.wav",
+          "bytes": 99792,
+          "sha256": "3bf4b578ea32aca241d6c4c677802ab4b09132058cc859f7bcd7cb7df71befe5"
+        },
+        "byteIdenticalToMatchedLimeosCue": true
+      },
+      "sourceClipProvenance": {
+        "existing": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p16-979969a8cf82/audible-review/source-0032.2709-9f62256a08.wav",
+          "bytes": 23612,
+          "sha256": "d1488fbceba963d5e9c2856dbeee56391ae942db1ec4e3329cfd1237e9a79040"
+        },
+        "sourceStartSeconds": 32.070899999999995,
+        "durationSeconds": 1.4729999999999999,
+        "freshDecodedPCM": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/source-existing-clip-fresh-pcm.i16",
+          "bytes": 23568,
+          "sha256": "f3a773e893f54a7e6419441cd3594666f3e75540389e6bad7a84695c0937ba99"
+        },
+        "freshPCMIdenticalToExistingClip": true,
+        "freshSamples": 11784,
+        "existingSamples": 11784
+      },
+      "recordedSourceToCatalog": {
+        "signedFullCorrelation": 0.9567495549071078,
+        "positiveFirstHalfGain": 0.12295479662818956,
+        "measuredFullCueStartSeconds": 32.2708375,
+        "measuredFullCueEndSeconds": 33.3099,
+        "details": {
+          "sampleRate": 16000,
+          "alignmentMethod": "first half only, +/-80 ms; locked lag and first-half gain",
+          "fullReferenceSamples": 16625,
+          "fullReferenceDuration": 1.0390625,
+          "sourceOffsetSamples": 7199,
+          "sourceOffsetSeconds": 0.4499375,
+          "fullCorrelation": 0.9567495549071078,
+          "heldOutSecondHalfCorrelation": 0.9748135938714618,
+          "firstHalfGain": 0.12295479662818956,
+          "fullResidualEnergyFraction": 0.08469974515288704,
+          "quarterCoverage": [
+            {
+              "startSeconds": 0.0,
+              "endSeconds": 0.2598125,
+              "referenceEnergyFraction": 0.6438589938066932,
+              "correlation": 0.9500595686404091
+            },
+            {
+              "startSeconds": 0.2598125,
+              "endSeconds": 0.5195625,
+              "referenceEnergyFraction": 0.16808961731399974,
+              "correlation": 0.9662446889361861
+            },
+            {
+              "startSeconds": 0.5195625,
+              "endSeconds": 0.7793125,
+              "referenceEnergyFraction": 0.17904761283370915,
+              "correlation": 0.9778003726408502
+            },
+            {
+              "startSeconds": 0.7793125,
+              "endSeconds": 1.0390625,
+              "referenceEnergyFraction": 0.009003776045599668,
+              "correlation": 0.923725557043913
+            }
+          ],
+          "frequencyBands": [
+            {
+              "hz": [
+                100,
+                500
+              ],
+              "correlation": 0.9674699760108851,
+              "referenceEnergyFraction": 0.8933257174242037
+            },
+            {
+              "hz": [
+                500,
+                1500
+              ],
+              "correlation": 0.9174264245947122,
+              "referenceEnergyFraction": 0.0472836089511412
+            },
+            {
+              "hz": [
+                1500,
+                3500
+              ],
+              "correlation": 0.9354890351323857,
+              "referenceEnergyFraction": 0.05660340055462112
+            },
+            {
+              "hz": [
+                3500,
+                7000
+              ],
+              "correlation": 0.608269966195088,
+              "referenceEnergyFraction": 0.0023827123435069186
+            }
+          ],
+          "powerWeightedCoherence100to7000Hz": 0.9548046601516741,
+          "alignedObservedSha256": "43f891698be8319ed347bce1133324e865b1a9db893b4dc79ec04f7e78c49acc",
+          "residualSha256": "f4a3653ec9da0d134350a41bd39fb471d9a6b3942c7d502c54a158edf69cc62d"
+        },
+        "limitation": "The recording is the original AAC game mix. Residual remains; the result is waveform identity evidence for the short catalog cue, not byte equality with the mixed recording or original whole-line dubbing."
+      },
+      "nativeBankToCatalog": {
+        "signedFullCorrelationAtOriginalSampleRate": -0.9999999908862784,
+        "signedGainFromNativeDecodeToCatalog": -0.9999346619951412,
+        "residualRmsInteger16Lsb": 0.6307516034518751,
+        "originalSampleRate": 48000,
+        "catalogSamples": 49874,
+        "nativeDecodedSamples": 49874,
+        "authoredAcbSamples": 49874,
+        "nativeBank": {
+          "waveId": 28,
+          "hca": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/native-bank-member.hca",
+            "bytes": 12640,
+            "sha256": "d1d94bfc8f19a624a43b002bab8bffe2d2a1af436fe94274eca7ca01153fccc1"
+          },
+          "decoded": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/native-bank-member.wav",
+            "bytes": 99826,
+            "sha256": "88f469e0db0ef07f0bfa2a50713ae0c16a70af419784779c6bfee8d3f6db005c"
+          },
+          "decodedInfo": {
+            "sampleRate": 48000,
+            "channels": 1,
+            "samples": 49874,
+            "duration": 1.0390416666666666,
+            "pcmSha256": "05a9285fbf7b1ddc2ed83adf08ddce06963cedcfabacaa18ad2e3996fed94435"
+          },
+          "encoderDelaySamples": 128,
+          "encoderPaddingSamples": 174,
+          "afs2Subkey": 0,
+          "acb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_rom.acb",
+            "bytes": 10080,
+            "sha256": "a49f9c4fddd9a345b8b6b402447b20b6cd0e36a1d4e1ce20838d2fd028c00454"
+          },
+          "awb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_rom.awb",
+            "bytes": 525088,
+            "sha256": "24a3f2c8c5099bb3062041be7075e577885532b4156d40e20b6c45e337dd81a7"
+          },
+          "acbVolume": 1.0,
+          "graph": {
+            "cue": {
+              "CueId": 26,
+              "ReferenceType": 3,
+              "ReferenceIndex": 26,
+              "UserData": "",
+              "Worksize": 0,
+              "AisacControlMap": {
+                "hex": ""
+              },
+              "Length": 1039,
+              "NumAisacControlMaps": 0,
+              "HeaderVisibility": 1
+            },
+            "sequence": {
+              "PlaybackRatio": 100,
+              "NumTracks": 1,
+              "TrackIndex": {
+                "hex": "001a"
+              },
+              "CommandIndex": 0,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0,
+              "TrackValues": {
+                "hex": ""
+              },
+              "Type": 0,
+              "ControlWorkArea1": 26,
+              "ControlWorkArea2": 26
+            },
+            "track": {
+              "EventIndex": 26,
+              "CommandIndex": 65535,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "TargetType": 0,
+              "TargetName": "",
+              "TargetId": 4294967295,
+              "TargetAcbName": "",
+              "Scope": 0,
+              "TargetTrackNo": 65535
+            },
+            "synth": {
+              "Type": 0,
+              "VoiceLimitGroupName": "",
+              "CommandIndex": 65535,
+              "ReferenceItems": {
+                "hex": "0001001a"
+              },
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ControlWorkArea1": 26,
+              "ControlWorkArea2": 26,
+              "TrackValues": {
+                "hex": ""
+              },
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0
+            },
+            "wave": {
+              "MemoryAwbId": 65535,
+              "EncodeType": 2,
+              "Streaming": 1,
+              "NumChannels": 1,
+              "LoopFlag": 1,
+              "SamplingRate": 48000,
+              "NumSamples": 49874,
+              "ExtensionData": 65535,
+              "StreamAwbPortNo": 0,
+              "StreamAwbId": 28
+            },
+            "waveIndex": 26,
+            "trackIndex": 26,
+            "synthIndex": 26,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          },
+          "metadata": {
+            "loop": false,
+            "loop_start": 0,
+            "loop_end": 0,
+            "preview_error": "",
+            "native_cue_id": 26,
+            "sample_rate": 48000,
+            "samples": 49874,
+            "release": {
+              "seconds": 0,
+              "curve": 0
+            }
+          },
+          "limeosReferenceCorrelation": -0.999999995238146,
+          "limeosRelativeGain": -0.9999348376877797,
+          "waveformAliases": [
+            {
+              "cue": "advk_rom_felt_normal",
+              "nativeCueId": 26,
+              "commands": {
+                "sequence": [
+                  {
+                    "opcode": 65,
+                    "data": [
+                      0,
+                      0,
+                      0,
+                      2
+                    ]
+                  },
+                  {
+                    "opcode": 111,
+                    "data": [
+                      0,
+                      0,
+                      39,
+                      16
+                    ]
+                  }
+                ],
+                "track": [],
+                "synth": []
+              }
+            }
+          ]
+        },
+        "interpretation": "Measured full-length negative polarity relation only. No decoder/game cause is inferred and no audio is altered.",
+        "authoredGain": "unknown; AcbVolume and raw command bytes are preserved separately",
+        "authoredPitch": "unknown; no raw parameter opcode is assigned an unverified meaning"
+      },
+      "ambiguityAudit": {
+        "banks": 5,
+        "allComparedCues": 309,
+        "excludedCues": 0,
+        "targetFixedEventCorrelation": 0.8950636274876614,
+        "bestOther": {
+          "member": "LIMEOS/audio/vo_adv_subaru/advk_subaru_kirare.wav",
+          "status": "compared",
+          "duration": 0.288,
+          "sourceOffsetSeconds": 0.585125,
+          "fixedEventCorrelation": 0.388212318904404,
+          "explainedFixedEventEnergy": 0.15070880454913466
+        },
+        "signedCorrelationGap": 0.5068513085832574,
+        "samePCM": [
+          "LIMEOS/audio/vo_adv_rom/advk_rom_felt_normal.wav"
+        ],
+        "sameWaveformAliases": [
+          {
+            "cue": "advk_rom_felt_normal",
+            "nativeCueId": 26,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          }
+        ],
+        "fullAudit": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/runner-up-audit.json",
+          "bytes": 88215,
+          "sha256": "c7dfbcc23640b7c3321ad63ca9bd8d673591020948fb3dcea391e9b1667941ed"
+        },
+        "limitation": "The unique result is bounded to the five banks in the original P15/P16 search profiles; no entire game corpus was searched."
+      },
+      "directFrameReview": {
+        "performed": true,
+        "reviewer": "/root/p15_p16_voice_evidence",
+        "contact": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/full-interface-contact.jpg",
+          "bytes": 824087,
+          "sha256": "db40c86f36041ef44501f6befd16b55ecc2ffea5cb9d6de8b721474b420f672d"
+        },
+        "frames": [
+          {
+            "requestedSeconds": 31.670899999999996,
+            "actualPTS": 31.7,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-01.jpg",
+              "bytes": 28891,
+              "sha256": "a290b509586ed39ca09ce6b676abaae74d8faee41b5a2e7ed66a9670ff727bf8"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-01.log",
+              "bytes": 4966,
+              "sha256": "11a80c15ed291d072bdc6ece12eefad00e573a86ceaca1444fe3bb3fad086968"
+            }
+          },
+          {
+            "requestedSeconds": 32.1209,
+            "actualPTS": 32.133,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-02.jpg",
+              "bytes": 79153,
+              "sha256": "c12bd91c1340e3ce4374744db37783e963e5293e8e96581bf438ec1454a49a89"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-02.log",
+              "bytes": 4972,
+              "sha256": "cbdbde508689aada5342095a705131e02bef922c2d08c2dddf5acab637c9a909"
+            }
+          },
+          {
+            "requestedSeconds": 32.2709,
+            "actualPTS": 32.3,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-03.jpg",
+              "bytes": 79993,
+              "sha256": "c202508ad15c4d3e0c8ddddafe9899a54c1d42eb5222aad9b5459e9fcf1fd5bd"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-03.log",
+              "bytes": 4972,
+              "sha256": "f1247d4d8da4373083f7c0c305a2abb988f5f2e45997ddf26d2fabcbfc710c67"
+            }
+          },
+          {
+            "requestedSeconds": 32.420899999999996,
+            "actualPTS": 32.433,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-04.jpg",
+              "bytes": 79408,
+              "sha256": "d13ca038e56ec3f25513a8a5b2502ffff9d418b89f36b1f3516439bfc7ad8de8"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-04.log",
+              "bytes": 4972,
+              "sha256": "d2ecb20b6090204c668d9521152fa489cadfc2906880cf623ab5666ba7805aec"
+            }
+          },
+          {
+            "requestedSeconds": 32.670899999999996,
+            "actualPTS": 32.7,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-05.jpg",
+              "bytes": 81354,
+              "sha256": "732fcaea6bd0cd030796acc40263ad79c51682887dd5d3867f539db0739a3bda"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-05.log",
+              "bytes": 4972,
+              "sha256": "2b4dfca442ad2032c1481bda80b627d14508df9097328795cc55958d18c7ea37"
+            }
+          },
+          {
+            "requestedSeconds": 34.8,
+            "actualPTS": 34.8,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-06.jpg",
+              "bytes": 83296,
+              "sha256": "b31d52348010d35dd0651c48bfbb7bdc21c37545320523d354dad75106efbefe"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-06.log",
+              "bytes": 4972,
+              "sha256": "668b72437f9f5d833788cc0887fea87a299b01ee68530cfe0aa80a442b74ecb7"
+            }
+          },
+          {
+            "requestedSeconds": 35.7,
+            "actualPTS": 35.7,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-07.jpg",
+              "bytes": 91751,
+              "sha256": "14994737bd09f6c4c8633ef18f4feac42c44f8d7f3711ec673262f0b610bda9e"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/frame-07.log",
+              "bytes": 4970,
+              "sha256": "602c3b575208c5b3dbbc4b57cf5bf6aaa50ae2bc1b6bb3e198a784f4d1b8b1a5"
+            }
+          }
+        ],
+        "observations": {
+          "before": "31.700: dark street transition, no dialogue card.",
+          "entry": "32.133: Rom model/name and empty entering card; 32.300 reads おお; 32.433 reads おお、フ.",
+          "full": "34.800: ロム爺 / おお、フェルトか。待っとったぞ",
+          "after": "35.700: Felt replaces Rom and a new entering card is visible. The target full cue ends about 33.310, before that change.",
+          "textMatch": "Japanese game card matches the guarded sourceText after normalizing display line wraps; ロム爺 is read directly from the game name label.",
+          "timing": "The full cue starts within this card's reveal, before the 33.0 OCR anchor. The recording supplies a measured lag only, not original voiceDelay.",
+          "coverage": "Both separated vocal sections, their intervening low-energy gap, all quarters, and the low-frequency harmonic trajectory align. Short Subaru kirare coincidence explains much less of the fixed event."
+        },
+        "burnedInTranslationUsedForJapaneseApproval": false,
+        "timeFrequencyPlotDirectlyInspected": true,
+        "identityPlot": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/locked-waveform-and-time-frequency.png",
+          "bytes": 280057,
+          "sha256": "191799bf5c69562ab2128aca730dae3b375bf429ae7679ff814b8e4661a48c35"
+        }
+      },
+      "decisionBasis": "Exact playing payload, independently decoded full-cue coverage and held-out alignment, coherent spectral trajectory, native ACB/member/sample provenance, unique bounded alternatives/PCM audit, and original card entry/full-text/neighbor exclusion agree. No score alone supplies approval.",
+      "unknowns": [
+        "originalCSV",
+        "originalScenarioId",
+        "commandPhase",
+        "voiceDelay",
+        "nativeAuthoredGain",
+        "nativeAuthoredPitch",
+        "subjectiveTone"
+      ],
+      "preparedEvidence": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0032.2709-10260024-6/evidence.json",
+        "bytes": 18711,
+        "sha256": "3f785251ae220abfc747003e38ed42e8c1929a1277e973a79314725bfab4c80b"
+      }
+    },
+    {
+      "id": "p16-0035.9055-10260024-7",
+      "reviewer": "/root/p15_p16_voice_evidence",
+      "rootConfirmed": false,
+      "verdict": {
+        "digitalIdentity": "supported-for-the-exact-catalog-payload",
+        "cardAssignment": "supported-by-direct-original-full-interface-sequence-review",
+        "nativeTiming": "unrecovered",
+        "originalCsv": "unrecovered",
+        "subjectiveTone": "not-assessed-audio-input-unsupported"
+      },
+      "scope": "Unsigned voice-only reconstruction candidate; no formal native/Studio write, asset change, or runtime verification.",
+      "source": {
+        "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/16 7本篇Ver威尔海姆「剑鬼、参上」.mp4",
+        "bytes": 107527759,
+        "sha256": "979969a8cf82d42d20b1baaf2b63b99f998ec04eec3da973a5ecc8d3677d3f44"
+      },
+      "guard": {
+        "sceneId": 10260024,
+        "scenarioId": 7,
+        "stableKey": "s10260024-p16-at0036",
+        "sourceText": "人払いしといてくれって言ってあったろ？なのに、誰かと立ち話なんかして……",
+        "sourceSpeaker": "フェルト",
+        "character": "live2d/AC_felt01",
+        "voice": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "proposedVoice": "vo_adv_felt,advk_felt_akireru",
+      "actualCatalogPayload": {
+        "catalog": {
+          "path": "story_crowd_data/assets/voices/vo_adv_felt/index.json",
+          "bytes": 7153,
+          "sha256": "54ae3ef3d0fd1c189635d1e4379e78733473890f7993b3c12892dcaf1542d49b"
+        },
+        "entry": {
+          "cue": "advk_felt_akireru",
+          "label": "",
+          "member": "LIMEOS/audio/vo_adv_felt/advk_felt_akireru.wav",
+          "url": "voices/vo_adv_felt/advk_felt_akireru.wav"
+        },
+        "payload": {
+          "path": "story_crowd_data/assets/voices/vo_adv_felt/advk_felt_akireru.wav",
+          "bytes": 136160,
+          "sha256": "1a9c151b10f1f08de19be6858798b046ac41a4ec624b3e728a4887597bf4926d"
+        },
+        "byteIdenticalToMatchedLimeosCue": true
+      },
+      "sourceClipProvenance": {
+        "existing": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/waveform-graphs/p16-979969a8cf82/audible-review/source-0035.9055-2d73646e97.wav",
+          "bytes": 30084,
+          "sha256": "6ca4af76f2d4adf80925f3366be552d3b5090bc778d7bbbca452c828cea15176"
+        },
+        "sourceStartSeconds": 35.7055,
+        "durationSeconds": 1.8775,
+        "freshDecodedPCM": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/source-existing-clip-fresh-pcm.i16",
+          "bytes": 30040,
+          "sha256": "23749e7c0865aee6f2029d92db230250898dc03c7a9b80000a5fb3ed48d013cf"
+        },
+        "freshPCMIdenticalToExistingClip": true,
+        "freshSamples": 15020,
+        "existingSamples": 15020
+      },
+      "recordedSourceToCatalog": {
+        "signedFullCorrelation": 0.9749584629396983,
+        "positiveFirstHalfGain": 0.11950702535053202,
+        "measuredFullCueStartSeconds": 35.9055,
+        "measuredFullCueEndSeconds": 37.323375000000006,
+        "details": {
+          "sampleRate": 16000,
+          "alignmentMethod": "first half only, +/-80 ms; locked lag and first-half gain",
+          "fullReferenceSamples": 22686,
+          "fullReferenceDuration": 1.417875,
+          "sourceOffsetSamples": 7200,
+          "sourceOffsetSeconds": 0.45,
+          "fullCorrelation": 0.9749584629396983,
+          "heldOutSecondHalfCorrelation": 0.9460674520675328,
+          "firstHalfGain": 0.11950702535053202,
+          "fullResidualEnergyFraction": 0.04973512465046628,
+          "quarterCoverage": [
+            {
+              "startSeconds": 0.0,
+              "endSeconds": 0.3545,
+              "referenceEnergyFraction": 0.31777008891742137,
+              "correlation": 0.9968282648479244
+            },
+            {
+              "startSeconds": 0.3545,
+              "endSeconds": 0.709,
+              "referenceEnergyFraction": 0.2910270204457039,
+              "correlation": 0.9901480450175729
+            },
+            {
+              "startSeconds": 0.709,
+              "endSeconds": 1.0634375,
+              "referenceEnergyFraction": 0.3745850412322826,
+              "correlation": 0.9497614450124379
+            },
+            {
+              "startSeconds": 1.0634375,
+              "endSeconds": 1.417875,
+              "referenceEnergyFraction": 0.0166178494046032,
+              "correlation": 0.8688820747857527
+            }
+          ],
+          "frequencyBands": [
+            {
+              "hz": [
+                100,
+                500
+              ],
+              "correlation": 0.992473491792742,
+              "referenceEnergyFraction": 0.28407042936096166
+            },
+            {
+              "hz": [
+                500,
+                1500
+              ],
+              "correlation": 0.9839251555512096,
+              "referenceEnergyFraction": 0.6330820476721991
+            },
+            {
+              "hz": [
+                1500,
+                3500
+              ],
+              "correlation": 0.8696867469195673,
+              "referenceEnergyFraction": 0.07676059236772992
+            },
+            {
+              "hz": [
+                3500,
+                7000
+              ],
+              "correlation": 0.531190369291991,
+              "referenceEnergyFraction": 0.006007958571676664
+            }
+          ],
+          "powerWeightedCoherence100to7000Hz": 0.991657544679214,
+          "alignedObservedSha256": "572f27eae970037baf056d98f60a9dbaa242c4bac591c8ae5e065d74fbdfb799",
+          "residualSha256": "7468698ee0dfef792188662b2b29cf33b16fa1c30dda6632838c75d5921401d3"
+        },
+        "limitation": "The recording is the original AAC game mix. Residual remains; the result is waveform identity evidence for the short catalog cue, not byte equality with the mixed recording or original whole-line dubbing."
+      },
+      "nativeBankToCatalog": {
+        "signedFullCorrelationAtOriginalSampleRate": -0.9999999885978245,
+        "signedGainFromNativeDecodeToCatalog": -0.9999136909937469,
+        "residualRmsInteger16Lsb": 0.6116686876600511,
+        "originalSampleRate": 48000,
+        "catalogSamples": 68058,
+        "nativeDecodedSamples": 68058,
+        "authoredAcbSamples": 68058,
+        "nativeBank": {
+          "waveId": 27,
+          "hca": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/native-bank-member.hca",
+            "bytes": 17248,
+            "sha256": "837aea5f7582a37d191b0ea28193905238fbc9d4bb2a9ea8425dfc8a8dc00f3a"
+          },
+          "decoded": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/native-bank-member.wav",
+            "bytes": 136194,
+            "sha256": "446a35a37b167784e44bfa62704e9ceb6e34084260626f4f7753ff9fcdab5c95"
+          },
+          "decodedInfo": {
+            "sampleRate": 48000,
+            "channels": 1,
+            "samples": 68058,
+            "duration": 1.417875,
+            "pcmSha256": "dd1f09a41a9bb1ca1266f66053943c8a5a5f882bf00e619190ff11ed4eb13668"
+          },
+          "encoderDelaySamples": 128,
+          "encoderPaddingSamples": 422,
+          "afs2Subkey": 0,
+          "acb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_felt.acb",
+            "bytes": 11232,
+            "sha256": "41d989d727f37ccdd8abdce296b833dd49e99347229999bba9bf0aafff525eaf"
+          },
+          "awb": {
+            "path": "data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/vo_adv_felt.awb",
+            "bytes": 646560,
+            "sha256": "3fd4c0f94d31c8729cae5145f97e2efe5f474076b14dcb69cb746ee59f9fbc15"
+          },
+          "acbVolume": 1.0,
+          "graph": {
+            "cue": {
+              "CueId": 25,
+              "ReferenceType": 3,
+              "ReferenceIndex": 25,
+              "UserData": "",
+              "Worksize": 0,
+              "AisacControlMap": {
+                "hex": ""
+              },
+              "Length": 1417,
+              "NumAisacControlMaps": 0,
+              "HeaderVisibility": 1
+            },
+            "sequence": {
+              "PlaybackRatio": 100,
+              "NumTracks": 1,
+              "TrackIndex": {
+                "hex": "0019"
+              },
+              "CommandIndex": 0,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0,
+              "TrackValues": {
+                "hex": ""
+              },
+              "Type": 0,
+              "ControlWorkArea1": 25,
+              "ControlWorkArea2": 25
+            },
+            "track": {
+              "EventIndex": 25,
+              "CommandIndex": 65535,
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ParameterPallet": 65535,
+              "TargetType": 0,
+              "TargetName": "",
+              "TargetId": 4294967295,
+              "TargetAcbName": "",
+              "Scope": 0,
+              "TargetTrackNo": 65535
+            },
+            "synth": {
+              "Type": 0,
+              "VoiceLimitGroupName": "",
+              "CommandIndex": 65535,
+              "ReferenceItems": {
+                "hex": "00010019"
+              },
+              "LocalAisacs": {
+                "hex": ""
+              },
+              "GlobalAisacStartIndex": 65535,
+              "GlobalAisacNumRefs": 0,
+              "ControlWorkArea1": 25,
+              "ControlWorkArea2": 25,
+              "TrackValues": {
+                "hex": ""
+              },
+              "ParameterPallet": 65535,
+              "ActionTrackStartIndex": 65535,
+              "NumActionTracks": 0
+            },
+            "wave": {
+              "MemoryAwbId": 65535,
+              "EncodeType": 2,
+              "Streaming": 1,
+              "NumChannels": 1,
+              "LoopFlag": 1,
+              "SamplingRate": 48000,
+              "NumSamples": 68058,
+              "ExtensionData": 65535,
+              "StreamAwbPortNo": 0,
+              "StreamAwbId": 27
+            },
+            "waveIndex": 25,
+            "trackIndex": 25,
+            "synthIndex": 25,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          },
+          "metadata": {
+            "loop": false,
+            "loop_start": 0,
+            "loop_end": 0,
+            "preview_error": "",
+            "native_cue_id": 25,
+            "sample_rate": 48000,
+            "samples": 68058,
+            "release": {
+              "seconds": 0,
+              "curve": 0
+            }
+          },
+          "limeosReferenceCorrelation": -0.9999999942337241,
+          "limeosRelativeGain": -0.9999136197298334,
+          "waveformAliases": [
+            {
+              "cue": "advk_felt_akireru",
+              "nativeCueId": 25,
+              "commands": {
+                "sequence": [
+                  {
+                    "opcode": 65,
+                    "data": [
+                      0,
+                      0,
+                      0,
+                      2
+                    ]
+                  },
+                  {
+                    "opcode": 111,
+                    "data": [
+                      0,
+                      0,
+                      39,
+                      16
+                    ]
+                  }
+                ],
+                "track": [],
+                "synth": []
+              }
+            }
+          ]
+        },
+        "interpretation": "Measured full-length negative polarity relation only. No decoder/game cause is inferred and no audio is altered.",
+        "authoredGain": "unknown; AcbVolume and raw command bytes are preserved separately",
+        "authoredPitch": "unknown; no raw parameter opcode is assigned an unverified meaning"
+      },
+      "ambiguityAudit": {
+        "banks": 5,
+        "allComparedCues": 309,
+        "excludedCues": 0,
+        "targetFixedEventCorrelation": 0.7951065813459998,
+        "bestOther": {
+          "member": "LIMEOS/audio/vo_adv_rom/advg_rom_kantan.wav",
+          "status": "compared",
+          "duration": 0.7214375,
+          "sourceOffsetSeconds": 0.5795625,
+          "fixedEventCorrelation": 0.12685623487776224,
+          "explainedFixedEventEnergy": 0.01609250432736198
+        },
+        "signedCorrelationGap": 0.6682503464682376,
+        "samePCM": [
+          "LIMEOS/audio/vo_adv_felt/advk_felt_akireru.wav"
+        ],
+        "sameWaveformAliases": [
+          {
+            "cue": "advk_felt_akireru",
+            "nativeCueId": 25,
+            "commands": {
+              "sequence": [
+                {
+                  "opcode": 65,
+                  "data": [
+                    0,
+                    0,
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "opcode": 111,
+                  "data": [
+                    0,
+                    0,
+                    39,
+                    16
+                  ]
+                }
+              ],
+              "track": [],
+              "synth": []
+            }
+          }
+        ],
+        "fullAudit": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/runner-up-audit.json",
+          "bytes": 88407,
+          "sha256": "6cf758f13c5e6088761d935e2a91a8654b2db72e2d51478762e5a9a5c823c732"
+        },
+        "limitation": "The unique result is bounded to the five banks in the original P15/P16 search profiles; no entire game corpus was searched."
+      },
+      "directFrameReview": {
+        "performed": true,
+        "reviewer": "/root/p15_p16_voice_evidence",
+        "contact": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/full-interface-contact.jpg",
+          "bytes": 850596,
+          "sha256": "1074fbe53bc02df67f6d208a3bbc9b9af28e0de736bfc85fc981ef446f31b08d"
+        },
+        "frames": [
+          {
+            "requestedSeconds": 35.3055,
+            "actualPTS": 35.333,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-01.jpg",
+              "bytes": 28100,
+              "sha256": "1caf3f93fe57e7b29eb83e67229615790342b7bf7a7c7d27e28486427a491a64"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-01.log",
+              "bytes": 4966,
+              "sha256": "c38825101891570a144b486f30466f5073c516ce4f4756644a3e0c2c99dfd3ac"
+            }
+          },
+          {
+            "requestedSeconds": 35.755500000000005,
+            "actualPTS": 35.767,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-02.jpg",
+              "bytes": 91713,
+              "sha256": "ce6a4a76840bded1525a0bfbf128b1f4da181a91adb294d0484a7df275031532"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-02.log",
+              "bytes": 4972,
+              "sha256": "eaba5b951137839c6cd5cd4a83a5694351fb2b1c1a1af481855bab5b28c2978b"
+            }
+          },
+          {
+            "requestedSeconds": 35.9055,
+            "actualPTS": 35.933,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-03.jpg",
+              "bytes": 91379,
+              "sha256": "1a538c09d1a40e123849d79be1bf37d3eb3beea77ac35632f6210f5f219aa70e"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-03.log",
+              "bytes": 4972,
+              "sha256": "88bff3957263881926c9d0904897cd31eb15a3bc27dcf34e4a332c63f1b29a74"
+            }
+          },
+          {
+            "requestedSeconds": 36.0555,
+            "actualPTS": 36.067,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-04.jpg",
+              "bytes": 91556,
+              "sha256": "2895265b1a864bfb8118f4d440e853d4870f96a5440e778c9c48c766591301f2"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-04.log",
+              "bytes": 4972,
+              "sha256": "1cf3665232cbddfc66ee7936a6cddc64f3574479f14c9fb48f15566081ca84e8"
+            }
+          },
+          {
+            "requestedSeconds": 36.3055,
+            "actualPTS": 36.333,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-05.jpg",
+              "bytes": 92063,
+              "sha256": "6abc7473caed0ed32fe236b66a095ec73917a7f37def03ed609ee7345d74caf8"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-05.log",
+              "bytes": 4972,
+              "sha256": "2054ba6df07f015f6b3b556ca2f43ef9eee3cf695a6456fb42609dda0e08f5f2"
+            }
+          },
+          {
+            "requestedSeconds": 40.3,
+            "actualPTS": 40.3,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-06.jpg",
+              "bytes": 98157,
+              "sha256": "24816bfb5e3ae1b410174be6215dde0ce34d5f44ccf2b6c74fe3862227f6de6c"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-06.log",
+              "bytes": 4972,
+              "sha256": "db4a83dc21fa88e0aa71e4851774fddd34854cd4e5bbfb8d8a48e2fc7ce9c33e"
+            }
+          },
+          {
+            "requestedSeconds": 41.2,
+            "actualPTS": 41.2,
+            "image": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-07.jpg",
+              "bytes": 51173,
+              "sha256": "926ab9201d5500c1a54defb3b9bffd4ee22275bb0fd9ba2d79a68538cc19cf47"
+            },
+            "log": {
+              "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/frame-07.log",
+              "bytes": 4969,
+              "sha256": "ea94b139effae026cde8ca2dd042a5e4c49707d84fa3b2183658f3a35f99b092"
+            }
+          }
+        ],
+        "observations": {
+          "before": "35.333: dark street transition, no dialogue card.",
+          "entry": "35.767: Felt card reveals 人; 35.933 reads 人払 and 36.067 reads 人払いし.",
+          "full": "40.300: フェルト / 人払いしといてくれって言ってあったろ？なのに、誰かと立ち話なんかして……",
+          "after": "41.200: Wilhelm replaces Felt with no target card remaining. The target full cue ends about 37.323, before the change.",
+          "textMatch": "Japanese game card matches the guarded sourceText after normalizing display line wraps.",
+          "timing": "The cue begins during this target card's reveal. The 36.0 OCR anchor does not imply a negative or positive native voiceDelay.",
+          "coverage": "The initial sustained section, later energy rise, pitch/harmonic movement, and final low-energy tail match at the one locked alignment."
+        },
+        "burnedInTranslationUsedForJapaneseApproval": false,
+        "timeFrequencyPlotDirectlyInspected": true,
+        "identityPlot": {
+          "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/locked-waveform-and-time-frequency.png",
+          "bytes": 305690,
+          "sha256": "d727f8bedb7426ac86642ae31d912a185e5d6e34bac49494a21e293ed07d0c10"
+        }
+      },
+      "decisionBasis": "Exact playing payload, independently decoded full-cue coverage and held-out alignment, coherent spectral trajectory, native ACB/member/sample provenance, unique bounded alternatives/PCM audit, and original card entry/full-text/neighbor exclusion agree. No score alone supplies approval.",
+      "unknowns": [
+        "originalCSV",
+        "originalScenarioId",
+        "commandPhase",
+        "voiceDelay",
+        "nativeAuthoredGain",
+        "nativeAuthoredPitch",
+        "subjectiveTone"
+      ],
+      "preparedEvidence": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p16-0035.9055-10260024-7/evidence.json",
+        "bytes": 18743,
+        "sha256": "22d2328881f2421e8bb4bceb36582281002655ef86a69938e36b2897d99278d9"
+      }
+    }
+  ],
+  "formatEvidence": {
+    "files": [
+      {
+        "path": "data/localization/ja-originals/main/rezelos-2020-scene-10010001.json",
+        "bytes": 128980,
+        "sha256": "8d99af5d45b7470765e8a6f8d5d40e3a43c52c1a1aab9bcda8636e1ee45a557d"
+      },
+      {
+        "path": "live2d_workbench/catalog.py",
+        "bytes": 14848,
+        "sha256": "f4b4424a52b046209eb29723708e35771bf7d04745dde10d332e7c418758d28a"
+      },
+      {
+        "path": "story_studio/semantics.py",
+        "bytes": 15497,
+        "sha256": "80df335cf9fdd59ac44edf9ed2c82bf77df19cad6129453d5b1588fdddbe877d"
+      },
+      {
+        "path": "story_studio/ui/player.js",
+        "bytes": 41699,
+        "sha256": "fbd587e03ba3621faf6ebab47a34a568392a249e91d4477fa351c69c3d40408d"
+      },
+      {
+        "path": "story_studio/ui/dialogue_voice.js",
+        "bytes": 3844,
+        "sha256": "62b8ef8fecea9b43621d4915a2eb1c0439cdda41980845dba53b80afc1318c9e"
+      },
+      {
+        "path": "story_studio/crowd_assets.py",
+        "bytes": 27995,
+        "sha256": "ca87a002e7dd16b504ceb8d88322b6209d03f7127219ec3c7f7fbf9806c707ec"
+      }
+    ],
+    "grammar": "Native voice is bank,cue; original Japanese source, native_fields, voiceResource, catalog.voices, and DialogueVoice.prepare link it to the actual member bytes.",
+    "limitation": "Current player code demonstrates the reproduction path and field grammar. It does not recover the original game's command phase or dialogue audio timer."
+  },
+  "draft": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/p15-p16-voice-node-fields-DRAFT.json",
+    "bytes": 18988,
+    "sha256": "afb2bb471f6d6fc6b47561af70564fbfd2f453f9100f53f0df6c067409a5283f"
+  },
+  "originalInterruptedEvidencePreserved": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/prepared-evidence.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/revert P15 P16 voice packet review/manifest.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "script": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p15-p16-small-batch-20261111/final-review-v1/finalize_review.py",
+    "bytes": 16341,
+    "sha256": "e054da4d68cbf404aa1374b74f3dfe3ca5ceadea3f447d7c5457fec8cb85098a"
+  }
+}
