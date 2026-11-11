@@ -1,0 +1,1140 @@
+{
+  "status": "bounded_static_adjacent_channels_not_runtime_trace",
+  "sources": [
+    {
+      "path": "data/libil2cpp-offline.so",
+      "bytes": 49492360,
+      "sha256": "54c97bce616bdb062f12b0bccba47b1c6ff17f61da450d8bd0efa403f8822c05"
+    },
+    {
+      "path": "logs/metadata-decrypted.dat",
+      "bytes": 9860704,
+      "sha256": "2cde31e37d9c6c58f3a1bb7bae6b12e51d456af7de03d604bc953116887b1b3e"
+    },
+    {
+      "path": "lost_in_memories/config/metadata_layout.json",
+      "bytes": 606,
+      "sha256": "6a4805e3b4137c2a7dd1dd2034d29b42f4a88a6598ac0262f82220b0338f29ec"
+    },
+    {
+      "path": "logs/metadata-types.json",
+      "bytes": 2955492,
+      "sha256": "b45d0eedc7f4fbb7a341134965c8dfdb8699144c6c04b58b069857575a99b6bb"
+    }
+  ],
+  "selectedMethods": [
+    {
+      "owner": "L2D_Eye",
+      "name": "Init",
+      "qualified": "L2D_Eye.Init",
+      "token": "0x600009d",
+      "address": "0x1b3bf80",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 5876,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x1b3c11c",
+      "nextIndexedAddress": "0x1b3c11c"
+    },
+    {
+      "owner": "L2D_Eye",
+      "name": "SetTargetActive",
+      "qualified": "L2D_Eye.SetTargetActive",
+      "token": "0x600009e",
+      "address": "0x1b3c11c",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 5876,
+      "parameters": 1,
+      "signatureParameters": [
+        {
+          "name": "isActive",
+          "type": "System.Boolean"
+        }
+      ],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x1b3c1d0",
+      "nextIndexedAddress": "0x1b3c1d0"
+    },
+    {
+      "owner": "L2D_Eye",
+      "name": "<Awake>b__2_1",
+      "qualified": "L2D_Eye.<Awake>b__2_1",
+      "token": "0x60000a1",
+      "address": "0x1b3c2e8",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 5876,
+      "parameters": 1,
+      "signatureParameters": [
+        {
+          "name": "_",
+          "type": "UniRx.Unit"
+        }
+      ],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x1b3c2ec",
+      "nextIndexedAddress": "0x1b3c2ec"
+    },
+    {
+      "owner": "Live2D.Cubism.Framework.Expression.CubismExpressionController",
+      "name": "OnLateUpdate",
+      "qualified": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "token": "0x60005d6",
+      "address": "0x1676ec0",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 6185,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x1677260",
+      "nextIndexedAddress": "0x1677260"
+    },
+    {
+      "owner": "Live2D.Cubism.Framework.CubismEyeBlinkController",
+      "name": ".ctor",
+      "qualified": "Live2D.Cubism.Framework.CubismEyeBlinkController..ctor",
+      "token": "0x6000486",
+      "address": "0x1675bb8",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 6088,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x1675bcc",
+      "nextIndexedAddress": "0x1675bcc"
+    },
+    {
+      "owner": "Live2D.Cubism.Framework.CubismAutoEyeBlinkInput",
+      "name": ".ctor",
+      "qualified": "Live2D.Cubism.Framework.CubismAutoEyeBlinkInput..ctor",
+      "token": "0x600047e",
+      "address": "0x1675848",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 6085,
+      "parameters": 0,
+      "signatureParameters": [],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x1675864",
+      "nextIndexedAddress": "0x1675864"
+    },
+    {
+      "owner": "Live2D.Cubism.Core.CubismTaskableModel",
+      "name": "TryWriteParametersAndParts",
+      "qualified": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "token": "0x600066e",
+      "address": "0x1670d80",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 6205,
+      "parameters": 2,
+      "signatureParameters": [
+        {
+          "name": "parameters",
+          "type": "Live2D.Cubism.Core.CubismParameter[]"
+        },
+        {
+          "name": "parts",
+          "type": "Live2D.Cubism.Core.CubismPart[]"
+        }
+      ],
+      "returnType": "System.Boolean",
+      "endExclusiveUpperBound": "0x1670e44",
+      "nextIndexedAddress": "0x1670e44"
+    }
+  ],
+  "calls": [
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3bfac",
+      "mnemonic": "bl",
+      "target": "0xd4181c",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3bfc0",
+      "mnemonic": "bl",
+      "target": "0x1d3fce4",
+      "names": [
+        "UnityEngine.Component.get_transform"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3bfcc",
+      "mnemonic": "bl",
+      "target": "0x166a3bc",
+      "names": [
+        "UnityEngine.Transform.get_parent"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3bff4",
+      "mnemonic": "bl",
+      "target": "0xd418c8",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c004",
+      "mnemonic": "bl",
+      "target": "0x1b46a98",
+      "names": [
+        "UnityEngine.Object.op_Equality"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c014",
+      "mnemonic": "bl",
+      "target": "0x1d3fce4",
+      "names": [
+        "UnityEngine.Component.get_transform"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c020",
+      "mnemonic": "bl",
+      "target": "0x166a3bc",
+      "names": [
+        "UnityEngine.Transform.get_parent"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c038",
+      "mnemonic": "bl",
+      "target": "0x1a4d770",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c058",
+      "mnemonic": "bl",
+      "target": "0xd418c8",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c068",
+      "mnemonic": "bl",
+      "target": "0x1b497dc",
+      "names": [
+        "UnityEngine.Object.op_Inequality"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c088",
+      "mnemonic": "bl",
+      "target": "0x1a4d770",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c0a8",
+      "mnemonic": "bl",
+      "target": "0xd418c8",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c0b8",
+      "mnemonic": "bl",
+      "target": "0x1b497dc",
+      "names": [
+        "UnityEngine.Object.op_Inequality"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c0d0",
+      "mnemonic": "bl",
+      "target": "0x1d3fce4",
+      "names": [
+        "UnityEngine.Component.get_transform"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c0ec",
+      "mnemonic": "bl",
+      "target": "0x167f090",
+      "names": [
+        "Live2D.Cubism.Framework.LookAt.CubismLookController.set_Target"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c104",
+      "mnemonic": "b",
+      "target": "0x1b3c11c",
+      "names": [
+        "L2D_Eye.SetTargetActive"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.Init",
+      "at": "0x1b3c118",
+      "mnemonic": "bl",
+      "target": "0xd418ec",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.SetTargetActive",
+      "at": "0x1b3c14c",
+      "mnemonic": "bl",
+      "target": "0xd4181c",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.SetTargetActive",
+      "at": "0x1b3c178",
+      "mnemonic": "bl",
+      "target": "0xd418c8",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.SetTargetActive",
+      "at": "0x1b3c188",
+      "mnemonic": "bl",
+      "target": "0x1b46a98",
+      "names": [
+        "UnityEngine.Object.op_Equality"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.SetTargetActive",
+      "at": "0x1b3c1ac",
+      "mnemonic": "bl",
+      "target": "0x1d3fd24",
+      "names": [
+        "UnityEngine.Component.get_gameObject"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.SetTargetActive",
+      "at": "0x1b3c1c8",
+      "mnemonic": "b",
+      "target": "0x1d4894c",
+      "names": [
+        "UnityEngine.GameObject.SetActive"
+      ]
+    },
+    {
+      "caller": "L2D_Eye.SetTargetActive",
+      "at": "0x1b3c1cc",
+      "mnemonic": "bl",
+      "target": "0xd418ec",
+      "names": []
+    },
+    {
+      "caller": "L2D_Eye.<Awake>b__2_1",
+      "at": "0x1b3c2e8",
+      "mnemonic": "b",
+      "target": "0x1b3bf80",
+      "names": [
+        "L2D_Eye.Init"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1676efc",
+      "mnemonic": "bl",
+      "target": "0xd4181c",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1676f10",
+      "mnemonic": "bl",
+      "target": "0x1d3b0e4",
+      "names": [
+        "UnityEngine.Behaviour.get_enabled"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1676f38",
+      "mnemonic": "bl",
+      "target": "0xd418c8",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1676f48",
+      "mnemonic": "bl",
+      "target": "0x1b46a98",
+      "names": [
+        "UnityEngine.Object.op_Equality"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1676f60",
+      "mnemonic": "bl",
+      "target": "0x1676ad0",
+      "names": [
+        "Live2D.Cubism.Framework.Expression.CubismExpressionController.StartExpression"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1676f98",
+      "mnemonic": "bl",
+      "target": "0x19025bc",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1676fb4",
+      "mnemonic": "bl",
+      "target": "0x16689d8",
+      "names": [
+        "UnityEngine.Time.get_deltaTime"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1676fcc",
+      "mnemonic": "bl",
+      "target": "0x1201810",
+      "names": [
+        "Live2D.Cubism.Framework.MotionFade.CubismFadeMath.GetEasingSine"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1676ff8",
+      "mnemonic": "bl",
+      "target": "0x1201810",
+      "names": [
+        "Live2D.Cubism.Framework.MotionFade.CubismFadeMath.GetEasingSine"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1677040",
+      "mnemonic": "bl",
+      "target": "0xd418c8",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1677050",
+      "mnemonic": "bl",
+      "target": "0x1b46a98",
+      "names": [
+        "UnityEngine.Object.op_Equality"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x16770d4",
+      "mnemonic": "b",
+      "target": "0x1677184",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x167712c",
+      "mnemonic": "b",
+      "target": "0x1677184",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1677194",
+      "mnemonic": "b",
+      "target": "0x1677230",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x16771ac",
+      "mnemonic": "bl",
+      "target": "0x1b56b88",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x16771bc",
+      "mnemonic": "b",
+      "target": "0x1677230",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x16771ec",
+      "mnemonic": "bl",
+      "target": "0x19025bc",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1677218",
+      "mnemonic": "bl",
+      "target": "0x1b588ac",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1677230",
+      "mnemonic": "bl",
+      "target": "0xd418ec",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x1677254",
+      "mnemonic": "bl",
+      "target": "0xd41918",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.Expression.CubismExpressionController.OnLateUpdate",
+      "at": "0x167725c",
+      "mnemonic": "bl",
+      "target": "0xd418b8",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.CubismEyeBlinkController..ctor",
+      "at": "0x1675bc8",
+      "mnemonic": "b",
+      "target": "0x1b469f0",
+      "names": [
+        "UnityEngine.MonoBehaviour..ctor"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Framework.CubismAutoEyeBlinkInput..ctor",
+      "at": "0x1675860",
+      "mnemonic": "b",
+      "target": "0x1b469f0",
+      "names": [
+        "UnityEngine.MonoBehaviour..ctor"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670da4",
+      "mnemonic": "bl",
+      "target": "0x1aa296c",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670dbc",
+      "mnemonic": "b",
+      "target": "0x1670dec",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670dc4",
+      "mnemonic": "b",
+      "target": "0x1670df8",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670dd4",
+      "mnemonic": "bl",
+      "target": "0x1b3cc68",
+      "names": [
+        "Live2D.Cubism.Core.ArrayExtensionMethods.WriteTo"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670de4",
+      "mnemonic": "bl",
+      "target": "0x1b3cf84",
+      "names": [
+        "Live2D.Cubism.Core.ArrayExtensionMethods.WriteTo"
+      ]
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670df4",
+      "mnemonic": "bl",
+      "target": "0x1aa1f28",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670e0c",
+      "mnemonic": "b",
+      "target": "0x1670e10",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670e18",
+      "mnemonic": "bl",
+      "target": "0xbb6f10",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670e20",
+      "mnemonic": "bl",
+      "target": "0xbb6460",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670e2c",
+      "mnemonic": "bl",
+      "target": "0x1aa1f28",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670e3c",
+      "mnemonic": "bl",
+      "target": "0xd418b8",
+      "names": []
+    },
+    {
+      "caller": "Live2D.Cubism.Core.CubismTaskableModel.TryWriteParametersAndParts",
+      "at": "0x1670e40",
+      "mnemonic": "bl",
+      "target": "0xbb6310",
+      "names": []
+    }
+  ],
+  "declarations": [
+    {
+      "index": 5876,
+      "name": "L2D_Eye",
+      "parent": "UnityEngine.MonoBehaviour",
+      "fields": [
+        {
+          "name": "m_lookTarget",
+          "type": "L2D_LookTarget",
+          "type_index": 54936,
+          "token": "0x4000074"
+        },
+        {
+          "name": "m_lookController",
+          "type": "Live2D.Cubism.Framework.LookAt.CubismLookController",
+          "type_index": 54937,
+          "token": "0x4000075"
+        }
+      ],
+      "methods": [
+        {
+          "name": "Awake",
+          "return_type": "System.Void",
+          "token": "0x600009c",
+          "parameter_count": 0
+        },
+        {
+          "name": "Init",
+          "return_type": "System.Void",
+          "token": "0x600009d",
+          "parameter_count": 0
+        },
+        {
+          "name": "SetTargetActive",
+          "return_type": "System.Void",
+          "token": "0x600009e",
+          "parameter_count": 1
+        },
+        {
+          "name": ".ctor",
+          "return_type": "System.Void",
+          "token": "0x600009f",
+          "parameter_count": 0
+        },
+        {
+          "name": "<Awake>b__2_0",
+          "return_type": "System.Boolean",
+          "token": "0x60000a0",
+          "parameter_count": 1
+        },
+        {
+          "name": "<Awake>b__2_1",
+          "return_type": "System.Void",
+          "token": "0x60000a1",
+          "parameter_count": 1
+        }
+      ]
+    },
+    {
+      "index": 6085,
+      "name": "Live2D.Cubism.Framework.CubismAutoEyeBlinkInput",
+      "parent": "UnityEngine.MonoBehaviour",
+      "fields": [
+        {
+          "name": "Mean",
+          "type": "System.Single",
+          "type_index": 34346,
+          "token": "0x40002bb"
+        },
+        {
+          "name": "MaximumDeviation",
+          "type": "System.Single",
+          "type_index": 34346,
+          "token": "0x40002bc"
+        },
+        {
+          "name": "Timescale",
+          "type": "System.Single",
+          "type_index": 34346,
+          "token": "0x40002bd"
+        },
+        {
+          "name": "<Controller>k__BackingField",
+          "type": "Live2D.Cubism.Framework.CubismEyeBlinkController",
+          "type_index": 55476,
+          "token": "0x40002be"
+        },
+        {
+          "name": "<T>k__BackingField",
+          "type": "System.Single",
+          "type_index": 36938,
+          "token": "0x40002bf"
+        },
+        {
+          "name": "<CurrentPhase>k__BackingField",
+          "type": "Live2D.Cubism.Framework.CubismAutoEyeBlinkInput+Phase",
+          "type_index": 55477,
+          "token": "0x40002c0"
+        },
+        {
+          "name": "<LastValue>k__BackingField",
+          "type": "System.Single",
+          "type_index": 36938,
+          "token": "0x40002c1"
+        }
+      ],
+      "methods": [
+        {
+          "name": "get_Controller",
+          "return_type": "Live2D.Cubism.Framework.CubismEyeBlinkController",
+          "token": "0x6000473",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_Controller",
+          "return_type": "System.Void",
+          "token": "0x6000474",
+          "parameter_count": 1
+        },
+        {
+          "name": "get_T",
+          "return_type": "System.Single",
+          "token": "0x6000475",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_T",
+          "return_type": "System.Void",
+          "token": "0x6000476",
+          "parameter_count": 1
+        },
+        {
+          "name": "get_CurrentPhase",
+          "return_type": "Live2D.Cubism.Framework.CubismAutoEyeBlinkInput+Phase",
+          "token": "0x6000477",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_CurrentPhase",
+          "return_type": "System.Void",
+          "token": "0x6000478",
+          "parameter_count": 1
+        },
+        {
+          "name": "get_LastValue",
+          "return_type": "System.Single",
+          "token": "0x6000479",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_LastValue",
+          "return_type": "System.Void",
+          "token": "0x600047a",
+          "parameter_count": 1
+        },
+        {
+          "name": "Reset",
+          "return_type": "System.Void",
+          "token": "0x600047b",
+          "parameter_count": 0
+        },
+        {
+          "name": "Start",
+          "return_type": "System.Void",
+          "token": "0x600047c",
+          "parameter_count": 0
+        },
+        {
+          "name": "LateUpdate",
+          "return_type": "System.Void",
+          "token": "0x600047d",
+          "parameter_count": 0
+        },
+        {
+          "name": ".ctor",
+          "return_type": "System.Void",
+          "token": "0x600047e",
+          "parameter_count": 0
+        }
+      ]
+    },
+    {
+      "index": 6088,
+      "name": "Live2D.Cubism.Framework.CubismEyeBlinkController",
+      "parent": "UnityEngine.MonoBehaviour",
+      "fields": [
+        {
+          "name": "BlendMode",
+          "type": "Live2D.Cubism.Framework.CubismParameterBlendMode",
+          "type_index": 55484,
+          "token": "0x40002c2"
+        },
+        {
+          "name": "EyeOpening",
+          "type": "System.Single",
+          "type_index": 34346,
+          "token": "0x40002c3"
+        },
+        {
+          "name": "<Destinations>k__BackingField",
+          "type": "Live2D.Cubism.Core.CubismParameter[]",
+          "type_index": 55485,
+          "token": "0x40002c4"
+        },
+        {
+          "name": "_hasUpdateController",
+          "type": "System.Boolean",
+          "type_index": 32944,
+          "token": "0x40002c5"
+        }
+      ],
+      "methods": [
+        {
+          "name": "get_Destinations",
+          "return_type": "Live2D.Cubism.Core.CubismParameter[]",
+          "token": "0x6000480",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_Destinations",
+          "return_type": "System.Void",
+          "token": "0x6000481",
+          "parameter_count": 1
+        },
+        {
+          "name": "Refresh",
+          "return_type": "System.Void",
+          "token": "0x6000482",
+          "parameter_count": 0
+        },
+        {
+          "name": "OnLateUpdate",
+          "return_type": "System.Void",
+          "token": "0x6000483",
+          "parameter_count": 0
+        },
+        {
+          "name": "Start",
+          "return_type": "System.Void",
+          "token": "0x6000484",
+          "parameter_count": 0
+        },
+        {
+          "name": "LateUpdate",
+          "return_type": "System.Void",
+          "token": "0x6000485",
+          "parameter_count": 0
+        },
+        {
+          "name": ".ctor",
+          "return_type": "System.Void",
+          "token": "0x6000486",
+          "parameter_count": 0
+        }
+      ]
+    },
+    {
+      "index": 6185,
+      "name": "Live2D.Cubism.Framework.Expression.CubismExpressionController",
+      "parent": "UnityEngine.MonoBehaviour",
+      "fields": [
+        {
+          "name": "ExpressionsList",
+          "type": "Live2D.Cubism.Framework.Expression.CubismExpressionList",
+          "type_index": 55728,
+          "token": "0x40003b2"
+        },
+        {
+          "name": "_model",
+          "type": "Live2D.Cubism.Core.CubismModel",
+          "type_index": 55528,
+          "token": "0x40003b3"
+        },
+        {
+          "name": "_playingExpressions",
+          "type": "System.Collections.Generic.List`1<Live2D.Cubism.Framework.Expression.CubismPlayingExpression>",
+          "type_index": 55729,
+          "token": "0x40003b4"
+        },
+        {
+          "name": "CurrentExpressionIndex",
+          "type": "System.Int32",
+          "type_index": 32961,
+          "token": "0x40003b5"
+        },
+        {
+          "name": "_lastExpressionIndex",
+          "type": "System.Int32",
+          "type_index": 32916,
+          "token": "0x40003b6"
+        },
+        {
+          "name": "_hasUpdateController",
+          "type": "System.Boolean",
+          "type_index": 32944,
+          "token": "0x40003b7"
+        }
+      ],
+      "methods": [
+        {
+          "name": "StartExpression",
+          "return_type": "System.Void",
+          "token": "0x60005d5",
+          "parameter_count": 0
+        },
+        {
+          "name": "OnLateUpdate",
+          "return_type": "System.Void",
+          "token": "0x60005d6",
+          "parameter_count": 0
+        },
+        {
+          "name": "OnEnable",
+          "return_type": "System.Void",
+          "token": "0x60005d7",
+          "parameter_count": 0
+        },
+        {
+          "name": "LateUpdate",
+          "return_type": "System.Void",
+          "token": "0x60005d8",
+          "parameter_count": 0
+        },
+        {
+          "name": ".ctor",
+          "return_type": "System.Void",
+          "token": "0x60005d9",
+          "parameter_count": 0
+        }
+      ]
+    },
+    {
+      "index": 6205,
+      "name": "Live2D.Cubism.Core.CubismTaskableModel",
+      "parent": "System.Object",
+      "fields": [
+        {
+          "name": "<UnmanagedModel>k__BackingField",
+          "type": "Live2D.Cubism.Core.Unmanaged.CubismUnmanagedModel",
+          "type_index": 55789,
+          "token": "0x40003e3"
+        },
+        {
+          "name": "<Moc>k__BackingField",
+          "type": "Live2D.Cubism.Core.CubismMoc",
+          "type_index": 55769,
+          "token": "0x40003e4"
+        },
+        {
+          "name": "_dynamicDrawableData",
+          "type": "Live2D.Cubism.Core.CubismDynamicDrawableData[]",
+          "type_index": 55790,
+          "token": "0x40003e5"
+        },
+        {
+          "name": "<ShouldReleaseUnmanaged>k__BackingField",
+          "type": "System.Boolean",
+          "type_index": 32944,
+          "token": "0x40003e6"
+        },
+        {
+          "name": "<Lock>k__BackingField",
+          "type": "System.Object",
+          "type_index": 33172,
+          "token": "0x40003e7"
+        },
+        {
+          "name": "<State>k__BackingField",
+          "type": "Live2D.Cubism.Core.CubismTaskableModel+TaskState",
+          "type_index": 55791,
+          "token": "0x40003e8"
+        }
+      ],
+      "methods": [
+        {
+          "name": "CreateTaskableModel",
+          "return_type": "Live2D.Cubism.Core.CubismTaskableModel",
+          "token": "0x6000661",
+          "parameter_count": 1
+        },
+        {
+          "name": "get_UnmanagedModel",
+          "return_type": "Live2D.Cubism.Core.Unmanaged.CubismUnmanagedModel",
+          "token": "0x6000662",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_UnmanagedModel",
+          "return_type": "System.Void",
+          "token": "0x6000663",
+          "parameter_count": 1
+        },
+        {
+          "name": "get_Moc",
+          "return_type": "Live2D.Cubism.Core.CubismMoc",
+          "token": "0x6000664",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_Moc",
+          "return_type": "System.Void",
+          "token": "0x6000665",
+          "parameter_count": 1
+        },
+        {
+          "name": "get_DynamicDrawableData",
+          "return_type": "Live2D.Cubism.Core.CubismDynamicDrawableData[]",
+          "token": "0x6000666",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_DynamicDrawableData",
+          "return_type": "System.Void",
+          "token": "0x6000667",
+          "parameter_count": 1
+        },
+        {
+          "name": "get_IsExecuting",
+          "return_type": "System.Boolean",
+          "token": "0x6000668",
+          "parameter_count": 0
+        },
+        {
+          "name": "get_DidExecute",
+          "return_type": "System.Boolean",
+          "token": "0x6000669",
+          "parameter_count": 0
+        },
+        {
+          "name": "get_ShouldReleaseUnmanaged",
+          "return_type": "System.Boolean",
+          "token": "0x600066a",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_ShouldReleaseUnmanaged",
+          "return_type": "System.Void",
+          "token": "0x600066b",
+          "parameter_count": 1
+        },
+        {
+          "name": ".ctor",
+          "return_type": "System.Void",
+          "token": "0x600066c",
+          "parameter_count": 1
+        },
+        {
+          "name": "TryReadParameters",
+          "return_type": "System.Boolean",
+          "token": "0x600066d",
+          "parameter_count": 1
+        },
+        {
+          "name": "TryWriteParametersAndParts",
+          "return_type": "System.Boolean",
+          "token": "0x600066e",
+          "parameter_count": 2
+        },
+        {
+          "name": "Update",
+          "return_type": "System.Void",
+          "token": "0x600066f",
+          "parameter_count": 0
+        },
+        {
+          "name": "UpdateNow",
+          "return_type": "System.Boolean",
+          "token": "0x6000670",
+          "parameter_count": 0
+        },
+        {
+          "name": "ReleaseUnmanaged",
+          "return_type": "System.Void",
+          "token": "0x6000671",
+          "parameter_count": 0
+        },
+        {
+          "name": "Execute",
+          "return_type": "System.Void",
+          "token": "0x6000672",
+          "parameter_count": 0
+        },
+        {
+          "name": "OnReleaseUnmanaged",
+          "return_type": "System.Void",
+          "token": "0x6000673",
+          "parameter_count": 0
+        },
+        {
+          "name": "Live2D.Cubism.Core.ICubismTask.Execute",
+          "return_type": "System.Void",
+          "token": "0x6000674",
+          "parameter_count": 0
+        },
+        {
+          "name": "get_Lock",
+          "return_type": "System.Object",
+          "token": "0x6000675",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_Lock",
+          "return_type": "System.Void",
+          "token": "0x6000676",
+          "parameter_count": 1
+        },
+        {
+          "name": "get_State",
+          "return_type": "Live2D.Cubism.Core.CubismTaskableModel+TaskState",
+          "token": "0x6000677",
+          "parameter_count": 0
+        },
+        {
+          "name": "set_State",
+          "return_type": "System.Void",
+          "token": "0x6000678",
+          "parameter_count": 1
+        }
+      ]
+    }
+  ],
+  "disassembly": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-blink-writers-20261112-v1/adjacent-channel-capstone.txt",
+    "bytes": 14187,
+    "sha256": "c82f98daa5814cb890fc95150a2d595cda056fb8752ee291d36e4bd506adbe40"
+  },
+  "limits": [
+    "No recorded instance execution or generic runtime creation was observed.",
+    "Method extent is a next-indexed-method upper bound, not a size symbol.",
+    "No global Unity/Animator execution order is inferred from direct-call names."
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "status": "original_static_conditional_delegate_construction_order",
+  "slots": [
+    {
+      "label": "component_x24",
+      "slot": "0x2d11e80",
+      "destination": 306,
+      "encoded": "0x40007e85",
+      "kind": 2,
+      "index": 32389,
+      "type": "Live2D.Cubism.Rendering.CubismRenderController"
+    },
+    {
+      "label": "component_sp38",
+      "slot": "0x2c97f10",
+      "destination": 307,
+      "encoded": "0x40007e86",
+      "kind": 2,
+      "index": 32390,
+      "type": "Live2D.Cubism.Rendering.Masking.CubismMaskController"
+    },
+    {
+      "label": "component_sp30",
+      "slot": "0x2cd1d48",
+      "destination": 308,
+      "encoded": "0x40007e87",
+      "kind": 2,
+      "index": 32391,
+      "type": "Live2D.Cubism.Framework.MotionFade.CubismFadeController"
+    },
+    {
+      "label": "component_sp28",
+      "slot": "0x2c97c38",
+      "destination": 309,
+      "encoded": "0x40007e88",
+      "kind": 2,
+      "index": 32392,
+      "type": "Live2D.Cubism.Framework.Pose.CubismPoseController"
+    },
+    {
+      "label": "component_sp20",
+      "slot": "0x2c99d48",
+      "destination": 310,
+      "encoded": "0x40007e89",
+      "kind": 2,
+      "index": 32393,
+      "type": "Live2D.Cubism.Framework.Expression.CubismExpressionController"
+    },
+    {
+      "label": "component_sp18",
+      "slot": "0x2ca2fe8",
+      "destination": 311,
+      "encoded": "0x40007e83",
+      "kind": 2,
+      "index": 32387,
+      "type": "Live2D.Cubism.Framework.CubismEyeBlinkController"
+    },
+    {
+      "label": "component_sp08",
+      "slot": "0x2cfb958",
+      "destination": 312,
+      "encoded": "0x40007e8a",
+      "kind": 2,
+      "index": 32394,
+      "type": "Live2D.Cubism.Framework.MouthMovement.CubismMouthController"
+    },
+    {
+      "label": "component_sp00",
+      "slot": "0x2cc93e0",
+      "destination": 313,
+      "encoded": "0x40007e8b",
+      "kind": 2,
+      "index": 32395,
+      "type": "Live2D.Cubism.Framework.HarmonicMotion.CubismHarmonicMotionController"
+    },
+    {
+      "label": "component_sp10",
+      "slot": "0x2cfdaf0",
+      "destination": 314,
+      "encoded": "0x40007e7f",
+      "kind": 2,
+      "index": 32383,
+      "type": "Live2D.Cubism.Framework.LookAt.CubismLookController"
+    },
+    {
+      "label": "update_interface",
+      "slot": "0x2cfe7d8",
+      "destination": 5667,
+      "encoded": "0x20003f01",
+      "kind": 1,
+      "index": 16129,
+      "type": "Live2D.Cubism.Framework.ICubismUpdatable"
+    },
+    {
+      "label": "auto_start_component_generic",
+      "slot": "0x2d27f90",
+      "destination": 10271,
+      "encoded": "0xc0002413",
+      "kind": 6,
+      "index": 9235,
+      "bindingStatus": "encoded_reference_preserved_not_resolved"
+    },
+    {
+      "label": "blink_refresh_component_generic",
+      "slot": "0x2d188b8",
+      "destination": 10273,
+      "encoded": "0xc0002416",
+      "kind": 6,
+      "index": 9238,
+      "bindingStatus": "encoded_reference_preserved_not_resolved"
+    }
+  ],
+  "conditionalAppendOrder": [
+    {
+      "ordinal": 1,
+      "local": "component_sp30",
+      "type": "Live2D.Cubism.Framework.MotionFade.CubismFadeController",
+      "delegateCombineSite": "0x1676414"
+    },
+    {
+      "ordinal": 2,
+      "local": "component_sp28",
+      "type": "Live2D.Cubism.Framework.Pose.CubismPoseController",
+      "delegateCombineSite": "0x16764dc"
+    },
+    {
+      "ordinal": 3,
+      "local": "component_sp20",
+      "type": "Live2D.Cubism.Framework.Expression.CubismExpressionController",
+      "delegateCombineSite": "0x1676594"
+    },
+    {
+      "ordinal": 4,
+      "local": "component_sp18",
+      "type": "Live2D.Cubism.Framework.CubismEyeBlinkController",
+      "delegateCombineSite": "0x1676648"
+    },
+    {
+      "ordinal": 5,
+      "local": "component_sp08",
+      "type": "Live2D.Cubism.Framework.MouthMovement.CubismMouthController",
+      "delegateCombineSite": "0x16766fc"
+    },
+    {
+      "ordinal": 6,
+      "local": "component_sp00",
+      "type": "Live2D.Cubism.Framework.HarmonicMotion.CubismHarmonicMotionController",
+      "delegateCombineSite": "0x16767b4"
+    },
+    {
+      "ordinal": 7,
+      "local": "component_sp10",
+      "type": "Live2D.Cubism.Framework.LookAt.CubismLookController",
+      "delegateCombineSite": "0x1676868"
+    },
+    {
+      "ordinal": 8,
+      "local": "component_x24",
+      "type": "Live2D.Cubism.Rendering.CubismRenderController",
+      "delegateCombineSite": "0x167691c"
+    },
+    {
+      "ordinal": 9,
+      "local": "component_sp38",
+      "type": "Live2D.Cubism.Rendering.Masking.CubismMaskController",
+      "delegateCombineSite": "0x16769d4"
+    }
+  ],
+  "limits": [
+    "This is construction order when each discovered component exists; it does not prove an instance was present.",
+    "No original runtime execution or Animator/global Unity callback order was observed.",
+    "Generic component MethodRef slots remain numeric until their generic bindings are recovered."
+  ]
+}
