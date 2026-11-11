@@ -1,0 +1,192 @@
+[
+  {
+    "originalObservationOrdinal": 37,
+    "sceneId": 10040003,
+    "scenarioId": 7,
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/28/root-review/frames/94a15269228a-011550.jpg",
+    "sha256": "2cd456734f66ea1476489b7359ed2dda29717b27d2f53612d32f7dc36c353b99",
+    "time": 384.999,
+    "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/28 9本篇「结束与开始」.mp4",
+    "videoSha256": "94a15269228ae1ee3197eaee1fbd8690203c190e3061e4a6f8d8bf5e09e141f1",
+    "mode": "reused_existing_original_root_review_frame",
+    "sourceIndex": {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/28/root-review/index.json",
+      "sha256": "bab84b0be124847c88131fbfa0409b1805a819fe593c83d4d0e21832bba18696"
+    },
+    "sourceEvent": {
+      "region": "dialogue",
+      "start": 378.999,
+      "end": 397.999,
+      "time": 384.999,
+      "frame_index": 11550,
+      "text": "ハッ！何言ってやがるか知らねえが、痛え思いしたくなきゃ、出すもん出しな！",
+      "speaker": "チン",
+      "crop": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/28/coarse-1hz/crops/011550-dialogue.png",
+      "raw_speaker": "チン",
+      "restored_original_rows": [],
+      "source_video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/28 9本篇「结束与开始」.mp4",
+      "source_sha256": "94a15269228ae1ee3197eaee1fbd8690203c190e3061e4a6f8d8bf5e09e141f1",
+      "confidence": 0.99175,
+      "observations": 21,
+      "variants": [
+        {
+          "text": "ハッ",
+          "count": 2
+        },
+        {
+          "text": "ハッ!何言ってやがるか",
+          "count": 1
+        },
+        {
+          "text": "ハッ!何言ってやがるか知らねえが、痛え思",
+          "count": 1
+        },
+        {
+          "text": "ハッ!何言ってやがるか知らねえが、痛え思いしたくなきゃ、出す",
+          "count": 1
+        },
+        {
+          "text": "ハッ!何言ってやがるか知らねえが、痛え思いしたくなきゃ、出すもん出しな!",
+          "count": 16
+        }
+      ],
+      "typewriter_prefixes_only": true,
+      "conflicting_variants": [],
+      "review_reasons": [],
+      "segment_start_reason": {
+        "reason": "speaker_change",
+        "time": 378.999
+      },
+      "id": "merged-0089",
+      "evidence_id": "94a15269228a:384.999000:dialogue",
+      "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/28/root-review/frames/94a15269228a-011550.jpg",
+      "source_frame_time": 384.999
+    },
+    "fullFrame": true,
+    "crop": null
+  },
+  {
+    "originalObservationOrdinal": 30,
+    "sceneId": 10040002,
+    "scenarioId": 10,
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p28-identity-v1/batch3-original-s10040002-n10-298.000.png",
+    "sha256": "3b0cfcaaeaecb1f91db2118fa9228e00f586a9a127665b623268bd190add989c",
+    "time": 298.023,
+    "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/28 9本篇「结束与开始」.mp4",
+    "videoSha256": "94a15269228ae1ee3197eaee1fbd8690203c190e3061e4a6f8d8bf5e09e141f1",
+    "mode": "single_original_source_pts_frame",
+    "sourcePts": 4768368,
+    "sourceTimeBase": {
+      "numerator": 1,
+      "denominator": 16000
+    },
+    "requestedSeconds": 298.0,
+    "sourceNodeInterval": [
+      296.0,
+      312.5
+    ],
+    "ffmpegCommand": [
+      "ffmpeg",
+      "-nostdin",
+      "-hide_banner",
+      "-loglevel",
+      "info",
+      "-copyts",
+      "-ss",
+      "298.0",
+      "-threads",
+      "1",
+      "-i",
+      "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/28 9本篇「结束与开始」.mp4",
+      "-map",
+      "0:v:0",
+      "-vf",
+      "select=gte(t\\,298.0),showinfo",
+      "-frames:v",
+      "1",
+      "-fps_mode",
+      "passthrough",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-filter_complex_threads",
+      "1",
+      "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p28-identity-v1/batch3-original-s10040002-n10-298.000.png"
+    ],
+    "ffmpegLog": {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p28-identity-v1/batch3-original-s10040002-n10-298.000.ffmpeg.log",
+      "sha256": "01c31dee65d303a22ce1715d91ce6034cc4334a66f26c02d1420b6bdca587b2b"
+    },
+    "ffmpegThreads": 1,
+    "nice": 19,
+    "cpuAffinity": [
+      22,
+      23
+    ],
+    "fullFrame": true,
+    "crop": null
+  },
+  {
+    "originalObservationOrdinal": 34,
+    "sceneId": 10040003,
+    "scenarioId": 4,
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p28-identity-v1/batch3-original-s10040003-n4-349.000.png",
+    "sha256": "b36c5cba28b88722cc973b98e3c582845e0aa72624cff4e7f79ba782462ead6d",
+    "time": 349.023,
+    "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/28 9本篇「结束与开始」.mp4",
+    "videoSha256": "94a15269228ae1ee3197eaee1fbd8690203c190e3061e4a6f8d8bf5e09e141f1",
+    "mode": "single_original_source_pts_frame",
+    "sourcePts": 5584368,
+    "sourceTimeBase": {
+      "numerator": 1,
+      "denominator": 16000
+    },
+    "requestedSeconds": 349.0,
+    "sourceNodeInterval": [
+      348.0,
+      367.5
+    ],
+    "ffmpegCommand": [
+      "ffmpeg",
+      "-nostdin",
+      "-hide_banner",
+      "-loglevel",
+      "info",
+      "-copyts",
+      "-ss",
+      "349.0",
+      "-threads",
+      "1",
+      "-i",
+      "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/28 9本篇「结束与开始」.mp4",
+      "-map",
+      "0:v:0",
+      "-vf",
+      "select=gte(t\\,349.0),showinfo",
+      "-frames:v",
+      "1",
+      "-fps_mode",
+      "passthrough",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-filter_complex_threads",
+      "1",
+      "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p28-identity-v1/batch3-original-s10040003-n4-349.000.png"
+    ],
+    "ffmpegLog": {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p28-identity-v1/batch3-original-s10040003-n4-349.000.ffmpeg.log",
+      "sha256": "fba72045cf9c785f3dcecd7768d4c39e43beb2205293a2f79643c7fce4e6a166"
+    },
+    "ffmpegThreads": 1,
+    "nice": 19,
+    "cpuAffinity": [
+      22,
+      23
+    ],
+    "fullFrame": true,
+    "crop": null
+  }
+]
