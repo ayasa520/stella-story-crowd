@@ -1,0 +1,82 @@
+{
+  "status": "static_current_source_locations_not_original_total_order",
+  "canonicalCommit": "37232806a8180375a4b7a178e27157bb16d12201",
+  "anchors": [
+    {
+      "url": "/studio/music_player.js",
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_player.js",
+      "bytes": 7120,
+      "sha256": "af60e047f8a1fb510f9bf66d75792f0e0ea1746eed497b7d7091d548a7cf1d8c",
+      "firstLine": 23,
+      "lastLine": 43,
+      "purpose": "Actual fetch/decode prepare Promise; then callback is only an observation bound.",
+      "text": "  async prepare(resource){\n    if(!this.context){\n      this.context=new AudioContext();this.output=this.context.createGain();this.output.connect(this.context.destination);\n      this.output.gain.value=this.muted?0:1;\n    }\n    this.resume();\n    if(!this.buffers.has(resource)){\n      // A failed load must be retryable. Successful buffers belong to this\n      // player, not to a scene/node, so inherited music keeps one sample clock.\n      const loading=Promise.all([fetch('/api/music/'+encodeURIComponent(resource)),fetch('/music/'+encodeURIComponent(resource))])\n        .then(async([info,audio])=>{\n          if(!info.ok||!audio.ok)throw new Error('BGM 读取失败：'+resource);\n          const [metadata,buffer]=await Promise.all([info.json(),audio.arrayBuffer().then(raw=>this.context.decodeAudioData(raw))]);\n          if(metadata.startup_events.length)console.warn('STORY_BGM_STARTUP_UNRESOLVED',JSON.stringify({resource,events:metadata.startup_events,\n            note:'Original sequence-start behavior remains under investigation; preserving zero-offset introduction.'}));\n          return {metadata,buffer};\n        }).catch(error=>{this.buffers.delete(resource);throw error;});\n      this.buffers.set(resource,loading);\n    }\n    return this.buffers.get(resource);\n  }"
+    },
+    {
+      "url": "/studio/music_player.js",
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_player.js",
+      "bytes": 7120,
+      "sha256": "af60e047f8a1fb510f9bf66d75792f0e0ea1746eed497b7d7091d548a7cf1d8c",
+      "firstLine": 68,
+      "lastLine": 89,
+      "purpose": "Command then awaited preparation then real MusicVoice zero and PLAY.",
+      "text": "    console.info('STORY_BGM_COMMAND',JSON.stringify({resource,fade,restart,key}));\n    const generation=++this.generation,previous=[...this.players].map(voice=>({voice,volume:voice.volume}));\n    this.loading=resource?{resource,generation}:null;\n    let next=null;\n    if(resource){\n      let prepared;\n      try{prepared=await this.prepare(resource);}\n      catch(error){if(generation!==this.generation)return;this.loading=null;throw error;}\n      // Stop or another command may arrive during fetch/decode. Never create\n      // an audible source from the superseded operation, including after Stop.\n      if(generation!==this.generation){console.info('STORY_BGM_CANCELLED',resource);return;}\n      this.loading=null;\n      const {metadata,buffer}=prepared;\n      next=new MusicVoice(this.context,this.output,buffer,metadata,fade?0:this.settings.bgm_volume,()=>{\n        this.players.delete(next);if(this.current?.voice===next)this.current=null;\n      });\n      this.players.add(next);next.start();\n      console.info('STORY_BGM_PLAY',JSON.stringify({resource,loop:metadata.loop,start:metadata.loop_start,end:metadata.loop_end,\n        samples:metadata.samples,sampleRate:metadata.sample_rate,audioTime:this.context.currentTime,milliseconds:performance.now()}));\n    }\n    this.current=next?{voice:next,resource}:null;this.applied=key;\n    this.ramp(next,previous,fade,generation);"
+    },
+    {
+      "url": "/studio/music_player.js",
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_player.js",
+      "bytes": 7120,
+      "sha256": "af60e047f8a1fb510f9bf66d75792f0e0ea1746eed497b7d7091d548a7cf1d8c",
+      "firstLine": 91,
+      "lastLine": 118,
+      "purpose": "Gain uses shared game-frame time; fade0 completes synchronously, fade1 subscribes.",
+      "text": "  ramp(next,previous,fade,generation){\n    this.cancelRamp();\n    const began=this.clock.now(),initial=next?.volume||0;\n    // Original ProcCrossFade.MoveNext (0x1dd7768) interpolates both gains and\n    // advances its elapsed value with Unity Time.deltaTime (0x1dd794c). Use\n    // the same bounded game-frame sample as Normal actors/cards, including\n    // the existing preview-rate owner. The Web Audio source keeps its own\n    // sample clock: a visual hitch must not seek, restart or slow the music.\n    // Each ramp owns one removable subscription. A superseding command or\n    // Stop cancels that subscription without disposing the shared clock or\n    // leaving a callback attached after this player's voices are released.\n    console.info('STORY_BGM_FADE_BEGIN',JSON.stringify({generation,fade,\n      gameSeconds:began,clock:this.clock.snapshot?.(),audioTime:next?.currentTime}));\n    const tick=()=>{\n      if(generation!==this.generation){this.cancelRamp();return;}\n      const elapsed=this.clock.now()-began,progress=fade?Math.min(1,elapsed/fade):1;\n      if(next)next.volume=initial+(this.settings.bgm_volume-initial)*progress;\n      for(const old of previous)old.voice.volume=old.volume*(1-progress);\n      if(progress===1){\n        this.cancelRamp();for(const old of previous)old.voice.stop();\n        console.info('STORY_BGM_FADE_COMPLETE',JSON.stringify({generation,fade,\n          gameElapsedSeconds:elapsed,clock:this.clock.snapshot?.(),audioTime:next?.currentTime}));\n      }\n    };\n    if(fade)this.cancelFade=this.clock.subscribe(tick);\n    tick();\n  }\n  cancelRamp(){this.cancelFade?.();this.cancelFade=null;}"
+    },
+    {
+      "url": "/studio/music_voice.js",
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_voice.js",
+      "bytes": 1883,
+      "sha256": "a2bd44ee5fd94899f196f94b60c349db8d924d9b04cf1873298d4bdc253abaae",
+      "firstLine": 21,
+      "lastLine": 28,
+      "purpose": "Zero-offset source start and independent Web Audio sample clock.",
+      "text": "  start(){\n    this.began=this.context.currentTime;this.source.start(this.began);\n    if(!this.metadata.loop)this.source.stop(this.began+this.metadata.samples/this.metadata.sample_rate);\n  }\n  get currentTime(){\n    const elapsed=this.context.currentTime-this.began,{loop,loop_start:start,loop_end:end}=this.metadata;\n    return loop&&elapsed>=end?start+(elapsed-end)%(end-start):elapsed;\n  }"
+    },
+    {
+      "url": "/player/player.js",
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js",
+      "bytes": 45292,
+      "sha256": "d4bfd8dc7bdd08c64b737767fda9b538fb2a2c7e6ba9a97264355211b4d2f90b",
+      "firstLine": 374,
+      "lastLine": 381,
+      "purpose": "Current player awaits music.apply before phase0.",
+      "text": "    await prepareCommandResources(node.phases,this.sounds,this.effects);\n    this.check(generation);this.timing('command_resources_ready');\n    if(node.music.action!=='inherit'){\n      await this.music.apply(node.music.resource,{...node.music,key:id+':'+generation,start:true});\n      this.state.bg_music=node.music.resource;\n    }\n    this.check(generation);\n    await this.phaseCommands(0,generation);this.check(generation);"
+    },
+    {
+      "url": "/player/player.js",
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js",
+      "bytes": 45292,
+      "sha256": "d4bfd8dc7bdd08c64b737767fda9b538fb2a2c7e6ba9a97264355211b4d2f90b",
+      "firstLine": 428,
+      "lastLine": 434,
+      "purpose": "Text begin follows actual scene text initialization.",
+      "text": "    this.visible=0;this.length=this.scene.text(node,$('language').value,0);this.accessible();\n    this.timing('text_begin');\n    const history=document.createElement('li');history.textContent=[node.speaker,node.text].filter(Boolean).join('：');$('history').append(history);\n    if(!this.length){await this.afterText(generation);if(generation===this.generation)this.animate(generation);return;}\n    this.setPhase('text');this.status('点击补全台词；再次点击继续。');\n    if(node.actors.length)this.cast.beginTalk();else if(selection)this.actor.animator.beginTalk();\n    this.textBegan=performance.now();this.readySince=null;this.animate(generation);"
+    },
+    {
+      "url": "/player/player.js",
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js",
+      "bytes": 45292,
+      "sha256": "d4bfd8dc7bdd08c64b737767fda9b538fb2a2c7e6ba9a97264355211b4d2f90b",
+      "firstLine": 474,
+      "lastLine": 482,
+      "purpose": "AccessibleText is semantic full text; phase2 follows natural textwriter completion.",
+      "text": "    $('accessibleText').textContent=[this.scene.speakerName(this.node,language),language==='zh'?this.node.translation:this.node.text].filter(Boolean).join('\\n');\n  }\n  animate(generation){\n    const tick=now=>{\n      if(generation!==this.generation)return;\n      if(this.phase==='text'){\n        this.visible=Math.min(this.length,Math.floor((now-this.textBegan)*this.config.text_speed/1000));this.scene.draw(this.visible);\n        if(this.visible===this.length){this.afterText(generation).catch(error=>this.fail(error));}\n      }"
+    }
+  ],
+  "nativeReference": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/REPORT.md",
+    "bytes": 3286,
+    "sha256": "08e2a816da742a0a189ec977057b2cb663554ff8ca58d33d9b80b8ce079932ca"
+  },
+  "limit": "Native SetupBGM/loader callbacks do not establish a universal completion order with CardIn/text. These actual experiments measure the current awaited path only."
+}

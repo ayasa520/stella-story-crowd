@@ -1,0 +1,40 @@
+--- unrun-v2/capture-memory-loading.js
++++ capture-memory-loading-phase-corrected.js
+@@ -42,9 +42,20 @@
+         const a=globalThis.__p25LoadingAudit={player:m,samples:[],prepared:[],timing:[],notes:[],promises:new Set(),ids:new WeakMap(),nextId:1};
+         const snap=()=>({wall:performance.now(),node:document.body.dataset.node,phase:document.body.dataset.phase,
+           game:m.clock.snapshot(),contextState:m.context?.state,audioContextTime:m.context?.currentTime});
+-        const onTiming=event=>a.timing.push({...snap(),detail:{...event.detail}});
++        const onTiming=event=>a.timing.push({...snap(),observationStage:'synchronous_player_timing_event',detail:{...event.detail}});
+         document.addEventListener('stella-player-timing',onTiming);
+-        const unsubscribe=m.clock.subscribe(()=>{
++        const unsubscribe=m.clock.subscribe(triggerSnapshot=>{
++          const triggerAt=performance.now(),triggerGeneration=m.generation;
++          // This subscriber existed before the real ramp subscriber. Do not
++          // read a pre-ramp gain and label it with the current frame. The
++          // microtask runs after this clock tick's synchronous listeners, with
++          // no production listener reordered and no clock/gain/media write.
++          queueMicrotask(()=>{
++          if(a.closed)return;
++          const observedSnapshot=m.clock.snapshot();
++          const sameSharedFrame=triggerSnapshot.frame===observedSnapshot.frame;
++          const sameGameSeconds=triggerSnapshot.gameSeconds===observedSnapshot.gameSeconds;
++          if(!sameSharedFrame||!sameGameSeconds)a.notes.push({kind:'observation_frame_mismatch',triggerSnapshot,observedSnapshot});
+           if(a.samples.length>5000)return;
+           const promise=m.buffers.get('bgm_adv_every06_cd3_10');
+           if(promise&&!a.promises.has(promise)){
+@@ -58,11 +69,12 @@
+           const voices=[...m.players].map(voice=>{if(!a.ids.has(voice))a.ids.set(voice,a.nextId++);
+             return {id:a.ids.get(voice),resource:voice.metadata.resource,beganAudioTime:voice.began,currentTime:voice.currentTime,
+               gain:voice.volume,ended:!!voice.ended,loop:voice.source.loop,loopStart:voice.source.loopStart,loopEnd:voice.source.loopEnd};});
+-          a.samples.push({...snap(),generation:m.generation,loading:m.loading&&{...m.loading},pendingFade:!!m.cancelFade,
++          a.samples.push({...snap(),observationStage:'microtask_after_shared_clock_synchronous_listeners',triggerSnapshot:{...triggerSnapshot},observedSnapshot,sameSharedFrame,sameGameSeconds,triggerAt,triggerGeneration,generationUnchanged:triggerGeneration===m.generation,generation:m.generation,loading:m.loading&&{...m.loading},pendingFade:!!m.cancelFade,
+             currentResource:m.current?.resource||'',voices,semanticText:document.querySelector('#accessibleText').textContent,
+             cardOpacity:getComputedStyle(document.querySelector('#cardMotion')).opacity});
++          });
+         });
+-        a.remove=()=>{unsubscribe();document.removeEventListener('stella-player-timing',onTiming);};
++        a.remove=()=>{a.closed=true;unsubscribe();document.removeEventListener('stella-player-timing',onTiming);};
+         return {instances:this.length,timeOrigin:performance.timeOrigin,clock:m.clock.snapshot(),note:'Passive observer only; no media, fetch, clock or transport APIs replaced.'};
+       }`});
+     if(installed.exceptionDetails)throw Error(JSON.stringify(installed.exceptionDetails));

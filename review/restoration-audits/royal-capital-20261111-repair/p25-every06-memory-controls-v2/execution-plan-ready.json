@@ -1,0 +1,174 @@
+{
+  "version": 2,
+  "status": "prepared_not_registered_not_run",
+  "sceneId": 10170002,
+  "canonicalCommit": "37232806a8180375a4b7a178e27157bb16d12201",
+  "dataHeadAtPreparationInformationalOnly": "7ed87fe831264af2bb9161ce3541e257bd61f489",
+  "adapterBaseURL": "http://127.0.0.1:5189",
+  "fixture": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/preview-packet.json",
+    "bytes": 12203,
+    "sha256": "e5d577f7e44bde637b99f368ae516942728a70d0c575ef53c21c22b3b6478a5c"
+  },
+  "registryEntryProposal": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/registry-entry-PROPOSAL.json",
+    "bytes": 402,
+    "sha256": "18bbd3bed5d993d32ed3157f1a129a78f6dfce9eb2d7f213235399f2262fe9a9"
+  },
+  "currentGuards": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/current-target-guards.json",
+    "bytes": 5091,
+    "sha256": "439daebeb90eb7ee9c84484a02eb88ff76afd07e8e85bc29f5595d457b6d2d1a"
+  },
+  "catalogEntryLock": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/catalog-entry-lock.json",
+    "bytes": 991,
+    "sha256": "36f3e3d707d749a0bf59b51baf6919ce75762af35adc4bbf700482c1046fab68"
+  },
+  "servedPreparation": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/served-source-preparation.json",
+    "bytes": 3861,
+    "sha256": "5d3c55279dd14438433d22accfe1a4be7af1dea5805ed786c32cede2f15ef1fc"
+  },
+  "probe": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/capture-memory-loading-phase-corrected.js",
+    "bytes": 13017,
+    "sha256": "e120f681f4cf23a3b2860044cf90fe6c1210500aa2adf75efc031a1b8c351a4f"
+  },
+  "probeDerivedFrom": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v1/capture-memory-loading.js",
+    "bytes": 9214,
+    "sha256": "ca7198ed8b35192fc9b7b49740d97453bd0571eaa11bc1237075382439a34868"
+  },
+  "codeLocations": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/current-code-entry-order.json",
+    "bytes": 9807,
+    "sha256": "85409f7f02e60977c2f218ea6085e762073252ec1b583cf587879dce63a521a6"
+  },
+  "variants": [
+    {
+      "exampleId": "p25-every06-fade0-v37",
+      "entry": 7,
+      "route": [
+        7,
+        8,
+        9
+      ],
+      "privateTarget": 8,
+      "privateFields": {
+        "bg_music": "bgm_adv_every06_cd3_10,0,false"
+      },
+      "url": "http://127.0.0.1:5189/?scene=10170002&node=7&nativePreview=p25-every06-fade0-v37",
+      "testHypothesisOnly": true,
+      "nativeCsvApproved": false
+    },
+    {
+      "exampleId": "p25-every06-fade1-v37",
+      "entry": 7,
+      "route": [
+        7,
+        8,
+        9
+      ],
+      "privateTarget": 8,
+      "privateFields": {
+        "bg_music": "bgm_adv_every06_cd3_10,1,false"
+      },
+      "url": "http://127.0.0.1:5189/?scene=10170002&node=7&nativePreview=p25-every06-fade1-v37",
+      "testHypothesisOnly": true,
+      "nativeCsvApproved": false
+    }
+  ],
+  "commonCueZero": "Each variant starts the same exact payload from its own real MusicVoice.began/audioContext clock zero. Never seek, force equal load latency, or add Wait.",
+  "actualProcedure": [
+    "Root reviews exactly this registry proposal and restarts only its owned read-only adapter; this preparation performs neither action.",
+    "Run snapshot_preflight.py before. It checks current P25 guards, target catalog record, served sources/audio and both activated programs; any unavailable/mismatched service is a hard stop, never a reason to restart it.",
+    "Only after explicit ownership authorization, one fresh Canary session under nice19/CPU22,23, canonical CLI cwd. Run the probe once for fade0 and fade1 fresh documents within that one session.",
+    "Actual7 ready, language ja via existing player action, install passive default-world StoryMusicPlayer observer; trusted iframe pointer advances7→8. Allow natural text completion and >=2.3audio seconds plus completed gain ramp.",
+    "One real pointer advances8→9; require same voice identity/beganAudioTime and advancing AudioContext. No Stop/Restart or additional route.",
+    "The probe removes observers and blanks the page, saves raw gzip, then browser owner immediately closes the sole session and proves CLI/OS0.",
+    "Run snapshot_preflight.py after; inspect only saved JSON/clock/gain/request data. Preserve any failures/partial run and do not repeat passed variants."
+  ],
+  "observations": [
+    "Actual resource request/response/body-finished host timestamps; passive existing-buffer Promise completion is an observed bound, not exact prior settlement.",
+    "Actual console COMMAND/PLAY/FADE events; passive stella-player-timing records monotonic wall time, shared clock and audio context time at enter/text/phase boundaries.",
+    "Per-shared-frame current loading, resource, MusicVoice identity/began/currentTime/gain/loop points, independent audio clock and card opacity.",
+    "Actual CDP parent/player default-world frame/context metadata and exact private compiled7/8/9 nodes.",
+    "No pixel first-glyph time is claimed. Semantic accessibleText already contains the full line before the textwriter finishes; phase2/ready preserve natural completion."
+  ],
+  "priorMusicLimitation": "Original outgoing BGM/mix is not restored. These two fixtures measure only new-cue zero/envelope/loading/text relation; they cannot sign an original outgoing-music crossfade or restart.",
+  "sourceSpeedState": "Visible SPEED OFF-style in all15 existing original full frames202.556–203.023s by direct sprite/color/shape review. Runtime speed boolean, Unity timeScale and absolute Animator rate remain unknown; no rate is imposed on the experiment.",
+  "originalUnknowns": [
+    "original CSV",
+    "authored command phase/onset",
+    "literal fade parameter",
+    "restart/reset flag",
+    "original Animator rate",
+    "missing outgoing original mix"
+  ],
+  "failurePolicy": "On unavailable service, missing default context, nonunique actual player, suspended/nonadvancing audio or timeout: preserve raw failure/partial observations and close. Do not modify policies/runtime, force playback, seek, inject delay or rerun without root review.",
+  "cpuAndBrowser": {
+    "nice": 19,
+    "cpus": [
+      22,
+      23
+    ],
+    "maxChromeSessions": 1,
+    "browser": "/usr/bin/google-chrome-canary",
+    "cwd": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout",
+    "browserAuthorizedByThisPlan": false
+  },
+  "formalWrites": 0,
+  "registryChanged": false,
+  "adapterChanged": false,
+  "browserOpened": false,
+  "guardScope": "P25 native/review7-9, selected music catalog entry/audio/metadata, relevant current source and protected Studio. No full-library manifest lock; unrelated P27 scene changes do not invalidate these target guards.",
+  "supersedesUnrunPlan": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/execution-plan.json",
+    "bytes": 7350,
+    "sha256": "6d9e6fed7b288969b8ab521944f162f6594e5b23e93f6c69b163db65a71a35be"
+  },
+  "probeObservationPhase": {
+    "oldUnrunIssue": "Observer registered at7 precedes ramp registered at8; a synchronous sample would read pre-ramp gain with the new frame clock.",
+    "phase": "microtask_after_shared_clock_synchronous_listeners",
+    "method": "Subscription only queues a read-only microtask. Trigger/observed snapshots and generations are retained, and pending reads stop after teardown.",
+    "requiredAudit": [
+      "sameSharedFrame=true",
+      "sameGameSeconds=true",
+      "generationUnchanged=true for gain-formula comparisons",
+      "observed gain is always the real MusicVoice volume; no value is fabricated or substituted"
+    ],
+    "limit": "This is after one shared-clock tick synchronous listener list, not after every asynchronous operation in the browser frame."
+  },
+  "rootOnlyExecutionArgv": [
+    "nice",
+    "-n",
+    "19",
+    "taskset",
+    "-c",
+    "22,23",
+    "playwright-cli",
+    "-s=p25-every06-memory-v37",
+    "--raw",
+    "run-code",
+    "--filename=/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/capture-memory-loading-phase-corrected.js"
+  ],
+  "supersedesOnlyPreparationDescriptions": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/execution-plan.json",
+      "bytes": 7350,
+      "sha256": "6d9e6fed7b288969b8ab521944f162f6594e5b23e93f6c69b163db65a71a35be"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/execution-plan-phase-corrected.json",
+      "bytes": 8880,
+      "sha256": "2ec026a22f7d58eeeed0fd2149b4e80c04f1a60c506087bb82088838d210915d"
+    }
+  ],
+  "sourceSpeedButtonVisualReview": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/source-speed-button-visual-review.json",
+    "bytes": 17302,
+    "sha256": "b0beb960495c3ab4147ddcf26c58af4b9253372f3cc9dd75631bb4ef3a035440"
+  },
+  "currentGlobalDataHeadCheckedInformationalOnly": "f7ffccb9a3f7fbf156d3e5da1e5bcadd5025b78d"
+}

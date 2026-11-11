@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>剧情播放预览</title><link rel="stylesheet" href="player.css">
+<script src="/pairing/vendor/live2dcubismcore.min.js"></script><script src="/pairing/vendor/pixi.min.js"></script><script src="/pairing/vendor/cubism4.min.js"></script>
+</head><body>
+<main><div id="viewport" tabindex="0" aria-label="剧情画面；选择时可左右拖动，或用方向键选择、回车确认、Esc取消"><div id="backdrop"></div><div id="cardMotion"><div id="cardMask"><div id="card"><canvas id="actor"></canvas><img id="picture" alt="剧情插图" hidden><video id="movie" playsinline preload="metadata" hidden></video></div></div><canvas id="cardFrame" hidden></canvas></div><canvas id="subtitles" aria-label="剧情字幕"></canvas><canvas id="choiceCanvas" aria-label="剧情选项及气泡台词" hidden></canvas></div>
+<aside><strong>剧情播放预览</strong><p id="status" role="status">正在加载原版界面…</p>
+<label>显示语言<select id="language"><option value="ja">日文参考</option><option value="zh" selected>当前脚本</option></select></label>
+<div class="controls"><button id="advance" disabled>继续</button><button id="auto" aria-pressed="false">自动</button><button id="restart" disabled>从入口重播</button><button id="stop">停止</button><button id="close">返回编辑</button></div>
+<div id="choices" aria-label="分支选项"></div><button id="effectContinue" hidden>继续演出</button><p id="effectStatus"></p>
+<div id="accessibleText" aria-live="polite"></div><details><summary>本次播放记录</summary><ol id="history"></ol></details>
+<p class="hint">点击画面补全台词或继续。预览使用当前编辑内容；关闭后仍需手动保存。缺失分支保持锁定。</p>
+<details><summary>预览范围</summary><p class="hint">字幕、字体、卡片边框和选择姿势读取原版资源。更换角色或插图时自动露出模糊背景，再显示准备好的新画面。按住后显示清晰卡片与模糊背景，左右拖动展开气泡，松开确认；下方按钮先展开，再用「继续」确认。模糊使用浏览器效果；头像采用参考截图中的原图，未恢复按奖励切换头像、奖励演出和底部菜单。支持卡片退场、原版遮罩转场与八种 PlayFX 闪光／斩击／冰魔法；特效状态和其他未提取资源尚未支持。音效使用原循环点；人群声按原音库分块混音，固定多轨音效按原轨道时序播放，尚未复刻 CRI DSP 总线效果。其他未解析的音效序列会停止并提示。</p></details>
+</aside></main><script type="module" src="player.js"></script></body></html>
