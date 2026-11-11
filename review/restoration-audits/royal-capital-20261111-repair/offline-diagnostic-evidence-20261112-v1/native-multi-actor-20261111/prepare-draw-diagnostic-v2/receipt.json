@@ -1,0 +1,292 @@
+{
+  "version": 2,
+  "status": "static_revision_prepared_for_fresh_peer_review_unexecuted_not_acceptance",
+  "createdUtc": "2026-11-11T22:27:44.905145+00:00",
+  "peerInputs": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v1/peer-review-v1/REPORT.md",
+      "bytes": 12976,
+      "sha256": "ca834f24db3a0dcc2574d6cccc2843d8fb7c10e280de757eb0e3b5d1cf1b9888"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v1/peer-review-v1/receipt.json",
+      "bytes": 4766,
+      "sha256": "53debf4307bc5cb7b8586d248b10a478215f81f012fc49693a3c2a6be4d907ac"
+    }
+  ],
+  "checks": {
+    "allFiveNodeSyntaxChecksPassed": true,
+    "allJSONParses": true,
+    "noTrailingWhitespace": true,
+    "v1HandoffHashPreserved": true,
+    "v1All13HandedOffFilesPreserved": true,
+    "peerReportHashPreserved": true,
+    "peerReceiptHashPreserved": true,
+    "v1ReferenceCopyByteIdentical": true,
+    "all22ReferenceSourceResourceFilesStillMatch": true,
+    "currentCanonicalBytesStillLackNativeActorPath": true,
+    "factoryReturnsOriginalResultWithoutAsyncWrapper": true,
+    "allFiveActualCallsUseFailureRethrowHelper": true,
+    "bodyOnlyReadAfterExactFrozenIdentityAndReservation": true,
+    "programUsesSameGuardedReader": true,
+    "sameHostAbsoluteClockCoversWorkAndCleanup": true,
+    "noForbiddenInstrumentCalls": true,
+    "noNewNetworkFetchOrInterception": true,
+    "newExecutionTemplateStillUnreleased": true,
+    "noCaptureRunDirectory": true
+  },
+  "forbiddenCallFindings": [],
+  "sourceLocators": {
+    "instrument.js": [
+      {
+        "needle": "function diagnostic",
+        "lines": [
+          105
+        ]
+      },
+      {
+        "needle": "function actual",
+        "lines": [
+          109
+        ]
+      },
+      {
+        "needle": "diagnostic('Core.update.pre'",
+        "lines": [
+          221
+        ]
+      },
+      {
+        "needle": "'from', original => function",
+        "lines": [
+          318
+        ]
+      },
+      {
+        "needle": "diagnostic('PIXI.render.pre'",
+        "lines": [
+          337
+        ]
+      }
+    ],
+    "bounded-response.mjs": [
+      {
+        "needle": "reserve(bytes",
+        "lines": [
+          12
+        ]
+      },
+      {
+        "needle": "complete(ticket",
+        "lines": [
+          19,
+          69
+        ]
+      },
+      {
+        "needle": "export async function readFrozenIdentityBody",
+        "lines": [
+          43
+        ]
+      },
+      {
+        "needle": "const headers = await deadline.work",
+        "lines": [
+          50
+        ]
+      },
+      {
+        "needle": "const ticket = budget.reserve",
+        "lines": [
+          59
+        ]
+      },
+      {
+        "needle": "const originalBodyPromise = response.body()",
+        "lines": [
+          63
+        ]
+      }
+    ],
+    "deadline.mjs": [
+      {
+        "needle": "export class CaseDeadline",
+        "lines": [
+          7
+        ]
+      },
+      {
+        "needle": "beginCleanup()",
+        "lines": [
+          26
+        ]
+      },
+      {
+        "needle": "async within",
+        "lines": [
+          33
+        ]
+      },
+      {
+        "needle": "cleanup(label",
+        "lines": [
+          54
+        ]
+      }
+    ],
+    "run-diagnostic.mjs": [
+      {
+        "needle": "try {",
+        "lines": [
+          42,
+          43,
+          47,
+          52,
+          62,
+          83,
+          99,
+          147,
+          149,
+          154,
+          157,
+          158,
+          164
+        ]
+      },
+      {
+        "needle": "create case Page",
+        "lines": [
+          89
+        ]
+      },
+      {
+        "needle": "const result = await readFrozenIdentityBody",
+        "lines": [
+          118
+        ]
+      },
+      {
+        "needle": "finally {",
+        "lines": [
+          143
+        ]
+      },
+      {
+        "needle": "export and restore iframe observer",
+        "lines": [
+          150
+        ]
+      },
+      {
+        "needle": "close owned case Page",
+        "lines": [
+          159
+        ]
+      }
+    ]
+  },
+  "blockerResponses": [
+    "B1: absolute host work/cleanup endpoints and owned Page setup/creation/finally",
+    "B2: exact identity/frozen framing before body; shared decoded reservation survives abandoned await",
+    "B3: return original Promise/result, no-throw side observation only",
+    "B4: no-throw pre/post/events and original-call failure classification plus same-error rethrow"
+  ],
+  "nodeSyntaxChecks": [
+    {
+      "file": "instrument.js",
+      "command": "node --check instrument.js",
+      "exitCode": 0
+    },
+    {
+      "file": "deadline.mjs",
+      "command": "node --check deadline.mjs",
+      "exitCode": 0
+    },
+    {
+      "file": "bounded-response.mjs",
+      "command": "node --check bounded-response.mjs",
+      "exitCode": 0
+    },
+    {
+      "file": "resource-observer.mjs",
+      "command": "node --check resource-observer.mjs",
+      "exitCode": 0
+    },
+    {
+      "file": "run-diagnostic.mjs",
+      "command": "node --check run-diagnostic.mjs",
+      "exitCode": 0
+    }
+  ],
+  "inventory": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v2/B1_B4_RESPONSE.md",
+      "bytes": 7252,
+      "sha256": "40e661921fecc732c9c2e179c1260e5dee0e03ae626d245d244c83231985cc1a"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v2/REPORT.md",
+      "bytes": 4589,
+      "sha256": "a6c38438a2e5f1d7c6b62a54795e74dcbbf43b6d3f1dc1e1e1b64d6fd7f6edf2"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v2/bounded-response.mjs",
+      "bytes": 4744,
+      "sha256": "1269f055652cb004aaa287a69f9d6ddf0cf2526a2fe1e1e8d7f343ba9ddf4afc"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v2/deadline.mjs",
+      "bytes": 3160,
+      "sha256": "d8aadb432da0cffb0a8a16f512caecdde38ba67663fcda6f775bfa40dc40bdbb"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v2/execution-UNRELEASED.json",
+      "bytes": 996,
+      "sha256": "7a54d43835b9320d68b0e538e1e8f46a2d43aab299d25fdefbc14a5893f5a7d6"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v2/instrument.js",
+      "bytes": 23560,
+      "sha256": "2dc75cf58f822c8fff8b6bb5d4560f7891b01372f2504511636b9b11f0ff7341"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v2/reference-resource-lock-v1.json",
+      "bytes": 7744,
+      "sha256": "065891fd8bd0b7334121c21593bbf3c2adbcc8b9c024916ea39e316c65cded9e"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v2/resource-observer.mjs",
+      "bytes": 8813,
+      "sha256": "32f6f622bd4e3ffb0126935af15182249b5615d8d504aa2ea67e39da4799f40f"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-multi-actor-20261111/prepare-draw-diagnostic-v2/run-diagnostic.mjs",
+      "bytes": 14248,
+      "sha256": "fb5a80bd02acae0f8243321d8d4be0b42ed16e1120845f0fc4c5e53e73602e15"
+    }
+  ],
+  "referenceCanonicalSource": "37232806a8180375a4b7a178e27157bb16d12201",
+  "activeDataHEADPolled": false,
+  "staleLockRefrozen": false,
+  "currentExecutionApproved": false,
+  "chromeStarted": false,
+  "applicationExecuted": false,
+  "runtimeInjection": false,
+  "unitTestsOrFaultSimulationRun": false,
+  "runtimeBehaviorVerified": false,
+  "productionSourceDataRegistryWrites": 0,
+  "gitMutations": 0,
+  "process": {
+    "nice": 19,
+    "affinity": [
+      22,
+      23
+    ]
+  },
+  "limits": [
+    "Static source/control-flow and byte checks do not establish live exception transparency, deadlines, response handling or budget sufficiency.",
+    "Exact identity HTTP framing profile only; not compressed/chunked streaming or an upstream browser network-memory limit.",
+    "Deadline races do not cancel underlying commands or prove Page/Chrome closure; late/unconfirmed cleanup and owner OS verification remain explicit.",
+    "Canonical372 lacks the required P09 native-parent execution; a new consistent root freeze and sole owner assignment are still required."
+  ]
+}

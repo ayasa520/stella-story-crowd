@@ -1,0 +1,158 @@
+{
+  "status": "offline_source_audit_only_unexecuted",
+  "createdUtc": "2026-11-11T21:46:27.461856+00:00",
+  "canonicalSource": "37232806a8180375a4b7a178e27157bb16d12201",
+  "dataHead": "72bace5056b95eeb694caa15ac227eb6ca3670c7",
+  "borrowedQAInstrument": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/assembled-three-case-plan-20261112-v1/instrument.js",
+    "bytes": 12214,
+    "sha256": "73dc73e3ed2ff0f4859ab9966fa8c388d6148233e88276c73c00be3202aa5d6f"
+  },
+  "borrowedBoundaries": {
+    "Core.update": [
+      33,
+      62
+    ],
+    "Renderer.render": [
+      157,
+      174
+    ]
+  },
+  "sourceSnippets": [
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "actual_core_wrapper",
+      "line": 1,
+      "byteOffset": 13151,
+      "needle": "class D{update(){",
+      "text": "class D{update(){this._model.update(),this._model.drawables.resetDynamicFlags()}getCanvasWidth(){return null==this._model?0:this._model.canvasinfo.Can"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "SDK_input_restore_order",
+      "line": 1,
+      "byteOffset": 113134,
+      "needle": "this.emit(\"beforeModelUpdate\"),o.update(),o.loadParameters()",
+      "text": "this.emit(\"beforeModelUpdate\"),o.update(),o.loadParameters()}updateFoc"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "actual_model_render_update_draw",
+      "line": 1,
+      "byteOffset": 102403,
+      "needle": "_render(t){",
+      "text": "_render(t){this.registerInteraction(t.plugins.interaction),t.batch.reset(),t.geometry.reset(),t.shader.reset(),t.state.reset();let e=!1;this.glContextID!==t.CONTEXT_UID&&(this.glContextID=t.CONTEXT_UID,this.internalModel.updateWebGLContext(t.gl,this.glContextID),e=!0);for(let r=0;r<this.textures.length;r++){const i=this.textures[r];i.valid&&(!e&&i.baseTexture._glTextures[this.glContextID]||(t.gl.pixelStorei(WebGLRenderingContext.UNPACK_FLIP_Y_WEBGL,this.internalModel.textureFlipY),t.texture.bind(i.baseTexture,0)),this.internalModel.bindTexture(r,i.baseTexture._glTextures[this.glContextID].texture),i.baseTexture.touched=t.textureGC.count)}const i=t.framebuffer.viewport;this.internalModel.viewport=[i.x,i.y,i.width,i.height],this.deltaTime&&(this.internalModel.update(this.deltaTime,this.elapsedTime),this.deltaTime=0);const s=Re.copyFrom(t.globalUniforms.uniforms.projectionMatrix).append(this.worldTransform);this.internalModel.updateTransform(s),this.internalModel.draw(t.gl),t.state.reset(),t.texture.reset()}destroy(t){this.emit(\"destroy\"),this.autoUpdate=!1,this.unregisterInteraction(),(null==t?void 0:t.texture)&&this.textures.forEach((e=>e.destroy(t.baseTexture))),this.internalModel.destroy(),"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "internal_projection_and_drawModel",
+      "line": 1,
+      "byteOffset": 113831,
+      "needle": "draw(t){const e=this.drawingMatrix",
+      "text": "draw(t){const e=this.drawingMatrix,i=We.getArray();i[0]=e.a,i[1]=e.b,i[4]=-e.c,i[5]=-e.d,i[12]=e.tx,i[13]=e.ty,this.renderer.setMvpMatrix(We),this.renderer.setRenderState(t.getParameter(t.FRAMEBUFFER_BINDING),this.viewport),this.renderer.drawModel()}destroy(){super.dest"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "native_array_accessors",
+      "line": 1,
+      "byteOffset": 17137,
+      "needle": "getDrawableVertexIndices(t){",
+      "text": "getDrawableVertexIndices(t){return this._model.drawables.indices[t]}getDrawableVertexPositions(t){return this._model.drawables.vertexPositions[t]}getDrawableVertexUvs(t){return this._model.drawables.vertexUvs[t]}getDrawableOpacity(t){return this._model.drawabl"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "render_order_sort_and_color_submission",
+      "line": 1,
+      "byteOffset": 75603,
+      "needle": "doDrawModel(){",
+      "text": "doDrawModel(){this.preDraw(),null!=this._clippingManager&&this._clippingManager.setupClippingContext(this.getModel(),this);const t=this.getModel().getDrawableCount(),e=this.getModel().getDrawableRenderOrders();for(let i=0;i<t;++i){const t=e[i];this._sortedDrawableIndexList[t]=i}for(let i=0;i<t;++i){const t=this._sortedDrawableIndexList[i];this.getModel().getDrawableDynamicFlagIsVisible(t)&&(this.setClippingContextBufferForDraw(null!=this._clippingManager?this._clippingManager.getClippingContextListForDraw()[t]:null),this.setIsCulling(this.getModel().getDrawableCulling(t)),this.drawMesh(this.getModel().getDrawableTextureIndices(t),this.getModel().getDrawableVertexIndexCount(t),this.getModel().getDrawableVertexCount(t),this.getModel().getDrawableVertexIndices(t),this.getModel().getDrawableVertices(t),this.getModel().getDrawableVertexUvs(t),this.getModel().getDrawableOpacity(t),this.getModel().getDrawableBlendMode(t),this.getModel().getDrawableInvertedMaskBit(t)))}}drawMesh(t,e,i,s,r,a,o,"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "actual_drawMesh_upload",
+      "line": 1,
+      "byteOffset": 76580,
+      "needle": "drawMesh(t,e,i,s,r,a,o,n,l){",
+      "text": "drawMesh(t,e,i,s,r,a,o,n,l){this.isCulling()?this.gl.enable(this.gl.CULL_FACE):this.gl.disable(this.gl.CULL_FACE),this.gl.frontFace(this.gl.CCW);const h=this.getModelColor();null==this.getClippingContextBufferForMask()&&(h.A*=o,this.isPremultipliedAlpha()&&(h.R*=h.A,h.G*=h.A,h.B*=h.A));let u=null;null!=this._textures[t]&&(u=this._textures[t]),Ot.getInstance().setupShaderProgram(this,u,i,r,s,a,this._bufferData,o,n,h,this.isPremultipliedAlpha(),this.getMvpMatrix(),l),this.gl.drawElements(this.gl.TRIANGLES,e,this.gl.UNSIGNED_SHORT,0),this.gl.useProgram(null),this.setClippingContextBufferForDraw(null),this.setClippingContextBufferForMask(null)}static doStaticRelease(){Ot.deleteInstance()}setRenderState(t,e){Ft=t,Dt=e}preDraw(){this.firstDraw&&(this.firstDraw=!1,this._anisortopy=this.gl.getExtension(\"EXT_texture_filter_anisotropic\")||this.gl.getExtension(\"WEBKIT_EXT_texture_filter_anisotropic\")||this.gl.getExtension(\"MOZ_EXT_texture_filter_anisotropic\")),this.gl.disable(this.gl.SCISSOR_TEST),this.gl.disable(this.gl.STENCIL_TEST),this.gl.disable(this.gl.DEPTH_TEST),this.gl.frontFace(this.gl.CW),this.gl.enable(this.gl.BLEND),this.gl.colorMask(!0,!0,!0,!0),this.gl.bindBuffer(this.gl.ARRAY_BUFFER,null),this.gl.bindBuffer(this.gl.ELEMENT_AR"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "mask_setup_drawMesh",
+      "line": 1,
+      "byteOffset": 54175,
+      "needle": "drawMesh(t.getDrawableTextureIndices(r)",
+      "text": "drawMesh(t.getDrawableTextureIndices(r),t.getDrawableVertexIndexCount(r),t.getDrawableVertexCount(r),t.getDrawableVertexIndices(r),t.getDrawableVertices(r),t.getDrawableVertexUvs(r),t.getDrawableOpacity(r),f.CubismBlendMode_Normal,!1))}}this.gl.bindFramebuffer(this.gl.FRAMEBUFFER,Ft),e.setClippingContextBufferForMask(null),this.gl.viewport(Dt[0],Dt[1],Dt[2],Dt[3])}}findSameClip(t,e){for(let i=0;i<this._clippingContextListForMask.length;i++){const s=this._clippingContextListForMask[i],r=s._clippi"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "mask_context_accessor",
+      "line": 1,
+      "byteOffset": 77919,
+      "needle": "getClippingContextBufferForMask(){",
+      "text": "getClippingContextBufferForMask(){return this._clippingContextBufferForMask}setClippingContextBufferForDraw(t){this._clippingContextBufferForDraw=t}getClippingContextBufferForDraw(){return this._clippingContextBufferForDraw}startU"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+      "role": "renderer_core_identity",
+      "line": 1,
+      "byteOffset": 111012,
+      "needle": "this.renderer.initialize(this.coreModel)",
+      "text": "this.renderer.initialize(this.coreModel),this.renderer.setIsPremultipliedAlpha(!0)}getSize(){return["
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/live2dcubismcore.min.js",
+      "bytes": 207155,
+      "sha256": "25ae938cb4fe282ce189b357bcc97e603d1e1f7ec78bf04150d401c23cdc792f",
+      "role": "draw_order_array",
+      "line": 1,
+      "byteOffset": 13517,
+      "needle": "this.drawOrders=",
+      "text": "this.drawOrders=new Int32Array(_em.HEAP32.buffer,_csm.getDrawableDrawOrders(modelPtr),length),length=_csm.getDrawableCount(modelPtr),this.renderOrders=new Int32Array(_em.HEAP32.buf"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/live2dcubismcore.min.js",
+      "bytes": 207155,
+      "sha256": "25ae938cb4fe282ce189b357bcc97e603d1e1f7ec78bf04150d401c23cdc792f",
+      "role": "stable_vertex_views",
+      "line": 1,
+      "byteOffset": 15186,
+      "needle": "this.vertexPositions=new Array",
+      "text": "this.vertexPositions=new Array(length);for(var _vertexPositions=new Uint32Array(_em.HEAPU32.buffer,_csm.getDrawableVertexPositions(modelPtr),length),i=0;i<_vertexPositions.length;i++)this.vertexPositions[i]=new Float32Array(_em.HEAPF32.buffer,_vertexPositions[i],2*length2[i]);length=_csm.getDrawableCount(modelPtr),length2=new Int32Array(_em.HEAP32.buffer,_csm.getDrawableVertexCounts(modelPtr),length),this.vertexUvs=new Array(length);for(var _vertexUvs=new Uint32Array(_em.HEAPU32.buffer,_csm.getDrawableVertexUvs(modelPtr),length),i=0;i<_vertexUv"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/live2dcubismcore.min.js",
+      "bytes": 207155,
+      "sha256": "25ae938cb4fe282ce189b357bcc97e603d1e1f7ec78bf04150d401c23cdc792f",
+      "role": "stable_index_views",
+      "line": 1,
+      "byteOffset": 15957,
+      "needle": "this.indices=new Array",
+      "text": "this.indices=new Array(length);for(var _indices=new Uint32Array(_em.HEAPU32.buffer,_csm.getDrawableIndices(modelPtr),length),i=0;i<_indices.length;i++)this.indices[i]=new Uint16Array(_em.HEAPU16.buffer,_indices[i],length2[i])}return Drawables.prototype.resetDynamicFlags=function(){_csm.resetDrawableDynamicFlags(this._modelPtr)},Drawables}()),Version=(Live2DCubismCore.Drawables=Drawables,function(){function Utils(){}return Utils.hasBlendAdditiveBi"
+    }
+  ],
+  "scopeLimits": [
+    "No actual runtime result, delivered byte hash, or geometry packet was collected.",
+    "Current canonical372 lacks the native_parent projection branch and native actor parser.",
+    "The lock must not be silently applied to the unaccepted story_crowd prototype."
+  ]
+}

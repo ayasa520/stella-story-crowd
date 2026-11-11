@@ -1,0 +1,1377 @@
+{
+  "id": "soldier01-static",
+  "scene": 10040051,
+  "route": [
+    4,
+    5,
+    6
+  ],
+  "target": 5,
+  "kind": "character",
+  "model": "soldier01",
+  "captureNodes": [
+    5
+  ],
+  "routeGuard": {
+    "sceneId": 10040051,
+    "route": [
+      4,
+      5,
+      6
+    ],
+    "rows": [
+      {
+        "scenarioId": 4,
+        "nativeRow": {
+          "bg_music": "",
+          "bg_picture": "",
+          "character": "",
+          "character_image": "",
+          "motion": "",
+          "msg_character": "衛兵",
+          "msg_text": "危险人物……？能说得更详细些吗？",
+          "position": "",
+          "se": "",
+          "talk_chara": "",
+          "video": "",
+          "voice": "",
+          "scenario_id": 4,
+          "uniq_id": 1004005100004,
+          "is_root": 0,
+          "scenario_type": 2,
+          "battle_stage_id": 0,
+          "command": [
+            "",
+            "",
+            ""
+          ],
+          "branch_list": [
+            {
+              "transition_list": [
+                {
+                  "uniq_id": 1004005110042,
+                  "transition_id": 4201,
+                  "next_scenario_id": 5,
+                  "next_scenario_label": ""
+                }
+              ],
+              "uniq_id": 1004005110042,
+              "branch_id": 42,
+              "type": 2,
+              "quote_voice": "",
+              "gain_points": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "msg_quote": "是我亲眼看见的，绝对是个危险人物。",
+              "msg_quote_subject": "坚持己见"
+            },
+            {
+              "transition_list": [],
+              "uniq_id": 1004005110043,
+              "branch_id": 43,
+              "type": 3,
+              "quote_voice": "",
+              "gain_points": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "msg_quote": "",
+              "msg_quote_subject": "说得像模像样"
+            }
+          ]
+        },
+        "reviewIdentity": {
+          "stableKey": "s10040051-p29-at0036",
+          "sourceText": "危険人物だと……？\nもう少し、詳しく聞かせてくれるか？",
+          "recordings": [
+            {
+              "segmentId": "p29-s10040051",
+              "start": 36.0,
+              "end": 50.0,
+              "sourceAnchorSeconds": 36,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/coarse-1hz/crops/001170-dialogue.png",
+              "ocrEventId": "merged-0011",
+              "sourceSha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+              "originalOCRText": "危険人物だと……？もう少し、詳しく聞かせてくれるか？",
+              "ocrConfidence": 0.9926,
+              "ocrReviewReasons": [],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  36,
+                  50
+                ],
+                "canonicalAnchorSeconds": 36,
+                "action": "replace",
+                "speaker": "衛兵",
+                "text": "危険人物だと……？\nもう少し、詳しく聞かせてくれるか？",
+                "witnessTimes": [
+                  39,
+                  41
+                ]
+              },
+              "rootReviewWitnessTime": null,
+              "recordingId": "bili-capital-29"
+            }
+          ],
+          "branches": [
+            {
+              "branchId": 42,
+              "stableKey": "s10040051-p29-at0036-left",
+              "nativeIdOrigin": "authored",
+              "verification": "observed",
+              "state": "confirmed",
+              "evidence": [
+                {
+                  "segmentId": "p29-s10040051",
+                  "start": 36.0,
+                  "end": 50.0,
+                  "sourceAnchorSeconds": 36,
+                  "ocrReviewed": true,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/coarse-1hz/crops/001170-dialogue.png",
+                  "visualReviewer": "root",
+                  "rootDecision": {
+                    "action": "root-reviewed-choice",
+                    "promptInterval": [
+                      36,
+                      50
+                    ],
+                    "canonicalAnchorSeconds": 36,
+                    "left": "言い張る",
+                    "right": "もっともらしく",
+                    "selected": "left",
+                    "quote": "俺自身が見たんですよ。\n絶対ヤバい奴ですって",
+                    "junction": false,
+                    "witnessTimes": [
+                      39,
+                      41,
+                      50
+                    ]
+                  },
+                  "rootReviewWitnessTime": null,
+                  "selected": true,
+                  "recordingId": "bili-capital-29"
+                }
+              ],
+              "gainPointsRecovered": false,
+              "sourceQuote": "俺自身が見たんですよ。\n絶対ヤバい奴ですって",
+              "sourceLabel": "言い張る"
+            },
+            {
+              "branchId": 43,
+              "stableKey": "s10040051-p29-at0036-right",
+              "nativeIdOrigin": "authored",
+              "verification": "observed",
+              "state": "missing",
+              "evidence": [
+                {
+                  "segmentId": "p29-s10040051",
+                  "start": 36.0,
+                  "end": 50.0,
+                  "sourceAnchorSeconds": 36,
+                  "ocrReviewed": true,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/coarse-1hz/crops/001170-dialogue.png",
+                  "visualReviewer": "root",
+                  "rootDecision": {
+                    "action": "root-reviewed-choice",
+                    "promptInterval": [
+                      36,
+                      50
+                    ],
+                    "canonicalAnchorSeconds": 36,
+                    "left": "言い張る",
+                    "right": "もっともらしく",
+                    "selected": "left",
+                    "quote": "俺自身が見たんですよ。\n絶対ヤバい奴ですって",
+                    "junction": false,
+                    "witnessTimes": [
+                      39,
+                      41,
+                      50
+                    ]
+                  },
+                  "rootReviewWitnessTime": null,
+                  "selected": false,
+                  "recordingId": "bili-capital-29"
+                }
+              ],
+              "gainPointsRecovered": false,
+              "sourceQuote": "",
+              "sourceLabel": "もっともらしく"
+            }
+          ]
+        }
+      },
+      {
+        "scenarioId": 5,
+        "nativeRow": {
+          "bg_music": "",
+          "bg_picture": "",
+          "character": "",
+          "character_image": "",
+          "motion": "",
+          "msg_character": "衛兵",
+          "msg_text": "不过，只有你一个人的目击证词……",
+          "position": "",
+          "se": "",
+          "talk_chara": "",
+          "video": "",
+          "voice": "",
+          "scenario_id": 5,
+          "uniq_id": 1004005100005,
+          "is_root": 0,
+          "scenario_type": 2,
+          "battle_stage_id": 0,
+          "command": [
+            "",
+            "",
+            ""
+          ],
+          "branch_list": [
+            {
+              "transition_list": [
+                {
+                  "uniq_id": 1004005110051,
+                  "transition_id": 5101,
+                  "next_scenario_id": 6,
+                  "next_scenario_label": ""
+                }
+              ],
+              "uniq_id": 1004005110051,
+              "branch_id": 51,
+              "type": 1,
+              "quote_voice": "",
+              "gain_points": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "msg_quote": "",
+              "msg_quote_subject": ""
+            }
+          ]
+        },
+        "reviewIdentity": {
+          "stableKey": "s10040051-p29-at0054",
+          "sourceText": "しかし、君一人の\n目撃証言だけではな……",
+          "recordings": [
+            {
+              "segmentId": "p29-s10040051",
+              "start": 54.0,
+              "end": 57.5,
+              "sourceAnchorSeconds": 54,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/coarse-1hz/crops/001680-dialogue.png",
+              "ocrEventId": "merged-0015",
+              "sourceSha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+              "originalOCRText": "しかし、君一人の目撃証言だけではな……",
+              "ocrConfidence": 0.99653,
+              "ocrReviewReasons": [
+                "content_variant_conflict"
+              ],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  54,
+                  57.5
+                ],
+                "canonicalAnchorSeconds": 54,
+                "action": "replace",
+                "speaker": "衛兵",
+                "text": "しかし、君一人の\n目撃証言だけではな……",
+                "witnessTime": 56
+              },
+              "rootReviewWitnessTime": 56,
+              "recordingId": "bili-capital-29"
+            }
+          ],
+          "branches": [
+            {
+              "branchId": 51,
+              "stableKey": "s10040051-p29-at0054-next",
+              "nativeIdOrigin": "authored",
+              "verification": "observed",
+              "state": "confirmed",
+              "evidence": [
+                {
+                  "segmentId": "p29-s10040051",
+                  "start": 54.0,
+                  "end": 57.5,
+                  "sourceAnchorSeconds": 54,
+                  "ocrReviewed": true,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/coarse-1hz/crops/001680-dialogue.png",
+                  "ocrEventId": "merged-0015",
+                  "sourceSha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90",
+                  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+                  "originalOCRText": "しかし、君一人の目撃証言だけではな……",
+                  "ocrConfidence": 0.99653,
+                  "ocrReviewReasons": [
+                    "content_variant_conflict"
+                  ],
+                  "visualReviewer": "root",
+                  "rootDecision": {
+                    "interval": [
+                      54,
+                      57.5
+                    ],
+                    "canonicalAnchorSeconds": 54,
+                    "action": "replace",
+                    "speaker": "衛兵",
+                    "text": "しかし、君一人の\n目撃証言だけではな……",
+                    "witnessTime": 56
+                  },
+                  "rootReviewWitnessTime": 56,
+                  "nextStableKey": "s10040051-p29-at0060",
+                  "basis": "Consecutive fixed recording anchors inside one manually identified scene.",
+                  "recordingId": "bili-capital-29"
+                }
+              ],
+              "gainPointsRecovered": false
+            }
+          ]
+        }
+      },
+      {
+        "scenarioId": 6,
+        "nativeRow": {
+          "bg_music": "",
+          "bg_picture": "",
+          "character": "",
+          "character_image": "",
+          "motion": "",
+          "msg_character": "ユリウス",
+          "msg_text": "既然如此，不是更应当去确认，究竟是真是假吗？",
+          "position": "",
+          "se": "",
+          "talk_chara": "",
+          "video": "",
+          "voice": "",
+          "scenario_id": 6,
+          "uniq_id": 1004005100006,
+          "is_root": 0,
+          "scenario_type": 2,
+          "battle_stage_id": 0,
+          "command": [
+            "",
+            "",
+            ""
+          ],
+          "branch_list": [
+            {
+              "transition_list": [
+                {
+                  "uniq_id": 1004005110061,
+                  "transition_id": 6101,
+                  "next_scenario_id": 7,
+                  "next_scenario_label": ""
+                }
+              ],
+              "uniq_id": 1004005110061,
+              "branch_id": 61,
+              "type": 1,
+              "quote_voice": "",
+              "gain_points": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "msg_quote": "",
+              "msg_quote_subject": ""
+            }
+          ]
+        },
+        "reviewIdentity": {
+          "stableKey": "s10040051-p29-at0060",
+          "sourceText": "ならばこそ、真実かどうか確かめねばならないのではないかな？",
+          "recordings": [
+            {
+              "segmentId": "p29-s10040051",
+              "start": 60.0,
+              "end": 63.5,
+              "sourceAnchorSeconds": 60,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/coarse-1hz/crops/001890-dialogue.png",
+              "ocrEventId": "merged-0016",
+              "sourceSha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+              "originalOCRText": "ならばこそ、真実かどうか確かめねばならないのではないかな？",
+              "ocrConfidence": 0.99357,
+              "ocrReviewReasons": [],
+              "recordingId": "bili-capital-29"
+            }
+          ],
+          "branches": [
+            {
+              "branchId": 61,
+              "stableKey": "s10040051-p29-at0060-next",
+              "nativeIdOrigin": "authored",
+              "verification": "observed",
+              "state": "confirmed",
+              "evidence": [
+                {
+                  "segmentId": "p29-s10040051",
+                  "start": 60.0,
+                  "end": 63.5,
+                  "sourceAnchorSeconds": 60,
+                  "ocrReviewed": false,
+                  "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/coarse-1hz/crops/001890-dialogue.png",
+                  "ocrEventId": "merged-0016",
+                  "sourceSha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90",
+                  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+                  "originalOCRText": "ならばこそ、真実かどうか確かめねばならないのではないかな？",
+                  "ocrConfidence": 0.99357,
+                  "ocrReviewReasons": [],
+                  "nextStableKey": "s10040051-p29-at0065",
+                  "basis": "Consecutive fixed recording anchors inside one manually identified scene.",
+                  "recordingId": "bili-capital-29"
+                }
+              ],
+              "gainPointsRecovered": false
+            }
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": 4,
+        "target": 5,
+        "branchId": 42,
+        "transition": {
+          "uniq_id": 1004005110042,
+          "transition_id": 4201,
+          "next_scenario_id": 5,
+          "next_scenario_label": ""
+        }
+      },
+      {
+        "source": 5,
+        "target": 6,
+        "branchId": 51,
+        "transition": {
+          "uniq_id": 1004005110051,
+          "transition_id": 5101,
+          "next_scenario_id": 6,
+          "next_scenario_label": ""
+        }
+      }
+    ]
+  },
+  "sourceComparison": {
+    "request": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p29-identity-v1/soldier01-exact-static-assembled-reference-request.json",
+      "bytes": 5360,
+      "sha256": "20c8fcca7d7fad0f0aa3c5b025f392d35a19243f4288b48a6229bfd59d969fd8"
+    },
+    "originalTargetIdentity": {
+      "sceneId": 10040051,
+      "scenarioId": 5,
+      "stableKey": "s10040051-p29-at0054",
+      "sourceText": "しかし、君一人の\n目撃証言だけではな……"
+    },
+    "originalFullFrames": [
+      {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/root-review/frames/2301181cfd46-001680.jpg",
+        "sha256": "547adef297c8d56d0c559195b4c8063a0b266c3e5f6627a964a2ac9307e010e2",
+        "video": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+        "videoSha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90",
+        "time": 56.0
+      }
+    ],
+    "oldExpectedNativeFieldsAreHistoricalOnly": true
+  },
+  "fields": {
+    "character": "live2d/AC_soldier01"
+  },
+  "expectedNativeRow": null,
+  "observedNativeRowInformationalOnly": {
+    "bg_music": "",
+    "bg_picture": "",
+    "character": "",
+    "character_image": "",
+    "motion": "",
+    "msg_character": "衛兵",
+    "msg_text": "不过，只有你一个人的目击证词……",
+    "position": "",
+    "se": "",
+    "talk_chara": "",
+    "video": "",
+    "voice": "",
+    "scenario_id": 5,
+    "uniq_id": 1004005100005,
+    "is_root": 0,
+    "scenario_type": 2,
+    "battle_stage_id": 0,
+    "command": [
+      "",
+      "",
+      ""
+    ],
+    "branch_list": [
+      {
+        "transition_list": [
+          {
+            "uniq_id": 1004005110051,
+            "transition_id": 5101,
+            "next_scenario_id": 6,
+            "next_scenario_label": ""
+          }
+        ],
+        "uniq_id": 1004005110051,
+        "branch_id": 51,
+        "type": 1,
+        "quote_voice": "",
+        "gain_points": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "msg_quote": "",
+        "msg_quote_subject": ""
+      }
+    ]
+  },
+  "rebindAllExpectedFieldsAtFinalFreeze": true,
+  "defaultOriginalAdvProjectionUnmodified": true,
+  "cameraOverride": null,
+  "offsetOverride": null,
+  "scaleOverride": null,
+  "installable": false,
+  "scopeApproved": false,
+  "browserAuthorized": false,
+  "acceptanceScope": "static_visible_costume_resource_reference_only",
+  "motionFaceGeometryOriginalWrapperCsvOrFullChapterAccepted": false,
+  "expectedCompiledDifferencesToBindAfterRootRegistration": null,
+  "resourceBinding": {
+    "model": "soldier01",
+    "available": true,
+    "catalogRow": {
+      "id": "soldier01",
+      "native_id": "live2d/AC_soldier01",
+      "label": "soldier01",
+      "model_url": "models/soldier01/ac/ac.model3.json",
+      "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/ac.model3.json",
+      "detail_url": "models/soldier01/detail.json",
+      "motions": [
+        {
+          "token": "act_egao_w",
+          "kind": "body",
+          "label": "笑容 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_egao_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_egao_w.motion3.json"
+        },
+        {
+          "token": "act_ikaru",
+          "kind": "body",
+          "label": "生气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_ikaru.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_ikaru.motion3.json"
+        },
+        {
+          "token": "act_ikaru_w",
+          "kind": "body",
+          "label": "生气 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_ikaru_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_ikaru_w.motion3.json"
+        },
+        {
+          "token": "act_nayamu",
+          "kind": "body",
+          "label": "烦恼",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_nayamu.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_nayamu.motion3.json"
+        },
+        {
+          "token": "act_nayamu_w",
+          "kind": "body",
+          "label": "烦恼 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_nayamu_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_nayamu_w.motion3.json"
+        },
+        {
+          "token": "act_normal_w",
+          "kind": "body",
+          "label": "平常 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_normal_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_normal_w.motion3.json"
+        },
+        {
+          "token": "act_odoroku",
+          "kind": "body",
+          "label": "惊讶",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_odoroku.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_odoroku.motion3.json"
+        },
+        {
+          "token": "act_odoroku_w",
+          "kind": "body",
+          "label": "惊讶 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_odoroku_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_odoroku_w.motion3.json"
+        },
+        {
+          "token": "act_tameiki",
+          "kind": "body",
+          "label": "叹气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_tameiki.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_tameiki.motion3.json"
+        },
+        {
+          "token": "act_unazuku",
+          "kind": "body",
+          "label": "点头",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_unazuku.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_unazuku.motion3.json"
+        },
+        {
+          "token": "add_select_C",
+          "kind": "body",
+          "label": "add_select_C",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_add_select_C.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_add_select_C.motion3.json"
+        },
+        {
+          "token": "add_select_L",
+          "kind": "body",
+          "label": "add_select_L",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_add_select_L.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_add_select_L.motion3.json"
+        },
+        {
+          "token": "add_select_R",
+          "kind": "body",
+          "label": "add_select_R",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_add_select_R.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_add_select_R.motion3.json"
+        },
+        {
+          "token": "face_egao_w",
+          "kind": "face",
+          "label": "笑容 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_egao_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_egao_w.motion3.json"
+        },
+        {
+          "token": "face_ikaru",
+          "kind": "face",
+          "label": "生气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_ikaru.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_ikaru.motion3.json"
+        },
+        {
+          "token": "face_ikaru_w",
+          "kind": "face",
+          "label": "生气 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_ikaru_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_ikaru_w.motion3.json"
+        },
+        {
+          "token": "face_nayamu",
+          "kind": "face",
+          "label": "烦恼",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_nayamu.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_nayamu.motion3.json"
+        },
+        {
+          "token": "face_nayamu_w",
+          "kind": "face",
+          "label": "烦恼 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_nayamu_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_nayamu_w.motion3.json"
+        },
+        {
+          "token": "face_normal_w",
+          "kind": "face",
+          "label": "平常 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_normal_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_normal_w.motion3.json"
+        },
+        {
+          "token": "face_odoroku",
+          "kind": "face",
+          "label": "惊讶",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_odoroku.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_odoroku.motion3.json"
+        },
+        {
+          "token": "face_odoroku_w",
+          "kind": "face",
+          "label": "惊讶 · 保持",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_odoroku_w.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_odoroku_w.motion3.json"
+        },
+        {
+          "token": "face_talk_large",
+          "kind": "face",
+          "label": "说话（大）",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_talk_large.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_talk_large.motion3.json"
+        },
+        {
+          "token": "face_talk_normal",
+          "kind": "face",
+          "label": "说话",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_talk_normal.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_talk_normal.motion3.json"
+        },
+        {
+          "token": "face_talk_off",
+          "kind": "face",
+          "label": "闭嘴",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_talk_off.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_talk_off.motion3.json"
+        },
+        {
+          "token": "face_talk_small",
+          "kind": "face",
+          "label": "说话（小）",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_talk_small.motion3.json",
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_talk_small.motion3.json"
+        }
+      ],
+      "script_motions": [
+        {
+          "token": "act_egao",
+          "kind": "body",
+          "label": "笑容",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_egao_w.motion3.json",
+          "state": "act_egao_w",
+          "trigger": "act_egao_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_egao_w.motion3.json"
+        },
+        {
+          "token": "act_ikaru",
+          "kind": "body",
+          "label": "生气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_ikaru.motion3.json",
+          "state": "act_ikaru",
+          "trigger": "act_ikaru",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "act_ikaru_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_ikaru.motion3.json"
+        },
+        {
+          "token": "act_nayamu",
+          "kind": "body",
+          "label": "烦恼",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_nayamu.motion3.json",
+          "state": "act_nayamu",
+          "trigger": "act_nayamu",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "act_nayamu_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_nayamu.motion3.json"
+        },
+        {
+          "token": "act_normal",
+          "kind": "body",
+          "label": "平常",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_normal_w.motion3.json",
+          "state": "act_normal_w",
+          "trigger": "act_normal_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_normal_w.motion3.json"
+        },
+        {
+          "token": "act_odoroku",
+          "kind": "body",
+          "label": "惊讶",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_odoroku.motion3.json",
+          "state": "act_odoroku",
+          "trigger": "act_odoroku",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "act_odoroku_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_odoroku.motion3.json"
+        },
+        {
+          "token": "act_tameiki",
+          "kind": "body",
+          "label": "叹气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_tameiki.motion3.json",
+          "state": "act_tameiki",
+          "trigger": "act_tameiki",
+          "loop": false,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_tameiki.motion3.json"
+        },
+        {
+          "token": "act_unazuku",
+          "kind": "body",
+          "label": "点头",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_unazuku.motion3.json",
+          "state": "act_unazuku",
+          "trigger": "act_unazuku",
+          "loop": false,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_unazuku.motion3.json"
+        },
+        {
+          "token": "face_egao",
+          "kind": "face",
+          "label": "笑容",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_egao_w.motion3.json",
+          "state": "face_egao_w",
+          "trigger": "face_egao_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_egao_w.motion3.json"
+        },
+        {
+          "token": "face_ikaru",
+          "kind": "face",
+          "label": "生气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_ikaru.motion3.json",
+          "state": "face_ikaru",
+          "trigger": "face_ikaru",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "face_ikaru_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_ikaru.motion3.json"
+        },
+        {
+          "token": "face_nayamu",
+          "kind": "face",
+          "label": "烦恼",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_nayamu.motion3.json",
+          "state": "face_nayamu",
+          "trigger": "face_nayamu",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "face_nayamu_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_nayamu.motion3.json"
+        },
+        {
+          "token": "face_normal",
+          "kind": "face",
+          "label": "平常",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_normal_w.motion3.json",
+          "state": "face_normal_w",
+          "trigger": "face_normal_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_normal_w.motion3.json"
+        },
+        {
+          "token": "face_odoroku",
+          "kind": "face",
+          "label": "惊讶",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_odoroku.motion3.json",
+          "state": "face_odoroku",
+          "trigger": "face_odoroku",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "face_odoroku_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_odoroku.motion3.json"
+        }
+      ],
+      "motion_bindings": {
+        "act_normal": {
+          "token": "act_normal",
+          "kind": "body",
+          "label": "平常",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_normal_w.motion3.json",
+          "state": "act_normal_w",
+          "trigger": "act_normal_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_normal_w.motion3.json"
+        },
+        "act_normal_w": {
+          "token": "act_normal",
+          "kind": "body",
+          "label": "平常",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_normal_w.motion3.json",
+          "state": "act_normal_w",
+          "trigger": "act_normal_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_normal_w.motion3.json"
+        },
+        "act_ikaru": {
+          "token": "act_ikaru",
+          "kind": "body",
+          "label": "生气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_ikaru.motion3.json",
+          "state": "act_ikaru",
+          "trigger": "act_ikaru",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "act_ikaru_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_ikaru.motion3.json"
+        },
+        "act_ikaru_w": {
+          "token": "act_ikaru",
+          "kind": "body",
+          "label": "生气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_ikaru.motion3.json",
+          "state": "act_ikaru",
+          "trigger": "act_ikaru",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "act_ikaru_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_ikaru.motion3.json"
+        },
+        "act_nayamu": {
+          "token": "act_nayamu",
+          "kind": "body",
+          "label": "烦恼",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_nayamu.motion3.json",
+          "state": "act_nayamu",
+          "trigger": "act_nayamu",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "act_nayamu_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_nayamu.motion3.json"
+        },
+        "act_nayamu_w": {
+          "token": "act_nayamu",
+          "kind": "body",
+          "label": "烦恼",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_nayamu.motion3.json",
+          "state": "act_nayamu",
+          "trigger": "act_nayamu",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "act_nayamu_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_nayamu.motion3.json"
+        },
+        "act_egao": {
+          "token": "act_egao",
+          "kind": "body",
+          "label": "笑容",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_egao_w.motion3.json",
+          "state": "act_egao_w",
+          "trigger": "act_egao_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_egao_w.motion3.json"
+        },
+        "act_egao_w": {
+          "token": "act_egao",
+          "kind": "body",
+          "label": "笑容",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_egao_w.motion3.json",
+          "state": "act_egao_w",
+          "trigger": "act_egao_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_egao_w.motion3.json"
+        },
+        "act_odoroku": {
+          "token": "act_odoroku",
+          "kind": "body",
+          "label": "惊讶",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_odoroku.motion3.json",
+          "state": "act_odoroku",
+          "trigger": "act_odoroku",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "act_odoroku_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_odoroku.motion3.json"
+        },
+        "act_odoroku_w": {
+          "token": "act_odoroku",
+          "kind": "body",
+          "label": "惊讶",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_odoroku.motion3.json",
+          "state": "act_odoroku",
+          "trigger": "act_odoroku",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "act_odoroku_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_odoroku.motion3.json"
+        },
+        "act_tameiki": {
+          "token": "act_tameiki",
+          "kind": "body",
+          "label": "叹气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_tameiki.motion3.json",
+          "state": "act_tameiki",
+          "trigger": "act_tameiki",
+          "loop": false,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_tameiki.motion3.json"
+        },
+        "act_tameiki_w": {
+          "token": "act_tameiki",
+          "kind": "body",
+          "label": "叹气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_tameiki.motion3.json",
+          "state": "act_tameiki",
+          "trigger": "act_tameiki",
+          "loop": false,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_tameiki.motion3.json"
+        },
+        "act_unazuku": {
+          "token": "act_unazuku",
+          "kind": "body",
+          "label": "点头",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_unazuku.motion3.json",
+          "state": "act_unazuku",
+          "trigger": "act_unazuku",
+          "loop": false,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_unazuku.motion3.json"
+        },
+        "act_unazuku_w": {
+          "token": "act_unazuku",
+          "kind": "body",
+          "label": "点头",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_act_unazuku.motion3.json",
+          "state": "act_unazuku",
+          "trigger": "act_unazuku",
+          "loop": false,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_act_unazuku.motion3.json"
+        },
+        "face_normal": {
+          "token": "face_normal",
+          "kind": "face",
+          "label": "平常",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_normal_w.motion3.json",
+          "state": "face_normal_w",
+          "trigger": "face_normal_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_normal_w.motion3.json"
+        },
+        "face_normal_w": {
+          "token": "face_normal",
+          "kind": "face",
+          "label": "平常",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_normal_w.motion3.json",
+          "state": "face_normal_w",
+          "trigger": "face_normal_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_normal_w.motion3.json"
+        },
+        "face_ikaru": {
+          "token": "face_ikaru",
+          "kind": "face",
+          "label": "生气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_ikaru.motion3.json",
+          "state": "face_ikaru",
+          "trigger": "face_ikaru",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "face_ikaru_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_ikaru.motion3.json"
+        },
+        "face_ikaru_w": {
+          "token": "face_ikaru",
+          "kind": "face",
+          "label": "生气",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_ikaru.motion3.json",
+          "state": "face_ikaru",
+          "trigger": "face_ikaru",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "face_ikaru_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_ikaru.motion3.json"
+        },
+        "face_nayamu": {
+          "token": "face_nayamu",
+          "kind": "face",
+          "label": "烦恼",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_nayamu.motion3.json",
+          "state": "face_nayamu",
+          "trigger": "face_nayamu",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "face_nayamu_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_nayamu.motion3.json"
+        },
+        "face_nayamu_w": {
+          "token": "face_nayamu",
+          "kind": "face",
+          "label": "烦恼",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_nayamu.motion3.json",
+          "state": "face_nayamu",
+          "trigger": "face_nayamu",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "face_nayamu_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_nayamu.motion3.json"
+        },
+        "face_egao": {
+          "token": "face_egao",
+          "kind": "face",
+          "label": "笑容",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_egao_w.motion3.json",
+          "state": "face_egao_w",
+          "trigger": "face_egao_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_egao_w.motion3.json"
+        },
+        "face_egao_w": {
+          "token": "face_egao",
+          "kind": "face",
+          "label": "笑容",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_egao_w.motion3.json",
+          "state": "face_egao_w",
+          "trigger": "face_egao_w",
+          "loop": true,
+          "transitions": [],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_egao_w.motion3.json"
+        },
+        "face_odoroku": {
+          "token": "face_odoroku",
+          "kind": "face",
+          "label": "惊讶",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_odoroku.motion3.json",
+          "state": "face_odoroku",
+          "trigger": "face_odoroku",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "face_odoroku_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_odoroku.motion3.json"
+        },
+        "face_odoroku_w": {
+          "token": "face_odoroku",
+          "kind": "face",
+          "label": "惊讶",
+          "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/motions/AC_soldier01_face_odoroku.motion3.json",
+          "state": "face_odoroku",
+          "trigger": "face_odoroku",
+          "loop": false,
+          "transitions": [
+            {
+              "target": "face_odoroku_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "url": "models/soldier01/ac/motions/AC_soldier01_face_odoroku.motion3.json"
+        }
+      },
+      "controller_url": "player/animation.json"
+    },
+    "actor": {
+      "position": {
+        "x": 0.0,
+        "y": -3.4200000762939453,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 5.199999809265137,
+        "y": 5.199999809265137,
+        "z": 5.199999809265137
+      },
+      "source": "com.sega.stella/files/AssetBundle/assets/ac_base_soldier01.prefab"
+    },
+    "responses": [
+      {
+        "role": "model-json",
+        "route": "/asset/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/ac.model3.json",
+        "local": {
+          "path": "story_crowd_data/assets/models/soldier01/ac/ac.model3.json",
+          "bytes": 2619,
+          "sha256": "7261476e17aff87c7dd565005c429294b57874b004349854bb942df59935cd25"
+        }
+      },
+      {
+        "role": "MOC",
+        "route": "/asset/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/ac.moc3",
+        "local": {
+          "path": "story_crowd_data/assets/models/soldier01/ac/ac.moc3",
+          "bytes": 80832,
+          "sha256": "0304b4b786540511c1c825b6007d305c94b8951f94b45024047b495f8b4e6c06"
+        }
+      },
+      {
+        "role": "texture",
+        "route": "/asset/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_soldier01/ac/textures/texture_00.png",
+        "local": {
+          "path": "story_crowd_data/assets/models/soldier01/ac/textures/texture_00.png",
+          "bytes": 997343,
+          "sha256": "24086e6ae90cd4773c57f85d81f77fcae0a24de5376f6ce431b2e2fe04b2a925"
+        }
+      },
+      {
+        "role": "detail",
+        "route": "/api/model/soldier01",
+        "local": {
+          "path": "story_crowd_data/assets/models/soldier01/detail.json",
+          "bytes": 17243,
+          "sha256": "83f9f8b91547cfb75c64dbbeeffaab482ad463d1cce0f6dd619498081a1d2ce1"
+        }
+      }
+    ]
+  }
+}

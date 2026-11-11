@@ -1,0 +1,110 @@
+{
+  "status": "offline_primary_source_review_only",
+  "reviewer": "/root/p24_background_final_qa",
+  "sourceCommit": "37232806a8180375a4b7a178e27157bb16d12201",
+  "files": [
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/viewer.js",
+      "bytes": 11002,
+      "sha256": "d3178fb7512a9b87de833be4ad49c08dbfcbb149cc620bd1610973c7e2b6f6bd"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/model_resources.js",
+      "bytes": 1747,
+      "sha256": "6d83f81d842ad91b7afc72286bfbbb9c658c119c512921c173c33534a397e98d"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/pixi.min.js",
+      "bytes": 460333,
+      "sha256": "403f2f2ee8145fa17f60c5c89403056efe2680e5096ec2762036486914ed19c5"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/live2dcubismcore.min.js",
+      "bytes": 207155,
+      "sha256": "25ae938cb4fe282ce189b357bcc97e603d1e1f7ec78bf04150d401c23cdc792f"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/player.js",
+      "bytes": 41539,
+      "sha256": "a31cd44fec2e8d19c374b8b53eaced38eeed3f546a2e9ef3daee89840cd1f1b9"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/player_scene.js",
+      "bytes": 11541,
+      "sha256": "7260902403dd87a4dcaefb51229ff52f9f5eb4576f521eb4bb004741944f1194"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/actor_placement.js",
+      "bytes": 6158,
+      "sha256": "32bd6c4a63e289fa58b0b6b8990ba06d5ffeff7d2bbd230ce1257fdaf75e6313"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/background.js",
+      "bytes": 3654,
+      "sha256": "d45b594259a2e3c13e2edf6f3413d9e25f902749493f30076974f1c0b987f0a3"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/visual_frame_clock.js",
+      "bytes": 5674,
+      "sha256": "b9a0694500c05e9175395c308fc9866530cb1c8e61caa81cce4073e97f05fbc2"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player.html",
+      "bytes": 2766,
+      "sha256": "b97c6143a3333726bf43fefa837edc85ea4548352a1b8263dfdaa90dce1fe329"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/playback/compile.mjs",
+      "bytes": 5059,
+      "sha256": "9e03bfb5d7527ce0d73017c3d222c843d5776152d9730506eb7a7f2cc1de4793"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/playback/serve.py",
+      "bytes": 7932,
+      "sha256": "c83e4e1270cd164890c446bfdf0b45c2732fa6e082c9301f7939be149e029aac"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/playback/index.html",
+      "bytes": 1679,
+      "sha256": "8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/playback/canary.json",
+      "bytes": 205,
+      "sha256": "d1219b9c3e2e3faa0540af554c20d44b50b0f483c23d4b9e0359a619e5acd530"
+    }
+  ],
+  "updateOrder": {
+    "exactSdkSequence": "this.emit(\"beforeModelUpdate\"),o.update(),o.loadParameters()",
+    "renderPoseHook": "beforeModelUpdate",
+    "samplePoint": "before original Core.update",
+    "postPoint": "after original renderer return"
+  },
+  "sourceFacts": [
+    "NativePlacedViewer uses original actor CH_top and camera, not generic fit-to-window",
+    "Model loader uses Live2DModel.from and a shared texture lease; instrumentation returns the original factory Promise",
+    "PIXI actor framebuffer is distinct from viewport CSS and from source-image bounds",
+    "NativeBackground derives3:4 plane from original Quad, then fills measured9:16 stage",
+    "Adapter wrapper default is100%x930;480x856 is an explicit QA outer preset",
+    "compile.mjs applies only registered exact packet examples to private source objects before canonical compilePreview"
+  ],
+  "sameFrameLimit": "Whole-stage asynchronous capture cannot be automatically equated with actor PNG/RGBA; readable exact rolling HUD tuple required",
+  "priorInstrument": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/assembled-three-case-plan-20261112-v1/instrument.js",
+    "bytes": 12214,
+    "sha256": "73dc73e3ed2ff0f4859ab9966fa8c388d6148233e88276c73c00be3202aa5d6f"
+  },
+  "priorLifecycle": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/assembled-three-case-plan-20261112-v1/run-v1/browser-lifecycle.json",
+    "bytes": 16916,
+    "sha256": "b51b1e8af40ac44e7990b0ea2d7a04e44fbc8391651ab60e164017496139f6c7"
+  },
+  "noNewRuntimeEvidence": true,
+  "browserOpened": false,
+  "formalWrites": false
+}
