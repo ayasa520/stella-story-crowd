@@ -1,0 +1,120 @@
+async page => {
+  // Observe the real player/channel without replacing playback, fetch, Web
+  // Audio or frame time. The only mutations below are existing transport
+  // actions and its public preview-speed API; native documents stay intact.
+  const logs=[],errors=[],entries=[],samples=[],groups=[];
+  let currentNode='',cdp,contextId,objectsId,frame;
+  const onConsole=message=>{
+    const text=message.text();
+    if(text.startsWith('STORY_')||message.type()==='error')logs.push({type:message.type(),text});
+    if(text.startsWith('STORY_PLAYER_ENTER ')){
+      currentNode=text.split(' ')[1];entries.push(currentNode);
+    }
+  };
+  const onError=error=>errors.push(String(error));
+  page.on('console',onConsole);page.on('pageerror',onError);
+  const action=async action=>page.evaluate(action=>{
+    document.querySelector('iframe').contentWindow.postMessage(
+      {type:'stella-player-action',action},location.origin);
+  },action);
+  const wait=async predicate=>{
+    const end=Date.now()+15000;
+    while(!await predicate()){
+      if(Date.now()>end)throw new Error('Observed player condition did not complete');
+      if(errors.length)throw new Error(errors[0]);
+      await page.waitForTimeout(25);
+    }
+  };
+  const state=()=>frame.evaluate(()=>{
+    const a=globalThis.__bgmClockAudit,m=a.player;
+    return {phase:document.body.dataset.phase,resource:m.current?.resource||'',
+      pendingFade:!!m.cancelFade,voices:m.players.size,clock:m.clock.snapshot(),
+      audioContextState:m.context?.state,audioContextSeconds:m.context?.currentTime};
+  });
+  const ready=async()=>{
+    await wait(async()=>['text','ready'].includes((await state()).phase));
+    // Check and complete text in the same renderer task. A parent-message
+    // round trip can arrive after natural text completion and advance a card
+    // instead, so it cannot safely stand in for this phase-specific action.
+    await frame.evaluate(()=>{
+      if(document.body.dataset.phase==='text')document.querySelector('#advance').click();
+    });
+    await wait(async()=>(await state()).phase==='ready');
+  };
+  const enter=async id=>{
+    await ready();await action('advance');
+    await wait(()=>currentNode==='10280014:'+id);
+  };
+  const rate=speed=>frame.evaluate(speed=>globalThis.__bgmClockAudit.player.clock.rateOwner.setSpeed(speed),speed);
+  const label=name=>frame.evaluate(name=>{globalThis.__bgmClockAudit.group=name;},name);
+  const completed=()=>wait(async()=>!(await state()).pendingFade);
+  const restart=async()=>{
+    await action('restart');await wait(()=>currentNode==='10280014:20');await ready();
+  };
+  let failure=null;
+  try{
+    await page.goto('http://127.0.0.1:5188/?scene=10280014&node=20');
+    frame=page.frames().find(row=>row.url().includes('/player/player.html'));
+    if(!frame)throw new Error('Production iframe missing');
+    await frame.waitForFunction(()=>document.body.dataset.phase==='ready',null,{timeout:15000});
+    cdp=await page.context().newCDPSession(page);
+    const contexts=[];cdp.on('Runtime.executionContextCreated',event=>contexts.push(event.context));
+    await cdp.send('Runtime.enable');
+    const tree=await cdp.send('Page.getFrameTree');
+    const playerFrame=tree.frameTree.childFrames.find(row=>row.frame.url.includes('/player/player.html'));
+    contextId=contexts.find(row=>row.auxData?.frameId===playerFrame.frame.id&&row.auxData.isDefault).id;
+    const prototype=await cdp.send('Runtime.evaluate',{contextId,awaitPromise:true,
+      expression:"import('/studio/music_player.js').then(module=>module.StoryMusicPlayer.prototype)"});
+    const objects=await cdp.send('Runtime.queryObjects',{prototypeObjectId:prototype.result.objectId});
+    objectsId=objects.objects.objectId;
+    const installed=await cdp.send('Runtime.callFunctionOn',{objectId:objectsId,returnByValue:true,
+      functionDeclaration:`function(){
+        if(this.length!==1)throw new Error('Expected exactly one real music channel');
+        const m=this[0],a=globalThis.__bgmClockAudit={player:m,group:'normal',samples:[]};
+        a.remove=m.clock.subscribe(clock=>{
+          if(a.samples.length>10000)return;
+          a.samples.push({group:a.group,wall:performance.now(),game:clock.gameSeconds,
+            frame:clock.frame,delta:clock.deltaSeconds,rate:clock.previewRate,
+            generation:m.generation,fade:!!m.cancelFade,context:m.context?.state,
+            audio:m.context?.currentTime,resource:m.current?.resource||'',
+            voices:[...m.players].map(v=>({resource:v.metadata.resource,gain:v.volume,time:v.currentTime}))});
+        });
+        return {instances:this.length,clock:m.clock.snapshot()};
+      }`});
+    if(installed.exceptionDetails)throw new Error(JSON.stringify(installed.exceptionDetails));
+    // The first trusted pointer resumes the real AudioContext and advances
+    // the already-ready predecessor. No autoplay policy is overridden.
+    await frame.locator('#viewport').click({position:{x:250,y:300}});
+    await wait(()=>currentNode==='10280014:21');
+    await wait(async()=>(await state()).resource==='bgm_adv_fuon02_cd2_14');await completed();
+    groups.push({name:'normal-start',state:await state()});
+    for(let id=22;id<=32;id++){
+      await enter(id);
+      if([30,31].includes(id)){await ready();await completed();}
+    }
+    groups.push({name:'normal-stop-and-return',state:await state()});
+    await restart();await rate(2);await label('double');await enter(21);
+    await wait(async()=>(await state()).resource==='bgm_adv_fuon02_cd2_14');await completed();
+    groups.push({name:'double-speed-start',state:await state()});
+    await restart();await rate(1);await label('pause-stop');await enter(21);
+    await wait(async()=>{const s=await state();return s.pendingFade&&s.voices===1;});
+    await rate(0);const before=await state();await page.waitForTimeout(250);const paused=await state();
+    groups.push({name:'preview-pause-audio-independent',before,paused});
+    await action('stop');await page.waitForTimeout(150);
+    groups.push({name:'stop-during-fade',state:await state()});
+    await rate(1);await restart();await label('restart');await enter(21);
+    await wait(async()=>(await state()).resource==='bgm_adv_fuon02_cd2_14');await completed();await enter(22);
+    groups.push({name:'restart-after-cancel',state:await state()});
+  }catch(error){failure={name:error.name,message:String(error.message),stack:error.stack};}
+  finally{
+    if(frame){
+      try{samples.push(...await frame.evaluate(()=>{
+        const a=globalThis.__bgmClockAudit;if(!a)return[];a.remove();return a.samples;
+      }));}catch(error){errors.push('capture teardown: '+String(error));}
+    }
+    if(cdp)await cdp.detach();page.off('console',onConsole);page.off('pageerror',onError);
+  }
+  return {failure,nodes:entries.length,entries,groups,samples,logs,pageErrors:errors,
+    rootViewedImages:false,subjectiveAudioReview:false,changedNativeFields:0,
+    productionPath:'/player/player.html',observerOnly:true};
+}

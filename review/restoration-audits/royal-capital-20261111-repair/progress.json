@@ -148,7 +148,14 @@
     "speakerCoverage": "All 69 observed source labels across 140 library scenes",
     "ordinaryChoiceBadge": "Derived from actual outgoing choice edges; SetJunction semantics preserved",
     "effectCompilation": "Uses the effect inventory of the same immutable asset revision",
-    "normalVisualClock": "ActorAnimation and Normal card channels share one bounded game-frame clock; Wait, audio, movies and unreviewed effect clocks remain independent"
+    "normalVisualClock": "ActorAnimation and Normal card channels share one bounded game-frame clock; Wait, audio, movies and unreviewed effect clocks remain independent",
+    "bgmGainClock": {
+      "nativeEvidence": "native-bgm-entry-v1/REPORT.md",
+      "runtime": "Shared bounded game-frame clock for gain ramps; Web Audio sample transport remains independent",
+      "scope": "Only the ramp clock/subscription lifetime and diagnostic logs changed; node-entry loading await retained",
+      "siteSourceCommit": "37232806a8180375a4b7a178e27157bb16d12201",
+      "deployment": "appgdep_6af4a6d5d60881918807e2fd1e738659"
+    }
   },
   "protected": {
     "originalBaselineFiles": 38,
@@ -192,8 +199,8 @@
     "explicitResources": "All140 installed scene documents resolve their catalog identities and payloads",
     "authenticatedOnlinePlayback": "Not claimed",
     "playerAudioStartup": "Shared dialogue/music channels and interaction resume now reach the actual/player iframe; production-route playback passed",
-    "siteSourceCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
-    "siteDeployment": "appgdep_6af47993f164819187158f93cd015db1",
+    "siteSourceCommit": "37232806a8180375a4b7a178e27157bb16d12201",
+    "siteDeployment": "appgdep_6af4a6d5d60881918807e2fd1e738659",
     "siteDeploymentStatus": "succeeded",
     "visualClockRegression": {
       "originalUnityVersion": "2019.4.21f1",
@@ -317,6 +324,23 @@
       "subagentVisualAcceptance": true,
       "originalCommandPhaseRecovered": false,
       "exactTimingValidated": false
+    },
+    "bgmGameClockRegression": {
+      "groups": 6,
+      "nodeVisits": 20,
+      "samples": 849,
+      "measuredGainComparisons": 401,
+      "maximumGainError": 1.8332400764098367e-08,
+      "pauseGameDelta": 0,
+      "pauseAudioDelta": 0.28800000000000026,
+      "stopAndRestartPassed": true,
+      "pageErrors": 0,
+      "favicon404": 2,
+      "chromeAfterCapture": 0,
+      "runtimeMembersByteMatched": 8,
+      "countedSeparatelyFrom207RestorationNodeVisits": true,
+      "originalNodeTimingRecovered": false,
+      "firstProbeCountFailureRetained": true
     }
   },
   "knownRemainingWork": [

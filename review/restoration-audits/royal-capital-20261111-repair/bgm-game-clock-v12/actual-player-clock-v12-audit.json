@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "sourceBase": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+  "runtimeArtifact": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/actual-player-clock-v12-phase-guarded.json",
+    "bytes": 481379,
+    "sha256": "3077aa336a7da3f6973d99cab53ee0458cb024e523394765cbcf940099da9247"
+  },
+  "nodeVisits": 20,
+  "groups": 6,
+  "samples": 849,
+  "measuredGainComparisons": 401,
+  "maximumGainError": 1.8332400764098367e-08,
+  "gainObservationOrder": "Observer runs before the ramp callback; compare each recorded gain with the preceding game-frame sample.",
+  "completedFadeGenerations": [
+    2,
+    3,
+    4,
+    6,
+    11
+  ],
+  "allCompletionsWithinOneGameFrame": true,
+  "pauseGameDelta": 0,
+  "pauseAudioDelta": 0.28800000000000026,
+  "pauseGainSpread": 0.0,
+  "stopCancelsSubscriptionAndAllVoices": true,
+  "cancelledGenerationDidNotComplete": true,
+  "source": [
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_player.js",
+      "bytes": 7120,
+      "sha256": "af60e047f8a1fb510f9bf66d75792f0e0ea1746eed497b7d7091d548a7cf1d8c",
+      "servedUrl": "/studio/music_player.js",
+      "servedBytesIdentical": true
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/visual_frame_clock.js",
+      "bytes": 5674,
+      "sha256": "b9a0694500c05e9175395c308fc9866530cb1c8e61caa81cce4073e97f05fbc2",
+      "servedUrl": "/studio/visual_frame_clock.js",
+      "servedBytesIdentical": true
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+    "[   10923ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5188/favicon.ico:0",
+    "[   18907ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5188/favicon.ico:0"
+  ],
+  "canaryProcessesAfterCapture": [],
+  "rootViewedImages": false,
+  "subjectiveAudioReview": false,
+  "originalNodeTimingRecovered": false,
+  "fullRestorationAccepted": false,
+  "retainedDiagnostic": "actual-player-clock-v12.json: one additional valid 32→33 visit was observed, so the strict expected20 wrapper failed at21. The probe's phase-specific action was made atomic; the subsequent run passed20. The original extra action was not independently traced and is not assigned to a player defect.",
+  "limits": [
+    "No authenticated online playback is claimed.",
+    "No native node field, loading-order implementation or audio sample clock was changed.",
+    "The raw clips were not subjectively listened to; this verifies actual Web Audio gain and transport clocks."
+  ]
+}
