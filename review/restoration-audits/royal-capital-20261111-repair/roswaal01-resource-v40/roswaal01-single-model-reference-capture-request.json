@@ -1,0 +1,55 @@
+{
+  "schema": "stella.single_model_reference_capture_request",
+  "status": "prepared_offline_not_executed",
+  "reviewer": "/root/felt_entry_offline_review",
+  "model": "roswaal01",
+  "resourceAudit": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p27-identity-v1/roswaal01-original-resource-gap-audit.json",
+    "sha256": "eb1da93686ea557e941c3b64328185b176f33ea3c37cd8386f3822eefdea5be7",
+    "bytes": 10443
+  },
+  "pendingNodes": [
+    {
+      "sceneId": 10200006,
+      "scenarioId": 13,
+      "stableKey": "s10200006-p27-at0070",
+      "sourceText": "――やーあや、\nお待たせしましたねーぇ",
+      "originalFullFrame": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/27/root-review/frames/3111a76b1dd3-002160.jpg",
+        "sha256": "cd8d3b29dda3b4809e9a329b2d0f4fc4f4a3901f6cdd45d26f7f3a4b59dccbe2",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/27-remote-dash-qn32.mp4",
+        "videoSha256": "3111a76b1dd3b7a797f3040c40de9c7e6a087c7caff64f4ef913393458103f55",
+        "time": 72.0
+      }
+    },
+    {
+      "sceneId": 10200006,
+      "scenarioId": 19,
+      "stableKey": "s10200006-p27-at0097",
+      "sourceText": "おやおやおや、クルシュ様？\nその、だろーぉなという仰りよう、\nどういった意図があるかお伺いしても？",
+      "originalFullFrame": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/27/root-review/frames/3111a76b1dd3-003075.jpg",
+        "sha256": "b11721df1c5a5075fd3b823f6ce5650c09bfc5d0531b9e29b04aa3f3a6c24c34",
+        "video": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/source-quality/27-remote-dash-qn32.mp4",
+        "videoSha256": "3111a76b1dd3b7a797f3040c40de9c7e6a087c7caff64f4ef913393458103f55",
+        "time": 102.5
+      }
+    }
+  ],
+  "minimalPreparation": [
+    "Create an isolated review-only single-model asset subset for roswaal01 from the audited original JSON/MOC/texture and all referenced motions; include a detail/catalog binding to original files and hashes. Do not install or assign a character to the pending native nodes.",
+    "Reuse the designated single Chrome session serially only after root authorization. Load exactly roswaal01 without another actor, using the audited original actor wrapper and a readable whole-model view.",
+    "Capture one unoccluded settled full-stage PNG plus raw model canvas PNG; record exact model ID, resource responses/source hashes, original model JSON/MOC/texture identities, and camera/wrapper settings. A neutral display pose is only for costume recognition and does not recover story acting.",
+    "Return PNG/index SHA evidence to the named offline image reviewer for direct comparison against both original full-frame witnesses; the root does not view images. Preserve pending if mantle/clothing remains ambiguous."
+  ],
+  "captureTargets": [
+    "Entire blue side hair and clown face/eye markings",
+    "High red-lined mantle collar and beige neck ruffles",
+    "Purple coat with gold trim and visible sleeve/glove shapes"
+  ],
+  "storyMotionFieldRequired": false,
+  "characterOnlyAcceptanceAfterDirectImageReview": true,
+  "rootConfirmed": false,
+  "browserOpened": false,
+  "officialWrites": 0
+}
