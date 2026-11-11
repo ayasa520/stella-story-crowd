@@ -1,0 +1,106 @@
+{
+  "version": 2,
+  "createdUtc": "2026-11-11T20:50:05.332849+00:00",
+  "reviewer": "/root/p15_p16_voice_evidence",
+  "rootConfirmed": false,
+  "status": "STATIC_CHECKS_PASSED_UNAPPLIED_RUNTIME_AND_POLICY_QA_PENDING",
+  "checks": {
+    "candidateNodeSyntaxExit": 0,
+    "patchDryRunExit": 0,
+    "restoreEntryAudioByteIdentical": true,
+    "phaseCommandsByteIdentical": true,
+    "allFourSourceAfterEqualsBefore": true,
+    "allV1FrozenFilesUnchanged": 15,
+    "v1FourSha256Unchanged": true,
+    "allReferencedArtifactAndEvidenceHashesRecomputed": true,
+    "fourNativeAndFourReviewSceneGuardsUnchanged": true,
+    "handlerAndTerminalObserverPrecedeFirstDiagnostic": true,
+    "fallbackLoggerHasOwnNoThrowCatch": true,
+    "currentOwnerErrorDeliveryOutsideSafeReport": true
+  },
+  "process": {
+    "nice": 19,
+    "cpus": [
+      22,
+      23
+    ]
+  },
+  "scope": {
+    "productionApplied": false,
+    "registryChanged": false,
+    "nativeChanged": false,
+    "browserStarted": false,
+    "unitTestsAdded": false,
+    "dynamicDiagnosticFaultsExercised": false
+  },
+  "sourceAfter": [
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js",
+      "bytes": 45292,
+      "sha256": "d4bfd8dc7bdd08c64b737767fda9b538fb2a2c7e6ba9a97264355211b4d2f90b"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_player.js",
+      "bytes": 7120,
+      "sha256": "af60e047f8a1fb510f9bf66d75792f0e0ea1746eed497b7d7091d548a7cf1d8c"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_voice.js",
+      "bytes": 1883,
+      "sha256": "a2bd44ee5fd94899f196f94b60c349db8d924d9b04cf1873298d4bdc253abaae"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/visual_frame_clock.js",
+      "bytes": 5674,
+      "sha256": "b9a0694500c05e9175395c308fc9866530cb1c8e61caa81cce4073e97f05fbc2"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/build_proposal.py",
+      "bytes": 15696,
+      "sha256": "55c5081e7a4d3198282aac8caa5ad2aed6e7515b05f9464dbb1dbae03f2761e8"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/patch.diff",
+      "bytes": 5329,
+      "sha256": "66fa356cefbb1d31ccd948fa6e829f20b15d2dba0c866d65bf5afa2679308fd2"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/v1-to-v2.diff",
+      "bytes": 6335,
+      "sha256": "7f39ef4ba9ba7c6121b6f83b1e0c11990156dc0405a9333462c68679916dbf98"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/PLAN.md",
+      "bytes": 10812,
+      "sha256": "b8d79830d1f9eef1cf81ba2a5bd615de14f83ef95663d5c24ae2c04a5c85d942"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/proposal-receipt.json",
+      "bytes": 7570,
+      "sha256": "056cc141f55385db949e9c08eea84332a9ea51a3ad11f3ac65928647cd31d00b"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/UNKNOWN.json",
+      "bytes": 1479,
+      "sha256": "86b0294699f5979cb83aa75b52157338b20d218ccec809711288f8a4babfa071"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/qa-route-guards.json",
+      "bytes": 15300,
+      "sha256": "0d0add6e760bdaaddb113ca500961c93ca3957043e9440fa4a871ff8ba1e6fd8"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/v1-preserved-files.json",
+      "bytes": 4118,
+      "sha256": "7671c2d5933783a2f5943c15948346998ad0e81bd47515c81468d45b456e7446"
+    }
+  ],
+  "limits": [
+    "Static syntax/dry-run/source comparison only; no browser or new unit tests.",
+    "No original CSV/phase/Wait/fade/restart/cue-zero or universal native ordering is signed.",
+    "Desired-state and inherited-owner record-only failure policy remain pending runtime QA.",
+    "The no-throw boundary covers the new observer diagnostics; existing component/fail internal logging is unchanged."
+  ]
+}

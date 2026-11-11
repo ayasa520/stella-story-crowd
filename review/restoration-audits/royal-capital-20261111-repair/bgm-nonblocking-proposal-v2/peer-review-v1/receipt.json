@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "reviewer": "/root/bgm_async_proposal_peer",
+  "createdUtc": "2026-11-11T20:43:34Z",
+  "status": "independent_static_review_complete_runtime_not_executed",
+  "canonicalHead": "37232806a8180375a4b7a178e27157bb16d12201",
+  "canonicalCleanBeforeAndAfter": true,
+  "patchSha256": "3a43384df021d63c220d29141a25160b93d9aede10524646b6342ea5939f39dc",
+  "candidateSha256": "5600243351652d08b13c9b3c73285fd6a48f85bc784cb365604ffe9de3febbca",
+  "report": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/peer-review-v1/REPORT.md",
+    "bytes": 13178,
+    "sha256": "26b4dc0ff1e72b968abe77d21e66d532324d7daf9dd1ae7bc4d7fc72bdd7972e"
+  },
+  "independentChecks": {
+    "fourCanonicalSourceHashesMatchAuthorBeforeReceipt": true,
+    "fourNativeSceneGuardsStillMatch": true,
+    "restoreEntryAudioByteIdentical": true,
+    "phaseCommandsByteIdentical": true,
+    "manifestEpisodeLabelsMatch1001_1014_1019": true,
+    "historicalSmokeReceiptContainsAllThreeSelectedRoutes": true,
+    "userConfirmedFirstThreeHandReviewPreserved": true,
+    "original19ProtectionDistinguishedFromManualReviewScope": true
+  },
+  "findings": [
+    {
+      "id": "ownership",
+      "classification": "no_unconditional_static_blocker_found",
+      "summary": "Independent music generation guards pending Stop/replacement/return-to-current; inherited entry generation alone does not cancel loading."
+    },
+    {
+      "id": "observer_exception_safety",
+      "classification": "concrete_conditional_code_gap_trigger_not_observed",
+      "candidateLines": [189, 194, 201, 207, 211, 212],
+      "summary": "SUBMITTED diagnostics precede promise handler attachment; FAILED reporting can skip error delivery if it throws; terminal catch can itself reject. Default clock/logger failure is unobserved."
+    },
+    {
+      "id": "desired_and_error_policy",
+      "classification": "explicit_policy_needs_acceptance_and_runtime_evidence",
+      "summary": "Desired resource is written at submission; a still-current request failing after inherited successor entry is logged for its old owner without stopping/retrying the successor."
+    },
+    {
+      "id": "episode_qa_scope",
+      "classification": "labels_correct_scope_must_remain_explicit",
+      "summary": "Selected routes are real historical episode1/2/3 smoke routes; user's hand-review acceptance remains valid. Protected original19 includes drafts from episodes4/5 and is a different scope."
+    },
+    {
+      "id": "native_boundary",
+      "classification": "conditional_static_evidence_only",
+      "summary": "Matched Director BG/Init continuation is not gated by the inspected music-success callback. Concurrent latch correlation, recording producer path and timing remain unproven."
+    }
+  ],
+  "notPerformed": {
+    "browserStarted": false,
+    "imagesViewed": false,
+    "runtimeInjection": false,
+    "unitTests": false,
+    "sourceDataWebsiteRegistryMutation": false,
+    "gitMutation": false,
+    "nativeInvestigationExpanded": false
+  },
+  "writesRestrictedTo": "native-bgm-loading-prototype-20261112/peer-review-v1",
+  "heavyProcessControls": {"nice": 19, "cpus": [22, 23]},
+  "activationApproved": false,
+  "limits": [
+    "Static review is not runtime or recording equivalence validation.",
+    "Historical metadata does not reopen the user's accepted first-three hand review.",
+    "No original CSV, phase, Wait, fade, restart, rate, cue zero or total ordering is approved."
+  ]
+}

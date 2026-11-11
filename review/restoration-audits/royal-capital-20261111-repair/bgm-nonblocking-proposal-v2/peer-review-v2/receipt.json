@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "reviewer": "/root/bgm_async_proposal_peer",
+  "createdUtc": "2026-11-11T20:52:12Z",
+  "status": "v2_delta_static_review_complete_runtime_and_policy_pending",
+  "verdict": {
+    "v1ConditionalObserverGapResolvedStatically": true,
+    "newUnconditionalStaticBlockerFound": false,
+    "runtimeValidated": false,
+    "activationApproved": false,
+    "desiredStateAndLateInheritedFailurePolicyAccepted": false,
+    "userFirstThreeManualAcceptancePreserved": true
+  },
+  "report": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/peer-review-v2/REPORT.md",
+    "bytes": 3868,
+    "sha256": "814b30e2e49d5ac20c42b34aaefac80c8903664f01cf1dadea15979314565f9d"
+  },
+  "verifiedV2Hashes": {
+    "patch.diff": "66fa356cefbb1d31ccd948fa6e829f20b15d2dba0c866d65bf5afa2679308fd2",
+    "v1-to-v2.diff": "7f39ef4ba9ba7c6121b6f83b1e0c11990156dc0405a9333462c68679916dbf98",
+    "PLAN.md": "b8d79830d1f9eef1cf81ba2a5bd615de14f83ef95663d5c24ae2c04a5c85d942",
+    "proposal-receipt.json": "056cc141f55385db949e9c08eea84332a9ea51a3ad11f3ac65928647cd31d00b",
+    "offline-checks.json": "b0162b5a6d4257fc37c6c77ee6f0f660109c292d5621f9985655b43b56b06222",
+    "proposal/public/player/player.js": "c25e7a73be61c25dc897a13eed8d581b4021dd4f3bb7f818e95c53a1689030f6"
+  },
+  "independentChecks": {
+    "fifteenFrozenV1FileHashesMatch": true,
+    "fourCanonicalSourceHashesMatch": true,
+    "fourNativeAndFourReviewGuardsMatch": true,
+    "v1AndV2CandidateBytesOutsideHelperIdentical": true,
+    "restorationAndPhaseAwaitMethodSlicesMatchCanonical": true,
+    "bothHandlersAndTerminalBeforeFirstDiagnostic": true,
+    "samplingSerializationHostAndFallbackOutputGuarded": true,
+    "activeOwnerErrorDeliveryOutsideReporterWithFreshOwnershipCheck": true,
+    "terminalObserverOnlyUsesGuardedReporter": true,
+    "existingComponentAndFailInternalLoggingExcludedFromGuarantee": true,
+    "qaDistinguishesHistoricalSmokeFromUserManualAcceptance": true,
+    "canonicalClean": true
+  },
+  "canonicalHead": "37232806a8180375a4b7a178e27157bb16d12201",
+  "remaining": [
+    "Runtime evidence for loading/text, pending Stop/replacement/return-to-current and inherited continuation.",
+    "Runtime evidence for active-owner, inherited-successor and superseded failure; desired/current/loading final state.",
+    "Explicit acceptance of desired-state publication and record-only late inherited failure policy.",
+    "Real phase StopBGM overlap and source/gain continuity observations.",
+    "Diagnostic faults were not exercised; default logger/clock trigger remains unobserved.",
+    "Native concurrent latch association, recording producer path, total ordering and exact timing remain unknown."
+  ],
+  "notPerformed": {
+    "browser": true,
+    "imageInspection": true,
+    "runtimeInjection": true,
+    "unitTests": true,
+    "sourceDataWebsiteRegistryMutation": true,
+    "gitMutation": true,
+    "v1Modification": true
+  },
+  "writesRestrictedTo": "native-bgm-loading-prototype-20261112/peer-review-v2",
+  "heavyProcessControls": {"nice": 19, "cpus": [22, 23]}
+}

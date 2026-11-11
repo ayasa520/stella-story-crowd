@@ -1,0 +1,71 @@
+--- a/public/player/player.js
++++ b/public/player/player.js
+@@ -161,6 +161,56 @@
+     if(music)await this.music.apply(music,{fade:0,start:true});
+     this.check(generation);await this.sounds.restore(ambient);
+   }
++  submitNodeMusic(node,entryGeneration){
++    // UNVERIFIED PROTOTYPE: the inspected ordinary native InitScenario path
++    // submits SetupBGM without joining its loader-success callback. This is
++    // not proof of a universal original music/CardIn/text completion order.
++    // Only native node assignments use this boundary; random-entry audio
++    // restoration and authored phase StopBGM commands retain their awaits.
++    const key=node.id+':'+entryGeneration,submittedAt=performance.now();
++    const pending=this.music.apply(node.music.resource,{...node.music,key,start:true});
++    // apply() synchronously chooses its generation before its first await.
++    // Capture that identity once. A later inherited story node must not
++    // cancel it merely because the Player's entry generation has advanced.
++    const owner=Object.freeze({node:node.id,entryGeneration,musicGeneration:this.music.generation,
++      resource:node.music.resource,action:node.music.action,key,submittedAt});
++    // This is desired route state, not a claim that the new cue is audible.
++    // MusicPlayer alone retains the old voice until a replacement is ready.
++    this.state.bg_music=node.music.resource;
++    const observation=()=>({owner,milliseconds:performance.now(),current:{node:this.node?.id??null,
++      entryGeneration:this.generation,musicGeneration:this.music.generation,phase:this.phase,
++      desiredResource:this.state.bg_music,currentResource:this.music.current?.resource??null,
++      loadingResource:this.music.loading?.resource??null,active:this.music.active,
++      clock:this.music.clock.snapshot?.()??null},
++      sameEntry:this.node?.id===owner.node&&this.generation===owner.entryGeneration,
++      musicRequestCurrent:this.music.generation===owner.musicGeneration});
++    const describeError=error=>({name:error?.name||'Error',message:error?.message||String(error),
++      stack:error?.stack||null});
++    console.info('STORY_PLAYER_NODE_MUSIC_SUBMITTED',JSON.stringify(observation()));
++    // Promise settlement is not PLAY or fade completion. Existing component
++    // PLAY/FADE logs remain the evidence for those independent boundaries.
++    // A superseded prepare failure is swallowed by MusicPlayer's existing
++    // contract, so settlement can prove cancellation but not its hidden cause.
++    const observed=pending.then(()=>{
++      const detail=observation();
++      console.info('STORY_PLAYER_NODE_MUSIC_SETTLED',JSON.stringify({...detail,
++        disposition:!detail.musicRequestCurrent?'superseded_or_stopped':
++          detail.sameEntry?'current_entry':'later_entry_same_music_request'}));
++    },error=>{
++      const detail=observation(),failCurrent=detail.sameEntry&&detail.musicRequestCurrent;
++      console.error('STORY_PLAYER_NODE_MUSIC_FAILED',JSON.stringify({...detail,error:describeError(error),
++        disposition:failCurrent?'fail_current_owner':'record_only_for_original_owner'}));
++      // Never report an old node's delayed error through fail(), whose UI and
++      // STORY_PLAYER_ERROR attribution use the current node. A still-owned
++      // failure keeps the existing stop-and-error behavior; a late one remains
++      // explicit diagnostics while the current story/old voice can continue.
++      if(failCurrent)this.fail(error);
++    });
++    // Consume errors raised by diagnostic/error-delivery code as well as the
++    // apply rejection above. This does not change the music request or retry it.
++    void observed.catch(error=>console.error('STORY_PLAYER_NODE_MUSIC_OBSERVER_ERROR',
++      JSON.stringify({owner,error:describeError(error),milliseconds:performance.now()})));
++  }
+   async phaseCommands(index,generation){
+     this.setPhase('command');
+     this.timing('phase_'+index+'_begin');
+@@ -373,10 +423,7 @@
+     }
+     await prepareCommandResources(node.phases,this.sounds,this.effects);
+     this.check(generation);this.timing('command_resources_ready');
+-    if(node.music.action!=='inherit'){
+-      await this.music.apply(node.music.resource,{...node.music,key:id+':'+generation,start:true});
+-      this.state.bg_music=node.music.resource;
+-    }
++    if(node.music.action!=='inherit')this.submitNodeMusic(node,generation);
+     this.check(generation);
+     await this.phaseCommands(0,generation);this.check(generation);
+     if(node.kind==='title'){await this.title(generation);return;}

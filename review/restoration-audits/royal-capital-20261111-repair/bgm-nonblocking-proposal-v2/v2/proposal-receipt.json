@@ -1,0 +1,158 @@
+{
+  "version": 2,
+  "createdUtc": "2026-11-11T20:49:24.208450+00:00",
+  "reviewer": "/root/p15_p16_voice_evidence",
+  "rootConfirmed": false,
+  "status": "UNAPPLIED_V2_STATIC_DIAGNOSTIC_ISOLATION_PROPOSAL_RUNTIME_PENDING",
+  "canonicalSourceBase": "37232806a8180375a4b7a178e27157bb16d12201",
+  "formalOrServedFilesChanged": false,
+  "browserStarted": false,
+  "nativeFieldChanges": [],
+  "registryChanges": [],
+  "unitTestsAdded": false,
+  "sourceBefore": [
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js",
+      "bytes": 45292,
+      "sha256": "d4bfd8dc7bdd08c64b737767fda9b538fb2a2c7e6ba9a97264355211b4d2f90b"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_player.js",
+      "bytes": 7120,
+      "sha256": "af60e047f8a1fb510f9bf66d75792f0e0ea1746eed497b7d7091d548a7cf1d8c"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_voice.js",
+      "bytes": 1883,
+      "sha256": "a2bd44ee5fd94899f196f94b60c349db8d924d9b04cf1873298d4bdc253abaae"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/visual_frame_clock.js",
+      "bytes": 5674,
+      "sha256": "b9a0694500c05e9175395c308fc9866530cb1c8e61caa81cce4073e97f05fbc2"
+    }
+  ],
+  "v1FourSha256": {
+    "patch.diff": "3a43384df021d63c220d29141a25160b93d9aede10524646b6342ea5939f39dc",
+    "PLAN.md": "83b71964eaceaa6ab9aaf80860ecd48c3b3d6c61c57f250157a1e2501bf22b53",
+    "proposal-receipt.json": "0a26a000660544e46230eef56ef23dfa2682dcd9b3fb80bd2990c009bb205648",
+    "offline-checks.json": "f1335da9062384390efccca43abe893cd876ae0a997c78d573e5eea57c212a36"
+  },
+  "changesFromV1": [
+    "handler and terminal observer attachment precede diagnostics",
+    "safe-report guards sampling/serialization/output and fallback output",
+    "error delivery remains outside diagnostics and rechecks ownership",
+    "historical episode smoke scope distinguished from user-confirmed full manual acceptance"
+  ],
+  "policyUnchangedFromV1": [
+    "desired route state published at submission",
+    "current-owner failure invokes existing fail()",
+    "late inherited-owner failure is record-only",
+    "MusicPlayer solely owns cancellation/voices/clocks"
+  ],
+  "preservedAwaitSites": [
+    "restoreEntryAudio",
+    "phaseCommands StopBGM"
+  ],
+  "artifacts": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/patch.diff",
+      "bytes": 5329,
+      "sha256": "66fa356cefbb1d31ccd948fa6e829f20b15d2dba0c866d65bf5afa2679308fd2"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/v1-to-v2.diff",
+      "bytes": 6335,
+      "sha256": "7f39ef4ba9ba7c6121b6f83b1e0c11990156dc0405a9333462c68679916dbf98"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/proposal/public/player/player.js",
+      "bytes": 49501,
+      "sha256": "c25e7a73be61c25dc897a13eed8d581b4021dd4f3bb7f818e95c53a1689030f6"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/PLAN.md",
+      "bytes": 10812,
+      "sha256": "b8d79830d1f9eef1cf81ba2a5bd615de14f83ef95663d5c24ae2c04a5c85d942"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/UNKNOWN.json",
+      "bytes": 1479,
+      "sha256": "86b0294699f5979cb83aa75b52157338b20d218ccec809711288f8a4babfa071"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/qa-route-guards.json",
+      "bytes": 15300,
+      "sha256": "0d0add6e760bdaaddb113ca500961c93ca3957043e9440fa4a871ff8ba1e6fd8"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/v2/v1-preserved-files.json",
+      "bytes": 4118,
+      "sha256": "7671c2d5933783a2f5943c15948346998ad0e81bd47515c81468d45b456e7446"
+    }
+  ],
+  "peerInputs": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/peer-review-v1/REPORT.md",
+      "bytes": 13178,
+      "sha256": "26b4dc0ff1e72b968abe77d21e66d532324d7daf9dd1ae7bc4d7fc72bdd7972e"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-loading-prototype-20261112/peer-review-v1/receipt.json",
+      "bytes": 3499,
+      "sha256": "61ad8a392cb51623245b54d5332d8e09c1e00c95d02c7a3d65be23d3852b8064"
+    }
+  ],
+  "nativeAndActualEvidence": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/minimal-director-music-barrier.json",
+      "bytes": 8153,
+      "sha256": "a1bee0859848c32bea32aea39c4beba7e259f32210ac097965ad6e11da25a28e"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/minimal-director-music-barrier.mmd",
+      "bytes": 568,
+      "sha256": "7aae0efeb82952ee7940727bbf24a7cf4a7d92dd56035ebf61aa5baef79652b2"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/boundary-supplement-evidence.json",
+      "bytes": 39084,
+      "sha256": "560ad005668dd0060305af84e4b7da9a8fe789f24a73b331658b00d5ea695cf1"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/pass3-invalid-slot-probe.log",
+      "bytes": 1063,
+      "sha256": "b15ed6f3a87fda2436904756cb20c7f63b965f6412646fceb1b753842140ddfe"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-text-order-20261112/text-boundary-pass3-capstone.txt",
+      "bytes": 28101,
+      "sha256": "a46d16b87286da7dfba4683825e651f89e1eac5145da161badb53f68e0c1feb3"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/actual-loading-text-original-entry-limits.json",
+      "bytes": 8338,
+      "sha256": "7d18f0047b884e307fe32f8d89c0546da8950c8a60c159c21a785231c8589fd3"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/actual-bgm-memory-v2.json.gz",
+      "bytes": 34472,
+      "sha256": "11805b69b823dd2cac549f4968ce409d3e509ec80a50bf404840ef49410b88ae"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/served-source-before.json",
+      "bytes": 16248,
+      "sha256": "d84d6d9a012dfceb4db5cd9d9edabcda67c8ba2119984fa7b851b1f36a4a6daf"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/audio/p25-p26-bgm-evidence-v1/p25-every06-envelope-v1/executable-memory-v2/served-source-after.json",
+      "bytes": 16263,
+      "sha256": "ab3efcdc36b5c05a21c4f1407f04e28c1e0f9395c03d252eabf38d2349d2b5e0"
+    }
+  ],
+  "limits": [
+    "No native total order, original CSV/phase/Wait/fade/restart or exact cue-zero is accepted.",
+    "No runtime/diagnostic fault test has run. Desired-state and late-failure policy await explicit QA.",
+    "Existing internal MusicPlayer/fail loggers are not changed by the no-throw observer boundary."
+  ]
+}

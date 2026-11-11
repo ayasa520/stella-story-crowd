@@ -1,0 +1,87 @@
+--- a/public/player/player.js
++++ b/public/player/player.js
+@@ -161,6 +161,72 @@
+     if(music)await this.music.apply(music,{fade:0,start:true});
+     this.check(generation);await this.sounds.restore(ambient);
+   }
++  submitNodeMusic(node,entryGeneration){
++    // UNVERIFIED PROTOTYPE: the inspected ordinary native InitScenario path
++    // submits SetupBGM without joining its loader-success callback. This is
++    // not proof of a universal original music/CardIn/text completion order.
++    // Only native node assignments use this boundary; random-entry audio
++    // restoration and authored phase StopBGM commands retain their awaits.
++    const key=node.id+':'+entryGeneration;
++    const pending=this.music.apply(node.music.resource,{...node.music,key,start:true});
++    // apply() synchronously chooses its generation before its first await.
++    // Capture that identity once. An inherited story node must not cancel
++    // this load merely because the Player's entry generation has advanced.
++    const owner=Object.freeze({node:node.id,entryGeneration,musicGeneration:this.music.generation,
++      resource:node.music.resource,action:node.music.action,key});
++    const ownsFailure=()=>this.node?.id===owner.node&&this.generation===owner.entryGeneration&&
++      this.music.generation===owner.musicGeneration;
++    // As with NativeVisualFrameClock.reportEvent, diagnostics are outside the
++    // playback dependency chain. Both sampling/serialization and host output
++    // can fail. Even the fallback logger is guarded, so this boundary never
++    // throws into promise observation, error delivery, or story progression.
++    const safeReport=(level,name,readDetail)=>{
++      try{console[level](name,JSON.stringify(readDetail()));}
++      catch(reportError){
++        try{console.error('STORY_PLAYER_NODE_MUSIC_REPORT_ERROR',name,reportError);}
++        catch{/* A broken fallback logger cannot change playback policy. */}
++      }
++    };
++    const observation=()=>({owner,milliseconds:performance.now(),current:{node:this.node?.id??null,
++      entryGeneration:this.generation,musicGeneration:this.music.generation,phase:this.phase,
++      desiredResource:this.state.bg_music,currentResource:this.music.current?.resource??null,
++      loadingResource:this.music.loading?.resource??null,active:this.music.active,
++      clock:this.music.clock.snapshot?.()??null},
++      sameEntry:this.node?.id===owner.node&&this.generation===owner.entryGeneration,
++      musicRequestCurrent:this.music.generation===owner.musicGeneration});
++    const describeError=error=>({name:error?.name||'Error',message:error?.message||String(error),
++      stack:error?.stack||null});
++    // Install both apply handlers and their terminal observer before taking
++    // the first diagnostic sample. Settlement is not PLAY/fade completion.
++    // MusicPlayer already swallows superseded prepare failures; a cancelled
++    // settlement cannot expose an underlying cause hidden by that contract.
++    const observed=pending.then(()=>{
++      safeReport('info','STORY_PLAYER_NODE_MUSIC_SETTLED',()=>{
++        const detail=observation();
++        return {...detail,disposition:!detail.musicRequestCurrent?'superseded_or_stopped':
++          detail.sameEntry?'current_entry':'later_entry_same_music_request'};
++      });
++    },error=>{
++      safeReport('error','STORY_PLAYER_NODE_MUSIC_FAILED',()=>({...observation(),
++        error:describeError(error),disposition:ownsFailure()?'fail_current_owner':'record_only_for_original_owner'}));
++      // Error delivery is outside safeReport: a failed diagnostic must not
++      // skip fail(). Recheck ownership after reporting, since fail() itself
++      // attributes its UI/error state to the current node. Late failures keep
++      // v1's record-only policy; that policy still needs explicit runtime QA.
++      if(ownsFailure())this.fail(error);
++    });
++    // This terminal callback also cannot throw through its diagnostics. It
++    // does not retry music or alter the existing error-delivery policy.
++    void observed.catch(error=>{
++      safeReport('error','STORY_PLAYER_NODE_MUSIC_OBSERVER_ERROR',()=>({owner,
++        error:describeError(error),milliseconds:performance.now()}));
++    });
++    // Desired route state is published at submission, not proven audibility.
++    // MusicPlayer alone keeps the old voice until a replacement is ready.
++    // Publishing earlier and record-only late failure remain v1 QA questions.
++    this.state.bg_music=node.music.resource;
++    safeReport('info','STORY_PLAYER_NODE_MUSIC_SUBMITTED',observation);
++  }
+   async phaseCommands(index,generation){
+     this.setPhase('command');
+     this.timing('phase_'+index+'_begin');
+@@ -373,10 +439,7 @@
+     }
+     await prepareCommandResources(node.phases,this.sounds,this.effects);
+     this.check(generation);this.timing('command_resources_ready');
+-    if(node.music.action!=='inherit'){
+-      await this.music.apply(node.music.resource,{...node.music,key:id+':'+generation,start:true});
+-      this.state.bg_music=node.music.resource;
+-    }
++    if(node.music.action!=='inherit')this.submitNodeMusic(node,generation);
+     this.check(generation);
+     await this.phaseCommands(0,generation);this.check(generation);
+     if(node.kind==='title'){await this.title(generation);return;}
