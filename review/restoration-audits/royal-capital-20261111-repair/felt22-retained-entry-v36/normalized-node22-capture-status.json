@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "draft": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/normalized-node22-motion-packet-draft.json",
+    "sha256": "8bb1b69acd5197026090655aa3a7ee4836087fba5f9729cd88eff911983bed45"
+  },
+  "reviewReceipt": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/fresh-offline-direct-review-receipt.json",
+    "sha256": "f7d48dd29467802ee0a39b398e84e2e5404d48aa36dad31cb2109427a90fcdb4"
+  },
+  "runFailures": [],
+  "httpErrors": [],
+  "rawPayloadSuccess": false,
+  "rawPayloadPreserved": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/felt22-ikaru-from-formal21-v31-shared-clock.json.gz",
+    "sha256": "fa3a88d172b5e8d78d8b9f4e1048eff3a65c46eb2aefacf6d4b4e3d7d17fc578"
+  },
+  "globalWarnings": [
+    {
+      "scope": "10280014:21/rom01",
+      "unsupportedCallbacks": 14,
+      "firstPreUpdateIndex": 27,
+      "lastPreUpdateIndex": 40,
+      "listenerOrderVerified": true,
+      "reason": "outgoing model observer retained while viewer.animator is unbound during the next model load",
+      "excludedFromAppliedPose": true
+    },
+    {
+      "scope": "10280014:23/felt01",
+      "unsupportedCallbacks": 22,
+      "firstPreUpdateIndex": 220,
+      "lastPreUpdateIndex": 241,
+      "listenerOrderVerified": true,
+      "reason": "outgoing model observer retained while viewer.animator is unbound during the next model load",
+      "excludedFromAppliedPose": true
+    }
+  ],
+  "target22": {
+    "entryContext": "retained_actor",
+    "frameCount": 96,
+    "verifiedPreUpdatePngPairs": 96,
+    "normalPrerollFrames": 6,
+    "activeFrames": 21,
+    "heldFrames": 69,
+    "alphaMinimum": 1,
+    "alphaMaximum": 1,
+    "retainedModelInstance": 7,
+    "warningCount": 0,
+    "lastElapsedGameAfterMotionReady": 4.4665,
+    "noNewTransitionClockEvents": true,
+    "independentFromFormalPredecessor": false,
+    "independentFromPendingPredecessors": true,
+    "requiredPredecessor": {
+      "sceneId": 10280014,
+      "scenarioId": 21,
+      "stableKey": "s10280014-p11-at0103",
+      "sourceText": "……へえ。やけに詳しいじゃねーか。いいぜ、話は聞いてやるよ",
+      "expected": {
+        "character": "live2d/AC_felt01",
+        "motion": "act_normal,face_shinken"
+      },
+      "alreadyIndependentlyReviewed": true,
+      "reviewReceipt": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/offline-direct-review-receipt-v1.json",
+        "sha256": "3c7d57a9d8048ec6ef1c3c1e4cf80c8669121650d5b54914bf79a65da0ace5b1"
+      }
+    }
+  },
+  "wholeCaseWarningFree": false,
+  "rootConfirmed": false
+}

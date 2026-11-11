@@ -1,0 +1,989 @@
+{
+  "version": 1,
+  "status": "static-readback-mechanism-identified-dynamic-phase-not-remeasured",
+  "reviewer": "/root/p15_p16_voice_evidence",
+  "scope": "Read-only source/number audit of the old Felt21/22 capture; no browser, new rendering, production change, or native-field edit.",
+  "oldCapture": {
+    "script": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/capture_four_previews.js",
+      "bytes": 11062,
+      "sha256": "7173f0609748c4f46428e170df6ea054e7b81a0f83015750d1cd04bdd886dc50"
+    },
+    "sourceIndex": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/production-evidence-index.json",
+      "bytes": 2119674,
+      "sha256": "c4b47858fde2ad08f8264b3a175cf569ca983bf9ffbb406c6e0d64f00940ddf2"
+    },
+    "objectAndReadPath": {
+      "file": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/capture_four_previews.js",
+        "bytes": 11062,
+        "sha256": "7173f0609748c4f46428e170df6ea054e7b81a0f83015750d1cd04bdd886dc50"
+      },
+      "firstLine": 77,
+      "lastLine": 89,
+      "text": "        const tick = timestamp => {\n          if (!enabled) return;\n          const at = performance.now(), node = document.body.dataset.node, shared = visualFrameClock.snapshot();\n          const row = {node, at, rafTimestamp: timestamp, callbackLag: at - timestamp,\n            deltaFromPrevious: previous === null ? null : at - previous,\n            opacity: Number(getComputedStyle(card).opacity), shared, phase: document.body.dataset.phase};\n          const animation = window.felt21Actor;\n          if (animation) {\n            row.actor = {time: animation.time, last: animation.last, running: animation.running,\n              model: animation.viewer.detail?.id, layers: [...animation.layers].map(([layer, state]) => ({layer, token: state.token, start: state.start, offset: state.offset}))};\n            const parameters = animation.viewer.core.getModel().parameters;\n            row.parameters = Object.fromEntries(parameterIds.map(id => [id, parameters.values[parameters.ids.indexOf(id)]]));\n          }"
+    },
+    "clockWrapperObjectBinding": {
+      "file": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/capture_four_previews.js",
+        "bytes": 11062,
+        "sha256": "7173f0609748c4f46428e170df6ea054e7b81a0f83015750d1cd04bdd886dc50"
+      },
+      "firstLine": 61,
+      "lastLine": 71,
+      "text": "        ActorAnimation.prototype.clock = function(...args) {\n          const before = this.time, priorLast = this.last, running = this.running;\n          const shared = this.visualClock.snapshot(), now = this.visualClock.now();\n          const result = originalClock.apply(this, args);\n          trace.actorClockCalls.push({node: document.body.dataset.node, model: this.viewer.detail?.id,\n            before, after: this.time, priorLast, running, shared, sharedNow: now,\n            sameClockObject: this.visualClock === visualFrameClock,\n            expectedAfter: before + (running ? now - priorLast : 0), at: performance.now()});\n          window.felt21Actor = this;\n          return result;\n        };"
+    },
+    "pngCopyAfterRead": {
+      "file": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/capture_four_previews.js",
+        "bytes": 11062,
+        "sha256": "7173f0609748c4f46428e170df6ea054e7b81a0f83015750d1cd04bdd886dc50"
+      },
+      "firstLine": 94,
+      "lastLine": 106,
+      "text": "            // Preserve the whole distinguishing arm/torso entry, including\n            // low-alpha frames. PNG readback has real cost: its start/end and\n            // observed rAF intervals are retained rather than called 30/60Hz.\n            if (row.elapsedGame <= 3.2 && (counts.get(node) || 0) < 140) {\n              const copyStart = performance.now();\n              capture.width = actor.width; capture.height = actor.height;\n              capture.getContext('2d').drawImage(actor, 0, 0);\n              trace.images.push({...row, copyStart, png: capture.toDataURL('image/png'), copyEnd: performance.now(),\n                canvas: {width: actor.width, height: actor.height}});\n              counts.set(node, (counts.get(node) || 0) + 1);\n            }\n          }\n          row.end = performance.now(); trace.raf.push(row); previous = at; requestAnimationFrame(tick);"
+    },
+    "metadataStatistics": [
+      {
+        "run": "ikaru-body-only-control",
+        "node": "10280014:21",
+        "frames": 78,
+        "visibleFrames": 47,
+        "models": [
+          "felt01"
+        ],
+        "values": {
+          "ParamUpperArmL": [
+            0
+          ],
+          "ParamUpperArmR": [
+            0
+          ],
+          "ParamEyeLOpen": [
+            1
+          ],
+          "ParamBodyAngleY": [
+            0
+          ]
+        },
+        "firstVisibleSample": {
+          "node": "10280014:21",
+          "at": 14048.5,
+          "shared": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 295,
+            "frameTimestampMs": 14038.8,
+            "rawDeltaSeconds": 0.15,
+            "deltaSeconds": 0.15,
+            "gameSeconds": 10.916332686534872,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "actor": {
+            "time": 1.2166333432674268,
+            "last": 10.916332686534872,
+            "running": true,
+            "model": "felt01",
+            "layers": [
+              {
+                "layer": "motion",
+                "token": "act_normal_w",
+                "start": 0.23339999999999606,
+                "offset": 0
+              },
+              {
+                "layer": "face",
+                "token": "face_shinken_w",
+                "start": 0.23339999999999606,
+                "offset": 0
+              }
+            ]
+          },
+          "parameters": {
+            "ParamAngleX": 0,
+            "ParamAngleY": 0,
+            "ParamAngleZ": 0,
+            "ParamEyeLOpen": 1,
+            "ParamEyeROpen": 1,
+            "ParamBrowLAngle": 0,
+            "ParamBrowRAngle": 0,
+            "ParamBrowLForm": 0,
+            "ParamBrowRForm": 0,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamUpperArmL": 0,
+            "ParamUpperArmR": 0,
+            "ParamForeArmL": 0,
+            "ParamForeArmR": 0,
+            "ParamHandL": 0,
+            "ParamHandR": 0,
+            "ParamBodyAngleX": 0,
+            "ParamBodyAngleY": 0,
+            "ParamBodyAngleZ": 0,
+            "ParamShoulder": 0,
+            "ParamShoulderL": 0,
+            "ParamShoulderR": 0
+          },
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/ikaru-body-only-control-actor-frame-031.png",
+          "sha256": "08f9caf24cf0af34cd0393b674246037e7cf3b8ae68b37695217efee97ff52b5"
+        }
+      },
+      {
+        "run": "ikaru-body-only-control",
+        "node": "10280014:22",
+        "frames": 65,
+        "visibleFrames": 65,
+        "models": [
+          "felt01"
+        ],
+        "values": {
+          "ParamUpperArmL": [
+            0
+          ],
+          "ParamUpperArmR": [
+            0
+          ],
+          "ParamEyeLOpen": [
+            1
+          ],
+          "ParamBodyAngleY": [
+            0
+          ]
+        },
+        "firstVisibleSample": {
+          "node": "10280014:22",
+          "at": 18227.199999999255,
+          "shared": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 392,
+            "frameTimestampMs": 18205.3,
+            "rawDeltaSeconds": 0.03339999999999782,
+            "deltaSeconds": 0.03339999999999782,
+            "gameSeconds": 15.082832686534896,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "actor": {
+            "time": 5.383133343267451,
+            "last": 15.082832686534896,
+            "running": true,
+            "model": "felt01",
+            "layers": [
+              {
+                "layer": "motion",
+                "token": "act_ikaru",
+                "start": 5.349733343267452,
+                "offset": 0
+              },
+              {
+                "layer": "talk",
+                "token": "face_talk_normal",
+                "start": 5.349733343267452,
+                "offset": 0
+              }
+            ]
+          },
+          "parameters": {
+            "ParamAngleX": 0,
+            "ParamAngleY": 0,
+            "ParamAngleZ": 0,
+            "ParamEyeLOpen": 1,
+            "ParamEyeROpen": 1,
+            "ParamBrowLAngle": 0,
+            "ParamBrowRAngle": 0,
+            "ParamBrowLForm": 0,
+            "ParamBrowRForm": 0,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamUpperArmL": 0,
+            "ParamUpperArmR": 0,
+            "ParamForeArmL": 0,
+            "ParamForeArmR": 0,
+            "ParamHandL": 0,
+            "ParamHandR": 0,
+            "ParamBodyAngleX": 0,
+            "ParamBodyAngleY": 0,
+            "ParamBodyAngleZ": 0,
+            "ParamShoulder": 0,
+            "ParamShoulderL": 0,
+            "ParamShoulderR": 0
+          },
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/ikaru-body-only-control-actor-frame-078.png",
+          "sha256": "8123e78a045c0f63f4792166b820ce23a21dab9a4c6fc23f08e350bc9211ea19"
+        }
+      },
+      {
+        "run": "main-ikaru-shinken",
+        "node": "10280014:21",
+        "frames": 79,
+        "visibleFrames": 47,
+        "models": [
+          "felt01"
+        ],
+        "values": {
+          "ParamUpperArmL": [
+            0
+          ],
+          "ParamUpperArmR": [
+            0
+          ],
+          "ParamEyeLOpen": [
+            1
+          ],
+          "ParamBodyAngleY": [
+            0
+          ]
+        },
+        "firstVisibleSample": {
+          "node": "10280014:21",
+          "at": 14099.799999998882,
+          "shared": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 300,
+            "frameTimestampMs": 14091.5,
+            "rawDeltaSeconds": 0.15,
+            "deltaSeconds": 0.15,
+            "gameSeconds": 10.949532686534871,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "actor": {
+            "time": 1.2333333432674252,
+            "last": 10.949532686534871,
+            "running": true,
+            "model": "felt01",
+            "layers": [
+              {
+                "layer": "motion",
+                "token": "act_normal_w",
+                "start": 0.2332999999999945,
+                "offset": 0
+              },
+              {
+                "layer": "face",
+                "token": "face_shinken_w",
+                "start": 0.2332999999999945,
+                "offset": 0
+              }
+            ]
+          },
+          "parameters": {
+            "ParamAngleX": 0,
+            "ParamAngleY": 0,
+            "ParamAngleZ": 0,
+            "ParamEyeLOpen": 1,
+            "ParamEyeROpen": 1,
+            "ParamBrowLAngle": 0,
+            "ParamBrowRAngle": 0,
+            "ParamBrowLForm": 0,
+            "ParamBrowRForm": 0,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamUpperArmL": 0,
+            "ParamUpperArmR": 0,
+            "ParamForeArmL": 0,
+            "ParamForeArmR": 0,
+            "ParamHandL": 0,
+            "ParamHandR": 0,
+            "ParamBodyAngleX": 0,
+            "ParamBodyAngleY": 0,
+            "ParamBodyAngleZ": 0,
+            "ParamShoulder": 0,
+            "ParamShoulderL": 0,
+            "ParamShoulderR": 0
+          },
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/main-ikaru-shinken-actor-frame-032.png",
+          "sha256": "2674ac773c2b57a4c270be379247b7d3601c81fcf110d5fb80c8ef2bfd962946"
+        }
+      },
+      {
+        "run": "main-ikaru-shinken",
+        "node": "10280014:22",
+        "frames": 65,
+        "visibleFrames": 65,
+        "models": [
+          "felt01"
+        ],
+        "values": {
+          "ParamUpperArmL": [
+            0
+          ],
+          "ParamUpperArmR": [
+            0
+          ],
+          "ParamEyeLOpen": [
+            1
+          ],
+          "ParamBodyAngleY": [
+            0
+          ]
+        },
+        "firstVisibleSample": {
+          "node": "10280014:22",
+          "at": 18117.199999999255,
+          "shared": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 395,
+            "frameTimestampMs": 18108,
+            "rawDeltaSeconds": 0.05009999999999854,
+            "deltaSeconds": 0.05009999999999854,
+            "gameSeconds": 14.966032686534884,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "actor": {
+            "time": 5.249833343267438,
+            "last": 14.966032686534884,
+            "running": true,
+            "model": "felt01",
+            "layers": [
+              {
+                "layer": "motion",
+                "token": "act_ikaru",
+                "start": 5.1997333432674395,
+                "offset": 0
+              },
+              {
+                "layer": "face",
+                "token": "face_shinken_w",
+                "start": 5.1997333432674395,
+                "offset": 0
+              },
+              {
+                "layer": "talk",
+                "token": "face_talk_normal",
+                "start": 5.1997333432674395,
+                "offset": 0
+              }
+            ]
+          },
+          "parameters": {
+            "ParamAngleX": 0,
+            "ParamAngleY": 0,
+            "ParamAngleZ": 0,
+            "ParamEyeLOpen": 1,
+            "ParamEyeROpen": 1,
+            "ParamBrowLAngle": 0,
+            "ParamBrowRAngle": 0,
+            "ParamBrowLForm": 0,
+            "ParamBrowRForm": 0,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamUpperArmL": 0,
+            "ParamUpperArmR": 0,
+            "ParamForeArmL": 0,
+            "ParamForeArmR": 0,
+            "ParamHandL": 0,
+            "ParamHandR": 0,
+            "ParamBodyAngleX": 0,
+            "ParamBodyAngleY": 0,
+            "ParamBodyAngleZ": 0,
+            "ParamShoulder": 0,
+            "ParamShoulderL": 0,
+            "ParamShoulderR": 0
+          },
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/main-ikaru-shinken-actor-frame-079.png",
+          "sha256": "2f2ad716aee59239c0f6798c12c2533ca38b34e43e08ab165368d28c0044b270"
+        }
+      },
+      {
+        "run": "tameiki02-shinken-control",
+        "node": "10280014:21",
+        "frames": 78,
+        "visibleFrames": 46,
+        "models": [
+          "felt01"
+        ],
+        "values": {
+          "ParamUpperArmL": [
+            0
+          ],
+          "ParamUpperArmR": [
+            0
+          ],
+          "ParamEyeLOpen": [
+            1
+          ],
+          "ParamBodyAngleY": [
+            0
+          ]
+        },
+        "firstVisibleSample": {
+          "node": "10280014:21",
+          "at": 14190.699999999255,
+          "shared": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 297,
+            "frameTimestampMs": 14175.4,
+            "rawDeltaSeconds": 0.03339999999999964,
+            "deltaSeconds": 0.03339999999999964,
+            "gameSeconds": 11.016132686534872,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "actor": {
+            "time": 1.249833343267433,
+            "last": 11.016132686534872,
+            "running": true,
+            "model": "felt01",
+            "layers": [
+              {
+                "layer": "motion",
+                "token": "act_normal_w",
+                "start": 0.23329999999999806,
+                "offset": 0
+              },
+              {
+                "layer": "face",
+                "token": "face_shinken_w",
+                "start": 0.23329999999999806,
+                "offset": 0
+              }
+            ]
+          },
+          "parameters": {
+            "ParamAngleX": 0,
+            "ParamAngleY": 0,
+            "ParamAngleZ": 0,
+            "ParamEyeLOpen": 1,
+            "ParamEyeROpen": 1,
+            "ParamBrowLAngle": 0,
+            "ParamBrowRAngle": 0,
+            "ParamBrowLForm": 0,
+            "ParamBrowRForm": 0,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamUpperArmL": 0,
+            "ParamUpperArmR": 0,
+            "ParamForeArmL": 0,
+            "ParamForeArmR": 0,
+            "ParamHandL": 0,
+            "ParamHandR": 0,
+            "ParamBodyAngleX": 0,
+            "ParamBodyAngleY": 0,
+            "ParamBodyAngleZ": 0,
+            "ParamShoulder": 0,
+            "ParamShoulderL": 0,
+            "ParamShoulderR": 0
+          },
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/tameiki02-shinken-control-actor-frame-032.png",
+          "sha256": "07c34f0abd5ed86253345583af93de91331cb4500f9039c988056b5728960911"
+        }
+      },
+      {
+        "run": "tameiki02-shinken-control",
+        "node": "10280014:22",
+        "frames": 64,
+        "visibleFrames": 64,
+        "models": [
+          "felt01"
+        ],
+        "values": {
+          "ParamUpperArmL": [
+            0
+          ],
+          "ParamUpperArmR": [
+            0
+          ],
+          "ParamEyeLOpen": [
+            1
+          ],
+          "ParamBodyAngleY": [
+            0
+          ]
+        },
+        "firstVisibleSample": {
+          "node": "10280014:22",
+          "at": 18260,
+          "shared": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 393,
+            "frameTimestampMs": 18241.9,
+            "rawDeltaSeconds": 0.033400000000001456,
+            "deltaSeconds": 0.033400000000001456,
+            "gameSeconds": 15.082632686534895,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "actor": {
+            "time": 5.3163333432674555,
+            "last": 15.082632686534895,
+            "running": true,
+            "model": "felt01",
+            "layers": [
+              {
+                "layer": "motion",
+                "token": "act_tameiki02",
+                "start": 5.2829333432674535,
+                "offset": 0
+              },
+              {
+                "layer": "face",
+                "token": "face_shinken_w",
+                "start": 5.2829333432674535,
+                "offset": 0
+              },
+              {
+                "layer": "talk",
+                "token": "face_talk_normal",
+                "start": 5.2829333432674535,
+                "offset": 0
+              }
+            ]
+          },
+          "parameters": {
+            "ParamAngleX": 0,
+            "ParamAngleY": 0,
+            "ParamAngleZ": 0,
+            "ParamEyeLOpen": 1,
+            "ParamEyeROpen": 1,
+            "ParamBrowLAngle": 0,
+            "ParamBrowRAngle": 0,
+            "ParamBrowLForm": 0,
+            "ParamBrowRForm": 0,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamUpperArmL": 0,
+            "ParamUpperArmR": 0,
+            "ParamForeArmL": 0,
+            "ParamForeArmR": 0,
+            "ParamHandL": 0,
+            "ParamHandR": 0,
+            "ParamBodyAngleX": 0,
+            "ParamBodyAngleY": 0,
+            "ParamBodyAngleZ": 0,
+            "ParamShoulder": 0,
+            "ParamShoulderL": 0,
+            "ParamShoulderR": 0
+          },
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/tameiki02-shinken-control-actor-frame-078.png",
+          "sha256": "4a33f5d21cf3050788ea4b31b7ec6d56d2c36c577c97db9bfa81845cba7ca297"
+        }
+      },
+      {
+        "run": "unazuku02-shinken-control",
+        "node": "10280014:21",
+        "frames": 78,
+        "visibleFrames": 46,
+        "models": [
+          "felt01"
+        ],
+        "values": {
+          "ParamUpperArmL": [
+            0
+          ],
+          "ParamUpperArmR": [
+            0
+          ],
+          "ParamEyeLOpen": [
+            1
+          ],
+          "ParamBodyAngleY": [
+            0
+          ]
+        },
+        "firstVisibleSample": {
+          "node": "10280014:21",
+          "at": 14337.10000000149,
+          "shared": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 301,
+            "frameTimestampMs": 14319.8,
+            "rawDeltaSeconds": 0.033299999999999275,
+            "deltaSeconds": 0.033299999999999275,
+            "gameSeconds": 11.016466686534871,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "actor": {
+            "time": 1.2500333432674289,
+            "last": 11.016466686534871,
+            "running": true,
+            "model": "felt01",
+            "layers": [
+              {
+                "layer": "motion",
+                "token": "act_normal_w",
+                "start": 0.23330000000000162,
+                "offset": 0
+              },
+              {
+                "layer": "face",
+                "token": "face_shinken_w",
+                "start": 0.23330000000000162,
+                "offset": 0
+              }
+            ]
+          },
+          "parameters": {
+            "ParamAngleX": 0,
+            "ParamAngleY": 0,
+            "ParamAngleZ": 0,
+            "ParamEyeLOpen": 1,
+            "ParamEyeROpen": 1,
+            "ParamBrowLAngle": 0,
+            "ParamBrowRAngle": 0,
+            "ParamBrowLForm": 0,
+            "ParamBrowRForm": 0,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamUpperArmL": 0,
+            "ParamUpperArmR": 0,
+            "ParamForeArmL": 0,
+            "ParamForeArmR": 0,
+            "ParamHandL": 0,
+            "ParamHandR": 0,
+            "ParamBodyAngleX": 0,
+            "ParamBodyAngleY": 0,
+            "ParamBodyAngleZ": 0,
+            "ParamShoulder": 0,
+            "ParamShoulderL": 0,
+            "ParamShoulderR": 0
+          },
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/unazuku02-shinken-control-actor-frame-032.png",
+          "sha256": "3d0331f4ae5cf536ab97bde99576bace84ab26a16fa1cea419b952de46557a9a"
+        }
+      },
+      {
+        "run": "unazuku02-shinken-control",
+        "node": "10280014:22",
+        "frames": 65,
+        "visibleFrames": 65,
+        "models": [
+          "felt01"
+        ],
+        "values": {
+          "ParamUpperArmL": [
+            0
+          ],
+          "ParamUpperArmR": [
+            0
+          ],
+          "ParamEyeLOpen": [
+            1
+          ],
+          "ParamBodyAngleY": [
+            0
+          ]
+        },
+        "firstVisibleSample": {
+          "node": "10280014:22",
+          "at": 18324.800000000745,
+          "shared": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 394,
+            "frameTimestampMs": 18303,
+            "rawDeltaSeconds": 0.033400000000001456,
+            "deltaSeconds": 0.033400000000001456,
+            "gameSeconds": 14.999666686534889,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "actor": {
+            "time": 5.233233343267447,
+            "last": 14.999666686534889,
+            "running": true,
+            "model": "felt01",
+            "layers": [
+              {
+                "layer": "motion",
+                "token": "act_unazuku02",
+                "start": 5.199833343267445,
+                "offset": 0
+              },
+              {
+                "layer": "face",
+                "token": "face_shinken_w",
+                "start": 5.199833343267445,
+                "offset": 0
+              },
+              {
+                "layer": "talk",
+                "token": "face_talk_normal",
+                "start": 5.199833343267445,
+                "offset": 0
+              }
+            ]
+          },
+          "parameters": {
+            "ParamAngleX": 0,
+            "ParamAngleY": 0,
+            "ParamAngleZ": 0,
+            "ParamEyeLOpen": 1,
+            "ParamEyeROpen": 1,
+            "ParamBrowLAngle": 0,
+            "ParamBrowRAngle": 0,
+            "ParamBrowLForm": 0,
+            "ParamBrowRForm": 0,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamUpperArmL": 0,
+            "ParamUpperArmR": 0,
+            "ParamForeArmL": 0,
+            "ParamForeArmR": 0,
+            "ParamHandL": 0,
+            "ParamHandR": 0,
+            "ParamBodyAngleX": 0,
+            "ParamBodyAngleY": 0,
+            "ParamBodyAngleZ": 0,
+            "ParamShoulder": 0,
+            "ParamShoulderL": 0,
+            "ParamShoulderR": 0
+          },
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/unazuku02-shinken-control-actor-frame-078.png",
+          "sha256": "907c264b13160068542394d3b6b55fc9238baded0bc4f40a0321cc82c8cb5552"
+        }
+      }
+    ],
+    "facts": [
+      "The old sampler reads animation.viewer.core.getModel().parameters.values[parameters.ids.indexOf(id)] from window.felt21Actor in its own rAF callback.",
+      "The global actor is assigned by the wrapped ActorAnimation.clock method; saved visible target rows report model felt01 and the expected body-layer tokens.",
+      "Parameter arrays are read before the subsequent canvas copy/PNG conversion within the same sampler callback; no render() or native update is called by that sampler.",
+      "All inspected visible rows contain the named UpperArm keys with numeric0. An unmatched index produces undefined and JSON serialization omits that object property; this code does not coerce a missing key to0. Exact indices were not logged."
+    ]
+  },
+  "sourceBinding": {
+    "captureCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+    "recordedSourceBefore": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/served-source-before.json",
+      "bytes": 3736,
+      "sha256": "6bc23471c366e20aae3cc764c88f880c45bfeb5dbc8a49e65d699338ad6109af"
+    },
+    "recordedSourceAfter": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/served-source-after.json",
+      "bytes": 3756,
+      "sha256": "b0869e85005d48810d8c759c3e43bf56e0362cd7267a803ea9fe6d0b491b8b79"
+    },
+    "historicalAndCurrent": [
+      {
+        "path": "public/pairing/vendor/cubism4.min.js",
+        "historicalCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+        "historicalSha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+        "current": {
+          "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+          "bytes": 119922,
+          "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b"
+        },
+        "byteIdentical": true
+      },
+      {
+        "path": "public/pairing/model_resources.js",
+        "historicalCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+        "historicalSha256": "6d83f81d842ad91b7afc72286bfbbb9c658c119c512921c173c33534a397e98d",
+        "current": {
+          "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/model_resources.js",
+          "bytes": 1747,
+          "sha256": "6d83f81d842ad91b7afc72286bfbbb9c658c119c512921c173c33534a397e98d"
+        },
+        "byteIdentical": true
+      },
+      {
+        "path": "public/pairing/viewer.js",
+        "historicalCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+        "historicalSha256": "d3178fb7512a9b87de833be4ad49c08dbfcbb149cc620bd1610973c7e2b6f6bd",
+        "current": {
+          "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/viewer.js",
+          "bytes": 11002,
+          "sha256": "d3178fb7512a9b87de833be4ad49c08dbfcbb149cc620bd1610973c7e2b6f6bd"
+        },
+        "byteIdentical": true
+      },
+      {
+        "path": "public/studio/actor_animation.js",
+        "historicalCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+        "historicalSha256": "644de9daca3be02601c6e316bfb741de8b7af98812702dfbbe2c088763da441c",
+        "current": {
+          "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/actor_animation.js",
+          "bytes": 13937,
+          "sha256": "644de9daca3be02601c6e316bfb741de8b7af98812702dfbbe2c088763da441c"
+        },
+        "byteIdentical": true
+      },
+      {
+        "path": "public/player/player_scene.js",
+        "historicalCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+        "historicalSha256": "f6b756eb65947f61a3acd333159918bdfef03b327f532a90db1ff2e36e1e4047",
+        "current": {
+          "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player_scene.js",
+          "bytes": 11667,
+          "sha256": "f6b756eb65947f61a3acd333159918bdfef03b327f532a90db1ff2e36e1e4047"
+        },
+        "byteIdentical": true
+      },
+      {
+        "path": "public/player/player.html",
+        "historicalCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+        "historicalSha256": "b97c6143a3333726bf43fefa837edc85ea4548352a1b8263dfdaa90dce1fe329",
+        "current": {
+          "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player.html",
+          "bytes": 2766,
+          "sha256": "b97c6143a3333726bf43fefa837edc85ea4548352a1b8263dfdaa90dce1fe329"
+        },
+        "byteIdentical": true
+      }
+    ],
+    "limitation": "The old before/after source archive records the viewer/animator but not a vendor HTTP body receipt. The vendor blob in its declared source commit is byte-identical to the current inspected blob."
+  },
+  "renderPath": {
+    "viewerHook": {
+      "file": {
+        "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/viewer.js",
+        "bytes": 11002,
+        "sha256": "d3178fb7512a9b87de833be4ad49c08dbfcbb149cc620bd1610973c7e2b6f6bd"
+      },
+      "firstLine": 100,
+      "lastLine": 115,
+      "text": "      this.core = model.internalModel.coreModel;\n      const native = this.core.getModel();\n      this.parameters = native.parameters.defaultValues.slice();\n      this.parts = native.parts.opacities.slice();\n      this.baseWidth = model.width;\n      this.baseHeight = model.height;\n      // Group composition owns the reveal. Set visibility before attaching\n      // the model: animation and lighting preparation continue asynchronously\n      // after this method returns, while PIXI can render between those awaits.\n      model.visible = this.visibleOnLoad;\n      this.app.stage.addChild(model);\n      model.internalModel.on('beforeModelUpdate', () => this.renderPose());\n      this.fit();\n      this.ready = true;\n      installed = true;\n      console.info('MODEL_READY', detail.id, native.parameters.count, this.baseWidth, this.baseHeight, 'visible='+model.visible);"
+    },
+    "actorDispatch": {
+      "file": {
+        "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player_scene.js",
+        "bytes": 11667,
+        "sha256": "f6b756eb65947f61a3acd333159918bdfef03b327f532a90db1ff2e36e1e4047"
+      },
+      "firstLine": 33,
+      "lastLine": 39,
+      "text": "  stop(){super.stop();this.animator?.pause();}\n  tick(){}\n  renderPose(){\n    if(!this.animator){super.renderPose();return;}\n    try{this.animator.render();}\n    catch(error){this.animator=null;this.onError(error);}\n  }"
+    },
+    "animatorApplication": {
+      "file": {
+        "path": "artifacts/stella-site-repair-source/.sites-checkout/public/studio/actor_animation.js",
+        "bytes": 13937,
+        "sha256": "644de9daca3be02601c6e316bfb741de8b7af98812702dfbbe2c088763da441c"
+      },
+      "firstLine": 220,
+      "lastLine": 240,
+      "text": "  apply(curve,value,weight){\n    const core=this.viewer.core;\n    if(curve.Target==='Parameter')core.setParameterValueById(curve.Id,core.getParameterValueById(curve.Id)*(1-weight)+value*weight);\n    else if(curve.Target==='PartOpacity')core.setPartOpacityById(curve.Id,core.getPartOpacityById(curve.Id)*(1-weight)+value*weight);\n    else if(curve.Id==='Opacity')this.viewer.model.alpha=this.viewer.model.alpha*(1-weight)+value*weight;\n    else if(['EyeBlink','LipSync'].includes(curve.Id)){\n      for(const group of this.viewer.groups.filter(group=>group.Name===curve.Id))\n        for(const id of group.Ids)this.apply({Target:'Parameter',Id:id},value,weight);\n    }else throw new Error('未识别的模型曲线：'+curve.Id);\n  }\n  render(){\n    this.clock();\n    const native=this.viewer.core.getModel();native.parameters.values.set(this.viewer.parameters);\n    native.parts.opacities.set(this.viewer.parts);this.viewer.model.alpha=1;\n    for(const layer of this.definition.layers){\n      if(layer===this.choiceLayer)this.renderChoice();\n      const row=this.layers.get(layer.name);if(!row)continue;\n      const fade=row.fade?Math.min(1,(this.time-row.fade.start)/row.fade.duration):1;\n      for(const item of this.statePose(row))this.apply(item.curve,item.value,row.weight*fade);\n    }\n  }"
+    },
+    "defaultInputSource": {
+      "file": {
+        "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/viewer.js",
+        "bytes": 11002,
+        "sha256": "d3178fb7512a9b87de833be4ad49c08dbfcbb149cc620bd1610973c7e2b6f6bd"
+      },
+      "firstLine": 99,
+      "lastLine": 104,
+      "text": "      this.lips = new VoiceLipSync(this.config.lip_sync, groups, ...mouth);\n      this.core = model.internalModel.coreModel;\n      const native = this.core.getModel();\n      this.parameters = native.parameters.defaultValues.slice();\n      this.parts = native.parts.opacities.slice();\n      this.baseWidth = model.width;"
+    }
+  },
+  "sdk": {
+    "file": {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "bytes": 119922,
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b"
+    },
+    "save": {
+      "needle": "saveParameters(){",
+      "byteOffset": 13465,
+      "line": 1,
+      "column": 13466,
+      "excerpt": "saveParameters(){const t=this._model.parameters.count,e=this._savedParameters.length;for(let i=0;i<t;++i)i<e?this._savedParameters[i]=this._parameterValues[i]:this._savedParameters.push(this._parameterValues[i])}getModel(){return this._model}getPartIndex(t){let e;const i=this._model.parts.count;for(e=0;e<i;++"
+    },
+    "restore": {
+      "needle": "loadParameters(){",
+      "byteOffset": 18750,
+      "line": 1,
+      "column": 18751,
+      "excerpt": "loadParameters(){let t=this._model.parameters.count;const e=this._savedParameters.length;t>e&&(t=e);for(let i=0;i<t;++i)this._parameterValues[i]=this._savedParameters[i]}initialize(){this._parameterValues=this._model.parameters.values,this._partOpacities=this._model.par"
+    },
+    "nativeDrawableUpdate": {
+      "needle": "class D{update(){",
+      "byteOffset": 13151,
+      "line": 1,
+      "column": 13152,
+      "excerpt": "class D{update(){this._model.update(),this._model.drawables.resetDynamicFlags()}getCanvasWidth(){return null==this._model?0:this._"
+    },
+    "internalUpdateOrder": {
+      "needle": "this.emit(\"beforeModelUpdate\"),o.update(),o.loadParameters()",
+      "byteOffset": 113134,
+      "line": 1,
+      "column": 113135,
+      "excerpt": "e\");const n=this.motionManager.update(this.coreModel,e);this.emit(\"afterMotionUpdate\"),o.saveParameters(),null==(i=this.motionManager.expressionManager)||i.update(o,e),n||null==(s=this.eyeBlink)||s.updateParameters(o,t),this.updateFocus(),this.updateNaturalMovements(1e3*t,1e3*e),null==(r=this.physics)||r.evaluate(o,t),null==(a=this.pose)||a.updateParameters(o,t),this.emit(\"beforeModelUpdate\"),o.update(),o.loadParameters()}updateFocus(){this.coreModel."
+    },
+    "sequence": [
+      "motionManager.update",
+      "afterMotionUpdate",
+      "core.saveParameters",
+      "expressions/eyeBlink/focus/natural movements/physics/pose",
+      "emit beforeModelUpdate -> viewer.renderPose -> ActorAnimation.render -> restore defaults and apply explicit curves",
+      "core.update -> native model update computes drawable state",
+      "core.loadParameters -> copies saved input parameter values back"
+    ],
+    "conclusion": "The parameter input array is intentionally restored after the drawable update. Post-restore input values are not the applied pose snapshot that produced those drawables. This static sequence explains how nonzero motion pixels and0 input readbacks can coexist without proving a broken animation or wrong parameter name."
+  },
+  "feltIdentifiers": {
+    "modelJson": {
+      "path": "story_crowd_data/assets/models/felt01/ac/ac.model3.json",
+      "bytes": 5680,
+      "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+    },
+    "moc": {
+      "path": "story_crowd_data/assets/models/felt01/ac/ac.moc3",
+      "bytes": 536128,
+      "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+    },
+    "exactTokens": {
+      "ParamUpperArmL": {
+        "exactAsciiTokenPresent": true,
+        "byteOffset": 38080,
+        "followedByNul": true
+      },
+      "ParamUpperArmR": {
+        "exactAsciiTokenPresent": true,
+        "byteOffset": 38016,
+        "followedByNul": true
+      },
+      "ParamForeArmL": {
+        "exactAsciiTokenPresent": true,
+        "byteOffset": 38144,
+        "followedByNul": true
+      },
+      "ParamForeArmR": {
+        "exactAsciiTokenPresent": true,
+        "byteOffset": 38208,
+        "followedByNul": true
+      }
+    },
+    "indexAndDefaultValueStatus": "The tokens occur exactly in the actual felt01 MOC and the old JSON has numeric keys, but the old logger did not store ids/index/count/defaultValues. Exact per-ID native default numbers are not independently measured by this audit.",
+    "defaultArrayApiExists": true,
+    "viewerDefaultArraySource": "native.parameters.defaultValues.slice(), viewer.js:102",
+    "doNotInfer": "Do not label captured0 as a proven model default without a fresh index/default snapshot; saved SDK baseline and model defaults are distinct objects."
+  },
+  "dynamicLimitations": [
+    "No old snapshot was taken immediately after manual Animator application and before SDK core.update/loadParameters.",
+    "The independent rAF record does not log the order of all beforeModelUpdate listeners or an end-of-loadParameters stage; its exact runtime read phase remains unmeasured.",
+    "The model ID is logged but unique viewer/core/MOC instance identity is not, so stale global-object binding cannot be rigorously excluded for every transition row.",
+    "This audit uses the prior named direct-image review as the source of the reported arm-lift pixel contradiction; it performs no new image review."
+  ],
+  "priorPixelReview": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/offline-felt22-body-discriminators-v1.json",
+    "bytes": 57374,
+    "sha256": "e93c31492855eb486125190da4ea6b08850b57df3e759d8d6812a2c042f363ed"
+  },
+  "minimalFreshLoggerPlan": [
+    "Install a passive beforeModelUpdate listener on the actual loaded Felt internalModel after its existing viewer handler; first record listeners/order and verify the observer follows that handler. Attaching to the prior Rom model is insufficient.",
+    "At that verified stage, record shared clock.frame, model/core/viewer identity, model detail/MOC identity, all actual parameter ids, exact indices, raw values and per-ID defaults/min/max. Missing index must be explicit null/error, never coerced to0. Do not call a getter that materializes an unknown parameter.",
+    "Tag the pre-native-update snapshot only after verifying Animator already ran in that same listener cycle; do not call Animator.render/clock again to obtain it.",
+    "Pair a later independent rAF read and existing PNG copy with the same instance, shared frame and last render ordinal only if its timestamp follows the synchronous SDK update/load return. Otherwise keep it unpaired, not a post-restore claim.",
+    "Preserve both pre-update applied inputs and post-restore inputs. Read-only drawable summaries may additionally bind the generated mesh, but never alter SDK save/load/update behavior."
+  ],
+  "productionFixProposed": false,
+  "onlyCaptureLoggerInstrumentationProposed": true,
+  "browserOpened": false,
+  "formalWrites": false,
+  "sourceWrites": false,
+  "script": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/parameter-readback-static-v1/inspect_readback.py",
+    "bytes": 10114,
+    "sha256": "ff7c0966a0327173b4956b389e19beb8ae351a5c1ebda60e3a487388992289fd"
+  }
+}

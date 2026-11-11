@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "status": "readonly_helper_function_and_schema_preflight_passed_root_confirmation_unchanged",
+  "reviewer": "/root/p15_p16_voice_evidence",
+  "createdUtc": "2026-11-11T19:14:06.264839+00:00",
+  "helper": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/accept_delegated_character_packet.py",
+    "sha256": "19cadff63af191b2ffd8f6ab3ed822daf3a69e7b598ec3ef436649838f41e581"
+  },
+  "packet": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/normalized-node22-motion-packet-draft.json",
+    "sha256": "8bb1b69acd5197026090655aa3a7ee4836087fba5f9729cd88eff911983bed45"
+  },
+  "freshReviewerReceipt": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/fresh-offline-direct-review-receipt.json",
+    "sha256": "f7d48dd29467802ee0a39b398e84e2e5404d48aa36dad31cb2109427a90fcdb4"
+  },
+  "readonlyFunction": "accept_temporal_motion(row,evidence,reviewer,snapshot); acceptance main/install not invoked",
+  "result": {
+    "entryContext": "retained_actor",
+    "independentFromFormalPredecessor": false,
+    "independentFromPendingPredecessors": true,
+    "requiredPredecessor": {
+      "sceneId": 10280014,
+      "scenarioId": 21,
+      "stableKey": "s10280014-p11-at0103",
+      "sourceText": "……へえ。やけに詳しいじゃねーか。いいぜ、話は聞いてやるよ",
+      "expected": {
+        "character": "live2d/AC_felt01",
+        "motion": "act_normal,face_shinken"
+      },
+      "alreadyIndependentlyReviewed": true,
+      "reviewReceipt": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/offline-direct-review-receipt-v1.json",
+        "sha256": "3c7d57a9d8048ec6ef1c3c1e4cf80c8669121650d5b54914bf79a65da0ace5b1"
+      }
+    },
+    "retainedAlphaMinimum": 1,
+    "boundaryObserverWarningsPreserved": 22,
+    "originalEntryFrames": 76,
+    "playerEntryFrames": 96,
+    "servedSourceFiles": 12,
+    "verifiedMotionComponents": [
+      "body",
+      "face"
+    ],
+    "fullVisibleEntryPassed": true,
+    "originalCsvRecovered": false,
+    "exactTimingValidated": false
+  },
+  "checks": {
+    "installedNativeAndJapaneseSourceGuards": true,
+    "entryReferencesDeepEqualToFrozenReviewerDecision": true,
+    "requiredPredecessorDeepEqualAcrossThreeLocations": true,
+    "eightCoreAndFourSupplementalArchivesAndCurrentSources": true,
+    "allOriginalTargetAndPredecessorPngDigests": true,
+    "originalControllerBindingsCurvesAndFreshPayloadRefs": true,
+    "sourceSnapshotUnchangedOnDisk": true,
+    "helperUnmodified": true,
+    "draftRootConfirmedStillFalse": true,
+    "newActorDefaultRouteRetainsIndependentAndLowAlphaRulesByStaticReview": true
+  },
+  "scopeNotes": [
+    "Full raw global success=false and 21/Rom14 plus23/Felt22 unbound outgoing callbacks are retained. Target22 has96 verified same-frame PNG links, alpha1 and no target warning/transition.",
+    "No image viewing, Chrome, acceptance output, native/Studio write or helper edit was performed by this preflight."
+  ],
+  "peerReview": {
+    "blockingFindingsForThisPacket": [],
+    "observations": [
+      {
+        "location": "accept_retained_actor_entry target error check",
+        "finding": "This packet has no console error messages, as bound fresh-numeric-audit records. The helper rechecks page failures/HTTP/target observer warnings, but does not independently reject caught console type=error records for the target. A future capture with such a console error should remain rejected or require an explicit scoped audit.",
+        "affectsThisPacket": false
+      },
+      {
+        "location": "accept_temporal_motion compiled snapshots and raw payload references",
+        "finding": "The helper fingerprints these files but does not parse them to cross-check their node/sampling links again. This packet additionally binds the independent reviewer compiledNodes/integrity and exact captured index and passed their JSON equivalence checks; no mismatch exists in this packet.",
+        "affectsThisPacket": false
+      }
+    ]
+  }
+}

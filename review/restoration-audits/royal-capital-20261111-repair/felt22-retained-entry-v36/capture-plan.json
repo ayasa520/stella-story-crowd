@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "status": "prepared_not_activated_not_captured",
+  "exampleId": "felt22-ikaru-from-formal21-v31",
+  "adapter": "http://127.0.0.1:5189",
+  "canonicalCwd": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout",
+  "canonicalCommit": "37232806a8180375a4b7a178e27157bb16d12201",
+  "packet": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/preview-packet.json",
+    "sha256": "e090a6e842a46ed618eda27f9f6b37bd737c8433c1a666335f4a480d628f70ed",
+    "bytes": 6682
+  },
+  "registryProposal": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/registry-proposal.json",
+    "sha256": "c3a1ebce52c75ee93c0eaa542d8e69da365d4c164883333ebcf1c83fc00a603e",
+    "bytes": 477
+  },
+  "preparationGuards": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/preparation-guards.json",
+    "sha256": "a4f8e3b772453539b2d3a549deb1f57b7167f882c506fde27872ebca0de24261",
+    "bytes": 13682
+  },
+  "oneCaseRoute": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "overriddenFields": {
+    "10280014:22": {
+      "motion": "act_ikaru,face_shinken"
+    }
+  },
+  "capture": {
+    "viewport": [
+      480,
+      895
+    ],
+    "iframe": [
+      480,
+      856
+    ],
+    "rawPngNodes": [
+      21,
+      22
+    ],
+    "everyObservedRaf": true,
+    "minimumHeldGameSecondsAfterMotionReady": 3.5,
+    "maximumImagesPerNodeFailureLimit": 600,
+    "maximumGameWindowFailureLimit": 8,
+    "node22MustReachBodyState": "act_ikaru_w",
+    "requiredNode22Alpha": 1
+  },
+  "observer": {
+    "event": "beforeModelUpdate",
+    "registerAfter": "existing PairingViewer ()=>this.renderPose() handler",
+    "verifyAtRegistrationAndCallback": true,
+    "noExtraClockRenderOrParameterWrites": true,
+    "sameFrameAndInstanceAssociation": true,
+    "postReadLabel": "later_rAF_raw_read_not_dynamically_proven_post_restore"
+  },
+  "schemaDelta": {
+    "index": [
+      "schemaExtensions",
+      "runs[key].parameterReadbackAudit"
+    ],
+    "payloadTrace": [
+      "parameterSchemas",
+      "parameterObserverRegistrations",
+      "preUpdate",
+      "entrySnapshots",
+      "samplingIssues",
+      "cleanup"
+    ],
+    "rafAndImageRows": [
+      "instance",
+      "parameterReadback",
+      "preUpdateLink"
+    ],
+    "unchanged": "Old payload/production-evidence-index keys, original PNG bytes, timing/alpha/clock arrays and flat parameters are preserved."
+  },
+  "activationAndRunOrder": [
+    "Parent appends exactly the proposed scope, restarts its own adapter5189, then explicitly grants this agent the sole Chrome session.",
+    "Run snapshot_sources.py before under nice19/taskset22,23; health and fresh program identity must pass before opening Canary.",
+    "One fresh Canary session, all processes inherit nice19/taskset22,23. Run capture_felt22.js once; trusted iframe clicks traverse20→21→22→23.",
+    "Capture all observed21/22 raw PNG frames from enter through active motion and held tail. The22 enter snapshot links the last21 PNG before motion selection.",
+    "Capture script always blanks the page after saving the raw payload. Browser owner immediately closes the sole session and proves CLI/OS Chrome0.",
+    "Run snapshot_sources.py after and build_runtime_evidence.py offline; direct image review follows after Chrome0. Preserve all failures and all original files."
+  ],
+  "limits": [
+    "No Chrome has been started for this preparation.",
+    "No production/native/Studio/actual registry changes.",
+    "No new motion/fade/Wait/CardOut fields and no rate inferred from the original SPEED label.",
+    "Capture scheduling and PNG readback costs are logged; no fixed frame rate or original onset is asserted."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "status": "final_helper_peer_review_passed_prior_two_log_boundary_observations_resolved",
+  "reviewer": "/root/p15_p16_voice_evidence",
+  "createdUtc": "2026-11-11T19:16:12.029637+00:00",
+  "helper": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/accept_delegated_character_packet.py",
+    "sha256": "a04b430a1b90516f0c1ef7b57feafd7178d3f0c56aeca810199c4fc0171d7a57"
+  },
+  "previousPeerReceipt": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/normalized-node22-helper-peer-review.json",
+    "sha256": "6d25d20c6569cf7113fd0c1f731679aa17e62d0bf19f8eac5cdf3f6375d9e096"
+  },
+  "normalizedDraft": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/normalized-node22-motion-packet-draft.json",
+    "sha256": "8bb1b69acd5197026090655aa3a7ee4836087fba5f9729cd88eff911983bed45"
+  },
+  "rootCliAcceptedPacket": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/accepted-felt22-motion-v36.json",
+    "sha256": "0805d22c7a1ba932eb041cb306dfcc61d3dca3a28ff143e24d9257555dc3e02e"
+  },
+  "freshReviewerReceipt": {
+    "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/fresh-offline-direct-review-receipt.json",
+    "sha256": "f7d48dd29467802ee0a39b398e84e2e5404d48aa36dad31cb2109427a90fcdb4"
+  },
+  "changesReviewed": [
+    {
+      "lines": "148-152",
+      "finding": "Retained gate now rejects any recorded console type=error as well as HTTP and scoped transition/observer failures. This capture has zero console errors.",
+      "resolved": true
+    },
+    {
+      "lines": "157-160",
+      "finding": "Renamed return value indexedOrderOrBindingFailuresPreserved=22 correctly identifies the Felt-only indexed audit count. It no longer implies a count of all global raw observer warnings. Raw21/Rom14 and23/Felt22 callbacks, two deduplicated sampling warnings, and payload success=false remain preserved.",
+      "resolved": true
+    }
+  ],
+  "additionalJsonCrossBinding": {
+    "capturedIndexNodesEqualRawPayloadNodes": true,
+    "capturedIndexNodesEqualIndependentReviewerCompiledNodes": true,
+    "normalizedCompiledSnapshotsEqualCapturedIndexNodes": true,
+    "originalIndex": {
+      "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/production-evidence-index.json",
+      "sha256": "b374e10cc7b222d612950d6cfc8a22bb060a3fa822ee475708a391bee4c45a09"
+    },
+    "reviewedCompiledNodes": {
+      "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/fresh-reviewed-compiled-nodes.json",
+      "sha256": "c7792a06ed29aee4d55855851a13f4b7d983d0abc05ec1919bd97222a61ec0e8"
+    },
+    "normalizedCompiledSnapshots": {
+      "file": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/fresh-felt22-v31/normalized-node22-compiled-snapshots-draft.json",
+      "sha256": "a1968a8bf604b650bac888af8908e5dcb851a4559e49a2347b19a689db1a0b2f"
+    }
+  },
+  "rootCliTemporalChecks": {
+    "entryContext": "retained_actor",
+    "independentFromFormalPredecessor": false,
+    "independentFromPendingPredecessors": true,
+    "requiredPredecessor": {
+      "sceneId": 10280014,
+      "scenarioId": 21,
+      "stableKey": "s10280014-p11-at0103",
+      "sourceText": "……へえ。やけに詳しいじゃねーか。いいぜ、話は聞いてやるよ",
+      "expected": {
+        "character": "live2d/AC_felt01",
+        "motion": "act_normal,face_shinken"
+      },
+      "alreadyIndependentlyReviewed": true,
+      "reviewReceipt": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p11-felt21-production-review-v1/offline-direct-review-receipt-v1.json",
+        "sha256": "3c7d57a9d8048ec6ef1c3c1e4cf80c8669121650d5b54914bf79a65da0ace5b1"
+      }
+    },
+    "retainedAlphaMinimum": 1,
+    "indexedOrderOrBindingFailuresPreserved": 22,
+    "originalEntryFrames": 76,
+    "playerEntryFrames": 96,
+    "servedSourceFiles": 12,
+    "verifiedMotionComponents": [
+      "body",
+      "face"
+    ],
+    "fullVisibleEntryPassed": true,
+    "originalCsvRecovered": false,
+    "exactTimingValidated": false
+  },
+  "blockingFindingsForThisPacket": [],
+  "limits": [
+    "Pure code/JSON/file-digest review only; no new image inspection or browser.",
+    "The actual CLI accepted packet is root-produced evidence; this peer review does not call helper main or install data.",
+    "New-actor path retains the independent predecessor and low-alpha requirements; the retained strategy remains separately selected by matching temporal/decision context.",
+    "The normalized draft still has rootConfirmed=false and is unchanged. Any later source/native change must receive new guards rather than relabelling this frozen capture."
+  ]
+}

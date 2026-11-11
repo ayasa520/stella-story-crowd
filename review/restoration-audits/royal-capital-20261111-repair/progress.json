@@ -62,8 +62,8 @@
       "actualPlayerPlaybackForNewBatch": "not-run",
       "fullPartAccepted": false
     },
-    "reviewedBodyFields": 2,
-    "reviewedIndependentFaceFields": 3,
+    "reviewedBodyFields": 3,
+    "reviewedIndependentFaceFields": 4,
     "delegatedImageReview": "All 917 new identity fields since eb0cacd were directly inspected by named subagents; root checked witness digests and installed-source preconditions without viewing images. The P17-P20 bundle contains 382 confirmed observations, including one identity already installed before this batch; only 381 were new fields. v21 adds124 more reviewed identities from the remaining P23/P24 observations",
     "independentMotionRecheck": "Subaru10280014:4 and Rom:5/:20 independently rechecked against new original-video/controller entry sequences; qualitative order and held pose supported, exact original CSV and exact timing still unknown",
     "p11ClothingVariant": "elsa_nomantle01 is used for the visibly uncloaked variant; the original cloaked elsa01 is separately packaged",
@@ -597,6 +597,44 @@
         "nestedReceiptsVerified": 7,
         "scope": "Textual REPORT and source diff review only; no repeated native disassembly or browser runtime QA."
       }
+    },
+    "v36Felt22Motion": {
+      "field": "act_ikaru,face_shinken",
+      "verifiedMotionComponents": [
+        "body",
+        "face"
+      ],
+      "entryContext": "retained_actor",
+      "requiredAcceptedFormalPredecessor": 21,
+      "originalEntryFrames": 76,
+      "actualEntryFrames": 96,
+      "prior21TailFramesViewed": 29,
+      "retainedActorAlpha": 1,
+      "sameModelInstance": true,
+      "currentSourceCommit": "37232806a8180375a4b7a178e27157bb16d12201",
+      "servedSourceFilesVerified": 12,
+      "allFourCapturedCompiledNodesEqualInstalledFormalNodes": true,
+      "rawCaptureSuccessFalsePreserved": true,
+      "staleObserverCallbacksExcluded": {
+        "node21OldRom": 14,
+        "node23OldFelt": 22
+      },
+      "target22ObserverWarnings": 0,
+      "playerAndHttpErrors": 0,
+      "browserAndCliOsAfterClose": 0,
+      "originalCsvRecovered": false,
+      "exactTimingValidated": false,
+      "extraLayerUnknown": true,
+      "fullCaseUnconditionallyPassed": false,
+      "otherMotionNodesStillPending": [
+        15,
+        16,
+        17,
+        19,
+        24
+      ],
+      "receipt": "felt22-retained-entry-v36/fresh-offline-direct-review-receipt.json",
+      "additionalFourMemoryNodeVisitsExcludedFrom207": true
     }
   },
   "knownRemainingWork": [
