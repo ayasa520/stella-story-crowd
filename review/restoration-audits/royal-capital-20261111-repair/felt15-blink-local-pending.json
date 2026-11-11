@@ -1,0 +1,35 @@
+{
+  "status": "pending_no_new_complete_entry_reproduction_candidate",
+  "sceneId": 10280014,
+  "scenarioId": 15,
+  "scope": "Pure-local original prefab, original ARM64 and decoded original entry-curve investigation. No browser, player or production data mutation.",
+  "earlierProductionResult": "../p11-felt-clock-production-review-v2/final-clock-v1/final-stable-clock-and-visual-receipt.json",
+  "observedMismatch": "Original video first low-alpha Felt frame has closed eyes, then opens, then enters a long closed worried hold. The final shared-clock production prototype first visible low-alpha eyes are open. The later open-to-closed hold is present. This remains a failed complete-entry comparison.",
+  "facts": [
+    "The complete original ac_felt01.prefab inventory contains one enabled CubismEyeBlinkController with EyeOpening=1 and BlendMode=2, and two enabled CubismEyeBlinkParameter destinations.",
+    "Neither complete original ac_felt01.prefab nor ac_base_felt01.prefab MonoBehaviour inventory contains a serialized CubismAutoEyeBlinkInput instance. Every referenced MonoScript in these inventories was resolved.",
+    "The original CubismEyeBlinkController.OnLateUpdate reads EyeOpening and applies it to destinations. Its constructor defaults EyeOpening=1 and BlendMode=2. This controller method does not generate a blink countdown or phase.",
+    "Original CubismAutoEyeBlinkInput exists as a metadata type. Its LateUpdate contains a Time.deltaTime countdown, phase evolution and an EyeOpening write. Existence of its class and method is not evidence of a live instance or its configuration.",
+    "Original L2D_Eye.Init configures L2D_LookTarget and the Cubism look controller. Its inspected Awake callback calls Init. These methods do not establish an independent eye blink generator.",
+    "Original face_nayamu explicitly owns both EyeOpen channels: open through approximately .533 motion seconds, then closes. When its face override has full weight, it covers body eye channels, including act_tameiki's early blink.",
+    "Only act_nayamu_w and face_nayamu_w have the exact desired held head/eye/brow/mouth fingerprint in the inspected Felt controller. Original-video arms exclude the act_nayamu crossed-arm held pose for node 15.",
+    "act_tameiki contains an early close-open blink and a later closure, but reopens by approximately 1.8 motion seconds. Its body-only curve does not provide the observed long worried closed hold. Adding face_nayamu also covers its distinguishing early blink."
+  ],
+  "notEstablished": [
+    "No unique original CSV motion command was recovered.",
+    "Absence of a serialized AutoEyeBlinkInput does not exclude a dynamically added instance or another runtime writer of EyeOpening.",
+    "No cause of the original-versus-production first-visible-eye mismatch is assigned.",
+    "No extra Wait, altered duration, guessed blink setting or production motion change is proposed."
+  ],
+  "nextDiscriminatingEvidence": [
+    "If original runtime instrumentation becomes available, log CubismEyeBlinkController.EyeOpening immediately before and after OnLateUpdate together with the two destination parameter values and card alpha on the first visible frames.",
+    "Record whether CubismAutoEyeBlinkInput.LateUpdate is called for this model, its instance identity, enabled flag, Mean/MaximumDeviation/Timescale/T/CurrentPhase and EyeOpening writes; do not infer this from the class name.",
+    "At the same monotonic timestamps record original Animator body/face current and next state, normalized time, layer weight, Motion command and CardIn alpha. This distinguishes curve blending or another parameter writer without inventing an original CSV."
+  ],
+  "evidence": [
+    {"path": "original-blink-inventory.json", "sha256": "06b301b694a35d7b09b694f66604a787639579c94f1062b8a2f08bef2313ab4f"},
+    {"path": "entry-eye-curve-analysis.json", "sha256": "e1349f5316f50072a25d72f4326e83d6fac07f5d3f7dcb43fc90bfad4379cb52"}
+  ],
+  "formalMotionFields": "15/16/17 remain empty. The 16/17 reproduction evidence remains conditional on prototype predecessor states.",
+  "wholeGoal": "This narrow investigation does not complete P11 or any chapter. Continue independent P11 motion/face sequences while retaining this pending issue."
+}

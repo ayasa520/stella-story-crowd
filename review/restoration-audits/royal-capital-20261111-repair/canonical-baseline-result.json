@@ -1,0 +1,300 @@
+{
+  "status": "representative_baseline_passed_with_documented_harness_retries",
+  "siteRoot": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout",
+  "sourceFilesUnchangedDuringBrowserRun": true,
+  "workspaceServedSourcesAlsoUnchanged": true,
+  "routes": 6,
+  "results": [
+    {
+      "name": "episode1-choice-cardout-and-lifecycle",
+      "nodes": [
+        {
+          "node": "10010001:5",
+          "phase": "choice",
+          "error": false,
+          "choices": [
+            {
+              "id": "10010001:5:1009",
+              "text": "← 四处探索",
+              "disabled": false,
+              "selected": false
+            },
+            {
+              "id": "10010001:5:1010",
+              "text": "→ 向人打听",
+              "disabled": false,
+              "selected": false
+            }
+          ],
+          "text": "昴\n文明是惯例的中世纪风格，大概还是个\n有剑、有魔法，也充满冒险的世界……\n那么，接下来该怎么办呢？",
+          "display": "actor-or-empty",
+          "screenshot": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-episode1-choice.png"
+        },
+        {
+          "node": "10010001:6",
+          "phase": "ready",
+          "error": false,
+          "choices": [],
+          "text": "昴\n看起来，这是个到处都有亚人的世界，\n大概也少不了战争和冒险。",
+          "display": "actor-or-empty"
+        }
+      ],
+      "lifecycle": {
+        "twice": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 302,
+          "frameTimestampMs": 15928.1,
+          "rawDeltaSeconds": 0.06670000000000073,
+          "deltaSeconds": 0.13340000000000146,
+          "gameSeconds": 11.182966686534892,
+          "previewRate": 2,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "beforeStop": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 302,
+          "frameTimestampMs": 15928.1,
+          "rawDeltaSeconds": 0.06670000000000073,
+          "deltaSeconds": 0.13340000000000146,
+          "gameSeconds": 11.182966686534892,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "stopped": "stopped",
+        "ownerType": "StoryActor",
+        "afterRestart": {
+          "phase": "choice",
+          "clock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 372,
+            "frameTimestampMs": 19477.9,
+            "rawDeltaSeconds": 0.08330000000000291,
+            "deltaSeconds": 0.08330000000000291,
+            "gameSeconds": 14.51620002980233,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          }
+        }
+      }
+    },
+    {
+      "name": "episode2-normal-actor-cardin",
+      "nodes": [
+        {
+          "node": "10140003:3",
+          "phase": "ready",
+          "error": false,
+          "choices": [],
+          "text": "——王都后巷·白天",
+          "display": "actor-or-empty"
+        },
+        {
+          "node": "10140003:4",
+          "phase": "ready",
+          "error": false,
+          "choices": [],
+          "text": "银发少女\n……不过一码归一码，\n这种状况我不能坐视不管。",
+          "display": "actor-or-empty",
+          "screenshot": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-episode2-emilia.png"
+        }
+      ]
+    },
+    {
+      "name": "episode3-actor-replacement-and-choice",
+      "nodes": [
+        {
+          "node": "10190004:7",
+          "phase": "ready",
+          "error": false,
+          "choices": [],
+          "text": "会说话的小猫\n至少在你醒过来之前，让你幸福一下嘛。我可是费了这番心思哦。",
+          "display": "actor-or-empty"
+        },
+        {
+          "node": "10190004:8",
+          "phase": "choice",
+          "error": false,
+          "choices": [
+            {
+              "id": "10190004:8:82",
+              "text": "← 因为是猫而失望",
+              "disabled": false,
+              "selected": false
+            },
+            {
+              "id": "10190004:8:83",
+              "text": "→ 猫也不错 · 未恢复",
+              "disabled": true,
+              "selected": false
+            }
+          ],
+          "text": "昴\n刚才的小猫……不对，大猫……？",
+          "display": "actor-or-empty"
+        },
+        {
+          "node": "10190004:9",
+          "phase": "ready",
+          "error": false,
+          "choices": [],
+          "text": "会说话的小猫\n喵——，真冷淡呢。",
+          "display": "actor-or-empty",
+          "screenshot": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-episode3-pack.png"
+        }
+      ]
+    },
+    {
+      "name": "ordinary-cg",
+      "nodes": [
+        {
+          "node": "10190004:5",
+          "phase": "ready",
+          "error": false,
+          "choices": [],
+          "text": "？？？\n啊，你醒啦？",
+          "display": "picture",
+          "screenshot": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-ordinary-cg.png"
+        }
+      ]
+    },
+    {
+      "name": "ordinary-movie-full-playback",
+      "activation": {
+        "hasBeenActive": true,
+        "isActive": true
+      },
+      "state": {
+        "node": "10190008:15",
+        "phase": "ready",
+        "videoCurrentTime": 7.488
+      }
+    },
+    {
+      "name": "door-full-playback-through-clear",
+      "state": {
+        "node": "10270042:25",
+        "phase": "complete"
+      },
+      "movieStarts": [
+        {
+          "node": "10270042:24",
+          "resource": "adv_dive01_out",
+          "source": [
+            1334,
+            1334
+          ],
+          "viewport": [
+            523,
+            930
+          ],
+          "presentation": "door",
+          "fit": "cover",
+          "background": "bg/bg001_black",
+          "duration": 5.034
+        }
+      ]
+    }
+  ],
+  "acceptedSegmentRuntimeErrors": [],
+  "documentedHarnessRetries": [
+    {
+      "attempt": "canonical-baseline-first-attempt.json",
+      "failure": "Error: Third-episode recovered choice unavailable",
+      "resolution": "Wait for actual ready/choice state after phase_2_end before reading parent choice UI. Actual left choice was verified enabled; runtime unchanged."
+    },
+    {
+      "attempt": "canonical-baseline-normal-segments.json",
+      "failure": "Error: STORY_PLAYER_ERROR 10190008:14 movie NotAllowedError: play() failed because the user didn't interact with the document first. https://goo.gl/xX8pDD",
+      "resolution": "Direct movie random entry lacked document user activation. Reran media segments with trusted clicks on the actual player viewport; full natural playback passed without source changes."
+    }
+  ],
+  "provenance": {
+    "actualIframe": "/player/player.html?embedded=1",
+    "port": 5187,
+    "browserSession": "stella-canonical-clock",
+    "browserPid": 119817,
+    "nice": 19,
+    "cpus": [
+      22,
+      23
+    ],
+    "browserClosed": true,
+    "noBuildRan": true,
+    "noSeekUsed": true,
+    "dataModified": false,
+    "motion15Accepted": false
+  },
+  "screenshots": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-door-clear.png",
+      "sha256": "18715aa7119935374897b61ea960c9fe172363750be892110c1bc836d6a661b3",
+      "bytes": 215681
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-episode1-choice.png",
+      "sha256": "4d0433c105efe2acbf864c051b15603ccf4643b004c11b149c98bd593e0e460f",
+      "bytes": 615161
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-episode2-emilia.png",
+      "sha256": "7fd003c5da8ed081036f38ed2cfa7ad499385bec8b217cc3176c092283ad4dd0",
+      "bytes": 549835
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-episode3-pack.png",
+      "sha256": "4822d16578b50ab79593fa4ec49317f1a2508a9232ae73cbff33addc4bbe0681",
+      "bytes": 555281
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-ordinary-cg.png",
+      "sha256": "71945d0303c5d3ce1f6f87942382dc09b8b2055abc873ecfddb07bc3a907ddd8",
+      "bytes": 172105
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/canonical-ordinary-movie.png",
+      "sha256": "4a835bc68e0db853591cd4a99f5e47e6375e5fd21fda2151b1223773310b5704",
+      "bytes": 365636
+    }
+  ],
+  "limits": [
+    "Functional/rendering smoke baseline; not a new original-video pose/timing acceptance.",
+    "Material PairingViewer.time remains outside this repair.",
+    "Natural browser scheduling-gap cause remains unknown."
+  ],
+  "offlineVisualReview": {
+    "path": "canonical-offline-visual-review.json",
+    "status": "accepted_for_representative_rendering_smoke_scope",
+    "sha256": "e7be6ca535de79b5ed27eeb57e64bbf548ed80924a19de5618585b90edb5bcde"
+  },
+  "sourceBaseCommit": "6309c1a72137377d6af25bbe2f8ad5b93938c93c",
+  "frozenSourceMapping": {
+    "baselineBaseCommit": "6309c1a72137377d6af25bbe2f8ad5b93938c93c",
+    "canonicalPackagedCommitNowVerified": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+    "canonicalCleanNowVerified": true,
+    "allNineRecordedSourceHashesMatch": true,
+    "sourceHashes": "canonical-clock-file-hashes.json",
+    "rootReportedArchiveEightRuntimeFilesMatch": true,
+    "archiveMatchReportedBy": "/root; source files were independently rechecked here"
+  },
+  "selectedCardOutEvents": [
+    "STORY_CARD_OUT_START 9105.799999998882 true",
+    "STORY_CARD_OUT_START 9529.599999999627 true"
+  ],
+  "verifiedNativeNodes": [
+    "10010001:5",
+    "10010001:6",
+    "10140003:3",
+    "10140003:4",
+    "10190004:7",
+    "10190004:8",
+    "10190004:9",
+    "10190004:5",
+    "10190008:14",
+    "10190008:15",
+    "10270042:23",
+    "10270042:24",
+    "10270042:25"
+  ]
+}

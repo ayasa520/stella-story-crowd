@@ -26,7 +26,7 @@
   "visual": {
     "reviewedSparseEntryBackgrounds": 121,
     "reviewedInternalBackgroundChanges": 22,
-    "reviewedCharacterFields": 1422,
+    "reviewedCharacterFields": 1546,
     "p09CharacterFields": 66,
     "p10CharacterFields": 113,
     "p11ReviewedCharacterFields": 189,
@@ -41,11 +41,11 @@
     "p20NewCharacterFields": 89,
     "p21CharacterFields": 38,
     "p22CharacterFields": 41,
-    "p23PrefixCharacterFields": 64,
-    "p24First72CharacterFields": 22,
+    "p23CharacterFields": 124,
+    "p24CharacterFields": 86,
     "reviewedBodyFields": 1,
     "reviewedIndependentFaceFields": 2,
-    "delegatedImageReview": "All 668 new identity fields since eb0cacd were directly inspected by named subagents; root checked witness digests and installed-source preconditions without viewing images. The P17-P20 bundle contains 382 confirmed observations, including one identity already installed before this batch; only 381 were new fields",
+    "delegatedImageReview": "All 792 new identity fields since eb0cacd were directly inspected by named subagents; root checked witness digests and installed-source preconditions without viewing images. The P17-P20 bundle contains 382 confirmed observations, including one identity already installed before this batch; only 381 were new fields. v21 adds124 more reviewed identities from the remaining P23/P24 observations",
     "independentMotionRecheck": "Subaru10280014:4 and Rom:5/:20 independently rechecked against new original-video/controller entry sequences; qualitative order and held pose supported, exact original CSV and exact timing still unknown",
     "p11ClothingVariant": "elsa_nomantle01 is used for the visibly uncloaked variant; the original cloaked elsa01 is separately packaged",
     "p17P18ClothingVariants": "Original-resource and full-frame review distinguishes short-sleeved subaru_tshirt01 from sleeveless subaru_tshirt02; original julius_jersey01, subaru_tshirt01 and wilhelm01 are added without replacing prior models",
@@ -83,7 +83,8 @@
     "speakerTranslations": 69,
     "speakerCoverage": "All 69 observed source labels across 140 library scenes",
     "ordinaryChoiceBadge": "Derived from actual outgoing choice edges; SetJunction semantics preserved",
-    "effectCompilation": "Uses the effect inventory of the same immutable asset revision"
+    "effectCompilation": "Uses the effect inventory of the same immutable asset revision",
+    "normalVisualClock": "ActorAnimation and Normal card channels share one bounded game-frame clock; Wait, audio, movies and unreviewed effect clocks remain independent"
   },
   "protected": {
     "originalBaselineFiles": 38,
@@ -127,7 +128,30 @@
     "explicitResources": "All140 installed scene documents resolve their catalog identities and payloads",
     "authenticatedOnlinePlayback": "Not claimed",
     "playerAudioStartup": "Shared dialogue/music channels and interaction resume now reach the actual/player iframe; production-route playback passed",
-    "siteSourceCommit": "6309c1a72137377d6af25bbe2f8ad5b93938c93c",
+    "siteSourceCommit": "97d3eaec70de8e7a9a5e57fec453c4c36769cc1d",
+    "siteDeployment": "appgdep_6af47993f164819187158f93cd015db1",
+    "siteDeploymentStatus": "succeeded",
+    "visualClockRegression": {
+      "originalUnityVersion": "2019.4.21f1",
+      "originalMaximumDeltaSeconds": 0.3333333432674408,
+      "runtimeGroups": 6,
+      "nativeNodes": 13,
+      "selectedCardOuts": 2,
+      "acceptedRunPlayerErrors": 0,
+      "completeMovieSeconds": 7.488,
+      "completeDoorSeconds": 5.034,
+      "baseline": "First three episodes, ordinary actor/card/choice/CG, Stop/restart and2x primary ownership; complete movie and door/CLEAR/section completion",
+      "sourceAndArchiveBound": true,
+      "unacceptedMultiActorRuntimeIncluded": false,
+      "preservedFailedHarnessRuns": "Early choices read and gesture-free direct movie entry are retained separately from accepted runs",
+      "limits": [
+        "Baseline images are runtime smoke checks, not full original-recording pose/timing acceptance",
+        "Felt15 earliest visible blink still fails;16/17 are conditional prototypes only",
+        "Material PairingViewer.time is not covered",
+        "Cause of natural browser scheduling gaps remains unknown",
+        "Panel, Wipe and FX clocks require independent review"
+      ]
+    },
     "backgroundBoundaryReview": {
       "routes": 4,
       "nodeVisits": 13,
@@ -152,7 +176,20 @@
       ],
       "completeMovie": "10290010:63 played the full adv_movie_10113; completion is supported by player logs, while direct image review only validates the sampled movie content and black contain presentation"
     },
-    "cumulativeActualPlayerNodeVisits": 165,
+    "v21IdentityPlayback": {
+      "routes": 4,
+      "nodeVisits": 20,
+      "failure": null,
+      "identityAndCostumePassed": 20,
+      "visibleBackgroundPassed": 16,
+      "pendingBackground": "10160010:53-56 show slum024a while the original is a golden hall; provider boundary and original plate remain separate pending work",
+      "observedChoicesOnly": [302, 152],
+      "playerErrors": 0,
+      "consoleErrorRetained": "One generic404 corresponds to the sole contemporaneous GET /favicon.ico404 in readonly server logs; required actor/resources succeeded",
+      "browserClosedBeforeImageReview": true,
+      "fullPerformanceAccepted": false
+    },
+    "cumulativeActualPlayerNodeVisits": 185,
     "endingSequencesCountedSeparately": 13,
     "uninstalledPrototypeVisitsExcluded": true,
     "phoneReview": {

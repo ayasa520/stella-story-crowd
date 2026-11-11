@@ -1,0 +1,22 @@
+{
+  "reviewer": "/root/native_multi_actor",
+  "method": "Direct offline inspection of six preserved screenshots after closing the sole diagnostic browser",
+  "status": "representative_rendering_smoke_baseline_accepted",
+  "cases": [
+    {"file": "canonical-episode1-choice.png", "observed": "Subaru, original background, dialogue, branch banner and both selection controls render within the portrait card; no blank model or broken compositing is visible."},
+    {"file": "canonical-episode2-emilia.png", "observed": "Emilia and the alley background render together under the dialogue panel; the actor is visible and the portrait card is composed normally."},
+    {"file": "canonical-episode3-pack.png", "observed": "Pack and the alley background render together under the dialogue panel after the selected continuous route; no prior actor remains visible."},
+    {"file": "canonical-ordinary-cg.png", "observed": "The sleeping-Subaru CG is visible under its dialogue panel, with the expected black plate outside the image area; the CG is not replaced by an actor or a blank frame."},
+    {"file": "canonical-ordinary-movie.png", "observed": "The normal movie displays an actual street scene and Subaru. Its square image is contained within the portrait viewport with black space above and below, rather than stretched across the whole card."},
+    {"file": "canonical-door-clear.png", "observed": "After the full door movie, the purple ending card visibly displays the section title and Chinese CLEAR text (通关)."}
+  ],
+  "limits": [
+    "This is a functional rendering baseline, not a fresh comparison of every pose, expression, lighting value or timing against original video.",
+    "CardOut motion and complete video lifecycles are supported by continuous playback logs, not by these isolated screenshots alone.",
+    "P11:15 full original entrance remains outside this acceptance; no claim that all its early eye states are restored.",
+    "Direct PairingViewer material audition retains its existing wall/media clock and is not covered by this Normal-clock repair.",
+    "The underlying natural browser scheduling-gap cause remains unknown."
+  ],
+  "browserWasClosedBeforeImageInspection": true,
+  "imagesForwardedToRoot": false
+}
