@@ -1,0 +1,83 @@
+{
+  "schema": "stella.character-only-visible-resource-scope-assessment.v1",
+  "sceneId": 10150004,
+  "scenarioId": 9,
+  "candidate": "live2d/AC_subaru_butler01",
+  "status": "character_only_authored_resource_signature_pending_specific_visible_geometry",
+  "identityAndCostume": "supported_by_original_and_actual_images",
+  "originalUniqueWrapperIdUnknownDoesNotVetoVisibleReproduction": true,
+  "lowAlphaPNGGapIsSeparateFromCharacterOnlyDecision": true,
+  "bodyMotionGapIsSeparateFromCharacterOnlyDecision": true,
+  "geometryDecision": "not_signed_as_fully_corresponding_default_size_and_position",
+  "comparisonMethod": {
+    "source": {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/memory-proposals-v1/source-entry-s10150004-n9-v1/source-040.png",
+      "sha256": "b84e378f55e0f497693d0fe86e1e8c29ad31f75d68d60308d60e73ac7fdbb582"
+    },
+    "sourcePTSSeconds": 410.822,
+    "actual": {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/memory-proposals-v1/actual-entry-s10150004-n9-v1/03-complete-entry-9.png",
+      "sha256": "f95eee96e2e18481402f0c99dc9b72de12d4a4565c5912578e19d6aab901a4fc"
+    },
+    "sourceSize": [
+      480,
+      856
+    ],
+    "actualSize": [
+      524,
+      930
+    ],
+    "onlyDiagnosticNormalization": "actual coordinates multiplied by856/930 in both axes; no translation, rotation, parameter, camera or offset fitted",
+    "actualProjection": "unchanged原ADV01:CH_topY=-3.5,scale5,cameraFOV30,z=-10",
+    "sameParameterVectorProven": false
+  },
+  "manualLandmarksInSourceHeightPixels": {
+    "source": {
+      "hairCrownY": 276,
+      "chinY": 497,
+      "firstVestButtonY": 683,
+      "thirdVestButtonY": 826
+    },
+    "actualHeightNormalized": {
+      "hairCrownY": 255,
+      "chinY": 489,
+      "firstVestButtonY": 674,
+      "thirdVestButtonY": 824
+    },
+    "manualUncertaintyPx": {
+      "hairCrown": 3,
+      "chin": 2,
+      "buttonCenter": 2
+    },
+    "derived": {
+      "hairCrownActualMinusSourcePx": -21,
+      "chinActualMinusSourcePx": -8,
+      "firstToThirdSourcePx": 143,
+      "firstToThirdActualPx": 150
+    }
+  },
+  "reason": "The uniform-height full-frame pair has a visible crown/face/upper-torso composition difference. Unknown body/face parameters may contribute, but that attribution is unproved. These are concrete measured differences, not evidence of a different original wrapper ID. Costume/identity support is retained without weakening the requested geometry criterion.",
+  "acceptance": {
+    "authoredCharacterOnlyResourceApproved": false,
+    "uniqueOriginalIDRecovered": false,
+    "bodyOrFaceProposed": false,
+    "fieldWrites": [],
+    "approved107": false
+  },
+  "reviewArtifacts": [
+    {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/n9-left-arm-candidate-audit-v1/geometry-same-height-pair.png",
+      "sha256": "bfc42677700b88491c6807d373f42f6fbb04f7657d2d3869cbcb32f4e89b6bb3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/n9-left-arm-candidate-audit-v1/source410822-geometry-grid.png",
+      "sha256": "d69218eb607c21526c5be4f8e20b21c39dea33421777763b72951d892660a945"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/n9-left-arm-candidate-audit-v1/actual03fixedheight-geometry-grid.png",
+      "sha256": "f518dbd907aed588ce1eb69088ccc29ea018d1ecce3e3f4f38c3d26fab264710"
+    }
+  ],
+  "frozenOldReceiptsRewritten": false,
+  "browserOpened": false
+}

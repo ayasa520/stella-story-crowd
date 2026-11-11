@@ -1,0 +1,323 @@
+{
+  "schema": "stella.noninstallable.visible_reproduction_memory_proposal.v1",
+  "id": "butler01-default-visible-s10150004-n9",
+  "sceneId": 10150004,
+  "targetScenarioId": 9,
+  "installable": false,
+  "registeredForPlayback": false,
+  "browserAuthorized": false,
+  "status": "guarded_input_ready_full_entry_comparison_pending",
+  "purpose": "Test the existing01 model with unchanged default original ADV projection as explicitly authored visible reproduction; do not recover a unique original modelID.",
+  "formalDataHeadAtPreparation": "5dd81cb42b6258b4c486ff6d03c87224a6665914",
+  "formalDataStatusAtPreparation": "",
+  "formalNativeFile": {
+    "file": "/home/rikka/Projects/stella/story_crowd_data/native/scenes/10150004.json",
+    "sha256": "ac89ea5612bf1a422f868f3c77e5ef0f2c52e39d4044b763325ca993ab8e6af8"
+  },
+  "formalReviewFile": {
+    "file": "/home/rikka/Projects/stella/story_crowd_data/review/scenes/10150004.json",
+    "sha256": "b88aa9d8b4ebd429517eeae3ec69d95fd11c24b1b0c8b1577aa3d3452b05f9a3"
+  },
+  "guardsRequireDeepJSONEquality": true,
+  "guards": [
+    {
+      "scenarioId": 8,
+      "stableKey": "s10150004-p23-at0407",
+      "sourceText": "朝の日課なのです。スバル殿は草むしりですか",
+      "canonicalNativeRowSha256": "d7e194ea38b287a1777e0a9c61285c9363e0d4e90d62fc9bcb8e377fd9645072",
+      "branchListSha256": "32760a987dbfa3ef5270c0d8f8238623589434f5fa4118535c2bcee5e04bbb55",
+      "expectedRawFields": {
+        "character": "live2d/AC_wilhelm01",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "position": "",
+        "talk_chara": "",
+        "character_image": "",
+        "bg_picture": ""
+      },
+      "expectedCompiledModel": "wilhelm01"
+    },
+    {
+      "scenarioId": 9,
+      "stableKey": "s10150004-p23-at0411",
+      "sourceText": "はい。まずは雑草を抜かないと。それに、土が固くなっちまってるから花を植える前に土作りからやろうかと",
+      "canonicalNativeRowSha256": "3cdbfb5354aa6b33b693dde488dd023e858c53974a54f672eca8c81ecef9aeed",
+      "branchListSha256": "af0a9de68f3e362223955cdfa7b9692654a7e47e20b15f2cff42ecaa5d7a9c28",
+      "expectedRawFields": {
+        "character": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "position": "",
+        "talk_chara": "",
+        "character_image": "",
+        "bg_picture": ""
+      },
+      "expectedCompiledModel": ""
+    },
+    {
+      "scenarioId": 10,
+      "stableKey": "s10150004-p23-at0419",
+      "sourceText": "……なるほど。私から提案したことではありますが、ずいぶんとお詳しいのですな",
+      "canonicalNativeRowSha256": "66b3c0ed06daccff1b9e36728d4283c305375dcd4997f306dc6ce7622e6c1b83",
+      "branchListSha256": "393af3aaee2f9b215ca4120a65d4067f3b2d074e7b0a94b903524d779aa8b6cb",
+      "expectedRawFields": {
+        "character": "live2d/AC_wilhelm01",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "position": "",
+        "talk_chara": "",
+        "character_image": "",
+        "bg_picture": ""
+      },
+      "expectedCompiledModel": "wilhelm01"
+    }
+  ],
+  "continuousReviewRoute": {
+    "startScenarioId": 8,
+    "rows": [
+      8,
+      9,
+      10
+    ],
+    "edges": [
+      {
+        "edgeId": "10150004:8:81",
+        "from": 8,
+        "to": 9,
+        "nativeTransition": {
+          "uniq_id": 1015000410081,
+          "transition_id": 8101,
+          "next_scenario_id": 9,
+          "next_scenario_label": ""
+        },
+        "review": {
+          "branchId": 81,
+          "stableKey": "s10150004-p23-at0407-next",
+          "nativeIdOrigin": "authored",
+          "verification": "observed",
+          "state": "confirmed",
+          "evidence": [
+            {
+              "segmentId": "p23-s10150004",
+              "start": 406.999,
+              "end": 409.999,
+              "sourceAnchorSeconds": 407,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/012270-dialogue.png",
+              "ocrEventId": "merged-0103",
+              "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+              "originalOCRText": "朝の日課なのです。スバル殿は草むしりですか",
+              "ocrConfidence": 0.99991,
+              "ocrReviewReasons": [],
+              "nextStableKey": "s10150004-p23-at0411",
+              "basis": "Consecutive fixed recording anchors inside one manually identified scene.",
+              "recordingId": "bili-capital-23"
+            }
+          ],
+          "gainPointsRecovered": false
+        }
+      },
+      {
+        "edgeId": "10150004:9:91",
+        "from": 9,
+        "to": 10,
+        "nativeTransition": {
+          "uniq_id": 1015000410091,
+          "transition_id": 9101,
+          "next_scenario_id": 10,
+          "next_scenario_label": ""
+        },
+        "review": {
+          "branchId": 91,
+          "stableKey": "s10150004-p23-at0411-next",
+          "nativeIdOrigin": "authored",
+          "verification": "observed",
+          "state": "confirmed",
+          "evidence": [
+            {
+              "segmentId": "p23-s10150004",
+              "start": 410.999,
+              "end": 416.999,
+              "sourceAnchorSeconds": 411,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/012480-dialogue.png",
+              "ocrEventId": "merged-0104",
+              "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+              "originalOCRText": "はい。まずは雑草を抜かないと。それに、土が固くなっちまってるから花を植える前に土作りからやろうかと",
+              "ocrConfidence": 0.99934,
+              "ocrReviewReasons": [],
+              "nextStableKey": "s10150004-p23-at0419",
+              "basis": "Consecutive fixed recording anchors inside one manually identified scene.",
+              "recordingId": "bili-capital-23"
+            }
+          ],
+          "gainPointsRecovered": false
+        }
+      }
+    ]
+  },
+  "memoryOnlyOverride": {
+    "scenarioId": 9,
+    "character": "live2d/AC_subaru_butler01"
+  },
+  "preserveExactTargetFields": {
+    "motion": "",
+    "command": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "projectionPolicy": {
+    "mode": "existing_single_actor_default_native_ADV",
+    "cameraOverride": null,
+    "placementOverride": null,
+    "offsetOverride": null,
+    "scaleOverride": null,
+    "current01Wrapper": {
+      "position": {
+        "x": 0.05999999865889549,
+        "y": -3.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 5.0,
+        "y": 5.0,
+        "z": 5.0
+      },
+      "source": "com.sega.stella/files/AssetBundle/assets/ac_base_subaru_butler01.prefab"
+    },
+    "assets": {
+      "file": "/home/rikka/Projects/stella/story_crowd_data/assets/player/manifest.json",
+      "sha256": "f9eb1be11273a813c86bf44cf1d9919298006ff505557306a055d8c85d22571b"
+    }
+  },
+  "sourceEntryIndex": [
+    {
+      "scenarioId": 8,
+      "stableKey": "s10150004-p23-at0407",
+      "sourceText": "朝の日課なのです。スバル殿は草むしりですか",
+      "recordings": [
+        {
+          "segmentId": "p23-s10150004",
+          "start": 406.999,
+          "end": 409.999,
+          "sourceAnchorSeconds": 407,
+          "ocrReviewed": false,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/012270-dialogue.png",
+          "ocrEventId": "merged-0103",
+          "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+          "originalOCRText": "朝の日課なのです。スバル殿は草むしりですか",
+          "ocrConfidence": 0.99991,
+          "ocrReviewReasons": [],
+          "recordingId": "bili-capital-23"
+        }
+      ],
+      "retainedFullFrame": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-all/cast-409.8490.png",
+        "sha256": "49acf272e3ac887bcdcfc80f2b1132fc8faae4d61e666d8e372027b5237fd0ae",
+        "seconds": 409.849
+      },
+      "originalVideo": {
+        "file": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+        "sha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e"
+      }
+    },
+    {
+      "scenarioId": 9,
+      "stableKey": "s10150004-p23-at0411",
+      "sourceText": "はい。まずは雑草を抜かないと。それに、土が固くなっちまってるから花を植える前に土作りからやろうかと",
+      "recordings": [
+        {
+          "segmentId": "p23-s10150004",
+          "start": 410.999,
+          "end": 416.999,
+          "sourceAnchorSeconds": 411,
+          "ocrReviewed": false,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/012480-dialogue.png",
+          "ocrEventId": "merged-0104",
+          "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+          "originalOCRText": "はい。まずは雑草を抜かないと。それに、土が固くなっちまってるから花を植える前に土作りからやろうかと",
+          "ocrConfidence": 0.99934,
+          "ocrReviewReasons": [],
+          "recordingId": "bili-capital-23"
+        }
+      ],
+      "retainedFullFrame": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-all/cast-416.8490.png",
+        "sha256": "aafc990936d08328d33b637844ec544879d9470e2495b0892bbe4f9c21cfd604",
+        "seconds": 416.849
+      },
+      "originalVideo": {
+        "file": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+        "sha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e"
+      }
+    },
+    {
+      "scenarioId": 10,
+      "stableKey": "s10150004-p23-at0419",
+      "sourceText": "……なるほど。私から提案したことではありますが、ずいぶんとお詳しいのですな",
+      "recordings": [
+        {
+          "segmentId": "p23-s10150004",
+          "start": 418.999,
+          "end": 422.999,
+          "sourceAnchorSeconds": 419,
+          "ocrReviewed": false,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/012660-dialogue.png",
+          "ocrEventId": "merged-0105",
+          "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+          "originalOCRText": "……なるほど。私から提案したことではありますが、ずいぶんとお詳しいのですな",
+          "ocrConfidence": 0.98487,
+          "ocrReviewReasons": [],
+          "recordingId": "bili-capital-23"
+        }
+      ],
+      "retainedFullFrame": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-all/cast-422.8490.png",
+        "sha256": "acd10bfc1b3a15e508c9fdd0b1349ceb72ccfb4ae59769e3db8df06b851c8eea",
+        "seconds": 422.849
+      },
+      "originalVideo": {
+        "file": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+        "sha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e"
+      }
+    }
+  ],
+  "sourceObservationIndex": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-all/observation-evidence.json",
+    "sha256": "fe1edb29984ca1344ac5d82daf54872a7c0dfa96a2650df2b6d3502a3ec5f52a"
+  },
+  "fullEntrySequence": {
+    "status": "pending",
+    "completeEntryClaimed": false,
+    "reason": "The retained predecessor/target/successor full-frame anchors do not establish a continuous entry trajectory. No sequence is invented from the held frames."
+  },
+  "acceptance": {
+    "actualProductionPlayback": "not_run",
+    "originalFullEntryComparison": "pending",
+    "visibleReproductionApproved": false,
+    "originalModelIdRecovered": false,
+    "originalCSVRecovered": false,
+    "bodyFaceCommandsRecovered": false,
+    "pendingNodeCountNotReduced": 107
+  },
+  "activationBoundary": "Unregistered evidence only. A future bounded review must recheck every guard and receive root scheduling before any private compile/browser execution. This packet is not native_repair.node_fields and must never be installed."
+}

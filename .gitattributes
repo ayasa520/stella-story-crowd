@@ -7,3 +7,6 @@
 *.mp4 binary
 # Preserve exact extracted bytes: the package manifest hashes model JSON too.
 assets/** -text
+# Original animation curves are archived with SHA-256 receipts for their exact
+# extracted bytes. Preserve their CRLF endings rather than normalizing copies.
+review/restoration-audits/royal-capital-20261111-repair/butler-visible-reproduction-20261112-archive-v1/curve-text/** -text

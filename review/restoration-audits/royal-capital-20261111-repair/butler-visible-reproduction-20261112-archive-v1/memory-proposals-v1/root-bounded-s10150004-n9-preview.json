@@ -1,0 +1,63 @@
+{
+  "schema": "stella.guarded-memory-preview.v1",
+  "installable": false,
+  "purpose": "Test the existing01 model with unchanged default original ADV projection as explicitly authored visible reproduction; do not recover a unique original modelID.",
+  "sourceProposal": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/memory-proposals-v1/butler01-default-visible-s10150004-n9.json",
+    "sha256": "a91e218d44c2f5b43ae90472a04d66e3b54b3c9ffeeb4602d22c59367a99081d"
+  },
+  "guardReceipts": [
+    {
+      "path": "story_crowd_data/native/scenes/10150004.json",
+      "sha256": "ac89ea5612bf1a422f868f3c77e5ef0f2c52e39d4044b763325ca993ab8e6af8"
+    },
+    {
+      "path": "story_crowd_data/review/scenes/10150004.json",
+      "sha256": "b88aa9d8b4ebd429517eeae3ec69d95fd11c24b1b0c8b1577aa3d3452b05f9a3"
+    },
+    {
+      "path": "story_crowd_data/assets/player/manifest.json",
+      "sha256": "f9eb1be11273a813c86bf44cf1d9919298006ff505557306a055d8c85d22571b"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/player/actor_placement.js",
+      "sha256": "c2579929f288fceaeec6c201b2c27023df77687a29663a750d593f8c32fd9347"
+    },
+    {
+      "path": "artifacts/stella-site-repair-source/.sites-checkout/public/pairing/viewer.js",
+      "sha256": "d3178fb7512a9b87de833be4ad49c08dbfcbb149cc620bd1610973c7e2b6f6bd"
+    }
+  ],
+  "examples": [
+    {
+      "id": "butler01-default-visible-s10150004-n9",
+      "changes": [
+        {
+          "scenarioId": 9,
+          "expected": {
+            "character": "",
+            "motion": "",
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "position": "",
+            "talk_chara": "",
+            "character_image": "",
+            "bg_picture": ""
+          },
+          "fields": {
+            "character": "live2d/AC_subaru_butler01"
+          }
+        }
+      ]
+    }
+  ],
+  "acceptance": {
+    "visibleReproductionApproved": false,
+    "originalModelIdRecovered": false,
+    "originalFullEntryComparison": "pending",
+    "actualProductionPlayback": "not-run"
+  }
+}

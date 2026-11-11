@@ -1,0 +1,38 @@
+{
+  "argv": [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostdin",
+    "-threads",
+    "1",
+    "-ss",
+    "409.499",
+    "-t",
+    "4",
+    "-copyts",
+    "-i",
+    "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+    "-an",
+    "-sn",
+    "-dn",
+    "-filter_threads",
+    "1",
+    "-filter_complex_threads",
+    "1",
+    "-vf",
+    "showinfo",
+    "-fps_mode",
+    "passthrough",
+    "-threads",
+    "1",
+    "-frames:v",
+    "125",
+    "data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/memory-proposals-v1/source-entry-s10150004-n9-v1/source-%03d.png"
+  ],
+  "returncode": 0,
+  "nice": 19,
+  "affinity": [
+    22,
+    23
+  ]
+}

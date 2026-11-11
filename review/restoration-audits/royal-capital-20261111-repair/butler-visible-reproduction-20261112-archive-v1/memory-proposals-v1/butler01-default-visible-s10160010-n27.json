@@ -1,0 +1,337 @@
+{
+  "schema": "stella.noninstallable.visible_reproduction_memory_proposal.v1",
+  "id": "butler01-default-visible-s10160010-n27",
+  "sceneId": 10160010,
+  "targetScenarioId": 27,
+  "installable": false,
+  "registeredForPlayback": false,
+  "browserAuthorized": false,
+  "status": "guarded_input_ready_full_entry_comparison_pending",
+  "purpose": "Test the existing01 model with unchanged default original ADV projection as explicitly authored visible reproduction; do not recover a unique original modelID.",
+  "formalDataHeadAtPreparation": "016ee572852f54d646c37e287cb28619408a28f7",
+  "formalDataStatusAtPreparation": "",
+  "formalNativeFile": {
+    "file": "/home/rikka/Projects/stella/story_crowd_data/native/scenes/10160010.json",
+    "sha256": "d215f600429cccd3a8bfbd456a22258e8574f09680d6ed68062aa64a3df677ed"
+  },
+  "formalReviewFile": {
+    "file": "/home/rikka/Projects/stella/story_crowd_data/review/scenes/10160010.json",
+    "sha256": "d73eaf567a771aeb22f9a83162abc9571de46c3759803e124aa496e6b5822dd7"
+  },
+  "guardsRequireDeepJSONEquality": true,
+  "guards": [
+    {
+      "scenarioId": 26,
+      "stableKey": "s10160010-p24-at0661",
+      "sourceText": "クルシュ邸の客室・夜",
+      "canonicalNativeRowSha256": "8efcc41addaa7088f1fa76bcf05a856e141594f2377e38159c6c4d320235047d",
+      "branchListSha256": "f10aa49a9cbcfeabc28c2e1e08202accbda60c40011e0218fc98bc4e28957648",
+      "expectedRawFields": {
+        "character": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "position": "",
+        "talk_chara": "",
+        "character_image": "",
+        "bg_picture": "bg/bg076d_roswaal"
+      },
+      "expectedCompiledModel": ""
+    },
+    {
+      "scenarioId": 27,
+      "stableKey": "s10160010-p24-at0664",
+      "sourceText": "戻ってきて、晩飯も喉を通らねえ、か……",
+      "canonicalNativeRowSha256": "dda9507f0a056e82673ada2e26bcc2f24c1d91958de5a5551b2cde2349f5e18b",
+      "branchListSha256": "762ae6c3b3c942e20fc32475a067a24efcf93bff84d022af889944e21643f087",
+      "expectedRawFields": {
+        "character": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "position": "",
+        "talk_chara": "",
+        "character_image": "",
+        "bg_picture": ""
+      },
+      "expectedCompiledModel": ""
+    },
+    {
+      "scenarioId": 28,
+      "stableKey": "s10160010-p24-at0667",
+      "sourceText": "ヴィルヘルムさんはああ言ってくれたけど、\n頭の中、ずっとぐるぐるしてやがる……",
+      "canonicalNativeRowSha256": "cec75ebd39d2288c4689d45150823ade5f2f7d744526a70ec54baccb861c087f",
+      "branchListSha256": "ac8ba627892f3e3b1f043a3e3f57057f81f21d9874c71d7a5146f9d31360ab89",
+      "expectedRawFields": {
+        "character": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "position": "",
+        "talk_chara": "",
+        "character_image": "",
+        "bg_picture": ""
+      },
+      "expectedCompiledModel": ""
+    }
+  ],
+  "continuousReviewRoute": {
+    "startScenarioId": 26,
+    "rows": [
+      26,
+      27,
+      28
+    ],
+    "edges": [
+      {
+        "edgeId": "10160010:26:261",
+        "from": 26,
+        "to": 27,
+        "nativeTransition": {
+          "uniq_id": 1016001010261,
+          "transition_id": 26101,
+          "next_scenario_id": 27,
+          "next_scenario_label": ""
+        },
+        "review": {
+          "branchId": 261,
+          "stableKey": "s10160010-p24-at0661-next",
+          "nativeIdOrigin": "authored",
+          "verification": "observed",
+          "state": "confirmed",
+          "evidence": [
+            {
+              "segmentId": "p24-s10160010",
+              "start": 660.999,
+              "end": 662.499,
+              "sourceAnchorSeconds": 661,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/24/coarse-1hz/crops/019860-dialogue.png",
+              "ocrEventId": "merged-0146",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "originalOCRText": "クルシュ邸の客室・夜",
+              "ocrConfidence": 0.99619,
+              "ocrReviewReasons": [],
+              "nextStableKey": "s10160010-p24-at0664",
+              "basis": "Consecutive fixed recording anchors inside one manually identified scene.",
+              "recordingId": "bili-capital-24"
+            }
+          ],
+          "gainPointsRecovered": false
+        }
+      },
+      {
+        "edgeId": "10160010:27:271",
+        "from": 27,
+        "to": 28,
+        "nativeTransition": {
+          "uniq_id": 1016001010271,
+          "transition_id": 27101,
+          "next_scenario_id": 28,
+          "next_scenario_label": ""
+        },
+        "review": {
+          "branchId": 271,
+          "stableKey": "s10160010-p24-at0664-next",
+          "nativeIdOrigin": "authored",
+          "verification": "observed",
+          "state": "confirmed",
+          "evidence": [
+            {
+              "segmentId": "p24-s10160010",
+              "start": 663.999,
+              "end": 666.499,
+              "sourceAnchorSeconds": 664,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/24/dialogue-completion-2hz/crops/019995-dialogue.png",
+              "ocrEventId": "merged-0147",
+              "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+              "originalOCRText": "戻ってきて、晩飯も喉を通らねえ、か……",
+              "ocrConfidence": 0.96757,
+              "ocrReviewReasons": [],
+              "nextStableKey": "s10160010-p24-at0667",
+              "basis": "Consecutive fixed recording anchors inside one manually identified scene.",
+              "recordingId": "bili-capital-24"
+            }
+          ],
+          "gainPointsRecovered": false
+        }
+      }
+    ]
+  },
+  "memoryOnlyOverride": {
+    "scenarioId": 27,
+    "character": "live2d/AC_subaru_butler01"
+  },
+  "preserveExactTargetFields": {
+    "motion": "",
+    "command": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "projectionPolicy": {
+    "mode": "existing_single_actor_default_native_ADV",
+    "cameraOverride": null,
+    "placementOverride": null,
+    "offsetOverride": null,
+    "scaleOverride": null,
+    "current01Wrapper": {
+      "position": {
+        "x": 0.05999999865889549,
+        "y": -3.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 5.0,
+        "y": 5.0,
+        "z": 5.0
+      },
+      "source": "com.sega.stella/files/AssetBundle/assets/ac_base_subaru_butler01.prefab"
+    },
+    "assets": {
+      "file": "/home/rikka/Projects/stella/story_crowd_data/assets/player/manifest.json",
+      "sha256": "f9eb1be11273a813c86bf44cf1d9919298006ff505557306a055d8c85d22571b"
+    }
+  },
+  "sourceEntryIndex": [
+    {
+      "scenarioId": 26,
+      "stableKey": "s10160010-p24-at0661",
+      "sourceText": "クルシュ邸の客室・夜",
+      "recordings": [
+        {
+          "segmentId": "p24-s10160010",
+          "start": 660.999,
+          "end": 662.499,
+          "sourceAnchorSeconds": 661,
+          "ocrReviewed": false,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/24/coarse-1hz/crops/019860-dialogue.png",
+          "ocrEventId": "merged-0146",
+          "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+          "originalOCRText": "クルシュ邸の客室・夜",
+          "ocrConfidence": 0.99619,
+          "ocrReviewReasons": [],
+          "recordingId": "bili-capital-24"
+        }
+      ],
+      "retainedFullFrame": null,
+      "adjacentFullFrameStatus": "pending_no_actor_observation_frame",
+      "originalVideo": {
+        "file": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+        "sha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186"
+      }
+    },
+    {
+      "scenarioId": 27,
+      "stableKey": "s10160010-p24-at0664",
+      "sourceText": "戻ってきて、晩飯も喉を通らねえ、か……",
+      "recordings": [
+        {
+          "segmentId": "p24-s10160010",
+          "start": 663.999,
+          "end": 666.499,
+          "sourceAnchorSeconds": 664,
+          "ocrReviewed": false,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/24/dialogue-completion-2hz/crops/019995-dialogue.png",
+          "ocrEventId": "merged-0147",
+          "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+          "originalOCRText": "戻ってきて、晩飯も喉を通らねえ、か……",
+          "ocrConfidence": 0.96757,
+          "ocrReviewReasons": [],
+          "recordingId": "bili-capital-24"
+        }
+      ],
+      "retainedFullFrame": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p24-all/cast-666.3490.png",
+        "sha256": "2f4005d8cbad8c152158bdb915b884007c042d6921ccb8146077b50f39439675",
+        "seconds": 666.349
+      },
+      "adjacentFullFrameStatus": "retained",
+      "originalVideo": {
+        "file": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+        "sha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186"
+      }
+    },
+    {
+      "scenarioId": 28,
+      "stableKey": "s10160010-p24-at0667",
+      "sourceText": "ヴィルヘルムさんはああ言ってくれたけど、\n頭の中、ずっとぐるぐるしてやがる……",
+      "recordings": [
+        {
+          "segmentId": "p24-s10160010",
+          "start": 666.9,
+          "end": 672.0,
+          "sourceAnchorSeconds": 667,
+          "ocrReviewed": true,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/24/coarse-1hz/crops/020130-dialogue.png",
+          "ocrEventId": "merged-0148",
+          "sourceSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+          "originalOCRText": "ヴィルへルムさんはああ言ってくれたけど、頭の中、ずっとぐるぐるしてやがる·",
+          "ocrConfidence": 0.97419,
+          "ocrReviewReasons": [
+            "content_variant_conflict"
+          ],
+          "visualReviewer": "root",
+          "rootDecision": {
+            "interval": [
+              666.9,
+              672
+            ],
+            "canonicalAnchorSeconds": 667,
+            "action": "replace",
+            "speaker": "スバル",
+            "text": "ヴィルヘルムさんはああ言ってくれたけど、\n頭の中、ずっとぐるぐるしてやがる……",
+            "witnessTime": 670.999
+          },
+          "rootReviewWitnessTime": 670.999,
+          "recordingId": "bili-capital-24"
+        }
+      ],
+      "retainedFullFrame": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p24-all/cast-670.9990.png",
+        "sha256": "c99183e04d7f5955c5903ea705be066d1086364bde7cc8ff9d4ee26fca28d5c7",
+        "seconds": 670.999
+      },
+      "adjacentFullFrameStatus": "retained",
+      "originalVideo": {
+        "file": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/24 10-IF库珥修「噩梦的继续」.mp4",
+        "sha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186"
+      }
+    }
+  ],
+  "sourceObservationIndex": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p24-all/observation-evidence.json",
+    "sha256": "83566f0b0b9374fa04f66456e1d9207f2c2e4264e358f8250bffa9034cebb656"
+  },
+  "fullEntrySequence": {
+    "status": "pending",
+    "completeEntryClaimed": false,
+    "reason": "The retained predecessor/target/successor full-frame anchors do not establish a continuous entry trajectory. No sequence is invented from the held frames."
+  },
+  "acceptance": {
+    "actualProductionPlayback": "not_run",
+    "originalFullEntryComparison": "pending",
+    "visibleReproductionApproved": false,
+    "originalModelIdRecovered": false,
+    "originalCSVRecovered": false,
+    "bodyFaceCommandsRecovered": false,
+    "pendingNodeCountNotReduced": 107
+  },
+  "activationBoundary": "Unregistered evidence only. A future bounded review must recheck every guard and receive root scheduling before any private compile/browser execution. This packet is not native_repair.node_fields and must never be installed."
+}

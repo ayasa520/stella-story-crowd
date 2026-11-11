@@ -1,0 +1,2231 @@
+{
+  "schema": "stella.n9-hohoemu-face-assembly-discriminator.v1",
+  "status": "assembled_exact_face_reference_missing_small_discriminator_only",
+  "browserOpened": false,
+  "productionWrites": false,
+  "oldReceiptsRewritten": false,
+  "referenceInventory": {
+    "searchedEvidenceRoot": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111",
+    "assembledButlerFaceReferenceFound": false,
+    "availableBodyReference": {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/subaru_butler01-cast.json.gz",
+      "sha256": "4148455abbeac85abbcf81527791d6efe2084800f7bdbdfb6aad31c34d6d7d41"
+    },
+    "availableDescriptor": {
+      "model": "subaru_butler01",
+      "kind": "body",
+      "context": {
+        "body": "",
+        "face": "",
+        "lighting": {
+          "bg_picture": "",
+          "clut": ""
+        }
+      },
+      "context_status": {
+        "body": "unknown",
+        "face": "unknown"
+      },
+      "projection": {
+        "size": [
+          512,
+          896
+        ],
+        "scale": 0.09656888888888888
+      },
+      "referenceUsage": "cast_identity_settled_only_not_full_motion_trajectory"
+    },
+    "qualification": "The saved hohoemu t4 image is a body-reference sample with unknown explicit face context. It is not an exact assembled hohoemu+face candidate reference."
+  },
+  "directVisibleComparison": {
+    "sourceBeforeArm": "Original410.689/410.822 shows open eyes, a small closed-mouth smile between speech frames, and a comparatively upright head.",
+    "availableHohoemuBodyReference": "Previously directly viewed settled hohoemu image shows both eyes closed, an open laughing mouth and a clear head tilt; its visible face does not reproduce that source sample.",
+    "geometricAttribution": "The head/body channels below can alter model geometry, but no matching source parameter vector or original trigger phase is known. No measured crown/chin/torso difference is attributed to those channels by this audit."
+  },
+  "curveDefinedFutureControls": [
+    {
+      "body": "act_hohoemu",
+      "face": "face_normal_w",
+      "classification": "one_unrendered_curve_defined_override_candidate_only",
+      "reason": "Original face curves set headXYZ to0, both eyes1, MouthForm1.5 and MouthOpenY0; these distinguish the open-eye/upright source from the closed-eye/tilted body-held output without relying on the token name.",
+      "notApproved": "No exact assembled image or trajectory exists; face layer would need an explicit weight1 assignment rather than the original default weight0."
+    },
+    {
+      "body": "act_hohoemu",
+      "face": "face_normal02_w",
+      "classification": "contrast_control_not_visually_ranked",
+      "reason": "HeadXYZ0, eyes1.1, BrowForm1 and MouthForm0 differ from the first candidate; future exact image must discriminate eye/brow/mouth shape. No matching source identity or face instruction is claimed."
+    }
+  ],
+  "originalFaceController": {
+    "manifest": {
+      "file": "/home/rikka/Projects/stella/story_crowd_data/assets/player/animation.json",
+      "sha256": "fba05abc23ccf0935e484ce8c85904695bf7b056a9807bfa3294a6367a4f8a7c"
+    },
+    "default": "face_normal_w",
+    "defaultWeight": 0.0,
+    "blendMode": 0,
+    "states": {
+      "face_normal_w": {
+        "loop": true,
+        "speed": 1.0,
+        "offset": 0.0,
+        "speed_parameter": 0,
+        "transitions": [],
+        "selection": null
+      },
+      "face_normal02_w": {
+        "loop": true,
+        "speed": 1.0,
+        "offset": 0.0,
+        "speed_parameter": 0,
+        "transitions": [],
+        "selection": null
+      }
+    },
+    "originalControllerGraphAudit": {
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-native-alias-audit-v2/prefab-controller-comparison.json",
+      "sha256": "0332d253773404e441b4083f1b03bc00dcf5be94c4e91b4a3b669cb697bc5d6b"
+    }
+  },
+  "originalCurves": [
+    {
+      "token": "act_normal_w",
+      "original": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_subaru_butler01_act_normal_w.anim",
+        "sha256": "53566ff78edf943d4681cad8c42a862d14216de79ab9f53e25fee88a3aa1c571"
+      },
+      "pathId": 4471464059879616956,
+      "duration": 4.0,
+      "parameterBindingCount": 107,
+      "noOriginalTransformScalePositionRotationCurves": true,
+      "rawHeadBodyChannels": {
+        "ParamAngleX": {
+          "bindingIndex": 16,
+          "rawBinding": {
+            "path": 397467875,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamAngleY": {
+          "bindingIndex": 17,
+          "rawBinding": {
+            "path": 1622659189,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamAngleZ": {
+          "bindingIndex": 18,
+          "rawBinding": {
+            "path": 4190011855,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamEyeLOpen": {
+          "bindingIndex": 32,
+          "rawBinding": {
+            "path": 1978396178,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.0
+        },
+        "ParamEyeROpen": {
+          "bindingIndex": 36,
+          "rawBinding": {
+            "path": 2856044529,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.0
+        },
+        "ParamMouthForm": {
+          "bindingIndex": 64,
+          "rawBinding": {
+            "path": 3514263446,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.5
+        },
+        "ParamMouthOpenY": {
+          "bindingIndex": 63,
+          "rawBinding": {
+            "path": 3995501637,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBrowLForm": {
+          "bindingIndex": 53,
+          "rawBinding": {
+            "path": 2550903895,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBrowRForm": {
+          "bindingIndex": 50,
+          "rawBinding": {
+            "path": 1205575092,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBodyAngleX": {
+          "bindingIndex": 76,
+          "rawBinding": {
+            "path": 1141202947,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.003000000026077032
+        },
+        "ParamBodyAngleY": {
+          "bindingIndex": 77,
+          "rawBinding": {
+            "path": 855789717,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBodyAngleZ": {
+          "bindingIndex": 78,
+          "rawBinding": {
+            "path": 2852847919,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.00800000037997961
+        },
+        "ParamUpperBody": {
+          "bindingIndex": 79,
+          "rawBinding": {
+            "path": 1513497407,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBreath": {
+          "bindingIndex": 12,
+          "rawBinding": {
+            "path": 3823476906,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                -1.9839999675750732,
+                2.9759998321533203,
+                0.0,
+                0.00800000037997961
+              ]
+            },
+            {
+              "time": 1.0,
+              "coefficients": [
+                1.9839999675750732,
+                -2.9759998321533203,
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                -1.9839999675750732,
+                2.9759998321533203,
+                0.0,
+                0.00800000037997961
+              ]
+            },
+            {
+              "time": 3.0,
+              "coefficients": [
+                1.9839999675750732,
+                -2.9759998321533203,
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "time": 4.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.00800000037997961
+              ]
+            }
+          ]
+        }
+      },
+      "missingBodyArmChannels": [],
+      "samples": [
+        {
+          "clipSeconds": 0,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 0.003000000026077032,
+            "ParamBodyAngleY": 0.0,
+            "ParamBodyAngleZ": 0.00800000037997961,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.00800000037997961
+          }
+        },
+        {
+          "clipSeconds": 0.233,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 0.003000000026077032,
+            "ParamBodyAngleY": 0.0,
+            "ParamBodyAngleZ": 0.00800000037997961,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.14446777106990505
+          }
+        },
+        {
+          "clipSeconds": 0.633,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 0.003000000026077032,
+            "ParamBodyAngleY": 0.0,
+            "ParamBodyAngleZ": 0.00800000037997961,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.6972363095417946
+          }
+        },
+        {
+          "clipSeconds": 1.267,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 0.003000000026077032,
+            "ParamBodyAngleY": 0.0,
+            "ParamBodyAngleZ": 0.00800000037997961,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.8256077267404407
+          }
+        },
+        {
+          "clipSeconds": 1.899,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 0.003000000026077032,
+            "ParamBodyAngleY": 0.0,
+            "ParamBodyAngleZ": 0.00800000037997961,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.0363141709107877
+          }
+        },
+        {
+          "clipSeconds": 4.0,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 0.003000000026077032,
+            "ParamBodyAngleY": 0.0,
+            "ParamBodyAngleZ": 0.00800000037997961,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.00800000037997961
+          }
+        }
+      ]
+    },
+    {
+      "token": "act_hohoemu",
+      "original": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_subaru_butler01_act_hohoemu.anim",
+        "sha256": "2afac2e3060eac43ee7a0575a4e7940b045659eaf4c4e85427b9d5dca7e275e5"
+      },
+      "pathId": -7916500937367069565,
+      "duration": 2.0,
+      "parameterBindingCount": 107,
+      "noOriginalTransformScalePositionRotationCurves": true,
+      "rawHeadBodyChannels": {
+        "ParamAngleX": {
+          "bindingIndex": 0,
+          "rawBinding": {
+            "path": 397467875,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                -5100.6591796875,
+                1017.58154296875,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 0.13300000131130219,
+              "coefficients": [
+                58.3795280456543,
+                -64.2758560180664,
+                0.0,
+                6.0
+              ]
+            },
+            {
+              "time": 0.8669999837875366,
+              "coefficients": [
+                -17.216848373413086,
+                17.19963264465332,
+                0.0,
+                -5.543000221252441
+              ]
+            },
+            {
+              "time": 1.5329999923706055,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                -3.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                -3.0
+              ]
+            }
+          ]
+        },
+        "ParamAngleY": {
+          "bindingIndex": 1,
+          "rawBinding": {
+            "path": 1622659189,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                2655.949951171875,
+                -928.2544555664062,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 0.2329999953508377,
+              "coefficients": [
+                -643.2640380859375,
+                482.4480285644531,
+                0.0,
+                -16.79800033569336
+              ]
+            },
+            {
+              "time": 0.7329999804496765,
+              "coefficients": [
+                238.02784729003906,
+                -214.22503662109375,
+                0.0,
+                23.4060001373291
+              ]
+            },
+            {
+              "time": 1.3329999446868896,
+              "coefficients": [
+                -556.1475219726562,
+                285.96649169921875,
+                0.0,
+                -2.3010001182556152
+              ]
+            },
+            {
+              "time": 1.6330000162124634,
+              "coefficients": [
+                52.1335563659668,
+                -57.86674118041992,
+                21.40873908996582,
+                8.420000076293945
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                11.0600004196167
+              ]
+            }
+          ]
+        },
+        "ParamAngleZ": {
+          "bindingIndex": 2,
+          "rawBinding": {
+            "path": 4190011855,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                1050.742431640625,
+                -420.82232666015625,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 0.2669999897480011,
+              "coefficients": [
+                -134.896728515625,
+                128.2203369140625,
+                0.0,
+                -10.0
+              ]
+            },
+            {
+              "time": 0.800000011920929,
+              "coefficients": [
+                4.866896152496338,
+                -11.611717224121094,
+                21.688419342041016,
+                6.0
+              ]
+            },
+            {
+              "time": 1.5670000314712524,
+              "coefficients": [
+                17.282100677490234,
+                -25.633590698242188,
+                12.478078842163086,
+                18.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                20.0
+              ]
+            }
+          ]
+        },
+        "ParamEyeLOpen": {
+          "bindingIndex": 4,
+          "rawBinding": {
+            "path": 1978396178,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                15.811110496520996,
+                -5.525982856750488,
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "time": 0.2329999953508377,
+              "coefficients": [
+                -0.8864902853965759,
+                1.0199071168899536,
+                0.0,
+                0.8999999761581421
+              ]
+            },
+            {
+              "time": 1.0,
+              "coefficients": [
+                115.58170318603516,
+                -46.29046630859375,
+                0.0,
+                1.100000023841858
+              ]
+            },
+            {
+              "time": 1.2669999599456787,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        "ParamEyeROpen": {
+          "bindingIndex": 7,
+          "rawBinding": {
+            "path": 2856044529,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                15.811110496520996,
+                -5.525982856750488,
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "time": 0.2329999953508377,
+              "coefficients": [
+                -0.8864902853965759,
+                1.0199071168899536,
+                0.0,
+                0.8999999761581421
+              ]
+            },
+            {
+              "time": 1.0,
+              "coefficients": [
+                115.58170318603516,
+                -46.29046630859375,
+                0.0,
+                1.100000023841858
+              ]
+            },
+            {
+              "time": 1.2669999599456787,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        "ParamMouthForm": {
+          "bindingIndex": 16,
+          "rawBinding": {
+            "path": 3514263446,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                1.2949999570846558
+              ]
+            },
+            {
+              "time": 0.46700000762939453,
+              "coefficients": [
+                -8.362587928771973,
+                4.591060638427734,
+                0.0,
+                1.2949999570846558
+              ]
+            },
+            {
+              "time": 0.8330000042915344,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                1.5
+              ]
+            },
+            {
+              "time": 1.2669999599456787,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                1.5
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                1.5
+              ]
+            }
+          ]
+        },
+        "ParamMouthOpenY": {
+          "bindingIndex": 15,
+          "rawBinding": {
+            "path": 3995501637,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 0.46700000762939453,
+              "coefficients": [
+                -20.39655113220215,
+                11.197707176208496,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 0.8330000042915344,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.5
+              ]
+            },
+            {
+              "time": 1.2669999599456787,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.5
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.5
+              ]
+            }
+          ]
+        },
+        "ParamBrowLForm": {
+          "bindingIndex": 73,
+          "rawBinding": {
+            "path": 2550903895,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBrowRForm": {
+          "bindingIndex": 70,
+          "rawBinding": {
+            "path": 1205575092,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBodyAngleX": {
+          "bindingIndex": 30,
+          "rawBinding": {
+            "path": 1141202947,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                -209.83326721191406,
+                84.03821563720703,
+                0.0,
+                0.003000000026077032
+              ]
+            },
+            {
+              "time": 0.2669999897480011,
+              "coefficients": [
+                -59.29165267944336,
+                41.444862365722656,
+                0.0,
+                2.0
+              ]
+            },
+            {
+              "time": 0.7329999804496765,
+              "coefficients": [
+                -62.49998474121094,
+                37.49999237060547,
+                0.0,
+                5.0
+              ]
+            },
+            {
+              "time": 1.1330000162124634,
+              "coefficients": [
+                -3.068829298019409,
+                3.9910125732421875,
+                0.0,
+                7.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                8.0
+              ]
+            }
+          ]
+        },
+        "ParamBodyAngleY": {
+          "bindingIndex": 31,
+          "rawBinding": {
+            "path": 855789717,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                499.9999694824219,
+                -149.99998474121094,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 0.20000000298023224,
+              "coefficients": [
+                -98.74685668945312,
+                83.98420715332031,
+                0.0,
+                -2.0
+              ]
+            },
+            {
+              "time": 0.7670000195503235,
+              "coefficients": [
+                270.8116149902344,
+                -135.27040100097656,
+                0.0,
+                7.0
+              ]
+            },
+            {
+              "time": 1.100000023841858,
+              "coefficients": [
+                -2.688614845275879,
+                3.6296300888061523,
+                0.0,
+                2.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                2.9800000190734863
+              ]
+            }
+          ]
+        },
+        "ParamBodyAngleZ": {
+          "bindingIndex": 32,
+          "rawBinding": {
+            "path": 2852847919,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                3.937499761581421,
+                -4.724999904632568,
+                0.0,
+                0.00800000037997961
+              ]
+            },
+            {
+              "time": 0.800000011920929,
+              "coefficients": [
+                -93.74996948242188,
+                56.24999237060547,
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "time": 1.2000000476837158,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                2.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                2.0
+              ]
+            }
+          ]
+        },
+        "ParamUpperBody": {
+          "bindingIndex": 87,
+          "rawBinding": {
+            "path": 1513497407,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBreath": {
+          "bindingIndex": 33,
+          "rawBinding": {
+            "path": 3823476906,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                -3.874999523162842,
+                4.649999618530273,
+                0.0,
+                0.00800000037997961
+              ]
+            },
+            {
+              "time": 0.800000011920929,
+              "coefficients": [
+                19.637195587158203,
+                -13.755853652954102,
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "time": 1.2669999599456787,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        }
+      },
+      "missingBodyArmChannels": [],
+      "samples": [
+        {
+          "clipSeconds": 0,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.2949999570846558,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 0.003000000026077032,
+            "ParamBodyAngleY": 0.0,
+            "ParamBodyAngleZ": 0.00800000037997961,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.00800000037997961
+          }
+        },
+        {
+          "clipSeconds": 0.233,
+          "values": {
+            "ParamAngleX": 5.415620982425408,
+            "ParamAngleY": -16.79800033569335,
+            "ParamAngleZ": -9.554828174031494,
+            "ParamEyeLOpen": 0.8999999761581421,
+            "ParamEyeROpen": 0.8999999761581421,
+            "ParamMouthForm": 1.2949999570846558,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 1.9110989779798584,
+            "ParamBodyAngleY": -1.9120898797567427,
+            "ParamBodyAngleZ": -0.1987087580209549,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.21142765482704354
+          }
+        },
+        {
+          "clipSeconds": 0.633,
+          "values": {
+            "ParamAngleX": -2.771522971939646,
+            "ParamAngleY": 19.2247861559958,
+            "ParamAngleZ": 0.5621810817128416,
+            "ParamEyeLOpen": 1.0064497384102349,
+            "ParamEyeROpen": 1.0064497384102349,
+            "ParamMouthForm": 1.3832582651703131,
+            "ParamMouthOpenY": 0.21526414119068385,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 4.644843068569654,
+            "ParamBodyAngleY": 5.729574867546661,
+            "ParamBodyAngleZ": -0.886563257441407,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.8883637875973911
+          }
+        },
+        {
+          "clipSeconds": 1.267,
+          "values": {
+            "ParamAngleX": -3.892937204908829,
+            "ParamAngleY": -1.4362681465593283,
+            "ParamAngleZ": 14.09178538032889,
+            "ParamEyeLOpen": 0.0,
+            "ParamEyeROpen": 0.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.5,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 7.064278684655255,
+            "ParamBodyAngleY": 2.0887046058433794,
+            "ParamBodyAngleZ": 2.0,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.0
+          }
+        },
+        {
+          "clipSeconds": 1.899,
+          "values": {
+            "ParamAngleX": -3.0,
+            "ParamAngleY": 11.001516177050586,
+            "ParamAngleZ": 19.949712789593345,
+            "ParamEyeLOpen": 0.0,
+            "ParamEyeROpen": 0.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.5,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 7.962449595128727,
+            "ParamBodyAngleY": 2.9457443525398004,
+            "ParamBodyAngleZ": 2.0,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.0
+          }
+        },
+        {
+          "clipSeconds": 2.0,
+          "values": {
+            "ParamAngleX": -3.0,
+            "ParamAngleY": 11.0600004196167,
+            "ParamAngleZ": 20.0,
+            "ParamEyeLOpen": 0.0,
+            "ParamEyeROpen": 0.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.5,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 8.0,
+            "ParamBodyAngleY": 2.9800000190734863,
+            "ParamBodyAngleZ": 2.0,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "token": "act_hohoemu_w",
+      "original": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_subaru_butler01_act_hohoemu_w.anim",
+        "sha256": "15db892580b301fcbe3e192b1e511692b94c3afa2aae80b960226a3e0597413c"
+      },
+      "pathId": 1141099303551396230,
+      "duration": 2.0,
+      "parameterBindingCount": 107,
+      "noOriginalTransformScalePositionRotationCurves": true,
+      "rawHeadBodyChannels": {
+        "ParamAngleX": {
+          "bindingIndex": 16,
+          "rawBinding": {
+            "path": 397467875,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": -3.0
+        },
+        "ParamAngleY": {
+          "bindingIndex": 17,
+          "rawBinding": {
+            "path": 1622659189,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 11.0600004196167
+        },
+        "ParamAngleZ": {
+          "bindingIndex": 18,
+          "rawBinding": {
+            "path": 4190011855,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 20.0
+        },
+        "ParamEyeLOpen": {
+          "bindingIndex": 32,
+          "rawBinding": {
+            "path": 1978396178,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamEyeROpen": {
+          "bindingIndex": 36,
+          "rawBinding": {
+            "path": 2856044529,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamMouthForm": {
+          "bindingIndex": 64,
+          "rawBinding": {
+            "path": 3514263446,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.5
+        },
+        "ParamMouthOpenY": {
+          "bindingIndex": 63,
+          "rawBinding": {
+            "path": 3995501637,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.5
+        },
+        "ParamBrowLForm": {
+          "bindingIndex": 53,
+          "rawBinding": {
+            "path": 2550903895,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBrowRForm": {
+          "bindingIndex": 50,
+          "rawBinding": {
+            "path": 1205575092,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBodyAngleX": {
+          "bindingIndex": 76,
+          "rawBinding": {
+            "path": 1141202947,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 8.0
+        },
+        "ParamBodyAngleY": {
+          "bindingIndex": 77,
+          "rawBinding": {
+            "path": 855789717,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 2.9800000190734863
+        },
+        "ParamBodyAngleZ": {
+          "bindingIndex": 78,
+          "rawBinding": {
+            "path": 2852847919,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 2.0
+        },
+        "ParamUpperBody": {
+          "bindingIndex": 79,
+          "rawBinding": {
+            "path": 1513497407,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBreath": {
+          "bindingIndex": 12,
+          "rawBinding": {
+            "path": 3823476906,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "streamed": [
+            {
+              "time": 0.0,
+              "coefficients": [
+                -2.0,
+                3.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "time": 1.0,
+              "coefficients": [
+                2.0,
+                -3.0,
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "time": 2.0,
+              "coefficients": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        }
+      },
+      "missingBodyArmChannels": [],
+      "samples": [
+        {
+          "clipSeconds": 0,
+          "values": {
+            "ParamAngleX": -3.0,
+            "ParamAngleY": 11.0600004196167,
+            "ParamAngleZ": 20.0,
+            "ParamEyeLOpen": 0.0,
+            "ParamEyeROpen": 0.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.5,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 8.0,
+            "ParamBodyAngleY": 2.9800000190734863,
+            "ParamBodyAngleZ": 2.0,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.0
+          }
+        },
+        {
+          "clipSeconds": 0.233,
+          "values": {
+            "ParamAngleX": -3.0,
+            "ParamAngleY": 11.0600004196167,
+            "ParamAngleZ": 20.0,
+            "ParamEyeLOpen": 0.0,
+            "ParamEyeROpen": 0.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.5,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 8.0,
+            "ParamBodyAngleY": 2.9800000190734863,
+            "ParamBodyAngleZ": 2.0,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.13756832600000002
+          }
+        },
+        {
+          "clipSeconds": 0.633,
+          "values": {
+            "ParamAngleX": -3.0,
+            "ParamAngleY": 11.0600004196167,
+            "ParamAngleZ": 20.0,
+            "ParamEyeLOpen": 0.0,
+            "ParamEyeROpen": 0.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.5,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 8.0,
+            "ParamBodyAngleY": 2.9800000190734863,
+            "ParamBodyAngleZ": 2.0,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.694794726
+          }
+        },
+        {
+          "clipSeconds": 1.267,
+          "values": {
+            "ParamAngleX": -3.0,
+            "ParamAngleY": 11.0600004196167,
+            "ParamAngleZ": 20.0,
+            "ParamEyeLOpen": 0.0,
+            "ParamEyeROpen": 0.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.5,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 8.0,
+            "ParamBodyAngleY": 2.9800000190734863,
+            "ParamBodyAngleZ": 2.0,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.8242013260000001
+          }
+        },
+        {
+          "clipSeconds": 1.899,
+          "values": {
+            "ParamAngleX": -3.0,
+            "ParamAngleY": 11.0600004196167,
+            "ParamAngleZ": 20.0,
+            "ParamEyeLOpen": 0.0,
+            "ParamEyeROpen": 0.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.5,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 8.0,
+            "ParamBodyAngleY": 2.9800000190734863,
+            "ParamBodyAngleZ": 2.0,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.028542398000000024
+          }
+        },
+        {
+          "clipSeconds": 2.0,
+          "values": {
+            "ParamAngleX": -3.0,
+            "ParamAngleY": 11.0600004196167,
+            "ParamAngleZ": 20.0,
+            "ParamEyeLOpen": 0.0,
+            "ParamEyeROpen": 0.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.5,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0,
+            "ParamBodyAngleX": 8.0,
+            "ParamBodyAngleY": 2.9800000190734863,
+            "ParamBodyAngleZ": 2.0,
+            "ParamUpperBody": 0.0,
+            "ParamBreath": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "token": "face_normal_w",
+      "original": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_subaru_butler01_face_normal_w.anim",
+        "sha256": "81aa643daea1315a1ad535c7c47a9820c8577af544d570598238c6059f33eb3f"
+      },
+      "pathId": -893089480966952526,
+      "duration": 4.0,
+      "parameterBindingCount": 72,
+      "noOriginalTransformScalePositionRotationCurves": true,
+      "rawHeadBodyChannels": {
+        "ParamAngleX": {
+          "bindingIndex": 12,
+          "rawBinding": {
+            "path": 397467875,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamAngleY": {
+          "bindingIndex": 13,
+          "rawBinding": {
+            "path": 1622659189,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamAngleZ": {
+          "bindingIndex": 14,
+          "rawBinding": {
+            "path": 4190011855,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamEyeLOpen": {
+          "bindingIndex": 28,
+          "rawBinding": {
+            "path": 1978396178,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.0
+        },
+        "ParamEyeROpen": {
+          "bindingIndex": 32,
+          "rawBinding": {
+            "path": 2856044529,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.0
+        },
+        "ParamMouthForm": {
+          "bindingIndex": 60,
+          "rawBinding": {
+            "path": 3514263446,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.5
+        },
+        "ParamMouthOpenY": {
+          "bindingIndex": 59,
+          "rawBinding": {
+            "path": 3995501637,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBrowLForm": {
+          "bindingIndex": 49,
+          "rawBinding": {
+            "path": 2550903895,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBrowRForm": {
+          "bindingIndex": 46,
+          "rawBinding": {
+            "path": 1205575092,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        }
+      },
+      "missingBodyArmChannels": [
+        "ParamUpperArmR",
+        "ParamForeArmR",
+        "ParamUpperArmL",
+        "ParamForeArmL",
+        "ParamBodyAngleX",
+        "ParamBodyAngleY",
+        "ParamBodyAngleZ",
+        "ParamUpperBody",
+        "ParamBreath"
+      ],
+      "samples": [
+        {
+          "clipSeconds": 0,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0
+          }
+        },
+        {
+          "clipSeconds": 0.233,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0
+          }
+        },
+        {
+          "clipSeconds": 0.633,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0
+          }
+        },
+        {
+          "clipSeconds": 1.267,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0
+          }
+        },
+        {
+          "clipSeconds": 1.899,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0
+          }
+        },
+        {
+          "clipSeconds": 4.0,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.0,
+            "ParamEyeROpen": 1.0,
+            "ParamMouthForm": 1.5,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 0.0,
+            "ParamBrowRForm": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "token": "face_normal02_w",
+      "original": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_subaru_butler01_face_normal02_w.anim",
+        "sha256": "b7beacd52f2e26e7c35883fd5fb19078c8caf2397596480facbd5b81b73ed9b6"
+      },
+      "pathId": 6995910226796395298,
+      "duration": 4.0,
+      "parameterBindingCount": 72,
+      "noOriginalTransformScalePositionRotationCurves": true,
+      "rawHeadBodyChannels": {
+        "ParamAngleX": {
+          "bindingIndex": 12,
+          "rawBinding": {
+            "path": 397467875,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamAngleY": {
+          "bindingIndex": 13,
+          "rawBinding": {
+            "path": 1622659189,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamAngleZ": {
+          "bindingIndex": 14,
+          "rawBinding": {
+            "path": 4190011855,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamEyeLOpen": {
+          "bindingIndex": 28,
+          "rawBinding": {
+            "path": 1978396178,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.100000023841858
+        },
+        "ParamEyeROpen": {
+          "bindingIndex": 32,
+          "rawBinding": {
+            "path": 2856044529,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.100000023841858
+        },
+        "ParamMouthForm": {
+          "bindingIndex": 60,
+          "rawBinding": {
+            "path": 3514263446,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamMouthOpenY": {
+          "bindingIndex": 59,
+          "rawBinding": {
+            "path": 3995501637,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 0.0
+        },
+        "ParamBrowLForm": {
+          "bindingIndex": 49,
+          "rawBinding": {
+            "path": 2550903895,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.0
+        },
+        "ParamBrowRForm": {
+          "bindingIndex": 46,
+          "rawBinding": {
+            "path": 1205575092,
+            "attribute": 3702945584,
+            "script": {
+              "m_FileID": 0,
+              "m_PathID": 3470045044580567963
+            },
+            "typeID": 114,
+            "customType": 0,
+            "isPPtrCurve": 0
+          },
+          "constant": 1.0
+        }
+      },
+      "missingBodyArmChannels": [
+        "ParamUpperArmR",
+        "ParamForeArmR",
+        "ParamUpperArmL",
+        "ParamForeArmL",
+        "ParamBodyAngleX",
+        "ParamBodyAngleY",
+        "ParamBodyAngleZ",
+        "ParamUpperBody",
+        "ParamBreath"
+      ],
+      "samples": [
+        {
+          "clipSeconds": 0,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.100000023841858,
+            "ParamEyeROpen": 1.100000023841858,
+            "ParamMouthForm": 0.0,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 1.0,
+            "ParamBrowRForm": 1.0
+          }
+        },
+        {
+          "clipSeconds": 0.233,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.100000023841858,
+            "ParamEyeROpen": 1.100000023841858,
+            "ParamMouthForm": 0.0,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 1.0,
+            "ParamBrowRForm": 1.0
+          }
+        },
+        {
+          "clipSeconds": 0.633,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.100000023841858,
+            "ParamEyeROpen": 1.100000023841858,
+            "ParamMouthForm": 0.0,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 1.0,
+            "ParamBrowRForm": 1.0
+          }
+        },
+        {
+          "clipSeconds": 1.267,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.100000023841858,
+            "ParamEyeROpen": 1.100000023841858,
+            "ParamMouthForm": 0.0,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 1.0,
+            "ParamBrowRForm": 1.0
+          }
+        },
+        {
+          "clipSeconds": 1.899,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.100000023841858,
+            "ParamEyeROpen": 1.100000023841858,
+            "ParamMouthForm": 0.0,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 1.0,
+            "ParamBrowRForm": 1.0
+          }
+        },
+        {
+          "clipSeconds": 4.0,
+          "values": {
+            "ParamAngleX": 0.0,
+            "ParamAngleY": 0.0,
+            "ParamAngleZ": 0.0,
+            "ParamEyeLOpen": 1.100000023841858,
+            "ParamEyeROpen": 1.100000023841858,
+            "ParamMouthForm": 0.0,
+            "ParamMouthOpenY": 0.0,
+            "ParamBrowLForm": 1.0,
+            "ParamBrowRForm": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "discriminatingOriginalFrames": [
+    {
+      "frameIndex": 35,
+      "decodedPTS": 6571024,
+      "decodedPTSSeconds": 410.689,
+      "decodedChecksum": "5CE4B437",
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/memory-proposals-v1/source-entry-s10150004-n9-v1/source-036.png",
+      "sha256": "9e015e79e675334b34e39d4478ea3a200594ae46552c983092ad8e15e84b10d3",
+      "why": "Clear original entry, before the later arm bend; eyes open, mild smile, comparatively upright head"
+    },
+    {
+      "frameIndex": 39,
+      "decodedPTS": 6573152,
+      "decodedPTSSeconds": 410.822,
+      "decodedChecksum": "97A609E3",
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/memory-proposals-v1/source-entry-s10150004-n9-v1/source-040.png",
+      "sha256": "b84e378f55e0f497693d0fe86e1e8c29ad31f75d68d60308d60e73ac7fdbb582",
+      "why": "Original head/face before the arm transition used in the independent geometry assessment"
+    },
+    {
+      "frameIndex": 49,
+      "decodedPTS": 6578496,
+      "decodedPTSSeconds": 411.156,
+      "decodedChecksum": "9B46749A",
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/memory-proposals-v1/source-entry-s10150004-n9-v1/source-050.png",
+      "sha256": "2510acd854cb2131f40962b6a5d436ae5f4d69077260504a4872d78275ee0bbe",
+      "why": "Arm at waist while face remains open-eyed; candidate must not inherit the closed-eye tilted full-body reference"
+    },
+    {
+      "frameIndex": 59,
+      "decodedPTS": 6583824,
+      "decodedPTSSeconds": 411.489,
+      "decodedChecksum": "A964EBAF",
+      "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/butler-projection-three-frame-v1/memory-proposals-v1/source-entry-s10150004-n9-v1/source-060.png",
+      "sha256": "2af4e680f94946777e628223335ff10e9318ad5e7b7fdb6ba0081a139b599523",
+      "why": "Held open-eye face and waist-side arm for longer-window discrimination"
+    }
+  ],
+  "minimumMissing": [
+    "Exact assembled hohoemu body + explicit face_normal_w reference, retaining the original head/body layers and fixed default projection.",
+    "If needed, the same assembled frame/trajectory with face_normal02_w as an eye/brow/mouth contrast; no camera/offset/scale fitting.",
+    "Known composition/phase evidence before assigning any scene face/body instruction."
+  ],
+  "scope": {
+    "renderValidatedFaceCandidates": [],
+    "characterOnlyGeometrySignature": "still_pending_in_separate_assessment",
+    "originalModelIdRecovered": false,
+    "bodyFaceFieldsProposed": [],
+    "installable": false
+  },
+  "compute": {
+    "nice": 19,
+    "affinity": [
+      22,
+      23
+    ]
+  }
+}

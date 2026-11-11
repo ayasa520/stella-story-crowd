@@ -1,0 +1,352 @@
+{
+  "schema": "stella.noninstallable.visible_reproduction_memory_proposal.v1",
+  "id": "butler01-default-visible-s10150005-n4",
+  "sceneId": 10150005,
+  "targetScenarioId": 4,
+  "installable": false,
+  "registeredForPlayback": false,
+  "browserAuthorized": false,
+  "status": "guarded_input_ready_full_entry_comparison_pending",
+  "purpose": "Test the existing01 model with unchanged default original ADV projection as explicitly authored visible reproduction; do not recover a unique original modelID.",
+  "formalDataHeadAtPreparation": "016ee572852f54d646c37e287cb28619408a28f7",
+  "formalDataStatusAtPreparation": "",
+  "formalNativeFile": {
+    "file": "/home/rikka/Projects/stella/story_crowd_data/native/scenes/10150005.json",
+    "sha256": "1b85e9c464084d6f1b8a7f942128b6e813d268247720134ca006e2910e5f3816"
+  },
+  "formalReviewFile": {
+    "file": "/home/rikka/Projects/stella/story_crowd_data/review/scenes/10150005.json",
+    "sha256": "ba8da38900825cbc0553d5411356ff8b1f4d189e3b4fb3286225005e9d1d30ce"
+  },
+  "guardsRequireDeepJSONEquality": true,
+  "guards": [
+    {
+      "scenarioId": 3,
+      "stableKey": "s10150005-p23-at0645",
+      "sourceText": "クルシュ邸の庭・昼",
+      "canonicalNativeRowSha256": "268d422a359addf4af3ecd55555951182a63a503c6e9cd6b78727c2608442f55",
+      "branchListSha256": "749012faf752344ef54ceba610872b2cc47fffa1223fef23f2c4f4856159143e",
+      "expectedRawFields": {
+        "character": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "position": "",
+        "talk_chara": "",
+        "character_image": "",
+        "bg_picture": ""
+      },
+      "expectedCompiledModel": ""
+    },
+    {
+      "scenarioId": 4,
+      "stableKey": "s10150005-p23-at0647p5",
+      "sourceText": "ふいー、\nやっとこ土作りも終わりましたね",
+      "canonicalNativeRowSha256": "5fec0d18aa26f2fb47c2e6e3bdefe4ddc84aea48c31996d9b5a721d37b98bc4c",
+      "branchListSha256": "914cfb4b9058728e7962356a22ae37638b0f280e068ccc8af68a25f7647adb0b",
+      "expectedRawFields": {
+        "character": "",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "position": "",
+        "talk_chara": "",
+        "character_image": "",
+        "bg_picture": ""
+      },
+      "expectedCompiledModel": ""
+    },
+    {
+      "scenarioId": 5,
+      "stableKey": "s10150005-p23-at0651p5",
+      "sourceText": "花壇の手入れとは、かくも手間のかかるものなのですな",
+      "canonicalNativeRowSha256": "52799970d06cb42d2bd454b18ad2c34579aaf17c70744a803ef4978fff425fe8",
+      "branchListSha256": "737da3d0c149f729eaed7d26e3777d033f32b7172d38380a9e051dab76c26fc0",
+      "expectedRawFields": {
+        "character": "live2d/AC_wilhelm01",
+        "motion": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "position": "",
+        "talk_chara": "",
+        "character_image": "",
+        "bg_picture": ""
+      },
+      "expectedCompiledModel": "wilhelm01"
+    }
+  ],
+  "continuousReviewRoute": {
+    "startScenarioId": 3,
+    "rows": [
+      3,
+      4,
+      5
+    ],
+    "edges": [
+      {
+        "edgeId": "10150005:3:31",
+        "from": 3,
+        "to": 4,
+        "nativeTransition": {
+          "uniq_id": 1015000510031,
+          "transition_id": 3101,
+          "next_scenario_id": 4,
+          "next_scenario_label": ""
+        },
+        "review": {
+          "branchId": 31,
+          "stableKey": "s10150005-p23-at0645-next",
+          "nativeIdOrigin": "authored",
+          "verification": "observed",
+          "state": "confirmed",
+          "evidence": [
+            {
+              "segmentId": "p23-s10150005",
+              "start": 644.999,
+              "end": 646.499,
+              "sourceAnchorSeconds": 645,
+              "ocrReviewed": false,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/019350-dialogue.png",
+              "ocrEventId": "merged-0167",
+              "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+              "originalOCRText": "クルシュ邸の庭・昼",
+              "ocrConfidence": 0.99291,
+              "ocrReviewReasons": [],
+              "nextStableKey": "s10150005-p23-at0647p5",
+              "basis": "Consecutive fixed recording anchors inside one manually identified scene.",
+              "recordingId": "bili-capital-23"
+            }
+          ],
+          "gainPointsRecovered": false
+        }
+      },
+      {
+        "edgeId": "10150005:4:41",
+        "from": 4,
+        "to": 5,
+        "nativeTransition": {
+          "uniq_id": 1015000510041,
+          "transition_id": 4101,
+          "next_scenario_id": 5,
+          "next_scenario_label": ""
+        },
+        "review": {
+          "branchId": 41,
+          "stableKey": "s10150005-p23-at0647p5-next",
+          "nativeIdOrigin": "authored",
+          "verification": "observed",
+          "state": "confirmed",
+          "evidence": [
+            {
+              "segmentId": "p23-s10150005",
+              "start": 647.4,
+              "end": 650.5,
+              "sourceAnchorSeconds": 647.5,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/019470-dialogue.png",
+              "ocrEventId": "merged-0169",
+              "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+              "originalOCRText": "ふいー、やっとこ土作りも終わりましたね",
+              "ocrConfidence": 0.92756,
+              "ocrReviewReasons": [
+                "content_variant_conflict"
+              ],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  647.4,
+                  650.5
+                ],
+                "canonicalAnchorSeconds": 647.5,
+                "action": "replace",
+                "speaker": "スバル",
+                "text": "ふいー、\nやっとこ土作りも終わりましたね",
+                "witnessTime": 648.999
+              },
+              "rootReviewWitnessTime": 648.999,
+              "nextStableKey": "s10150005-p23-at0651p5",
+              "basis": "Consecutive fixed recording anchors inside one manually identified scene.",
+              "recordingId": "bili-capital-23"
+            }
+          ],
+          "gainPointsRecovered": false
+        }
+      }
+    ]
+  },
+  "memoryOnlyOverride": {
+    "scenarioId": 4,
+    "character": "live2d/AC_subaru_butler01"
+  },
+  "preserveExactTargetFields": {
+    "motion": "",
+    "command": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "projectionPolicy": {
+    "mode": "existing_single_actor_default_native_ADV",
+    "cameraOverride": null,
+    "placementOverride": null,
+    "offsetOverride": null,
+    "scaleOverride": null,
+    "current01Wrapper": {
+      "position": {
+        "x": 0.05999999865889549,
+        "y": -3.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 5.0,
+        "y": 5.0,
+        "z": 5.0
+      },
+      "source": "com.sega.stella/files/AssetBundle/assets/ac_base_subaru_butler01.prefab"
+    },
+    "assets": {
+      "file": "/home/rikka/Projects/stella/story_crowd_data/assets/player/manifest.json",
+      "sha256": "f9eb1be11273a813c86bf44cf1d9919298006ff505557306a055d8c85d22571b"
+    }
+  },
+  "sourceEntryIndex": [
+    {
+      "scenarioId": 3,
+      "stableKey": "s10150005-p23-at0645",
+      "sourceText": "クルシュ邸の庭・昼",
+      "recordings": [
+        {
+          "segmentId": "p23-s10150005",
+          "start": 644.999,
+          "end": 646.499,
+          "sourceAnchorSeconds": 645,
+          "ocrReviewed": false,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/019350-dialogue.png",
+          "ocrEventId": "merged-0167",
+          "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+          "originalOCRText": "クルシュ邸の庭・昼",
+          "ocrConfidence": 0.99291,
+          "ocrReviewReasons": [],
+          "recordingId": "bili-capital-23"
+        }
+      ],
+      "retainedFullFrame": null,
+      "adjacentFullFrameStatus": "pending_no_actor_observation_frame",
+      "originalVideo": {
+        "file": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+        "sha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e"
+      }
+    },
+    {
+      "scenarioId": 4,
+      "stableKey": "s10150005-p23-at0647p5",
+      "sourceText": "ふいー、\nやっとこ土作りも終わりましたね",
+      "recordings": [
+        {
+          "segmentId": "p23-s10150005",
+          "start": 647.4,
+          "end": 650.5,
+          "sourceAnchorSeconds": 647.5,
+          "ocrReviewed": true,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/019470-dialogue.png",
+          "ocrEventId": "merged-0169",
+          "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+          "originalOCRText": "ふいー、やっとこ土作りも終わりましたね",
+          "ocrConfidence": 0.92756,
+          "ocrReviewReasons": [
+            "content_variant_conflict"
+          ],
+          "visualReviewer": "root",
+          "rootDecision": {
+            "interval": [
+              647.4,
+              650.5
+            ],
+            "canonicalAnchorSeconds": 647.5,
+            "action": "replace",
+            "speaker": "スバル",
+            "text": "ふいー、\nやっとこ土作りも終わりましたね",
+            "witnessTime": 648.999
+          },
+          "rootReviewWitnessTime": 648.999,
+          "recordingId": "bili-capital-23"
+        }
+      ],
+      "retainedFullFrame": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-all/cast-648.9990.png",
+        "sha256": "9b692e8613e96d21a3bd8b98b34075d4117efd4a304c9b2b5291bd189c87aef7",
+        "seconds": 648.999
+      },
+      "adjacentFullFrameStatus": "retained",
+      "originalVideo": {
+        "file": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+        "sha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e"
+      }
+    },
+    {
+      "scenarioId": 5,
+      "stableKey": "s10150005-p23-at0651p5",
+      "sourceText": "花壇の手入れとは、かくも手間のかかるものなのですな",
+      "recordings": [
+        {
+          "segmentId": "p23-s10150005",
+          "start": 651.499,
+          "end": 654.999,
+          "sourceAnchorSeconds": 651.5,
+          "ocrReviewed": false,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/23/coarse-1hz/crops/019620-dialogue.png",
+          "ocrEventId": "merged-0171",
+          "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+          "originalOCRText": "花壇の手入れとは、かくも手間のかかるものなのですな",
+          "ocrConfidence": 0.99978,
+          "ocrReviewReasons": [],
+          "recordingId": "bili-capital-23"
+        }
+      ],
+      "retainedFullFrame": {
+        "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-all/cast-654.8490.png",
+        "sha256": "1f54d20a0a080ff8bec289d40a4a077bf56d9ba9170b764bbefeb7ceebdf8488",
+        "seconds": 654.849
+      },
+      "adjacentFullFrameStatus": "retained",
+      "originalVideo": {
+        "file": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+        "sha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e"
+      }
+    }
+  ],
+  "sourceObservationIndex": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/p23-all/observation-evidence.json",
+    "sha256": "fe1edb29984ca1344ac5d82daf54872a7c0dfa96a2650df2b6d3502a3ec5f52a"
+  },
+  "fullEntrySequence": {
+    "status": "pending",
+    "completeEntryClaimed": false,
+    "reason": "The retained predecessor/target/successor full-frame anchors do not establish a continuous entry trajectory. No sequence is invented from the held frames."
+  },
+  "acceptance": {
+    "actualProductionPlayback": "not_run",
+    "originalFullEntryComparison": "pending",
+    "visibleReproductionApproved": false,
+    "originalModelIdRecovered": false,
+    "originalCSVRecovered": false,
+    "bodyFaceCommandsRecovered": false,
+    "pendingNodeCountNotReduced": 107
+  },
+  "activationBoundary": "Unregistered evidence only. A future bounded review must recheck every guard and receive root scheduling before any private compile/browser execution. This packet is not native_repair.node_fields and must never be installed."
+}
