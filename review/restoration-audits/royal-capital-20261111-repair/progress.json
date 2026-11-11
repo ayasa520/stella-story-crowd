@@ -45,8 +45,23 @@
     "p24CharacterFields": 86,
     "p25CharacterFields": 36,
     "p26CharacterFields": 15,
-    "p26Batch1Scope": {"sourceObservationsReviewed":18,"newCharacterFields":15,"noVisibleStageActorPending":3,"remainingObservationsOutsideBatch":100,"actualPlayerPlayback":"not-run-for-this-batch","fullPartAccepted":false},
-    "p25IdentityReview": {"sourceObservations": 92, "newFields": 36, "butlerAliasPending": 55, "noVisibleActorPending": 1, "allSourceObservationsViewed": true, "actualPlayerPlaybackForNewBatch": "not-run", "fullPartAccepted": false},
+    "p26Batch1Scope": {
+      "sourceObservationsReviewed": 18,
+      "newCharacterFields": 15,
+      "noVisibleStageActorPending": 3,
+      "remainingObservationsOutsideBatch": 100,
+      "actualPlayerPlayback": "not-run-for-this-batch",
+      "fullPartAccepted": false
+    },
+    "p25IdentityReview": {
+      "sourceObservations": 92,
+      "newFields": 36,
+      "butlerAliasPending": 55,
+      "noVisibleActorPending": 1,
+      "allSourceObservationsViewed": true,
+      "actualPlayerPlaybackForNewBatch": "not-run",
+      "fullPartAccepted": false
+    },
     "reviewedBodyFields": 2,
     "reviewedIndependentFaceFields": 3,
     "delegatedImageReview": "All 792 new identity fields since eb0cacd were directly inspected by named subagents; root checked witness digests and installed-source preconditions without viewing images. The P17-P20 bundle contains 382 confirmed observations, including one identity already installed before this batch; only 381 were new fields. v21 adds124 more reviewed identities from the remaining P23/P24 observations",
@@ -59,7 +74,11 @@
   },
   "audio": {
     "availableMusicResources": 18,
-    "v13NewMusicResources": ["bgm_adv_every06_cd3_10", "bgm_adv_battle02_cd2_17", "bgm_adv_kinpaku03_cd2_21"],
+    "v13NewMusicResources": [
+      "bgm_adv_every06_cd3_10",
+      "bgm_adv_battle02_cd2_17",
+      "bgm_adv_kinpaku03_cd2_21"
+    ],
     "v13MusicScope": "Resource availability only: original ACB sample/loop metadata and native waveform durations verified, existing assets and native fields preserved; recorded node onset, phase, fade and restart remain separate pending review",
     "p25P26MusicContinuityReview": {
       "sourceWindows": 16,
@@ -78,7 +97,19 @@
     "reviewedBgmFields": 32,
     "sparseP11Events": 16,
     "originalP11CsvAndPhaseRecovered": false,
-    "remainingCandidates": "All35 source passes complete; remaining cues require per-card source review"
+    "remainingCandidates": "All35 source passes complete; remaining cues require per-card source review",
+    "nativeBgmStaticReview": {
+      "report": "native-bgm-entry-v1/REPORT.md",
+      "defaultCrossfadeSeconds": 1.0,
+      "defaultReset": false,
+      "fadeClock": "UnityEngine.Time.deltaTime",
+      "interpolation": "Mathf.Lerp",
+      "loading": "Resource completion callback, no fixed wait inferred",
+      "nativeFieldsChanged": 0,
+      "runtimeChanged": false,
+      "nativeRuntimeLatencyMeasured": false,
+      "totalResourceCompletionOrderAgainstCardInTextProven": false
+    }
   },
   "effects": {
     "p11Phone": "Original texture and animation program are present; phase-2 entry, continuation, exit and the following Ram card were verified in the earlier Studio copy",
@@ -203,7 +234,10 @@
       "identityAndCostumePassed": 20,
       "visibleBackgroundPassed": 16,
       "foundBackgroundGap": "10160010:53-56 retained slum024a in this historical run; corrected by the independently reviewed v22/v23 providers at26 and35",
-      "observedChoicesOnly": [302, 152],
+      "observedChoicesOnly": [
+        302,
+        152
+      ],
       "playerErrors": 0,
       "consoleErrorRetained": "One generic404 corresponds to the sole contemporaneous GET /favicon.ico404 in readonly server logs; required actor/resources succeeded",
       "browserClosedBeforeImageReview": true,
@@ -214,7 +248,10 @@
       "nodeVisits": 12,
       "naturalEdges": 7,
       "backgroundIdentityBoundaryAndInheritancePassed": 12,
-      "providers": {"10160010:26": "bg/bg076d_roswaal", "10160010:35": "bg/bg125d_crusch"},
+      "providers": {
+        "10160010:26": "bg/bg076d_roswaal",
+        "10160010:35": "bg/bg125d_crusch"
+      },
       "nextSceneForestUnchanged": true,
       "playerAndResourceErrors": 0,
       "retainedDiagnostics": "Exact favicon.ico404 and four ReadPixels warnings",
@@ -223,7 +260,10 @@
     },
     "v24Felt21Motion": {
       "field": "act_normal,face_shinken",
-      "verifiedMotionComponents": ["body", "face"],
+      "verifiedMotionComponents": [
+        "body",
+        "face"
+      ],
       "sourceEntryFrames": 67,
       "primaryActualEntryFrames": 78,
       "primaryFirstLowAlpha": 0.00351278,
@@ -231,7 +271,14 @@
       "extraLayerWarningRetained": true,
       "originalCsvRecovered": false,
       "exactTimingValidated": false,
-      "otherMotionNodesStillPending": [15,16,17,19,22,24]
+      "otherMotionNodesStillPending": [
+        15,
+        16,
+        17,
+        19,
+        22,
+        24
+      ]
     },
     "v25VoicePlayback": {
       "routes": 3,

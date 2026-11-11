@@ -1,0 +1,225 @@
+"""Record a bounded, static BGM call-chain audit; never start the game.
+
+Run with ``nice -n 19 taskset -c 22,23 uv run --offline --no-project
+--with capstone python <this file>``. Only evidence beside this file is written.
+An observed audio onset is not a script phase: inspect setup, loading callbacks
+and sound-player scheduling independently before changing restoration fields.
+"""
+
+import argparse
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import struct
+import sys
+
+from capstone import Cs, CS_ARCH_ARM64, CS_MODE_LITTLE_ENDIAN
+
+
+BASE = Path(__file__).resolve().parent
+ROOT = BASE.parents[4]
+sys.path.insert(0, str(ROOT))
+from lost_in_memories.tools.metadata import Metadata
+
+
+DEFAULT_TARGETS = (
+    "Stella.Scenes.ADV2.CommandUtil.SetupBGM",
+    "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+    "Stella.Scenes.ADV2.ADVAssetsLoader+<>c__DisplayClass25_0.<LoadBGM>b__0",
+    "Stella.Sound.Player.PlayBGM",
+    "Stella.Sound.Player+<>c__DisplayClass2_0.<PlayBGM>b__0",
+)
+
+
+def receipt(path):
+    raw = path.read_bytes()
+    return {"path": str(path.relative_to(ROOT)), "bytes": len(raw),
+            "sha256": hashlib.sha256(raw).hexdigest()}
+
+
+def load_image_reader(path):
+    spec = importlib.util.spec_from_file_location("bgm_native_image", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.NativeImage
+
+
+def index_methods(metadata, image, module):
+    """Resolve one verified assembly's token table through ELF segments.
+
+    Unity and CRI tokens use other tables. Leaving an external target unnamed
+    is preferable to assigning it a plausible label from the wrong assembly.
+    The inherited image record is tied to immutable input hashes below.
+    """
+    first, count = module["imageRecord"][2:4]
+    table = int(module["table"], 16)
+    parameter_table = struct.unpack_from("<I", metadata.data, 228)[0]
+    names, methods = {}, []
+    for type_index in range(first, first + count):
+        definition = metadata.definition_offset(type_index)
+        method_start = metadata.integer(definition + 40)
+        owner = metadata.definition_name(type_index)
+        for ordinal in range(metadata.short(definition + 68)):
+            offset = metadata.layout["methods_offset"] + (method_start + ordinal) * 32
+            token = metadata.integer(offset + 20)
+            token_index = token & 0xFFFFFF
+            assert 0 < token_index <= module["count"], (owner, hex(token))
+            address = image.qword(table + (token_index - 1) * 8)
+            name = metadata.string(metadata.integer(offset))
+            parameter_start = metadata.integer(offset + 12)
+            parameters = []
+            for parameter_index in range(metadata.short(offset + 30)):
+                name_index, parameter_token, parameter_type_index = struct.unpack_from(
+                    "<III", metadata.data, parameter_table +
+                    (parameter_start + parameter_index) * 12)
+                assert parameter_token >> 24 == 8
+                parameters.append({"name": metadata.string(name_index),
+                                   "type": metadata.type_name(parameter_type_index)})
+            record = {"owner": owner, "name": name, "qualified": owner + "." + name,
+                      "token": hex(token), "address": hex(address),
+                      "module": module["name"],
+                      "typeIndex": type_index,
+                      "parameters": metadata.short(offset + 30),
+                      "signatureParameters": parameters,
+                      "returnType": metadata.type_name(metadata.integer(offset + 8))}
+            methods.append(record)
+            if address:
+                names.setdefault(address, []).append(record["qualified"])
+    return names, methods
+
+
+def resolve_usage_slots(metadata, image):
+    """Resolve literal/method references through the original usage-pair table.
+
+    A callback-shaped method name alone does not bind a delegate construction
+    site. The encoded MethodDef reference at its GOT slot supplies that link.
+    Preserve other usage kinds numerically instead of guessing their meaning.
+    """
+    usage_base, usage_count = 0x2B94018, 47169
+    usages = {image.qword(usage_base + index * 8): index for index in range(usage_count)}
+    pairs = struct.unpack_from("<I", metadata.data, 20)[0]
+    pair_bytes = struct.unpack_from("<I", metadata.data, 112)[0]
+    assert (pairs, pair_bytes) == (8196832, 1245240)
+    literal_table = struct.unpack_from("<I", metadata.data, 176)[0]
+    literal_data = struct.unpack_from("<I", metadata.data, 116)[0]
+    slots = {"setup_command_prefix": 0x2D25DA0,
+             "play_bgm_callback": 0x2D36948,
+             "download_join_callback": 0x2D31CF8,
+             "download_first_callback": 0x2CC1BB0,
+             "download_second_callback": 0x2CF3CA8}
+    result = []
+    for name, slot in slots.items():
+        destination = usages[image.qword(slot)]
+        encoded_values = {encoded for at in range(pairs, pairs + pair_bytes, 8)
+                          for target, encoded in [struct.unpack_from("<II", metadata.data, at)]
+                          if target == destination}
+        assert len(encoded_values) == 1, (name, encoded_values)
+        encoded = encoded_values.pop()
+        kind, index = encoded >> 29, encoded & 0x1FFFFFFF
+        row = {"name": name, "slot": hex(slot), "destination": destination,
+               "kind": kind, "index": index, "encoded": hex(encoded)}
+        if kind == 5:
+            length, offset = struct.unpack_from("<II", metadata.data, literal_table + index * 8)
+            row["literal"] = metadata.data[literal_data + offset:literal_data + offset + length].decode()
+        elif kind == 3:
+            offset = metadata.layout["methods_offset"] + index * 32
+            owner = metadata.definition_name(metadata.integer(offset + 4))
+            row["method"] = owner + "." + metadata.string(metadata.integer(offset))
+            row["token"] = hex(metadata.integer(offset + 20))
+        result.append(row)
+    return result
+
+
+def disassemble_targets(image, names, methods, targets):
+    """Stop at the next indexed method, with a hard bound on each dump.
+
+    This is an upper bound, not a recovered function-size symbol. Indirect
+    calls and unlabelled branch targets stay explicit so the audit cannot turn
+    a partial call graph into an unsupported synchronous-completion claim.
+    """
+    addresses = sorted(names)
+    engine = Cs(CS_ARCH_ARM64, CS_MODE_LITTLE_ENDIAN)
+    selected, calls, lines = [], [], []
+    for target in targets:
+        candidates = [row for row in methods if row["qualified"] == target]
+        assert candidates, target
+        for row in candidates:
+            start = int(row["address"], 16)
+            assert start
+            next_bound = next(address for address in addresses if address > start)
+            end = min(next_bound, start + 0x3000)
+            selected.append({**row, "endExclusiveUpperBound": hex(end),
+                             "nextIndexedAddress": hex(next_bound)})
+            lines.append(f"\n{target}: {start:#x}..{end:#x} (upper bound)\n")
+            raw = image.raw[image.offset(start):image.offset(start) + end - start]
+            for instruction in engine.disasm(raw, start):
+                labels = []
+                if instruction.mnemonic in ("bl", "b") and instruction.op_str.startswith("#"):
+                    destination = int(instruction.op_str[1:], 0)
+                    labels = names.get(destination, [])
+                    calls.append({"caller": target, "at": hex(instruction.address),
+                                  "mnemonic": instruction.mnemonic,
+                                  "target": hex(destination), "names": labels})
+                elif instruction.mnemonic in ("blr", "br"):
+                    calls.append({"caller": target, "at": hex(instruction.address),
+                                  "mnemonic": instruction.mnemonic,
+                                  "targetRegister": instruction.op_str, "names": []})
+                suffix = " // " + ", ".join(labels) if labels else ""
+                line = (f"{instruction.address:#x}: {instruction.mnemonic} "
+                        f"{instruction.op_str}{suffix}")
+                lines.append(line.rstrip() + "\n")
+    return selected, calls, "".join(lines)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--target", action="append", default=[])
+    parser.add_argument("--prefix", default="bgm-entry")
+    args = parser.parse_args()
+    assert Path(args.prefix).name == args.prefix
+    parent = BASE.parent
+    inherited_path = parent / "native-motion-entry-20261111/entry-order-evidence.json"
+    inherited = json.loads(inherited_path.read_text())
+    for source in inherited["sources"]:
+        assert receipt(ROOT / source["path"]) == source, source["path"]
+    module = next(row for row in inherited["modules"] if row["name"] == "Assembly-CSharp.dll")
+    helper_path = parent / "visual-low/inspect_native_actor_grammar.py"
+    inputs = [ROOT / "data/libil2cpp-offline.so", ROOT / "logs/metadata-decrypted.dat",
+              ROOT / "lost_in_memories/config/metadata_layout.json",
+              ROOT / "logs/metadata-types.json", helper_path, inherited_path, Path(__file__)]
+    before = [receipt(path) for path in inputs]
+    native = load_image_reader(helper_path)(inputs[0])
+    metadata = Metadata(inputs[1].read_bytes(), json.loads(inputs[2].read_text()),
+                        json.loads(inputs[3].read_text()))
+    names, methods = index_methods(metadata, native, module)
+    core_module = next(row for row in inherited["modules"]
+                       if row["name"] == "UnityEngine.CoreModule.dll")
+    core_names, core_methods = index_methods(metadata, native, core_module)
+    for address, labels in core_names.items():
+        names.setdefault(address, []).extend(labels)
+    methods.extend(core_methods)
+    targets = list(dict.fromkeys(args.target or DEFAULT_TARGETS))
+    selected, calls, text = disassemble_targets(native, names, methods, targets)
+    output = BASE / (args.prefix + "-capstone.txt")
+    output.write_text(text)
+    assert before == [receipt(path) for path in inputs], "A source changed during inspection"
+    report = {"status": "static_evidence_only_no_runtime_or_native_field_changes",
+              "imagesOpened": False, "sources": before, "module": module,
+              "bindingModules": [module, core_module],
+              "usageSlots": resolve_usage_slots(metadata, native),
+              "selectedMethods": selected, "calls": calls, "disassembly": receipt(output),
+              "externalCallBindings": [row for row in core_methods
+                                       if row["address"] in {call.get("target") for call in calls}],
+              "limits": ["No native process was run or instrumented.",
+                         "Method end bounds come from the next indexed assembly address.",
+                         "Unlabelled or indirect calls require further evidence.",
+                         "Static submission order does not measure audible playback onset."]}
+    report_path = BASE / (args.prefix + "-evidence.json")
+    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
+    print(json.dumps({"report": receipt(report_path), "methods": len(selected),
+                      "calls": len(calls), "disassembly": receipt(output)}))
+
+
+if __name__ == "__main__":
+    main()

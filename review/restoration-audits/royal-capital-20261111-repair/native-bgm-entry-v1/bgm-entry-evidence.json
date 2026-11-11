@@ -1,0 +1,523 @@
+{
+  "status": "static_evidence_only_no_runtime_or_native_field_changes",
+  "imagesOpened": false,
+  "sources": [
+    {
+      "path": "data/libil2cpp-offline.so",
+      "bytes": 49492360,
+      "sha256": "54c97bce616bdb062f12b0bccba47b1c6ff17f61da450d8bd0efa403f8822c05"
+    },
+    {
+      "path": "logs/metadata-decrypted.dat",
+      "bytes": 9860704,
+      "sha256": "2cde31e37d9c6c58f3a1bb7bae6b12e51d456af7de03d604bc953116887b1b3e"
+    },
+    {
+      "path": "lost_in_memories/config/metadata_layout.json",
+      "bytes": 606,
+      "sha256": "6a4805e3b4137c2a7dd1dd2034d29b42f4a88a6598ac0262f82220b0338f29ec"
+    },
+    {
+      "path": "logs/metadata-types.json",
+      "bytes": 2955492,
+      "sha256": "b45d0eedc7f4fbb7a341134965c8dfdb8699144c6c04b58b069857575a99b6bb"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/inspect_native_actor_grammar.py",
+      "bytes": 9321,
+      "sha256": "7631842695fb7e58db67f6d11a07d37550ef2ec24db40c77e3df5cfbe16b96fc"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-motion-entry-20261111/entry-order-evidence.json",
+      "bytes": 236968,
+      "sha256": "c03148946de285f67837a7f5d61d5ae55edc1d8d440b3e1c17ed42c4d1163f72"
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/inspect_native_bgm.py",
+      "bytes": 11526,
+      "sha256": "1185f1b1f377b850cae5c2415bfaed291684868812a9f2b540eac2fae119d923"
+    }
+  ],
+  "module": {
+    "name": "Assembly-CSharp.dll",
+    "table": "0x2eb00d8",
+    "count": 34806,
+    "imageRecordOffset": 7853968,
+    "imageRecord": [
+      686785,
+      62,
+      5844,
+      6147,
+      -1,
+      0,
+      -1,
+      1,
+      8550,
+      13853
+    ]
+  },
+  "bindingModules": [
+    {
+      "name": "Assembly-CSharp.dll",
+      "table": "0x2eb00d8",
+      "count": 34806,
+      "imageRecordOffset": 7853968,
+      "imageRecord": [
+        686785,
+        62,
+        5844,
+        6147,
+        -1,
+        0,
+        -1,
+        1,
+        8550,
+        13853
+      ]
+    },
+    {
+      "name": "UnityEngine.CoreModule.dll",
+      "table": "0x2f09230",
+      "count": 2716,
+      "imageRecordOffset": 7851768,
+      "imageRecord": [
+        320208,
+        7,
+        2577,
+        546,
+        -1,
+        0,
+        -1,
+        1,
+        2067,
+        1446
+      ]
+    }
+  ],
+  "usageSlots": [
+    {
+      "name": "setup_command_prefix",
+      "slot": "0x2d25da0",
+      "destination": 43906,
+      "kind": 5,
+      "index": 2603,
+      "encoded": "0xa0000a2b",
+      "literal": "stopbgm"
+    },
+    {
+      "name": "play_bgm_callback",
+      "slot": "0x2d36948",
+      "destination": 23975,
+      "kind": 3,
+      "index": 67713,
+      "encoded": "0x60010881",
+      "method": "Stella.Sound.Player+<>c__DisplayClass2_0.<PlayBGM>b__0",
+      "token": "0x6008702"
+    },
+    {
+      "name": "download_join_callback",
+      "slot": "0x2d31cf8",
+      "destination": 23966,
+      "kind": 3,
+      "index": 67676,
+      "encoded": "0x6001085c",
+      "method": "Stella.Sound.Loader+<>c__DisplayClass1_0.<Download>b__0",
+      "token": "0x60086ef"
+    },
+    {
+      "name": "download_first_callback",
+      "slot": "0x2cc1bb0",
+      "destination": 23967,
+      "kind": 3,
+      "index": 67677,
+      "encoded": "0x6001085d",
+      "method": "Stella.Sound.Loader+<>c__DisplayClass1_0.<Download>b__1",
+      "token": "0x60086f0"
+    },
+    {
+      "name": "download_second_callback",
+      "slot": "0x2cf3ca8",
+      "destination": 23968,
+      "kind": 3,
+      "index": 67678,
+      "encoded": "0x6001085e",
+      "method": "Stella.Sound.Loader+<>c__DisplayClass1_0.<Download>b__2",
+      "token": "0x60086f1"
+    }
+  ],
+  "selectedMethods": [
+    {
+      "owner": "Stella.Scenes.ADV2.CommandUtil",
+      "name": "SetupBGM",
+      "qualified": "Stella.Scenes.ADV2.CommandUtil.SetupBGM",
+      "token": "0x6003ef7",
+      "address": "0x17087e0",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9706,
+      "parameters": 1,
+      "signatureParameters": [
+        {
+          "name": "bgm",
+          "type": "System.String"
+        }
+      ],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x17088ac",
+      "nextIndexedAddress": "0x17088ac"
+    },
+    {
+      "owner": "Stella.Scenes.ADV2.ADVAssetsLoader",
+      "name": "LoadBGM",
+      "qualified": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "token": "0x6003edf",
+      "address": "0x1245fc4",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9689,
+      "parameters": 2,
+      "signatureParameters": [
+        {
+          "name": "bgm",
+          "type": "System.String"
+        },
+        {
+          "name": "callback",
+          "type": "System.Action"
+        }
+      ],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x1246164",
+      "nextIndexedAddress": "0x1246164"
+    },
+    {
+      "owner": "Stella.Scenes.ADV2.ADVAssetsLoader+<>c__DisplayClass25_0",
+      "name": "<LoadBGM>b__0",
+      "qualified": "Stella.Scenes.ADV2.ADVAssetsLoader+<>c__DisplayClass25_0.<LoadBGM>b__0",
+      "token": "0x6007a68",
+      "address": "0x124721c",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 9694,
+      "parameters": 1,
+      "signatureParameters": [
+        {
+          "name": "success",
+          "type": "System.Boolean"
+        }
+      ],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x1247230",
+      "nextIndexedAddress": "0x1247230"
+    },
+    {
+      "owner": "Stella.Sound.Player",
+      "name": "PlayBGM",
+      "qualified": "Stella.Sound.Player.PlayBGM",
+      "token": "0x600564e",
+      "address": "0x15a59c4",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 11260,
+      "parameters": 3,
+      "signatureParameters": [
+        {
+          "name": "cuesheet",
+          "type": "System.String"
+        },
+        {
+          "name": "cross_fade",
+          "type": "System.Single"
+        },
+        {
+          "name": "reset",
+          "type": "System.Boolean"
+        }
+      ],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x15a5ad8",
+      "nextIndexedAddress": "0x15a5ad8"
+    },
+    {
+      "owner": "Stella.Sound.Player+<>c__DisplayClass2_0",
+      "name": "<PlayBGM>b__0",
+      "qualified": "Stella.Sound.Player+<>c__DisplayClass2_0.<PlayBGM>b__0",
+      "token": "0x6008702",
+      "address": "0x15ac50c",
+      "module": "Assembly-CSharp.dll",
+      "typeIndex": 11263,
+      "parameters": 1,
+      "signatureParameters": [
+        {
+          "name": "suc",
+          "type": "System.Boolean"
+        }
+      ],
+      "returnType": "System.Void",
+      "endExclusiveUpperBound": "0x15ac558",
+      "nextIndexedAddress": "0x15ac558"
+    }
+  ],
+  "calls": [
+    {
+      "caller": "Stella.Scenes.ADV2.CommandUtil.SetupBGM",
+      "at": "0x1708810",
+      "mnemonic": "bl",
+      "target": "0xd4181c",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.CommandUtil.SetupBGM",
+      "at": "0x1708824",
+      "mnemonic": "bl",
+      "target": "0x1eefbb0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.CommandUtil.SetupBGM",
+      "at": "0x1708848",
+      "mnemonic": "bl",
+      "target": "0x1ef31f0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.CommandUtil.SetupBGM",
+      "at": "0x1708860",
+      "mnemonic": "bl",
+      "target": "0x1ef1f98",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.CommandUtil.SetupBGM",
+      "at": "0x1708884",
+      "mnemonic": "b",
+      "target": "0x1706370",
+      "names": [
+        "Stella.Scenes.ADV2.CommandUtil.ExecCommand"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.CommandUtil.SetupBGM",
+      "at": "0x17088a4",
+      "mnemonic": "b",
+      "target": "0x15a59c4",
+      "names": [
+        "Stella.Sound.Player.PlayBGM"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.CommandUtil.SetupBGM",
+      "at": "0x17088a8",
+      "mnemonic": "bl",
+      "target": "0xd418ec",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x1245ff8",
+      "mnemonic": "bl",
+      "target": "0xd4181c",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x1246010",
+      "mnemonic": "bl",
+      "target": "0xd418e4",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x124601c",
+      "mnemonic": "bl",
+      "target": "0x195ab1c",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x1246030",
+      "mnemonic": "bl",
+      "target": "0x1eefbb0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x1246050",
+      "mnemonic": "bl",
+      "target": "0x1b5716c",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x124606c",
+      "mnemonic": "bl",
+      "target": "0x1ee9cb4",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x1246074",
+      "mnemonic": "bl",
+      "target": "0x127df68",
+      "names": [
+        "Stella.Common.AssetBundleLoader.IsExist"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x1246094",
+      "mnemonic": "bl",
+      "target": "0x1b56e34",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x12460b4",
+      "mnemonic": "bl",
+      "target": "0xd5dfc0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x12460cc",
+      "mnemonic": "bl",
+      "target": "0xd5dfc0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x12460e4",
+      "mnemonic": "bl",
+      "target": "0xd418e4",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x1246108",
+      "mnemonic": "bl",
+      "target": "0xefb024",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x1246130",
+      "mnemonic": "b",
+      "target": "0x15ab6b0",
+      "names": [
+        "Stella.Sound.Loader.Download"
+      ]
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x124614c",
+      "mnemonic": "b",
+      "target": "0x1ea9cfc",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader.LoadBGM",
+      "at": "0x1246160",
+      "mnemonic": "bl",
+      "target": "0xd418ec",
+      "names": []
+    },
+    {
+      "caller": "Stella.Scenes.ADV2.ADVAssetsLoader+<>c__DisplayClass25_0.<LoadBGM>b__0",
+      "at": "0x1247228",
+      "mnemonic": "b",
+      "target": "0x1ea9cfc",
+      "names": []
+    },
+    {
+      "caller": "Stella.Sound.Player.PlayBGM",
+      "at": "0x15a59fc",
+      "mnemonic": "bl",
+      "target": "0xd4181c",
+      "names": []
+    },
+    {
+      "caller": "Stella.Sound.Player.PlayBGM",
+      "at": "0x15a5a14",
+      "mnemonic": "bl",
+      "target": "0xd418e4",
+      "names": []
+    },
+    {
+      "caller": "Stella.Sound.Player.PlayBGM",
+      "at": "0x15a5a20",
+      "mnemonic": "bl",
+      "target": "0x195ab1c",
+      "names": []
+    },
+    {
+      "caller": "Stella.Sound.Player.PlayBGM",
+      "at": "0x15a5a54",
+      "mnemonic": "bl",
+      "target": "0xd5dfc0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Sound.Player.PlayBGM",
+      "at": "0x15a5a6c",
+      "mnemonic": "bl",
+      "target": "0xd5dfc0",
+      "names": []
+    },
+    {
+      "caller": "Stella.Sound.Player.PlayBGM",
+      "at": "0x15a5a88",
+      "mnemonic": "bl",
+      "target": "0xd418e4",
+      "names": []
+    },
+    {
+      "caller": "Stella.Sound.Player.PlayBGM",
+      "at": "0x15a5aac",
+      "mnemonic": "bl",
+      "target": "0xefb024",
+      "names": []
+    },
+    {
+      "caller": "Stella.Sound.Player.PlayBGM",
+      "at": "0x15a5ad0",
+      "mnemonic": "b",
+      "target": "0x15ab6b0",
+      "names": [
+        "Stella.Sound.Loader.Download"
+      ]
+    },
+    {
+      "caller": "Stella.Sound.Player.PlayBGM",
+      "at": "0x15a5ad4",
+      "mnemonic": "bl",
+      "target": "0xd418ec",
+      "names": []
+    },
+    {
+      "caller": "Stella.Sound.Player+<>c__DisplayClass2_0.<PlayBGM>b__0",
+      "at": "0x15ac538",
+      "mnemonic": "b",
+      "target": "0x1dd6ec8",
+      "names": [
+        "SGNFW.CRI.Sound.BGM.Player.CrossFade"
+      ]
+    },
+    {
+      "caller": "Stella.Sound.Player+<>c__DisplayClass2_0.<PlayBGM>b__0",
+      "at": "0x15ac554",
+      "mnemonic": "b",
+      "target": "0x1dd6870",
+      "names": [
+        "SGNFW.CRI.Sound.BGM.Player.Play"
+      ]
+    }
+  ],
+  "disassembly": {
+    "path": "data/native_recovery/royal-capital-20261110/repair-20261111/native-bgm-entry-20261112/bgm-entry-capstone.txt",
+    "bytes": 7697,
+    "sha256": "e254c0ddfb4dd578be62f656f0615fbdd54067431c825fd8aa52a2b092d9e1fa"
+  },
+  "externalCallBindings": [],
+  "limits": [
+    "No native process was run or instrumented.",
+    "Method end bounds come from the next indexed assembly address.",
+    "Unlabelled or indirect calls require further evidence.",
+    "Static submission order does not measure audible playback onset."
+  ]
+}
