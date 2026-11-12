@@ -1,0 +1,77 @@
+{
+  "status": "both_terminal_finish_forms_complete_without_successor",
+  "cases": [
+    {
+      "id": "terminal-omitted",
+      "logs": [
+        "STORY_PLAYER_AUDIO_RESTORE {\"node\":\"10010001:32\",\"inherited\":{\"bg_music\":\"\",\"ambient\":{}},\"restore\":{\"bg_music\":\"\",\"ambient\":{}}}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"enter\",\"milliseconds\":0}",
+        "STORY_PLAYER_ENTER 10010001:32 title",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"command_resources_ready\",\"milliseconds\":1}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_0_begin\",\"milliseconds\":254}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_0_end\",\"milliseconds\":254}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_1_begin\",\"milliseconds\":254}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_1_end\",\"milliseconds\":254}",
+        "STORY_PLAYER_TITLE 10010001:32 end",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_2_begin\",\"milliseconds\":1950}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_2_end\",\"milliseconds\":1952}",
+        "STORY_PLAYER_TRANSITION {\"edge\":\"10010001:32:37\",\"action\":\"complete\",\"native\":{\"uniq_id\":100100010040,\"next_scenario_label\":\"FINISH\",\"next_scenario_id\":0,\"transition_id\":3701},\"target\":\"\"}",
+        "STORY_PLAYER_CHART_LAYOUT {\"section\":\"section:1001\",\"current\":\"scene:10010001\",\"unlockAll\":true,\"completed\":[\"scene:10010001\"],\"scenes\":[{\"id\":\"scene:10010020\",\"x\":0,\"y\":0,\"end\":false},{\"id\":\"scene:10010001\",\"x\":0,\"y\":1,\"end\":true},{\"id\":\"scene:10010016\",\"x\":1,\"y\":3,\"end\":true}],\"links\":[{\"id\":\"scene:10010001>scene:10010016\",\"source\":\"scene:10010001\",\"target\":\"scene:10010016\",\"visited\":false},{\"id\":\"scene:10010020>scene:10010001\",\"source\":\"scene:10010020\",\"target\":\"scene:10010001\",\"visited\":false}],\"milliseconds\":5779.30000000447}",
+        "STORY_PLAYER_SECTION_COMPLETE section:1001 [scene:10010001] [10010001:32:37]"
+      ],
+      "state": {
+        "node": "10010001:32",
+        "phase": "complete"
+      },
+      "transition": {
+        "edge": "10010001:32:37",
+        "action": "complete",
+        "native": {
+          "uniq_id": 100100010040,
+          "next_scenario_label": "FINISH",
+          "next_scenario_id": 0,
+          "transition_id": 3701
+        },
+        "target": ""
+      }
+    },
+    {
+      "id": "terminal-sentinel",
+      "logs": [
+        "STORY_PLAYER_AUDIO_RESTORE {\"node\":\"10010001:32\",\"inherited\":{\"bg_music\":\"\",\"ambient\":{}},\"restore\":{\"bg_music\":\"\",\"ambient\":{}}}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"enter\",\"milliseconds\":0}",
+        "STORY_PLAYER_ENTER 10010001:32 title",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"command_resources_ready\",\"milliseconds\":0}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_0_begin\",\"milliseconds\":177}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_0_end\",\"milliseconds\":177}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_1_begin\",\"milliseconds\":178}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_1_end\",\"milliseconds\":178}",
+        "STORY_PLAYER_TITLE 10010001:32 end",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_2_begin\",\"milliseconds\":1863}",
+        "STORY_PLAYER_TIMING {\"node\":\"10010001:32\",\"stage\":\"phase_2_end\",\"milliseconds\":1864}",
+        "STORY_PLAYER_TRANSITION {\"edge\":\"10010001:32:37\",\"action\":\"complete\",\"native\":{\"uniq_id\":100100010040,\"next_scenario_label\":\"FINISH\",\"next_scenario_id\":0,\"transition_id\":3701,\"next_section_id\":-1,\"next_scene_id\":-1},\"target\":\"\"}",
+        "STORY_PLAYER_CHART_LAYOUT {\"section\":\"section:1001\",\"current\":\"scene:10010001\",\"unlockAll\":true,\"completed\":[\"scene:10010001\"],\"scenes\":[{\"id\":\"scene:10010020\",\"x\":0,\"y\":0,\"end\":false},{\"id\":\"scene:10010001\",\"x\":0,\"y\":1,\"end\":true},{\"id\":\"scene:10010016\",\"x\":1,\"y\":3,\"end\":true}],\"links\":[{\"id\":\"scene:10010001>scene:10010016\",\"source\":\"scene:10010001\",\"target\":\"scene:10010016\",\"visited\":false},{\"id\":\"scene:10010020>scene:10010001\",\"source\":\"scene:10010020\",\"target\":\"scene:10010001\",\"visited\":false}],\"milliseconds\":5382.89999999851}",
+        "STORY_PLAYER_SECTION_COMPLETE section:1001 [scene:10010001] [10010001:32:37]"
+      ],
+      "state": {
+        "node": "10010001:32",
+        "phase": "complete"
+      },
+      "transition": {
+        "edge": "10010001:32:37",
+        "action": "complete",
+        "native": {
+          "uniq_id": 100100010040,
+          "next_scenario_label": "FINISH",
+          "next_scenario_id": 0,
+          "transition_id": 3701,
+          "next_section_id": -1,
+          "next_scene_id": -1
+        },
+        "target": ""
+      }
+    }
+  ],
+  "formalDataChanged": false,
+  "baselineChanged": false
+}

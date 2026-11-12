@@ -1,0 +1,61 @@
+{
+  "schema": "stella.terminal_finish_visual_review.v1",
+  "reviewer": "/root/p29_packet_preflight",
+  "verdict": "pass_for_terminal_completed_chart_presentation",
+  "closureReadBeforeImages": true,
+  "closure": {
+    "browserCliRecorderProcesses": 0,
+    "imagesMayBeReviewed": true,
+    "ownedServerStopped": true
+  },
+  "scope": "Direct visual inspection of exactly the two requested completed-chart PNGs; runtime identity corroborated by existing playback-result.json. No additional capture, extraction, acting or source-fidelity review.",
+  "cases": [
+    {
+      "image": "terminal-omitted-complete.png",
+      "directlyViewed": true,
+      "verdict": "pass",
+      "visible": [
+        "第1话 section chart with three connected scene cards",
+        "Current 异世界召唤 card outlined in cyan and labelled Complete",
+        "END / 正篇 below the current completed card",
+        "Status 本话已结束。",
+        "Footer 本话剧情播放结束 with dimmed 本话完成 button"
+      ],
+      "blankOrErrorPage": false,
+      "sceneZeroOrGuessedSectionVisible": false,
+      "successorScenePresentationVisible": false
+    },
+    {
+      "image": "terminal-sentinel-complete.png",
+      "directlyViewed": true,
+      "verdict": "pass",
+      "visible": [
+        "Same 第1话 section chart geometry, scene labels and connections",
+        "Current 异世界召唤 card outlined in cyan and labelled Complete",
+        "END / 正篇 below the current completed card",
+        "Status 本话已结束。",
+        "Footer 本话剧情播放结束 with dimmed 本话完成 button"
+      ],
+      "blankOrErrorPage": false,
+      "sceneZeroOrGuessedSectionVisible": false,
+      "successorScenePresentationVisible": false
+    }
+  ],
+  "runtimeCorroborationFromExistingResult": {
+    "section": "section:1001",
+    "sourceNode": "10010001:32",
+    "phase": "complete",
+    "bothActions": "complete",
+    "bothTargets": "",
+    "source": "playback-result.json",
+    "boundary": "Section identity and absence of subsequent enter events are log evidence, not conclusions available from still images alone."
+  },
+  "visibleDifferenceOutsideControlFlowVerdict": "The omitted-destination image includes thumbnails in the upper/current cards; the sentinel image shows dark card interiors. Labels, outlines, links and completed state remain visible in both. No cause is inferred and thumbnail timing/fidelity is not accepted by this review.",
+  "limitations": [
+    "No original CLEAR collage, reward popup, music, motion, phase timing or P29 ending data is accepted by these screenshots.",
+    "This is a visual check of completed-chart presentation for the two tested terminal FINISH forms."
+  ],
+  "browserOrCliStartedByReviewer": false,
+  "additionalCaptureOrExtraction": false,
+  "formalDataOrSourceChangedByReviewer": false
+}

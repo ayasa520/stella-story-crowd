@@ -1,0 +1,124 @@
+--- a/lib/native.ts
++++ b/lib/native.ts
+@@ -20,6 +20,34 @@
+ export const scenarioTypes: Record<number, string> = {0:"标题",1:"文章",2:"对白 / 卡片",3:"短片",4:"战斗",5:"教程"};
+ const stringFields = ["voice","bg_picture","bg_music","motion","video","msg_text","se","character","talk_chara","position","msg_character","character_image"];
+ const ownObject = (value: unknown): value is Record<string, unknown> => value !== null && typeof value === "object" && !Array.isArray(value);
++export type FinishDestination =
++  | {kind: "terminal"}
++  | {kind: "target"; sectionId: number; sceneId: number}
++  | {kind: "invalid"};
++
++/** Classify original FINISH destinations without manufacturing a successor.
++ * The preserved intro TITLE 41 uses the captured -1/-1 pair; its final card
++ * 102 omits both fields. ADV GetNext (logs/adv.html:7051-7084) completes normal
++ * ADV when FINISH does not name the current section, whereas a same-section
++ * positive destination loads that scene. This recognizes those native forms;
++ * it neither infers completion from title text/master is_end nor rewrites the
++ * source object. Partial, mixed and malformed destinations remain invalid.
++ */
++export function classifyFinishDestination(value: unknown): FinishDestination {
++  if (!ownObject(value) || value.next_scenario_label !== "FINISH" ||
++      typeof value.next_scenario_id !== "number" ||
++      !Number.isSafeInteger(value.next_scenario_id) || value.next_scenario_id < 0)
++    return {kind: "invalid"};
++  const absent = !Object.hasOwn(value, "next_section_id") && !Object.hasOwn(value, "next_scene_id");
++  const sentinel = value.next_section_id === -1 && value.next_scene_id === -1;
++  if (value.next_scenario_id === 0 && (absent || sentinel)) return {kind: "terminal"};
++  const sectionId = value.next_section_id, sceneId = value.next_scene_id;
++  if (typeof sectionId === "number" && Number.isSafeInteger(sectionId) && sectionId > 0 &&
++      typeof sceneId === "number" && Number.isSafeInteger(sceneId) && sceneId > 0)
++    return {kind: "target", sectionId, sceneId};
++  return {kind: "invalid"};
++}
++
+ export function clone<T>(value: T): T { return structuredClone(value); }
+ export function same(a: unknown, b: unknown): boolean {
+   if (Object.is(a,b)) return true;
+@@ -61,7 +89,8 @@
+         if(!ownObject(transition)){add("schema","转移必须是对象",id);continue;}
+         for(const key of ["uniq_id","transition_id","next_scenario_id"]) if(!Number.isSafeInteger(transition[key])) add("schema",`转移 ${key} 必须是整数`,id,branch.branch_id);
+         if(typeof transition.next_scenario_label!=="string") add("schema","next_scenario_label 必须是字符串",id,branch.branch_id);
+-        if(transition.next_scenario_label==="FINISH"&&["next_section_id","next_scene_id"].some(key=>!Number.isSafeInteger(transition[key])||Number(transition[key])<=0)) add("finish_target","FINISH 必须明确指定目标章节与场景",id,branch.branch_id);
++        if(transition.next_scenario_label==="FINISH"&&classifyFinishDestination(transition).kind==="invalid")
++          add("finish_target","FINISH 需要完整的正数目标，或 next_scenario_id 为0且目标字段同时省略／同为-1的终章形式",id,branch.branch_id);
+       }
+     }
+   }
+--- a/lib/preview.ts
++++ b/lib/preview.ts
+@@ -1,7 +1,7 @@
+ import semantics from "@/config/semantics.json";
+ import { compileCommands, compileMusic } from "./preview-commands";
+ import { RepositoryError } from "./errors";
+-import type { NativeDocument, LibraryManifest, ReviewDocument } from "./native";
++import { classifyFinishDestination, type NativeDocument, type LibraryManifest, type ReviewDocument } from "./native";
+ import type { AssetCatalog } from "./resources";
+ import { storyDirectory } from "./story-directory";
+ import previewPolicy from "@/config/preview-policy.json";
+@@ -52,20 +52,28 @@
+   const nodeIds=new Set(nodes.map(node=>node.id));
+   const edges=sources.flatMap(({entry,document})=>document.scenario_list.flatMap(row=>row.branch_list.map(branch=>{
+     const tr=branch.transition_list.length===1?branch.transition_list[0]:null;
+-    const finish=tr?.next_scenario_label==="FINISH",destinationScene=finish?tr.next_scene_id||0:entry.id;
+-    const destination=sourceById.get(destinationScene);
++    const finish=tr?.next_scenario_label==="FINISH";
++    const finishDestination=finish?classifyFinishDestination(tr):null;
++    const terminal=finishDestination?.kind==="terminal",invalidFinish=finishDestination?.kind==="invalid";
++    // Destination-free FINISH is a native end action, not a link to scene zero.
++    // Share validation's classifier so malformed pairs cannot become available
++    // merely because their section differs from the current one. Keep the raw
++    // native transition untouched for provenance and later export.
++    const destinationScene=finishDestination?.kind==="target"?finishDestination.sceneId:finish?null:entry.id;
++    const destination=destinationScene===null?undefined:sourceById.get(destinationScene);
+     const destinationId=tr?.next_scenario_id===0?destination?.document.scenario_list.find(n=>n.is_root===1)?.scenario_id:tr?.next_scenario_id;
+-    const target=destinationId!==undefined?nodeId(destinationScene,destinationId):"";
+-    const flow_action=finish?(tr.next_section_id===entry.sectionId?"scene":"section"):"continue";
+-    const available=!!tr&&(flow_action==="section"||nodeIds.has(target));
++    const target=destinationScene!==null&&destinationId!==undefined?nodeId(destinationScene,destinationId):"";
++    const flow_action=terminal?"complete":finishDestination?.kind==="target"?
++      (finishDestination.sectionId===entry.sectionId?"scene":"section"):finish?"invalid":"continue";
++    const available=!!tr&&!invalidFinish&&(flow_action==="complete"||flow_action==="section"||nodeIds.has(target));
+     return {
+       id:`${entry.id}:${row.scenario_id}:${branch.branch_id}`,source:nodeId(entry.id,row.scenario_id),target,
+       kind:branch.type===2||branch.type===3?"choice":"next",side:branch.type===2?"left":branch.type===3?"right":"",
+       label:display(branch.msg_quote_subject),quote:display(branch.msg_quote),label_translation:display(branch.msg_quote_subject),quote_translation:display(branch.msg_quote),
+       state:available?"confirmed":"missing",available,
+-      transition:{label:tr?.next_scenario_label||"",section:finish?sectionId(tr.next_section_id||0):"",scene:finish?sceneId(destinationScene):"",entry:tr?.next_scenario_id===0?"root":"node"},
+-      flow_action,source_scene:sceneId(entry.id),target_scene:finish?sceneId(destinationScene):sceneId(entry.id),native_transition:tr,
+-      flow_error:available?"":branch.transition_list.length>1?"此分支的原生条件转移尚未接入预览":"后续节点尚未恢复，请保留此分支并补充证据",
++      transition:{label:tr?.next_scenario_label||"",section:finishDestination?.kind==="target"?sectionId(finishDestination.sectionId):"",scene:finishDestination?.kind==="target"?sceneId(finishDestination.sceneId):"",entry:tr?.next_scenario_id===0?"root":"node"},
++      flow_action,source_scene:sceneId(entry.id),target_scene:finish?(finishDestination?.kind==="target"?sceneId(finishDestination.sceneId):""):sceneId(entry.id),native_transition:tr,
++      flow_error:available?"":invalidFinish?"FINISH 的目标字段组合无效，请保留原稿并补充证据":branch.transition_list.length>1?"此分支的原生条件转移尚未接入预览":"后续节点尚未恢复，请保留此分支并补充证据",
+     };
+   })));
+   const directory=storyDirectory(sources,manifest,(source,id)=>nodeId(source.entry.id,id));
+--- a/public/player/player.js
++++ b/public/player/player.js
+@@ -607,18 +607,20 @@
+     this.visitedEdges.add(edge.id);
+     if(edge.transition.label==='FINISH'){
+       this.completedScenes.add(edge.source_scene);
+-      if(edge.flow_action==='section'){
+-        // Native end titles skip the opening interval, then ADVFinish returns
+-        // to the completed section's chart. Keep its authored victory track
+-        // playing while disposing card/media work; Stop/replay still owns its
+-        // cancellation. The final chart retains the route actually traversed.
++      if(edge.flow_action==='complete'||edge.flow_action==='section'){
++        // Original intro41/102 preserve FINISH without a real destination;
++        // ADV GetNext also ends normal ADV at a cross-section FINISH. Both
++        // actions return to the completed section's chart before node lookup.
++        // Keep the existing script music handle without asserting a victory
++        // cue; Stop/replay still owns its cancellation. The final chart keeps
++        // the route actually traversed and never enters a guessed successor.
+         const source=this.program.directory.entries.find(row=>row.id===edge.source_scene);
+         const section=this.program.directory.entries.find(row=>row.id===source.parent);
+         this.stop({keepMusic:true});
+         this.flowView.chart(this.program,this.node,this.completedScenes,null,this.config.flow.chart,this.visitedEdges);
+         this.setPhase('complete');
+         console.info('STORY_PLAYER_SECTION_COMPLETE',section.id,[...this.completedScenes],[...this.visitedEdges]);
+-        this.status('本话已结束。FINISH 的目标属于另一话，本次预览到此结束。');return;
++        this.status('本话已结束。');return;
+       }
+     }
+     if(!this.available(edge))throw new Error(edge.flow_error||'目标节点／场景入口尚未恢复');

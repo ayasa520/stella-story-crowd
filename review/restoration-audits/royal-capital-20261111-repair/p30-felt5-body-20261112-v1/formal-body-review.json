@@ -1,0 +1,68 @@
+{
+  "reviewer": "/root/p30_felt_entry_review",
+  "target": {
+    "sceneId": 10450054,
+    "nodeIndex": 5,
+    "stableKey": "s10450054-p30-at0033",
+    "sourceJapanese": "話は終わりだって言ってんだろ。大体、こっちも依頼されて盗んできたもんを勝手に横流しなんかできるわけね一よ"
+  },
+  "decision": "formal_body_only_playback_verified",
+  "bodyToken": "act_punpun",
+  "bodyOnlyAccepted": true,
+  "wholePerformanceAccepted": false,
+  "reviewScope": {
+    "video": "p30-formal-4-5-6.webm",
+    "fps": "25/1",
+    "durationSeconds": 23.32,
+    "directlyReviewedPtsSeconds": [4.8, 20.96],
+    "allDecodedFramesDirectlyReviewed": 405,
+    "chronologicalContactSheetsDirectlyReviewed": 17,
+    "completeEntryHoldExitAndAdjacentBoundariesReviewed": true,
+    "additionalOriginalSizeFrames": [43, 44, 49, 50, 51, 329, 330],
+    "readyStillAlsoReviewed": "felt5-ready.png",
+    "originalFullSequenceReused": "../visual-low/p30-felt5-source-entry-review-v1",
+    "originalFrameCountPreviouslyReviewed": 345,
+    "originalPtsSeconds": [30.523, 41.989],
+    "privateCompleteTrialReused": "../playback-arm-p30-punpun-20261112-v1/visual-review/REPORT.md",
+    "acceptanceBasedOnlyOnStill": false
+  },
+  "actualFormalTimeline": [
+    {"pts": 6.48, "frame": 43, "observed": "No Felt body; blurred background."},
+    {"pts": 6.52, "frame": 44, "observed": "Complete open-eyed Felt appears with low arms."},
+    {"pts": 6.72, "frame": 49, "observed": "Eyelids lowered; empty Felt bubble appears."},
+    {"pts": 6.76, "frame": 50, "observed": "Eyes almost closed as head turns toward viewer right and chin rises; dialogue begins."},
+    {"pts": 6.8, "frame": 51, "observed": "Eyes fully closed, head turned and chin raised, arms low."},
+    {"ptsRange": [6.8, 17.92], "observed": "Closed-eye raised-chin body attitude retained through typing and full hold, with small mouth motion during typing; no default open-eye reset or extra arm gesture."},
+    {"pts": 17.92, "frame": 329, "observed": "Last complete Felt body, still closed-eyed with low arms."},
+    {"pts": 17.96, "frame": 330, "observed": "Body disappears into actorless blurred background."},
+    {"pts": 18.44, "frame": 342, "observed": "Node6 bubble appears; Subaru body remains absent through reviewed tail."}
+  ],
+  "originalComparison": {
+    "bodyMatch": "Original open-eyed entry, deliberate eyelid lowering, viewer-right turn, raised chin, sustained closed eyes and low arms are reproduced by the actual formal body-only playback.",
+    "noSeparateFaceRequirementEstablished": true,
+    "remainingTransitionMismatch": "Original contains faint entry body and dim exit body; formal capture steps directly from no body at 6.480 to complete body at 6.520, then complete body at 17.920 to no body at 17.960.",
+    "formalRunShowsIntermediateEyelidStates": true,
+    "underlyingHitchSolved": "not established",
+    "passiveLongAnimationFrameObserver": "capture.stdout.txt reports entries=[]; this does not prove opacity continuity or exclude all hitch/recording causes"
+  },
+  "unacceptedOrUnknown": [
+    "separate face token",
+    "extra tokens or explicit off",
+    "original CSV",
+    "exact native animation and fade timings",
+    "mouth and voice synchronization",
+    "node4/node6 Subaru shirt variants",
+    "whole-scene geometry and scale acceptance"
+  ],
+  "observerHoldMilliseconds": 8500,
+  "observerHoldIsNativeWaitEvidence": false,
+  "nextRemainingIssue": "Log existing CardIn/CardOut actor visibility, opacity, animation time and frame time to locate appearance/disappearance discontinuity; do not change the accepted body token to compensate for fade behavior.",
+  "reviewerActions": {
+    "formalDataOrSourceChanged": false,
+    "gitMutation": false,
+    "browserStarted": false,
+    "ffmpegExitCode": 0,
+    "contactHelperExitCode": 0,
+    "remainingToolHandles": []
+  }
+}

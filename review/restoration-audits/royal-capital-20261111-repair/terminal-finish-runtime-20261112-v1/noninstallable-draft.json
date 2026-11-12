@@ -1,0 +1,100 @@
+{
+  "schema": "stella.p29.terminal_ending_proposal.v1",
+  "installable": false,
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "status": "source_backed_sequence_terminal_representation_and_authored_conventions_proposed",
+  "sourceEvidence": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-five-missing-edges-source-audit-20261112-v1/REPORT.md",
+  "sceneId": 10040053,
+  "sectionId": 1004,
+  "afterScenarioId": 49,
+  "afterStableKey": "s10040053-p29-at0740",
+  "branchId": 491,
+  "expectedTransitions": [],
+  "observedOrder": [
+    "existing final Felt line",
+    "complete adv_dive01_out",
+    "CLEAR / 本編：ユリウスVer.",
+    "completed chapter1004 chart with END",
+    "route reward popup"
+  ],
+  "nodes": [
+    {
+      "stableKey": "s10040053-p29-ending-door-out",
+      "originalScenarioId": null,
+      "originalUniqId": null,
+      "supportedFields": {"scenario_type": 3, "video": "adv_dive01_out"},
+      "sourceText": "",
+      "translation": "",
+      "command": null,
+      "bg_music": null
+    },
+    {
+      "stableKey": "s10040053-p29-ending-clear",
+      "originalScenarioId": null,
+      "originalUniqId": null,
+      "supportedFields": {"scenario_type": 0},
+      "sourceText": "CLEAR",
+      "suggestedTranslation": "通关",
+      "command": null,
+      "bg_music": null
+    }
+  ],
+  "proposedRepairPacketSchema": {
+    "version": 2,
+    "terminal": {
+      "kind": "finish-without-successor",
+      "nativeRepresentation": "omitted-destination-fields",
+      "rootConfirmed": false,
+      "originalPayloadRecovered": false,
+      "evidence": [
+        "source tail shows CLEAR, chapter END and reward; no automatic1045 successor",
+        "preserved intro102 supplies a destination-free native FINISH form",
+        "original ADV GetNext distinguishes section completion from same-section scene entry"
+      ]
+    },
+    "finish": null,
+    "mutualExclusion": "Exactly one approved legacy finish object or approved terminal object; this proposal approves neither."
+  },
+  "proposedFinalNativeTransitionShape": {
+    "identityFields": "Allocate new authored uniq_id/transition_id at staging; never label them recovered originals.",
+    "semanticFields": {"next_scenario_label": "FINISH", "next_scenario_id": 0},
+    "omittedFields": ["next_section_id", "next_scene_id"],
+    "origin": "proposed authored reconstruction using an observed original-native representation",
+    "originalP29PayloadRecovered": false
+  },
+  "authoredDoorContinuationDecision": {
+    "approved": false,
+    "observedRequirement": "Complete door resource before CLEAR; no additional source-timestamp wait is established.",
+    "currentPlayerWithEmptyCommands": "Waits for ordinary user Continue after movie ended.",
+    "minimalExistingMechanismCandidate": {"command": ["", "", "CardOut"]},
+    "candidateStatus": "Explicit root authoring decision required; phase placement is not recovered from P29.",
+    "originalCommandPhasesRecovered": false
+  },
+  "music": {
+    "assignment": null,
+    "stopBoundary": null,
+    "originalMusicRecovered": false,
+    "note": "No StopBGM or victory cue is selected. Empty native bg_music would inherit music, not establish silence."
+  },
+  "requestedRuntimeResult": {
+    "compiledTerminalFlowAction": "complete",
+    "target": "",
+    "destinationSection": null,
+    "destinationScene": null,
+    "finalPresentation": "existing completed-section chart for1004",
+    "automatic1045Entry": false,
+    "addMapEdge": false,
+    "inferFromClearTextOrMasterEndFlag": false
+  },
+  "remainingBeforeStaging": [
+    "Root approval of authored terminal reconstruction and exact packet schema.",
+    "Narrow builder/validator/compiler/player compatibility implementation and focused semantic checks.",
+    "Explicit authored native command/default-field decisions; nulls remain noninstallable.",
+    "Music remains unresolved and must not be promoted by this visual evidence.",
+    "Fresh ordinary continuous playback; source phase/timing, native CLEAR collage and reward UI remain separate gaps."
+  ],
+  "formalDataChanged": false,
+  "formalSourceChanged": false,
+  "gitChanged": false
+}

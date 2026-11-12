@@ -1,0 +1,74 @@
+--- a/story_studio/recovery/native_repair.py
++++ b/story_studio/recovery/native_repair.py
+@@ -249,13 +249,28 @@
+                 "Ending cannot replace an existing executable continuation")
+         directory_raw = directory_path.read_bytes()
+         directory = OfficialDirectory(json.loads(directory_raw), 1)
+-        finish = packet["finish"]
++        finish, terminal = packet.get("finish"), packet.get("terminal")
++        require((finish is not None) != (terminal is not None),
++                "Ending needs exactly one legacy finish or reviewed terminal object")
+         section = self.entries[scene]["sectionId"]
+-        require(finish["sectionId"] in directory.sections[section]["native"]["next_section_id"],
+-                "Ending successor is not an explicit original-master edge")
+-        destination = directory.scene(finish["sceneId"])
+-        require(destination["sectionId"] == finish["sectionId"] and destination["native"]["is_root"] == 1,
+-                "Ending target is not the explicit original-master scene root")
++        if terminal is not None:
++            # This v2 option owns an authored no-successor FINISH decision.
++            # The original intro102 provides its omitted-field representation,
++            # while the chapter's own evidence must establish completion. It
++            # cannot inherit a guessed next section from a matching route name.
++            require(packet.get("version") == 2 and isinstance(terminal, dict) and
++                    terminal.get("kind") == "finish-without-successor" and
++                    terminal.get("nativeRepresentation") == "omitted-destination-fields" and
++                    terminal.get("rootConfirmed") is True and bool(terminal.get("evidence")) and
++                    terminal.get("originalPayloadRecovered") is False,
++                    "Terminal ending needs explicit reviewed v2 authored-completion evidence")
++        else:
++            require(isinstance(finish, dict), "Ending finish must be an object")
++            require(finish["sectionId"] in directory.sections[section]["native"]["next_section_id"],
++                    "Ending successor is not an explicit original-master edge")
++            destination = directory.scene(finish["sceneId"])
++            require(destination["sectionId"] == finish["sectionId"] and destination["native"]["is_root"] == 1,
++                    "Ending target is not the explicit original-master scene root")
+         definitions = packet["nodes"]
+         require(bool(definitions) and definitions[-1]["fields"].get("scenario_type") == 0,
+                 "Ending must terminate in a reviewed native TITLE")
+@@ -299,7 +314,7 @@
+             transition = dict(uniq_id=link["uniq_id"], transition_id=link["branch_id"] * 100 + 1,
+                               next_scenario_id=target["scenario_id"] if target else 0,
+                               next_scenario_label="" if target else "FINISH")
+-            if target is None:
++            if target is None and finish is not None:
+                 transition.update(next_section_id=finish["sectionId"], next_scene_id=finish["sceneId"])
+             link["transition_list"] = [transition]
+             branch_review = next((item for item in sidecar["branches"] if item["branchId"] == link["branch_id"]), None)
+@@ -307,8 +322,12 @@
+                 branch_review = dict(branchId=link["branch_id"], stableKey=sidecar["stableKey"] + "-next",
+                                      nativeIdOrigin="authored", gainPointsRecovered=False)
+                 sidecar["branches"].append(branch_review)
+-            branch_review.update(state="confirmed", verification="observed" if target else "original",
++            terminal_link = target is None and terminal is not None
++            branch_review.update(state="confirmed", verification="observed" if target or terminal_link else "original",
+                                  evidence=deepcopy(packet["evidence"]))
++            if terminal_link:
++                branch_review.update(nativeIdOrigin="authored", nativeTransitionOrigin="authored",
++                    originalPayloadRecovered=False, terminal=deepcopy(terminal))
+             sidecar["issues"] = [item for item in sidecar.get("issues", [])
+                                  if not (item.get("code") == "missing_transition" and item.get("branchId") == link["branch_id"])]
+         connect(previous, previous_review, new_rows[0])
+@@ -324,6 +343,13 @@
+         self.appended_rows[scene] = [row["uniq_id"] for row in new_rows]
+         self.entries[scene]["nodeCount"] = len(document["scenario_list"])
+         self.counts["addedEndingNodes"] += len(new_rows)
++        if terminal is not None:
++            # A completion action names no successor and establishes no map
++            # line. Retain its review evidence only in this scene's sidecar;
++            # do not touch other owned documents or invent a section handoff.
++            review.setdefault("repairEvidence", {}).setdefault("terminalEndings", []).append(dict(
++                packet=str(path), terminal=deepcopy(terminal), originalPayloadRecovered=False))
++            return
+         # The master chapter map is embedded in every owned native document.
+         # Keep the newly established executable FINISH visible in the same
+         # source-scene map row, including cross-section edges as in the
