@@ -1,0 +1,123 @@
+diff --git a/public/player/player.js b/public/player/player.js
+index 78ef757..26b7947 100644
+--- a/public/player/player.js
++++ b/public/player/player.js
+@@ -265,6 +265,7 @@ class StoryPlayer {
+       (current.kind==='title'&&current.title_mode!=='end'));
+   }
+   closePanel(profile='out'){
++    this.transitions.cancelPanelIn();
+     if(!this.scene.panel)return Promise.resolve();
+     const animation=this.transitions.panelOut(this.scene.canvas,profile);
+     this.scene.clear();return animation;
+@@ -315,6 +316,7 @@ class StoryPlayer {
+       clearLayers:this.state.face_reset&&!this.state.face?[this.program.semantics.motion_layers.face]:[],allowStill:true};
+   }
+   async enter(id){
++    this.transitions.cancelPanelIn();
+     cancelAnimationFrame(this.frame);
+     const previous=this.nodeBeforeSkip||this.node,generation=++this.generation;this.node=this.nodes.get(id);
+     try{
+@@ -453,6 +455,13 @@ class StoryPlayer {
+     if(node.voice_delay_ms===0)await voiceStart;
+     this.check(generation);
+     this.visible=0;this.length=this.scene.text(node,$('language').value,0);this.accessible();
++    // Native TextPanel.Open owns its own entry even when CardIn is skipped.
++    // Only groups with an independently verified resource profile animate.
++    // Synchronously prepared text keeps the existing first-glyph clock; do
++    // not await the entry clip or add a script/transport wait here.
++    this.transitions.panelIn(this.scene.canvas,this.scene.panel?.group).catch(error=>{
++      if(generation===this.generation)this.fail(error);
++    });
+     this.timing('text_begin');
+     const history=document.createElement('li');history.textContent=[node.speaker,node.text].filter(Boolean).join('：');$('history').append(history);
+     if(!this.length){await this.afterText(generation);if(generation===this.generation)this.animate(generation);return;}
+diff --git a/public/player/player_scene.js b/public/player/player_scene.js
+index c1e5393..8767b78 100644
+--- a/public/player/player_scene.js
++++ b/public/player/player_scene.js
+@@ -167,7 +167,7 @@ export class OriginalScene {
+     if(/<[^>]+>/.test(text))throw new Error('台词包含尚未支持的原版富文本标记，请先在编辑器核对');
+     const group=!node.speaker?this.config.panels.narration:node.character_image?this.config.panels.picture:this.config.panels.dialogue;
+     const speaker=this.speakerName(node,language);
+-    const panel={rows:this.assets.groups[group],speaker,text,layouts:new Map()};
++    const panel={group,rows:this.assets.groups[group],speaker,text,layouts:new Map()};
+     for(const row of panel.rows)if(row.type==='text'){
+       const value=row.path.endsWith('/'+this.config.dialogue_name)?speaker:text;
+       const font=this.fonts.get(row.font),layout=font.layout(value,row);
+diff --git a/public/studio/transitions.js b/public/studio/transitions.js
+index b1e1b22..ce93c9f 100644
+--- a/public/studio/transitions.js
++++ b/public/studio/transitions.js
+@@ -10,6 +10,7 @@ export class StoryTransitions {
+     Object.assign(this,{stage,card,overlays,clock});this.pending=new Set();this.images=new Map();this.panels=new Set();
+     this.canvas=document.createElement('canvas');this.canvas.className='story-wipe';
+     Object.assign(this.canvas.style,{position:'absolute',inset:'0',width:'100%',height:'100%',pointerEvents:'none'});
++    this.panelEntry=null;this.panelEntryToken=0;
+     // Keep the cover outside the fading card, but insert it before that card's
+     // dialogue overlays. DOM paint order then preserves the native separation
+     // between the scene wipe and the independently animated text panel.
+@@ -96,6 +97,55 @@ export class StoryTransitions {
+     });
+     this.cardState='out';console.info('STORY_CARD_OUT_COMPLETE',performance.now());
+   }
++  cancelPanelIn(){
++    const entry=this.panelEntry;if(!entry)return;
++    // Invalidate before releasing the subscription: an already snapshotted
++    // clock listener must never paint into a later node's subtitle canvas.
++    this.panelEntryToken++;entry.cancel();
++  }
++  panelIn(source,group){
++    this.cancelPanelIn();
++    const cfg=this.config.panel_entries?.[group];
++    if(!cfg)return Promise.resolve(false);
++    const token=++this.panelEntryToken;
++    return new Promise((resolve,reject)=>{
++      const previous={opacity:source.style.opacity,translate:source.style.translate};
++      const began=this.clock.now();let unsubscribe=()=>{};
++      const entry={token,source,cancel:()=>finish(false)};
++      const finish=(completed,error=null)=>{
++        unsubscribe();
++        if(this.panelEntry!==entry)return;
++        this.panelEntry=null;
++        source.style.opacity=previous.opacity;source.style.translate=previous.translate;
++        console.info(completed?'STORY_PANEL_IN_COMPLETE':'STORY_PANEL_IN_CANCELLED',
++          JSON.stringify({group,node:document.body.dataset.node,token}));
++        if(error)reject(error);else resolve(completed);
++      };
++      const draw=progress=>{
++        if(this.panelEntry!==entry||this.panelEntryToken!==token)return;
++        const time=progress*cfg.duration;
++        source.style.opacity=String(Math.max(0,Math.min(1,this.curve(cfg.opacity,time))));
++        const finalY=this.curve(cfg.y,cfg.duration);
++        source.style.translate=`0 ${-(this.curve(cfg.y,time)-finalY)/this.height*100}%`;
++      };
++      const tick=()=>{
++        if(this.panelEntry!==entry||this.panelEntryToken!==token)return;
++        try{
++          const progress=Math.max(0,Math.min(1,(this.clock.now()-began)/cfg.duration));
++          draw(progress);if(progress===1)finish(true);
++        }catch(error){finish(false,error);}
++      };
++      this.panelEntry=entry;
++      try{
++        // The native CG panel owns an independent Normal Animator entry.
++        // Start its original alpha/Y channels immediately, alongside text
++        // reveal. This Promise is lifecycle ownership, never a text barrier.
++        draw(0);unsubscribe=this.clock.subscribe(tick);
++        console.info('STORY_PANEL_IN_START',JSON.stringify({group,
++          node:document.body.dataset.node,token,duration:cfg.duration,clock:this.clock.snapshot()}));
++      }catch(error){finish(false,error);}
++    });
++  }
+   async panelOut(source,profile){
+     // A snapshot owns the outgoing panel until its own animation finishes.
+     // The next card may load/enter concurrently; clearing or redrawing its
+@@ -192,6 +242,7 @@ export class StoryTransitions {
+     }
+   }
+   reset(){
++    this.cancelPanelIn();
+     this.generation=(this.generation||0)+1;for(const cancel of this.pending)cancel();
+     for(const panel of this.panels)panel.remove();this.panels.clear();
+     this.cardState='out';this.previous={name:'',image:''};this.canvas.hidden=true;

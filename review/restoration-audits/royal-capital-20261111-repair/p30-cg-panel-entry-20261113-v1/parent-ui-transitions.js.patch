@@ -1,0 +1,76 @@
+diff --git a/data/native_recovery/royal-capital-20261110/repair-20261111/p30-cg-panel-entry-integration-20261113-v1/parent-ui-before/transitions.js b/story_studio/ui/transitions.js
+index b1e1b22..ce93c9f 100644
+--- a/data/native_recovery/royal-capital-20261110/repair-20261111/p30-cg-panel-entry-integration-20261113-v1/parent-ui-before/transitions.js
++++ b/story_studio/ui/transitions.js
+@@ -10,6 +10,7 @@ export class StoryTransitions {
+     Object.assign(this,{stage,card,overlays,clock});this.pending=new Set();this.images=new Map();this.panels=new Set();
+     this.canvas=document.createElement('canvas');this.canvas.className='story-wipe';
+     Object.assign(this.canvas.style,{position:'absolute',inset:'0',width:'100%',height:'100%',pointerEvents:'none'});
++    this.panelEntry=null;this.panelEntryToken=0;
+     // Keep the cover outside the fading card, but insert it before that card's
+     // dialogue overlays. DOM paint order then preserves the native separation
+     // between the scene wipe and the independently animated text panel.
+@@ -96,6 +97,55 @@ export class StoryTransitions {
+     });
+     this.cardState='out';console.info('STORY_CARD_OUT_COMPLETE',performance.now());
+   }
++  cancelPanelIn(){
++    const entry=this.panelEntry;if(!entry)return;
++    // Invalidate before releasing the subscription: an already snapshotted
++    // clock listener must never paint into a later node's subtitle canvas.
++    this.panelEntryToken++;entry.cancel();
++  }
++  panelIn(source,group){
++    this.cancelPanelIn();
++    const cfg=this.config.panel_entries?.[group];
++    if(!cfg)return Promise.resolve(false);
++    const token=++this.panelEntryToken;
++    return new Promise((resolve,reject)=>{
++      const previous={opacity:source.style.opacity,translate:source.style.translate};
++      const began=this.clock.now();let unsubscribe=()=>{};
++      const entry={token,source,cancel:()=>finish(false)};
++      const finish=(completed,error=null)=>{
++        unsubscribe();
++        if(this.panelEntry!==entry)return;
++        this.panelEntry=null;
++        source.style.opacity=previous.opacity;source.style.translate=previous.translate;
++        console.info(completed?'STORY_PANEL_IN_COMPLETE':'STORY_PANEL_IN_CANCELLED',
++          JSON.stringify({group,node:document.body.dataset.node,token}));
++        if(error)reject(error);else resolve(completed);
++      };
++      const draw=progress=>{
++        if(this.panelEntry!==entry||this.panelEntryToken!==token)return;
++        const time=progress*cfg.duration;
++        source.style.opacity=String(Math.max(0,Math.min(1,this.curve(cfg.opacity,time))));
++        const finalY=this.curve(cfg.y,cfg.duration);
++        source.style.translate=`0 ${-(this.curve(cfg.y,time)-finalY)/this.height*100}%`;
++      };
++      const tick=()=>{
++        if(this.panelEntry!==entry||this.panelEntryToken!==token)return;
++        try{
++          const progress=Math.max(0,Math.min(1,(this.clock.now()-began)/cfg.duration));
++          draw(progress);if(progress===1)finish(true);
++        }catch(error){finish(false,error);}
++      };
++      this.panelEntry=entry;
++      try{
++        // The native CG panel owns an independent Normal Animator entry.
++        // Start its original alpha/Y channels immediately, alongside text
++        // reveal. This Promise is lifecycle ownership, never a text barrier.
++        draw(0);unsubscribe=this.clock.subscribe(tick);
++        console.info('STORY_PANEL_IN_START',JSON.stringify({group,
++          node:document.body.dataset.node,token,duration:cfg.duration,clock:this.clock.snapshot()}));
++      }catch(error){finish(false,error);}
++    });
++  }
+   async panelOut(source,profile){
+     // A snapshot owns the outgoing panel until its own animation finishes.
+     // The next card may load/enter concurrently; clearing or redrawing its
+@@ -192,6 +242,7 @@ export class StoryTransitions {
+     }
+   }
+   reset(){
++    this.cancelPanelIn();
+     this.generation=(this.generation||0)+1;for(const cancel of this.pending)cancel();
+     for(const panel of this.panels)panel.remove();this.panels.clear();
+     this.cardState='out';this.previous={name:'',image:''};this.canvas.hidden=true;

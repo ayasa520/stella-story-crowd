@@ -1,0 +1,13 @@
+diff --git a/data/native_recovery/royal-capital-20261110/repair-20261111/p30-cg-panel-entry-integration-20261113-v1/parent-ui-before/player_scene.js b/story_studio/ui/player_scene.js
+index ccb4911..72e5479 100644
+--- a/data/native_recovery/royal-capital-20261110/repair-20261111/p30-cg-panel-entry-integration-20261113-v1/parent-ui-before/player_scene.js
++++ b/story_studio/ui/player_scene.js
+@@ -149,7 +149,7 @@ export class OriginalScene {
+     if(/<[^>]+>/.test(text))throw new Error('台词包含尚未支持的原版富文本标记，请先在编辑器核对');
+     const group=!node.speaker?this.config.panels.narration:node.character_image?this.config.panels.picture:this.config.panels.dialogue;
+     const speaker=this.speakerName(node,language);
+-    const panel={rows:this.assets.groups[group],speaker,text,layouts:new Map()};
++    const panel={group,rows:this.assets.groups[group],speaker,text,layouts:new Map()};
+     for(const row of panel.rows)if(row.type==='text'){
+       const value=row.path.endsWith('/'+this.config.dialogue_name)?speaker:text;
+       const font=this.fonts.get(row.font),layout=font.layout(value,row);

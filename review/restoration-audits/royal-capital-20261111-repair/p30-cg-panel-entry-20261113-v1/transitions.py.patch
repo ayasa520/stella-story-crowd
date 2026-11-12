@@ -1,0 +1,27 @@
+--- a/story_studio/transitions.py
++++ b/story_studio/transitions.py
+@@ -46,6 +46,15 @@
+         curves = streamed_channels(animation)
+         panels[name] = dict(duration=animation['m_MuscleClip']['m_StopTime'],
+                             **{field:curves[index] for field,index in profile.items() if field != 'clip'})
++    # Entry profiles are opt-in by native GUI group. Do not extrapolate the
++    # proven illustration controller to narration or ordinary dialogue. Keep
++    # these channels independent of card entry and existing panel-out curves.
++    panel_entries = {}
++    for group, profile in config.get('panel_entries', {}).items():
++        animation = assets.file(profile['clip']).objects[1].read_typetree()
++        curves = streamed_channels(animation)
++        panel_entries[group] = dict(duration=animation['m_MuscleClip']['m_StopTime'],
++            **{field: curves[index] for field, index in profile.items() if field != 'clip'})
+     return dict(card=dict(
+         wait_duration=wait['m_MuscleClip']['m_StopTime'],
+         duration=clip['m_MuscleClip']['m_StopTime'],
+@@ -54,7 +63,7 @@
+         selected_fall_speed=-struct.unpack_from('<f', library, int(config['fall_frame_factor_address'], 16))[0]
+                            *struct.unpack_from('<f', library, int(config['fall_speed_address'], 16))[0],
+         alpha_speed=struct.unpack_from('<f', library, int(config['alpha_speed_address'], 16))[0]),
+-        panels=panels,
++        panels=panels, panel_entries=panel_entries,
+         source=dict(config=config, library_sha256=hashlib.sha256(library).hexdigest()))
+ 
+ 

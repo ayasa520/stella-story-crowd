@@ -1,0 +1,92 @@
+{
+  "rootConfirmed": false,
+  "reviewer": "/root/p30_felt_entry_review",
+  "status": "missing_two_character_prefix_and_native_panel_entry_omission_supported",
+  "formalDataChanged": false,
+  "formalSourceChanged": false,
+  "browserStarted": false,
+  "transcription": {
+    "sceneId": 10450056,
+    "scenarioId": 27,
+    "stableKey": "s10450056-p30-at0533",
+    "currentSourceTextAtTaskStart": "ああっ!?",
+    "visualFullLine": "――ああっ！？",
+    "visibleCharacterCounts": {"longHorizontal": 2, "あ": 2, "smallっ": 1, "exclamation": 1, "question": 1},
+    "clearFullLineFramesDirectlyViewed": [391, 406, 430],
+    "incrementalEvidence": [
+      {"frame": 361, "visible": "one leading long horizontal character"},
+      {"frame": 364, "visible": "two leading long horizontal characters"},
+      {"frame": 365, "visible": "two horizontals followed by first あ"}
+    ],
+    "isUiDecoration": false,
+    "missingTwoCharacterPrefixConfirmed": true,
+    "originalUnicodeCodepointsRecovered": false,
+    "unicodeLimit": "Visual transcription uses U+2015 and fullwidth punctuation; original dash codepoint and punctuation width bytes remain unknown."
+  },
+  "nativeOrder": {
+    "html": "logs/adv.html:2233 and7216–7234",
+    "sequence": ["CardIn, including legitimate skip", "command[1]", "PanelSequence/TextPanel", "command[2]"],
+    "uiShowTextPanel": "0x1688970",
+    "viewShowTextPanel": "0x1688cf0",
+    "textPanelOpen": "0x1685c60",
+    "playText": "0x1686050",
+    "showFalse": "0x168623c",
+    "panelEntryIndependentOfCardIn": true,
+    "trigger": "entry",
+    "entryState": "adv_tell_chara_entry",
+    "animatorSetTriggerWrapper": "0x19ba2dc",
+    "setTriggerIcallString": "UnityEngine.Animator::SetTriggerString(System.String) at0x239dde4"
+  },
+  "actualCgPanelBinding": {
+    "archive": "/home/rikka/Projects/stella/re-zero-lost-in-memories-1-19-7.apk",
+    "sceneMember": "assets/bin/Data/c4f7312e113260a4e8803880a0069bca",
+    "panelPath": "/adv_in_game_ui/Canvas(GUI)/SafeFrame/root_tell/adv_tell_illiustration/anim_root",
+    "animatorPathId": 402,
+    "updateMode": 0,
+    "updateModeMeaning": "Normal",
+    "controllerName": "adv_tell_chara",
+    "controllerMember": "assets/bin/Data/df744a57c1c64ac4e92467e3d176d8c3",
+    "entryClipName": "adv_tell_chara_entry",
+    "entryClipMember": "assets/bin/Data/cd98aff0a54700242aaa37690349c972",
+    "entryDurationNativeSeconds": 0.1666666716337204,
+    "entryStateSpeed": 1,
+    "entryAnimationEvents": [],
+    "entryToStayUsesExitTime": 1,
+    "alphaRange": [0, 1],
+    "anchoredYRange": [20, 0],
+    "cubicCoefficientsDescending": {
+      "alpha": [-431.99993896484375, 107.99998474121094, 0, 0],
+      "anchoredY": [8639.9990234375, -2159.999755859375, 0, 20]
+    },
+    "source": ["panel-controller-binding.json", "active-cg-panel-entry.json"],
+    "unboundSimilarlyNamedClipsAreTimingEvidenceForThisCase": false
+  },
+  "textReadiness": {
+    "startTextAnim": "0x16868a8",
+    "coroutineMoveNext": "0x1687198",
+    "readinessCallback": "0x1687070",
+    "callbackSets": "GetTextSpeed then mIsPlaying=true",
+    "readyCanCompleteInline": true,
+    "notReadyMayYieldOrConditionallyRetry": true,
+    "conditionalRetrySeconds": 0.25,
+    "mandatoryQuarterSecondDelayProved": false,
+    "waitForEntryClipCompletionProved": false,
+    "entryEndFirstGlyphEventFound": false,
+    "updateText": "0x1686ddc",
+    "timeDelta": "UnityEngine.Time.get_deltaTime0x16689d8"
+  },
+  "currentRendererGap": {
+    "source": "artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js:446",
+    "observedPath": "phase1 then scene.text(...,0)/text_begin; no independent panel-entry alpha/Y path",
+    "sharedTransitions": "public/studio/transitions.js currently has panelOut only",
+    "independentPanelEntryOmissionSupported": true
+  },
+  "minimumRepairSuggestion": [
+    "Separately restore the two visible leading text characters through guarded authored transcription; original Unicode bytes remain unknown.",
+    "Export only the actual controller-bound adv_tell_chara_entry curve and add independent cancellable panel entry at TextPanel-open after phase1, even for a repeated CG that skips CardIn.",
+    "Coordinate entry opacity/Y with prepared text reveal; retain valid inline readiness rather than await the whole clip or introduce a fixed wait.",
+    "Review actual playback with phase1 and XYZ unchanged before claiming the FX-before-utterance relation fixed."
+  ],
+  "notAuthorizedOrAccepted": ["formal edits", "story Wait", "phase change", "exact original CSV/provider/offsets", "recording SPEEDx5 conversion", "complete FX performance"],
+  "remainingProcessHandle": null
+}

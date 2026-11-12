@@ -1,0 +1,33 @@
+{
+  "exitCode": 0,
+  "frames": 855,
+  "elapsedSeconds": 4.467828750610352,
+  "args": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "warning",
+    "-filter_threads",
+    "1",
+    "-filter_complex_threads",
+    "1",
+    "-ss",
+    "57.942",
+    "-threads",
+    "1",
+    "-i",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-cg-panel-entry-runtime-20261113-v1/p30-fx-with-native-entry.webm",
+    "-an",
+    "-vf",
+    "fps=30",
+    "-c:v",
+    "mjpeg",
+    "-threads",
+    "1",
+    "-pix_fmt",
+    "yuvj420p",
+    "-q:v",
+    "2",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-cg-panel-entry-runtime-20261113-v1/fx-with-entry-frame-review-v1/frames/frame-%05d.jpg"
+  ]
+}
