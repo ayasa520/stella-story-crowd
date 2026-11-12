@@ -1,0 +1,1181 @@
+{
+  "schema": "stella.source_supported_production_comparison_hypotheses.v1",
+  "status": "offline_only_no_execution_or_field_acceptance",
+  "sceneId": 10450054,
+  "scenarioId": 5,
+  "stableKey": "s10450054-p30-at0033",
+  "canonicalSourceHead": "37232806a8180375a4b7a178e27157bb16d12201",
+  "compiler": {
+    "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/preview.ts",
+    "sha256": "a101a733e7f8b0aab0201d8b2352843fb50d7c121b691f09e3d8cda5796ded4c",
+    "bytes": 6339
+  },
+  "compilerContract": "row.motion.split comma, trim; first body, second face, remaining extras. Character live2d/AC_felt01 compiles to model felt01.",
+  "player": {
+    "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js",
+    "sha256": "d4bfd8dc7bdd08c64b737767fda9b538fb2a2c7e6ba9a97264355211b4d2f90b",
+    "bytes": 45292
+  },
+  "motionNameResolver": {
+    "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/motion_names.js",
+    "sha256": "4640dcfe53664cad1afb4659f0521727afed2597a98264b7c7455d9f9d12bbc2",
+    "bytes": 1723
+  },
+  "nativeResolverMirror": {
+    "file": "/home/rikka/Projects/stella/story_studio/motions.py",
+    "sha256": "e3f7df1ce4d8b3be1ebf64d4bb0e752b27c16df29d6a58b9e1792392fd5ff0b3",
+    "bytes": 3353
+  },
+  "semanticsMirror": {
+    "file": "/home/rikka/Projects/stella/story_studio/semantics.py",
+    "sha256": "80df335cf9fdd59ac44edf9ed2c82bf77df19cad6129453d5b1588fdddbe877d",
+    "bytes": 15497
+  },
+  "currentReadBehavior": [
+    "Model change resets body/face/extras",
+    "Nonempty body/face/extra assignment clears existing face state and sets face_reset",
+    "Body-only selection passes clearLayers face to renderer",
+    "act_normal resolves via act_normal_w fallback; act_punpun_w still resolves the one-shot act_punpun trigger when present"
+  ],
+  "hypotheses": [
+    {
+      "id": "P-body",
+      "status": "unaccepted_unexecuted_diagnostic_hypothesis",
+      "nativeMotionField": "act_punpun",
+      "compiledFields": {
+        "model": "felt01",
+        "body": "act_punpun",
+        "face": "",
+        "extra_motions": []
+      },
+      "nativeClipBindings": [
+        {
+          "token": "act_punpun",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_punpun.anim",
+            "sha256": "a770f0ae5624cbd7dbc4066437a4a44d89026cd72d0bbab231c1414cbf5beeb7",
+            "bytes": 8853
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun.motion3.json",
+            "sha256": "855e339c0e291b3ec35cc6483cf6f1e2d799a8dfd265d665cd6452c4e14d9448",
+            "bytes": 20416
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 0,
+              "last": 17
+            },
+            "ParamAngleY": {
+              "start": -7,
+              "last": 18
+            },
+            "ParamAngleZ": {
+              "start": 0,
+              "last": -5
+            },
+            "ParamBodyAngleX": {
+              "start": 0,
+              "last": -4
+            },
+            "ParamBodyAngleY": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleZ": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": -1
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        },
+        {
+          "token": "act_punpun_w",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_punpun_w.anim",
+            "sha256": "557d8645693fc7b454956d72320192fd531fa74f129aed3fc8ddd064d07f3dc0",
+            "bytes": 7830
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun_w.motion3.json",
+            "sha256": "a274cd1ca4250b570e26dd1e1397c51f7ac1397354c1bd1e3257a3ff64cf5674",
+            "bytes": 14886
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 17,
+              "last": 17
+            },
+            "ParamAngleY": {
+              "start": 18,
+              "last": 18
+            },
+            "ParamAngleZ": {
+              "start": -5,
+              "last": -5
+            },
+            "ParamBodyAngleX": {
+              "start": -4,
+              "last": -4
+            },
+            "ParamBodyAngleY": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleZ": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": -1,
+              "last": -1
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        }
+      ],
+      "distinguishingEvidence": "Body-only path clears face assignment and uses the whole-body clip, which includes face/eye curves. Compare head AND torso/shoulder settling.",
+      "installableNow": false
+    },
+    {
+      "id": "P-face",
+      "status": "unaccepted_unexecuted_diagnostic_hypothesis",
+      "nativeMotionField": "act_normal,face_punpun",
+      "compiledFields": {
+        "model": "felt01",
+        "body": "act_normal",
+        "face": "face_punpun",
+        "extra_motions": []
+      },
+      "nativeClipBindings": [
+        {
+          "token": "act_normal_w",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_normal_w.anim",
+            "sha256": "8e29909f4c59dbcbcaea30de22ca443c55f6a3b8b54f5a2a67fcb66ba6d707d1",
+            "bytes": 7974
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_normal_w.motion3.json",
+            "sha256": "83672cb774eebd97253a1161a8bd2e9ecee234d6e25857f2048331b9a93d2cba",
+            "bytes": 15596
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 1,
+              "last": 1
+            },
+            "ParamEyeROpen": {
+              "start": 1,
+              "last": 1
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleY": {
+              "start": -7,
+              "last": -7
+            },
+            "ParamAngleZ": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleX": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleY": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleZ": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamMouthForm": {
+              "start": -0.7,
+              "last": -0.7
+            }
+          }
+        },
+        {
+          "token": "face_punpun",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_punpun.anim",
+            "sha256": "2e4a777f575c977e5bd910b964013eb2ae7b6637a271e885ef77a9a7977d2763",
+            "bytes": 8167
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_punpun.motion3.json",
+            "sha256": "ecfd1f9b9d1ead11c2087ff435b5f279e1769eea979ef893d5f73d8d68cfb4b1",
+            "bytes": 12580
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 0,
+              "last": 17
+            },
+            "ParamAngleY": {
+              "start": -7,
+              "last": 18
+            },
+            "ParamAngleZ": {
+              "start": 0,
+              "last": -5
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": -1
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        },
+        {
+          "token": "face_punpun_w",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_punpun_w.anim",
+            "sha256": "d7705b40e6038fe2ef743e92ad67baf83c15b8f73f206efa21a4fe69950cda83",
+            "bytes": 7319
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_punpun_w.motion3.json",
+            "sha256": "603138c807d67ecd6d16b3eacfa8c15bb93c989764b03f74ec7b56416fe7a328",
+            "bytes": 8206
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 17,
+              "last": 17
+            },
+            "ParamAngleY": {
+              "start": 18,
+              "last": 18
+            },
+            "ParamAngleZ": {
+              "start": -5,
+              "last": -5
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": -1,
+              "last": -1
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        }
+      ],
+      "distinguishingEvidence": "Normal body plus explicit punpun face differs in torso/shoulder/arm curves while sharing held facial values. Compare full source arms and scarf/torso motion, not closed eyes alone.",
+      "installableNow": false
+    },
+    {
+      "id": "P-body-face",
+      "status": "unaccepted_unexecuted_diagnostic_hypothesis",
+      "nativeMotionField": "act_punpun,face_punpun",
+      "compiledFields": {
+        "model": "felt01",
+        "body": "act_punpun",
+        "face": "face_punpun",
+        "extra_motions": []
+      },
+      "nativeClipBindings": [
+        {
+          "token": "act_punpun",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_punpun.anim",
+            "sha256": "a770f0ae5624cbd7dbc4066437a4a44d89026cd72d0bbab231c1414cbf5beeb7",
+            "bytes": 8853
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun.motion3.json",
+            "sha256": "855e339c0e291b3ec35cc6483cf6f1e2d799a8dfd265d665cd6452c4e14d9448",
+            "bytes": 20416
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 0,
+              "last": 17
+            },
+            "ParamAngleY": {
+              "start": -7,
+              "last": 18
+            },
+            "ParamAngleZ": {
+              "start": 0,
+              "last": -5
+            },
+            "ParamBodyAngleX": {
+              "start": 0,
+              "last": -4
+            },
+            "ParamBodyAngleY": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleZ": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": -1
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        },
+        {
+          "token": "act_punpun_w",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_punpun_w.anim",
+            "sha256": "557d8645693fc7b454956d72320192fd531fa74f129aed3fc8ddd064d07f3dc0",
+            "bytes": 7830
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun_w.motion3.json",
+            "sha256": "a274cd1ca4250b570e26dd1e1397c51f7ac1397354c1bd1e3257a3ff64cf5674",
+            "bytes": 14886
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 17,
+              "last": 17
+            },
+            "ParamAngleY": {
+              "start": 18,
+              "last": 18
+            },
+            "ParamAngleZ": {
+              "start": -5,
+              "last": -5
+            },
+            "ParamBodyAngleX": {
+              "start": -4,
+              "last": -4
+            },
+            "ParamBodyAngleY": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleZ": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": -1,
+              "last": -1
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        },
+        {
+          "token": "face_punpun",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_punpun.anim",
+            "sha256": "2e4a777f575c977e5bd910b964013eb2ae7b6637a271e885ef77a9a7977d2763",
+            "bytes": 8167
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_punpun.motion3.json",
+            "sha256": "ecfd1f9b9d1ead11c2087ff435b5f279e1769eea979ef893d5f73d8d68cfb4b1",
+            "bytes": 12580
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 0,
+              "last": 17
+            },
+            "ParamAngleY": {
+              "start": -7,
+              "last": 18
+            },
+            "ParamAngleZ": {
+              "start": 0,
+              "last": -5
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": -1
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        },
+        {
+          "token": "face_punpun_w",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_punpun_w.anim",
+            "sha256": "d7705b40e6038fe2ef743e92ad67baf83c15b8f73f206efa21a4fe69950cda83",
+            "bytes": 7319
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_punpun_w.motion3.json",
+            "sha256": "603138c807d67ecd6d16b3eacfa8c15bb93c989764b03f74ec7b56416fe7a328",
+            "bytes": 8206
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 17,
+              "last": 17
+            },
+            "ParamAngleY": {
+              "start": 18,
+              "last": 18
+            },
+            "ParamAngleZ": {
+              "start": -5,
+              "last": -5
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": -1,
+              "last": -1
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        }
+      ],
+      "distinguishingEvidence": "An explicit face assignment enables that layer; compare actual layer clocks, weights and the whole entry. Similar visible output cannot recover original script ownership.",
+      "installableNow": false
+    },
+    {
+      "id": "N-body",
+      "status": "unaccepted_unexecuted_diagnostic_hypothesis",
+      "nativeMotionField": "act_nayamu",
+      "compiledFields": {
+        "model": "felt01",
+        "body": "act_nayamu",
+        "face": "",
+        "extra_motions": []
+      },
+      "nativeClipBindings": [
+        {
+          "token": "act_nayamu",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_nayamu.anim",
+            "sha256": "b578ea463afe2220a08fb19183f2789cd018803a4a46c8ff790c51654951fcef",
+            "bytes": 9138
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_nayamu.motion3.json",
+            "sha256": "80c9798f95cf675c42941409cf4a0e4fed0a01503a3e71cf51d3ca042f394ab9",
+            "bytes": 23201
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 0,
+              "last": -8
+            },
+            "ParamAngleY": {
+              "start": -7,
+              "last": -14
+            },
+            "ParamAngleZ": {
+              "start": 0,
+              "last": -20
+            },
+            "ParamBodyAngleX": {
+              "start": 0,
+              "last": -3
+            },
+            "ParamBodyAngleY": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleZ": {
+              "start": 0,
+              "last": -2
+            },
+            "ParamUpperArmL": {
+              "start": 0,
+              "last": 3
+            },
+            "ParamUpperArmR": {
+              "start": 0,
+              "last": 1
+            },
+            "ParamForeArmL": {
+              "start": 0,
+              "last": -18.58
+            },
+            "ParamForeArmR": {
+              "start": 0,
+              "last": -30
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0.5
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        },
+        {
+          "token": "act_nayamu_w",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_nayamu_w.anim",
+            "sha256": "1821a799b7fc86854d270ae5983e0ff32c432e2db3d36e6fb9bb547f18d41596",
+            "bytes": 7908
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_nayamu_w.motion3.json",
+            "sha256": "84a745aadb8e5a81cfe1f5aa59902853e8569cb81c85c8cbc42fae5625bb52e2",
+            "bytes": 14964
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": -8,
+              "last": -8
+            },
+            "ParamAngleY": {
+              "start": -14,
+              "last": -14
+            },
+            "ParamAngleZ": {
+              "start": -20,
+              "last": -20
+            },
+            "ParamBodyAngleX": {
+              "start": -3,
+              "last": -3
+            },
+            "ParamBodyAngleY": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleZ": {
+              "start": -2,
+              "last": -2
+            },
+            "ParamUpperArmL": {
+              "start": 3,
+              "last": 3
+            },
+            "ParamUpperArmR": {
+              "start": 1,
+              "last": 1
+            },
+            "ParamForeArmL": {
+              "start": -18.58,
+              "last": -18.58
+            },
+            "ParamForeArmR": {
+              "start": -30,
+              "last": -30
+            },
+            "ParamCheek": {
+              "start": 0.5,
+              "last": 0.5
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        }
+      ],
+      "distinguishingEvidence": "Alternative closed-eye family: stronger opposite head turn/tilt and cheek0.5. Full visible head projection and cheek pixels can reject or support it.",
+      "installableNow": false
+    },
+    {
+      "id": "N-face",
+      "status": "unaccepted_unexecuted_diagnostic_hypothesis",
+      "nativeMotionField": "act_normal,face_nayamu",
+      "compiledFields": {
+        "model": "felt01",
+        "body": "act_normal",
+        "face": "face_nayamu",
+        "extra_motions": []
+      },
+      "nativeClipBindings": [
+        {
+          "token": "act_normal_w",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_normal_w.anim",
+            "sha256": "8e29909f4c59dbcbcaea30de22ca443c55f6a3b8b54f5a2a67fcb66ba6d707d1",
+            "bytes": 7974
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_normal_w.motion3.json",
+            "sha256": "83672cb774eebd97253a1161a8bd2e9ecee234d6e25857f2048331b9a93d2cba",
+            "bytes": 15596
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 1,
+              "last": 1
+            },
+            "ParamEyeROpen": {
+              "start": 1,
+              "last": 1
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleY": {
+              "start": -7,
+              "last": -7
+            },
+            "ParamAngleZ": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleX": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleY": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBodyAngleZ": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamUpperArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmL": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamForeArmR": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamMouthForm": {
+              "start": -0.7,
+              "last": -0.7
+            }
+          }
+        },
+        {
+          "token": "face_nayamu",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_nayamu.anim",
+            "sha256": "c9fae55687b64e5aa7cdf9f3f1f98ce41c58e1ef1ca3eb3330eaa5175749a9de",
+            "bytes": 8319
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_nayamu.motion3.json",
+            "sha256": "34c94f14d8157925dba26ae889ee963cd014a042e3ba47050609943c42d6795f",
+            "bytes": 14708
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 1,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": 0,
+              "last": -8
+            },
+            "ParamAngleY": {
+              "start": -7,
+              "last": -14
+            },
+            "ParamAngleZ": {
+              "start": 0,
+              "last": -20
+            },
+            "ParamCheek": {
+              "start": 0,
+              "last": 0.5
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        },
+        {
+          "token": "face_nayamu_w",
+          "originalUnityClip": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_nayamu_w.anim",
+            "sha256": "f0e7a76110975ee9a5d651dcebeb681b1cadda07ab77a21f337e4c252408652b",
+            "bytes": 7352
+          },
+          "export": {
+            "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_nayamu_w.motion3.json",
+            "sha256": "7b6b807af9b751758402e402ca7bbce8211bdbe8eb598f17b78f3ac8330d82dd",
+            "bytes": 8258
+          },
+          "relevantCurveStartEnd": {
+            "ParamEyeLOpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeROpen": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeLSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamEyeRSmile": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamAngleX": {
+              "start": -8,
+              "last": -8
+            },
+            "ParamAngleY": {
+              "start": -14,
+              "last": -14
+            },
+            "ParamAngleZ": {
+              "start": -20,
+              "last": -20
+            },
+            "ParamCheek": {
+              "start": 0.5,
+              "last": 0.5
+            },
+            "ParamBxAse": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamBxNamida": {
+              "start": 0,
+              "last": 0
+            },
+            "ParamMouthForm": {
+              "start": -1,
+              "last": -1
+            }
+          }
+        }
+      ],
+      "distinguishingEvidence": "Keep low normal body while applying the nayamu face; compare head projection, cheeks and shoulder/arm positions independently.",
+      "installableNow": false
+    }
+  ],
+  "requiredCaptureEvidence": [
+    "Fresh ARM target guard/freeze of exact current data, model exports, controller, canonical source and served program",
+    "Exact source comparison includes fade visibility, brief eyes-open interval and subsequent sustained closure; hold/fade/next boundary must not be omitted",
+    "Log actual script token, bound trigger/state, runtime layer weight, transition state and monotonic entry/animation times",
+    "Retain decoded original actor PNGs with exact frame/time linkage and direct delegated visual review",
+    "Keep source native CSV and command onset unknown; no guessed waits or stage geometry edits",
+    "Subaru4/6 clothing identities are not accepted by this node5 receipt; preserve those separate pending gates"
+  ],
+  "noBrowserStarted": true,
+  "noProgramScopeCreated": true,
+  "noRegistryTouched": true,
+  "noFormalWrite": true,
+  "noExecutionAuthorized": true,
+  "installableNow": false
+}

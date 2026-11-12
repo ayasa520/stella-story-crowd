@@ -1,0 +1,10 @@
+{
+  "status": "corrected_before_dependency_install",
+  "exceptionClass": "TypeError",
+  "message": "list indices must be integers or slices, not str",
+  "input": "registry/playwright-cli-0.1.24.json",
+  "inputSha256": "5bddcca17749d914c43de8de51fa63fac38b02da810454b52a0020b851dc4a10",
+  "observedTopLevelType": "list",
+  "observedListLength": 1,
+  "correction": "Require exactly one registry object, then validate name and exact version. No dependency install repeated."
+}

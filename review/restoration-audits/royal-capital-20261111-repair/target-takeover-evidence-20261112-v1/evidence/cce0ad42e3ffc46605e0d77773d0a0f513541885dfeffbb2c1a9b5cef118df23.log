@@ -1,0 +1,19 @@
+fatal: path 'plan.json' does not exist in 'e984012e561776e631ef2f096d72535ffd76f6e4'
+Traceback (most recent call last):
+  File "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-batch5-independent-readback-20261112-v1/audit.py", line 174, in <module>
+    require(sha(staged_raw) == expected and staged_raw == data_read(name),
+                                                          ~~~~~~~~~^^^^^^
+  File "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-batch5-independent-readback-20261112-v1/audit.py", line 53, in data_read
+    return git_raw('show', TARGET+':'+name)
+  File "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-batch5-independent-readback-20261112-v1/audit.py", line 46, in git_raw
+    return subprocess.check_output(['git', '-C', str(DATA), *args])
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 473, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               **kwargs).stdout
+               ^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', '-C', '/home/rikka/Projects/stella/story_crowd_data', 'show', 'e984012e561776e631ef2f096d72535ffd76f6e4:plan.json']' returned non-zero exit status 128.

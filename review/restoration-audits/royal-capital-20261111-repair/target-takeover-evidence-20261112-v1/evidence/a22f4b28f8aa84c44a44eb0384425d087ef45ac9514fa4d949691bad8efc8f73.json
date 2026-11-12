@@ -1,0 +1,57 @@
+{
+  "schema": "stella.target-takeover-checkpoint.v1",
+  "status": "ready_and_baseline_verified",
+  "createdUtc": "2026-11-12T05:45:10.452611+00:00",
+  "previousGoalTurn": "initial_target_takeover_no_previous_goal_turn_to_classify",
+  "machine": "aarch64",
+  "python": "3.14.9 (main, Oct 31 2026, 16:53:18) [GCC 16.1.1 20260430]",
+  "currentAffinity": [
+    0,
+    1
+  ],
+  "nice": 19,
+  "ready": {
+    "status": "READY",
+    "receipt": "/home/rikka/.local/state/stella-migration-20261112/finalize-receipt.json",
+    "receipt_sha256": "801970c31d0cc1000a88beedd15dd88101a2efb7c354865fac2456914839a683"
+  },
+  "formalBaseline": "c33057d059da46e35fad96a7f31a9665c23b5fa0",
+  "canonicalHead": "37232806a8180375a4b7a178e27157bb16d12201",
+  "studioSha256": "ebd974d90f89088fa3a504c1f419ae01c352a24e6bd80209c5ec651295d38522",
+  "targetConfigFiles": {
+    "story_studio/config/studio-droidspaces.json": {
+      "bytes": 12135,
+      "sha256": "18bc37d92efec776df458b632db8a2b5ac250df46dd9cace87a54019970f8976"
+    }
+  },
+  "armVideoVenvPreserved": true,
+  "browserNamedProcesses": [],
+  "browserStarted": false,
+  "formalWriter": "target /root",
+  "desktopSourceReadOnly": true,
+  "mainThreadViewedImages": false,
+  "historicalRestorationVisits": 207,
+  "fullRestorationAccepted": false,
+  "parserObservation": {
+    "catalogDiskAndGitSha256": "cf396f2b7ded5ce7741cf3d9e45f4d4e2d489d1af300b6831e70b29415effb98",
+    "initialFailures": [
+      {
+        "exception": "JSONDecodeError",
+        "message": "Invalid control character",
+        "position": 3104572
+      },
+      {
+        "exception": "JSONDecodeError",
+        "message": "Invalid control character",
+        "position": 2799420
+      }
+    ],
+    "exactDiskGitBytesEqual": true,
+    "subsequentDiagnosticRunsPassed": 18,
+    "cause": "unknown; no source data changed"
+  },
+  "publicationHelperCorrections": {
+    "missingTargetGitAuthorConfiguration": "reuse established repository committer via command-local -c only",
+    "receiptStatusDuplicateKeyword": "fixed helper; B3 receipt-only recheck without repeat apply/commit/push"
+  }
+}

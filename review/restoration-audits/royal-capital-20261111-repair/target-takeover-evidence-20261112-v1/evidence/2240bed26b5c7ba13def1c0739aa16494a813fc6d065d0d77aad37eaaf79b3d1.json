@@ -1,0 +1,4829 @@
+{
+  "schema": "stella.native_motion_diagnostic_inventory.v1",
+  "status": "offline_curve_inventory_not_rendered_or_installable",
+  "controllerSource": {
+    "file": "/home/rikka/Projects/stella/data/story_player/extracted/animation.json",
+    "sha256": "d7fa5a74bdd79d70eece73b48ae927e3bf018a8f4049687efda5b319f3835dc4",
+    "bytes": 10969720
+  },
+  "model": "felt01",
+  "controllerName": "AC_felt01_ver2",
+  "originalPrefab": {
+    "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01.prefab",
+    "sha256": "2e5bbe7f1e4c212764f3a71013cd88e3f90f3f8554ab52e25523a6e228b9cc41",
+    "bytes": 820403
+  },
+  "controllerPrefabShaVerified": true,
+  "layers": {
+    "motion": {
+      "weight": 1.0,
+      "blend_mode": 0,
+      "default": "act_normal_w",
+      "selectedStates": {
+        "act_normal_w": {
+          "loop": true,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [],
+          "selection": null
+        },
+        "act_nayamu": {
+          "loop": false,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [
+            {
+              "target": "act_nayamu_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "selection": null
+        },
+        "act_nayamu_w": {
+          "loop": true,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [],
+          "selection": null
+        },
+        "act_punpun": {
+          "loop": false,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [
+            {
+              "target": "act_punpun_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "selection": null
+        },
+        "act_punpun_w": {
+          "loop": true,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [],
+          "selection": null
+        }
+      },
+      "selectedTriggers": [
+        {
+          "target": "act_nayamu",
+          "duration": 0.25,
+          "offset": 0.0,
+          "exit_time": 0.75,
+          "has_exit_time": false,
+          "fixed_duration": true,
+          "conditions": [
+            {
+              "name": "act_nayamu",
+              "mode": 1,
+              "threshold": 0.0
+            }
+          ]
+        },
+        {
+          "target": "act_normal_w",
+          "duration": 0.25,
+          "offset": 0.0,
+          "exit_time": 0.75,
+          "has_exit_time": false,
+          "fixed_duration": true,
+          "conditions": [
+            {
+              "name": "act_normal_w",
+              "mode": 1,
+              "threshold": 0.0
+            }
+          ]
+        },
+        {
+          "target": "act_punpun",
+          "duration": 0.25,
+          "offset": 0.0,
+          "exit_time": 0.75,
+          "has_exit_time": false,
+          "fixed_duration": true,
+          "conditions": [
+            {
+              "name": "act_punpun",
+              "mode": 1,
+              "threshold": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "face": {
+      "weight": 0.0,
+      "blend_mode": 0,
+      "default": "face_normal_w",
+      "selectedStates": {
+        "face_normal_w": {
+          "loop": true,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [],
+          "selection": null
+        },
+        "face_nayamu": {
+          "loop": false,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [
+            {
+              "target": "face_nayamu_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "selection": null
+        },
+        "face_nayamu_w": {
+          "loop": true,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [],
+          "selection": null
+        },
+        "face_punpun": {
+          "loop": false,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [
+            {
+              "target": "face_punpun_w",
+              "duration": 0.10000000149011612,
+              "offset": 0.0,
+              "exit_time": 0.8999999761581421,
+              "has_exit_time": true,
+              "fixed_duration": true,
+              "conditions": []
+            }
+          ],
+          "selection": null
+        },
+        "face_punpun_w": {
+          "loop": true,
+          "speed": 1.0,
+          "offset": 0.0,
+          "speed_parameter": 0,
+          "transitions": [],
+          "selection": null
+        }
+      },
+      "selectedTriggers": [
+        {
+          "target": "face_nayamu",
+          "duration": 0.25,
+          "offset": 0.0,
+          "exit_time": 0.75,
+          "has_exit_time": false,
+          "fixed_duration": true,
+          "conditions": [
+            {
+              "name": "face_nayamu",
+              "mode": 1,
+              "threshold": 0.0
+            }
+          ]
+        },
+        {
+          "target": "face_normal_w",
+          "duration": 0.25,
+          "offset": 0.0,
+          "exit_time": 0.75,
+          "has_exit_time": false,
+          "fixed_duration": true,
+          "conditions": [
+            {
+              "name": "face_normal_w",
+              "mode": 1,
+              "threshold": 0.0
+            }
+          ]
+        },
+        {
+          "target": "face_punpun",
+          "duration": 0.25,
+          "offset": 0.0,
+          "exit_time": 0.75,
+          "has_exit_time": false,
+          "fixed_duration": true,
+          "conditions": [
+            {
+              "name": "face_punpun",
+              "mode": 1,
+              "threshold": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "add_motion": {
+      "weight": 0.0,
+      "blend_mode": 0,
+      "default": "Blend Tree",
+      "selectedStates": {},
+      "selectedTriggers": []
+    },
+    "cheek": {
+      "weight": 0.0,
+      "blend_mode": 0,
+      "default": "face_cheek_off",
+      "selectedStates": {},
+      "selectedTriggers": []
+    },
+    "talk": {
+      "weight": 0.0,
+      "blend_mode": 0,
+      "default": "face_talk_off",
+      "selectedStates": {},
+      "selectedTriggers": []
+    }
+  },
+  "scriptNameResolver": {
+    "file": "/home/rikka/Projects/stella/story_studio/motions.py",
+    "sha256": "e3f7df1ce4d8b3be1ebf64d4bb0e752b27c16df29d6a58b9e1792392fd5ff0b3",
+    "bytes": 3353
+  },
+  "curveExportCount": 59,
+  "clips": [
+    {
+      "token": "act_bikkuri",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_bikkuri.motion3.json",
+        "sha256": "ea1202246751fe750a6058dd3a9a582e33922c702c964f928982ac0f8454f277",
+        "bytes": 26070
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_bikkuri.anim",
+        "sha256": "5a6eed16d8b159927c8d87fbac9e8005433a02c51a78f2d4a83fef67e33ec0f6",
+        "bytes": 9712
+      },
+      "exportedMeta": {
+        "Duration": 0.8,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 295,
+        "TotalPointCount": 415,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 16
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -5
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 6
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": -3
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": -14
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 3
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 3
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 9
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -2
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_bikkuri_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_bikkuri_w.motion3.json",
+        "sha256": "994ced60592ebaeda4377a52316f603a0c24232175f27485d786c672ae98a981",
+        "bytes": 15076
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_bikkuri_w.anim",
+        "sha256": "7067d59b27aa59b2e1812c3fb7fe21466f6ac0ec178e4f44215d683ff61d0167",
+        "bytes": 7964
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 114,
+        "TotalPointCount": 116,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": 16,
+          "last": 16
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": -5,
+          "last": -5
+        },
+        "ParamBodyAngleY": {
+          "start": 6,
+          "last": 6
+        },
+        "ParamBodyAngleZ": {
+          "start": -3,
+          "last": -3
+        },
+        "ParamUpperArmL": {
+          "start": -14,
+          "last": -14
+        },
+        "ParamUpperArmR": {
+          "start": 3,
+          "last": 3
+        },
+        "ParamForeArmL": {
+          "start": 3,
+          "last": 3
+        },
+        "ParamForeArmR": {
+          "start": 9,
+          "last": 9
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -2,
+          "last": -2
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_egao",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_egao.motion3.json",
+        "sha256": "02b80a4b74db497d59c7e03f82ad83bcc37fd08f40a403ef68241f2f61d14b9b",
+        "bytes": 23552
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_egao.anim",
+        "sha256": "f162602891f8a2f42928964e27093a6c95752e6392ff0a19ddae7ea470dde063",
+        "bytes": 9609
+      },
+      "exportedMeta": {
+        "Duration": 1.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 289,
+        "TotalPointCount": 339,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 0
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -18
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": -4
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 3
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 3
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 2
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": 1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_egao_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_egao_w.motion3.json",
+        "sha256": "2c8f4e9bffb67e4ca02fa90e0af5983ef3621a6df927c8176e0313337350b173",
+        "bytes": 14883
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_egao_w.anim",
+        "sha256": "6404355855d0fd1bfce47867d0d14d95a585931ea7c7a3144766e38abdcd171b",
+        "bytes": 7833
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 112,
+        "TotalPointCount": 112,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeRSmile": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleZ": {
+          "start": -18,
+          "last": -18
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": -4,
+          "last": -4
+        },
+        "ParamUpperArmL": {
+          "start": 3,
+          "last": 3
+        },
+        "ParamUpperArmR": {
+          "start": 3,
+          "last": 3
+        },
+        "ParamForeArmL": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamForeArmR": {
+          "start": 2,
+          "last": 2
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": 1,
+          "last": 1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_hohoemu",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_hohoemu.motion3.json",
+        "sha256": "861a470be7ecc5c1e62c44a811eef82b4a07d4bee8bbb55d46ca20d24c1a179c",
+        "bytes": 28257
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_hohoemu.anim",
+        "sha256": "726bcfecc393a8b1f8b8d5ed73e95420ddd933fdbbccb8b4f24d7040f9cc54b6",
+        "bytes": 10741
+      },
+      "exportedMeta": {
+        "Duration": 1.167,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 297,
+        "TotalPointCount": 471,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 12
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -8
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 21
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": 10
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": -4
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 21
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": -11
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": -18
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0.4
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": 0
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_hohoemu_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_hohoemu_w.motion3.json",
+        "sha256": "3730ff43981c450cf20927c30a3e913de209a9c8c854d7f08145af352cb25f25",
+        "bytes": 15052
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_hohoemu_w.anim",
+        "sha256": "8507c1781024a4464e28c2fafd9704fbed7bd310d1a7edb643e42010bc9cbb2f",
+        "bytes": 7989
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 114,
+        "TotalPointCount": 114,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeRSmile": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamAngleX": {
+          "start": 12,
+          "last": 12
+        },
+        "ParamAngleY": {
+          "start": -8,
+          "last": -8
+        },
+        "ParamAngleZ": {
+          "start": 21,
+          "last": 21
+        },
+        "ParamBodyAngleX": {
+          "start": 10,
+          "last": 10
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": -4,
+          "last": -4
+        },
+        "ParamUpperArmL": {
+          "start": 21,
+          "last": 21
+        },
+        "ParamUpperArmR": {
+          "start": -11,
+          "last": -11
+        },
+        "ParamForeArmL": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamForeArmR": {
+          "start": -18,
+          "last": -18
+        },
+        "ParamCheek": {
+          "start": 0.4,
+          "last": 0.4
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": 0,
+          "last": 0
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_ikaru",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_ikaru.motion3.json",
+        "sha256": "a7099c17e26d75f225f45043f80cc884450ffec5218d01427525324d42ca29b2",
+        "bytes": 27688
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_ikaru.anim",
+        "sha256": "2ba9ea799f7ac881b828e1ad974885f1e99426e467948a773d8c8319e1dffdbd",
+        "bytes": 9885
+      },
+      "exportedMeta": {
+        "Duration": 1.067,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 353,
+        "TotalPointCount": 435,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -10
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -18
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -14
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -8
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": -3
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": -5
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 24
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 20
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": -18
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": -18
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_ikaru_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_ikaru_w.motion3.json",
+        "sha256": "13d7d78cb4009d4a41bb05039395ecb6aedcee512a578aee7d7e84b63be920d6",
+        "bytes": 15055
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_ikaru_w.anim",
+        "sha256": "8cc2a5e446297d3b7e937627d0cf0302ea13265311d7b9eb7ff77d058eea9788",
+        "bytes": 7957
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 114,
+        "TotalPointCount": 114,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -10,
+          "last": -10
+        },
+        "ParamAngleY": {
+          "start": -18,
+          "last": -18
+        },
+        "ParamAngleZ": {
+          "start": -14,
+          "last": -14
+        },
+        "ParamBodyAngleX": {
+          "start": -8,
+          "last": -8
+        },
+        "ParamBodyAngleY": {
+          "start": -3,
+          "last": -3
+        },
+        "ParamBodyAngleZ": {
+          "start": -5,
+          "last": -5
+        },
+        "ParamUpperArmL": {
+          "start": 24,
+          "last": 24
+        },
+        "ParamUpperArmR": {
+          "start": 20,
+          "last": 20
+        },
+        "ParamForeArmL": {
+          "start": -18,
+          "last": -18
+        },
+        "ParamForeArmR": {
+          "start": -18,
+          "last": -18
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_kangaeru",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_kangaeru.motion3.json",
+        "sha256": "d99b7240db53465c09bc501415c3ca6ee05bcdd0d539e8e1fe779aeba29ffe1e",
+        "bytes": 32446
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_kangaeru.anim",
+        "sha256": "6cf3a3647fd38c5f326c740ab69b5ff70c4206565f5ad3a156bed22fec6c23c8",
+        "bytes": 9987
+      },
+      "exportedMeta": {
+        "Duration": 1.233,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 111,
+        "TotalSegmentCount": 321,
+        "TotalPointCount": 475,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -16
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 16
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 24
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -4
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_kangaeru_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_kangaeru_w.motion3.json",
+        "sha256": "d6eb3a74bdaa45fa367313509128ef5250079fac206f2f542b79e1de44d2d6f2",
+        "bytes": 14991
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_kangaeru_w.anim",
+        "sha256": "6b5f2b6c84aed9affbc807c5a19115573b2d7b27883f8b1f236f010dca0c192b",
+        "bytes": 7863
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 114,
+        "TotalPointCount": 114,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -16,
+          "last": -16
+        },
+        "ParamAngleY": {
+          "start": 16,
+          "last": 16
+        },
+        "ParamAngleZ": {
+          "start": 24,
+          "last": 24
+        },
+        "ParamBodyAngleX": {
+          "start": -4,
+          "last": -4
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_nayamu",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_nayamu.motion3.json",
+        "sha256": "80c9798f95cf675c42941409cf4a0e4fed0a01503a3e71cf51d3ca042f394ab9",
+        "bytes": 23201
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_nayamu.anim",
+        "sha256": "b578ea463afe2220a08fb19183f2789cd018803a4a46c8ff790c51654951fcef",
+        "bytes": 9138
+      },
+      "exportedMeta": {
+        "Duration": 1.033,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 228,
+        "TotalPointCount": 326,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -8
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -14
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -20
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -3
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": -2
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 3
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": -18.58
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": -30
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0.5
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_nayamu_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_nayamu_w.motion3.json",
+        "sha256": "84a745aadb8e5a81cfe1f5aa59902853e8569cb81c85c8cbc42fae5625bb52e2",
+        "bytes": 14964
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_nayamu_w.anim",
+        "sha256": "1821a799b7fc86854d270ae5983e0ff32c432e2db3d36e6fb9bb547f18d41596",
+        "bytes": 7908
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 112,
+        "TotalPointCount": 112,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -8,
+          "last": -8
+        },
+        "ParamAngleY": {
+          "start": -14,
+          "last": -14
+        },
+        "ParamAngleZ": {
+          "start": -20,
+          "last": -20
+        },
+        "ParamBodyAngleX": {
+          "start": -3,
+          "last": -3
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": -2,
+          "last": -2
+        },
+        "ParamUpperArmL": {
+          "start": 3,
+          "last": 3
+        },
+        "ParamUpperArmR": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamForeArmL": {
+          "start": -18.58,
+          "last": -18.58
+        },
+        "ParamForeArmR": {
+          "start": -30,
+          "last": -30
+        },
+        "ParamCheek": {
+          "start": 0.5,
+          "last": 0.5
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_normal_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_normal_w.motion3.json",
+        "sha256": "83672cb774eebd97253a1161a8bd2e9ecee234d6e25857f2048331b9a93d2cba",
+        "bytes": 15596
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_normal_w.anim",
+        "sha256": "8e29909f4c59dbcbcaea30de22ca443c55f6a3b8b54f5a2a67fcb66ba6d707d1",
+        "bytes": 7974
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 119,
+        "TotalPointCount": 133,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -7
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -0.7,
+          "last": -0.7
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_odoroku",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_odoroku.motion3.json",
+        "sha256": "9ec71cf510dd97fb059511f6e9b47ee1bd47f46a20f4eba0e0a20404580f372f",
+        "bytes": 27609
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_odoroku.anim",
+        "sha256": "ec8602034024fcda3eef86ad8eb982a73be38baa54d29bdd90cb768db693f3cf",
+        "bytes": 9641
+      },
+      "exportedMeta": {
+        "Duration": 0.467,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 292,
+        "TotalPointCount": 460,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 15
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -5
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 6
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 3
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 2
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 2
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0.5
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -2
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_odoroku_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_odoroku_w.motion3.json",
+        "sha256": "47478bc0eb7d54ef8cfa4b8fa0c4ceac6a26e7dca3fe2d106deb389783acdb2f",
+        "bytes": 15114
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_odoroku_w.anim",
+        "sha256": "f5a492c84bd0a98b182de6adf5bf6562e94b134f5e9c223e25b9e863be3f2ee4",
+        "bytes": 8023
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 116,
+        "TotalPointCount": 116,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamAngleY": {
+          "start": 15,
+          "last": 15
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": -5,
+          "last": -5
+        },
+        "ParamBodyAngleY": {
+          "start": 6,
+          "last": 6
+        },
+        "ParamBodyAngleZ": {
+          "start": 3,
+          "last": 3
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 2,
+          "last": 2
+        },
+        "ParamForeArmR": {
+          "start": 2,
+          "last": 2
+        },
+        "ParamCheek": {
+          "start": 0.5,
+          "last": 0.5
+        },
+        "ParamBxAse": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -2,
+          "last": -2
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_punpun",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun.motion3.json",
+        "sha256": "855e339c0e291b3ec35cc6483cf6f1e2d799a8dfd265d665cd6452c4e14d9448",
+        "bytes": 20416
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_punpun.anim",
+        "sha256": "a770f0ae5624cbd7dbc4066437a4a44d89026cd72d0bbab231c1414cbf5beeb7",
+        "bytes": 8853
+      },
+      "exportedMeta": {
+        "Duration": 1.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 232,
+        "TotalPointCount": 252,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 17
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 18
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -5
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -4
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_punpun_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun_w.motion3.json",
+        "sha256": "a274cd1ca4250b570e26dd1e1397c51f7ac1397354c1bd1e3257a3ff64cf5674",
+        "bytes": 14886
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_punpun_w.anim",
+        "sha256": "557d8645693fc7b454956d72320192fd531fa74f129aed3fc8ddd064d07f3dc0",
+        "bytes": 7830
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 112,
+        "TotalPointCount": 112,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 17,
+          "last": 17
+        },
+        "ParamAngleY": {
+          "start": 18,
+          "last": 18
+        },
+        "ParamAngleZ": {
+          "start": -5,
+          "last": -5
+        },
+        "ParamBodyAngleX": {
+          "start": -4,
+          "last": -4
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_suneru",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_suneru.motion3.json",
+        "sha256": "c3e3b1d78a2c18f6821602760f19e027f78f78edbe875f3c5fc113637c027f9d",
+        "bytes": 22605
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_suneru.anim",
+        "sha256": "9bc931ecc9821650b48e1784f409d4ea4c8c6fac97fc98ea63160ff3d65c0a1c",
+        "bytes": 9239
+      },
+      "exportedMeta": {
+        "Duration": 1.067,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 204,
+        "TotalPointCount": 316,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -21
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -26
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": 10
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": -6
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": -8
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_suneru_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_suneru_w.motion3.json",
+        "sha256": "38ea604c76ed5c0d55681cb4ca5512d019bf1df2e0a55dddc1ed72100e496c52",
+        "bytes": 15026
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_suneru_w.anim",
+        "sha256": "1e067ca1c1123f6094de1a6e395351c4bb9f3a4a25903d9837225f0479b640dd",
+        "bytes": 7923
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 114,
+        "TotalPointCount": 114,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -21,
+          "last": -21
+        },
+        "ParamAngleY": {
+          "start": -26,
+          "last": -26
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": 10,
+          "last": 10
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": -6,
+          "last": -6
+        },
+        "ParamUpperArmR": {
+          "start": -8,
+          "last": -8
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_tameiki",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_tameiki.motion3.json",
+        "sha256": "eea1fde87b24be4f1a68a78d50618b54a98eefd44bb6001cdd370558858ea0c5",
+        "bytes": 20342
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_tameiki.anim",
+        "sha256": "e1950d9738171e1907b9d1cd30d2e38f2917851ae97b25f6c15cd36ec9844e8f",
+        "bytes": 8637
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 205,
+        "TotalPointCount": 257,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -7
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -0.6
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_tameiki02",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_tameiki02.motion3.json",
+        "sha256": "46ecf2ee466fab9a1fdddf90231e4d20bcf6215f1023b03835a60887d79901c5",
+        "bytes": 30518
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_tameiki02.anim",
+        "sha256": "ef4ce4abff23ba86de63d9901ed19d02cdbb71ea973ef6c7caa427c9256d00c3",
+        "bytes": 10291
+      },
+      "exportedMeta": {
+        "Duration": 1.933,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 401,
+        "TotalPointCount": 515,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -10
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -18
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -14
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -8
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": -3
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": -5
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 24
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 20
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": -18
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": -18
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_unazuku",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_unazuku.motion3.json",
+        "sha256": "52358ba4d666332334c5d643ecfc7e63420e41868aa857d9c86045253b4d27cd",
+        "bytes": 17196
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_unazuku.anim",
+        "sha256": "4d0c1c1806f939e786fb6c2051aea30ce792863967029f1b7e9d0515366f04cf",
+        "bytes": 8111
+      },
+      "exportedMeta": {
+        "Duration": 1.5,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 127,
+        "TotalPointCount": 175,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -7
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_unazuku02",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_unazuku02.motion3.json",
+        "sha256": "72846a3f938da0244a8b172f78b487efb550e9199d9c633ac490fae3165d8d64",
+        "bytes": 25521
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_unazuku02.anim",
+        "sha256": "b8f845acd752d95966bd59d836966390c0ae7da16cb7b9fbb80f97ea51164365",
+        "bytes": 9632
+      },
+      "exportedMeta": {
+        "Duration": 1.4,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 339,
+        "TotalPointCount": 379,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -10
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -18
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -14
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -8
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": -3
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": -5
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 24
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 20
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": -18
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": -18
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_uru",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_uru.motion3.json",
+        "sha256": "2a432c62525b9182c96c58507be378a41f49f6aa9442edb7c8da0ce0fbbbeaeb",
+        "bytes": 22521
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_uru.anim",
+        "sha256": "388720827562c06b4c6d7d99c135b81e724b8feab1bc775005e5c664b853e051",
+        "bytes": 9197
+      },
+      "exportedMeta": {
+        "Duration": 1.3,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 179,
+        "TotalPointCount": 325,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -19
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -4
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": -19
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": -23
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -0.5
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "act_uru_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_uru_w.motion3.json",
+        "sha256": "4595d52ccd1c1697bcd630ee17e926b28e22d63193736fad35f3685e63d1e5c5",
+        "bytes": 15741
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_uru_w.anim",
+        "sha256": "24f0c3ccc5a53a2a0bab7f6d14fd7359bd5edc4b2d04f923a731c09868417124",
+        "bytes": 8035
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 80,
+        "TotalSegmentCount": 114,
+        "TotalPointCount": 136,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamAngleY": {
+          "start": -19,
+          "last": -19
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": -4,
+          "last": -4
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": -19,
+          "last": -19
+        },
+        "ParamUpperArmR": {
+          "start": -23,
+          "last": -23
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamMouthForm": {
+          "start": -0.5,
+          "last": -0.5
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "add_select_C",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_add_select_C.motion3.json",
+        "sha256": "574b199d1783fb432b348875b6dacf8eb5a4b545dace0cc87e493d9434c181a5",
+        "bytes": 1424
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_add_select_c.anim",
+        "sha256": "19c5d4881ae1383c92d19dea46d895b1a525feb4d2296b60909b201c2b5a82dd",
+        "bytes": 6625
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 6,
+        "TotalSegmentCount": 9,
+        "TotalPointCount": 9,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "add_select_L",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_add_select_L.motion3.json",
+        "sha256": "d1d257238f2502ba27bab11f1cb7b82bb176df356a28895f18796d3cd3138c13",
+        "bytes": 1441
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_add_select_l.anim",
+        "sha256": "510b07d5fe29bcfe35777257375dca29c273bfdf6019ef2756dc2299de32095b",
+        "bytes": 6650
+      },
+      "exportedMeta": {
+        "Duration": 3.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 6,
+        "TotalSegmentCount": 9,
+        "TotalPointCount": 9,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamAngleX": {
+          "start": 15,
+          "last": 15
+        },
+        "ParamBodyAngleX": {
+          "start": 10,
+          "last": 10
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "add_select_R",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_add_select_R.motion3.json",
+        "sha256": "023ccd4398013bff9b1d0dfc874fa88dd03e4aadd0fd7e8724b5f30ac210685d",
+        "bytes": 1488
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_add_select_r.anim",
+        "sha256": "c688ad6a365c9e1ed89f9ae7eda2109a2e9412ea0a063e954917fb8fac0b8a54",
+        "bytes": 6675
+      },
+      "exportedMeta": {
+        "Duration": 3.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 6,
+        "TotalSegmentCount": 10,
+        "TotalPointCount": 10,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamAngleX": {
+          "start": -14,
+          "last": -14
+        },
+        "ParamBodyAngleX": {
+          "start": -10,
+          "last": -10
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_bikkuri",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_bikkuri.motion3.json",
+        "sha256": "77168d1cf13d2e37aa1f6bc18e57a948b1aad533ccb16df7703f28fee6d29a11",
+        "bytes": 14059
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_bikkuri.anim",
+        "sha256": "5403860b7a75ac7191b10c5f31ab5b3106c3328cb32d9f1be4ca495fb5bf7c05",
+        "bytes": 8311
+      },
+      "exportedMeta": {
+        "Duration": 0.8,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 158,
+        "TotalPointCount": 222,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 16
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -2
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_bikkuri_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_bikkuri_w.motion3.json",
+        "sha256": "2d515d03b1a24f1c340d6db4c38a9376ff47edd117dd6873c681714a1f529623",
+        "bytes": 8382
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_bikkuri_w.anim",
+        "sha256": "c6bda0628864c2e3e7512c40c2127851ba4b7d0057172da2b4a113f0b06a9c2e",
+        "bytes": 7384
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 66,
+        "TotalPointCount": 68,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": 16,
+          "last": 16
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -2,
+          "last": -2
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_cheek_off",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_cheek_off.motion3.json",
+        "sha256": "6967031166135233f6ce6d40a2b2299f6a3caf44e822717a271b00e90ae3fa0d",
+        "bytes": 521
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_cheek_off.anim",
+        "sha256": "ecff0d1a645a7bfd9f9f8aedd9c7ef6a6e1c8a8a4404971eceb3b49c7efb3786",
+        "bytes": 6503
+      },
+      "exportedMeta": {
+        "Duration": 1.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 1,
+        "TotalSegmentCount": 2,
+        "TotalPointCount": 2,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_cheek_on",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_cheek_on.motion3.json",
+        "sha256": "bcfddb7659cdc9476fc4bb48061433ddbd25a22d0185a3485c77758d9cbbc6cd",
+        "bytes": 521
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_cheek_on.anim",
+        "sha256": "d1a8175b804d561f3eef79caab2f585d47c4d760b831971c6e96149ed6e78f16",
+        "bytes": 6510
+      },
+      "exportedMeta": {
+        "Duration": 1.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 1,
+        "TotalSegmentCount": 2,
+        "TotalPointCount": 2,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamCheek": {
+          "start": 1,
+          "last": 1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_egao",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_egao.motion3.json",
+        "sha256": "66a7dd22d94f7bf2567d427bac8e4dceca5cafae1a10e8a465d07024b66e6b68",
+        "bytes": 13196
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_egao.anim",
+        "sha256": "4676440d71f45ccf1908f59f6c36566eb7e3674c451f5f4c1cbfc03f31b0ac7c",
+        "bytes": 8423
+      },
+      "exportedMeta": {
+        "Duration": 1.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 165,
+        "TotalPointCount": 195,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 0
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -18
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": 1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_egao_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_egao_w.motion3.json",
+        "sha256": "0b9e1ba5e88154d4302f4b9635199c58790979fdbf72286b8c7af706f5309601",
+        "bytes": 8034
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_egao_w.anim",
+        "sha256": "0cbf6758dbaf7868bbdad46489481bd92eb113a51e05522726d3905672d5525c",
+        "bytes": 7280
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 41,
+        "TotalSegmentCount": 63,
+        "TotalPointCount": 63,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeRSmile": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleZ": {
+          "start": -18,
+          "last": -18
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": 1,
+          "last": 1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_hohoemu",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_hohoemu.motion3.json",
+        "sha256": "5b93a90572aa367b2c5a335d09409a851fbc5fe23b3cdbd758ecdbea0f3d885f",
+        "bytes": 14530
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_hohoemu.anim",
+        "sha256": "d6e7e820b4c4412453ea24a0d030e51ddbbf097146f7804faaaadf1913d9959b",
+        "bytes": 8788
+      },
+      "exportedMeta": {
+        "Duration": 1.167,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 170,
+        "TotalPointCount": 228,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 12
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -8
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 21
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0.4
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": 0
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_hohoemu_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_hohoemu_w.motion3.json",
+        "sha256": "2fd22ce07ce46be5187d3def87a16d7eba9c18c6bd3ccc3f643144cba58d2db7",
+        "bytes": 8332
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_hohoemu_w.anim",
+        "sha256": "2bcaa9351347a919a47c9932a5fa58ea51c651567002ac4bc34ac012ddec76fc",
+        "bytes": 7421
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 66,
+        "TotalPointCount": 66,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeRSmile": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamAngleX": {
+          "start": 12,
+          "last": 12
+        },
+        "ParamAngleY": {
+          "start": -8,
+          "last": -8
+        },
+        "ParamAngleZ": {
+          "start": 21,
+          "last": 21
+        },
+        "ParamCheek": {
+          "start": 0.4,
+          "last": 0.4
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": 0,
+          "last": 0
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_ikaru",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_ikaru.motion3.json",
+        "sha256": "282127a6663bdbd36b985ec672c01e55118038fdfb076398cbdca332183599a3",
+        "bytes": 16775
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_ikaru.anim",
+        "sha256": "55f3e91c088381b822b4d00ae46efbeb850745bd92cd842be9932f1150ed1005",
+        "bytes": 8694
+      },
+      "exportedMeta": {
+        "Duration": 1.067,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 226,
+        "TotalPointCount": 282,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -10
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -18
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -14
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_ikaru02",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_ikaru02.motion3.json",
+        "sha256": "3dd201f2be33f91a062d6cd22b17b9c8702126cbaf97a2395f193141374061bd",
+        "bytes": 18337
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_ikaru02.anim",
+        "sha256": "ba579fa3f3be7c511d16d5282b9128782916846958e43ef3b06864b014eb41a7",
+        "bytes": 8937
+      },
+      "exportedMeta": {
+        "Duration": 1.933,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 247,
+        "TotalPointCount": 327,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -10
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -18
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -14
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_ikaru03",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_ikaru03.motion3.json",
+        "sha256": "c574f90b2c3b15f059682942027cf4d4a4a78a4481c2aeb5d1dcbb834228c670",
+        "bytes": 15067
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_ikaru03.anim",
+        "sha256": "34f09c02fd41e7ad073609f1093b73a8406dde019e9636034dcbec331c6852f3",
+        "bytes": 8460
+      },
+      "exportedMeta": {
+        "Duration": 1.4,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 214,
+        "TotalPointCount": 236,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -10
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -18
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -14
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_ikaru_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_ikaru_w.motion3.json",
+        "sha256": "1b62f343ef15d68bfef6715ceda95e956bf09e592ec170180ff60b943a91d473",
+        "bytes": 8337
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_ikaru_w.anim",
+        "sha256": "3704bec877274849cb7d964efb2a16687d43efbdf12fe5cffde9cd575ef96eb8",
+        "bytes": 7407
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 66,
+        "TotalPointCount": 66,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -10,
+          "last": -10
+        },
+        "ParamAngleY": {
+          "start": -18,
+          "last": -18
+        },
+        "ParamAngleZ": {
+          "start": -14,
+          "last": -14
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_kanashimu_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_kanashimu_w.motion3.json",
+        "sha256": "d404689161e60af9136c4b4c7696cbc384cd721b1e605d85adb59726b1f9c5dd",
+        "bytes": 7896
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_kanashimu_w.anim",
+        "sha256": "e8b67efc9477055f31e7710c6a99d09dd0fef3381396b014d7b802960b97fc95",
+        "bytes": 7264
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 41,
+        "TotalSegmentCount": 58,
+        "TotalPointCount": 58,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -6,
+          "last": -6
+        },
+        "ParamAngleY": {
+          "start": -11,
+          "last": -11
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_kangaeru",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_kangaeru.motion3.json",
+        "sha256": "44adfea0b109515bc15c8c5d8ea033f2395a5d7e60bf72d3d39d665b1d2d4981",
+        "bytes": 20547
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_kangaeru.anim",
+        "sha256": "38f7ca22ed74f0d06d1b37ad16e4ef0bbddbd1c47f59b2bef2995c909614e042",
+        "bytes": 8941
+      },
+      "exportedMeta": {
+        "Duration": 1.233,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 63,
+        "TotalSegmentCount": 191,
+        "TotalPointCount": 321,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -16
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 16
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 24
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_kangaeru_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_kangaeru_w.motion3.json",
+        "sha256": "514b401fc7fbaf828170dc2b8b46c822233628c78d97b2674385a5743ae578c4",
+        "bytes": 8319
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_kangaeru_w.anim",
+        "sha256": "354d88617a242e80c9093e836bc4d93681b69bf7af5136fca97436545ed0795a",
+        "bytes": 7380
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 66,
+        "TotalPointCount": 66,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -16,
+          "last": -16
+        },
+        "ParamAngleY": {
+          "start": 16,
+          "last": 16
+        },
+        "ParamAngleZ": {
+          "start": 24,
+          "last": 24
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_nayamu",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_nayamu.motion3.json",
+        "sha256": "34c94f14d8157925dba26ae889ee963cd014a042e3ba47050609943c42d6795f",
+        "bytes": 14708
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_nayamu.anim",
+        "sha256": "c9fae55687b64e5aa7cdf9f3f1f98ce41c58e1ef1ca3eb3330eaa5175749a9de",
+        "bytes": 8319
+      },
+      "exportedMeta": {
+        "Duration": 1.033,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 157,
+        "TotalPointCount": 233,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -8
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -14
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -20
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0.5
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_nayamu_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_nayamu_w.motion3.json",
+        "sha256": "7b6b807af9b751758402e402ca7bbce8211bdbe8eb598f17b78f3ac8330d82dd",
+        "bytes": 8258
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_nayamu_w.anim",
+        "sha256": "f0e7a76110975ee9a5d651dcebeb681b1cadda07ab77a21f337e4c252408652b",
+        "bytes": 7352
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 64,
+        "TotalPointCount": 64,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -8,
+          "last": -8
+        },
+        "ParamAngleY": {
+          "start": -14,
+          "last": -14
+        },
+        "ParamAngleZ": {
+          "start": -20,
+          "last": -20
+        },
+        "ParamCheek": {
+          "start": 0.5,
+          "last": 0.5
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_normal_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_normal_w.motion3.json",
+        "sha256": "34d5ac23e9b49065361d43251ebb3c57de39be4ea4229f0d46058d4a2fc18f2c",
+        "bytes": 8905
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_normal_w.anim",
+        "sha256": "fd400ece855ccee9b4f00aa0f206ce791b06f7fddcee472905e45460f92f7a96",
+        "bytes": 7462
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 67,
+        "TotalPointCount": 85,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -7
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -0.7,
+          "last": -0.7
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_odoroku",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_odoroku.motion3.json",
+        "sha256": "2b3e030282341d57079930e35865e65b7bb3b29c86604e87c19971bf36a204f5",
+        "bytes": 17156
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_odoroku.anim",
+        "sha256": "d6f1694298c77e053a3e9f8fdc3958c14a6bf4a79e0b915a84d0c05cfa0ec04a",
+        "bytes": 8585
+      },
+      "exportedMeta": {
+        "Duration": 0.467,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 49,
+        "TotalSegmentCount": 182,
+        "TotalPointCount": 280,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 15
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0.5
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -2
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_odoroku_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_odoroku_w.motion3.json",
+        "sha256": "953cbd68bd2070157405e5f860e5869a97439a1a246e52de05227d33e3b62a98",
+        "bytes": 8422
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_odoroku_w.anim",
+        "sha256": "698880f8eb1eec183db489421d9a72cabdee69ed56de3996f0d8adabc093789a",
+        "bytes": 7444
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 68,
+        "TotalPointCount": 68,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamAngleY": {
+          "start": 15,
+          "last": 15
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0.5,
+          "last": 0.5
+        },
+        "ParamBxAse": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamMouthForm": {
+          "start": -2,
+          "last": -2
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_punpun",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_punpun.motion3.json",
+        "sha256": "ecfd1f9b9d1ead11c2087ff435b5f279e1769eea979ef893d5f73d8d68cfb4b1",
+        "bytes": 12580
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_punpun.anim",
+        "sha256": "2e4a777f575c977e5bd910b964013eb2ae7b6637a271e885ef77a9a7977d2763",
+        "bytes": 8167
+      },
+      "exportedMeta": {
+        "Duration": 1.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 155,
+        "TotalPointCount": 175,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 17
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 18
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -5
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_punpun_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_punpun_w.motion3.json",
+        "sha256": "603138c807d67ecd6d16b3eacfa8c15bb93c989764b03f74ec7b56416fe7a328",
+        "bytes": 8206
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_punpun_w.anim",
+        "sha256": "d7705b40e6038fe2ef743e92ad67baf83c15b8f73f206efa21a4fe69950cda83",
+        "bytes": 7319
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 64,
+        "TotalPointCount": 64,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 17,
+          "last": 17
+        },
+        "ParamAngleY": {
+          "start": 18,
+          "last": 18
+        },
+        "ParamAngleZ": {
+          "start": -5,
+          "last": -5
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_shinken_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_shinken_w.motion3.json",
+        "sha256": "2e2b46004b8a95bfddc92e9d17bacd0e96997712bf0ce1801e25fe26a63a1052",
+        "bytes": 8888
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_shinken_w.anim",
+        "sha256": "482468f0ef4068674427aa143a3db4f33ebc19b8380ababa42b3663891515706",
+        "bytes": 7462
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 66,
+        "TotalPointCount": 84,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleY": {
+          "start": -15,
+          "last": -15
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_suneru",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_suneru.motion3.json",
+        "sha256": "ec7fde3c1679252550394b0fb2c191993e523558a77a465afa049f95a4a47457",
+        "bytes": 14266
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_suneru.anim",
+        "sha256": "33fd41a8437f4bf7aede6d14450fe0e67c9d77f6b5f9bc60773a673d558ba875",
+        "bytes": 8464
+      },
+      "exportedMeta": {
+        "Duration": 1.067,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 144,
+        "TotalPointCount": 224,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -21
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -26
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_suneru_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_suneru_w.motion3.json",
+        "sha256": "373af362418097e5c423dacf1b4845d99d590a04ab81c5b2cf2895160b6ad308",
+        "bytes": 8342
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_suneru_w.anim",
+        "sha256": "b89be4e8fecfc843d613e07707dc6b55c8ca1b2493a5e43b0affc5743bc58f25",
+        "bytes": 7414
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 66,
+        "TotalPointCount": 66,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -21,
+          "last": -21
+        },
+        "ParamAngleY": {
+          "start": -26,
+          "last": -26
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_talk_large",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_talk_large.motion3.json",
+        "sha256": "2e5b7afe1521f678f23114e5641da42214bb4bef92677485db6ac217ee0274d7",
+        "bytes": 1177
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_talk_large.anim",
+        "sha256": "b3e750148ebd68eb45fe6fb13e6b351caad7297d3e7f77d079146cc54d41193a",
+        "bytes": 6791
+      },
+      "exportedMeta": {
+        "Duration": 3.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 1,
+        "TotalSegmentCount": 18,
+        "TotalPointCount": 18,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {},
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_talk_normal",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_talk_normal.motion3.json",
+        "sha256": "a5c9f7a81c93f5f4c33caaea4eae69bcaa89a3474a5f87052ba05b744971e587",
+        "bytes": 1170
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_talk_normal.anim",
+        "sha256": "d58a1a5c93912de5fd0b9859dae4308dd6b67239a96f6eba41762c986404b99a",
+        "bytes": 6768
+      },
+      "exportedMeta": {
+        "Duration": 3.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 1,
+        "TotalSegmentCount": 18,
+        "TotalPointCount": 18,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {},
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_talk_off",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_talk_off.motion3.json",
+        "sha256": "f040ba3486a11bfe8320543024d2e12ab711da17f8cae1514c705c1fd6282feb",
+        "bytes": 526
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_talk_off.anim",
+        "sha256": "96f0357a0b003c9a3384dfe952d190eb26057233d78e43bc166dcb8bfa9662d4",
+        "bytes": 6505
+      },
+      "exportedMeta": {
+        "Duration": 3.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 1,
+        "TotalSegmentCount": 2,
+        "TotalPointCount": 2,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {},
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_talk_small",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_talk_small.motion3.json",
+        "sha256": "93d9a5c33f0755698d3666ab63a8abc5662305ad7a4405fd7ece8ae07c92fad5",
+        "bytes": 1186
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_talk_small.anim",
+        "sha256": "a2c3129f3ab669fcfc684a9ce7706804120f1a8a212c13f0f04aa30c91114413",
+        "bytes": 6755
+      },
+      "exportedMeta": {
+        "Duration": 3.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 1,
+        "TotalSegmentCount": 18,
+        "TotalPointCount": 18,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {},
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_uru",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_uru.motion3.json",
+        "sha256": "77e90fdd2a4456b912733b551f1f7178f74ba45f6cd1045e3ad4f36f545b32ab",
+        "bytes": 14786
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_uru.anim",
+        "sha256": "f2ad6d029784e1624c83036bf80445586af509c3041309807855dbf279c28cc8",
+        "bytes": 8486
+      },
+      "exportedMeta": {
+        "Duration": 1.3,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 42,
+        "TotalSegmentCount": 118,
+        "TotalPointCount": 250,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": -19
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": 1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -0.5
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    },
+    {
+      "token": "face_uru_w",
+      "export": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_face_uru_w.motion3.json",
+        "sha256": "29f1cf993f33216b3821094674c309fb34c4985952d9adb6051e2ef9b5eda4fe",
+        "bytes": 8892
+      },
+      "originalUnityClip": {
+        "file": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_face_uru_w.anim",
+        "sha256": "4760848441730ee2e34ac76a2a7bb6d6c38e9692f70052253d1050906229d38b",
+        "bytes": 7494
+      },
+      "exportedMeta": {
+        "Duration": 2.0,
+        "Fps": 30.0,
+        "Loop": true,
+        "AreBeziersRestricted": true,
+        "CurveCount": 41,
+        "TotalSegmentCount": 65,
+        "TotalPointCount": 87,
+        "UserDataCount": 1,
+        "TotalUserDataSize": 0
+      },
+      "relevantCurveStartEnd": {
+        "ParamEyeLOpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeROpen": {
+          "start": 0.9,
+          "last": 0.9
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamAngleY": {
+          "start": -19,
+          "last": -19
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamBxNamida": {
+          "start": 1,
+          "last": 1
+        },
+        "ParamMouthForm": {
+          "start": -0.5,
+          "last": -0.5
+        }
+      },
+      "startEndLimits": "Endpoints are exact exported clip values, not sampled min/max or final runtime blended values. Exported Loop metadata is not used as controller loop authority."
+    }
+  ],
+  "diagnosticShortlist": [
+    "act_punpun with automatic act_punpun_w transition",
+    "act_normal + separate face_punpun",
+    "act_nayamu or separate face_nayamu as alternative"
+  ],
+  "shortlistLimits": [
+    "No candidate rendered by this reviewer",
+    "No original scenario CSV recovered",
+    "Whole-body clips include face curves; ownership cannot be inferred from pixel appearance",
+    "Runtime layer weights and extra-layer state remain unverified",
+    "No script field is accepted by this inventory"
+  ]
+}

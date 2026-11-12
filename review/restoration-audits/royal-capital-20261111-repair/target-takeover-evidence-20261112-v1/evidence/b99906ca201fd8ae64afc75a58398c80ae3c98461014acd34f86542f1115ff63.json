@@ -1,0 +1,141 @@
+{
+  "status": "all_selected_versions_and_integrities_match_exact_sources",
+  "sourcePinnedPackages": [
+    "tsx",
+    "esbuild",
+    "@esbuild/linux-arm64"
+  ],
+  "registryPinnedPackages": [
+    "@playwright/cli",
+    "playwright",
+    "playwright-core"
+  ],
+  "selectedRows": {
+    "tsx": {
+      "version": "4.22.1",
+      "resolved": "https://registry.npmjs.org/tsx/-/tsx-4.22.1.tgz",
+      "integrity": "sha512-TvncJykhxAzFCk0VQZKBTClall4Pm7qXDSodb6uxi8QFa8X8mT6ABjxxsQ2opDRYxG7AzcRWXaFtruz5HJKuWg==",
+      "license": "MIT",
+      "dependencies": {
+        "esbuild": "~0.28.0"
+      },
+      "bin": {
+        "tsx": "dist/cli.mjs"
+      },
+      "engines": {
+        "node": ">=18.0.0"
+      },
+      "optionalDependencies": {
+        "fsevents": "~2.3.3"
+      }
+    },
+    "esbuild": {
+      "version": "0.28.0",
+      "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.28.0.tgz",
+      "integrity": "sha512-sNR9MHpXSUV/XB4zmsFKN+QgVG82Cc7+/aaxJ8Adi8hyOac+EXptIp45QBPaVyX3N70664wRbTcLTOemCAnyqw==",
+      "hasInstallScript": true,
+      "license": "MIT",
+      "bin": {
+        "esbuild": "bin/esbuild"
+      },
+      "engines": {
+        "node": ">=18"
+      },
+      "optionalDependencies": {
+        "@esbuild/aix-ppc64": "0.28.0",
+        "@esbuild/android-arm": "0.28.0",
+        "@esbuild/android-arm64": "0.28.0",
+        "@esbuild/android-x64": "0.28.0",
+        "@esbuild/darwin-arm64": "0.28.0",
+        "@esbuild/darwin-x64": "0.28.0",
+        "@esbuild/freebsd-arm64": "0.28.0",
+        "@esbuild/freebsd-x64": "0.28.0",
+        "@esbuild/linux-arm": "0.28.0",
+        "@esbuild/linux-arm64": "0.28.0",
+        "@esbuild/linux-ia32": "0.28.0",
+        "@esbuild/linux-loong64": "0.28.0",
+        "@esbuild/linux-mips64el": "0.28.0",
+        "@esbuild/linux-ppc64": "0.28.0",
+        "@esbuild/linux-riscv64": "0.28.0",
+        "@esbuild/linux-s390x": "0.28.0",
+        "@esbuild/linux-x64": "0.28.0",
+        "@esbuild/netbsd-arm64": "0.28.0",
+        "@esbuild/netbsd-x64": "0.28.0",
+        "@esbuild/openbsd-arm64": "0.28.0",
+        "@esbuild/openbsd-x64": "0.28.0",
+        "@esbuild/openharmony-arm64": "0.28.0",
+        "@esbuild/sunos-x64": "0.28.0",
+        "@esbuild/win32-arm64": "0.28.0",
+        "@esbuild/win32-ia32": "0.28.0",
+        "@esbuild/win32-x64": "0.28.0"
+      }
+    },
+    "@esbuild/linux-arm64": {
+      "version": "0.28.0",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-arm64/-/linux-arm64-0.28.0.tgz",
+      "integrity": "sha512-RVyzfb3FWsGA55n6WY0MEIEPURL1FcbhFE6BffZEMEekfCzCIMtB5yyDcFnVbTnwk+CLAgTujmV/Lgvih56W+A==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "@playwright/cli": {
+      "version": "0.1.24",
+      "resolved": "https://registry.npmjs.org/@playwright/cli/-/cli-0.1.24.tgz",
+      "integrity": "sha512-AIO0AiPHh1ZB9e+i+ZiRwSTfqlkJtWcojgtPnW/BbBCgr96OojlL15dc1jWWclfbjdwPv5900qxuDyEHghjSqw==",
+      "license": "Apache-2.0",
+      "dependencies": {
+        "playwright": "1.66.0-alpha-1794252756000",
+        "playwright-core": "1.66.0-alpha-1794252756000"
+      },
+      "bin": {
+        "playwright-cli": "playwright-cli.js"
+      },
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "playwright": {
+      "version": "1.66.0-alpha-1794252756000",
+      "resolved": "https://registry.npmjs.org/playwright/-/playwright-1.66.0-alpha-1794252756000.tgz",
+      "integrity": "sha512-/9xFhtBUua3Qu3ZIwg1ZoR+bNj+laHp6GxZXvc4gUN5TngCaKbIUPGTTIofnss0mRAkGfY7zUiF/xu/H2CqTFQ==",
+      "license": "Apache-2.0",
+      "dependencies": {
+        "playwright-core": "1.66.0-alpha-1794252756000"
+      },
+      "bin": {
+        "playwright": "cli.js"
+      },
+      "engines": {
+        "node": ">=20"
+      }
+    },
+    "playwright-core": {
+      "version": "1.66.0-alpha-1794252756000",
+      "resolved": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.66.0-alpha-1794252756000.tgz",
+      "integrity": "sha512-AiVQEDLnkpZfEhfXOpqzZA06guT1drbfdcDbV5gePzcr/GdB/9RXnc8FrvV2YNgju0w4JERJllO24n5PmZDQ+A==",
+      "license": "Apache-2.0",
+      "bin": {
+        "playwright-core": "cli.js"
+      },
+      "engines": {
+        "node": ">=20"
+      }
+    }
+  },
+  "hasInstallScriptsDeclared": [
+    "node_modules/esbuild",
+    "node_modules/fsevents"
+  ],
+  "allLifecyclesWillBeSkipped": true,
+  "optionalPackagesOmittedAtInstall": true,
+  "armBinaryDirectDependency": true,
+  "lockSha256": "0f6117df0a93e42bc0a93610fbc840b27420e6c3375d4a5d4fea14353681df3b",
+  "resolvedLockPackageCount": 33
+}

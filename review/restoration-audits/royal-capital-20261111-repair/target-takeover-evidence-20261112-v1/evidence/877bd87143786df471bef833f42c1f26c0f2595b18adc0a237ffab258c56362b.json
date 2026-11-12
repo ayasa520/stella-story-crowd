@@ -1,0 +1,42 @@
+{
+  "module": "story_studio.recovery.native_install",
+  "arguments": [
+    "--staging",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-p30-ord30to44-publication-20261112-v2/staging"
+  ],
+  "cause": "unknown",
+  "decoder": "unchanged_standard",
+  "observations": [
+    {
+      "bytes": 39782,
+      "sha256": "f6135c2ab6759e0a4584d571833372295a7e1828ce094ee1a2c253437e21becf",
+      "nulBytes": 0,
+      "status": "passed"
+    },
+    {
+      "bytes": 639,
+      "sha256": "243c2fd42b0776bb5b95efffb6705ff3cd163ac95a3024113125d9d63492596a",
+      "nulBytes": 0,
+      "status": "passed"
+    },
+    {
+      "bytes": 1079155,
+      "sha256": "46a5ef005a10c4b4bf95537b32b71e39adec75f336b859e1d079b4613b561653",
+      "nulBytes": 0,
+      "status": "passed"
+    },
+    {
+      "bytes": 4514651,
+      "sha256": "ddcc3942dd154a5c6f32ccc83600a999cd8da191e8a4c22abbfbc2ba7b775755",
+      "nulBytes": 0,
+      "status": "failed",
+      "error": "Expecting value: line 111100 column 6 (char 3274556)",
+      "position": 3274556,
+      "exceptionDocumentSha256": "81dc58a5faa79985f8d57f3aee374f965e17b8e694eafb631864375e407e37da",
+      "decodedInputEqualsExceptionDocument": false,
+      "inputCharacter": 32,
+      "exceptionCharacter": 0,
+      "exceptionWindow": "'3,\\n          \"fields\": [\\n            \"bg_music\",\\n            \"bg_picture\",\\n     \\x00      \"character\",\\n            \"character_image\",\\n            \"command\",\\n      '"
+    }
+  ]
+}

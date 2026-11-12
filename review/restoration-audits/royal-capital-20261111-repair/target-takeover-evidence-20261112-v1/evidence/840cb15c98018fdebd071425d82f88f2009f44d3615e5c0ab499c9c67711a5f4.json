@@ -1,0 +1,112 @@
+{
+  "schema": "stella.json_decode_mismatch_independent_review.v1",
+  "status": "saved_input_and_exception_document_difference_independently_verified",
+  "reviewer": "/root/p29_packet_preflight",
+  "createdUtc": "2026-11-12T06:08:09.799611+00:00",
+  "sourceObservation": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-json-module-observations-v1/1794463311690541315/observations.json",
+    "bytes": 1515,
+    "sha256": "877bd87143786df471bef833f42c1f26c0f2595b18adc0a237ffab258c56362b"
+  },
+  "original": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-json-module-observations-v1/1794463311690541315/failed-input.bin",
+    "bytes": 4514651,
+    "sha256": "ddcc3942dd154a5c6f32ccc83600a999cd8da191e8a4c22abbfbc2ba7b775755"
+  },
+  "exceptionDocument": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-json-module-observations-v1/1794463311690541315/failed-exception-document.txt",
+    "bytes": 4514651,
+    "sha256": "81dc58a5faa79985f8d57f3aee374f965e17b8e694eafb631864375e407e37da"
+  },
+  "immutableGit": {
+    "commit": "698acdd0dcd242aebd481337a3feda0dd62942c8",
+    "path": "manifest.json",
+    "bytes": 4514651,
+    "sha256": "ddcc3942dd154a5c6f32ccc83600a999cd8da191e8a4c22abbfbc2ba7b775755",
+    "exactlyEqualsSavedInput": true
+  },
+  "originalRawNulBytes": 0,
+  "exceptionRawNulBytes": 1,
+  "equalRawByteLength": true,
+  "equalUnicodeLength": true,
+  "byteDifferenceCount": 1,
+  "byteDifferences": [
+    {
+      "offset": 3295671,
+      "original": 32,
+      "exception": 0
+    }
+  ],
+  "textDifferenceCount": 1,
+  "textDifferences": [
+    {
+      "position": 3274556,
+      "originalCode": 32,
+      "exceptionCode": 0
+    }
+  ],
+  "pythonOriginalExplicitStrictUtf8Parse": {
+    "strictUtf8DecodePassed": true,
+    "utf8RoundtripEqualsRaw": true,
+    "unicodeCharacters": 4459887,
+    "nulCharacters": 0,
+    "beforeTextUtf8Sha256": "ddcc3942dd154a5c6f32ccc83600a999cd8da191e8a4c22abbfbc2ba7b775755",
+    "parsePassed": true,
+    "topLevelKeys": [
+      "version",
+      "title",
+      "language",
+      "source",
+      "chapters",
+      "scenes",
+      "studioDirectory",
+      "recordings",
+      "recordingMetadataSource",
+      "recordingVerification"
+    ],
+    "afterTextUtf8Sha256": "ddcc3942dd154a5c6f32ccc83600a999cd8da191e8a4c22abbfbc2ba7b775755",
+    "afterTextNulCharacters": 0
+  },
+  "pythonSavedExceptionStrictUtf8Parse": {
+    "strictUtf8DecodePassed": true,
+    "utf8RoundtripEqualsRaw": true,
+    "unicodeCharacters": 4459887,
+    "nulCharacters": 1,
+    "beforeTextUtf8Sha256": "81dc58a5faa79985f8d57f3aee374f965e17b8e694eafb631864375e407e37da",
+    "parsePassed": false,
+    "error": {
+      "name": "JSONDecodeError",
+      "message": "Expecting value: line 111100 column 6 (char 3274556)",
+      "position": 3274556,
+      "line": 111100,
+      "column": 6,
+      "characterCode": 0,
+      "inputTextEqualsExceptionDocument": true,
+      "exceptionDocumentUtf8Sha256": "81dc58a5faa79985f8d57f3aee374f965e17b8e694eafb631864375e407e37da"
+    },
+    "afterTextUtf8Sha256": "81dc58a5faa79985f8d57f3aee374f965e17b8e694eafb631864375e407e37da",
+    "afterTextNulCharacters": 1
+  },
+  "nodeObservation": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-json-decode-independent-review-20261112-v1/node-observation.json",
+    "bytes": 1254,
+    "sha256": "7b9716af26174f463e435d5164773909a7e9fcab463308b9ba511e323805c7bf"
+  },
+  "nodeObserverSource": {
+    "file": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-p30-extra9-independent-preflight-20261112-v1/node-parse.cjs",
+    "bytes": 1376,
+    "sha256": "fe84314ee187be17a8604784ad7fa60d4a68bbd0b3c88a41c3ea3c2ef2a0e3f7"
+  },
+  "cause": "unknown",
+  "applicationModuleRerun": false,
+  "standardDecoderChanged": false,
+  "globalEnvironmentChanged": false,
+  "formalDataChanged": false,
+  "applicationSourceChanged": false,
+  "browserStarted": false,
+  "limits": [
+    "The saved exception document differs from the saved byte input; this does not locate the cause in decoding, parsing, observation or another layer.",
+    "Explicit strict UTF-8 decoding and parsing passed once for this exact valid input. This is bounded evidence, not a guarantee for every future invocation.",
+    "No pure-parser workaround, file corruption, operating-system or hardware cause is asserted."
+  ]
+}
