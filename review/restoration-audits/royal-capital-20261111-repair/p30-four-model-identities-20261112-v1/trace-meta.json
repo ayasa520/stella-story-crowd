@@ -1,0 +1,88 @@
+{
+  "status": "trace-incomplete",
+  "captureLimitMs": 6000,
+  "completionCheckpointMs": 5000,
+  "completionLimitMs": 15000,
+  "traceBufferKiB": 8192,
+  "streamLimitBytes": 16777216,
+  "streamReadLimitMs": 5000,
+  "maxBufferFraction": 0.5227272510528564,
+  "stopReason": "time-limit",
+  "hostClock": "Date.now wall time",
+  "transport": [
+    {
+      "stage": "start-request",
+      "hostUnixMs": 1794480778823
+    },
+    {
+      "stage": "start-ack",
+      "hostUnixMs": 1794480778905
+    },
+    {
+      "stage": "end-request",
+      "hostUnixMs": 1794480784992,
+      "reason": "time-limit"
+    },
+    {
+      "stage": "end-ack",
+      "hostUnixMs": 1794480785046
+    },
+    {
+      "stage": "named-tracing-complete",
+      "hostUnixMs": 1794480786881,
+      "hasStream": true,
+      "traceFormat": "json",
+      "streamCompression": "gzip",
+      "dataLossOccurred": false
+    },
+    {
+      "stage": "detach-request",
+      "hostUnixMs": 1794480787319
+    },
+    {
+      "stage": "cdp-close",
+      "hostUnixMs": 1794480787649
+    },
+    {
+      "stage": "detach-complete",
+      "hostUnixMs": 1794480787649
+    }
+  ],
+  "eventCounts": {
+    "Tracing.bufferUsage": 24,
+    "Tracing.tracingComplete": 1
+  },
+  "errors": [],
+  "checkpointReached": false,
+  "before": {
+    "now": 9048.60000000149,
+    "timeOrigin": 1794480769727.9,
+    "node": "10450054:4",
+    "phase": "ready",
+    "visibility": "visible"
+  },
+  "categories": [
+    "toplevel",
+    "devtools.timeline",
+    "disabled-by-default-devtools.timeline.frame",
+    "blink.user_timing",
+    "renderer.scheduler",
+    "sequence_manager",
+    "cc",
+    "viz",
+    "gpu"
+  ],
+  "missingCategories": [],
+  "startAcknowledgedUnixMs": 1794480778905,
+  "beginMarkerMs": 9242.19999999553,
+  "ready": null,
+  "endRequestedUnixMs": 1794480784992,
+  "endAcknowledgedUnixMs": 1794480785046,
+  "completeUnixMs": 1794480786881,
+  "dataLossOccurred": false,
+  "traceFormat": "json",
+  "streamCompression": "gzip",
+  "sessionClosedUnixMs": 1794480787649,
+  "streamBytes": 2153411,
+  "eof": true
+}
