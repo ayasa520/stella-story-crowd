@@ -1,0 +1,63 @@
+--- immutable-v1/adapter_config.py
++++ fresh-v2/adapter_config.py
+@@ -21,7 +21,10 @@
+ ROOT = Path('/home/rikka/Projects/stella')
+ R = ROOT / 'data/native_recovery/royal-capital-20261110/repair-20261111'
+ SITE_ROOT = ROOT / 'artifacts/stella-site-repair-source/.sites-checkout'
+-ARM_PARENT = ROOT / 'artifacts/stella-arm-runtime'
++ADAPTER_ROOT = R / 'target-arm-adapter-20261112-v2'
++TOOLS_ROOT = R / 'target-arm-tools-20261112-v1'
++TOOLS_RECEIPT = TOOLS_ROOT / 'toolchain-receipt.json'
++TOOLS_RECEIPT_SHA256 = '1348b6ee3de36beac729002e6dc5812f5fc544b93e767e946352e3c283e08753'
+ NODE = Path('/usr/bin/node')
+ HISTORICAL_REGISTRY = R / 'playback/approved-memory-previews.json'
+ SOURCE_CLOSURE = (
+@@ -131,15 +134,19 @@
+     @classmethod
+     def load(cls, arguments, here):
+         here = Path(here).resolve()
+-        require(here.is_relative_to(ARM_PARENT) and here != ARM_PARENT,
+-                'Copy and rebind this author kit into a fresh ARM runtime child before launch')
++        # The root selected two already fresh, independently guarded R roots.
++        # A convenience copy is not evidence of ARM provenance. Bind these
++        # exact roots and the immutable prepared receipt instead of selecting
++        # any directory that merely happens to sit under an artifacts parent.
++        require(here == ADAPTER_ROOT,
++                'Only the explicitly reviewed fresh ARM adapter root is permitted')
+         require(Path(arguments.site_root).resolve() == SITE_ROOT,
+                 'Only the canonical Site checkout is permitted')
+         require(os.uname().machine == 'aarch64' and os.nice(0) == 19 and
+                 set(os.sched_getaffinity(0)) == {0, 1},
+                 'Launch must already be nice 19 on CPUs 0 and 1')
+         reader = JsonReader(here / 'json-rejections')
+-        registry = absolute_file(arguments.registry, ARM_PARENT)
++        registry = absolute_file(arguments.registry, ADAPTER_ROOT)
+         require(registry != HISTORICAL_REGISTRY, 'Historical registry cannot be reused')
+         release = absolute_file(arguments.release)
+         authority = reader.read(release, arguments.release_sha256)
+@@ -151,9 +158,14 @@
+         require(authority.get('formalWritesAllowed') is False,
+                 'This adapter never accepts formal write authority')
+         require(authority.get('canonicalSiteRoot') == str(SITE_ROOT), 'Release Site binding differs')
++        require(authority.get('adapterRoot') == str(ADAPTER_ROOT) and
++                authority.get('toolRoot') == str(TOOLS_ROOT),
++                'Release must bind the exact fresh adapter and tool roots')
+         require(authority.get('registryBinding') == dict(path=str(registry), sha256=arguments.registry_sha256),
+                 'Release registry binding differs')
+         toolchain = absolute_file(arguments.toolchain_receipt)
++        require(toolchain == TOOLS_RECEIPT and arguments.toolchain_sha256 == TOOLS_RECEIPT_SHA256,
++                'Use the exact immutable independently verified ARM toolchain receipt')
+         require(authority.get('toolchainReceiptBinding') ==
+                 dict(path=str(toolchain), sha256=arguments.toolchain_sha256),
+                 'Release toolchain receipt binding differs')
+@@ -161,8 +173,8 @@
+         require(tools.get('schema') == 'stella.target_arm_host_toolchain_receipt.v1' and
+                 tools.get('architecture') == 'aarch64', 'An independently prepared ARM receipt is required')
+         tool_root = Path(tools['toolRoot']).resolve()
+-        require(tool_root.is_relative_to(ARM_PARENT) and tool_root != ARM_PARENT,
+-                'Executable dependencies must be copied and rebound under the fresh ARM runtime root')
++        require(tool_root == TOOLS_ROOT,
++                'Only the exact independently prepared ARM dependency root is permitted')
+         require(tools['tools']['node']['executable']['file'] == str(NODE),
+                 'Node must be the explicit installed /usr/bin/node')
+         bound_bytes(NODE, tools['tools']['node']['executable']['sha256'])

@@ -1,0 +1,89 @@
+--- historical/playback/compile.mjs
++++ fresh-arm/compile.mjs
+@@ -1,22 +1,61 @@
+-// Compile installed native documents with the production website compiler.
+-// This read-only evidence adapter does not recreate script semantics or fill
+-// sparse fields; every route and inherited value comes from compilePreview.
++// Compile only the canonical website source with explicit fresh registry bytes.
++// This file is a new ARM authoring artifact, not an execution release. Node/tsx
++// must be selected by the reviewed absolute host toolchain; no sibling registry,
++// legacy Site path, PATH-selected executable or desktop loader is a fallback.
+ import fs from 'node:fs';
+ import path from 'node:path';
++import os from 'node:os';
+ import {createHash} from 'node:crypto';
+ import {isDeepStrictEqual} from 'node:util';
+ import {pathToFileURL} from 'node:url';
+-const [root,scene,scenario,nativePreview,siteRoot]=process.argv.slice(2);
+-const read=name=>JSON.parse(fs.readFileSync(path.join(root,'story_crowd_data',name),'utf8'));
++
++const args=process.argv.slice(2);
++if(args.length!==7)throw new Error('Explicit ROOT SCENE SCENARIO PREVIEW CANONICAL_SITE REGISTRY REGISTRY_SHA256 required');
++const [root,scene,scenario,nativePreview,siteRoot,registryPath,registrySha256]=args;
++const expectedRoot='/home/rikka/Projects/stella';
++const canonical=path.join(expectedRoot,'artifacts/stella-site-repair-source/.sites-checkout');
++const armParent=path.join(expectedRoot,'artifacts/stella-arm-runtime');
++const hash=raw=>createHash('sha256').update(raw).digest('hex');
++const inside=(parent,candidate)=>candidate.startsWith(parent+path.sep);
++if(root!==expectedRoot||fs.realpathSync(root)!==expectedRoot||siteRoot!==canonical||fs.realpathSync(siteRoot)!==canonical)
++  throw new Error('Only the explicit workspace and canonical Site are permitted');
++if(process.execPath!=='/usr/bin/node'||process.platform!=='linux'||process.arch!=='arm64'||os.getPriority()!==19)
++  throw new Error('Compiler requires absolute /usr/bin/node on nice19 Linux ARM64');
++const cpuLine=fs.readFileSync('/proc/self/status','utf8').split('\n').find(line=>line.startsWith('Cpus_allowed_list:'));
++if(!cpuLine||!['0-1','0,1'].includes(cpuLine.split(':')[1].trim()))throw new Error('Compiler must inherit CPUs0,1');
++if(!/^\d+$/.test(scene)||!Number.isSafeInteger(Number(scene))||Number(scene)<=0||
++    (scenario&&(!/^\d+$/.test(scenario)||!Number.isSafeInteger(Number(scenario))||Number(scenario)<=0)))
++  throw new Error('Invalid explicit scene or scenario');
++if(!path.isAbsolute(registryPath)||!inside(armParent,fs.realpathSync(registryPath))||!/^[a-f0-9]{64}$/.test(registrySha256))
++  throw new Error('A fresh ARM registry path and exact SHA256 are required');
++
++// Reject undecodable or altered text before JSON parsing, without replacement
++// characters, normalization or a second read of a potentially changing file.
++// Python uses the separately copied, evidence-backed UTF8 roundtrip reader.
++const parseBytes=(raw,context)=>{
++  const text=raw.toString('utf8');
++  if(!Buffer.from(text,'utf8').equals(raw))throw new Error('UTF8 byte roundtrip rejected: '+context);
++  return JSON.parse(text);
++};
++const registryRaw=fs.readFileSync(registryPath);
++if(hash(registryRaw)!==registrySha256)throw new Error('Fresh registry bytes changed');
++const scopes=parseBytes(registryRaw,registryPath);
++if(!Array.isArray(scopes))throw new Error('Fresh registry must retain the list schema');
++for(const scope of scopes){
++  if(!Number.isSafeInteger(scope.sceneId)||!['allowedStarts','allowedTargets','allowedFields','exampleIds'].every(key=>Array.isArray(scope[key]))||
++      typeof scope.packet!=='string'||path.isAbsolute(scope.packet)||!/^[a-f0-9]{64}$/.test(scope.sha256))
++    throw new Error('Malformed bounded registry entry');
++  const packetRoot=path.join(root,'data/native_recovery/royal-capital-20261110/repair-20261111');
++  if(!inside(packetRoot,fs.realpathSync(path.resolve(packetRoot,scope.packet))))throw new Error('Registry packet escapes repair evidence');
++}
++const read=name=>parseBytes(fs.readFileSync(path.join(root,'story_crowd_data',name)),name);
+ const manifest=read('manifest.json'),assets=read('assets/catalog.json');
+ const sources=manifest.scenes.map(entry=>({entry,document:read(entry.path),review:read(entry.reviewPath)}));
+ let override=null;
+ if(nativePreview){
+-  // Both the HTTP adapter and this compiler use one explicit review registry.
+-  // A named proposal is bound to its exact bytes, start, target rows and fields;
+-  // neither an arbitrary file nor a later edited proposal gains approval merely
+-  // by reusing an example ID. Changes exist only in these private source objects.
+-  const scopes=JSON.parse(fs.readFileSync(new URL('./approved-memory-previews.json',import.meta.url),'utf8'));
++  // The original guarded override body is retained verbatim below. Only the
++  // registry source changed: it is now an explicit hash-bound input loaded
++  // above, never an implicit historical sibling with eight desktop scopes.
+   const scope=scopes.find(row=>row.sceneId===Number(scene)&&row.allowedStarts.includes(Number(scenario))&&row.exampleIds.includes(nativePreview));
+   if(!scope)throw new Error('Memory preview target is outside the bounded review scope');
+   const evidence=path.join(root,'data/native_recovery/royal-capital-20261110/repair-20261111',scope.packet);
+@@ -61,10 +100,10 @@
+   }
+   override={exampleId:example.id,evidence,packetSha256:scope.sha256,persisted:false,originalScriptRecovered:false};
+ }
+-// A release checkout may intentionally omit unpublished workspace prototypes.
+-// Compile that exact selected Site source while keeping installed data and
+-// bounded in-memory evidence under the same independent restoration root.
+-const {compilePreview}=await import(pathToFileURL(path.join(siteRoot||path.join(root,'story_crowd'),'lib/preview.ts')).href);
++
++// Production owns sparse fields, inherited values and route compilation. No
++// local replacement compiler or geometry/motion policy is introduced here.
++const {compilePreview}=await import(pathToFileURL(path.join(siteRoot,'lib/preview.ts')).href);
+ const program=compilePreview(Number(scene),sources,manifest,assets,scenario?Number(scenario):undefined);
+ if(override)program.review_only_overrides=override;
+ process.stdout.write(JSON.stringify(program));

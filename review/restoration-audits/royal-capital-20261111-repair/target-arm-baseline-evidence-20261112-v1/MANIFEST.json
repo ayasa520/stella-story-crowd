@@ -1,0 +1,599 @@
+{
+  "schema": "stella.exact_evidence_archive.v1",
+  "status": "actual_arm_baseline_evidence_verified",
+  "baseCommit": "aefa1f4aa9bd353a4f39f41d051b3a84d2850a44",
+  "nativeFieldsChangedByThisCheckpoint": 0,
+  "actualCompileRequests": 1,
+  "programSha256": "2dc7724b27cdeebfd7421d47403e72cae0281328631ecf5b9a49900f1b7257a2",
+  "programBytes": 7439170,
+  "nodeCount": 5599,
+  "edgeCount": 5845,
+  "knownCharacterFieldsMapped": 45,
+  "frozenGuardsRechecked": 836,
+  "canonicalTrackedBlobsChecked": 289,
+  "adapterAndCompilerClosed": true,
+  "browserStarted": false,
+  "newPlaybackVisits": 0,
+  "actualRestorationVisits": 207,
+  "motionFaceGeometryOrContinuousPlaybackAccepted": false,
+  "fullRestorationAccepted": false,
+  "copiedFiles": [
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/PROGRESS.md",
+      "sourceSha256": "51db7be08eba1e57c271d978447154d76b73f678057919863b88684458391603",
+      "sourceBytes": 94868,
+      "archive": "evidence/51db7be08eba1e57c271d978447154d76b73f678057919863b88684458391603.md",
+      "archiveSha256": "51db7be08eba1e57c271d978447154d76b73f678057919863b88684458391603",
+      "archiveBytes": 94868
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/compile.mjs",
+      "sourceSha256": "9e03bfb5d7527ce0d73017c3d222c843d5776152d9730506eb7a7f2cc1de4793",
+      "sourceBytes": 5059,
+      "archive": "evidence/9e03bfb5d7527ce0d73017c3d222c843d5776152d9730506eb7a7f2cc1de4793.mjs",
+      "archiveSha256": "9e03bfb5d7527ce0d73017c3d222c843d5776152d9730506eb7a7f2cc1de4793",
+      "archiveBytes": 5059
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/index.html",
+      "sourceSha256": "8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1",
+      "sourceBytes": 1679,
+      "archive": "evidence/8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1.html",
+      "archiveSha256": "8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1",
+      "archiveBytes": 1679
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/playback/serve.py",
+      "sourceSha256": "c83e4e1270cd164890c446bfdf0b45c2732fa6e082c9301f7939be149e029aac",
+      "sourceBytes": 7932,
+      "archive": "evidence/c83e4e1270cd164890c446bfdf0b45c2732fa6e082c9301f7939be149e029aac.py",
+      "archiveSha256": "c83e4e1270cd164890c446bfdf0b45c2732fa6e082c9301f7939be149e029aac",
+      "archiveBytes": 7932
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/AUTHOR_REPORT.md",
+      "sourceSha256": "26d0c30f6f1aaa198fb913b7efc8de37533fbbb68aac58069a12893de520a5e6",
+      "sourceBytes": 5504,
+      "archive": "evidence/26d0c30f6f1aaa198fb913b7efc8de37533fbbb68aac58069a12893de520a5e6.md",
+      "archiveSha256": "26d0c30f6f1aaa198fb913b7efc8de37533fbbb68aac58069a12893de520a5e6",
+      "archiveBytes": 5504
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/adapter_config.py",
+      "sourceSha256": "ba3753ea32aa287a82c1d00c9d44b161a747e04b8379b07860bf328375d9253a",
+      "sourceBytes": 12931,
+      "archive": "evidence/ba3753ea32aa287a82c1d00c9d44b161a747e04b8379b07860bf328375d9253a.py",
+      "archiveSha256": "ba3753ea32aa287a82c1d00c9d44b161a747e04b8379b07860bf328375d9253a",
+      "archiveBytes": 12931
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/compile.mjs",
+      "sourceSha256": "76cf577626fe02d5ad6d0eb5d755979c86221e5fd3c578154081dd3d2a2d1f01",
+      "sourceBytes": 7767,
+      "archive": "evidence/76cf577626fe02d5ad6d0eb5d755979c86221e5fd3c578154081dd3d2a2d1f01.mjs",
+      "archiveSha256": "76cf577626fe02d5ad6d0eb5d755979c86221e5fd3c578154081dd3d2a2d1f01",
+      "archiveBytes": 7767
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/compile.mjs.versus-historical.diff",
+      "sourceSha256": "afd3327d8904f6cd7deb7b5ac7b39ad8cace4332708deb0793b2603449df19f3",
+      "sourceBytes": 6349,
+      "archive": "evidence/afd3327d8904f6cd7deb7b5ac7b39ad8cace4332708deb0793b2603449df19f3.diff",
+      "archiveSha256": "afd3327d8904f6cd7deb7b5ac7b39ad8cace4332708deb0793b2603449df19f3",
+      "archiveBytes": 6349
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/index.html",
+      "sourceSha256": "8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1",
+      "sourceBytes": 1679,
+      "archive": "evidence/8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1.html",
+      "archiveSha256": "8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1",
+      "archiveBytes": 1679
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/inventory.json",
+      "sourceSha256": "04578c7f6552f0579a547eb3e001b4ec08182d00bf97757a12f1439ce89bf323",
+      "sourceBytes": 3831,
+      "archive": "evidence/04578c7f6552f0579a547eb3e001b4ec08182d00bf97757a12f1439ce89bf323.json",
+      "archiveSha256": "04578c7f6552f0579a547eb3e001b4ec08182d00bf97757a12f1439ce89bf323",
+      "archiveBytes": 3831
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/node-check.stderr.log",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sourceBytes": 0,
+      "archive": "evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log",
+      "archiveSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archiveBytes": 0
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/node-check.stdout.log",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sourceBytes": 0,
+      "archive": "evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log",
+      "archiveSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archiveBytes": 0
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/preparation-receipt.json",
+      "sourceSha256": "f729a2f13451a94dc54a00f5ec23c248119776c926148577ac772adf9d6e9593",
+      "sourceBytes": 6827,
+      "archive": "evidence/f729a2f13451a94dc54a00f5ec23c248119776c926148577ac772adf9d6e9593.json",
+      "archiveSha256": "f729a2f13451a94dc54a00f5ec23c248119776c926148577ac772adf9d6e9593",
+      "archiveBytes": 6827
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/release-prerequisites.template.json",
+      "sourceSha256": "1017330dd1020d7cb6a043c16e04057f0bce71d0bbe82205b928ee3ac80de0ef",
+      "sourceBytes": 1163,
+      "archive": "evidence/1017330dd1020d7cb6a043c16e04057f0bce71d0bbe82205b928ee3ac80de0ef.json",
+      "archiveSha256": "1017330dd1020d7cb6a043c16e04057f0bce71d0bbe82205b928ee3ac80de0ef",
+      "archiveBytes": 1163
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/serve.py",
+      "sourceSha256": "ce8adba09f03b638d8f77db871a705299d2bc01a3df5830c9e7c6de11d60ef27",
+      "sourceBytes": 11369,
+      "archive": "evidence/ce8adba09f03b638d8f77db871a705299d2bc01a3df5830c9e7c6de11d60ef27.py",
+      "archiveSha256": "ce8adba09f03b638d8f77db871a705299d2bc01a3df5830c9e7c6de11d60ef27",
+      "archiveBytes": 11369
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/serve.py.versus-historical.diff",
+      "sourceSha256": "ac8552534085ef36e61983a8936ca229f07364cdf563fc1e71828bc4a7aabf1e",
+      "sourceBytes": 17026,
+      "archive": "evidence/ac8552534085ef36e61983a8936ca229f07364cdf563fc1e71828bc4a7aabf1e.diff.raw-text.json",
+      "archiveSha256": "a95393c0ef6944000a944a49258a2390f3031f8168d5b493415ea8f739c660e2",
+      "archiveBytes": 17705
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/source-provenance.json",
+      "sourceSha256": "30cdbdc22c43ac411a3338587a9328345239399812ffbea997a28578a77abf56",
+      "sourceBytes": 2301,
+      "archive": "evidence/30cdbdc22c43ac411a3338587a9328345239399812ffbea997a28578a77abf56.json",
+      "archiveSha256": "30cdbdc22c43ac411a3338587a9328345239399812ffbea997a28578a77abf56",
+      "archiveBytes": 2301
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/syntax-and-preserved-guards-audit.json",
+      "sourceSha256": "cdee2c660419d37bd1f4c8487562f0ea9df19962b8023b67edad6aa77a486147",
+      "sourceBytes": 2196,
+      "archive": "evidence/cdee2c660419d37bd1f4c8487562f0ea9df19962b8023b67edad6aa77a486147.json",
+      "archiveSha256": "cdee2c660419d37bd1f4c8487562f0ea9df19962b8023b67edad6aa77a486147",
+      "archiveBytes": 2196
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v1/target_verified_utf8_v1.py",
+      "sourceSha256": "893063a2ba6ddd0711f2366d690771b1a797a2f4db79c6eaeb89fe66ee9e859a",
+      "sourceBytes": 2121,
+      "archive": "evidence/893063a2ba6ddd0711f2366d690771b1a797a2f4db79c6eaeb89fe66ee9e859a.py",
+      "archiveSha256": "893063a2ba6ddd0711f2366d690771b1a797a2f4db79c6eaeb89fe66ee9e859a",
+      "archiveBytes": 2121
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/AUTHOR_REPORT.md",
+      "sourceSha256": "2445b625fcbd02a10505e9c088ba6916aa5cc6d4463c7f96c0b8693599f7aea8",
+      "sourceBytes": 5934,
+      "archive": "evidence/2445b625fcbd02a10505e9c088ba6916aa5cc6d4463c7f96c0b8693599f7aea8.md",
+      "archiveSha256": "2445b625fcbd02a10505e9c088ba6916aa5cc6d4463c7f96c0b8693599f7aea8",
+      "archiveBytes": 5934
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/AUTHOR_REPORT.md.versus-v1.diff",
+      "sourceSha256": "80429457021c3233bbee8bf929444f33c813f93cd813e7d93ec81ac8ed0e0f29",
+      "sourceBytes": 2892,
+      "archive": "evidence/80429457021c3233bbee8bf929444f33c813f93cd813e7d93ec81ac8ed0e0f29.diff.raw-text.json",
+      "archiveSha256": "7df73a8529015782775cc949ab357dfbda0527c6edc098f4615a4903ac9d9107",
+      "archiveBytes": 3273
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/adapter_config.py",
+      "sourceSha256": "1091a6f119c92d72db3e0657d71dca642d159842084cf670294658c4751a3792",
+      "sourceBytes": 13730,
+      "archive": "evidence/1091a6f119c92d72db3e0657d71dca642d159842084cf670294658c4751a3792.py",
+      "archiveSha256": "1091a6f119c92d72db3e0657d71dca642d159842084cf670294658c4751a3792",
+      "archiveBytes": 13730
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/adapter_config.py.versus-v1.diff",
+      "sourceSha256": "b2f6bd9a56e3756baf3fc0dc7244b2549b352a14d1923bc55b54e5b4ff30f11b",
+      "sourceBytes": 4052,
+      "archive": "evidence/b2f6bd9a56e3756baf3fc0dc7244b2549b352a14d1923bc55b54e5b4ff30f11b.diff",
+      "archiveSha256": "b2f6bd9a56e3756baf3fc0dc7244b2549b352a14d1923bc55b54e5b4ff30f11b",
+      "archiveBytes": 4052
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/compile.mjs",
+      "sourceSha256": "42d778cee52cf9453e2909ce9e15067736707b1f64d04956fa02b0a51f030237",
+      "sourceBytes": 7843,
+      "archive": "evidence/42d778cee52cf9453e2909ce9e15067736707b1f64d04956fa02b0a51f030237.mjs",
+      "archiveSha256": "42d778cee52cf9453e2909ce9e15067736707b1f64d04956fa02b0a51f030237",
+      "archiveBytes": 7843
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/compile.mjs.versus-historical.diff",
+      "sourceSha256": "515d95e7e2ef637618fec3aebf5c04918c2d5ebf259d3f9ef8558720a9171ce0",
+      "sourceBytes": 6428,
+      "archive": "evidence/515d95e7e2ef637618fec3aebf5c04918c2d5ebf259d3f9ef8558720a9171ce0.diff",
+      "archiveSha256": "515d95e7e2ef637618fec3aebf5c04918c2d5ebf259d3f9ef8558720a9171ce0",
+      "archiveBytes": 6428
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/compile.mjs.versus-v1.diff",
+      "sourceSha256": "c1e3e074555829ec99be02fa9211ddff8427a5138f13a7408d37b03b7448023e",
+      "sourceBytes": 1467,
+      "archive": "evidence/c1e3e074555829ec99be02fa9211ddff8427a5138f13a7408d37b03b7448023e.diff.raw-text.json",
+      "archiveSha256": "257f27467a3a7dc6083ebf9b13e06b7dcd1a810fbe11402600499d5cd494b276",
+      "archiveBytes": 1820
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/compiler-runs/1794465667306243313/receipt.json",
+      "sourceSha256": "14d768a8dfc8dbc3410d2479121013398df5dd2f123599c80e034e9ef7f60acd",
+      "sourceBytes": 1526,
+      "archive": "evidence/14d768a8dfc8dbc3410d2479121013398df5dd2f123599c80e034e9ef7f60acd.json",
+      "archiveSha256": "14d768a8dfc8dbc3410d2479121013398df5dd2f123599c80e034e9ef7f60acd",
+      "archiveBytes": 1526
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/compiler-runs/1794465667306243313/stderr.bin",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sourceBytes": 0,
+      "archive": "evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.bin",
+      "archiveSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archiveBytes": 0
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/compiler-runs/1794465667306243313/stdout.bin",
+      "sourceSha256": "2dc7724b27cdeebfd7421d47403e72cae0281328631ecf5b9a49900f1b7257a2",
+      "sourceBytes": 7439170,
+      "archive": "evidence/2dc7724b27cdeebfd7421d47403e72cae0281328631ecf5b9a49900f1b7257a2.bin",
+      "archiveSha256": "2dc7724b27cdeebfd7421d47403e72cae0281328631ecf5b9a49900f1b7257a2",
+      "archiveBytes": 7439170
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/index.html",
+      "sourceSha256": "8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1",
+      "sourceBytes": 1679,
+      "archive": "evidence/8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1.html",
+      "archiveSha256": "8154b46e12d38adf13d6ce8b5b947e08302b523929fbaad9822e7190ce5a77d1",
+      "archiveBytes": 1679
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/inventory.json",
+      "sourceSha256": "c9dabf86b9d88c301946fe63f22deee64588c7d8b7eaebfd0c7b2b5131939e57",
+      "sourceBytes": 5262,
+      "archive": "evidence/c9dabf86b9d88c301946fe63f22deee64588c7d8b7eaebfd0c7b2b5131939e57.json",
+      "archiveSha256": "c9dabf86b9d88c301946fe63f22deee64588c7d8b7eaebfd0c7b2b5131939e57",
+      "archiveBytes": 5262
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/node-check.stderr.log",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sourceBytes": 0,
+      "archive": "evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log",
+      "archiveSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archiveBytes": 0
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/node-check.stdout.log",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sourceBytes": 0,
+      "archive": "evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log",
+      "archiveSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archiveBytes": 0
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/preparation-receipt.json",
+      "sourceSha256": "fe537af8151f2260a5497db84dcce8ee62733fcaa879ad57ec6c967585c63127",
+      "sourceBytes": 8397,
+      "archive": "evidence/fe537af8151f2260a5497db84dcce8ee62733fcaa879ad57ec6c967585c63127.json",
+      "archiveSha256": "fe537af8151f2260a5497db84dcce8ee62733fcaa879ad57ec6c967585c63127",
+      "archiveBytes": 8397
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/release-prerequisites.template.json",
+      "sourceSha256": "424ed88bf7da44ad598c566ab0832a59a30787853817f3aff7f2be3885cf5eda",
+      "sourceBytes": 1513,
+      "archive": "evidence/424ed88bf7da44ad598c566ab0832a59a30787853817f3aff7f2be3885cf5eda.json",
+      "archiveSha256": "424ed88bf7da44ad598c566ab0832a59a30787853817f3aff7f2be3885cf5eda",
+      "archiveBytes": 1513
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/release-prerequisites.template.json.versus-v1.diff",
+      "sourceSha256": "1305579b9d1157f509f5fdcda3d57c65683bdd51d174efb46ec3ab1414cfc27d",
+      "sourceBytes": 1605,
+      "archive": "evidence/1305579b9d1157f509f5fdcda3d57c65683bdd51d174efb46ec3ab1414cfc27d.diff",
+      "archiveSha256": "1305579b9d1157f509f5fdcda3d57c65683bdd51d174efb46ec3ab1414cfc27d",
+      "archiveBytes": 1605
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/runtime-baseline-20261112-v1/registry.json",
+      "sourceSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "sourceBytes": 3,
+      "archive": "evidence/37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570.json",
+      "archiveSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "archiveBytes": 3
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/runtime-static-seven-20261112-v1/registry.json",
+      "sourceSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "sourceBytes": 3,
+      "archive": "evidence/37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570.json",
+      "archiveSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "archiveBytes": 3
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/serve.py",
+      "sourceSha256": "6c4baa7c1fb57bbbd1fbfe29e3759eb846ae6bd8173b1d0bad697d745fb20941",
+      "sourceBytes": 11364,
+      "archive": "evidence/6c4baa7c1fb57bbbd1fbfe29e3759eb846ae6bd8173b1d0bad697d745fb20941.py",
+      "archiveSha256": "6c4baa7c1fb57bbbd1fbfe29e3759eb846ae6bd8173b1d0bad697d745fb20941",
+      "archiveBytes": 11364
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/serve.py.versus-historical.diff",
+      "sourceSha256": "1b7085698fe0b1d6033bd9660a981a3323d5404c5dc1021c1325a91f689e6692",
+      "sourceBytes": 17024,
+      "archive": "evidence/1b7085698fe0b1d6033bd9660a981a3323d5404c5dc1021c1325a91f689e6692.diff.raw-text.json",
+      "archiveSha256": "a2da0f0a3d65a31616ad39fea52b24149ffa839685cdc16349b850635d76f266",
+      "archiveBytes": 17703
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/serve.py.versus-v1.diff",
+      "sourceSha256": "7058e4034d79ddfcbefe1fceb0b559796b5fed6f1da24f88fd913867b3bd0313",
+      "sourceBytes": 468,
+      "archive": "evidence/7058e4034d79ddfcbefe1fceb0b559796b5fed6f1da24f88fd913867b3bd0313.diff.raw-text.json",
+      "archiveSha256": "d168c705e1bbca1300f132f0c45268df4c2c6051d1cd71c124b4544071c24116",
+      "archiveBytes": 811
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/source-provenance.json",
+      "sourceSha256": "707e55bf5d1df9e936523fff379de27685a65b523cdd8773c6b6e317a1979e4a",
+      "sourceBytes": 5839,
+      "archive": "evidence/707e55bf5d1df9e936523fff379de27685a65b523cdd8773c6b6e317a1979e4a.json",
+      "archiveSha256": "707e55bf5d1df9e936523fff379de27685a65b523cdd8773c6b6e317a1979e4a",
+      "archiveBytes": 5839
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/syntax-and-preserved-guards-audit.json",
+      "sourceSha256": "bb809c7a186310fbe49397198903a0100883bfa17917eb2b37cba0b7369fa423",
+      "sourceBytes": 2577,
+      "archive": "evidence/bb809c7a186310fbe49397198903a0100883bfa17917eb2b37cba0b7369fa423.json",
+      "archiveSha256": "bb809c7a186310fbe49397198903a0100883bfa17917eb2b37cba0b7369fa423",
+      "archiveBytes": 2577
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-20261112-v2/target_verified_utf8_v1.py",
+      "sourceSha256": "893063a2ba6ddd0711f2366d690771b1a797a2f4db79c6eaeb89fe66ee9e859a",
+      "sourceBytes": 2121,
+      "archive": "evidence/893063a2ba6ddd0711f2366d690771b1a797a2f4db79c6eaeb89fe66ee9e859a.py",
+      "archiveSha256": "893063a2ba6ddd0711f2366d690771b1a797a2f4db79c6eaeb89fe66ee9e859a",
+      "archiveBytes": 2121
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-peer-20261112-v2/FINAL.json",
+      "sourceSha256": "dc4ebaa1fbb433493eccdd3db756e844697cc4f7a6ca9b58c25579f39f20685d",
+      "sourceBytes": 1243,
+      "archive": "evidence/dc4ebaa1fbb433493eccdd3db756e844697cc4f7a6ca9b58c25579f39f20685d.json",
+      "archiveSha256": "dc4ebaa1fbb433493eccdd3db756e844697cc4f7a6ca9b58c25579f39f20685d",
+      "archiveBytes": 1243
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-peer-20261112-v2/REPORT.md",
+      "sourceSha256": "76a875093ef1bb6b811f7685933697e7b5499e6f605c8b712d864b5f96319bb9",
+      "sourceBytes": 5820,
+      "archive": "evidence/76a875093ef1bb6b811f7685933697e7b5499e6f605c8b712d864b5f96319bb9.md",
+      "archiveSha256": "76a875093ef1bb6b811f7685933697e7b5499e6f605c8b712d864b5f96319bb9",
+      "archiveBytes": 5820
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-peer-20261112-v2/audit.py",
+      "sourceSha256": "17edbd3ffb27d30d1bb996cf2b2bc75eda3b640b94ede992ff251c7b55e4af5f",
+      "sourceBytes": 10696,
+      "archive": "evidence/17edbd3ffb27d30d1bb996cf2b2bc75eda3b640b94ede992ff251c7b55e4af5f.py",
+      "archiveSha256": "17edbd3ffb27d30d1bb996cf2b2bc75eda3b640b94ede992ff251c7b55e4af5f",
+      "archiveBytes": 10696
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-adapter-peer-20261112-v2/receipt.json",
+      "sourceSha256": "280f259919b705b188d6b5a6607fb6a95eae49477b9d1f1e260cef8842b6443c",
+      "sourceBytes": 96513,
+      "archive": "evidence/280f259919b705b188d6b5a6607fb6a95eae49477b9d1f1e260cef8842b6443c.json",
+      "archiveSha256": "280f259919b705b188d6b5a6607fb6a95eae49477b9d1f1e260cef8842b6443c",
+      "archiveBytes": 96513
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/closure.json",
+      "sourceSha256": "c2bb88d5f9c00fa0e71925c97a8bb5c8652f24f9d76fc05788e1e1e4284a1366",
+      "sourceBytes": 327,
+      "archive": "evidence/c2bb88d5f9c00fa0e71925c97a8bb5c8652f24f9d76fc05788e1e1e4284a1366.json",
+      "archiveSha256": "c2bb88d5f9c00fa0e71925c97a8bb5c8652f24f9d76fc05788e1e1e4284a1366",
+      "archiveBytes": 327
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/health-request.json",
+      "sourceSha256": "27a23446ac36d03a0979c85cd61e56e885436d2b912b6f2946c33ccd48ffec9b",
+      "sourceBytes": 406,
+      "archive": "evidence/27a23446ac36d03a0979c85cd61e56e885436d2b912b6f2946c33ccd48ffec9b.json",
+      "archiveSha256": "27a23446ac36d03a0979c85cd61e56e885436d2b912b6f2946c33ccd48ffec9b",
+      "archiveBytes": 406
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/health.bin",
+      "sourceSha256": "d7391e1d6659a40d58b0651a77b1f947869ec93bb1c9494796bb9e3b2649029d",
+      "sourceBytes": 2048,
+      "archive": "evidence/d7391e1d6659a40d58b0651a77b1f947869ec93bb1c9494796bb9e3b2649029d.bin",
+      "archiveSha256": "d7391e1d6659a40d58b0651a77b1f947869ec93bb1c9494796bb9e3b2649029d",
+      "archiveBytes": 2048
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/health.json",
+      "sourceSha256": "929f083e919498ce248072a09fde66e1291606327898eb3ad4c454b878e9fc59",
+      "sourceBytes": 2133,
+      "archive": "evidence/929f083e919498ce248072a09fde66e1291606327898eb3ad4c454b878e9fc59.json",
+      "archiveSha256": "929f083e919498ce248072a09fde66e1291606327898eb3ad4c454b878e9fc59",
+      "archiveBytes": 2133
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/preparation.json",
+      "sourceSha256": "65532813a95deee21eabcfc8055e7098afc74ecb7496a5ebcbfee390a75784c1",
+      "sourceBytes": 2163,
+      "archive": "evidence/65532813a95deee21eabcfc8055e7098afc74ecb7496a5ebcbfee390a75784c1.json",
+      "archiveSha256": "65532813a95deee21eabcfc8055e7098afc74ecb7496a5ebcbfee390a75784c1",
+      "archiveBytes": 2163
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/program-request.json",
+      "sourceSha256": "21590b6e40e521a8ef60e046d3e3936c95537da754027a8bffec08056d84c43b",
+      "sourceBytes": 428,
+      "archive": "evidence/21590b6e40e521a8ef60e046d3e3936c95537da754027a8bffec08056d84c43b.json",
+      "archiveSha256": "21590b6e40e521a8ef60e046d3e3936c95537da754027a8bffec08056d84c43b",
+      "archiveBytes": 428
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/program.bin",
+      "sourceSha256": "2dc7724b27cdeebfd7421d47403e72cae0281328631ecf5b9a49900f1b7257a2",
+      "sourceBytes": 7439170,
+      "archive": "evidence/2dc7724b27cdeebfd7421d47403e72cae0281328631ecf5b9a49900f1b7257a2.bin",
+      "archiveSha256": "2dc7724b27cdeebfd7421d47403e72cae0281328631ecf5b9a49900f1b7257a2",
+      "archiveBytes": 7439170
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/root-release.json",
+      "sourceSha256": "903b56d11cde70dd59f91b06e256573a0125beca796eaf6aa506834ccecd1c33",
+      "sourceBytes": 211525,
+      "archive": "evidence/903b56d11cde70dd59f91b06e256573a0125beca796eaf6aa506834ccecd1c33.json",
+      "archiveSha256": "903b56d11cde70dd59f91b06e256573a0125beca796eaf6aa506834ccecd1c33",
+      "archiveBytes": 211525
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/runtime-result.json",
+      "sourceSha256": "d0ce3830ba0162715c0a2408d5489451eb1504ffdd441160caffbb0b0c23ab7d",
+      "sourceBytes": 2546,
+      "archive": "evidence/d0ce3830ba0162715c0a2408d5489451eb1504ffdd441160caffbb0b0c23ab7d.json",
+      "archiveSha256": "d0ce3830ba0162715c0a2408d5489451eb1504ffdd441160caffbb0b0c23ab7d",
+      "archiveBytes": 2546
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/server.log",
+      "sourceSha256": "32bead91d71e143b5651d6f5cb36f65efb31d43caa6da8730f8d3b090c99d030",
+      "sourceBytes": 4706,
+      "archive": "evidence/32bead91d71e143b5651d6f5cb36f65efb31d43caa6da8730f8d3b090c99d030.log",
+      "archiveSha256": "32bead91d71e143b5651d6f5cb36f65efb31d43caa6da8730f8d3b090c99d030",
+      "archiveBytes": 4706
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-20261112-v1/stop-request.json",
+      "sourceSha256": "e16c6b03c2bd756d60e253babc4faf40095131ec56d43c622c817668b2544f5b",
+      "sourceBytes": 130,
+      "archive": "evidence/e16c6b03c2bd756d60e253babc4faf40095131ec56d43c622c817668b2544f5b.json",
+      "archiveSha256": "e16c6b03c2bd756d60e253babc4faf40095131ec56d43c622c817668b2544f5b",
+      "archiveBytes": 130
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/FINAL.json",
+      "sourceSha256": "00ef9871c7875bb5daedea916c4bb112f35f3b7a065d01e4e734109b0331df74",
+      "sourceBytes": 2284,
+      "archive": "evidence/00ef9871c7875bb5daedea916c4bb112f35f3b7a065d01e4e734109b0331df74.json",
+      "archiveSha256": "00ef9871c7875bb5daedea916c4bb112f35f3b7a065d01e4e734109b0331df74",
+      "archiveBytes": 2284
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/affected-native-bindings.json",
+      "sourceSha256": "01c7f8a329e27963a34e34f2bc82f37d896fded89e4fd9a51f376aecd59969b7",
+      "sourceBytes": 19366,
+      "archive": "evidence/01c7f8a329e27963a34e34f2bc82f37d896fded89e4fd9a51f376aecd59969b7.json",
+      "archiveSha256": "01c7f8a329e27963a34e34f2bc82f37d896fded89e4fd9a51f376aecd59969b7",
+      "archiveBytes": 19366
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/audit.py",
+      "sourceSha256": "c807ffbcea19aa956bcc437cb4d6971b1dcb480dcf28a0308e15dd0c046b4c17",
+      "sourceBytes": 15604,
+      "archive": "evidence/c807ffbcea19aa956bcc437cb4d6971b1dcb480dcf28a0308e15dd0c046b4c17.py",
+      "archiveSha256": "c807ffbcea19aa956bcc437cb4d6971b1dcb480dcf28a0308e15dd0c046b4c17",
+      "archiveBytes": 15604
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/audit.stderr.log",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sourceBytes": 0,
+      "archive": "evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.log",
+      "archiveSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archiveBytes": 0
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/audit.stdout.log",
+      "sourceSha256": "73950cadf75bba5d826b66b574d0765c91c73db9356286b57b8efc18b845bc98",
+      "sourceBytes": 419,
+      "archive": "evidence/73950cadf75bba5d826b66b574d0765c91c73db9356286b57b8efc18b845bc98.log",
+      "archiveSha256": "73950cadf75bba5d826b66b574d0765c91c73db9356286b57b8efc18b845bc98",
+      "archiveBytes": 419
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/guard-after-readback.json",
+      "sourceSha256": "f1a3bc09408bf3151a678d20167e3604925f8adaceae9b084338c9ee7b646f2d",
+      "sourceBytes": 103249,
+      "archive": "evidence/f1a3bc09408bf3151a678d20167e3604925f8adaceae9b084338c9ee7b646f2d.json",
+      "archiveSha256": "f1a3bc09408bf3151a678d20167e3604925f8adaceae9b084338c9ee7b646f2d",
+      "archiveBytes": 103249
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/node-readback.json",
+      "sourceSha256": "e344644227b4be0c1f47239b622cf232f04452dee73eeb0d0c4d9181005683a1",
+      "sourceBytes": 4618,
+      "archive": "evidence/e344644227b4be0c1f47239b622cf232f04452dee73eeb0d0c4d9181005683a1.json",
+      "archiveSha256": "e344644227b4be0c1f47239b622cf232f04452dee73eeb0d0c4d9181005683a1",
+      "archiveBytes": 4618
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/node-targets.json",
+      "sourceSha256": "20c22c45428eb5cb70eaf6a4d05087971155d6e923072445c322b0b7a73783c9",
+      "sourceBytes": 8816,
+      "archive": "evidence/20c22c45428eb5cb70eaf6a4d05087971155d6e923072445c322b0b7a73783c9.json",
+      "archiveSha256": "20c22c45428eb5cb70eaf6a4d05087971155d6e923072445c322b0b7a73783c9",
+      "archiveBytes": 8816
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/node_readback.mjs",
+      "sourceSha256": "108aa6d91e5ab8d451b4e04ad577e2fdd57a268227ec575611d0663678cae6ee",
+      "sourceBytes": 2396,
+      "archive": "evidence/108aa6d91e5ab8d451b4e04ad577e2fdd57a268227ec575611d0663678cae6ee.mjs",
+      "archiveSha256": "108aa6d91e5ab8d451b4e04ad577e2fdd57a268227ec575611d0663678cae6ee",
+      "archiveBytes": 2396
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-arm-baseline-peer-20261112-v1/receipt.json",
+      "sourceSha256": "acac2f8a6e5bf137f4e86d379da3c8fdb2196c9b7dd080a47a395a63ddf04d2f",
+      "sourceBytes": 6216,
+      "archive": "evidence/acac2f8a6e5bf137f4e86d379da3c8fdb2196c9b7dd080a47a395a63ddf04d2f.json",
+      "archiveSha256": "acac2f8a6e5bf137f4e86d379da3c8fdb2196c9b7dd080a47a395a63ddf04d2f",
+      "archiveBytes": 6216
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target_archive_arm_baseline_v1.py",
+      "sourceSha256": "198ca943c5510fb929cd31922209504357aec360f5b2e1a86de5b565c74d2f66",
+      "sourceBytes": 4048,
+      "archive": "evidence/198ca943c5510fb929cd31922209504357aec360f5b2e1a86de5b565c74d2f66.py",
+      "archiveSha256": "198ca943c5510fb929cd31922209504357aec360f5b2e1a86de5b565c74d2f66",
+      "archiveBytes": 4048
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target_identity_publish_git_v1.py",
+      "sourceSha256": "51cb71bddd78c6d1f708d68f0cb1090cb94e124f72dc4a348131197985c633b9",
+      "sourceBytes": 6305,
+      "archive": "evidence/51cb71bddd78c6d1f708d68f0cb1090cb94e124f72dc4a348131197985c633b9.py",
+      "archiveSha256": "51cb71bddd78c6d1f708d68f0cb1090cb94e124f72dc4a348131197985c633b9",
+      "archiveBytes": 6305
+    },
+    {
+      "source": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target_prepare_arm_baseline_v1.cjs",
+      "sourceSha256": "cad80004374ead2c63ff71d4c89c1573a5c776deb82792118926a40156a26775",
+      "sourceBytes": 6168,
+      "archive": "evidence/cad80004374ead2c63ff71d4c89c1573a5c776deb82792118926a40156a26775.cjs",
+      "archiveSha256": "cad80004374ead2c63ff71d4c89c1573a5c776deb82792118926a40156a26775",
+      "archiveBytes": 6168
+    }
+  ],
+  "localOnlyEvidence": []
+}
