@@ -1,0 +1,150 @@
+--- a/public/player/player_scene.js
++++ b/public/player/player_scene.js
+@@ -1,5 +1,6 @@
+ import {NativePlacedViewer} from './actor_placement.js';
+ import {ActorAnimation} from './actor_animation.js';
++import {textPanelRows,reportTextPanelLayout} from './text_panel_presentation.js';
+ 
+ export async function readJSON(url){
+   const response=await fetch(url);
+@@ -131,10 +132,11 @@
+ }
+ 
+ export class OriginalScene {
+-  constructor({stage,canvas,viewer}){Object.assign(this,{stage,canvas,viewer});this.context=canvas.getContext('2d');this.images=new Map();this.tints=new Map();}
++  constructor({stage,canvas,viewer}){Object.assign(this,{stage,canvas,viewer});this.context=canvas.getContext('2d');this.images=new Map();this.tints=new Map();this.textPanelLayoutReports=new Map();}
+   async setup(config){
+     this.config=config;this.assets=await readJSON(config.manifest);
+     this.speakerTranslations=(await readJSON(config.speaker_translations)).speakers;
++    this.textPanelPresentation=await readJSON(config.text_panel_presentation);
+     this.viewer.assets=this.assets;this.viewer.playerConfig=config;
+     await this.viewer.lighting.setup(config);
+     const [width,height]=this.assets.resolution;this.canvas.width=width;this.canvas.height=height;
+@@ -146,7 +148,7 @@
+     files.add(this.assets.choice_card.frame.sprite.file);
+     await Promise.all([...files].map(async name=>this.images.set(name,await loadImage(config.asset_root+name))));
+   }
+-  clear(){this.context.clearRect(0,0,this.canvas.width,this.canvas.height);this.panel=null;}
++  clear(){this.context.clearRect(0,0,this.canvas.width,this.canvas.height);this.panel=null;this.textPanelLayoutReports.clear();}
+   speakerName(node,language){
+     // Speaker identities remain verbatim OCR evidence in the workspace. Resolve
+     // display names from the translation catalog at presentation time so the
+@@ -167,7 +169,8 @@
+     if(/<[^>]+>/.test(text))throw new Error('台词包含尚未支持的原版富文本标记，请先在编辑器核对');
+     const group=!node.speaker?this.config.panels.narration:node.character_image?this.config.panels.picture:this.config.panels.dialogue;
+     const speaker=this.speakerName(node,language);
+-    const panel={group,rows:this.assets.groups[group],speaker,text,layouts:new Map()};
++    const rows=textPanelRows(node,group,this.assets.groups[group],this.textPanelPresentation);
++    const panel={group,rows,speaker,text,layouts:new Map()};
+     for(const row of panel.rows)if(row.type==='text'){
+       const value=row.path.endsWith('/'+this.config.dialogue_name)?speaker:text;
+       const font=this.fonts.get(row.font),layout=font.layout(value,row);
+@@ -177,6 +180,8 @@
+       // panel, so first-use canvas work cannot stall the hit/quake frame.
+       for(const line of layout.lines)for(const item of line)font.bitmap(item.char,layout.size,row.color);
+     }
++    reportTextPanelLayout({node,language,panel,nativeRows:this.assets.groups[group],
++      textRowName:this.config.dialogue_text,settings:this.textPanelPresentation},this.textPanelLayoutReports);
+     return panel;
+   }
+   text(node,language,visible=Infinity){
+--- a/public/player/player_config.json
++++ b/public/player/player_config.json
+@@ -2,6 +2,7 @@
+   "manifest": "/player-assets/manifest.json",
+   "asset_root": "/player-assets/",
+   "speaker_translations": "/speaker_names_zh.json",
++  "text_panel_presentation": "/player/text-panel-presentation.json",
+   "viewer_config": "/pairing/preview_config.json",
+   "animation_manifest": "/player-assets/animation.json",
+   "lighting_manifest": "/player-assets/lighting.json",
+--- /dev/null
++++ b/public/player/text_panel_presentation.js
+@@ -0,0 +1,58 @@
++// Node-scoped text presentation is an authored rendering policy. It does not
++// recover a native CSV field or interpret dialogue contents as layout markup.
++// Keeping selection here leaves node transport, text reveal and NativeFont's
++// existing layout/draw implementation independent of restoration exceptions.
++export function textPanelRows(node,group,rows,settings){
++  if(settings?.version!==1||!settings.nodes||typeof settings.nodes!=='object'||Array.isArray(settings.nodes))
++    throw new Error('文字面板呈现配置无效');
++  if(!Object.hasOwn(settings.nodes,node.id))return rows;
++  const profile=settings.nodes[node.id],target=profile?.row;
++  if(!profile||typeof profile.id!=='string'||!profile.id||!target||
++    typeof target.path!=='string'||!Number.isInteger(target.id)||
++    !Number.isInteger(target.expected_alignment)||target.expected_alignment<0||target.expected_alignment>0xffff||
++    ![1,2,4].includes(target.horizontal_alignment))
++    throw new Error('文字面板呈现配置无效：'+node.id);
++
++  // An exact node key is necessary but insufficient: fail closed if an edit
++  // changes this node's kind, speaker, selected panel or exported TMP row.
++  // Never apply the source-reviewed policy to every narration or to a magic
++  // word. Both Japanese and translated text use this same guarded panel.
++  if(node.kind!==profile.kind||node.speaker!==profile.speaker||group!==profile.group)
++    throw new Error('文字面板呈现条件已变化：'+node.id);
++  const matches=rows.filter(row=>row.path===target.path);
++  if(matches.length!==1||matches[0].type!=='text'||matches[0].id!==target.id||
++    matches[0].alignment!==target.expected_alignment)
++    throw new Error('原版文字面板布局已变化：'+node.id);
++  const selected=matches[0];
++
++  // Exported manifest rows are shared across nodes and languages. Copy only
++  // this panel's selected text row, replacing the horizontal low byte while
++  // retaining its vertical bits, rect, font, sizes, spacing and every other
++  // field. Layout and draw receive the same returned rows; the shared asset
++  // and every later unprofiled node therefore retain the original metadata.
++  return rows.map(row=>row===selected?
++    {...row,alignment:(row.alignment&~0xff)|target.horizontal_alignment}:row);
++}
++
++export function reportTextPanelLayout({node,language,panel,nativeRows,textRowName,settings},reported){
++  const profile=Object.hasOwn(settings.nodes,node.id)?settings.nodes[node.id].id:'native-default';
++  for(const row of panel.rows){
++    if(row.type!=='text'||!row.path.endsWith('/'+textRowName))continue;
++    const nativeRow=nativeRows.find(value=>value.path===row.path&&value.id===row.id);
++    const layout=panel.layouts.get(row.path);
++    const detail={node:node.id,language,profile,group:panel.group,rowPath:row.path,rowId:row.id,
++      nativeAlignment:nativeRow.alignment,effectiveAlignment:row.alignment,rect:{...row.rect},
++      size:layout.size,lineCount:layout.lines.length,
++      lineWidths:layout.lines.map(line=>line.reduce((width,glyph)=>width+glyph.advance,0))};
++
++    // Report prepared metadata, not sampled pixels or a native runtime setter.
++    // Reuse measured advances from layout: no additional glyph measurement,
++    // drawing, frame callback, clock read or reveal-state change is introduced.
++    // Preparation can run twice before the same line is drawn. Keep only the
++    // last signature per node/language/profile/row; scene.clear drops this
++    // diagnostic memory, and changed metadata produces a fresh record.
++    const key=JSON.stringify([node.id,language,profile,row.path]),signature=JSON.stringify(detail);
++    if(reported.get(key)===signature)continue;
++    reported.set(key,signature);console.info('STORY_TEXT_PANEL_LAYOUT',signature);
++  }
++}
+--- /dev/null
++++ b/public/player/text-panel-presentation.json
+@@ -0,0 +1,26 @@
++{
++  "version": 1,
++  "nodes": {
++    "10450058:35": {
++      "id": "p30-ending-marker-source-centered-v1",
++      "kind": "text",
++      "speaker": "",
++      "group": "adv_tell_system",
++      "row": {
++        "path": "/adv_tell_system/anim_root/txt_tell",
++        "id": 739,
++        "expected_alignment": 513,
++        "horizontal_alignment": 2
++      }
++    }
++  },
++  "evidence": {
++    "classification": "Source-backed authored presentation profile; not a recovered native script field.",
++    "source": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/ending/frame-0055.jpg",
++    "before": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-ending-normal-runtime-20261113-v1/ending-frames/frame-00111.jpg",
++    "observation": "The original ending marker is horizontally centered; the current ordinary narration is left aligned.",
++    "nativeSupport": "Current exported txt_tell has alignment513 (vertical512, horizontal1). Existing NativeFont.draw supports horizontal2; replacing only that low byte produces514 and preserves vertical512.",
++    "originalCsvOrMarkupMechanismKnown": false,
++    "scope": "Only the guarded10450058:35 narration text row. No type, wording, command, phase, timing or shared manifest change."
++  }
++}

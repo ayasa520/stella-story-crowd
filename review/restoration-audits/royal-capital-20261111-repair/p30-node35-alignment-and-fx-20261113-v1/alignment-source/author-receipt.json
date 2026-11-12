@@ -1,0 +1,69 @@
+{
+  "status": "source_only_proposal_sealed_for_independent_review",
+  "author": "/root/p30_felt_entry_review",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "productionApplied": false,
+  "canonicalCheckout": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout",
+  "canonicalHeadObserved": "817a45f6a24599743cb6ce48028875ee0e1396ba",
+  "canonicalSourceOrDataChanged": false,
+  "formalGitChanged": false,
+  "patch": "production.patch",
+  "proposedFiles": [
+    "proposed/public/player/text_panel_presentation.js",
+    "proposed/public/player/text-panel-presentation.json",
+    "proposed/public/player/player_scene.js",
+    "proposed/public/player/player_config.json"
+  ],
+  "beforeCopies": [
+    "before/public/player/player_scene.js",
+    "before/public/player/player_config.json"
+  ],
+  "selector": {
+    "node": "10450058:35",
+    "kind": "text",
+    "speaker": "",
+    "group": "adv_tell_system",
+    "rowPath": "/adv_tell_system/anim_root/txt_tell",
+    "rowId": 739,
+    "expectedSharedAlignment": 513,
+    "effectiveHorizontalAlignment": 2,
+    "effectiveAlignment": 514,
+    "verticalAlignmentPreserved": 512,
+    "contentStringUsedAsSelector": false,
+    "allUnselectedRowsAndOtherMetadataPreserved": true,
+    "manifestModified": false
+  },
+  "policyClassification": "source-backed authored presentation; original CSV and markup mechanism remain unknown",
+  "diagnosis": "../p30-node35-text-alignment-investigation-20261113-v1/REPORT.md",
+  "sourceWitness": "../p30-choice26-and-ending-source-review-20261113-v1/ending/frame-0055.jpg",
+  "beforeWitness": "../p30-ending-normal-runtime-20261113-v1/ending-frames/frame-00111.jpg",
+  "productionLog": {
+    "name": "STORY_TEXT_PANEL_LAYOUT",
+    "transport": "console.info(name, JSON.stringify(detail))",
+    "keys": ["node", "language", "profile", "group", "rowPath", "rowId", "nativeAlignment", "effectiveAlignment", "rect", "size", "lineCount", "lineWidths"],
+    "profile": "p30-ending-marker-source-centered-v1",
+    "defaultProfile": "native-default",
+    "sourceOfNativeAlignment": "shared exported manifest row; not a native runtime setter observation",
+    "frequency": "prepared layout; identical signature suppressed per node/language/profile/row; memory cleared by scene.clear",
+    "newScheduleDrawClockOrGlyphMeasure": false
+  },
+  "staticChecks": {
+    "nodeCheckTextPanelPresentationExitCode": 0,
+    "nodeCheckPlayerSceneExitCode": 0,
+    "proposedJsonReadable": true,
+    "selectedBeforeCopiesMatchCanonical": true,
+    "javascriptBodiesExecuted": false,
+    "nice": 19,
+    "cpuAffinity": [0, 1],
+    "newTestsOrMocks": false
+  },
+  "browserStarted": false,
+  "serverStarted": false,
+  "compilerExecuted": false,
+  "newImageOrMediaWork": false,
+  "runtimeAlignmentAccepted": false,
+  "wholeVisualEquivalenceAccepted": false,
+  "unchangedScope": ["native type", "source/translated text", "commands", "phase", "wait", "timing", "NativeFont defaults", "shared manifest", "legacy public/studio renderer"],
+  "rootNextStep": "Independent source review, deliberate production application and normal JA/ZH playback/source comparison with an unprofiled narration control."
+}
