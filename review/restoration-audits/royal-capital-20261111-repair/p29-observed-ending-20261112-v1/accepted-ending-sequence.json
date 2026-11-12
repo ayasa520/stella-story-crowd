@@ -1,0 +1,191 @@
+{
+  "version": 2,
+  "rootConfirmed": true,
+  "status": "root-reviewed-source-backed-authored-reconstruction",
+  "installable": true,
+  "executionAuthorized": true,
+  "sceneId": 10040053,
+  "afterScenarioId": 49,
+  "afterStableKey": "s10040053-p29-at0740",
+  "branchId": 491,
+  "expectedTransitions": [],
+  "authorship": {
+    "kind": "source-backed-authored-reconstruction",
+    "originalP29CsvRecovered": false,
+    "originalPayloadRecovered": false,
+    "newNativeIdsOrigin": "authored-by-NativeIdentifiers-at-stage-time",
+    "originalCommandPhasesRecovered": false,
+    "rootAuthorizedConvention": "Door phase0 bare StopBGM, phase2 CardOut; CLEAR plain win01; omitted-destination terminal FINISH. The root authorized this convention, but this concrete packet remains unapproved until root review.",
+    "unknown": [
+      "Original P29 scenario, branch and transition identities and source-array positions",
+      "Original StopBGM phase and exact CSV parameters",
+      "Original precise movie-init and source AV timing",
+      "Original Wait commands or duration",
+      "Original P29 terminal transition payload",
+      "Any residual audio effects not identified by the bounded music comparison"
+    ],
+    "excluded": [
+      "Wait,500",
+      "Any other added Wait",
+      "1045 handoff",
+      "New map edge",
+      "Reward node",
+      "EOF StopBGM"
+    ]
+  },
+  "evidence": [
+    {
+      "kind": "direct-full-original-tail-review",
+      "recordingId": "bili-capital-29",
+      "segmentId": "p29-s10040053",
+      "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+      "sourceSha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90",
+      "start": 739.021,
+      "end": 757.987,
+      "framesDirectlyReviewedPreviously": 570,
+      "visualReviewer": "p29_packet_preflight",
+      "report": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-five-missing-edges-source-audit-20261112-v1/REPORT.md",
+      "observedOrder": [
+        "Felt final line",
+        "Complete adv_dive01_out",
+        "CLEAR / 本編：ユリウスVer.",
+        "Chapter1004 chart END",
+        "Reward popup"
+      ],
+      "originalPayloadRecovered": false
+    },
+    {
+      "kind": "bounded-waveform-identity-and-envelope-evidence",
+      "report": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-ending-audio-review-20261112-v1/REPORT.md",
+      "resource": "bgm_btl_adv_win01",
+      "sourceReferenceZeroSeconds": 751.028125,
+      "allSevenIndependentOneSecondOffsetsAgree": true,
+      "incomingRiseApproximateSeconds": [
+        751.01,
+        752.02
+      ],
+      "outgoingDeclineApproximateSeconds": [
+        744.6,
+        745.59
+      ],
+      "boundaryPrecisionSecondsApproximately": 0.1,
+      "scoreMeaning": "Waveform correlation, not correctness probability or an original command phase.",
+      "meaningfulListeningPerformed": false,
+      "originalCommandPhasesRecovered": false
+    },
+    {
+      "kind": "root-authorized-authored-convention",
+      "reviewer": "/root",
+      "authorization": "Root explicitly selected a source-supported authored reconstruction for review: phase0 bare StopBGM/default1s; complete native door; phase2 CardOut; CLEAR with plain win01/default1s; terminal FINISH without destination; no Wait/reward/map handoff.",
+      "originalPayloadRecovered": false,
+      "concretePacketApprovalPending": false
+    }
+  ],
+  "terminal": {
+    "kind": "finish-without-successor",
+    "nativeRepresentation": "omitted-destination-fields",
+    "rootConfirmed": true,
+    "originalPayloadRecovered": false,
+    "evidence": [
+      {
+        "kind": "p29-observed-chapter-end",
+        "report": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-five-missing-edges-source-audit-20261112-v1/REPORT.md",
+        "clearFrameSeconds": 751.987,
+        "completedChartFrameSeconds": 754.454,
+        "rewardVisibleThroughSeconds": 757.987,
+        "automatic1045SuccessorObserved": false,
+        "originalP29TransitionRecovered": false
+      },
+      {
+        "kind": "original-native-terminal-representation-and-current-runtime-support",
+        "originalEvidence": "Original intro41 FINISH uses captured -1/-1; intro102 FINISH omits both destination fields; original ADV GetNext handles no-successor completion.",
+        "proposalReport": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-ending-terminal-proposal-20261112-v1/PATCH-REVIEW.md",
+        "existingRuntimeEvidence": "data/native_recovery/royal-capital-20261110/repair-20261111/target-terminal-finish-runtime-20261112-v1/playback-result.json",
+        "basis": "Native-compatible representation chosen for authored P29 completion; not a recovered P29 original."
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "rootConfirmed": true,
+      "stableKey": "s10040053-p29-ending-door-out",
+      "sourceText": "",
+      "translation": "",
+      "fields": {
+        "scenario_type": 3,
+        "video": "adv_dive01_out",
+        "command": [
+          "StopBGM",
+          "",
+          "CardOut"
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "observed-complete-native-door-with-authored-command-placement",
+          "recordingId": "bili-capital-29",
+          "report": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-five-missing-edges-source-audit-20261112-v1/REPORT.md",
+          "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-five-missing-edges-source-audit-20261112-v1/original-ending-tail/frames/frame-0240.jpg",
+          "sourceAnchorSeconds": 746.987,
+          "resource": "adv_dive01_out",
+          "completeResourceDurationSeconds": 5.034,
+          "originalResourceSha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+          "nativeIdOrigin": "authored",
+          "originalScenarioIdRecovered": false,
+          "originalPayloadRecovered": false,
+          "originalCommandPhasesRecovered": false,
+          "authoredConvention": {
+            "phase0": "StopBGM",
+            "phase1": "",
+            "phase2": "CardOut",
+            "fadeSecondsFromNativeDefault": 1,
+            "addsWait": false
+          },
+          "avStartOrWaitRecovered": false
+        }
+      ]
+    },
+    {
+      "rootConfirmed": true,
+      "stableKey": "s10040053-p29-ending-clear",
+      "sourceText": "CLEAR",
+      "translation": "通关",
+      "fields": {
+        "scenario_type": 0,
+        "bg_music": "bgm_btl_adv_win01",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "observed-clear-and-matched-music-with-authored-native-payload",
+          "recordingId": "bili-capital-29",
+          "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-five-missing-edges-source-audit-20261112-v1/original-ending-tail/frames/frame-0390.jpg",
+          "sourceAnchorSeconds": 751.987,
+          "sourceText": "CLEAR",
+          "sourceRoute": "本編：ユリウスVer.",
+          "musicReport": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-ending-audio-review-20261112-v1/REPORT.md",
+          "resource": "bgm_btl_adv_win01",
+          "nativeIdOrigin": "authored",
+          "originalScenarioIdRecovered": false,
+          "originalPayloadRecovered": false,
+          "originalCommandPhasesRecovered": false,
+          "fadeSecondsFromNativeDefault": 1,
+          "explicitFadeOrRestartCsvAuthored": false,
+          "authoredBlankCommandConvention": true,
+          "meaningfulListeningPerformed": false
+        }
+      ]
+    }
+  ],
+  "rootReview": {
+    "integrator": "/root",
+    "mainThreadViewedImages": false,
+    "basis": "Delegated complete original-tail review, directly matched native door and win01 waveforms, current native terminal semantics, and reviewed exact suffix projection.",
+    "phaseChoice": "Explicit authored reconstruction: phase0 bare StopBGM/default1s; phase2 CardOut; no added Wait; original command phase remains unknown.",
+    "actualRuntimeVerification": "Pending ordinary continuous playback, native title animation/source comparison and measured audio context state."
+  }
+}

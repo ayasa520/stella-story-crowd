@@ -1,0 +1,9 @@
+P29 observed ending reconstruction
+
+Extend10040053:49 branch491 with native VIDEO50 adv_dive01_out and TITLE51 CLEAR/通关 using plain bgm_btl_adv_win01. The final destination-free FINISH completes section1004. Existing rows/identities/order and chartmaps are preserved; no1045 edge is added. The full native movie plays to5.034seconds and automatically reaches CLEAR through authored phase2 CardOut. Phase0 bare StopBGM and all new identities/links are explicitly authored reconstruction; original P29 CSV/phases/AV origin remain unknown.
+
+Staging, normal importer/resource dry run, single application, installed semantic readback and ordinary49→50→51 playback passed. The reviewer viewed all321 frames of the P29-ending window, its native/source references and final chart. Six complete contact pages and representative full frames are retained. The full WebM also contains earlier ordinary/IF/baseline title experiments; acceptance here names only the P29-ending window in frame-review-plan.json. Earlier ordinary-exit and recording anomalies are separate unaccepted work.
+
+The capture used canonical working source with a2.5-second native-core title entry. Its frontend publication remains a separate checkpoint while ordinary-title exit is corrected; deployed source197c647 still has the earlier static1.6-second title hold. The payload is compatible with that existing terminal runtime. Do not claim the full frontend animation is already published from this data commit.
+
+Win01 has independently matched source waveforms. Actual CDP context changed to running and the1second fade completed with advancing audio time. The WebM is silent(-an), so this is no listening/mix/sync acceptance. Incoming BGM, original chart artwork/layout, reward popup, actor acting and unrecorded choices remain pending. No script Wait is invented for the original Connecting interval.

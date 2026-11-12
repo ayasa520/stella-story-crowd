@@ -1,0 +1,90 @@
+{
+  "recordingStartApproximation": "FFmpeg shim launch wall timestamp; windows deliberately include margins, not source timing measurements.",
+  "recordingStartWallApprox": 1794487336135.0261,
+  "windows": [
+    {
+      "name": "normal-ja",
+      "startSeconds": 10.271973876953126,
+      "endSeconds": 13.501973876953125
+    },
+    {
+      "name": "if-zh",
+      "startSeconds": 23.598973876953124,
+      "endSeconds": 26.826973876953126
+    },
+    {
+      "name": "baseline-clear",
+      "startSeconds": 36.241973876953125,
+      "endSeconds": 39.415973876953124
+    },
+    {
+      "name": "p29-ending",
+      "startSeconds": 51.41397387695312,
+      "endSeconds": 62.134973876953126
+    }
+  ],
+  "viewportCrop": [
+    378,
+    41,
+    524,
+    930
+  ],
+  "recorderLimits": {
+    "nice": 19,
+    "cpuAffinity": [
+      0,
+      1
+    ],
+    "arguments": [
+      "-filter_threads",
+      "1",
+      "-filter_complex_threads",
+      "1",
+      "-loglevel",
+      "error",
+      "-f",
+      "matroska",
+      "-fpsprobesize",
+      "0",
+      "-probesize",
+      "32",
+      "-analyzeduration",
+      "0",
+      "-threads",
+      "1",
+      "-i",
+      "pipe:0",
+      "-y",
+      "-an",
+      "-r",
+      "30",
+      "-c:v",
+      "libvpx-vp9",
+      "-qmin",
+      "0",
+      "-qmax",
+      "50",
+      "-crf",
+      "8",
+      "-deadline",
+      "realtime",
+      "-cpu-used",
+      "8",
+      "-lag-in-frames",
+      "0",
+      "-b:v",
+      "4267k",
+      "-threads",
+      "1",
+      "-tile-columns",
+      "1",
+      "-row-mt",
+      "1",
+      "-vf",
+      "pad=1280:1000:0:0:gray,crop=1280:1000:0:0",
+      "-metadata",
+      "creation_time=2026-11-12T12:42:16.103Z",
+      "/tmp/playwright-artifacts-jFhXhr/4fa0425a1557c9ee51e82b27eefa8d1c.webm"
+    ]
+  }
+}
