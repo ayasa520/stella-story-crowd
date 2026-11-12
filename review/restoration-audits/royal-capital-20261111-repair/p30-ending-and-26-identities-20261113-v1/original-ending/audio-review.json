@@ -1,0 +1,36 @@
+{
+  "schema": "stella.p30_ending_audio_source_review.v1",
+  "status": "bounded_offline_waveform_identity_and_envelope_evidence",
+  "sourcePcm": "../p30-bgm-identification-20261113-v1/p30-original-source.wav",
+  "referencePcms": ["../p30-bgm-identification-20261113-v1/bgm_btl_adv_win01.wav", "../p30-bgm-identification-20261113-v1/bgm_adv_only02_cd2_25.wav"],
+  "sourceInterval": [986, 1006],
+  "sampleRate": 4000,
+  "sourceWindowSeconds": [1, 2],
+  "identityFindings": [
+    {"role": "outgoing", "resource": "bgm_adv_only02_cd2_25", "supported": true, "coherentWindowInterval": [986, 994], "matchedReferenceZeroOnSourceAxis": 785.652, "zeroIsNativeCommandTime": false},
+    {"role": "CLEAR_then_END_and_reward_tail", "resource": "bgm_btl_adv_win01", "supported": true, "coherentWindowInterval": [1000, 1006], "matchedReferenceZeroOnSourceAxis": 999.9475, "zeroIsNativeCommandTime": false}
+  ],
+  "recordingEnvelopes": {
+    "outgoingDeclineApproximateInterval": [993.5, 994.5],
+    "incomingRiseApproximateInterval": [999.95, 1001.0],
+    "exactDecodedPcmZeroRun": [999.1425, 999.971],
+    "zeroRunIsNativeWait": false,
+    "incomingExitEnvelopeEstablished": false,
+    "fittedRecordingCoefficientsAreNativeGain": false
+  },
+  "competitionPreserved": {"peaksPerQuery": 5, "minimumPeakSeparationSeconds": 0.5, "globalSearchSupersededByExpectedClock": false, "allResults": "measurements.json"},
+  "envelopeMeasurements": "envelope-measurements.json",
+  "newAudioResourceNeeded": false,
+  "nativeCommandProviderPhaseUnknown": true,
+  "nativeFadeGainWaitAccepted": false,
+  "nativeCueStartSeekRestartAccepted": false,
+  "meaningfulListeningPerformed": false,
+  "browserStarted": false,
+  "imagesReviewedThisTask": false,
+  "newDecodes": 0,
+  "nativeFieldsWritten": [],
+  "formalFilesChanged": [],
+  "rootReviewed": false,
+  "rootConfirmed": false,
+  "installationAuthorized": false
+}

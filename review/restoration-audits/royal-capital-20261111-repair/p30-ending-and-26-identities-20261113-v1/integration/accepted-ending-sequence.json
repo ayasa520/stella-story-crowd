@@ -1,0 +1,234 @@
+{
+  "version": 2,
+  "rootConfirmed": true,
+  "rootReviewed": true,
+  "status": "root_accepted_source_backed_authored_suffix_pending_saved_playback",
+  "installable": true,
+  "executionAuthorized": true,
+  "sourceBoundDataHead": "0108b5f6c260d62d585f613facba2f3535ac8920",
+  "sceneId": 10450058,
+  "afterScenarioId": 35,
+  "afterStableKey": "s10450058-p30-at0992",
+  "branchId": 351,
+  "expectedTransitions": [],
+  "boundPreconditionsForRootReview": {
+    "afterNodeUid": 1045005800035,
+    "afterBranchUid": 1045005810351,
+    "afterNodeIsLastInstalledArrayRow": true,
+    "afterNodeScenarioType": 1,
+    "afterNodeSourceText": "―完―",
+    "afterNodeTranslation": "——完——",
+    "preserveAfterNodeTypeTextCharacterAndCommands": true,
+    "maximumScenarioIdAtBoundHead": 35,
+    "expectedSectionId": 1045,
+    "note": "The normal ending_sequence builder enforces stableKey, last-array-row and empty continuation; these extra identity/type/text observations are metadata for root's current-state review, not additional importer-enforced guards."
+  },
+  "authorship": {
+    "kind": "source-backed-authored-reconstruction",
+    "originalP30CsvRecovered": false,
+    "originalPayloadRecovered": false,
+    "newNativeIdsOrigin": "authored-by-NativeIdentifiers-at-stage-time",
+    "originalCommandPhasesRecovered": false,
+    "rootAuthorizedConvention": "Root reviewed the concrete packet: retain type1 narration35, then append complete door with phase0 bare StopBGM/default1s nonblocking ramp and phase2 CardOut; separate CLEAR with plain win01/default fade; omitted-destination FINISH. These are authored choices, not recovered original P30 CSV phases or parameters.",
+    "unknown": [
+      "Original P30 CSV and original scenario, branch and transition identities",
+      "Original source-array positions of the missing door and CLEAR",
+      "Original command phases including StopBGM/CardOut placement",
+      "Exact AV initialization and play-trigger times",
+      "Original Wait commands or any original explicit fade, gain, offset or restart CSV parameters",
+      "Original P30 terminal transition payload"
+    ],
+    "excluded": [
+      "Any added Wait",
+      "Reward node",
+      "EOF StopBGM",
+      "Explicit CSV gain/offset/restart",
+      "Automatic next episode",
+      "New map edge",
+      "Changing node35 scenario_type1"
+    ]
+  },
+  "evidence": [
+    {
+      "kind": "direct-bounded-original-source-ending-review",
+      "recordingId": "bili-capital-30",
+      "segmentId": "p30-s10450058",
+      "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/30 10本篇Ver尤里乌斯 「『最优』的义务」.mp4",
+      "sourceSha256FromExistingAllocation": "d7d29c63dc09f0e4942aa6c89e7ee2f9badc5d6f53757e587993ce46d301c3ee",
+      "start": 986.531,
+      "end": 1006.531,
+      "sampleRate": 10,
+      "all200SampleFramesDirectlyViewed": true,
+      "visualReviewer": "/root/p29_packet_preflight",
+      "report": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/REPORT.md",
+      "review": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/source-review.json",
+      "typeClarification": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/FORMAL-TYPE-CLARIFICATION.md",
+      "observedOrder": [
+        "Subaru final line",
+        "Actor-absent type1-style narration―完―on ruins",
+        "Complete closing door",
+        "Separate CLEAR / 本編：ユリウスVer.",
+        "Own episode flowchart END",
+        "Episode10 reward dialog remains visible near recording EOF"
+      ],
+      "samplingIsNotNativeTimingProof": true,
+      "approximatelyFinal0_1SecondsNotIndividuallyInspected": true,
+      "originalPayloadRecovered": false
+    },
+    {
+      "kind": "independent-bounded-waveform-identity-and-envelope-evidence",
+      "report": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-ending-audio-review-20261113-v1/REPORT.md",
+      "review": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-ending-audio-review-20261113-v1/review.json",
+      "resource": "bgm_btl_adv_win01",
+      "sourcePcmInterval": [
+        986,
+        1006
+      ],
+      "matchedReferenceZeroOnSourcePcmAxis": 999.9475,
+      "allSixIndependentOneSecondOffsetsAgree": true,
+      "outgoingMusicIdentity": "bgm_adv_only02_cd2_25",
+      "outgoingDeclineApproximateSeconds": [
+        993.5,
+        994.5
+      ],
+      "incomingRiseApproximateSeconds": [
+        999.95,
+        1001.0
+      ],
+      "scoreMeaning": "Waveform similarity, not a probability, native gain or recovered command event.",
+      "referenceZeroIsNativeCommandTime": false,
+      "meaningfulListeningPerformed": false,
+      "incomingExitEnvelopeEstablished": false,
+      "nativeCommandPhasesRecovered": false
+    },
+    {
+      "kind": "root-authorized-authored-convention",
+      "reviewer": "/root",
+      "authorization": "Prepare the source-backed suffix after35, preserving type1 narration: VIDEO adv_dive01_out with phase0 bare StopBGM/default1s and phase2 CardOut; separate TITLE CLEAR with plain bgm_btl_adv_win01/default fade; omitted-destination terminal FINISH; no Wait, reward, EOF stop, successor or map edge.",
+      "originalPayloadRecovered": false,
+      "concretePacketApprovalPending": false
+    }
+  ],
+  "terminal": {
+    "kind": "finish-without-successor",
+    "nativeRepresentation": "omitted-destination-fields",
+    "rootConfirmed": true,
+    "rootReviewed": true,
+    "originalPayloadRecovered": false,
+    "evidence": [
+      {
+        "kind": "p30-observed-own-episode-end",
+        "report": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/REPORT.md",
+        "clearFrame": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/ending/frame-0146.jpg",
+        "completedChartFrame": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/ending/frame-0167.jpg",
+        "rewardTerminalWitness": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/ending/frame-0200.jpg",
+        "automaticSuccessorObserved": false,
+        "gameExitObserved": false,
+        "rewardScreenUsedAsScriptNode": false,
+        "originalP30TransitionRecovered": false
+      },
+      {
+        "kind": "existing-original-native-terminal-representation",
+        "originalEvidence": "Original intro102 FINISH omits both destination fields with next_scenario_id0; intro41 also preserves native no-successor completion using captured-1/-1. Original ADV GetNext and current completed-chart lifecycle support ending without entering a guessed successor.",
+        "proposalReport": "data/native_recovery/royal-capital-20261110/repair-20261111/target-p29-ending-terminal-proposal-20261112-v1/PATCH-REVIEW.md",
+        "existingRuntimeEvidence": "data/native_recovery/royal-capital-20261110/repair-20261111/target-terminal-finish-runtime-20261112-v1/playback-result.json",
+        "basis": "Native-compatible omitted-field representation for authored P30 completion; not a recovered P30 original."
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "rootConfirmed": true,
+      "rootReviewed": true,
+      "stableKey": "s10450058-p30-ending-door-out",
+      "sourceText": "",
+      "translation": "",
+      "fields": {
+        "scenario_type": 3,
+        "video": "adv_dive01_out",
+        "command": [
+          "StopBGM",
+          "",
+          "CardOut"
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "observed-complete-door-with-authored-command-placement",
+          "recordingId": "bili-capital-30",
+          "report": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/REPORT.md",
+          "resourceEvidence": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/RESOURCE-NOTE.md",
+          "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/ending/frame-0089.jpg",
+          "sourceAnchorSecondsApproximate": 995.331,
+          "sampledDoorEnvelopeApproximate": [
+            993.631,
+            999.531
+          ],
+          "sampledEnvelopeIsResourceDurationOrWait": false,
+          "resource": "adv_dive01_out",
+          "existingCompleteResourceDurationSeconds": 5.034,
+          "nativeIdOrigin": "authored",
+          "originalScenarioIdRecovered": false,
+          "originalPayloadRecovered": false,
+          "originalCommandPhasesRecovered": false,
+          "authoredConvention": {
+            "phase0": "StopBGM",
+            "phase1": "",
+            "phase2": "CardOut",
+            "fadeSecondsFromNativeDefault": 1,
+            "currentFadeIsNonblockingGameClockRamp": true,
+            "addsWait": false
+          },
+          "avStartOrWaitRecovered": false
+        }
+      ]
+    },
+    {
+      "rootConfirmed": true,
+      "rootReviewed": true,
+      "stableKey": "s10450058-p30-ending-clear",
+      "sourceText": "CLEAR",
+      "translation": "通关",
+      "fields": {
+        "scenario_type": 0,
+        "bg_music": "bgm_btl_adv_win01",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "observed-separate-clear-and-matched-music-with-authored-payload",
+          "recordingId": "bili-capital-30",
+          "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-choice26-and-ending-source-review-20261113-v1/ending/frame-0146.jpg",
+          "sourceAnchorSecondsApproximate": 1001.031,
+          "sourceText": "CLEAR",
+          "sourceRoute": "本編：ユリウスVer.",
+          "sourceNativeRouteType": 0,
+          "presentation": "existing-native-normal-CLEAR",
+          "musicReport": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-ending-audio-review-20261113-v1/REPORT.md",
+          "resource": "bgm_btl_adv_win01",
+          "nativeIdOrigin": "authored",
+          "originalScenarioIdRecovered": false,
+          "originalPayloadRecovered": false,
+          "originalCommandPhasesRecovered": false,
+          "fadeSecondsFromNativeDefault": 1,
+          "explicitGainOffsetFadeOrRestartCsvAuthored": false,
+          "authoredBlankCommandConvention": true,
+          "meaningfulListeningPerformed": false
+        }
+      ]
+    }
+  ],
+  "rootReview": {
+    "integrator": "/root",
+    "mainThreadViewedImages": false,
+    "narration35TypeAlreadyCorrect": true,
+    "exactOriginalPayloadRecovered": false,
+    "sourceAndAudioReportsRead": true,
+    "actualSavedPlaybackAccepted": false,
+    "doesNotAddWaitRewardSuccessorOrMapEdge": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "reviewer": "/root/p30_felt_entry_review",
+  "status": "static_staging_scope_pass_no_definite_blocker",
+  "integration": "../p30-ending-and-26-identities-integration-20261113-v1",
+  "batchId": "1e448bcfb562f3da6ef6",
+  "sourceBoundDataHead": "0108b5f6c260d62d585f613facba2f3535ac8920",
+  "findings": [],
+  "readBoundary": "target_verified_utf8_v1.py exact UTF-8 roundtrip before JSON parsing",
+  "nativeDelta": {
+    "oldRowCount": 35,
+    "stagedRowCount": 37,
+    "characterOnlyScenarioIds": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34],
+    "characterCounts": {"live2d/AC_subaru_tshirt01": 13, "live2d/AC_emilia01": 8, "live2d/AC_julius01": 5},
+    "all26PacketStableJaUidBlankGuardsMatchBefore": true,
+    "all26StagedCharactersMatchAcceptedPacket": true,
+    "node35OnlyBranch351TransitionListChanges": true,
+    "node35TypeTextUidCommandsCharacterAndArrayPositionPreserved": true,
+    "oldNativeFieldsOutsideAllowedDeltaEqual": true,
+    "chartmapEqual": true,
+    "branchWorkListEqual": true,
+    "videoListOnlyAddition": {"name": "adv_dive01_out", "command_list": []},
+    "newRows": [
+      {"scenarioId": 36, "uniqId": 1045005800036, "type": 3, "video": "adv_dive01_out", "command": ["StopBGM", "", "CardOut"], "branchId": 361, "branchUid": 1045005810361, "transitionId": 36101, "nextScenarioId": 37},
+      {"scenarioId": 37, "uniqId": 1045005800037, "type": 0, "sourceText": "CLEAR", "nativeText": "通关", "bgMusic": "bgm_btl_adv_win01", "command": ["", "", ""], "branchId": 371, "branchUid": 1045005810371, "transitionId": 37101, "nextScenarioId": 0, "nextScenarioLabel": "FINISH", "destinationFieldsOmitted": true}
+    ],
+    "newIdsMatchNativeIdentifiersAndAreUnique": true,
+    "currentCanonicalTerminalClassification": "terminal",
+    "newMapRewardSuccessorWaitOrEofStop": false
+  },
+  "reviewDelta": {
+    "oldRows1Through8Identical": true,
+    "rows9Through34OnlyCharacterUnknownWarningRemovalAndOneEvidenceAppend": true,
+    "oldTextRecordingsBranchesAndPriorEvidencePreserved": true,
+    "node35OnlyContinuationReviewResolved": true,
+    "unrelatedUnresolvedBranchesPreserved": [{"scenarioId": 21, "branchId": 213}, {"scenarioId": 26, "branchId": 262}],
+    "oldAuthoredOrderPrefixIdentical": true,
+    "newRowsRetainAuthoredIdsOriginalOrderAndCommandPhaseUnknown": true,
+    "terminalOriginalPayloadRecovered": false,
+    "wholeScenePassClaimed": false
+  },
+  "evidenceCoverage": {
+    "all26DelegatedFullFrameAndExactReferenceBindingsPresent": true,
+    "all26SourceFrameAndAssembledReferenceImagePathsAvailable": true,
+    "node26UsesNewPreChoiceFramesNotLaterEmptyWitness": true,
+    "endingSourceReportTypeClarificationAndResourceNoteRead": true,
+    "endingAudioIdentityAndEnvelopeReportRead": true,
+    "rootAuthoredConventionExplicit": true,
+    "originalCsvRecovered": false,
+    "originalCommandPhasesRecovered": false,
+    "exactNativeTimingOrGainRecovered": false,
+    "rewardWitnessUsedAsScriptNode": false,
+    "unsampledFinalApproximate0_1SecondsDoesNotSupportAdditionalInference": true
+  },
+  "stagedManifest": {"sceneId": 10450058, "nodeCount": 37, "draftRows": 37, "restorationStatus": "rough", "readyForGame": false, "playbackValidation": "not-run"},
+  "existingNormalDryRun": {"structuralValidation": "passed", "applied": false},
+  "executionAndAcceptance": {"installerOrCompilerExecutedByReviewer": false, "browserStarted": false, "imagesOrAudioOpened": false, "unitOrMockTestsRun": false, "formalOrGitWrites": false, "savedPlaybackAccepted": false, "meaningfulListeningAccepted": false}
+}
