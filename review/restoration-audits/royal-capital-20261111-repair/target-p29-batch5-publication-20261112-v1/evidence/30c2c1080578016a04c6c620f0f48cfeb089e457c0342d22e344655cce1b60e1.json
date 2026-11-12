@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audit_v20_publication.py",
+    "--base-commit",
+    "8f808152e29c95bdc2f043ac96be63c0727bf661",
+    "--expected-character",
+    "1823",
+    "--expected-background",
+    "146",
+    "--expected-motion",
+    "5",
+    "--expected-voice",
+    "12",
+    "--new-character",
+    "3",
+    "--new-background",
+    "0",
+    "--new-motion",
+    "0",
+    "--new-voice",
+    "0"
+  ],
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audit_v20_publication.py\", line 125, in <module>\n    main()\n    ~~~~^^\n  File \"/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audit_v20_publication.py\", line 41, in main\n    manifest = read(LIBRARY / \"manifest.json\")\n  File \"/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audit_v20_publication.py\", line 18, in read\n    return json.loads(path.read_bytes())\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/json/__init__.py\", line 352, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 30155 column 3 (char 868156)\n"
+}
