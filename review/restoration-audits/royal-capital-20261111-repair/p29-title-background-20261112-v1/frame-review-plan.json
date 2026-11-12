@@ -1,0 +1,69 @@
+{
+  "timeBasis": "Approximate recorder launch and retained console timestamps; margins include complete entry and post-title handoff. Not original timing claims.",
+  "windows": [
+    {
+      "name": "normal-ja",
+      "startSeconds": 9.2489990234375,
+      "endSeconds": 15.3929990234375,
+      "frames": 184,
+      "command": [
+        "/usr/bin/ffmpeg",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-ss",
+        "9.2489990234375",
+        "-i",
+        "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v2/ordinary-title-and-ending.webm",
+        "-t",
+        "6.144",
+        "-filter_threads",
+        "1",
+        "-filter_complex_threads",
+        "1",
+        "-vf",
+        "crop=524:930:378:41:exact=1",
+        "-q:v",
+        "3",
+        "-threads",
+        "1",
+        "-fps_mode",
+        "passthrough",
+        "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v2/review/normal-ja/frames/frame-%04d.jpg"
+      ]
+    },
+    {
+      "name": "if-zh",
+      "startSeconds": 22.858999023437498,
+      "endSeconds": 28.384999023437498,
+      "frames": 166,
+      "command": [
+        "/usr/bin/ffmpeg",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-ss",
+        "22.858999023437498",
+        "-i",
+        "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v2/ordinary-title-and-ending.webm",
+        "-t",
+        "5.526",
+        "-filter_threads",
+        "1",
+        "-filter_complex_threads",
+        "1",
+        "-vf",
+        "crop=524:930:378:41:exact=1",
+        "-q:v",
+        "3",
+        "-threads",
+        "1",
+        "-fps_mode",
+        "passthrough",
+        "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v2/review/if-zh/frames/frame-%04d.jpg"
+      ]
+    }
+  ]
+}

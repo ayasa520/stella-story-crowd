@@ -1,0 +1,53 @@
+{
+  "schema": "native_repair.node_fields",
+  "rootConfirmed": true,
+  "changes": [
+    {
+      "sceneId": 10040053,
+      "scenarioId": 1,
+      "stableKey": "s10040053-p29-title",
+      "sourceText": "今度こそ取り戻す",
+      "rootConfirmed": true,
+      "expected": {
+        "bg_picture": ""
+      },
+      "fields": {
+        "bg_picture": "bg/bg031a_stealshop"
+      },
+      "evidence": {
+        "reviewer": "/root/p30_packet_preflight",
+        "rootIntegrator": "/root",
+        "mainThreadViewedImages": false,
+        "directImageReview": true,
+        "recordingId": "bili-capital-29",
+        "sourceFrames": [
+          {
+            "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v1/review/source-p29-ordinary/frames/frame-0131.jpg",
+            "secondsApproximately": 433.333
+          },
+          {
+            "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v1/review/source-p29-ordinary/frames/frame-0132.jpg",
+            "secondsApproximately": 433.367
+          },
+          {
+            "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v1/review/source-p29-ordinary/frames/frame-0133.jpg",
+            "secondsApproximately": 433.4
+          }
+        ],
+        "reference": "/home/rikka/Projects/stella/story_crowd_data/assets/backgrounds/ADV_bg031a_stealshop.png",
+        "decision": "The room visible beneath the fading original ordinary title directly matches031a: green round shield by armor, two upper brick patches, central dark post, right pickaxes/helmet/cabinet, table/stools and diagonal floorboards.",
+        "acceptedScope": [
+          "bg_picture"
+        ],
+        "authoredBoundary": "Assign the observed ordinary-title backing explicitly atTitle1; do not infer a global lookahead or change sparse-field inheritance.",
+        "originalBackgroundFieldRecovered": false,
+        "originalArrayProviderRecovered": false,
+        "nextRowChosenAsEvidence": false,
+        "motionFaceTimingAccepted": false,
+        "sourceFrameTimesAreApproximate": true,
+        "packetCorrection": "The first stage rejected an integer scenario_type precondition because node_fields accepts only string performance fields/command. This derivative retains the exact accepted BG change; Title type is checked separately in semantic stage review."
+      }
+    }
+  ],
+  "fullRestorationAccepted": false
+}

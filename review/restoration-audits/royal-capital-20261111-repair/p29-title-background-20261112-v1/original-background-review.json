@@ -1,0 +1,31 @@
+{
+  "schema": "stella.source_visible_background_review.v1",
+  "reviewer": "/root/p30_packet_preflight",
+  "status": "direct_original_image_match",
+  "rootConfirmed": false,
+  "target": {"sceneId":"10040053","nodeId":"1","sourceText":"今度こそ取り戻す"},
+  "allowedFields": ["bg_picture"],
+  "acceptedOriginalAsset": "story_crowd_data/assets/backgrounds/ADV_bg031a_stealshop.png",
+  "matchingRuntimeResource": "bg/bg031a_stealshop",
+  "sourceFrames": [
+    {"path":"review/source-p29-ordinary/frames/frame-0131.jpg","observation":"Room visible beneath remaining collage/title during final fade"},
+    {"path":"review/source-p29-ordinary/frames/frame-0132.jpg","observation":"Same room more strongly visible while title glyphs still remain"},
+    {"path":"review/source-p29-ordinary/frames/frame-0133.jpg","observation":"Room alone immediately after title fades"}
+  ],
+  "directlyMatchedFeatures": [
+    "Round green shield to left of standing armor",
+    "Standing armor and two exposed-brick patches high on wall",
+    "Central dark vertical timber post",
+    "Pickaxes, helmet and cabinet on right",
+    "Foreground wood table, stools and diagonal floorboards"
+  ],
+  "sharpnessObservation": "Shield/armor/cabinet/wood edges are visibly sharp beneath residual title and remain similarly sharp in room-only0133; no numerical blur radius inferred",
+  "independence": "Compared the actual formal asset directly with the original full frames; node2's field or adjacent-node identity was not used to accept this resource",
+  "acceptedScope": "Background identity visible under Title1 final fade only; root may prepare a guarded bg_picture-only restoration",
+  "originalCsvOrArrayProvider": "unknown_not_inferred",
+  "notAccepted": ["global background inheritance rule", "next-node lookahead", "timing or Wait change", "actor/motion/face/position change", "other title rows"],
+  "installablePacket": false,
+  "formalDataChanged": false,
+  "sourceCodeChanged": false,
+  "browserStarted": false
+}
