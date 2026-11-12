@@ -1,0 +1,16 @@
+{
+  "scope": "existing repository-local SSH wrapper only",
+  "observedFailures": "Two bulk pushes to the publicly resolved20.27.177.118 timed out while small ref reads succeeded.",
+  "observedWorkingRoute": "172.182.252.135 completed11.54MiB upload in20.5s and a second normal push after resolver preference correction.",
+  "freshDnsEvidence": {
+    "cloudflare": "20.27.177.118",
+    "google": "172.182.252.135",
+    "queries": "certificate-verified HTTPS DNS, ssh.github.com A"
+  },
+  "change": "Prefer Google DoH, keep Cloudflare resolution fallback; resolve every connection and exec one SSH443 process.",
+  "hostKeyIdentity": "github.com strict known-host verification retained",
+  "fixedIpConfigured": false,
+  "globalConfigurationChanged": false,
+  "gitStdinReplay": false,
+  "confirmedRemoteMain": "8e1ec2f7b5fe7050639fa44a767e35f18dbeb8c6"
+}

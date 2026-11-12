@@ -1,0 +1,56 @@
+{
+  "schema": "stella.native_title_entry_image_review.v1",
+  "reviewer": "/root/p30_packet_preflight",
+  "status": "core_entry_progress_observed_ordinary_exit_changes_required",
+  "passed": false,
+  "rootConfirmed": false,
+  "reviewedFrames": {
+    "normal-ja": 96,
+    "if-zh": 97,
+    "baseline-clear": 95,
+    "source-p29-ordinary": 269,
+    "total": 557,
+    "method": "Every supplied full frame in chronological contacts; selected key frames additionally inspected full size"
+  },
+  "normalJa": {
+    "target": "10040053:1",
+    "coreEntry": "bounded_visual_match_to_original_ordinary_sequence",
+    "observed": ["correct original collage", "black reveal then text alpha/spacing expansion", "stable centered one-line Matisse title", "purple first glyph and white remainder", "Scene group absent"],
+    "exit": "fails_original_ordinary_underlying_room_blend",
+    "sourceExitFrames": ["review/source-p29-ordinary/frames/frame-0131.jpg", "review/source-p29-ordinary/frames/frame-0132.jpg", "review/source-p29-ordinary/frames/frame-0133.jpg"],
+    "runtimeExitFrames": "review/normal-ja/frames/frame-0077.jpg through frame-0096.jpg",
+    "requiredVisibleTarget": "Sharp stealshop room already visible beneath fading collage/title; no black gap before room introduction",
+    "numericBlurValueAccepted": false
+  },
+  "ifZh": {
+    "target": "10030005:1",
+    "status": "native_projection_and_exact_asset_only_with_capture_gap",
+    "sourceRecordingAvailable": false,
+    "originalAnimationAccepted": false,
+    "observed": ["exact purple Emilia asset", "no normal black-layer reveal", "text alpha and spacing expansion", "centered one-line text", "unknown ellipsis tint rule remains unfilled"],
+    "auxiliaryPngHasGrayArea": false
+  },
+  "baselineClear": {
+    "target": "10010001:32",
+    "status": "bounded_end_entry_and_fade_to_black_observed_with_capture_gap",
+    "observed": ["normal collage reveal", "centered Chinese title", "purple first glyph", "Scene group absent", "fade to black before completed chart", "no old room during fade"],
+    "localization": "通关 is translated display, not Japanese CLEAR pixel identity",
+    "auxiliaryPngHasGrayArea": false
+  },
+  "captureAnomalies": {
+    "ifZhViewportFrames": [42,43,44,45],
+    "ifZhFullpageFrames": [3,4,5,6],
+    "baselineViewportFrames": [35,36,37],
+    "baselineFullpageFrames": [4,5,6],
+    "fullpageEvidence": "capture-anomaly-v2/{if-zh,baseline-clear}/fullpage-*.png",
+    "observed": "Reduced full page then upper-left title viewport with gray remainder in original WebM lossless decode; neighboring frames and static PNGs complete",
+    "cause": null,
+    "screenshotAssociationProved": false
+  },
+  "sharedClockCompletionGameMilliseconds": {"normal-ja":2533.3,"if-zh":2500.0,"baseline-clear":2516.6},
+  "remainingLimits": ["ordinary exit needs corrected actual capture", "gray capture intervals unresolved", "no original IF recording", "exact TMP/material/long-title fitting not fully accepted", "no numeric blur inference", "unknown prefix and loader/material effects remain unfilled"],
+  "productionSourceEdited": false,
+  "storyDataEdited": false,
+  "browserStarted": false,
+  "actingAcceptance": false
+}

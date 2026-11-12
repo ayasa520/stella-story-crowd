@@ -1,0 +1,69 @@
+{
+  "timeBasis": "Approximate recorder launch and retained console timestamps; margins include complete entry and post-title handoff. Not original timing claims.",
+  "windows": [
+    {
+      "name": "baseline-clear",
+      "startSeconds": 10.103171875,
+      "endSeconds": 13.038171875,
+      "frames": 88,
+      "command": [
+        "/usr/bin/ffmpeg",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-ss",
+        "10.103171875",
+        "-i",
+        "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v3/baseline-and-stop.webm",
+        "-t",
+        "2.9350000000000005",
+        "-filter_threads",
+        "1",
+        "-filter_complex_threads",
+        "1",
+        "-vf",
+        "crop=524:930:378:41:exact=1",
+        "-q:v",
+        "3",
+        "-threads",
+        "1",
+        "-fps_mode",
+        "passthrough",
+        "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v3/review/baseline-clear/frames/frame-%04d.jpg"
+      ]
+    },
+    {
+      "name": "stop-during-title",
+      "startSeconds": 21.789171875,
+      "endSeconds": 25.448171875,
+      "frames": 110,
+      "command": [
+        "/usr/bin/ffmpeg",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-ss",
+        "21.789171875",
+        "-i",
+        "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v3/baseline-and-stop.webm",
+        "-t",
+        "3.658999999999999",
+        "-filter_threads",
+        "1",
+        "-filter_complex_threads",
+        "1",
+        "-vf",
+        "crop=524:930:378:41:exact=1",
+        "-q:v",
+        "3",
+        "-threads",
+        "1",
+        "-fps_mode",
+        "passthrough",
+        "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target-native-title-entry-runtime-20261112-v3/review/stop-during-title/frames/frame-%04d.jpg"
+      ]
+    }
+  ]
+}
