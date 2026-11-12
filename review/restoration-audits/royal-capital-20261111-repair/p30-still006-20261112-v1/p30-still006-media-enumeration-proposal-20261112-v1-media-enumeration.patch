@@ -1,0 +1,84 @@
+--- a/story_studio/media.py
++++ b/story_studio/media.py
+@@ -7,6 +7,38 @@
+ from PIL import Image
+ from story_studio.recovery.cri_audio import cue_metadata
+ from story_studio.recovery.cri_music import music_waveform_metadata
++
++
++def _picture_catalog(members, settings):
++    """Index native illustration IDs across independently configured sources.
++
++    A supplied source list is authoritative, including an explicitly empty
++    list. Older configurations keep their original single-prefix behavior.
++    Each source retains the same top-level filename and extension restrictions;
++    nested effect textures must never become stand-alone character_image IDs.
++    """
++    sources = settings.get("picture_sources")
++    if sources is None:
++        sources = [dict(prefix=settings["picture_prefix"],
++                        filename_prefix=settings["picture_filename_prefix"],
++                        extension=settings["picture_extension"])]
++    pictures = {}
++    ordered_members = sorted(members)
++    for source in sources:
++        prefix = source["prefix"]
++        for member in ordered_members:
++            relative = member.removeprefix(prefix)
++            if (member.startswith(prefix) and "/" not in relative
++                    and relative.startswith(source["filename_prefix"])
++                    and relative.endswith(source["extension"])):
++                key = PurePosixPath(member).stem
++                # Keys are native bare script IDs. Reject collisions across
++                # sources as well as within a source; never silently replace
++                # an existing illustration when another namespace is added.
++                if key in pictures:
++                    raise ValueError("重复剧情插图资源标识：" + key)
++                pictures[key] = dict(id=key, member=member, label=key)
++    return pictures
+ 
+ 
+ class StoryMediaCatalog:
+@@ -34,15 +66,7 @@
+         # character_image names address separate card illustrations. Keep the
+         # original case and namespace; these are not bg_picture resources and
+         # must not be mixed into background recognition or movie selection.
+-        self.pictures = {}
+-        for member in sorted(catalog.members):
+-            relative=member.removeprefix(settings["picture_prefix"])
+-            if (member.startswith(settings["picture_prefix"]) and "/" not in relative
+-                    and relative.startswith(settings["picture_filename_prefix"])
+-                    and relative.endswith(settings["picture_extension"])):
+-                key=PurePosixPath(member).stem
+-                if key in self.pictures:raise ValueError("重复剧情插图资源标识："+key)
+-                self.pictures[key]=dict(id=key,member=member,label=key)
++        self.pictures = _picture_catalog(catalog.members, settings)
+         # Native CommandUtil.PlayFX recognizes item cut-ins and loads their
+         # texture into a shared animated quad. Keep these separate from full
+         # card illustrations so an item never replaces the actor or background.
+--- a/story_studio/config/studio.json
++++ b/story_studio/config/studio.json
+@@ -88,6 +88,10 @@
+     "background_name_prefix": "ADV_", "background_filename_prefix": "ADV_bg", "background_resource_prefix": "bg/",
+     "picture_prefix": "LIMEOS/assets/downloadassets/assetbundle/images/adv_pictures/",
+     "picture_filename_prefix": "ADV_pic_", "picture_extension": ".png", "picture_page_size": 24,
++    "picture_sources": [
++      {"prefix": "LIMEOS/assets/downloadassets/assetbundle/images/adv_pictures/", "filename_prefix": "ADV_pic_", "extension": ".png"},
++      {"prefix": "LIMEOS/assets/downloadassets/assetbundle/images/adv_still/", "filename_prefix": "ADV_still_", "extension": ".png"}
++    ],
+     "cutin_prefix": "LIMEOS/assets/downloadassets/assetbundle/images/adv_cutin/",
+     "cutin_filename_prefix": "ADV_cutin_item", "cutin_extension": ".png",
+     "music_bank_prefix": "bgm_", "sound_effect_bank":"se_adv", "thumbnail_size": [320, 240],
+--- a/story_studio/config/studio-droidspaces.json
++++ b/story_studio/config/studio-droidspaces.json
+@@ -240,6 +240,10 @@
+     "picture_filename_prefix": "ADV_pic_",
+     "picture_extension": ".png",
+     "picture_page_size": 24,
++    "picture_sources": [
++      {"prefix": "LIMEOS/assets/downloadassets/assetbundle/images/adv_pictures/", "filename_prefix": "ADV_pic_", "extension": ".png"},
++      {"prefix": "LIMEOS/assets/downloadassets/assetbundle/images/adv_still/", "filename_prefix": "ADV_still_", "extension": ".png"}
++    ],
+     "cutin_prefix": "LIMEOS/assets/downloadassets/assetbundle/images/adv_cutin/",
+     "cutin_filename_prefix": "ADV_cutin_item",
+     "cutin_extension": ".png",

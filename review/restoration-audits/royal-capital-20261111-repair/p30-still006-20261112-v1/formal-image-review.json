@@ -1,0 +1,76 @@
+{
+  "reviewer": "/root/p30_felt_entry_review",
+  "rootConfirmed": false,
+  "status": "resource_and_still006_steady_framing_pass_performance_incomplete",
+  "imageReviewAuthorizedBy": "closure.json",
+  "runtime": {
+    "ordinaryRoute": ["10450056:25", "10450056:26", "10450056:27", "10450056:28"],
+    "frameDirectory": "review-v2/frames",
+    "allFramesDirectlyReviewedChronologically": 696,
+    "allContactSheetsDirectlyReviewed": 20,
+    "enlargedSteadyFrames": ["review-v2/frames/frame-0500.jpg", "review-v2/frames/frame-0540.jpg"],
+    "extractionPlan": "frame-review-plan.json",
+    "runtimeClipSecondsApproximate": [20.0728046875, 43.2778046875],
+    "noBrowserStartedByReviewer": true
+  },
+  "source": {
+    "completeEntryPreviouslyReviewed": true,
+    "originalPtsSeconds": [520.022, 546.988],
+    "originalFramesPreviouslyReviewed": 810,
+    "fullSequenceReview": "../visual-high/target-p30-spell26to28-source-review-20261112-v1/source-candidate-review.json",
+    "originalSteadyAnchorRechecked": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/30/root-review/frames/d7d29c63dc09-015900.jpg",
+    "nativePng": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/images/adv_still/ADV_still_006.png"
+  },
+  "reviewerAcceptedScope": {
+    "node26ExactStill006": true,
+    "node27ExactStill006": true,
+    "still006SteadyCenterCoverVisuallyMatchesSource": true,
+    "noPersistentTopBottomLetterbox": true,
+    "sameImage26to27ContinuousWithoutVisibleReframing": true,
+    "node28IllustrationHiddenAndBlue046cRestored": true,
+    "profile": "still006-center-cover-candidate",
+    "profileScope": "Only ADV_still_006 steady visual presentation at the reviewed portrait viewport; not every illustration or native UV implementation.",
+    "matchingLandmarks": ["Julius left-side size and placement", "Elsa foreground head and shoulder", "red mantle", "horizontal blue beam height", "diagonal rainbow beam side boundaries", "floor details"],
+    "loggedNaturalSize": [1536, 2048],
+    "loggedContentSize": [697.5, 930],
+    "loggedViewportSize": [523.125, 930],
+    "loggedObjectPosition": "50% 50%",
+    "loggedDisplayBackgroundFor26And27": "bg/bg001_black",
+    "publishableFieldsOnly": [
+      {"sceneId": 10450056, "scenarioId": 26, "field": "character_image", "value": "ADV_still_006"},
+      {"sceneId": 10450056, "scenarioId": 27, "field": "character_image", "value": "ADV_still_006"}
+    ],
+    "publishableRelatedResourceScope": "Exact unchanged PNG/catalog binding and still006-specific steady framing profile."
+  },
+  "observedRuntimeBoundaries": [
+    {"frames": [1, 106], "observation": "Elsa and intact shop, node25 dialogue"},
+    {"frames": [107, 206], "observation": "Actor gone; blurred intact shop holds"},
+    {"frames": [207, 466], "observation": "Black story stage"},
+    {"frame": 467, "observation": "Full illustration appears abruptly"},
+    {"frames": [471, 526], "observation": "Node26 dialogue over stationary correct illustration"},
+    {"frame": 527, "observation": "Node27 dialogue begins while same illustration remains stationary"},
+    {"frames": [527, 582], "observation": "Same still holds; original additional yellow blast/smoke absent"},
+    {"frames": [583, 619], "observation": "Black stage after CG exit"},
+    {"frames": [620, 651], "observation": "Blurred blue ruined shop, illustration no longer visible"},
+    {"frames": [652, 696], "observation": "Ordinary actor over sharp blue046c; node28 dialogue"}
+  ],
+  "otherAcceptance": {
+    "completePerformanceAccepted": false,
+    "entryDelayAndSourceTimingAccepted": false,
+    "sourceWhiteRadialEntryExitAccepted": false,
+    "node27AdditionalBlastAndSmokeFxAccepted": false,
+    "commandsAndNativeWaitAccepted": false,
+    "actorPerformanceAccepted": false,
+    "universalNativeImageGeometryAccepted": false
+  },
+  "remainingIssues": [
+    "Long blurred-shop and black-stage entry hold; reported node26 enter-to-CardIn interval approximately12.22s needs separate log diagnosis.",
+    "Actual CG enters/exits through abrupt image/black boundaries; original white radial transitions are not restored.",
+    "Original node27 yellow blast and dark smoke are missing; exact resource/command remains unknown.",
+    "Ordinary actor appears abruptly at652; no actor/timing acceptance in this packet."
+  ],
+  "observerDwellMilliseconds": {"26": 800, "27": 800, "28": 500},
+  "observerDwellIsNativeWait": false,
+  "formalDataChangedByReviewer": false,
+  "fullRestorationAccepted": false
+}

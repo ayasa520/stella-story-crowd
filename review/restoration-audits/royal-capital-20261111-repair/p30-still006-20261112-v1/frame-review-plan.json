@@ -1,0 +1,45 @@
+{
+  "recordingStartApproximate": true,
+  "launchStartDifferenceMs": 4.1953125,
+  "clipSeconds": [
+    20.0728046875,
+    43.2778046875
+  ],
+  "crop": [
+    378,
+    41,
+    524,
+    930
+  ],
+  "sourceTimeClaims": false,
+  "frameCount": 696,
+  "command": [
+    "/usr/bin/ffmpeg",
+    "-v",
+    "error",
+    "-threads",
+    "1",
+    "-ss",
+    "20.0728046875",
+    "-i",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-still006-runtime-20261112-v1/p30-still006-25-26-27-28.webm",
+    "-t",
+    "23.205000000000002",
+    "-filter_threads",
+    "1",
+    "-filter_complex_threads",
+    "1",
+    "-vf",
+    "crop=524:930:378:41:exact=1",
+    "-q:v",
+    "3",
+    "-pix_fmt",
+    "yuvj420p",
+    "-threads",
+    "1",
+    "-fps_mode",
+    "passthrough",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-still006-runtime-20261112-v1/review-v2/frames/frame-%04d.jpg"
+  ],
+  "priorExtractionFailure": "A strict launch<=afterVideoStart selector excluded this actual launch4.2ms after the marker and chose a prior recording. It wrote no frames; new nearest-launch guard and explicit full-range JPEG format correct extraction only."
+}

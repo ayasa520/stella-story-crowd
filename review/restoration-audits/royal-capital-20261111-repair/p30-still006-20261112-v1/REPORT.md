@@ -1,0 +1,9 @@
+P30 exact still006 illustration restoration
+
+The unchanged native1536×2048 PNG is installed as pictures/ADV_still_006.png with the original adv_still member in both indexes. Exactly26/27.character_image become bareADV_still_006; all other native fields/identities/order/maps and28blue046c stay unchanged. The current native loader deterministically accepts this bare ID. Normal staging/resource validation/single install/readback passed.
+
+All810original and696runtime boundary frames were reviewed by the image subagent. Exact illustration, center-cover steady landmarks, continuity26→27 and return to28passed. The resource-specific frontend profile is pushed/deployed in809f794; legacy seven pictures retain contain. Parent authoring media enumeration now accepts configured picture families with legacy fallback; the applied three-file patch and real-index proof are archived because the parent intentionally has no remote. No full asset export was run.
+
+Complete performance is NOT accepted. Long blurred/black entry holds, abrupt appearance/exit, missing original white radial wipe and27blast/smoke remain visible. No nativeWait or command is invented. The no-video/no-screenshot control still reports a3998ms main-threadLongTask after its470.5msPNG transfer; the capture path alone does not explain it. Native call-stack tracing is next; no timing curve/cache policy was changed to hide it. The original recording showsSPEEDx5, and its timestamps are evidence anchors, not authored script waits.
+
+The first frame-extraction attempt selected an old FFmpeg launch because the actual launch occurred4.2ms after the marker. It wrote no frames. Corrected nearest-launch guard and explicit full-range JPEG extraction produced the696reviewedframes without another browser replay. All capture/recorder/server processes closed before image review. Source, native geometry and radial-path limitations are included.

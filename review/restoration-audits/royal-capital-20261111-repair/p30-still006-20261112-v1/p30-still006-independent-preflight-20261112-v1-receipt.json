@@ -1,0 +1,92 @@
+{
+  "schema": "stella.still006_independent_preflight.v1",
+  "reviewer": "/root/p30_packet_preflight",
+  "status": "applicable_to_observed_head_pending_root_integration",
+  "passed": true,
+  "rootConfirmed": false,
+  "observedDataHead": "22e3943b1d3f5358f3c3911c01de8a12e9e03313",
+  "proposal": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-still006-proposal-20261112-v1",
+  "catalog": {
+    "exactAdditions": [
+      "/pictures/ADV_still_006",
+      "/members/LIMEOS~1assets~1downloadassets~1assetbundle~1images~1adv_still~1ADV_still_006.png",
+      "/asset_members/LIMEOS~1assets~1downloadassets~1assetbundle~1images~1adv_still~1ADV_still_006.png"
+    ],
+    "allThreeKeysCurrentlyAbsent": true,
+    "destinationUrlUnclaimed": true,
+    "membersSemantics": "Original archive member→catalog-relative packaged URL",
+    "assetMembersSemantics": "Same member→URL index serialized by crowd_assets.py build",
+    "existingIndexesEqual": true,
+    "jsonPatchMatchesDelta": true,
+    "existingEntriesPreservedInMemory": true,
+    "exactSourceMember": "LIMEOS/assets/downloadassets/assetbundle/images/adv_still/ADV_still_006.png",
+    "sourceFile": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/images/adv_still/ADV_still_006.png",
+    "sourceExists": true,
+    "stagedFile": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-still006-proposal-20261112-v1/assets/pictures/ADV_still_006.png",
+    "stagedExists": true,
+    "formalDestinationAbsent": true,
+    "payloadHashOrImageReviewRepeated": false
+  },
+  "targets": [
+    {
+      "sceneId": 10450056,
+      "scenarioId": 26,
+      "uniqId": 1045005600026,
+      "stableKey": "s10450056-p30-at0528",
+      "sourceJA": "虹の輝きに散るがいい！アル・クラウゼリア！!",
+      "localizedNativeMsg": "在虹光之中消散吧！阿尔·克劳泽利亚！！",
+      "expected": {
+        "character_image": ""
+      },
+      "fields": {
+        "character_image": "ADV_still_006"
+      },
+      "simulatedOnlyNativeFieldDelta": [
+        "character_image"
+      ],
+      "commandsRemain": [
+        "",
+        "",
+        ""
+      ],
+      "externalUidAndJaGuardMatched": true
+    },
+    {
+      "sceneId": 10450056,
+      "scenarioId": 27,
+      "uniqId": 1045005600027,
+      "stableKey": "s10450056-p30-at0533",
+      "sourceJA": "ああっ!?",
+      "localizedNativeMsg": "啊啊！？",
+      "expected": {
+        "character_image": ""
+      },
+      "fields": {
+        "character_image": "ADV_still_006"
+      },
+      "simulatedOnlyNativeFieldDelta": [
+        "character_image"
+      ],
+      "commandsRemain": [
+        "",
+        "",
+        ""
+      ],
+      "externalUidAndJaGuardMatched": true
+    }
+  ],
+  "nodeFieldsInterface": {
+    "allowedPreconditions": "STRING_FIELDS or command only",
+    "expectedContainsOnlyCharacterImage": true,
+    "fieldsContainOnlyCharacterImage": true,
+    "uidScenarioTypeNotInExpected": true,
+    "uidAndJapaneseMetadataEnforcedByNodeFields": false,
+    "requiredSeparateGuards": "UID and review.sourceText checked above; retain external integration guard",
+    "draftRequiresRootConfirmedRowsBeforeNormalImporter": true
+  },
+  "scope": "Exactly three catalog additions +two character_image fields; no command/Wait/motion/face/position/geometry acceptance",
+  "formalDataChanged": false,
+  "sourceCodeChanged": false,
+  "browserStarted": false,
+  "newImagesViewed": false
+}
