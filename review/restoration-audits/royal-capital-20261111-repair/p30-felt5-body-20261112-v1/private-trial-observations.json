@@ -1,0 +1,52 @@
+{
+  "target": {"sceneId": 10450054, "nodeIndex": 5, "stableKey": "s10450054-p30-at0033"},
+  "reviewer": "/root/p30_felt_entry_review",
+  "decision": "body_only_act_punpun_supported_by_complete_sequence",
+  "suggestedBodyToken": "act_punpun",
+  "wholePerformanceAccepted": false,
+  "formalDataChangedByReviewer": false,
+  "reviewScope": {
+    "runtimeVideo": "../p30-punpun-4-5-6.webm",
+    "fps": "25/1",
+    "videoDurationSeconds": 45.6,
+    "directlyReviewedPtsSeconds": [5.52, 38.0],
+    "allDecodedFramesDirectlyReviewed": 813,
+    "chronologicalContactSheetsDirectlyReviewed": 33,
+    "boundariesIncluded": ["node4 predecessor", "node5 complete entry", "node5 complete hold", "node5 complete exit", "node6 entry and complete dialogue"],
+    "additionalFullResolutionFrames": [73, 76, 77, 79, 80, 81, 83, 92, 104, 116, 703, 704],
+    "readyImagesReviewed": ["../felt5-ready.png", "../node6-ready.png"],
+    "originalEvidenceReused": "../../visual-low/p30-felt5-source-entry-review-v1",
+    "previouslyReviewedOriginalFrameCount": 345,
+    "originalPtsSeconds": [30.523, 41.989],
+    "originalFramesReopenedThisReview": [70, 81, 152]
+  },
+  "runtimeTimeline": [
+    {"pts": 7.12, "observation": "Predecessor bubble begins dimming over blurred background; node4 body absent."},
+    {"pts": 8.36, "frame": 72, "observation": "No Felt body; background remains blurred."},
+    {"pts": 8.4, "frame": 73, "observation": "Complete open-eyed Felt abruptly visible, arms low."},
+    {"ptsRange": [8.56, 8.64], "frames": [77, 79], "observation": "Eyelids lowered; intermediate pose repeated in capture."},
+    {"pts": 8.68, "frame": 80, "observation": "Eyes closed; head turned toward viewer right and chin raised; empty Felt bubble present."},
+    {"pts": 8.72, "frame": 81, "observation": "Chinese dialogue starts typing; eyes remain closed."},
+    {"ptsRange": [8.72, 10.48], "observation": "Typing interval includes small mouth openings and closures while head/eyes keep the punpun attitude."},
+    {"ptsRange": [10.48, 33.6], "observation": "Completed dialogue and closed-eye, raised-chin, low-arm hold; no return to frontal open-eyed default pose."},
+    {"pts": 33.6, "frame": 703, "observation": "Last visible complete Felt body, still closed-eyed."},
+    {"pts": 33.64, "frame": 704, "observation": "Body gone; blurred background with old Felt bubble remains."},
+    {"pts": 34.4, "frame": 723, "observation": "Next bubble appears; node6 body remains absent through reviewed tail."}
+  ],
+  "supportedMatches": [
+    "open-eyed entry followed by deliberate eyelid lowering",
+    "head turn toward viewer right and raised chin",
+    "sustained closed eyes with non-smiling mouth attitude",
+    "low arms, no raised-hand or hip-hand performance",
+    "closed-eye body attitude retained until exit"
+  ],
+  "remainingDifferences": [
+    {"kind": "transition", "observation": "No visible faint-body ramp before first complete body and no intermediate dim body at exit in this 25 fps capture.", "source": "Original contains faint entry body and dim exit body."},
+    {"kind": "visible_frame_discontinuity", "observation": "Repeated entry poses precede a visible step to the closed-eye turned pose.", "cause": "unknown; capture alone does not separate renderer, transition, and recording effects"},
+    {"kind": "other_nodes", "observation": "Subaru bodies at node4 and node6 remain absent; tshirt01/02 identity pending."}
+  ],
+  "unacceptedOrUnknown": ["separate face token", "extra tokens including explicit off", "original CSV spelling", "exact native motion onset/duration", "exact fade timing", "mouth/voice synchronization", "whole-scene geometry acceptance"],
+  "observerHold": {"requestedMilliseconds": 8500, "isNativeWaitEvidence": false, "note": "Capture includes deliberate observation; source SPEED x5.0 does not establish a native-time conversion."},
+  "nextDirectFix": "Install only body act_punpun for this stable key; log existing CardIn/CardOut visibility, opacity, animation time and frame time to locate remaining appearance/disappearance discontinuity.",
+  "processes": {"browserStartedByReviewer": false, "ffmpegExitCode": 0, "contactHelperExitCode": 0, "remainingToolHandles": []}
+}
