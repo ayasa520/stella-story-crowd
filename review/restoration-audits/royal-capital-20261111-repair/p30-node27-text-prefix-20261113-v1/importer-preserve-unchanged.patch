@@ -1,0 +1,22 @@
+diff --git a/data/native_recovery/royal-capital-20261110/repair-20261111/p30-node27-dashes-integration-20261113-v1/native_repair.before.py b/story_studio/recovery/native_repair.py
+index e5781ce..e650fa9 100644
+--- a/data/native_recovery/royal-capital-20261110/repair-20261111/p30-node27-dashes-integration-20261113-v1/native_repair.before.py
++++ b/story_studio/recovery/native_repair.py
+@@ -95,6 +95,17 @@ class ReviewedRepair:
+             # in sourceText so the existing editor can expose both languages;
+             # copying Japanese to both fields would hide the original defect.
+             corrected_source = change.get("correctedSourceText", source)
++            # A small source correction still supplies the entire guarded
++            # scene packet. Opting into no-op preservation keeps unrelated
++            # translation provenance intact instead of replacing every row's
++            # evidence merely because its current values were carried forward.
++            # Explicit branch work always follows the existing update path;
++            # full-scene coverage and all source/native guards remain required.
++            if (packet.get("preserveUnchanged") is True and corrected_source == source
++                    and chinese == node["msg_text"] == review.get("translation")
++                    and not change.get("branches")):
++                self.counts["unchangedTranslationsPreserved"] += 1
++                continue
+             if corrected_source != source:
+                 # A later frame review may disambiguate an OCR glyph. Keep
+                 # the previous reading and its direct image evidence beside
