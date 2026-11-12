@@ -1,0 +1,48 @@
+{
+  "status": "passed-bounded-offline-source-and-layout-review",
+  "blockingFindings": [],
+  "metadataCoverage": {
+    "nativeConfigScenes": 155,
+    "currentManifestScenes": 140,
+    "currentScenesMissingNativeMetadata": 0,
+    "currentNativeRouteTypeOneScenes": 29,
+    "actualIfTitleExample": "10030005:1",
+    "nativeFactsSeparateFromManualDisplayOverrides": true
+  },
+  "bodyCompatibility": {
+    "comparison": "Applied NativeFont layout and recording-context glyph draw calls versus pre-title implementation",
+    "cases": 12,
+    "coverage": "Japanese, Chinese, newline, and partial visibility at 0/1/4/Infinity glyphs",
+    "layoutAndDrawCallsEqual": true,
+    "optionalCallbackPosition": 5,
+    "existingVisibleCountArgumentPreserved": true,
+    "defaultBodyColorPathPreserved": true,
+    "bitmapOrSdfPixelsRendered": false
+  },
+  "layoutChecks": {
+    "actualTitleRows": 159,
+    "languages": ["ja", "zh"],
+    "titleAndRouteLayouts": 636,
+    "missingGlyphs": 0,
+    "layoutErrors": 0,
+    "glyphBitmapBoundsOutside1080x1920Viewport": 0,
+    "titleFontSizeRange": [69.2, 119.95],
+    "routeFontSize": 49.95,
+    "p29TitleExamples": {
+      "頼れる騎士": 119.95,
+      "今度こそ取り戻す": 112.5
+    },
+    "boundaryLimit": "SDF bitmap padding may extend beyond a logical text rectangle. The full-viewport canvas does not clip individual text rectangles. This is not a raster or ink-boundary equivalence claim.",
+    "detailedResult": "../target-native-title-applied-review-20261112-v1/offline-layout-results.json"
+  },
+  "visualReview": "formal-image-review.md",
+  "remainingGaps": [
+    "Original native 2.5-second entry animation; existing 1.6-second flow retained",
+    "TMP spacing conversion",
+    "Universal prefix first-glyph tint rule",
+    "Pixel equivalence for every scene and viewport"
+  ],
+  "browserCompilerServerOrProductionPlayerExecutedByReviewer": false,
+  "productionSourceOrFormalDataModifiedByReviewer": false,
+  "additionalChecksAfterRequestedSummary": false
+}

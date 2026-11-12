@@ -1,0 +1,120 @@
+Original APK1.19.7 data/libil2cpp-offline.so; read-only LLVM disassembly.
+Unity.TextMeshPro.dll module name at RVA0x23ea3c4; codegen module at RVA0x2c8f2a8.
+Module method-pointer count0x5ac; method-pointer table RVA0x2f140d0.
+TMP_Text.get_characterSpacing token0x06000338 ->0xfce948.
+TextMeshProUGUI.GenerateTextMesh token0x060004f9 ->0x1000c48.
+Spacing evidence only: settled-title implementation remains character spacing0.
+
+TMP_Text.get_characterSpacing: direct field offset
+
+data/libil2cpp-offline.so:	file format elf64-littleaarch64
+
+Disassembly of section il2cpp:
+
+0000000000e1da30 <__start_il2cpp>:
+  fce948:      	ldr	s0, [x0, #0x2b0]
+  fce94c:      	ret
+  fce950:      	ldr	s1, [x0, #0x2b0]
+  fce954:      	fcmp	s1, s0
+  fce958:      	b.ne	0xfce960 <__start_il2cpp+0x1b0f30>
+  fce95c:      	ret
+
+
+GenerateTextMesh: ordinary font/glyph scale calculation (s14)
+
+data/libil2cpp-offline.so:	file format elf64-littleaarch64
+
+Disassembly of section il2cpp:
+
+0000000000e1da30 <__start_il2cpp>:
+ 1001b0c:      	ldr	s1, [sp, #0x120]
+ 1001b10:      	ldr	x8, [x19, #0xaf0]
+ 1001b14:      	scvtf	s2, w20
+ 1001b18:      	fmul	s1, s1, s8
+ 1001b1c:      	fdiv	s1, s1, s2
+ 1001b20:      	fmul	s8, s1, s0
+ 1001b24:      	str	s8, [x19, #0x3f8]
+ 1001b28:      	cbz	x8, 0x1008f58 <__start_il2cpp+0x1eb528>
+ 1001b2c:      	ldr	x0, [x8, #0x18]
+ 1001b30:      	ldr	x20, [sp, #0x148]
+ 1001b34:      	str	s10, [sp, #0x10c]
+ 1001b38:      	cbz	x0, 0x1008f58 <__start_il2cpp+0x1eb528>
+ 1001b3c:      	ldr	s9, [x19, #0x3fc]
+ 1001b40:      	ldr	s10, [x8, #0x24]
+ 1001b44:      	mov	x1, xzr
+ 1001b48:      	bl	0x14dbef0 <__start_il2cpp+0x6be4c0>
+ 1001b4c:      	ldr	x8, [x21]
+ 1001b50:      	cbz	x8, 0x1008f58 <__start_il2cpp+0x1eb528>
+ 1001b54:      	ldr	x8, [x8, #0x38]
+ 1001b58:      	cbz	x8, 0x1008f58 <__start_il2cpp+0x1eb528>
+ 1001b5c:      	ldrsw	x9, [x20]
+ 1001b60:      	ldr	w10, [x8, #0x18]
+ 1001b64:      	cmp	w9, w10
+ 1001b68:      	b.hs	0x1008f80 <__start_il2cpp+0x1eb550>
+ 1001b6c:      	madd	x8, x9, x28, x8
+ 1001b70:      	str	wzr, [x8, #0x2c]
+ 1001b74:      	ldr	x8, [x21]
+ 1001b78:      	cbz	x8, 0x1008f58 <__start_il2cpp+0x1eb528>
+ 1001b7c:      	ldr	x8, [x8, #0x38]
+ 1001b80:      	cbz	x8, 0x1008f58 <__start_il2cpp+0x1eb528>
+ 1001b84:      	ldrsw	x9, [x20]
+ 1001b88:      	ldr	w10, [x8, #0x18]
+ 1001b8c:      	cmp	w9, w10
+ 1001b90:      	b.hs	0x1008f80 <__start_il2cpp+0x1eb550>
+ 1001b94:      	fmul	s1, s8, s9
+ 1001b98:      	fmul	s1, s1, s10
+ 1001b9c:      	fmul	s14, s1, s0
+ 1001ba0:      	madd	x8, x9, x28, x8
+ 1001ba4:      	str	s14, [x8, #0x158]
+
+
+GenerateTextMesh: load raw m_characterSpacing
+
+data/libil2cpp-offline.so:	file format elf64-littleaarch64
+
+Disassembly of section il2cpp:
+
+0000000000e1da30 <__start_il2cpp>:
+ 1001d30:      	ldrb	w8, [x19, #0x2fa]
+ 1001d34:      	ldr	s11, [x19, #0x2b0]
+ 1001d38:      	cbz	w8, 0x1001df4 <__start_il2cpp+0x1e43c4>
+
+
+GenerateTextMesh: retain raw spacing in stack slot
+
+data/libil2cpp-offline.so:	file format elf64-littleaarch64
+
+Disassembly of section il2cpp:
+
+0000000000e1da30 <__start_il2cpp>:
+ 100230c:      	str	s14, [sp, #0xf0]
+ 1002310:      	str	s11, [sp, #0xf8]
+ 1002314:      	str	s10, [sp, #0x140]
+
+
+GenerateTextMesh: add spacing before font/glyph scale in normal advance
+
+data/libil2cpp-offline.so:	file format elf64-littleaarch64
+
+Disassembly of section il2cpp:
+
+0000000000e1da30 <__start_il2cpp>:
+ 10035d4:      	cbz	x8, 0x1008f68 <__start_il2cpp+0x1eb538>
+ 10035d8:      	ldr	s4, [sp, #0xf4]
+ 10035dc:      	fmul	s0, s8, s0
+ 10035e0:      	ldr	s1, [x8, #0x1ac]
+ 10035e4:      	ldr	s2, [x19, #0x2b4]
+ 10035e8:      	fmul	s0, s4, s0
+ 10035ec:      	ldr	s4, [sp, #0xf8]
+ 10035f0:      	ldr	s3, [x19, #0x2d8]
+ 10035f4:      	fadd	s0, s4, s0
+ 10035f8:      	fadd	s0, s0, s1
+ 10035fc:      	ldr	s1, [sp, #0xc8]
+ 1003600:      	fadd	s0, s1, s0
+ 1003604:      	fmul	s0, s14, s0
+ 1003608:      	fadd	s0, s2, s0
+ 100360c:      	fsub	s1, s15, s3
+ 1003610:      	fmul	s0, s1, s0
+ 1003614:      	fadd	s0, s9, s0
+ 1003618:      	str	s0, [x19, #0xae8]
+
