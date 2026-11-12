@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target_pure_json_audit_v1.py",
+    "--base-commit",
+    "45fcd6a4b1192c5b04d7fb9bd65e9a6e425f34de",
+    "--expected-character",
+    "1835",
+    "--expected-background",
+    "146",
+    "--expected-motion",
+    "5",
+    "--expected-voice",
+    "12",
+    "--new-character",
+    "4",
+    "--new-background",
+    "0",
+    "--new-motion",
+    "0",
+    "--new-voice",
+    "0"
+  ],
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target_pure_json_audit_v1.py\", line 33, in <module>\n    main()\n    ~~~~^^\n  File \"/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/target_pure_json_audit_v1.py\", line 29, in main\n    runpy.run_path(str(audit), run_name='__main__')\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audit_v20_publication.py\", line 125, in <module>\n    main()\n    ~~~~^^\n  File \"/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audit_v20_publication.py\", line 43, in main\n    catalog = read(LIBRARY / \"assets/catalog.json\")\n  File \"/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/audit_v20_publication.py\", line 18, in read\n    return json.loads(path.read_bytes())\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/json/__init__.py\", line 352, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\n  File \"/usr/lib/python3.14/json/scanner.py\", line 67, in scan_once\n    return _scan_once(string, idx)\n  File \"/usr/lib/python3.14/json/scanner.py\", line 37, in _scan_once\n    return parse_object((string, idx + 1), strict,\n        _scan_once, object_hook, object_pairs_hook, memo)\n  File \"/usr/lib/python3.14/json/decoder.py\", line 187, in JSONObject\n    value, end = scan_once(s, end)\n                 ~~~~~~~~~^^^^^^^^\n  File \"/usr/lib/python3.14/json/scanner.py\", line 37, in _scan_once\n    return parse_object((string, idx + 1), strict,\n        _scan_once, object_hook, object_pairs_hook, memo)\n  File \"/usr/lib/python3.14/json/decoder.py\", line 187, in JSONObject\n    value, end = scan_once(s, end)\n                 ~~~~~~~~~^^^^^^^^\n  File \"/usr/lib/python3.14/json/scanner.py\", line 37, in _scan_once\n    return parse_object((string, idx + 1), strict,\n        _scan_once, object_hook, object_pairs_hook, memo)\n  File \"/usr/lib/python3.14/json/decoder.py\", line 187, in JSONObject\n    value, end = scan_once(s, end)\n                 ~~~~~~~~~^^^^^^^^\n  File \"/usr/lib/python3.14/json/scanner.py\", line 37, in _scan_once\n    return parse_object((string, idx + 1), strict,\n        _scan_once, object_hook, object_pairs_hook, memo)\n  File \"/usr/lib/python3.14/json/decoder.py\", line 187, in JSONObject\n    value, end = scan_once(s, end)\n                 ~~~~~~~~~^^^^^^^^\n  File \"/usr/lib/python3.14/json/scanner.py\", line 37, in _scan_once\n    return parse_object((string, idx + 1), strict,\n        _scan_once, object_hook, object_pairs_hook, memo)\n  File \"/usr/lib/python3.14/json/decoder.py\", line 187, in JSONObject\n    value, end = scan_once(s, end)\n                 ~~~~~~~~~^^^^^^^^\n  File \"/usr/lib/python3.14/json/scanner.py\", line 35, in _scan_once\n    return parse_string(string, idx + 1, strict)\n  File \"/usr/lib/python3.14/json/decoder.py\", line 100, in py_scanstring\n    raise JSONDecodeError(msg, s, end - 1)\njson.decoder.JSONDecodeError: Invalid control character '\\x00' at: line 1 column 2705333 (char 2705332)\n"
+}
