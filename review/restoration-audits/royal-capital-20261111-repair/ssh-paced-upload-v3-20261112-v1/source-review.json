@@ -1,0 +1,32 @@
+{
+  "status": "source-frozen-static-review-passed-no-execution",
+  "source": "github_ssh_paced_v3.py",
+  "language": "Python",
+  "defaultRateBytesPerSecond": 65536,
+  "maximumReadChunkBytes": 16384,
+  "pacedChildDeadlineSeconds": 900,
+  "terminationGraceSeconds": 5,
+  "scheduling": "One monotonic length/rate reservation per actual os.read chunk, on its first successful write; partial writes retain their offset without per-byte pacing.",
+  "waitsToFillAReadChunk": false,
+  "nonblockingFd": "SSH child stdin write end only; Git input fd flags preserved",
+  "sshChildrenPerPacedInvocation": 1,
+  "stdoutAndStderrInherited": true,
+  "stdinReplayOrReconnect": false,
+  "signalForwardingOwnedGroupAndChildReaping": true,
+  "diagnosticsContainInputBytes": false,
+  "v2TimeoutCause": "unknown",
+  "sshFailureResolvedOrRemoteAckClaimed": false,
+  "checks": {
+    "astParse": "passed",
+    "compileAstWithoutExecution": "passed",
+    "onePopenAndDirectOutput": "passed",
+    "noTokenBucketOrMicroSleepLoop": "passed",
+    "osReadAndPartialOffset": "passed",
+    "wholeChunkReservation": "passed"
+  },
+  "moduleImportedOrExecuted": false,
+  "dnsSshPushFetchOrBrowserExecuted": false,
+  "v2RouteHelperGitConfigOrFormalRepositoryModified": false,
+  "sourceEditsAfterFreezeConfirmation": false,
+  "nextUploadAndRemoteAckOwner": "/root"
+}

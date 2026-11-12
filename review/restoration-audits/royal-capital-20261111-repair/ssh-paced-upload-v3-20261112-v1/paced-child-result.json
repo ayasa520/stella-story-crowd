@@ -1,0 +1,46 @@
+[
+  {
+    "unix": 1794497456.414425,
+    "pid": 7736,
+    "status": "paced_upload_started",
+    "version": 3,
+    "child": 7740,
+    "rate": 65536,
+    "chunkSize": 16384,
+    "timeout": 900,
+    "pacing": "one-deadline-per-available-chunk",
+    "stdinReplay": false
+  },
+  {
+    "unix": 1794497589.262173,
+    "pid": 7736,
+    "status": "paced_upload_exited",
+    "version": 3,
+    "child": 7740,
+    "exitCode": 0,
+    "sshExitCode": 0,
+    "reason": "ssh_exit",
+    "elapsedSeconds": 132.84736916800466,
+    "statistics": {
+      "readCalls": 508,
+      "readChunks": 507,
+      "readBytes": 8278121,
+      "writeCalls": 507,
+      "writtenBytes": 8278121,
+      "partialWrites": 0,
+      "wouldBlockWrites": 0,
+      "minWriteBytes": 179,
+      "maxWriteBytes": 16384,
+      "scheduledChunks": 507,
+      "pacingWaitCalls": 505,
+      "maxPlannedPacingWaitSeconds": 0.2499543750018347,
+      "maxChunkFirstWriteDelaySeconds": 0.2666008329979377,
+      "maxSelectWaitSeconds": 0.266476041993883
+    },
+    "pendingUnsentBytes": 0,
+    "sentBytesMeaning": "accepted by child stdin, not a remote ACK",
+    "feederError": null,
+    "stdinReplay": false,
+    "reconnect": false
+  }
+]
