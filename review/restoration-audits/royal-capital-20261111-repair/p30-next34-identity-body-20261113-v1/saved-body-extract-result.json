@@ -1,0 +1,33 @@
+{
+  "exitCode": 0,
+  "frames": 1876,
+  "elapsedSeconds": 9.720573663711548,
+  "args": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "warning",
+    "-filter_threads",
+    "1",
+    "-filter_complex_threads",
+    "1",
+    "-ss",
+    "13.614",
+    "-threads",
+    "1",
+    "-i",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-next34-native-runtime-20261113-v1/saved-felt33-body-32-33-34.webm",
+    "-an",
+    "-vf",
+    "fps=30",
+    "-c:v",
+    "mjpeg",
+    "-threads",
+    "1",
+    "-pix_fmt",
+    "yuvj420p",
+    "-q:v",
+    "2",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-next34-native-runtime-20261113-v1/saved-body-frame-review-v1/frames/frame-%05d.jpg"
+  ]
+}

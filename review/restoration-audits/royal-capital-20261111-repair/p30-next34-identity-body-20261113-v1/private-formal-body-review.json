@@ -1,0 +1,71 @@
+{
+  "schema": "stella.complete_private_body_comparison.v1",
+  "reviewer": "/root/p29_packet_preflight",
+  "decision": "body_only_act_punpun_source_match_formal_binding_recommended",
+  "target": {
+    "sceneId": 10450056,
+    "scenarioId": 33,
+    "stableKey": "s10450056-p30-at0560",
+    "model": "felt01"
+  },
+  "bodyToken": "act_punpun",
+  "bodyOnlyAccepted": true,
+  "acceptedMeaning": "Source-backed authored body assignment; not original CSV recovery or acceptance of every visible timing/geometry detail.",
+  "runWasPrivateMemoryOverride": true,
+  "formalSavedDataPlaybackAccepted": false,
+  "rootOwnsFormalFieldGuardsAndPublication": true,
+  "wholePerformanceAccepted": false,
+  "closureChecked": true,
+  "runtimeReview": {
+    "video": "felt33-body-32-33-34.webm",
+    "result": "felt-result.json",
+    "extractionPlan": "felt33-frame-review-v1/plan.json",
+    "allConsecutiveFramesDirectlyViewed": 719,
+    "firstFrame": 1,
+    "lastFrame": 719,
+    "allDetailedContactPagesDirectlyViewed": 36,
+    "contactIndex": "felt33-frame-review-v1/peer-contacts-v1/detail-index.json",
+    "contactCrop": "Browser margins/toolbars only; originals unchanged.",
+    "selectedFullResolutionFrames": [1, 301, 307, 308, 309, 311, 667, 668],
+    "clockLimit": "Nominal video positions16.418+(frameIndex-1)/30. Existing runtime extraction uses fps=30; these are not native command times."
+  },
+  "actualBodyLandmarks": [
+    {"frameRange": [301, 303], "observed": "Open-eye arrival before final held head pose."},
+    {"frameRange": [307, 309], "observed": "Lids progressively lower to near-closed as head turns/chin rises."},
+    {"frame": 311, "observed": "Clearly closed non-smiling eyes, raised/turned head, both arms low."},
+    {"frameRange": [311, 667], "observed": "Closed-eye raised/turned-head low-arm hold persists, small continuing motion; no default open-eye reset or additional gesture."},
+    {"frame": 668, "observed": "Felt absent, blurred shop visible."},
+    {"frameRange": [683, 719], "observed": "Julius34 returns and dialogue continues."}
+  ],
+  "sourceComparison": {
+    "report": "visual-low/target-p30-felt33-source-entry-20261113-v1/REPORT.md",
+    "fullSourceFramesPreviouslyDirectlyViewed": 255,
+    "sourcePtsWindow": [558.522, 566.988],
+    "nativeEvidence": "visual-low/target-p30-felt33-source-entry-20261113-v1/native-component-evidence.json",
+    "matched": ["open-to-lowered-to-closed eyes", "head turn and chin rise", "non-smiling closed-eye hold", "low arms through exit"],
+    "sourceReextracted": false
+  },
+  "actualBindingEvidence": [
+    "STORY_MOTION_BINDING felt01 act_punpun act_punpun act_punpun",
+    "STORY_MOTION_LAYERS felt01 [{\"layer\":\"motion\",\"token\":\"act_punpun\"}]",
+    "STORY_ANIMATOR_TRANSITION felt01 motion act_punpun_w"
+  ],
+  "separateFaceAccepted": false,
+  "extrasAccepted": false,
+  "geometryAccepted": false,
+  "fadeAndPreciseTimingAccepted": false,
+  "lipVoiceSyncAccepted": false,
+  "audioAccepted": false,
+  "originalScriptCSVRecovered": false,
+  "observedTransitionLimit": "Runtime667→668 has no visible actor-darkening intermediate; source contains a dimming state. Cause not assigned and body token is not changed to mask it.",
+  "observerHold33Milliseconds": 2200,
+  "observerHoldIsNativeWaitEvidence": false,
+  "reviewerActions": {
+    "newContactGeneration": true,
+    "newFFmpegExecution": false,
+    "browserOrCliExecuted": false,
+    "compilerExecuted": false,
+    "formalSourceOrDataWritten": false,
+    "gitMutation": false
+  }
+}

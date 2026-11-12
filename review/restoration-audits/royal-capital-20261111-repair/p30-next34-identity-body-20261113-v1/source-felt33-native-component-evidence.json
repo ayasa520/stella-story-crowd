@@ -1,0 +1,748 @@
+{
+  "schema": "stella.one_body_component_source_evidence.v1",
+  "model": "felt01",
+  "nativeToken": "live2d/AC_felt01",
+  "candidateScriptString": "act_punpun",
+  "controllerName": "AC_felt01_ver2",
+  "originalControllerReceipt": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p30-felt5-target-independent-review-20261112-v1/native-controller-and-curve-binding.json",
+  "currentScriptBindings": {
+    "act_punpun": {
+      "token": "act_punpun",
+      "kind": "body",
+      "trigger": "act_punpun",
+      "state": "act_punpun",
+      "loop": false,
+      "transitions": [
+        {
+          "target": "act_punpun_w",
+          "duration": 0.10000000149011612,
+          "offset": 0.0,
+          "exit_time": 0.8999999761581421,
+          "has_exit_time": true,
+          "fixed_duration": true,
+          "conditions": []
+        }
+      ],
+      "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun.motion3.json"
+    },
+    "act_punpun_w": {
+      "token": "act_punpun",
+      "kind": "body",
+      "trigger": "act_punpun",
+      "state": "act_punpun",
+      "loop": false,
+      "transitions": [
+        {
+          "target": "act_punpun_w",
+          "duration": 0.10000000149011612,
+          "offset": 0.0,
+          "exit_time": 0.8999999761581421,
+          "has_exit_time": true,
+          "fixed_duration": true,
+          "conditions": []
+        }
+      ],
+      "member": "LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun.motion3.json"
+    }
+  },
+  "nativeSelectedStates": {
+    "act_punpun": {
+      "loop": false,
+      "speed": 1.0,
+      "offset": 0.0,
+      "speed_parameter": 0,
+      "transitions": [
+        {
+          "target": "act_punpun_w",
+          "duration": 0.10000000149011612,
+          "offset": 0.0,
+          "exit_time": 0.8999999761581421,
+          "has_exit_time": true,
+          "fixed_duration": true,
+          "conditions": []
+        }
+      ],
+      "selection": null
+    },
+    "act_punpun_w": {
+      "loop": true,
+      "speed": 1.0,
+      "offset": 0.0,
+      "speed_parameter": 0,
+      "transitions": [],
+      "selection": null
+    }
+  },
+  "nativeTrigger": [
+    {
+      "target": "act_punpun",
+      "duration": 0.25,
+      "offset": 0.0,
+      "exit_time": 0.75,
+      "has_exit_time": false,
+      "fixed_duration": true,
+      "conditions": [
+        {
+          "name": "act_punpun",
+          "mode": 1,
+          "threshold": 0.0
+        }
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "token": "act_punpun",
+      "export": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun.motion3.json",
+      "originalUnityClip": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_punpun.anim",
+      "originalBindingReceipt": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p30-felt5-target-independent-review-20261112-v1/native-controller-and-curve-binding.json",
+      "durationNativeSeconds": 1.0,
+      "selectedRawMotion3Curves": [
+        {
+          "target": "Parameter",
+          "id": "ParamAngleX",
+          "segments": [
+            0,
+            0,
+            1,
+            0.067,
+            0,
+            0.133,
+            -4.17,
+            0.2,
+            -11,
+            1,
+            0.289,
+            -20.106,
+            0.378,
+            -24,
+            0.467,
+            -24,
+            0,
+            0.667,
+            26,
+            0,
+            1,
+            17
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamAngleY",
+          "segments": [
+            0,
+            -7,
+            1,
+            0.067,
+            -7,
+            0.133,
+            -12.677,
+            0.2,
+            -19,
+            1,
+            0.289,
+            -27.431,
+            0.378,
+            -30,
+            0.467,
+            -30,
+            0,
+            0.667,
+            25,
+            0,
+            1,
+            18
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamAngleZ",
+          "segments": [
+            0,
+            0,
+            2,
+            0.2,
+            0,
+            2,
+            0.467,
+            0,
+            0,
+            0.667,
+            -5,
+            2,
+            1,
+            -5
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamEyeLOpen",
+          "segments": [
+            0,
+            1,
+            0,
+            0.2,
+            0.9,
+            2,
+            0.467,
+            0.9,
+            0,
+            0.667,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamEyeROpen",
+          "segments": [
+            0,
+            1,
+            0,
+            0.2,
+            0.9,
+            2,
+            0.467,
+            0.9,
+            0,
+            0.667,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamMouthForm",
+          "segments": [
+            0,
+            -1,
+            0,
+            0.233,
+            -0.6,
+            0,
+            0.467,
+            -1,
+            2,
+            0.667,
+            -1,
+            2,
+            1,
+            -1
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamUpperArmR",
+          "segments": [
+            0,
+            0,
+            2,
+            0.2,
+            0,
+            2,
+            0.467,
+            0,
+            0,
+            0.667,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamUpperArmL",
+          "segments": [
+            0,
+            0,
+            2,
+            0.2,
+            0,
+            2,
+            0.467,
+            0,
+            0,
+            0.667,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamForeArmL",
+          "segments": [
+            0,
+            0,
+            2,
+            0.2,
+            0,
+            2,
+            0.467,
+            0,
+            0,
+            0.667,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamForeArmR",
+          "segments": [
+            0,
+            0,
+            2,
+            0.2,
+            0,
+            2,
+            0.467,
+            0,
+            0,
+            0.667,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamBodyAngleX",
+          "segments": [
+            0,
+            0,
+            2,
+            0.2,
+            0,
+            0,
+            0.467,
+            2,
+            0,
+            0.667,
+            -8,
+            0,
+            1,
+            -4
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamBodyAngleZ",
+          "segments": [
+            0,
+            0,
+            2,
+            0.2,
+            0,
+            2,
+            0.467,
+            0,
+            0,
+            0.667,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamCheek",
+          "segments": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamEyeRSmile",
+          "segments": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamEyeLSmile",
+          "segments": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamBodyAngleY",
+          "segments": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "endpoints": {
+        "ParamEyeLOpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 1,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 0,
+          "last": 17
+        },
+        "ParamAngleY": {
+          "start": -7,
+          "last": 18
+        },
+        "ParamAngleZ": {
+          "start": 0,
+          "last": -5
+        },
+        "ParamBodyAngleX": {
+          "start": 0,
+          "last": -4
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": 0,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      }
+    },
+    {
+      "token": "act_punpun_w",
+      "export": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/motions/AC_felt01_act_punpun_w.motion3.json",
+      "originalUnityClip": "/home/rikka/Projects/stella/data/extracted_archives/original/com.sega.stella/files/AssetBundle/assets/ac_felt01_act_punpun_w.anim",
+      "originalBindingReceipt": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/visual-low/p30-felt5-target-independent-review-20261112-v1/native-controller-and-curve-binding.json",
+      "durationNativeSeconds": 2.0,
+      "selectedRawMotion3Curves": [
+        {
+          "target": "Parameter",
+          "id": "ParamAngleY",
+          "segments": [
+            0,
+            18,
+            0,
+            0.5,
+            20,
+            0,
+            1.333,
+            16,
+            0,
+            2,
+            18
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamAngleX",
+          "segments": [
+            0,
+            17,
+            0,
+            2,
+            17
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamAngleZ",
+          "segments": [
+            0,
+            -5,
+            0,
+            2,
+            -5
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamCheek",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamEyeLOpen",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamEyeROpen",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamEyeRSmile",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamEyeLSmile",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamMouthForm",
+          "segments": [
+            0,
+            -1,
+            0,
+            2,
+            -1
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamUpperArmR",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamUpperArmL",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamForeArmL",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamForeArmR",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamBodyAngleX",
+          "segments": [
+            0,
+            -4,
+            0,
+            2,
+            -4
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamBodyAngleY",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "target": "Parameter",
+          "id": "ParamBodyAngleZ",
+          "segments": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        }
+      ],
+      "endpoints": {
+        "ParamEyeLOpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeROpen": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeLSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamEyeRSmile": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamAngleX": {
+          "start": 17,
+          "last": 17
+        },
+        "ParamAngleY": {
+          "start": 18,
+          "last": 18
+        },
+        "ParamAngleZ": {
+          "start": -5,
+          "last": -5
+        },
+        "ParamBodyAngleX": {
+          "start": -4,
+          "last": -4
+        },
+        "ParamBodyAngleY": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBodyAngleZ": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamUpperArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmL": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamForeArmR": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamCheek": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxAse": {
+          "start": 0,
+          "last": 0
+        },
+        "ParamBxNamida": {
+          "start": -1,
+          "last": -1
+        },
+        "ParamMouthForm": {
+          "start": -1,
+          "last": -1
+        }
+      }
+    }
+  ],
+  "separateFaceCommand": "unknown; body already contains the observed head/eyelid curves",
+  "productionComparisonRequiredForFelt33": true,
+  "installable": false,
+  "formalDataWritten": false,
+  "rendererExecuted": false
+}

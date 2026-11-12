@@ -1,0 +1,1136 @@
+{
+  "status": "bounded_existing_log_arithmetic_complete_no_cause_inferred",
+  "rootReviewed": false,
+  "rootConfirmed": false,
+  "source": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-next34-native-runtime-20261113-v1/body-result.json",
+  "sourceLogCount": 129,
+  "nodes": {
+    "10450056:32": {
+      "timings": [
+        {
+          "index": 1,
+          "hostDeliveryWall": 1794508591823,
+          "node": "10450056:32",
+          "stage": "enter",
+          "milliseconds": 0
+        },
+        {
+          "index": 10,
+          "hostDeliveryWall": 1794508592262,
+          "node": "10450056:32",
+          "stage": "motion_ready",
+          "milliseconds": 583
+        },
+        {
+          "index": 11,
+          "hostDeliveryWall": 1794508592262,
+          "node": "10450056:32",
+          "stage": "voice_prepare_begin",
+          "milliseconds": 583
+        },
+        {
+          "index": 12,
+          "hostDeliveryWall": 1794508592263,
+          "node": "10450056:32",
+          "stage": "voice_ready",
+          "milliseconds": 583
+        },
+        {
+          "index": 13,
+          "hostDeliveryWall": 1794508592535,
+          "node": "10450056:32",
+          "stage": "text_ready",
+          "milliseconds": 849
+        },
+        {
+          "index": 14,
+          "hostDeliveryWall": 1794508592537,
+          "node": "10450056:32",
+          "stage": "command_resources_ready",
+          "milliseconds": 849
+        },
+        {
+          "index": 15,
+          "hostDeliveryWall": 1794508592537,
+          "node": "10450056:32",
+          "stage": "phase_0_begin",
+          "milliseconds": 850
+        },
+        {
+          "index": 16,
+          "hostDeliveryWall": 1794508592537,
+          "node": "10450056:32",
+          "stage": "phase_0_end",
+          "milliseconds": 850
+        },
+        {
+          "index": 31,
+          "hostDeliveryWall": 1794508593376,
+          "node": "10450056:32",
+          "stage": "phase_1_begin",
+          "milliseconds": 1629
+        },
+        {
+          "index": 32,
+          "hostDeliveryWall": 1794508593376,
+          "node": "10450056:32",
+          "stage": "phase_1_end",
+          "milliseconds": 1629
+        },
+        {
+          "index": 33,
+          "hostDeliveryWall": 1794508593376,
+          "node": "10450056:32",
+          "stage": "text_begin",
+          "milliseconds": 1630
+        },
+        {
+          "index": 36,
+          "hostDeliveryWall": 1794508593748,
+          "node": "10450056:32",
+          "stage": "phase_2_begin",
+          "milliseconds": 1912
+        },
+        {
+          "index": 37,
+          "hostDeliveryWall": 1794508593748,
+          "node": "10450056:32",
+          "stage": "phase_2_end",
+          "milliseconds": 1912
+        }
+      ],
+      "absoluteAnchors": [
+        {
+          "index": 9,
+          "event": "STORY_NORMAL_MOTION_COMMIT",
+          "stage": "motion_commit",
+          "performanceMs": 9765.300000011921
+        },
+        {
+          "index": 24,
+          "event": "STORY_NORMAL_TRANSITION_CLOCK",
+          "stage": "card_wait_start",
+          "performanceMs": 10133.60000000894
+        },
+        {
+          "index": 25,
+          "event": "STORY_CARD_WAIT_START",
+          "performanceMs": 10133.70000000298
+        },
+        {
+          "index": 26,
+          "event": "STORY_CARD_IN_START",
+          "performanceMs": 10139.90000000596
+        },
+        {
+          "index": 27,
+          "event": "STORY_NORMAL_TRANSITION_CLOCK",
+          "stage": "card_in_start",
+          "performanceMs": 10140
+        },
+        {
+          "index": 29,
+          "event": "STORY_CARD_IN_COMPLETE",
+          "performanceMs": 10811.5
+        },
+        {
+          "index": 30,
+          "event": "STORY_NORMAL_TRANSITION_CLOCK",
+          "stage": "card_in_complete",
+          "performanceMs": 10811.60000000894
+        }
+      ],
+      "normal": {
+        "card_wait_start": {
+          "index": 24,
+          "performanceMs": 10133.60000000894,
+          "gameSeconds": 8.132938000000031,
+          "frame": 441
+        },
+        "card_in_start": {
+          "index": 27,
+          "performanceMs": 10140,
+          "gameSeconds": 8.149738000000031,
+          "frame": 442
+        },
+        "card_in_complete": {
+          "index": 30,
+          "performanceMs": 10811.60000000894,
+          "gameSeconds": 8.716371343267474,
+          "frame": 447
+        }
+      },
+      "modelDeliveryMarkers": [
+        {
+          "index": 4,
+          "hostDeliveryWall": 1794508591943,
+          "event": "MODEL_TEXTURE_RETAIN",
+          "text": "MODEL_TEXTURE_RETAIN http://127.0.0.1:5192/asset/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_julius01/ac/ac.model3.json 2 1"
+        },
+        {
+          "index": 6,
+          "hostDeliveryWall": 1794508592089,
+          "event": "MODEL_READY",
+          "text": "MODEL_READY julius01 51 4800 9000 visible=false"
+        },
+        {
+          "index": 7,
+          "hostDeliveryWall": 1794508592160,
+          "event": "STORY_ANIMATOR_READY",
+          "text": "STORY_ANIMATOR_READY julius01 AC_julius01_ver2 [{\"name\":\"motion\",\"token\":\"act_normal_w\"}]"
+        }
+      ],
+      "scalarMarks": {
+        "STORY_CARD_WAIT_START": {
+          "index": 25,
+          "performanceMs": 10133.70000000298
+        },
+        "STORY_CARD_IN_START": {
+          "index": 26,
+          "performanceMs": 10139.90000000596
+        },
+        "STORY_CARD_IN_COMPLETE": {
+          "index": 29,
+          "performanceMs": 10811.5
+        }
+      },
+      "stageElapsedMs": {
+        "enter": 0,
+        "motion_ready": 583,
+        "voice_prepare_begin": 583,
+        "voice_ready": 583,
+        "text_ready": 849,
+        "command_resources_ready": 849,
+        "phase_0_begin": 850,
+        "phase_0_end": 850,
+        "phase_1_begin": 1629,
+        "phase_1_end": 1629,
+        "text_begin": 1630,
+        "phase_2_begin": 1912,
+        "phase_2_end": 1912
+      },
+      "stageIntervalsMs": {
+        "enterToMotionReady": 583,
+        "hiddenToMotionReady": null,
+        "voicePreparation": 0,
+        "textPreparation": 266,
+        "commandResourcePreparation": 0,
+        "phase0": 0,
+        "postPhase0ToPhase1": 779,
+        "phase1": 0,
+        "phase1EndToText": 1,
+        "textToPhase2": 282,
+        "enterToPhase2End": 1912
+      },
+      "nodeBeganPerformanceBoundsMs": [
+        9182.10000000894,
+        9284.10000000894
+      ],
+      "boundEvidence": {
+        "lower": {
+          "kind": "lower",
+          "value": 9182.10000000894,
+          "absolute": {
+            "index": 30,
+            "event": "STORY_NORMAL_TRANSITION_CLOCK",
+            "stage": "card_in_complete",
+            "performanceMs": 10811.60000000894
+          },
+          "timing": {
+            "index": 31,
+            "hostDeliveryWall": 1794508593376,
+            "node": "10450056:32",
+            "stage": "phase_1_begin",
+            "milliseconds": 1629
+          }
+        },
+        "upper": {
+          "kind": "upper",
+          "value": 9284.10000000894,
+          "absolute": {
+            "index": 24,
+            "event": "STORY_NORMAL_TRANSITION_CLOCK",
+            "stage": "card_wait_start",
+            "performanceMs": 10133.60000000894
+          },
+          "timing": {
+            "index": 15,
+            "hostDeliveryWall": 1794508592537,
+            "node": "10450056:32",
+            "stage": "phase_0_begin",
+            "milliseconds": 850
+          }
+        }
+      },
+      "normalIntervals": {
+        "cardWait": {
+          "pagePerformanceMs": 6.399999991059303,
+          "gameMs": 16.799999999999926,
+          "start": {
+            "index": 24,
+            "performanceMs": 10133.60000000894,
+            "gameSeconds": 8.132938000000031,
+            "frame": 441
+          },
+          "end": {
+            "index": 27,
+            "performanceMs": 10140,
+            "gameSeconds": 8.149738000000031,
+            "frame": 442
+          }
+        },
+        "cardIn": {
+          "pagePerformanceMs": 671.6000000089407,
+          "gameMs": 566.6333432674425,
+          "start": {
+            "index": 27,
+            "performanceMs": 10140,
+            "gameSeconds": 8.149738000000031,
+            "frame": 442
+          },
+          "end": {
+            "index": 30,
+            "performanceMs": 10811.60000000894,
+            "gameSeconds": 8.716371343267474,
+            "frame": 447
+          }
+        }
+      },
+      "scalarIntervalsMs": {},
+      "modelDeliveryOnlySpansMs": {
+        "enterToRetain": 120,
+        "retainToModelReady": 146,
+        "modelReadyToAnimatorReady": 71,
+        "animatorReadyToMotionReady": 102
+      }
+    },
+    "10450056:33": {
+      "timings": [
+        {
+          "index": 39,
+          "hostDeliveryWall": 1794508596824,
+          "node": "10450056:33",
+          "stage": "enter",
+          "milliseconds": 0
+        },
+        {
+          "index": 42,
+          "hostDeliveryWall": 1794508596824,
+          "node": "10450056:33",
+          "stage": "card_change_begin",
+          "milliseconds": 2
+        },
+        {
+          "index": 46,
+          "hostDeliveryWall": 1794508596824,
+          "node": "10450056:33",
+          "stage": "card_change_hidden",
+          "milliseconds": 8
+        },
+        {
+          "index": 59,
+          "hostDeliveryWall": 1794508610553,
+          "node": "10450056:33",
+          "stage": "motion_ready",
+          "milliseconds": 13807
+        },
+        {
+          "index": 60,
+          "hostDeliveryWall": 1794508610553,
+          "node": "10450056:33",
+          "stage": "voice_prepare_begin",
+          "milliseconds": 13807
+        },
+        {
+          "index": 61,
+          "hostDeliveryWall": 1794508610553,
+          "node": "10450056:33",
+          "stage": "voice_ready",
+          "milliseconds": 13807
+        },
+        {
+          "index": 62,
+          "hostDeliveryWall": 1794508610557,
+          "node": "10450056:33",
+          "stage": "text_ready",
+          "milliseconds": 13811
+        },
+        {
+          "index": 63,
+          "hostDeliveryWall": 1794508610558,
+          "node": "10450056:33",
+          "stage": "command_resources_ready",
+          "milliseconds": 13811
+        },
+        {
+          "index": 64,
+          "hostDeliveryWall": 1794508610558,
+          "node": "10450056:33",
+          "stage": "phase_0_begin",
+          "milliseconds": 13811
+        },
+        {
+          "index": 65,
+          "hostDeliveryWall": 1794508610558,
+          "node": "10450056:33",
+          "stage": "phase_0_end",
+          "milliseconds": 13811
+        },
+        {
+          "index": 76,
+          "hostDeliveryWall": 1794508611251,
+          "node": "10450056:33",
+          "stage": "card_change_complete",
+          "milliseconds": 14498
+        },
+        {
+          "index": 77,
+          "hostDeliveryWall": 1794508611252,
+          "node": "10450056:33",
+          "stage": "phase_1_begin",
+          "milliseconds": 14498
+        },
+        {
+          "index": 78,
+          "hostDeliveryWall": 1794508611252,
+          "node": "10450056:33",
+          "stage": "phase_1_end",
+          "milliseconds": 14498
+        },
+        {
+          "index": 79,
+          "hostDeliveryWall": 1794508611252,
+          "node": "10450056:33",
+          "stage": "text_begin",
+          "milliseconds": 14499
+        },
+        {
+          "index": 83,
+          "hostDeliveryWall": 1794508612548,
+          "node": "10450056:33",
+          "stage": "phase_2_begin",
+          "milliseconds": 15646
+        },
+        {
+          "index": 84,
+          "hostDeliveryWall": 1794508612548,
+          "node": "10450056:33",
+          "stage": "phase_2_end",
+          "milliseconds": 15646
+        }
+      ],
+      "absoluteAnchors": [
+        {
+          "index": 43,
+          "event": "STORY_PANEL_OUT_START",
+          "performanceMs": 14254.300000011921
+        },
+        {
+          "index": 44,
+          "event": "STORY_CARD_OUT_START",
+          "performanceMs": 14254.70000000298
+        },
+        {
+          "index": 45,
+          "event": "STORY_CARD_OUT_COMPLETE",
+          "performanceMs": 14257.5
+        },
+        {
+          "index": 47,
+          "event": "STORY_PANEL_OUT_COMPLETE",
+          "performanceMs": 14427.800000011921
+        },
+        {
+          "index": 58,
+          "event": "STORY_NORMAL_MOTION_COMMIT",
+          "stage": "motion_commit",
+          "performanceMs": 28055.90000000596
+        },
+        {
+          "index": 69,
+          "event": "STORY_NORMAL_TRANSITION_CLOCK",
+          "stage": "card_wait_start",
+          "performanceMs": 28060.5
+        },
+        {
+          "index": 70,
+          "event": "STORY_CARD_WAIT_START",
+          "performanceMs": 28060.5
+        },
+        {
+          "index": 71,
+          "event": "STORY_CARD_IN_START",
+          "performanceMs": 28095.30000001192
+        },
+        {
+          "index": 72,
+          "event": "STORY_NORMAL_TRANSITION_CLOCK",
+          "stage": "card_in_start",
+          "performanceMs": 28095.40000000596
+        },
+        {
+          "index": 74,
+          "event": "STORY_CARD_IN_COMPLETE",
+          "performanceMs": 28746.70000000298
+        },
+        {
+          "index": 75,
+          "event": "STORY_NORMAL_TRANSITION_CLOCK",
+          "stage": "card_in_complete",
+          "performanceMs": 28747.20000000298
+        }
+      ],
+      "normal": {
+        "card_wait_start": {
+          "index": 69,
+          "performanceMs": 28060.5,
+          "gameSeconds": 25.94907134326748,
+          "frame": 1022
+        },
+        "card_in_start": {
+          "index": 72,
+          "performanceMs": 28095.40000000596,
+          "gameSeconds": 25.998971343267485,
+          "frame": 1024
+        },
+        "card_in_complete": {
+          "index": 75,
+          "performanceMs": 28747.20000000298,
+          "gameSeconds": 26.51560468653492,
+          "frame": 1029
+        }
+      },
+      "modelDeliveryMarkers": [
+        {
+          "index": 48,
+          "hostDeliveryWall": 1794508603605,
+          "event": "MODEL_TEXTURE_RETAIN",
+          "text": "MODEL_TEXTURE_RETAIN http://127.0.0.1:5192/asset/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json 4 1"
+        },
+        {
+          "index": 52,
+          "hostDeliveryWall": 1794508607690,
+          "event": "MODEL_READY",
+          "text": "MODEL_READY felt01 80 4800 9000 visible=false"
+        },
+        {
+          "index": 53,
+          "hostDeliveryWall": 1794508608923,
+          "event": "STORY_ANIMATOR_READY",
+          "text": "STORY_ANIMATOR_READY felt01 AC_felt01_ver2 [{\"name\":\"motion\",\"token\":\"act_normal_w\"}]"
+        }
+      ],
+      "scalarMarks": {
+        "STORY_PANEL_OUT_START": {
+          "index": 43,
+          "performanceMs": 14254.300000011921
+        },
+        "STORY_CARD_OUT_START": {
+          "index": 44,
+          "performanceMs": 14254.70000000298
+        },
+        "STORY_CARD_OUT_COMPLETE": {
+          "index": 45,
+          "performanceMs": 14257.5
+        },
+        "STORY_PANEL_OUT_COMPLETE": {
+          "index": 47,
+          "performanceMs": 14427.800000011921
+        },
+        "STORY_CARD_WAIT_START": {
+          "index": 70,
+          "performanceMs": 28060.5
+        },
+        "STORY_CARD_IN_START": {
+          "index": 71,
+          "performanceMs": 28095.30000001192
+        },
+        "STORY_CARD_IN_COMPLETE": {
+          "index": 74,
+          "performanceMs": 28746.70000000298
+        }
+      },
+      "stageElapsedMs": {
+        "enter": 0,
+        "card_change_begin": 2,
+        "card_change_hidden": 8,
+        "motion_ready": 13807,
+        "voice_prepare_begin": 13807,
+        "voice_ready": 13807,
+        "text_ready": 13811,
+        "command_resources_ready": 13811,
+        "phase_0_begin": 13811,
+        "phase_0_end": 13811,
+        "card_change_complete": 14498,
+        "phase_1_begin": 14498,
+        "phase_1_end": 14498,
+        "text_begin": 14499,
+        "phase_2_begin": 15646,
+        "phase_2_end": 15646
+      },
+      "stageIntervalsMs": {
+        "enterToMotionReady": 13807,
+        "hiddenToMotionReady": 13799,
+        "voicePreparation": 0,
+        "textPreparation": 4,
+        "commandResourcePreparation": 0,
+        "phase0": 0,
+        "postPhase0ToPhase1": 687,
+        "phase1": 0,
+        "phase1EndToText": 1,
+        "textToPhase2": 1147,
+        "enterToPhase2End": 15646
+      },
+      "nodeBeganPerformanceBoundsMs": [
+        14249.0,
+        14250.0
+      ],
+      "boundEvidence": {
+        "lower": {
+          "kind": "lower",
+          "value": 14249.0,
+          "absolute": {
+            "index": 45,
+            "event": "STORY_CARD_OUT_COMPLETE",
+            "performanceMs": 14257.5
+          },
+          "timing": {
+            "index": 46,
+            "hostDeliveryWall": 1794508596824,
+            "node": "10450056:33",
+            "stage": "card_change_hidden",
+            "milliseconds": 8
+          }
+        },
+        "upper": {
+          "kind": "upper",
+          "value": 14250.0,
+          "absolute": {
+            "index": 69,
+            "event": "STORY_NORMAL_TRANSITION_CLOCK",
+            "stage": "card_wait_start",
+            "performanceMs": 28060.5
+          },
+          "timing": {
+            "index": 62,
+            "hostDeliveryWall": 1794508610557,
+            "node": "10450056:33",
+            "stage": "text_ready",
+            "milliseconds": 13811
+          }
+        }
+      },
+      "normalIntervals": {
+        "cardWait": {
+          "pagePerformanceMs": 34.900000005960464,
+          "gameMs": 49.900000000004496,
+          "start": {
+            "index": 69,
+            "performanceMs": 28060.5,
+            "gameSeconds": 25.94907134326748,
+            "frame": 1022
+          },
+          "end": {
+            "index": 72,
+            "performanceMs": 28095.40000000596,
+            "gameSeconds": 25.998971343267485,
+            "frame": 1024
+          }
+        },
+        "cardIn": {
+          "pagePerformanceMs": 651.7999999970198,
+          "gameMs": 516.6333432674364,
+          "start": {
+            "index": 72,
+            "performanceMs": 28095.40000000596,
+            "gameSeconds": 25.998971343267485,
+            "frame": 1024
+          },
+          "end": {
+            "index": 75,
+            "performanceMs": 28747.20000000298,
+            "gameSeconds": 26.51560468653492,
+            "frame": 1029
+          }
+        }
+      },
+      "scalarIntervalsMs": {
+        "cardOut": 2.7999999970197678,
+        "panelOut": 173.5
+      },
+      "modelDeliveryOnlySpansMs": {
+        "enterToRetain": 6781,
+        "retainToModelReady": 4085,
+        "modelReadyToAnimatorReady": 1233,
+        "animatorReadyToMotionReady": 1630
+      }
+    },
+    "10450056:34": {
+      "timings": [
+        {
+          "index": 87,
+          "hostDeliveryWall": 1794508634636,
+          "node": "10450056:34",
+          "stage": "enter",
+          "milliseconds": 0
+        },
+        {
+          "index": 90,
+          "hostDeliveryWall": 1794508634636,
+          "node": "10450056:34",
+          "stage": "card_change_begin",
+          "milliseconds": 1
+        },
+        {
+          "index": 94,
+          "hostDeliveryWall": 1794508634651,
+          "node": "10450056:34",
+          "stage": "card_change_hidden",
+          "milliseconds": 11
+        },
+        {
+          "index": 104,
+          "hostDeliveryWall": 1794508649818,
+          "node": "10450056:34",
+          "stage": "motion_ready",
+          "milliseconds": 6513
+        },
+        {
+          "index": 105,
+          "hostDeliveryWall": 1794508649818,
+          "node": "10450056:34",
+          "stage": "voice_prepare_begin",
+          "milliseconds": 6513
+        },
+        {
+          "index": 106,
+          "hostDeliveryWall": 1794508649818,
+          "node": "10450056:34",
+          "stage": "voice_ready",
+          "milliseconds": 6513
+        },
+        {
+          "index": 107,
+          "hostDeliveryWall": 1794508649818,
+          "node": "10450056:34",
+          "stage": "text_ready",
+          "milliseconds": 6516
+        },
+        {
+          "index": 108,
+          "hostDeliveryWall": 1794508649818,
+          "node": "10450056:34",
+          "stage": "command_resources_ready",
+          "milliseconds": 6516
+        },
+        {
+          "index": 109,
+          "hostDeliveryWall": 1794508649818,
+          "node": "10450056:34",
+          "stage": "phase_0_begin",
+          "milliseconds": 6516
+        },
+        {
+          "index": 110,
+          "hostDeliveryWall": 1794508649818,
+          "node": "10450056:34",
+          "stage": "phase_0_end",
+          "milliseconds": 6516
+        },
+        {
+          "index": 121,
+          "hostDeliveryWall": 1794508651313,
+          "node": "10450056:34",
+          "stage": "card_change_complete",
+          "milliseconds": 7842
+        },
+        {
+          "index": 122,
+          "hostDeliveryWall": 1794508651313,
+          "node": "10450056:34",
+          "stage": "phase_1_begin",
+          "milliseconds": 7842
+        },
+        {
+          "index": 123,
+          "hostDeliveryWall": 1794508651314,
+          "node": "10450056:34",
+          "stage": "phase_1_end",
+          "milliseconds": 7842
+        },
+        {
+          "index": 124,
+          "hostDeliveryWall": 1794508651314,
+          "node": "10450056:34",
+          "stage": "text_begin",
+          "milliseconds": 7842
+        },
+        {
+          "index": 127,
+          "hostDeliveryWall": 1794508651489,
+          "node": "10450056:34",
+          "stage": "phase_2_begin",
+          "milliseconds": 8253
+        },
+        {
+          "index": 128,
+          "hostDeliveryWall": 1794508651489,
+          "node": "10450056:34",
+          "stage": "phase_2_end",
+          "milliseconds": 8253
+        }
+      ],
+      "absoluteAnchors": [
+        {
+          "index": 91,
+          "event": "STORY_PANEL_OUT_START",
+          "performanceMs": 35583.80000001192
+        },
+        {
+          "index": 92,
+          "event": "STORY_CARD_OUT_START",
+          "performanceMs": 35584.10000000894
+        },
+        {
+          "index": 93,
+          "event": "STORY_CARD_OUT_COMPLETE",
+          "performanceMs": 35587.70000000298
+        },
+        {
+          "index": 95,
+          "event": "STORY_PANEL_OUT_COMPLETE",
+          "performanceMs": 35786.20000000298
+        },
+        {
+          "index": 103,
+          "event": "STORY_NORMAL_MOTION_COMMIT",
+          "stage": "motion_commit",
+          "performanceMs": 42090.10000000894
+        },
+        {
+          "index": 114,
+          "event": "STORY_NORMAL_TRANSITION_CLOCK",
+          "stage": "card_wait_start",
+          "performanceMs": 42093.30000001192
+        },
+        {
+          "index": 115,
+          "event": "STORY_CARD_WAIT_START",
+          "performanceMs": 42093.30000001192
+        },
+        {
+          "index": 116,
+          "event": "STORY_CARD_IN_START",
+          "performanceMs": 42182.70000000298
+        },
+        {
+          "index": 117,
+          "event": "STORY_NORMAL_TRANSITION_CLOCK",
+          "stage": "card_in_start",
+          "performanceMs": 42182.90000000596
+        },
+        {
+          "index": 119,
+          "event": "STORY_CARD_IN_COMPLETE",
+          "performanceMs": 43418.80000001192
+        },
+        {
+          "index": 120,
+          "event": "STORY_NORMAL_TRANSITION_CLOCK",
+          "stage": "card_in_complete",
+          "performanceMs": 43418.90000000596
+        }
+      ],
+      "normal": {
+        "card_wait_start": {
+          "index": 114,
+          "performanceMs": 42093.30000001192,
+          "gameSeconds": 39.7818380298026,
+          "frame": 1364
+        },
+        "card_in_start": {
+          "index": 117,
+          "performanceMs": 42182.90000000596,
+          "gameSeconds": 39.8651380298026,
+          "frame": 1366
+        },
+        "card_in_complete": {
+          "index": 120,
+          "performanceMs": 43418.90000000596,
+          "gameSeconds": 40.36517137307004,
+          "frame": 1370
+        }
+      },
+      "modelDeliveryMarkers": [
+        {
+          "index": 96,
+          "hostDeliveryWall": 1794508635546,
+          "event": "MODEL_TEXTURE_RETAIN",
+          "text": "MODEL_TEXTURE_RETAIN http://127.0.0.1:5192/asset/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_julius01/ac/ac.model3.json 5 1"
+        },
+        {
+          "index": 100,
+          "hostDeliveryWall": 1794508647544,
+          "event": "MODEL_READY",
+          "text": "MODEL_READY julius01 51 4800 9000 visible=false"
+        },
+        {
+          "index": 101,
+          "hostDeliveryWall": 1794508648529,
+          "event": "STORY_ANIMATOR_READY",
+          "text": "STORY_ANIMATOR_READY julius01 AC_julius01_ver2 [{\"name\":\"motion\",\"token\":\"act_normal_w\"}]"
+        }
+      ],
+      "scalarMarks": {
+        "STORY_PANEL_OUT_START": {
+          "index": 91,
+          "performanceMs": 35583.80000001192
+        },
+        "STORY_CARD_OUT_START": {
+          "index": 92,
+          "performanceMs": 35584.10000000894
+        },
+        "STORY_CARD_OUT_COMPLETE": {
+          "index": 93,
+          "performanceMs": 35587.70000000298
+        },
+        "STORY_PANEL_OUT_COMPLETE": {
+          "index": 95,
+          "performanceMs": 35786.20000000298
+        },
+        "STORY_CARD_WAIT_START": {
+          "index": 115,
+          "performanceMs": 42093.30000001192
+        },
+        "STORY_CARD_IN_START": {
+          "index": 116,
+          "performanceMs": 42182.70000000298
+        },
+        "STORY_CARD_IN_COMPLETE": {
+          "index": 119,
+          "performanceMs": 43418.80000001192
+        }
+      },
+      "stageElapsedMs": {
+        "enter": 0,
+        "card_change_begin": 1,
+        "card_change_hidden": 11,
+        "motion_ready": 6513,
+        "voice_prepare_begin": 6513,
+        "voice_ready": 6513,
+        "text_ready": 6516,
+        "command_resources_ready": 6516,
+        "phase_0_begin": 6516,
+        "phase_0_end": 6516,
+        "card_change_complete": 7842,
+        "phase_1_begin": 7842,
+        "phase_1_end": 7842,
+        "text_begin": 7842,
+        "phase_2_begin": 8253,
+        "phase_2_end": 8253
+      },
+      "stageIntervalsMs": {
+        "enterToMotionReady": 6513,
+        "hiddenToMotionReady": 6502,
+        "voicePreparation": 0,
+        "textPreparation": 3,
+        "commandResourcePreparation": 0,
+        "phase0": 0,
+        "postPhase0ToPhase1": 1326,
+        "phase1": 0,
+        "phase1EndToText": 0,
+        "textToPhase2": 411,
+        "enterToPhase2End": 8253
+      },
+      "nodeBeganPerformanceBoundsMs": [
+        35576.60000000894,
+        35577.80000001192
+      ],
+      "boundEvidence": {
+        "lower": {
+          "kind": "lower",
+          "value": 35576.60000000894,
+          "absolute": {
+            "index": 103,
+            "event": "STORY_NORMAL_MOTION_COMMIT",
+            "stage": "motion_commit",
+            "performanceMs": 42090.10000000894
+          },
+          "timing": {
+            "index": 104,
+            "hostDeliveryWall": 1794508649818,
+            "node": "10450056:34",
+            "stage": "motion_ready",
+            "milliseconds": 6513
+          }
+        },
+        "upper": {
+          "kind": "upper",
+          "value": 35577.80000001192,
+          "absolute": {
+            "index": 114,
+            "event": "STORY_NORMAL_TRANSITION_CLOCK",
+            "stage": "card_wait_start",
+            "performanceMs": 42093.30000001192
+          },
+          "timing": {
+            "index": 107,
+            "hostDeliveryWall": 1794508649818,
+            "node": "10450056:34",
+            "stage": "text_ready",
+            "milliseconds": 6516
+          }
+        }
+      },
+      "normalIntervals": {
+        "cardWait": {
+          "pagePerformanceMs": 89.59999999403954,
+          "gameMs": 83.30000000000126,
+          "start": {
+            "index": 114,
+            "performanceMs": 42093.30000001192,
+            "gameSeconds": 39.7818380298026,
+            "frame": 1364
+          },
+          "end": {
+            "index": 117,
+            "performanceMs": 42182.90000000596,
+            "gameSeconds": 39.8651380298026,
+            "frame": 1366
+          }
+        },
+        "cardIn": {
+          "pagePerformanceMs": 1236.0,
+          "gameMs": 500.03334326743953,
+          "start": {
+            "index": 117,
+            "performanceMs": 42182.90000000596,
+            "gameSeconds": 39.8651380298026,
+            "frame": 1366
+          },
+          "end": {
+            "index": 120,
+            "performanceMs": 43418.90000000596,
+            "gameSeconds": 40.36517137307004,
+            "frame": 1370
+          }
+        }
+      },
+      "scalarIntervalsMs": {
+        "cardOut": 3.5999999940395355,
+        "panelOut": 202.3999999910593
+      },
+      "modelDeliveryOnlySpansMs": {
+        "enterToRetain": 910,
+        "retainToModelReady": 11998,
+        "modelReadyToAnimatorReady": 985,
+        "animatorReadyToMotionReady": 1289
+      }
+    }
+  },
+  "pairedPageReadyVisits": [
+    {
+      "node": "10450056:32",
+      "phase": "ready",
+      "now": 11300.5,
+      "wall": 1794508593796
+    },
+    {
+      "node": "10450056:33",
+      "phase": "ready",
+      "now": 30115.20000000298,
+      "wall": 1794508612611
+    },
+    {
+      "node": "10450056:34",
+      "phase": "ready",
+      "now": 43903,
+      "wall": 1794508651556
+    }
+  ],
+  "pairedPageReadyDeltas": [
+    {
+      "source": "10450056:32",
+      "target": "10450056:33",
+      "pageDateMs": 18815,
+      "pagePerformanceMs": 18814.70000000298,
+      "differenceMs": 0.29999999701976776
+    },
+    {
+      "source": "10450056:33",
+      "target": "10450056:34",
+      "pageDateMs": 38945,
+      "pagePerformanceMs": 13787.79999999702,
+      "differenceMs": 25157.20000000298
+    }
+  ],
+  "normalHitches": [
+    {
+      "index": 28,
+      "associatedNodeByLogOrder": "10450056:32",
+      "hostDeliveryWall": 1794508593120,
+      "rawMs": 433.2999999999993,
+      "cappedGameMs": 333.3333432674408,
+      "rawMinusGameMs": 99.9666567325585,
+      "frame": 444,
+      "frameTimestampMs": 10605.9,
+      "gameSeconds": 8.516371343267473
+    },
+    {
+      "index": 73,
+      "associatedNodeByLogOrder": "10450056:33",
+      "hostDeliveryWall": 1794508611101,
+      "rawMs": 466.7000000000007,
+      "cappedGameMs": 333.3333432674408,
+      "rawMinusGameMs": 133.36665673255993,
+      "frame": 1027,
+      "frameTimestampMs": 28588.5,
+      "gameSeconds": 26.365604686534923
+    },
+    {
+      "index": 85,
+      "associatedNodeByLogOrder": "10450056:33",
+      "hostDeliveryWall": 1794508626102,
+      "rawMs": 416.59999999999854,
+      "cappedGameMs": 333.3333432674408,
+      "rawMinusGameMs": 83.26665673255773,
+      "frame": 1067,
+      "frameTimestampMs": 32288.3,
+      "gameSeconds": 29.98213802980235
+    },
+    {
+      "index": 118,
+      "associatedNodeByLogOrder": "10450056:34",
+      "hostDeliveryWall": 1794508650937,
+      "rawMs": 1066.5999999999985,
+      "cappedGameMs": 333.3333432674408,
+      "rawMinusGameMs": 733.2666567325576,
+      "frame": 1368,
+      "frameTimestampMs": 43271.2,
+      "gameSeconds": 40.23177137307004
+    }
+  ],
+  "enter33ToEnter34": {
+    "hostConsoleDeliveryDateMs": 37812,
+    "pagePerformanceBoundsMs": [
+      21326.60000000894,
+      21328.80000001192
+    ],
+    "hostDatePartitionMs": {
+      "enter33ToMotionReady33": 13729,
+      "motionReady33ToCardComplete33": 698,
+      "cardComplete33ToPhase2End33": 1297,
+      "phase2End33ToEnter34": 22088
+    }
+  },
+  "ready33ToEnter34PagePerformanceBoundsMs": [
+    5461.4000000059605,
+    5462.600000008941
+  ],
+  "observerHold33RequestedMs": 2200,
+  "clockDivergenceCause": "unknown",
+  "networkDecodeUploadAnimatorSubstageDurationsKnown": false,
+  "errors": [],
+  "noBrowserOrImageOrDecodeOrByteAudit": true,
+  "formalChanges": []
+}
