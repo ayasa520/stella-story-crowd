@@ -1,0 +1,8 @@
+{
+  "exceptionsPreserved": [
+    {"step":"Initial current catalog lookup", "error":"KeyError: 'vo_adv_elsa'", "observedExplanation":"The current published voices catalog has no vo_adv_elsa bank. Original ACB/AWB, extracted PCM and old review PCM do exist.", "corruptionClaim":false},
+    {"step":"verify38.py first run, before correlation", "exitCode":1, "line":101, "failedAssertion":"native_layout['rate'] == waveform['SamplingRate'] == 32000", "error":"AssertionError", "measuredValues":{"nativeSamplingRate":48000,"existingWavRate":48000,"existingWavFrames":27963}, "correction":"Use measured48kHz for selected Elsa cue and exact decimation12;32kHz Subaru competitors retain decimation8.", "correlationStartedOnFailedRun":false}
+  ],
+  "causeGuessed":false,
+  "formalFilesChanged":false
+}
