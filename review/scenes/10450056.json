@@ -142,7 +142,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "character",
         "character_image",
         "command",
@@ -162,7 +161,6 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 2,
           "fields": [
-            "bg_music",
             "character",
             "character_image",
             "command",
@@ -266,6 +264,60 @@
                 }
               ],
               "originalCandidateImage": "data/native_recovery/royal-capital-20261110/repair-20261111/visual/background-entry-review/native-backgrounds/bg_bg031b_stealshop.png"
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-node2-kinpaku02-install-20261113-v1/node-fields.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "reviewer": "/root",
+              "rootConfirmed": true,
+              "classification": "Source-backed authored early narration2 music placement; the original CSV and exact command timing remain unavailable.",
+              "proposal": "../p30-node2-kinpaku02-field-proposal-20261113-v1/node-fields-draft.json",
+              "recordingId": "bili-capital-30",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/30 10本篇Ver尤里乌斯 「『最优』的义务」.mp4",
+              "sourceNarrationIntervalSeconds": [
+                396.999,
+                402.499
+              ],
+              "measurableMusicRiseSeconds": [
+                397.59,
+                397.7
+              ],
+              "sourceAnchorReview": "../p30-bgm-kinpaku02-onset-review-20261113-v1/scene-anchor-review.json",
+              "sourceAnchorReport": "../p30-bgm-kinpaku02-onset-review-20261113-v1/REPORT.md",
+              "sourceImageReviewer": "/root/p30_packet_preflight",
+              "rootViewsImages": false,
+              "rootMatchedSavedIdentityAndPreconditions": true,
+              "resource": {
+                "logicalId": "bgm_adv_kinpaku02_cd2_18",
+                "nativeCueId": 0,
+                "publishedMetadata": "assets/music/bgm_adv_kinpaku02_cd2_18.json",
+                "publishedPreview": "assets/music/bgm_adv_kinpaku02_cd2_18.opus"
+              },
+              "privateOriginalTransportReview": "../p30-kinpaku02-private-runtime-independent-review-20261113-v1/REPORT.md",
+              "earlyWaveformZeroCoordinateSeconds": 396.749,
+              "waveformCoordinateIsCommandTimestamp": false,
+              "laterOnly02SwitchAndContinuity": {
+                "measurements": "../p30-kinpaku02-clock-boundary-20261113-v1/measurements.json",
+                "earlyWaveformOriginSeconds": 396.749,
+                "laterWaveformOriginSeconds": 382.733,
+                "differenceSeconds": 14.016,
+                "cause": "unknown",
+                "restorationComplete": false
+              },
+              "nativeFadeGainRestartOrWaitRecovered": false,
+              "inferredSeekRestartWaitOrGain": false,
+              "originalCSVRecovered": false,
+              "originalBgMusicFieldRecovered": false,
+              "originalCommandPhaseRecovered": false,
+              "exactSourceTimingAccepted": false,
+              "ordinarySavedPlaybackAccepted": false,
+              "audibleListeningAccepted": false,
+              "wholeChapterMusicAccepted": false,
+              "wholeChapterRestorationAccepted": false
             }
           }
         ]
@@ -7901,7 +7953,6 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 2,
       "fields": [
-        "bg_music",
         "character",
         "character_image",
         "command",
