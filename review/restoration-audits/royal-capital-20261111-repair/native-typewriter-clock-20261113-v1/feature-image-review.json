@@ -1,0 +1,44 @@
+{
+  "status": "bounded_image_review_closed_with_zh35_sampling_limit",
+  "imageWorkClosed": true,
+  "rootConfirmed": false,
+  "capture": "../feature-controls.webm",
+  "closure": "../closure.json",
+  "sampleFormat": {"directory": "../feature-images-5hz", "pattern": "frame-%04d.jpg", "width": 1280, "height": 1000, "sampleHz": 5, "originalRecordingFps": 30, "all590SamplesViewed": false},
+  "stageCropVerifiedAgainstFullFrame": {"frame": 350, "rectangle": [378,41,902,971]},
+  "contactCoverageActuallyViewed": {
+    "overview": {"first":1,"last":581,"step":10,"count":59},
+    "cgJa": {"first":346,"last":385,"step":1,"count":40},
+    "cgZh": {"first":407,"last":438,"step":1,"count":32},
+    "ending": {"first":509,"last":590,"step":1,"count":82}
+  },
+  "fullOriginalsViewedOneImagePerToolCall": [350,366,368,380,420,422,434,522,523,567],
+  "cg10450056": {
+    "languages": ["ja","zh"],
+    "nodes": [25,26,27,28],
+    "finalTextAndOldTextReplacementAccepted": true,
+    "jaWitnesses": {"25Complete":351,"26Complete":366,"27Complete":368,"28Complete":380},
+    "zhWitnesses": {"25Complete":411,"26Complete":420,"27Complete":422,"28Complete":434},
+    "ja27VisibleText": "――ああっ!?",
+    "zh27VisibleText": "——啊啊！？",
+    "node28BlueBackgroundAndNoCgTextResidue": true,
+    "missingOrClippedFinalGlyphObserved": false,
+    "sourceTimingFxActingAccepted": false
+  },
+  "ending10450058": {
+    "boundedSequenceAccepted": true,
+    "actorAnd34TextCleared": {"accepted":true,"actorClearedFrame":518,"oldTextClearedFrames":[519,520]},
+    "ja35": {"centeredAccepted":true,"visibleText":"―完―","fullWitnesses":[522,523]},
+    "zh35": {"centeredAccepted":false,"verdict":"not_observed_in_retained_5hz_samples","missingLayoutIsNotAnObservedFailure":true,"metadataLanguageSwitchSeparate":true,"zhReadySnapshotAboutMsAfterJa":73,"returnToJaAboutMsLater":79},
+    "door": {"sampledCompleteSequenceAccepted":true,"whiteLeadFrames":[527,531],"doorRevealFrames":[532,536],"slitContractionFrames":[537,545],"closedFadeThroughFrame":555},
+    "separateClear": {"accepted":true,"collageBegins":556,"readableRouteClearFrames":[558,566]},
+    "ownCompletedChart": {"accepted":true,"witnesses":[567,568],"fullWitness":567,"visibleComplete":true,"highlightedFinalScene":"你的名字是","visibleEnd":true,"visibleRoute":"本編：ユリウスVer.","noOldDialogueOrActor":true},
+    "subsequentStopFrames": {"first":569,"last":590,"observation":"Clean blue background; distinct from chart."},
+    "wholeVisualEquivalenceAccepted":false
+  },
+  "observedNewTextRegression": false,
+  "limits": ["5 Hz sampling misses sub-200ms states", "ZH35 centering has no sampled image witness", "No common performance-to-video origin assumed", "Overview of unrelated controls is not their acceptance"],
+  "excludedAcceptance": ["exact first glyph count", "rate or maximumDelta arithmetic", "native cancellation mechanism", "original CSV/provider/phase", "source timing", "FX order or placement", "actor/face/body", "audio", "reward presentation", "whole chapter"],
+  "newBrowserDecoderOrFormalWrites": false,
+  "activeToolProcessHandles": []
+}
