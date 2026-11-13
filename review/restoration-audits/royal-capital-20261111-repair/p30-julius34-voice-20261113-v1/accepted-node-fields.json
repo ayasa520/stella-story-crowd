@@ -1,0 +1,62 @@
+{
+  "schema": "native_repair.node_fields",
+  "status": "root_reviewed_source_backed_authored_voice_placement",
+  "sourceBoundDataHead": "b8e3bda9d42e4cd207dd59edfb47826447162ca4",
+  "rootConfirmed": true,
+  "fieldGroups": ["voice"],
+  "changes": [
+    {
+      "sceneId": 10450056,
+      "scenarioId": 34,
+      "uniqId": 1045005600034,
+      "stableKey": "s10450056-p30-at0565p5",
+      "sourceText": "君のおかげで、助かった",
+      "rootConfirmed": true,
+      "expected": {
+        "voice": "",
+        "character": "live2d/AC_julius01",
+        "msg_character": "ユリウス",
+        "msg_text": "多亏你，帮大忙了。"
+      },
+      "fields": {"voice": "vo_adv_julius,advg_julius_kansya"},
+      "evidence": {
+        "reviewer": "/root",
+        "independentReviewer": "/root/p30_packet_preflight",
+        "rootConfirmed": true,
+        "classification": "Independently identified original cue; authored placement on its recorded dialogue node, with original trigger phase/offset unknown.",
+        "recordingId": "bili-capital-30",
+        "sourceTextIntervalSeconds": [565.499, 567.999],
+        "waveformCueZeroPcmSeconds": 565.88775,
+        "waveformZeroIsAuthoredCommandTimestamp": false,
+        "reviewDirectory": "../p30-julius34-voice-review-20261113-v1",
+        "sourcePcm": "../p30-bgm-identification-20261113-v1/p30-original-source.wav",
+        "bestLocalNcc": 0.9348478513170756,
+        "strongestCompetingCueNcc": 0.228011,
+        "independentNonoverlappingPiecesAgree": true,
+        "originalCue": {
+          "bank": "vo_adv_julius",
+          "name": "advg_julius_kansya",
+          "nativeCueId": 13,
+          "nativeWaveformIndex": 13,
+          "nativeStreamAwbId": 19,
+          "channels": 1,
+          "sampleRate": 32000,
+          "samples": 27147,
+          "member": "LIMEOS/audio/vo_adv_julius/advg_julius_kansya.wav",
+          "installedResource": "voices/vo_adv_julius/advg_julius_kansya.wav"
+        },
+        "sourceAndInstalledOriginalCueBindingVerified": true,
+        "rootMatchedCurrentIdentityAndPreconditions": true,
+        "originalCsvRecovered": false,
+        "originalVoiceFieldRecovered": false,
+        "startPhaseOffsetRecovered": false,
+        "gainOrTimingRecovered": false,
+        "listeningPerformed": false,
+        "motionOrExpressionAccepted": false,
+        "normalSavedPlaybackAccepted": false,
+        "wholeChapterAccepted": false
+      }
+    }
+  ],
+  "fullRestorationAccepted": false
+}
