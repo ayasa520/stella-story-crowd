@@ -1,0 +1,101 @@
+diff --git a/public/player/player.js b/public/player/player.js
+index c56278a..622a11d 100644
+--- a/public/player/player.js
++++ b/public/player/player.js
+@@ -128,0 +129,4 @@ class StoryPlayer {
++    // Accepting a replacement program invalidates the old node before any
++    // new setup await. Otherwise a pending bank/media result can still pass
++    // its old generation check while this.program already names new data.
++    this.stop();const generation=this.generation;
+@@ -132,0 +137 @@ class StoryPlayer {
++    this.check(generation);
+@@ -133,0 +139 @@ class StoryPlayer {
++    this.check(generation);
+@@ -388,0 +395,4 @@ class StoryPlayer {
++    let voiceReady=null;
++    const voicePreparation=stage=>console.info('STORY_VOICE_PREPARATION',JSON.stringify({
++      stage,node:id,generation,currentGeneration:this.generation,
++      wallMilliseconds:performance.now(),clock:this.transitions.clock.snapshot()}));
+@@ -391,2 +401,23 @@ class StoryPlayer {
+-      await dialogueVoice.prepare(await this.voiceResource(node,generation));
+-      this.check(generation);this.timing('voice_ready');
++      voicePreparation('started');
++      // Native CardProc awaits CardIn and phase 1 before PanelSequence
++      // dispatches TextPanel (adv.html:7216/2233). ShowTextPanel dispatches
++      // PlayNormalVoice at 0x1688a54; it does not require speech readiness
++      // before CardIn. Start resource preparation once at this existing
++      // location, but join it only at the later speech boundary. Awaiting it
++      // here consumed a hidden actor's running entry animation before its
++      // card could enter. Do not freeze/restart the Normal animator or move
++      // motion past phase 0/Wait: those remain independent native behavior.
++      voiceReady=(async()=>{
++        const resource=await this.voiceResource(node,generation);
++        // A stale bank fetch must never assign media to the next node's
++        // reused channel. DialogueVoice still owns prepare/Stop cancellation.
++        this.check(generation);await dialogueVoice.prepare(resource);
++        this.check(generation);this.timing('voice_ready');voicePreparation('ready');
++      })();
++      // Observe rejection immediately, including Stop while another phase
++      // is awaited. Only the owning generation may report a live failure;
++      // the same promise remains available for the single readiness join.
++      voiceReady.catch(error=>{
++        voicePreparation(error.name==='AbortError'?'cancelled':'failed');
++        if(generation===this.generation)this.fail(error);
++      });
+@@ -455,0 +487 @@ class StoryPlayer {
++    if(voiceReady){await voiceReady;this.check(generation);voicePreparation('joined');}
+diff --git a/public/studio/dialogue_voice.js b/public/studio/dialogue_voice.js
+index b5f4320..fbc5fc9 100644
+--- a/public/studio/dialogue_voice.js
++++ b/public/studio/dialogue_voice.js
+@@ -3,2 +3,2 @@ import {assetURL} from '/pairing/viewer.js';
+-// Dialogue owns a different audio channel from SE. Prepare its media before
+-// executing the authored command phases, but start it only at the text-panel
++// Dialogue owns a different audio channel from SE. Begin preparing its media
++// before authored command phases; the transport joins readiness at the text-panel
+diff --git a/public/studio/player.js b/public/studio/player.js
+index 5a9ee80..c0ba3ac 100644
+--- a/public/studio/player.js
++++ b/public/studio/player.js
+@@ -111,0 +112,4 @@ class StoryPlayer {
++    // Accepting a replacement program invalidates the old node before any
++    // new setup await. Otherwise a pending bank/media result can still pass
++    // its old generation check while this.program already names new data.
++    this.stop();const generation=this.generation;
+@@ -115,0 +120 @@ class StoryPlayer {
++    this.check(generation);
+@@ -116,0 +122 @@ class StoryPlayer {
++    this.check(generation);
+@@ -353,0 +360,4 @@ class StoryPlayer {
++    let voiceReady=null;
++    const voicePreparation=stage=>console.info('STORY_VOICE_PREPARATION',JSON.stringify({
++      stage,node:id,generation,currentGeneration:this.generation,
++      wallMilliseconds:performance.now(),clock:this.transitions.clock.snapshot()}));
+@@ -356,2 +366,23 @@ class StoryPlayer {
+-      await dialogueVoice.prepare(await this.voiceResource(node,generation));
+-      this.check(generation);this.timing('voice_ready');
++      voicePreparation('started');
++      // Native CardProc awaits CardIn and phase 1 before PanelSequence
++      // dispatches TextPanel (adv.html:7216/2233). ShowTextPanel dispatches
++      // PlayNormalVoice at 0x1688a54; it does not require speech readiness
++      // before CardIn. Start resource preparation once at this existing
++      // location, but join it only at the later speech boundary. Awaiting it
++      // here consumed a hidden actor's running entry animation before its
++      // card could enter. Do not freeze/restart the Normal animator or move
++      // motion past phase 0/Wait: those remain independent native behavior.
++      voiceReady=(async()=>{
++        const resource=await this.voiceResource(node,generation);
++        // A stale bank fetch must never assign media to the next node's
++        // reused channel. DialogueVoice still owns prepare/Stop cancellation.
++        this.check(generation);await dialogueVoice.prepare(resource);
++        this.check(generation);this.timing('voice_ready');voicePreparation('ready');
++      })();
++      // Observe rejection immediately, including Stop while another phase
++      // is awaited. Only the owning generation may report a live failure;
++      // the same promise remains available for the single readiness join.
++      voiceReady.catch(error=>{
++        voicePreparation(error.name==='AbortError'?'cancelled':'failed');
++        if(generation===this.generation)this.fail(error);
++      });
+@@ -409,0 +441 @@ class StoryPlayer {
++    if(voiceReady){await voiceReady;this.check(generation);voicePreparation('joined');}
