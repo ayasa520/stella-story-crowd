@@ -1,0 +1,85 @@
+{
+  "formatVersion": 1,
+  "dataBaseCommit": "451b0c86b748e31d656f8c42c732b0085405f6e4",
+  "localPlayerCommit": "a834714fc80726faa36b93395fc83f683c3b6717",
+  "fix": {
+    "symptom": "A cancelled cast whose metadata resolved later could load into a viewer already owned by the replay, replacing and hiding the replay model.",
+    "changed": [
+      "public/player/actor_stage.js",
+      "public/studio/actor_stage.js"
+    ],
+    "deterministicRegression": {
+      "oldSuccessfulRequestOverwroteAndHidReadyActorBeforeFix": true,
+      "oldSuccessAndRejectionIgnoredAfterFix": true,
+      "currentMetadataFailureStillPropagates": true
+    },
+    "localProductionBuildPassed": true,
+    "browserRegression": {
+      "browserVersion": "159.0.1",
+      "scene": 10140002,
+      "nodes": [
+        17,
+        18,
+        19
+      ],
+      "verifiedCast": {
+        "id": "node:10140002:node_9799d7ab9851",
+        "models": [
+          "ton01",
+          "chin01",
+          "kan01"
+        ],
+        "drawsAfterReady": 870
+      },
+      "failedPlaybackResources": [],
+      "runtimeErrors": []
+    }
+  },
+  "p30FeltTransitionExperiment": {
+    "scene": 10450056,
+    "scope": "Three runs per variant on nodes 31–34, measured from card_change_hidden to motion_ready",
+    "loaderVariant": "Parallel candidate model and curve loads",
+    "metrics": {
+      "before": {
+        "samplesByNodeMs": {
+          "33": [
+            99,
+            256,
+            678
+          ],
+          "34": [
+            131,
+            150,
+            418
+          ]
+        },
+        "mediansByNodeMs": {
+          "33": 256,
+          "34": 150
+        }
+      },
+      "after": {
+        "samplesByNodeMs": {
+          "33": [
+            131,
+            302,
+            361
+          ],
+          "34": [
+            72,
+            165,
+            223
+          ]
+        },
+        "mediansByNodeMs": {
+          "33": 302,
+          "34": 165
+        }
+      }
+    },
+    "result": "Latency varied substantially. This variant did not show repeatable improvement and was removed from the working source.",
+    "timingGapResolved": false
+  },
+  "deployment": "Source commit is local to the canonical checkout. It was verified with an isolated build.",
+  "gameContentWritten": false
+}
