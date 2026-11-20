@@ -1,0 +1,438 @@
+{
+  "formatVersion": 1,
+  "evidenceScope": "Ordinary dialogue panel entry with narration and CG controls",
+  "dataBaseCommit": "3e6ef4e15e1e2bf13bcd31d779f6e97b6c0d03c3",
+  "playerCommit": "cf801a7ddda74adf38a339ba88821c1758e6de24",
+  "originalBinding": {
+    "targetGroup": "adv_tell_chara",
+    "sharedGroup": "adv_tell_illiustration",
+    "originalAnimatorPathIds": [
+      402,
+      403
+    ],
+    "sharedController": "assets/bin/Data/df744a57c1c64ac4e92467e3d176d8c3",
+    "sharedEntryClip": "assets/bin/Data/cd98aff0a54700242aaa37690349c972",
+    "durationSeconds": 0.1666666716337204,
+    "evidencePath": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-node27-panel-source-review-20261113-v1/panel-controller-binding.json"
+  },
+  "config": {
+    "resource": "assets/player/transitions.json",
+    "bytes": 11394,
+    "oldSha256": "92c56d8efe13e0de9e00eb57b9a723409a12a4bbc14a187601fff63864c5dd43",
+    "newSha256": "69ee8651da1c9ee449410c15bc72e455e9f6c3b4bf75309674077d2b8f0017fd",
+    "packageTotalBytes": 522069584
+  },
+  "browser": {
+    "product": "Firefox",
+    "version": "159.0.1",
+    "headless": true,
+    "niceness": 19,
+    "cpuAffinity": [
+      0,
+      1
+    ],
+    "closedBeforeEvidenceReview": true,
+    "fixtureScope": "One transition config response for each candidate case"
+  },
+  "checks": [
+    "Natural glyph completion and matching counts",
+    "Expected branch and sequence transitions",
+    "Panel alpha begins at zero, uses intermediate values, and styles reset after completion",
+    "Native text scheduling starts independently of panel completion",
+    "Shared renderer keeps illustration panel timing and leaves the narration without the dialogue entry profile",
+    "Offline shared compositor test for cancellation and cleanup"
+  ],
+  "rawTraceSha256": "a41da50a19bd07adbb70a7f20ee066fd4014df6a2912cca4b891c04db80fe639",
+  "cases": [
+    {
+      "caseName": "P30",
+      "scene": 10450056,
+      "language": "ja",
+      "assignment": "baseline",
+      "nodes": [
+        {
+          "scenario": 33,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 40,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 34,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 11,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 35,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 30,
+          "panel": [],
+          "intermediateOpacity": 0
+        }
+      ],
+      "resourceFailures": [],
+      "errors": [],
+      "targetsMatched": true,
+      "configSubstitutions": 0
+    },
+    {
+      "caseName": "P30",
+      "scene": 10450056,
+      "language": "ja",
+      "assignment": "candidate",
+      "nodes": [
+        {
+          "scenario": 33,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 40,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176290886
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176291055
+            }
+          ],
+          "intermediateOpacity": 9
+        },
+        {
+          "scenario": 34,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 11,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176293506
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176293661
+            }
+          ],
+          "intermediateOpacity": 9
+        },
+        {
+          "scenario": 35,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 30,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176294668
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176294832
+            }
+          ],
+          "intermediateOpacity": 9
+        }
+      ],
+      "resourceFailures": [],
+      "errors": [],
+      "targetsMatched": true,
+      "configSubstitutions": 1
+    },
+    {
+      "caseName": "Episode1",
+      "scene": 10010001,
+      "language": "ja",
+      "assignment": "baseline",
+      "nodes": [
+        {
+          "scenario": 5,
+          "phase": "choice",
+          "group": "dialogue",
+          "naturalGlyphs": 47,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 6,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 33,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 8,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 12,
+          "panel": [],
+          "intermediateOpacity": 0
+        }
+      ],
+      "resourceFailures": [],
+      "errors": [],
+      "targetsMatched": true,
+      "configSubstitutions": 0
+    },
+    {
+      "caseName": "Episode1",
+      "scene": 10010001,
+      "language": "ja",
+      "assignment": "candidate",
+      "nodes": [
+        {
+          "scenario": 5,
+          "phase": "choice",
+          "group": "dialogue",
+          "naturalGlyphs": 47,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176355689
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176355845
+            }
+          ],
+          "intermediateOpacity": 8
+        },
+        {
+          "scenario": 6,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 33,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176359752
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176359935
+            }
+          ],
+          "intermediateOpacity": 10
+        },
+        {
+          "scenario": 8,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 12,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176361124
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176361280
+            }
+          ],
+          "intermediateOpacity": 9
+        }
+      ],
+      "resourceFailures": [],
+      "errors": [],
+      "targetsMatched": true,
+      "configSubstitutions": 1
+    },
+    {
+      "caseName": "Episode2",
+      "scene": 10140002,
+      "language": "zh",
+      "assignment": "baseline",
+      "nodes": [
+        {
+          "scenario": 4,
+          "phase": "ready",
+          "group": "narration",
+          "naturalGlyphs": 9,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 5,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 37,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 6,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 42,
+          "panel": [],
+          "intermediateOpacity": 0
+        }
+      ],
+      "resourceFailures": [],
+      "errors": [],
+      "targetsMatched": true,
+      "configSubstitutions": 0
+    },
+    {
+      "caseName": "Episode2",
+      "scene": 10140002,
+      "language": "zh",
+      "assignment": "candidate",
+      "nodes": [
+        {
+          "scenario": 4,
+          "phase": "ready",
+          "group": "narration",
+          "naturalGlyphs": 9,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 5,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 37,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176419362
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176419534
+            }
+          ],
+          "intermediateOpacity": 10
+        },
+        {
+          "scenario": 6,
+          "phase": "ready",
+          "group": "dialogue",
+          "naturalGlyphs": 42,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176420874
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176421015
+            }
+          ],
+          "intermediateOpacity": 9
+        }
+      ],
+      "resourceFailures": [],
+      "errors": [],
+      "targetsMatched": true,
+      "configSubstitutions": 1
+    },
+    {
+      "caseName": "Episode3",
+      "scene": 10190004,
+      "language": "ja",
+      "assignment": "baseline",
+      "nodes": [
+        {
+          "scenario": 4,
+          "phase": "ready",
+          "group": "narration",
+          "naturalGlyphs": 10,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 22,
+          "phase": "auto",
+          "group": "blank",
+          "naturalGlyphs": 0,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 5,
+          "phase": "ready",
+          "group": "picture",
+          "naturalGlyphs": 8,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176455037
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176455218
+            }
+          ],
+          "intermediateOpacity": 10
+        }
+      ],
+      "resourceFailures": [],
+      "errors": [],
+      "targetsMatched": true,
+      "configSubstitutions": 0
+    },
+    {
+      "caseName": "Episode3",
+      "scene": 10190004,
+      "language": "ja",
+      "assignment": "candidate",
+      "nodes": [
+        {
+          "scenario": 4,
+          "phase": "ready",
+          "group": "narration",
+          "naturalGlyphs": 10,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 22,
+          "phase": "auto",
+          "group": "blank",
+          "naturalGlyphs": 0,
+          "panel": [],
+          "intermediateOpacity": 0
+        },
+        {
+          "scenario": 5,
+          "phase": "ready",
+          "group": "picture",
+          "naturalGlyphs": 8,
+          "panel": [
+            {
+              "type": "STORY_PANEL_IN_START",
+              "duration": 0.1666666716337204,
+              "observed": 1795176490751
+            },
+            {
+              "type": "STORY_PANEL_IN_COMPLETE",
+              "observed": 1795176490931
+            }
+          ],
+          "intermediateOpacity": 10
+        }
+      ],
+      "resourceFailures": [],
+      "errors": [],
+      "targetsMatched": true,
+      "configSubstitutions": 1
+    }
+  ],
+  "acceptance": "representative_live_playback_before_and_after_pass",
+  "wholeEpisodeAcceptance": "pending"
+}
