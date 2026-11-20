@@ -48,9 +48,9 @@
           "bvid": "BV1bK4y1a7Fm",
           "cid": 236348106,
           "p": 8,
-          "start": 214.0,
-          "end": 214.0,
-          "visualTime": 214.0,
+          "start": 214,
+          "end": 214,
+          "visualTime": 214,
           "localDuration": 716.888,
           "timeMapping": "same-recording-seconds",
           "sourceVideoId": "video_06e92f8af6e4"
@@ -77,9 +77,9 @@
       },
       "evidence": {
         "region": "heading",
-        "start": 214.0,
-        "end": 214.0,
-        "time": 214.0,
+        "start": 214,
+        "end": 214,
+        "time": 214,
         "text": "サテラと微精霊",
         "speaker": "",
         "frame": "",
@@ -88,14 +88,14 @@
         "inferred_boundary": true,
         "transcript": "data/video_recovery/capital-05/half-hz-run/transcript.json",
         "ocr_sample": "data/video_recovery/capital-05/half-hz-run/ocr-rapid.jsonl",
-        "ocr_score": 0.0
+        "ocr_score": 0
       },
-      "ocrScore": 0.0,
+      "ocrScore": 0,
       "critical": false,
-      "sourceTime": 214.0,
+      "sourceTime": 214,
       "sourceUpdatedAt": "",
-      "backgroundTime": 214.0,
-      "bgmTime": 214.0,
+      "backgroundTime": 214,
+      "bgmTime": 214,
       "frame": "",
       "branches": [
         {
@@ -196,7 +196,75 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 3,
+            "fields": [
+              "character",
+              "bg_picture"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                },
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 3,
+                    "uniqueId": 1009001400003,
+                    "studioNodeId": "node_14c3b09147a8",
+                    "sourceSpeaker": "スバル",
+                    "sourceText": "ここからどうやってフェルトを見つけ出すかだけど……ん?もしかして歩き疲れた？",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-003.jpg",
+                    "sourceTime": 227.9995,
+                    "sourceFrameSha256": "6136d26e7eeba842bacbf82c75b6aa503bad9acb5c3e785737fdbd1da5c14701",
+                    "afterCharacter": "live2d/AC_subaru01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                },
+                {
+                  "field": "bg_picture",
+                  "sourceEvidence": {
+                    "sceneId": 10090014,
+                    "scenarioId": 3,
+                    "beforeBgPicture": "",
+                    "afterBgPicture": "bg/bg025b_slum",
+                    "sourceFrame": "anchors/10090014-003.jpg",
+                    "sourceTime": 227.9995,
+                    "identityEvidence": "Same bridge/river-side street composition as scene10090013/27; inspected directly, not inferred from continuity."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "4": {
       "status": "draft",
@@ -232,13 +300,6 @@
           "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
           "scenarioId": 4,
           "branchId": 42
-        },
-        {
-          "code": "missing_transition",
-          "severity": "blocker",
-          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-          "scenarioId": 4,
-          "branchId": 43
         }
       ],
       "studioNodeId": "node_4de6efea9b15",
@@ -300,17 +361,178 @@
           "branchId": 43,
           "studioEdgeId": "edge_c364afe500f3",
           "sourceLabel": "考えて話す",
-          "sourceQuote": "",
+          "sourceQuote": "微精霊？　……ってことは、\n精霊とは違うってこと？",
           "labelTranslation": "",
           "quoteTranslation": "",
-          "state": "missing",
-          "sourceState": "missing",
+          "state": "confirmed",
+          "sourceState": "confirmed",
           "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 236.0000 秒。",
           "origin": "video",
           "score": null,
-          "selection_evidence": "未确定；录像只证明选项文字存在。"
+          "selection_evidence": "238秒在选择切换过程中；240–246秒右气泡保持。补取原片10Hz窗口，246.7秒清楚显示右气泡青绿色确认边；248秒已退场，250–256秒萨缇拉完整回应，258–260秒继续解释微精灵。",
+          "verification": "observed"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 4,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 4,
+                    "uniqueId": 1009001400004,
+                    "studioNodeId": "node_4de6efea9b15",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "ううん。……そのフェルトって子のこと、この辺りの微精霊に聞いてみようと思って",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-004.jpg",
+                    "sourceTime": 239.9994,
+                    "sourceFrameSha256": "b21fc988610b5d8ea928c42ac93a3bfeb58e12937469a447b3b41ba979296ae5",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-edges.json",
+            "packetSha256": "63e123ca37bd1d15ff730989b69e5a94a0d705cf76ba5469239fdf6bc004a27d",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 4,
+            "fields": [
+              "quote",
+              "state",
+              "target"
+            ],
+            "evidence": {
+              "sourcePacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/route-repair-proposal.json",
+                "sha256": "42978fc91a0064a4d161216b7d8bf31e58d8aeebb70d29527879cb08a8ab9664",
+                "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                "originalRootConfirmed": false,
+                "schema": "stella.episode5-selected-route-source-review.v1"
+              },
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "nativeIdOrigin": "authored; guards do not assert original native identifier recovery",
+              "allocationNote": "Existing review provenance explicitly defines transition_id=branch_id*100+1. This is an authored reconstruction ID, not a recovered original transition.",
+              "sourceEvidence": {
+                "overview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s14-n4-overview.jpg",
+                "confirmationGrid": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s14-n4-confirmation-grid.jpg",
+                "confirmation": {
+                  "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/confirmation-10hz/s14-n4/0028.jpg",
+                  "sourceSecondsApprox": 246.7
+                },
+                "reviewedOverviewFrames": [
+                  {
+                    "sourceSecondsApprox": 234,
+                    "sourceFrameIndex": 7020,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007020.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 238,
+                    "sourceFrameIndex": 7140,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007140.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 240,
+                    "sourceFrameIndex": 7200,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007200.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 244,
+                    "sourceFrameIndex": 7320,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007320.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 246,
+                    "sourceFrameIndex": 7380,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007380.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 248,
+                    "sourceFrameIndex": 7440,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007440.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 250,
+                    "sourceFrameIndex": 7500,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007500.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 254,
+                    "sourceFrameIndex": 7620,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007620.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 256,
+                    "sourceFrameIndex": 7680,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007680.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 258,
+                    "sourceFrameIndex": 7740,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007740.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 260,
+                    "sourceFrameIndex": 7800,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007800.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 262,
+                    "sourceFrameIndex": 7860,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/007860.jpg"
+                  }
+                ],
+                "completeResponseSourceSecondsApprox": 256,
+                "observedContinuation": {
+                  "completeAt": 256,
+                  "nextScenarioId": 6,
+                  "nextCompleteAt": 260
+                },
+                "interpretation": "238秒在选择切换过程中；240–246秒右气泡保持。补取原片10Hz窗口，246.7秒清楚显示右气泡青绿色确认边；248秒已退场，250–256秒萨缇拉完整回应，258–260秒继续解释微精灵。"
+              },
+              "unselectedBranchPreserved": {
+                "branchId": 42,
+                "uniqId": 1009001410042,
+                "label": "調子を合わせる",
+                "transition_list": [],
+                "state": "missing",
+                "sourceState": "missing",
+                "target": "unknown; preserve current empty list",
+                "commonMergeWithSelectedRoute": "unproven; do not infer a shared target from numbering or previews"
+              }
+            }
+          }
+        ]
+      }
     },
     "5": {
       "status": "draft",
@@ -403,7 +625,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 5,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 5,
+                    "uniqueId": 1009001400005,
+                    "studioNodeId": "node_8539e7039abc",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "スバルって、すごーくものを知らないから勘違いしちゃうけど、実は頭いいわよね。そう。精霊と微精霊は、違う存在よ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-005.jpg",
+                    "sourceTime": 255.9994,
+                    "sourceFrameSha256": "d146a05c32ce03f4ad519d6ec2b194a41c66bbe2f874ec40ea0cd9bc918d6a23",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "6": {
       "status": "draft",
@@ -488,7 +758,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 6,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 6,
+                    "uniqueId": 1009001400006,
+                    "studioNodeId": "node_6a9860c05ab6",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "……微精霊っていうのは、まだ精霊になる前の存在のこと",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-006.jpg",
+                    "sourceTime": 259.9994,
+                    "sourceFrameSha256": "a0df9b560e54308a02ef4878ef35188e546c203a9d741eee16b2e031605748a9",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "7": {
       "status": "draft",
@@ -573,7 +891,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 7,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 7,
+                    "uniqueId": 1009001400007,
+                    "studioNodeId": "node_eea41211b350",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "時間が経って成長して、力と自意識が芽生えると、パックみたいな立派な精霊になるの",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-007.jpg",
+                    "sourceTime": 265.9994,
+                    "sourceFrameSha256": "bf4283231a7fee17f326356b8239d15146ef67405f5ff25af4a622dcd32a5a0c",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "8": {
       "status": "draft",
@@ -602,13 +968,6 @@
           "severity": "blocker",
           "message": "当前工作台节点仍未审核。",
           "scenarioId": 8
-        },
-        {
-          "code": "missing_transition",
-          "severity": "blocker",
-          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-          "scenarioId": 8,
-          "branchId": 82
         },
         {
           "code": "missing_transition",
@@ -659,15 +1018,16 @@
           "branchId": 82,
           "studioEdgeId": "edge_64b69d09f3c0",
           "sourceLabel": "物分かり良く",
-          "sourceQuote": "",
+          "sourceQuote": "わ、わかった",
           "labelTranslation": "",
           "quoteTranslation": "",
-          "state": "missing",
-          "sourceState": "missing",
+          "state": "confirmed",
+          "sourceState": "confirmed",
           "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 274.0000 秒。",
           "origin": "video",
           "score": null,
-          "selection_evidence": "未确定；录像只证明选项文字存在。"
+          "selection_evidence": "276–280秒左侧预览，左气泡为「わ、わかった」；282.7秒左气泡青绿色确认边，284秒退场，286–288秒萨缇拉完整回应。290秒开始黑屏/演出区段，之后338–340秒为现有scenario10「……そう。ありがとう」；本包不补该演出或签时序。",
+          "verification": "observed"
         },
         {
           "branchId": 83,
@@ -683,7 +1043,152 @@
           "score": null,
           "selection_evidence": "未确定；录像只证明选项文字存在。"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 8,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 8,
+                    "uniqueId": 1009001400008,
+                    "studioNodeId": "node_38712fa61cd9",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "それじゃ……聞いてみるから、くれぐれも、静かにしててね",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-008.jpg",
+                    "sourceTime": 269.9994,
+                    "sourceFrameSha256": "32300288c33076b678ceeb9c9708aa38854a994b48dd2410d825418b17d043b1",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-edges.json",
+            "packetSha256": "63e123ca37bd1d15ff730989b69e5a94a0d705cf76ba5469239fdf6bc004a27d",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 8,
+            "fields": [
+              "quote",
+              "state",
+              "target"
+            ],
+            "evidence": {
+              "sourcePacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/route-repair-proposal.json",
+                "sha256": "42978fc91a0064a4d161216b7d8bf31e58d8aeebb70d29527879cb08a8ab9664",
+                "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                "originalRootConfirmed": false,
+                "schema": "stella.episode5-selected-route-source-review.v1"
+              },
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "nativeIdOrigin": "authored; guards do not assert original native identifier recovery",
+              "allocationNote": "Existing review provenance explicitly defines transition_id=branch_id*100+1. This is an authored reconstruction ID, not a recovered original transition.",
+              "sourceEvidence": {
+                "overview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s14-n8-overview.jpg",
+                "confirmationGrid": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s14-n8-confirmation-grid.jpg",
+                "confirmation": {
+                  "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/confirmation-10hz/s14-n8/0028.jpg",
+                  "sourceSecondsApprox": 282.7
+                },
+                "reviewedOverviewFrames": [
+                  {
+                    "sourceSecondsApprox": 270,
+                    "sourceFrameIndex": 8100,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/008100.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 274,
+                    "sourceFrameIndex": 8220,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/008220.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 276,
+                    "sourceFrameIndex": 8280,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/008280.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 278,
+                    "sourceFrameIndex": 8340,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/008340.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 282,
+                    "sourceFrameIndex": 8460,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/008460.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 284,
+                    "sourceFrameIndex": 8520,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/008520.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 286,
+                    "sourceFrameIndex": 8580,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/008580.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 288,
+                    "sourceFrameIndex": 8640,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/008640.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 290,
+                    "sourceFrameIndex": 8700,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/008700.jpg"
+                  }
+                ],
+                "completeResponseSourceSecondsApprox": 288,
+                "observedContinuation": {
+                  "completeAt": 288,
+                  "nextScenarioId": 10,
+                  "nextCompleteAt": 340
+                },
+                "interpretation": "276–280秒左侧预览，左气泡为「わ、わかった」；282.7秒左气泡青绿色确认边，284秒退场，286–288秒萨缇拉完整回应。290秒开始黑屏/演出区段，之后338–340秒为现有scenario10「……そう。ありがとう」；本包不补该演出或签时序。"
+              },
+              "unselectedBranchPreserved": {
+                "branchId": 83,
+                "uniqId": 1009001410083,
+                "label": "茶目っ気を出す",
+                "transition_list": [],
+                "state": "missing",
+                "sourceState": "missing",
+                "target": "unknown; preserve current empty list",
+                "commonMergeWithSelectedRoute": "unproven; do not infer a shared target from numbering or previews"
+              }
+            }
+          }
+        ]
+      }
     },
     "9": {
       "status": "draft",
@@ -768,7 +1273,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 9,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 9,
+                    "uniqueId": 1009001400009,
+                    "studioNodeId": "node_c4c3fc864f4c",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "ありがとう。集中しないといけないから",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-009.jpg",
+                    "sourceTime": 287.9993,
+                    "sourceFrameSha256": "00107ddf95a9e8befa57e48779504213d523f4d1718242d3656f44914da8a8ba",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "10": {
       "status": "draft",
@@ -853,7 +1406,75 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 10,
+            "fields": [
+              "character",
+              "bg_picture"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                },
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 10,
+                    "uniqueId": 1009001400010,
+                    "studioNodeId": "node_f25dc134dbfa",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "……そう。ありがとう",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-010.jpg",
+                    "sourceTime": 339.9992,
+                    "sourceFrameSha256": "5eea278ff088803216a4ca8a87db7254af9af3ff9bfc0a7bc52d8baaf12078de",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                },
+                {
+                  "field": "bg_picture",
+                  "sourceEvidence": {
+                    "sceneId": 10090014,
+                    "scenarioId": 10,
+                    "beforeBgPicture": "",
+                    "afterBgPicture": "bg/bg023b_slum",
+                    "sourceFrame": "anchors/10090014-010.jpg",
+                    "sourceTime": 339.9992,
+                    "identityEvidence": "Return to the sunset converging street and puddles, exact ADV_bg023b_slum composition. The intervening microspirit picture sequence is not restored by this scalar."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "11": {
       "status": "draft",
@@ -882,13 +1503,6 @@
           "severity": "blocker",
           "message": "当前工作台节点仍未审核。",
           "scenarioId": 11
-        },
-        {
-          "code": "missing_transition",
-          "severity": "blocker",
-          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-          "scenarioId": 11,
-          "branchId": 112
         },
         {
           "code": "missing_transition",
@@ -939,15 +1553,16 @@
           "branchId": 112,
           "studioEdgeId": "edge_498d5f0ef4b5",
           "sourceLabel": "結果を問う",
-          "sourceQuote": "",
+          "sourceQuote": "……なんて言ってた？",
           "labelTranslation": "",
           "quoteTranslation": "",
-          "state": "missing",
-          "sourceState": "missing",
+          "state": "confirmed",
+          "sourceState": "confirmed",
           "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 344.0000 秒。",
           "origin": "video",
           "score": null,
-          "selection_evidence": "未确定；录像只证明选项文字存在。"
+          "selection_evidence": "346秒左侧预览，348秒临时切右侧「印象を伝える」，350秒又回左侧。352.7秒最终确认的是左气泡「……なんて言ってた？」；354秒退场，356–360秒萨缇拉完整回应，362–366秒继续说明菲鲁特的去向。右侧预览不能作为实际路线。",
+          "verification": "observed"
         },
         {
           "branchId": 113,
@@ -963,7 +1578,162 @@
           "score": null,
           "selection_evidence": "未确定；录像只证明选项文字存在。"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 11,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 11,
+                    "uniqueId": 1009001400011,
+                    "studioNodeId": "node_f3d5cea95348",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "スバル、話が聞けたわ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-011.jpg",
+                    "sourceTime": 351.9992,
+                    "sourceFrameSha256": "c5e1a3de17a5f30274fdcd03bdcf1136b4cda69ceea8b2f8f71777ab23b32d67",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-edges.json",
+            "packetSha256": "63e123ca37bd1d15ff730989b69e5a94a0d705cf76ba5469239fdf6bc004a27d",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 11,
+            "fields": [
+              "quote",
+              "state",
+              "target"
+            ],
+            "evidence": {
+              "sourcePacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/route-repair-proposal.json",
+                "sha256": "42978fc91a0064a4d161216b7d8bf31e58d8aeebb70d29527879cb08a8ab9664",
+                "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                "originalRootConfirmed": false,
+                "schema": "stella.episode5-selected-route-source-review.v1"
+              },
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "nativeIdOrigin": "authored; guards do not assert original native identifier recovery",
+              "allocationNote": "Existing review provenance explicitly defines transition_id=branch_id*100+1. This is an authored reconstruction ID, not a recovered original transition.",
+              "sourceEvidence": {
+                "overview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s14-n11-overview.jpg",
+                "confirmationGrid": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s14-n11-confirmation-grid.jpg",
+                "confirmation": {
+                  "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/confirmation-10hz/s14-n11/0028.jpg",
+                  "sourceSecondsApprox": 352.7
+                },
+                "reviewedOverviewFrames": [
+                  {
+                    "sourceSecondsApprox": 344,
+                    "sourceFrameIndex": 10320,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010320.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 346,
+                    "sourceFrameIndex": 10380,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010380.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 348,
+                    "sourceFrameIndex": 10440,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010440.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 350,
+                    "sourceFrameIndex": 10500,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010500.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 352,
+                    "sourceFrameIndex": 10560,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010560.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 354,
+                    "sourceFrameIndex": 10620,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010620.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 356,
+                    "sourceFrameIndex": 10680,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010680.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 360,
+                    "sourceFrameIndex": 10800,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010800.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 362,
+                    "sourceFrameIndex": 10860,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010860.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 364,
+                    "sourceFrameIndex": 10920,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010920.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 366,
+                    "sourceFrameIndex": 10980,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/010980.jpg"
+                  }
+                ],
+                "completeResponseSourceSecondsApprox": 360,
+                "observedContinuation": {
+                  "completeAt": 360,
+                  "nextScenarioId": 13,
+                  "nextCompleteAt": 366
+                },
+                "interpretation": "346秒左侧预览，348秒临时切右侧「印象を伝える」，350秒又回左侧。352.7秒最终确认的是左气泡「……なんて言ってた？」；354秒退场，356–360秒萨缇拉完整回应，362–366秒继续说明菲鲁特的去向。右侧预览不能作为实际路线。"
+              },
+              "unselectedBranchPreserved": {
+                "branchId": 113,
+                "uniqId": 1009001410113,
+                "label": "印象を伝える",
+                "transition_list": [],
+                "state": "missing",
+                "sourceState": "missing",
+                "target": "unknown; preserve current empty list",
+                "commonMergeWithSelectedRoute": "unproven; do not infer a shared target from numbering or previews"
+              }
+            }
+          }
+        ]
+      }
     },
     "12": {
       "status": "draft",
@@ -1052,7 +1822,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 12,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 12,
+                    "uniqueId": 1009001400012,
+                    "studioNodeId": "node_d8bbacfbaa55",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "少し時間も過ぎてたから不安だったけど、目的地が近いみたい。朗報ね",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-012.jpg",
+                    "sourceTime": 359.9992,
+                    "sourceFrameSha256": "8ea418b6ae8ba05775352aaf35bb3d49767dcd6f9ed7d9358a667b4f31fd77a3",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "13": {
       "status": "draft",
@@ -1137,7 +1955,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 13,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 13,
+                    "uniqueId": 1009001400013,
+                    "studioNodeId": "node_ff9e7cc4e9fd",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "あの路地の先に、フェルトって子と特徴の合う子が向かったって……きっと、追いつけるわ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-013.jpg",
+                    "sourceTime": 365.9991,
+                    "sourceFrameSha256": "4cb6678d09c8d4b240988b6f54cc5a7ab86876067038923bb795717970813b91",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "14": {
       "status": "draft",
@@ -1222,7 +2088,75 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 14,
+            "fields": [
+              "character",
+              "bg_picture"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                },
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 14,
+                    "uniqueId": 1009001400014,
+                    "studioNodeId": "node_e3f540ebcb56",
+                    "sourceSpeaker": "スバル",
+                    "sourceText": "本当にこんなとこに住んでるのか？",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-014.jpg",
+                    "sourceTime": 377.9991,
+                    "sourceFrameSha256": "28af06a77ae3969daa6de37c282137b95b0dadd98494cee9a03dc8adba9a9db8",
+                    "afterCharacter": "live2d/AC_subaru01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                },
+                {
+                  "field": "bg_picture",
+                  "sourceEvidence": {
+                    "sceneId": 10090014,
+                    "scenarioId": 14,
+                    "beforeBgPicture": "",
+                    "afterBgPicture": "bg/bg024c_slum",
+                    "sourceFrame": "anchors/10090014-014.jpg",
+                    "sourceTime": 377.9991,
+                    "identityEvidence": "Night-time wooden shacks, torn hanging sheets, foreground low brick wall and narrow uphill steps match ADV_bg024c_slum."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "15": {
       "status": "draft",
@@ -1303,7 +2237,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 15,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 15,
+                    "uniqueId": 1009001400015,
+                    "studioNodeId": "node_e4688e054204",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "微精霊の話だと、こっちに向かったって言ってたけど……",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-015.jpg",
+                    "sourceTime": 381.9991,
+                    "sourceFrameSha256": "d1ab15f3d95896e5bf4c533817aa108af252006c35b279d5ffec802065552c07",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "16": {
       "status": "draft",
@@ -1384,7 +2366,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 16,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 16,
+                    "uniqueId": 1009001400016,
+                    "studioNodeId": "node_0f713da0cc1e",
+                    "sourceSpeaker": "質素な身なりの男性",
+                    "sourceText": "..................",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-016.jpg",
+                    "sourceTime": 385.9991,
+                    "sourceFrameSha256": "ddd85131e279a79bf4ac9efc6f8fbfa01586387a8f1fc1a06afc82dd6984d7d1",
+                    "afterCharacter": "live2d/AC_poorman01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "17": {
       "status": "draft",
@@ -1469,7 +2499,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 17,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 17,
+                    "uniqueId": 1009001400017,
+                    "studioNodeId": "node_755e9801b28d",
+                    "sourceSpeaker": "スバル",
+                    "sourceText": "よお、兄弟！この先、フェルトって娘の家で合ってる？",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-017.jpg",
+                    "sourceTime": 389.9991,
+                    "sourceFrameSha256": "0439d543f8330af1d2b3dcf9b8a2301dd19facbb3e677b2ed6813d2c995b0420",
+                    "afterCharacter": "live2d/AC_subaru01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "18": {
       "status": "draft",
@@ -1554,7 +2632,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 18,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 18,
+                    "uniqueId": 1009001400018,
+                    "studioNodeId": "node_bb13a9b441d6",
+                    "sourceSpeaker": "質素な身なりの男性",
+                    "sourceText": "あン?フェルト?この先にあるのは口ム爺の盗品蔵だけだ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-018.jpg",
+                    "sourceTime": 395.9991,
+                    "sourceFrameSha256": "937f907bc5ac3399c739340ec1b43d774129a594445675261b3576a47a308847",
+                    "afterCharacter": "live2d/AC_poorman01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "19": {
       "status": "draft",
@@ -1639,7 +2765,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 19,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 19,
+                    "uniqueId": 1009001400019,
+                    "studioNodeId": "node_7c7f99b9ba6a",
+                    "sourceSpeaker": "質素な身なりの男性",
+                    "sourceText": "盗品を扱う店のことだよ……ははーん。さては、兄ちゃんたち、フェルトに何か盗まれたか？",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-019.jpg",
+                    "sourceTime": 403.9991,
+                    "sourceFrameSha256": "e05211eca513b6f0ba3719c3c9271f6d8f4a5008ae35e90f1646460e818708d1",
+                    "afterCharacter": "live2d/AC_poorman01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "20": {
       "status": "draft",
@@ -1724,7 +2898,55 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090014,
+            "scenarioId": 20,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 20,
+                    "uniqueId": 1009001400020,
+                    "studioNodeId": "node_84bbf0f43a79",
+                    "sourceSpeaker": "質素な身なりの男性",
+                    "sourceText": "ま、上手く交渉して買い戻すんだな。強く生きろよ！",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090014-020.jpg",
+                    "sourceTime": 407.9991,
+                    "sourceFrameSha256": "a78984ad8536e42b0e5cd06bf8768a82be7f300f1f1af83077a2932ff8d2b2b0",
+                    "afterCharacter": "live2d/AC_poorman01",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "21": {
       "status": "draft",
@@ -1822,28 +3044,6 @@
       "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 236.0000 秒。"
     },
     {
-      "branchId": 43,
-      "studioEdgeId": "edge_c364afe500f3",
-      "sourceLabel": "考えて話す",
-      "sourceQuote": "",
-      "labelTranslation": "",
-      "quoteTranslation": "",
-      "state": "missing",
-      "scenarioId": 4,
-      "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 236.0000 秒。"
-    },
-    {
-      "branchId": 82,
-      "studioEdgeId": "edge_64b69d09f3c0",
-      "sourceLabel": "物分かり良く",
-      "sourceQuote": "",
-      "labelTranslation": "",
-      "quoteTranslation": "",
-      "state": "missing",
-      "scenarioId": 8,
-      "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 274.0000 秒。"
-    },
-    {
       "branchId": 83,
       "studioEdgeId": "edge_924abc41a5a0",
       "sourceLabel": "茶目っ気を出す",
@@ -1853,17 +3053,6 @@
       "state": "missing",
       "scenarioId": 8,
       "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 274.0000 秒。"
-    },
-    {
-      "branchId": 112,
-      "studioEdgeId": "edge_498d5f0ef4b5",
-      "sourceLabel": "結果を問う",
-      "sourceQuote": "",
-      "labelTranslation": "",
-      "quoteTranslation": "",
-      "state": "missing",
-      "scenarioId": 11,
-      "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 344.0000 秒。"
     },
     {
       "branchId": 113,
@@ -1882,108 +3071,6 @@
       "code": "native_metadata_unrecovered",
       "severity": "blocker",
       "message": "未取得此场景原稿：原生分支编号为稳定编写编号，奖励向量暂为零，分支运行条件未恢复。"
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 5
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 6
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 7
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 8
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 9
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 10
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 11
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 12
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 13
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 14
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 15
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 16
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 17
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 18
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 19
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 20
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 21
     },
     {
       "code": "node_review_pending",
@@ -2011,13 +3098,6 @@
       "branchId": 42
     },
     {
-      "code": "missing_transition",
-      "severity": "blocker",
-      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-      "scenarioId": 4,
-      "branchId": 43
-    },
-    {
       "code": "node_review_pending",
       "severity": "blocker",
       "message": "当前工作台节点仍未审核。",
@@ -2046,13 +3126,6 @@
       "severity": "blocker",
       "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
       "scenarioId": 8,
-      "branchId": 82
-    },
-    {
-      "code": "missing_transition",
-      "severity": "blocker",
-      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-      "scenarioId": 8,
       "branchId": 83
     },
     {
@@ -2072,13 +3145,6 @@
       "severity": "blocker",
       "message": "当前工作台节点仍未审核。",
       "scenarioId": 11
-    },
-    {
-      "code": "missing_transition",
-      "severity": "blocker",
-      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-      "scenarioId": 11,
-      "branchId": 112
     },
     {
       "code": "missing_transition",

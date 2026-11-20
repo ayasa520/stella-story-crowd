@@ -54,9 +54,9 @@
           "bvid": "BV1bK4y1a7Fm",
           "cid": 236348106,
           "p": 8,
-          "start": 12.0,
-          "end": 12.0,
-          "visualTime": 12.0,
+          "start": 12,
+          "end": 12,
+          "visualTime": 12,
           "localDuration": 716.888,
           "timeMapping": "same-recording-seconds",
           "sourceVideoId": "video_378b4249e396"
@@ -83,9 +83,9 @@
       },
       "evidence": {
         "region": "heading",
-        "start": 12.0,
-        "end": 12.0,
-        "time": 12.0,
+        "start": 12,
+        "end": 12,
+        "time": 12,
         "text": "精霊の休息",
         "speaker": "",
         "frame": "data/video_recovery/capital-05/half-hz-run/frames/000360.jpg",
@@ -102,10 +102,10 @@
       },
       "ocrScore": 0.9988,
       "critical": false,
-      "sourceTime": 12.0,
+      "sourceTime": 12,
       "sourceUpdatedAt": "",
-      "backgroundTime": 12.0,
-      "bgmTime": 12.0,
+      "backgroundTime": 12,
+      "bgmTime": 12,
       "frame": "evidence/node_a6e73ff66345.jpg",
       "branches": [
         {
@@ -135,7 +135,7 @@
           "bvid": "BV1bK4y1a7Fm",
           "cid": 236348106,
           "p": 8,
-          "start": 14.0,
+          "start": 14,
           "end": 23.9999,
           "visualTime": 15.5,
           "localDuration": 716.888,
@@ -164,7 +164,7 @@
       },
       "evidence": {
         "region": "dialogue",
-        "start": 14.0,
+        "start": 14,
         "end": 23.9999,
         "time": 21.9999,
         "text": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……",
@@ -214,7 +214,155 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 3,
+            "fields": [
+              "bg_picture",
+              "bg_music"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                },
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p08-opening-bgm.json",
+                  "sha256": "daa8ee52703c857a3a923d05c09d634a5771dde2a85c4a36bc85880e5d7b44a6",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-audio-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "bg_picture",
+                  "sourceEvidence": {
+                    "scenarioId": 3,
+                    "studioNodeId": "node_ea312d07d1eb",
+                    "beforeBgPicture": "",
+                    "afterBgPicture": "bg/bg023b_slum",
+                    "sourceFrame": "anchors/10090013-003.jpg",
+                    "sourceTime": 21.9999,
+                    "identityEvidence": "Sunset orange sky, half-timbered buildings converging to center, left vine and barrel, broken pavement and reflective puddles match the existing ADV_bg023b_slum.png exactly in composition.",
+                    "backgroundAsset": "assets/backgrounds/ADV_bg023b_slum.png",
+                    "backgroundAssetSha256": "a6c5fdf8585abd53ebe3ece0f2c779326607d94db54fab68a561047d871b7c13",
+                    "acceptedFields": [
+                      "bg_picture"
+                    ]
+                  }
+                },
+                {
+                  "field": "bg_music",
+                  "sourceEvidence": {
+                    "sourceBoundary": {
+                      "titleObservedAtSeconds": 12,
+                      "narrationObservedAtSeconds": 14,
+                      "narrationReviewInterval": [
+                        14,
+                        23.9999
+                      ],
+                      "lastUnresolvedOneSecondProbeStart": 12.5,
+                      "firstStrongOneSecondProbe": {
+                        "start": 13.5,
+                        "end": 14.5,
+                        "signedCorrelation": 0.9705174136139008
+                      },
+                      "boundaryMeaning": "Title-to-narration entry bracket. No sample-exact native command phase or arbitrary Wait is asserted. The 12-second four-second query includes later narration audio and is not assigned to the title node."
+                    },
+                    "independentSourceImageReview": {
+                      "reviewer": "/root/chapter1_audio_4_8",
+                      "viewed": true,
+                      "contact": "p08-opening-existing-contact.jpg",
+                      "contactSha256": "e7595c42efc50665743ae2e38283606755673d49f8d6033c3f434bb07080b5e3",
+                      "observations": "Original existing frames: 10s flowchart; 12s 精霊の休息 title; 14s opening narration over sunset street; 16s same narration. This review signs scene/card attribution only, not character acting."
+                    },
+                    "waveformMeasurements": "p08-opening-measurements.json",
+                    "waveformMeasurementsSha256": "ac86276570cae9d3d0d0545091dc59d2f0cbcd56a13f0a49144e9c19fb443383",
+                    "entryRefinement": "p08-opening-refinement.json",
+                    "entryRefinementSha256": "50c581c8ff2418ec35fe17a3905ad676088e68dfec3e0c024986fb26d51a7535",
+                    "positiveControls": [
+                      {
+                        "start": 16,
+                        "end": 20,
+                        "signedCorrelation": 0.9898098026949042,
+                        "exactReferenceSample": 36426
+                      },
+                      {
+                        "start": 20,
+                        "end": 24,
+                        "signedCorrelation": 0.9996970901093055,
+                        "exactReferenceSample": 44426
+                      },
+                      {
+                        "start": 24,
+                        "end": 28,
+                        "signedCorrelation": 0.9910293835338009,
+                        "exactReferenceSample": 52426
+                      },
+                      {
+                        "start": 32,
+                        "end": 36,
+                        "signedCorrelation": 0.990164719612713,
+                        "exactReferenceSample": 68426
+                      }
+                    ],
+                    "sameLibraryNegativeControls": [
+                      {
+                        "sourceStart": 16,
+                        "track": "bgm_adv_fuon04_cd2_15",
+                        "signedCorrelation": -0.21121658923263634
+                      },
+                      {
+                        "sourceStart": 20,
+                        "track": "bgm_adv_heartwarm03_cd2_16",
+                        "signedCorrelation": -0.2272644799172859
+                      },
+                      {
+                        "sourceStart": 24,
+                        "track": "bgm_adv_heartwarm03_cd2_16",
+                        "signedCorrelation": 0.26051992453235245
+                      },
+                      {
+                        "sourceStart": 32,
+                        "track": "bgm_adv_heartwarm01_cd1_12",
+                        "signedCorrelation": -0.18884095345835933
+                      }
+                    ],
+                    "referencePcm": {
+                      "sampleRate": 2000,
+                      "member": "LIMEOS/audio/bgm_adv_every03_cd2_11/bgm_adv_every03_cd2_11.wav",
+                      "indexPath": "data/story_media_index/music-0a54f1977fb8e072385be7ea.npz",
+                      "sha256": "4c75518588a40f3c72904bce180b3656292b7bb9c56f0374ad2b0929f8d72e04"
+                    },
+                    "resourceAvailable": true,
+                    "catalogResource": "bgm_adv_every03_cd2_11",
+                    "limitations": [
+                      "No voice or SE cue has been auditioned or accepted in this packet.",
+                      "No STOP, native command phase, volume envelope or authored track offset is inferred.",
+                      "Raw reference times include repeated musical passages and are measurement coordinates only.",
+                      "No continuous playback acceptance; root review and guarded field installation remain required."
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "4": {
       "status": "draft",
@@ -303,7 +451,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 4,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 4,
+                    "uniqueId": 1009001300004,
+                    "studioNodeId": "node_3098f820ddb0",
+                    "sourceSpeaker": "スバル",
+                    "sourceText": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-004.jpg",
+                    "sourceTime": 33.9999,
+                    "sourceFrameSha256": "dfd530baa7bdd88bce62dbcde4d777466a3c9ad5cd556369b2845b4b8bb10340",
+                    "afterCharacter": "live2d/AC_subaru01",
+                    "identityEvidence": "Spiked dark hair, orange-lined collar and shoulder stripes, light zipped jacket front with two-tone N chest emblem match the actual subaru01 texture atlas.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "5": {
       "status": "draft",
@@ -388,7 +585,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 5,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 5,
+                    "uniqueId": 1009001300005,
+                    "studioNodeId": "node_cfa6596a1827",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "きっとそう。通りを一本外れただけで、表通りとずいぶん雰囲気が違うもの",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-005.jpg",
+                    "sourceTime": 39.9999,
+                    "sourceFrameSha256": "605d20e769970b5aa64acb5a0c90d3eff1da381c3abf2f8d43522a794004e334",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "identityEvidence": "Long silver hair with braided crown and white flower ornament, purple eyes, white-purple dress and green diamond chest crystal match the actual emilia01 texture atlas. Satella is the source speaker label for this same observed costume.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "6": {
       "status": "draft",
@@ -473,7 +719,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 6,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 6,
+                    "uniqueId": 1009001300006,
+                    "studioNodeId": "node_ba4805f58765",
+                    "sourceSpeaker": "スバル",
+                    "sourceText": "空気と雰囲気と、あとたぶん住んでる人間の性格も悪そう。本当にこんなとこにいるのか？",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-006.jpg",
+                    "sourceTime": 45.9999,
+                    "sourceFrameSha256": "e71adfa1f44de11b128118756fecee8eba2e0189eb9ff584211fd9bdcfc29603",
+                    "afterCharacter": "live2d/AC_subaru01",
+                    "identityEvidence": "Spiked dark hair, orange-lined collar and shoulder stripes, light zipped jacket front with two-tone N chest emblem match the actual subaru01 texture atlas.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "7": {
       "status": "draft",
@@ -558,7 +853,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 7,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 7,
+                    "uniqueId": 1009001300007,
+                    "studioNodeId": "node_ec5898dffe62",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "進むにしても戻るにしても、決断は早めにね。ポクはそろそろ時間切れだから",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-007.jpg",
+                    "sourceTime": 51.9999,
+                    "sourceFrameSha256": "b6ae24c0bdc6dd1109b6966aa3002454615cc56f1ad2412722affaf94b9729f8",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "8": {
       "status": "draft",
@@ -639,7 +983,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 8,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 8,
+                    "uniqueId": 1009001300008,
+                    "studioNodeId": "node_32583f41d3d0",
+                    "sourceSpeaker": "スバル",
+                    "sourceText": "何それ。時間切れ？",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-008.jpg",
+                    "sourceTime": 53.9999,
+                    "sourceFrameSha256": "50ef8672bd98031ee1eb73f932dcfe8cc055a1247002db604b14150ab2295990",
+                    "afterCharacter": "live2d/AC_subaru01",
+                    "identityEvidence": "Spiked dark hair, orange-lined collar and shoulder stripes, light zipped jacket front with two-tone N chest emblem match the actual subaru01 texture atlas.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "9": {
       "status": "draft",
@@ -724,7 +1117,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 9,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 9,
+                    "uniqueId": 1009001300009,
+                    "studioNodeId": "node_7f0731fb4e9f",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "ポクはこんな可愛い見た目だけど精霊だからね。表に出てるだけで、結構マナを使っ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-009.jpg",
+                    "sourceTime": 59.9999,
+                    "sourceFrameSha256": "e47ee4ea5f7305909f5aea32f2dc5eae0ff98f395cc3896667ab2738e08b7ddb",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "10": {
       "status": "draft",
@@ -760,13 +1202,6 @@
           "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
           "scenarioId": 10,
           "branchId": 102
-        },
-        {
-          "code": "missing_transition",
-          "severity": "blocker",
-          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-          "scenarioId": 10,
-          "branchId": 103
         }
       ],
       "studioNodeId": "node_7fe60f5989cb",
@@ -832,17 +1267,174 @@
           "branchId": 103,
           "studioEdgeId": "edge_d90c804f8c71",
           "sourceLabel": "一緒にぼやく",
-          "sourceQuote": "",
+          "sourceQuote": "何でもできるようでいて、\n精霊も案外大変なんだな",
           "labelTranslation": "",
           "quoteTranslation": "",
-          "state": "missing",
-          "sourceState": "missing",
+          "state": "confirmed",
+          "sourceState": "confirmed",
           "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 70.0000 秒。",
           "origin": "video",
           "score": null,
-          "selection_evidence": "未确定；录像只证明选项文字存在。"
+          "selection_evidence": "右侧预览在86–90秒保持；92秒气泡出现青绿色确认边，94秒退场，96–98秒完整回应，随后100–104秒进入萨缇拉的继续前进对白。",
+          "verification": "observed"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 10,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 10,
+                    "uniqueId": 1009001300010,
+                    "studioNodeId": "node_7fe60f5989cb",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "だから夜は依り代の結晶石に戻って、お天道様が出てる間に備えてるんだよ。まあ、平均的には9時から5時が理想かな",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-010.jpg",
+                    "sourceTime": 89.9998,
+                    "sourceFrameSha256": "b1cf0dbbd2470480fb098dca4826881293fdb15c2c544a8a0d12389668414bbe",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-edges.json",
+            "packetSha256": "63e123ca37bd1d15ff730989b69e5a94a0d705cf76ba5469239fdf6bc004a27d",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 10,
+            "fields": [
+              "quote",
+              "state",
+              "target"
+            ],
+            "evidence": {
+              "sourcePacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/route-repair-proposal.json",
+                "sha256": "42978fc91a0064a4d161216b7d8bf31e58d8aeebb70d29527879cb08a8ab9664",
+                "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                "originalRootConfirmed": false,
+                "schema": "stella.episode5-selected-route-source-review.v1"
+              },
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "nativeIdOrigin": "authored; guards do not assert original native identifier recovery",
+              "allocationNote": "Existing review provenance explicitly defines transition_id=branch_id*100+1. This is an authored reconstruction ID, not a recovered original transition.",
+              "sourceEvidence": {
+                "overview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s13-n10-overview.jpg",
+                "confirmationGrid": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s13-n10-confirmation-grid.jpg",
+                "confirmation": {
+                  "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/confirmation-10hz/s13-n10/0021.jpg",
+                  "sourceSecondsApprox": 92
+                },
+                "reviewedOverviewFrames": [
+                  {
+                    "sourceSecondsApprox": 68,
+                    "sourceFrameIndex": 2040,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/002040.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 80,
+                    "sourceFrameIndex": 2400,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/002400.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 82,
+                    "sourceFrameIndex": 2460,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/002460.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 86,
+                    "sourceFrameIndex": 2580,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/002580.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 90,
+                    "sourceFrameIndex": 2700,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/002700.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 92,
+                    "sourceFrameIndex": 2760,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/002760.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 94,
+                    "sourceFrameIndex": 2820,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/002820.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 96,
+                    "sourceFrameIndex": 2880,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/002880.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 98,
+                    "sourceFrameIndex": 2940,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/002940.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 100,
+                    "sourceFrameIndex": 3000,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003000.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 104,
+                    "sourceFrameIndex": 3120,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003120.jpg"
+                  }
+                ],
+                "completeResponseSourceSecondsApprox": 98,
+                "observedContinuation": {
+                  "completeAt": 98,
+                  "nextScenarioId": 12,
+                  "nextCompleteAt": 104
+                },
+                "interpretation": "右侧预览在86–90秒保持；92秒气泡出现青绿色确认边，94秒退场，96–98秒完整回应，随后100–104秒进入萨缇拉的继续前进对白。"
+              },
+              "unselectedBranchPreserved": {
+                "branchId": 102,
+                "uniqId": 1009001310102,
+                "label": "ツッコむ",
+                "transition_list": [],
+                "state": "missing",
+                "sourceState": "missing",
+                "target": "unknown; preserve current empty list",
+                "commonMergeWithSelectedRoute": "unproven; do not infer a shared target from numbering or previews"
+              }
+            }
+          }
+        ]
+      }
     },
     "11": {
       "status": "draft",
@@ -927,7 +1519,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 11,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 11,
+                    "uniqueId": 1009001300011,
+                    "studioNodeId": "node_2d09629f0f09",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "ふふつ。精霊を気遣うなんて、スバルは本当に変わってるね",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-011.jpg",
+                    "sourceTime": 97.9998,
+                    "sourceFrameSha256": "d155c46fc1b6d68562a78fedf934e127d2e75bffe38b4d90fec85bef7a0abcd0",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "12": {
       "status": "draft",
@@ -1016,7 +1657,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 12,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 12,
+                    "uniqueId": 1009001300012,
+                    "studioNodeId": "node_eef7d9c6d8ba",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "無理させてごめんね、パック。でも、徽章は諦められないから……ここは、進むしかな",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-012.jpg",
+                    "sourceTime": 103.9998,
+                    "sourceFrameSha256": "0fa2aac569d3fd15ed3d879a9c4144663c5df42b2cab25b90be23db42fa00fa0",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "identityEvidence": "Long silver hair with braided crown and white flower ornament, purple eyes, white-purple dress and green diamond chest crystal match the actual emilia01 texture atlas. Satella is the source speaker label for this same observed costume.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "13": {
       "status": "draft",
@@ -1052,13 +1742,6 @@
           "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
           "scenarioId": 13,
           "branchId": 132
-        },
-        {
-          "code": "missing_transition",
-          "severity": "blocker",
-          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-          "scenarioId": 13,
-          "branchId": 133
         }
       ],
       "studioNodeId": "node_5885d6e83c9f",
@@ -1116,17 +1799,169 @@
           "branchId": 133,
           "studioEdgeId": "edge_a630e3d60534",
           "sourceLabel": "本音を漏らす",
-          "sourceQuote": "",
+          "sourceQuote": "パックがいなくなるのは、\nちょっと不安だな……",
           "labelTranslation": "",
           "quoteTranslation": "",
-          "state": "missing",
-          "sourceState": "missing",
+          "state": "confirmed",
+          "sourceState": "confirmed",
           "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 110.0000 秒。",
           "origin": "video",
           "score": null,
-          "selection_evidence": "未确定；录像只证明选项文字存在。"
+          "selection_evidence": "114秒进入右侧预览，116–120秒气泡保持；122秒青绿色确认边，124秒退场，126秒帕克完整回应；128–132秒萨缇拉接着安慰昴，136秒继续让帕克休息。",
+          "verification": "observed"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 13,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 13,
+                    "uniqueId": 1009001300013,
+                    "studioNodeId": "node_5885d6e83c9f",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "だよね。でもごめん。ボク、もう限界だ……",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-013.jpg",
+                    "sourceTime": 121.9997,
+                    "sourceFrameSha256": "62b514189f00529e9a1b94b7c704e84d8a32eff26b05aa4ff8aca5fc06e8fa4a",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-edges.json",
+            "packetSha256": "63e123ca37bd1d15ff730989b69e5a94a0d705cf76ba5469239fdf6bc004a27d",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 13,
+            "fields": [
+              "quote",
+              "state",
+              "target"
+            ],
+            "evidence": {
+              "sourcePacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/route-repair-proposal.json",
+                "sha256": "42978fc91a0064a4d161216b7d8bf31e58d8aeebb70d29527879cb08a8ab9664",
+                "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                "originalRootConfirmed": false,
+                "schema": "stella.episode5-selected-route-source-review.v1"
+              },
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "nativeIdOrigin": "authored; guards do not assert original native identifier recovery",
+              "allocationNote": "Existing review provenance explicitly defines transition_id=branch_id*100+1. This is an authored reconstruction ID, not a recovered original transition.",
+              "sourceEvidence": {
+                "overview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s13-n13-overview.jpg",
+                "confirmationGrid": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s13-n13-confirmation-grid.jpg",
+                "confirmation": {
+                  "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/confirmation-10hz/s13-n13/0021.jpg",
+                  "sourceSecondsApprox": 122
+                },
+                "reviewedOverviewFrames": [
+                  {
+                    "sourceSecondsApprox": 110,
+                    "sourceFrameIndex": 3300,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003300.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 114,
+                    "sourceFrameIndex": 3420,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003420.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 116,
+                    "sourceFrameIndex": 3480,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003480.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 120,
+                    "sourceFrameIndex": 3600,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003600.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 122,
+                    "sourceFrameIndex": 3660,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003660.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 124,
+                    "sourceFrameIndex": 3720,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003720.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 126,
+                    "sourceFrameIndex": 3780,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003780.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 128,
+                    "sourceFrameIndex": 3840,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003840.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 132,
+                    "sourceFrameIndex": 3960,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/003960.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 136,
+                    "sourceFrameIndex": 4080,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/004080.jpg"
+                  }
+                ],
+                "completeResponseSourceSecondsApprox": 126,
+                "observedContinuation": {
+                  "completeAt": 126,
+                  "nextScenarioId": 15,
+                  "nextCompleteAt": 132
+                },
+                "interpretation": "114秒进入右侧预览，116–120秒气泡保持；122秒青绿色确认边，124秒退场，126秒帕克完整回应；128–132秒萨缇拉接着安慰昴，136秒继续让帕克休息。"
+              },
+              "unselectedBranchPreserved": {
+                "branchId": 132,
+                "uniqId": 1009001310132,
+                "label": "心配する",
+                "transition_list": [],
+                "state": "missing",
+                "sourceState": "missing",
+                "target": "unknown; preserve current empty list",
+                "commonMergeWithSelectedRoute": "unproven; do not infer a shared target from numbering or previews"
+              }
+            }
+          }
+        ]
+      }
     },
     "14": {
       "status": "draft",
@@ -1207,7 +2042,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 14,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 14,
+                    "uniqueId": 1009001300014,
+                    "studioNodeId": "node_9d3dd400ac9b",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "そんな弱気じゃ困るなあ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-014.jpg",
+                    "sourceTime": 125.9997,
+                    "sourceFrameSha256": "b8238dff3ba81941bb6e0a6c7f74a4794d39e6bb2d7e69cff1ae35dc6cd7cd23",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "15": {
       "status": "draft",
@@ -1292,7 +2176,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 15,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 15,
+                    "uniqueId": 1009001300015,
+                    "studioNodeId": "node_a9bd2a7ab527",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "スバル、パックがいなくても大丈夫よ。私が魔法を使えるのは見てたでしょ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-015.jpg",
+                    "sourceTime": 131.9997,
+                    "sourceFrameSha256": "f33fcd8362b9fd5ea029d440110afdd89871e1388063ddc3a527062d32b181d2",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "identityEvidence": "Long silver hair with braided crown and white flower ornament, purple eyes, white-purple dress and green diamond chest crystal match the actual emilia01 texture atlas. Satella is the source speaker label for this same observed costume.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "16": {
       "status": "draft",
@@ -1373,7 +2306,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 16,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 16,
+                    "uniqueId": 1009001300016,
+                    "studioNodeId": "node_0e45901c49ef",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "あとは私たちで頑張るから、パックはゆっくり休んで",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-016.jpg",
+                    "sourceTime": 135.9997,
+                    "sourceFrameSha256": "0475b23999a0d744e2eff785649e38e9176742470716959d348931250279bccb",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "identityEvidence": "Long silver hair with braided crown and white flower ornament, purple eyes, white-purple dress and green diamond chest crystal match the actual emilia01 texture atlas. Satella is the source speaker label for this same observed costume.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "17": {
       "status": "draft",
@@ -1458,7 +2440,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 17,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 17,
+                    "uniqueId": 1009001300017,
+                    "studioNodeId": "node_235516f5d875",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "くれぐれも無茶しないように。いざとなったら、オドを使ってでもポクを呼び出すんだよ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-017.jpg",
+                    "sourceTime": 141.9997,
+                    "sourceFrameSha256": "011cf913154576db5bab95360e3757160ee266312469eb4e3c9b037078e59f41",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "18": {
       "status": "draft",
@@ -1543,7 +2574,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 18,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 18,
+                    "uniqueId": 1009001300018,
+                    "studioNodeId": "node_0e4bf7b984ae",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "わかってます。子どもじゃないんだから、自分のことぐらいちゃんとできるもの",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-018.jpg",
+                    "sourceTime": 147.9997,
+                    "sourceFrameSha256": "5f816acfd6f85b222f40783d7c3ad72c298d26d414754073d4e2cdb86767a4fa",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "identityEvidence": "Long silver hair with braided crown and white flower ornament, purple eyes, white-purple dress and green diamond chest crystal match the actual emilia01 texture atlas. Satella is the source speaker label for this same observed costume.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "19": {
       "status": "draft",
@@ -1628,7 +2708,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 19,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 19,
+                    "uniqueId": 1009001300019,
+                    "studioNodeId": "node_89ea27a459a3",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "どうかなー。ボクの娘はその辺りちょっと怪しいからね",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-019.jpg",
+                    "sourceTime": 151.9996,
+                    "sourceFrameSha256": "4ea294730ebbc3941c37e0eb92b07199119aab6e196db47b1ca326049dbc0d42",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "20": {
       "status": "draft",
@@ -1664,13 +2793,6 @@
           "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
           "scenarioId": 20,
           "branchId": 202
-        },
-        {
-          "code": "missing_transition",
-          "severity": "blocker",
-          "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-          "scenarioId": 20,
-          "branchId": 203
         }
       ],
       "studioNodeId": "node_e6cf60a4588b",
@@ -1732,17 +2854,179 @@
           "branchId": 203,
           "studioEdgeId": "edge_a2ffb637b053",
           "sourceLabel": "決意を示す",
-          "sourceQuote": "",
+          "sourceQuote": "うっし、ここいらで一つ、\nそろそろいいとこ見せましょうかね",
           "labelTranslation": "",
           "quoteTranslation": "",
-          "state": "missing",
-          "sourceState": "missing",
+          "state": "confirmed",
+          "sourceState": "confirmed",
           "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 158.0000 秒。",
           "origin": "video",
           "score": null,
-          "selection_evidence": "未确定；录像只证明选项文字存在。"
+          "selection_evidence": "166秒曾预览左侧「安請け合いする」，但168秒切换到右侧「決意を示す」；172秒右气泡保持，176秒右气泡青绿色确认边；178秒退场，180–184秒帕克完整回应，186–188秒萨缇拉接话。左侧预览不证明选择或后续。",
+          "verification": "observed"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 20,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 20,
+                    "uniqueId": 1009001300020,
+                    "studioNodeId": "node_e6cf60a4588b",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "……そういうことだから、あとは頼んだよ、スバル",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-020.jpg",
+                    "sourceTime": 171.9996,
+                    "sourceFrameSha256": "d597dadaab8f0b911203553146c482114381ad82167f6de3db5049370f13dc25",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-edges.json",
+            "packetSha256": "63e123ca37bd1d15ff730989b69e5a94a0d705cf76ba5469239fdf6bc004a27d",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 20,
+            "fields": [
+              "quote",
+              "state",
+              "target"
+            ],
+            "evidence": {
+              "sourcePacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/route-repair-proposal.json",
+                "sha256": "42978fc91a0064a4d161216b7d8bf31e58d8aeebb70d29527879cb08a8ab9664",
+                "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                "originalRootConfirmed": false,
+                "schema": "stella.episode5-selected-route-source-review.v1"
+              },
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "nativeIdOrigin": "authored; guards do not assert original native identifier recovery",
+              "allocationNote": "Existing review provenance explicitly defines transition_id=branch_id*100+1. This is an authored reconstruction ID, not a recovered original transition.",
+              "sourceEvidence": {
+                "overview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s13-n20-overview.jpg",
+                "confirmationGrid": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/s13-n20-confirmation-grid.jpg",
+                "confirmation": {
+                  "frame": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-route-source-20261121-v1/confirmation-10hz/s13-n20/0021.jpg",
+                  "sourceSecondsApprox": 176
+                },
+                "reviewedOverviewFrames": [
+                  {
+                    "sourceSecondsApprox": 158,
+                    "sourceFrameIndex": 4740,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/004740.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 164,
+                    "sourceFrameIndex": 4920,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/004920.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 166,
+                    "sourceFrameIndex": 4980,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/004980.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 168,
+                    "sourceFrameIndex": 5040,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/005040.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 172,
+                    "sourceFrameIndex": 5160,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/005160.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 176,
+                    "sourceFrameIndex": 5280,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/005280.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 178,
+                    "sourceFrameIndex": 5340,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/005340.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 180,
+                    "sourceFrameIndex": 5400,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/005400.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 184,
+                    "sourceFrameIndex": 5520,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/005520.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 186,
+                    "sourceFrameIndex": 5580,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/005580.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 188,
+                    "sourceFrameIndex": 5640,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/005640.jpg"
+                  },
+                  {
+                    "sourceSecondsApprox": 190,
+                    "sourceFrameIndex": 5700,
+                    "path": "data/video_recovery/capital-05/half-hz-run/frames/005700.jpg"
+                  }
+                ],
+                "completeResponseSourceSecondsApprox": 184,
+                "observedContinuation": {
+                  "completeAt": 184,
+                  "nextScenarioId": 22,
+                  "nextCompleteAt": 188
+                },
+                "interpretation": "166秒曾预览左侧「安請け合いする」，但168秒切换到右侧「決意を示す」；172秒右气泡保持，176秒右气泡青绿色确认边；178秒退场，180–184秒帕克完整回应，186–188秒萨缇拉接话。左侧预览不证明选择或后续。"
+              },
+              "unselectedBranchPreserved": {
+                "branchId": 202,
+                "uniqId": 1009001310202,
+                "label": "安請け合いする",
+                "transition_list": [],
+                "state": "missing",
+                "sourceState": "missing",
+                "target": "unknown; preserve current empty list",
+                "commonMergeWithSelectedRoute": "unproven; do not infer a shared target from numbering or previews"
+              }
+            }
+          }
+        ]
+      }
     },
     "21": {
       "status": "draft",
@@ -1827,7 +3111,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 21,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 21,
+                    "uniqueId": 1009001300021,
+                    "studioNodeId": "node_6bd06a6c355e",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "そんな風に鼻息荒くされると、うちの娘と二人きりにするの、ちょつと考えちゃうなあ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-021.jpg",
+                    "sourceTime": 183.9996,
+                    "sourceFrameSha256": "c7ecc0f33f638ba10a762211a9e112880326d0d952c718a4f6e49512909dee4b",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "22": {
       "status": "draft",
@@ -1912,7 +3245,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 22,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 22,
+                    "uniqueId": 1009001300022,
+                    "studioNodeId": "node_1b13db0e92be",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "……?よくわからないけど、変なこと考えちゃダメだからね、スバル",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-022.jpg",
+                    "sourceTime": 187.9996,
+                    "sourceFrameSha256": "3012019403236827042a522b621d472e8d18f5510da6e71c75840a3d217c7760",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "identityEvidence": "Long silver hair with braided crown and white flower ornament, purple eyes, white-purple dress and green diamond chest crystal match the actual emilia01 texture atlas. Satella is the source speaker label for this same observed costume.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "23": {
       "status": "draft",
@@ -2001,7 +3383,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 23,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 23,
+                    "uniqueId": 1009001300023,
+                    "studioNodeId": "node_0ec41a4d0352",
+                    "sourceSpeaker": "スバル",
+                    "sourceText": "おいおい、女の子と二人きりなんて小学生以来のシチュエーションだ。とてもじゃねえけど何もできねえよ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-023.jpg",
+                    "sourceTime": 195.9995,
+                    "sourceFrameSha256": "b3ce943a1bd526158bcbc3f253c2ea53ef45aef5589fe83410bd408eff7c53af",
+                    "afterCharacter": "live2d/AC_subaru01",
+                    "identityEvidence": "Spiked dark hair, orange-lined collar and shoulder stripes, light zipped jacket front with two-tone N chest emblem match the actual subaru01 texture atlas.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "24": {
       "status": "draft",
@@ -2082,7 +3513,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 24,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 24,
+                    "uniqueId": 1009001300024,
+                    "studioNodeId": "node_b82eb34d9eb6",
+                    "sourceSpeaker": "サテラ",
+                    "sourceText": "なんかすご一くしょうもないのにすごーく説得力ある",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-024.jpg",
+                    "sourceTime": 199.9995,
+                    "sourceFrameSha256": "569db1567b56ae9dde9150ca1b9d39202a06510f3519594297e9558b5c76e573",
+                    "afterCharacter": "live2d/AC_emilia01",
+                    "identityEvidence": "Long silver hair with braided crown and white flower ornament, purple eyes, white-purple dress and green diamond chest crystal match the actual emilia01 texture atlas. Satella is the source speaker label for this same observed costume.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "25": {
       "status": "draft",
@@ -2163,7 +3643,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 25,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 25,
+                    "uniqueId": 1009001300025,
+                    "studioNodeId": "node_b32fd7e68630",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "そうだね、これなら大丈夫そうだ",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-025.jpg",
+                    "sourceTime": 203.9995,
+                    "sourceFrameSha256": "eb123d8c70ab54bfcb31463e5c4757becfa5196b5e1fbdb046799ecc0478474b",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "26": {
       "status": "draft",
@@ -2244,7 +3773,56 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 26,
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090013-identities-background.json",
+                  "sha256": "cdbab8ccf457f8fdac9ec15b61ead4f51545395fe4c65ff492cd4644b2608201",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "character",
+                  "sourceEvidence": {
+                    "scenarioId": 26,
+                    "uniqueId": 1009001300026,
+                    "studioNodeId": "node_949f0ebc2a44",
+                    "sourceSpeaker": "パック",
+                    "sourceText": "それじゃあ、おやすみなさい。気",
+                    "beforeCharacter": "",
+                    "sourceFrame": "anchors/10090013-026.jpg",
+                    "sourceTime": 205.9995,
+                    "sourceFrameSha256": "b9b93e2b84381ec568fd53d6c619ab57a43d24aac498ac4c1d55a40ba6aae35b",
+                    "afterCharacter": "live2d/AC_pack01",
+                    "identityEvidence": "Small grey cat spirit with forehead tufts, green-blue eyes, long upright tail and purple shoulder bag with gold buttons matches the actual pack01 texture atlas; source shows no Christmas clothing.",
+                    "acceptedFields": [
+                      "character"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "27": {
       "status": "draft",
@@ -2334,7 +3912,49 @@
           "score": null,
           "updated_at": "2026-10-08T03:09:42.323461+00:00"
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-normalized-nodefields.json",
+            "packetSha256": "3d125a765502d674d005a38d9a9d5a2278a4b6271e20fe859771b71f1b726e65",
+            "baseSha": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 27,
+            "fields": [
+              "bg_picture"
+            ],
+            "evidence": {
+              "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+              "normalizedAtBaseSha": "4845704bdbd2d53bb89dfe10d17b8b479b8a5d8f",
+              "sourcePackets": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/accepted-scene10090014-identities-backgrounds.json",
+                  "sha256": "7b655b8d6e7450393bac4ec373b965aa4200a6934729160fadd03f05401d1764",
+                  "sourceBaseSha": "260b660e2fef6e2c14eb697e8123cfc077e1424f",
+                  "originalRootConfirmed": false,
+                  "schema": "stella.delegated-visual-bindings.v1"
+                }
+              ],
+              "acceptedScalarEvidence": [
+                {
+                  "field": "bg_picture",
+                  "sourceEvidence": {
+                    "sceneId": 10090013,
+                    "scenarioId": 27,
+                    "beforeBgPicture": "",
+                    "afterBgPicture": "bg/bg025b_slum",
+                    "sourceFrame": "anchors/10090013-027.jpg",
+                    "sourceTime": 217.9995,
+                    "identityEvidence": "Sunset wooden bridge with river-side posts, broken half-timbered house at left and orange trees match ADV_bg025b_slum."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   "unresolvedBranches": [
@@ -2342,17 +3962,6 @@
       "branchId": 102,
       "studioEdgeId": "edge_6103098961c3",
       "sourceLabel": "ツッコむ",
-      "sourceQuote": "",
-      "labelTranslation": "",
-      "quoteTranslation": "",
-      "state": "missing",
-      "scenarioId": 10,
-      "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 70.0000 秒。"
-    },
-    {
-      "branchId": 103,
-      "studioEdgeId": "edge_d90c804f8c71",
-      "sourceLabel": "一緒にぼやく",
       "sourceQuote": "",
       "labelTranslation": "",
       "quoteTranslation": "",
@@ -2372,31 +3981,9 @@
       "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 110.0000 秒。"
     },
     {
-      "branchId": 133,
-      "studioEdgeId": "edge_a630e3d60534",
-      "sourceLabel": "本音を漏らす",
-      "sourceQuote": "",
-      "labelTranslation": "",
-      "quoteTranslation": "",
-      "state": "missing",
-      "scenarioId": 13,
-      "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 110.0000 秒。"
-    },
-    {
       "branchId": 202,
       "studioEdgeId": "edge_cec66f7b610b",
       "sourceLabel": "安請け合いする",
-      "sourceQuote": "",
-      "labelTranslation": "",
-      "quoteTranslation": "",
-      "state": "missing",
-      "scenarioId": 20,
-      "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 158.0000 秒。"
-    },
-    {
-      "branchId": 203,
-      "studioEdgeId": "edge_a2ffb637b053",
-      "sourceLabel": "決意を示す",
       "sourceQuote": "",
       "labelTranslation": "",
       "quoteTranslation": "",
@@ -2410,108 +3997,6 @@
       "code": "native_metadata_unrecovered",
       "severity": "blocker",
       "message": "未取得此场景原稿：原生分支编号为稳定编写编号，奖励向量暂为零，分支运行条件未恢复。"
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 11
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 12
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 13
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 14
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 15
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 16
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 17
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 18
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 19
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 20
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 21
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 22
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 23
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 24
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 25
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 26
-    },
-    {
-      "code": "unreachable_authored_row",
-      "severity": "blocker",
-      "message": "原生数组保留了当前入口不可达的工作台节点。",
-      "scenarioId": 27
     },
     {
       "code": "node_review_pending",
@@ -2575,13 +4060,6 @@
       "branchId": 102
     },
     {
-      "code": "missing_transition",
-      "severity": "blocker",
-      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-      "scenarioId": 10,
-      "branchId": 103
-    },
-    {
       "code": "node_review_pending",
       "severity": "blocker",
       "message": "当前工作台节点仍未审核。",
@@ -2605,13 +4083,6 @@
       "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
       "scenarioId": 13,
       "branchId": 132
-    },
-    {
-      "code": "missing_transition",
-      "severity": "blocker",
-      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-      "scenarioId": 13,
-      "branchId": 133
     },
     {
       "code": "node_review_pending",
@@ -2661,13 +4132,6 @@
       "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
       "scenarioId": 20,
       "branchId": 202
-    },
-    {
-      "code": "missing_transition",
-      "severity": "blocker",
-      "message": "此分支的后续尚未恢复；保留原生分支与空转移草稿，禁止发布为完整游戏内容。",
-      "scenarioId": 20,
-      "branchId": 203
     },
     {
       "code": "node_review_pending",
