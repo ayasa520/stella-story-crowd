@@ -1,0 +1,140 @@
+{
+  "formatVersion": 1,
+  "recordingPart": 33,
+  "dataBaseCommit": "2219f51a217a88a17a1e63866763f14c47f5b4fc",
+  "playerCommit": "d78e9c889362f65f9a3d482957f2f1ad3b4adfae",
+  "evidenceScope": "Local browser playback of the existing route from the shared opening through the final authored card",
+  "sharedOpeningNodes": 9,
+  "totalNodesVisited": 96,
+  "selectedBranches": [
+    43,
+    63,
+    82,
+    222,
+    512,
+    553,
+    102,
+    223
+  ],
+  "crossSceneTransfers": [
+    {
+      "target": "node:10040035:1004003500001",
+      "action": "scene"
+    },
+    {
+      "target": "node:10040036:1004003600001",
+      "action": "scene"
+    }
+  ],
+  "openedCharts": [
+    "scene:10040002",
+    "scene:10040035",
+    "scene:10040036"
+  ],
+  "scenesAfterOpening": [
+    {
+      "scene": 10040035,
+      "nodesVisited": 59,
+      "explicitFields": {
+        "character": 0,
+        "motion": 0,
+        "voice": 0,
+        "bg_picture": 1,
+        "bg_music": 0,
+        "character_image": 0,
+        "video": 0,
+        "se": 0
+      },
+      "unresolvedDestinations": [
+        {
+          "node": 22,
+          "branch": 223
+        },
+        {
+          "node": 51,
+          "branch": 513
+        },
+        {
+          "node": 55,
+          "branch": 552
+        }
+      ]
+    },
+    {
+      "scene": 10040036,
+      "nodesVisited": 28,
+      "explicitFields": {
+        "character": 0,
+        "motion": 0,
+        "voice": 0,
+        "bg_picture": 1,
+        "bg_music": 0,
+        "character_image": 0,
+        "video": 0,
+        "se": 0
+      },
+      "unresolvedDestinations": [
+        {
+          "node": 10,
+          "branch": 103
+        },
+        {
+          "node": 22,
+          "branch": 222
+        },
+        {
+          "node": 28,
+          "branch": 281
+        }
+      ]
+    }
+  ],
+  "unconnectedEnd": {
+    "scene": 10040036,
+    "node": 28,
+    "branch": 281,
+    "playerStatus": "后续节点尚未恢复，请保留此分支并补充证据",
+    "recordedClearEvidence": "CLEAR at575–576s is separately observed. Native ending identity and following chapter connection remain unknown.",
+    "sectionCompleteEvents": []
+  },
+  "browser": {
+    "name": "Firefox",
+    "version": "159.0.1",
+    "runtimeErrors": [],
+    "failedPlaybackResourceResponses": [],
+    "webglContextLossWarningObserved": true
+  },
+  "acceptance": {
+    "testedRouteReachedLastAuthoredCard": true,
+    "completeSectionPlayable": false,
+    "allChoicesPlayable": false,
+    "sourcePerformanceComparedInThisRun": false
+  },
+  "renderedChartProgress": [
+    {
+      "current": "scene:10040002",
+      "completed": [],
+      "visited": []
+    },
+    {
+      "current": "scene:10040035",
+      "completed": [
+        "scene:10040002"
+      ],
+      "visited": [
+        "scene:10040002>scene:10040035"
+      ]
+    },
+    {
+      "current": "scene:10040036",
+      "completed": [
+        "scene:10040002",
+        "scene:10040035"
+      ],
+      "visited": [
+        "scene:10040002>scene:10040035",
+        "scene:10040035>scene:10040036"
+      ]
+    }
+  ]
+}
