@@ -3825,7 +3825,7 @@
       }
     },
     "27": {
-      "status": "draft",
+      "status": "excluded",
       "sourceText": "パックが眠ってしまったので、スバルとサテラはふたりでフェルトの捜索を続けていたが、川沿いの道でサテラが立ち止まり",
       "sourceSpeaker": "",
       "translation": "",
@@ -3953,7 +3953,64 @@
               ]
             }
           }
+        ],
+        "offlineSceneBoundary": [
+          {
+            "key": "scene14-title-then-narration-then-location",
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-boundary-root-approved.json",
+            "packetSha256": "ab8d89e3d91d6ccbb115409c47a92297515a6fb72d7d84d6cfad4a32df0a96d0",
+            "baseSha": "6e7c887c612cface5c49e8d9019b8501c5154389",
+            "sourceEvidenceBaseSha": "a2e3cb4bd73b141aeeee870b69629a7ee091d7a3",
+            "rootConfirmed": true,
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-scene-boundary-20261121-v2/boundary-review.json",
+              "sourcePacketSha256": "ea390cdb3133f07e416c4ab59d1c121faf0222a9cace013bbd85d4359fd1f994",
+              "reviewCoverage": {
+                "requestedInterval": [
+                  198,
+                  228
+                ],
+                "observedInterval": [
+                  198.023,
+                  228.056
+                ],
+                "everyEncodedFrameDirectlyReviewed": true,
+                "method": "All 32 full-frame contact sheets were directly viewed in sequence; key frames were additionally viewed at their native 480x856 resolution. Each sheet retains every encoded frame, with no temporal sampling.",
+                "encodedFramesReviewed": 906,
+                "uniqueSourcePTS": 902,
+                "overlapFrames": 4,
+                "maximumAdjacentSourcePTSGapSeconds": 0.034,
+                "sourceVideoSha256Recomputed": true,
+                "flowchartVisibleInInterval": false,
+                "flowchartLimit": "No flowchart is visible in this recording interval. This does not establish native chart timing or authorize changes to shared title/chart behavior."
+              },
+              "verifiedSourceOrder": [
+                "Existing scene10090013/node26 Puck farewell",
+                "Puck exit; old street hold; Connecting",
+                "Main-story title: サテラと微精霊",
+                "Narration whose content is currently stored as scene10090013/node27",
+                "Independent location panel: ――貧民街・夕刻",
+                "Existing scene10090014/node3 Subaru line"
+              ]
+            },
+            "oldToNew": {
+              "sceneId": 10090014,
+              "scenarioId": 22,
+              "uniqueId": 1009001400022,
+              "studioNodeId": "node_10583f39736d"
+            },
+            "originalScenarioIdRecovered": false,
+            "originalArrayOrderRecovered": false,
+            "originalCommandPhaseRecovered": false
+          }
         ]
+      },
+      "supersededBy": {
+        "sceneId": 10090014,
+        "scenarioId": 22,
+        "uniqueId": 1009001400022,
+        "studioNodeId": "node_10583f39736d",
+        "reason": "The fully reviewed source title precedes this narration. Keep this legacy native row and original content intact; the active replacement is an authored scene14 row."
       }
     }
   },
