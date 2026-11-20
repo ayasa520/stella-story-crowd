@@ -46,7 +46,7 @@
       "status": "draft",
       "sourceText": "精霊の休息",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "精灵的休息",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 12.0000–12.0000 秒。 标题文字按 Studio 原生场景目录规范化；原始 OCR 标题保留在 evidence。",
       "recordings": [
         {
@@ -121,13 +121,53 @@
           "origin": "video",
           "score": null
         }
-      ]
+      ],
+      "repairEvidence": {
+        "offlineEditor": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 2,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 2,
+                "uniqueId": 1009001300002,
+                "studioNodeId": "node_a6e73ff66345",
+                "stableKey": null,
+                "sourceSpeaker": "",
+                "expectedMsgText": "精霊の休息",
+                "expectedSourceText": "精霊の休息",
+                "translation": "精灵的休息",
+                "fields": {
+                  "msg_text": "精灵的休息"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-002.jpg",
+                  "sha256": "7109c85065036d2103fcb9bbb1a18433f3a3ff16349d1a40061eed9e6d5e66c2",
+                  "sourceTimeSeconds": 12,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/000360.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
+          }
+        ]
+      }
     },
     "3": {
       "status": "draft",
       "sourceText": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……",
       "sourceSpeaker": "",
-      "translation": "",
+      "translation": "——返回失窃现场的昴一行，幸运地从水果店老板口中得知，犯人是贫民街的菲鲁特。于是，他们前往贫民街，然而……",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 14.0000–23.9999 秒。",
       "recordings": [
         {
@@ -360,6 +400,42 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 3,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 3,
+                "uniqueId": 1009001300003,
+                "studioNodeId": "node_ea312d07d1eb",
+                "stableKey": null,
+                "sourceSpeaker": "",
+                "expectedMsgText": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……",
+                "expectedSourceText": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……",
+                "translation": "——返回失窃现场的昴一行，幸运地从水果店老板口中得知，犯人是贫民街的菲鲁特。于是，他们前往贫民街，然而……",
+                "fields": {
+                  "msg_text": "——返回失窃现场的昴一行，幸运地从水果店老板口中得知，犯人是贫民街的菲鲁特。于是，他们前往贫民街，然而……"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-003.jpg",
+                  "sha256": "79d8fe04fce582ef62dbdfb49cd9cb9d67738e6a2a3e30d0f3bea12e3e3fffeb",
+                  "sourceTimeSeconds": 21.9999,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/000660.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
@@ -368,7 +444,7 @@
       "status": "draft",
       "sourceText": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "……总之，我们照着大叔指的路过来了。从这一带开始，就是贫民街了吗？",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 29.9999–33.9999 秒。",
       "recordings": [
         {
@@ -498,6 +574,42 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 4,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 4,
+                "uniqueId": 1009001300004,
+                "studioNodeId": "node_3098f820ddb0",
+                "stableKey": null,
+                "sourceSpeaker": "スバル",
+                "expectedMsgText": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？",
+                "expectedSourceText": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？",
+                "translation": "……总之，我们照着大叔指的路过来了。从这一带开始，就是贫民街了吗？",
+                "fields": {
+                  "msg_text": "……总之，我们照着大叔指的路过来了。从这一带开始，就是贫民街了吗？"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-004.jpg",
+                  "sha256": "dfd530baa7bdd88bce62dbcde4d777466a3c9ad5cd556369b2845b4b8bb10340",
+                  "sourceTimeSeconds": 33.9999,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/001020.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
@@ -506,7 +618,7 @@
       "status": "draft",
       "sourceText": "きっとそう。通りを一本外れただけで、表通りとずいぶん雰囲気が違うもの",
       "sourceSpeaker": "サテラ",
-      "translation": "",
+      "translation": "应该是吧。只是拐进一条街，气氛就和大街上差了好多。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 35.9999–39.9999 秒。",
       "recordings": [
         {
@@ -632,6 +744,42 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 5,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 5,
+                "uniqueId": 1009001300005,
+                "studioNodeId": "node_cfa6596a1827",
+                "stableKey": null,
+                "sourceSpeaker": "サテラ",
+                "expectedMsgText": "きっとそう。通りを一本外れただけで、表通りとずいぶん雰囲気が違うもの",
+                "expectedSourceText": "きっとそう。通りを一本外れただけで、表通りとずいぶん雰囲気が違うもの",
+                "translation": "应该是吧。只是拐进一条街，气氛就和大街上差了好多。",
+                "fields": {
+                  "msg_text": "应该是吧。只是拐进一条街，气氛就和大街上差了好多。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-005.jpg",
+                  "sha256": "605d20e769970b5aa64acb5a0c90d3eff1da381c3abf2f8d43522a794004e334",
+                  "sourceTimeSeconds": 39.9999,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/001200.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
@@ -640,7 +788,7 @@
       "status": "draft",
       "sourceText": "空気と雰囲気と、あとたぶん住んでる人間の性格も悪そう。本当にこんなとこにいるのか？",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "空气、气氛，还有大概住在这里的人，感觉都不怎么样。她真的会在这种地方吗？",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 41.9999–45.9999 秒。",
       "recordings": [
         {
@@ -766,15 +914,51 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 6,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 6,
+                "uniqueId": 1009001300006,
+                "studioNodeId": "node_ba4805f58765",
+                "stableKey": null,
+                "sourceSpeaker": "スバル",
+                "expectedMsgText": "空気と雰囲気と、あとたぶん住んでる人間の性格も悪そう。本当にこんなとこにいるのか？",
+                "expectedSourceText": "空気と雰囲気と、あとたぶん住んでる人間の性格も悪そう。本当にこんなとこにいるのか？",
+                "translation": "空气、气氛，还有大概住在这里的人，感觉都不怎么样。她真的会在这种地方吗？",
+                "fields": {
+                  "msg_text": "空气、气氛，还有大概住在这里的人，感觉都不怎么样。她真的会在这种地方吗？"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-006.jpg",
+                  "sha256": "e71adfa1f44de11b128118756fecee8eba2e0189eb9ff584211fd9bdcfc29603",
+                  "sourceTimeSeconds": 45.9999,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/001380.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
     },
     "7": {
       "status": "draft",
-      "sourceText": "進むにしても戻るにしても、決断は早めにね。ポクはそろそろ時間切れだから",
+      "sourceText": "進むにしても戻るにしても、決断は早めにね。ボクはそろそろ時間切れだから",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "不管是前进还是回去，都得早点决定哦。我差不多要到时限了。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 47.9999–51.9999 秒。",
       "recordings": [
         {
@@ -900,6 +1084,59 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 7,
+            "fields": [
+              "msg_text",
+              "sourceText"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 7,
+                "uniqueId": 1009001300007,
+                "studioNodeId": "node_ec5898dffe62",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "進むにしても戻るにしても、決断は早めにね。ポクはそろそろ時間切れだから",
+                "expectedSourceText": "進むにしても戻るにしても、決断は早めにね。ポクはそろそろ時間切れだから",
+                "translation": "不管是前进还是回去，都得早点决定哦。我差不多要到时限了。",
+                "fields": {
+                  "msg_text": "不管是前进还是回去，都得早点决定哦。我差不多要到时限了。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-007.jpg",
+                  "sha256": "b6ae24c0bdc6dd1109b6966aa3002454615cc56f1ad2412722affaf94b9729f8",
+                  "sourceTimeSeconds": 51.9999,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/001560.jpg"
+                },
+                "sourceCorrection": {
+                  "expectedSourceText": "進むにしても戻るにしても、決断は早めにね。ポクはそろそろ時間切れだから",
+                  "correctedSourceText": "進むにしても戻るにしても、決断は早めにね。ボクはそろそろ時間切れだから",
+                  "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text."
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            },
+            "sourceCorrection": {
+              "expectedSourceText": "進むにしても戻るにしても、決断は早めにね。ポクはそろそろ時間切れだから",
+              "correctedSourceText": "進むにしても戻るにしても、決断は早めにね。ボクはそろそろ時間切れだから",
+              "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text.",
+              "terminalSourceFrame": {
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-007.jpg",
+                "sha256": "b6ae24c0bdc6dd1109b6966aa3002454615cc56f1ad2412722affaf94b9729f8",
+                "sourceTimeSeconds": 51.9999,
+                "completedPanel": true
+              }
+            }
           }
         ]
       }
@@ -908,7 +1145,7 @@
       "status": "draft",
       "sourceText": "何それ。時間切れ？",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "什么啊，时限？",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 53.9999–53.9999 秒。",
       "recordings": [
         {
@@ -1030,15 +1267,51 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 8,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 8,
+                "uniqueId": 1009001300008,
+                "studioNodeId": "node_32583f41d3d0",
+                "stableKey": null,
+                "sourceSpeaker": "スバル",
+                "expectedMsgText": "何それ。時間切れ？",
+                "expectedSourceText": "何それ。時間切れ？",
+                "translation": "什么啊，时限？",
+                "fields": {
+                  "msg_text": "什么啊，时限？"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-008.jpg",
+                  "sha256": "50ef8672bd98031ee1eb73f932dcfe8cc055a1247002db604b14150ab2295990",
+                  "sourceTimeSeconds": 53.9999,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/001620.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
     },
     "9": {
       "status": "draft",
-      "sourceText": "ポクはこんな可愛い見た目だけど精霊だからね。表に出てるだけで、結構マナを使っ",
+      "sourceText": "ボクはこんな可愛い見た目だけど精霊だからね。表に出てるだけで、結構マナを使っちゃうんだ",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "别看我长得这么可爱，我可是精灵哦。光是待在外面，就会消耗不少玛娜。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 57.9999–59.9999 秒。",
       "recordings": [
         {
@@ -1164,6 +1437,58 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 9,
+            "fields": [
+              "msg_text",
+              "sourceText"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-terminal-completions.json",
+              "sourcePacketSha256": "e0903daa6134bc6d4ff0e51c5e0b0e7661697d9949c8d235e04330556bffdaf7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 9,
+                "uniqueId": 1009001300009,
+                "studioNodeId": "node_7f0731fb4e9f",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "ポクはこんな可愛い見た目だけど精霊だからね。表に出てるだけで、結構マナを使っ",
+                "expectedSourceText": "ポクはこんな可愛い見た目だけど精霊だからね。表に出てるだけで、結構マナを使っ",
+                "translation": "别看我长得这么可爱，我可是精灵哦。光是待在外面，就会消耗不少玛娜。",
+                "fields": {
+                  "msg_text": "别看我长得这么可爱，我可是精灵哦。光是待在外面，就会消耗不少玛娜。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/text-controls/10090013-009-at61.4.jpg",
+                  "sha256": "83e03c0efcfa36b51f1a438a5bd7eea9ecdac9d05ed5b4ef96ee771af15be374",
+                  "sourceTimeSeconds": 61.4
+                },
+                "sourceCorrection": {
+                  "expectedSourceText": "ポクはこんな可愛い見た目だけど精霊だからね。表に出てるだけで、結構マナを使っ",
+                  "correctedSourceText": "ボクはこんな可愛い見た目だけど精霊だからね。表に出てるだけで、結構マナを使っちゃうんだ",
+                  "reason": "Directly read the completed source panel, independently confirming the terminal-text-corrections packet."
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            },
+            "sourceCorrection": {
+              "expectedSourceText": "ポクはこんな可愛い見た目だけど精霊だからね。表に出てるだけで、結構マナを使っ",
+              "correctedSourceText": "ボクはこんな可愛い見た目だけど精霊だからね。表に出てるだけで、結構マナを使っちゃうんだ",
+              "reason": "Directly read the completed source panel, independently confirming the terminal-text-corrections packet.",
+              "terminalSourceFrame": {
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/text-controls/10090013-009-at61.4.jpg",
+                "sha256": "83e03c0efcfa36b51f1a438a5bd7eea9ecdac9d05ed5b4ef96ee771af15be374",
+                "sourceTimeSeconds": 61.4,
+                "completedPanel": true
+              }
+            }
           }
         ]
       }
@@ -1172,7 +1497,7 @@
       "status": "draft",
       "sourceText": "だから夜は依り代の結晶石に戻って、お天道様が出てる間に備えてるんだよ。まあ、平均的には9時から5時が理想かな",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "所以，晚上我会回到作为寄宿之所的结晶石里，为太阳升起后的活动做准备。嗯，平均下来，朝九晚五最理想吧。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 63.9999–91.9998 秒。",
       "recordings": [
         {
@@ -1254,7 +1579,7 @@
           "studioEdgeId": "edge_6103098961c3",
           "sourceLabel": "ツッコむ",
           "sourceQuote": "",
-          "labelTranslation": "",
+          "labelTranslation": "吐槽",
           "quoteTranslation": "",
           "state": "missing",
           "sourceState": "missing",
@@ -1267,9 +1592,9 @@
           "branchId": 103,
           "studioEdgeId": "edge_d90c804f8c71",
           "sourceLabel": "一緒にぼやく",
-          "sourceQuote": "何でもできるようでいて、\n精霊も案外大変なんだな",
-          "labelTranslation": "",
-          "quoteTranslation": "",
+          "sourceQuote": "何でもできるようでいて、精霊も案外大変なんだな",
+          "labelTranslation": "一同抱怨",
+          "quoteTranslation": "看起来好像无所不能，其实精灵也挺辛苦的啊。",
           "state": "confirmed",
           "sourceState": "confirmed",
           "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 70.0000 秒。",
@@ -1432,15 +1757,138 @@
                 "commonMergeWithSelectedRoute": "unproven; do not infer a shared target from numbering or previews"
               }
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 10,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 10,
+                "uniqueId": 1009001300010,
+                "studioNodeId": "node_7fe60f5989cb",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "だから夜は依り代の結晶石に戻って、お天道様が出てる間に備えてるんだよ。まあ、平均的には9時から5時が理想かな",
+                "expectedSourceText": "だから夜は依り代の結晶石に戻って、お天道様が出てる間に備えてるんだよ。まあ、平均的には9時から5時が理想かな",
+                "translation": "所以，晚上我会回到作为寄宿之所的结晶石里，为太阳升起后的活动做准备。嗯，平均下来，朝九晚五最理想吧。",
+                "fields": {
+                  "msg_text": "所以，晚上我会回到作为寄宿之所的结晶石里，为太阳升起后的活动做准备。嗯，平均下来，朝九晚五最理想吧。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-010.jpg",
+                  "sha256": "b1cf0dbbd2470480fb098dca4826881293fdb15c2c544a8a0d12389668414bbe",
+                  "sourceTimeSeconds": 89.9998,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/002700.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text-edges.json",
+            "packetSha256": "4bdd59d66153f80c0b9e2d0d2c7314f18c318c28fe79a797f0edb6bd1fbdb032",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 10,
+            "fields": [
+              "label_translation"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 10,
+                "branchId": 102,
+                "uniqueId": 1009001310102,
+                "studioNodeId": "node_7fe60f5989cb",
+                "studioEdgeId": "edge_6103098961c3",
+                "expectedLabel": "ツッコむ",
+                "expectedQuote": "未設定",
+                "expectedSourceLabel": "ツッコむ",
+                "expectedSourceQuote": "",
+                "labelTranslation": "吐槽",
+                "fields": {
+                  "msg_quote_subject": "吐槽"
+                },
+                "sourceFrame": {
+                  "path": "data/video_recovery/capital-05/half-hz-run/frames/002100.jpg",
+                  "sha256": "1bc71901cb156de699e16ae15e305a3063c4ea3f96b791bcff616ae94ed5a0c6",
+                  "sourceTimeSeconds": 70
+                },
+                "unrecordedQuoteInferred": false,
+                "quoteDecision": "Unselected response not observed: preserve the existing placeholder and do not invent its quote."
+              }
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text-edges.json",
+            "packetSha256": "4bdd59d66153f80c0b9e2d0d2c7314f18c318c28fe79a797f0edb6bd1fbdb032",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 10,
+            "fields": [
+              "label_translation",
+              "quote_translation",
+              "quote"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 10,
+                "branchId": 103,
+                "uniqueId": 1009001310103,
+                "studioNodeId": "node_7fe60f5989cb",
+                "studioEdgeId": "edge_d90c804f8c71",
+                "expectedLabel": "一緒にぼやく",
+                "expectedQuote": "何でもできるようでいて、\n精霊も案外大変なんだな",
+                "expectedSourceLabel": "一緒にぼやく",
+                "expectedSourceQuote": "何でもできるようでいて、\n精霊も案外大変なんだな",
+                "guardRebindReason": "The formal writer recovered this observed Japanese quote during the identity/route publication. Its text is identical to this packet's independently viewed source quote after flattening the display line break.",
+                "labelTranslation": "一同抱怨",
+                "fields": {
+                  "msg_quote_subject": "一同抱怨",
+                  "msg_quote": "看起来好像无所不能，其实精灵也挺辛苦的啊。"
+                },
+                "sourceFrame": {
+                  "path": "data/video_recovery/capital-05/half-hz-run/frames/002100.jpg",
+                  "sha256": "1bc71901cb156de699e16ae15e305a3063c4ea3f96b791bcff616ae94ed5a0c6",
+                  "sourceTimeSeconds": 70
+                },
+                "unrecordedQuoteInferred": false,
+                "correctedSourceQuote": "何でもできるようでいて、精霊も案外大変なんだな",
+                "quoteTranslation": "看起来好像无所不能，其实精灵也挺辛苦的啊。",
+                "quoteFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-010.jpg",
+                  "sha256": "b1cf0dbbd2470480fb098dca4826881293fdb15c2c544a8a0d12389668414bbe",
+                  "sourceTimeSeconds": 89.9998,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/002700.jpg"
+                }
+              }
+            }
           }
         ]
       }
     },
     "11": {
       "status": "draft",
-      "sourceText": "ふふつ。精霊を気遣うなんて、スバルは本当に変わってるね",
+      "sourceText": "ふふっ。精霊を気遣うなんて、スバルは本当に変わってるね",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "呵呵。居然会顾虑精灵的感受，昴真是个怪人呢。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 95.9998–97.9998 秒。",
       "recordings": [
         {
@@ -1566,15 +2014,68 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 11,
+            "fields": [
+              "msg_text",
+              "sourceText"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 11,
+                "uniqueId": 1009001300011,
+                "studioNodeId": "node_2d09629f0f09",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "ふふつ。精霊を気遣うなんて、スバルは本当に変わってるね",
+                "expectedSourceText": "ふふつ。精霊を気遣うなんて、スバルは本当に変わってるね",
+                "translation": "呵呵。居然会顾虑精灵的感受，昴真是个怪人呢。",
+                "fields": {
+                  "msg_text": "呵呵。居然会顾虑精灵的感受，昴真是个怪人呢。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-011.jpg",
+                  "sha256": "d155c46fc1b6d68562a78fedf934e127d2e75bffe38b4d90fec85bef7a0abcd0",
+                  "sourceTimeSeconds": 97.9998,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/002940.jpg"
+                },
+                "sourceCorrection": {
+                  "expectedSourceText": "ふふつ。精霊を気遣うなんて、スバルは本当に変わってるね",
+                  "correctedSourceText": "ふふっ。精霊を気遣うなんて、スバルは本当に変わってるね",
+                  "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text."
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            },
+            "sourceCorrection": {
+              "expectedSourceText": "ふふつ。精霊を気遣うなんて、スバルは本当に変わってるね",
+              "correctedSourceText": "ふふっ。精霊を気遣うなんて、スバルは本当に変わってるね",
+              "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text.",
+              "terminalSourceFrame": {
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-011.jpg",
+                "sha256": "d155c46fc1b6d68562a78fedf934e127d2e75bffe38b4d90fec85bef7a0abcd0",
+                "sourceTimeSeconds": 97.9998,
+                "completedPanel": true
+              }
+            }
           }
         ]
       }
     },
     "12": {
       "status": "draft",
-      "sourceText": "無理させてごめんね、パック。でも、徽章は諦められないから……ここは、進むしかな",
+      "sourceText": "無理させてごめんね、パック。でも、徽章は諦められないから……ここは、進むしかないと思う",
       "sourceSpeaker": "サテラ",
-      "translation": "",
+      "translation": "抱歉让你勉强了，帕克。可是，我不能放弃徽章……我想，我们只能继续往前走了。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 99.9998–103.9998 秒。",
       "recordings": [
         {
@@ -1704,6 +2205,58 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 12,
+            "fields": [
+              "msg_text",
+              "sourceText"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-terminal-completions.json",
+              "sourcePacketSha256": "e0903daa6134bc6d4ff0e51c5e0b0e7661697d9949c8d235e04330556bffdaf7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 12,
+                "uniqueId": 1009001300012,
+                "studioNodeId": "node_eef7d9c6d8ba",
+                "stableKey": null,
+                "sourceSpeaker": "サテラ",
+                "expectedMsgText": "無理させてごめんね、パック。でも、徽章は諦められないから……ここは、進むしかな",
+                "expectedSourceText": "無理させてごめんね、パック。でも、徽章は諦められないから……ここは、進むしかな",
+                "translation": "抱歉让你勉强了，帕克。可是，我不能放弃徽章……我想，我们只能继续往前走了。",
+                "fields": {
+                  "msg_text": "抱歉让你勉强了，帕克。可是，我不能放弃徽章……我想，我们只能继续往前走了。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/text-controls/10090013-012-at105.4.jpg",
+                  "sha256": "3552fc882d788d82c82e1793d4d95e7cf217de3e401b07536751c573e6bf6f12",
+                  "sourceTimeSeconds": 105.4
+                },
+                "sourceCorrection": {
+                  "expectedSourceText": "無理させてごめんね、パック。でも、徽章は諦められないから……ここは、進むしかな",
+                  "correctedSourceText": "無理させてごめんね、パック。でも、徽章は諦められないから……ここは、進むしかないと思う",
+                  "reason": "Directly read the completed source panel, independently confirming the terminal-text-corrections packet."
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            },
+            "sourceCorrection": {
+              "expectedSourceText": "無理させてごめんね、パック。でも、徽章は諦められないから……ここは、進むしかな",
+              "correctedSourceText": "無理させてごめんね、パック。でも、徽章は諦められないから……ここは、進むしかないと思う",
+              "reason": "Directly read the completed source panel, independently confirming the terminal-text-corrections packet.",
+              "terminalSourceFrame": {
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/text-controls/10090013-012-at105.4.jpg",
+                "sha256": "3552fc882d788d82c82e1793d4d95e7cf217de3e401b07536751c573e6bf6f12",
+                "sourceTimeSeconds": 105.4,
+                "completedPanel": true
+              }
+            }
           }
         ]
       }
@@ -1712,7 +2265,7 @@
       "status": "draft",
       "sourceText": "だよね。でもごめん。ボク、もう限界だ……",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "是啊。不过抱歉，我已经到极限了……",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 107.9997–121.9997 秒。",
       "recordings": [
         {
@@ -1786,7 +2339,7 @@
           "studioEdgeId": "edge_0b77dc9fb08b",
           "sourceLabel": "心配する",
           "sourceQuote": "",
-          "labelTranslation": "",
+          "labelTranslation": "表示担心",
           "quoteTranslation": "",
           "state": "missing",
           "sourceState": "missing",
@@ -1799,9 +2352,9 @@
           "branchId": 133,
           "studioEdgeId": "edge_a630e3d60534",
           "sourceLabel": "本音を漏らす",
-          "sourceQuote": "パックがいなくなるのは、\nちょっと不安だな……",
-          "labelTranslation": "",
-          "quoteTranslation": "",
+          "sourceQuote": "パックがいなくなるのは、ちょっと不安だな……",
+          "labelTranslation": "说出心声",
+          "quoteTranslation": "帕克不在的话，我还是有点不安啊……",
           "state": "confirmed",
           "sourceState": "confirmed",
           "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 110.0000 秒。",
@@ -1959,6 +2512,129 @@
                 "commonMergeWithSelectedRoute": "unproven; do not infer a shared target from numbering or previews"
               }
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 13,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 13,
+                "uniqueId": 1009001300013,
+                "studioNodeId": "node_5885d6e83c9f",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "だよね。でもごめん。ボク、もう限界だ……",
+                "expectedSourceText": "だよね。でもごめん。ボク、もう限界だ……",
+                "translation": "是啊。不过抱歉，我已经到极限了……",
+                "fields": {
+                  "msg_text": "是啊。不过抱歉，我已经到极限了……"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-013.jpg",
+                  "sha256": "62b514189f00529e9a1b94b7c704e84d8a32eff26b05aa4ff8aca5fc06e8fa4a",
+                  "sourceTimeSeconds": 121.9997,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/003660.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text-edges.json",
+            "packetSha256": "4bdd59d66153f80c0b9e2d0d2c7314f18c318c28fe79a797f0edb6bd1fbdb032",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 13,
+            "fields": [
+              "label_translation"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 13,
+                "branchId": 132,
+                "uniqueId": 1009001310132,
+                "studioNodeId": "node_5885d6e83c9f",
+                "studioEdgeId": "edge_0b77dc9fb08b",
+                "expectedLabel": "心配する",
+                "expectedQuote": "未設定",
+                "expectedSourceLabel": "心配する",
+                "expectedSourceQuote": "",
+                "labelTranslation": "表示担心",
+                "fields": {
+                  "msg_quote_subject": "表示担心"
+                },
+                "sourceFrame": {
+                  "path": "data/video_recovery/capital-05/half-hz-run/frames/003300.jpg",
+                  "sha256": "718056168db6cf3a3d5ad874ba29bd14777384c1aa1c933df778cec6cdd7fd9d",
+                  "sourceTimeSeconds": 110
+                },
+                "unrecordedQuoteInferred": false,
+                "quoteDecision": "Unselected response not observed: preserve the existing placeholder and do not invent its quote."
+              }
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text-edges.json",
+            "packetSha256": "4bdd59d66153f80c0b9e2d0d2c7314f18c318c28fe79a797f0edb6bd1fbdb032",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 13,
+            "fields": [
+              "label_translation",
+              "quote_translation",
+              "quote"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 13,
+                "branchId": 133,
+                "uniqueId": 1009001310133,
+                "studioNodeId": "node_5885d6e83c9f",
+                "studioEdgeId": "edge_a630e3d60534",
+                "expectedLabel": "本音を漏らす",
+                "expectedQuote": "パックがいなくなるのは、\nちょっと不安だな……",
+                "expectedSourceLabel": "本音を漏らす",
+                "expectedSourceQuote": "パックがいなくなるのは、\nちょっと不安だな……",
+                "guardRebindReason": "The formal writer recovered this observed Japanese quote during the identity/route publication. Its text is identical to this packet's independently viewed source quote after flattening the display line break.",
+                "labelTranslation": "说出心声",
+                "fields": {
+                  "msg_quote_subject": "说出心声",
+                  "msg_quote": "帕克不在的话，我还是有点不安啊……"
+                },
+                "sourceFrame": {
+                  "path": "data/video_recovery/capital-05/half-hz-run/frames/003300.jpg",
+                  "sha256": "718056168db6cf3a3d5ad874ba29bd14777384c1aa1c933df778cec6cdd7fd9d",
+                  "sourceTimeSeconds": 110
+                },
+                "unrecordedQuoteInferred": false,
+                "correctedSourceQuote": "パックがいなくなるのは、ちょっと不安だな……",
+                "quoteTranslation": "帕克不在的话，我还是有点不安啊……",
+                "quoteFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-013.jpg",
+                  "sha256": "62b514189f00529e9a1b94b7c704e84d8a32eff26b05aa4ff8aca5fc06e8fa4a",
+                  "sourceTimeSeconds": 121.9997,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/003660.jpg"
+                }
+              }
+            }
           }
         ]
       }
@@ -1967,7 +2643,7 @@
       "status": "draft",
       "sourceText": "そんな弱気じゃ困るなあ",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "你这么没底气，我可就为难了。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 125.9997–125.9997 秒。",
       "recordings": [
         {
@@ -2089,6 +2765,42 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 14,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 14,
+                "uniqueId": 1009001300014,
+                "studioNodeId": "node_9d3dd400ac9b",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "そんな弱気じゃ困るなあ",
+                "expectedSourceText": "そんな弱気じゃ困るなあ",
+                "translation": "你这么没底气，我可就为难了。",
+                "fields": {
+                  "msg_text": "你这么没底气，我可就为难了。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-014.jpg",
+                  "sha256": "b8238dff3ba81941bb6e0a6c7f74a4794d39e6bb2d7e69cff1ae35dc6cd7cd23",
+                  "sourceTimeSeconds": 125.9997,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/003780.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
@@ -2097,7 +2809,7 @@
       "status": "draft",
       "sourceText": "スバル、パックがいなくても大丈夫よ。私が魔法を使えるのは見てたでしょ",
       "sourceSpeaker": "サテラ",
-      "translation": "",
+      "translation": "昴，就算帕克不在也没关系。你也看见我会用魔法了吧？",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 127.9997–131.9997 秒。",
       "recordings": [
         {
@@ -2223,6 +2935,42 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 15,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 15,
+                "uniqueId": 1009001300015,
+                "studioNodeId": "node_a9bd2a7ab527",
+                "stableKey": null,
+                "sourceSpeaker": "サテラ",
+                "expectedMsgText": "スバル、パックがいなくても大丈夫よ。私が魔法を使えるのは見てたでしょ",
+                "expectedSourceText": "スバル、パックがいなくても大丈夫よ。私が魔法を使えるのは見てたでしょ",
+                "translation": "昴，就算帕克不在也没关系。你也看见我会用魔法了吧？",
+                "fields": {
+                  "msg_text": "昴，就算帕克不在也没关系。你也看见我会用魔法了吧？"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-015.jpg",
+                  "sha256": "f33fcd8362b9fd5ea029d440110afdd89871e1388063ddc3a527062d32b181d2",
+                  "sourceTimeSeconds": 131.9997,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/003960.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
@@ -2231,7 +2979,7 @@
       "status": "draft",
       "sourceText": "あとは私たちで頑張るから、パックはゆっくり休んで",
       "sourceSpeaker": "サテラ",
-      "translation": "",
+      "translation": "接下来我们会努力的，帕克就好好休息吧。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 133.9997–135.9997 秒。",
       "recordings": [
         {
@@ -2353,15 +3101,51 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 16,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 16,
+                "uniqueId": 1009001300016,
+                "studioNodeId": "node_0e45901c49ef",
+                "stableKey": null,
+                "sourceSpeaker": "サテラ",
+                "expectedMsgText": "あとは私たちで頑張るから、パックはゆっくり休んで",
+                "expectedSourceText": "あとは私たちで頑張るから、パックはゆっくり休んで",
+                "translation": "接下来我们会努力的，帕克就好好休息吧。",
+                "fields": {
+                  "msg_text": "接下来我们会努力的，帕克就好好休息吧。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-016.jpg",
+                  "sha256": "0475b23999a0d744e2eff785649e38e9176742470716959d348931250279bccb",
+                  "sourceTimeSeconds": 135.9997,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/004080.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
     },
     "17": {
       "status": "draft",
-      "sourceText": "くれぐれも無茶しないように。いざとなったら、オドを使ってでもポクを呼び出すんだよ",
+      "sourceText": "くれぐれも無茶しないように。いざとなったら、オドを使ってでもボクを呼び出すんだよ",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "千万别逞强哦。真到了危急关头，就算要用欧德，也得把我召唤出来。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 137.9997–141.9997 秒。",
       "recordings": [
         {
@@ -2487,6 +3271,59 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 17,
+            "fields": [
+              "msg_text",
+              "sourceText"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 17,
+                "uniqueId": 1009001300017,
+                "studioNodeId": "node_235516f5d875",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "くれぐれも無茶しないように。いざとなったら、オドを使ってでもポクを呼び出すんだよ",
+                "expectedSourceText": "くれぐれも無茶しないように。いざとなったら、オドを使ってでもポクを呼び出すんだよ",
+                "translation": "千万别逞强哦。真到了危急关头，就算要用欧德，也得把我召唤出来。",
+                "fields": {
+                  "msg_text": "千万别逞强哦。真到了危急关头，就算要用欧德，也得把我召唤出来。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-017.jpg",
+                  "sha256": "011cf913154576db5bab95360e3757160ee266312469eb4e3c9b037078e59f41",
+                  "sourceTimeSeconds": 141.9997,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/004260.jpg"
+                },
+                "sourceCorrection": {
+                  "expectedSourceText": "くれぐれも無茶しないように。いざとなったら、オドを使ってでもポクを呼び出すんだよ",
+                  "correctedSourceText": "くれぐれも無茶しないように。いざとなったら、オドを使ってでもボクを呼び出すんだよ",
+                  "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text."
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            },
+            "sourceCorrection": {
+              "expectedSourceText": "くれぐれも無茶しないように。いざとなったら、オドを使ってでもポクを呼び出すんだよ",
+              "correctedSourceText": "くれぐれも無茶しないように。いざとなったら、オドを使ってでもボクを呼び出すんだよ",
+              "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text.",
+              "terminalSourceFrame": {
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-017.jpg",
+                "sha256": "011cf913154576db5bab95360e3757160ee266312469eb4e3c9b037078e59f41",
+                "sourceTimeSeconds": 141.9997,
+                "completedPanel": true
+              }
+            }
           }
         ]
       }
@@ -2495,7 +3332,7 @@
       "status": "draft",
       "sourceText": "わかってます。子どもじゃないんだから、自分のことぐらいちゃんとできるもの",
       "sourceSpeaker": "サテラ",
-      "translation": "",
+      "translation": "知道啦。我又不是小孩子，自己的事总能处理好的。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 143.9997–147.9997 秒。",
       "recordings": [
         {
@@ -2621,6 +3458,42 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 18,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 18,
+                "uniqueId": 1009001300018,
+                "studioNodeId": "node_0e4bf7b984ae",
+                "stableKey": null,
+                "sourceSpeaker": "サテラ",
+                "expectedMsgText": "わかってます。子どもじゃないんだから、自分のことぐらいちゃんとできるもの",
+                "expectedSourceText": "わかってます。子どもじゃないんだから、自分のことぐらいちゃんとできるもの",
+                "translation": "知道啦。我又不是小孩子，自己的事总能处理好的。",
+                "fields": {
+                  "msg_text": "知道啦。我又不是小孩子，自己的事总能处理好的。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-018.jpg",
+                  "sha256": "5f816acfd6f85b222f40783d7c3ad72c298d26d414754073d4e2cdb86767a4fa",
+                  "sourceTimeSeconds": 147.9997,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/004440.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
@@ -2629,7 +3502,7 @@
       "status": "draft",
       "sourceText": "どうかなー。ボクの娘はその辺りちょっと怪しいからね",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "那可不一定哦。我家女儿在这方面，可是有点靠不住呢。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 149.9997–151.9996 秒。",
       "recordings": [
         {
@@ -2755,6 +3628,42 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 19,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 19,
+                "uniqueId": 1009001300019,
+                "studioNodeId": "node_89ea27a459a3",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "どうかなー。ボクの娘はその辺りちょっと怪しいからね",
+                "expectedSourceText": "どうかなー。ボクの娘はその辺りちょっと怪しいからね",
+                "translation": "那可不一定哦。我家女儿在这方面，可是有点靠不住呢。",
+                "fields": {
+                  "msg_text": "那可不一定哦。我家女儿在这方面，可是有点靠不住呢。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-019.jpg",
+                  "sha256": "4ea294730ebbc3941c37e0eb92b07199119aab6e196db47b1ca326049dbc0d42",
+                  "sourceTimeSeconds": 151.9996,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/004560.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
@@ -2763,7 +3672,7 @@
       "status": "draft",
       "sourceText": "……そういうことだから、あとは頼んだよ、スバル",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "……事情就是这样，接下来就拜托你了，昴。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 153.9996–175.9996 秒。",
       "recordings": [
         {
@@ -2841,7 +3750,7 @@
           "studioEdgeId": "edge_cec66f7b610b",
           "sourceLabel": "安請け合いする",
           "sourceQuote": "",
-          "labelTranslation": "",
+          "labelTranslation": "一口答应",
           "quoteTranslation": "",
           "state": "missing",
           "sourceState": "missing",
@@ -2854,9 +3763,9 @@
           "branchId": 203,
           "studioEdgeId": "edge_a2ffb637b053",
           "sourceLabel": "決意を示す",
-          "sourceQuote": "うっし、ここいらで一つ、\nそろそろいいとこ見せましょうかね",
-          "labelTranslation": "",
-          "quoteTranslation": "",
+          "sourceQuote": "うっし、ここいらで一つ、そろそろいいとこ見せましょうかね",
+          "labelTranslation": "展示决心",
+          "quoteTranslation": "好嘞，差不多也该让我好好露一手了。",
           "state": "confirmed",
           "sourceState": "confirmed",
           "notes": "第一章第五话录像分支草稿；未审核、未确定所选方向。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；菜单约 158.0000 秒。",
@@ -3024,15 +3933,138 @@
                 "commonMergeWithSelectedRoute": "unproven; do not infer a shared target from numbering or previews"
               }
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 20,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 20,
+                "uniqueId": 1009001300020,
+                "studioNodeId": "node_e6cf60a4588b",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "……そういうことだから、あとは頼んだよ、スバル",
+                "expectedSourceText": "……そういうことだから、あとは頼んだよ、スバル",
+                "translation": "……事情就是这样，接下来就拜托你了，昴。",
+                "fields": {
+                  "msg_text": "……事情就是这样，接下来就拜托你了，昴。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-020.jpg",
+                  "sha256": "d597dadaab8f0b911203553146c482114381ad82167f6de3db5049370f13dc25",
+                  "sourceTimeSeconds": 171.9996,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/005160.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text-edges.json",
+            "packetSha256": "4bdd59d66153f80c0b9e2d0d2c7314f18c318c28fe79a797f0edb6bd1fbdb032",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 20,
+            "fields": [
+              "label_translation"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 20,
+                "branchId": 202,
+                "uniqueId": 1009001310202,
+                "studioNodeId": "node_e6cf60a4588b",
+                "studioEdgeId": "edge_cec66f7b610b",
+                "expectedLabel": "安請け合いする",
+                "expectedQuote": "未設定",
+                "expectedSourceLabel": "安請け合いする",
+                "expectedSourceQuote": "",
+                "labelTranslation": "一口答应",
+                "fields": {
+                  "msg_quote_subject": "一口答应"
+                },
+                "sourceFrame": {
+                  "path": "data/video_recovery/capital-05/half-hz-run/frames/004740.jpg",
+                  "sha256": "d4b5b63f99272b0f61bace11a1a6ed1708ab07d0c3b7efb439b6f9428d3e4c47",
+                  "sourceTimeSeconds": 158
+                },
+                "unrecordedQuoteInferred": false,
+                "quoteDecision": "Unselected response not observed: preserve the existing placeholder and do not invent its quote."
+              }
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text-edges.json",
+            "packetSha256": "4bdd59d66153f80c0b9e2d0d2c7314f18c318c28fe79a797f0edb6bd1fbdb032",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 20,
+            "fields": [
+              "label_translation",
+              "quote_translation",
+              "quote"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 20,
+                "branchId": 203,
+                "uniqueId": 1009001310203,
+                "studioNodeId": "node_e6cf60a4588b",
+                "studioEdgeId": "edge_a2ffb637b053",
+                "expectedLabel": "決意を示す",
+                "expectedQuote": "うっし、ここいらで一つ、\nそろそろいいとこ見せましょうかね",
+                "expectedSourceLabel": "決意を示す",
+                "expectedSourceQuote": "うっし、ここいらで一つ、\nそろそろいいとこ見せましょうかね",
+                "guardRebindReason": "The formal writer recovered this observed Japanese quote during the identity/route publication. Its text is identical to this packet's independently viewed source quote after flattening the display line break.",
+                "labelTranslation": "展示决心",
+                "fields": {
+                  "msg_quote_subject": "展示决心",
+                  "msg_quote": "好嘞，差不多也该让我好好露一手了。"
+                },
+                "sourceFrame": {
+                  "path": "data/video_recovery/capital-05/half-hz-run/frames/004740.jpg",
+                  "sha256": "d4b5b63f99272b0f61bace11a1a6ed1708ab07d0c3b7efb439b6f9428d3e4c47",
+                  "sourceTimeSeconds": 158
+                },
+                "unrecordedQuoteInferred": false,
+                "correctedSourceQuote": "うっし、ここいらで一つ、そろそろいいとこ見せましょうかね",
+                "quoteTranslation": "好嘞，差不多也该让我好好露一手了。",
+                "quoteFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-020.jpg",
+                  "sha256": "d597dadaab8f0b911203553146c482114381ad82167f6de3db5049370f13dc25",
+                  "sourceTimeSeconds": 171.9996,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/005160.jpg"
+                }
+              }
+            }
           }
         ]
       }
     },
     "21": {
       "status": "draft",
-      "sourceText": "そんな風に鼻息荒くされると、うちの娘と二人きりにするの、ちょつと考えちゃうなあ",
+      "sourceText": "そんな風に鼻息荒くされると、うちの娘と二人きりにするの、ちょっと考えちゃうなあ",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "你这么兴奋，我倒有点犹豫，要不要让我家女儿和你单独相处了。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 179.9996–183.9996 秒。",
       "recordings": [
         {
@@ -3158,6 +4190,59 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 21,
+            "fields": [
+              "msg_text",
+              "sourceText"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 21,
+                "uniqueId": 1009001300021,
+                "studioNodeId": "node_6bd06a6c355e",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "そんな風に鼻息荒くされると、うちの娘と二人きりにするの、ちょつと考えちゃうなあ",
+                "expectedSourceText": "そんな風に鼻息荒くされると、うちの娘と二人きりにするの、ちょつと考えちゃうなあ",
+                "translation": "你这么兴奋，我倒有点犹豫，要不要让我家女儿和你单独相处了。",
+                "fields": {
+                  "msg_text": "你这么兴奋，我倒有点犹豫，要不要让我家女儿和你单独相处了。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-021.jpg",
+                  "sha256": "c7ecc0f33f638ba10a762211a9e112880326d0d952c718a4f6e49512909dee4b",
+                  "sourceTimeSeconds": 183.9996,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/005520.jpg"
+                },
+                "sourceCorrection": {
+                  "expectedSourceText": "そんな風に鼻息荒くされると、うちの娘と二人きりにするの、ちょつと考えちゃうなあ",
+                  "correctedSourceText": "そんな風に鼻息荒くされると、うちの娘と二人きりにするの、ちょっと考えちゃうなあ",
+                  "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text."
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            },
+            "sourceCorrection": {
+              "expectedSourceText": "そんな風に鼻息荒くされると、うちの娘と二人きりにするの、ちょつと考えちゃうなあ",
+              "correctedSourceText": "そんな風に鼻息荒くされると、うちの娘と二人きりにするの、ちょっと考えちゃうなあ",
+              "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text.",
+              "terminalSourceFrame": {
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-021.jpg",
+                "sha256": "c7ecc0f33f638ba10a762211a9e112880326d0d952c718a4f6e49512909dee4b",
+                "sourceTimeSeconds": 183.9996,
+                "completedPanel": true
+              }
+            }
           }
         ]
       }
@@ -3166,7 +4251,7 @@
       "status": "draft",
       "sourceText": "……?よくわからないけど、変なこと考えちゃダメだからね、スバル",
       "sourceSpeaker": "サテラ",
-      "translation": "",
+      "translation": "……？虽然不太明白，不过不许动什么歪脑筋哦，昴。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 185.9996–187.9996 秒。",
       "recordings": [
         {
@@ -3292,6 +4377,42 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 22,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 22,
+                "uniqueId": 1009001300022,
+                "studioNodeId": "node_1b13db0e92be",
+                "stableKey": null,
+                "sourceSpeaker": "サテラ",
+                "expectedMsgText": "……?よくわからないけど、変なこと考えちゃダメだからね、スバル",
+                "expectedSourceText": "……?よくわからないけど、変なこと考えちゃダメだからね、スバル",
+                "translation": "……？虽然不太明白，不过不许动什么歪脑筋哦，昴。",
+                "fields": {
+                  "msg_text": "……？虽然不太明白，不过不许动什么歪脑筋哦，昴。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-022.jpg",
+                  "sha256": "3012019403236827042a522b621d472e8d18f5510da6e71c75840a3d217c7760",
+                  "sourceTimeSeconds": 187.9996,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/005640.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
@@ -3300,7 +4421,7 @@
       "status": "draft",
       "sourceText": "おいおい、女の子と二人きりなんて小学生以来のシチュエーションだ。とてもじゃねえけど何もできねえよ",
       "sourceSpeaker": "スバル",
-      "translation": "",
+      "translation": "喂喂，我上次和女孩子单独相处，都是小学时候的事了。就算想干点什么，我也完全做不到啊。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 189.9996–195.9995 秒。",
       "recordings": [
         {
@@ -3430,15 +4551,51 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 23,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 23,
+                "uniqueId": 1009001300023,
+                "studioNodeId": "node_0ec41a4d0352",
+                "stableKey": null,
+                "sourceSpeaker": "スバル",
+                "expectedMsgText": "おいおい、女の子と二人きりなんて小学生以来のシチュエーションだ。とてもじゃねえけど何もできねえよ",
+                "expectedSourceText": "おいおい、女の子と二人きりなんて小学生以来のシチュエーションだ。とてもじゃねえけど何もできねえよ",
+                "translation": "喂喂，我上次和女孩子单独相处，都是小学时候的事了。就算想干点什么，我也完全做不到啊。",
+                "fields": {
+                  "msg_text": "喂喂，我上次和女孩子单独相处，都是小学时候的事了。就算想干点什么，我也完全做不到啊。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-023.jpg",
+                  "sha256": "b3ce943a1bd526158bcbc3f253c2ea53ef45aef5589fe83410bd408eff7c53af",
+                  "sourceTimeSeconds": 195.9995,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/005880.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
     },
     "24": {
       "status": "draft",
-      "sourceText": "なんかすご一くしょうもないのにすごーく説得力ある",
+      "sourceText": "なんかすごーくしょうもないのにすごーく説得力ある",
       "sourceSpeaker": "サテラ",
-      "translation": "",
+      "translation": "总觉得你这话虽然特别没出息，却又特别有说服力。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 197.9995–199.9995 秒。",
       "recordings": [
         {
@@ -3560,6 +4717,59 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 24,
+            "fields": [
+              "msg_text",
+              "sourceText"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 24,
+                "uniqueId": 1009001300024,
+                "studioNodeId": "node_b82eb34d9eb6",
+                "stableKey": null,
+                "sourceSpeaker": "サテラ",
+                "expectedMsgText": "なんかすご一くしょうもないのにすごーく説得力ある",
+                "expectedSourceText": "なんかすご一くしょうもないのにすごーく説得力ある",
+                "translation": "总觉得你这话虽然特别没出息，却又特别有说服力。",
+                "fields": {
+                  "msg_text": "总觉得你这话虽然特别没出息，却又特别有说服力。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-024.jpg",
+                  "sha256": "569db1567b56ae9dde9150ca1b9d39202a06510f3519594297e9558b5c76e573",
+                  "sourceTimeSeconds": 199.9995,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/006000.jpg"
+                },
+                "sourceCorrection": {
+                  "expectedSourceText": "なんかすご一くしょうもないのにすごーく説得力ある",
+                  "correctedSourceText": "なんかすごーくしょうもないのにすごーく説得力ある",
+                  "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text."
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            },
+            "sourceCorrection": {
+              "expectedSourceText": "なんかすご一くしょうもないのにすごーく説得力ある",
+              "correctedSourceText": "なんかすごーくしょうもないのにすごーく説得力ある",
+              "reason": "Directly read the original full frame; correct an OCR glyph error without inventing missing text.",
+              "terminalSourceFrame": {
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-024.jpg",
+                "sha256": "569db1567b56ae9dde9150ca1b9d39202a06510f3519594297e9558b5c76e573",
+                "sourceTimeSeconds": 199.9995,
+                "completedPanel": true
+              }
+            }
           }
         ]
       }
@@ -3568,7 +4778,7 @@
       "status": "draft",
       "sourceText": "そうだね、これなら大丈夫そうだ",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "是呢，这样看来应该没问题。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 201.9995–203.9995 秒。",
       "recordings": [
         {
@@ -3690,15 +4900,51 @@
                 }
               ]
             }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 25,
+            "fields": [
+              "msg_text"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-reviewed-complete-rows.json",
+              "sourcePacketSha256": "5d12ece92bc79a8858b5fe0b5cbb7dd52f57f879109c4d2f31ae874ae18152b7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 25,
+                "uniqueId": 1009001300025,
+                "studioNodeId": "node_b32fd7e68630",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "そうだね、これなら大丈夫そうだ",
+                "expectedSourceText": "そうだね、これなら大丈夫そうだ",
+                "translation": "是呢，这样看来应该没问题。",
+                "fields": {
+                  "msg_text": "是呢，这样看来应该没问题。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/anchors/10090013-025.jpg",
+                  "sha256": "eb123d8c70ab54bfcb31463e5c4757becfa5196b5e1fbdb046799ecc0478474b",
+                  "sourceTimeSeconds": 203.9995,
+                  "originalFullFrame": "data/video_recovery/capital-05/half-hz-run/frames/006120.jpg"
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
           }
         ]
       }
     },
     "26": {
       "status": "draft",
-      "sourceText": "それじゃあ、おやすみなさい。気",
+      "sourceText": "それじゃあ、おやすみなさい。気をつけて",
       "sourceSpeaker": "パック",
-      "translation": "",
+      "translation": "那就晚安啦。注意安全。",
       "notes": "第一章第五话录像草稿；待人工审核。原稿未取得；scenario_id 由 Studio 本场景编号生成，不声称为原版编号。证据：data/video_recovery/capital-05/half-hz-run/transcript.json；录像区间 205.9995–205.9995 秒。",
       "recordings": [
         {
@@ -3819,6 +5065,58 @@
                   }
                 }
               ]
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-text.json",
+            "packetSha256": "6c6fb19487ecb37e66af827ebab7bbd4281f6a95e540997f0c5aaa9fe64796ba",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "rootConfirmed": true,
+            "sceneId": 10090013,
+            "scenarioId": 26,
+            "fields": [
+              "msg_text",
+              "sourceText"
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/scene10090013-terminal-completions.json",
+              "sourcePacketSha256": "e0903daa6134bc6d4ff0e51c5e0b0e7661697d9949c8d235e04330556bffdaf7",
+              "sourceRow": {
+                "sceneId": 10090013,
+                "scenarioId": 26,
+                "uniqueId": 1009001300026,
+                "studioNodeId": "node_949f0ebc2a44",
+                "stableKey": null,
+                "sourceSpeaker": "パック",
+                "expectedMsgText": "それじゃあ、おやすみなさい。気",
+                "expectedSourceText": "それじゃあ、おやすみなさい。気",
+                "translation": "那就晚安啦。注意安全。",
+                "fields": {
+                  "msg_text": "那就晚安啦。注意安全。"
+                },
+                "sourceFrame": {
+                  "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/text-controls/10090013-026-at207.4.jpg",
+                  "sha256": "2d54413bf588abc3d69327b55e7ae10ca7876fddf43b3a23fbe36ad944defbb2",
+                  "sourceTimeSeconds": 207.4
+                },
+                "sourceCorrection": {
+                  "expectedSourceText": "それじゃあ、おやすみなさい。気",
+                  "correctedSourceText": "それじゃあ、おやすみなさい。気をつけて",
+                  "reason": "Directly read the completed source panel, independently confirming the terminal-text-corrections packet."
+                }
+              },
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            },
+            "sourceCorrection": {
+              "expectedSourceText": "それじゃあ、おやすみなさい。気",
+              "correctedSourceText": "それじゃあ、おやすみなさい。気をつけて",
+              "reason": "Directly read the completed source panel, independently confirming the terminal-text-corrections packet.",
+              "terminalSourceFrame": {
+                "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/text-controls/10090013-026-at207.4.jpg",
+                "sha256": "2d54413bf588abc3d69327b55e7ae10ca7876fddf43b3a23fbe36ad944defbb2",
+                "sourceTimeSeconds": 207.4,
+                "completedPanel": true
+              }
             }
           }
         ]
@@ -4012,6 +5310,279 @@
         "studioNodeId": "node_10583f39736d",
         "reason": "The fully reviewed source title precedes this narration. Keep this legacy native row and original content intact; the active replacement is an authored scene14 row."
       }
+    },
+    "28": {
+      "studioNodeId": "node_e2876e684a39",
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "sourceText": "――貧民街・夕刻",
+      "sourceSpeaker": "未設定",
+      "notes": "Source-observed authored insertion; original IDs/phases and saved playback remain unknown.",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-08",
+          "start": 24,
+          "end": 28,
+          "visualTime": 24,
+          "timeMapping": "Source review interval with context; not native timing or media trim"
+        }
+      ],
+      "unknownFields": [
+        "original_node_id",
+        "original_command_phase",
+        "original_array_order",
+        "motion",
+        "voice",
+        "bg_music",
+        "se",
+        "timing"
+      ],
+      "authoredReconstruction": {
+        "originalNodeIdKnown": false,
+        "originalCommandPhaseRecovered": false,
+        "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/authored-insertion-proposal.json",
+        "sourcePacketSha256": "5cd87dcf90c08efb64530dbaed9099edec6fdf39ad2725b058659e7dc4a309cd",
+        "sourceProposal": {
+          "authoredKey": "location-card-after-narration",
+          "acceptedFields": {
+            "scenario_type": 2,
+            "msg_character": "未設定",
+            "msg_text": "――貧民街・夕刻",
+            "character": "",
+            "video": "",
+            "textAuthority": "Direct recording transcription; Unicode dash normalization is authored, original bytes unknown."
+          }
+        },
+        "authoredKey": "location-card-after-narration",
+        "translationWitness": {
+          "sceneId": 10090013,
+          "proposalPath": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/authored-insertion-proposal.json",
+          "proposalSha256": "5cd87dcf90c08efb64530dbaed9099edec6fdf39ad2725b058659e7dc4a309cd",
+          "chainKey": "location-card-after-narration",
+          "authoredKey": "location-card-after-narration",
+          "expectedSourceText": "――貧民街・夕刻",
+          "translation": "——贫民街·傍晚",
+          "sourceFrame": {
+            "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/insertion-evidence/000780.jpg",
+            "sha256": "d38705cf3633dd6b5bb316e3cb55b77b66c346f13b8216aef48dabb49eb4f613",
+            "sourceTimeSeconds": 26
+          },
+          "scenarioId": null,
+          "uniqueId": null,
+          "allocationOwner": "formal_writer"
+        },
+        "translationPacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-text-translation-20261121-v1/six-authored-cards-chinese-text.json",
+        "translationPacketSha256": "ea3ab609bfd837704af0a60b7f12c4adb8223b136ed9f61713085fad13b2bd0f"
+      },
+      "branches": [
+        {
+          "branchId": 272,
+          "state": "confirmed",
+          "sourceState": "confirmed",
+          "verification": "observed",
+          "notes": "Source-observed authored continuation; saved playback pending."
+        }
+      ],
+      "translation": "——贫民街·傍晚",
+      "repairEvidence": {
+        "offlineInsertions": [
+          {
+            "key": "location-card-after-narration",
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-insertions.json",
+            "packetSha256": "e71204934515b847427bef197f4090117c147712f26fd80ef8767b75cbda6ca0",
+            "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+            "sceneId": 10090013,
+            "rootConfirmed": true,
+            "authoredReconstruction": true,
+            "originalNodeIdKnown": false,
+            "originalCommandPhaseRecovered": false,
+            "source": {
+              "sceneId": 10090013,
+              "scenarioId": 3,
+              "uniqueId": 1009001300003,
+              "studioNodeId": "node_ea312d07d1eb",
+              "sourceText": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……",
+              "expectedNative": {
+                "scenario_id": 3,
+                "uniq_id": 1009001300003,
+                "scenario_type": 2,
+                "msg_character": "未設定",
+                "msg_text": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……"
+              },
+              "branchId": 31,
+              "branchUniqueId": 1009001310031,
+              "expectedBranch": {
+                "transition_list": [
+                  {
+                    "uniq_id": 1009001310031,
+                    "next_scenario_label": "",
+                    "next_scenario_id": 4,
+                    "transition_id": 3101
+                  }
+                ],
+                "uniq_id": 1009001310031,
+                "quote_voice": "",
+                "branch_id": 31,
+                "gain_points": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "msg_quote": "未設定",
+                "msg_quote_subject": "未設定",
+                "type": 1
+              }
+            },
+            "target": {
+              "sceneId": 10090013,
+              "scenarioId": 4,
+              "uniqueId": 1009001300004,
+              "studioNodeId": "node_3098f820ddb0",
+              "sourceText": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？",
+              "expectedNative": {
+                "voice": "",
+                "bg_picture": "",
+                "bg_music": "",
+                "motion": "",
+                "branch_list": [
+                  {
+                    "transition_list": [
+                      {
+                        "uniq_id": 1009001310041,
+                        "next_scenario_label": "",
+                        "next_scenario_id": 5,
+                        "transition_id": 4101
+                      }
+                    ],
+                    "uniq_id": 1009001310041,
+                    "quote_voice": "",
+                    "branch_id": 41,
+                    "gain_points": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "msg_quote": "未設定",
+                    "msg_quote_subject": "未設定",
+                    "type": 1
+                  }
+                ],
+                "video": "",
+                "msg_text": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？",
+                "is_root": 0,
+                "scenario_id": 4,
+                "command": [
+                  "",
+                  "",
+                  ""
+                ],
+                "se": "",
+                "character": "live2d/AC_subaru01",
+                "uniq_id": 1009001300004,
+                "talk_chara": "",
+                "battle_stage_id": 0,
+                "position": "",
+                "scenario_type": 2,
+                "msg_character": "スバル",
+                "character_image": ""
+              }
+            },
+            "arrayPosition": {
+              "afterScenarioId": 3,
+              "beforeScenarioId": 4
+            },
+            "addedIds": [
+              {
+                "scenarioId": 28,
+                "uniqueId": 1009001300028,
+                "studioNodeId": "node_e2876e684a39"
+              }
+            ],
+            "evidence": {
+              "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/authored-insertion-proposal.json",
+              "sourcePacketSha256": "5cd87dcf90c08efb64530dbaed9099edec6fdf39ad2725b058659e7dc4a309cd",
+              "sourceProposal": {
+                "key": "location-card-after-narration",
+                "sceneId": 10090013,
+                "sourceAccepted": true,
+                "installationAccepted": false,
+                "authoredInsertion": true,
+                "originalNodeIdKnown": false,
+                "allocateScenarioId": "formal_writer",
+                "allocateUniqueId": "formal_writer",
+                "beforeNodeGuard": {
+                  "scenario_id": 3,
+                  "uniq_id": 1009001300003,
+                  "scenario_type": 2,
+                  "msg_character": "未設定",
+                  "msg_text": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……"
+                },
+                "afterNodeGuard": {
+                  "scenario_id": 4,
+                  "uniq_id": 1009001300004,
+                  "scenario_type": 2,
+                  "msg_character": "スバル",
+                  "msg_text": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？"
+                },
+                "existingEdgeGuard": {
+                  "branch_id": 31,
+                  "branch_uniq_id": 1009001310031,
+                  "branch_type": 1,
+                  "transition": {
+                    "uniq_id": 1009001310031,
+                    "next_scenario_label": "",
+                    "next_scenario_id": 4,
+                    "transition_id": 3101
+                  }
+                },
+                "routeOperation": "replace the guarded before-to-after edge with before-to-authored-to-after; preserve all other edges",
+                "newNodeKind": "narration",
+                "acceptedNewNodeFields": {
+                  "scenario_type": 2,
+                  "msg_character": "未設定",
+                  "msg_text": "――貧民街・夕刻",
+                  "character": "",
+                  "video": "",
+                  "textAuthority": "Direct recording transcription; Unicode dash normalization is authored, original bytes unknown."
+                },
+                "commandPhases": {
+                  "accepted": false,
+                  "reason": "No original script; do not synthesize Wait, CardOut, StopBGM or command phases from picture timing."
+                },
+                "evidence": [
+                  {
+                    "file": "insertion-evidence/000720.jpg",
+                    "sha256": "2246c3eb75040e23e239f44507f3f9e47405e6ba1d1d4a400e5795b26374846e",
+                    "sourceTimeApprox": 24,
+                    "observed": "Existing narration3 still displayed.",
+                    "sourceReuse": "data/video_recovery/capital-05/half-hz-run/frames/000720.jpg"
+                  },
+                  {
+                    "file": "insertion-evidence/000780.jpg",
+                    "sha256": "d38705cf3633dd6b5bb316e3cb55b77b66c346f13b8216aef48dabb49eb4f613",
+                    "sourceTimeApprox": 26,
+                    "observed": "Separate dark narration panel reads ――貧民街・夕刻; no character.",
+                    "sourceReuse": "data/video_recovery/capital-05/half-hz-run/frames/000780.jpg"
+                  },
+                  {
+                    "file": "insertion-evidence/000840.jpg",
+                    "sha256": "7c93c46a82529b73bbbbf9d970e26da35f9de79e0e1648358c16b508538f5181",
+                    "sourceTimeApprox": 28,
+                    "observed": "Subaru entrance after location card; dialogue4 follows.",
+                    "sourceReuse": "data/video_recovery/capital-05/half-hz-run/frames/000840.jpg"
+                  }
+                ],
+                "playbackAcceptanceRequired": "Formal writer must save and play before, inserted media/location card and after, then delegate actual capture review."
+              },
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/08 5本编「起始的终结」.mp4",
+              "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+            }
+          }
+        ]
+      },
+      "issues": []
     }
   },
   "unresolvedBranches": [
@@ -4233,5 +5804,201 @@
       "scenarioId": 27
     }
   ],
-  "excludedStudioNodes": []
+  "excludedStudioNodes": [],
+  "authoredInsertions": [
+    {
+      "key": "location-card-after-narration",
+      "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/episode5-root-continuation-75978061-insertions.json",
+      "packetSha256": "e71204934515b847427bef197f4090117c147712f26fd80ef8767b75cbda6ca0",
+      "baseSha": "75978061650ffe3b2b883a2f7a15e5195d7f4dc9",
+      "sceneId": 10090013,
+      "rootConfirmed": true,
+      "authoredReconstruction": true,
+      "originalNodeIdKnown": false,
+      "originalCommandPhaseRecovered": false,
+      "source": {
+        "sceneId": 10090013,
+        "scenarioId": 3,
+        "uniqueId": 1009001300003,
+        "studioNodeId": "node_ea312d07d1eb",
+        "sourceText": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……",
+        "expectedNative": {
+          "scenario_id": 3,
+          "uniq_id": 1009001300003,
+          "scenario_type": 2,
+          "msg_character": "未設定",
+          "msg_text": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……"
+        },
+        "branchId": 31,
+        "branchUniqueId": 1009001310031,
+        "expectedBranch": {
+          "transition_list": [
+            {
+              "uniq_id": 1009001310031,
+              "next_scenario_label": "",
+              "next_scenario_id": 4,
+              "transition_id": 3101
+            }
+          ],
+          "uniq_id": 1009001310031,
+          "quote_voice": "",
+          "branch_id": 31,
+          "gain_points": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "msg_quote": "未設定",
+          "msg_quote_subject": "未設定",
+          "type": 1
+        }
+      },
+      "target": {
+        "sceneId": 10090013,
+        "scenarioId": 4,
+        "uniqueId": 1009001300004,
+        "studioNodeId": "node_3098f820ddb0",
+        "sourceText": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？",
+        "expectedNative": {
+          "voice": "",
+          "bg_picture": "",
+          "bg_music": "",
+          "motion": "",
+          "branch_list": [
+            {
+              "transition_list": [
+                {
+                  "uniq_id": 1009001310041,
+                  "next_scenario_label": "",
+                  "next_scenario_id": 5,
+                  "transition_id": 4101
+                }
+              ],
+              "uniq_id": 1009001310041,
+              "quote_voice": "",
+              "branch_id": 41,
+              "gain_points": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "msg_quote": "未設定",
+              "msg_quote_subject": "未設定",
+              "type": 1
+            }
+          ],
+          "video": "",
+          "msg_text": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？",
+          "is_root": 0,
+          "scenario_id": 4,
+          "command": [
+            "",
+            "",
+            ""
+          ],
+          "se": "",
+          "character": "live2d/AC_subaru01",
+          "uniq_id": 1009001300004,
+          "talk_chara": "",
+          "battle_stage_id": 0,
+          "position": "",
+          "scenario_type": 2,
+          "msg_character": "スバル",
+          "character_image": ""
+        }
+      },
+      "arrayPosition": {
+        "afterScenarioId": 3,
+        "beforeScenarioId": 4
+      },
+      "addedIds": [
+        {
+          "scenarioId": 28,
+          "uniqueId": 1009001300028,
+          "studioNodeId": "node_e2876e684a39"
+        }
+      ],
+      "evidence": {
+        "sourcePacket": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-visual-20261121-v1/authored-insertion-proposal.json",
+        "sourcePacketSha256": "5cd87dcf90c08efb64530dbaed9099edec6fdf39ad2725b058659e7dc4a309cd",
+        "sourceProposal": {
+          "key": "location-card-after-narration",
+          "sceneId": 10090013,
+          "sourceAccepted": true,
+          "installationAccepted": false,
+          "authoredInsertion": true,
+          "originalNodeIdKnown": false,
+          "allocateScenarioId": "formal_writer",
+          "allocateUniqueId": "formal_writer",
+          "beforeNodeGuard": {
+            "scenario_id": 3,
+            "uniq_id": 1009001300003,
+            "scenario_type": 2,
+            "msg_character": "未設定",
+            "msg_text": "盗みの現場に戻ったスバルたちは、運よく果物屋の店主から犯人が貧民街のフェルトだと教えてもらい、貧民街に向かったが……"
+          },
+          "afterNodeGuard": {
+            "scenario_id": 4,
+            "uniq_id": 1009001300004,
+            "scenario_type": 2,
+            "msg_character": "スバル",
+            "msg_text": "……ってなワケで、オッチャンに教えてもらった通りにきてみたけど、この辺りから貧民街になるのか？"
+          },
+          "existingEdgeGuard": {
+            "branch_id": 31,
+            "branch_uniq_id": 1009001310031,
+            "branch_type": 1,
+            "transition": {
+              "uniq_id": 1009001310031,
+              "next_scenario_label": "",
+              "next_scenario_id": 4,
+              "transition_id": 3101
+            }
+          },
+          "routeOperation": "replace the guarded before-to-after edge with before-to-authored-to-after; preserve all other edges",
+          "newNodeKind": "narration",
+          "acceptedNewNodeFields": {
+            "scenario_type": 2,
+            "msg_character": "未設定",
+            "msg_text": "――貧民街・夕刻",
+            "character": "",
+            "video": "",
+            "textAuthority": "Direct recording transcription; Unicode dash normalization is authored, original bytes unknown."
+          },
+          "commandPhases": {
+            "accepted": false,
+            "reason": "No original script; do not synthesize Wait, CardOut, StopBGM or command phases from picture timing."
+          },
+          "evidence": [
+            {
+              "file": "insertion-evidence/000720.jpg",
+              "sha256": "2246c3eb75040e23e239f44507f3f9e47405e6ba1d1d4a400e5795b26374846e",
+              "sourceTimeApprox": 24,
+              "observed": "Existing narration3 still displayed.",
+              "sourceReuse": "data/video_recovery/capital-05/half-hz-run/frames/000720.jpg"
+            },
+            {
+              "file": "insertion-evidence/000780.jpg",
+              "sha256": "d38705cf3633dd6b5bb316e3cb55b77b66c346f13b8216aef48dabb49eb4f613",
+              "sourceTimeApprox": 26,
+              "observed": "Separate dark narration panel reads ――貧民街・夕刻; no character.",
+              "sourceReuse": "data/video_recovery/capital-05/half-hz-run/frames/000780.jpg"
+            },
+            {
+              "file": "insertion-evidence/000840.jpg",
+              "sha256": "7c93c46a82529b73bbbbf9d970e26da35f9de79e0e1648358c16b508538f5181",
+              "sourceTimeApprox": 28,
+              "observed": "Subaru entrance after location card; dialogue4 follows.",
+              "sourceReuse": "data/video_recovery/capital-05/half-hz-run/frames/000840.jpg"
+            }
+          ],
+          "playbackAcceptanceRequired": "Formal writer must save and play before, inserted media/location card and after, then delegate actual capture review."
+        },
+        "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/08 5本编「起始的终结」.mp4",
+        "sourceSha256": "cd4b1fdad11f695e5bc572aa1cd376cad227cc5d1983828fe51e65c7eba3fc3a"
+      }
+    }
+  ]
 }
