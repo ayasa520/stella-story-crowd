@@ -1,0 +1,68 @@
+{
+  "formatVersion": 1,
+  "scene": 10450056,
+  "scenario": 33,
+  "dataBaseCommit": "487843f38579496f6c2310841ec75b95b1c505cb",
+  "playerCommit": "d78e9c889362f65f9a3d482957f2f1ad3b4adfae",
+  "browserVersion": "159.0.1",
+  "runtime": {
+    "route": [
+      31,
+      32,
+      33,
+      34
+    ],
+    "capturePtsSeconds": [
+      13.4,
+      18.05
+    ],
+    "framesReviewed": 140,
+    "captureScope": "Complete visible entry, hold and exit with predecessor and successor",
+    "frameOrigin": "Local 30 fps Xvfb capture, frames numbered from 1 within the reviewed interval"
+  },
+  "source": {
+    "reviewedPtsSeconds": [
+      558.522,
+      566.988
+    ],
+    "framesReviewed": 255,
+    "reference": "p30-next34-identity-body-20261113-v1/source-felt33-index.json"
+  },
+  "accepted": {
+    "existingBodySequence": true,
+    "visibleIntermediateFade": true,
+    "wholePerformance": false
+  },
+  "actualKeyFrames": {
+    "visibleEntrance": 40,
+    "eyesLower": [
+      51,
+      53
+    ],
+    "eyesClearlyClosed": 54,
+    "lastVisiblePose": 97,
+    "actorGone": 98
+  },
+  "sourceKeyFrames": {
+    "visibleEntrance": 22,
+    "eyesLower": [
+      35,
+      38
+    ],
+    "eyesClearlyClosed": 39,
+    "lastVisiblePose": 194,
+    "actorGone": 196
+  },
+  "remainingDifferences": [
+    "The source text appears before the eyelids lower. In the local playback the eyelids begin lowering before the panel and first glyph appear.",
+    "Observed gaps with no visible actor on either side are around 0.33–0.37 seconds locally and 0.17–0.20 seconds in the source. The captures use different text and manual-advance clocks.",
+    "The following node 34 has a closed-eye smile in the source and a more neutral expression in the current preview. Node 34 was outside the motion acceptance scope."
+  ],
+  "pending": [
+    "Exact fade and body timing",
+    "Face and extra layer ownership",
+    "Lip and voice synchronization"
+  ],
+  "mainAgentViewedImages": false,
+  "nativeFieldsChanged": false
+}
