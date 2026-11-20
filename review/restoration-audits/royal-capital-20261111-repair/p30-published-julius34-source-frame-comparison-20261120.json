@@ -1,0 +1,165 @@
+{
+  "formatVersion": 1,
+  "recordingPart": 30,
+  "sceneId": 10450056,
+  "focusScenarioId": 34,
+  "dataBaseCommit": "37070f9ba02d2c8e8d17caa8e845b44100784353",
+  "playerCommit": "cf801a7ddda74adf38a339ba88821c1758e6de24",
+  "cloudflareWorkerVersion": "43497d55-391e-4315-8a64-c7dd574bc337",
+  "evidenceScope": "Original vs published continuous entry, hold and exit of nodes 33–35 within normal playback 32–36",
+  "browser": {
+    "name": "Firefox",
+    "version": "159.0.1",
+    "naturalText": true,
+    "language": "ja",
+    "browserAndCaptureExited": true,
+    "cpuAffinity": [
+      0,
+      1
+    ],
+    "nice": 19
+  },
+  "capture": {
+    "framesReviewed": 467,
+    "mediaPtsSeconds": [
+      23,
+      38.533
+    ],
+    "width": 1000,
+    "height": 820,
+    "sha256": "6cc2d77a49ee9d8c7dee7dee566088d866d4a456404717362eb279b84e9a98d5",
+    "runtimeTraceSha256": "58eb34a610b4f2de3b8e4bf4b36e0d8496739c7234cb3c3a7f9da06c86e47852",
+    "navigationTimeOriginOffsetMs": 2026.359,
+    "hasAudioTrack": false
+  },
+  "source": {
+    "framesReviewed": 465,
+    "reviewWindowsSeconds": [
+      [
+        558.522,
+        563.988
+      ],
+      [
+        564.022,
+        573.988
+      ]
+    ],
+    "exactTimingComparisonAccepted": false,
+    "playbackSpeedOverlay": "SPEED x5",
+    "primaryFrameReceipt": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-julius34-source-full-process-20261113-v1/receipt.json",
+      "sha256": "af5ef4d2757bf2ba0249a491dfd6fc44f7d969d5fc016a4372890bd79597feed"
+    }
+  },
+  "sourceVsPublished": [
+    {
+      "scenarioId": 33,
+      "result": "partial_pass",
+      "accepted": [
+        "Visible actor handover",
+        "Closed-eye transition after text begins",
+        "Intermediate in and out fades"
+      ],
+      "actual": {
+        "firstVisibleFrame": 139,
+        "panelFrame": 152,
+        "firstGlyphFrame": 153,
+        "closedEyeFrames": [
+          155,
+          213
+        ],
+        "bodyGoneFrame": 216
+      },
+      "source": {
+        "firstClearlyVisibleSeconds": 559.222,
+        "panelBeginSecondsApprox": 559.488,
+        "firstGlyphSeconds": 559.555,
+        "closedEyesBySeconds": 559.788
+      }
+    },
+    {
+      "scenarioId": 34,
+      "result": "body_expression_difference_confirmed",
+      "actual": {
+        "fadeInFrames": [
+          221,
+          232
+        ],
+        "fullyVisibleBeforePanelFrames": [
+          233,
+          266
+        ],
+        "panelFrame": 267,
+        "firstGlyphFrame": 268,
+        "bodyGoneFrame": 351,
+        "expression": "Eyes open throughout entry, hold and exit"
+      },
+      "source": {
+        "firstVisibleSecondsApprox": 565.188,
+        "panelStartFrame": 44,
+        "firstGlyphSeconds": 565.522,
+        "closedEyeFrames": [
+          52,
+          123
+        ],
+        "bodyGoneSeconds": 568.122,
+        "expression": "Eyelids gradually close into a held smile after the first glyph"
+      }
+    },
+    {
+      "scenarioId": 35,
+      "result": "performance_and_text_layout_differences_confirmed",
+      "actual": {
+        "firstVisibleFrameApprox": 357,
+        "panelFrame": 370,
+        "firstGlyphFrame": 372,
+        "fullLineFrame": 406,
+        "bodyGoneFrame": 425,
+        "expression": "Mostly forward and open-eyed"
+      },
+      "source": {
+        "firstVisibleSecondsApprox": 568.255,
+        "facialChangeSeconds": [
+          568.722,
+          568.955
+        ],
+        "panelStartSecondsApprox": 569.055,
+        "expression": "Eyes close and reopen during visible face angle and mouth changes before text"
+      },
+      "textLayoutGap": "Opening pause punctuation, separate line break, and closing ellipsis differ"
+    }
+  ],
+  "runtimeVoiceBoundary": {
+    "voicePreparationStartMs": 28172,
+    "voicePreparationReadyMs": 29785,
+    "cardInCompleteMs": 28684,
+    "textBeginMs": 29795,
+    "visibleCardToTextBeginMs": 1111,
+    "dominantWait": "Speech media readiness at the text-panel boundary",
+    "originalVoiceWaveformZeroSeconds": 565.88775,
+    "audibleComparisonAccepted": false
+  },
+  "previousCardChange": {
+    "scenarioId": 33,
+    "cardHiddenToMotionReadyMs": 4026,
+    "individualResourceCauseKnown": false
+  },
+  "sharedPanelEntryGap": {
+    "group": "adv_tell_chara",
+    "configuredGroup": "adv_tell_illiustration",
+    "originalControllerMember": "assets/bin/Data/df744a57c1c64ac4e92467e3d176d8c3",
+    "originalAnimatorPathIds": [
+      402,
+      403
+    ],
+    "originalSharedEntryClip": "assets/bin/Data/cd98aff0a54700242aaa37690349c972",
+    "originalDurationSeconds": 0.1666666716337204,
+    "bindingEvidence": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-node27-panel-source-review-20261113-v1/panel-controller-binding.json",
+    "nextVerification": "Validate reuse of the existing entry profile on ordinary dialogue, including the first three reference episodes."
+  },
+  "failedPlaybackResourceResponses": [],
+  "runtimeErrors": [],
+  "wholePartAcceptance": "pending",
+  "visualReviewBySubagent": true,
+  "authoredFieldsChanged": false
+}
