@@ -1,0 +1,59 @@
+{
+  "formatVersion": 1,
+  "recordingPart": 30,
+  "dataBaseCommit": "42c264849542684a94277b73e4acac42a5963666",
+  "playerCommit": "d78e9c889362f65f9a3d482957f2f1ad3b4adfae",
+  "browserVersion": "159.0.1",
+  "nodesTraversed": 106,
+  "evidenceScope": "Current browser timing trace on the saved route, with bounded samples during both Felt entries and the following card changes",
+  "cases": [
+    {
+      "node": "node:10450054:1045005400005",
+      "precedingNode": "node:10450054:1045005400004",
+      "followingNode": "node:10450054:1045005400006",
+      "originalReviewedWindowSeconds": [
+        30.523,
+        41.989
+      ],
+      "priorFullEntryReview": "p30-felt5-body-20261112-v1/formal-body-review.json",
+      "motionCommand": "act_punpun",
+      "bodyLayerBlendSeconds": 0.25,
+      "motionCommitToCardInStartGameMs": 66.8,
+      "motionCommitToFirstNonzeroOpacityWallMs": 97,
+      "cardInGameMs": 516.38,
+      "textAfterCardInCompleteWallMs": 7,
+      "entryPartialOpacitySamples": 29,
+      "exitPartialOpacitySamples": 3,
+      "largestRafGapBeforeTextMs": 50.7,
+      "normalClockCappedHitches": 0
+    },
+    {
+      "node": "node:10450056:1045005600033",
+      "precedingNode": "node:10450056:1045005600032",
+      "followingNode": "node:10450056:1045005600034",
+      "originalReviewedWindowSeconds": [
+        558.522,
+        566.988
+      ],
+      "priorFullEntryReview": "p30-next34-identity-body-20261113-v1/saved-body-review.json",
+      "motionCommand": "act_punpun",
+      "bodyLayerBlendSeconds": 0.25,
+      "motionCommitToCardInStartGameMs": 17.16,
+      "motionCommitToFirstNonzeroOpacityWallMs": 46,
+      "cardInGameMs": 516.1,
+      "textAfterCardInCompleteWallMs": 5,
+      "entryPartialOpacitySamples": 28,
+      "exitPartialOpacitySamples": 3,
+      "largestRafGapBeforeTextMs": 17.42,
+      "normalClockCappedHitches": 0
+    }
+  ],
+  "longFrameObserverApi": null,
+  "frameTrace": "requestAnimationFrame timestamps and inline opacity changes",
+  "previousFinding": "A historical frame review saw an abrupt transition; the earlier formal runtime recorded a 433.3 ms RAF hitch.",
+  "previousFindingReference": "p30-felt5-body-20261112-v1/root-integration.json",
+  "thisRunReproducedEarlierRafHitch": false,
+  "diagnosticLimit": "The trace observes compositor state and game-clock events. It does not record displayed pixels or establish the cause of the earlier hitch.",
+  "currentSourceFrameComparisonAccepted": false,
+  "wholePartAccepted": false
+}
