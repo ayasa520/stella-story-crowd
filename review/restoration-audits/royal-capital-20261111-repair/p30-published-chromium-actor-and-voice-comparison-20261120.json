@@ -1,0 +1,97 @@
+{
+  "formatVersion": 1,
+  "recordingPart": 30,
+  "sceneId": 10450056,
+  "dataBaseCommit": "f6e89fbefaa63e67a8f22a013765fa21c924e320",
+  "playerCommit": "57b9984ca71b06fa521a47ba84a087fea1a11f3d",
+  "cloudflareWorkerVersion": "b6bd3986-bfc4-4811-9bf3-0fec4c8b0e2c",
+  "scope": "Chromium automatic playback from scenario 32 through visibly held scenario 36. Compare the complete actor entries, holds, and exits for 33–35, and the entry and hold for 36.",
+  "source": {
+    "recordingSha256": "d7d29c63dc09f0e4942aa6c89e7ee2f9badc5d6f53757e587993ce46d301c3ee",
+    "playbackOverlay": "AUTO / SPEED x5.0",
+    "frameReceipt": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-julius34-source-full-process-20261113-v1/receipt.json",
+    "frameReceiptSha256": "af5ef4d2757bf2ba0249a491dfd6fc44f7d969d5fc016a4372890bd79597feed",
+    "priorPublishedComparison": "p30-published-julius34-source-frame-comparison-20261120.json"
+  },
+  "browser": {
+    "transport": "Published PlayerPanel and iframe in a temporary same-origin wrapper; public scripts and media loaded directly.",
+    "assetSubstitutions": [],
+    "playerDocumentNavigationsObserved": 1,
+    "captureDurationSeconds": 42.717,
+    "framesReceived": 1323,
+    "framesStored": 1323,
+    "framesDroppedByCollector": 0,
+    "frameCadence": "Compositor-driven samples rather than a fixed frame rate, with long gaps during unchanged presentation.",
+    "audioOutputRecorded": false,
+    "reportedPlayerErrors": 0,
+    "scenariosVisited": [32, 33, 34, 35, 36],
+    "runtimeLogSha256": "964e1c9214f7bda67df01c83667e41723f89fa7ed0b6872324c2047f7b95b93b",
+    "frameIndexSha256": "f3fcb818528f8633c662e99774b88630ce046ef8f058b81f99113af90af88fd0",
+    "eventFrameIndexSha256": "b8b5c845f3cd18c826dfbcf9f2159e2bdf199099ccb29025208d8489ef553df8"
+  },
+  "actorComparison": [
+    {
+      "scenarioId": 33,
+      "savedBody": "act_punpun",
+      "sourceObservation": "Felt fades in with open eyes at about 559.222 seconds, then closes them with her arms lowered and holds the expression into the fade.",
+      "browserObservation": "Open-eyed fade-in between frames 252 and 278, half-closed at 287, eyes closed by 295, held until the outgoing fade.",
+      "browserOutgoingFrames": [519, 520],
+      "result": "Main expression transition and hold agree visually. Exact timing and all gesture details remain unaccepted."
+    },
+    {
+      "scenarioId": 34,
+      "savedBody": "",
+      "savedFace": "",
+      "sourceObservation": "Julius enters with an open-eyed smile and then holds a closed-eye smile. Eyes are closed by about 565.8 seconds and the expression persists into the 568.055–568.188 second fade.",
+      "browserObservation": "An open-eyed smile is visible during entry, at text and speech onset, after the speech, and late in the hold. The rendered mouth moves during the saved cue.",
+      "browserCheckpointFrames": [533, 564, 579, 620, 651, 700, 765, 797],
+      "browserExitFrames": [797, 798],
+      "result": "The source closed-eye smile remains missing. Two independent reviewers saw the open-eye hold in the current capture."
+    },
+    {
+      "scenarioId": 35,
+      "sourceObservation": "Felt enters open-eyed with her arms lowered, then briefly closes her eyes and holds a more concerned brow with subtle mouth and head motion.",
+      "browserObservation": "Open-eyed, lowered-arm entry agrees visually. Reviewed frames 829–1056 keep the eyes open, with a calmer hold around the eyes and brow.",
+      "browserEntryFrames": [809, 842],
+      "result": "Entry agreement and hold-expression difference observed."
+    },
+    {
+      "scenarioId": 36,
+      "sourceObservation": "Julius has a brief closed-eye entry at 574.555–574.688 seconds. The following hold has a more serious brow and mouth.",
+      "browserObservation": "Open-eyed smiling entry and a small smile during the hold. Reviewed frames 1083–1323 keep the eyes open, with mouth movement at dialogue onset.",
+      "browserEntryFrames": [1066, 1101],
+      "browserHoldFrames": [1130, 1323],
+      "result": "Entry and hold expressions differ. The capture ends before the source exit flash and cannot compare that effect."
+    }
+  ],
+  "playerCardTiming": {
+    "hiddenOutgoingCardToIncomingFadeStartMillisecondsApprox": {"33": 11066, "34": 5975, "35": 6626, "36": 4576},
+    "timeBasis": "Browser event timestamps at normal preview speed. The source recording shows SPEED x5.0."
+  },
+  "speechComparison": {
+    "scenarioId": 34,
+    "savedBank": "vo_adv_julius",
+    "savedCue": "advg_julius_kansya",
+    "sourceWaveformZeroSeconds": 565.88775,
+    "sourceWaveformCorrelation": 0.934848,
+    "prefetchedBlobBytes": 4008,
+    "browserMediaDurationSeconds": 0.854875,
+    "playCount": 1,
+    "naturalEndCount": 1,
+    "phase1EndToTextStartMilliseconds": 4,
+    "voiceReadyBeforePhase1EndMilliseconds": 473,
+    "voiceEndToNextEntryMillisecondsApprox": 1510,
+    "automaticAdvanceWaitedForSpeech": true,
+    "sourcePlaybackGainAndExactVoiceOffsetVerified": false,
+    "browserSpeakerOutputVerified": false,
+    "browserBgmContinuityVerified": false
+  },
+  "knownGaps": {
+    "scenario34ClosedEyeSmileStillMissing": true,
+    "scenario35And36ExpressionDifferencesRemain": true,
+    "scenario36ExitEffectNotCompared": true,
+    "otherSpeechCuesIndependentlyAcceptedInThisWindow": false,
+    "exactTimingAccepted": false,
+    "fullPartAccepted": false
+  }
+}
