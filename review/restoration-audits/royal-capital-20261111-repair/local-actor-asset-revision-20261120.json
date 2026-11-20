@@ -1,0 +1,78 @@
+{
+  "formatVersion": 1,
+  "dataBaseCommit": "5159d77620782be635ae645f90b326e84866acfd",
+  "localPlayerCommit": "cc1b865fd47d65d741dd38751ca01ec8314daa5e",
+  "scope": "Model catalog lookup, Live2D descriptor and children, neutral/lip curves and later motion reads",
+  "legacyWithoutRevisionStillUsesCompatibilityRoute": true,
+  "twoRevisionFixture": {
+    "remappedModelDetailAndMemberAliasesFollowRequestedCatalog": true,
+    "newModelMissingFromHistoricalCatalogReturns404": true,
+    "invalidRevisionReturns400": true
+  },
+  "productionBuildPassed": true,
+  "browserCases": [
+    {
+      "case": "solo",
+      "nodes": [
+        [
+          10450056,
+          31
+        ],
+        [
+          10450056,
+          32
+        ],
+        [
+          10450056,
+          33
+        ],
+        [
+          10450056,
+          34
+        ]
+      ],
+      "browserVersion": "159.0.1",
+      "actorRequestsByType": {
+        "detail": 2,
+        "descriptor": 3,
+        "moc": 3,
+        "texture": 3,
+        "motion": 29
+      },
+      "pinnedCacheHitsWithoutExposedHeaders": 1,
+      "failedPlaybackResources": [],
+      "runtimeErrors": []
+    },
+    {
+      "case": "cast",
+      "nodes": [
+        [
+          10140002,
+          17
+        ],
+        [
+          10140002,
+          18
+        ],
+        [
+          10140002,
+          19
+        ]
+      ],
+      "browserVersion": "159.0.1",
+      "actorRequestsByType": {
+        "detail": 4,
+        "descriptor": 4,
+        "moc": 4,
+        "texture": 4,
+        "motion": 43
+      },
+      "pinnedCacheHitsWithoutExposedHeaders": 0,
+      "failedPlaybackResources": [],
+      "runtimeErrors": []
+    }
+  ],
+  "testRevisionMeaning": "The isolated fixture pins one synthetic commit identifier to the saved local data used by both runs.",
+  "acknowledgment": "Source commit is in the canonical checkout. This audit does not imply an online deployment.",
+  "performanceAndOriginalFrameAcceptance": "out of scope"
+}
