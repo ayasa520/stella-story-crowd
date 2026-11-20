@@ -1,0 +1,157 @@
+{
+  "formatVersion": 1,
+  "recordingPart": 35,
+  "dataBaseCommit": "2219f51a217a88a17a1e63866763f14c47f5b4fc",
+  "playerCommit": "d78e9c889362f65f9a3d482957f2f1ad3b4adfae",
+  "evidenceScope": "Local browser playback of the existing route from the shared opening through the final authored card",
+  "sharedOpeningNodes": 12,
+  "totalNodesVisited": 167,
+  "selectedBranches": [
+    43,
+    63,
+    83,
+    102,
+    152
+  ],
+  "crossSceneTransfers": [
+    {
+      "target": "node:10040021:1004002100001",
+      "action": "scene"
+    },
+    {
+      "target": "node:10040022:1004002200001",
+      "action": "scene"
+    },
+    {
+      "target": "node:10040023:1004002300001",
+      "action": "scene"
+    }
+  ],
+  "openedCharts": [
+    "scene:10040002",
+    "scene:10040021",
+    "scene:10040022",
+    "scene:10040023"
+  ],
+  "scenesAfterOpening": [
+    {
+      "scene": 10040021,
+      "nodesVisited": 41,
+      "explicitFields": {
+        "character": 0,
+        "motion": 0,
+        "voice": 0,
+        "bg_picture": 1,
+        "bg_music": 0,
+        "character_image": 0,
+        "video": 0,
+        "se": 0
+      },
+      "unresolvedDestinations": [
+        {
+          "node": 15,
+          "branch": 153
+        }
+      ]
+    },
+    {
+      "scene": 10040022,
+      "nodesVisited": 54,
+      "explicitFields": {
+        "character": 0,
+        "motion": 0,
+        "voice": 0,
+        "bg_picture": 1,
+        "bg_music": 0,
+        "character_image": 0,
+        "video": 0,
+        "se": 0
+      },
+      "unresolvedDestinations": []
+    },
+    {
+      "scene": 10040023,
+      "nodesVisited": 60,
+      "explicitFields": {
+        "character": 0,
+        "motion": 0,
+        "voice": 0,
+        "bg_picture": 1,
+        "bg_music": 0,
+        "character_image": 0,
+        "video": 0,
+        "se": 0
+      },
+      "unresolvedDestinations": [
+        {
+          "node": 60,
+          "branch": 601
+        }
+      ]
+    }
+  ],
+  "unconnectedEnd": {
+    "scene": 10040023,
+    "node": 60,
+    "branch": 601,
+    "playerStatus": "后续节点尚未恢复，请保留此分支并补充证据",
+    "recordedClearEvidence": "Final story738.498 then CLEAR748.998 and flowmap751.998 observed; original native ending identity unknown.",
+    "sectionCompleteEvents": []
+  },
+  "browser": {
+    "name": "Firefox",
+    "version": "159.0.1",
+    "runtimeErrors": [],
+    "failedPlaybackResourceResponses": [],
+    "webglContextLossWarningObserved": true
+  },
+  "acceptance": {
+    "testedRouteReachedLastAuthoredCard": true,
+    "completeSectionPlayable": false,
+    "allChoicesPlayable": false,
+    "sourcePerformanceComparedInThisRun": false
+  },
+  "renderedChartProgress": [
+    {
+      "current": "scene:10040002",
+      "completed": [],
+      "visited": []
+    },
+    {
+      "current": "scene:10040021",
+      "completed": [
+        "scene:10040002"
+      ],
+      "visited": [
+        "scene:10040002>scene:10040021"
+      ]
+    },
+    {
+      "current": "scene:10040022",
+      "completed": [
+        "scene:10040002",
+        "scene:10040021"
+      ],
+      "visited": [
+        "scene:10040002>scene:10040021",
+        "scene:10040021>scene:10040022"
+      ]
+    },
+    {
+      "current": "scene:10040023",
+      "completed": [
+        "scene:10040002",
+        "scene:10040021",
+        "scene:10040022"
+      ],
+      "visited": [
+        "scene:10040002>scene:10040021",
+        "scene:10040021>scene:10040022",
+        "scene:10040022>scene:10040023"
+      ]
+    }
+  ],
+  "previewPolicySkippedNodes": [
+    "node:10040023:1004002300032"
+  ]
+}
