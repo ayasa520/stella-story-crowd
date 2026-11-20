@@ -1,0 +1,178 @@
+{
+  "formatVersion": 1,
+  "recordingPart": 30,
+  "dataBaseCommit": "5d5e300a12b298258f4de8db5d8fe0d574c51388",
+  "playerCommit": "57b9984ca71b06fa521a47ba84a087fea1a11f3d",
+  "cloudflareWorkerVersion": "b6bd3986-bfc4-4811-9bf3-0fec4c8b0e2c",
+  "evidenceScope": "Continuous manually advanced read-only preview of the saved recording route from scene 10450055 node 18 through the section completion, across all three intervening scene exits.",
+  "inputPlanSha256": "905e686ecdf20b713be59c7b8be3bd83c67a08e1504475ec55a174c621a09f8a",
+  "runtimeTraceSha256": "f5e550f3ca2e5759fafbaee499637000974112691e2077ea6a85e33fdd3e08f8",
+  "route": {
+    "start": [
+      10450055,
+      18
+    ],
+    "terminal": [
+      10450058,
+      37
+    ],
+    "visitedNodes": 111,
+    "executedTransitions": 111,
+    "choices": [
+      {
+        "from": [
+          10450056,
+          22
+        ],
+        "to": [
+          10450056,
+          23
+        ],
+        "side": "left",
+        "branchId": 222,
+        "transitionId": 22201
+      },
+      {
+        "from": [
+          10450057,
+          7
+        ],
+        "to": [
+          10450057,
+          8
+        ],
+        "side": "right",
+        "branchId": 73,
+        "transitionId": 7301
+      },
+      {
+        "from": [
+          10450057,
+          17
+        ],
+        "to": [
+          10450057,
+          18
+        ],
+        "side": "right",
+        "branchId": 173,
+        "transitionId": 17301
+      },
+      {
+        "from": [
+          10450058,
+          21
+        ],
+        "to": [
+          10450058,
+          22
+        ],
+        "side": "left",
+        "branchId": 212,
+        "transitionId": 21201
+      },
+      {
+        "from": [
+          10450058,
+          26
+        ],
+        "to": [
+          10450058,
+          27
+        ],
+        "side": "right",
+        "branchId": 263,
+        "transitionId": 26301
+      }
+    ],
+    "crossSceneExits": [
+      {
+        "from": [
+          10450055,
+          20
+        ],
+        "to": [
+          10450056,
+          1
+        ],
+        "branchId": 201,
+        "transitionId": 20101,
+        "cardOutCompleteBeforeOpeningChart": true,
+        "openingTitleContinuedTo": [
+          10450056,
+          2
+        ]
+      },
+      {
+        "from": [
+          10450056,
+          53
+        ],
+        "to": [
+          10450057,
+          1
+        ],
+        "branchId": 531,
+        "transitionId": 53101,
+        "cardOutCompleteBeforeOpeningChart": true,
+        "openingTitleContinuedTo": [
+          10450057,
+          2
+        ]
+      },
+      {
+        "from": [
+          10450057,
+          18
+        ],
+        "to": [
+          10450058,
+          1
+        ],
+        "branchId": 181,
+        "transitionId": 18101,
+        "cardOutCompleteBeforeOpeningChart": true,
+        "openingTitleContinuedTo": [
+          10450058,
+          2
+        ]
+      }
+    ],
+    "closingMovie": "adv_dive01_out",
+    "closingMovieEvidence": "media event followed by its saved onward edge",
+    "terminalAction": "complete",
+    "completionChartVisible": true,
+    "completedSection": 1045
+  },
+  "browserVerification": {
+    "browser": "Chromium",
+    "transport": "Published PlayerPanel and iframe instantiated by a temporary same-origin wrapper. Public scripts and media loaded directly.",
+    "assetSubstitutions": [],
+    "manualChoicesAndChartConfirmations": true,
+    "textWasAllowedToTypeNaturally": true,
+    "watchScope": "Route and rendering-state checkpoints from browser DOM and runtime logs.",
+    "oneInitializedDocumentEvidence": {
+      "setupBegin": 1,
+      "setupReady": 1,
+      "panelOpens": 1,
+      "prepareRequests": 1
+    },
+    "iframeNavigationCountIndependentlyMeasured": false,
+    "reportedPlayerOrPageErrors": 0,
+    "observedNetworkIssues": [],
+    "navigationObserverCaveat": "The driver only counted the .html pathname. One open, one prepare and one begin/ready handshake support one initialized document. The actual navigation count was not measured.",
+    "testAssertionCaveat": "The terminal was reached before the driver's navigation assertion failed."
+  },
+  "sourceReview": {
+    "crossSceneObservation": "p30-cross-scene-exits-source-and-published-preview-20261120.json",
+    "oppositeChoiceCoverage": "p30-opposite-choice-source-coverage-20261120.json",
+    "firstOpeningChartDifferenceStillPresent": true,
+    "causeOfFirstOpeningChartDifferenceVerified": false
+  },
+  "remainingVerification": {
+    "allBranchesAccepted": false,
+    "exactMediaAndActingMatchAccepted": false,
+    "allRecordedP30ScenesAccepted": false,
+    "visualComparisonOfThisContinuousSessionPerformed": false
+  }
+}
