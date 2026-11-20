@@ -1,0 +1,110 @@
+{
+  "formatVersion": 1,
+  "evidenceScope": "Movie display backdrop through an immediately following end title with no authored background.",
+  "dataBaseCommit": "48018e023484a10868b1592146bbdded40e5fca1",
+  "playerCommit": "dc9d4d1158b06de8c16feca74a1a07c635007537",
+  "cloudflareWorkerVersion": "aeba6d3b-0fcd-452a-bad6-a05132edba51",
+  "baseline": {
+    "playerCommit": "95df99f2ce2893517c4c3ed0503ba72af98accf5",
+    "traceSha256": "d36b76450205c072be8808befb420032897720227cd53c0ea26ce501db8ee64d",
+    "endingTitle": [
+      10040053,
+      51
+    ],
+    "warehouseAppliedBeforeTitleMillisecondsInBaseline": 2305,
+    "priorVisualEvidence": "p29-published-two-session-route-and-ending-20261121.json"
+  },
+  "publishedEndings": [
+    {
+      "case": "p29-ending",
+      "movie": [
+        10040053,
+        50
+      ],
+      "title": [
+        10040053,
+        51
+      ],
+      "naturalMovieEndSeconds": 5.034,
+      "displayBackgroundBothLayers": "bg/bg001_black",
+      "surfaceStatesObserved": 6,
+      "inheritedScriptBackground": "bg/bg031a_stealshop",
+      "scriptProvider": 2,
+      "completionChartVisible": true,
+      "framesStored": 1186,
+      "collectorDrops": 0,
+      "traceSha256": "4d9144c8cc558781f17860810cd5e12d2865d2b1121777a8ba9583d1aa7f1c89"
+    },
+    {
+      "case": "p30-ending",
+      "movie": [
+        10450058,
+        36
+      ],
+      "title": [
+        10450058,
+        37
+      ],
+      "naturalMovieEndSeconds": 5.034,
+      "displayBackgroundBothLayers": "bg/bg001_black",
+      "surfaceStatesObserved": 6,
+      "inheritedScriptBackground": "bg/bg046c_stealshop",
+      "scriptProvider": 2,
+      "completionChartVisible": true,
+      "framesStored": 1050,
+      "collectorDrops": 0,
+      "traceSha256": "0eb25a2f00357397e1ef8660b49321256ce7c571a075376ac12b318cae7f93fd"
+    }
+  ],
+  "publishedP29FrameReview": {
+    "darkMovieTailFrames": [
+      869,
+      872
+    ],
+    "darkHandoffFrames": [
+      873,
+      876
+    ],
+    "firstVisibleClearBackdropFrame": 877,
+    "warehouseVisibleInReviewedFrames": false,
+    "compositorSampleGapFrames": [
+      875,
+      876
+    ],
+    "longSampleGapSecondsApprox": 1.258,
+    "bothPlanesBlackByRuntimeObservation": true
+  },
+  "ordinaryTitleControl": {
+    "title": [
+      10040053,
+      1
+    ],
+    "nextReadyNode": [
+      10040053,
+      2
+    ],
+    "openingChartObserved": true,
+    "authoredBackground": "bg/bg031a_stealshop",
+    "traceSha256": "2ccdbc3a90228434a45821b114d6b95aba41c00648d1eea8f07b7895b44433c4"
+  },
+  "offlineRegression": {
+    "realPlayers": [
+      "player",
+      "studio"
+    ],
+    "verifiedCases": 26,
+    "covers": [
+      "direct title preview",
+      "explicit ending background",
+      "ordinary title",
+      "movie to card",
+      "production skipped tutorial before end title"
+    ]
+  },
+  "testTransport": "Direct production resources in temporary Chromium contexts without script or media replacement.",
+  "scopeLimits": {
+    "browserSpeakerOutputVerified": false,
+    "sourceRewardPageParityVerified": false,
+    "allChapterPlaybackAccepted": false
+  }
+}
