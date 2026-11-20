@@ -1,0 +1,135 @@
+{
+  "formatVersion": 1,
+  "recordingPart": 31,
+  "dataBaseCommit": "5f51e6c4903ffda79cba1d6c1866b434b6814118",
+  "playerCommit": "dc9d4d1158b06de8c16feca74a1a07c635007537",
+  "cloudflareWorkerVersion": "aeba6d3b-0fcd-452a-bad6-a05132edba51",
+  "scope": "Continuous published playback through the last stored dialogue, with source comparison of the final cast and the unsaved ending.",
+  "coverage": {
+    "start": [10040002, 1],
+    "originalRecordingStartsAt": [10040002, 6],
+    "lastEnteredNode": [10040043, 108],
+    "enteredNodes": 148,
+    "observedTransitions": 147,
+    "allTransitionsMatchPlan": true,
+    "selectedBranches": [43, 62, 42, 73, 143, 402, 482],
+    "openingChartsAndTitles": [10040002, 10040042, 10040043],
+    "sceneTransfers": 2,
+    "unselectedBranchesWithMissingTargets": {
+      "10040042": [43, 72, 142],
+      "10040043": [403, 483]
+    },
+    "prepareRequests": 1,
+    "prepareStatus": 200,
+    "canonicalIframeNavigations": 1,
+    "httpFailures": 0,
+    "browserOrPlayerErrors": 0,
+    "movieEvents": 0,
+    "sectionCompleteEvents": 0,
+    "capturedFrames": 308,
+    "droppedFrames": 0,
+    "capturedFrameSpanSeconds": 3.508,
+    "reportSha256": "62aee2a740fb13d3611976bd584256776d8adf306e4a88db949de7dd60346b73",
+    "progressSha256": "150558c98ac208b1bd65e1835463a1c8549c639d64b58eff22ca37c2bce2b80d",
+    "frameIndexSha256": "4c761c5b4759bd2a84495e26dd752306f135a3bd4d32f15b7608657e9a80a1d9",
+    "eventFrameAlignmentSha256": "b4f17e439cd56170199f74a2a37b126a300d7a4f390e3c50e9b56d94ab8586a0"
+  },
+  "source": {
+    "recordingSha256": "7f5bf8a6e10ad2afd02e53a039c60dfcdc378eec3b3062e1f75446437db7497f",
+    "plan": "data/native_recovery/royal-capital-20261110/plans/21-43/p31.plan.json",
+    "endingPtsIndexSha256": "6d04d524e4930f0b2392600ce97ecbc8fb1e7b7af1fb4da5029c05a4989bd0d9",
+    "castPtsIndexSha256": "c2b7872e5aa0d8df2522b4b64198ea9e9348bf83a52cc4a883c73c209bd184f1"
+  },
+  "castComparison": {
+    "sceneId": 10040043,
+    "nativeRowsWithCharacter": 0,
+    "reviewRowsWithCastExtension": 0,
+    "allCapturedActorRegionPixelsUnchanged": true,
+    "nodes": [
+      {
+        "scenarioId": 105,
+        "browserFrameRange": [1, 22],
+        "browserActorVisible": false,
+        "sourceObservation": "Mimi holds both hands raised with closed eyes. Gone by 806.987 seconds."
+      },
+      {
+        "scenarioId": 106,
+        "browserFrameRange": [23, 76],
+        "browserActorVisible": false,
+        "sourceObservation": "Felt starts fading in at 807.154 seconds. Eyes open, arms low, with a brief blink near 809.9 seconds. Gone by 810.021 seconds."
+      },
+      {
+        "scenarioId": 107,
+        "uniqueId": 1004004300107,
+        "stableKey": "s10040043-p31-at0812",
+        "browserFrameRange": [77, 131],
+        "browserActorVisible": false,
+        "browserStages": ["enter", "text_begin"],
+        "nativeSpeaker": "スバル",
+        "nativeCharacter": "",
+        "nativeMotion": "",
+        "studioActors": [],
+        "reviewStatus": "draft",
+        "sourceFirstVisibleSeconds": 810.154,
+        "sourceFullyVisibleBySeconds": 810.321,
+        "sourceFullyGoneBySeconds": 813.387,
+        "sourceObservation": "Subaru enters looking level with eyes open, then closes his eyes and lowers his head slightly. His eyes are fully closed by 811.354 seconds and remain closed through 813.287 seconds.",
+        "matchingExistingModel": "live2d/AC_subaru01",
+        "sourceModelEvidence": "Short spiked hair, dark sleeves, orange inner collar, light zip-up front, and a two-tone N on the chest match the existing subaru01 reference.",
+        "positiveControlOnSameRun": {
+          "sceneId": 10040002,
+          "scenariosReachingMotionReady": [4, 5, 6]
+        },
+        "cause": "The preview projects the speaker label independently from the model. With the native character and Studio cast both empty, the player bypasses model loading and hides any previous actor.",
+        "acceptedBindingFoundForThisNode": false,
+        "motionOrExpressionBindingVerified": false
+      },
+      {
+        "scenarioId": 108,
+        "browserFrameRange": [132, 308],
+        "browserActorVisible": false,
+        "sourceObservation": "Ricardo starts fading in at 813.554 seconds, is clear at 813.654 seconds, and is gone by 819.887 seconds."
+      }
+    ]
+  },
+  "backgroundComparison": {
+    "browserObserved": "ADV_bg040b_felthouse",
+    "browserInheritedFromScenario": 2,
+    "sourceEarlierObservationSeconds": 637.999,
+    "sourceLaterObservationSeconds": 645.999,
+    "sourceLaterMatchingExistingBackground": "ADV_bg023b_slum",
+    "sourceTransitionObservation": "The earlier backdrop has wiped out by 639.955 seconds. The sunset street starts becoming visible from the left at 643.188 seconds and is fully visible at 643.888 seconds.",
+    "laterScenarioId": 70,
+    "laterScenarioExplicitBackground": "",
+    "nativeWipeCommandVerified": false
+  },
+  "endingComparison": {
+    "missingSavedEdge": "edge:node:10040043:1004004300108:1004004311081:1081",
+    "branchTransitionCount": 0,
+    "browserBeforeAdvance": {"phase": "ready", "canAdvance": true},
+    "browserAfterAdvance": {"phase": "stopped", "canAdvance": false, "chartOpen": false, "hasError": false},
+    "sourceDoorFirstFullFrameSeconds": 820.521,
+    "sourceClearMontageFirstVisibleSeconds": 826.387,
+    "sourceClearTextFullyVisibleSeconds": 826.987,
+    "sourceCompletionChartSeconds": 830.487,
+    "sourceRewardFirstVisibleSeconds": 830.754,
+    "originalEndingNodeIdsRecovered": false,
+    "originalEndingCommandPhasesRecovered": false,
+    "endingPlayedInPublishedPreview": false
+  },
+  "independentVoiceCandidate": {
+    "sceneId": 10040043,
+    "scenarioId": 9,
+    "resource": "vo_adv_ricardo/advk_ricardo_kougi",
+    "estimatedSourceCueZeroSeconds": 291.2615,
+    "signedNormalizedCorrelationAt4000Hz": 0.993774,
+    "activeSignedNormalizedCorrelationAt4000Hz": 0.997431,
+    "highestSameBankControlCorrelation": 0.1246084,
+    "resourceGitBlob": "99d8a1d66d00191c1c3265f9312bafd65237e26c",
+    "authoredVoiceField": "",
+    "bindingAccepted": false
+  },
+  "savedRouteTraversalVerified": true,
+  "partAccepted": false,
+  "nativeSceneDataChanged": false
+}
