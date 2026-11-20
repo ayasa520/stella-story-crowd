@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "scene": 10450054,
+  "scenario": 5,
+  "dataBaseCommit": "487843f38579496f6c2310841ec75b95b1c505cb",
+  "playerCommit": "d78e9c889362f65f9a3d482957f2f1ad3b4adfae",
+  "browserVersion": "159.0.1",
+  "runtime": {
+    "route": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "capturePtsSeconds": [
+      14,
+      18.28
+    ],
+    "framesReviewed": 129,
+    "captureScope": "Complete visible entry, hold and exit with predecessor and successor",
+    "frameOrigin": "Local 30 fps Xvfb capture, frames numbered from 1 within the reviewed interval",
+    "manualObservationHoldMs": 1200
+  },
+  "source": {
+    "reviewedPtsSeconds": [
+      30.523,
+      41.989
+    ],
+    "framesInPriorReview": 345,
+    "reference": "p30-felt5-body-20261112-v1/formal-body-review.json"
+  },
+  "accepted": {
+    "existingBodySequence": true,
+    "visibleIntermediateFade": true,
+    "wholePerformance": false
+  },
+  "actualKeyFrames": {
+    "visibleEntrance": 37,
+    "eyesLower": [
+      49,
+      50
+    ],
+    "eyesClearlyClosed": 51,
+    "hold": [
+      51,
+      91
+    ],
+    "dimActor": 92,
+    "actorGone": 93,
+    "nextActor": [
+      102,
+      129
+    ]
+  },
+  "remainingDifferences": [
+    "The earliest discernible local appearance is already open-eyed. The faintest source appearance shows the lids lower before the eyes open.",
+    "The two partially lowered local frames repeat before the closed-eye pose. The near-closed intermediate state seen in the source was absent from the reviewed local frames.",
+    "The actual review advanced the typewriter manually, so panel and mouth progression cannot be calibrated from these observations."
+  ],
+  "pending": [
+    "Exact fade and body timing",
+    "Separate expression and extra layer ownership",
+    "Geometry",
+    "Lip and voice synchronization"
+  ],
+  "mainAgentViewedImages": false,
+  "nativeFieldsChanged": false
+}
