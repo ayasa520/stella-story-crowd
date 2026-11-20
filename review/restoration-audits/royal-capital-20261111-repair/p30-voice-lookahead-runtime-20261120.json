@@ -1,0 +1,193 @@
+{
+  "formatVersion": 1,
+  "recordingPart": 30,
+  "sceneId": 10450056,
+  "nodeId": 34,
+  "evidenceScope": "Continuous spoken dialogue and phase timing at 33–35, plus direct entry at node 34",
+  "nativeDataCommit": "4875add74267a9267a372d16f74b54cb5b583cd2",
+  "beforePlayerCommit": "cf801a7ddda74adf38a339ba88821c1758e6de24",
+  "playerCommit": "994aceef7d7aad45a7ae1eec12debfc00f6e87c7",
+  "cloudflareWorkerVersion": "3f745311-508d-4cd4-8485-0f05908a835f",
+  "browser": {
+    "product": "Firefox",
+    "version": "159.0.1",
+    "headless": true,
+    "nice": 19,
+    "cpuAffinity": [
+      0,
+      1
+    ],
+    "exited": true
+  },
+  "priorOriginalComparisonAudit": "p30-published-julius34-source-frame-comparison-20261120.json",
+  "metrics": {
+    "interval": "phase_1_end to text_begin",
+    "unit": "milliseconds",
+    "referencePublishedInterval": 1111,
+    "controlledBefore": 3449,
+    "controlledAfter": 11,
+    "directEntryUnderControl": 1755,
+    "publishedAfter": 14
+  },
+  "trialNetworkControl": {
+    "bankDelayMs": 340,
+    "audioDelayMs": 700,
+    "scope": "Only the exact tested bank and cue requests"
+  },
+  "controlledRuns": [
+    {
+      "name": "baseline",
+      "waitMs": 3449,
+      "voicePrepareMs": 3963,
+      "preloaded": false,
+      "duration": 0.84975,
+      "voicePosition": 0.84975,
+      "voicePlayed": "playing",
+      "voiceEnded": "ended",
+      "route": [
+        33,
+        35
+      ],
+      "phase1ToTextVerified": true,
+      "errors": [],
+      "network": [
+        {
+          "path": "/api/voices/vo_adv_julius",
+          "delay": 340,
+          "started": 1795177903158
+        },
+        {
+          "path": "/asset/LIMEOS/audio/vo_adv_julius/advg_julius_kansya.wav",
+          "delay": 700,
+          "started": 1795177905685
+        }
+      ],
+      "eofProbes": [],
+      "warmTrace": []
+    },
+    {
+      "name": "candidate",
+      "waitMs": 11,
+      "voicePrepareMs": 53,
+      "preloaded": true,
+      "duration": 0.84975,
+      "voicePosition": 0.84975,
+      "voicePlayed": "playing",
+      "voiceEnded": "ended",
+      "route": [
+        33,
+        35
+      ],
+      "phase1ToTextVerified": true,
+      "errors": [],
+      "network": [
+        {
+          "path": "/api/voices/vo_adv_julius",
+          "delay": 340,
+          "started": 1795177921151
+        },
+        {
+          "path": "/asset/LIMEOS/audio/vo_adv_julius/advg_julius_kansya.wav",
+          "delay": 700,
+          "started": 1795177922284
+        }
+      ],
+      "eofProbes": [],
+      "warmTrace": [
+        "STORY_VOICE_PREFETCH_START node:10450056:1045005600034 advg_julius_kansya",
+        "STORY_VOICE_PREFETCH_READY node:10450056:1045005600034 advg_julius_kansya 4008"
+      ]
+    },
+    {
+      "name": "direct",
+      "waitMs": 1755,
+      "voicePrepareMs": 2329,
+      "preloaded": false,
+      "duration": 0.84975,
+      "voicePosition": 0.84975,
+      "voicePlayed": "playing",
+      "voiceEnded": "ended",
+      "route": [
+        34,
+        35
+      ],
+      "phase1ToTextVerified": true,
+      "errors": [],
+      "network": [
+        {
+          "path": "/api/voices/vo_adv_julius",
+          "delay": 340,
+          "started": 1795177937975
+        },
+        {
+          "path": "/asset/LIMEOS/audio/vo_adv_julius/advg_julius_kansya.wav",
+          "delay": 700,
+          "started": 1795177938321
+        },
+        {
+          "path": "/asset/LIMEOS/audio/vo_adv_julius/advg_julius_kansya.wav",
+          "delay": 700,
+          "started": 1795177939040
+        }
+      ],
+      "eofProbes": [
+        {
+          "status": 416,
+          "range": "bytes=4008-"
+        }
+      ],
+      "warmTrace": []
+    }
+  ],
+  "publishedRun": {
+    "name": "published",
+    "waitMs": 14,
+    "voicePrepareMs": 115,
+    "preloaded": true,
+    "duration": 0.84975,
+    "voicePosition": 0.84975,
+    "voicePlayed": "playing",
+    "voiceEnded": "ended",
+    "route": [
+      33,
+      35
+    ],
+    "phase1ToTextVerified": true,
+    "errors": [],
+    "network": [],
+    "eofProbes": [],
+    "warmTrace": [
+      "STORY_VOICE_PREFETCH_START node:10450056:1045005600034 advg_julius_kansya",
+      "STORY_VOICE_PREFETCH_READY node:10450056:1045005600034 advg_julius_kansya 4008"
+    ]
+  },
+  "cue": {
+    "id": "advg_julius_kansya",
+    "finishedNaturally": true,
+    "playCountPerRun": 1,
+    "measuredDurationSeconds": 0.84975
+  },
+  "directEntryEndRange": {
+    "verifiedResourceBytes": 4008,
+    "rejectedRange": [
+      {
+        "status": 416,
+        "range": "bytes=4008-"
+      }
+    ],
+    "naturalEndObserved": true
+  },
+  "verifiedOwnership": [
+    "Only a known successor is prefetched",
+    "Speculative bank and audio are abortable",
+    "An aborted metadata request cannot occupy the active bank lookup",
+    "Active media uses the same channel",
+    "Blob URL is detached before revocation",
+    "Timed voice remains cancellable"
+  ],
+  "sha256": {
+    "browserTrial": "c50ed60f8bedfaf1c0731e9ea2f87df8d10616deee3d9f188f00d341dc5126b9",
+    "publishedBrowserTrace": "09ba79af40c2c790b3a52a6f2c0e7ec975a79a8a2fc81fcb1f0498794f7eec67"
+  },
+  "originalPerformanceAcceptance": "pending"
+}
