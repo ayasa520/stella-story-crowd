@@ -1,0 +1,48 @@
+{
+  "schema": "stella.directory-edge.source-owner-write-proposal.v1",
+  "rootConfirmed": false,
+  "sourceChanged": false,
+  "apiOrMutationExecuted": false,
+  "reviewedSourceHead": "4c08cddcb5db57f9501938ce90b9f50ea2e67a8e",
+  "purpose": "Make normal directory save ownership match the deployed readDirectoryFlow/storyDirectory rule: only a scene's own document supplies its authoritative chart row.",
+  "minimumChanges": [
+    {
+      "function": "addStructuralSources",
+      "location": "lib/studio-native.ts:126-145",
+      "replaceDirectoryBranch": "Resolve prior edge/source identity, then ensure only that scene's own native source is available. Return from the directory branch before the global foreign-chart scan. If already loaded, do not read more sources. Target is metadata/read-only.",
+      "deleteById": "For delete_edge with only id, recover source from the prior saved/generated directory edge. If its owner is outside initial scope, read that owner only at snapshot.headSha. Do not scan every document that contains a copied chart row.",
+      "preserveOtherOperations": "Keep node/delete and scenario renumbering's real incoming-FINISH scan unchanged."
+    },
+    {
+      "function": "applyStudioMutation directory/edit",
+      "location": "lib/studio-native.ts:368-389",
+      "replaceMutationLoop": "Select snapshot.sources.find(source.entry.id===sourceId), then update only its chartmap.scene_list row with scene_id===sourceId. Never loop through foreign documents, never replace all155 chart rows.",
+      "identity": "Preserve explicit author edge id. A pre-existing edge source should remain fixed, as in the current UI; reject source relocation rather than silently writing another owner.",
+      "redirect": "Use prior.nativeTarget/evidence.nativeTarget to find the old pair in the owner row, replace only that item while preserving any extra native target fields. Duplicate same-pair additions retain current deduplication behavior.",
+      "delete": "Remove only the matching owner target. Preserve prior source/nativeTarget/evidence in the saved deleted tombstone so storyDirectory can suppress regenerated native counterparts using the same author identity.",
+      "missingOwner": "Do not create a body/chart row or adopt a foreign copy. Existing explicit manual directory metadata may remain extras-only; surface missing own-source coverage. This boundary requires review but is not exercised by the10090015 candidate.",
+      "sectionEdges": "Keep section-source edges extras-only; they must not touch any native scene body.",
+      "manualOverrides": "Keep storyDirectory saved nativeTarget replacement and deleted handling unchanged. First3 manual edge identity, layout, native rows and all unrelated overrides stay guarded."
+    }
+  ],
+  "normalPathAfterFix": [
+    "Fresh same-head normal project and exact root-approved source bytes",
+    "Normal directory/edit save_edge request with current baseSha/revision and explicit author evidence",
+    "addStructuralSources source-owner-only branch",
+    "applyStudioMutation source-own-chart plus manifest.studioDirectory.edges",
+    "studioPublicationFiles exact two-file comparison for this candidate",
+    "Original nativeJSON serializer; original repository/publisher path",
+    "Root-approved exact application/publication; no native_install/adoption or ownership-ledger rewrite"
+  ],
+  "requiredPrivateRegressionsBeforeRelease": [
+    "This candidate emits only source native plus manifest; target and121owned native/review/summary digests stay unchanged",
+    "Adding/redirecting/deleting an owner chart relation does not change any foreign chart copy",
+    "delete_edge id-only resolves a non-active source owner without a global chart scan",
+    "Manual first3 nativeTarget override keeps author identity and suppresses regenerated counterpart",
+    "Deleted manual override retains enough identity/nativeTarget provenance to suppress its counterpart",
+    "Section edge remains manifest-only",
+    "Missing native owner/missing own chart row never borrows a foreign empty/nonempty row or invents script",
+    "Node deletion/renumbering incoming-FINISH handling remains unchanged"
+  ],
+  "notAnAuthorization": "No current save_edge, helper, API, browser, build, Git or formal data/source mutation is authorized by this file."
+}

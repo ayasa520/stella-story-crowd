@@ -1,0 +1,53 @@
+{
+  "schema": "stella.directory-edge-owner.static-peer.v1",
+  "rootConfirmed": false,
+  "reviewedHead": "4c08cddcb5db57f9501938ce90b9f50ea2e67a8e",
+  "reviewedFile": "lib/studio-native.ts",
+  "reviewedFileSha256": "7bc195eb71e51b4fd5849bfb8d70d1c7efd83f8610d466bc96ea2208d95d8874",
+  "diffSha256": "325386f97ec31ccf9656c2afa77a5ad634fc9e6f2ee278854303a4fbf48e9217",
+  "mustFixForKnown10090015Candidate": [],
+  "normalMutationApiOrBuildExecuted": false,
+  "findings": [
+    {
+      "area": "write scope",
+      "at": "118-140;385-404",
+      "result": "Directory expansion resolves only source owner, returns before global scan; only entry.id===sourceId own chart row mutates. Target and foreign copies remain read-only. No-native owner leaves explicit manifest metadata only."
+    },
+    {
+      "area": "delete/retarget identity",
+      "at": "128-139;379-398",
+      "result": "UUID/manual IDs can recover prior.source from complete directory extras and ensure a single off-scope owner. Retarget uses prior nativeTarget to replace only the old owner pair; source relocation is rejected. Generated chart IDs already identify source for the ordinary mutation loader."
+    },
+    {
+      "area": "post-save scope",
+      "at": "400;studio-api.ts:174-176",
+      "result": "When an own row exists, result.sceneId is owner. Publication audit and normal response reload include owner alongside original mutation/active scopes. Dummy outside review is unchanged in base/next and not emitted."
+    },
+    {
+      "area": "section edge",
+      "result": "No scene-source match in directory expansion and no scene-kind mutation: manifest extras only; no native body changed."
+    },
+    {
+      "area": "first3/manual override",
+      "result": "storyDirectory nativeTarget suppression, author edge identity and deleted branch are unchanged. This10090015 candidate cannot mutate first3 owner documents after narrowing."
+    },
+    {
+      "area": "incoming FINISH",
+      "result": "Existing node-delete/scenario-renumber predicate and global scan remain byte-for-byte outside this directory branch."
+    }
+  ],
+  "explicitExistingDeleteBehavior": {
+    "at": "379;406",
+    "operation": "delete_edge with only id",
+    "savedTombstone": "{id,deleted:true}",
+    "copiesPriorSourceNativeTargetOrEvidence": false,
+    "immediateResult": "Owner old target is removed, so current read-side projection suppresses the deleted edge.",
+    "classification": "Existing behavior, not introduced by this scope fix. Stronger tombstone provenance/re-import suppression from the earlier proposal remains a separate contract choice requiring review/control."
+  },
+  "limits": {
+    "staticOnly": true,
+    "noRuntimeOrSerializerAcceptance": true,
+    "currentCandidateStillRequiresExactTwoFileNormalSerializerProof": true,
+    "ownershipLedgerOrBaselineAdoptionAllowed": false
+  }
+}

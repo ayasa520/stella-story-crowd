@@ -1,0 +1,92 @@
+{
+  "schema": "stella.directory-edge-owner.final-static-peer.v2",
+  "rootConfirmed": false,
+  "sourceBaseHead": "4c08cddcb5db57f9501938ce90b9f50ea2e67a8e",
+  "reviewedBytes": {
+    "lib/studio-native.ts": "5cad757a5b8c9ba1444ec466a9e44b9cbeadd0be24280d1189d1d9cfa814e396",
+    "lib/studio-api.ts": "ab067c5cb0e37fc3727e909e6f0e96668facf457941395e7e6b447ab9ce5239c"
+  },
+  "mustFix": [],
+  "priorReview": {
+    "path": "artifacts/stella-script-continuation-20261121/directory-edge-owner-source-static-peer-20261121-v1/review.json",
+    "sha256": "a534f51ac67d59c6aae1e004fc370060d07e5173cacf2c79e26f97a129eb4b91",
+    "retainedUnchanged": true
+  },
+  "staticCases": [
+    {
+      "case": "known10090015 target10020001",
+      "at": [
+        "studio-api.ts:29-37",
+        "studio-native.ts:127-140",
+        "studio-native.ts:391-410"
+      ],
+      "finding": "Directory save/delete does not request target scripts. Full manifest supplies target directory entry/section. Only source own row changes; neither target nor126foreign chart copies mutate."
+    },
+    {
+      "case": "target has directory but no script",
+      "finding": "No target native load or sourceNode lookup in directory branch. Target scene entry resolves through project complete directory; explicit map metadata can name it without inventing a script."
+    },
+    {
+      "case": "section edge",
+      "finding": "Section source does not match scene-owner ensure and does not enter scene-native mutation branch. Only manifest extras change; ordinary active scope remains available."
+    },
+    {
+      "case": "manual UUID delete in another loaded scope",
+      "at": [
+        "studio-native.ts:128-139",
+        "studio-native.ts:379-390",
+        "studio-native.ts:406",
+        "studio-api.ts:179-181"
+      ],
+      "finding": "Prior exists in global saved directory edges, so id-only delete recovers source and ensures only its owner native. Own-row mutation returns source sceneId; post-publication reload includes that owner and retained active scope, without adding target scripts. Outside placeholder review stays equal between base/next and is not published."
+    },
+    {
+      "case": "delete tombstone after owner chart is restored in memory",
+      "at": [
+        "studio-native.ts:379-386",
+        "story-directory.ts:85-93"
+      ],
+      "finding": "Normal id-only deletion copies complete prior source/nativeTarget/evidence, sets deleted and keeps author id. On a later projection, nativeTarget first removes regenerated chart:source:target; deleted then removes author UUID. The restored owner row does not resurrect that relation."
+    },
+    {
+      "case": "delete unknown edge",
+      "finding": "requested.deleted without prior throws404 before any publication."
+    },
+    {
+      "case": "retarget and source identity",
+      "finding": "Source relocation of an existing edge is rejected. Target redirect uses prior nativeTarget to replace only the owner old pair, preserving unrelated owner fields and manual id. Target body remains read-only."
+    },
+    {
+      "case": "no-native-owner",
+      "finding": "Owner absent from manifest.scenes causes ensure to return without constructing a native source. Mutation has no own chart row, so relation remains explicit extras-only; no foreign copy or native payload is adopted."
+    },
+    {
+      "case": "first3 manual overlays",
+      "finding": "Existing storyDirectory nativeTarget replacement/deleted identity semantics remain unchanged. Source-owner selection prevents this10090015 change from touching first3 files. No native_install/ledger adoption is added."
+    },
+    {
+      "case": "real executable target reads",
+      "at": "studio-api.ts:33-36",
+      "finding": "Target omission applies only to directory/edit save_edge/delete_edge. Node/FINISH operations retain their original target/script scope. Existing node-delete/renumber incoming-FINISH global scan remains unchanged."
+    }
+  ],
+  "limits": {
+    "reviewMode": "static source inspection only",
+    "memoryControlsRunByPeer": false,
+    "normalMutationSerializerOrApiExecutedByPeer": false,
+    "buildRunByPeer": false,
+    "browserNetworkOrFormalWriteByPeer": false,
+    "requiresRootBoundedMemoryControls": true,
+    "requiresExactTwoFormalFileSerializerProofForCandidate": true,
+    "noWholeOriginalFlowOrRuntimeAcceptance": true
+  },
+  "expectedFutureCandidateOnly": {
+    "formalFiles": [
+      "native/scenes/10090015.json",
+      "manifest.json"
+    ],
+    "reviewsAndTargetAndForeignAndOwnershipUnchanged": true,
+    "preparedNodesAndExecutableEdgesUnchanged": true,
+    "derivedNativeIntervalNextSceneCount": "0→1; both are nonbranch; not whole-program byte equality"
+  }
+}

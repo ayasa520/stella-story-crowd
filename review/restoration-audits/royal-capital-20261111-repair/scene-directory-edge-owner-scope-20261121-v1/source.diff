@@ -1,0 +1,112 @@
+diff --git a/lib/studio-api.ts b/lib/studio-api.ts
+index 17fb569..5540acb 100644
+--- a/lib/studio-api.ts
++++ b/lib/studio-api.ts
+@@ -26,9 +26,14 @@ function sceneFromId(value:unknown){
+   if(typeof value!=="string")return 0;
+   return Number(/^(?:edge:node:|node:|recording:|scene:|chart:)(\d+)(?::|$)/.exec(value)?.[1]||0);
+ }
+-function mutationScenes(body:StudioRecord){
++function mutationScenes(body:StudioRecord,path:string){
++  // A directory edge names its destination through the complete manifest.
++  // Only executable node transfers require the destination's script body;
++  // browsing or saving chart metadata must not load an unrelated section.
++  const directoryEdge=path==="directory/edit"&&["save_edge","delete_edge"].includes(body.operation);
+   const ids=[Number(body.sceneId),Number(body.scopeSceneId),
+-    ...[body.id,body.source,body.target,body.video_id,body.edge?.source,body.edge?.target,body.entry?.id].map(sceneFromId)];
++    ...[body.id,body.source,directoryEdge?undefined:body.target,body.video_id,
++      body.edge?.source,directoryEdge?undefined:body.edge?.target,body.entry?.id].map(sceneFromId)];
+   return [...new Set(ids.filter(id=>Number.isSafeInteger(id)&&id>0))];
+ }
+ // Resource metadata is part of the preview snapshot. Keep this URL tied to
+@@ -135,7 +140,7 @@ export async function studioPost(request:Request,path:string){
+     if(!user)throw new RepositoryError("请先使用 GitHub 登录；当前修改仍保留在表单中。",401);
+   }
+   const baseSha=validRevision(body.baseSha);
+-  const sceneIds=mutationScenes(body);
++  const sceneIds=mutationScenes(body,path);
+   const resolving=path==="resolve"||path==="player/prepare";
+   const [base,assets]=await Promise.all([loadStudioSnapshot(baseSha,sceneIds,resolving?"read":"edit"),assetCatalog(baseSha)]);
+   const project=studioProject(base,assets);
+diff --git a/lib/studio-native.ts b/lib/studio-native.ts
+index cfc170a..7430b4e 100644
+--- a/lib/studio-native.ts
++++ b/lib/studio-native.ts
+@@ -110,10 +110,11 @@ export async function loadStudioSnapshot(sha?:string,sceneIds:number[]=[initialS
+   finally{if(snapshotReads.get(key)===loading)snapshotReads.delete(key);}
+ }
+ 
+-/** Chart rows are copied into many scene files. Structural edits also have
+- * to find explicit incoming FINISH targets outside the active section. Read
+- * only the native bodies for that scan and retain matching documents. An
+- * outside review file is never needed or emitted for these changes. */
++/** Executable node changes must find incoming FINISH references outside the
++ * active section. Directory edges have a different owner: only the source
++ * scene's own chart row is editable. Other documents can carry stale copies
++ * of that row; finding a copy never grants ownership of the containing script.
++ * Read native bodies only, without emitting or replacing outside reviews. */
+ export async function addStructuralSources(snapshot:StudioSnapshot,project:StudioRecord,path:string,payload:StudioRecord){
+   if(env.STELLA_HOSTING!=="cloudflare")return;
+   let containsChange:((body:NativeDocument)=>boolean)|undefined;
+@@ -127,7 +128,16 @@ export async function addStructuralSources(snapshot:StudioSnapshot,project:Studi
+     const prior=project.directory.edges.find((edge:StudioRecord)=>edge.id===(payload.edge?.id||payload.id));
+     const match=/^scene:(\d+)$/.exec(payload.edge?.source||prior?.source||"");
+     if(!match)return;
+-    containsChange=body=>(body.chartmap.scene_list as StudioRecord[]).some(row=>row.scene_id===Number(match[1]));
++    const ownerId=Number(match[1]);
++    if(snapshot.sources.some(source=>source.entry.id===ownerId))return;
++    const entry=snapshot.manifest.scenes.find(entry=>entry.id===ownerId);
++    // A directory-only scene may still have an explicitly authored map edge.
++    // Keep that relation in manifest extras; do not invent a native document
++    // or mutate an unrelated scene that happens to contain an empty copy.
++    if(!entry)return;
++    const document=await new GitHubRepository().read<NativeDocument>(snapshot.headSha,entry.path);
++    snapshot.sources.push({entry,document,review:{version:1,sceneId:entry.id,scenarios:{}}});
++    return;
+   }
+   if(!containsChange)return;
+   const repository=new GitHubRepository();
+@@ -366,24 +376,37 @@ export function applyStudioMutation(snapshot:StudioSnapshot,project:StudioRecord
+         source.entry.title=text(edited.name);
+       }
+     }else if(["save_edge","delete_edge"].includes(payload.operation)){
+-      const edge=payload.edge||{id:payload.id,deleted:true};edge.id||=`chart:${crypto.randomUUID()}`;
+-      const prior=project.directory.edges.find((row:StudioRecord)=>row.id===edge.id);
++      const requested=payload.edge||{id:payload.id,deleted:true};
++      const edgeId=requested.id||`chart:${crypto.randomUUID()}`;
++      const prior=project.directory.edges.find((row:StudioRecord)=>row.id===edgeId);
++      if(requested.deleted&&!prior)throw new RepositoryError("待删除的连接不存在，请重新读取场景连线。",404);
++      // A deletion must retain the original source/native target and evidence.
++      // Otherwise a later native import could regenerate chart:<source>:<target>
++      // while its unrelated authoring UUID tombstone no longer identifies it.
++      const edge={...(requested.deleted?clone(prior):{}),...requested,id:edgeId};
++      if(prior&&edge.source&&edge.source!==prior.source)
++        throw new RepositoryError("连接来源不能单独改动，请删除旧连接后重新添加。",400);
+       const sourceEntry=project.directory.entries.find((row:StudioRecord)=>row.id===(edge.source||prior?.source));
+       const targetEntry=project.directory.entries.find((row:StudioRecord)=>row.id===edge.target);
+       if(sourceEntry?.kind==="scene"){
+         const sourceId=Number(sourceEntry.native_id),oldTarget=prior?.nativeTarget||prior?.evidence?.nativeTarget;
+         if(edge.target&&targetEntry?.kind!=="scene")throw new RepositoryError("场景地图只能连接到场景。",400);
+-        // Several replies carry the same native chart row. Update those copies
+-        // together, retaining unrelated chart entries and native conditions.
++        // Match the read-side ownership rule: only this source scene's own
++        // chart row may change. Its destination and foreign chart copies stay
++        // read-only, including importer-owned and protected baseline scripts.
+         // Chart links never create executable transfers; branches own those.
+-        for(const source of snapshot.sources){
+-          const chart=(source.document.chartmap.scene_list as StudioRecord[]).find(row=>row.scene_id===sourceId);if(!chart)continue;
++        const source=snapshot.sources.find(source=>source.entry.id===sourceId);
++        const chart=(source?.document.chartmap.scene_list as StudioRecord[]|undefined)?.find(row=>row.scene_id===sourceId);
++        if(chart){
+           const rows=chart.next_scene_list||[],oldIndex=oldTarget?rows.findIndex((row:StudioRecord)=>row.scene_id===oldTarget.scene_id&&row.section_id===oldTarget.section_id):-1;
+           const nextTarget=!edge.deleted&&targetEntry?{...(oldIndex<0?{}:rows[oldIndex]),scene_id:Number(targetEntry.native_id),section_id:Number(targetEntry.parent.replace(/^section:/,""))}:null;
+           if(oldIndex>=0){if(nextTarget)rows[oldIndex]=nextTarget;else rows.splice(oldIndex,1);}
+           else if(nextTarget&&!rows.some((row:StudioRecord)=>row.scene_id===nextTarget.scene_id&&row.section_id===nextTarget.section_id))rows.push(nextTarget);
+           chart.next_scene_list=rows;
++          sceneId=source!.entry.id;
+         }
++        console.info("STELLA_DIRECTORY_EDGE_OWNER",{operation:payload.operation,edge:edge.id,
++          sceneId:sourceId,ownerPath:source?.entry.path||"",nativeOwnerRowFound:Boolean(chart)});
+         if(targetEntry)edge.nativeTarget={scene_id:Number(targetEntry.native_id),section_id:Number(targetEntry.parent.replace(/^section:/,""))};
+       }
+       extras.edges=extras.edges.filter((row:StudioRecord)=>row.id!==edge.id);extras.edges.push(clone(edge));
