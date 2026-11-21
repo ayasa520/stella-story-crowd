@@ -1,0 +1,46 @@
+{
+  "schema": "stella.source-boundary-extraction.v1",
+  "source": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+  "sourceSha256": "cde8f107bc864da9185e78e756da468f8d71b390cf1bd005d71910b0bc2e528e",
+  "sourceInterval": [
+    875.0,
+    890.0
+  ],
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "info",
+    "-nostdin",
+    "-threads",
+    "1",
+    "-filter_threads",
+    "1",
+    "-filter_complex_threads",
+    "1",
+    "-ss",
+    "875.0",
+    "-i",
+    "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/23 9-IF库珥修「被委任的工作」.mp4",
+    "-t",
+    "15.0",
+    "-vf",
+    "showinfo",
+    "-fps_mode",
+    "passthrough",
+    "-threads",
+    "1",
+    "-q:v",
+    "2",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode9-other-20261121-v1/p23-hall-boundary/frames/%04d.jpg"
+  ],
+  "nice": 19,
+  "affinity": [
+    0,
+    1
+  ],
+  "frameCount": 449,
+  "fpsSamplingApplied": false,
+  "completeOriginalBoundaryReviewed": false,
+  "rootConfirmed": false
+}
