@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p31-slice69-71-normal-apply-observed-v2/observe_cli.py", line 80, in <module>
+    runpy.run_module(module,run_name='__main__',alter_sys=True)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 231, in run_module
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/rikka/Projects/stella/story_studio/recovery/native_install.py", line 222, in <module>
+    main()
+    ~~~~^^
+  File "/home/rikka/Projects/stella/story_studio/recovery/native_install.py", line 218, in main
+    print(json.dumps(install(args.staging, args.target, args.root, apply=args.apply), ensure_ascii=False))
+                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rikka/Projects/stella/story_studio/recovery/native_install.py", line 193, in install
+    report, _, _ = prepare_batch(staging, target, root)
+                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rikka/Projects/stella/story_studio/recovery/native_install.py", line 73, in prepare_batch
+    manifest, manifest_raw = read_object(target / "manifest.json")
+                             ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rikka/Projects/stella/story_studio/recovery/native_install.py", line 27, in read_object
+    value = json.loads(raw)
+  File "/usr/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/json/decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 135999 column 7 (char 4005692)

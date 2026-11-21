@@ -1,0 +1,232 @@
+{
+  "schema": "stella.p42-original-json-exception-independent-node.v1",
+  "rootConfirmed": false,
+  "node": {
+    "version": "v26.13.0",
+    "arch": "arm64"
+  },
+  "oldEpochCommit": "d80126e361830c94e7dde7ddb7821b25e72be14c",
+  "manifestOriginal": {
+    "bytes": 4490156,
+    "sha256": "2a668565fc6abaf1e9bebc5c32287368b47eadd55de437a66db23d3909aeb0e6",
+    "source": "Fixed git blob d80126e:manifest.json"
+  },
+  "rootBaselineBefore": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/guards-before.json",
+    "bytes": 71453,
+    "sha256": "11c0a6d196ad09708b96fc050178809f5e4cd9b4eab01d9b70d8486e230ba35a"
+  },
+  "rootBaselineAfter": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/guards-after.json",
+    "bytes": 71453,
+    "sha256": "11c0a6d196ad09708b96fc050178809f5e4cd9b4eab01d9b70d8486e230ba35a"
+  },
+  "rootFileGuardsEqualAtTheirRecordedEpoch": true,
+  "failedReceiverRecordedRaw": {
+    "bytes": 4490156,
+    "sha256": "2a668565fc6abaf1e9bebc5c32287368b47eadd55de437a66db23d3909aeb0e6",
+    "matchesOldGitAndBaseline": true
+  },
+  "liveFileEarlierObservation": {
+    "epoch": "First independent Node comparison before parent-authorized p42 apply",
+    "manifestBytes": 4490156,
+    "manifestSha256": "2a668565fc6abaf1e9bebc5c32287368b47eadd55de437a66db23d3909aeb0e6",
+    "directBufferEqualsGitHeadBlob": true,
+    "matchedRootBeforeAfterBaselines": true,
+    "strictUtf8": true,
+    "jsonParsed": true,
+    "liveManifestNotRereadOrAssertedUnchangedAfterApply": true
+  },
+  "exceptionDocument": {
+    "bytes": 4490156,
+    "sha256": "ba77ea190adfc2bdc9b81a783c4f0b63b2b2ecaf6309df04f713f99cd6146eb0",
+    "retainedGzip": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/root-normal-audit-observer/first-json-exception-doc.utf8.gz",
+      "bytes": 121563,
+      "sha256": "5870ac7cb7f39c529cc2316782e692acb891de375eae8902768d01a5dbf887e2"
+    }
+  },
+  "differentByteCount": 4,
+  "differences": [
+    {
+      "byteStartInclusive": 4032620,
+      "byteEndExclusive": 4032624,
+      "length": 4,
+      "originalHex": "2020226e",
+      "exceptionHex": "00000000",
+      "originalBytes": [
+        32,
+        32,
+        34,
+        110
+      ],
+      "exceptionBytes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "windowByteStart": 4032572,
+      "windowByteEnd": 4032672,
+      "originalWindowBase64": "ImlzX3Jvb3QiOiB0cnVlLAogICAgICAgICJpc19lbmQiOiBmYWxzZSwKICAgICAgICAibm90ZXMiOiAiIiwKICAgICAgICAib3JpZ2luIjogIm1hc3RlciIsCiAgICAgICAgIg==",
+      "exceptionWindowBase64": "ImlzX3Jvb3QiOiB0cnVlLAogICAgICAgICJpc19lbmQiOiBmYWxzZSwKICAgICAgAAAAAG90ZXMiOiAiIiwKICAgICAgICAib3JpZ2luIjogIm1hc3RlciIsCiAgICAgICAgIg==",
+      "originalWindowText": "\"is_root\": true,\n        \"is_end\": false,\n        \"notes\": \"\",\n        \"origin\": \"master\",\n        \"",
+      "exceptionWindowText": "\"is_root\": true,\n        \"is_end\": false,\n      \u0000\u0000\u0000\u0000otes\": \"\",\n        \"origin\": \"master\",\n        \""
+    }
+  ],
+  "originalNodeParse": {
+    "strictUtf8": true,
+    "jsonParsed": true
+  },
+  "exceptionNodeParse": {
+    "strictUtf8": true,
+    "jsonParsed": false,
+    "error": "Expected double-quoted property name in JSON at position 4005692 (line 135999 column 7)"
+  },
+  "reportedPythonError": {
+    "position": 4005692,
+    "line": 135999,
+    "column": 7,
+    "message": "Expecting property name enclosed in double quotes: line 135999 column 7 (char 4005692)"
+  },
+  "stageImmediatelyBefore": {
+    "receivers": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/root-normal-stage-observer/receivers.json",
+      "bytes": 117859,
+      "sha256": "e8df8b6d3b3cc336bc961fd40f01e297cd5187f21601d8d13e9b93f29f31e683"
+    },
+    "exitCode": 0,
+    "receiverCount": 246,
+    "manifestReads": [
+      {
+        "sequence": 1,
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+        "bytes": 4490156,
+        "sha256": "2a668565fc6abaf1e9bebc5c32287368b47eadd55de437a66db23d3909aeb0e6",
+        "file": "/home/rikka/Projects/stella/story_studio/recovery/native_repair.py",
+        "function": "InstalledSnapshot.__init__",
+        "line": 29,
+        "binding": "self.manifest_raw"
+      }
+    ],
+    "loadsIdentityUnchanged": true
+  },
+  "failedNoApplyGates": {
+    "execution": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/root-normal-audit.execution.json",
+      "bytes": 1039,
+      "sha256": "930bfa02f1f0075e1e20dac5a3fcc6110fb04b95b8cd9b66ab5393de99ae6133"
+    },
+    "failureReceivers": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/root-normal-audit-observer/receivers.json",
+      "bytes": 4012,
+      "sha256": "141f2e742f27803d02ea937bcfc8bdc12748e97ef501cdd7a43794d7b765f6c7"
+    },
+    "formalApplyRequested": false,
+    "failureWasFourthReader": true,
+    "laterOwnershipCatalogSceneValidationNotReached": true,
+    "explanation": "The nonapply install branch calls prepare_batch and returns only after it succeeds. This failure propagated while reading the target manifest, before ownership/catalog/scene checks; the write/lock branch requires apply=true.",
+    "readerImplementationBaselineSha256": "6b8196319ca7afc44943cb26341caf23cec2f8ed3649c82a8248f62b2a47db27",
+    "repairImplementationBaselineSha256": "dddc83e2387a0370b726b98ba55a9aada5868a1007ebafe23b7b722361bcd333",
+    "parserInternalTraceInstalled": false,
+    "loadsIdentityUnchanged": true,
+    "readerParserConstructorReplaced": false,
+    "observerErrors": []
+  },
+  "pythonModuleObservation": {
+    "epoch": "Earlier independent Node probe, before the parent-authorized p42 apply",
+    "method": "Node fs reads and SHA-256 compared with the previous context-before/context-after and unchanged installed mtree",
+    "files": [
+      {
+        "path": "/usr/lib/python3.14/json/__init__.py",
+        "bytes": 14132,
+        "sha256": "2dd10f1bf4c9ea5478e589216805e7f279d0e4bce134a19efa297404fb87407d"
+      },
+      {
+        "path": "/usr/lib/python3.14/json/decoder.py",
+        "bytes": 12877,
+        "sha256": "dc98d3e677612ea7311303f06a144cec6b91ebadc7ec037d1777501647578a07"
+      },
+      {
+        "path": "/usr/lib/python3.14/json/scanner.py",
+        "bytes": 2434,
+        "sha256": "572958017eae8842eeddd0e3d18d3c56cc0a197348224915e1d87ce937841764"
+      },
+      {
+        "path": "/usr/lib/python3.14/lib-dynload/_json.cpython-314-aarch64-linux-gnu.so",
+        "bytes": 68912,
+        "sha256": "17edbf778f940718af6550e28355dcf87082e0f770d7bab4947731737beb2119"
+      }
+    ],
+    "installedPackage": "python-3.14.9-1",
+    "mtreeSha256": "feec5c0ffdd82af363433c5c49bd1fda0a88c13c63213eb0222a2f2e65012690",
+    "executable": {
+      "path": "/usr/bin/python3.14",
+      "sha256": "9b66dcfde20da6c70bce7e46ed0da1dc6b67aaf188a225a5986a515af878d714",
+      "matchesOriginalMtree": true
+    },
+    "libpython": {
+      "path": "/usr/lib/libpython3.14.so.1.0",
+      "sha256": "4521d31f150631cff0ed5c4bb9adba2914678286762af3b0a33e97bca12a5f19",
+      "matchesOriginalMtree": true
+    },
+    "allFourModuleFilesMatchedOriginalBaselineAndMtree": true,
+    "pythonExecutedByThisAgent": false,
+    "limitation": "On-disk file identity does not prove every in-memory object was unchanged in the failed process."
+  },
+  "moduleHistoricalBaseline": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/json-receiver-integrity-investigation-20261121-v1/context-before.json",
+    "bytes": 5657,
+    "sha256": "306c6d65dcd2d8a7edd93341e5e33ace1dab655e95580f4361ac9154e58e431d"
+  },
+  "parentAuthorizedLaterEpoch": [
+    {
+      "receipt": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/root-normal-audit-v2.execution.json",
+        "bytes": 1340,
+        "sha256": "0adebe58aa633c9ca44b973284caf2a502717affd014b0c6a6bc5c2577b46a28"
+      },
+      "exitCode": 0,
+      "formalApply": false,
+      "priorCauseStillUnknown": true,
+      "parentPostApplyManifestSha256": null,
+      "statusOnlyNotNewHealthTest": true
+    },
+    {
+      "receipt": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/root-formal-apply.execution.json",
+        "bytes": 1299,
+        "sha256": "ddadd8eb3c5199100fcf57409a80d155ae2b935b9424048c15756627fbc89048"
+      },
+      "exitCode": 0,
+      "formalApply": true,
+      "priorCauseStillUnknown": true,
+      "parentPostApplyManifestSha256": null,
+      "statusOnlyNotNewHealthTest": true
+    },
+    {
+      "receipt": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/root-postapply-verification.json",
+        "bytes": 1161,
+        "sha256": "6d32bf12565db9c2a4d2a07824b0f8ccbe00d400b668c79b4876d465e2ad2fb3"
+      },
+      "exitCode": null,
+      "formalApply": null,
+      "priorCauseStillUnknown": true,
+      "parentPostApplyManifestSha256": "70446b02b10bcb1581fcbfe1d5899dcc9d09d461ec1abed5569056f7e44403e7",
+      "statusOnlyNotNewHealthTest": true
+    }
+  ],
+  "conclusion": "The v1 artifacts establish a four-NUL difference between the recorded raw-byte hash and the retained JSONDecodeError.doc. Fixed original bytes parse; the retained exception document fails at the same character/line/column. The mutation mechanism/component is not established.",
+  "limits": [
+    "The raw receiver body was not retained; its equality with the old file/blob is by recorded length and SHA-256.",
+    "No decoded middle string was observed during this failed parse. The exact transformation boundary remains unknown.",
+    "Later successful audit/apply does not prove the prior cause was repaired. The current manifest is intentionally no longer asserted equal to the old epoch."
+  ],
+  "businessCliRetriesByThisAgent": 0,
+  "pythonInterpreterStartedByThisAgent": false,
+  "readerParserChanged": false,
+  "formalDataWrittenByThisAgent": false,
+  "sourceWrittenByThisAgent": false,
+  "largeManifestCopied": false
+}

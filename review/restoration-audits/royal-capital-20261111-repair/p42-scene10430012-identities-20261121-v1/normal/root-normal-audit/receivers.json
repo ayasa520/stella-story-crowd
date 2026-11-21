@@ -1,0 +1,91 @@
+{
+  "schema": "stella.original-cli-reader-boundary-observer.v1",
+  "module": "story_studio.recovery.native_install",
+  "arguments": [
+    "--root",
+    "/home/rikka/Projects/stella",
+    "--target",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout",
+    "--staging",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/stage-after-root-approval"
+  ],
+  "exitCode": 1,
+  "receivers": [
+    {
+      "sequence": 1,
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/stage-after-root-approval/manifest.json",
+      "bytes": 29707,
+      "sha256": "fc448e90ffb5812588d6e5003dc23bbeba0bc6026641cd77aa50e9e4c253f8a0",
+      "file": "/home/rikka/Projects/stella/story_studio/recovery/native_install.py",
+      "function": "read_object",
+      "line": 27,
+      "binding": "local raw and reader path/name"
+    },
+    {
+      "sequence": 2,
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/stage-after-root-approval/plan.json",
+      "bytes": 633,
+      "sha256": "c5441048955c849eac5df0490d99e68c06c1a86a96839b5630be2873968b888f",
+      "file": "/home/rikka/Projects/stella/story_studio/recovery/native_install.py",
+      "function": "read_object",
+      "line": 27,
+      "binding": "local raw and reader path/name"
+    },
+    {
+      "sequence": 3,
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/native-directory.json",
+      "bytes": 1079155,
+      "sha256": "46a5ef005a10c4b4bf95537b32b71e39adec75f336b859e1d079b4613b561653",
+      "file": "/home/rikka/Projects/stella/story_studio/recovery/native_install.py",
+      "function": "prepare_batch",
+      "line": 72,
+      "binding": "local directory_raw/directory_path"
+    },
+    {
+      "sequence": 4,
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+      "bytes": 4490156,
+      "sha256": "2a668565fc6abaf1e9bebc5c32287368b47eadd55de437a66db23d3909aeb0e6",
+      "file": "/home/rikka/Projects/stella/story_studio/recovery/native_install.py",
+      "function": "read_object",
+      "line": 27,
+      "binding": "local raw and reader path/name"
+    }
+  ],
+  "observationErrors": [],
+  "firstJsonException": {
+    "receiver": {
+      "sequence": 4,
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+      "bytes": 4490156,
+      "sha256": "2a668565fc6abaf1e9bebc5c32287368b47eadd55de437a66db23d3909aeb0e6",
+      "file": "/home/rikka/Projects/stella/story_studio/recovery/native_install.py",
+      "function": "read_object",
+      "line": 27,
+      "binding": "local raw and reader path/name"
+    },
+    "file": "/home/rikka/Projects/stella/story_studio/recovery/native_install.py",
+    "line": 27,
+    "function": "read_object",
+    "message": "Expecting property name enclosed in double quotes: line 135999 column 7 (char 4005692)",
+    "pos": 4005692,
+    "lineno": 135999,
+    "colno": 7,
+    "utf8Bytes": 4490156,
+    "utf8Sha256": "ba77ea190adfc2bdc9b81a783c4f0b63b2b2ecaf6309df04f713f99cd6146eb0",
+    "retainedGzip": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode12-p42-next-scene-d80126e3-preflight-v1/root-normal-audit-observer/first-json-exception-doc.utf8.gz",
+      "bytes": 121563,
+      "sha256": "5870ac7cb7f39c529cc2316782e692acb891de375eae8902768d01a5dbf887e2"
+    }
+  },
+  "unhandled": {
+    "type": "JSONDecodeError",
+    "message": "Expecting property name enclosed in double quotes: line 135999 column 7 (char 4005692)"
+  },
+  "successfulReceiverBodiesWritten": false,
+  "jsonLoadsInternalTraceInstalled": false,
+  "loadsIdentityUnchanged": true,
+  "readerParserConstructorReplaced": false,
+  "formalApplyRequested": false
+}

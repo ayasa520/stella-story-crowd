@@ -1,0 +1,15 @@
+{
+  "schema": "stella.preflight-failed-attempt.v1",
+  "attempt": 1,
+  "command": "nice -n 19 taskset -c 0,1 env PYTHONPATH=. OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python data/native_recovery/royal-capital-20261110/repair-20261111/p42-next-scene-preflight-20261121-v1/prepare.py",
+  "helperSha256": "823be744be4668be343f5acd3c1dd465bb439096d7656135a7451a0cccea97d7",
+  "exitCode": 1,
+  "stage": "InstalledSnapshot.__init__ while json.loads(raw), native_repair.py line 42",
+  "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 53010 column 23 (char 2739956)",
+  "failedReadPathRetained": false,
+  "failedReadBytesRetained": false,
+  "normalSnapshotStatus": "pending",
+  "rootCauseEstablished": false,
+  "formalWrites": false,
+  "browserStarted": false
+}
