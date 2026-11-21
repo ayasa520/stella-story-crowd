@@ -1,0 +1,107 @@
+{
+  "schema": "stella.p42.final-main-transport-receipt.v1",
+  "status": "published-exact-main-ack-and-owned-temporary-ref-removed",
+  "main": "645bb763a011079b4420402c7aace082fbee598e",
+  "base": "d80126e361830c94e7dde7ddb7821b25e72be14c",
+  "originalReviewedCommitPreserved": true,
+  "temporaryRef": "refs/heads/restore/p42-transfer-20261121-645bb763",
+  "temporaryRefRemoved": true,
+  "all10ObjectPartsReachedFinalTree": true,
+  "mainPush": {
+    "session": 48910,
+    "exitCode": 0
+  },
+  "mainExactAck": "dbb9b0",
+  "deleteOwnedRef": {
+    "session": 9884,
+    "exitCode": 0
+  },
+  "finalRead": {
+    "chunk": "93041b",
+    "exitCode": 0,
+    "stdout": "645bb763a011079b4420402c7aace082fbee598e\trefs/heads/main\n"
+  },
+  "part9": {
+    "session": 45655,
+    "exitCode": 0,
+    "exactAckSession": 7186
+  },
+  "part10": {
+    "failedSession": 87273,
+    "failedExit128": true,
+    "afterFailureRefRead": 88357,
+    "successfulSession": 68019,
+    "exitCode": 0
+  },
+  "failedNormalPushes": [
+    31542,
+    56094
+  ],
+  "failedBoundedRunners": [
+    15510,
+    68855
+  ],
+  "originalFailureEvidencePreserved": true,
+  "routeCause": "unknown",
+  "configuredOriginAndSshCommandUnchanged": true,
+  "force": false,
+  "defaultWorktreeClean": true,
+  "finalMainRouteRecords": [
+    {
+      "unix": 1795258323.9138021,
+      "pid": 20278,
+      "status": "public_endpoint_selected",
+      "resolver": "https://cloudflare-dns.com/dns-query?name=ssh.github.com&type=A",
+      "address": "172.182.252.135",
+      "ttl": 30,
+      "priorResolverFailures": [],
+      "hostKeyAlias": "github.com",
+      "strictHostKeyChecking": true,
+      "port": 443
+    },
+    {
+      "unix": 1795258323.9161522,
+      "pid": 20278,
+      "status": "paced_upload_started",
+      "version": 3,
+      "child": 20279,
+      "rate": 65536,
+      "chunkSize": 16384,
+      "timeout": 900,
+      "pacing": "one-deadline-per-available-chunk",
+      "stdinReplay": false
+    },
+    {
+      "unix": 1795258452.478814,
+      "pid": 20278,
+      "status": "paced_upload_exited",
+      "version": 3,
+      "child": 20279,
+      "exitCode": 0,
+      "sshExitCode": 0,
+      "reason": "ssh_exit",
+      "elapsedSeconds": 128.56401713899686,
+      "statistics": {
+        "readCalls": 493,
+        "readChunks": 492,
+        "readBytes": 8039185,
+        "writeCalls": 492,
+        "writtenBytes": 8039185,
+        "partialWrites": 0,
+        "wouldBlockWrites": 0,
+        "minWriteBytes": 185,
+        "maxWriteBytes": 16384,
+        "scheduledChunks": 492,
+        "pacingWaitCalls": 490,
+        "maxPlannedPacingWaitSeconds": 0.24996187500073574,
+        "maxChunkFirstWriteDelaySeconds": 0.254038020997541,
+        "maxSelectWaitSeconds": 0.2539962500013644
+      },
+      "pendingUnsentBytes": 0,
+      "sentBytesMeaning": "accepted by child stdin, not a remote ACK",
+      "feederError": null,
+      "stdinReplay": false,
+      "reconnect": false
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "stella.p42.ssh-push-failure.v1",
+  "scriptCommit": "645bb763a011079b4420402c7aace082fbee598e",
+  "pushSession": 31542,
+  "exitCode": 128,
+  "observedStderr": "Timeout, server 172.182.252.135 not responding.\nsend-pack: unexpected disconnect while reading sideband packet\nfatal: the remote end hung up unexpectedly\n",
+  "exactMainAfterTerminal": "d80126e361830c94e7dde7ddb7821b25e72be14c",
+  "readbackSession": 72380,
+  "readbackExitCode": 0,
+  "routeRecords": [
+    {
+      "unix": 1795256523.6273358,
+      "pid": 8480,
+      "status": "public_endpoint_selected",
+      "resolver": "https://dns.google/resolve?name=ssh.github.com&type=A",
+      "address": "172.182.252.135",
+      "ttl": 30,
+      "priorResolverFailures": [],
+      "hostKeyAlias": "github.com",
+      "strictHostKeyChecking": true,
+      "port": 443
+    },
+    {
+      "unix": 1795256523.6282926,
+      "pid": 8480,
+      "status": "paced_upload_started",
+      "version": 3,
+      "child": 8481,
+      "rate": 65536,
+      "chunkSize": 16384,
+      "timeout": 900,
+      "pacing": "one-deadline-per-available-chunk",
+      "stdinReplay": false
+    },
+    {
+      "unix": 1795256568.9279106,
+      "pid": 8480,
+      "status": "paced_upload_exited",
+      "version": 3,
+      "child": 8481,
+      "exitCode": 255,
+      "sshExitCode": 255,
+      "reason": "ssh_exit",
+      "elapsedSeconds": 45.300287795005715,
+      "statistics": {
+        "readCalls": 134,
+        "readChunks": 134,
+        "readBytes": 2179257,
+        "writeCalls": 134,
+        "writtenBytes": 2162873,
+        "partialWrites": 0,
+        "wouldBlockWrites": 0,
+        "minWriteBytes": 185,
+        "maxWriteBytes": 16384,
+        "scheduledChunks": 133,
+        "pacingWaitCalls": 132,
+        "maxPlannedPacingWaitSeconds": 0.24995171900081914,
+        "maxChunkFirstWriteDelaySeconds": 0.25587828100833576,
+        "maxSelectWaitSeconds": 0.25466359399433713
+      },
+      "pendingUnsentBytes": 0,
+      "sentBytesMeaning": "accepted by child stdin, not a remote ACK",
+      "feederError": null,
+      "stdinReplay": false,
+      "reconnect": false
+    },
+    {
+      "unix": 1795256632.00458,
+      "pid": 8597,
+      "status": "public_endpoint_selected",
+      "resolver": "https://dns.google/resolve?name=ssh.github.com&type=A",
+      "address": "172.182.252.135",
+      "ttl": 30,
+      "priorResolverFailures": [],
+      "hostKeyAlias": "github.com",
+      "strictHostKeyChecking": true,
+      "port": 443
+    }
+  ],
+  "cause": "unknown",
+  "noForcePush": true,
+  "noSourceDataChanges": true
+}

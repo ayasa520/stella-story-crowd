@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "nice",
+    "-n",
+    "19",
+    "taskset",
+    "-c",
+    "0,1",
+    "git",
+    "-c",
+    "pack.threads=1",
+    "push",
+    "origin",
+    "HEAD:main"
+  ],
+  "pid": 8896,
+  "exitCode": 128,
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrSha256": "b911ce5452b98259e74c96c763d2788b22e9ee72b957b0887eb8ae12c521e394",
+  "force": false,
+  "priorFailurePreserved": true,
+  "reasonForOneNewAttempt": "Prior push terminal128; subsequent exact ls-remote proved main unchanged. Fresh normal transaction, no replay of consumed stdin."
+}
