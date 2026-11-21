@@ -1,0 +1,186 @@
+{
+  "schema": "stella.P29.node18.independent-character-identity-review.v1",
+  "rootConfirmed": false,
+  "createdUTC": "2026-11-21T23:03:45.786652+00:00",
+  "reviewer": "/root/episode11_images_31_46",
+  "mainAgentViewedImages": false,
+  "independence": {
+    "primaryCurrentP29ConclusionOrPacketRead": false,
+    "primarySuppliedOnlyNeutralIndicesAndHistoricalResourcePaths": true,
+    "skillWrapperAsNodeIdentityEvidence": false,
+    "assembledReferenceAsNodeIdentityEvidence": false,
+    "speakerAsIdentityEvidence": false
+  },
+  "target": {
+    "sceneId": 10040052,
+    "scenarioId": 18,
+    "nativeUID": 1004005200018,
+    "stableKey": "s10040052-p29-at0276",
+    "sourceJapanese": "よう、爺さん。ちょっと上がらせてもらうぜ",
+    "currentNativeNode": {
+      "bg_music": "",
+      "bg_picture": "",
+      "character": "",
+      "character_image": "",
+      "motion": "",
+      "msg_character": "スバル",
+      "msg_text": "哟，老爷子。让我进去坐坐吧。",
+      "position": "",
+      "se": "",
+      "talk_chara": "",
+      "video": "",
+      "voice": "",
+      "scenario_id": 18,
+      "uniq_id": 1004005200018,
+      "is_root": 0,
+      "scenario_type": 2,
+      "battle_stage_id": 0,
+      "command": [
+        "",
+        "",
+        ""
+      ],
+      "branch_list": [
+        {
+          "transition_list": [
+            {
+              "uniq_id": 1004005210181,
+              "transition_id": 18101,
+              "next_scenario_id": 19,
+              "next_scenario_label": ""
+            }
+          ],
+          "uniq_id": 1004005210181,
+          "branch_id": 181,
+          "type": 1,
+          "quote_voice": "",
+          "gain_points": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "msg_quote": "",
+          "msg_quote_subject": ""
+        }
+      ]
+    },
+    "sourceLineUsedOnlyToBindWhichVisibleTurn": true
+  },
+  "source": {
+    "rootClosure": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node18-source-root-closure-v1.json",
+      "bytes": 1862,
+      "sha256": "b84197aec6c4991ecebd896048e21376cd6f873d98826dfec1fa36793a5abb03"
+    },
+    "sourceVideoFromRootFreshHash": {
+      "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+      "bytes": 88003510,
+      "sha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90"
+    },
+    "framesIndex": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node18-source-capture-preparation-rootfalse-v1/run-1/frames-index.json",
+      "bytes": 126169,
+      "sha256": "63eb6f44a5b5138e9caf89852540427aee3f858b9b71044cfd65e3988d5a0b6c"
+    },
+    "contactIndex": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node18-complete-source-identity-review-v1/contacts-index.json",
+      "bytes": 14195,
+      "sha256": "12a7ab3e6117e37647ca8f582ebf47ef5c9f8eeef9322fd59bca746c0a40ee89"
+    },
+    "coverage": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node18-independent-identity-peer-v1/coverage.rootfalse.json",
+      "bytes": 189625,
+      "sha256": "0d11c1af6e7ce55ed21e25e1e7170bc30e87e972d07f0f8be710aafea6446c30"
+    },
+    "nativeFrames": 270,
+    "nativeDimensions": [
+      480,
+      856
+    ],
+    "originalPTSSeconds": [
+      "274.023",
+      "282.989"
+    ],
+    "timeBase": "1/16000",
+    "everyOriginalPTSRetained": true,
+    "wholeSourceVideoEOFClaimed": false,
+    "newSourceExtractionByThisReviewer": false
+  },
+  "observations": [
+    {
+      "scope": "prior boundary /frames1–25",
+      "observation": "Prior elderly white-haired large character and a blurred actor transition precede the target. The predecessor is not used to infer target identity."
+    },
+    {
+      "scope": "target entrance /frames26–33",
+      "observation": "The target figure emerges in the same exterior setting; readable native33 shows spiky dark hair, a dark round-neck T-shirt with continuous shoulder coverage and two complete short sleeves."
+    },
+    {
+      "scope": "target typing and completed hold /frames34–142",
+      "observation": "The same dark round collar, both intact shoulders and short sleeve cuffs remain visible throughout the target Japanese turn. Native61/97/140 show plain sleeve hems over the upper arms. The observed upper arms emerge below these cuffs; there are no gathered shoulder strips or bare shoulder gaps."
+    },
+    {
+      "scope": "target exit and successor /frames143–270",
+      "observation": "The target dims away and the elderly figure returns. The same T-shirt silhouette remains discernible into the target fade at143. Successor frames only establish the boundary, without a new field decision."
+    }
+  ],
+  "modelComparison": [
+    {
+      "candidate": "live2d/AC_subaru_tshirt01",
+      "sourceFeatures": "Dark round neckline, continuous fabric over both shoulders, full short sleeves ending in smooth hems, narrow exposed forearms below them.",
+      "realOriginalReference": "Original texture has separate intact broad sleeve pieces; the original-model render control and existing formal tshirt01 screenshot show the same sleeves/collar/shoulder silhouette. Distinct original MOC/controller bindings are preserved.",
+      "identityJudgment": "supported"
+    },
+    {
+      "candidate": "live2d/AC_subaru_tshirt02",
+      "sourceFeatures": "Source does not display the alternate model exposed upper shoulders/arms or gathered/ridged material along the shoulder openings.",
+      "realOriginalReference": "The original02 texture and actual original-model render control show gathered shoulder material and a sleeveless/open-upperarm silhouette, visibly different from the current source at33/61/97/140.",
+      "identityJudgment": "not_the_visible_costume"
+    }
+  ],
+  "decision": {
+    "verdict": "limited_pass_character_identity_only",
+    "exactCharacterTokenSupported": "live2d/AC_subaru_tshirt01",
+    "field": "character",
+    "before": "",
+    "proposedAfter": "live2d/AC_subaru_tshirt01",
+    "characterIdentitySupportedByThisP29CompleteSource": true,
+    "formalDataWritten": false,
+    "savedRuntimeForThisNodeValidated": false,
+    "bodyAccepted": false,
+    "faceAccepted": false,
+    "motionAccepted": false,
+    "nativePhaseAccepted": false,
+    "timingAccepted": false,
+    "anyOtherFieldProposed": false,
+    "exactCostumeBlockingGap": null
+  },
+  "referenceBindings": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node18-independent-identity-peer-v1/reference-bindings.rootfalse.json",
+    "bytes": 3151,
+    "sha256": "de008fee340efe5ba98080c3bfb924d0b8da2f8f4b839792877e41fc4dbfa237"
+  },
+  "currentFormalGuards": {
+    "nativeScene": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10040052.json",
+      "bytes": 97422,
+      "sha256": "e19a64b116e098ef0445d54470ca635585ccc72acfc3e833e62e7aece48fc61d"
+    },
+    "reviewScene": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10040052.json",
+      "bytes": 376332,
+      "sha256": "b33e497ebc719eedbf1cd9f69d5f51dc465c4b4105b3bb97ed852b61dca61c22"
+    },
+    "targetCharacterObservedEmptyAtSeal": true,
+    "targetNativeUIDVerified": true
+  },
+  "limits": [
+    "Source shoulders/cuffs/collar establish the costume; shirt color alone, speaker label and historical alias conclusions do not.",
+    "Lower hands/body are partly outside the crop or behind HUD; no full-body geometry/scale/tint acceptance.",
+    "No body/face/extra/motion/token-provider/nativephase/timing/audio/lipsync/allglyph/whole-scene/whole-chapter acceptance.",
+    "Original-controller/MOC byte provenance identifies reference resources only. No controller semantics or default/inherited fields are installed.",
+    "No new browser/API/decoder/helper/test/Git, no formalC/D writes, and no originalJPEG/contact/old-report changes.",
+    "This is an independent source-identity receipt for Root review, not a normal-saved runtime or publication receipt."
+  ]
+}
