@@ -1,0 +1,117 @@
+{
+  "schema": "stella.fifteen-cards.reader-boundaries.public-candidate.v1",
+  "rootConfirmed": false,
+  "unknownOriginalJSONFailure": {
+    "sectionId": 1006,
+    "classification": "actual-original-json-read-failure-cause-unknown",
+    "sourcePath": "data/story_studio/revisions/002609.json",
+    "originalFailedToolChunk": "8a90e7",
+    "exceptionType": "JSONDecodeError",
+    "message": "Expecting property name enclosed in double quotes: line 132437 column 9 (char 3602236)",
+    "line": 132437,
+    "column": 9,
+    "characterOffset": 3602236,
+    "persistedInputSHA256": "43ebdfc673989c3ffbea04c4f4df2cbe68b58a4c04afdf423fad91fa8a5ccfdd",
+    "persistedInputDigestTiming": "Recomputed AFTER json.loads raised from still-held raw bytes; pre-parse in-memory digest row was not persisted.",
+    "inputType": "bytes, compressed=false, decoded=raw, original json.loads(decoded)",
+    "exceptionDoc": {
+      "encodedSHA256": "920e328514bd74040bd71e66ea6ae123203f52710ae88da8399c7d54fec2eae2",
+      "bytesRecordedUpstream": 5393791,
+      "NULsRecordedUpstream": 5,
+      "encoding": "Original e.doc.encode() default UTF-8/strict, then gzip lossless container",
+      "evidence": {
+        "path": "artifacts/stella-script-continuation-20261121/missing-section1006-source-evidence-20261122-v1/exception-doc.txt.gz",
+        "sha256": "e0b336a32c9a598cc00b4d1650ce1832d560629147851f7a603b1d0d1d4cde25"
+      },
+      "encodedContentNotDecodedOrReparsedByMerge": true
+    },
+    "laterSnapshot": {
+      "isLaterReadNotOriginalRawCapture": true,
+      "inputSHA256": "43ebdfc673989c3ffbea04c4f4df2cbe68b58a4c04afdf423fad91fa8a5ccfdd",
+      "bytesRecordedUpstream": 5393791,
+      "NULsRecordedUpstream": 0,
+      "matchesOriginalPersistedPostCatchDigest": true,
+      "evidence": {
+        "path": "artifacts/stella-script-continuation-20261121/missing-section1006-source-evidence-20261122-v1/later-byte-snapshot-002609.json.gz",
+        "sha256": "bbd71eaaa7bac600a787cf27d2524153ccdef0925a477de26152d6381af39759"
+      }
+    },
+    "differingBytesRecordedUpstream": [
+      {
+        "byteOffset": 3739515,
+        "laterSnapshotByte": 32,
+        "exceptionDocByte": 0
+      },
+      {
+        "byteOffset": 3739516,
+        "laterSnapshotByte": 32,
+        "exceptionDocByte": 0
+      },
+      {
+        "byteOffset": 3739517,
+        "laterSnapshotByte": 32,
+        "exceptionDocByte": 0
+      },
+      {
+        "byteOffset": 3739518,
+        "laterSnapshotByte": 32,
+        "exceptionDocByte": 0
+      },
+      {
+        "byteOffset": 3739519,
+        "laterSnapshotByte": 32,
+        "exceptionDocByte": 0
+      }
+    ],
+    "cause": "unknown",
+    "businessParserReplaced": false,
+    "sourceRepaired": false,
+    "failedWorkflowReexecuted": false,
+    "successfulObservationsAreSeparateNotCure": true,
+    "provenance": [
+      {
+        "path": "artifacts/stella-script-continuation-20261121/missing-section1006-source-evidence-20261122-v1/read-failure.json",
+        "sha256": "50f2e2c38fbf39303c33d77e225f4cf08f18d78485e0a88c9146cb8533889f70"
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/missing-section1006-source-evidence-20261122-v1/later-byte-comparison.json",
+        "sha256": "35f7d7201088c0763586e7fd904db9a6b9fd153fece32942875cd611017f3a75"
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/missing-section1006-source-evidence-20261122-v1/read-call-order-provenance.json",
+        "sha256": "1ef5f6fc24f13169b9c01586dabd3c0e1e48317d340bfc31e05f3148f5b87a07"
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/missing-section1006-source-evidence-20261122-v1/failed-command-provenance.json",
+        "sha256": "d2afa7434a584fb06f7dd718a863c349914ae81336a4dc155264d7d62268c8f4"
+      }
+    ]
+  },
+  "knownPrivateCollectorError": {
+    "sectionId": 1005,
+    "classification": "private-collector-schema-assumption-error",
+    "exception": "KeyError: 'adventure_data'",
+    "callPoint": "collect_audit.py:155 at owner = value['adventure_data']",
+    "causeEstablished": true,
+    "cause": "Collector assumed adventure_data in static offline client files. Actual client schema is four projected collections; ownership must be traced through server content_key and client manifest.",
+    "observedClientKeys": [
+      "branch_work_list",
+      "chartmap",
+      "scenario_list",
+      "video_list"
+    ],
+    "serverContentKeyOwnerMapping": {
+      "main/10010020": 10010020,
+      "main/10010001": 10010001
+    },
+    "collectorCorrectionRetained": true,
+    "formalSourceOrBusinessParserRepair": false,
+    "originalEvidenceOverwritten": false,
+    "evidence": {
+      "path": "artifacts/stella-script-continuation-20261121/section1005-three-missing-scenes-source-audit-20261122-v1/collector-attempt1.schema-error.json",
+      "sha256": "3b7f236554f8d9a40a7a836eb579c83fe72c26b515c3483d7d1bf6f9e7c12bc0"
+    }
+  },
+  "notEquivalentFailureClasses": true,
+  "privateMaterialPolicy": "No original player/session/account payload, full exception document, verbatim personal command or external absolute personal path is copied into this public candidate; exact evidence hashes and project-relative references remain."
+}
