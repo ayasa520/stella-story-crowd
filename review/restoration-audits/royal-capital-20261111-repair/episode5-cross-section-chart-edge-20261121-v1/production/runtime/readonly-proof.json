@@ -1,0 +1,229 @@
+{
+  "schema": "stella.episode5.portal.readonly-proof.v1",
+  "rawResult": {
+    "file": "result.json",
+    "sha256": "388058bbce0bd1b75732ec33aed54120e67ec0df44f9df8752fe1feda605222f",
+    "published": false
+  },
+  "release": {
+    "path": "artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-root-release-v1.json",
+    "sha256": "5d7d3e1096612d8e128e9d38a05c7b8e72de71716f4d07aefafdd2e19800857f"
+  },
+  "dataHead": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+  "sourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+  "workerVersion": "f6bbfc96-18df-4f33-a220-27d3182f661f",
+  "applicationAPIRequests": [
+    {
+      "index": 0,
+      "method": "GET",
+      "path": "/api/catalog",
+      "query": {},
+      "status": 200,
+      "bodyBytes": 353931,
+      "bodySha256": "2645996ae0052c8196327d99df44acd851e8fd2cbc7b8b01fd46f99acce2bd03"
+    },
+    {
+      "index": 1,
+      "method": "GET",
+      "path": "/api/state",
+      "query": {
+        "sceneId": "10010001"
+      },
+      "status": 200,
+      "bodyBytes": 753218,
+      "bodySha256": "db45b796a7bd71736021f02e223289277d4350ab7758e05b1ff149ddb1917c94"
+    },
+    {
+      "index": 2,
+      "method": "POST",
+      "path": "/api/commands/inspect",
+      "query": {},
+      "status": 200,
+      "bodyBytes": 194,
+      "bodySha256": "613bb63565c81d72d59a4b6af51a5fa648f1fe0a0e8c44469fcaffe40dd08e97"
+    },
+    {
+      "index": 3,
+      "method": "POST",
+      "path": "/api/resolve",
+      "query": {},
+      "status": 200,
+      "bodyBytes": 1974,
+      "bodySha256": "371a69190eb3a7da00fd6f6992d1995923ebd18f096fa251c87e38c8da1a857a"
+    },
+    {
+      "index": 4,
+      "method": "GET",
+      "path": "/api/directory/flow",
+      "query": {
+        "sectionId": "1001",
+        "sha": "2844ba559d922bd6108f84ae4dc970f40c9b3731"
+      },
+      "status": 200,
+      "bodyBytes": 1743,
+      "bodySha256": "641c5cee9ff6fcc3d209a84c4b42a59bc3ac591075ad347cfc58d04ca0c590e8"
+    },
+    {
+      "index": 5,
+      "method": "GET",
+      "path": "/api/directory/flow",
+      "query": {
+        "sectionId": "1009",
+        "sha": "2844ba559d922bd6108f84ae4dc970f40c9b3731"
+      },
+      "status": 200,
+      "bodyBytes": 1485,
+      "bodySha256": "5397313018cfc3f9647180b77ebd6e1452eae7c8f32d911a726e878a4ac0c2f9"
+    }
+  ],
+  "observedPOSTsClassifiedReadOnly": [
+    "/api/commands/inspect",
+    "/api/resolve"
+  ],
+  "mutationRequests": [],
+  "fieldEvents": [],
+  "actions": [
+    {
+      "stage": "select-section1009-only",
+      "selector": "#workspaces",
+      "pathPoint": false,
+      "location": {
+        "x": 78,
+        "y": 143
+      }
+    },
+    {
+      "stage": "select-section1009-only",
+      "selector": "#directoryNavigationSummary",
+      "pathPoint": false,
+      "location": {
+        "x": 631,
+        "y": 166
+      }
+    },
+    {
+      "stage": "select-section1009-only",
+      "selector": "#directorysection [data-directory-id=\"section:1009\"]",
+      "pathPoint": false,
+      "location": {
+        "x": 625,
+        "y": 317
+      }
+    },
+    {
+      "stage": "select-section1009-only",
+      "selector": "#directoryNavigationSummary",
+      "pathPoint": false,
+      "location": {
+        "x": 631,
+        "y": 167
+      }
+    },
+    {
+      "stage": "select-section1009-only",
+      "selector": "#mapFit",
+      "pathPoint": false,
+      "location": {
+        "x": 246,
+        "y": 987
+      }
+    },
+    {
+      "stage": "open-existing-cross-section-edge",
+      "selector": "#directoryGraph g.directory-map-edge[data-flow-edge=\"scene-edge:10090015:10020001\"] path.map-line-hit",
+      "pathPoint": true,
+      "location": {
+        "x": 635,
+        "y": 868
+      }
+    },
+    {
+      "stage": "cancel-without-saving",
+      "selector": "#closeFlow",
+      "pathPoint": false,
+      "location": {
+        "x": 1000,
+        "y": 782
+      }
+    },
+    {
+      "stage": "cancel-without-saving",
+      "selector": "#closeWorkspace",
+      "pathPoint": false,
+      "location": {
+        "x": 1501,
+        "y": 73
+      }
+    }
+  ],
+  "trustedInputEvents": 15,
+  "allInputEventsTrusted": true,
+  "exceptionCount": 0,
+  "nativeConsoleAndNetworkRecords": {
+    "consoleEntries": 24,
+    "networkEvents": 205
+  },
+  "observationErrors": [],
+  "droppedRecords": 0,
+  "initial": {
+    "activeNode": "node:10010001:node_8db2a9bc43e0",
+    "workspaceName": "第1章　王都的一日篇 → 第1话[♪] → 异世界召唤[♪]",
+    "workbenchDirty": false,
+    "directoryDirty": false,
+    "playerHidden": true,
+    "flowOpen": false,
+    "dialogOpen": false,
+    "selectedSection": "",
+    "rememberedScenes": [
+      {
+        "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+        "value": "scene:10010001"
+      }
+    ]
+  },
+  "afterCancel": {
+    "activeNode": "node:10010001:node_8db2a9bc43e0",
+    "workspaceName": "第1章　王都的一日篇 → 第1话[♪] → 异世界召唤[♪]",
+    "workbenchDirty": false,
+    "directoryDirty": false,
+    "playerHidden": true,
+    "flowOpen": false,
+    "dialogOpen": true,
+    "selectedSection": "section:1009",
+    "rememberedScenes": [
+      {
+        "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+        "value": "scene:10010001"
+      }
+    ]
+  },
+  "final": {
+    "activeNode": "node:10010001:node_8db2a9bc43e0",
+    "workspaceName": "第1章　王都的一日篇 → 第1话[♪] → 异世界召唤[♪]",
+    "workbenchDirty": false,
+    "directoryDirty": false,
+    "playerHidden": true,
+    "flowOpen": false,
+    "dialogOpen": false,
+    "selectedSection": "section:1009",
+    "rememberedScenes": [
+      {
+        "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+        "value": "scene:10010001"
+      }
+    ]
+  },
+  "inputGuards": {
+    "beforeAfterExact": true,
+    "files": 949,
+    "allHashesExact": true,
+    "dataStatus": "",
+    "sourceStatus": "?? scripts/__pycache__/",
+    "unrelatedSourcePycachePreserved": true
+  },
+  "formalWrites": false,
+  "localServerStarted": false,
+  "stateOrResponseSubstitution": false,
+  "playerPrepareRun": false,
+  "ownerImagesViewed": false
+}

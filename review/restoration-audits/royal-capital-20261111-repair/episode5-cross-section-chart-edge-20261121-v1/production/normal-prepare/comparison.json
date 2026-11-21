@@ -1,0 +1,67 @@
+{
+  "schema": "stella.episode5.chart-edge.normal-prepare-before-after.v1",
+  "rootConfirmed": true,
+  "inputs": {
+    "before": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-chart-edge-normal-prepare-before-977641ad-v1",
+      "receiptSha256": "7316d9c0db83b44ba46dfe523c317768b42bebe0df254091ce5f8630010f1435",
+      "rawSha256": "3c24dc60ab913d73c54bd2f8426b47303f2a767561ab963d5f74762a459af1f7",
+      "rawBytes": 882292
+    },
+    "after": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-chart-edge-normal-prepare-after-2844ba55-v1",
+      "receiptSha256": "f7ac4194a19e4141f42c0f0dd2439193d00bcdc2bf8523f5798c38bddf4406da",
+      "rawSha256": "21044d8c4001d6f071ece5e533d3a63cca1f7e687a8fc51a89ccbeccb433b535",
+      "rawBytes": 883089
+    }
+  },
+  "all105SectionNodesExact": true,
+  "allSectionExecutableEdgesExact": true,
+  "source53NodesAnd54EdgesExact": true,
+  "beforeExact": true,
+  "startExact": true,
+  "directoryOnlyChanges": [
+    "10090015.native_interval.next_scene_count:0→1",
+    "append authored cross-section edge"
+  ],
+  "isBranchBefore": false,
+  "isBranchAfter": false,
+  "finishEdgeUnchanged": {
+    "id": "edge:node:10090015:node_3e6d1c90667f:1009001510471:471",
+    "source": "node:10090015:node_3e6d1c90667f",
+    "target": "",
+    "kind": "next",
+    "side": "",
+    "label": "继续",
+    "quote": "",
+    "label_translation": "",
+    "quote_translation": "",
+    "state": "confirmed",
+    "available": true,
+    "transition": {
+      "label": "FINISH",
+      "section": "section:1002",
+      "scene": "scene:10020001",
+      "entry": "root"
+    },
+    "flow_action": "section",
+    "source_scene": "scene:10090015",
+    "target_scene": "scene:10020001",
+    "native_transition": {
+      "uniq_id": 1009001510471,
+      "transition_id": 47101,
+      "next_scenario_id": 0,
+      "next_scenario_label": "FINISH",
+      "next_section_id": 1002,
+      "next_scene_id": 10020001
+    },
+    "flow_error": "",
+    "notes": "作者重建的本话结束连接：原片完整闭门→本編 CLEAR→Connecting，录像到此截断，奖励与END画面未核验。原Adv.d明确1009唯一后继1002，1002唯一原版根scene10020001。原始场景payload未恢复；FINISH及transition_id47101按现有edge/save编写约定建立，originalPayloadRecovered:false。跨话FINISH完成当前1009，不自动播放下一话。",
+    "origin": "native",
+    "score": null
+  },
+  "finishCompletesSectionBeforeTargetLookupSupportedByPinnedSource": true,
+  "newPlaybackPerformed": false,
+  "wholePrepareEquivalent": false,
+  "rootViewedImages": false
+}

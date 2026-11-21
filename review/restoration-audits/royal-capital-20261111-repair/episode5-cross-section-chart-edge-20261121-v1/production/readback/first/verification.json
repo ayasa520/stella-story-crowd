@@ -1,0 +1,119 @@
+{
+  "schema": "stella.episode5.chart-edge.production-readback.v1",
+  "dataHead": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+  "sourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+  "workerVersion": "f6bbfc96-18df-4f33-a220-27d3182f661f",
+  "allPassed": false,
+  "records": [
+    {
+      "name": "default-main-source",
+      "url": "https://stella-preview.jaoushingan.com/api/native/source?sceneId=10090015",
+      "method": "GET",
+      "started": "2026-11-21T15:10:39.217Z"
+    },
+    {
+      "name": "section1009-flow",
+      "url": "https://stella-preview.jaoushingan.com/api/directory/flow?sectionId=1009&sha=2844ba559d922bd6108f84ae4dc970f40c9b3731",
+      "method": "GET",
+      "started": "2026-11-21T15:10:39.246Z",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "private, no-store",
+        "cf-ray": "a5e09f6a49a0cfed-SJC",
+        "content-encoding": "zstd",
+        "content-type": "application/json",
+        "date": "Sat, 21 Nov 2026 15:10:42 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1DTb4JzKjOd3m6zK6RvT8s5ZLjaUY%2FM8vWyMNvqx37niY6hqMh2WwzUtgBf0pZqnblQ8hiPX6v1vceRU6juU1rxjMQAFnIlPKCybB1i3DtNCqSzHntXUjbxPk9WT2d43YrJrCMBHrnHAoUCzK%2BLDmR%2BchF%2F3g255YlD7Qz8%3D\"}]}",
+        "server": "cloudflare",
+        "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode",
+        "x-content-type-options": "nosniff"
+      },
+      "complete": true,
+      "bytes": 1485,
+      "sha256": "5397313018cfc3f9647180b77ebd6e1452eae7c8f32d911a726e878a4ac0c2f9",
+      "gzipFile": "section1009-flow.response.gz",
+      "gzipSha256": "f3f765c4f27c1ce610711b498b374ebe0473793f5c132a4cf774924bd9fc83f9",
+      "graph": {
+        "headSha": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+        "sectionId": 1009,
+        "edges": [
+          {
+            "id": "chart:10090013:10090014",
+            "source": "scene:10090013",
+            "target": "scene:10090014",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "native",
+            "evidence": {
+              "nativeTarget": {
+                "section_id": 1009,
+                "scene_id": 10090014
+              }
+            }
+          },
+          {
+            "id": "chart:10090014:10090015",
+            "source": "scene:10090014",
+            "target": "scene:10090015",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "native",
+            "evidence": {
+              "nativeTarget": {
+                "section_id": 1009,
+                "scene_id": 10090015
+              }
+            }
+          },
+          {
+            "id": "scene-edge:10090015:10020001",
+            "source": "scene:10090015",
+            "target": "scene:10020001",
+            "label": "",
+            "condition": "",
+            "notes": "作者补充的目录图关系：依据当前已保存scenario47 FINISH（1009→1002、目标10020001原生root）与Adv.d AdventureSection1009.next_section_id=[1002]。场景原始payload未取得；本scene-edge标识不是原native编号。只补目录跨话portal，保留当前话结束，不自动播放下一话；不认领motion、face、BGM或命令阶段。",
+            "state": "confirmed",
+            "origin": "manual",
+            "evidence": [
+              "native/scenes/10090015.json#scenario47/branch471/FINISH",
+              "data/story_directory/device-snapshot/Adv.d#AdventureSection1009",
+              "data/story_directory/device-snapshot/Adv.d#AdventureScene1002/10020001"
+            ],
+            "nativeTarget": {
+              "scene_id": 10020001,
+              "section_id": 1002
+            }
+          }
+        ],
+        "coverage": {
+          "sceneCount": 3,
+          "loadedSceneIds": [
+            10090013,
+            10090014,
+            10090015
+          ],
+          "missingScriptSceneIds": [],
+          "missingChartSceneIds": [],
+          "knownInternalEdges": 2
+        }
+      },
+      "verified": true
+    }
+  ],
+  "failures": [
+    {
+      "name": "TypeError",
+      "message": "fetch failed",
+      "stack": "TypeError: fetch failed"
+    }
+  ],
+  "browserStarted": false,
+  "mutations": 0,
+  "retries": 0
+}

@@ -1,0 +1,154 @@
+{
+  "schema": "stella.episode5.portal.api-flow-proof.v1",
+  "rawResult": {
+    "file": "result.json",
+    "sha256": "388058bbce0bd1b75732ec33aed54120e67ec0df44f9df8752fe1feda605222f",
+    "published": false
+  },
+  "release": {
+    "path": "artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-root-release-v1.json",
+    "sha256": "5d7d3e1096612d8e128e9d38a05c7b8e72de71716f4d07aefafdd2e19800857f"
+  },
+  "dataHead": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+  "sourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+  "workerVersion": "f6bbfc96-18df-4f33-a220-27d3182f661f",
+  "request": {
+    "index": 5,
+    "url": "https://stella-preview.jaoushingan.com/api/directory/flow?sectionId=1009&sha=2844ba559d922bd6108f84ae4dc970f40c9b3731",
+    "path": "/api/directory/flow",
+    "query": {
+      "sectionId": "1009",
+      "sha": "2844ba559d922bd6108f84ae4dc970f40c9b3731"
+    },
+    "method": "GET",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "cfRay": "a5e0a6a0495ceb1e-SJC"
+    },
+    "bodyBytes": 1485,
+    "bodySha256": "5397313018cfc3f9647180b77ebd6e1452eae7c8f32d911a726e878a4ac0c2f9"
+  },
+  "timing": {
+    "started": {
+      "epochMilliseconds": 1795274135770,
+      "performanceMilliseconds": 14755
+    },
+    "responseHead": {
+      "epochMilliseconds": 1795274136362,
+      "performanceMilliseconds": 15347
+    },
+    "responseBody": {
+      "epochMilliseconds": 1795274136381,
+      "performanceMilliseconds": 15366
+    }
+  },
+  "parsedOriginalResponse": {
+    "headSha": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+    "sectionId": 1009,
+    "edges": [
+      {
+        "id": "chart:10090013:10090014",
+        "source": "scene:10090013",
+        "target": "scene:10090014",
+        "label": "",
+        "condition": "",
+        "notes": "",
+        "state": "confirmed",
+        "origin": "native",
+        "evidence": {
+          "nativeTarget": {
+            "section_id": 1009,
+            "scene_id": 10090014
+          }
+        }
+      },
+      {
+        "id": "chart:10090014:10090015",
+        "source": "scene:10090014",
+        "target": "scene:10090015",
+        "label": "",
+        "condition": "",
+        "notes": "",
+        "state": "confirmed",
+        "origin": "native",
+        "evidence": {
+          "nativeTarget": {
+            "section_id": 1009,
+            "scene_id": 10090015
+          }
+        }
+      },
+      {
+        "id": "scene-edge:10090015:10020001",
+        "source": "scene:10090015",
+        "target": "scene:10020001",
+        "label": "",
+        "condition": "",
+        "notes": "作者补充的目录图关系：依据当前已保存scenario47 FINISH（1009→1002、目标10020001原生root）与Adv.d AdventureSection1009.next_section_id=[1002]。场景原始payload未取得；本scene-edge标识不是原native编号。只补目录跨话portal，保留当前话结束，不自动播放下一话；不认领motion、face、BGM或命令阶段。",
+        "state": "confirmed",
+        "origin": "manual",
+        "evidence": [
+          "native/scenes/10090015.json#scenario47/branch471/FINISH",
+          "data/story_directory/device-snapshot/Adv.d#AdventureSection1009",
+          "data/story_directory/device-snapshot/Adv.d#AdventureScene1002/10020001"
+        ],
+        "nativeTarget": {
+          "scene_id": 10020001,
+          "section_id": 1002
+        }
+      }
+    ],
+    "coverage": {
+      "sceneCount": 3,
+      "loadedSceneIds": [
+        10090013,
+        10090014,
+        10090015
+      ],
+      "missingScriptSceneIds": [],
+      "missingChartSceneIds": [],
+      "knownInternalEdges": 2
+    }
+  },
+  "nativeConsole": [
+    {
+      "name": "STORY_DIRECTORY_FLOW_READ",
+      "detail": {
+        "stage": "start",
+        "sectionId": 1009,
+        "headSha": "2844ba559d922bd6108f84ae4dc970f40c9b3731"
+      },
+      "performanceMilliseconds": 14749
+    },
+    {
+      "name": "STORY_DIRECTORY_FLOW_READ",
+      "detail": {
+        "stage": "ready",
+        "sectionId": 1009,
+        "headSha": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+        "edges": 3,
+        "coverage": {
+          "sceneCount": 3,
+          "loadedSceneIds": [
+            10090013,
+            10090014,
+            10090015
+          ],
+          "missingScriptSceneIds": [],
+          "missingChartSceneIds": [],
+          "knownInternalEdges": 2
+        }
+      },
+      "performanceMilliseconds": 15354
+    }
+  ],
+  "observationContract": {
+    "requestMadeByApplication": true,
+    "manualAPIRequests": 0,
+    "originalFetchArgumentsAndPromisePreserved": true,
+    "responseReadFromClone": true,
+    "responseOrProgramSubstitution": false,
+    "noFabricatedClockOrLatency": true
+  }
+}

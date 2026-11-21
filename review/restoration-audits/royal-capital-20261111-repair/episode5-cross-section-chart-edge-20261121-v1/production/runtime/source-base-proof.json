@@ -1,0 +1,68 @@
+{
+  "schema": "stella.episode5.portal.source-base-proof.v1",
+  "rawResult": {
+    "file": "result.json",
+    "sha256": "388058bbce0bd1b75732ec33aed54120e67ec0df44f9df8752fe1feda605222f",
+    "published": false
+  },
+  "release": {
+    "path": "artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-root-release-v1.json",
+    "sha256": "5d7d3e1096612d8e128e9d38a05c7b8e72de71716f4d07aefafdd2e19800857f"
+  },
+  "dataHead": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+  "sourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+  "workerVersion": "f6bbfc96-18df-4f33-a220-27d3182f661f",
+  "edgeIdentity": {
+    "id": "scene-edge:10090015:10020001",
+    "source": "scene:10090015",
+    "target": "scene:10020001",
+    "origin": "manual",
+    "state": "confirmed",
+    "evidence": [
+      "native/scenes/10090015.json#scenario47/branch471/FINISH",
+      "data/story_directory/device-snapshot/Adv.d#AdventureSection1009",
+      "data/story_directory/device-snapshot/Adv.d#AdventureScene1002/10020001"
+    ]
+  },
+  "sourceEvidence": {
+    "mode": "raw flow edge, trusted hit-path pointer, original STORY_DIRECTORY_MAP_ACTIVATE; form has no source control",
+    "trustedEdgeMatchesRawFlowEdge": true,
+    "nativeActivationMatchesRawFlowEdge": true,
+    "formHasNoSourceField": true
+  },
+  "baseEvidence": {
+    "mode": "real flow GET and native graph console, bound to deployed source; no DOM base field exists",
+    "actualFlowHeadSha": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+    "actualGraphHeadSha": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+    "sourceChain": "DirectoryEditor.graph sets mapHeadSha=state.project.headSha; map edge callback calls edgeForm(edge,mapHeadSha); edgeForm checks current head and assigns flowBaseSha=baseSha",
+    "directPrivateBaseRead": false,
+    "sourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622"
+  },
+  "baseInterpretation": {
+    "actualObservedFlowGETHead": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+    "actualObservedNativeGraphHead": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+    "sourceBoundInference": true,
+    "privateFlowBaseShaDirectlyRead": false,
+    "DOMBaseFieldClaimed": false,
+    "explanation": "The raw flow GET and original graph console identify the actual revision. The bound deployed DirectoryEditor source passes graph mapHeadSha into edgeForm, verifies it against the current project head, then assigns flowBaseSha. This is source-bound evidence, not direct observation of the private field."
+  },
+  "sourceHashes": {
+    "public/studio/directory.js": "097e490b6408f79ca20765469d218e9b471e4ebbe5c945e72e2ff2dd3a327459",
+    "public/studio/directory_map.js": "15ce7d448cf44b8caa5f2590ff5d39682b5f0969a97ed143cf06ab1ae2324f07",
+    "public/studio/directory_flow.js": "e1fd8976032202d0dd0071db66d432a749f269c05de1ce0aa558ff0a131e7dab",
+    "public/studio/online_session.js": "257d6526e749729afc807e97f8a5d70a1b81c4ec719198ed3ce6e731d9dbb984"
+  },
+  "rootBoundDeployedAndNormalPrepareReceipts": {
+    "artifacts/stella-script-continuation-20261121/episode5-chart-edge-production-combined-proof-v1.json": "56754507cd6c922ed4f4d060a8fef4244be43b2f39f6ac6a65aa730e2f0c16a3",
+    "artifacts/stella-script-continuation-20261121/episode5-chart-edge-normal-prepare-comparison-v1.json": "21ee16181a2926f136768b4e5b16975c693688fd30db2f45b154a8f61993213c",
+    "artifacts/stella-script-continuation-20261121/episode5-chart-edge-script-main-ACK-v1.json": "569c8a1ce1647d7e7f32442fe4981701d40adf189c48453be775a553a708c1ef"
+  },
+  "normalPreparePerformedInThisBrowserSession": false,
+  "acceptanceScope": {
+    "directoryPortalOnly": true,
+    "originalPayloadRecovered": false,
+    "fullEpisodeAccepted": false,
+    "nativeCommandPhaseAccepted": false,
+    "bodyFaceVoiceBGMPerformanceAccepted": false
+  }
+}

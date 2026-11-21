@@ -1,0 +1,194 @@
+{
+  "schema": "stella.episode5-cross-section-portal-actual-image-review.v1",
+  "createdUTC": "2026-11-21T15:19:06.049531+00:00",
+  "reviewer": "performance_peer",
+  "rootConfirmed": false,
+  "decision": "accepted-visible-geometry-and-dialog-with-map-label-legibility-limit",
+  "reviewedAfterRootClosure": true,
+  "allManifestImagesViewedIndividually": true,
+  "inputs": {
+    "rootClosure": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-root-closure-v1.json",
+      "bytes": 975,
+      "sha256": "2a7892002e60e41eaf6dc883d5e577403a12727f7210927eb2f5051cd8803af8"
+    },
+    "imageManifest": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-runtime-v1/attempt-1/image-manifest.json",
+      "bytes": 474,
+      "sha256": "b0d80a6da7e547a2101933ec187fd366e53945b056d3d4036d9a622b742a6b7a"
+    },
+    "captureResult": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-runtime-v1/attempt-1/result.json",
+      "bytes": 978819,
+      "sha256": "388058bbce0bd1b75732ec33aed54120e67ec0df44f9df8752fe1feda605222f"
+    },
+    "images": [
+      {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-runtime-v1/attempt-1/A-episode5-cross-section-portal.jpg",
+        "bytes": 121727,
+        "sha256": "8e5ad16cacc58c46a38258a417bc6ec368022babffee3f2cfa714d3e6b1ef984",
+        "width": 1600,
+        "height": 1100,
+        "reviewedOriginalPixels": true,
+        "viewedUsing": "view_image",
+        "derivedOrReencoded": false
+      },
+      {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-runtime-v1/attempt-1/B-episode5-cross-section-edge-dialog.jpg",
+        "bytes": 117405,
+        "sha256": "c01e7959c8236292b6b97b7a37d77cc8cfa42aad2e791fb8f0cb26f199753a77",
+        "width": 1600,
+        "height": 1100,
+        "reviewedOriginalPixels": true,
+        "viewedUsing": "view_image",
+        "derivedOrReencoded": false
+      }
+    ],
+    "totalOriginalJPEGBytes": 239132
+  },
+  "closureBasis": {
+    "rootReportedSupervisorExitCode": 0,
+    "rootReportedDriverExitCode": 0,
+    "rootReportedOwnedPidsAbsent": [
+      10937,
+      10964,
+      11059
+    ],
+    "rootReportedEscapedProcesses": [],
+    "rootReportedPorts": {
+      "5198": "ECONNREFUSED",
+      "43499": "ECONNREFUSED"
+    },
+    "rootReportedGuardCount": 949,
+    "rootReportedAllGuardHashesExact": true,
+    "rootReportedBeforeAfterInputBytesExact": true,
+    "noNewRuntimeStartedForReview": true
+  },
+  "pixelFindings": {
+    "imageA": {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-runtime-v1/attempt-1/A-episode5-cross-section-portal.jpg",
+      "mainCardsVisible": 3,
+      "internalConnectionsVisible": 2,
+      "internalConnectionsDescription": "Two thin vertical lines visibly connect top-to-middle and middle-to-bottom main cards.",
+      "crossSectionConnectionsVisible": 1,
+      "crossSectionConnectionDescription": "A thin horizontal line leaves the bottom main card to the separate small portal on its right.",
+      "separatePortalVisible": true,
+      "totalFlowConnectionsCounted": 3,
+      "endDecorationCountedAsFlowConnection": false,
+      "endDecorationDescription": "The terminal rule/END ornament below the bottom card is separate and excluded.",
+      "displayedMapZoom": "16%",
+      "smallPortalFullLabelReliablyLegible": false,
+      "smallPortalLegibilityLimit": "At this original whole-window scale the tiny portal and card text cannot be transcribed reliably.",
+      "rightSidebarNextEpisodeReadable": true,
+      "rightSidebarNextEpisodeText": "第6話[♪]",
+      "pixelConclusion": "Pass for 3 main cards, 2 internal connection lines, 1 separate portal and its connection; next episode visible in sidebar, small portal target scene name not independently readable here."
+    },
+    "imageB": {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-runtime-v1/attempt-1/B-episode5-cross-section-edge-dialog.jpg",
+      "originalFlowDialogVisible": true,
+      "dialogTitleReadable": "编辑流程连接",
+      "targetControlReadable": true,
+      "targetVisibleText": "第1章　王都的一日篇 → 第6話[♪] → 又回到水果摊？",
+      "connectionStateVisibleText": "有依据，已确认",
+      "notesControlVisible": true,
+      "notesVisibleSourceMeaning": "The visible beginning explicitly labels an author-added directory relation and cites saved scenario47 FINISH plus Adv.d AdventureSection1009.next_section_id=[1002]. It also visibly states the original scene payload has not been obtained.",
+      "visibleNotesTokens": [
+        "作者补充的目录图关系",
+        "scenario47 FINISH",
+        "1009→1002",
+        "目标10020001原生root",
+        "Adv.d AdventureSection1009.next_section_id=[1002]",
+        "场景原始payload未取得"
+      ],
+      "fullNotesVisible": false,
+      "notesLegibilityLimit": "The fixed-height textarea clips lower content; acceptance covers the visible beginning only.",
+      "sourceIdDirectlyShownByDedicatedControl": false,
+      "pixelConclusion": "Pass for readable sixth-episode target scene name, confirmed state and visibly qualified author-added source explanation."
+    }
+  },
+  "identityAssociationFromBoundRecordsNotPixels": {
+    "mode": "raw flow edge, trusted hit-path pointer, original STORY_DIRECTORY_MAP_ACTIVATE; form has no source control",
+    "flowGet": {
+      "method": "GET",
+      "path": "/api/directory/flow",
+      "query": {
+        "sectionId": "1009",
+        "sha": "2844ba559d922bd6108f84ae4dc970f40c9b3731"
+      },
+      "status": 200,
+      "bodySha256": "5397313018cfc3f9647180b77ebd6e1452eae7c8f32d911a726e878a4ac0c2f9"
+    },
+    "rawFlowEdge": {
+      "id": "scene-edge:10090015:10020001",
+      "source": "scene:10090015",
+      "target": "scene:10020001",
+      "origin": "manual",
+      "state": "confirmed",
+      "evidence": [
+        "native/scenes/10090015.json#scenario47/branch471/FINISH",
+        "data/story_directory/device-snapshot/Adv.d#AdventureSection1009",
+        "data/story_directory/device-snapshot/Adv.d#AdventureScene1002/10020001"
+      ]
+    },
+    "retainedHitPathClick": {
+      "actionIndex": 5,
+      "stage": "open-existing-cross-section-edge",
+      "selector": "#directoryGraph g.directory-map-edge[data-flow-edge=\"scene-edge:10090015:10020001\"] path.map-line-hit",
+      "pathPoint": true,
+      "location": {
+        "x": 635,
+        "y": 868
+      }
+    },
+    "retainedOriginalActivationEvent": {
+      "name": "STORY_DIRECTORY_MAP_ACTIVATE",
+      "detail": {
+        "edge": "scene-edge:10090015:10020001",
+        "open": false
+      }
+    },
+    "editorTargetValue": "scene:10020001",
+    "qualification": "Exact source/target IDs are bound by retained GET and original click/event records. They are not inferred from tiny graph pixels or a nonexistent source control; no click or request was replayed by this reviewer."
+  },
+  "acceptedScope": {
+    "visibleMainCardAndConnectionGeometry": true,
+    "visibleSeparateCrossSectionPortal": true,
+    "visibleNextEpisodeInSidebar": true,
+    "visibleTargetSceneNameInOriginalFlowDialog": true,
+    "visibleQualifiedAuthorAddedNotesBeginning": true,
+    "sourceTargetAssociationFromBoundRecords": true
+  },
+  "excludedClaims": [
+    "actual private base from screenshot",
+    "event timing from screenshot",
+    "original scene payload recovery",
+    "next episode playback",
+    "full episode acceptance",
+    "motion or face acceptance",
+    "full map portal label legibility",
+    "complete notes visibility"
+  ],
+  "actualBaseSigned": false,
+  "eventTimingSigned": false,
+  "originalPayloadRecovered": false,
+  "nextEpisodePlaybackAccepted": false,
+  "fullEpisodeAccepted": false,
+  "actions": {
+    "privateReviewDirectoryWritten": true,
+    "formalSourceWritten": false,
+    "formalDataWritten": false,
+    "gitWritten": false,
+    "apiCalled": false,
+    "browserStarted": false,
+    "serverStarted": false,
+    "decoderStarted": false,
+    "imagesModifiedOrReencoded": false,
+    "stashed": false,
+    "priorTapPeerModified": false
+  },
+  "readme": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-cross-section-portal-actual-image-review-v1/README.md",
+    "bytes": 2111,
+    "sha256": "7747d00b2991586550b33cc5ca55ed60b69a642c2704f96241a17a683d171db0"
+  }
+}
