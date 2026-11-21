@@ -1,0 +1,7 @@
+nice -n 19 taskset -c 0,1 python - <<'PY'
+from pathlib import Path
+import json,gzip,hashlib
+p=Path('artifacts/stella-script-continuation-20261121/episode5-silent54-saved-runtime-v1');x=json.loads(gzip.decompress((p/'normal-prepare-body.json.gz').read_bytes()));print('start/all',x['start'],len(x['nodes']));scene=[n for n in x['nodes'] if n['scene_id']=='scene:10090015'];print('scene',len(scene));plan=json.loads((p/'capture-plan.json').read_text());print('plan',json.dumps({k:v for k,v in plan.items() if k!='steps'},ensure_ascii=False))
+for step in plan['steps']:
+ n=next(n for n in scene if n['id']==step['id']);print(json.dumps({k:n.get(k) for k in ['id','scenario_id','kind','model','speaker','text','translation','command','bg_music','movie_resource']},ensure_ascii=False));print('edges',json.dumps([e for e in x['edges'] if e['source']==n['id']],ensure_ascii=False))
+PY

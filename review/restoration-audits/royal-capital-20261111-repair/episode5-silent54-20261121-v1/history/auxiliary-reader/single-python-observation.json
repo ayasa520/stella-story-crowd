@@ -1,0 +1,57 @@
+{
+  "schema": "stella.single-authorized-python-json-exception-observation.v1",
+  "rootConfirmed": false,
+  "receivers": {
+    "sourcePath": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-saved-runtime-v1/normal-prepare-body.json.gz",
+    "sourceSnapshotNow": {
+      "file": "diagnostic-input.original-gzip.gz",
+      "bytes": 1463464,
+      "sha256": "adf4740c8bcf19591d99d12a7f347e6df0f54ac9c30566e9bc239a12cdfe6086"
+    },
+    "rawInput": {
+      "file": "diagnostic-input.raw-json.gz",
+      "bytes": 1427737,
+      "sha256": "defad1e96d5f2520846adf1b08be9c8ac41927082d53f7ef0c9e718b10ff802f",
+      "decodedBytes": 18743011,
+      "decodedSha256": "bc25cd49b39d3b6604a38fd1191d0bb871a526ba5d4060b2acf65a7dfd19b259"
+    },
+    "decodedInput": {
+      "file": "diagnostic-input.decoded-utf8.gz",
+      "bytes": 1427737,
+      "sha256": "defad1e96d5f2520846adf1b08be9c8ac41927082d53f7ef0c9e718b10ff802f",
+      "decodedBytes": 18743011,
+      "decodedSha256": "bc25cd49b39d3b6604a38fd1191d0bb871a526ba5d4060b2acf65a7dfd19b259"
+    },
+    "decodedCharacterLength": 17457610,
+    "rawEqualsDecodedUtf8": true
+  },
+  "parser": "original json.loads(bytes), function unchanged",
+  "jsonLoadsCallsInThisDiagnostic": 1,
+  "authorization": "Root specifically authorized one new exception-observation call; not a business/health retry or substitute pass.",
+  "firstFailureStillUnexplained": true,
+  "startedUtc": "2026-11-21T12:29:47.564854+00:00",
+  "status": "success-of-this-new-observation-only",
+  "returnedType": "dict",
+  "returnedTopLevelKeys": [
+    "version",
+    "revision",
+    "headSha",
+    "updated_at",
+    "videos",
+    "nodes",
+    "edges",
+    "links",
+    "directory",
+    "preview_policy",
+    "start",
+    "before",
+    "scene_thumbnails",
+    "semantics",
+    "sound_effects",
+    "flow_issues",
+    "warnings"
+  ],
+  "parserFunctionUnchanged": true,
+  "finishedUtc": "2026-11-21T12:29:47.851596+00:00",
+  "thirdCallOrAutomaticRetry": false
+}

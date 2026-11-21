@@ -1,0 +1,497 @@
+{
+  "schema": "stella.silent54.bilingual-route.v1",
+  "cases": [
+    {
+      "caseName": "silent54-zh",
+      "realNormalHTTP": {
+        "status": 200,
+        "start": "node:10090015:node_dae6816ae851",
+        "headSha": "d0572bc3acafb55cb4c38d81ebf457acdb6d22d4",
+        "programSha256": "8cfee866f5a09695937da49d5d8271e6f3b11993c4d88954f2ef7e2fe31d1faa",
+        "rawSha256": "8cfee866f5a09695937da49d5d8271e6f3b11993c4d88954f2ef7e2fe31d1faa",
+        "gzipFile": "normal-http-8cfee866f5a09695937da49d5d8271e6f3b11993c4d88954f2ef7e2fe31d1faa.json.gz",
+        "gzipFileSha256": "dbbe791af04d29abea7dd6f48c80d1968b9453c6d2b66b82051d57150f394e7d",
+        "allNodes": 5620,
+        "sceneRows": 53,
+        "before": {
+          "bg_picture": "bg/bg008a_fruitshop",
+          "clut": "",
+          "bg_music": "bgm_adv_fuon02_cd2_14",
+          "music_source": "node:10090015:node_b5e3c119798d",
+          "model": "subaru01",
+          "body": "",
+          "face": "",
+          "face_reset": false,
+          "extras": {},
+          "actors": [],
+          "ambient": {},
+          "wipe_name": "",
+          "wipe_image": "",
+          "wipe_covered": false,
+          "junction": false
+        }
+      },
+      "actualEnters": [
+        "node:10090015:node_dae6816ae851",
+        "node:10090015:node_869b7bc19352",
+        "node:10090015:node_4d90b64dba29",
+        "node:10090015:node_7d098e4a6729",
+        "node:10090015:node_3e6d1c90667f"
+      ],
+      "exactTransitions": [
+        {
+          "edge": "edge:node:10090015:node_dae6816ae851:1009001510451:451",
+          "action": "continue",
+          "native": {
+            "uniq_id": 1009001510451,
+            "next_scenario_label": "",
+            "next_scenario_id": 54,
+            "transition_id": 45101
+          },
+          "target": "node:10090015:node_869b7bc19352"
+        },
+        {
+          "edge": "edge:node:10090015:node_869b7bc19352:1009001510478:478",
+          "action": "continue",
+          "native": {
+            "uniq_id": 1009001510478,
+            "transition_id": 47801,
+            "next_scenario_id": 46,
+            "next_scenario_label": ""
+          },
+          "target": "node:10090015:node_4d90b64dba29"
+        },
+        {
+          "edge": "edge:node:10090015:node_4d90b64dba29:1009001510461:461",
+          "action": "continue",
+          "native": {
+            "uniq_id": 1009001510461,
+            "next_scenario_label": "",
+            "next_scenario_id": 49,
+            "transition_id": 46101
+          },
+          "target": "node:10090015:node_7d098e4a6729"
+        },
+        {
+          "edge": "edge:node:10090015:node_7d098e4a6729:1009001510473:473",
+          "action": "continue",
+          "native": {
+            "next_scenario_label": "",
+            "next_scenario_id": 47,
+            "uniq_id": 1009001510473,
+            "transition_id": 47301
+          },
+          "target": "node:10090015:node_3e6d1c90667f"
+        },
+        {
+          "edge": "edge:node:10090015:node_3e6d1c90667f:1009001510471:471",
+          "action": "section",
+          "native": {
+            "uniq_id": 1009001510471,
+            "transition_id": 47101,
+            "next_scenario_id": 0,
+            "next_scenario_label": "FINISH",
+            "next_section_id": 1002,
+            "next_scene_id": 10020001
+          },
+          "target": "node:10020001:1002000100001"
+        }
+      ],
+      "final": {
+        "observedPerformanceMilliseconds": 19985,
+        "observedEpochMilliseconds": 1795265605143,
+        "caseName": "silent54-zh",
+        "node": "node:10090015:node_3e6d1c90667f",
+        "phase": "complete",
+        "generation": {
+          "value": 7,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10090015:node_3e6d1c90667f",
+            "scene": "scene:10090015",
+            "loadedScene": "scene:10090015",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 7,
+            "monotonicMilliseconds": 16820
+          },
+          "observedAtPerformanceMilliseconds": 16820
+        },
+        "generationProvenance": "actual existing generation-bearing console event",
+        "generationIsLastObservedEventValueNotPrivateCurrentValue": true,
+        "normalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 670,
+          "frameTimestampMs": 19969,
+          "rawDeltaSeconds": 0.032580000000001746,
+          "deltaSeconds": 0.032580000000001746,
+          "gameSeconds": 18.871913373069756,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "card": {
+          "inlineAlpha": "",
+          "computedAlpha": 1,
+          "translate": "none",
+          "rect": {
+            "x": 0,
+            "y": 58.883331298828125,
+            "width": 440,
+            "height": 782.2166748046875
+          }
+        },
+        "actor": {
+          "attached": true,
+          "hidden": false,
+          "visible": true,
+          "effectiveAncestorAlpha": 1,
+          "rect": {
+            "x": 0,
+            "y": 58.883331298828125,
+            "width": 440,
+            "height": 782
+          },
+          "GL": {
+            "canvas": "actor",
+            "attached": true,
+            "lost": false,
+            "kind": "webgl2",
+            "draws": 2985
+          }
+        },
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": true,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "title": {
+          "flowHidden": false,
+          "flowClass": "story-flow chart-view",
+          "nativeElementAttached": false,
+          "rootAlpha": null,
+          "label": "",
+          "rect": null
+        },
+        "advanceDisabled": true,
+        "autoPressed": "false",
+        "activeDrop": null,
+        "render": {
+          "losses": [
+            {
+              "canvas": "",
+              "attached": false,
+              "kind": "webgl",
+              "node": ""
+            }
+          ],
+          "contexts": [
+            {
+              "canvas": "",
+              "attached": false,
+              "lost": true,
+              "kind": "webgl",
+              "draws": 0
+            },
+            {
+              "canvas": "",
+              "attached": false,
+              "lost": false,
+              "kind": "webgl2",
+              "draws": 0
+            },
+            {
+              "canvas": "actor",
+              "attached": true,
+              "lost": false,
+              "kind": "webgl2",
+              "draws": 2985
+            }
+          ]
+        },
+        "text": "",
+        "language": "zh",
+        "panel": {
+          "hidden": false,
+          "alpha": "1",
+          "translate": "none"
+        },
+        "history": [
+          "果物屋の店主：っだよ！ただの冷やかしならいったいった！こっちゃ商売してんだ。冷やかしにゃ付き合ってられん",
+          "スバル：――。\n――――。\n――――――――。",
+          "スバル：……え? え? どゆこと?",
+          ""
+        ]
+      },
+      "nextSectionEntered": false
+    },
+    {
+      "caseName": "silent54-ja",
+      "realNormalHTTP": {
+        "status": 200,
+        "start": "node:10090015:node_dae6816ae851",
+        "headSha": "d0572bc3acafb55cb4c38d81ebf457acdb6d22d4",
+        "programSha256": "8cfee866f5a09695937da49d5d8271e6f3b11993c4d88954f2ef7e2fe31d1faa",
+        "rawSha256": "8cfee866f5a09695937da49d5d8271e6f3b11993c4d88954f2ef7e2fe31d1faa",
+        "gzipFile": "normal-http-8cfee866f5a09695937da49d5d8271e6f3b11993c4d88954f2ef7e2fe31d1faa.json.gz",
+        "gzipFileSha256": "dbbe791af04d29abea7dd6f48c80d1968b9453c6d2b66b82051d57150f394e7d",
+        "allNodes": 5620,
+        "sceneRows": 53,
+        "before": {
+          "bg_picture": "bg/bg008a_fruitshop",
+          "clut": "",
+          "bg_music": "bgm_adv_fuon02_cd2_14",
+          "music_source": "node:10090015:node_b5e3c119798d",
+          "model": "subaru01",
+          "body": "",
+          "face": "",
+          "face_reset": false,
+          "extras": {},
+          "actors": [],
+          "ambient": {},
+          "wipe_name": "",
+          "wipe_image": "",
+          "wipe_covered": false,
+          "junction": false
+        }
+      },
+      "actualEnters": [
+        "node:10090015:node_dae6816ae851",
+        "node:10090015:node_869b7bc19352",
+        "node:10090015:node_4d90b64dba29",
+        "node:10090015:node_7d098e4a6729",
+        "node:10090015:node_3e6d1c90667f"
+      ],
+      "exactTransitions": [
+        {
+          "edge": "edge:node:10090015:node_dae6816ae851:1009001510451:451",
+          "action": "continue",
+          "native": {
+            "uniq_id": 1009001510451,
+            "next_scenario_label": "",
+            "next_scenario_id": 54,
+            "transition_id": 45101
+          },
+          "target": "node:10090015:node_869b7bc19352"
+        },
+        {
+          "edge": "edge:node:10090015:node_869b7bc19352:1009001510478:478",
+          "action": "continue",
+          "native": {
+            "uniq_id": 1009001510478,
+            "transition_id": 47801,
+            "next_scenario_id": 46,
+            "next_scenario_label": ""
+          },
+          "target": "node:10090015:node_4d90b64dba29"
+        },
+        {
+          "edge": "edge:node:10090015:node_4d90b64dba29:1009001510461:461",
+          "action": "continue",
+          "native": {
+            "uniq_id": 1009001510461,
+            "next_scenario_label": "",
+            "next_scenario_id": 49,
+            "transition_id": 46101
+          },
+          "target": "node:10090015:node_7d098e4a6729"
+        },
+        {
+          "edge": "edge:node:10090015:node_7d098e4a6729:1009001510473:473",
+          "action": "continue",
+          "native": {
+            "next_scenario_label": "",
+            "next_scenario_id": 47,
+            "uniq_id": 1009001510473,
+            "transition_id": 47301
+          },
+          "target": "node:10090015:node_3e6d1c90667f"
+        },
+        {
+          "edge": "edge:node:10090015:node_3e6d1c90667f:1009001510471:471",
+          "action": "section",
+          "native": {
+            "uniq_id": 1009001510471,
+            "transition_id": 47101,
+            "next_scenario_id": 0,
+            "next_scenario_label": "FINISH",
+            "next_section_id": 1002,
+            "next_scene_id": 10020001
+          },
+          "target": "node:10020001:1002000100001"
+        }
+      ],
+      "final": {
+        "observedPerformanceMilliseconds": 35740,
+        "observedEpochMilliseconds": 1795265620898,
+        "caseName": "silent54-ja",
+        "node": "node:10090015:node_3e6d1c90667f",
+        "phase": "complete",
+        "generation": {
+          "value": 15,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10090015:node_3e6d1c90667f",
+            "scene": "scene:10090015",
+            "loadedScene": "scene:10090015",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 15,
+            "monotonicMilliseconds": 32909
+          },
+          "observedAtPerformanceMilliseconds": 32909
+        },
+        "generationProvenance": "actual existing generation-bearing console event",
+        "generationIsLastObservedEventValueNotPrivateCurrentValue": true,
+        "normalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 1160,
+          "frameTimestampMs": 35735.78,
+          "rawDeltaSeconds": 0.016099999999998546,
+          "deltaSeconds": 0.016099999999998546,
+          "gameSeconds": 34.32121340287211,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "card": {
+          "inlineAlpha": "",
+          "computedAlpha": 1,
+          "translate": "none",
+          "rect": {
+            "x": 0,
+            "y": 58.883331298828125,
+            "width": 440,
+            "height": 782.2166748046875
+          }
+        },
+        "actor": {
+          "attached": true,
+          "hidden": false,
+          "visible": true,
+          "effectiveAncestorAlpha": 1,
+          "rect": {
+            "x": 0,
+            "y": 58.883331298828125,
+            "width": 440,
+            "height": 782
+          },
+          "GL": {
+            "canvas": "actor",
+            "attached": true,
+            "lost": false,
+            "kind": "webgl2",
+            "draws": 5833
+          }
+        },
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": true,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "title": {
+          "flowHidden": false,
+          "flowClass": "story-flow chart-view",
+          "nativeElementAttached": false,
+          "rootAlpha": null,
+          "label": "",
+          "rect": null
+        },
+        "advanceDisabled": true,
+        "autoPressed": "false",
+        "activeDrop": null,
+        "render": {
+          "losses": [
+            {
+              "canvas": "",
+              "attached": false,
+              "kind": "webgl",
+              "node": ""
+            }
+          ],
+          "contexts": [
+            {
+              "canvas": "",
+              "attached": false,
+              "lost": true,
+              "kind": "webgl",
+              "draws": 0
+            },
+            {
+              "canvas": "",
+              "attached": false,
+              "lost": false,
+              "kind": "webgl2",
+              "draws": 0
+            },
+            {
+              "canvas": "actor",
+              "attached": true,
+              "lost": false,
+              "kind": "webgl2",
+              "draws": 5833
+            }
+          ]
+        },
+        "text": "",
+        "language": "ja",
+        "panel": {
+          "hidden": false,
+          "alpha": "1",
+          "translate": "none"
+        },
+        "history": [
+          "果物屋の店主：っだよ！ただの冷やかしならいったいった！こっちゃ商売してんだ。冷やかしにゃ付き合ってられん",
+          "スバル：――。\n――――。\n――――――――。",
+          "スバル：……え? え? どゆこと?",
+          ""
+        ]
+      },
+      "nextSectionEntered": false
+    }
+  ],
+  "each5Entered5TransitionsIncludingSection": true,
+  "section1009CompleteEachOnce": true,
+  "no10020001Enter": true,
+  "noDriverStopOrInjectedState": true
+}

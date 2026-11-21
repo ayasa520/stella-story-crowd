@@ -1,0 +1,71 @@
+{
+  "schema": "stella.silent54-runtime-static-peer.v2",
+  "rootConfirmed": false,
+  "createdAt": "2026-11-21T12:50:37.127Z",
+  "mustFixBlockers": [],
+  "verdict": "No mandatory static helper change found in sealed v2.",
+  "runtimeBindingsSha256": "909013da571d53c55587f5abbfa9b0d6c7d26bb93302738eda2f79ad6f0c79ef",
+  "rootfalseDraftSha256": "f3909f719f574e368c5e4007446835700ee92d21028237f5a8f076c2ff00d8dc",
+  "playSha256": "0148b1229274e616995faf63a424076df2c883686e392c5c8f11d90411f854b2",
+  "oldV1Map18BytesUntouched": true,
+  "v2Map18Rehashed": true,
+  "verifiedActualDiffs": {
+    "play.mjs.diff": "42d7baf757abe0ce87d6942c7518b3b4fcca9058843b6ab60b55363b53e2abe6",
+    "freeze-inputs.py.diff": "cb1376b115d73736df21cbd57db7a0b4026b36a475716aa1ba41d321b538796b",
+    "prepare-normal.mjs.diff": "14ac6516b24901f6e0c63d47986d6bf989504c4b5d019902a6487a0ddc644887",
+    "README.md.diff": "19f2b078aed63388e87db596e2682a7b8010bbb490061eabba266a868b46536a"
+  },
+  "changesReviewed": [
+    {
+      "at": "play.mjs:67-105;208-209",
+      "result": "Language inventory only reads actual found/disabled/value/checkVisibility/rect/ancestor styles/viewport/node/phase. When switching JA, real BiDi viewport1000x900 exposes unchanged original select; ordinary trusted click+Up/Enter and trusted change event required. Restore440x900 is attempted even after language failure; innerWidth/Height/value checked before return. Normal prepare runs only after successful return. Stage and case are set before language switch."
+    },
+    {
+      "at": "freeze-inputs.py:78-85;116-121;run.py:40-55;191-195",
+      "result": "Exactly three original provider members added; original612 map values preserved, new615 map used by unchanged before/after runner. Added current bytes equal bound hashes and existing HEAD blobs. All34 prior provider rows covered."
+    },
+    {
+      "at": "prepare-normal.mjs:33-43",
+      "result": "One owner normal prepare has genuine new content alias. Independent one-pass Node raw-byte check confirms5620 full-local nodes,53 target nodes+54 outgoing source edges and original before exactly equal v1; route-check bytes identical. No program/before rewrite."
+    },
+    {
+      "at": "unchanged run.py/ending-observer/capture-readiness/capture-plan/worktree-upstream",
+      "result": "Original lifecycle/normal movie/title/audio/panel/draw gates preserved. No CSS, DOM value, clock, Stop, renderer, media or font override added; observer unchanged and continuous actor visibility remains outside acceptance."
+    }
+  ],
+  "syntaxOnly": {
+    "play.mjs": "node --check exit0 chunk4ef2a0",
+    "prepare-normal.mjs": "node --check exit0 chunkd54a00",
+    "freeze-inputs.py": "ast.parse exit0 chunkca6904; no raw JSON parser"
+  },
+  "executionBinding": {
+    "newRootTrueReleaseRequired": true,
+    "requiredAttemptArgument": "--attempt attempt-2",
+    "note": "Unchanged mature run.py:87 defaults to attempt-1; root invocation must explicitly bind attempt-2.",
+    "attempt2AbsentWhenChecked": true,
+    "oneFirefoxServer5198Only": true,
+    "nice": 19,
+    "cpus": [
+      0,
+      1
+    ],
+    "threadEnvs": 1,
+    "independentRootClosureThenChildImageReviewRequired": true
+  },
+  "evidence": {
+    "attempt1-boundary.json": "48a958f7dee68426f688072e1291b47d40a808136f21de3f949280c9c5842972",
+    "v2-byte-checks.json": "f0a5675e70f961770ea5ada96503988bdc86bd467a7c4399dc3ffa74e8bc4ff7"
+  },
+  "boundaries": {
+    "jaCoverageFromAttempt1": false,
+    "oldFailurePreserved": true,
+    "oldFailureStoredStageStale": true,
+    "noHarnessWorkerBrowserServerNetworkExecutedByPeer": true,
+    "noFormalSourceDataGitOrHelperWrite": true,
+    "noNewPythonRawParserCall": true,
+    "originalAuxiliaryPythonFailureStillUnexplained": true,
+    "oldAuxiliaryFailureNotABusinessGate": true,
+    "wholeEpisodeOrProductionEquivalenceAccepted": false,
+    "actorContinuityPerformanceAccepted": false
+  }
+}
