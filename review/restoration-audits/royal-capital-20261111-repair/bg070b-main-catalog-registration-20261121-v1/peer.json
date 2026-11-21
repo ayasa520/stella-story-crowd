@@ -1,0 +1,114 @@
+{
+  "schema": "stella.bg070b-metadata-only-independent-static-peer.v1",
+  "rootConfirmed": false,
+  "executionReleased": false,
+  "mustFixBlockers": [],
+  "verdict": "Exact fresh8b43089d metadata-only plan passes independent static/current-byte peer. Root decides any actual integrate call.",
+  "dataHead": "8b43089df9161bcfdbae4119c5b90933a4635dad",
+  "plan": {
+    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/bg070b-stealshop-registration-8b43089d-20261121-v1/integration-plan.rootfalse.json",
+    "bytes": 15644,
+    "sha256": "7b444ef8eca92f7e33c6eca792b0451635dc3e4fe83c7cb6dfe02bea2235a76d"
+  },
+  "readonlyPrewriteReceipt": {
+    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/bg070b-stealshop-registration-8b43089d-20261121-v1/nonapply-verification.json",
+    "bytes": 4468,
+    "sha256": "65b087e87d0c5f712a84c7c647dc48ca000e0d29c589a32d2b75ce76d9c502ad"
+  },
+  "existingApplyEntry": {
+    "file": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/apply-asset-plan.py",
+      "bytes": 3500,
+      "sha256": "ff5ef8fa4a20ac5d5f222be7164b8bc961cafda5a4fc1cbeed235efb0322feb2"
+    },
+    "function": "integrate(plan_path,receipt_path)",
+    "cli": "python artifacts/stella-script-continuation-20261121/apply-asset-plan.py PLAN RECEIPT",
+    "callingThisEntryWrites": true,
+    "builtInNonapplyOrApplyFlag": false,
+    "rootConfirmedAndEvidenceEnforcedByInstaller": false,
+    "actualHardChecks": "HEAD/target at16-21; sourceMetadataLocks27-30; reusedPayloadLocks31-32; candidate bytes/hash and destination expectedSha33-42; additive catalog43-49; unchanged snapshot bytes52-54; only then ordered atomic writes55-58"
+  },
+  "exactChange": {
+    "catalogAddedKey": "bg/bg070b_stealshop",
+    "catalogRow": {
+      "label": "bg/bg070b_stealshop",
+      "url": "preview/backgrounds/ADV_bg070b_stealshop.webp",
+      "thumbnail_url": "preview/backgrounds/ADV_bg070b_stealshop.webp",
+      "member": "LIMEOS/assets/downloadassets/assetbundle/images/adv_bg/ADV_bg070b_stealshop.png"
+    },
+    "packageAddedExistingMember": "preview/backgrounds/ADV_bg070b_stealshop.webp",
+    "existingPayloadBytes": 91470,
+    "packageFileCountBefore": 5448,
+    "packageFileCountAfter": 5449,
+    "packageBytesBefore": 537443292,
+    "packageBytesAfter": 537535025,
+    "packageBytesDelta": 91733,
+    "catalogBytesGrowth": 263,
+    "otherCatalogDataAndPackageRecordsUnchanged": true,
+    "previewCatalogUnchangedSha256": "22cc9b08e6f086556562de1c12fa1594eda2adae2c28940512be74f72d3d4cce",
+    "formalMetadataPlanned": [
+      "assets/catalog.json",
+      "assets/package.json"
+    ],
+    "newOrCopiedMediaBytes": 0
+  },
+  "readerContracts": {
+    "AssetRow": "lib/resources.ts4 url:string; no PNG-only requirement",
+    "nativeValidation": "native_resources.py30-50 checks exact background key and assets-relative existing url payload, no image-extension requirement",
+    "canonicalResponse": "resources.ts73-81 does not remap a preview/backgrounds/*.webp path;92-134 fetches that same member and labels MIME image/webp; compatibilityAsset168-170 uses the catalog url",
+    "c122PrecedentCommit": "c12216fced05551b870610af73693bbd0c10d39f",
+    "c122ExistingMainUrl": "preview/backgrounds/ADV_bg027c_stealshop.webp",
+    "mainQualityOriginalMeans": "The main row explicitly points to compressedWebP, so original quality does not promise originalPNG.",
+    "unchangedCloudflarePreviewAliasCaveat": "Existing previewcatalog PNG alias still maps to this WebP by default. Explicit original on that untouched previewalias can still target absent rawPNG; no universal raw-availability claim."
+  },
+  "visualEvidenceReusedOnly": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p42-visual-resource-match-20261121-v1/background-resource-identity.json",
+    "bytes": 3840,
+    "sha256": "b167c7ee66e03749a2e800a5fcda8260f5acd10af07840ce1221c59400cea6d0"
+  },
+  "originalPng": {
+    "path": "data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/images/adv_bg/ADV_bg070b_stealshop.png",
+    "sha256": "d6b370290f4e7d69ca951e38ab97c0cdc13b54c546fc6dd63c24fab2c0733578",
+    "bytes": 1267385
+  },
+  "existingWebP": {
+    "path": "artifacts/stella-script-continuation-20261121/data-checkout/assets/preview/backgrounds/ADV_bg070b_stealshop.webp",
+    "sha256": "67fb777f07fa2446cdf1aed648a11dce7cff34360e3df9b2e6f5b4a619a56a61",
+    "bytes": 91470
+  },
+  "sourceWitnesses": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/apply-asset-plan.py",
+      "bytes": 3500,
+      "sha256": "ff5ef8fa4a20ac5d5f222be7164b8bc961cafda5a4fc1cbeed235efb0322feb2"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/resources.ts",
+      "bytes": 11817,
+      "sha256": "b8001881014337470b8bf8d1903ba796bf09a95ebb16142a58517e0bbdbcc36b"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/recovery/native_resources.py",
+      "bytes": 2541,
+      "sha256": "c297f5822fc4f143cdd9a683f7f7143e757b52749c1be2216eb30dee5b37d86e"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/crowd_assets.py",
+      "bytes": 27995,
+      "sha256": "ca87a002e7dd16b504ceb8d88322b6209d03f7127219ec3c7f7fbf9806c707ec"
+    }
+  ],
+  "originalReaderObservation": "Fresh helper records original json.loads input metadata; on first actual JSONDecodeError it keeps raw and exception.doc as bounded gzip then raises without retry/parser substitution. Peer did not fabricate a failure or execute this helper/writer.",
+  "limits": [
+    "No new GPU/browser/server/decoder/image review.",
+    "No story/provider/phase/wipe/Wait/FX fields changed or accepted.",
+    "Static contract checks are not a normal integrate invocation, HTTP transfer or runtime playback acceptance.",
+    "Root must retain before-write original reader observations and recheck the same frozen bytes; actual writer will repeat its own locks/snapshots."
+  ],
+  "formalWrites": false,
+  "gitWrites": false,
+  "installerExecutedByPeer": false,
+  "normalValidatorExecutedByPeer": false,
+  "browserOrDecoderStarted": false,
+  "mediaCopiedOrDecoded": false
+}
