@@ -3976,20 +3976,6 @@
           "severity": "warning",
           "message": "Some text evidence still needs visual review.",
           "scenarioId": 24
-        },
-        {
-          "code": "missing_transition",
-          "severity": "warning",
-          "message": "The recording reaches CLEAR, but no next-section entry is recorded. Preserve the unknown executable destination.",
-          "scenarioId": 24,
-          "branchId": 241
-        },
-        {
-          "code": "transition_review_pending",
-          "severity": "warning",
-          "message": "This explicit route still needs evidence review.",
-          "scenarioId": 24,
-          "branchId": 241
         }
       ],
       "branches": [
@@ -3997,23 +3983,47 @@
           "branchId": 241,
           "stableKey": "s10030006-p22-at0341-next",
           "nativeIdOrigin": "authored",
-          "verification": "pending",
-          "state": "missing",
+          "verification": "observed",
+          "state": "confirmed",
           "evidence": [
             {
-              "segmentId": "p22-s10030006",
-              "start": 341.0,
-              "end": 343.0,
-              "sourceAnchorSeconds": 341,
-              "ocrReviewed": false,
-              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/22/coarse-1hz/crops/010260-dialogue.png",
-              "ocrEventId": "merged-0074",
-              "sourceSha256": "83e08bb46ec70cead035935ff06bb12f67b84ca81e9ebc61d0a3c5df6d85d23d",
-              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/22 8本篇「再会的魔女」Ver库珥修.mp4",
-              "originalOCRText": "……そうだな。わかったよ",
-              "ocrConfidence": 0.99804,
-              "ocrReviewReasons": [],
-              "recordingId": "bili-capital-22"
+              "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+              "bytes": 207869,
+              "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+            },
+            {
+              "kind": "current-saved-snapshot-and-corrected-scene-boundary",
+              "rootConfirmed": false,
+              "sourceAttachmentGuards": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/source-attachment-guards.rootfalse.json",
+                "bytes": 2007,
+                "sha256": "cfe69f04f8932709255340dee180398e47c15c09a50f2472b6c05e9dc8e2662e"
+              },
+              "protectedGraph": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/protected-source-graph.rootfalse.json",
+                "bytes": 138107,
+                "sha256": "d0b3adfefc711de50066178d8c4eaeaf5c4af18a0507bd9c13d9e8a259f9c1fb"
+              },
+              "priorSourcePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-ending-sequence.source-reviewed.rootfalse.json",
+                "bytes": 12537,
+                "sha256": "1edd686c034474db121a4e8ba65e4ab7071dc800d6a6a7fe68f7b54f85de0133"
+              },
+              "observedPublishedD": "b81a73f418e1c61f5619115c65b91b24a955fde0",
+              "revisionIsExecutionBinding": false
+            },
+            {
+              "kind": "root-fresh-integration-and-independent-complete-original-structure-review",
+              "rootAcceptance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-root-preparation-2eeacb38-v1/root-acceptance.json",
+                "bytes": 1515,
+                "sha256": "d6051f20d938c6028cc9e4ddd01d88e71199ffb997801e7251077d8cd2dda3b4"
+              },
+              "independentCompleteSourceReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-independent-original-structure-review-v1/receipt.rootfalse.json",
+                "bytes": 1272,
+                "sha256": "a03084bec2922f838a494c6aaa13c1ea41371cfc7893d22a87138762db6ba751"
+              }
             }
           ],
           "gainPointsRecovered": false
@@ -4100,6 +4110,404 @@
             }
           }
         ]
+      }
+    },
+    "25": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10030006-p22-ending-door-out",
+      "sourceText": "",
+      "translation": "",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+          "bytes": 207869,
+          "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+        },
+        {
+          "completeOriginalDoor": {
+            "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/videos/adv_dive01_out.mp4",
+            "bytes": 1199214,
+            "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c"
+          },
+          "originalCommandPhasesRecovered": false
+        }
+      ],
+      "unknownFields": [
+        "bg_music",
+        "bg_picture",
+        "character",
+        "character_image",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 251,
+          "stableKey": "s10030006-p22-ending-door-out-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "observed",
+          "evidence": [
+            {
+              "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+              "bytes": 207869,
+              "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+            },
+            {
+              "kind": "current-saved-snapshot-and-corrected-scene-boundary",
+              "rootConfirmed": false,
+              "sourceAttachmentGuards": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/source-attachment-guards.rootfalse.json",
+                "bytes": 2007,
+                "sha256": "cfe69f04f8932709255340dee180398e47c15c09a50f2472b6c05e9dc8e2662e"
+              },
+              "protectedGraph": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/protected-source-graph.rootfalse.json",
+                "bytes": 138107,
+                "sha256": "d0b3adfefc711de50066178d8c4eaeaf5c4af18a0507bd9c13d9e8a259f9c1fb"
+              },
+              "priorSourcePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-ending-sequence.source-reviewed.rootfalse.json",
+                "bytes": 12537,
+                "sha256": "1edd686c034474db121a4e8ba65e4ab7071dc800d6a6a7fe68f7b54f85de0133"
+              },
+              "observedPublishedD": "b81a73f418e1c61f5619115c65b91b24a955fde0",
+              "revisionIsExecutionBinding": false
+            },
+            {
+              "kind": "root-fresh-integration-and-independent-complete-original-structure-review",
+              "rootAcceptance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-root-preparation-2eeacb38-v1/root-acceptance.json",
+                "bytes": 1515,
+                "sha256": "d6051f20d938c6028cc9e4ddd01d88e71199ffb997801e7251077d8cd2dda3b4"
+              },
+              "independentCompleteSourceReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-independent-original-structure-review-v1/receipt.rootfalse.json",
+                "bytes": 1272,
+                "sha256": "a03084bec2922f838a494c6aaa13c1ea41371cfc7893d22a87138762db6ba751"
+              }
+            }
+          ]
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-root-preparation-2eeacb38-v1/ending-sequence.root-approved.json",
+          "evidence": [
+            {
+              "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+              "bytes": 207869,
+              "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+            },
+            {
+              "kind": "current-saved-snapshot-and-corrected-scene-boundary",
+              "rootConfirmed": false,
+              "sourceAttachmentGuards": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/source-attachment-guards.rootfalse.json",
+                "bytes": 2007,
+                "sha256": "cfe69f04f8932709255340dee180398e47c15c09a50f2472b6c05e9dc8e2662e"
+              },
+              "protectedGraph": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/protected-source-graph.rootfalse.json",
+                "bytes": 138107,
+                "sha256": "d0b3adfefc711de50066178d8c4eaeaf5c4af18a0507bd9c13d9e8a259f9c1fb"
+              },
+              "priorSourcePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-ending-sequence.source-reviewed.rootfalse.json",
+                "bytes": 12537,
+                "sha256": "1edd686c034474db121a4e8ba65e4ab7071dc800d6a6a7fe68f7b54f85de0133"
+              },
+              "observedPublishedD": "b81a73f418e1c61f5619115c65b91b24a955fde0",
+              "revisionIsExecutionBinding": false
+            },
+            {
+              "kind": "root-fresh-integration-and-independent-complete-original-structure-review",
+              "rootAcceptance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-root-preparation-2eeacb38-v1/root-acceptance.json",
+                "bytes": 1515,
+                "sha256": "d6051f20d938c6028cc9e4ddd01d88e71199ffb997801e7251077d8cd2dda3b4"
+              },
+              "independentCompleteSourceReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-independent-original-structure-review-v1/receipt.rootfalse.json",
+                "bytes": 1272,
+                "sha256": "a03084bec2922f838a494c6aaa13c1ea41371cfc7893d22a87138762db6ba751"
+              }
+            }
+          ],
+          "originalScenarioIdRecovered": false
+        }
+      }
+    },
+    "26": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10030006-p22-ending-clear",
+      "sourceText": "CLEAR",
+      "translation": "通关",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+          "bytes": 207869,
+          "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+        },
+        {
+          "reusedIndependentMusicIdentity": {
+            "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p21-p22-clear-bgm.json",
+            "bytes": 6483,
+            "sha256": "321d7f96eaa73254617ce504f10fee8880ab8bbdbf55803702425ab690cc813c"
+          },
+          "originalCommandPhasesRecovered": false,
+          "sourceSampleExactRequestPhaseAccepted": false
+        }
+      ],
+      "unknownFields": [
+        "bg_picture",
+        "character",
+        "character_image",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "video",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 261,
+          "stableKey": "s10030006-p22-ending-clear-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "observed",
+          "evidence": [
+            {
+              "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+              "bytes": 207869,
+              "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+            },
+            {
+              "kind": "current-saved-snapshot-and-corrected-scene-boundary",
+              "rootConfirmed": false,
+              "sourceAttachmentGuards": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/source-attachment-guards.rootfalse.json",
+                "bytes": 2007,
+                "sha256": "cfe69f04f8932709255340dee180398e47c15c09a50f2472b6c05e9dc8e2662e"
+              },
+              "protectedGraph": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/protected-source-graph.rootfalse.json",
+                "bytes": 138107,
+                "sha256": "d0b3adfefc711de50066178d8c4eaeaf5c4af18a0507bd9c13d9e8a259f9c1fb"
+              },
+              "priorSourcePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-ending-sequence.source-reviewed.rootfalse.json",
+                "bytes": 12537,
+                "sha256": "1edd686c034474db121a4e8ba65e4ab7071dc800d6a6a7fe68f7b54f85de0133"
+              },
+              "observedPublishedD": "b81a73f418e1c61f5619115c65b91b24a955fde0",
+              "revisionIsExecutionBinding": false
+            },
+            {
+              "kind": "root-fresh-integration-and-independent-complete-original-structure-review",
+              "rootAcceptance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-root-preparation-2eeacb38-v1/root-acceptance.json",
+                "bytes": 1515,
+                "sha256": "d6051f20d938c6028cc9e4ddd01d88e71199ffb997801e7251077d8cd2dda3b4"
+              },
+              "independentCompleteSourceReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-independent-original-structure-review-v1/receipt.rootfalse.json",
+                "bytes": 1272,
+                "sha256": "a03084bec2922f838a494c6aaa13c1ea41371cfc7893d22a87138762db6ba751"
+              }
+            }
+          ],
+          "nativeTransitionOrigin": "authored",
+          "originalPayloadRecovered": false,
+          "terminal": {
+            "kind": "finish-without-successor",
+            "nativeRepresentation": "omitted-destination-fields",
+            "rootConfirmed": true,
+            "originalPayloadRecovered": false,
+            "evidence": [
+              {
+                "sourceEndingReview": {
+                  "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+                  "bytes": 207869,
+                  "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+                },
+                "masterFile": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/native-directory.json",
+                  "bytes": 1079155,
+                  "sha256": "46a5ef005a10c4b4bf95537b32b71e39adec75f336b859e1d079b4613b561653"
+                },
+                "originalMasterScene": {
+                  "id": 10030006,
+                  "sectionId": 1003,
+                  "native": {
+                    "pos_y": 3,
+                    "is_anime": 0,
+                    "pos_x": -2,
+                    "scene_label": "01_003_0006",
+                    "route_name": "IFルート：クルシュ",
+                    "route_type": 1,
+                    "is_end": 1,
+                    "name": "クルシュ邸にて",
+                    "id": 10030006,
+                    "scene_num": 6,
+                    "is_root": 0,
+                    "desc": "クルシュ邸にて"
+                  },
+                  "labels": {
+                    "deviceSnapshot": {
+                      "name": "クルシュ邸にて",
+                      "desc": "クルシュ邸にて",
+                      "route_name": "IFルート：クルシュ"
+                    },
+                    "seed": {
+                      "name": "クルシュ邸にて",
+                      "description": "クルシュ邸にて",
+                      "route": "IFルート：クルシュ",
+                      "notes": ""
+                    },
+                    "current": {
+                      "name": "クルシュ邸にて",
+                      "description": "クルシュ邸にて",
+                      "route": "IFルート：クルシュ",
+                      "notes": ""
+                    }
+                  },
+                  "chartmap": {
+                    "capturedRows": [
+                      {
+                        "native": {
+                          "clear_prize": [
+                            {
+                              "ticket_num": 0,
+                              "prize_id_sub": 0,
+                              "prize_id": 0,
+                              "num": 50,
+                              "val_b": 0,
+                              "piece_num": 0,
+                              "val_type": 0,
+                              "type": 4,
+                              "is_duplicate": 0,
+                              "val_a": 0
+                            }
+                          ],
+                          "branch_num": 0,
+                          "scene_id": 10030006,
+                          "next_scene_list": [],
+                          "is_battle": false,
+                          "branch_condition_list": []
+                        },
+                        "evidence": [
+                          "capture:data/localization/ja-originals/main/rezelos-2020-scene-10010001.json",
+                          "capture:data/localization/ja-originals/main/rezelos-2020-scene-10010020.json",
+                          "capture:data/story_directory/device-snapshot/rezelos-2020-scene-10010001.json",
+                          "capture:data/story_directory/device-snapshot/rezelos-2020-scene-10010020.json"
+                        ]
+                      }
+                    ]
+                  },
+                  "coverage": {
+                    "originalCaptures": [],
+                    "originalScenarioIds": [],
+                    "studioReviewCounts": {},
+                    "studioScenarioIds": [],
+                    "studioExcludedScenarioIds": [],
+                    "studioTextRowCount": 0,
+                    "studioTranslatedRowCount": 0,
+                    "studioNodeCount": 0,
+                    "entryNode": "",
+                    "entryScenarioId": null,
+                    "studioExtensions": [],
+                    "recordings": [],
+                    "coverageMeaning": "Existing rows and their extents only; not a claim that a scene or recording is complete."
+                  },
+                  "directoryEdges": {
+                    "seed": [],
+                    "current": []
+                  },
+                  "currentScenarioTransitions": []
+                },
+                "sourceRepresentationFile": {
+                  "path": "/home/rikka/Projects/stella/data/localization/ja-originals/main/rezelos-2020-intro.json",
+                  "bytes": 175244,
+                  "sha256": "4aaf15c9a0627b32323bbb1e26dd406e384e21a2614a24132bea6a689a921fb8"
+                },
+                "sourceIntro102Transition": {
+                  "uniq_id": 100010110,
+                  "next_scenario_label": "FINISH",
+                  "next_scenario_id": 0,
+                  "transition_id": 10701
+                },
+                "representationIsAuthoredForThisScene": true,
+                "noRecordedDialogueSuccessorAndNoFollowingSectionInferred": true
+              }
+            ]
+          }
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-root-preparation-2eeacb38-v1/ending-sequence.root-approved.json",
+          "evidence": [
+            {
+              "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+              "bytes": 207869,
+              "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+            },
+            {
+              "kind": "current-saved-snapshot-and-corrected-scene-boundary",
+              "rootConfirmed": false,
+              "sourceAttachmentGuards": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/source-attachment-guards.rootfalse.json",
+                "bytes": 2007,
+                "sha256": "cfe69f04f8932709255340dee180398e47c15c09a50f2472b6c05e9dc8e2662e"
+              },
+              "protectedGraph": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-authored-ending-current-rootfalse-20261122-v1/protected-source-graph.rootfalse.json",
+                "bytes": 138107,
+                "sha256": "d0b3adfefc711de50066178d8c4eaeaf5c4af18a0507bd9c13d9e8a259f9c1fb"
+              },
+              "priorSourcePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-ending-sequence.source-reviewed.rootfalse.json",
+                "bytes": 12537,
+                "sha256": "1edd686c034474db121a4e8ba65e4ab7071dc800d6a6a7fe68f7b54f85de0133"
+              },
+              "observedPublishedD": "b81a73f418e1c61f5619115c65b91b24a955fde0",
+              "revisionIsExecutionBinding": false
+            },
+            {
+              "kind": "root-fresh-integration-and-independent-complete-original-structure-review",
+              "rootAcceptance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-root-preparation-2eeacb38-v1/root-acceptance.json",
+                "bytes": 1515,
+                "sha256": "d6051f20d938c6028cc9e4ddd01d88e71199ffb997801e7251077d8cd2dda3b4"
+              },
+              "independentCompleteSourceReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-independent-original-structure-review-v1/receipt.rootfalse.json",
+                "bytes": 1272,
+                "sha256": "a03084bec2922f838a494c6aaa13c1ea41371cfc7893d22a87138762db6ba751"
+              }
+            }
+          ],
+          "originalScenarioIdRecovered": false
+        }
       }
     }
   },
@@ -4722,30 +5130,9 @@
       "severity": "warning",
       "message": "Some text evidence still needs visual review.",
       "scenarioId": 24
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "The recording reaches CLEAR, but no next-section entry is recorded. Preserve the unknown executable destination.",
-      "scenarioId": 24,
-      "branchId": 241
-    },
-    {
-      "code": "transition_review_pending",
-      "severity": "warning",
-      "message": "This explicit route still needs evidence review.",
-      "scenarioId": 24,
-      "branchId": 241
     }
   ],
-  "unresolvedBranches": [
-    {
-      "scenarioId": 24,
-      "branchId": 241,
-      "stableKey": "s10030006-p22-at0341-next",
-      "reason": "The recording reaches CLEAR, but no next-section entry is recorded. Preserve the unknown executable destination."
-    }
-  ],
+  "unresolvedBranches": [],
   "restorationStatus": "rough",
   "structuralValidation": "passed",
   "playbackValidation": "not-run",
@@ -4869,6 +5256,16 @@
       "stableKey": "s10030006-p22-at0341",
       "scenarioId": 24,
       "order": 3510.0
+    },
+    {
+      "stableKey": "s10030006-p22-ending-door-out",
+      "scenarioId": 25,
+      "order": 3511.0
+    },
+    {
+      "stableKey": "s10030006-p22-ending-clear",
+      "scenarioId": 26,
+      "order": 3512.0
     }
   ],
   "sceneSegments": [
@@ -5118,5 +5515,136 @@
       "rootReviewSha256": "138745dfe1d4b4adf2e012d1428aac2385f4358b6b06f06b9f56c2f30461d099"
     }
   ],
-  "transitionEvidence": []
+  "transitionEvidence": [],
+  "repairEvidence": {
+    "terminalEndings": [
+      {
+        "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p22-ending-root-preparation-2eeacb38-v1/ending-sequence.root-approved.json",
+        "terminal": {
+          "kind": "finish-without-successor",
+          "nativeRepresentation": "omitted-destination-fields",
+          "rootConfirmed": true,
+          "originalPayloadRecovered": false,
+          "evidence": [
+            {
+              "sourceEndingReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+                "bytes": 207869,
+                "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+              },
+              "masterFile": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/native-directory.json",
+                "bytes": 1079155,
+                "sha256": "46a5ef005a10c4b4bf95537b32b71e39adec75f336b859e1d079b4613b561653"
+              },
+              "originalMasterScene": {
+                "id": 10030006,
+                "sectionId": 1003,
+                "native": {
+                  "pos_y": 3,
+                  "is_anime": 0,
+                  "pos_x": -2,
+                  "scene_label": "01_003_0006",
+                  "route_name": "IFルート：クルシュ",
+                  "route_type": 1,
+                  "is_end": 1,
+                  "name": "クルシュ邸にて",
+                  "id": 10030006,
+                  "scene_num": 6,
+                  "is_root": 0,
+                  "desc": "クルシュ邸にて"
+                },
+                "labels": {
+                  "deviceSnapshot": {
+                    "name": "クルシュ邸にて",
+                    "desc": "クルシュ邸にて",
+                    "route_name": "IFルート：クルシュ"
+                  },
+                  "seed": {
+                    "name": "クルシュ邸にて",
+                    "description": "クルシュ邸にて",
+                    "route": "IFルート：クルシュ",
+                    "notes": ""
+                  },
+                  "current": {
+                    "name": "クルシュ邸にて",
+                    "description": "クルシュ邸にて",
+                    "route": "IFルート：クルシュ",
+                    "notes": ""
+                  }
+                },
+                "chartmap": {
+                  "capturedRows": [
+                    {
+                      "native": {
+                        "clear_prize": [
+                          {
+                            "ticket_num": 0,
+                            "prize_id_sub": 0,
+                            "prize_id": 0,
+                            "num": 50,
+                            "val_b": 0,
+                            "piece_num": 0,
+                            "val_type": 0,
+                            "type": 4,
+                            "is_duplicate": 0,
+                            "val_a": 0
+                          }
+                        ],
+                        "branch_num": 0,
+                        "scene_id": 10030006,
+                        "next_scene_list": [],
+                        "is_battle": false,
+                        "branch_condition_list": []
+                      },
+                      "evidence": [
+                        "capture:data/localization/ja-originals/main/rezelos-2020-scene-10010001.json",
+                        "capture:data/localization/ja-originals/main/rezelos-2020-scene-10010020.json",
+                        "capture:data/story_directory/device-snapshot/rezelos-2020-scene-10010001.json",
+                        "capture:data/story_directory/device-snapshot/rezelos-2020-scene-10010020.json"
+                      ]
+                    }
+                  ]
+                },
+                "coverage": {
+                  "originalCaptures": [],
+                  "originalScenarioIds": [],
+                  "studioReviewCounts": {},
+                  "studioScenarioIds": [],
+                  "studioExcludedScenarioIds": [],
+                  "studioTextRowCount": 0,
+                  "studioTranslatedRowCount": 0,
+                  "studioNodeCount": 0,
+                  "entryNode": "",
+                  "entryScenarioId": null,
+                  "studioExtensions": [],
+                  "recordings": [],
+                  "coverageMeaning": "Existing rows and their extents only; not a claim that a scene or recording is complete."
+                },
+                "directoryEdges": {
+                  "seed": [],
+                  "current": []
+                },
+                "currentScenarioTransitions": []
+              },
+              "sourceRepresentationFile": {
+                "path": "/home/rikka/Projects/stella/data/localization/ja-originals/main/rezelos-2020-intro.json",
+                "bytes": 175244,
+                "sha256": "4aaf15c9a0627b32323bbb1e26dd406e384e21a2614a24132bea6a689a921fb8"
+              },
+              "sourceIntro102Transition": {
+                "uniq_id": 100010110,
+                "next_scenario_label": "FINISH",
+                "next_scenario_id": 0,
+                "transition_id": 10701
+              },
+              "representationIsAuthoredForThisScene": true,
+              "noRecordedDialogueSuccessorAndNoFollowingSectionInferred": true
+            }
+          ]
+        },
+        "originalPayloadRecovered": false
+      }
+    ]
+  }
 }
