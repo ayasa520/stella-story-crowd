@@ -1,0 +1,964 @@
+{
+  "version": 2,
+  "rootConfirmed": true,
+  "installable": true,
+  "executionAuthorized": false,
+  "status": "root-approved-source-backed-P33-ending-after-P31-installed",
+  "sceneId": 10040036,
+  "afterScenarioId": 28,
+  "afterStableKey": "s10040036-p33-at0565",
+  "afterScenarioUniqId": 1004003600028,
+  "branchId": 281,
+  "branchUniqId": 1004003610281,
+  "expectedTransitions": [],
+  "baseCommit": "8fd8798a2091138e0ab21b054b3fcc7088ee1b27",
+  "fileGuards": {
+    "nativeScene": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10040036.json",
+      "bytes": 84420,
+      "sha256": "e7766dd571664ddb1471f813590b9e4d5aca14cd2cbe44093f53568764fb5ae6"
+    },
+    "reviewScene": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10040036.json",
+      "bytes": 160586,
+      "sha256": "2d2b1f129975d8dc2b168da154924e26c5cace6e226f91f65f75cb8f1eea38b9"
+    },
+    "manifest": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+      "bytes": 4490797,
+      "sha256": "7921a61b3ba168194471d8bef2cf92142b6a92586152993d3da871ca8f7fbea6"
+    },
+    "ownership": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/native-restoration.json",
+      "bytes": 38383,
+      "sha256": "29ae6f78b97ca88810f11b8f3acf83d79050c454745f60a2836579a13bab83fb"
+    },
+    "assetCatalog": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/catalog.json",
+      "bytes": 4605769,
+      "sha256": "f99cb35c886a35d04f5da4698ae493984e3bf50ee6fb671cff873f0b108f2517"
+    },
+    "assetPackage": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/package.json",
+      "bytes": 1972539,
+      "sha256": "f7aa20a72df2d4510182db006a8d09eb5274cbe7a6b76df8ff4454bd37b8c555"
+    }
+  },
+  "implementationGuards": [
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/recovery/native_repair.py",
+      "bytes": 32780,
+      "sha256": "dddc83e2387a0370b726b98ba55a9aada5868a1007ebafe23b7b722361bcd333"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/recovery/native_install.py",
+      "bytes": 12261,
+      "sha256": "6b8196319ca7afc44943cb26341caf23cec2f8ed3649c82a8248f62b2a47db27"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/recovery/native_rough.py",
+      "bytes": 51871,
+      "sha256": "31bbdf7ec44ea7f588f7355026e1947d818b5bd661fd2be8919e639a5f1d1444"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/recovery/native_resources.py",
+      "bytes": 2541,
+      "sha256": "c297f5822fc4f143cdd9a683f7f7143e757b52749c1be2216eb30dee5b37d86e"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/crowd_seed.py",
+      "bytes": 32302,
+      "sha256": "01806188ca7391882d9d74c0a2cfaa3ab987fcd722a719c80f940b8f25386956"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/preview.ts",
+      "bytes": 8031,
+      "sha256": "a86d28a5fcb8d5e85ff53c8422eaa5d418c4e9b72f6552c6724a612b6ce50af8"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/native.ts",
+      "bytes": 14352,
+      "sha256": "90df2675b0fec4e9fa853de0c380fa7b2f2c89a35d54cd2f04322f59dd669015"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-native.ts",
+      "bytes": 30471,
+      "sha256": "1c803e7df178f900f4d5cc0cac1728492703e0f8b4d8e898e2009a2a6507d0c8"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-api.ts",
+      "bytes": 11854,
+      "sha256": "5bc737e5638b1c5f482d375faab08c6e4ebfc426b66922f7b6f5154c7c05b33c"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-state.ts",
+      "bytes": 11231,
+      "sha256": "baa6e590a9d29e8351fdff1507fda7f749088a770d14ebdde48aa2f8106fb2fb"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/story-directory.ts",
+      "bytes": 6339,
+      "sha256": "64109a252b1eb86cf810deb386e86d6cb6db72a2bc5bae819cbe1b27532fd031"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js",
+      "bytes": 56951,
+      "sha256": "5f2ae9d24449d6dd7d197af05f6ae70fae9e7ca508f65c4ec8584d7920b0548c"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/player.js",
+      "bytes": 48515,
+      "sha256": "4c16ac032ebd4dc48a504ca249874c31a4c04afe7eae81dd7b88f21761ad2414"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native_scene_interval.js",
+      "bytes": 3207,
+      "sha256": "3132d0b484aa90e66ba3e0d100bd03d832c1be5f74aefa895f8382b806167758"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native_title_view.js",
+      "bytes": 9679,
+      "sha256": "7d1452ca09aef9845f3ad8952b76f27c48a78071c2aca60feebe3004cd26a320"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native_title_entry.js",
+      "bytes": 5716,
+      "sha256": "abb22083fe3d0d87986b227b97adc4edc9399496ea888a5f11e8bfd0dd30d00c"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native-title.json",
+      "bytes": 31702,
+      "sha256": "ac2eee6d1db23fd8ec636d870672110ca570f1d326cd3364073e086d36bc4447"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/transitions.js",
+      "bytes": 13917,
+      "sha256": "0c50d407ea95db5589b2d506fb6e2e468aa2b29c900bdcb7f8e507f00e6baf75"
+    }
+  ],
+  "authorship": {
+    "kind": "source-backed-authored-reconstruction",
+    "originalPayloadRecovered": false,
+    "originalScenarioIdsRecovered": false,
+    "originalCommandPhasesRecovered": false,
+    "nativeIdsOrigin": "authored-by-NativeIdentifiers-at-stage-time",
+    "structureSupportedByIndependentCompleteReview": true,
+    "allThreeCommandPhasesLeftEmpty": true,
+    "excluded": [
+      "Wait",
+      "StopBGM",
+      "CardOut",
+      "Extra CG node",
+      "Following-section handoff",
+      "Map edge",
+      "Reward node"
+    ],
+    "sourceAudioFidelityAccepted": false
+  },
+  "evidence": [
+    {
+      "kind": "reused-independent-complete-source-ending-review",
+      "report": {
+        "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+        "bytes": 9144,
+        "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+      },
+      "completeFrameReview": {
+        "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+        "bytes": 109301,
+        "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+      },
+      "sourceVideo": {
+        "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+        "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+        "bytes": 26102549
+      },
+      "selectedRehashedFrameWitnesses": [
+        {
+          "index": 530,
+          "ptsSeconds": 569.09,
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+          "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+          "bytes": 17687
+        },
+        {
+          "index": 730,
+          "ptsSeconds": 575.756,
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+          "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+          "bytes": 25713
+        },
+        {
+          "index": 777,
+          "ptsSeconds": 577.323,
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+          "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+          "bytes": 21624
+        }
+      ],
+      "originalPayloadRecovered": false,
+      "noNewImageReviewClaimed": true
+    }
+  ],
+  "terminal": {
+    "kind": "finish-without-successor",
+    "nativeRepresentation": "omitted-destination-fields",
+    "rootConfirmed": true,
+    "originalPayloadRecovered": false,
+    "evidence": [
+      {
+        "kind": "own-route-END-and-original-master-end-identity",
+        "source": {
+          "kind": "reused-independent-complete-source-ending-review",
+          "report": {
+            "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+            "bytes": 9144,
+            "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+          },
+          "completeFrameReview": {
+            "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+            "bytes": 109301,
+            "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+          },
+          "sourceVideo": {
+            "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+            "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+            "bytes": 26102549
+          },
+          "selectedRehashedFrameWitnesses": [
+            {
+              "index": 530,
+              "ptsSeconds": 569.09,
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+              "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+              "bytes": 17687
+            },
+            {
+              "index": 730,
+              "ptsSeconds": 575.756,
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+              "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+              "bytes": 25713
+            },
+            {
+              "index": 777,
+              "ptsSeconds": 577.323,
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+              "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+              "bytes": 21624
+            }
+          ],
+          "originalPayloadRecovered": false,
+          "noNewImageReviewClaimed": true
+        },
+        "masterFile": {
+          "path": "/home/rikka/Projects/stella/data/story_directory/device-snapshot/Adv.d",
+          "bytes": 53069,
+          "sha256": "798c94f8aba8ca91ef622fe8eff650a25d597d2d4f9a28e5ccb84da579d8aab2"
+        },
+        "masterScene": {
+          "sectionId": 1004,
+          "native": {
+            "desc": "不和と警告",
+            "id": 10040036,
+            "is_anime": 0,
+            "is_end": 1,
+            "is_root": 0,
+            "name": "不和と警告",
+            "pos_x": 4,
+            "pos_y": 3,
+            "route_name": "本編：ヴィルヘルムVer.",
+            "route_type": 0,
+            "scene_label": "01_004_0036",
+            "scene_num": 36
+          }
+        },
+        "intro102Representation": {
+          "path": "/home/rikka/Projects/stella/data/localization/ja-originals/main/rezelos-2020-intro.json",
+          "bytes": 175244,
+          "sha256": "4aaf15c9a0627b32323bbb1e26dd406e384e21a2614a24132bea6a689a921fb8"
+        },
+        "originalTransition": {
+          "uniq_id": 100010110,
+          "next_scenario_label": "FINISH",
+          "next_scenario_id": 0,
+          "transition_id": 10701
+        },
+        "originalP31P33PayloadRecovered": false
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "rootConfirmed": true,
+      "stableKey": "s10040036-p33-ending-door-out",
+      "sourceText": "",
+      "translation": "",
+      "fields": {
+        "scenario_type": 3,
+        "video": "adv_dive01_out",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "source-backed-structure-with-no-recovered-command-phase",
+          "source": {
+            "kind": "reused-independent-complete-source-ending-review",
+            "report": {
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+              "bytes": 9144,
+              "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+            },
+            "completeFrameReview": {
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+              "bytes": 109301,
+              "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+            },
+            "sourceVideo": {
+              "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+              "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+              "bytes": 26102549
+            },
+            "selectedRehashedFrameWitnesses": [
+              {
+                "index": 530,
+                "ptsSeconds": 569.09,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                "bytes": 17687
+              },
+              {
+                "index": 730,
+                "ptsSeconds": 575.756,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                "bytes": 25713
+              },
+              {
+                "index": 777,
+                "ptsSeconds": 577.323,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                "bytes": 21624
+              }
+            ],
+            "originalPayloadRecovered": false,
+            "noNewImageReviewClaimed": true
+          },
+          "observation": "full original door",
+          "independentAudioIdentityReview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode9-10-audit-20261121-v1/p33-ending-audio-review.md",
+          "originalCommandPhasesRecovered": false
+        }
+      ]
+    },
+    {
+      "rootConfirmed": true,
+      "stableKey": "s10040036-p33-ending-clear",
+      "sourceText": "CLEAR",
+      "translation": "通关",
+      "fields": {
+        "scenario_type": 0,
+        "bg_music": "bgm_btl_adv_win01",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "source-backed-structure-with-no-recovered-command-phase",
+          "source": {
+            "kind": "reused-independent-complete-source-ending-review",
+            "report": {
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+              "bytes": 9144,
+              "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+            },
+            "completeFrameReview": {
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+              "bytes": 109301,
+              "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+            },
+            "sourceVideo": {
+              "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+              "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+              "bytes": 26102549
+            },
+            "selectedRehashedFrameWitnesses": [
+              {
+                "index": 530,
+                "ptsSeconds": 569.09,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                "bytes": 17687
+              },
+              {
+                "index": 730,
+                "ptsSeconds": 575.756,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                "bytes": 25713
+              },
+              {
+                "index": 777,
+                "ptsSeconds": 577.323,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                "bytes": 21624
+              }
+            ],
+            "originalPayloadRecovered": false,
+            "noNewImageReviewClaimed": true
+          },
+          "observation": "independent CLEAR title",
+          "independentAudioIdentityReview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode9-10-audit-20261121-v1/p33-ending-audio-review.md",
+          "originalCommandPhasesRecovered": false
+        }
+      ]
+    }
+  ],
+  "parentCandidate": {
+    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-ending-sequence.candidate.json",
+    "bytes": 21312,
+    "sha256": "aed6ba4c6bdc5ff50949b8609ced0522be4e4eccb79feb543f88e4ce34a1fc24"
+  },
+  "projectedAuthoredNodes": [
+    {
+      "scenarioId": 29,
+      "authoredUniqueId": 1004003600029,
+      "branchId": 291,
+      "branchUniqueId": 1004003610291,
+      "transitionId": 29101,
+      "stableKey": "s10040036-p33-ending-door-out",
+      "nextScenarioId": 30,
+      "nextScenarioLabel": "",
+      "destinationFieldsOmitted": false
+    },
+    {
+      "scenarioId": 30,
+      "authoredUniqueId": 1004003600030,
+      "branchId": 301,
+      "branchUniqueId": 1004003610301,
+      "transitionId": 30101,
+      "stableKey": "s10040036-p33-ending-clear",
+      "nextScenarioId": 0,
+      "nextScenarioLabel": "FINISH",
+      "destinationFieldsOmitted": true
+    }
+  ],
+  "guardedExistingTail": {
+    "native": {
+      "bg_music": "",
+      "bg_picture": "",
+      "character": "",
+      "character_image": "",
+      "motion": "",
+      "msg_character": "フェリス",
+      "msg_text": "嗯，也是理所当然的反应呢。",
+      "position": "",
+      "se": "",
+      "talk_chara": "",
+      "video": "",
+      "voice": "",
+      "scenario_id": 28,
+      "uniq_id": 1004003600028,
+      "is_root": 0,
+      "scenario_type": 2,
+      "battle_stage_id": 0,
+      "command": [
+        "",
+        "",
+        ""
+      ],
+      "branch_list": [
+        {
+          "transition_list": [],
+          "uniq_id": 1004003610281,
+          "branch_id": 281,
+          "type": 1,
+          "quote_voice": "",
+          "gain_points": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "msg_quote": "",
+          "msg_quote_subject": ""
+        }
+      ]
+    },
+    "review": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10040036-p33-at0565",
+      "sourceText": "まあ、当然の反応だよネ",
+      "sourceSpeaker": "フェリス",
+      "translation": "嗯，也是理所当然的反应呢。",
+      "recordings": [
+        {
+          "segmentId": "p33-s10040036",
+          "start": 565.0,
+          "end": 567.0,
+          "sourceAnchorSeconds": 565,
+          "ocrReviewed": true,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/33/coarse-1hz/crops/016980-dialogue.png",
+          "ocrEventId": "merged-0163",
+          "sourceSha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+          "originalOCRText": "まあ、当然の反応だよネ",
+          "ocrConfidence": 0.99517,
+          "ocrReviewReasons": [],
+          "visualReviewer": "root",
+          "rootDecision": {
+            "interval": [
+              565,
+              567
+            ],
+            "canonicalAnchorSeconds": 565,
+            "speaker": "フェリス",
+            "text": "まあ、当然の反応だよネ",
+            "witnessTime": 566
+          },
+          "rootReviewWitnessTime": 566,
+          "recordingId": "bili-capital-33"
+        }
+      ],
+      "unknownFields": [
+        "bg_music",
+        "bg_picture",
+        "character",
+        "character_image",
+        "command",
+        "motion",
+        "native_array_order",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "video",
+        "voice"
+      ],
+      "issues": [
+        {
+          "code": "performance_unrecovered",
+          "severity": "warning",
+          "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
+          "scenarioId": 28,
+          "fields": [
+            "bg_music",
+            "bg_picture",
+            "character",
+            "character_image",
+            "command",
+            "motion",
+            "native_array_order",
+            "original_scenario_id",
+            "position",
+            "se",
+            "talk_chara",
+            "video",
+            "voice"
+          ]
+        },
+        {
+          "code": "missing_transition",
+          "severity": "warning",
+          "message": "CLEAR at575–576s is separately observed. Native ending identity and following chapter connection remain unknown.",
+          "scenarioId": 28,
+          "branchId": 281
+        },
+        {
+          "code": "transition_review_pending",
+          "severity": "warning",
+          "message": "This explicit route still needs evidence review.",
+          "scenarioId": 28,
+          "branchId": 281
+        }
+      ],
+      "branches": [
+        {
+          "branchId": 281,
+          "stableKey": "s10040036-p33-at0565-next",
+          "nativeIdOrigin": "authored",
+          "verification": "pending",
+          "state": "missing",
+          "evidence": [
+            {
+              "segmentId": "p33-s10040036",
+              "start": 565.0,
+              "end": 567.0,
+              "sourceAnchorSeconds": 565,
+              "ocrReviewed": true,
+              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/33/coarse-1hz/crops/016980-dialogue.png",
+              "ocrEventId": "merged-0163",
+              "sourceSha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+              "originalOCRText": "まあ、当然の反応だよネ",
+              "ocrConfidence": 0.99517,
+              "ocrReviewReasons": [],
+              "visualReviewer": "root",
+              "rootDecision": {
+                "interval": [
+                  565,
+                  567
+                ],
+                "canonicalAnchorSeconds": 565,
+                "speaker": "フェリス",
+                "text": "まあ、当然の反応だよネ",
+                "witnessTime": 566
+              },
+              "rootReviewWitnessTime": 566,
+              "recordingId": "bili-capital-33"
+            }
+          ],
+          "gainPointsRecovered": false
+        }
+      ],
+      "repairEvidence": {
+        "translation": {
+          "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10040036.json",
+          "language": "zh-CN",
+          "originalSourcePreserved": true
+        }
+      }
+    }
+  },
+  "savedPlaybackAccepted": false,
+  "wholeSceneOrPartAccepted": false,
+  "playbackPrerequisites": {
+    "realUserContinuationAfterNaturalMovieEnd": true,
+    "separateSourceProposalRequired": true,
+    "automaticAdvanceChanged": false,
+    "sourceOldMusic": "bgm_adv_comical02_cd2_09",
+    "currentSavedOldMusicProviders": [],
+    "oldTrackFadeAndExactTimingRemainUnrestored": true,
+    "needNormalSavedContinuousPlayback": true,
+    "historicalSource7fMissingMovieToEndTitleRetirement": true,
+    "reviewedV2PresentInCurrentLocalSource": true,
+    "retirementSavedPlaybackAccepted": false
+  },
+  "observedHead": "8fd8798a2091138e0ab21b054b3fcc7088ee1b27",
+  "priorMinimumCandidate": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p31-p33-endings-db238432-preflight-v1/p33-ending-sequence.minimal-empty-commands.db238432.json",
+    "bytes": 34473,
+    "sha256": "64147c8819fa6c9fac1a2f7401641009aa7908b43b35828230c06c46f30a382f"
+  },
+  "priorFileGuards": {
+    "nativeScene": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10040036.json",
+      "bytes": 84420,
+      "sha256": "e7766dd571664ddb1471f813590b9e4d5aca14cd2cbe44093f53568764fb5ae6"
+    },
+    "reviewScene": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10040036.json",
+      "bytes": 160586,
+      "sha256": "2d2b1f129975d8dc2b168da154924e26c5cace6e226f91f65f75cb8f1eea38b9"
+    },
+    "manifest": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+      "bytes": 4491320,
+      "sha256": "71371910168159c62602dee9395de393627bd2b752ab5c4a75244d051b05797e"
+    },
+    "ownership": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/native-restoration.json",
+      "bytes": 38355,
+      "sha256": "edcf0228582a0f92619884a59dc4bd3d10bdc8555842fba8ddc1bb8055fc4e23"
+    },
+    "assetCatalog": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/catalog.json",
+      "bytes": 4605769,
+      "sha256": "f99cb35c886a35d04f5da4698ae493984e3bf50ee6fb671cff873f0b108f2517"
+    },
+    "assetPackage": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/package.json",
+      "bytes": 1972539,
+      "sha256": "f7aa20a72df2d4510182db006a8d09eb5274cbe7a6b76df8ff4454bd37b8c555"
+    }
+  },
+  "priorImplementationGuards": [
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/recovery/native_repair.py",
+      "bytes": 32780,
+      "sha256": "dddc83e2387a0370b726b98ba55a9aada5868a1007ebafe23b7b722361bcd333"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/recovery/native_install.py",
+      "bytes": 12261,
+      "sha256": "6b8196319ca7afc44943cb26341caf23cec2f8ed3649c82a8248f62b2a47db27"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/recovery/native_rough.py",
+      "bytes": 51871,
+      "sha256": "31bbdf7ec44ea7f588f7355026e1947d818b5bd661fd2be8919e639a5f1d1444"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/recovery/native_resources.py",
+      "bytes": 2541,
+      "sha256": "c297f5822fc4f143cdd9a683f7f7143e757b52749c1be2216eb30dee5b37d86e"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/story_studio/crowd_seed.py",
+      "bytes": 32302,
+      "sha256": "01806188ca7391882d9d74c0a2cfaa3ab987fcd722a719c80f940b8f25386956"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/preview.ts",
+      "bytes": 8031,
+      "sha256": "a86d28a5fcb8d5e85ff53c8422eaa5d418c4e9b72f6552c6724a612b6ce50af8"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/native.ts",
+      "bytes": 14352,
+      "sha256": "90df2675b0fec4e9fa853de0c380fa7b2f2c89a35d54cd2f04322f59dd669015"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-native.ts",
+      "bytes": 30471,
+      "sha256": "1c803e7df178f900f4d5cc0cac1728492703e0f8b4d8e898e2009a2a6507d0c8"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-api.ts",
+      "bytes": 11854,
+      "sha256": "5bc737e5638b1c5f482d375faab08c6e4ebfc426b66922f7b6f5154c7c05b33c"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/story-directory.ts",
+      "bytes": 6339,
+      "sha256": "64109a252b1eb86cf810deb386e86d6cb6db72a2bc5bae819cbe1b27532fd031"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js",
+      "bytes": 56951,
+      "sha256": "5f2ae9d24449d6dd7d197af05f6ae70fae9e7ca508f65c4ec8584d7920b0548c"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/player.js",
+      "bytes": 48515,
+      "sha256": "4c16ac032ebd4dc48a504ca249874c31a4c04afe7eae81dd7b88f21761ad2414"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native_scene_interval.js",
+      "bytes": 3207,
+      "sha256": "3132d0b484aa90e66ba3e0d100bd03d832c1be5f74aefa895f8382b806167758"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native_title_view.js",
+      "bytes": 9679,
+      "sha256": "7d1452ca09aef9845f3ad8952b76f27c48a78071c2aca60feebe3004cd26a320"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native_title_entry.js",
+      "bytes": 5716,
+      "sha256": "abb22083fe3d0d87986b227b97adc4edc9399496ea888a5f11e8bfd0dd30d00c"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native-title.json",
+      "bytes": 31702,
+      "sha256": "ac2eee6d1db23fd8ec636d870672110ca570f1d326cd3364073e086d36bc4447"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/transitions.js",
+      "bytes": 13917,
+      "sha256": "0c50d407ea95db5589b2d506fb6e2e468aa2b29c900bdcb7f8e507f00e6baf75"
+    }
+  ],
+  "resourceGuards": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/movies/adv_dive01_out.mp4",
+      "bytes": 1199214,
+      "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/preview/movies/adv_dive01_out.mp4",
+      "bytes": 389724,
+      "sha256": "18a2c1ca02f5a143adc2c3bc0429ff4bf558aaa4431dd711ee8498051074ed3f"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/music/bgm_btl_adv_win01.json",
+      "bytes": 282,
+      "sha256": "9f0897e55d19eeed299f957d63a1444a15c1ff369d9381bc194748a72bdfef4a"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/music/bgm_btl_adv_win01.opus",
+      "bytes": 458340,
+      "sha256": "51083af349500ef7ddc9629c8d9f38f15548ccc0e31a100eec932cd90fb862eb"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/preview/music/bgm_btl_adv_win01.opus",
+      "bytes": 217627,
+      "sha256": "2f7b9bb4c8da6017ed6aeca7cdee7c28931d63059b10222e327d4fa9bfb4a512"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/preview/catalog.json",
+      "bytes": 1099290,
+      "sha256": "22cc9b08e6f086556562de1c12fa1594eda2adae2c28940512be74f72d3d4cce"
+    }
+  ],
+  "sourceWorktreeBinding": {
+    "head": "4aeff7c5e7b72a79ea803d97f37c1f08a8218024",
+    "status": "M public/player/player.js\n M public/studio/player.js\n?? scripts/__pycache__/",
+    "reviewedV2MoviePlayersRestored": true,
+    "parentReportedNormalBuild": "v2",
+    "servedMovieRendererAndSavedPlaybackNotAccepted": true,
+    "diagnosticTitleFixEpoch": "4aeff7c5e7b72a79ea803d97f37c1f08a8218024",
+    "sourceStudioState": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-state.ts",
+      "bytes": 11231,
+      "sha256": "baa6e590a9d29e8351fdff1507fda7f749088a770d14ebdde48aa2f8106fb2fb"
+    }
+  },
+  "sourceWitnessGuards": [
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+      "bytes": 9144,
+      "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+      "bytes": 109301,
+      "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+    },
+    {
+      "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+      "bytes": 26102549,
+      "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+      "bytes": 17687,
+      "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+      "bytes": 25713,
+      "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+      "bytes": 21624,
+      "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/story_directory/device-snapshot/Adv.d",
+      "bytes": 53069,
+      "sha256": "798c94f8aba8ca91ef622fe8eff650a25d597d2d4f9a28e5ccb84da579d8aab2"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/localization/ja-originals/main/rezelos-2020-intro.json",
+      "bytes": 175244,
+      "sha256": "4aaf15c9a0627b32323bbb1e26dd406e384e21a2614a24132bea6a689a921fb8"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode9-10-audit-20261121-v1/p33-ending-audio-review.md",
+      "bytes": 3849,
+      "sha256": "804a9e3fa4ecf4c9ae7525aa1e55a279f4ab1efa7a636a5c13117e3c2068e63d"
+    }
+  ],
+  "worktreeBinding": {
+    "gitHead": "8fd8798a2091138e0ab21b054b3fcc7088ee1b27",
+    "pendingPaths": [
+      "manifest.json",
+      "native/scenes/10040043.json",
+      "review/native-restoration.json",
+      "review/scenes/10040043.json",
+      "review/restoration-batches/c1c2b6f75529bfc540e8.json"
+    ],
+    "pendingFiles": [
+      {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+        "bytes": 4490797,
+        "sha256": "7921a61b3ba168194471d8bef2cf92142b6a92586152993d3da871ca8f7fbea6"
+      },
+      {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10040043.json",
+        "bytes": 174596,
+        "sha256": "f0d4e416a7fc3aa90b0c38b4cb6aad8aad111bdcfb5aa7e5edfd40afb2e1d0da"
+      },
+      {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/native-restoration.json",
+        "bytes": 38383,
+        "sha256": "29ae6f78b97ca88810f11b8f3acf83d79050c454745f60a2836579a13bab83fb"
+      },
+      {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10040043.json",
+        "bytes": 587271,
+        "sha256": "26ddcd3fdb1dedbb1958a1a74a9f11fc166a8baca528e022d563176c3e791656"
+      },
+      {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/restoration-batches/c1c2b6f75529bfc540e8.json",
+        "bytes": 688,
+        "sha256": "936ca84dc1ddec63dd68b054e843fe3e46d2cf209e148a00a1b4d22dd13490be"
+      }
+    ],
+    "parentAuthorizedBatch": "c1c2b6f75529bfc540e8",
+    "parentApplyResult": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p31-ending-root-formal-apply-result-v2.json",
+      "bytes": 707,
+      "sha256": "64c51d3b955c9f383f42c03ed9a144393a326b45cfdf8a91d5d8ee209bb8155d"
+    },
+    "bindsActualWorktreeNotGitHeadBlob": true
+  },
+  "expectedNormalStageDelta": {
+    "existingVideoList": [],
+    "expectedVideoList": [
+      {
+        "name": "adv_dive01_out",
+        "command_list": []
+      }
+    ],
+    "requiredVideoIndexAppend": {
+      "name": "adv_dive01_out",
+      "command_list": []
+    },
+    "changedExistingTail": {
+      "scenarioId": 28,
+      "branchId": 281,
+      "fromTransitions": [],
+      "toScenarioId": 29
+    },
+    "appendScenarioIds": [
+      29,
+      30
+    ],
+    "newCommands": [
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "finalTransition": {
+      "next_scenario_label": "FINISH",
+      "next_scenario_id": 0,
+      "destinationFieldsOmitted": true
+    },
+    "chartmapAndBranchWorkMustStayUnchanged": true,
+    "P31PendingMustStayUnchanged": true
+  },
+  "rootDecision": {
+    "reviewer": "/root",
+    "atUtc": "2026-11-21T07:29:12.173441+00:00",
+    "currentDataHead": "8fd8798a2091138e0ab21b054b3fcc7088ee1b27",
+    "precedingP31InstalledBatch": "c1c2b6f75529bfc540e8",
+    "scope": "Append29fullDoor,30CLEAR win01,and28tail→29; terminal omitted-destinationFINISH per independently observed ownEND/masteris_end1 and originalintro102 convention. Required video_list addition{name:adv_dive01_out,command_list:[]} accepted.",
+    "allNewCommandPhasesEmpty": true,
+    "originalNativeIdsPayloadPhasesRecovered": false,
+    "audioTimingFidelityAccepted": false,
+    "runtimeAccepted": false,
+    "parentPacketSha256": "44b00c6158ca43b53453cd939927aa7d3a3d5b66ce8a354b3ebb6e9fbad27a9f",
+    "activeGuardsVerified": 38,
+    "sourceParent": "4aeff7c5e7b72a79ea803d97f37c1f08a8218024",
+    "pendingMoviePlayerChangesRestoredAndBuilt": true
+  }
+}

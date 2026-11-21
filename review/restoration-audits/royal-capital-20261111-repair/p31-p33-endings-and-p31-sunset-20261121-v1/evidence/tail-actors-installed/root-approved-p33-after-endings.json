@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "schema": "stella.reviewed-node-fields.v1",
+  "status": "root-approved-source-identity-after-both-endings-installed",
+  "rootConfirmed": true,
+  "reviewer": "/root/p43_scene16_cg_fx",
+  "observedHead": "8fd8798a2091138e0ab21b054b3fcc7088ee1b27",
+  "sceneId": 10040036,
+  "acceptanceScope": "One character identity/costume scalar only; no motion, face, pose, audio, geometry, phase or ending acceptance.",
+  "currentHash": {
+    "globalFiles": {
+      "manifest.json": "f9d29ec0d0811baba0631b916c1aeeee397f2e5d15b13b6f6b5c47ed1c40caeb",
+      "review/native-restoration.json": "f46cfd163308a99d36b108e4bbd3851e586cdfc99cfdb5858598ec7a8de8d1ea",
+      "assets/catalog.json": "f99cb35c886a35d04f5da4698ae493984e3bf50ee6fb671cff873f0b108f2517",
+      "assets/package.json": "f7aa20a72df2d4510182db006a8d09eb5274cbe7a6b76df8ff4454bd37b8c555"
+    },
+    "targetFiles": {
+      "native/scenes/10040036.json": "0abf5aff663083b7a82cb2c6c96ed1bd85bb2da1109e9feb9f876dd8f6e87541",
+      "review/scenes/10040036.json": "d30b55ddc0a8538ec165d56d944e5debced820292b77f689f99ad079349ea770"
+    }
+  },
+  "changes": [
+    {
+      "sceneId": 10040036,
+      "scenarioId": 28,
+      "stableKey": "s10040036-p33-at0565",
+      "nativeUniqueId": 1004003600028,
+      "studioRecordId": "node:10040036:1004003600028",
+      "sourceText": "まあ、当然の反応だよネ",
+      "sourceSpeaker": "フェリス",
+      "rootConfirmed": true,
+      "expected": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "",
+        "character_image": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "motion": "",
+        "msg_character": "フェリス",
+        "msg_text": "嗯，也是理所当然的反应呢。",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": ""
+      },
+      "fields": {
+        "character": "live2d/AC_ferris_dress01"
+      },
+      "evidence": {
+        "sourceIdentityReview": {
+          "path": "artifacts/stella-script-continuation-20261121/p31-p33-tail-actors-20261121-v1/p33-source-identity-review.json",
+          "sha256": "e91aec922e6544f4014c5e5c7d770c67e8539f2fcb45045d04daf6d8a350bdf5",
+          "bytes": 8598
+        },
+        "characterOnly": true,
+        "motionAccepted": false,
+        "faceAccepted": false,
+        "poseAccepted": false,
+        "phaseAccepted": false
+      }
+    }
+  ],
+  "rowGuards": {
+    "nativeUniqueId": 1004003600028,
+    "stableKey": "s10040036-p33-at0565",
+    "sourceText": "まあ、当然の反応だよネ",
+    "nativeBodyWithoutBranchListSha256": "0b077a2c2e503e7864cbf7b74f11a85f487a8914dc5a83b9bd6399db61520cd2",
+    "branchListAtPreparation": [
+      {
+        "transition_list": [],
+        "uniq_id": 1004003610281,
+        "branch_id": 281,
+        "type": 1,
+        "quote_voice": "",
+        "gain_points": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "msg_quote": "",
+        "msg_quote_subject": ""
+      }
+    ],
+    "branchListAtRootRebind": [
+      {
+        "transition_list": [
+          {
+            "uniq_id": 1004003610281,
+            "transition_id": 28101,
+            "next_scenario_id": 29,
+            "next_scenario_label": ""
+          }
+        ],
+        "uniq_id": 1004003610281,
+        "branch_id": 281,
+        "type": 1,
+        "quote_voice": "",
+        "gain_points": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "msg_quote": "",
+        "msg_quote_subject": ""
+      }
+    ]
+  },
+  "freshRebindPolicy": "After the separate normal ending writer changes the tail edge/appends its movie and CLEAR, root must re-read current snapshot/ownership. Verify stable key, Japanese and exact non-branch row body; preserve the new edge and suffix. Rebind changed whole-file/global hashes only after that inspection. This packet never edits branch_list or ending nodes.",
+  "reboundFrom": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p31-p33-tail-actors-20261121-v1/p33-character.rootfalse.json",
+    "sha256": "d39869475c1d288ddc49ef4364516028c3a17c51dffad693794d6445b932b6d2",
+    "historicalWholeFileGuards": {
+      "globalFiles": {
+        "manifest.json": "71371910168159c62602dee9395de393627bd2b752ab5c4a75244d051b05797e",
+        "review/native-restoration.json": "edcf0228582a0f92619884a59dc4bd3d10bdc8555842fba8ddc1bb8055fc4e23",
+        "assets/catalog.json": "f99cb35c886a35d04f5da4698ae493984e3bf50ee6fb671cff873f0b108f2517",
+        "assets/package.json": "f7aa20a72df2d4510182db006a8d09eb5274cbe7a6b76df8ff4454bd37b8c555"
+      },
+      "targetFiles": {
+        "native/scenes/10040036.json": "e7766dd571664ddb1471f813590b9e4d5aca14cd2cbe44093f53568764fb5ae6",
+        "review/scenes/10040036.json": "2d2b1f129975d8dc2b168da154924e26c5cace6e226f91f65f75cb8f1eea38b9"
+      }
+    }
+  },
+  "rootDecision": {
+    "reviewer": "/root",
+    "atUtc": "2026-11-21T07:37:07.815789+00:00",
+    "scope": "One character identity only,independently full-entry/held/exit and originalatlases reviewed. Native nonbranchbody/stableJP/UID exact;newendingedge/video_list/appendedsuffix preserved.",
+    "installedEndingBatches": [
+      "c1c2b6f75529bfc540e8",
+      "54371ae9846e2322ebf7"
+    ],
+    "sourceResourcePreflightSha256": "b7d5d123b7ba097ed529df6451a054f909c8bddc25e3df37c39d5fd5e5d8cd1c",
+    "motionFacePoseTimingAudioAccepted": false,
+    "runtimeAccepted": false
+  }
+}

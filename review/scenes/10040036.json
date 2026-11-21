@@ -3418,7 +3418,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -3439,7 +3438,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -3451,20 +3449,6 @@
             "video",
             "voice"
           ]
-        },
-        {
-          "code": "missing_transition",
-          "severity": "warning",
-          "message": "CLEAR at575–576s is separately observed. Native ending identity and following chapter connection remain unknown.",
-          "scenarioId": 28,
-          "branchId": 281
-        },
-        {
-          "code": "transition_review_pending",
-          "severity": "warning",
-          "message": "This explicit route still needs evidence review.",
-          "scenarioId": 28,
-          "branchId": 281
         }
       ],
       "branches": [
@@ -3472,35 +3456,51 @@
           "branchId": 281,
           "stableKey": "s10040036-p33-at0565-next",
           "nativeIdOrigin": "authored",
-          "verification": "pending",
-          "state": "missing",
+          "verification": "observed",
+          "state": "confirmed",
           "evidence": [
             {
-              "segmentId": "p33-s10040036",
-              "start": 565.0,
-              "end": 567.0,
-              "sourceAnchorSeconds": 565,
-              "ocrReviewed": true,
-              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/33/coarse-1hz/crops/016980-dialogue.png",
-              "ocrEventId": "merged-0163",
-              "sourceSha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
-              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
-              "originalOCRText": "まあ、当然の反応だよネ",
-              "ocrConfidence": 0.99517,
-              "ocrReviewReasons": [],
-              "visualReviewer": "root",
-              "rootDecision": {
-                "interval": [
-                  565,
-                  567
-                ],
-                "canonicalAnchorSeconds": 565,
-                "speaker": "フェリス",
-                "text": "まあ、当然の反応だよネ",
-                "witnessTime": 566
+              "kind": "reused-independent-complete-source-ending-review",
+              "report": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+                "bytes": 9144,
+                "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
               },
-              "rootReviewWitnessTime": 566,
-              "recordingId": "bili-capital-33"
+              "completeFrameReview": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+                "bytes": 109301,
+                "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+              },
+              "sourceVideo": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+                "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+                "bytes": 26102549
+              },
+              "selectedRehashedFrameWitnesses": [
+                {
+                  "index": 530,
+                  "ptsSeconds": 569.09,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                  "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                  "bytes": 17687
+                },
+                {
+                  "index": 730,
+                  "ptsSeconds": 575.756,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                  "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                  "bytes": 25713
+                },
+                {
+                  "index": 777,
+                  "ptsSeconds": 577.323,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                  "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                  "bytes": 21624
+                }
+              ],
+              "originalPayloadRecovered": false,
+              "noNewImageReviewClaimed": true
             }
           ],
           "gainPointsRecovered": false
@@ -3511,6 +3511,476 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10040036.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p33-tail-actor-root-approved-after-endings-v1.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "sourceIdentityReview": {
+                "path": "artifacts/stella-script-continuation-20261121/p31-p33-tail-actors-20261121-v1/p33-source-identity-review.json",
+                "sha256": "e91aec922e6544f4014c5e5c7d770c67e8539f2fcb45045d04daf6d8a350bdf5",
+                "bytes": 8598
+              },
+              "characterOnly": true,
+              "motionAccepted": false,
+              "faceAccepted": false,
+              "poseAccepted": false,
+              "phaseAccepted": false
+            }
+          }
+        ]
+      }
+    },
+    "29": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10040036-p33-ending-door-out",
+      "sourceText": "",
+      "translation": "",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "kind": "source-backed-structure-with-no-recovered-command-phase",
+          "source": {
+            "kind": "reused-independent-complete-source-ending-review",
+            "report": {
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+              "bytes": 9144,
+              "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+            },
+            "completeFrameReview": {
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+              "bytes": 109301,
+              "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+            },
+            "sourceVideo": {
+              "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+              "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+              "bytes": 26102549
+            },
+            "selectedRehashedFrameWitnesses": [
+              {
+                "index": 530,
+                "ptsSeconds": 569.09,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                "bytes": 17687
+              },
+              {
+                "index": 730,
+                "ptsSeconds": 575.756,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                "bytes": 25713
+              },
+              {
+                "index": 777,
+                "ptsSeconds": 577.323,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                "bytes": 21624
+              }
+            ],
+            "originalPayloadRecovered": false,
+            "noNewImageReviewClaimed": true
+          },
+          "observation": "full original door",
+          "independentAudioIdentityReview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode9-10-audit-20261121-v1/p33-ending-audio-review.md",
+          "originalCommandPhasesRecovered": false
+        }
+      ],
+      "unknownFields": [
+        "bg_music",
+        "bg_picture",
+        "character",
+        "character_image",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 291,
+          "stableKey": "s10040036-p33-ending-door-out-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "observed",
+          "evidence": [
+            {
+              "kind": "reused-independent-complete-source-ending-review",
+              "report": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+                "bytes": 9144,
+                "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+              },
+              "completeFrameReview": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+                "bytes": 109301,
+                "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+              },
+              "sourceVideo": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+                "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+                "bytes": 26102549
+              },
+              "selectedRehashedFrameWitnesses": [
+                {
+                  "index": 530,
+                  "ptsSeconds": 569.09,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                  "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                  "bytes": 17687
+                },
+                {
+                  "index": 730,
+                  "ptsSeconds": 575.756,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                  "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                  "bytes": 25713
+                },
+                {
+                  "index": 777,
+                  "ptsSeconds": 577.323,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                  "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                  "bytes": 21624
+                }
+              ],
+              "originalPayloadRecovered": false,
+              "noNewImageReviewClaimed": true
+            }
+          ]
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p33-ending-root-approved-after-p31-c1c2-v1.json",
+          "evidence": [
+            {
+              "kind": "reused-independent-complete-source-ending-review",
+              "report": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+                "bytes": 9144,
+                "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+              },
+              "completeFrameReview": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+                "bytes": 109301,
+                "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+              },
+              "sourceVideo": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+                "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+                "bytes": 26102549
+              },
+              "selectedRehashedFrameWitnesses": [
+                {
+                  "index": 530,
+                  "ptsSeconds": 569.09,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                  "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                  "bytes": 17687
+                },
+                {
+                  "index": 730,
+                  "ptsSeconds": 575.756,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                  "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                  "bytes": 25713
+                },
+                {
+                  "index": 777,
+                  "ptsSeconds": 577.323,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                  "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                  "bytes": 21624
+                }
+              ],
+              "originalPayloadRecovered": false,
+              "noNewImageReviewClaimed": true
+            }
+          ],
+          "originalScenarioIdRecovered": false
+        }
+      }
+    },
+    "30": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10040036-p33-ending-clear",
+      "sourceText": "CLEAR",
+      "translation": "通关",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "kind": "source-backed-structure-with-no-recovered-command-phase",
+          "source": {
+            "kind": "reused-independent-complete-source-ending-review",
+            "report": {
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+              "bytes": 9144,
+              "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+            },
+            "completeFrameReview": {
+              "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+              "bytes": 109301,
+              "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+            },
+            "sourceVideo": {
+              "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+              "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+              "bytes": 26102549
+            },
+            "selectedRehashedFrameWitnesses": [
+              {
+                "index": 530,
+                "ptsSeconds": 569.09,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                "bytes": 17687
+              },
+              {
+                "index": 730,
+                "ptsSeconds": 575.756,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                "bytes": 25713
+              },
+              {
+                "index": 777,
+                "ptsSeconds": 577.323,
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                "bytes": 21624
+              }
+            ],
+            "originalPayloadRecovered": false,
+            "noNewImageReviewClaimed": true
+          },
+          "observation": "independent CLEAR title",
+          "independentAudioIdentityReview": "data/native_recovery/royal-capital-20261110/repair-20261111/episode9-10-audit-20261121-v1/p33-ending-audio-review.md",
+          "originalCommandPhasesRecovered": false
+        }
+      ],
+      "unknownFields": [
+        "bg_picture",
+        "character",
+        "character_image",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "video",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 301,
+          "stableKey": "s10040036-p33-ending-clear-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "observed",
+          "evidence": [
+            {
+              "kind": "reused-independent-complete-source-ending-review",
+              "report": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+                "bytes": 9144,
+                "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+              },
+              "completeFrameReview": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+                "bytes": 109301,
+                "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+              },
+              "sourceVideo": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+                "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+                "bytes": 26102549
+              },
+              "selectedRehashedFrameWitnesses": [
+                {
+                  "index": 530,
+                  "ptsSeconds": 569.09,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                  "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                  "bytes": 17687
+                },
+                {
+                  "index": 730,
+                  "ptsSeconds": 575.756,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                  "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                  "bytes": 25713
+                },
+                {
+                  "index": 777,
+                  "ptsSeconds": 577.323,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                  "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                  "bytes": 21624
+                }
+              ],
+              "originalPayloadRecovered": false,
+              "noNewImageReviewClaimed": true
+            }
+          ],
+          "nativeTransitionOrigin": "authored",
+          "originalPayloadRecovered": false,
+          "terminal": {
+            "kind": "finish-without-successor",
+            "nativeRepresentation": "omitted-destination-fields",
+            "rootConfirmed": true,
+            "originalPayloadRecovered": false,
+            "evidence": [
+              {
+                "kind": "own-route-END-and-original-master-end-identity",
+                "source": {
+                  "kind": "reused-independent-complete-source-ending-review",
+                  "report": {
+                    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+                    "bytes": 9144,
+                    "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+                  },
+                  "completeFrameReview": {
+                    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+                    "bytes": 109301,
+                    "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+                  },
+                  "sourceVideo": {
+                    "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+                    "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+                    "bytes": 26102549
+                  },
+                  "selectedRehashedFrameWitnesses": [
+                    {
+                      "index": 530,
+                      "ptsSeconds": 569.09,
+                      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                      "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                      "bytes": 17687
+                    },
+                    {
+                      "index": 730,
+                      "ptsSeconds": 575.756,
+                      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                      "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                      "bytes": 25713
+                    },
+                    {
+                      "index": 777,
+                      "ptsSeconds": 577.323,
+                      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                      "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                      "bytes": 21624
+                    }
+                  ],
+                  "originalPayloadRecovered": false,
+                  "noNewImageReviewClaimed": true
+                },
+                "masterFile": {
+                  "path": "/home/rikka/Projects/stella/data/story_directory/device-snapshot/Adv.d",
+                  "bytes": 53069,
+                  "sha256": "798c94f8aba8ca91ef622fe8eff650a25d597d2d4f9a28e5ccb84da579d8aab2"
+                },
+                "masterScene": {
+                  "sectionId": 1004,
+                  "native": {
+                    "desc": "不和と警告",
+                    "id": 10040036,
+                    "is_anime": 0,
+                    "is_end": 1,
+                    "is_root": 0,
+                    "name": "不和と警告",
+                    "pos_x": 4,
+                    "pos_y": 3,
+                    "route_name": "本編：ヴィルヘルムVer.",
+                    "route_type": 0,
+                    "scene_label": "01_004_0036",
+                    "scene_num": 36
+                  }
+                },
+                "intro102Representation": {
+                  "path": "/home/rikka/Projects/stella/data/localization/ja-originals/main/rezelos-2020-intro.json",
+                  "bytes": 175244,
+                  "sha256": "4aaf15c9a0627b32323bbb1e26dd406e384e21a2614a24132bea6a689a921fb8"
+                },
+                "originalTransition": {
+                  "uniq_id": 100010110,
+                  "next_scenario_label": "FINISH",
+                  "next_scenario_id": 0,
+                  "transition_id": 10701
+                },
+                "originalP31P33PayloadRecovered": false
+              }
+            ]
+          }
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p33-ending-root-approved-after-p31-c1c2-v1.json",
+          "evidence": [
+            {
+              "kind": "reused-independent-complete-source-ending-review",
+              "report": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+                "bytes": 9144,
+                "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+              },
+              "completeFrameReview": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+                "bytes": 109301,
+                "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+              },
+              "sourceVideo": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+                "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+                "bytes": 26102549
+              },
+              "selectedRehashedFrameWitnesses": [
+                {
+                  "index": 530,
+                  "ptsSeconds": 569.09,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                  "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                  "bytes": 17687
+                },
+                {
+                  "index": 730,
+                  "ptsSeconds": 575.756,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                  "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                  "bytes": 25713
+                },
+                {
+                  "index": 777,
+                  "ptsSeconds": 577.323,
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                  "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                  "bytes": 21624
+                }
+              ],
+              "originalPayloadRecovered": false,
+              "noNewImageReviewClaimed": true
+            }
+          ],
+          "originalScenarioIdRecovered": false
         }
       }
     }
@@ -4156,7 +4626,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -4168,20 +4637,6 @@
         "video",
         "voice"
       ]
-    },
-    {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "CLEAR at575–576s is separately observed. Native ending identity and following chapter connection remain unknown.",
-      "scenarioId": 28,
-      "branchId": 281
-    },
-    {
-      "code": "transition_review_pending",
-      "severity": "warning",
-      "message": "This explicit route still needs evidence review.",
-      "scenarioId": 28,
-      "branchId": 281
     }
   ],
   "unresolvedBranches": [
@@ -4196,12 +4651,6 @@
       "branchId": 222,
       "stableKey": "s10040036-p33-at0514-left",
       "reason": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination."
-    },
-    {
-      "scenarioId": 28,
-      "branchId": 281,
-      "stableKey": "s10040036-p33-at0565-next",
-      "reason": "CLEAR at575–576s is separately observed. Native ending identity and following chapter connection remain unknown."
     }
   ],
   "restorationStatus": "rough",
@@ -4347,6 +4796,16 @@
       "stableKey": "s10040036-p33-at0565",
       "scenarioId": 28,
       "order": 5750.0
+    },
+    {
+      "stableKey": "s10040036-p33-ending-door-out",
+      "scenarioId": 29,
+      "order": 5751.0
+    },
+    {
+      "stableKey": "s10040036-p33-ending-clear",
+      "scenarioId": 30,
+      "order": 5752.0
     }
   ],
   "sceneSegments": [
@@ -4601,5 +5060,101 @@
       "recordingId": "bili-capital-33"
     }
   ],
-  "transitionEvidence": []
+  "transitionEvidence": [],
+  "repairEvidence": {
+    "terminalEndings": [
+      {
+        "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p33-ending-root-approved-after-p31-c1c2-v1.json",
+        "terminal": {
+          "kind": "finish-without-successor",
+          "nativeRepresentation": "omitted-destination-fields",
+          "rootConfirmed": true,
+          "originalPayloadRecovered": false,
+          "evidence": [
+            {
+              "kind": "own-route-END-and-original-master-end-identity",
+              "source": {
+                "kind": "reused-independent-complete-source-ending-review",
+                "report": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/REPORT.md",
+                  "bytes": 9144,
+                  "sha256": "e5a66bfe440ff03b1e645137f0285cf679d21ff3fb26ef7bda5e3fea18c242f5"
+                },
+                "completeFrameReview": {
+                  "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/ending-publication-20261121-v1/p33-complete-frame-review.json",
+                  "bytes": 109301,
+                  "sha256": "7ad550e4ef65cba077e0905562275aa0097d5b91c47fbc9c3958a2ecbbd066d4"
+                },
+                "sourceVideo": {
+                  "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/33 9本篇「结束与开始」Ver威尔海姆.mp4",
+                  "sha256": "77a8fbdd161419929296f8f34d3fe9e5e0a4fcf5f8ecfa8ac37b6c6ce488df23",
+                  "bytes": 26102549
+                },
+                "selectedRehashedFrameWitnesses": [
+                  {
+                    "index": 530,
+                    "ptsSeconds": 569.09,
+                    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0530.jpg",
+                    "sha256": "d966f5d07241846e3ceb17182cffcd38b15e5944d6f1819ba9b5a7a822bf1d06",
+                    "bytes": 17687
+                  },
+                  {
+                    "index": 730,
+                    "ptsSeconds": 575.756,
+                    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0730.jpg",
+                    "sha256": "1996786c1f1d2eb174d96b70e9e0cc906a20e65161a2a2b65145109747386e38",
+                    "bytes": 25713
+                  },
+                  {
+                    "index": 777,
+                    "ptsSeconds": 577.323,
+                    "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-route-evidence-20261121-v1/source33/frames/0777.jpg",
+                    "sha256": "3bf71e4ffcb6e601be8984c82977101ed76e7512bcb34d8245c7138ee8584d40",
+                    "bytes": 21624
+                  }
+                ],
+                "originalPayloadRecovered": false,
+                "noNewImageReviewClaimed": true
+              },
+              "masterFile": {
+                "path": "/home/rikka/Projects/stella/data/story_directory/device-snapshot/Adv.d",
+                "bytes": 53069,
+                "sha256": "798c94f8aba8ca91ef622fe8eff650a25d597d2d4f9a28e5ccb84da579d8aab2"
+              },
+              "masterScene": {
+                "sectionId": 1004,
+                "native": {
+                  "desc": "不和と警告",
+                  "id": 10040036,
+                  "is_anime": 0,
+                  "is_end": 1,
+                  "is_root": 0,
+                  "name": "不和と警告",
+                  "pos_x": 4,
+                  "pos_y": 3,
+                  "route_name": "本編：ヴィルヘルムVer.",
+                  "route_type": 0,
+                  "scene_label": "01_004_0036",
+                  "scene_num": 36
+                }
+              },
+              "intro102Representation": {
+                "path": "/home/rikka/Projects/stella/data/localization/ja-originals/main/rezelos-2020-intro.json",
+                "bytes": 175244,
+                "sha256": "4aaf15c9a0627b32323bbb1e26dd406e384e21a2614a24132bea6a689a921fb8"
+              },
+              "originalTransition": {
+                "uniq_id": 100010110,
+                "next_scenario_label": "FINISH",
+                "next_scenario_id": 0,
+                "transition_id": 10701
+              },
+              "originalP31P33PayloadRecovered": false
+            }
+          ]
+        },
+        "originalPayloadRecovered": false
+      }
+    ]
+  }
 }

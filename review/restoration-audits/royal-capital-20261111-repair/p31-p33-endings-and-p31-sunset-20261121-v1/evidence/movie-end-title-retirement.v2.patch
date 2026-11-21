@@ -1,0 +1,52 @@
+--- a/public/player/player.js
++++ b/public/player/player.js
+@@ -402,9 +402,21 @@
+     // guards with their existing owners instead of manufacturing another Out.
+     const sceneTitleRetirement=edge?.flow_action==='scene'&&edge.kind==='next'&&edge.source===previous?.id&&
+       node.kind==='title'&&node.title_mode==='scene'&&previous?.scene_id!==node.scene_id;
+-    const changing=from!==null&&(to!==null||sceneTitleRetirement)&&!this.skipInOut(previous,node)&&this.transitions.cardState==='in';
++    // Native MovieProc reaches StartUserOperation/CardWaitUserDrop before
++    // returning its selected edge. This renderer retires at target entry,
++    // after the existing real user continuation; do not change that boundary.
++    // An end TITLE intentionally has no cardContent, but a normal same-scene
++    // movie still owns its outgoing foreground. Admit only that sequential
++    // pair here. The shared skip/cardState guards below preserve the existing
++    // renderer's stay/hidden/explicit-Out limits; choice-owned drops keep
++    // their existing path. Preparing title assets above does not clear the
++    // movie/card; the retirement must finish before title() clears its display.
++    const movieEndTitleRetirement=edge?.flow_action==='continue'&&edge.kind==='next'&&
++      edge.source===previous?.id&&previous?.scene_id===node.scene_id&&
++      previous?.kind==='movie'&&node.kind==='title'&&node.title_mode==='end';
++    const changing=from!==null&&(to!==null||sceneTitleRetirement||movieEndTitleRetirement)&&!this.skipInOut(previous,node)&&this.transitions.cardState==='in';
+     console.info('STORY_CARD_CHANGE',JSON.stringify({source:previous?.id||'',target:id,from,to,
+-      cardState:this.transitions.cardState,animate:changing,sceneTitleRetirement,chartInterval:interval.show}));
++      cardState:this.transitions.cardState,animate:changing,sceneTitleRetirement,movieEndTitleRetirement,chartInterval:interval.show}));
+     if(changing){
+       // Automatic foreground replacement and scene changes use the existing compositor;
+       // it is not an authored CardOut command and adds no node/actor flags.
+--- a/public/studio/player.js
++++ b/public/studio/player.js
+@@ -345,9 +345,21 @@
+     // guards with their existing owners instead of manufacturing another Out.
+     const sceneTitleRetirement=edge?.flow_action==='scene'&&edge.kind==='next'&&edge.source===previous?.id&&
+       node.kind==='title'&&node.title_mode==='scene'&&previous?.scene_id!==node.scene_id;
+-    const changing=from!==null&&(to!==null||sceneTitleRetirement)&&!this.skipInOut(previous,node)&&this.transitions.cardState==='in';
++    // Native MovieProc reaches StartUserOperation/CardWaitUserDrop before
++    // returning its selected edge. This renderer retires at target entry,
++    // after the existing real user continuation; do not change that boundary.
++    // An end TITLE intentionally has no cardContent, but a normal same-scene
++    // movie still owns its outgoing foreground. Admit only that sequential
++    // pair here. The shared skip/cardState guards below preserve the existing
++    // renderer's stay/hidden/explicit-Out limits; choice-owned drops keep
++    // their existing path. Finish retirement before title() clears the
++    // outgoing movie display; title assets never own card transport.
++    const movieEndTitleRetirement=edge?.flow_action==='continue'&&edge.kind==='next'&&
++      edge.source===previous?.id&&previous?.scene_id===node.scene_id&&
++      previous?.kind==='movie'&&node.kind==='title'&&node.title_mode==='end';
++    const changing=from!==null&&(to!==null||sceneTitleRetirement||movieEndTitleRetirement)&&!this.skipInOut(previous,node)&&this.transitions.cardState==='in';
+     console.info('STORY_CARD_CHANGE',JSON.stringify({source:previous?.id||'',target:id,from,to,
+-      cardState:this.transitions.cardState,animate:changing,sceneTitleRetirement,chartInterval:interval.show}));
++      cardState:this.transitions.cardState,animate:changing,sceneTitleRetirement,movieEndTitleRetirement,chartInterval:interval.show}));
+     if(changing){
+       // Automatic foreground replacement and scene changes use the existing compositor;
+       // it is not an authored CardOut command and adds no node/actor flags.

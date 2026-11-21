@@ -1,0 +1,654 @@
+{"path": "/home/rikka/.local/state/stella-migration-20261112/pre-tar-update/files/logs/adv.html", "bytes": 690087, "sha256": "79e45d5f771ca407cfd80b34ac7ef29bcc4350b658ea17b4d984cdb54e941d6e"}
+
+### /home/rikka/.local/state/stella-migration-20261112/pre-tar-update/files/logs/adv.html:2618-2636
+ 2618:     ADVFuncs.prototype.CardDrop = function () {
+ 2619:         return __awaiter(this, void 0, void 0, function () {
+ 2620:             return __generator(this, function (_a) {
+ 2621:                 switch (_a.label) {
+ 2622:                     case 0:
+ 2623:                         if (!(this.cardState === CardState.In || this.cardState === CardState.Stay)) return [3 /*break*/, 2];
+ 2624:                         return [4 /*yield*/, this.app.turn({
+ 2625:                                 to: "ADVPlayer",
+ 2626:                                 cmd: "CardWaitUserDrop",
+ 2627:                             })];
+ 2628:                     case 1:
+ 2629:                         _a.sent();
+ 2630:                         this.cardState = CardState.Out;
+ 2631:                         _a.label = 2;
+ 2632:                     case 2: return [2 /*return*/];
+ 2633:                 }
+ 2634:             });
+ 2635:         });
+ 2636:     };
+
+### /home/rikka/.local/state/stella-migration-20261112/pre-tar-update/files/logs/adv.html:7042-7087
+ 7042: function GetNext(td) {
+ 7043:     return __awaiter(this, void 0, void 0, function () {
+ 7044:         var _a, currentSectionID;
+ 7045:         return __generator(this, function (_b) {
+ 7046:             switch (_b.label) {
+ 7047:                 case 0: return [4 /*yield*/, funcs.GetNextTransition()];
+ 7048:                 case 1:
+ 7049:                     // トランジションデータを取得
+ 7050:                     td = _b.sent();
+ 7051:                     if (!(td.next_scenario_label === "FINISH")) return [3 /*break*/, 11];
+ 7052:                     _a = playmode;
+ 7053:                     switch (_a) {
+ 7054:                         case 0: return [3 /*break*/, 2];
+ 7055:                         case 1: return [3 /*break*/, 9];
+ 7056:                     }
+ 7057:                     return [3 /*break*/, 10];
+ 7058:                 case 2:
+ 7059:                     currentSectionID = Math.floor(currentSceneID / 10000);
+ 7060:                     if (!(td.next_section_id !== currentSectionID)) return [3 /*break*/, 7];
+ 7061:                     return [4 /*yield*/, funcs.IsTutorialSection0()];
+ 7062:                 case 3:
+ 7063:                     if (!_b.sent()) return [3 /*break*/, 6];
+ 7064:                     // チュートリアル0章：1話へ
+ 7065:                     // Torosteインスタンス切らずにそのまま遷移させる
+ 7066:                     return [4 /*yield*/, FinishScenario(true)];
+ 7067:                 case 4:
+ 7068:                     // チュートリアル0章：1話へ
+ 7069:                     // Torosteインスタンス切らずにそのまま遷移させる
+ 7070:                     _b.sent();
+ 7071:                     return [4 /*yield*/, RequestScenarioDataSection1()];
+ 7072:                 case 5:
+ 7073:                     _b.sent();
+ 7074:                     return [2 /*return*/, scenarioFuncs.GetScenario(0)];
+ 7075:                 case 6:
+ 7076:                     FinishScenario();
+ 7077:                     return [3 /*break*/, 10];
+ 7078:                 case 7: 
+ 7079:                 // 次シーン
+ 7080:                 return [4 /*yield*/, RequestScenarioData(td.next_scene_id)]; // 新通信
+ 7081:                 case 8:
+ 7082:                     // 次シーン
+ 7083:                     _b.sent(); // 新通信
+ 7084:                     return [2 /*return*/, scenarioFuncs.GetScenario(td.next_scenario_id)];
+ 7085:                 case 9:
+ 7086:                     {
+ 7087:                         // メタシナリオ
+
+### /home/rikka/.local/state/stella-migration-20261112/pre-tar-update/files/logs/adv.html:7134-7158
+ 7134: function TitleProc() {
+ 7135:     return __awaiter(this, void 0, void 0, function () {
+ 7136:         return __generator(this, function (_a) {
+ 7137:             switch (_a.label) {
+ 7138:                 case 0: return [4 /*yield*/, funcs.ChangeSceneADVInterval()]; // チャートマップ
+ 7139:                 case 1:
+ 7140:                     _a.sent(); // チャートマップ
+ 7141:                     return [4 /*yield*/, cmdSequence.Exec(currentScenario.command[1])];
+ 7142:                 case 2:
+ 7143:                     _a.sent();
+ 7144:                     return [4 /*yield*/, funcs.SetTitle()]; // タイトル表示
+ 7145:                 case 3:
+ 7146:                     _a.sent(); // タイトル表示
+ 7147:                     return [4 /*yield*/, cmdSequence.Exec(currentScenario.command[2])];
+ 7148:                 case 4:
+ 7149:                     _a.sent();
+ 7150:                     return [2 /*return*/, currentScenario.branch_list[0].transition_list[0]];
+ 7151:             }
+ 7152:         });
+ 7153:     });
+ 7154: }
+ 7155: // =================================================================
+ 7156: /**
+ 7157:  *  ムービー再生
+ 7158:  */
+
+### /home/rikka/.local/state/stella-migration-20261112/pre-tar-update/files/logs/adv.html:7159-7216
+ 7159: function MovieProc() {
+ 7160:     return __awaiter(this, void 0, void 0, function () {
+ 7161:         var videoPromise, selectbranch;
+ 7162:         return __generator(this, function (_a) {
+ 7163:             switch (_a.label) {
+ 7164:                 case 0: 
+ 7165:                 // 背景
+ 7166:                 return [4 /*yield*/, funcs.SetBG(currentScenario)
+ 7167:                     // カードIN+Video再生
+ 7168:                 ];
+ 7169:                 case 1:
+ 7170:                     // 背景
+ 7171:                     _a.sent();
+ 7172:                     // カードIN+Video再生
+ 7173:                     return [4 /*yield*/, funcs.CardIn()]; // カードIN
+ 7174:                 case 2:
+ 7175:                     // カードIN+Video再生
+ 7176:                     _a.sent(); // カードIN
+ 7177:                     videoPromise = funcs.PlayMovie(currentScenario.video) // ムービー再生
+ 7178:                     ;
+ 7179:                     return [4 /*yield*/, videoPromise];
+ 7180:                 case 3:
+ 7181:                     _a.sent();
+ 7182:                     return [4 /*yield*/, cmdSequence.Exec(currentScenario.command[1])]; // カードIN後演出
+ 7183:                 case 4:
+ 7184:                     _a.sent(); // カードIN後演出
+ 7185:                     return [4 /*yield*/, funcs.PanelSequence(currentScenario)];
+ 7186:                 case 5:
+ 7187:                     _a.sent(); // 文章パネル処理
+ 7188:                     return [4 /*yield*/, cmdSequence.Exec(currentScenario.command[2])]; // 文章パネル処理後演出
+ 7189:                 case 6:
+ 7190:                     _a.sent(); // 文章パネル処理後演出
+ 7191:                     return [4 /*yield*/, funcs.SelectSequence(currentScenario)];
+ 7192:                 case 7:
+ 7193:                     select = _a.sent(); // 選択肢処理
+ 7194:                     isChoice = select !== -1;
+ 7195:                     if (!(!isChoice && !funcs.isCardOut)) return [3 /*break*/, 9];
+ 7196:                     // 選択肢の無い時はユーザードロップ待ち
+ 7197:                     return [4 /*yield*/, funcs.CardDrop()];
+ 7198:                 case 8:
+ 7199:                     // 選択肢の無い時はユーザードロップ待ち
+ 7200:                     _a.sent();
+ 7201:                     // 選択の無いときはそのまま次へ
+ 7202:                     select = 0;
+ 7203:                     _a.label = 9;
+ 7204:                 case 9:
+ 7205:                     funcs.isCardOut = false;
+ 7206:                     selectbranch = ScenarioFuncs_1.default.GetSelectBranch(currentScenario, select);
+ 7207:                     return [2 /*return*/, selectbranch.transition_list[0]];
+ 7208:             }
+ 7209:         });
+ 7210:     });
+ 7211: }
+ 7212: // =================================================================
+ 7213: /**
+ 7214:  * カード処理
+ 7215:  */
+ 7216: function CardProc() {
+{"path": "/home/rikka/Projects/stella/story_studio/recovery/native_repair.py", "bytes": 32780, "sha256": "dddc83e2387a0370b726b98ba55a9aada5868a1007ebafe23b7b722361bcd333"}
+
+### /home/rikka/Projects/stella/story_studio/recovery/native_repair.py:241-291
+  241:     def ending_sequence(self, path: Path, directory_path: Path):
+  242:         """Append a directly reviewed ending while preserving installed IDs.
+  243: 
+  244:         Missing VIDEO/TITLE rows are structural gaps, not permission to rebuild
+  245:         the chapter from an old OCR plan. Allocate only a suffix after the last
+  246:         installed row, connect one explicitly guarded empty continuation, and
+  247:         retain the source witness and reconstruction limits on every new row.
+  248:         Cross-section FINISH targets must additionally match the original
+  249:         directory's explicit successor and root, rather than video numbering.
+  250:         """
+  251:         packet = self.read_packet(path)
+  252:         require(packet.get("rootConfirmed") is True and bool(packet.get("evidence")),
+  253:                 "Ending sequence needs direct root-reviewed evidence")
+  254:         scene = packet["sceneId"]
+  255:         previous, previous_review = self.snapshot.node(scene, packet["afterScenarioId"], packet["afterStableKey"])
+  256:         document, review = self.snapshot.documents[scene], self.snapshot.reviews[scene]
+  257:         require(previous is document["scenario_list"][-1], "Ending must extend the installed array suffix")
+  258:         branch = next((row for row in previous["branch_list"] if row["branch_id"] == packet["branchId"]), None)
+  259:         require(branch is not None and branch["transition_list"] == packet["expectedTransitions"] == [],
+  260:                 "Ending cannot replace an existing executable continuation")
+  261:         directory_raw = directory_path.read_bytes()
+  262:         directory = OfficialDirectory(json.loads(directory_raw), 1)
+  263:         finish, terminal = packet.get("finish"), packet.get("terminal")
+  264:         require((finish is not None) != (terminal is not None),
+  265:                 "Ending needs exactly one legacy finish or reviewed terminal object")
+  266:         section = self.entries[scene]["sectionId"]
+  267:         if terminal is not None:
+  268:             # This v2 option owns an authored no-successor FINISH decision.
+  269:             # The original intro102 provides its omitted-field representation,
+  270:             # while the chapter's own evidence must establish completion. It
+  271:             # cannot inherit a guessed next section from a matching route name.
+  272:             require(packet.get("version") == 2 and isinstance(terminal, dict) and
+  273:                     terminal.get("kind") == "finish-without-successor" and
+  274:                     terminal.get("nativeRepresentation") == "omitted-destination-fields" and
+  275:                     terminal.get("rootConfirmed") is True and bool(terminal.get("evidence")) and
+  276:                     terminal.get("originalPayloadRecovered") is False,
+  277:                     "Terminal ending needs explicit reviewed v2 authored-completion evidence")
+  278:         else:
+  279:             require(isinstance(finish, dict), "Ending finish must be an object")
+  280:             require(finish["sectionId"] in directory.sections[section]["native"]["next_section_id"],
+  281:                     "Ending successor is not an explicit original-master edge")
+  282:             destination = directory.scene(finish["sceneId"])
+  283:             require(destination["sectionId"] == finish["sectionId"] and destination["native"]["is_root"] == 1,
+  284:                     "Ending target is not the explicit original-master scene root")
+  285:         definitions = packet["nodes"]
+  286:         require(bool(definitions) and definitions[-1]["fields"].get("scenario_type") == 0,
+  287:                 "Ending must terminate in a reviewed native TITLE")
+  288:         identifiers = NativeIdentifiers(scene)
+  289:         maximum = max(row["scenario_id"] for row in document["scenario_list"])
+  290:         require(scene not in self.appended_rows, "Only one ending suffix per scene is allowed in a repair batch")
+  291:         new_rows, new_reviews = [], []
+
+### /home/rikka/Projects/stella/story_studio/recovery/native_repair.py:320-364
+  320:             else:
+  321:                 bid, uid, _ = identifiers.branch(source["scenario_id"], 1)
+  322:                 link = dict(branch_id=bid, uniq_id=uid, type=1, msg_quote="", msg_quote_subject="",
+  323:                             quote_voice="", gain_points=[0, 0, 0, 0], transition_list=[])
+  324:                 source["branch_list"].append(link)
+  325:             transition = dict(uniq_id=link["uniq_id"], transition_id=link["branch_id"] * 100 + 1,
+  326:                               next_scenario_id=target["scenario_id"] if target else 0,
+  327:                               next_scenario_label="" if target else "FINISH")
+  328:             if target is None and finish is not None:
+  329:                 transition.update(next_section_id=finish["sectionId"], next_scene_id=finish["sceneId"])
+  330:             link["transition_list"] = [transition]
+  331:             branch_review = next((item for item in sidecar["branches"] if item["branchId"] == link["branch_id"]), None)
+  332:             if branch_review is None:
+  333:                 branch_review = dict(branchId=link["branch_id"], stableKey=sidecar["stableKey"] + "-next",
+  334:                                      nativeIdOrigin="authored", gainPointsRecovered=False)
+  335:                 sidecar["branches"].append(branch_review)
+  336:             terminal_link = target is None and terminal is not None
+  337:             branch_review.update(state="confirmed", verification="observed" if target or terminal_link else "original",
+  338:                                  evidence=deepcopy(packet["evidence"]))
+  339:             if terminal_link:
+  340:                 branch_review.update(nativeIdOrigin="authored", nativeTransitionOrigin="authored",
+  341:                     originalPayloadRecovered=False, terminal=deepcopy(terminal))
+  342:             sidecar["issues"] = [item for item in sidecar.get("issues", [])
+  343:                                  if not (item.get("code") == "missing_transition" and item.get("branchId") == link["branch_id"])]
+  344:         connect(previous, previous_review, new_rows[0])
+  345:         order = max(item["order"] for item in review["authoredArrayOrder"])
+  346:         for offset, (row, sidecar) in enumerate(zip(new_rows, new_reviews), 1):
+  347:             connect(row, sidecar, new_rows[offset] if offset < len(new_rows) else None)
+  348:             document["scenario_list"].append(row)
+  349:             review["scenarios"][str(row["scenario_id"])] = sidecar
+  350:             review["authoredArrayOrder"].append(dict(stableKey=sidecar["stableKey"],
+  351:                                                      scenarioId=row["scenario_id"], order=order + offset))
+  352:             if row["video"] and not any(item.get("name") == row["video"] for item in document["video_list"]):
+  353:                 document["video_list"].append(dict(name=row["video"], command_list=[]))
+  354:         self.appended_rows[scene] = [row["uniq_id"] for row in new_rows]
+  355:         self.entries[scene]["nodeCount"] = len(document["scenario_list"])
+  356:         self.counts["addedEndingNodes"] += len(new_rows)
+  357:         if terminal is not None:
+  358:             # A completion action names no successor and establishes no map
+  359:             # line. Retain its review evidence only in this scene's sidecar;
+  360:             # do not touch other owned documents or invent a section handoff.
+  361:             review.setdefault("repairEvidence", {}).setdefault("terminalEndings", []).append(dict(
+  362:                 packet=str(path), terminal=deepcopy(terminal), originalPayloadRecovered=False))
+  363:             return
+  364:         # The master chapter map is embedded in every owned native document.
+{"path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/native.ts", "bytes": 14352, "sha256": "90df2675b0fec4e9fa853de0c380fa7b2f2c89a35d54cd2f04322f59dd669015"}
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/native.ts:22-56
+   22: const ownObject = (value: unknown): value is Record<string, unknown> => value !== null && typeof value === "object" && !Array.isArray(value);
+   23: export type FinishDestination =
+   24:   | {kind: "terminal"}
+   25:   | {kind: "target"; sectionId: number; sceneId: number}
+   26:   | {kind: "invalid"};
+   27: 
+   28: /** Classify original FINISH destinations without manufacturing a successor.
+   29:  * The preserved intro TITLE 41 uses the captured -1/-1 pair; its final card
+   30:  * 102 omits both fields. ADV GetNext (logs/adv.html:7051-7084) completes normal
+   31:  * ADV when FINISH does not name the current section, whereas a same-section
+   32:  * positive destination loads that scene. This recognizes those native forms;
+   33:  * it neither infers completion from title text/master is_end nor rewrites the
+   34:  * source object. Partial, mixed and malformed destinations remain invalid.
+   35:  */
+   36: export function classifyFinishDestination(value: unknown): FinishDestination {
+   37:   if (!ownObject(value) || value.next_scenario_label !== "FINISH" ||
+   38:       typeof value.next_scenario_id !== "number" ||
+   39:       !Number.isSafeInteger(value.next_scenario_id) || value.next_scenario_id < 0)
+   40:     return {kind: "invalid"};
+   41:   const absent = !Object.hasOwn(value, "next_section_id") && !Object.hasOwn(value, "next_scene_id");
+   42:   const sentinel = value.next_section_id === -1 && value.next_scene_id === -1;
+   43:   if (value.next_scenario_id === 0 && (absent || sentinel)) return {kind: "terminal"};
+   44:   const sectionId = value.next_section_id, sceneId = value.next_scene_id;
+   45:   if (typeof sectionId === "number" && Number.isSafeInteger(sectionId) && sectionId > 0 &&
+   46:       typeof sceneId === "number" && Number.isSafeInteger(sceneId) && sceneId > 0)
+   47:     return {kind: "target", sectionId, sceneId};
+   48:   return {kind: "invalid"};
+   49: }
+   50: 
+   51: export function indexSceneSections(manifest: Pick<LibraryManifest,"chapters">): Map<number,number> {
+   52:   const sections=new Map<number,number>();
+   53:   for(const chapter of manifest.chapters)for(const section of chapter.sections)for(const id of section.sceneIds)
+   54:     sections.set(id,section.id);
+   55:   return sections;
+   56: }
+{"path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/preview.ts", "bytes": 8031, "sha256": "a86d28a5fcb8d5e85ff53c8422eaa5d418c4e9b72f6552c6724a612b6ce50af8"}
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/preview.ts:40-85
+   40:       // actor (ARM64 0x1ded484–0x1ded488, metadata literal 117).
+   41:       const suppressLipMotion=row.talk_chara==="0";
+   42:       const unsupported=[row.position&&"position",row.talk_chara&&!suppressLipMotion&&"talk_chara"].filter(Boolean);
+   43:       return {
+   44:         id:nodeId(entry.id,row.scenario_id),scenario_id:row.scenario_id,scene_id:sceneId(entry.id),kind,
+   45:         title_mode:kind==="title"?(row.branch_list.some(branch=>branch.transition_list.some(tr=>tr.next_scenario_label==="FINISH"))?"end":"scene"):"",
+   46:         speaker:display(row.msg_character),text:display(review.scenarios[String(row.scenario_id)]?.sourceText||row.msg_text),translation:display(row.msg_text),
+   47:         model:row.character.replace(/^live2d\/AC_/,""),body,face,extra_motions:extra_motions.filter(Boolean),bank,cue,
+   48:         bg_picture:row.bg_picture,bg_music:row.bg_music,character_image:row.character_image,movie_resource:movieKey,
+   49:         actors:[],voice_delay_ms:0,fx_emission_times:[],command:row.command,phases:row.command.map(block=>compileCommands(block,assets.visual_effects)),
+   50:         music:compileMusic(row.bg_music,semantics.bgm_fade_seconds),script_background:{mode:"native_array",resource:background,source_scenario_id:provider},
+   51:         // Preserve native movie timings in the derived program. They are not
+   52:         // inferred from recording offsets or stored as authored command waits.
+   53:         native_video:document.video_list.find(value=>typeof value==="object"&&value!==null&&"name" in value&&String(value.name).toLowerCase()===row.video.toLowerCase())||null,
+   54:         suppress_lip_motion:suppressLipMotion,
+   55:         native_unsupported:unsupported.length?`此节点包含尚未接入预览的原生 ${unsupported.join(" / ")} 参数`:"",
+   56:       };
+   57:     });
+   58:   });
+   59:   const nodeIds=new Set(nodes.map(node=>node.id));
+   60:   const edges=sources.flatMap(({entry,document})=>document.scenario_list.flatMap(row=>row.branch_list.map(branch=>{
+   61:     const tr=branch.transition_list.length===1?branch.transition_list[0]:null;
+   62:     const finish=tr?.next_scenario_label==="FINISH";
+   63:     const finishDestination=finish?classifyFinishDestination(tr):null;
+   64:     const directoryError=finishDestination?.kind==="target"?finishSectionError(finishDestination.sectionId,finishDestination.sceneId,sections):"";
+   65:     const terminal=finishDestination?.kind==="terminal",invalidFinish=finishDestination?.kind==="invalid"||!!directoryError;
+   66:     // Destination-free FINISH is a native end action, not a link to scene zero.
+   67:     // Share validation's classifier so malformed pairs cannot become available
+   68:     // merely because their section differs from the current one. Keep the raw
+   69:     // native transition untouched for provenance and later export.
+   70:     const destinationScene=finishDestination?.kind==="target"?finishDestination.sceneId:finish?null:entry.id;
+   71:     const destination=destinationScene===null?undefined:sourceById.get(destinationScene);
+   72:     const destinationId=tr?.next_scenario_id===0?destination?.document.scenario_list.find(n=>n.is_root===1)?.scenario_id:tr?.next_scenario_id;
+   73:     const target=!invalidFinish&&destinationScene!==null&&destinationId!==undefined?nodeId(destinationScene,destinationId):"";
+   74:     const flow_action=invalidFinish?"invalid":terminal?"complete":finishDestination?.kind==="target"?
+   75:       (finishDestination.sectionId===entry.sectionId?"scene":"section"):"continue";
+   76:     const available=!!tr&&!invalidFinish&&(flow_action==="complete"||flow_action==="section"||nodeIds.has(target));
+   77:     return {
+   78:       id:`${entry.id}:${row.scenario_id}:${branch.branch_id}`,source:nodeId(entry.id,row.scenario_id),target,
+   79:       kind:branch.type===2||branch.type===3?"choice":"next",side:branch.type===2?"left":branch.type===3?"right":"",
+   80:       label:display(branch.msg_quote_subject),quote:display(branch.msg_quote),label_translation:display(branch.msg_quote_subject),quote_translation:display(branch.msg_quote),
+   81:       state:available?"confirmed":"missing",available,
+   82:       transition:{label:tr?.next_scenario_label||"",section:finishDestination?.kind==="target"?sectionId(finishDestination.sectionId):"",scene:finishDestination?.kind==="target"?sceneId(finishDestination.sceneId):"",entry:tr?.next_scenario_id===0?"root":"node"},
+   83:       flow_action,source_scene:sceneId(entry.id),target_scene:finish?(finishDestination?.kind==="target"?sceneId(finishDestination.sceneId):""):sceneId(entry.id),native_transition:tr,
+   84:       flow_error:available?"":directoryError||(invalidFinish?"FINISH 的目标字段组合无效，请保留原稿并补充证据":branch.transition_list.length>1?"此分支的原生条件转移尚未接入预览":"后续节点尚未恢复，请保留此分支并补充证据"),
+   85:     };
+{"path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js", "bytes": 55972, "sha256": "d7931354965fc43fa3a5a202bfb463c9e8d4175d1f693c80cebda68cccc6621c"}
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js:110-122
+  110:   prepareTitle(){
+  111:     if(this.titleAssets)return this.titleAssets;
+  112:     const config=this.nativeTitleConfig;
+  113:     this.titleAssets=this.scene.prepareFonts([config.text.subtitle.fontGuid,config.text.title.fontGuid])
+  114:       .then(()=>this.flowView.configureNativeTitle({config,fonts:this.scene.fonts,onError:error=>this.fail(error)}))
+  115:       .catch(error=>{this.titleAssets=null;throw error;});
+  116:     // Prefetch during entry and chart display. The actual title waits for the
+  117:     // same promise and owns any error under its playback generation.
+  118:     this.titleAssets.catch(()=>{});
+  119:     return this.titleAssets;
+  120:   }
+  121:   prepareChoices(){
+  122:     if(this.choiceAssets)return this.choiceAssets;
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js:292-321
+  292:     if(!node||node.kind==='title')return null;
+  293:     // MovieProc shares CardDrop/CardIn with CardProc. A movie is a distinct
+  294:     // foreground, so entering one must still retire the preceding actor/CG.
+  295:     // Returning null here incorrectly bypasses the native default drop when
+  296:     // the author leaves command[2] empty (for example scenario 29 -> 30).
+  297:     if(node.kind==='movie')return {kind:'movie',resource:node.movie_resource};
+  298:     if(node.character_image)return {kind:'picture',resource:node.character_image};
+  299:     // Speaker names and motion commands are not foreground identity. A
+  300:     // speaking member can change inside an unchanged group without replacing
+  301:     // the card. Compare the model set for both solo and placed actors, ignoring
+  302:     // draw order and placement edits; the existing stage owns those details.
+  303:     const models=node.actors.length?node.actors.map(row=>row.model):node.model?[node.model]:[];
+  304:     return {kind:'actor',models:[...models].sort()};
+  305:   }
+  306:   skipInOut(current,next){
+  307:     if(!current||this.program.edges.some(edge=>edge.source===current.id&&edge.kind==='choice'))return false;
+  308:     // ADVPlayer.get_IsSkipInOutEffect (0x124bc94) compares live ScenarioData.
+  309:     // A next row with no BG is considered equal before SetScriptParamater
+  310:     // visits it. Previously visited rows retain that method's mutation. Keep
+  311:     // these runtime values outside the immutable authored preview snapshot.
+  312:     const nextBG=next?this.scenarioBackgrounds.get(next.id):'';
+  313:     const sameBG=!nextBG||nextBG===this.scenarioBackgrounds.get(current.id);
+  314:     const from=this.cardContent(current),to=this.cardContent(next);
+  315:     const sameActor=from?.kind==='actor'&&from.models.length&&JSON.stringify(from)===JSON.stringify(to);
+  316:     const sameImage=current.character_image&&current.character_image===next?.character_image;
+  317:     const onlyBG=node=>node&&!node.model&&!node.actors.length&&!node.character_image&&!node.movie_resource;
+  318:     return Boolean((sameActor&&sameBG)||sameImage||(sameBG&&onlyBG(current)&&onlyBG(next))||
+  319:       (current.kind==='title'&&current.title_mode!=='end'));
+  320:   }
+  321:   closePanel(profile='out'){
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js:363-424
+  363:   async enter(id,edge){
+  364:     this.typewriter.cancel('node-changed');
+  365:     this.transitions.cancelPanelIn();
+  366:     cancelAnimationFrame(this.frame);
+  367:     const previous=this.nodeBeforeSkip||this.node,generation=++this.generation;this.node=this.nodes.get(id);
+  368:     try{
+  369:     if(!this.node)throw new Error('此连接没有可播放的目标节点');
+  370:     const node=this.node;document.body.dataset.node=id;this.cardOut=false;this.nodeBegan=performance.now();this.timing('enter');
+  371:     const interval=this.intervals.enter(node,edge,{generation});this.intervalDecision=interval;
+  372:     this.setPhase('loading');this.status('正在读取节点资源…');
+  373:     this.choiceInput.close();
+  374:     $('choices').replaceChildren();$('accessibleText').textContent='';
+  375:     // Keep the current card and its animator alive through resource awaits.
+  376:     // Only speech ends at this boundary. Content is replaced once its next
+  377:     // resource is ready; Stop/replay still explicitly pause/reset the actor.
+  378:     this.actor.finishLine();this.cast.finishLine();this.dialogueVoice.stop();$('movie').pause();
+  379:     if(this.program.preview_policy?.skip_node_kinds.includes(node.kind)){
+  380:       // Omitted gameplay has no visual card and executes no gameplay-specific
+  381:       // commands. Retain the last presented node across a chain of skips so
+  382:       // the next real card still performs its normal outgoing transition.
+  383:       this.nodeBeforeSkip=previous;
+  384:       return this.skipGameplayNode(generation);
+  385:     }
+  386:     this.nodeBeforeSkip=null;this.skippedPath.clear();
+  387:     // An unsupported native parameter must be visible at the affected node.
+  388:     // Silently discarding it would make the review preview appear authoritative.
+  389:     if(node.native_unsupported)throw new Error(node.native_unsupported);
+  390:     if(!this.config.playable_kinds.includes(node.kind))
+  391:       throw new Error('此节点为「'+this.program.semantics.scenario_types.find(row=>row.kind===node.kind).label+'」，原版流程尚未实现。请返回编辑，选择已支持的节点作为预览入口。');
+  392:     console.info('STORY_PLAYER_ENTER',id,node.kind);
+  393:     if(node.kind==='title')this.prepareTitle();
+  394:     else if(this.program.edges.some(edge=>edge.source===id&&edge.kind==='choice'))this.prepareChoices();
+  395:     this.voiceCues.beginNode(node,this.program.edges,this.nodes,this.program.preview_policy?.skip_node_kinds);
+  396:     const from=this.cardContent(previous),to=this.cardContent(node);
+  397:     // CardProc awaits CardDrop BEFORE GetNext can load a new scene.
+  398:     // CardWaitUserDrop (0x124f604) uses IsSkipInOutEffect, independently of
+  399:     // the later TITLE's IsShowInterval decision. A chart-free ordinary title
+  400:     // must therefore retain the outgoing card's existing normal retirement.
+  401:     // Keep choice-owned drops, explicit Out, hidden cards and native stay/skip
+  402:     // guards with their existing owners instead of manufacturing another Out.
+  403:     const sceneTitleRetirement=edge?.flow_action==='scene'&&edge.kind==='next'&&edge.source===previous?.id&&
+  404:       node.kind==='title'&&node.title_mode==='scene'&&previous?.scene_id!==node.scene_id;
+  405:     const changing=from!==null&&(to!==null||sceneTitleRetirement)&&!this.skipInOut(previous,node)&&this.transitions.cardState==='in';
+  406:     console.info('STORY_CARD_CHANGE',JSON.stringify({source:previous?.id||'',target:id,from,to,
+  407:       cardState:this.transitions.cardState,animate:changing,sceneTitleRetirement,chartInterval:interval.show}));
+  408:     if(changing){
+  409:       // Automatic foreground replacement and scene changes use the existing compositor;
+  410:       // it is not an authored CardOut command and adds no node/actor flags.
+  411:       // Finish fading the outgoing card before changing models, motions or
+  412:       // backgrounds. Hold alpha at zero through every resource await, then
+  413:       // run the extracted Card_in curve only after the whole cast is ready.
+  414:       // An explicit Out has already hidden the card, and End/CardStay retains
+  415:       // it; neither path should receive another automatic outgoing animation.
+  416:       this.setPhase('transition');this.status('正在切换画面…');this.timing('card_change_begin');
+  417:       this.closePanel().catch(error=>{if(generation===this.generation)this.fail(error);});
+  418:       await this.transitions.cardOut();this.check(generation);
+  419:       this.effects.cardOut();this.timing('card_change_hidden');
+  420:     }
+  421:     // Interval silence is presentation state, independent of script BGM
+  422:     // ownership. Keep the same track advancing while muted; entering the next
+  423:     // article restores audibility without seeking or issuing another Play.
+  424:     this.music.setMuted(interval.show&&this.config.flow.mute_bgm);
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js:642-680
+  642:   async afterText(generation){
+  643:     this.typewriter.cancel('finished-or-skipped');
+  644:     this.actor.animator?.endTalk();
+  645:     this.cast.endTalk();
+  646:     this.setPhase('command');this.visible=this.length;this.scene.draw(this.visible);
+  647:     await this.phaseCommands(2,generation);this.check(generation);
+  648:     const edges=this.program.edges.filter(edge=>edge.source===this.node.id);
+  649:     const choices=edges.filter(edge=>edge.kind==='choice');
+  650:     if(choices.length){
+  651:       if(choices.length!==this.config.choice_count||edges.length!==choices.length)
+  652:         throw new Error('原版选择流程需要恰好两个选项，且不能混有顺序后续；请返回编辑修正连接');
+  653:       this.status('正在准备选项…');
+  654:       await this.prepareChoices();this.check(generation);
+  655:       this.setPhase('choice');
+  656:       for(const edge of [...choices].sort((a,b)=>a.side.localeCompare(b.side))){
+  657:         const button=document.createElement('button'),available=this.available(edge);
+  658:         button.dataset.edge=edge.id;
+  659:         // This button opens the saved option and quote. Confirmation alone
+  660:         // requires a playable target, including for the embedded controls.
+  661:         button.textContent=(edge.side==='left'?'← ':'→ ')+(edge.label||'（未填写选项文字）')+(available?(edge.state==='proposed'?' · 待确认':''):' · 未恢复');
+  662:         button.onclick=()=>{if(this.phase==='choice')this.choiceInput.select(edge.side);};
+  663:         $('choices').append(button);
+  664:       }
+  665:       // Only executed native commands own this flag. The editor's derived
+  666:       // summary cannot bypass End, command errors, or route inheritance.
+  667:       this.choiceView.critical=!!this.state.junction;
+  668:       console.info('STORY_JUNCTION_CHOICE',JSON.stringify({node:this.node.id,
+  669:         marked:this.choiceView.critical,milliseconds:performance.now()}));
+  670:       this.choiceInput.open(choices.map(edge=>({...edge,available:this.available(edge)})),$('language').value);
+  671:     }else{
+  672:       if(edges.length>1)throw new Error('存在多条顺序后续，请返回编辑确定连接');
+  673:       this.next=edges[0];this.setPhase('ready');this.readySince=null;
+  674:       // CardProc bypasses CardWaitUserDrop only after an explicit CardOut.
+  675:       // A blank card without that command still needs the normal user input.
+  676:       if(this.cardOut){await this.advance();return;}
+  677:       this.status(this.next?(this.available(this.next)?'点击继续'+(this.next.state==='proposed'?' · 下一连接待确认':''):'后续尚未恢复；点击结束本次预览。'):'此片段没有已连接的后续；点击结束本次预览。');
+  678:     }
+  679:   }
+  680:   available(edge){return edge.available;}
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js:748-788
+  748:     });
+  749:   }
+  750:   async advance(){
+  751:     this.resumeAudio();
+  752:     if(this.phase==='chart'){
+  753:       this.chartContinue?.();
+  754:     }else if(this.phase==='choice'){
+  755:       this.choiceInput.confirm();
+  756:     }else if(this.phase==='text'){
+  757:       this.visible=this.length;await this.afterText(this.generation);
+  758:     }else if(this.phase==='ready'){
+  759:       cancelAnimationFrame(this.frame);
+  760:       if(this.next&&this.available(this.next)){this.setPhase('loading');await this.follow(this.next);}
+  761:       else{
+  762:         const reason=this.next?.flow_error||(this.next?.transition.label==='FINISH'?'FINISH 的目标节点／场景入口尚未恢复，请在剧情工作区指定入口。':'已到此片段的连接末端。返回编辑可补充后续。');
+  763:         this.stop();this.status(reason);
+  764:       }
+  765:     }
+  766:   }
+  767:   async follow(edge){
+  768:     console.info('STORY_PLAYER_TRANSITION',JSON.stringify({edge:edge.id,action:edge.flow_action,native:edge.native_transition,target:edge.target}));
+  769:     this.visitedEdges.add(edge.id);
+  770:     if(edge.transition.label==='FINISH'){
+  771:       this.completedScenes.add(edge.source_scene);
+  772:       if(edge.flow_action==='complete'||edge.flow_action==='section'){
+  773:         // Original intro41/102 preserve FINISH without a real destination;
+  774:         // ADV GetNext also ends normal ADV at a cross-section FINISH. Both
+  775:         // actions return to the completed section's chart before node lookup.
+  776:         // Keep the existing script music handle without asserting a victory
+  777:         // cue; Stop/replay still owns its cancellation. The final chart keeps
+  778:         // the route actually traversed and never enters a guessed successor.
+  779:         const source=this.program.directory.entries.find(row=>row.id===edge.source_scene);
+  780:         const section=this.program.directory.entries.find(row=>row.id===source.parent);
+  781:         this.stop({keepMusic:true});
+  782:         this.flowView.chart(this.program,this.node,this.completedScenes,null,this.config.flow.chart,this.visitedEdges);
+  783:         this.setPhase('complete');
+  784:         console.info('STORY_PLAYER_SECTION_COMPLETE',section.id,[...this.completedScenes],[...this.visitedEdges]);
+  785:         this.status('本话已结束。');return;
+  786:       }
+  787:     }
+  788:     if(!this.available(edge))throw new Error(edge.flow_error||'目标节点／场景入口尚未恢复');
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js:795-849
+  795:   async title(generation,previous){
+  796:     const scene=this.program.directory.entries.find(row=>row.id===this.node.scene_id);
+  797:     if(!scene)throw new Error('标题节点需要先归入剧情场景');
+  798:     this.scene.clear();this.display('empty');
+  799:     // TitleProc always requests ChangeSceneADVInterval. Native IsShowInterval
+  800:     // first suppresses end titles, then admits only root/branch/after-branch
+  801:     // scenes. A linear ordinary TITLE therefore runs SetTitle directly while
+  802:     // retaining its native kind, command phases and outgoing transition.
+  803:     if(this.intervalDecision.show){
+  804:       this.setPhase('chart');this.status('流程图：点击「次に進む」后显示标题。');
+  805:       console.info('STORY_PLAYER_CHART',scene.id,[...this.completedScenes]);
+  806:       await new Promise((resolve,reject)=>{
+  807:         const cancel=()=>{this.pending.delete(cancel);reject(new DOMException('Playback cancelled','AbortError'));};
+  808:         this.pending.add(cancel);
+  809:         this.chartContinue=()=>{this.chartContinue=null;this.pending.delete(cancel);this.flowView.close();this.setPhase('loading');resolve();};
+  810:         this.flowView.chart(this.program,this.node,this.completedScenes,this.chartContinue,this.config.flow.chart,this.visitedEdges);
+  811:       });
+  812:     }
+  813:     this.check(generation);
+  814:     // After the optional native interval, TitleProc owns phase 1, SetTitle,
+  815:     // phase 2 and the first transition. CardIn/text/drop waits do not belong
+  816:     // to either kind of title.
+  817:     await this.phaseCommands(1,generation);this.check(generation);
+  818:     this.setScriptBackground();
+  819:     // A movie's black display plate is independent of the inherited script
+  820:     // background. An end title with no background of its own keeps that plate
+  821:     // through its entry, including while its resources are still preparing.
+  822:     // Resolve the script background above so other nodes still inherit it.
+  823:     const background=this.node.title_mode==='end'&&previous?.kind==='movie'&&!this.node.bg_picture
+  824:       ?this.program.semantics.movie_background:this.state.bg_picture;
+  825:     // The ordinary native title fades over a sharp room, which remains sharp
+  826:     // while the next hidden card prepares and waits for Card_in. Restore the
+  827:     // usual blurred back camera only after that card is opaque (or on Stop),
+  828:     // avoiding a sharp→blurred→sharp flash at TitleProc's completion event.
+  829:     // End titles retain their separately observed black backing instead.
+  830:     this.titleBackdropClear=this.node.title_mode==='scene';
+  831:     this.backdrop.setBlurred(!this.titleBackdropClear);
+  832:     this.status('正在准备标题…');
+  833:     await Promise.all([this.background.show(background),this.backdrop.show(background),
+  834:       this.actor.lighting.apply(this.state),this.prepareTitle()]);this.check(generation);
+  835:     const titleEntry=this.flowView.title(this.node,$('language').value,scene);
+  836:     this.setPhase('title');this.status(this.node.translation||this.node.text);
+  837:     console.info('STORY_PLAYER_TITLE',this.node.id,this.node.title_mode);
+  838:     // The original entry event, rather than the former generic1.6s hold,
+  839:     // releases TitleProc into phase2. The player generation still cancels the
+  840:     // whole operation, including the final frame and its subsequent edge.
+  841:     await playNativeTitleEntry(titleEntry,{check:()=>this.check(generation),pending:this.pending});
+  842:     this.check(generation);this.flowView.close();
+  843:     await this.phaseCommands(2,generation);this.check(generation);
+  844:     const edges=this.program.edges.filter(edge=>edge.source===this.node.id);
+  845:     if(edges.length!==1)throw new Error('标题节点需要且只能有一条后续转移');
+  846:     if(!this.available(edges[0]))throw new Error(edges[0].flow_error||'标题的后续节点／场景入口尚未恢复');
+  847:     await this.follow(edges[0]);
+  848:   }
+  849:   async movie(id,generation){
+{"path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/flow_view.js", "bytes": 5582, "sha256": "5d69218e1e52631f1e3b78fd19cd94abc5021e675c77ab80d0f15329cb410f21"}
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/flow_view.js:12-22
+   12: // pending title's continue action releases TitleProc, as in native ADV.
+   13: export class StoryFlowView {
+   14:   constructor(root){this.root=root;this.nativeTitle=null;}
+   15:   async configureNativeTitle(dependencies){
+   16:     const next=new NativeTitleView(dependencies);
+   17:     try{await next.setup();}catch(error){next.dispose();throw error;}
+   18:     this.nativeTitle?.dispose();this.nativeTitle=next;
+   19:   }
+   20:   close(){this.nativeTitle?.hide();this.root.hidden=true;this.root.replaceChildren();}
+   21:   panel(className){this.nativeTitle?.hide();this.root.replaceChildren();this.root.className=className;this.root.hidden=false;}
+   22:   text(tag,value){const node=document.createElement(tag);node.textContent=value;return node;}
+{"path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/transitions.js", "bytes": 13917, "sha256": "0c50d407ea95db5589b2d506fb6e2e468aa2b29c900bdcb7f8e507f00e6baf75"}
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/transitions.js:65-100
+   65:   }
+   66:   hide(){this.cardState='out';this.opacity('0');this.card.style.translate='';}
+   67:   show(){this.cardState='in';this.opacity('');this.card.style.translate='';}
+   68:   async cardIn(){
+   69:     if(this.cardState!=='out'){this.cardState='in';return;}
+   70:     const cfg=this.config.card;this.cardState='waiting';
+   71:     console.info('STORY_NORMAL_TRANSITION_CLOCK',JSON.stringify({stage:'card_wait_start',
+   72:       node:document.body.dataset.node,wallMilliseconds:performance.now(),clock:this.clock.snapshot()}));
+   73:     console.info('STORY_CARD_WAIT_START',performance.now(),cfg.wait_duration);
+   74:     await this.animateNormal(cfg.wait_duration,()=>this.opacity('0'));
+   75:     this.cardState='entering';console.info('STORY_CARD_IN_START',performance.now(),cfg.duration);
+   76:     console.info('STORY_NORMAL_TRANSITION_CLOCK',JSON.stringify({stage:'card_in_start',
+   77:       node:document.body.dataset.node,wallMilliseconds:performance.now(),clock:this.clock.snapshot()}));
+   78:     await this.animateNormal(cfg.duration,t=>{
+   79:       this.opacity(String(Math.max(0,Math.min(1,this.curve(cfg.opacity,t*cfg.duration)))));
+   80:       this.card.style.translate=`0 ${-this.curve(cfg.y,t*cfg.duration)/this.height*100}%`;
+   81:     });
+   82:     this.opacity('');this.card.style.translate='';this.cardState='in';
+   83:     console.info('STORY_CARD_IN_COMPLETE',performance.now());
+   84:     console.info('STORY_NORMAL_TRANSITION_CLOCK',JSON.stringify({stage:'card_in_complete',
+   85:       node:document.body.dataset.node,wallMilliseconds:performance.now(),clock:this.clock.snapshot()}));
+   86:   }
+   87:   async cardOut(selected=null){
+   88:     if(this.cardState!=='in')return;
+   89:     // DropProc (0x1256f6c) decreases alpha at 15/s. A selected card retains
+   90:     // its touch mask/UVs and drag rotation while its position falls. Never
+   91:     // reset that geometry to a full-screen card before beginning the drop.
+   92:     this.cardState='leaving';
+   93:     const duration=1/this.config.card.alpha_speed;
+   94:     console.info('STORY_CARD_OUT_START',performance.now(),Boolean(selected));
+   95:     await this.animateNormal(duration,t=>{
+   96:       this.opacity(String(1-t));selected?.drop(t*duration*this.config.card.selected_fall_speed);
+   97:     });
+   98:     this.cardState='out';console.info('STORY_CARD_OUT_COMPLETE',performance.now());
+   99:   }
+  100:   cancelPanelIn(){
+
+### /home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/transitions.js:167-167
+  167:   stay(){if(this.cardState==='in')this.cardState='stay';}

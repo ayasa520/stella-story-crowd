@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "schema": "stella.reviewed-node-fields.v1",
+  "status": "reused-independent-identity-current-row-awaiting-root",
+  "rootConfirmed": false,
+  "reviewer": "/root/p43_scene16_cg_fx",
+  "observedHead": "db23843217c80693e893279c1f60760105997510",
+  "sceneId": 10040043,
+  "acceptanceScope": "One character identity/costume scalar only; no motion, face, pose, audio, geometry, phase or ending acceptance.",
+  "currentHash": {
+    "globalFiles": {
+      "manifest.json": "71371910168159c62602dee9395de393627bd2b752ab5c4a75244d051b05797e",
+      "review/native-restoration.json": "edcf0228582a0f92619884a59dc4bd3d10bdc8555842fba8ddc1bb8055fc4e23",
+      "assets/catalog.json": "f99cb35c886a35d04f5da4698ae493984e3bf50ee6fb671cff873f0b108f2517",
+      "assets/package.json": "f7aa20a72df2d4510182db006a8d09eb5274cbe7a6b76df8ff4454bd37b8c555"
+    },
+    "targetFiles": {
+      "native/scenes/10040043.json": "dfbd52c3818f2fd6f89dc6f8bf065ac972d16d43e433ca1d8991c0d4253a0c5b",
+      "review/scenes/10040043.json": "1424843e65225f88257e82d232afff2f84ee94832e09c2d264d08932ea321b27"
+    }
+  },
+  "changes": [
+    {
+      "sceneId": 10040043,
+      "scenarioId": 108,
+      "stableKey": "s10040043-p31-at0814",
+      "nativeUniqueId": 1004004300108,
+      "studioRecordId": "node:10040043:1004004300108",
+      "sourceText": "大体、誰でもそうなんねん。\nだーれもミミには勝てんのやから。\nはあ、ワイの奢りとはなあ……",
+      "sourceSpeaker": "リカード",
+      "rootConfirmed": false,
+      "expected": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "",
+        "character_image": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "motion": "",
+        "msg_character": "リカード",
+        "msg_text": "基本上，谁都会这样。谁都，赢不了蜜蜜啊。唉，居然变俺请客……",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": ""
+      },
+      "fields": {
+        "character": "live2d/AC_ricardo01"
+      },
+      "evidence": {
+        "sourceIdentityReview": {
+          "path": "artifacts/stella-script-continuation-20261121/p31-p33-tail-actors-20261121-v1/p31-source-identity-review.json",
+          "sha256": "588dc1dfc2055575806fa62ca53bd7890dac5a93245d59821f2f1427e4b613e9",
+          "bytes": 8645
+        },
+        "characterOnly": true,
+        "motionAccepted": false,
+        "faceAccepted": false,
+        "poseAccepted": false,
+        "phaseAccepted": false
+      }
+    }
+  ],
+  "rowGuards": {
+    "nativeUniqueId": 1004004300108,
+    "stableKey": "s10040043-p31-at0814",
+    "sourceText": "大体、誰でもそうなんねん。\nだーれもミミには勝てんのやから。\nはあ、ワイの奢りとはなあ……",
+    "nativeBodyWithoutBranchListSha256": "3ad37a3127a99ecb6d50ffbc58c6330e0b3491f23c2e406a2abb1cc0ff73fcf9",
+    "branchListAtPreparation": [
+      {
+        "transition_list": [],
+        "uniq_id": 1004004311081,
+        "branch_id": 1081,
+        "type": 1,
+        "quote_voice": "",
+        "gain_points": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "msg_quote": "",
+        "msg_quote_subject": ""
+      }
+    ]
+  },
+  "freshRebindPolicy": "After the separate normal ending writer changes the tail edge/appends its movie and CLEAR, root must re-read current snapshot/ownership. Verify stable key, Japanese and exact non-branch row body; preserve the new edge and suffix. Rebind changed whole-file/global hashes only after that inspection. This packet never edits branch_list or ending nodes."
+}

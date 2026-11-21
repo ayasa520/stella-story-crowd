@@ -1,0 +1,885 @@
+{
+  "schema": "stella.visible-ending-and-background-slice-proof.v3",
+  "actualResult": {
+    "path": "artifacts/stella-script-continuation-20261121/p31-p33-ending-runtime-final-v3/attempt-3/result.json",
+    "sha256": "3b229b338733bffed6dbaec16ddb6aaaa13193ad6d1b9ceebfbbadd2eccc9d62",
+    "bytes": 3102278
+  },
+  "actualObserver": {
+    "path": "artifacts/stella-script-continuation-20261121/p31-p33-ending-runtime-final-v3/attempt-3/observer.json",
+    "sha256": "9073d0f3223af430c77b1219097f81a746ceaad3a92fa998dd1f5824dfc6b431",
+    "bytes": 2480743
+  },
+  "events": {
+    "path": "artifacts/stella-script-continuation-20261121/p31-p33-ending-runtime-final-v3/attempt-3/events.jsonl",
+    "sha256": "83637eeb21d4e7ea8465aa0f36c58342998b4e42e6855a5cf51fd9664870ed95",
+    "bytes": 189274
+  },
+  "providerEvents": {
+    "path": "artifacts/stella-script-continuation-20261121/p31-p33-ending-runtime-final-v3/attempt-3/provider-events.jsonl",
+    "sha256": "339f6ec7e157870a8d462de79d284e3c5588c5647acc774591ca2de574c29e3b",
+    "bytes": 27330
+  },
+  "coreCases": [
+    {
+      "caseName": "P31-normal-saved-ending",
+      "sceneId": 10040043,
+      "preparedHTTPStatus": 200,
+      "preparedHead": "82333017b5f8337ca7a430d87815480c2bbe3052",
+      "preparedRawBodySha256": "7d93db1338e41502f053d04d6cbc4d31f023cabebfb731b64f775662b87dc34d",
+      "preparedCompressedEvidence": {
+        "path": "artifacts/stella-script-continuation-20261121/p31-p33-ending-runtime-final-v3/attempt-3/P31-normal-saved-ending-saved-prepare.json.gz",
+        "sha256": "f10b19c508bf97522a8422e7fc831723b4096e4080580bafdbb92e30fcb0d2c1",
+        "bytes": 1462615
+      },
+      "actualEnteredNodes": [
+        "node:10040043:1004004300108",
+        "node:10040043:1004004300109",
+        "node:10040043:1004004300110"
+      ],
+      "naturalMediaEnded": {
+        "observerSequence": 141,
+        "kind": "media-event",
+        "trigger": {
+          "kind": "browser-media-event",
+          "eventType": "ended",
+          "eventTimestamp": 12436,
+          "isTrusted": true
+        },
+        "node": "node:10040043:1004004300109",
+        "phase": "movie",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": true,
+          "flowClass": "",
+          "nativeElementAttached": false,
+          "rootAlpha": null,
+          "label": "",
+          "rect": null
+        },
+        "observedPerformanceMilliseconds": 12436
+      },
+      "observedTimeupdateSamples": [
+        0.079437,
+        0.364229,
+        0.645395,
+        0.930187,
+        1.208916,
+        1.478979,
+        1.761479,
+        2.042666,
+        2.289291,
+        2.567562,
+        2.812,
+        3.092687,
+        3.372437,
+        3.619666,
+        3.867875,
+        4.178583,
+        4.46,
+        4.74325,
+        5.034666,
+        5.034666,
+        5.034666
+      ],
+      "observedNormalRateAndNoSeeking": true,
+      "readyAfterNaturalEnd": {
+        "observerSequence": 151,
+        "kind": "body-state-mutation",
+        "trigger": {
+          "kind": "mutation-delivery",
+          "originalWriteTimeUnobserved": true
+        },
+        "node": "node:10040043:1004004300109",
+        "phase": "ready",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": true,
+          "flowClass": "",
+          "nativeElementAttached": false,
+          "rootAlpha": null,
+          "label": "",
+          "rect": null
+        },
+        "observedPerformanceMilliseconds": 12447
+      },
+      "trustedContinuation": {
+        "observerSequence": 152,
+        "kind": "input",
+        "trigger": {
+          "kind": "dom-input-capture",
+          "eventTimestamp": 12497,
+          "isTrusted": true
+        },
+        "node": "node:10040043:1004004300109",
+        "phase": "ready",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": true,
+          "flowClass": "",
+          "nativeElementAttached": false,
+          "rootAlpha": null,
+          "label": "",
+          "rect": null
+        },
+        "observedPerformanceMilliseconds": 12500
+      },
+      "movieHiddenBeforeTitleState": true,
+      "logicalTitle": {
+        "observerSequence": 178,
+        "kind": "product-console",
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 12805,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10040043:1004004300110",
+        "phase": "title",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": true,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": false,
+          "flowClass": "story-flow native-title-view end-title",
+          "nativeElementAttached": true,
+          "rootAlpha": 1,
+          "label": "本編：ミミVer. 通关",
+          "rect": {
+            "x": 0,
+            "y": 58.883331298828125,
+            "width": 440,
+            "height": 782.2166748046875
+          }
+        },
+        "observedPerformanceMilliseconds": 12805
+      },
+      "titlePixelsDirectlyReadable": true,
+      "ownSceneCompleteDOM": {
+        "state": "complete",
+        "className": "chart-scene current complete"
+      },
+      "ownSceneDOMSelector": "[data-chart-scene=\"scene:10040043\"]",
+      "completionChartVisible": true,
+      "exactOriginalOwnRouteChartFidelityAccepted": false,
+      "completeRuntimeDoorPixelsPersonallyReviewed": false
+    },
+    {
+      "caseName": "P33-normal-saved-ending",
+      "sceneId": 10040036,
+      "preparedHTTPStatus": 200,
+      "preparedHead": "82333017b5f8337ca7a430d87815480c2bbe3052",
+      "preparedRawBodySha256": "893618c06157ee035b17b38249b6b6f21513e8b5dd46e1d4dc8a5107d2633005",
+      "preparedCompressedEvidence": {
+        "path": "artifacts/stella-script-continuation-20261121/p31-p33-ending-runtime-final-v3/attempt-3/P33-normal-saved-ending-saved-prepare.json.gz",
+        "sha256": "1320f8b1628fd889c9fae7155dc71e2ab227043d14d8f87e2b7f8bc88dea0d95",
+        "bytes": 1462616
+      },
+      "actualEnteredNodes": [
+        "node:10040036:1004003600028",
+        "node:10040036:1004003600029",
+        "node:10040036:1004003600030"
+      ],
+      "naturalMediaEnded": {
+        "observerSequence": 327,
+        "kind": "media-event",
+        "trigger": {
+          "kind": "browser-media-event",
+          "eventType": "ended",
+          "eventTimestamp": 25591,
+          "isTrusted": true
+        },
+        "node": "node:10040036:1004003600029",
+        "phase": "movie",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": true,
+          "flowClass": "story-flow chart-view",
+          "nativeElementAttached": false,
+          "rootAlpha": null,
+          "label": "",
+          "rect": null
+        },
+        "observedPerformanceMilliseconds": 25591
+      },
+      "observedTimeupdateSamples": [
+        0,
+        0.164645,
+        0.416604,
+        0.704875,
+        0.993125,
+        1.256145,
+        1.5415,
+        1.79327,
+        2.080937,
+        2.34127,
+        2.626895,
+        2.884375,
+        3.134812,
+        3.417687,
+        3.668041,
+        3.952875,
+        4.250895,
+        4.510208,
+        4.792604,
+        5.028833,
+        5.034666,
+        5.034666
+      ],
+      "observedNormalRateAndNoSeeking": true,
+      "readyAfterNaturalEnd": {
+        "observerSequence": 337,
+        "kind": "body-state-mutation",
+        "trigger": {
+          "kind": "mutation-delivery",
+          "originalWriteTimeUnobserved": true
+        },
+        "node": "node:10040036:1004003600029",
+        "phase": "ready",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": true,
+          "flowClass": "story-flow chart-view",
+          "nativeElementAttached": false,
+          "rootAlpha": null,
+          "label": "",
+          "rect": null
+        },
+        "observedPerformanceMilliseconds": 25603
+      },
+      "trustedContinuation": {
+        "observerSequence": 338,
+        "kind": "input",
+        "trigger": {
+          "kind": "dom-input-capture",
+          "eventTimestamp": 25623,
+          "isTrusted": true
+        },
+        "node": "node:10040036:1004003600029",
+        "phase": "ready",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": true,
+          "flowClass": "story-flow chart-view",
+          "nativeElementAttached": false,
+          "rootAlpha": null,
+          "label": "",
+          "rect": null
+        },
+        "observedPerformanceMilliseconds": 25635
+      },
+      "movieHiddenBeforeTitleState": true,
+      "logicalTitle": {
+        "observerSequence": 364,
+        "kind": "product-console",
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 25702,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10040036:1004003600030",
+        "phase": "title",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": true,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": false,
+          "flowClass": "story-flow native-title-view end-title",
+          "nativeElementAttached": true,
+          "rootAlpha": 1,
+          "label": "本編：ヴィルヘルムVer. 通关",
+          "rect": {
+            "x": 0,
+            "y": 58.883331298828125,
+            "width": 440,
+            "height": 782.2166748046875
+          }
+        },
+        "observedPerformanceMilliseconds": 25703
+      },
+      "titlePixelsDirectlyReadable": true,
+      "ownSceneCompleteDOM": {
+        "state": "complete",
+        "className": "chart-scene current complete"
+      },
+      "ownSceneDOMSelector": "[data-chart-scene=\"scene:10040036\"]",
+      "completionChartVisible": true,
+      "exactOriginalOwnRouteChartFidelityAccepted": false,
+      "completeRuntimeDoorPixelsPersonallyReviewed": false
+    },
+    {
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "sceneId": 10010001,
+      "preparedHTTPStatus": 200,
+      "preparedHead": "82333017b5f8337ca7a430d87815480c2bbe3052",
+      "preparedRawBodySha256": "6b04656a15cc36e5596f170545e0b18fc000a9a96fdada5ee712192d2fa94f43",
+      "preparedCompressedEvidence": {
+        "path": "artifacts/stella-script-continuation-20261121/p31-p33-ending-runtime-final-v3/attempt-3/first-episode-existing-explicit-Out-regression-saved-prepare.json.gz",
+        "sha256": "fa65daa4762663e8c78cf64e37e4bd2143682cd9e0ef5656a6271bd47b6ff5c6",
+        "bytes": 1462712
+      },
+      "actualEnteredNodes": [
+        "node:10010001:node_9039e988b425",
+        "node:10010001:node_17ccbdbce0d8",
+        "node:10010001:node_b52d5528994c"
+      ],
+      "naturalMediaEnded": {
+        "observerSequence": 515,
+        "kind": "media-event",
+        "trigger": {
+          "kind": "browser-media-event",
+          "eventType": "ended",
+          "eventTimestamp": 38821,
+          "isTrusted": true
+        },
+        "node": "node:10010001:node_17ccbdbce0d8",
+        "phase": "movie",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": true,
+          "flowClass": "story-flow chart-view",
+          "nativeElementAttached": false,
+          "rootAlpha": null,
+          "label": "",
+          "rect": null
+        },
+        "observedPerformanceMilliseconds": 38821
+      },
+      "observedTimeupdateSamples": [
+        0,
+        0.164041,
+        0.452645,
+        0.716333,
+        0.97077,
+        1.224687,
+        1.484958,
+        1.7805,
+        2.039729,
+        2.304312,
+        2.59152,
+        2.84877,
+        3.13327,
+        3.380583,
+        3.673479,
+        3.933895,
+        4.218791,
+        4.514916,
+        4.806625,
+        5.034666,
+        5.034666
+      ],
+      "observedNormalRateAndNoSeeking": true,
+      "readyAfterNaturalEnd": null,
+      "trustedContinuation": null,
+      "movieHiddenBeforeTitleState": true,
+      "logicalTitle": {
+        "observerSequence": 554,
+        "kind": "product-console",
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 39409,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10010001:node_b52d5528994c",
+        "phase": "title",
+        "video": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": true,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "titleDOM": {
+          "flowHidden": false,
+          "flowClass": "story-flow native-title-view end-title",
+          "nativeElementAttached": true,
+          "rootAlpha": 1,
+          "label": "正篇 通关",
+          "rect": {
+            "x": 0,
+            "y": 58.883331298828125,
+            "width": 440,
+            "height": 782.2166748046875
+          }
+        },
+        "observedPerformanceMilliseconds": 39409
+      },
+      "titlePixelsDirectlyReadable": true,
+      "ownSceneCompleteDOM": {
+        "state": "complete",
+        "className": "chart-scene current complete"
+      },
+      "ownSceneDOMSelector": "[data-chart-scene=\"scene:10010001\"]",
+      "completionChartVisible": true,
+      "exactOriginalOwnRouteChartFidelityAccepted": false,
+      "completeRuntimeDoorPixelsPersonallyReviewed": false
+    }
+  ],
+  "backgroundSlice": {
+    "states": [
+      {
+        "scenario": 69,
+        "node": "node:10040043:1004004300069",
+        "phase": "ready",
+        "background": "bg/bg040b_felthouse",
+        "backdrop": "bg/bg040b_felthouse",
+        "actorModel": "mimi01",
+        "attachedActorDrawDelta": 67
+      },
+      {
+        "scenario": 70,
+        "node": "node:10040043:1004004300070",
+        "phase": "ready",
+        "background": "bg/bg023b_slum",
+        "backdrop": "bg/bg023b_slum",
+        "actorModel": null,
+        "attachedActorDrawDelta": null
+      },
+      {
+        "scenario": 71,
+        "node": "node:10040043:1004004300071",
+        "phase": "ready",
+        "background": "bg/bg023b_slum",
+        "backdrop": "bg/bg023b_slum",
+        "actorModel": "subaru01",
+        "attachedActorDrawDelta": 112
+      }
+    ],
+    "actualTransitions": [
+      {
+        "edge": "edge:node:10040043:1004004300069:1004004310691:691",
+        "action": "continue",
+        "native": {
+          "uniq_id": 1004004310691,
+          "transition_id": 69101,
+          "next_scenario_id": 70,
+          "next_scenario_label": ""
+        },
+        "target": "node:10040043:1004004300070"
+      },
+      {
+        "edge": "edge:node:10040043:1004004300070:1004004310701:701",
+        "action": "continue",
+        "native": {
+          "uniq_id": 1004004310701,
+          "transition_id": 70101,
+          "next_scenario_id": 71,
+          "next_scenario_label": ""
+        },
+        "target": "node:10040043:1004004300071"
+      }
+    ],
+    "preparedCompressedEvidence": {
+      "path": "artifacts/stella-script-continuation-20261121/p31-p33-ending-runtime-final-v3/attempt-3/P31-saved-background69-70-71-saved-prepare.json.gz",
+      "sha256": "406edb0e9e97f1c0ee616b62042eac17eee867fa1d670da53b873ce0b5d81140",
+      "bytes": 1462621
+    },
+    "preparedRawBodySha256": "b8c32cb4e14113b2bfa1e52b98324596bd7bbeab9f59f6377ee6672a481dc9c9",
+    "onlyObserved69To70And70To71Accepted": true
+  },
+  "relevantPhysicalEventLines": [
+    {
+      "line": 13,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_PLAYER_ENTER node:10040043:1004004300108 card"
+    },
+    {
+      "line": 37,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_DISPLAY_COMMIT node:10040043:1004004300108 actor ricardo01"
+    },
+    {
+      "line": 57,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10040043:1004004300108:1004004311081:1081\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004004311081,\"transition_id\":108101,\"next_scenario_id\":109,\"next_scenario_label\":\"\"},\"target\":\"node:10040043:1004004300109\"}"
+    },
+    {
+      "line": 59,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_PLAYER_ENTER node:10040043:1004004300109 movie"
+    },
+    {
+      "line": 80,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_DISPLAY_COMMIT node:10040043:1004004300109 empty ricardo01"
+    },
+    {
+      "line": 92,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_DISPLAY_COMMIT node:10040043:1004004300109 movie ricardo01"
+    },
+    {
+      "line": 93,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_PLAYER_MOVIE {\"node\":\"node:10040043:1004004300109\",\"resource\":\"adv_dive01_out\",\"source\":[1334,1334],\"viewport\":[440,782],\"presentation\":\"door\",\"fit\":\"cover\",\"background\":\"bg/bg001_black\",\"duration\":5.034}"
+    },
+    {
+      "line": 101,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10040043:1004004300109:1004004311091:1091\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004004311091,\"transition_id\":109101,\"next_scenario_id\":110,\"next_scenario_label\":\"\"},\"target\":\"node:10040043:1004004300110\"}"
+    },
+    {
+      "line": 104,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_PLAYER_ENTER node:10040043:1004004300110 title"
+    },
+    {
+      "line": 117,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_DISPLAY_COMMIT node:10040043:1004004300110 empty ricardo01"
+    },
+    {
+      "line": 122,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_NATIVE_TITLE_LAYOUT {\"node\":\"node:10040043:1004004300110\",\"scene\":\"scene:10040043\",\"mode\":\"normal\",\"nativeRouteType\":0,\"nativeRouteName\":\"本編：ミミVer.\",\"route\":\"本編：ミミVer.\",\"title\":\"通关\",\"viewport\":{\"width\":440,\"height\":782.2166748046875},\"uiScale\":0.4074074074074074,\"background\":{\"width\":586.6666666666666,\"height\":782.2222222222222,\"scale\":1},\"rectangles\":{\"subtitle\":{\"x\":90,\"y\":860.9931918057529,\"width\":900,\"height\":50},\"title\":{\"x\":90,\"y\":929.9931918057529,\"width\":900,\"height\":120}},\"fontSizes\":{\"subtitle\":49.95,\"title\":119.95},\"tintIndex\":0,\"prefixRulePending\":false,\"presentation\":\"native-core-entry\",\"nativeAnimationDurationMilliseconds\":2500,\"sceneCounterVisible\":false,\"unprojected\":\"orb-materials,loader-size-side-effects\"}"
+    },
+    {
+      "line": 123,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_PLAYER_TITLE node:10040043:1004004300110 end"
+    },
+    {
+      "line": 129,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10040043:1004004300110:1004004311101:1101\",\"action\":\"complete\",\"native\":{\"uniq_id\":1004004311101,\"transition_id\":110101,\"next_scenario_id\":0,\"next_scenario_label\":\"FINISH\"},\"target\":\"\"}"
+    },
+    {
+      "line": 131,
+      "caseName": "P31-normal-saved-ending",
+      "text": "STORY_PLAYER_SECTION_COMPLETE section:1004 Array(1) Array(3)"
+    },
+    {
+      "line": 136,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_PLAYER_ENTER node:10040036:1004003600028 card"
+    },
+    {
+      "line": 164,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_DISPLAY_COMMIT node:10040036:1004003600028 actor ferris_dress01"
+    },
+    {
+      "line": 185,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10040036:1004003600028:1004003610281:281\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004003610281,\"transition_id\":28101,\"next_scenario_id\":29,\"next_scenario_label\":\"\"},\"target\":\"node:10040036:1004003600029\"}"
+    },
+    {
+      "line": 187,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_PLAYER_ENTER node:10040036:1004003600029 movie"
+    },
+    {
+      "line": 208,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_DISPLAY_COMMIT node:10040036:1004003600029 empty ferris_dress01"
+    },
+    {
+      "line": 220,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_DISPLAY_COMMIT node:10040036:1004003600029 movie ferris_dress01"
+    },
+    {
+      "line": 221,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_PLAYER_MOVIE {\"node\":\"node:10040036:1004003600029\",\"resource\":\"adv_dive01_out\",\"source\":[1334,1334],\"viewport\":[440,782],\"presentation\":\"door\",\"fit\":\"cover\",\"background\":\"bg/bg001_black\",\"duration\":5.034}"
+    },
+    {
+      "line": 229,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10040036:1004003600029:1004003610291:291\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004003610291,\"transition_id\":29101,\"next_scenario_id\":30,\"next_scenario_label\":\"\"},\"target\":\"node:10040036:1004003600030\"}"
+    },
+    {
+      "line": 232,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_PLAYER_ENTER node:10040036:1004003600030 title"
+    },
+    {
+      "line": 244,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_DISPLAY_COMMIT node:10040036:1004003600030 empty ferris_dress01"
+    },
+    {
+      "line": 249,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_NATIVE_TITLE_LAYOUT {\"node\":\"node:10040036:1004003600030\",\"scene\":\"scene:10040036\",\"mode\":\"normal\",\"nativeRouteType\":0,\"nativeRouteName\":\"本編：ヴィルヘルムVer.\",\"route\":\"本編：ヴィルヘルムVer.\",\"title\":\"通关\",\"viewport\":{\"width\":440,\"height\":782.2166748046875},\"uiScale\":0.4074074074074074,\"background\":{\"width\":586.6666666666666,\"height\":782.2222222222222,\"scale\":1},\"rectangles\":{\"subtitle\":{\"x\":90,\"y\":860.9931918057529,\"width\":900,\"height\":50},\"title\":{\"x\":90,\"y\":929.9931918057529,\"width\":900,\"height\":120}},\"fontSizes\":{\"subtitle\":49.95,\"title\":119.95},\"tintIndex\":0,\"prefixRulePending\":false,\"presentation\":\"native-core-entry\",\"nativeAnimationDurationMilliseconds\":2500,\"sceneCounterVisible\":false,\"unprojected\":\"orb-materials,loader-size-side-effects\"}"
+    },
+    {
+      "line": 250,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_PLAYER_TITLE node:10040036:1004003600030 end"
+    },
+    {
+      "line": 256,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10040036:1004003600030:1004003610301:301\",\"action\":\"complete\",\"native\":{\"uniq_id\":1004003610301,\"transition_id\":30101,\"next_scenario_id\":0,\"next_scenario_label\":\"FINISH\"},\"target\":\"\"}"
+    },
+    {
+      "line": 258,
+      "caseName": "P33-normal-saved-ending",
+      "text": "STORY_PLAYER_SECTION_COMPLETE section:1004 Array(1) Array(3)"
+    },
+    {
+      "line": 269,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_ENTER node:10010001:node_9039e988b425 card"
+    },
+    {
+      "line": 300,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_DISPLAY_COMMIT node:10010001:node_9039e988b425 actor subaru01"
+    },
+    {
+      "line": 322,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10010001:node_9039e988b425:100100010037:34\",\"action\":\"continue\",\"native\":{\"uniq_id\":100100010037,\"next_scenario_label\":\"\",\"next_scenario_id\":30,\"transition_id\":3401},\"target\":\"node:10010001:node_17ccbdbce0d8\"}"
+    },
+    {
+      "line": 324,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_ENTER node:10010001:node_17ccbdbce0d8 movie"
+    },
+    {
+      "line": 348,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_DISPLAY_COMMIT node:10010001:node_17ccbdbce0d8 empty subaru01"
+    },
+    {
+      "line": 360,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_DISPLAY_COMMIT node:10010001:node_17ccbdbce0d8 movie subaru01"
+    },
+    {
+      "line": 361,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_MOVIE {\"node\":\"node:10010001:node_17ccbdbce0d8\",\"resource\":\"adv_dive01_out\",\"source\":[1334,1334],\"viewport\":[440,782],\"presentation\":\"door\",\"fit\":\"cover\",\"background\":\"bg/bg001_black\",\"duration\":5.034}"
+    },
+    {
+      "line": 374,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10010001:node_17ccbdbce0d8:100100010038:35\",\"action\":\"continue\",\"native\":{\"uniq_id\":100100010038,\"next_scenario_label\":\"\",\"next_scenario_id\":31,\"transition_id\":3501},\"target\":\"node:10010001:100100010039\"}"
+    },
+    {
+      "line": 377,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10010001:100100010039:100100010039:36\",\"action\":\"continue\",\"native\":{\"uniq_id\":100100010039,\"next_scenario_label\":\"\",\"next_scenario_id\":32,\"transition_id\":3601},\"target\":\"node:10010001:node_b52d5528994c\"}"
+    },
+    {
+      "line": 380,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_ENTER node:10010001:node_b52d5528994c title"
+    },
+    {
+      "line": 388,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_DISPLAY_COMMIT node:10010001:node_b52d5528994c empty subaru01"
+    },
+    {
+      "line": 393,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_NATIVE_TITLE_LAYOUT {\"node\":\"node:10010001:node_b52d5528994c\",\"scene\":\"scene:10010001\",\"mode\":\"normal\",\"nativeRouteType\":0,\"nativeRouteName\":\"本編\",\"route\":\"正篇\",\"title\":\"通关\",\"viewport\":{\"width\":440,\"height\":782.2166748046875},\"uiScale\":0.4074074074074074,\"background\":{\"width\":586.6666666666666,\"height\":782.2222222222222,\"scale\":1},\"rectangles\":{\"subtitle\":{\"x\":90,\"y\":860.9931918057529,\"width\":900,\"height\":50},\"title\":{\"x\":90,\"y\":929.9931918057529,\"width\":900,\"height\":120}},\"fontSizes\":{\"subtitle\":49.95,\"title\":119.95},\"tintIndex\":0,\"prefixRulePending\":false,\"presentation\":\"native-core-entry\",\"nativeAnimationDurationMilliseconds\":2500,\"sceneCounterVisible\":false,\"unprojected\":\"orb-materials,loader-size-side-effects\"}"
+    },
+    {
+      "line": 394,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_TITLE node:10010001:node_b52d5528994c end"
+    },
+    {
+      "line": 400,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10010001:node_b52d5528994c:100100010040:37\",\"action\":\"section\",\"native\":{\"next_section_id\":1014,\"next_scene_id\":10140002,\"uniq_id\":100100010040,\"next_scenario_label\":\"FINISH\",\"next_scenario_id\":0,\"transition_id\":3701},\"target\":\"node:10140002:node_863ad654d186\"}"
+    },
+    {
+      "line": 402,
+      "caseName": "first-episode-existing-explicit-Out-regression",
+      "text": "STORY_PLAYER_SECTION_COMPLETE section:1001 Array(1) Array(4)"
+    },
+    {
+      "line": 408,
+      "caseName": "P31-saved-background69-70-71",
+      "text": "STORY_PLAYER_ENTER node:10040043:1004004300069 card"
+    },
+    {
+      "line": 434,
+      "caseName": "P31-saved-background69-70-71",
+      "text": "STORY_DISPLAY_COMMIT node:10040043:1004004300069 actor mimi01"
+    },
+    {
+      "line": 454,
+      "caseName": "P31-saved-background69-70-71",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10040043:1004004300069:1004004310691:691\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004004310691,\"transition_id\":69101,\"next_scenario_id\":70,\"next_scenario_label\":\"\"},\"target\":\"node:10040043:1004004300070\"}"
+    },
+    {
+      "line": 456,
+      "caseName": "P31-saved-background69-70-71",
+      "text": "STORY_PLAYER_ENTER node:10040043:1004004300070 text"
+    },
+    {
+      "line": 478,
+      "caseName": "P31-saved-background69-70-71",
+      "text": "STORY_DISPLAY_COMMIT node:10040043:1004004300070 empty mimi01"
+    },
+    {
+      "line": 496,
+      "caseName": "P31-saved-background69-70-71",
+      "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10040043:1004004300070:1004004310701:701\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004004310701,\"transition_id\":70101,\"next_scenario_id\":71,\"next_scenario_label\":\"\"},\"target\":\"node:10040043:1004004300071\"}"
+    },
+    {
+      "line": 498,
+      "caseName": "P31-saved-background69-70-71",
+      "text": "STORY_PLAYER_ENTER node:10040043:1004004300071 card"
+    },
+    {
+      "line": 525,
+      "caseName": "P31-saved-background69-70-71",
+      "text": "STORY_DISPLAY_COMMIT node:10040043:1004004300071 actor subaru01"
+    }
+  ],
+  "originalMovieServedSha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c",
+  "movieProviderPhysicalLine": 18,
+  "street023bProviderPhysicalLine": 17,
+  "old040bProviderPhysicalLine": 62,
+  "actualMovieProcessImageCount": 0,
+  "runtimeAll150FramesPixelReviewAccepted": false,
+  "productConsoleErrors": [],
+  "priorPackGapRevalidated": false,
+  "priorMidfadeCancellationRevalidated": false
+}

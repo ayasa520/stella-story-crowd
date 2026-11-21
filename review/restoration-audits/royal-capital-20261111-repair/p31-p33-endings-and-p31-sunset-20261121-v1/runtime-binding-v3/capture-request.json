@@ -1,0 +1,134 @@
+{
+  "schema": "stella.saved-ending-visible-capture-request.v3",
+  "status": "final-normal-saved-fields-complete-await-fresh-root-runtime-release",
+  "browserOrServerAuthorized": false,
+  "cases": [
+    {
+      "name": "P31-normal-saved-ending",
+      "sceneId": 10040043,
+      "startScenario": 108,
+      "startExistingNativeUniqueId": 1004004300108,
+      "startExistingStableKey": "s10040043-p31-at0814",
+      "movieScenario": 109,
+      "endTitleScenario": 110,
+      "expectedSequence": [
+        "real final dialogue",
+        "full adv_dive01_out natural ended",
+        "movie ready",
+        "one trusted Continue",
+        "one actual default drop",
+        "native endTITLE",
+        "terminal complete and own-route completed chart"
+      ],
+      "expectedTailModel": "ricardo01"
+    },
+    {
+      "name": "P33-normal-saved-ending",
+      "sceneId": 10040036,
+      "startScenario": 28,
+      "startExistingNativeUniqueId": 1004003600028,
+      "movieScenario": 29,
+      "endTitleScenario": 30,
+      "expectedSequence": [
+        "real final dialogue",
+        "full adv_dive01_out natural ended",
+        "movie ready",
+        "one trusted Continue",
+        "one actual default drop",
+        "native endTITLE",
+        "terminal complete and own-route completed chart"
+      ],
+      "expectedTailModel": "ferris_dress01"
+    },
+    {
+      "name": "first-episode-existing-explicit-Out-regression",
+      "sceneId": 10010001,
+      "startScenario": 29,
+      "startExistingNativeUniqueId": 100100010037,
+      "movieScenario": 30,
+      "skippedTutorialScenario": 31,
+      "endTitleScenario": 32,
+      "preserveOriginalPhase0": [
+        "StopBGM"
+      ],
+      "preserveOriginalPhase2": [
+        "Wait,500",
+        "CardOut"
+      ],
+      "expectedSequence": [
+        "real saved dialogue29",
+        "full adv_dive01_out30 natural ended",
+        "original Wait500/CardOut phase2 as saved; no injected wait",
+        "normal existing progression/continuation only as actual UI requests",
+        "original tutorial31 skip under unchanged preview_policy",
+        "native CLEAR32",
+        "original cross-section FINISH sectioncomplete, no next section entry"
+      ],
+      "regressionAcceptance": "Exactly original explicit-Out; no additional automatic movie-end-title drop after tutorial skip, no new script delay or command.",
+      "choices": {
+        "node:10010001:node_9039e988b425": "edge:node:10010001:node_885448b143ab:100100010036:33",
+        "node:10010001:node_bbf13fe60e11": "edge:node:10010001:node_0fdb2464bae4:100100010031:29",
+        "node:10010001:node_b0a7bb5de815": "edge:node:10010001:node_b6794a60b9df:100100010022:21",
+        "node:10010001:node_262fd2ba68be": "edge:node:10010001:node_c028f64b058e:100100010016:1017"
+      }
+    }
+  ],
+  "backgroundSlice": {
+    "sceneId": 10040043,
+    "scenarios": [
+      69,
+      70,
+      71
+    ],
+    "expectedModels": {
+      "69": "mimi01",
+      "71": "subaru01"
+    },
+    "changedField": "70.bg_picture=bg/bg023b_slum",
+    "stopAt71Ready": true,
+    "otherMissingFieldsRemainUnchanged": true
+  },
+  "rootFormalSaveEvidence": [
+    "two-tail-actors-root-formal-apply-before-v1.json",
+    "two-tail-actors-root-formal-apply-result-v1.json",
+    "two-tail-actors-root-formal-apply-after-v1.json",
+    "p31-node70-background-root-formal-apply-before-v1.json",
+    "p31-node70-background-root-formal-apply-result-v1.json",
+    "p31-node70-background-root-formal-apply-after-v1.json",
+    "p31-slice69-71-characters-root-formal-apply-before-v2.json",
+    "p31-slice69-71-characters-root-formal-apply-result-v2.json",
+    "p31-slice69-71-characters-root-formal-apply-after-v2.json"
+  ],
+  "captureBudget": {
+    "maximumImages": 12,
+    "maximumBytes": 3000000,
+    "format": "native BiDi JPEG quality0.9",
+    "viewport": {
+      "width": 440,
+      "height": 900
+    }
+  },
+  "readiness": {
+    "everyDialogue": "Latest exact node/group/token COMPLETE before acquisition, no first3 shortcut; actual settled2D panel/text pixels and full ready text. Unprofiled narration records no native entry scheduled.",
+    "title": "Actual two glyph canvases alpha>=.99, nontransparent and bright ink in actual in-view LAYOUT ROIs; unchanged Normal elapsed2.0–2.333333 interval; record same-entry pre/post screenshot bracket. No aria/root-only acceptance.",
+    "sourceOrClockOrMediaChanges": false
+  },
+  "scope": [
+    "Three saved core endings and proper visible title/first dialogue images",
+    "Real69→70→71 background switch plus two approved actor identities",
+    "Actual108 inherited slum background observed in core P31"
+  ],
+  "notRun": [
+    "previous four auxiliary regressions",
+    "previous cancellation/Replay attempt"
+  ],
+  "historicalLimitsRetained": [
+    "attempt2 exit1 and Pack intermediate-alpha gap",
+    "early cancellation alpha1 window miss",
+    "no original exact motion/face/geometry/timing/audio/whole-scene signoff"
+  ],
+  "freshAliasRequired": true,
+  "old964cAliasReusable": false,
+  "normalSavedPrepareRequired": true,
+  "programOverrideAllowed": false
+}

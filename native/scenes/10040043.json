@@ -3297,7 +3297,7 @@
     {
       "bg_music": "",
       "bg_picture": "",
-      "character": "",
+      "character": "live2d/AC_mimi01",
       "character_image": "",
       "motion": "",
       "msg_character": "ミミ",
@@ -3344,7 +3344,7 @@
     },
     {
       "bg_music": "",
-      "bg_picture": "",
+      "bg_picture": "bg/bg023b_slum",
       "character": "",
       "character_image": "",
       "motion": "",
@@ -3393,7 +3393,7 @@
     {
       "bg_music": "",
       "bg_picture": "",
-      "character": "",
+      "character": "live2d/AC_subaru01",
       "character_image": "",
       "motion": "",
       "msg_character": "スバル",
@@ -5169,7 +5169,7 @@
     {
       "bg_music": "",
       "bg_picture": "",
-      "character": "",
+      "character": "live2d/AC_ricardo01",
       "character_image": "",
       "motion": "",
       "msg_character": "リカード",
@@ -5191,7 +5191,14 @@
       ],
       "branch_list": [
         {
-          "transition_list": [],
+          "transition_list": [
+            {
+              "uniq_id": 1004004311081,
+              "transition_id": 108101,
+              "next_scenario_id": 109,
+              "next_scenario_label": ""
+            }
+          ],
           "uniq_id": 1004004311081,
           "branch_id": 1081,
           "type": 1,
@@ -5206,9 +5213,110 @@
           "msg_quote_subject": ""
         }
       ]
+    },
+    {
+      "bg_music": "",
+      "bg_picture": "",
+      "character": "",
+      "character_image": "",
+      "motion": "",
+      "msg_character": "",
+      "msg_text": "",
+      "position": "",
+      "se": "",
+      "talk_chara": "",
+      "video": "adv_dive01_out",
+      "voice": "",
+      "scenario_id": 109,
+      "uniq_id": 1004004300109,
+      "is_root": 0,
+      "scenario_type": 3,
+      "battle_stage_id": 0,
+      "command": [
+        "",
+        "",
+        ""
+      ],
+      "branch_list": [
+        {
+          "branch_id": 1091,
+          "uniq_id": 1004004311091,
+          "type": 1,
+          "msg_quote": "",
+          "msg_quote_subject": "",
+          "quote_voice": "",
+          "gain_points": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "transition_list": [
+            {
+              "uniq_id": 1004004311091,
+              "transition_id": 109101,
+              "next_scenario_id": 110,
+              "next_scenario_label": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bg_music": "bgm_btl_adv_win01",
+      "bg_picture": "",
+      "character": "",
+      "character_image": "",
+      "motion": "",
+      "msg_character": "",
+      "msg_text": "通关",
+      "position": "",
+      "se": "",
+      "talk_chara": "",
+      "video": "",
+      "voice": "",
+      "scenario_id": 110,
+      "uniq_id": 1004004300110,
+      "is_root": 0,
+      "scenario_type": 0,
+      "battle_stage_id": 0,
+      "command": [
+        "",
+        "",
+        ""
+      ],
+      "branch_list": [
+        {
+          "branch_id": 1101,
+          "uniq_id": 1004004311101,
+          "type": 1,
+          "msg_quote": "",
+          "msg_quote_subject": "",
+          "quote_voice": "",
+          "gain_points": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "transition_list": [
+            {
+              "uniq_id": 1004004311101,
+              "transition_id": 110101,
+              "next_scenario_id": 0,
+              "next_scenario_label": "FINISH"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "video_list": [],
+  "video_list": [
+    {
+      "name": "adv_dive01_out",
+      "command_list": []
+    }
+  ],
   "branch_work_list": [],
   "chartmap": {
     "scene_list": [

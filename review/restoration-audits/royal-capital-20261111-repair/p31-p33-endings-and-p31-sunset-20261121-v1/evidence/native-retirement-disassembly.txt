@@ -1,0 +1,219 @@
+
+### Stella.Scenes.ADV2.Director.StartUserOperation 0x1712678..0x1712720 (upper bound)
+
+/home/rikka/Projects/stella/data/libil2cpp-offline.so:	file format elf64-littleaarch64
+
+Disassembly of section il2cpp:
+
+0000000000e1da30 <__start_il2cpp>:
+ 1712678:      	stp	x20, x19, [sp, #-0x20]!
+ 171267c:      	stp	x29, x30, [sp, #0x10]
+ 1712680:      	add	x29, sp, #0x10
+ 1712684:      	mov	x19, x1
+ 1712688:      	bl	0x1711848 <__start_il2cpp+0x8f3e18> // Stella.Scenes.ADV2.Director.get_CurrentScenario
+ 171268c:      	cbz	x0, 0x17126b4 <__start_il2cpp+0x8f4c84>
+ 1712690:      	ldr	x8, [x0, #0xa0]
+ 1712694:      	cbz	x8, 0x17126b4 <__start_il2cpp+0x8f4c84>
+ 1712698:      	ldr	w8, [x8, #0x18]
+ 171269c:      	cmp	w8, #0x2
+ 17126a0:      	b.lt	0x17126b4 <__start_il2cpp+0x8f4c84>
+ 17126a4:      	ldr	x8, [x0, #0x20]
+ 17126a8:      	cmp	x8, #0x4
+ 17126ac:      	cset	w20, ne
+ 17126b0:      	b	0x17126b8 <__start_il2cpp+0x8f4c88>
+ 17126b4:      	mov	w20, wzr
+ 17126b8:      	bl	0x17117cc <__start_il2cpp+0x8f3d9c> // Stella.Scenes.ADV2.Director.get_AdvPlayer
+ 17126bc:      	cbz	x0, 0x171271c <__start_il2cpp+0x8f4cec>
+ 17126c0:      	cbz	w20, 0x17126d0 <__start_il2cpp+0x8f4ca0>
+ 17126c4:      	mov	x1, xzr
+ 17126c8:      	bl	0x124f940 <__start_il2cpp+0x431f10> // Stella.Scenes.ADV2.ADVPlayer.CardWaitUserSelect
+ 17126cc:      	b	0x17126fc <__start_il2cpp+0x8f4ccc>
+ 17126d0:      	ldrb	w8, [x0, #0x9c]
+ 17126d4:      	cbz	w8, 0x17126ec <__start_il2cpp+0x8f4cbc>
+ 17126d8:      	cbz	x19, 0x1712704 <__start_il2cpp+0x8f4cd4>
+ 17126dc:      	mov	x0, x19
+ 17126e0:      	mov	x1, xzr
+ 17126e4:      	bl	0x1ea9cfc <__start_il2cpp+0x108c2cc> // System.Action.Invoke
+ 17126e8:      	b	0x1712704 <__start_il2cpp+0x8f4cd4>
+ 17126ec:      	bl	0x17117cc <__start_il2cpp+0x8f3d9c> // Stella.Scenes.ADV2.Director.get_AdvPlayer
+ 17126f0:      	cbz	x0, 0x171271c <__start_il2cpp+0x8f4cec>
+ 17126f4:      	mov	x1, xzr
+ 17126f8:      	bl	0x124f604 <__start_il2cpp+0x431bd4> // Stella.Scenes.ADV2.ADVPlayer.CardWaitUserDrop
+ 17126fc:      	mov	x1, x19
+ 1712700:      	bl	0x1711d28 <__start_il2cpp+0x8f42f8> // Stella.Scenes.ADV2.Director.Wait
+ 1712704:      	bl	0x17117cc <__start_il2cpp+0x8f3d9c> // Stella.Scenes.ADV2.Director.get_AdvPlayer
+ 1712708:      	cbz	x0, 0x171271c <__start_il2cpp+0x8f4cec>
+ 171270c:      	strb	wzr, [x0, #0x9c]
+ 1712710:      	ldp	x29, x30, [sp, #0x10]
+ 1712714:      	ldp	x20, x19, [sp], #0x20
+ 1712718:      	ret
+ 171271c:      	bl	0xd418ec <il2cpp_class_for_each+0x1948>
+
+### Stella.Scenes.ADV2.Director.Movie_Init 0x1712720..0x17128c0 (upper bound)
+
+/home/rikka/Projects/stella/data/libil2cpp-offline.so:	file format elf64-littleaarch64
+
+Disassembly of section il2cpp:
+
+0000000000e1da30 <__start_il2cpp>:
+ 1712720:      	stp	x20, x19, [sp, #-0x20]!
+ 1712724:      	stp	x29, x30, [sp, #0x10]
+ 1712728:      	add	x29, sp, #0x10
+ 171272c:      	adrp	x20, 0x2f3b000
+ 1712730:      	ldrb	w8, [x20, #0x3b2]
+ 1712734:      	mov	x19, x0
+ 1712738:      	tbnz	w8, #0x0, 0x1712754 <__start_il2cpp+0x8f4d24>
+ 171273c:      	adrp	x8, 0x2ce1000
+ 1712740:      	ldr	x8, [x8, #0xb10]
+ 1712744:      	ldr	w0, [x8]
+ 1712748:      	bl	0xd4181c <il2cpp_class_for_each+0x1878>
+ 171274c:      	orr	w8, wzr, #0x1
+ 1712750:      	strb	w8, [x20, #0x3b2]
+ 1712754:      	ldr	w8, [x19, #0x20]
+ 1712758:      	cmp	w8, #0x6
+ 171275c:      	b.hi	0x1712814 <__start_il2cpp+0x8f4de4>
+ 1712760:      	adrp	x9, 0x22dc000
+ 1712764:      	add	x9, x9, #0x7ac
+ 1712768:      	ldrsw	x8, [x9, x8, lsl #2]
+ 171276c:      	add	x8, x8, x9
+ 1712770:      	br	x8
+ 1712774:      	bl	0x17117cc <__start_il2cpp+0x8f3d9c> // Stella.Scenes.ADV2.Director.get_AdvPlayer
+ 1712778:      	cbz	x0, 0x17128bc <__start_il2cpp+0x8f4e8c>
+ 171277c:      	mov	x1, xzr
+ 1712780:      	bl	0x124f454 <__start_il2cpp+0x431a24> // Stella.Scenes.ADV2.ADVPlayer.CardIn
+ 1712784:      	b	0x1712830 <__start_il2cpp+0x8f4e00>
+ 1712788:      	adrp	x8, 0x2d25000
+ 171278c:      	ldr	x8, [x8, #0x88]
+ 1712790:      	ldr	x0, [x8]
+ 1712794:      	bl	0xd418e4 <il2cpp_class_for_each+0x1940>
+ 1712798:      	adrp	x8, 0x2cfb000
+ 171279c:      	ldr	x8, [x8, #0x8a8]
+ 17127a0:      	mov	x1, x19
+ 17127a4:      	mov	x3, xzr
+ 17127a8:      	mov	x20, x0
+ 17127ac:      	ldr	x2, [x8]
+ 17127b0:      	bl	0x1ea9cec <__start_il2cpp+0x108c2bc> // System.Action..ctor
+ 17127b4:      	orr	w1, wzr, #0x2
+ 17127b8:      	b	0x17127ec <__start_il2cpp+0x8f4dbc>
+ 17127bc:      	adrp	x8, 0x2d25000
+ 17127c0:      	ldr	x8, [x8, #0x88]
+ 17127c4:      	ldr	x0, [x8]
+ 17127c8:      	bl	0xd418e4 <il2cpp_class_for_each+0x1940>
+ 17127cc:      	adrp	x8, 0x2cfb000
+ 17127d0:      	ldr	x8, [x8, #0x8a8]
+ 17127d4:      	mov	x1, x19
+ 17127d8:      	mov	x3, xzr
+ 17127dc:      	mov	x20, x0
+ 17127e0:      	ldr	x2, [x8]
+ 17127e4:      	bl	0x1ea9cec <__start_il2cpp+0x108c2bc> // System.Action..ctor
+ 17127e8:      	orr	w1, wzr, #0x1
+ 17127ec:      	ldp	x29, x30, [sp, #0x10]
+ 17127f0:      	mov	x2, x20
+ 17127f4:      	ldp	x20, x19, [sp], #0x20
+ 17127f8:      	b	0x1711db8 <__start_il2cpp+0x8f4388> // Stella.Scenes.ADV2.Director.ExecCommand
+ 17127fc:      	bl	0x17117cc <__start_il2cpp+0x8f3d9c> // Stella.Scenes.ADV2.Director.get_AdvPlayer
+ 1712800:      	cbz	x0, 0x17128bc <__start_il2cpp+0x8f4e8c>
+ 1712804:      	mov	x1, xzr
+ 1712808:      	mov	x2, xzr
+ 171280c:      	bl	0x1250558 <__start_il2cpp+0x432b28> // Stella.Scenes.ADV2.ADVPlayer.SetTextPanel
+ 1712810:      	b	0x1712830 <__start_il2cpp+0x8f4e00>
+ 1712814:      	ldp	x29, x30, [sp, #0x10]
+ 1712818:      	ldp	x20, x19, [sp], #0x20
+ 171281c:      	ret
+ 1712820:      	bl	0x17117cc <__start_il2cpp+0x8f3d9c> // Stella.Scenes.ADV2.Director.get_AdvPlayer
+ 1712824:      	cbz	x0, 0x17128bc <__start_il2cpp+0x8f4e8c>
+ 1712828:      	mov	x1, xzr
+ 171282c:      	bl	0x124efe4 <__start_il2cpp+0x4315b4> // Stella.Scenes.ADV2.ADVPlayer.CardSetMovie
+ 1712830:      	adrp	x8, 0x2d25000
+ 1712834:      	ldr	x8, [x8, #0x88]
+ 1712838:      	ldr	x0, [x8]
+ 171283c:      	bl	0xd418e4 <il2cpp_class_for_each+0x1940>
+ 1712840:      	adrp	x8, 0x2cfb000
+ 1712844:      	ldr	x8, [x8, #0x8a8]
+ 1712848:      	mov	x1, x19
+ 171284c:      	mov	x3, xzr
+ 1712850:      	mov	x20, x0
+ 1712854:      	ldr	x2, [x8]
+ 1712858:      	bl	0x1ea9cec <__start_il2cpp+0x108c2bc> // System.Action..ctor
+ 171285c:      	ldp	x29, x30, [sp, #0x10]
+ 1712860:      	mov	x1, x20
+ 1712864:      	ldp	x20, x19, [sp], #0x20
+ 1712868:      	b	0x1711d28 <__start_il2cpp+0x8f42f8> // Stella.Scenes.ADV2.Director.Wait
+ 171286c:      	adrp	x8, 0x2d25000
+ 1712870:      	ldr	x8, [x8, #0x88]
+ 1712874:      	ldr	x0, [x8]
+ 1712878:      	bl	0xd418e4 <il2cpp_class_for_each+0x1940>
+ 171287c:      	adrp	x8, 0x2cfb000
+ 1712880:      	ldr	x8, [x8, #0x8a8]
+ 1712884:      	mov	x1, x19
+ 1712888:      	mov	x3, xzr
+ 171288c:      	mov	x20, x0
+ 1712890:      	ldr	x2, [x8]
+ 1712894:      	bl	0x1ea9cec <__start_il2cpp+0x108c2bc> // System.Action..ctor
+ 1712898:      	ldp	x29, x30, [sp, #0x10]
+ 171289c:      	mov	x1, x20
+ 17128a0:      	ldp	x20, x19, [sp], #0x20
+ 17128a4:      	b	0x1712678 <__start_il2cpp+0x8f4c48> // Stella.Scenes.ADV2.Director.StartUserOperation
+ 17128a8:      	ldp	x29, x30, [sp, #0x10]
+ 17128ac:      	orr	w1, wzr, #0x3
+ 17128b0:      	mov	x0, x19
+ 17128b4:      	ldp	x20, x19, [sp], #0x20
+ 17128b8:      	b	0x1711aac <__start_il2cpp+0x8f407c> // Stella.Scenes.ADV2.Director.ChangePhase
+ 17128bc:      	bl	0xd418ec <il2cpp_class_for_each+0x1948>
+
+### Stella.Scenes.ADV2.ADVPlayer.CardWaitUserDrop 0x124f604..0x124f6c8 (upper bound)
+
+/home/rikka/Projects/stella/data/libil2cpp-offline.so:	file format elf64-littleaarch64
+
+Disassembly of section il2cpp:
+
+0000000000e1da30 <__start_il2cpp>:
+ 124f604:      	str	x21, [sp, #-0x30]!
+ 124f608:      	stp	x20, x19, [sp, #0x10]
+ 124f60c:      	stp	x29, x30, [sp, #0x20]
+ 124f610:      	add	x29, sp, #0x20
+ 124f614:      	adrp	x20, 0x2f36000
+ 124f618:      	ldrb	w8, [x20, #0x754]
+ 124f61c:      	mov	x19, x0
+ 124f620:      	tbnz	w8, #0x0, 0x124f63c <__start_il2cpp+0x431c0c>
+ 124f624:      	adrp	x8, 0x2d03000
+ 124f628:      	ldr	x8, [x8, #0xda8]
+ 124f62c:      	ldr	w0, [x8]
+ 124f630:      	bl	0xd4181c <il2cpp_class_for_each+0x1878>
+ 124f634:      	orr	w8, wzr, #0x1
+ 124f638:      	strb	w8, [x20, #0x754]
+ 124f63c:      	orr	w8, wzr, #0x1
+ 124f640:      	mov	x0, x19
+ 124f644:      	strb	wzr, [x19, #0x90]
+ 124f648:      	strb	w8, [x19, #0x72]
+ 124f64c:      	bl	0x124bc94 <__start_il2cpp+0x42e264> // Stella.Scenes.ADV2.ADVPlayer.get_IsSkipInOutEffect
+ 124f650:      	tbz	w0, #0x0, 0x124f668 <__start_il2cpp+0x431c38>
+ 124f654:      	mov	x0, x19
+ 124f658:      	ldp	x29, x30, [sp, #0x20]
+ 124f65c:      	ldp	x20, x19, [sp, #0x10]
+ 124f660:      	ldr	x21, [sp], #0x30
+ 124f664:      	b	0x124f6c8 <__start_il2cpp+0x431c98> // Stella.Scenes.ADV2.ADVPlayer.CardWaitUserTap
+ 124f668:      	mov	x0, x19
+ 124f66c:      	bl	0x124baa4 <__start_il2cpp+0x42e074> // Stella.Scenes.ADV2.ADVPlayer.get_UI
+ 124f670:      	adrp	x8, 0x2d25000
+ 124f674:      	ldr	x8, [x8, #0x88]
+ 124f678:      	mov	x20, x0
+ 124f67c:      	ldr	x8, [x8]
+ 124f680:      	mov	x0, x8
+ 124f684:      	bl	0xd418e4 <il2cpp_class_for_each+0x1940>
+ 124f688:      	adrp	x8, 0x2cb1000
+ 124f68c:      	ldr	x8, [x8, #0xd00]
+ 124f690:      	mov	x1, x19
+ 124f694:      	mov	x3, xzr
+ 124f698:      	mov	x21, x0
+ 124f69c:      	ldr	x2, [x8]
+ 124f6a0:      	bl	0x1ea9cec <__start_il2cpp+0x108c2bc> // System.Action..ctor
+ 124f6a4:      	cbz	x20, 0x124f6c4 <__start_il2cpp+0x431c94>
+ 124f6a8:      	mov	x0, x20
+ 124f6ac:      	ldp	x29, x30, [sp, #0x20]
+ 124f6b0:      	ldp	x20, x19, [sp, #0x10]
+ 124f6b4:      	mov	x1, x21
+ 124f6b8:      	mov	x2, xzr
+ 124f6bc:      	ldr	x21, [sp], #0x30
+ 124f6c0:      	b	0x1689c04 <__start_il2cpp+0x86c1d4> // Stella.Scenes.ADV2.UIController.CardDrop
+ 124f6c4:      	bl	0xd418ec <il2cpp_class_for_each+0x1948>

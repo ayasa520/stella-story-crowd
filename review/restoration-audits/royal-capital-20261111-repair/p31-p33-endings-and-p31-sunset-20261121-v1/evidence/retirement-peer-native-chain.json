@@ -1,0 +1,222 @@
+{
+  "schema": "stella.movie-end-title-peer-native-chain.v1",
+  "rootConfirmed": false,
+  "originalRuntimeExecuted": false,
+  "sourceModuleOwnTokenTableVerified": true,
+  "module": {
+    "name": "Assembly-CSharp.dll",
+    "record": "0x2bf0788",
+    "count": 34806,
+    "table": "0x2eb00d8",
+    "imageRecordOffset": 7853968,
+    "imageRecord": [
+      686785,
+      62,
+      5844,
+      6147,
+      -1,
+      0,
+      -1,
+      1,
+      8550,
+      13853
+    ]
+  },
+  "methodBindings": [
+    {
+      "qualified": "Stella.Scenes.ADV2.Director.StartUserOperation",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003e01",
+      "address": "0x1712678",
+      "endExclusiveUpperBound": "0x1712720"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.Director.Movie_Init",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003dfb",
+      "address": "0x1712720",
+      "endExclusiveUpperBound": "0x17128c0"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.ADVPlayer.CardWaitUserDrop",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003c90",
+      "address": "0x124f604",
+      "endExclusiveUpperBound": "0x124f6c8"
+    },
+    {
+      "qualified": "Stella.ScriptSystem.ScriptManager.ReturnSuccess",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x60017e1",
+      "address": "0x159c9ac"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.ADVPlayer.CardInit",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003c8c",
+      "address": "0x124f32c"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.ADVPlayer.CardWaitUserDrop",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003c90",
+      "address": "0x124f604"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.ADVPlayer.<CardWaitUserDrop>b__203_0",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003cb6",
+      "address": "0x1251830"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.CardBehaviour.Input",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003ce0",
+      "address": "0x12557f4"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.CardBehaviour.ExecClick",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003cf5",
+      "address": "0x1255d44"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.CardBehaviour.DropState",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003d0b",
+      "address": "0x125574c"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.CardBehaviour.DropProc",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003d0d",
+      "address": "0x1256f6c"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.CardBehaviour.FinishProc",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003d0f",
+      "address": "0x12571bc"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.UIController.CardInit",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003e8e",
+      "address": "0x1689a7c"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.UIController.CardDrop",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003e91",
+      "address": "0x1689c04"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.View.CardInit",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003f4c",
+      "address": "0x1689a94"
+    },
+    {
+      "qualified": "Stella.Scenes.ADV2.View.CardDrop",
+      "module": "Assembly-CSharp.dll",
+      "token": "0x6003f4e",
+      "address": "0x1689c54"
+    }
+  ],
+  "lowerExcerptInstructionWordsMatchedToElf": 759,
+  "uniqueLowerInstructionAddresses": 759,
+  "independentlyDecodedDirectBranches": [
+    {
+      "address": "0x17128a4",
+      "instruction": "0x17ffff75",
+      "target": "0x1712678",
+      "meaning": "Movie_Init→StartUserOperation"
+    },
+    {
+      "address": "0x17126c8",
+      "instruction": "0x97ecf49e",
+      "target": "0x124f940",
+      "meaning": "choice→CardWaitUserSelect"
+    },
+    {
+      "address": "0x17126f8",
+      "instruction": "0x97ecf3c3",
+      "target": "0x124f604",
+      "meaning": "default→CardWaitUserDrop"
+    },
+    {
+      "address": "0x1712700",
+      "instruction": "0x97fffd8a",
+      "target": "0x1711d28",
+      "meaning": "Director.Wait"
+    },
+    {
+      "address": "0x124f64c",
+      "instruction": "0x97fff192",
+      "target": "0x124bc94",
+      "meaning": "get_IsSkipInOutEffect"
+    },
+    {
+      "address": "0x124f664",
+      "instruction": "0x14000019",
+      "target": "0x124f6c8",
+      "meaning": "skip→CardWaitUserTap"
+    },
+    {
+      "address": "0x124f6c0",
+      "instruction": "0x1410e951",
+      "target": "0x1689c04",
+      "meaning": "not skip→UIController.CardDrop"
+    },
+    {
+      "address": "0x1689c1c",
+      "instruction": "0x9400000e",
+      "target": "0x1689c54",
+      "meaning": "UIController→View.CardDrop"
+    },
+    {
+      "address": "0x1689d08",
+      "instruction": "0x17ef2ebb",
+      "target": "0x12557f4",
+      "meaning": "View→Input"
+    },
+    {
+      "address": "0x1255db0",
+      "instruction": "0x17fffe67",
+      "target": "0x125574c",
+      "meaning": "ExecClick→DropState"
+    },
+    {
+      "address": "0x125719c",
+      "instruction": "0x94000008",
+      "target": "0x12571bc",
+      "meaning": "DropProc→FinishProc"
+    },
+    {
+      "address": "0x12518b4",
+      "instruction": "0x940d2c3e",
+      "target": "0x159c9ac",
+      "meaning": "drop completion→ReturnSuccess"
+    },
+    {
+      "address": "0x12518bc",
+      "instruction": "0x97fff69c",
+      "target": "0x124f32c",
+      "meaning": "drop completion→CardInit"
+    }
+  ],
+  "htmlOrder": {
+    "MovieProc": "natural PlayMovie completion→phase1→PanelSequence→phase2→SelectSequence→default CardDrop→return edge",
+    "CardDropStates": [
+      "In",
+      "Stay"
+    ],
+    "explicitCardOutSetsFlag": true,
+    "CardStayOnlyChangesCardState": true,
+    "defaultDropDoesNotMeanAutomaticAdvance": true
+  },
+  "limits": [
+    "Upper method end bounds are next-indexed-method bounds, not symbol sizes.",
+    "No code/runtime/pixel/timing acceptance."
+  ]
+}

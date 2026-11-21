@@ -1,0 +1,3568 @@
+{
+  "schema": "stella.saved-ending-visible.runtime-receipt.v3",
+  "status": "runtime-passed-visual-review-pending",
+  "rootConfirmed": false,
+  "driverExitCode": 0,
+  "supervisorExitCode": 0,
+  "dataHead": "8fd8798a2091138e0ab21b054b3fcc7088ee1b27",
+  "dataStatus": "M manifest.json\n M native/scenes/10040036.json\n M native/scenes/10040043.json\n M review/native-restoration.json\n M review/scenes/10040036.json\n M review/scenes/10040043.json\n?? review/restoration-batches/2f22ea3a7c2dcd66a670.json\n?? review/restoration-batches/5007693d5c1dd2ec6526.json\n?? review/restoration-batches/54371ae9846e2322ebf7.json\n?? review/restoration-batches/c1c2b6f75529bfc540e8.json\n?? review/restoration-batches/e3f40815e27b72f7f13c.json",
+  "snapshotAlias": "82333017b5f8337ca7a430d87815480c2bbe3052",
+  "snapshotAliasIsNotAGitCommit": true,
+  "source": {
+    "head": "4aeff7c5e7b72a79ea803d97f37c1f08a8218024",
+    "candidateTreeSha256": "24a642f0df3e55400da0ade4a95395761643a18e91b8c15839f764adb71b0ac0",
+    "sourceFiles": 309,
+    "distFiles": 232,
+    "twoMoviePlayerChangesNotYetCommittedAtCapture": true
+  },
+  "inputBindingSha256": "7f43bee9f44664adb5381cee228ff3bf6d2bfe3f81ed88f4a0fc4bf967b2edd7",
+  "runtimeBindingsSha256": "52f34da2ce4414f8a95ec48630a530fa44ea0dee54c8fa27fe1382ef036b66b2",
+  "coreCases": [
+    {
+      "name": "P31-normal-saved-ending",
+      "passedRuntimeGates": true,
+      "httpPrepare": {
+        "status": 200,
+        "start": "node:10040043:1004004300108",
+        "headSha": "82333017b5f8337ca7a430d87815480c2bbe3052",
+        "rawBodyBytes": 18740526,
+        "rawBodySha256": "7d93db1338e41502f053d04d6cbc4d31f023cabebfb731b64f775662b87dc34d",
+        "normalizedProgramSha256": "7d93db1338e41502f053d04d6cbc4d31f023cabebfb731b64f775662b87dc34d",
+        "gzipFile": "P31-normal-saved-ending-saved-prepare.json.gz",
+        "gzipBytes": 1462615,
+        "gzipSha256": "f10b19c508bf97522a8422e7fc831723b4096e4080580bafdbb92e30fcb0d2c1"
+      },
+      "actualTailActor": {
+        "model": "ricardo01",
+        "displayCommit": "STORY_DISPLAY_COMMIT node:10040043:1004004300108 actor ricardo01",
+        "before": {
+          "canvas": "actor",
+          "attached": true,
+          "lost": false,
+          "kind": "webgl2",
+          "draws": 684
+        },
+        "after": {
+          "canvas": "actor",
+          "attached": true,
+          "lost": false,
+          "kind": "webgl2",
+          "draws": 760
+        },
+        "drawDelta": 76,
+        "panelOwner": {
+          "group": "adv_tell_chara",
+          "node": "node:10040043:1004004300108",
+          "token": 1,
+          "duration": 0.1666666716337204,
+          "clock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 137,
+            "frameTimestampMs": 5155.98,
+            "rawDeltaSeconds": 0.13373999999999978,
+            "deltaSeconds": 0.13373999999999978,
+            "gameSeconds": 4.551146686534885,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          }
+        },
+        "panelComplete": {
+          "group": "adv_tell_chara",
+          "node": "node:10040043:1004004300108",
+          "token": 1
+        },
+        "modelReadyEvents": [
+          "MODEL_READY ricardo01 44 4800 9000 visible=false"
+        ],
+        "rawLosses": [
+          {
+            "canvas": "",
+            "attached": false,
+            "kind": "webgl",
+            "node": ""
+          }
+        ],
+        "attachedActorVisibleAndContinuingDraws": true
+      },
+      "tailActualBackground": {
+        "resource": "bg/bg023b_slum",
+        "texture": [
+          2048,
+          2048
+        ],
+        "aspect": 0.7499999776482589,
+        "viewport": [
+          440,
+          782.217
+        ],
+        "draw": [
+          -73.33136625804406,
+          0,
+          586.6627325160881,
+          782.217
+        ],
+        "blur": 0
+      },
+      "naturalEnded": {
+        "sequence": 141,
+        "event": null,
+        "trigger": {
+          "kind": "browser-media-event",
+          "eventType": "ended",
+          "eventTimestamp": 12436,
+          "isTrusted": true
+        },
+        "node": "node:10040043:1004004300109",
+        "phase": "movie",
+        "generation": {
+          "value": 5,
+          "source": "STORY_VOICE_PREPARATION",
+          "sourceDetail": {
+            "stage": "ready",
+            "node": "node:10040043:1004004300109",
+            "generation": 5,
+            "currentGeneration": 5,
+            "wallMilliseconds": 6355,
+            "clock": {
+              "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+              "frame": 146,
+              "frameTimestampMs": 6338.5,
+              "rawDeltaSeconds": 0.1499399999999996,
+              "deltaSeconds": 0.1499399999999996,
+              "gameSeconds": 5.733666686534886,
+              "previewRate": 1,
+              "maximumDeltaSeconds": 0.3333333432674408,
+              "rateOwner": "StoryActor"
+            }
+          },
+          "observedAtPerformanceMilliseconds": 6355
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 461,
+          "frameTimestampMs": 12422.32,
+          "rawDeltaSeconds": 0.016539999999999055,
+          "deltaSeconds": 0.016539999999999055,
+          "gameSeconds": 11.817486686534902,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251905614
+      },
+      "ready": {
+        "sequence": 151,
+        "event": {
+          "mutations": [
+            {
+              "attribute": "data-phase",
+              "oldValue": "command"
+            }
+          ]
+        },
+        "trigger": {
+          "kind": "mutation-delivery",
+          "originalWriteTimeUnobserved": true
+        },
+        "node": "node:10040043:1004004300109",
+        "phase": "ready",
+        "generation": {
+          "value": 5,
+          "source": "STORY_VOICE_PREPARATION",
+          "sourceDetail": {
+            "stage": "joined",
+            "node": "node:10040043:1004004300109",
+            "generation": 5,
+            "currentGeneration": 5,
+            "wallMilliseconds": 12445,
+            "clock": {
+              "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+              "frame": 461,
+              "frameTimestampMs": 12422.32,
+              "rawDeltaSeconds": 0.016539999999999055,
+              "deltaSeconds": 0.016539999999999055,
+              "gameSeconds": 11.817486686534902,
+              "previewRate": 1,
+              "maximumDeltaSeconds": 0.3333333432674408,
+              "rateOwner": "StoryActor"
+            }
+          },
+          "observedAtPerformanceMilliseconds": 12445
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 461,
+          "frameTimestampMs": 12422.32,
+          "rawDeltaSeconds": 0.016539999999999055,
+          "deltaSeconds": 0.016539999999999055,
+          "gameSeconds": 11.817486686534902,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251905625
+      },
+      "trustedContinue": {
+        "sequence": 152,
+        "event": {
+          "button": "advance",
+          "edge": "",
+          "label": "继续"
+        },
+        "trigger": {
+          "kind": "dom-input-capture",
+          "eventTimestamp": 12497,
+          "isTrusted": true
+        },
+        "node": "node:10040043:1004004300109",
+        "phase": "ready",
+        "generation": {
+          "value": 5,
+          "source": "STORY_VOICE_PREPARATION",
+          "sourceDetail": {
+            "stage": "joined",
+            "node": "node:10040043:1004004300109",
+            "generation": 5,
+            "currentGeneration": 5,
+            "wallMilliseconds": 12445,
+            "clock": {
+              "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+              "frame": 461,
+              "frameTimestampMs": 12422.32,
+              "rawDeltaSeconds": 0.016539999999999055,
+              "deltaSeconds": 0.016539999999999055,
+              "gameSeconds": 11.817486686534902,
+              "previewRate": 1,
+              "maximumDeltaSeconds": 0.3333333432674408,
+              "rateOwner": "StoryActor"
+            }
+          },
+          "observedAtPerformanceMilliseconds": 12445
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 463,
+          "frameTimestampMs": 12489.06,
+          "rawDeltaSeconds": 0.033359999999998766,
+          "deltaSeconds": 0.033359999999998766,
+          "gameSeconds": 11.884226686534902,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251905678
+      },
+      "transitions": [
+        {
+          "sequence": 53,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10040043:1004004300108:1004004311081:1081\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004004311081,\"transition_id\":108101,\"next_scenario_id\":109,\"next_scenario_label\":\"\"},\"target\":\"node:10040043:1004004300109\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10040043:1004004300108:1004004311081:1081",
+              "action": "continue",
+              "native": {
+                "uniq_id": 1004004311081,
+                "transition_id": 108101,
+                "next_scenario_id": 109,
+                "next_scenario_label": ""
+              },
+              "target": "node:10040043:1004004300109"
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 6333,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040043:1004004300108",
+          "phase": "loading",
+          "generation": {
+            "value": 4,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10040043:1004004300108",
+              "generation": 4,
+              "currentGeneration": 4,
+              "wallMilliseconds": 5161,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 137,
+                "frameTimestampMs": 5155.98,
+                "rawDeltaSeconds": 0.13373999999999978,
+                "deltaSeconds": 0.13373999999999978,
+                "gameSeconds": 4.551146686534885,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 5161
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 145,
+            "frameTimestampMs": 6188.56,
+            "rawDeltaSeconds": 0.016220000000000255,
+            "deltaSeconds": 0.016220000000000255,
+            "gameSeconds": 5.583726686534886,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 0,
+            "duration": null,
+            "paused": true,
+            "ended": false,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 0,
+            "currentSrc": "",
+            "mozHasAudio": false,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251899511
+        },
+        {
+          "sequence": 153,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10040043:1004004300109:1004004311091:1091\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004004311091,\"transition_id\":109101,\"next_scenario_id\":110,\"next_scenario_label\":\"\"},\"target\":\"node:10040043:1004004300110\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10040043:1004004300109:1004004311091:1091",
+              "action": "continue",
+              "native": {
+                "uniq_id": 1004004311091,
+                "transition_id": 109101,
+                "next_scenario_id": 110,
+                "next_scenario_label": ""
+              },
+              "target": "node:10040043:1004004300110"
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 12500,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040043:1004004300109",
+          "phase": "loading",
+          "generation": {
+            "value": 5,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10040043:1004004300109",
+              "generation": 5,
+              "currentGeneration": 5,
+              "wallMilliseconds": 12445,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 461,
+                "frameTimestampMs": 12422.32,
+                "rawDeltaSeconds": 0.016539999999999055,
+                "deltaSeconds": 0.016539999999999055,
+                "gameSeconds": 11.817486686534902,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 12445
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 463,
+            "frameTimestampMs": 12489.06,
+            "rawDeltaSeconds": 0.033359999999998766,
+            "deltaSeconds": 0.033359999999998766,
+            "gameSeconds": 11.884226686534902,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251905679
+        },
+        {
+          "sequence": 185,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10040043:1004004300110:1004004311101:1101\",\"action\":\"complete\",\"native\":{\"uniq_id\":1004004311101,\"transition_id\":110101,\"next_scenario_id\":0,\"next_scenario_label\":\"FINISH\"},\"target\":\"\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10040043:1004004300110:1004004311101:1101",
+              "action": "complete",
+              "native": {
+                "uniq_id": 1004004311101,
+                "transition_id": 110101,
+                "next_scenario_id": 0,
+                "next_scenario_label": "FINISH"
+              },
+              "target": ""
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 15295,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040043:1004004300110",
+          "phase": "command",
+          "generation": {
+            "value": 6,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040043:1004004300110",
+              "scene": "scene:10040043",
+              "loadedScene": "scene:10040043",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 6,
+              "monotonicMilliseconds": 12502
+            },
+            "observedAtPerformanceMilliseconds": 12503
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 627,
+            "frameTimestampMs": 15288.56,
+            "rawDeltaSeconds": 0.016100000000000364,
+            "deltaSeconds": 0.016100000000000364,
+            "gameSeconds": 14.683726686534907,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251908473
+        }
+      ],
+      "cardChange": {
+        "sequence": 157,
+        "event": {
+          "name": "STORY_CARD_CHANGE",
+          "args": [
+            "{\"source\":\"node:10040043:1004004300109\",\"target\":\"node:10040043:1004004300110\",\"from\":{\"kind\":\"movie\",\"resource\":\"adv_dive01_out\"},\"to\":null,\"cardState\":\"in\",\"animate\":true,\"sceneTitleRetirement\":false,\"movieEndTitleRetirement\":true,\"chartInterval\":false}"
+          ],
+          "detail": {
+            "source": "node:10040043:1004004300109",
+            "target": "node:10040043:1004004300110",
+            "from": {
+              "kind": "movie",
+              "resource": "adv_dive01_out"
+            },
+            "to": null,
+            "cardState": "in",
+            "animate": true,
+            "sceneTitleRetirement": false,
+            "movieEndTitleRetirement": true,
+            "chartInterval": false
+          }
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 12505,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10040043:1004004300110",
+        "phase": "loading",
+        "generation": {
+          "value": 6,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10040043:1004004300110",
+            "scene": "scene:10040043",
+            "loadedScene": "scene:10040043",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 6,
+            "monotonicMilliseconds": 12502
+          },
+          "observedAtPerformanceMilliseconds": 12503
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 463,
+          "frameTimestampMs": 12489.06,
+          "rawDeltaSeconds": 0.033359999999998766,
+          "deltaSeconds": 0.033359999999998766,
+          "gameSeconds": 11.884226686534902,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251905684
+      },
+      "titleDecision": {
+        "sequence": 155,
+        "event": {
+          "name": "STORY_NATIVE_INTERVAL_DECISION",
+          "args": [
+            "{\"node\":\"node:10040043:1004004300110\",\"scene\":\"scene:10040043\",\"loadedScene\":\"scene:10040043\",\"sceneReload\":false,\"mode\":0,\"forcedTutorial\":false,\"isTitle\":true,\"isEndTitle\":true,\"isRoot\":false,\"nextSceneCount\":0,\"isBranch\":false,\"afterBranch\":false,\"show\":false,\"reason\":\"end-title\",\"generation\":6,\"monotonicMilliseconds\":12502}"
+          ],
+          "detail": {
+            "node": "node:10040043:1004004300110",
+            "scene": "scene:10040043",
+            "loadedScene": "scene:10040043",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 6,
+            "monotonicMilliseconds": 12502
+          }
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 12502,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10040043:1004004300110",
+        "phase": "loading",
+        "generation": {
+          "value": 6,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10040043:1004004300110",
+            "scene": "scene:10040043",
+            "loadedScene": "scene:10040043",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 6,
+            "monotonicMilliseconds": 12502
+          },
+          "observedAtPerformanceMilliseconds": 12503
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 463,
+          "frameTimestampMs": 12489.06,
+          "rawDeltaSeconds": 0.033359999999998766,
+          "deltaSeconds": 0.033359999999998766,
+          "gameSeconds": 11.884226686534902,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251905681
+      },
+      "drop": {
+        "executed": true,
+        "start": {
+          "sequence": 159,
+          "event": {
+            "name": "STORY_CARD_OUT_START",
+            "args": [
+              12507,
+              false
+            ],
+            "detail": null
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 12507,
+            "productReportedWallMilliseconds": 12507
+          },
+          "node": "node:10040043:1004004300110",
+          "phase": "transition",
+          "generation": {
+            "value": 6,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040043:1004004300110",
+              "scene": "scene:10040043",
+              "loadedScene": "scene:10040043",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 6,
+              "monotonicMilliseconds": 12502
+            },
+            "observedAtPerformanceMilliseconds": 12503
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 463,
+            "frameTimestampMs": 12489.06,
+            "rawDeltaSeconds": 0.033359999999998766,
+            "deltaSeconds": 0.033359999999998766,
+            "gameSeconds": 11.884226686534902,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251905685
+        },
+        "complete": {
+          "sequence": 168,
+          "event": {
+            "name": "STORY_CARD_OUT_COMPLETE",
+            "args": [
+              12566
+            ],
+            "detail": null
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 12566,
+            "productReportedWallMilliseconds": 12566
+          },
+          "node": "node:10040043:1004004300110",
+          "phase": "transition",
+          "generation": {
+            "value": 6,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040043:1004004300110",
+              "scene": "scene:10040043",
+              "loadedScene": "scene:10040043",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 6,
+              "monotonicMilliseconds": 12502
+            },
+            "observedAtPerformanceMilliseconds": 12503
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 466,
+            "frameTimestampMs": 12555.98,
+            "rawDeltaSeconds": 0.0335,
+            "deltaSeconds": 0.0335,
+            "gameSeconds": 11.951146686534901,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251905744
+        },
+        "hidden": {
+          "sequence": 169,
+          "event": {
+            "name": "STORY_PLAYER_TIMING",
+            "args": [
+              "{\"node\":\"node:10040043:1004004300110\",\"stage\":\"card_change_hidden\",\"milliseconds\":65}"
+            ],
+            "detail": {
+              "node": "node:10040043:1004004300110",
+              "stage": "card_change_hidden",
+              "milliseconds": 65
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 12566,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040043:1004004300110",
+          "phase": "transition",
+          "generation": {
+            "value": 6,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040043:1004004300110",
+              "scene": "scene:10040043",
+              "loadedScene": "scene:10040043",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 6,
+              "monotonicMilliseconds": 12502
+            },
+            "observedAtPerformanceMilliseconds": 12503
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 466,
+            "frameTimestampMs": 12555.98,
+            "rawDeltaSeconds": 0.0335,
+            "deltaSeconds": 0.0335,
+            "gameSeconds": 11.951146686534901,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251905744
+        },
+        "generation": 6,
+        "intermediateAlphaSampleCount": 4,
+        "exactCurveOrTimingAccepted": false,
+        "curveCoverage": "Observed intermediate alpha samples; original curve/time fidelity unsigned"
+      },
+      "originalPhase2Commands": [],
+      "actualTutorialSkip": null,
+      "actualTitle": {
+        "sequence": 178,
+        "event": {
+          "name": "STORY_PLAYER_TITLE",
+          "args": [
+            "node:10040043:1004004300110",
+            "end"
+          ],
+          "detail": null
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 12805,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10040043:1004004300110",
+        "phase": "title",
+        "generation": {
+          "value": 6,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10040043:1004004300110",
+            "scene": "scene:10040043",
+            "loadedScene": "scene:10040043",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 6,
+            "monotonicMilliseconds": 12502
+          },
+          "observedAtPerformanceMilliseconds": 12503
+        },
+        "alpha": 0,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 478,
+          "frameTimestampMs": 12772.64,
+          "rawDeltaSeconds": 0.017059999999999492,
+          "deltaSeconds": 0.017059999999999492,
+          "gameSeconds": 12.167806686534904,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": true,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251905983
+      },
+      "nativeEntry": [
+        {
+          "sequence": 179,
+          "event": {
+            "name": "STORY_NATIVE_TITLE_ENTRY",
+            "args": [
+              "{\"stage\":\"started\",\"node\":\"node:10040043:1004004300110\",\"mode\":\"normal\",\"durationMilliseconds\":2500,\"gameElapsedMilliseconds\":0,\"clock\":{\"profile\":\"apk-1.19.7-unity-2019.4.21f1-normal-time-v1\",\"frame\":478,\"frameTimestampMs\":12772.64,\"rawDeltaSeconds\":0.017059999999999492,\"deltaSeconds\":0.017059999999999492,\"gameSeconds\":12.167806686534904,\"previewRate\":1,\"maximumDeltaSeconds\":0.3333333432674408,\"rateOwner\":\"StoryActor\"}}"
+            ],
+            "detail": {
+              "stage": "started",
+              "node": "node:10040043:1004004300110",
+              "mode": "normal",
+              "durationMilliseconds": 2500,
+              "gameElapsedMilliseconds": 0,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 478,
+                "frameTimestampMs": 12772.64,
+                "rawDeltaSeconds": 0.017059999999999492,
+                "deltaSeconds": 0.017059999999999492,
+                "gameSeconds": 12.167806686534904,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 12805,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040043:1004004300110",
+          "phase": "title",
+          "generation": {
+            "value": 6,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040043:1004004300110",
+              "scene": "scene:10040043",
+              "loadedScene": "scene:10040043",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 6,
+              "monotonicMilliseconds": 12502
+            },
+            "observedAtPerformanceMilliseconds": 12503
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 478,
+            "frameTimestampMs": 12772.64,
+            "rawDeltaSeconds": 0.017059999999999492,
+            "deltaSeconds": 0.017059999999999492,
+            "gameSeconds": 12.167806686534904,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251905983
+        },
+        {
+          "sequence": 181,
+          "event": {
+            "name": "STORY_NATIVE_TITLE_ENTRY",
+            "args": [
+              "{\"stage\":\"completed\",\"node\":\"node:10040043:1004004300110\",\"mode\":\"normal\",\"durationMilliseconds\":2500,\"gameElapsedMilliseconds\":2515.9200000000033,\"clock\":{\"profile\":\"apk-1.19.7-unity-2019.4.21f1-normal-time-v1\",\"frame\":627,\"frameTimestampMs\":15288.56,\"rawDeltaSeconds\":0.016100000000000364,\"deltaSeconds\":0.016100000000000364,\"gameSeconds\":14.683726686534907,\"previewRate\":1,\"maximumDeltaSeconds\":0.3333333432674408,\"rateOwner\":\"StoryActor\"}}"
+            ],
+            "detail": {
+              "stage": "completed",
+              "node": "node:10040043:1004004300110",
+              "mode": "normal",
+              "durationMilliseconds": 2500,
+              "gameElapsedMilliseconds": 2515.9200000000033,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 627,
+                "frameTimestampMs": 15288.56,
+                "rawDeltaSeconds": 0.016100000000000364,
+                "deltaSeconds": 0.016100000000000364,
+                "gameSeconds": 14.683726686534907,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 15290,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040043:1004004300110",
+          "phase": "title",
+          "generation": {
+            "value": 6,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040043:1004004300110",
+              "scene": "scene:10040043",
+              "loadedScene": "scene:10040043",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 6,
+              "monotonicMilliseconds": 12502
+            },
+            "observedAtPerformanceMilliseconds": 12503
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 627,
+            "frameTimestampMs": 15288.56,
+            "rawDeltaSeconds": 0.016100000000000364,
+            "deltaSeconds": 0.016100000000000364,
+            "gameSeconds": 14.683726686534907,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251908471
+        }
+      ],
+      "ownCompletedChart": {
+        "state": "complete",
+        "className": "chart-scene current complete"
+      }
+    },
+    {
+      "name": "P33-normal-saved-ending",
+      "passedRuntimeGates": true,
+      "httpPrepare": {
+        "status": 200,
+        "start": "node:10040036:1004003600028",
+        "headSha": "82333017b5f8337ca7a430d87815480c2bbe3052",
+        "rawBodyBytes": 18740531,
+        "rawBodySha256": "893618c06157ee035b17b38249b6b6f21513e8b5dd46e1d4dc8a5107d2633005",
+        "normalizedProgramSha256": "893618c06157ee035b17b38249b6b6f21513e8b5dd46e1d4dc8a5107d2633005",
+        "gzipFile": "P33-normal-saved-ending-saved-prepare.json.gz",
+        "gzipBytes": 1462616,
+        "gzipSha256": "1320f8b1628fd889c9fae7155dc71e2ab227043d14d8f87e2b7f8bc88dea0d95"
+      },
+      "actualTailActor": {
+        "model": "ferris_dress01",
+        "displayCommit": "STORY_DISPLAY_COMMIT node:10040036:1004003600028 actor ferris_dress01",
+        "before": {
+          "canvas": "actor",
+          "attached": true,
+          "lost": false,
+          "kind": "webgl2",
+          "draws": 1994
+        },
+        "after": {
+          "canvas": "actor",
+          "attached": true,
+          "lost": false,
+          "kind": "webgl2",
+          "draws": 2087
+        },
+        "drawDelta": 93,
+        "panelOwner": {
+          "group": "adv_tell_chara",
+          "node": "node:10040036:1004003600028",
+          "token": 2,
+          "duration": 0.1666666716337204,
+          "clock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 698,
+            "frameTimestampMs": 18389.3,
+            "rawDeltaSeconds": 0.16665999999999986,
+            "deltaSeconds": 0.16665999999999986,
+            "gameSeconds": 17.700933373069788,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          }
+        },
+        "panelComplete": {
+          "group": "adv_tell_chara",
+          "node": "node:10040036:1004003600028",
+          "token": 2
+        },
+        "modelReadyEvents": [
+          "MODEL_READY ferris_dress01 71 4800 9000 visible=false"
+        ],
+        "rawLosses": [
+          {
+            "canvas": "",
+            "attached": false,
+            "kind": "webgl",
+            "node": ""
+          }
+        ],
+        "attachedActorVisibleAndContinuingDraws": true
+      },
+      "tailActualBackground": null,
+      "naturalEnded": {
+        "sequence": 327,
+        "event": null,
+        "trigger": {
+          "kind": "browser-media-event",
+          "eventType": "ended",
+          "eventTimestamp": 25591,
+          "isTrusted": true
+        },
+        "node": "node:10040036:1004003600029",
+        "phase": "movie",
+        "generation": {
+          "value": 12,
+          "source": "STORY_VOICE_PREPARATION",
+          "sourceDetail": {
+            "stage": "ready",
+            "node": "node:10040036:1004003600029",
+            "generation": 12,
+            "currentGeneration": 12,
+            "wallMilliseconds": 19672,
+            "clock": {
+              "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+              "frame": 707,
+              "frameTimestampMs": 19655.94,
+              "rawDeltaSeconds": 0.11663999999999942,
+              "deltaSeconds": 0.11663999999999942,
+              "gameSeconds": 18.967573373069794,
+              "previewRate": 1,
+              "maximumDeltaSeconds": 0.3333333432674408,
+              "rateOwner": "StoryActor"
+            }
+          },
+          "observedAtPerformanceMilliseconds": 19672
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 958,
+          "frameTimestampMs": 25557.64,
+          "rawDeltaSeconds": 0.016200000000000728,
+          "deltaSeconds": 0.016200000000000728,
+          "gameSeconds": 24.869273373069717,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251918769
+      },
+      "ready": {
+        "sequence": 337,
+        "event": {
+          "mutations": [
+            {
+              "attribute": "data-phase",
+              "oldValue": "command"
+            }
+          ]
+        },
+        "trigger": {
+          "kind": "mutation-delivery",
+          "originalWriteTimeUnobserved": true
+        },
+        "node": "node:10040036:1004003600029",
+        "phase": "ready",
+        "generation": {
+          "value": 12,
+          "source": "STORY_VOICE_PREPARATION",
+          "sourceDetail": {
+            "stage": "joined",
+            "node": "node:10040036:1004003600029",
+            "generation": 12,
+            "currentGeneration": 12,
+            "wallMilliseconds": 25594,
+            "clock": {
+              "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+              "frame": 958,
+              "frameTimestampMs": 25557.64,
+              "rawDeltaSeconds": 0.016200000000000728,
+              "deltaSeconds": 0.016200000000000728,
+              "gameSeconds": 24.869273373069717,
+              "previewRate": 1,
+              "maximumDeltaSeconds": 0.3333333432674408,
+              "rateOwner": "StoryActor"
+            }
+          },
+          "observedAtPerformanceMilliseconds": 25594
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 958,
+          "frameTimestampMs": 25557.64,
+          "rawDeltaSeconds": 0.016200000000000728,
+          "deltaSeconds": 0.016200000000000728,
+          "gameSeconds": 24.869273373069717,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251918781
+      },
+      "trustedContinue": {
+        "sequence": 338,
+        "event": {
+          "button": "advance",
+          "edge": "",
+          "label": "继续"
+        },
+        "trigger": {
+          "kind": "dom-input-capture",
+          "eventTimestamp": 25623,
+          "isTrusted": true
+        },
+        "node": "node:10040036:1004003600029",
+        "phase": "ready",
+        "generation": {
+          "value": 12,
+          "source": "STORY_VOICE_PREPARATION",
+          "sourceDetail": {
+            "stage": "joined",
+            "node": "node:10040036:1004003600029",
+            "generation": 12,
+            "currentGeneration": 12,
+            "wallMilliseconds": 25594,
+            "clock": {
+              "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+              "frame": 958,
+              "frameTimestampMs": 25557.64,
+              "rawDeltaSeconds": 0.016200000000000728,
+              "deltaSeconds": 0.016200000000000728,
+              "gameSeconds": 24.869273373069717,
+              "previewRate": 1,
+              "maximumDeltaSeconds": 0.3333333432674408,
+              "rateOwner": "StoryActor"
+            }
+          },
+          "observedAtPerformanceMilliseconds": 25594
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 960,
+          "frameTimestampMs": 25607.26,
+          "rawDeltaSeconds": 0.016119999999998982,
+          "deltaSeconds": 0.016119999999998982,
+          "gameSeconds": 24.918893373069714,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251918813
+      },
+      "transitions": [
+        {
+          "sequence": 242,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10040036:1004003600028:1004003610281:281\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004003610281,\"transition_id\":28101,\"next_scenario_id\":29,\"next_scenario_label\":\"\"},\"target\":\"node:10040036:1004003600029\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10040036:1004003600028:1004003610281:281",
+              "action": "continue",
+              "native": {
+                "uniq_id": 1004003610281,
+                "transition_id": 28101,
+                "next_scenario_id": 29,
+                "next_scenario_label": ""
+              },
+              "target": "node:10040036:1004003600029"
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 19566,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040036:1004003600028",
+          "phase": "loading",
+          "generation": {
+            "value": 11,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10040036:1004003600028",
+              "generation": 11,
+              "currentGeneration": 11,
+              "wallMilliseconds": 18398,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 698,
+                "frameTimestampMs": 18389.3,
+                "rawDeltaSeconds": 0.16665999999999986,
+                "deltaSeconds": 0.16665999999999986,
+                "gameSeconds": 17.700933373069788,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 18398
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 706,
+            "frameTimestampMs": 19539.3,
+            "rawDeltaSeconds": 0.13395999999999914,
+            "deltaSeconds": 0.13395999999999914,
+            "gameSeconds": 18.850933373069793,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251912745
+        },
+        {
+          "sequence": 339,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10040036:1004003600029:1004003610291:291\",\"action\":\"continue\",\"native\":{\"uniq_id\":1004003610291,\"transition_id\":29101,\"next_scenario_id\":30,\"next_scenario_label\":\"\"},\"target\":\"node:10040036:1004003600030\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10040036:1004003600029:1004003610291:291",
+              "action": "continue",
+              "native": {
+                "uniq_id": 1004003610291,
+                "transition_id": 29101,
+                "next_scenario_id": 30,
+                "next_scenario_label": ""
+              },
+              "target": "node:10040036:1004003600030"
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 25635,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040036:1004003600029",
+          "phase": "loading",
+          "generation": {
+            "value": 12,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10040036:1004003600029",
+              "generation": 12,
+              "currentGeneration": 12,
+              "wallMilliseconds": 25594,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 958,
+                "frameTimestampMs": 25557.64,
+                "rawDeltaSeconds": 0.016200000000000728,
+                "deltaSeconds": 0.016200000000000728,
+                "gameSeconds": 24.869273373069717,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 25594
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 960,
+            "frameTimestampMs": 25607.26,
+            "rawDeltaSeconds": 0.016119999999998982,
+            "deltaSeconds": 0.016119999999998982,
+            "gameSeconds": 24.918893373069714,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251918814
+        },
+        {
+          "sequence": 371,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10040036:1004003600030:1004003610301:301\",\"action\":\"complete\",\"native\":{\"uniq_id\":1004003610301,\"transition_id\":30101,\"next_scenario_id\":0,\"next_scenario_label\":\"FINISH\"},\"target\":\"\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10040036:1004003600030:1004003610301:301",
+              "action": "complete",
+              "native": {
+                "uniq_id": 1004003610301,
+                "transition_id": 30101,
+                "next_scenario_id": 0,
+                "next_scenario_label": "FINISH"
+              },
+              "target": ""
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 28198,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040036:1004003600030",
+          "phase": "command",
+          "generation": {
+            "value": 13,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040036:1004003600030",
+              "scene": "scene:10040036",
+              "loadedScene": "scene:10040036",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 13,
+              "monotonicMilliseconds": 25637
+            },
+            "observedAtPerformanceMilliseconds": 25638
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1112,
+            "frameTimestampMs": 28191.22,
+            "rawDeltaSeconds": 0.01713999999999942,
+            "deltaSeconds": 0.01713999999999942,
+            "gameSeconds": 27.50285337306968,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251921376
+        }
+      ],
+      "cardChange": {
+        "sequence": 343,
+        "event": {
+          "name": "STORY_CARD_CHANGE",
+          "args": [
+            "{\"source\":\"node:10040036:1004003600029\",\"target\":\"node:10040036:1004003600030\",\"from\":{\"kind\":\"movie\",\"resource\":\"adv_dive01_out\"},\"to\":null,\"cardState\":\"in\",\"animate\":true,\"sceneTitleRetirement\":false,\"movieEndTitleRetirement\":true,\"chartInterval\":false}"
+          ],
+          "detail": {
+            "source": "node:10040036:1004003600029",
+            "target": "node:10040036:1004003600030",
+            "from": {
+              "kind": "movie",
+              "resource": "adv_dive01_out"
+            },
+            "to": null,
+            "cardState": "in",
+            "animate": true,
+            "sceneTitleRetirement": false,
+            "movieEndTitleRetirement": true,
+            "chartInterval": false
+          }
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 25645,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10040036:1004003600030",
+        "phase": "loading",
+        "generation": {
+          "value": 13,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10040036:1004003600030",
+            "scene": "scene:10040036",
+            "loadedScene": "scene:10040036",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 13,
+            "monotonicMilliseconds": 25637
+          },
+          "observedAtPerformanceMilliseconds": 25638
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 960,
+          "frameTimestampMs": 25607.26,
+          "rawDeltaSeconds": 0.016119999999998982,
+          "deltaSeconds": 0.016119999999998982,
+          "gameSeconds": 24.918893373069714,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251918824
+      },
+      "titleDecision": {
+        "sequence": 341,
+        "event": {
+          "name": "STORY_NATIVE_INTERVAL_DECISION",
+          "args": [
+            "{\"node\":\"node:10040036:1004003600030\",\"scene\":\"scene:10040036\",\"loadedScene\":\"scene:10040036\",\"sceneReload\":false,\"mode\":0,\"forcedTutorial\":false,\"isTitle\":true,\"isEndTitle\":true,\"isRoot\":false,\"nextSceneCount\":0,\"isBranch\":false,\"afterBranch\":false,\"show\":false,\"reason\":\"end-title\",\"generation\":13,\"monotonicMilliseconds\":25637}"
+          ],
+          "detail": {
+            "node": "node:10040036:1004003600030",
+            "scene": "scene:10040036",
+            "loadedScene": "scene:10040036",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 13,
+            "monotonicMilliseconds": 25637
+          }
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 25637,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10040036:1004003600030",
+        "phase": "loading",
+        "generation": {
+          "value": 13,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10040036:1004003600030",
+            "scene": "scene:10040036",
+            "loadedScene": "scene:10040036",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 13,
+            "monotonicMilliseconds": 25637
+          },
+          "observedAtPerformanceMilliseconds": 25638
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 960,
+          "frameTimestampMs": 25607.26,
+          "rawDeltaSeconds": 0.016119999999998982,
+          "deltaSeconds": 0.016119999999998982,
+          "gameSeconds": 24.918893373069714,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251918816
+      },
+      "drop": {
+        "executed": true,
+        "start": {
+          "sequence": 345,
+          "event": {
+            "name": "STORY_CARD_OUT_START",
+            "args": [
+              25647,
+              false
+            ],
+            "detail": null
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 25647,
+            "productReportedWallMilliseconds": 25647
+          },
+          "node": "node:10040036:1004003600030",
+          "phase": "transition",
+          "generation": {
+            "value": 13,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040036:1004003600030",
+              "scene": "scene:10040036",
+              "loadedScene": "scene:10040036",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 13,
+              "monotonicMilliseconds": 25637
+            },
+            "observedAtPerformanceMilliseconds": 25638
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 960,
+            "frameTimestampMs": 25607.26,
+            "rawDeltaSeconds": 0.016119999999998982,
+            "deltaSeconds": 0.016119999999998982,
+            "gameSeconds": 24.918893373069714,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251918826
+        },
+        "complete": {
+          "sequence": 354,
+          "event": {
+            "name": "STORY_CARD_OUT_COMPLETE",
+            "args": [
+              25693
+            ],
+            "detail": null
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 25693,
+            "productReportedWallMilliseconds": 25693
+          },
+          "node": "node:10040036:1004003600030",
+          "phase": "transition",
+          "generation": {
+            "value": 13,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040036:1004003600030",
+              "scene": "scene:10040036",
+              "loadedScene": "scene:10040036",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 13,
+              "monotonicMilliseconds": 25637
+            },
+            "observedAtPerformanceMilliseconds": 25638
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 963,
+            "frameTimestampMs": 25691.06,
+            "rawDeltaSeconds": 0.03302000000000044,
+            "deltaSeconds": 0.03302000000000044,
+            "gameSeconds": 25.002693373069718,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251918871
+        },
+        "hidden": {
+          "sequence": 355,
+          "event": {
+            "name": "STORY_PLAYER_TIMING",
+            "args": [
+              "{\"node\":\"node:10040036:1004003600030\",\"stage\":\"card_change_hidden\",\"milliseconds\":56}"
+            ],
+            "detail": {
+              "node": "node:10040036:1004003600030",
+              "stage": "card_change_hidden",
+              "milliseconds": 56
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 25693,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040036:1004003600030",
+          "phase": "transition",
+          "generation": {
+            "value": 13,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040036:1004003600030",
+              "scene": "scene:10040036",
+              "loadedScene": "scene:10040036",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 13,
+              "monotonicMilliseconds": 25637
+            },
+            "observedAtPerformanceMilliseconds": 25638
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 963,
+            "frameTimestampMs": 25691.06,
+            "rawDeltaSeconds": 0.03302000000000044,
+            "deltaSeconds": 0.03302000000000044,
+            "gameSeconds": 25.002693373069718,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251918872
+        },
+        "generation": 13,
+        "intermediateAlphaSampleCount": 4,
+        "exactCurveOrTimingAccepted": false,
+        "curveCoverage": "Observed intermediate alpha samples; original curve/time fidelity unsigned"
+      },
+      "originalPhase2Commands": [],
+      "actualTutorialSkip": null,
+      "actualTitle": {
+        "sequence": 364,
+        "event": {
+          "name": "STORY_PLAYER_TITLE",
+          "args": [
+            "node:10040036:1004003600030",
+            "end"
+          ],
+          "detail": null
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 25702,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10040036:1004003600030",
+        "phase": "title",
+        "generation": {
+          "value": 13,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10040036:1004003600030",
+            "scene": "scene:10040036",
+            "loadedScene": "scene:10040036",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 0,
+            "isBranch": false,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 13,
+            "monotonicMilliseconds": 25637
+          },
+          "observedAtPerformanceMilliseconds": 25638
+        },
+        "alpha": 0,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 963,
+          "frameTimestampMs": 25691.06,
+          "rawDeltaSeconds": 0.03302000000000044,
+          "deltaSeconds": 0.03302000000000044,
+          "gameSeconds": 25.002693373069718,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": true,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251918881
+      },
+      "nativeEntry": [
+        {
+          "sequence": 365,
+          "event": {
+            "name": "STORY_NATIVE_TITLE_ENTRY",
+            "args": [
+              "{\"stage\":\"started\",\"node\":\"node:10040036:1004003600030\",\"mode\":\"normal\",\"durationMilliseconds\":2500,\"gameElapsedMilliseconds\":0,\"clock\":{\"profile\":\"apk-1.19.7-unity-2019.4.21f1-normal-time-v1\",\"frame\":963,\"frameTimestampMs\":25691.06,\"rawDeltaSeconds\":0.03302000000000044,\"deltaSeconds\":0.03302000000000044,\"gameSeconds\":25.002693373069718,\"previewRate\":1,\"maximumDeltaSeconds\":0.3333333432674408,\"rateOwner\":\"StoryActor\"}}"
+            ],
+            "detail": {
+              "stage": "started",
+              "node": "node:10040036:1004003600030",
+              "mode": "normal",
+              "durationMilliseconds": 2500,
+              "gameElapsedMilliseconds": 0,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 963,
+                "frameTimestampMs": 25691.06,
+                "rawDeltaSeconds": 0.03302000000000044,
+                "deltaSeconds": 0.03302000000000044,
+                "gameSeconds": 25.002693373069718,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 25703,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040036:1004003600030",
+          "phase": "title",
+          "generation": {
+            "value": 13,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040036:1004003600030",
+              "scene": "scene:10040036",
+              "loadedScene": "scene:10040036",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 13,
+              "monotonicMilliseconds": 25637
+            },
+            "observedAtPerformanceMilliseconds": 25638
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 963,
+            "frameTimestampMs": 25691.06,
+            "rawDeltaSeconds": 0.03302000000000044,
+            "deltaSeconds": 0.03302000000000044,
+            "gameSeconds": 25.002693373069718,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251918881
+        },
+        {
+          "sequence": 367,
+          "event": {
+            "name": "STORY_NATIVE_TITLE_ENTRY",
+            "args": [
+              "{\"stage\":\"completed\",\"node\":\"node:10040036:1004003600030\",\"mode\":\"normal\",\"durationMilliseconds\":2500,\"gameElapsedMilliseconds\":2500.159999999962,\"clock\":{\"profile\":\"apk-1.19.7-unity-2019.4.21f1-normal-time-v1\",\"frame\":1112,\"frameTimestampMs\":28191.22,\"rawDeltaSeconds\":0.01713999999999942,\"deltaSeconds\":0.01713999999999942,\"gameSeconds\":27.50285337306968,\"previewRate\":1,\"maximumDeltaSeconds\":0.3333333432674408,\"rateOwner\":\"StoryActor\"}}"
+            ],
+            "detail": {
+              "stage": "completed",
+              "node": "node:10040036:1004003600030",
+              "mode": "normal",
+              "durationMilliseconds": 2500,
+              "gameElapsedMilliseconds": 2500.159999999962,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 1112,
+                "frameTimestampMs": 28191.22,
+                "rawDeltaSeconds": 0.01713999999999942,
+                "deltaSeconds": 0.01713999999999942,
+                "gameSeconds": 27.50285337306968,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 28192,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10040036:1004003600030",
+          "phase": "title",
+          "generation": {
+            "value": 13,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10040036:1004003600030",
+              "scene": "scene:10040036",
+              "loadedScene": "scene:10040036",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 0,
+              "isBranch": false,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 13,
+              "monotonicMilliseconds": 25637
+            },
+            "observedAtPerformanceMilliseconds": 25638
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1112,
+            "frameTimestampMs": 28191.22,
+            "rawDeltaSeconds": 0.01713999999999942,
+            "deltaSeconds": 0.01713999999999942,
+            "gameSeconds": 27.50285337306968,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251921372
+        }
+      ],
+      "ownCompletedChart": {
+        "state": "complete",
+        "className": "chart-scene current complete"
+      }
+    },
+    {
+      "name": "first-episode-existing-explicit-Out-regression",
+      "passedRuntimeGates": true,
+      "httpPrepare": {
+        "status": 200,
+        "start": "node:10010001:node_9039e988b425",
+        "headSha": "82333017b5f8337ca7a430d87815480c2bbe3052",
+        "rawBodyBytes": 18740646,
+        "rawBodySha256": "6b04656a15cc36e5596f170545e0b18fc000a9a96fdada5ee712192d2fa94f43",
+        "normalizedProgramSha256": "6b04656a15cc36e5596f170545e0b18fc000a9a96fdada5ee712192d2fa94f43",
+        "gzipFile": "first-episode-existing-explicit-Out-regression-saved-prepare.json.gz",
+        "gzipBytes": 1462712,
+        "gzipSha256": "fa65daa4762663e8c78cf64e37e4bd2143682cd9e0ef5656a6271bd47b6ff5c6"
+      },
+      "actualTailActor": null,
+      "tailActualBackground": null,
+      "naturalEnded": {
+        "sequence": 515,
+        "event": null,
+        "trigger": {
+          "kind": "browser-media-event",
+          "eventType": "ended",
+          "eventTimestamp": 38821,
+          "isTrusted": true
+        },
+        "node": "node:10010001:node_17ccbdbce0d8",
+        "phase": "movie",
+        "generation": {
+          "value": 19,
+          "source": "STORY_VOICE_PREPARATION",
+          "sourceDetail": {
+            "stage": "ready",
+            "node": "node:10010001:node_17ccbdbce0d8",
+            "generation": 19,
+            "currentGeneration": 19,
+            "wallMilliseconds": 32910,
+            "clock": {
+              "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+              "frame": 1237,
+              "frameTimestampMs": 32891.42,
+              "rawDeltaSeconds": 0.20021999999999754,
+              "deltaSeconds": 0.20021999999999754,
+              "gameSeconds": 31.885880059604514,
+              "previewRate": 1,
+              "maximumDeltaSeconds": 0.3333333432674408,
+              "rateOwner": "StoryActor"
+            }
+          },
+          "observedAtPerformanceMilliseconds": 32910
+        },
+        "alpha": 1,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 1491,
+          "frameTimestampMs": 38809.36,
+          "rawDeltaSeconds": 0.03334000000000378,
+          "deltaSeconds": 0.03334000000000378,
+          "gameSeconds": 37.80382005960455,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251931999
+      },
+      "ready": null,
+      "trustedContinue": null,
+      "transitions": [
+        {
+          "sequence": 427,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10010001:node_9039e988b425:100100010037:34\",\"action\":\"continue\",\"native\":{\"uniq_id\":100100010037,\"next_scenario_label\":\"\",\"next_scenario_id\":30,\"transition_id\":3401},\"target\":\"node:10010001:node_17ccbdbce0d8\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10010001:node_9039e988b425:100100010037:34",
+              "action": "continue",
+              "native": {
+                "uniq_id": 100100010037,
+                "next_scenario_label": "",
+                "next_scenario_id": 30,
+                "transition_id": 3401
+              },
+              "target": "node:10010001:node_17ccbdbce0d8"
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 32839,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10010001:node_9039e988b425",
+          "phase": "loading",
+          "generation": {
+            "value": 18,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10010001:node_9039e988b425",
+              "generation": 18,
+              "currentGeneration": 18,
+              "wallMilliseconds": 32151,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 1233,
+                "frameTimestampMs": 32141.02,
+                "rawDeltaSeconds": 0.16695999999999914,
+                "deltaSeconds": 0.16695999999999914,
+                "gameSeconds": 31.135480059604518,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 32151
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1236,
+            "frameTimestampMs": 32691.2,
+            "rawDeltaSeconds": 0.15040000000000145,
+            "deltaSeconds": 0.15040000000000145,
+            "gameSeconds": 31.685660059604515,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251926017
+        },
+        {
+          "sequence": 536,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10010001:node_17ccbdbce0d8:100100010038:35\",\"action\":\"continue\",\"native\":{\"uniq_id\":100100010038,\"next_scenario_label\":\"\",\"next_scenario_id\":31,\"transition_id\":3501},\"target\":\"node:10010001:100100010039\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10010001:node_17ccbdbce0d8:100100010038:35",
+              "action": "continue",
+              "native": {
+                "uniq_id": 100100010038,
+                "next_scenario_label": "",
+                "next_scenario_id": 31,
+                "transition_id": 3501
+              },
+              "target": "node:10010001:100100010039"
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 39394,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10010001:node_17ccbdbce0d8",
+          "phase": "loading",
+          "generation": {
+            "value": 19,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10010001:node_17ccbdbce0d8",
+              "generation": 19,
+              "currentGeneration": 19,
+              "wallMilliseconds": 38823,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 1491,
+                "frameTimestampMs": 38809.36,
+                "rawDeltaSeconds": 0.03334000000000378,
+                "deltaSeconds": 0.03334000000000378,
+                "gameSeconds": 37.80382005960455,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 38823
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1520,
+            "frameTimestampMs": 39376.18,
+            "rawDeltaSeconds": 0.017459999999999126,
+            "deltaSeconds": 0.017459999999999126,
+            "gameSeconds": 38.37064005960453,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251932572
+        },
+        {
+          "sequence": 540,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10010001:100100010039:100100010039:36\",\"action\":\"continue\",\"native\":{\"uniq_id\":100100010039,\"next_scenario_label\":\"\",\"next_scenario_id\":32,\"transition_id\":3601},\"target\":\"node:10010001:node_b52d5528994c\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10010001:100100010039:100100010039:36",
+              "action": "continue",
+              "native": {
+                "uniq_id": 100100010039,
+                "next_scenario_label": "",
+                "next_scenario_id": 32,
+                "transition_id": 3601
+              },
+              "target": "node:10010001:node_b52d5528994c"
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 39400,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10010001:100100010039",
+          "phase": "loading",
+          "generation": null,
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1520,
+            "frameTimestampMs": 39376.18,
+            "rawDeltaSeconds": 0.017459999999999126,
+            "deltaSeconds": 0.017459999999999126,
+            "gameSeconds": 38.37064005960453,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251932578
+        },
+        {
+          "sequence": 561,
+          "event": {
+            "name": "STORY_PLAYER_TRANSITION",
+            "args": [
+              "{\"edge\":\"edge:node:10010001:node_b52d5528994c:100100010040:37\",\"action\":\"section\",\"native\":{\"next_section_id\":1014,\"next_scene_id\":10140002,\"uniq_id\":100100010040,\"next_scenario_label\":\"FINISH\",\"next_scenario_id\":0,\"transition_id\":3701},\"target\":\"node:10140002:node_863ad654d186\"}"
+            ],
+            "detail": {
+              "edge": "edge:node:10010001:node_b52d5528994c:100100010040:37",
+              "action": "section",
+              "native": {
+                "next_section_id": 1014,
+                "next_scene_id": 10140002,
+                "uniq_id": 100100010040,
+                "next_scenario_label": "FINISH",
+                "next_scenario_id": 0,
+                "transition_id": 3701
+              },
+              "target": "node:10140002:node_863ad654d186"
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 41902,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10010001:node_b52d5528994c",
+          "phase": "command",
+          "generation": {
+            "value": 21,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10010001:node_b52d5528994c",
+              "scene": "scene:10010001",
+              "loadedScene": "scene:10010001",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 2,
+              "isBranch": true,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 21,
+              "monotonicMilliseconds": 39401
+            },
+            "observedAtPerformanceMilliseconds": 39401
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1669,
+            "frameTimestampMs": 41892.84,
+            "rawDeltaSeconds": 0.01731999999999971,
+            "deltaSeconds": 0.01731999999999971,
+            "gameSeconds": 40.88730005960464,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251935080
+        }
+      ],
+      "cardChange": {
+        "sequence": 544,
+        "event": {
+          "name": "STORY_CARD_CHANGE",
+          "args": [
+            "{\"source\":\"node:10010001:node_17ccbdbce0d8\",\"target\":\"node:10010001:node_b52d5528994c\",\"from\":{\"kind\":\"movie\",\"resource\":\"adv_dive01_out\"},\"to\":null,\"cardState\":\"out\",\"animate\":false,\"sceneTitleRetirement\":false,\"movieEndTitleRetirement\":false,\"chartInterval\":false}"
+          ],
+          "detail": {
+            "source": "node:10010001:node_17ccbdbce0d8",
+            "target": "node:10010001:node_b52d5528994c",
+            "from": {
+              "kind": "movie",
+              "resource": "adv_dive01_out"
+            },
+            "to": null,
+            "cardState": "out",
+            "animate": false,
+            "sceneTitleRetirement": false,
+            "movieEndTitleRetirement": false,
+            "chartInterval": false
+          }
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 39402,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10010001:node_b52d5528994c",
+        "phase": "loading",
+        "generation": {
+          "value": 21,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10010001:node_b52d5528994c",
+            "scene": "scene:10010001",
+            "loadedScene": "scene:10010001",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 2,
+            "isBranch": true,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 21,
+            "monotonicMilliseconds": 39401
+          },
+          "observedAtPerformanceMilliseconds": 39401
+        },
+        "alpha": 0,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 1520,
+          "frameTimestampMs": 39376.18,
+          "rawDeltaSeconds": 0.017459999999999126,
+          "deltaSeconds": 0.017459999999999126,
+          "gameSeconds": 38.37064005960453,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251932580
+      },
+      "titleDecision": {
+        "sequence": 542,
+        "event": {
+          "name": "STORY_NATIVE_INTERVAL_DECISION",
+          "args": [
+            "{\"node\":\"node:10010001:node_b52d5528994c\",\"scene\":\"scene:10010001\",\"loadedScene\":\"scene:10010001\",\"sceneReload\":false,\"mode\":0,\"forcedTutorial\":false,\"isTitle\":true,\"isEndTitle\":true,\"isRoot\":false,\"nextSceneCount\":2,\"isBranch\":true,\"afterBranch\":false,\"show\":false,\"reason\":\"end-title\",\"generation\":21,\"monotonicMilliseconds\":39401}"
+          ],
+          "detail": {
+            "node": "node:10010001:node_b52d5528994c",
+            "scene": "scene:10010001",
+            "loadedScene": "scene:10010001",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 2,
+            "isBranch": true,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 21,
+            "monotonicMilliseconds": 39401
+          }
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 39401,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10010001:node_b52d5528994c",
+        "phase": "loading",
+        "generation": {
+          "value": 21,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10010001:node_b52d5528994c",
+            "scene": "scene:10010001",
+            "loadedScene": "scene:10010001",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 2,
+            "isBranch": true,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 21,
+            "monotonicMilliseconds": 39401
+          },
+          "observedAtPerformanceMilliseconds": 39401
+        },
+        "alpha": 0,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 1520,
+          "frameTimestampMs": 39376.18,
+          "rawDeltaSeconds": 0.017459999999999126,
+          "deltaSeconds": 0.017459999999999126,
+          "gameSeconds": 38.37064005960453,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251932579
+      },
+      "drop": {
+        "authoredExplicitOutOnly": true,
+        "start": {
+          "sequence": 526,
+          "event": {
+            "name": "STORY_CARD_OUT_START",
+            "args": [
+              39339,
+              false
+            ],
+            "detail": null
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 39339,
+            "productReportedWallMilliseconds": 39339
+          },
+          "node": "node:10010001:node_17ccbdbce0d8",
+          "phase": "command",
+          "generation": {
+            "value": 19,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10010001:node_17ccbdbce0d8",
+              "generation": 19,
+              "currentGeneration": 19,
+              "wallMilliseconds": 38823,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 1491,
+                "frameTimestampMs": 38809.36,
+                "rawDeltaSeconds": 0.03334000000000378,
+                "deltaSeconds": 0.03334000000000378,
+                "gameSeconds": 37.80382005960455,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 38823
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1517,
+            "frameTimestampMs": 39308.58,
+            "rawDeltaSeconds": 0.01666000000000349,
+            "deltaSeconds": 0.01666000000000349,
+            "gameSeconds": 38.303040059604534,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251932519
+        },
+        "complete": {
+          "sequence": 534,
+          "event": {
+            "name": "STORY_CARD_OUT_COMPLETE",
+            "args": [
+              39390
+            ],
+            "detail": null
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 39390,
+            "productReportedWallMilliseconds": 39390
+          },
+          "node": "node:10010001:node_17ccbdbce0d8",
+          "phase": "command",
+          "generation": {
+            "value": 19,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10010001:node_17ccbdbce0d8",
+              "generation": 19,
+              "currentGeneration": 19,
+              "wallMilliseconds": 38823,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 1491,
+                "frameTimestampMs": 38809.36,
+                "rawDeltaSeconds": 0.03334000000000378,
+                "deltaSeconds": 0.03334000000000378,
+                "gameSeconds": 37.80382005960455,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 38823
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1520,
+            "frameTimestampMs": 39376.18,
+            "rawDeltaSeconds": 0.017459999999999126,
+            "deltaSeconds": 0.017459999999999126,
+            "gameSeconds": 38.37064005960453,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251932569
+        },
+        "newDefaultDropCount": 0,
+        "originalWait500AndTutorialSkipPreserved": true,
+        "exactOriginalTimingAccepted": false
+      },
+      "originalPhase2Commands": [
+        {
+          "sequence": 523,
+          "event": {
+            "name": "STORY_PLAYER_COMMAND",
+            "args": [
+              "node:10010001:node_17ccbdbce0d8",
+              2,
+              "Wait,500"
+            ],
+            "detail": null
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 38824,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10010001:node_17ccbdbce0d8",
+          "phase": "command",
+          "generation": {
+            "value": 19,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10010001:node_17ccbdbce0d8",
+              "generation": 19,
+              "currentGeneration": 19,
+              "wallMilliseconds": 38823,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 1491,
+                "frameTimestampMs": 38809.36,
+                "rawDeltaSeconds": 0.03334000000000378,
+                "deltaSeconds": 0.03334000000000378,
+                "gameSeconds": 37.80382005960455,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 38823
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1491,
+            "frameTimestampMs": 38809.36,
+            "rawDeltaSeconds": 0.03334000000000378,
+            "deltaSeconds": 0.03334000000000378,
+            "gameSeconds": 37.80382005960455,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251932002
+        },
+        {
+          "sequence": 525,
+          "event": {
+            "name": "STORY_PLAYER_COMMAND",
+            "args": [
+              "node:10010001:node_17ccbdbce0d8",
+              2,
+              "CardOut"
+            ],
+            "detail": null
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 39325,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10010001:node_17ccbdbce0d8",
+          "phase": "command",
+          "generation": {
+            "value": 19,
+            "source": "STORY_VOICE_PREPARATION",
+            "sourceDetail": {
+              "stage": "joined",
+              "node": "node:10010001:node_17ccbdbce0d8",
+              "generation": 19,
+              "currentGeneration": 19,
+              "wallMilliseconds": 38823,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 1491,
+                "frameTimestampMs": 38809.36,
+                "rawDeltaSeconds": 0.03334000000000378,
+                "deltaSeconds": 0.03334000000000378,
+                "gameSeconds": 37.80382005960455,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            },
+            "observedAtPerformanceMilliseconds": 38823
+          },
+          "alpha": 1,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1517,
+            "frameTimestampMs": 39308.58,
+            "rawDeltaSeconds": 0.01666000000000349,
+            "deltaSeconds": 0.01666000000000349,
+            "gameSeconds": 38.303040059604534,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": false,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251932511
+        }
+      ],
+      "actualTutorialSkip": {
+        "sequence": 538,
+        "event": {
+          "name": "STORY_PLAYER_NATIVE_SKIP",
+          "args": [
+            "{\"node\":\"node:10010001:100100010039\",\"scenario\":31,\"kind\":\"tutorial\",\"edges\":[{\"id\":\"edge:node:10010001:100100010039:100100010039:36\",\"target\":\"node:10010001:node_b52d5528994c\",\"available\":true,\"transition\":{\"label\":\"\",\"section\":\"\",\"scene\":\"\",\"entry\":\"node\"}}],\"milliseconds\":39398}"
+          ],
+          "detail": {
+            "node": "node:10010001:100100010039",
+            "scenario": 31,
+            "kind": "tutorial",
+            "edges": [
+              {
+                "id": "edge:node:10010001:100100010039:100100010039:36",
+                "target": "node:10010001:node_b52d5528994c",
+                "available": true,
+                "transition": {
+                  "label": "",
+                  "section": "",
+                  "scene": "",
+                  "entry": "node"
+                }
+              }
+            ],
+            "milliseconds": 39398
+          }
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 39398,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10010001:100100010039",
+        "phase": "loading",
+        "generation": null,
+        "alpha": 0,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 1520,
+          "frameTimestampMs": 39376.18,
+          "rawDeltaSeconds": 0.017459999999999126,
+          "deltaSeconds": 0.017459999999999126,
+          "gameSeconds": 38.37064005960453,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": false,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251932577
+      },
+      "actualTitle": {
+        "sequence": 554,
+        "event": {
+          "name": "STORY_PLAYER_TITLE",
+          "args": [
+            "node:10010001:node_b52d5528994c",
+            "end"
+          ],
+          "detail": null
+        },
+        "trigger": {
+          "kind": "synchronous-console-call",
+          "hookEntryPerformanceMilliseconds": 39409,
+          "productReportedWallMilliseconds": null
+        },
+        "node": "node:10010001:node_b52d5528994c",
+        "phase": "title",
+        "generation": {
+          "value": 21,
+          "source": "STORY_NATIVE_INTERVAL_DECISION",
+          "sourceDetail": {
+            "node": "node:10010001:node_b52d5528994c",
+            "scene": "scene:10010001",
+            "loadedScene": "scene:10010001",
+            "sceneReload": false,
+            "mode": 0,
+            "forcedTutorial": false,
+            "isTitle": true,
+            "isEndTitle": true,
+            "isRoot": false,
+            "nextSceneCount": 2,
+            "isBranch": true,
+            "afterBranch": false,
+            "show": false,
+            "reason": "end-title",
+            "generation": 21,
+            "monotonicMilliseconds": 39401
+          },
+          "observedAtPerformanceMilliseconds": 39401
+        },
+        "alpha": 0,
+        "NormalClock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 1520,
+          "frameTimestampMs": 39376.18,
+          "rawDeltaSeconds": 0.017459999999999126,
+          "deltaSeconds": 0.017459999999999126,
+          "gameSeconds": 38.37064005960453,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        },
+        "media": {
+          "currentTime": 5.034666,
+          "duration": 5.034666,
+          "paused": true,
+          "ended": true,
+          "hidden": true,
+          "seeking": false,
+          "playbackRate": 1,
+          "defaultPlaybackRate": 1,
+          "muted": false,
+          "volume": 1,
+          "readyState": 2,
+          "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+          "mozHasAudio": true,
+          "exposedAudioTrackCount": null
+        },
+        "observedEpochMilliseconds": 1795251932587
+      },
+      "nativeEntry": [
+        {
+          "sequence": 555,
+          "event": {
+            "name": "STORY_NATIVE_TITLE_ENTRY",
+            "args": [
+              "{\"stage\":\"started\",\"node\":\"node:10010001:node_b52d5528994c\",\"mode\":\"normal\",\"durationMilliseconds\":2500,\"gameElapsedMilliseconds\":0,\"clock\":{\"profile\":\"apk-1.19.7-unity-2019.4.21f1-normal-time-v1\",\"frame\":1520,\"frameTimestampMs\":39376.18,\"rawDeltaSeconds\":0.017459999999999126,\"deltaSeconds\":0.017459999999999126,\"gameSeconds\":38.37064005960453,\"previewRate\":1,\"maximumDeltaSeconds\":0.3333333432674408,\"rateOwner\":\"StoryActor\"}}"
+            ],
+            "detail": {
+              "stage": "started",
+              "node": "node:10010001:node_b52d5528994c",
+              "mode": "normal",
+              "durationMilliseconds": 2500,
+              "gameElapsedMilliseconds": 0,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 1520,
+                "frameTimestampMs": 39376.18,
+                "rawDeltaSeconds": 0.017459999999999126,
+                "deltaSeconds": 0.017459999999999126,
+                "gameSeconds": 38.37064005960453,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 39410,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10010001:node_b52d5528994c",
+          "phase": "title",
+          "generation": {
+            "value": 21,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10010001:node_b52d5528994c",
+              "scene": "scene:10010001",
+              "loadedScene": "scene:10010001",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 2,
+              "isBranch": true,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 21,
+              "monotonicMilliseconds": 39401
+            },
+            "observedAtPerformanceMilliseconds": 39401
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1520,
+            "frameTimestampMs": 39376.18,
+            "rawDeltaSeconds": 0.017459999999999126,
+            "deltaSeconds": 0.017459999999999126,
+            "gameSeconds": 38.37064005960453,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251932588
+        },
+        {
+          "sequence": 557,
+          "event": {
+            "name": "STORY_NATIVE_TITLE_ENTRY",
+            "args": [
+              "{\"stage\":\"completed\",\"node\":\"node:10010001:node_b52d5528994c\",\"mode\":\"normal\",\"durationMilliseconds\":2500,\"gameElapsedMilliseconds\":2516.660000000108,\"clock\":{\"profile\":\"apk-1.19.7-unity-2019.4.21f1-normal-time-v1\",\"frame\":1669,\"frameTimestampMs\":41892.84,\"rawDeltaSeconds\":0.01731999999999971,\"deltaSeconds\":0.01731999999999971,\"gameSeconds\":40.88730005960464,\"previewRate\":1,\"maximumDeltaSeconds\":0.3333333432674408,\"rateOwner\":\"StoryActor\"}}"
+            ],
+            "detail": {
+              "stage": "completed",
+              "node": "node:10010001:node_b52d5528994c",
+              "mode": "normal",
+              "durationMilliseconds": 2500,
+              "gameElapsedMilliseconds": 2516.660000000108,
+              "clock": {
+                "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+                "frame": 1669,
+                "frameTimestampMs": 41892.84,
+                "rawDeltaSeconds": 0.01731999999999971,
+                "deltaSeconds": 0.01731999999999971,
+                "gameSeconds": 40.88730005960464,
+                "previewRate": 1,
+                "maximumDeltaSeconds": 0.3333333432674408,
+                "rateOwner": "StoryActor"
+              }
+            }
+          },
+          "trigger": {
+            "kind": "synchronous-console-call",
+            "hookEntryPerformanceMilliseconds": 41894,
+            "productReportedWallMilliseconds": null
+          },
+          "node": "node:10010001:node_b52d5528994c",
+          "phase": "title",
+          "generation": {
+            "value": 21,
+            "source": "STORY_NATIVE_INTERVAL_DECISION",
+            "sourceDetail": {
+              "node": "node:10010001:node_b52d5528994c",
+              "scene": "scene:10010001",
+              "loadedScene": "scene:10010001",
+              "sceneReload": false,
+              "mode": 0,
+              "forcedTutorial": false,
+              "isTitle": true,
+              "isEndTitle": true,
+              "isRoot": false,
+              "nextSceneCount": 2,
+              "isBranch": true,
+              "afterBranch": false,
+              "show": false,
+              "reason": "end-title",
+              "generation": 21,
+              "monotonicMilliseconds": 39401
+            },
+            "observedAtPerformanceMilliseconds": 39401
+          },
+          "alpha": 0,
+          "NormalClock": {
+            "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+            "frame": 1669,
+            "frameTimestampMs": 41892.84,
+            "rawDeltaSeconds": 0.01731999999999971,
+            "deltaSeconds": 0.01731999999999971,
+            "gameSeconds": 40.88730005960464,
+            "previewRate": 1,
+            "maximumDeltaSeconds": 0.3333333432674408,
+            "rateOwner": "StoryActor"
+          },
+          "media": {
+            "currentTime": 5.034666,
+            "duration": 5.034666,
+            "paused": true,
+            "ended": true,
+            "hidden": true,
+            "seeking": false,
+            "playbackRate": 1,
+            "defaultPlaybackRate": 1,
+            "muted": false,
+            "volume": 1,
+            "readyState": 2,
+            "currentSrc": "http://127.0.0.1:5198/movie/adv_dive01_out",
+            "mozHasAudio": true,
+            "exposedAudioTrackCount": null
+          },
+          "observedEpochMilliseconds": 1795251935073
+        }
+      ],
+      "ownCompletedChart": {
+        "state": "complete",
+        "className": "chart-scene current complete"
+      }
+    }
+  ],
+  "backgroundSliceProofSha256": "e5b74d23415398cab8b04d7c32c39beb14773ab7ad5bb5d942ea9c29d4467222",
+  "visibleReadinessProofSha256": "41da3af4d2d48064ac3dadf5d35e2d90437662a2842a4de442ca8228e837a250",
+  "providerProofSha256": "e1230e63d02678422f1816b8148045dd16726d70a9f9d1029297ae6ca1217639",
+  "images": {
+    "count": 12,
+    "bytes": 1080006,
+    "manifestSha256": "2ae8aff37ec5e2c22e269476298a8b4fb1227d66a5aba89517488bd343122668"
+  },
+  "storyErrors": [],
+  "criticalHTTPFailures": [],
+  "favicon404": [
+    {
+      "url": "http://127.0.0.1:5198/favicon.ico",
+      "status": 404,
+      "observedEpochMilliseconds": 1795251893876
+    }
+  ],
+  "graphicsRaw": {
+    "losses": [
+      {
+        "canvas": "",
+        "attached": false,
+        "kind": "webgl",
+        "node": ""
+      }
+    ],
+    "contexts": [
+      {
+        "canvas": "",
+        "attached": false,
+        "lost": true,
+        "kind": "webgl",
+        "draws": 0
+      },
+      {
+        "canvas": "",
+        "attached": false,
+        "lost": false,
+        "kind": "webgl2",
+        "draws": 0
+      },
+      {
+        "canvas": "actor",
+        "attached": true,
+        "lost": false,
+        "kind": "webgl2",
+        "draws": 5432
+      }
+    ]
+  },
+  "closure": {
+    "schema": "stella.visible-ending-attempt3.independent-closure.v1",
+    "checkedEpochMilliseconds": 1795251998354,
+    "driverExitCode": 0,
+    "supervisorExitCode": 0,
+    "allOwnedPidsAbsent": true,
+    "escapedProcesses": [],
+    "allClosed": true,
+    "allSceneFilesChecked": 280,
+    "allSceneMismatches": [],
+    "inputBeforeAfterIdentical": true,
+    "inputBeforeSha256": "ab6e867e20ba12ba9fb136821c1177a016456e01f343aafc2422008048be6c5f",
+    "inputAfterSha256": "ab6e867e20ba12ba9fb136821c1177a016456e01f343aafc2422008048be6c5f",
+    "images": 12,
+    "imageBytes": 1080006,
+    "imageReviewStarted": false,
+    "noRetryStarted": true
+  },
+  "oldAuxiliaryOrCancellationReplayed": false,
+  "limits": [
+    "Independent actual-image text/identity/background reading still pending.",
+    "Prior attempt2 driver1/Pack intermediate-alpha gap/early cancellation gap unchanged and not rerun.",
+    "No exact native motion, face, extra layers, geometry, timing, subjective audio, Stay/Studio twin or whole-scene/episode signoff.",
+    "69→70→71 actual slice and direct108 inherited background are separate bounded observations."
+  ],
+  "rawEvidence": {
+    "result.json": "3b229b338733bffed6dbaec16ddb6aaaa13193ad6d1b9ceebfbbadd2eccc9d62",
+    "observer.json": "9073d0f3223af430c77b1219097f81a746ceaad3a92fa998dd1f5824dfc6b431",
+    "events.jsonl": "83637eeb21d4e7ea8465aa0f36c58342998b4e42e6855a5cf51fd9664870ed95",
+    "provider-events.jsonl": "339f6ec7e157870a8d462de79d284e3c5588c5647acc774591ca2de574c29e3b",
+    "firefox.log": "c64414117a7456e3a2e8fb6a70eef88fece8cb6e249eeb3bc3615516de786cdc",
+    "driver.log": "72ad05b46902ecdcc3078b258d4b22fa3b01bedf3e690d40ce46a9b6b78b5f2a",
+    "server.log": "231107dd5bdce37dff737a573d89429925a056ba763775d6be022525dfdc3565",
+    "inputs-before.json": "ab6e867e20ba12ba9fb136821c1177a016456e01f343aafc2422008048be6c5f",
+    "inputs-after.json": "ab6e867e20ba12ba9fb136821c1177a016456e01f343aafc2422008048be6c5f",
+    "process-exit.json": "dbd29964010ee69b9278b19b24cc71dad5e0d9e73682b7a0f1b1fef4daf0bec6"
+  }
+}

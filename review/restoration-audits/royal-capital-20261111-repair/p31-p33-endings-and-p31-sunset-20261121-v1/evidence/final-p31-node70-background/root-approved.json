@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "schema": "stella.reviewed-node-fields.v1",
+  "status": "root-approved-for-one-background-provider-normal-stage",
+  "rootConfirmed": true,
+  "reviewer": "/root/p43_scene16_cg_fx",
+  "observedHead": "8fd8798a2091138e0ab21b054b3fcc7088ee1b27",
+  "acceptanceScope": "Only node70 background identity/provider. No change to node2, node108, commands, geometry, timing or endings.",
+  "currentHash": {
+    "targetFiles": {
+      "native/scenes/10040043.json": "f9140c9b4a8abf94cbe3a1a0c3207a5ddfd309cea7cd29358e99451de7fe4def",
+      "review/scenes/10040043.json": "1888e3763d5f9c184ecfb377feb039c510c83ed415f3afdfaa9ba26cea6db3e2"
+    },
+    "metadataFiles": {
+      "manifest.json": "e685ad6cbef35c1eb2363227b67374001af865ad17ba1357da1b94ae77d71024",
+      "review/native-restoration.json": "89ff04871e90bc05c59483dda5804591c46208a203165e1dd605de4091290572",
+      "assets/catalog.json": "f99cb35c886a35d04f5da4698ae493984e3bf50ee6fb671cff873f0b108f2517",
+      "assets/package.json": "f7aa20a72df2d4510182db006a8d09eb5274cbe7a6b76df8ff4454bd37b8c555",
+      "assets/preview/catalog.json": "22cc9b08e6f086556562de1c12fa1594eda2adae2c28940512be74f72d3d4cce"
+    }
+  },
+  "changes": [
+    {
+      "sceneId": 10040043,
+      "scenarioId": 70,
+      "stableKey": "s10040043-p31-at0645",
+      "nativeUniqueId": 1004004300070,
+      "studioRecordId": "node:10040043:1004004300070",
+      "sourceText": "――貧民街・夕刻",
+      "sourceSpeaker": "",
+      "rootConfirmed": true,
+      "expected": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "",
+        "character_image": "",
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "motion": "",
+        "msg_character": "",
+        "msg_text": "——贫民区·傍晚",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": ""
+      },
+      "fields": {
+        "bg_picture": "bg/bg023b_slum"
+      },
+      "evidence": {
+        "sourceBackgroundReview": {
+          "path": "artifacts/stella-script-continuation-20261121/p31-node70-background-provider-20261121-v1/source-background-review.json",
+          "sha256": "68abd7f792b2143d0e081ea8287900155b44dc0ed7981f4683c71f9a045e9c08",
+          "bytes": 86518
+        },
+        "backgroundOnly": true,
+        "originalCommandRecovered": false,
+        "phaseAccepted": false,
+        "timingAccepted": false
+      }
+    }
+  ],
+  "rowGuards": {
+    "nativeBodyWithoutBranchListSha256": "b48d74a7663b55c5308e408f622e68bf3f257d96f82c0a317ed4ed09a32d6dbb",
+    "branchListAtPreparation": [
+      {
+        "transition_list": [
+          {
+            "uniq_id": 1004004310701,
+            "transition_id": 70101,
+            "next_scenario_id": 71,
+            "next_scenario_label": ""
+          }
+        ],
+        "uniq_id": 1004004310701,
+        "branch_id": 701,
+        "type": 1,
+        "quote_voice": "",
+        "gain_points": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "msg_quote": "",
+        "msg_quote_subject": ""
+      }
+    ]
+  },
+  "freshRebindPolicy": "Root rereads current target/ownership and rebinds file guards after any separate normal write. Preserve exact stable key, native uniq, Japanese, row body, branches, all other nodes and appended ending suffix.",
+  "rootApproval": {
+    "scope": "Only source-proven background provider70;2 and108 are preserved, all actors/endings/commands/branches unchanged. Wipe/timing/whole-scene remain unaccepted.",
+    "sourceReferencesVerified": 283,
+    "sourcePacketSha256": "c5b68235f213d66baaa743c9087d937553e4ade1341d2ff86591cd83e4a71856",
+    "rootClosureSha256": "007da0597f9fb6f88c9988833631f9f7baf84d73acf2b06233867bddf0fca093"
+  }
+}

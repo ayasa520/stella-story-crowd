@@ -1,0 +1,196 @@
+{
+  "schema": "stella.movie-end-title-peer-edge-scope.v1",
+  "rootConfirmed": false,
+  "sourceHead": "7f32a3cde97d9a379828619242d2ba12f94f6514",
+  "reports": [
+    {
+      "sceneId": 10040043,
+      "nodeIdsAreCompilerIds": true,
+      "nodes": [
+        {
+          "id": "10040043:109",
+          "kind": "movie",
+          "title_mode": "",
+          "movie_resource": "adv_dive01_out",
+          "command": [
+            "",
+            "",
+            ""
+          ],
+          "bg_music": ""
+        },
+        {
+          "id": "10040043:110",
+          "kind": "title",
+          "title_mode": "end",
+          "movie_resource": "",
+          "command": [
+            "",
+            "",
+            ""
+          ],
+          "bg_music": "bgm_btl_adv_win01"
+        }
+      ],
+      "edges": [
+        {
+          "id": "10040043:108:1081",
+          "source": "10040043:108",
+          "target": "10040043:109",
+          "kind": "next",
+          "flow_action": "continue",
+          "available": true
+        },
+        {
+          "id": "10040043:109:1091",
+          "source": "10040043:109",
+          "target": "10040043:110",
+          "kind": "next",
+          "flow_action": "continue",
+          "available": true
+        },
+        {
+          "id": "10040043:110:1101",
+          "source": "10040043:110",
+          "target": "",
+          "kind": "next",
+          "flow_action": "complete",
+          "available": true
+        }
+      ],
+      "source": "existing actual canonical compilePreview result with unapproved memory projection",
+      "savedNormalHttpPrepareObserved": false,
+      "studioProjectionFlowActionPassThroughSupportedBySource": true
+    },
+    {
+      "sceneId": 10040036,
+      "nodeIdsAreCompilerIds": true,
+      "nodes": [
+        {
+          "id": "10040036:29",
+          "kind": "movie",
+          "title_mode": "",
+          "movie_resource": "adv_dive01_out",
+          "command": [
+            "",
+            "",
+            ""
+          ],
+          "bg_music": ""
+        },
+        {
+          "id": "10040036:30",
+          "kind": "title",
+          "title_mode": "end",
+          "movie_resource": "",
+          "command": [
+            "",
+            "",
+            ""
+          ],
+          "bg_music": "bgm_btl_adv_win01"
+        }
+      ],
+      "edges": [
+        {
+          "id": "10040036:28:281",
+          "source": "10040036:28",
+          "target": "10040036:29",
+          "kind": "next",
+          "flow_action": "continue",
+          "available": true
+        },
+        {
+          "id": "10040036:29:291",
+          "source": "10040036:29",
+          "target": "10040036:30",
+          "kind": "next",
+          "flow_action": "continue",
+          "available": true
+        },
+        {
+          "id": "10040036:30:301",
+          "source": "10040036:30",
+          "target": "",
+          "kind": "next",
+          "flow_action": "complete",
+          "available": true
+        }
+      ],
+      "source": "existing actual canonical compilePreview result with unapproved memory projection",
+      "savedNormalHttpPrepareObserved": false,
+      "studioProjectionFlowActionPassThroughSupportedBySource": true
+    }
+  ],
+  "guardMatrix": [
+    {
+      "path": "same-scene immediate next movie→endTITLE, cardState in, skip false",
+      "newPredicate": true,
+      "newAutomaticDrop": true
+    },
+    {
+      "path": "same pair, already explicit Out/out",
+      "newPredicate": true,
+      "newAutomaticDrop": false
+    },
+    {
+      "path": "same pair, CardStay/stay",
+      "newPredicate": true,
+      "newAutomaticDrop": false,
+      "nativeStaySemanticsAccepted": false
+    },
+    {
+      "path": "choice-owned transition",
+      "newPredicate": false,
+      "newAutomaticDrop": false
+    },
+    {
+      "path": "same pair, native skip true",
+      "newPredicate": true,
+      "newAutomaticDrop": false
+    },
+    {
+      "path": "same-scene movie→ordinary TITLE",
+      "newPredicate": false,
+      "newAutomaticDrop": false,
+      "existingGapOutsideScope": true
+    },
+    {
+      "path": "different-scene movie→endTITLE",
+      "newPredicate": false,
+      "newAutomaticDrop": false,
+      "existingGapOutsideScope": true
+    },
+    {
+      "path": "nonmovie→endTITLE",
+      "newPredicate": false,
+      "newAutomaticDrop": false,
+      "existingGapOutsideScope": true
+    },
+    {
+      "path": "movie→skipped tutorial→endTITLE",
+      "newPredicate": false,
+      "newAutomaticDrop": false,
+      "sourceGuardExcludesNonImmediateEdge": true
+    }
+  ],
+  "matrixMethod": "Manual source-control-flow review, not generated executable tests",
+  "firstThree": {
+    "scene": 10010001,
+    "realRows": [
+      29,
+      30,
+      31,
+      32
+    ],
+    "movie30ExplicitPhase2": "Wait,500\nCardOut",
+    "tutorial31IsSkipped": true,
+    "retainedPrevious": 30,
+    "incomingEndTitleEdgeSource": 31,
+    "duplicatePreventedBy": [
+      "cardState out from executed explicit CardOut",
+      "edge.source differs from preserved movie previous ID"
+    ]
+  },
+  "servedSurface": "production iframe /player/player.js; Studio twin keeps its prior generic title timing"
+}
