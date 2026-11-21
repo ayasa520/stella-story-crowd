@@ -1,0 +1,87 @@
+{
+  "schema": "stella.additive-bgm-resource-publication.v1",
+  "rootConfirmed": true,
+  "resource": "bgm_adv_fuon01_cd2_03",
+  "baseDataHead": "8778393cd74d76ae94e8d2141ef6ac1a23ab0070",
+  "sourceCommitAtRootVerification": "7f32a3cde97d9a379828619242d2ba12f94f6514",
+  "catalogEntry": {
+    "label": "bgm_adv_fuon01_cd2_03",
+    "url": "preview/music/bgm_adv_fuon01_cd2_03.opus",
+    "metadata_url": "preview/music/bgm_adv_fuon01_cd2_03.json"
+  },
+  "newMediaBytes": 0,
+  "reusedExistingCommittedMembers": [
+    "preview/music/bgm_adv_fuon01_cd2_03.opus",
+    "preview/music/bgm_adv_fuon01_cd2_03.json"
+  ],
+  "normalMetadata": {
+    "loop": true,
+    "loop_end": 157.71344671201814,
+    "loop_start": 66.72428571428571,
+    "native_cue_id": 0,
+    "resource": "bgm_adv_fuon01_cd2_03",
+    "sample_rate": 44100,
+    "samples": 6955163,
+    "source": "ACB CueTable / SequenceTable / TrackEventTable / SynthTable / WaveformExtensionDataTable",
+    "startup_events": []
+  },
+  "evidence": {
+    "directory": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode5-fuon01-resource-registration-20261121-v1",
+    "originalReviewPlanSha256": "ce6ede76ca46e45b306d97e7dbad7f80a438d9942ba2c1843230758f8e44c031",
+    "verificationSha256": "51598ff3d0c7207b1bd4dcd4f99ee6ce55f923850967ba88d730b39006676a6a",
+    "approvedRootPlanPath": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/fuon01-root-approval-v1/approved-plan.json",
+    "approvedRootPlanSha256": "2e5e6c2e0d818567d14b31dc5d2db1868e46d20f0ca939fc39eff3964cd0cae7",
+    "installationReceiptSha256": "2ab9f9c504597c192f3a3c78e992d5a62fc202eea2dc1e5b8b11cd3455b21b93",
+    "originalAcbMetadataMatchesPublishedMetadata": true,
+    "decodedOpusSeconds": 157.71345833333334,
+    "nativeSeconds": 157.71344671201814,
+    "signedOriginalSpeedWaveformCorrelations": [
+      0.99153,
+      0.99558,
+      0.99586
+    ],
+    "sourcePositionsSeconds": [
+      0.5,
+      66.75,
+      156.5
+    ],
+    "originalWavContainsExpandedLoopRepetitions": true
+  },
+  "actualOfflineApiVerification": {
+    "checks": 16,
+    "sourceFilesRehashedByRoot": 84,
+    "routes": [
+      "/music/[id]",
+      "/api/music/[id]"
+    ],
+    "normalCatalogBeforeStatus": 404,
+    "normalCatalogAfterStatus": 200,
+    "cloudflarePreviewAfterStatus": 200,
+    "rangeStatus": 206,
+    "sameMemberBytesAndNativeLoopMetadata": true,
+    "networkServerOrBrowserStarted": false,
+    "originalQualityBehavior": "Because the catalog explicitly names the available preview member, quality=original returns that compressed Opus too. A separate higher-quality original file is not claimed."
+  },
+  "installation": {
+    "method": "Existing additive asset installer after external root evidence/source/HEAD guards; atomic readback of exactly catalog/package metadata.",
+    "sourceAndDataFreezeReleasedAfterProductionUiProcessClosure": true,
+    "files": {
+      "catalog.json": "f99cb35c886a35d04f5da4698ae493984e3bf50ee6fb671cff873f0b108f2517",
+      "package.json": "f7aa20a72df2d4510182db006a8d09eb5274cbe7a6b76df8ff4454bd37b8c555"
+    },
+    "preservation": "All existing catalog entries, package records except updated catalog digest/size, other top-level properties, native/review scenes, voices, models, effects and preview catalog preserved. Add two existing member records and recompute package bytes."
+  },
+  "acceptedScope": "Resource registration, native metadata/waveform binding and tested API member resolution only.",
+  "scriptProviderInstalled": false,
+  "commandPhaseRecovered": false,
+  "stopWaitOffsetOrVoiceAuthored": false,
+  "subjectiveAudioAccepted": false,
+  "runtimeStoryPlaybackAccepted": false,
+  "wholeEpisodeAccepted": false,
+  "limits": [
+    "This does not install the preceding source music provider or recover the original Stop/fade phase.",
+    "Source audio-zero703.256375s remains a separate observation and is not an authored delay.",
+    "Offline API execution and numerical waveform measurements do not sign subjective listening or full source-equal playback.",
+    "The full restoration goal remains active."
+  ]
+}
