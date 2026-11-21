@@ -1,0 +1,64 @@
+{
+  "schema": "stella.scene-flow.fresh.reader-observations.v1",
+  "rootApproved": false,
+  "failedOriginalPythonRead": {
+    "tool": "functions.exec / tools.exec_command, offline JSON sample-and-cross-scene inspection",
+    "sessionId": null,
+    "sessionHandleWasNotPrinted": true,
+    "scriptLine": 4,
+    "scriptExcerpt": "D=Path('artifacts/stella-script-continuation-20261121/data-checkout'); m=json.loads((D/'manifest.json').read_text()); special=[]",
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+    "exception": "json.decoder.JSONDecodeError: Invalid control character at: line 112318 column 29 (char 3311420)",
+    "line": 112318,
+    "column": 29,
+    "charPosition": 3311420,
+    "actualExceptionDocRetained": false,
+    "actualExceptionDocSHA256": null,
+    "actualFailedReadBytesSHA256": null,
+    "cause": "unknown",
+    "businessGateExecuted": false,
+    "successReclassification": false
+  },
+  "independentNodeStaticAnalysis": {
+    "heldFullBufferBeforeJSONParse": true,
+    "JSONParsePassed": true,
+    "inputBytes": 4489324,
+    "inputSHA256": "2268fc090200fe942ca23d412d176f2ee68410814b39c146c96b090ffeb87174",
+    "rawBufferWasPersistedAtParseTime": false,
+    "laterRawSnapshotWithoutReparse": {
+      "path": "manifest-node-analysis-bound-snapshot.json.gz",
+      "bytes": 4489324,
+      "sha256": "2268fc090200fe942ca23d412d176f2ee68410814b39c146c96b090ffeb87174",
+      "gzipBytes": 121629,
+      "gzipSHA256": "c869cdac70fe1ec64fc811821bd597c23571c224fbda3e61b5c3ca26fa95b1ce",
+      "matchesAnalysisInputBinding": true
+    },
+    "doesNotResolvePriorFailure": true
+  },
+  "separateRootOriginalRead": {
+    "receiptPath": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/manifest-original-read-diagnostic-20261122-v1/receipt.json",
+    "receiptSHA256": "25ed49bf9524dd6fbcd19674aec02edea47e8297ce7e2b8b66ae1c64a24f00b1",
+    "observation": {
+      "schema": "stella.manifest.direct-original-read-diagnostic.v1",
+      "createdUTC": "2026-11-21T17:29:17.997469+00:00",
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+      "head": "56d2b0524d964499a1ee098988d527374f9f32b4",
+      "filesystemBytes": 4489324,
+      "filesystemSHA256": "2268fc090200fe942ca23d412d176f2ee68410814b39c146c96b090ffeb87174",
+      "committedBytes": 4489324,
+      "committedSHA256": "2268fc090200fe942ca23d412d176f2ee68410814b39c146c96b090ffeb87174",
+      "bytesEqualCommitted": true,
+      "filesystemNULCount": 0,
+      "priorAgentFailureCauseResolved": false,
+      "businessGateExecuted": false,
+      "dataSourceWrites": false,
+      "originalJSONLoadsPassed": true,
+      "type": "dict"
+    },
+    "explanationOfPriorFailure": false
+  },
+  "limitations": [
+    "The failed Python exception.doc and its exact byte stream were not captured; no reconstruction or attribution is made.",
+    "Independent successful reads and exact disk/committed bytes do not invalidate, explain, or repair that failure."
+  ]
+}
