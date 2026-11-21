@@ -1,0 +1,80 @@
+{
+  "schema": "stella.root-approved-native-node-fields.v1",
+  "rootConfirmed": true,
+  "changes": [
+    {
+      "sceneId": 10020037,
+      "scenarioId": 13,
+      "stableKey": "s10020037-p12-at0717",
+      "sourceText": "しかし、さっきから気になっておったが、お前さん、その妙な品はなんなんじゃ？",
+      "rootConfirmed": true,
+      "subagentConfirmed": true,
+      "expected": {
+        "voice": "",
+        "bg_picture": "",
+        "bg_music": "",
+        "motion": "",
+        "video": "",
+        "msg_text": "不过，老夫从刚才就在意了，你那个怪东西是什么？",
+        "se": "",
+        "character": "",
+        "talk_chara": "",
+        "position": "",
+        "msg_character": "巨大な体躯の老人",
+        "character_image": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "fields": {
+        "character": "live2d/AC_rom01"
+      },
+      "rowGuards": {
+        "uniqId": 1002003700013,
+        "scenarioType": 2,
+        "isRoot": 0,
+        "canonicalCurrentRowSha256": "4c5d8f60f0cd65a1687a6d9c4bd7a5c5de88f7943f8c261621be7488a11e963e",
+        "nativeIdOrigin": "authored",
+        "studioNodeIdAbsent": true,
+        "rowSha256": "4c5d8f60f0cd65a1687a6d9c4bd7a5c5de88f7943f8c261621be7488a11e963e",
+        "all19RowGuards": "binding-checklist.rootfalse.json"
+      },
+      "evidence": {
+        "reviewer": "/root/episode6_control_preparation",
+        "directImageReview": true,
+        "independentEntryReview": {
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode6-rom13-independent-entry-review-20261121-v1/independent-entry-review.json",
+          "bytes": 12148,
+          "sha256": "8cdff2b6c6dee310d731bf3fa5c03b27b875928023d149f12a9abf7802861e5d"
+        },
+        "recordingId": "bili-capital-12",
+        "sourceFile": {
+          "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/12 6本篇「不可理解的再会」Ver蜜蜜.mp4",
+          "bytes": 100984152,
+          "sha256": "4f1cfc79da7623d634642d83ea7574ef4ded5cddc7798f87c4eacee334b42c13"
+        },
+        "completeEntryFrameManifest": {
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode6-restore-20261121-v1/p12-rom13-full-entry/frame-manifest.json",
+          "bytes": 30477,
+          "sha256": "875cb73e635c29335aaac58197d658f219b378c191c37c56a8653ab245571b78"
+        },
+        "reviewedSourceFrames": 164,
+        "frameDropping": false,
+        "acceptedScope": "Only the native character resource identity. No token, phase, link, text, audio or exact timing is recovered."
+      }
+    }
+  ],
+  "rootDecision": {
+    "approvalId": "root-rom13-character-only-2844ba55-v1",
+    "dataBase": "2844ba559d922bd6108f84ae4dc970f40c9b3731",
+    "sourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+    "independentFull164SourceIdentityReviewSHA256": "8cdff2b6c6dee310d731bf3fa5c03b27b875928023d149f12a9abf7802861e5d",
+    "acceptedScope": "character identity only; no motion/face/extras/phase/geometry/timing or audio acceptance",
+    "expectedMutations": 1,
+    "normalSavePath": "existing native_repair --node-fields, native_install dry audit then separate root-approved apply",
+    "all949CurrentBaselineGuardsRechecked": true,
+    "sourcePacketOriginalRootfalseUnmodified": true
+  }
+}

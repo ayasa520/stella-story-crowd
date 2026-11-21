@@ -1,0 +1,24 @@
+{
+  "type": "JSONDecodeError",
+  "message": "Invalid control character at: line 9926 column 86 (char 395396)",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\n  File \"<frozen runpy>\", line 234, in run_module\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/rikka/Projects/stella/story_studio/recovery/native_repair.py\", line 501, in <module>\n    main()\n    ~~~~^^\n  File \"/home/rikka/Projects/stella/story_studio/recovery/native_repair.py\", line 488, in main\n    repair = ReviewedRepair(InstalledSnapshot(root, resolve(args.target)))\n                            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rikka/Projects/stella/story_studio/recovery/native_repair.py\", line 42, in __init__\n    storage[identity] = json.loads(raw)\n                        ~~~~~~~~~~^^^^^\n  File \"/usr/lib/python3.14/json/__init__.py\", line 352, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Invalid control character at: line 9926 column 86 (char 395396)\n",
+  "argv": [
+    "story_studio.recovery.native_repair",
+    "--root",
+    "/home/rikka/Projects/stella",
+    "--target",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout",
+    "--directory",
+    "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/native-directory.json",
+    "--node-fields",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode6-rom13-final-root-approval-v1/node-fields.root-approved.json",
+    "--output",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode6-rom13-final-normal-stage-v1"
+  ],
+  "originalBusinessModuleUnmodified": true,
+  "retries": 0,
+  "pos": 395396,
+  "lineno": 9926,
+  "colno": 86,
+  "actualDocSHA256": "87ce193c2329896cc8ccdea103d77df5775a20b062deb84d9a0303be306e3356"
+}

@@ -1,0 +1,394 @@
+{
+  "schema": "stella.rom13.reader-failure.offline-byte-investigation.v1",
+  "status": "current_witness_verified_closest_source_identified_cause_unknown",
+  "execution": {
+    "nice": 19,
+    "cpuAffinity": [
+      0,
+      1
+    ],
+    "network": false,
+    "browser": false,
+    "businessParserOrCLIExecuted": false,
+    "sourceSceneJSONParsed": false,
+    "exceptionDocumentJSONParsed": false,
+    "metadataOnlyJSONParsed": true,
+    "dataOrSourceWritten": false,
+    "gitExecuted": false,
+    "retryPerformed": false
+  },
+  "actualFailure": {
+    "metadataPath": "artifacts/stella-script-continuation-20261121/episode6-rom13-normal-stage-observer-v1/failure.json",
+    "metadataSHA256": "df9c01b645fcae1ac8d873f910c1f055cc53b43396f1541bf6b13b73a5f11d7f",
+    "type": "JSONDecodeError",
+    "message": "Invalid control character at: line 9926 column 86 (char 395396)",
+    "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\n  File \"<frozen runpy>\", line 234, in run_module\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/rikka/Projects/stella/story_studio/recovery/native_repair.py\", line 501, in <module>\n    main()\n    ~~~~^^\n  File \"/home/rikka/Projects/stella/story_studio/recovery/native_repair.py\", line 488, in main\n    repair = ReviewedRepair(InstalledSnapshot(root, resolve(args.target)))\n                            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rikka/Projects/stella/story_studio/recovery/native_repair.py\", line 42, in __init__\n    storage[identity] = json.loads(raw)\n                        ~~~~~~~~~~^^^^^\n  File \"/usr/lib/python3.14/json/__init__.py\", line 352, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/usr/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Invalid control character at: line 9926 column 86 (char 395396)\n",
+    "argv": [
+      "story_studio.recovery.native_repair",
+      "--root",
+      "/home/rikka/Projects/stella",
+      "--target",
+      "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout",
+      "--directory",
+      "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/native-directory.json",
+      "--node-fields",
+      "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode6-rom13-final-root-approval-v1/node-fields.root-approved.json",
+      "--output",
+      "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode6-rom13-final-normal-stage-v1"
+    ],
+    "originalBusinessModuleUnmodifiedReported": true,
+    "retries": 0
+  },
+  "actualDecodedDocumentWitness": {
+    "path": "artifacts/stella-script-continuation-20261121/episode6-rom13-normal-stage-observer-v1/actual-exception-doc.utf8.bin",
+    "sha256": "87ce193c2329896cc8ccdea103d77df5775a20b062deb84d9a0303be306e3356",
+    "bytes": 984333,
+    "unicodeCodePoints": 957229,
+    "utf16CodeUnits": 957229,
+    "utf8RoundTripExact": true,
+    "errorCodePointPosition": 395396,
+    "errorByteOffset": 406875,
+    "codePointAtError": 0,
+    "byteAtError": 0,
+    "observedLine": 9926,
+    "observedColumn": 86,
+    "errorBytesHex": "0000000000",
+    "provenance": "Saved UTF-8 encoding of the actual JSONDecodeError.doc; not a preserved raw object or failing frame filename."
+  },
+  "candidateSearch": {
+    "roots": [
+      "native",
+      "review"
+    ],
+    "jsonFiles": 2232,
+    "symlinks": [],
+    "fullCandidateComparisons": [
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10020013.json",
+        "bytes": 984333,
+        "lengthDelta": 0,
+        "sha256": "2b724348fb3e3a59b6d3a409c9b911ddb56c23b264a9e679959a28cfaf1f9c63",
+        "positionwiseDifferences": 5,
+        "firstDifference": 406875,
+        "lastDifference": 406879
+      }
+    ],
+    "nearestLengths": [
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10020013.json",
+        "bytes": 984333,
+        "lengthDelta": 0
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/restoration-audits/royal-capital-20261111-repair/native-typewriter-clock-20261113-v1/actual-clock-observation.json",
+        "bytes": 971618,
+        "lengthDelta": -12715
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/restoration-audits/royal-capital-20261111-repair/p29-batch1-identity-20261112-v1/identity/full-part98-coverage-manifest.json",
+        "bytes": 941345,
+        "lengthDelta": -42988
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/restoration-audits/royal-capital-20261111-repair/cast-v21-p24-review-packet.json",
+        "bytes": 1029172,
+        "lengthDelta": 44839
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10250053.json",
+        "bytes": 898164,
+        "lengthDelta": -86169
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10240046.json",
+        "bytes": 876661,
+        "lengthDelta": -107672
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/restoration-audits/royal-capital-20261111-repair/offline-diagnostic-evidence-20261112-v1/visual-high/static-seven-case-plan-20261112-v1/draft-v2/execution-input-DRAFT.json",
+        "bytes": 826680,
+        "lengthDelta": -157653
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10290010.json",
+        "bytes": 822497,
+        "lengthDelta": -161836
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/restoration-audits/royal-capital-20261111-repair/felt22-retained-entry-v36/original-and-predecessor/candidate-curve-analysis.json",
+        "bytes": 1157423,
+        "lengthDelta": 173090
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/restoration-audits/royal-capital-20261111-repair/p27-full-part-coverage-manifest-v45.json",
+        "bytes": 784280,
+        "lengthDelta": -200053
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10020050.json",
+        "bytes": 774994,
+        "lengthDelta": -209339
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10160010.json",
+        "bytes": 738370,
+        "lengthDelta": -245963
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10020021.json",
+        "bytes": 730882,
+        "lengthDelta": -253451
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10150003.json",
+        "bytes": 694313,
+        "lengthDelta": -290020
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/restoration-audits/royal-capital-20261111-repair/cast-v21-p23-review-packet.json",
+        "bytes": 675741,
+        "lengthDelta": -308592
+      },
+      {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10160011.json",
+        "bytes": 670101,
+        "lengthDelta": -314232
+      }
+    ],
+    "otherCandidateMinimumLengthDifference": 12715,
+    "uniqueClosestProvedByFullComparisonAndOtherLengthLowerBound": true,
+    "sizeCensusSHA256": "41f10127c73a9998cf4ca866440213565cce21f085c0e023e727f591f6770c6c",
+    "censusFile": "candidate-size-census.json"
+  },
+  "closestCurrentSource": {
+    "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10020013.json",
+    "sha256": "2b724348fb3e3a59b6d3a409c9b911ddb56c23b264a9e679959a28cfaf1f9c63",
+    "bytes": 984333,
+    "sameLength": true,
+    "unchangedBytesAtEqualOffsets": 984328,
+    "differingBytes": 5,
+    "firstDifference": 406875,
+    "lastDifference": 406879,
+    "commonPrefixBytes": 406875,
+    "commonSuffixBytes": 577453,
+    "differenceRuns": [
+      {
+        "start": 406875,
+        "endExclusive": 406880,
+        "sourceHex": "3565373433",
+        "witnessHex": "0000000000",
+        "sourceUTF8": "5e743",
+        "sourceContext": "256\": \"96a3db9d785b238488c9bc5776542fde797673af94aa5a431b0f75e743c9f7f8\",\n                \"time\": 479.85,",
+        "witnessContext": "256\": \"96a3db9d785b238488c9bc5776542fde797673af94aa5a431b0f7\u0000\u0000\u0000\u0000\u0000c9f7f8\",\n                \"time\": 479.85,"
+      }
+    ],
+    "preservedSnapshot": "closest-current-source.utf8.bin",
+    "candidateSourceWasNotParsedByThisInvestigation": true
+  },
+  "sourceAndOwnershipBinding": {
+    "sourceFiles": {
+      "story_studio/recovery/native_repair.py": "dddc83e2387a0370b726b98ba55a9aada5868a1007ebafe23b7b722361bcd333",
+      "story_studio/recovery/native_rough.py": "31bbdf7ec44ea7f588f7355026e1947d818b5bd661fd2be8919e639a5f1d1444",
+      "story_studio/crowd_seed.py": "01806188ca7391882d9d74c0a2cfaa3ab987fcd722a719c80f940b8f25386956"
+    },
+    "ownership": {
+      "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/native-restoration.json",
+      "sha256": "e8a4ad9ed7cd66c31a300ae34f9b37d3b06e229f436405336cf63af580aa8615",
+      "sceneCount": 121,
+      "candidateFileExpectedSHA256": "2b724348fb3e3a59b6d3a409c9b911ddb56c23b264a9e679959a28cfaf1f9c63",
+      "candidateFileHashMatches": true,
+      "lexicalSceneOrder": [
+        "10020001",
+        "10020002",
+        "10020003",
+        "10020004",
+        "10020011",
+        "10020012",
+        "10020013",
+        "10280014",
+        "10280015",
+        "10280016",
+        "10280017",
+        "10030001",
+        "10030002",
+        "10030005",
+        "10030006",
+        "10040001",
+        "10040002",
+        "10040003",
+        "10040004",
+        "10020034",
+        "10020035",
+        "10020036",
+        "10020037",
+        "10020038",
+        "10270039",
+        "10270040",
+        "10270041",
+        "10270042",
+        "10170001",
+        "10170002",
+        "10170003",
+        "10240043",
+        "10240044",
+        "10240045",
+        "10240046",
+        "10020021",
+        "10020022",
+        "10020023",
+        "10260024",
+        "10260025",
+        "10260026",
+        "10260027",
+        "10150003",
+        "10150004",
+        "10150005",
+        "10150006",
+        "10180004",
+        "10180005",
+        "10200006",
+        "10200007",
+        "10160007",
+        "10160008",
+        "10160009",
+        "10160010",
+        "10160011",
+        "10020048",
+        "10020049",
+        "10020050",
+        "10250051",
+        "10250052",
+        "10250053",
+        "10210005",
+        "10210006",
+        "10210007",
+        "10040051",
+        "10040052",
+        "10040053",
+        "10450054",
+        "10450055",
+        "10450056",
+        "10450057",
+        "10450058",
+        "10040042",
+        "10040043",
+        "10290008",
+        "10290009",
+        "10290010",
+        "10470044",
+        "10470045",
+        "10470046",
+        "10470047",
+        "10040035",
+        "10040036",
+        "10460037",
+        "10460038",
+        "10460039",
+        "10460040",
+        "10040021",
+        "10040022",
+        "10040023",
+        "10480024",
+        "10480025",
+        "10480026",
+        "10480027",
+        "10480028",
+        "10410005",
+        "10410006",
+        "10410007",
+        "10410061",
+        "10110002",
+        "10110003",
+        "10120001",
+        "10120002",
+        "10120003",
+        "10130001",
+        "10130002",
+        "10130003",
+        "10130004",
+        "10130005",
+        "10420008",
+        "10420009",
+        "10420010",
+        "10420011",
+        "10430012",
+        "10430013",
+        "10430014",
+        "10490015",
+        "10490016",
+        "10490017",
+        "10490018",
+        "10490019"
+      ]
+    },
+    "manifest": {
+      "path": "artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+      "sha256": "798870d4288dceb47bfe3f8099e49058ad546384fd0aec29ff18a9db8a1534d0",
+      "candidateEntryId": 10020013,
+      "ownershipSceneEntrySHA256": "ff585aabb95ffd4890afa822c01c4dc665134c425341a7186f8231a063402dfd",
+      "currentEncodedEntrySHA256": "ff585aabb95ffd4890afa822c01c4dc665134c425341a7186f8231a063402dfd",
+      "entryMatches": true
+    },
+    "candidateInSourceIteration": {
+      "sceneId": 10020013,
+      "sceneIndexZeroBased": 6,
+      "kindIndexZeroBased": 1,
+      "sceneFileParseOrdinalOneBased": 14,
+      "includesManifestOwnershipParses": false,
+      "attribution": "Current candidate mapped to source loop order; not a captured failing-frame raw/name witness."
+    },
+    "sourceControlFlow": [
+      {
+        "file": "story_studio/recovery/native_repair.py",
+        "lines": [
+          27,
+          28,
+          29,
+          30
+        ],
+        "fact": "Read and parse manifest and ownership before scene iteration."
+      },
+      {
+        "file": "story_studio/recovery/native_repair.py",
+        "lines": [
+          33,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "fact": "Iterate ownership scenes; native then review; derive name, read_bytes, ownership digest check, then json.loads(raw)."
+      },
+      {
+        "file": "story_studio/recovery/native_repair.py",
+        "lines": [
+          488,
+          493,
+          494,
+          497
+        ],
+        "fact": "The captured failure occurs constructing InstalledSnapshot before node-fields or repair.stage are reached."
+      }
+    ]
+  },
+  "known": [
+    "The saved decoded exception document contains five consecutive NUL bytes at the captured error location.",
+    "The current review/scenes/10020013.json is the unique closest candidate across all current native/review JSON files: identical length and only five differing bytes.",
+    "The current source has ASCII 5e743 where the actual exception document has five NUL bytes; all other bytes are equal.",
+    "The current candidate hash equals its current ownership file hash. The actual Python traceback ends at InstalledSnapshot json.loads(raw)."
+  ],
+  "unknown": [
+    "The original failing-frame raw bytes, their digest, name, kind and loop index were not captured and cannot be reconstructed as direct observations.",
+    "The mechanism and timing that produced the five NUL bytes in exception.doc remain unknown.",
+    "A current source comparison does not disprove the saved exception and does not constitute a successful Python business gate."
+  ],
+  "boundary": {
+    "normalStageAccepted": false,
+    "repairApplied": false,
+    "sourceOrWitnessNormalized": false,
+    "originalFailureRelabelled": false,
+    "cacheInstallationHardwareAttribution": false
+  },
+  "inputsStableAcrossInvestigation": true
+}
