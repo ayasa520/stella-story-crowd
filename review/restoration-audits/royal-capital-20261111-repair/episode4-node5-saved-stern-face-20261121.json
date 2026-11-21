@@ -1,0 +1,75 @@
+{
+  "schema": "stella.bounded-saved-motion-publication.v1",
+  "rootConfirmed": true,
+  "sceneId": 10100010,
+  "scenarioId": 5,
+  "uniqueId": 1010001000005,
+  "studioNodeId": "node_3a54dbc2ef80",
+  "sourceText": "ねえ、スバル。あの子、迷子になってる気がしない？",
+  "change": {
+    "field": "motion",
+    "before": "act_normal",
+    "after": "act_normal,face_shinken"
+  },
+  "acceptedComponents": [
+    "body",
+    "face"
+  ],
+  "originalMotionTokensRecovered": false,
+  "rootApprovedPacket": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/saved-two-fields-01ab2d46/node5-root-approved.json",
+    "sha256": "729b3b78b22f2e4b17b1979e257367c7e753638e5e58d2cdafef7e2cf1e9ebbc"
+  },
+  "saveMethod": "Canonical studioProject/applyStudioMutation(node/save)/studioPublicationFiles; root applied only guarded publication-file patches. Original baseline ownership is not adopted.",
+  "baseDataHeadAtSaveAndCapture": "01ab2d4689084801d6f291b7277fde79acb36269",
+  "parentAtPublication": "0ce9b5e495304ae4f431bbb7f2ce4818cb48e5ea",
+  "sourceCommitAtCapture": "a5f0ff4637460ac14282572b3504a93814be3f44",
+  "sourceTreeAtCapture": "5d0bbbff5fecd5ab132fb79121cf780488016c1f9129c3652a96b978e626565a",
+  "captureContext": "Data HEAD01ab plus the five exact released pending files. The disjoint CLEAR47 BGM field was published first as0ce9b5e4; node5/manifest bytes remain exactly the captured saved bytes.",
+  "independentReview": {
+    "reviewer": "/root/review_motion4_actual",
+    "directory": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode4-motion-review-20261121-v2/saved-node5-independent-review-20261121-v1",
+    "acceptanceSha256": "51f4c68489fd9b639b9696dd211f561a164e0650f4c0b523f7c6ac7d300a7a3d",
+    "coverageSha256": "a43bbb2d1b73f2f0e03e430745b53fbb0bb88331fbf703c563ebb57d94a10e0a",
+    "deliveryReceiptSha256": "06081529e0ec8c0c6e1c7784fb91958556416008c7ece2b59368295441814805",
+    "reportSha256": "1323dfb8d699858bce9f1ab37175c76f0ab3fc696906ba7ef42637c628dc705d",
+    "newSavedContinuousFramesReviewed": 820,
+    "newSavedPtsRange": [
+      0,
+      27.29
+    ],
+    "continuousContactSheetsReviewed": 15,
+    "originalNode5FramesRevisited": 179,
+    "originalNode5PtsRange": [
+      22.023,
+      27.956
+    ],
+    "onePassDecodedYuvMatchesPrefixAndTail": true,
+    "allOwnedBrowserProcessesClosedBeforeReview": true,
+    "rootViewedImages": false
+  },
+  "boundedObservations": {
+    "body": "Existing act_normal retains low arms and stable head posture through visible entry, prolonged hold and exit.",
+    "face": "face_shinken sustains knitted brows and flat/slightly downturned resting mouth; no return to smile across the hold.",
+    "successor": "green01 owns act_normal_w/face_naku_w after switching to29; no Emilia stern-face carryover.",
+    "targetHoldNormalSeconds": 8.1189,
+    "successorHoldNormalSeconds": 4.03388,
+    "maximumObservedTargetClockRawDeltaSeconds": 0.32254,
+    "newVideoSha256": "87ec30fbf30613d11e5e4d61a35c85cefe19ec10aecd0efb4fdf1644bc649f16"
+  },
+  "savedFileSha256": {
+    "native/scenes/10100010.json": "f109fbf2825e96714a0052c10b5a80aef2d3e1960b71add5a9e302449700bfae",
+    "review/scenes/10100010.json": "e006a88d8f153ae65c382a3e35af09df8442bf2afad6e47f9aff86df8792164a",
+    "manifest.json": "b66d877192bb5d78a2a86dfaa568d0e68eafa211c9a67c29f7c820b3c1adc700"
+  },
+  "reviewChanges": "Append one motion provenance record and retain unknown motion.extra; preserve draft status and all other evidence. Standard editor adds only the contribution_review_pending warning for scene10100010 in manifest.",
+  "protectedFirstThreeReadOnlyHashesUnchanged": 22,
+  "preserved": "All IDs/order, source Japanese/Chinese, voice, background, branch target5→29, commands/SE, every other native row, existing resource and ownership metadata.",
+  "limits": [
+    "Original payload motion-token authoring is not recovered.",
+    "Geometry, exact original actor rate, transition/alpha timing, lip sync, blink cadence, extra layers and audio are not accepted.",
+    "The earliest recorded visible entry is already relatively high alpha; complete original fade curves are not signed.",
+    "Node18 A/B remain pending and unchanged.",
+    "This audit does not sign CLEAR47 or whole-scene/episode acceptance. The full restoration goal remains active."
+  ]
+}
