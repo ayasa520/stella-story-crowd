@@ -1,0 +1,192 @@
+{
+  "schema": "stella.episode5.silent54.production-readback-failure.v1",
+  "stage": "normal-saved-player-prepare",
+  "error": {
+    "name": "AssertionError",
+    "message": "All54 source edges equal actual saved runtime input\n+ actual - expected\n... Skipped lines\n\n  [\n    {\n      available: true,\n      flow_action: 'continue',\n      flow_error: '',\n...\n      state: 'confirmed',\n+     target: '',\n-     target: 'node:10020001:1002000100001',\n      target_scene: 'scene:10020001',\n      transition: {\n        entry: 'root',\n        label: 'FINISH',\n        scene: 'scene:10020001',\n",
+    "stack": "AssertionError [ERR_ASSERTION]: All54 source edges equal actual saved runtime input\n+ actual - expected\n... Skipped lines\n\n  [\n    {\n      available: true,\n      flow_action: 'continue',\n      flow_error: '',\n...\n      state: 'confirmed',\n+     target: '',\n-     target: 'node:10020001:1002000100001',\n      target_scene: 'scene:10020001',\n      transition: {\n        entry: 'root',\n        label: 'FINISH',\n        scene: 'scene:10020001',\n\n    at file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/verify-episode5-silent54-production-v1.mjs:199:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+    "cause": null
+  },
+  "expectedHead": "1e3bfa85b461484a0a8e3e7478c98aae2ef6c644",
+  "remoteAck": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-script-main-ACK-v1.json",
+    "bytes": 913,
+    "sha256": "1cc39cd2827213180e77a17e856c6b75ff8ab6efc7a5564fb7d13fca33993f36",
+    "main": "1e3bfa85b461484a0a8e3e7478c98aae2ef6c644",
+    "finalRead": {
+      "command": [
+        "git",
+        "-c",
+        "pack.threads=1",
+        "-c",
+        "core.sshCommand=/usr/bin/python3 /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/github_ssh_paced_cloudflare_v1.py",
+        "ls-remote",
+        "origin",
+        "refs/heads/main"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "1e3bfa85b461484a0a8e3e7478c98aae2ef6c644\trefs/heads/main\n",
+      "stderr": "",
+      "error": null
+    }
+  },
+  "inputs": {
+    "schema": "stella.episode5.silent54.production-inputs.v1",
+    "expectedHead": "1e3bfa85b461484a0a8e3e7478c98aae2ef6c644",
+    "sourceCommit": "643f88a0928fe6bda8ac1c6fac9409a2fbdbdf0f",
+    "helper": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/verify-episode5-silent54-production-v1.mjs",
+      "bytes": 16447,
+      "sha256": "efd58a9c76cbeef485ed1ab74286a1ae3ed9c87d36afc2fbd9439c453140a8a4"
+    },
+    "remoteAck": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-script-main-ACK-v1.json",
+      "bytes": 913,
+      "sha256": "1cc39cd2827213180e77a17e856c6b75ff8ab6efc7a5564fb7d13fca33993f36",
+      "main": "1e3bfa85b461484a0a8e3e7478c98aae2ef6c644",
+      "finalRead": {
+        "command": [
+          "git",
+          "-c",
+          "pack.threads=1",
+          "-c",
+          "core.sshCommand=/usr/bin/python3 /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/github_ssh_paced_cloudflare_v1.py",
+          "ls-remote",
+          "origin",
+          "refs/heads/main"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "1e3bfa85b461484a0a8e3e7478c98aae2ef6c644\trefs/heads/main\n",
+        "stderr": "",
+        "error": null
+      }
+    },
+    "reference": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-saved-runtime-v2/attempt-2/normal-http-8cfee866f5a09695937da49d5d8271e6f3b11993c4d88954f2ef7e2fe31d1faa.json.gz",
+      "bytes": 1463468,
+      "sha256": "dbbe791af04d29abea7dd6f48c80d1968b9453c6d2b66b82051d57150f394e7d"
+    },
+    "actualRuntimeResult": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-saved-runtime-v2/attempt-2/result.json",
+      "bytes": 1403606,
+      "sha256": "c9782adf50507347f018704821e458fb2b04e99603469b5178ed019d523dc0cc"
+    },
+    "referenceDecodedProgramSha256": "8cfee866f5a09695937da49d5d8271e6f3b11993c4d88954f2ef7e2fe31d1faa",
+    "committedFiles": [
+      {
+        "path": "manifest.json",
+        "committedSha256": "e263f8ab420ffc12efef40abc6dcb1c1afb89154e859ff72deeb2fc074fc2207",
+        "bytes": 4489388
+      },
+      {
+        "path": "native/scenes/10090015.json",
+        "committedSha256": "86a2847c62fdffb3c3b4395d6c69c1d249279f24a35791ed89a7469bc9cf7129",
+        "bytes": 60945
+      },
+      {
+        "path": "review/scenes/10090015.json",
+        "committedSha256": "9eb2e36c25a0cc09da87bd3ef1b14f425c04398d334103abb61c124e50a666ba",
+        "bytes": 493202
+      }
+    ],
+    "dataStatus": "",
+    "sourceStatus": "?? scripts/__pycache__/",
+    "productionOrigin": "https://stella-preview.jaoushingan.com",
+    "expectedLocalLibraryNodes": 5620,
+    "expectedProductionSectionNodes": 105,
+    "sectionCounts": [
+      {
+        "sceneId": 10090013,
+        "nodeCount": 27
+      },
+      {
+        "sceneId": 10090014,
+        "nodeCount": 25
+      },
+      {
+        "sceneId": 10090015,
+        "nodeCount": 53
+      }
+    ],
+    "browserStarted": false,
+    "sourceDataOrGitWrites": false
+  },
+  "http": [
+    {
+      "name": "default-main-native-source",
+      "method": "GET",
+      "requestedUrl": "https://stella-preview.jaoushingan.com/api/native/source?sceneId=10090015",
+      "request": null,
+      "startedUtc": "2026-11-21T13:22:06.381Z",
+      "deadlineMs": 60000,
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "private, no-store",
+        "cf-ray": "a5e000677f44176a-SJC",
+        "content-type": "application/json",
+        "date": "Sat, 21 Nov 2026 13:22:10 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=C%2FXwIfz9XreNBPU5d37jIqaDwVNzrd%2FqDekYwvqEY5eeOG79yhgrJn5cKNg8B9GE7ZJ1FKeaKPpqAzWOtv09lC4IpccPqP3cPR%2F4IlSih%2F9c4hG%2F3wgOiHXFEO0QqwTmbhfz2%2FCto83vZHAA32fRtuquuKhrrk9bRRVF2gM%3D\"}]}",
+        "server": "cloudflare",
+        "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode",
+        "x-content-type-options": "nosniff"
+      },
+      "bodyComplete": true,
+      "url": "https://stella-preview.jaoushingan.com/api/native/source?sceneId=10090015",
+      "statusText": "",
+      "setCookie": [],
+      "decodedResponseBytes": 369764,
+      "decodedResponseSha256": "d3fa14a0c15291c8b5e6004711877d4eb85d7f58eb98e6211c531b849c874b16",
+      "gzipFile": "default-main-native-source.response.gz",
+      "gzipBytes": 42422,
+      "gzipSha256": "41f7b40fb51861f258093b3cb804ca0d5a8f83bac61f038e704ac888bb2529e4",
+      "finishedUtc": "2026-11-21T13:22:12.615Z"
+    },
+    {
+      "name": "normal-saved-player-prepare",
+      "method": "POST",
+      "requestedUrl": "https://stella-preview.jaoushingan.com/api/player/prepare",
+      "request": {
+        "id": "node:10090015:node_dae6816ae851",
+        "baseSha": "1e3bfa85b461484a0a8e3e7478c98aae2ef6c644",
+        "choices": {}
+      },
+      "startedUtc": "2026-11-21T13:22:12.621Z",
+      "deadlineMs": 60000,
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "private, no-store",
+        "cf-ray": "a5e00087a9eb176a-SJC",
+        "content-type": "application/json",
+        "date": "Sat, 21 Nov 2026 13:22:15 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hlV2JBzmqHRwGqGxwNnfOQciMSNde7mAs2fR5oD9B46vkYsUe7CHokGK%2FxwQ4hCr0YO6K7iDcyGgUJUuNKXWQ%2FE%2FW7OJDdVMR8KRTJgtwUztv37731ejQ0QVdqWi5%2F9%2BZMFgWzguoU0E%2FWyf%2BmK72kCNdFv0E4YgfCxGQKI%3D\"}]}",
+        "server": "cloudflare",
+        "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode",
+        "x-content-type-options": "nosniff"
+      },
+      "bodyComplete": true,
+      "url": "https://stella-preview.jaoushingan.com/api/player/prepare",
+      "statusText": "",
+      "setCookie": [],
+      "decodedResponseBytes": 882291,
+      "decodedResponseSha256": "eb02f98cd4baf5a45a0a3bffc93df8af1ea57d0f8d024eefb865cc3487d06d07",
+      "gzipFile": "normal-saved-player-prepare.response.gz",
+      "gzipBytes": 77407,
+      "gzipSha256": "c72459f6ca02d9565c6dac482c87d23106404e50a111b25b33e245b5fc8cb550",
+      "finishedUtc": "2026-11-21T13:22:20.411Z"
+    }
+  ],
+  "exactLastResponse": {
+    "gzipFile": "normal-saved-player-prepare.response.gz",
+    "decodedResponseSha256": "eb02f98cd4baf5a45a0a3bffc93df8af1ea57d0f8d024eefb865cc3487d06d07",
+    "bodyComplete": true
+  },
+  "originalFailureBodyRetainedInResponseGzip": true,
+  "retries": 0,
+  "sourceDataOrGitWrites": false
+}

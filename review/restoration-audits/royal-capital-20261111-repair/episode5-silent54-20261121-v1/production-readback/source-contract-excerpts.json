@@ -1,0 +1,359 @@
+{
+  "sourceHead": "643f88a0928fe6bda8ac1c6fac9409a2fbdbdf0f",
+  "rootReadSource": true,
+  "rootViewedImages": false,
+  "files": [
+    {
+      "member": "lib/preview.ts",
+      "sha256": "a86d28a5fcb8d5e85ff53c8422eaa5d418c4e9b72f6552c6724a612b6ce50af8",
+      "ranges": [
+        "61-84"
+      ],
+      "finding": "Root target resolves only from loaded sources; section action remains available without a loaded node target.",
+      "excerpts": [
+        {
+          "first": 61,
+          "last": 84,
+          "lines": [
+            "    const tr=branch.transition_list.length===1?branch.transition_list[0]:null;",
+            "    const finish=tr?.next_scenario_label===\"FINISH\";",
+            "    const finishDestination=finish?classifyFinishDestination(tr):null;",
+            "    const directoryError=finishDestination?.kind===\"target\"?finishSectionError(finishDestination.sectionId,finishDestination.sceneId,sections):\"\";",
+            "    const terminal=finishDestination?.kind===\"terminal\",invalidFinish=finishDestination?.kind===\"invalid\"||!!directoryError;",
+            "    // Destination-free FINISH is a native end action, not a link to scene zero.",
+            "    // Share validation's classifier so malformed pairs cannot become available",
+            "    // merely because their section differs from the current one. Keep the raw",
+            "    // native transition untouched for provenance and later export.",
+            "    const destinationScene=finishDestination?.kind===\"target\"?finishDestination.sceneId:finish?null:entry.id;",
+            "    const destination=destinationScene===null?undefined:sourceById.get(destinationScene);",
+            "    const destinationId=tr?.next_scenario_id===0?destination?.document.scenario_list.find(n=>n.is_root===1)?.scenario_id:tr?.next_scenario_id;",
+            "    const target=!invalidFinish&&destinationScene!==null&&destinationId!==undefined?nodeId(destinationScene,destinationId):\"\";",
+            "    const flow_action=invalidFinish?\"invalid\":terminal?\"complete\":finishDestination?.kind===\"target\"?",
+            "      (finishDestination.sectionId===entry.sectionId?\"scene\":\"section\"):\"continue\";",
+            "    const available=!!tr&&!invalidFinish&&(flow_action===\"complete\"||flow_action===\"section\"||nodeIds.has(target));",
+            "    return {",
+            "      id:`${entry.id}:${row.scenario_id}:${branch.branch_id}`,source:nodeId(entry.id,row.scenario_id),target,",
+            "      kind:branch.type===2||branch.type===3?\"choice\":\"next\",side:branch.type===2?\"left\":branch.type===3?\"right\":\"\",",
+            "      label:display(branch.msg_quote_subject),quote:display(branch.msg_quote),label_translation:display(branch.msg_quote_subject),quote_translation:display(branch.msg_quote),",
+            "      state:available?\"confirmed\":\"missing\",available,",
+            "      transition:{label:tr?.next_scenario_label||\"\",section:finishDestination?.kind===\"target\"?sectionId(finishDestination.sectionId):\"\",scene:finishDestination?.kind===\"target\"?sceneId(finishDestination.sceneId):\"\",entry:tr?.next_scenario_id===0?\"root\":\"node\"},",
+            "      flow_action,source_scene:sceneId(entry.id),target_scene:finish?(finishDestination?.kind===\"target\"?sceneId(finishDestination.sceneId):\"\"):sceneId(entry.id),native_transition:tr,",
+            "      flow_error:available?\"\":directoryError||(invalidFinish?\"FINISH 的目标字段组合无效，请保留原稿并补充证据\":branch.transition_list.length>1?\"此分支的原生条件转移尚未接入预览\":\"后续节点尚未恢复，请保留此分支并补充证据\"),"
+          ]
+        }
+      ]
+    },
+    {
+      "member": "lib/studio-native.ts",
+      "sha256": "1c803e7df178f900f4d5cc0cac1728492703e0f8b4d8e898e2009a2a6507d0c8",
+      "ranges": [
+        "71-98",
+        "185-201"
+      ],
+      "finding": "Cloudflare loads current section bodies; stable idMap cannot name an unloaded next-section root.",
+      "excerpts": [
+        {
+          "first": 71,
+          "last": 98,
+          "lines": [
+            "export async function loadStudioSnapshot(sha?:string,sceneIds:number[]=[initialStudioScene],",
+            "  access:\"edit\"|\"read\"|\"scene\"=\"edit\"):Promise<StudioSnapshot>{",
+            "  const repository=new GitHubRepository(),headSha=sha||await repository.head();",
+            "  if(!/^[a-f\\d]{40}$/.test(headSha))throw new RepositoryError(\"脚本版本无效。\",400);",
+            "  const {manifest}=await repository.library(headSha);",
+            "  // The directory remains complete. On Workers the current section owns",
+            "  // scene bodies and intra-section player state; a cross-section FINISH is",
+            "  // executable from its native IDs without loading the next section.",
+            "  const sections=new Set<number>();",
+            "  if(env.STELLA_HOSTING===\"cloudflare\"){",
+            "    for(const sceneId of sceneIds){",
+            "      const entry=manifest.scenes.find(row=>row.id===sceneId);",
+            "      if(entry)sections.add(entry.sectionId);",
+            "    }",
+            "    if(!sections.size){",
+            "      const fallback=manifest.scenes.find(row=>row.id===initialStudioScene)||manifest.scenes[0];",
+            "      if(!fallback)throw new RepositoryError(\"当前仓库还没有可编辑的场景。\",404);",
+            "      sections.add(fallback.sectionId);",
+            "    }",
+            "  }",
+            "  // If a whole section exceeds the Worker limit, the read-only editor can",
+            "  // reopen just the requested scene. Saves and the continuous player still",
+            "  // load the full section to retain cross-scene edits and transitions.",
+            "  const narrow=access===\"scene\"&&sections.size>0;",
+            "  const entries=narrow?[manifest.scenes.find(row=>row.id===sceneIds[0])||",
+            "    manifest.scenes.find(row=>row.id===initialStudioScene)||manifest.scenes[0]]:",
+            "    sections.size?manifest.scenes.filter(row=>sections.has(row.sectionId)):manifest.scenes;",
+            "  const key=headSha+\":\"+(narrow?`scene:${entries[0].id}`:[...sections].sort((a,b)=>a-b).join(\",\"));"
+          ]
+        },
+        {
+          "first": 185,
+          "last": 201,
+          "lines": [
+            "  const excludedNodes=new Set(nodes.filter(node=>node.review_state===\"excluded\").map(node=>node.id));",
+            "  const edges=program.edges.map(edge=>{",
+            "    const sourceId=idMap.get(edge.source)!,{source,row}=nodeSources.get(sourceId)!;",
+            "    const branch=row.branch_list.find(branch=>edge.id===`${source.entry.id}:${row.scenario_id}:${branch.branch_id}`)!;",
+            "    const review=source.review.scenarios[String(row.scenario_id)]||{};",
+            "    const evidence=((review.branches||[]) as StudioRecord[]).find(item=>item.branchId===branch.branch_id)||{};",
+            "    const state=evidence.state||edge.state;",
+            "    return {...edge,id:`edge:${sourceId}:${branch.uniq_id}:${branch.branch_id}`,source:sourceId,target:idMap.get(edge.target)||\"\",",
+            "      label:visible(evidence.sourceLabel??branch.msg_quote_subject),quote:visible(evidence.sourceQuote??branch.msg_quote),",
+            "      label_translation:visible(branch.msg_quote_subject),quote_translation:visible(branch.msg_quote),",
+            "      notes:evidence.notes||\"\",origin:\"native\",score:null,state,",
+            "      available:edge.available&&state!==\"excluded\"&&state!==\"missing\"&&!excludedNodes.has(sourceId)&&!excludedNodes.has(idMap.get(edge.target)||\"\")};",
+            "  });",
+            "  // The editor and player share the same master-backed chart. Only scenario",
+            "  // identities differ: remap entry nodes to the workbench's stable IDs while",
+            "  // retaining native positions, END flags, route labels and explicit edges.",
+            "  const directory={...program.directory,entries:program.directory.entries.map(entry=>"
+          ]
+        }
+      ]
+    },
+    {
+      "member": "lib/studio-api.ts",
+      "sha256": "5bc737e5638b1c5f482d375faab08c6e4ebfc426b66922f7b6f5154c7c05b33c",
+      "ranges": [
+        "130-135",
+        "155-162"
+      ],
+      "finding": "Normal prepare returns section projection and independently resolved before.",
+      "excerpts": [
+        {
+          "first": 130,
+          "last": 135,
+          "lines": [
+            "  }",
+            "  const baseSha=validRevision(body.baseSha);",
+            "  const sceneIds=mutationScenes(body);",
+            "  const resolving=path===\"resolve\"||path===\"player/prepare\";",
+            "  const [base,assets]=await Promise.all([loadStudioSnapshot(baseSha,sceneIds,resolving?\"read\":\"edit\"),assetCatalog(baseSha)]);",
+            "  const project=studioProject(base,assets);"
+          ]
+        },
+        {
+          "first": 155,
+          "last": 162,
+          "lines": [
+            "      }",
+            "    }",
+            "    const motionIndex=await assetMotionIndex(base.headSha);",
+            "    const resolved=resolveStudioState(preview,body.id,body.choices||{},assets,motionIndex);",
+            "    if(path===\"resolve\")return json(resolved);",
+            "    if(resolved.ambiguous.length)throw new RepositoryError(\"请先选择预览入线，确定\"+resolved.ambiguous_labels.join(\"、\")+\"后再播放。\",422);",
+            "    return json({...preview,start:body.id,before:resolved.before,scene_thumbnails:assets.thumbnails.scene,semantics:previewSemantics(base.headSha),",
+            "      sound_effects:Object.values(assets.sound_effects),flow_issues:[],warnings:resolved.warnings});"
+          ]
+        }
+      ]
+    },
+    {
+      "member": "lib/native.ts",
+      "sha256": "90df2675b0fec4e9fa853de0c380fa7b2f2c89a35d54cd2f04322f59dd669015",
+      "ranges": [
+        "36-65"
+      ],
+      "finding": "Positive FINISH section/scene pair is validated against the complete manifest directory.",
+      "excerpts": [
+        {
+          "first": 36,
+          "last": 65,
+          "lines": [
+            "export function classifyFinishDestination(value: unknown): FinishDestination {",
+            "  if (!ownObject(value) || value.next_scenario_label !== \"FINISH\" ||",
+            "      typeof value.next_scenario_id !== \"number\" ||",
+            "      !Number.isSafeInteger(value.next_scenario_id) || value.next_scenario_id < 0)",
+            "    return {kind: \"invalid\"};",
+            "  const absent = !Object.hasOwn(value, \"next_section_id\") && !Object.hasOwn(value, \"next_scene_id\");",
+            "  const sentinel = value.next_section_id === -1 && value.next_scene_id === -1;",
+            "  if (value.next_scenario_id === 0 && (absent || sentinel)) return {kind: \"terminal\"};",
+            "  const sectionId = value.next_section_id, sceneId = value.next_scene_id;",
+            "  if (typeof sectionId === \"number\" && Number.isSafeInteger(sectionId) && sectionId > 0 &&",
+            "      typeof sceneId === \"number\" && Number.isSafeInteger(sceneId) && sceneId > 0)",
+            "    return {kind: \"target\", sectionId, sceneId};",
+            "  return {kind: \"invalid\"};",
+            "}",
+            "",
+            "export function indexSceneSections(manifest: Pick<LibraryManifest,\"chapters\">): Map<number,number> {",
+            "  const sections=new Map<number,number>();",
+            "  for(const chapter of manifest.chapters)for(const section of chapter.sections)for(const id of section.sceneIds)",
+            "    sections.set(id,section.id);",
+            "  return sections;",
+            "}",
+            "",
+            "/** The full directory includes scenes whose scripts are absent or outside the",
+            " * loaded section. Use it to check the declared pair so playback and editing",
+            " * agree even when they load different subsets of scene documents.",
+            " */",
+            "export function finishSectionError(sectionId: number, sceneId: number, sections: ReadonlyMap<number,number>): string {",
+            "  const owner=sections.get(sceneId);",
+            "  if(owner===undefined)return `FINISH 目标场景 ${sceneId} 未登记在流程图目录中`;",
+            "  return owner===sectionId?\"\":`FINISH 目标场景 ${sceneId} 属于 ${owner} 话，转移却指定了 ${sectionId} 话`;"
+          ]
+        }
+      ]
+    },
+    {
+      "member": "public/player/player.js",
+      "sha256": "5f2ae9d24449d6dd7d197af05f6ae70fae9e7ca508f65c4ec8584d7920b0548c",
+      "ranges": [
+        "692",
+        "779-802",
+        "847-859"
+      ],
+      "finding": "Title checks edge.available then calls follow; FINISH+section completes/chart/returns before generic target lookup/enter.",
+      "excerpts": [
+        {
+          "first": 692,
+          "last": 692,
+          "lines": [
+            "  available(edge){return edge.available;}"
+          ]
+        },
+        {
+          "first": 779,
+          "last": 802,
+          "lines": [
+            "  async follow(edge){",
+            "    console.info('STORY_PLAYER_TRANSITION',JSON.stringify({edge:edge.id,action:edge.flow_action,native:edge.native_transition,target:edge.target}));",
+            "    this.visitedEdges.add(edge.id);",
+            "    if(edge.transition.label==='FINISH'){",
+            "      this.completedScenes.add(edge.source_scene);",
+            "      if(edge.flow_action==='complete'||edge.flow_action==='section'){",
+            "        // Original intro41/102 preserve FINISH without a real destination;",
+            "        // ADV GetNext also ends normal ADV at a cross-section FINISH. Both",
+            "        // actions return to the completed section's chart before node lookup.",
+            "        // Keep the existing script music handle without asserting a victory",
+            "        // cue; Stop/replay still owns its cancellation. The final chart keeps",
+            "        // the route actually traversed and never enters a guessed successor.",
+            "        const source=this.program.directory.entries.find(row=>row.id===edge.source_scene);",
+            "        const section=this.program.directory.entries.find(row=>row.id===source.parent);",
+            "        this.stop({keepMusic:true});",
+            "        this.flowView.chart(this.program,this.node,this.completedScenes,null,this.config.flow.chart,this.visitedEdges);",
+            "        this.setPhase('complete');",
+            "        console.info('STORY_PLAYER_SECTION_COMPLETE',section.id,[...this.completedScenes],[...this.visitedEdges]);",
+            "        this.status('本话已结束。');return;",
+            "      }",
+            "    }",
+            "    if(!this.available(edge))throw new Error(edge.flow_error||'目标节点／场景入口尚未恢复');",
+            "    await this.enter(edge.target,edge);",
+            "  }"
+          ]
+        },
+        {
+          "first": 847,
+          "last": 859,
+          "lines": [
+            "    const titleEntry=this.flowView.title(this.node,$('language').value,scene);",
+            "    this.setPhase('title');this.status(this.node.translation||this.node.text);",
+            "    console.info('STORY_PLAYER_TITLE',this.node.id,this.node.title_mode);",
+            "    // The original entry event, rather than the former generic1.6s hold,",
+            "    // releases TitleProc into phase2. The player generation still cancels the",
+            "    // whole operation, including the final frame and its subsequent edge.",
+            "    await playNativeTitleEntry(titleEntry,{check:()=>this.check(generation),pending:this.pending});",
+            "    this.check(generation);this.flowView.close();",
+            "    await this.phaseCommands(2,generation);this.check(generation);",
+            "    const edges=this.program.edges.filter(edge=>edge.source===this.node.id);",
+            "    if(edges.length!==1)throw new Error('标题节点需要且只能有一条后续转移');",
+            "    if(!this.available(edges[0]))throw new Error(edges[0].flow_error||'标题的后续节点／场景入口尚未恢复');",
+            "    await this.follow(edges[0]);"
+          ]
+        }
+      ]
+    },
+    {
+      "member": "public/player/flow_view.js",
+      "sha256": "5d69218e1e52631f1e3b78fd19cd94abc5021e675c77ab80d0f15329cb410f21",
+      "ranges": [
+        "23-34",
+        "58-67"
+      ],
+      "finding": "Completed chart uses actual chartLayout and has no successor playback action.",
+      "excerpts": [
+        {
+          "first": 23,
+          "last": 34,
+          "lines": [
+            "  chart(program,node,completed,continueTitle,settings,visitedEdges){",
+            "    this.panel('story-flow chart-view');",
+            "    const layout=chartLayout(program,node,completed,visitedEdges,settings);",
+            "    const {current,section,scenes,positions,links,viewBox}=layout;",
+            "    const {card_width:width,card_height:height}=settings;",
+            "    console.info('STORY_PLAYER_CHART_LAYOUT',JSON.stringify({...layout.diagnostics,milliseconds:performance.now()}));",
+            "    this.root.append(this.text('h2',section.name));",
+            "    const scroll=document.createElement('div');scroll.className='chart-scroll';",
+            "    const chart=svg('svg',{viewBox,preserveAspectRatio:'xMidYMid meet',role:'img','aria-label':'剧情流程图'});",
+            "    const defs=svg('defs');chart.append(defs);",
+            "    for(const edge of links){",
+            "      chart.append(svg('path',{d:chartLinkPath(positions.get(edge.source),positions.get(edge.target),settings),"
+          ]
+        },
+        {
+          "first": 58,
+          "last": 67,
+          "lines": [
+            "    }",
+            "    scroll.append(chart);this.root.append(scroll);",
+            "    const footer=document.createElement('footer');",
+            "    footer.append(this.text('p',continueTitle?'本次预览进度':'本话剧情播放结束'));",
+            "    const next=this.text('button',continueTitle?'次に進む · 下一步':'本话完成');next.type='button';next.disabled=!continueTitle;",
+            "    next.onclick=event=>{event.stopPropagation();continueTitle();};",
+            "    footer.append(next);this.root.append(footer);",
+            "  }",
+            "  continuations(label,edges,choose){",
+            "    this.panel('story-flow skipped-node-view');"
+          ]
+        }
+      ]
+    },
+    {
+      "member": "public/player/flow_layout.js",
+      "sha256": "7ddfc4d29503f6f54c0ccae0fa0b483f56fd890f4b464db9a242a4a90981320f",
+      "ranges": [
+        "6-15",
+        "21-35"
+      ],
+      "finding": "Current section positions and scene-level relations determine links; cross-section node target is not a chart input.",
+      "excerpts": [
+        {
+          "first": 6,
+          "last": 15,
+          "lines": [
+            "export function chartLayout(program,node,completed,visitedEdges,settings){",
+            "  const entries=new Map(program.directory.entries.map(row=>[row.id,row]));",
+            "  const current=entries.get(node.scene_id),section=entries.get(current?.parent);",
+            "  if(!current||!section)throw new Error('流程图缺少当前场景或所属话');",
+            "  const scenes=[...entries.values()].filter(row=>row.kind==='scene'&&row.parent===section.id);",
+            "  const positions=new Map(),{column,row,card_width:width,card_height:height,margin}=settings;",
+            "  const minX=Math.min(...scenes.map(item=>item.pos_x)),minY=Math.min(...scenes.map(item=>item.pos_y));",
+            "  for(const item of scenes){",
+            "    if(!Number.isFinite(item.pos_x)||!Number.isFinite(item.pos_y))throw new Error('场景缺少有效的流程图坐标：'+item.id);",
+            "    positions.set(item.id,{x:margin+(item.pos_x-minX)*column,y:margin+(item.pos_y-minY)*row});"
+          ]
+        },
+        {
+          "first": 21,
+          "last": 35,
+          "lines": [
+            "  const visitedLinks=new Set(program.edges.filter(edge=>visitedEdges.has(edge.id)&&edge.transition.label==='FINISH')",
+            "    .map(edge=>edge.source_scene+'>'+edge.target_scene));",
+            "  const links=new Map();",
+            "  const add=(source,target)=>{",
+            "    if(positions.has(source)&&positions.has(target)){",
+            "      const id=source+'>'+target;links.set(id,{id,source,target,visited:visitedLinks.has(id)});",
+            "    }",
+            "  };",
+            "  for(const edge of program.directory.edges)if(edge.state==='confirmed')add(edge.source,edge.target);",
+            "  for(const edge of program.edges)if(edge.state==='confirmed'&&edge.flow_action==='scene')add(edge.source_scene,edge.target_scene);",
+            "  return {current,section,scenes,positions,links:[...links.values()],",
+            "    viewBox:`${(maxX-viewWidth)/2} 0 ${viewWidth} ${maxY}`,",
+            "    diagnostics:{section:section.id,current:current.id,unlockAll:program.preview_policy?.chart_unlock_all===true,",
+            "      completed:[...completed],scenes:scenes.map(item=>({id:item.id,x:item.pos_x,y:item.pos_y,end:item.is_end})),",
+            "      links:[...links.values()]}};"
+          ]
+        }
+      ]
+    }
+  ]
+}
