@@ -1,0 +1,58 @@
+{
+  "schema": "stella.p42.six-visual.production-inputs.v1",
+  "expectedHead": "d0ab8d7c7029d92f37851bd8c49c92a689f66899",
+  "sourceCommit": "643f88a0928fe6bda8ac1c6fac9409a2fbdbdf0f",
+  "helper": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/verify-p42-six-visual-production-v1.mjs",
+    "bytes": 14830,
+    "sha256": "1bbba2981cd636b02f68e528698453fbc3fadc1d567737ca797ebda56843c621"
+  },
+  "remoteAck": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p42-six-visual-script-main-ACK-v1.json",
+    "bytes": 738,
+    "sha256": "63d8df8a0d45d799355cfb7b0d99849e81e14b4fa83085033e6d410428668c16",
+    "main": "d0ab8d7c7029d92f37851bd8c49c92a689f66899",
+    "finalRead": {
+      "command": [
+        "git",
+        "-c",
+        "pack.threads=1",
+        "-c",
+        "core.sshCommand=/usr/bin/python3 /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/github_ssh_paced_cloudflare_v1.py",
+        "ls-remote",
+        "origin",
+        "refs/heads/main"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "d0ab8d7c7029d92f37851bd8c49c92a689f66899\trefs/heads/main\n",
+      "stderr": "",
+      "error": null
+    }
+  },
+  "reference": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p42-six-visual-saved-runtime-v1/attempt-1/normal-http-prepare.json.gz",
+    "bytes": 1462854,
+    "sha256": "9bbbd76fab389e21a4a81e938f8dc2588a3f5be6bbb31a4bca14d62caaf0200f"
+  },
+  "referenceDecodedProgramSha256": "2b15057bb95408b4377ad7e059c686543388677b9bdb2c86ce6e279033b70494",
+  "committedFiles": [
+    {
+      "path": "native/scenes/10430012.json",
+      "committedSha256": "a419f37fcd10e0968b517d81b86af3074785f3cd41aeea91f0ba3d871bea02f9",
+      "bytes": 96073
+    },
+    {
+      "path": "review/scenes/10430012.json",
+      "committedSha256": "551996c2b91bd0dec15f6d8ec325692f6914957b645852f06714f2873cf5352c",
+      "bytes": 324642
+    }
+  ],
+  "dataStatus": "",
+  "sourceStatus": "?? scripts/__pycache__/",
+  "productionOrigin": "https://stella-preview.jaoushingan.com",
+  "expectedLocalLibraryNodes": 5619,
+  "expectedProductionSectionNodes": 120,
+  "browserStarted": false,
+  "sourceDataOrGitWrites": false
+}
