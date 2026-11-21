@@ -1,0 +1,130 @@
+{
+  "schema": "stella.P21-QA-v3.root-independent-runtime-closure.v1",
+  "observedUTC": "2026-11-21T22:22:58.988Z",
+  "session": 23022,
+  "supervisorExitCode": 0,
+  "driverExitCode": 0,
+  "sourceHead": "6630ac70f17332efa031d021af00532d42307568",
+  "dataHead": "d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5",
+  "allActualProcessesClosed": true,
+  "pids": [
+    4455,
+    4493,
+    4505,
+    4600
+  ],
+  "groups": [
+    4493,
+    4505,
+    4600
+  ],
+  "remaining": [],
+  "ports": [
+    {
+      "port": 5198,
+      "outcome": "ECONNREFUSED"
+    },
+    {
+      "port": 43719,
+      "outcome": "ECONNREFUSED"
+    }
+  ],
+  "profileRemoved": true,
+  "browserStopSignals": [
+    {
+      "signal": 15,
+      "outcome": "sent"
+    },
+    {
+      "signal": 9,
+      "outcome": "sent"
+    }
+  ],
+  "allBoundInputsFreshExact": true,
+  "checkedGuardsIncludingDuplicates": 6584,
+  "uniqueFilesHashed": 5625,
+  "all16OriginalJPEGsFreshExact": true,
+  "imageManifest": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v3/attempt-1/image-manifest.json",
+    "bytes": 4851,
+    "sha256": "1fb5ec22a3aa8258edd6edd17e4cc47b3714eee606d2beb83dc1636d46b20626"
+  },
+  "terminalAcceptance": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v3/attempt-1/terminal-acceptance.json",
+    "bytes": 25471,
+    "sha256": "2ac9783d754b58230081f3443d6c995349d1aa99686eb46b470d63989a3bfe69"
+  },
+  "processExit": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v3/attempt-1/process-exit.json",
+    "bytes": 1974,
+    "sha256": "d446dc96442afcd2912b8fa62d5a7f022c43c9ef891fff135a70c8872cf57094"
+  },
+  "inputSnapshot": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v3/attempt-1/inputs-after.json",
+    "bytes": 1510779,
+    "sha256": "c7ff844a5c8abba7271b0aeeb0738f7cf37570c7d345deaace5677f9a70d85dd"
+  },
+  "cases": [
+    {
+      "caseId": "p21-ending38-to42",
+      "nodes": 4,
+      "transitions": 4,
+      "finalState": {
+        "phase": "complete",
+        "node": "node:10030002:1003000200042"
+      },
+      "observerRows": 221,
+      "drop": 0,
+      "close": {
+        "source": "node:10030002:1003000200038",
+        "target": "node:10030002:1003000200039",
+        "edge": "edge:node:10030002:1003000200038:1003000210381:381",
+        "outgoingSequence": 57,
+        "transitionSequence": 58,
+        "nextEnterSequence": 60,
+        "outgoingCompletionObserved": true,
+        "completionAwaitedBeforeFollow": false
+      },
+      "trustedChoiceEdges": [],
+      "titleManualAdvanceCount": 0,
+      "attachedGLHistoryLosses": 0
+    },
+    {
+      "caseId": "p21-if16-through-p22-cg-to10",
+      "nodes": 12,
+      "transitions": 11,
+      "finalState": {
+        "phase": "ready",
+        "node": "node:10030005:1003000500010"
+      },
+      "observerRows": 705,
+      "drop": 0,
+      "close": {
+        "source": "node:10030005:1003000500007",
+        "target": "node:10030005:1003000500008",
+        "edge": "edge:node:10030005:1003000500007:1003000510071:71",
+        "outgoingSequence": 585,
+        "transitionSequence": 586,
+        "nextEnterSequence": 588,
+        "outgoingCompletionObserved": true,
+        "completionAwaitedBeforeFollow": false
+      },
+      "trustedChoiceEdges": [
+        "edge:node:10030002:1003000200016:1003000210163:163",
+        "edge:node:10030005:1003000500009:1003000510093:93"
+      ],
+      "titleManualAdvanceCount": 0,
+      "attachedGLHistoryLosses": 0
+    }
+  ],
+  "terminalFatalCount": 0,
+  "terminalDiagnosticFailureCount": 0,
+  "normalHitchesRetained": 13,
+  "performanceOrExactTimingAccepted": false,
+  "imagesInterpreted": false,
+  "sourceDataWritten": false,
+  "existingUserFloorpUnrelatedAndUntouched": true,
+  "normalFunctionalRegressionPassed": true,
+  "wholeSceneOrEpisodeAccepted": false,
+  "sourceDeployed": false
+}

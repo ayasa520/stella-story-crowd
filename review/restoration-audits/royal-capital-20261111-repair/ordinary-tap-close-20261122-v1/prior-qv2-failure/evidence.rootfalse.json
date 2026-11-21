@@ -1,0 +1,971 @@
+{
+  "schema": "stella.p21.normal-qa.v2.failed-attempt1.owner-metadata.v1",
+  "createdUTC": "2026-11-21T22:12:00.461161+00:00",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "formalDataWritesAuthorized": false,
+  "status": "FAILED_SINGLE_ATTEMPT_PRESERVED_NO_RETRY",
+  "runtimeRelease": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-root-preparation-d8fb6630-v2/runtime-release-v1.json",
+    "sha256": "ca9ccc62cc8189c7565931bc499f2abd0b2ed1e6edc205b69c58788f7a6a120f",
+    "exhausted": true
+  },
+  "execSessionId": 66836,
+  "supervisorPid": 2726,
+  "ownedPidsAndPgids": [
+    2764,
+    2776,
+    2863
+  ],
+  "driverExitCode": 1,
+  "supervisorExitCode": 1,
+  "firstFailure": {
+    "boundary": "ordinary case failure",
+    "stage": "p21-ending38-to42-10030002-42",
+    "requestedCase": "p21-ending38-to42",
+    "error": "AssertionError [ERR_ASSERTION]: Original exceptions/HTTP failures at event poll\n+ actual - expected\n\n+ [\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030001',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030002',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030005',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030006'\n+ ]\n- []\n",
+    "stack": "AssertionError [ERR_ASSERTION]: Original exceptions/HTTP failures at event poll\n+ actual - expected\n\n+ [\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030001',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030002',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030005',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030006'\n+ ]\n- []\n\n    at rejectFatalDiagnostics (file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/play.mjs:37:10)\n    at waitTrace (file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/play.mjs:120:25)\n    at file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/play.mjs:562:27\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+    "observedEpochMilliseconds": 1795298763597
+  },
+  "thumbnailFailures": [
+    {
+      "sceneId": 10030001,
+      "endpoint": "http://127.0.0.1:5198/scene-thumbnail/10030001",
+      "assetRelativePath": "assets/thumbnails/scene/10030001.png",
+      "originalServerLogStartLine": 4,
+      "originalServerLogEndLine": 25,
+      "originalExceptionAndStackVerbatim": "[vinext] Route handler error: AssertionError [ERR_ASSERTION]: Unexpected or changed saved upstream member assets/thumbnails/scene/10030001.png\n+ actual - expected\n\n+ '5d371e6bec77b75fd24b8d2ade2e82d64778cca9ef4cc9341f25e023e7c7049f'\n- undefined\n\n    at globalThis.fetch (file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/worktree-upstream.mjs:31:10)\n    at async _ (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/resources-GgyVtBvx.js:1:2836)\n    at async at (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-route-handler-dispatch-CzJqv2BA.js:1:18345)\n    at async ot (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-route-handler-dispatch-CzJqv2BA.js:1:18631)\n    at async Eo.route (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:2:26398)\n    at async t (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:2:26607)\n    at async Ym (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:14:178166)\n    at async Object.fetch (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:14:178513)\n    at async Server.<anonymous> (file:///home/rikka/Projects/stella/artifacts/stella-local-deployment-3394828/serve-local.mjs:85:7) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: '5d371e6bec77b75fd24b8d2ade2e82d64778cca9ef4cc9341f25e023e7c7049f',\n  expected: undefined,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n",
+      "rawExceptionBlockSha256": "efa477201bf144fba14f4cdea001d726887952a13cb08b982936cf32705aa522",
+      "errorType": "AssertionError [ERR_ASSERTION]",
+      "expectedAsOriginallyReported": "undefined",
+      "actualSha256AsOriginallyReported": "5d371e6bec77b75fd24b8d2ade2e82d64778cca9ef4cc9341f25e023e7c7049f",
+      "bindingDataInputKeyAbsent": true,
+      "requestStartEpochMilliseconds": null,
+      "requestStartObserved": false,
+      "originalHttpResponseCompletedObservation": {
+        "originalHttpArrayIndex": 131,
+        "url": "http://127.0.0.1:5198/scene-thumbnail/10030001",
+        "status": 500,
+        "mimeType": "text/plain",
+        "observedEpochMilliseconds": 1795298763579
+      },
+      "epochQualification": "observedEpochMilliseconds is the Node callback observation of network.responseCompleted; the request-start or upstream-fetch start epoch was not retained. No time is invented."
+    },
+    {
+      "sceneId": 10030002,
+      "endpoint": "http://127.0.0.1:5198/scene-thumbnail/10030002",
+      "assetRelativePath": "assets/thumbnails/scene/10030002.png",
+      "originalServerLogStartLine": 26,
+      "originalServerLogEndLine": 47,
+      "originalExceptionAndStackVerbatim": "[vinext] Route handler error: AssertionError [ERR_ASSERTION]: Unexpected or changed saved upstream member assets/thumbnails/scene/10030002.png\n+ actual - expected\n\n+ '9c9ffa8394e0148c56e9e797496978d8b6261718de9559b163798f652a737032'\n- undefined\n\n    at globalThis.fetch (file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/worktree-upstream.mjs:31:10)\n    at async _ (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/resources-GgyVtBvx.js:1:2836)\n    at async at (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-route-handler-dispatch-CzJqv2BA.js:1:18345)\n    at async ot (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-route-handler-dispatch-CzJqv2BA.js:1:18631)\n    at async Eo.route (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:2:26398)\n    at async t (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:2:26607)\n    at async Ym (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:14:178166)\n    at async Object.fetch (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:14:178513)\n    at async Server.<anonymous> (file:///home/rikka/Projects/stella/artifacts/stella-local-deployment-3394828/serve-local.mjs:85:7) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: '9c9ffa8394e0148c56e9e797496978d8b6261718de9559b163798f652a737032',\n  expected: undefined,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n",
+      "rawExceptionBlockSha256": "c5d4827fb01891655e268b58ef3a55c0d9ec0d65c18570c354a24405b611fd04",
+      "errorType": "AssertionError [ERR_ASSERTION]",
+      "expectedAsOriginallyReported": "undefined",
+      "actualSha256AsOriginallyReported": "9c9ffa8394e0148c56e9e797496978d8b6261718de9559b163798f652a737032",
+      "bindingDataInputKeyAbsent": true,
+      "requestStartEpochMilliseconds": null,
+      "requestStartObserved": false,
+      "originalHttpResponseCompletedObservation": {
+        "originalHttpArrayIndex": 132,
+        "url": "http://127.0.0.1:5198/scene-thumbnail/10030002",
+        "status": 500,
+        "mimeType": "text/plain",
+        "observedEpochMilliseconds": 1795298763583
+      },
+      "epochQualification": "observedEpochMilliseconds is the Node callback observation of network.responseCompleted; the request-start or upstream-fetch start epoch was not retained. No time is invented."
+    },
+    {
+      "sceneId": 10030005,
+      "endpoint": "http://127.0.0.1:5198/scene-thumbnail/10030005",
+      "assetRelativePath": "assets/thumbnails/scene/10030005.png",
+      "originalServerLogStartLine": 48,
+      "originalServerLogEndLine": 69,
+      "originalExceptionAndStackVerbatim": "[vinext] Route handler error: AssertionError [ERR_ASSERTION]: Unexpected or changed saved upstream member assets/thumbnails/scene/10030005.png\n+ actual - expected\n\n+ 'ad814655ae4f4124fca591c3af9ac01a9c3a8ccd6d7c6032b8deefebf29bb740'\n- undefined\n\n    at globalThis.fetch (file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/worktree-upstream.mjs:31:10)\n    at async _ (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/resources-GgyVtBvx.js:1:2836)\n    at async at (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-route-handler-dispatch-CzJqv2BA.js:1:18345)\n    at async ot (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-route-handler-dispatch-CzJqv2BA.js:1:18631)\n    at async Eo.route (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:2:26398)\n    at async t (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:2:26607)\n    at async Ym (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:14:178166)\n    at async Object.fetch (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:14:178513)\n    at async Server.<anonymous> (file:///home/rikka/Projects/stella/artifacts/stella-local-deployment-3394828/serve-local.mjs:85:7) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: 'ad814655ae4f4124fca591c3af9ac01a9c3a8ccd6d7c6032b8deefebf29bb740',\n  expected: undefined,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n",
+      "rawExceptionBlockSha256": "ee1771280540214d89225b356bed5b0453587450accb5f5d5f440cc7b43dfe12",
+      "errorType": "AssertionError [ERR_ASSERTION]",
+      "expectedAsOriginallyReported": "undefined",
+      "actualSha256AsOriginallyReported": "ad814655ae4f4124fca591c3af9ac01a9c3a8ccd6d7c6032b8deefebf29bb740",
+      "bindingDataInputKeyAbsent": true,
+      "requestStartEpochMilliseconds": null,
+      "requestStartObserved": false,
+      "originalHttpResponseCompletedObservation": {
+        "originalHttpArrayIndex": 133,
+        "url": "http://127.0.0.1:5198/scene-thumbnail/10030005",
+        "status": 500,
+        "mimeType": "text/plain",
+        "observedEpochMilliseconds": 1795298763583
+      },
+      "epochQualification": "observedEpochMilliseconds is the Node callback observation of network.responseCompleted; the request-start or upstream-fetch start epoch was not retained. No time is invented."
+    },
+    {
+      "sceneId": 10030006,
+      "endpoint": "http://127.0.0.1:5198/scene-thumbnail/10030006",
+      "assetRelativePath": "assets/thumbnails/scene/10030006.png",
+      "originalServerLogStartLine": 70,
+      "originalServerLogEndLine": 91,
+      "originalExceptionAndStackVerbatim": "[vinext] Route handler error: AssertionError [ERR_ASSERTION]: Unexpected or changed saved upstream member assets/thumbnails/scene/10030006.png\n+ actual - expected\n\n+ '657fc318eb5fd6ccc9aadb8591c5bb4be20f5d433cc7862c7516316c97b4ae14'\n- undefined\n\n    at globalThis.fetch (file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/worktree-upstream.mjs:31:10)\n    at async _ (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/resources-GgyVtBvx.js:1:2836)\n    at async at (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-route-handler-dispatch-CzJqv2BA.js:1:18345)\n    at async ot (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-route-handler-dispatch-CzJqv2BA.js:1:18631)\n    at async Eo.route (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:2:26398)\n    at async t (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:2:26607)\n    at async Ym (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:14:178166)\n    at async Object.fetch (file:///home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js:14:178513)\n    at async Server.<anonymous> (file:///home/rikka/Projects/stella/artifacts/stella-local-deployment-3394828/serve-local.mjs:85:7) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: '657fc318eb5fd6ccc9aadb8591c5bb4be20f5d433cc7862c7516316c97b4ae14',\n  expected: undefined,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n",
+      "rawExceptionBlockSha256": "b1b97f8ab2ed5e50121fa5e179cc1f950669ceba2541d7282df5e72de5e23d1b",
+      "errorType": "AssertionError [ERR_ASSERTION]",
+      "expectedAsOriginallyReported": "undefined",
+      "actualSha256AsOriginallyReported": "657fc318eb5fd6ccc9aadb8591c5bb4be20f5d433cc7862c7516316c97b4ae14",
+      "bindingDataInputKeyAbsent": true,
+      "requestStartEpochMilliseconds": null,
+      "requestStartObserved": false,
+      "originalHttpResponseCompletedObservation": {
+        "originalHttpArrayIndex": 134,
+        "url": "http://127.0.0.1:5198/scene-thumbnail/10030006",
+        "status": 500,
+        "mimeType": "text/plain",
+        "observedEpochMilliseconds": 1795298763587
+      },
+      "epochQualification": "observedEpochMilliseconds is the Node callback observation of network.responseCompleted; the request-start or upstream-fetch start epoch was not retained. No time is invented."
+    }
+  ],
+  "transportPath": {
+    "sourceEvidence": {
+      "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/scene-thumbnail/[id]/route.ts": {
+        "bytes": 497,
+        "sha256": "4325b5c831ead37e5cf300681bc328eca4bbf580f713e0b4172a63c076b6492c"
+      },
+      "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/resources.ts": {
+        "bytes": 11817,
+        "sha256": "b8001881014337470b8bf8d1903ba796bf09a95ebb16142a58517e0bbdbcc36b"
+      },
+      "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/repository.ts": {
+        "bytes": 9415,
+        "sha256": "0b46a330fa9e9aea0b1f9fcfeea0169732bb4673f6de66864b86583c5f8891de"
+      },
+      "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/worktree-upstream.mjs": {
+        "bytes": 3030,
+        "sha256": "8f475e15d0ffc6a36bc758bd6d41f3c82e63b5806a92f6b4d9e36715df17c86c"
+      },
+      "/home/rikka/Projects/stella/artifacts/stella-local-deployment-3394828/serve-local.mjs": {
+        "bytes": 4104,
+        "sha256": "db3081ac25b42a1f81551ce3b29d8f60327b2465ae9a272774a2947f86302d5f"
+      }
+    },
+    "flow": [
+      "Existing serve-local HTTP request enters unchanged compiled Worker GET /scene-thumbnail/[id]",
+      "Route reads catalog.thumbnails.scene[id] with no query revision in these original browser URLs",
+      "Original assetResponse with local STELLA_HOSTING unset/no quality query chooses original PNG path, ref main",
+      "Original worktree-upstream accepts GET raw main or frozen revision, resolves frozen dataRoot member and reads bytes",
+      "Original line31 SHA guard sees binding.dataInputs[relative] undefined and throws before Response or line32 provider-event append"
+    ],
+    "derivedRawUpstreamUrls": [
+      "https://raw.githubusercontent.com/ayasa520/stella-story-crowd/main/assets/thumbnails/scene/10030001.png",
+      "https://raw.githubusercontent.com/ayasa520/stella-story-crowd/main/assets/thumbnails/scene/10030002.png",
+      "https://raw.githubusercontent.com/ayasa520/stella-story-crowd/main/assets/thumbnails/scene/10030005.png",
+      "https://raw.githubusercontent.com/ayasa520/stella-story-crowd/main/assets/thumbnails/scene/10030006.png"
+    ],
+    "derivedUrlsQualification": "Derived from the retained browser endpoint URLs and unchanged source; the failing upstream URL/epoch was not appended after its guard rejection.",
+    "failedProviderEventRowsRetained": 0,
+    "cause": "Missing four scene-thumbnail keys in the private dataInputs closure; original byte reads succeeded and the unchanged fail-closed guard rejected undefined expectations.",
+    "reviewGapAcknowledged": "The owner independent static review did not cover the completed-chart thumbnail dependency. No transport/binding/gate repair or retry was performed."
+  },
+  "observedBoundaryFactsOnly": {
+    "exactEnteredNodes": [
+      "node:10030002:1003000200038",
+      "node:10030002:1003000200039",
+      "node:10030002:1003000200041",
+      "node:10030002:1003000200042"
+    ],
+    "captures": [
+      {
+        "file": "p21-ending38-to42-00-10030002-38.jpg",
+        "bytes": 98828,
+        "sha256": "57d1aa5e7071cec274c96376ee406ec1fa8725cb20105eac3ec201e13e6f38a7",
+        "originalAdmission": {
+          "status": "admitted",
+          "movieMiddle": false,
+          "movieSpecification": null
+        }
+      },
+      {
+        "file": "p21-ending38-to42-01-10030002-39.jpg",
+        "bytes": 97779,
+        "sha256": "5bfe934c7ded754db979acff4533c13595341e77da8ad6431e8a848206cfb6d9",
+        "originalAdmission": {
+          "status": "admitted",
+          "movieMiddle": false,
+          "movieSpecification": null
+        }
+      },
+      {
+        "file": "p21-ending38-to42-02-10030002-41.jpg",
+        "bytes": 58905,
+        "sha256": "01bb959c7ff6a87603f69825c0baceb74ee2a653ad53bfba9191a22b001c96c5",
+        "originalAdmission": {
+          "status": "admitted",
+          "movieMiddle": true,
+          "movieSpecification": {
+            "resource": "adv_dive01_out",
+            "presentation": "door",
+            "fit": "cover",
+            "phase": "movie",
+            "lowerDurationFraction": 0.3333333333333333,
+            "upperDurationFractionExclusive": 0.8
+          }
+        }
+      },
+      {
+        "file": "p21-ending38-to42-03-10030002-42.jpg",
+        "bytes": 82163,
+        "sha256": "c21a57a670bb3f6dd36a0a6576039c49708dd9d5a6e6a9256e97e04c0b294096",
+        "originalAdmission": {
+          "status": "admitted",
+          "movieMiddle": false,
+          "movieSpecification": null
+        }
+      }
+    ],
+    "totalOriginalCaptureBytes": 337675,
+    "normalClose381PosthocCorrelation": {
+      "actualSourceEnter": {
+        "sequence": 12,
+        "eventEpochMilliseconds": 1795298750629,
+        "observedEpochMilliseconds": 1795298751219,
+        "line": "STORY_PLAYER_ENTER node:10030002:1003000200038 card",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PLAYER_ENTER"
+            },
+            {
+              "type": "string",
+              "value": "node:10030002:1003000200038"
+            },
+            {
+              "type": "string",
+              "value": "card"
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PLAYER_ENTER node:10030002:1003000200038 card",
+          "timestamp": 1795298750629,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "sourcePanelComplete": {
+        "sequence": 52,
+        "eventEpochMilliseconds": 1795298751851,
+        "observedEpochMilliseconds": 1795298751860,
+        "line": "STORY_PANEL_IN_COMPLETE {\"group\":\"adv_tell_chara\",\"node\":\"node:10030002:1003000200038\",\"token\":1}",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PANEL_IN_COMPLETE"
+            },
+            {
+              "type": "string",
+              "value": "{\"group\":\"adv_tell_chara\",\"node\":\"node:10030002:1003000200038\",\"token\":1}"
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PANEL_IN_COMPLETE {\"group\":\"adv_tell_chara\",\"node\":\"node:10030002:1003000200038\",\"token\":1}",
+          "timestamp": 1795298751851,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "actualTrustedReadyInput": {
+        "button": "advance",
+        "trusted": true,
+        "node": "node:10030002:1003000200038",
+        "phase": "ready",
+        "epochMilliseconds": 1795298753128,
+        "performanceMilliseconds": 7136
+      },
+      "outStart": {
+        "sequence": 57,
+        "eventEpochMilliseconds": 1795298753135,
+        "observedEpochMilliseconds": 1795298753136,
+        "line": "STORY_PANEL_OUT_START 7144 out 0.1666666716337204",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PANEL_OUT_START"
+            },
+            {
+              "type": "number",
+              "value": 7144
+            },
+            {
+              "type": "string",
+              "value": "out"
+            },
+            {
+              "type": "number",
+              "value": 0.1666666716337204
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PANEL_OUT_START 7144 out 0.1666666716337204",
+          "timestamp": 1795298753135,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "transition": {
+        "sequence": 58,
+        "eventEpochMilliseconds": 1795298753137,
+        "observedEpochMilliseconds": 1795298753138,
+        "line": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10030002:1003000200038:1003000210381:381\",\"action\":\"continue\",\"native\":{\"uniq_id\":1003000210381,\"transition_id\":38101,\"next_scenario_id\":39,\"next_scenario_label\":\"\"},\"target\":\"node:10030002:1003000200039\"}",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PLAYER_TRANSITION"
+            },
+            {
+              "type": "string",
+              "value": "{\"edge\":\"edge:node:10030002:1003000200038:1003000210381:381\",\"action\":\"continue\",\"native\":{\"uniq_id\":1003000210381,\"transition_id\":38101,\"next_scenario_id\":39,\"next_scenario_label\":\"\"},\"target\":\"node:10030002:1003000200039\"}"
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10030002:1003000200038:1003000210381:381\",\"action\":\"continue\",\"native\":{\"uniq_id\":1003000210381,\"transition_id\":38101,\"next_scenario_id\":39,\"next_scenario_label\":\"\"},\"target\":\"node:10030002:1003000200039\"}",
+          "timestamp": 1795298753137,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "nextEnter": {
+        "sequence": 60,
+        "eventEpochMilliseconds": 1795298753139,
+        "observedEpochMilliseconds": 1795298753139,
+        "line": "STORY_PLAYER_ENTER node:10030002:1003000200039 card",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PLAYER_ENTER"
+            },
+            {
+              "type": "string",
+              "value": "node:10030002:1003000200039"
+            },
+            {
+              "type": "string",
+              "value": "card"
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PLAYER_ENTER node:10030002:1003000200039 card",
+          "timestamp": 1795298753139,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "nextPanelStart": {
+        "sequence": 81,
+        "eventEpochMilliseconds": 1795298753151,
+        "observedEpochMilliseconds": 1795298753152,
+        "line": "STORY_PANEL_IN_START {\"group\":\"adv_tell_chara\",\"node\":\"node:10030002:1003000200039\",\"token\":2,\"duration\":0.1666666716337204,\"clock\":{\"profile\":\"apk-1.19.7-unity-2019.4.21f1-normal-time-v1\",\"frame\":157,\"frameTimestampMs\":7059.58,\"rawDeltaSeconds\":0.01707999999999993,\"deltaSeconds\":0.01707999999999993,\"gameSeconds\":6.667066686534886,\"previewRate\":1,\"maximumDeltaSeconds\":0.3333333432674408,\"rateOwner\":\"StoryActor\"}}",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PANEL_IN_START"
+            },
+            {
+              "type": "string",
+              "value": "{\"group\":\"adv_tell_chara\",\"node\":\"node:10030002:1003000200039\",\"token\":2,\"duration\":0.1666666716337204,\"clock\":{\"profile\":\"apk-1.19.7-unity-2019.4.21f1-normal-time-v1\",\"frame\":157,\"frameTimestampMs\":7059.58,\"rawDeltaSeconds\":0.01707999999999993,\"deltaSeconds\":0.01707999999999993,\"gameSeconds\":6.667066686534886,\"previewRate\":1,\"maximumDeltaSeconds\":0.3333333432674408,\"rateOwner\":\"StoryActor\"}}"
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PANEL_IN_START {\"group\":\"adv_tell_chara\",\"node\":\"node:10030002:1003000200039\",\"token\":2,\"duration\":0.1666666716337204,\"clock\":{\"profile\":\"apk-1.19.7-unity-2019.4.21f1-normal-time-v1\",\"frame\":157,\"frameTimestampMs\":7059.58,\"rawDeltaSeconds\":0.01707999999999993,\"deltaSeconds\":0.01707999999999993,\"gameSeconds\":6.667066686534886,\"previewRate\":1,\"maximumDeltaSeconds\":0.3333333432674408,\"rateOwner\":\"StoryActor\"}}",
+          "timestamp": 1795298753151,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "nextPanelComplete": {
+        "sequence": 85,
+        "eventEpochMilliseconds": 1795298753322,
+        "observedEpochMilliseconds": 1795298753324,
+        "line": "STORY_PANEL_IN_COMPLETE {\"group\":\"adv_tell_chara\",\"node\":\"node:10030002:1003000200039\",\"token\":2}",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PANEL_IN_COMPLETE"
+            },
+            {
+              "type": "string",
+              "value": "{\"group\":\"adv_tell_chara\",\"node\":\"node:10030002:1003000200039\",\"token\":2}"
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PANEL_IN_COMPLETE {\"group\":\"adv_tell_chara\",\"node\":\"node:10030002:1003000200039\",\"token\":2}",
+          "timestamp": 1795298753322,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "sourceOutBeforeTransitionBeforeNextEnter": true,
+      "qualification": "Posthoc correlation of original emitted events and actual trusted input. PANEL_OUT has no native node/generation field. Driver did not reach its case-boundary closeCoverage admission because the HTTP gate already failed."
+    },
+    "movie41": {
+      "actualNaturalEnded": {
+        "event": "ended",
+        "node": "node:10030002:1003000200041",
+        "trusted": true,
+        "eventTimestamp": 14645,
+        "epochMilliseconds": 1795298760637,
+        "performanceMilliseconds": 14645,
+        "resource": "http://127.0.0.1:5198/movie/adv_dive01_out",
+        "currentTime": 5.034666,
+        "duration": 5.034666,
+        "playbackRate": 1,
+        "seeking": false,
+        "ended": true,
+        "paused": true,
+        "muted": false,
+        "volume": 1,
+        "played": [
+          [
+            0,
+            5.034666
+          ]
+        ]
+      },
+      "fullOriginalPlayedInterval": [
+        [
+          0,
+          5.034666
+        ]
+      ],
+      "actualMovieCompleteTiming": {
+        "sequence": 128,
+        "eventEpochMilliseconds": 1795298760636,
+        "observedEpochMilliseconds": 1795298760643,
+        "line": "STORY_PLAYER_TIMING {\"node\":\"node:10030002:1003000200041\",\"stage\":\"movie_play_complete\",\"milliseconds\":6278}",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PLAYER_TIMING"
+            },
+            {
+              "type": "string",
+              "value": "{\"node\":\"node:10030002:1003000200041\",\"stage\":\"movie_play_complete\",\"milliseconds\":6278}"
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PLAYER_TIMING {\"node\":\"node:10030002:1003000200041\",\"stage\":\"movie_play_complete\",\"milliseconds\":6278}",
+          "timestamp": 1795298760636,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "actualReady": {
+        "epochMilliseconds": 1795298760676,
+        "performanceMilliseconds": 14685
+      },
+      "actualTrustedReady411Input": {
+        "button": "advance",
+        "trusted": true,
+        "node": "node:10030002:1003000200041",
+        "phase": "ready",
+        "epochMilliseconds": 1795298760698,
+        "performanceMilliseconds": 14707
+      },
+      "actual411Transition": {
+        "sequence": 135,
+        "eventEpochMilliseconds": 1795298760699,
+        "observedEpochMilliseconds": 1795298760700,
+        "line": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10030002:1003000200041:1003000210411:411\",\"action\":\"continue\",\"native\":{\"uniq_id\":1003000210411,\"transition_id\":41101,\"next_scenario_id\":42,\"next_scenario_label\":\"\"},\"target\":\"node:10030002:1003000200042\"}",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PLAYER_TRANSITION"
+            },
+            {
+              "type": "string",
+              "value": "{\"edge\":\"edge:node:10030002:1003000200041:1003000210411:411\",\"action\":\"continue\",\"native\":{\"uniq_id\":1003000210411,\"transition_id\":41101,\"next_scenario_id\":42,\"next_scenario_label\":\"\"},\"target\":\"node:10030002:1003000200042\"}"
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10030002:1003000200041:1003000210411:411\",\"action\":\"continue\",\"native\":{\"uniq_id\":1003000210411,\"transition_id\":41101,\"next_scenario_id\":42,\"next_scenario_label\":\"\"},\"target\":\"node:10030002:1003000200042\"}",
+          "timestamp": 1795298760699,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "mixedTimestampQualification": "BiDi event timestamps and browser Date.now/performance observations remain their original separate fields; no normalization or invented request time."
+    },
+    "title42": {
+      "actualDecision": {
+        "node": "node:10030002:1003000200042",
+        "scene": "scene:10030002",
+        "loadedScene": "scene:10030002",
+        "sceneReload": false,
+        "mode": 0,
+        "forcedTutorial": false,
+        "isTitle": true,
+        "isEndTitle": true,
+        "isRoot": false,
+        "nextSceneCount": 1,
+        "isBranch": false,
+        "afterBranch": false,
+        "show": false,
+        "reason": "end-title",
+        "generation": 6,
+        "monotonicMilliseconds": 14711
+      },
+      "actualNativeEntryCompleted": {
+        "stage": "completed",
+        "node": "node:10030002:1003000200042",
+        "mode": "normal",
+        "durationMilliseconds": 2500,
+        "gameElapsedMilliseconds": 2516.679999999985,
+        "clock": {
+          "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+          "frame": 644,
+          "frameTimestampMs": 17492.44,
+          "rawDeltaSeconds": 0.01673999999999796,
+          "deltaSeconds": 0.01673999999999796,
+          "gameSeconds": 17.09992668653489,
+          "previewRate": 1,
+          "maximumDeltaSeconds": 0.3333333432674408,
+          "rateOwner": "StoryActor"
+        }
+      },
+      "actualAutomatic421Transition": {
+        "sequence": 163,
+        "eventEpochMilliseconds": 1795298763503,
+        "observedEpochMilliseconds": 1795298763509,
+        "line": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10030002:1003000200042:1003000210421:421\",\"action\":\"complete\",\"native\":{\"uniq_id\":1003000210421,\"transition_id\":42101,\"next_scenario_id\":0,\"next_scenario_label\":\"FINISH\"},\"target\":\"\"}",
+        "rawEntry": {
+          "type": "console",
+          "method": "info",
+          "source": {
+            "realm": "6c498394-c5e1-46a0-af49-74548ad280e9",
+            "context": "1ce131da-060c-423e-92a4-898a9a6e84a0",
+            "userContext": "default"
+          },
+          "args": [
+            {
+              "type": "string",
+              "value": "STORY_PLAYER_TRANSITION"
+            },
+            {
+              "type": "string",
+              "value": "{\"edge\":\"edge:node:10030002:1003000200042:1003000210421:421\",\"action\":\"complete\",\"native\":{\"uniq_id\":1003000210421,\"transition_id\":42101,\"next_scenario_id\":0,\"next_scenario_label\":\"FINISH\"},\"target\":\"\"}"
+            }
+          ],
+          "level": "info",
+          "text": "STORY_PLAYER_TRANSITION {\"edge\":\"edge:node:10030002:1003000200042:1003000210421:421\",\"action\":\"complete\",\"native\":{\"uniq_id\":1003000210421,\"transition_id\":42101,\"next_scenario_id\":0,\"next_scenario_label\":\"FINISH\"},\"target\":\"\"}",
+          "timestamp": 1795298763503,
+          "stackTrace": {
+            "callFrames": [
+              {
+                "columnNumber": 30,
+                "functionName": "installEndingObserver/console.info",
+                "lineNumber": 89,
+                "url": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5"
+              }
+            ]
+          }
+        }
+      },
+      "trustedAdvanceInputsOnTitle": []
+    },
+    "close71Observed": false,
+    "p22Title1Automatic11Observed": false,
+    "secondCaseStarted": false,
+    "endingCaseAccepted": false,
+    "fullQaAccepted": false
+  },
+  "rawDocument": {
+    "archive": {
+      "file": "failure.actual-document.json.gz",
+      "rawSha256": "c89cbe3ea14bd3c29b85bdc091d22ce829577bbfcb9b7e7ddf9e037b1e058a08",
+      "rawBytes": 523014,
+      "gzipSha256": "4bd985f9945e9826760f7cdad043e80b7249df541cb7fd34141d26785e0cce38",
+      "gzipBytes": 20028
+    },
+    "actualIdentity": {
+      "href": "http://127.0.0.1:5198/player/player.html?assetRevision=d8fbcb0d3e123ec7cf0df66908d8b526c51c78e5",
+      "timeOrigin": 1795298745991,
+      "actualObserverCaseName": "p21-ending38-to42",
+      "node": "node:10030002:1003000200042",
+      "phase": "complete"
+    },
+    "jsonLogRawSHA256Verified": true,
+    "observerRows": 220,
+    "observerDroppedRecords": 0,
+    "observerErrors": [],
+    "documentExportErrors": [],
+    "trustedInputs": [
+      {
+        "button": "advance",
+        "trusted": true,
+        "node": "node:10030002:1003000200038",
+        "phase": "ready",
+        "epochMilliseconds": 1795298753128,
+        "performanceMilliseconds": 7136
+      },
+      {
+        "button": "advance",
+        "trusted": true,
+        "node": "node:10030002:1003000200039",
+        "phase": "ready",
+        "epochMilliseconds": 1795298754357,
+        "performanceMilliseconds": 8366
+      },
+      {
+        "button": "advance",
+        "trusted": true,
+        "node": "node:10030002:1003000200041",
+        "phase": "ready",
+        "epochMilliseconds": 1795298760698,
+        "performanceMilliseconds": 14707
+      }
+    ],
+    "renderLossesOriginal": [
+      {
+        "canvas": "",
+        "attached": false,
+        "kind": "webgl",
+        "node": ""
+      }
+    ],
+    "actorOrAttachedLosses": []
+  },
+  "diagnostics": {
+    "rawConsoleRows": 171,
+    "originalFatalFacts": [],
+    "originalHttpErrors": [
+      "HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030001",
+      "HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030002",
+      "HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030005",
+      "HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030006"
+    ],
+    "diagnosticFailures": [],
+    "hitches": 2,
+    "cancellations": 0
+  },
+  "closure": {
+    "originalSupervisorReceipt": {
+      "owned": [
+        {
+          "kind": "server",
+          "pid": 2764,
+          "pgid": 2764,
+          "exitCode": -15,
+          "remainingOwnedPid": [],
+          "remainingGroupMembers": []
+        },
+        {
+          "kind": "browser",
+          "pid": 2776,
+          "pgid": 2776,
+          "exitCode": -15,
+          "remainingOwnedPid": [],
+          "remainingGroupMembers": []
+        },
+        {
+          "kind": "driver",
+          "pid": 2863,
+          "pgid": 2863,
+          "exitCode": 1,
+          "remainingOwnedPid": [],
+          "remainingGroupMembers": []
+        }
+      ],
+      "stopAttempts": [
+        {
+          "kind": "driver",
+          "pid": 2863,
+          "pgid": 2863,
+          "signals": [
+            {
+              "signal": 15,
+              "outcome": "group-not-found"
+            }
+          ],
+          "errors": [],
+          "lastGroupObservation": []
+        },
+        {
+          "kind": "browser",
+          "pid": 2776,
+          "pgid": 2776,
+          "signals": [
+            {
+              "signal": 15,
+              "outcome": "sent"
+            }
+          ],
+          "errors": [],
+          "lastGroupObservation": []
+        },
+        {
+          "kind": "server",
+          "pid": 2764,
+          "pgid": 2764,
+          "signals": [
+            {
+              "signal": 15,
+              "outcome": "sent"
+            }
+          ],
+          "errors": [],
+          "lastGroupObservation": []
+        }
+      ],
+      "osInventoryKnown": true,
+      "allOwnedGroupsEmpty": true,
+      "allOwnedPidsAndGroupsEmpty": true,
+      "inputsUnchanged": true,
+      "driverExitCode": 1,
+      "supervisorExitCode": 1,
+      "cleanupErrors": [],
+      "profileCleanup": {
+        "path": "/tmp/stella-p21-normal-qa-5z5pecu2",
+        "removed": true,
+        "retained": false,
+        "ownedPidPgidExitProven": true,
+        "escapedProcessReview": "Root independent review is still required; no foreign group is signalled.",
+        "reason": "removed-after-os-exit-proof"
+      },
+      "recorderStarted": false,
+      "xvfbStarted": false,
+      "imageReviewStarted": false,
+      "requiresIndependentClosureAfterSupervisorExit": true,
+      "supervisorPid": 2726
+    },
+    "rootIndependentClosure": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-v2-failed-root-closure-v1.json",
+      "sha256": "17c27f9ccc89212ab69d47a0cced2b2c33b0b7ab4fe310cbc3eaa00af0fb89a1"
+    },
+    "foreignUserFloorpPreserved": {
+      "pid": 9671,
+      "pgid": 1625,
+      "owned": false,
+      "signalled": false
+    }
+  },
+  "originalFileReferences": {
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/server.log": {
+      "bytes": 7511,
+      "sha256": "80611fd2b1d2046ae9ec9e60205a95706fd1c38a7bee5dc0b1aca29474bbce27"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/driver.log": {
+      "bytes": 1579,
+      "sha256": "13d8428eade6cc4397efcd97a0a1506d17aa991c27c5af5d3065f5e5119cdaf8"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/firefox.log": {
+      "bytes": 1143,
+      "sha256": "b5d6acbcb92a7baefb4c9e279ead27dc76a396ce82ab91f0ff22231335a93cc8"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/failure.json": {
+      "bytes": 801944,
+      "sha256": "4f1de194ed32f3115bea6d4e85f7d8769f872953b1a3b5849256270c13ad5a62"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/pre-retirement-failure.json": {
+      "bytes": 801959,
+      "sha256": "6f7a180e1b0b424153b9e1fdc62960948daa70f9fb358fc7c0df801cf68d8549"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/terminal-failure.json": {
+      "bytes": 801691,
+      "sha256": "d7f8f53b30b212971d3b0e471dc28497f18159dd506eb2c8fc5b751b976fa086"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/failure.actual-document.json.gz": {
+      "bytes": 20028,
+      "sha256": "4bd985f9945e9826760f7cdad043e80b7249df541cb7fd34141d26785e0cce38"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/pre-retirement-failure.actual-document.json.gz": {
+      "bytes": 20029,
+      "sha256": "104f580f034f9337a69bfea1b3be05900550a2c4b6a842d09d281da7f4abf8d2"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/terminal-failure.actual-document.json.gz": {
+      "bytes": 38843,
+      "sha256": "33a9b99261326ecc53025a902b3f9d226858a457497f0437908be0c171607a47"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/inputs-before.json": {
+      "bytes": 1505839,
+      "sha256": "baa0d5e5c3aa1d15fa640a59b0a47c790baae068f20930cc92d4fc9c24555ba6"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/inputs-after.json": {
+      "bytes": 1505839,
+      "sha256": "baa0d5e5c3aa1d15fa640a59b0a47c790baae068f20930cc92d4fc9c24555ba6"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/process-exit.json": {
+      "bytes": 1902,
+      "sha256": "246951b7cc6801fb29a13ce90ba6199a4a22c778b022323e111420c77dd9f236"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/handles.json": {
+      "bytes": 691,
+      "sha256": "d4ad5f1370b8f20242e3332e3692cedc53420fcf12616f885aac7031a5ddb1b9"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/provider-events.jsonl": {
+      "bytes": 130211,
+      "sha256": "2135c4c687b1c473c6d96ba2cefb3dce6984d14733e50ab78d944aad6eea7e42"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/events.jsonl": {
+      "bytes": 212087,
+      "sha256": "44cbf0fa3c51558a83473bd3e0e5b5d4a75f3954a91367c847e3b293f7f3d53b"
+    },
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/raw-console.jsonl": {
+      "bytes": 214902,
+      "sha256": "5deac4bc5ad11cb2b7a00e16ef14b571627e2e77fcc5166fb48f62ef846da54b"
+    }
+  },
+  "actionsNotPerformed": [
+    "business retry",
+    "extra API/browser/session",
+    "extra screenshot",
+    "source/data/Git write",
+    "binding or transport/fatal weakening",
+    "media decoder or image viewing"
+  ],
+  "logReadQualification": "Only existing plain logs and the original gzip-compressed JSON actual-document log were read. No JPEG, video or audio was decoded/viewed.",
+  "acceptance": {
+    "wholeCase": false,
+    "fullQa": false,
+    "bodyFaceMotion": false,
+    "sourceAutomaticityOrCommandAudioTiming": false
+  }
+}

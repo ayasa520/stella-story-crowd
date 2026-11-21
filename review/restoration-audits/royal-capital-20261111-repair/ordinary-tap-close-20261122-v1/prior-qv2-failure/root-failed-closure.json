@@ -1,0 +1,113 @@
+{
+  "schema": "stella.P21-QA-v2.failed-attempt.root-independent-closure.v1",
+  "observedUTC": "2026-11-21T22:09:10.580Z",
+  "session": 66836,
+  "supervisorExitCode": 1,
+  "driverExitCode": 1,
+  "originalReleaseExhausted": true,
+  "firstFailure": {
+    "boundary": "ordinary case failure",
+    "stage": "p21-ending38-to42-10030002-42",
+    "requestedCase": "p21-ending38-to42",
+    "error": "AssertionError [ERR_ASSERTION]: Original exceptions/HTTP failures at event poll\n+ actual - expected\n\n+ [\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030001',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030002',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030005',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030006'\n+ ]\n- []\n",
+    "stack": "AssertionError [ERR_ASSERTION]: Original exceptions/HTTP failures at event poll\n+ actual - expected\n\n+ [\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030001',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030002',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030005',\n+   'HTTP 500 http://127.0.0.1:5198/scene-thumbnail/10030006'\n+ ]\n- []\n\n    at rejectFatalDiagnostics (file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/play.mjs:37:10)\n    at waitTrace (file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/play.mjs:120:25)\n    at file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/play.mjs:562:27\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+    "observedEpochMilliseconds": 1795298763597
+  },
+  "firstFailureReceipt": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/failure.json",
+    "bytes": 801944,
+    "sha256": "4f1de194ed32f3115bea6d4e85f7d8769f872953b1a3b5849256270c13ad5a62"
+  },
+  "serverLog": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/server.log",
+    "bytes": 7511,
+    "sha256": "80611fd2b1d2046ae9ec9e60205a95706fd1c38a7bee5dc0b1aca29474bbce27"
+  },
+  "processExit": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/process-exit.json",
+    "bytes": 1902,
+    "sha256": "246951b7cc6801fb29a13ce90ba6199a4a22c778b022323e111420c77dd9f236"
+  },
+  "observedInputsBefore": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/inputs-before.json",
+    "bytes": 1505839,
+    "sha256": "baa0d5e5c3aa1d15fa640a59b0a47c790baae068f20930cc92d4fc9c24555ba6"
+  },
+  "observedInputsAfter": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-normal-qa-owner-kit-rootfalse-20261122-v2/attempt-1/inputs-after.json",
+    "bytes": 1505839,
+    "sha256": "baa0d5e5c3aa1d15fa640a59b0a47c790baae068f20930cc92d4fc9c24555ba6"
+  },
+  "freshGuardsCheckedIncludingDuplicates": 6559,
+  "uniqueFilesFreshlyHashed": 5586,
+  "allBoundInputsAndDataSourceHeadsFreshExact": true,
+  "pids": [
+    2726,
+    2764,
+    2776,
+    2863
+  ],
+  "groups": [
+    2764,
+    2776,
+    2863
+  ],
+  "remainingOwnedOrEscapedTestProcesses": [],
+  "ports": [
+    {
+      "port": 5198,
+      "outcome": "ECONNREFUSED"
+    },
+    {
+      "port": 37683,
+      "outcome": "ECONNREFUSED"
+    }
+  ],
+  "profileRemoved": true,
+  "existingUserFloorpUnrelatedAndUntouched": true,
+  "sourceDataWritten": false,
+  "browserOrMediaStartedByClosure": false,
+  "originalFourThumbnailFailures": [
+    {
+      "path": "assets/thumbnails/scene/10030001.png",
+      "file": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/thumbnails/scene/10030001.png",
+        "bytes": 78399,
+        "sha256": "5d371e6bec77b75fd24b8d2ade2e82d64778cca9ef4cc9341f25e023e7c7049f"
+      },
+      "expectedInOldBinding": null
+    },
+    {
+      "path": "assets/thumbnails/scene/10030002.png",
+      "file": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/thumbnails/scene/10030002.png",
+        "bytes": 55953,
+        "sha256": "9c9ffa8394e0148c56e9e797496978d8b6261718de9559b163798f652a737032"
+      },
+      "expectedInOldBinding": null
+    },
+    {
+      "path": "assets/thumbnails/scene/10030005.png",
+      "file": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/thumbnails/scene/10030005.png",
+        "bytes": 49768,
+        "sha256": "ad814655ae4f4124fca591c3af9ac01a9c3a8ccd6d7c6032b8deefebf29bb740"
+      },
+      "expectedInOldBinding": null
+    },
+    {
+      "path": "assets/thumbnails/scene/10030006.png",
+      "file": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/thumbnails/scene/10030006.png",
+        "bytes": 49764,
+        "sha256": "657fc318eb5fd6ccc9aadb8591c5bb4be20f5d433cc7862c7516316c97b4ae14"
+      },
+      "expectedInOldBinding": null
+    }
+  ],
+  "cause": "The local guarded transport correctly rejected four existing normal completion-chart thumbnails omitted from its dataInputs closure; expected undefined, not a product missing-resource claim.",
+  "capturedOriginalJPEGs": 4,
+  "imagesInterpreted": false,
+  "caseOrFrontEndAcceptance": false,
+  "next": "Prepare a new minimal section1003 thumbnail dependency closure; preserve failed attempt and unchanged original transport, no automatic replay."
+}
