@@ -1,0 +1,124 @@
+{
+  "schema": "stella.offline-editor-publication.v1",
+  "baseSha": "977641adc1a657bba6061522997c8ca9c871ca23",
+  "canonicalSha": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+  "rootConfirmed": false,
+  "publishable": false,
+  "previewOnly": true,
+  "missingResources": [],
+  "ownershipAdopted": false,
+  "formalDataWritten": false,
+  "sourceWritten": false,
+  "playbackVerified": false,
+  "wholeSceneAccepted": false,
+  "sceneIds": [
+    10090013,
+    10090014,
+    10090015
+  ],
+  "readOnlySceneIds": [
+    10020001
+  ],
+  "audit": [
+    {
+      "file": "native/scenes/10090015.json",
+      "path": [
+        "chartmap",
+        "scene_list",
+        2,
+        "next_scene_list"
+      ],
+      "before": [],
+      "after": [
+        {
+          "scene_id": 10020001,
+          "section_id": 1002
+        }
+      ]
+    },
+    {
+      "file": "manifest.json",
+      "path": [
+        "studioDirectory",
+        "edges",
+        280
+      ],
+      "beforeAbsent": true,
+      "after": {
+        "id": "scene-edge:10090015:10020001",
+        "source": "scene:10090015",
+        "target": "scene:10020001",
+        "label": "",
+        "condition": "",
+        "notes": "作者补充的目录图关系：依据当前已保存scenario47 FINISH（1009→1002、目标10020001原生root）与Adv.d AdventureSection1009.next_section_id=[1002]。场景原始payload未取得；本scene-edge标识不是原native编号。只补目录跨话portal，保留当前话结束，不自动播放下一话；不认领motion、face、BGM或命令阶段。",
+        "state": "confirmed",
+        "origin": "manual",
+        "evidence": [
+          "native/scenes/10090015.json#scenario47/branch471/FINISH",
+          "data/story_directory/device-snapshot/Adv.d#AdventureSection1009",
+          "data/story_directory/device-snapshot/Adv.d#AdventureScene1002/10020001"
+        ],
+        "nativeTarget": {
+          "scene_id": 10020001,
+          "section_id": 1002
+        }
+      }
+    }
+  ],
+  "guardSetSha256": "f9218d0a09688c20e72e280b77d087e1963205f8d5017aad7a515a06d3202fc9",
+  "decisionSha256": "1c380481cbe887890378613e54262cb511c975ad5f7c89cd7d031270f211487c",
+  "intentSha256": "794f6959f2eecf88da4ee034e1ec2863c99edd62e021664b74f294cc7dd2de75",
+  "helperSha256": "54b9585147844e0a42dbae9beb481dd5ec50b31085b31b0639a6a199d75e3e2b",
+  "sourceHashes": {
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-native.ts": "5cad757a5b8c9ba1444ec466a9e44b9cbeadd0be24280d1189d1d9cfa814e396",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/errors.ts": "7eac45a4c171002fcc93933be1ba1d3ea2b203bb905e0d5b280f83fa2335d259",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/semantics.json": "893eaf7e9a80387331c10d26891da69725b37c16d6561f5dcb169a8afe594c31",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/native.ts": "90df2675b0fec4e9fa853de0c380fa7b2f2c89a35d54cd2f04322f59dd669015",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/preview.ts": "a86d28a5fcb8d5e85ff53c8422eaa5d418c4e9b72f6552c6724a612b6ce50af8",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/repository.ts": "0b46a330fa9e9aea0b1f9fcfeea0169732bb4673f6de66864b86583c5f8891de",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/public-source.ts": "3ef1f35ded3a14ea7c4be7da069c554325d7ecfd07448a18d6605ce4359c6cf2",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/preview-policy.json": "d73673a0ead542ac1b16fc2c2736d550e992ec3b91797cdf30ba11294d014ebf",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/github-auth.ts": "fd9472ac5be853f7240e065c5812c3afab03cee4e1308fda5c3cec3e104c6400",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/preview-commands.ts": "05a40a52b1b93f712cc49725f0355873f12efbc9373ede3e2ea1766e318bbdca",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/story-directory.ts": "64109a252b1eb86cf810deb386e86d6cb6db72a2bc5bae819cbe1b27532fd031",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/native-scene-interval.json": "49cc6f715afc16e90ef88ea816aed9d96c978009e094949e23affcf597efe651",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/effects.json": "b480d8bbba0a4db6ec989978d8502b125f049e86b460fc94c3918f5548dd1c56",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/story-directory.json": "9ea34f7ca6c2b0965c520a7f85bdea67b2667b620ff82c3a1f964175e457d58e",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native-title.json": "ac2eee6d1db23fd8ec636d870672110ca570f1d326cd3364073e086d36bc4447",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/commands.json": "afd994e7a39fdcdf8f66c1f440d6ae7e8e4b9b773858aa1a5d5d5353eabcd3e9",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/lighting.json": "3fe7ad62a89c55752b4b22279f9fa9e70883a049dae3543adfdda5dae1d52bc2",
+    "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/secrets.ts": "eb89891c79bf8e515466475b5cc3b96baad08a861a32392a54aa5bab64f53d30",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/adapter-preparation/refresh-summary.py": "e8955ef167208d0c890355b78917b5035bb6fb95e3e892a02bbb36fc1de5eaed",
+    "/home/rikka/Projects/stella/story_studio/recovery/native_repair.py": "dddc83e2387a0370b726b98ba55a9aada5868a1007ebafe23b7b722361bcd333"
+  },
+  "ownershipSha256": "e8a4ad9ed7cd66c31a300ae34f9b37d3b06e229f436405336cf63af580aa8615",
+  "allDiskGuardsUnchanged": true,
+  "preservation": {
+    "scenarioRows53Unchanged": true,
+    "allReviewsUnchanged": true,
+    "all139OtherNativeFilesUnchanged": true,
+    "targetNotEditable": true,
+    "all121OwnedSummariesUnchanged": true,
+    "ownershipLedgerBytesUnchanged": true
+  },
+  "projection": {
+    "nodesDeepEqual": true,
+    "edgesDeepEqual": true,
+    "sourceNodes": 53,
+    "sourceExecutableEdges": 54,
+    "nativeIntervalCount": {
+      "before": 0,
+      "after": 1
+    },
+    "isBranchPredicate": "next_scene_count > 1",
+    "isBranchBefore": false,
+    "isBranchAfter": false,
+    "beforeNotExposedByStudioProject": true,
+    "beforeRequiresSeparateNormalPrepareComparison": true,
+    "wholePrepareObjectEqualityClaimed": false
+  },
+  "publicationPaths": [
+    "native/scenes/10090015.json",
+    "manifest.json"
+  ]
+}

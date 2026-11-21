@@ -150389,6 +150389,25 @@
           "scene_id": 10100012,
           "section_id": 1010
         }
+      },
+      {
+        "id": "scene-edge:10090015:10020001",
+        "source": "scene:10090015",
+        "target": "scene:10020001",
+        "label": "",
+        "condition": "",
+        "notes": "作者补充的目录图关系：依据当前已保存scenario47 FINISH（1009→1002、目标10020001原生root）与Adv.d AdventureSection1009.next_section_id=[1002]。场景原始payload未取得；本scene-edge标识不是原native编号。只补目录跨话portal，保留当前话结束，不自动播放下一话；不认领motion、face、BGM或命令阶段。",
+        "state": "confirmed",
+        "origin": "manual",
+        "evidence": [
+          "native/scenes/10090015.json#scenario47/branch471/FINISH",
+          "data/story_directory/device-snapshot/Adv.d#AdventureSection1009",
+          "data/story_directory/device-snapshot/Adv.d#AdventureScene1002/10020001"
+        ],
+        "nativeTarget": {
+          "scene_id": 10020001,
+          "section_id": 1002
+        }
       }
     ],
     "sources": [

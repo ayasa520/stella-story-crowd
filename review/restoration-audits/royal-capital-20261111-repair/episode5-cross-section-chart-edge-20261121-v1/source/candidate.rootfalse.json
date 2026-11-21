@@ -1,0 +1,115 @@
+{
+  "rootConfirmed": false,
+  "executionAllowed": false,
+  "status": "BLOCKED_UNTIL_NORMAL_SAVE_PATH_IS_SOURCE_OWNER_ONLY",
+  "candidateEdge": {
+    "id": "scene-edge:10090015:10020001",
+    "source": "scene:10090015",
+    "target": "scene:10020001",
+    "label": "",
+    "condition": "",
+    "notes": "作者补充的目录图关系：依据当前已保存scenario47 FINISH（1009→1002、目标10020001原生root）与Adv.d AdventureSection1009.next_section_id=[1002]。场景原始payload未取得；本scene-edge标识不是原native编号。只补目录跨话portal，保留当前话结束，不自动播放下一话；不认领motion、face、BGM或命令阶段。",
+    "state": "confirmed",
+    "origin": "manual",
+    "evidence": [
+      "native/scenes/10090015.json#scenario47/branch471/FINISH",
+      "data/story_directory/device-snapshot/Adv.d#AdventureSection1009",
+      "data/story_directory/device-snapshot/Adv.d#AdventureScene1002/10020001"
+    ]
+  },
+  "currentUnsafeRequestTemplate": {
+    "path": "POST /api/directory/edit",
+    "body": {
+      "baseSha": "e0fc50f316604d241a08351cd7c0fa63e8f0054a",
+      "revision": 247374294488672,
+      "operation": "save_edge",
+      "edge": {
+        "id": "scene-edge:10090015:10020001",
+        "source": "scene:10090015",
+        "target": "scene:10020001",
+        "label": "",
+        "condition": "",
+        "notes": "作者补充的目录图关系：依据当前已保存scenario47 FINISH（1009→1002、目标10020001原生root）与Adv.d AdventureSection1009.next_section_id=[1002]。场景原始payload未取得；本scene-edge标识不是原native编号。只补目录跨话portal，保留当前话结束，不自动播放下一话；不认领motion、face、BGM或命令阶段。",
+        "state": "confirmed",
+        "origin": "manual",
+        "evidence": [
+          "native/scenes/10090015.json#scenario47/branch471/FINISH",
+          "data/story_directory/device-snapshot/Adv.d#AdventureSection1009",
+          "data/story_directory/device-snapshot/Adv.d#AdventureScene1002/10020001"
+        ]
+      }
+    }
+  },
+  "futureRequestRequirement": "Fresh same-head normal project/revision, exact source-fix SHA/root release and main ACK; current request is not authorized to execute.",
+  "expectedAfterOwnerOnlySourceFix": {
+    "exactFormalFileSet": [
+      "native/scenes/10090015.json",
+      "manifest.json"
+    ],
+    "nativeChange": {
+      "path": "native/scenes/10090015.json",
+      "pointer": "/chartmap/scene_list/2/next_scene_list",
+      "before": [],
+      "after": [
+        {
+          "scene_id": 10020001,
+          "section_id": 1002
+        }
+      ]
+    },
+    "manifestChange": {
+      "pointer": "/studioDirectory/edges/-",
+      "append": {
+        "id": "scene-edge:10090015:10020001",
+        "source": "scene:10090015",
+        "target": "scene:10020001",
+        "label": "",
+        "condition": "",
+        "notes": "作者补充的目录图关系：依据当前已保存scenario47 FINISH（1009→1002、目标10020001原生root）与Adv.d AdventureSection1009.next_section_id=[1002]。场景原始payload未取得；本scene-edge标识不是原native编号。只补目录跨话portal，保留当前话结束，不自动播放下一话；不认领motion、face、BGM或命令阶段。",
+        "state": "confirmed",
+        "origin": "manual",
+        "evidence": [
+          "native/scenes/10090015.json#scenario47/branch471/FINISH",
+          "data/story_directory/device-snapshot/Adv.d#AdventureSection1009",
+          "data/story_directory/device-snapshot/Adv.d#AdventureScene1002/10020001"
+        ],
+        "nativeTarget": {
+          "scene_id": 10020001,
+          "section_id": 1002
+        }
+      }
+    },
+    "unchanged": [
+      "all53 scenario_list rows including47 FINISH and45→54→46→49→47",
+      "all140 review files",
+      "all139 other native files including target10020001 and first3",
+      "all121 owned scene summaries/files",
+      "review/native-restoration.json original bytes",
+      "existing master section edge1009→1002 and all IF relationships"
+    ],
+    "sourceSummary": "nodeCount53/readyForGamefalse/contribution_review_pending already matches original serializer policy, so source summary should stay equal; verify through actual normal serializer.",
+    "derivedDirectoryChange": "native_interval.next_scene_count0→1; isBranch remainsfalse because threshold>1. Do not claim whole prepare program byte identity."
+  },
+  "futureVerification": {
+    "getDirectoryFlow": "GET /api/directory/flow?sectionId=1009&sha=<new-real-data-head>",
+    "expectedEdges": 3,
+    "internalEdges": 2,
+    "externalPortals": 1,
+    "internalPairs": [
+      [
+        10090013,
+        10090014
+      ],
+      [
+        10090014,
+        10090015
+      ]
+    ],
+    "portalPair": [
+      10090015,
+      10020001
+    ],
+    "ui": "Stay in another active workspace, browse1009, verify2 internal paths+1 separate portal, original forms unchanged; line/portal click edits relation rather than loading next episode.",
+    "runtimeSemantics": "Native47 FINISH still section; player.follow completes current1009 before target lookup. No new playback acceptance implied."
+  }
+}
