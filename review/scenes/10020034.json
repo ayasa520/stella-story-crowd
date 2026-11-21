@@ -142,7 +142,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "character",
         "character_image",
         "command",
@@ -162,7 +161,6 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 2,
           "fields": [
-            "bg_music",
             "character",
             "character_image",
             "command",
@@ -243,6 +241,41 @@
                 "time": 36.85
               },
               "decision": "Original recording and native background visually match."
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p12-p15-bgm-root-preparation-b81a73f4-v1/node-fields.root-approved.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "existingResourceIdentityAcceptance": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p12-opening-bgm.json",
+                "bytes": 6880,
+                "sha256": "e59a76a0f19b44919dfdaeaf00b6257d0702ec0b85d7090ca415f809061caee7",
+                "status": "accepted_music_identity_at_route_narration_only",
+                "originalAcceptedFields": [
+                  "bg_music"
+                ],
+                "preserved": true
+              },
+              "verifiedBGMComponents": [
+                "resource-id"
+              ],
+              "sourceExactCSVFieldRecovered": false,
+              "originalCommandPhaseRecovered": false,
+              "audioListened": false,
+              "parameterProvenance": "csv-parameter-provenance.rootfalse.json",
+              "originalSyntaxWitnesses": "native-syntax-and-original-source.rootfalse.json",
+              "resourceIdentityOnly": true,
+              "authoredFadeParameterRecovered": false,
+              "authoredRestartParameterRecovered": false,
+              "volumeOrLoopAuthoredByThisField": false,
+              "limits": [
+                "No new subjective listening, full playback, original CSV spelling, fade duration, restart flag, volume, loop, STOP, offset or phase acceptance.",
+                "Bare ID is a normal original-syntax representation of the existing accepted resource identity; engine defaults are not authored-parameter evidence."
+              ],
+              "rootReviewedMinimalResourceIdentityOnly": true
             }
           }
         ]
@@ -11660,7 +11693,6 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 2,
       "fields": [
-        "bg_music",
         "character",
         "character_image",
         "command",
