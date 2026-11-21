@@ -1,0 +1,66 @@
+{
+  "schema": "stella.choice92.supervisor-cleanup-v2.static-review.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "preparationAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "publishedHead": null,
+  "globalGuardSnapshotSha256": null,
+  "browserOwner": null,
+  "status": "offline-new-v2-awaiting-independent-peer-and-root-release",
+  "newFile": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode11-choice92-normal-saved-runtime-rootfalse-v1/run.v2.py",
+    "bytes": 19115,
+    "sha256": "97c849f37e801f0275bc5996f72f5b9d36b4f030278d4f5981b8083e70fd0b95"
+  },
+  "originalSealedOutputsUnchanged": {
+    "run.py": "6f3c48110bbaec65d1d22b69d5d5c68892ff11b9b953df74c5a47f01411a271d",
+    "play.mjs": "87534ff2aea21ca0c0cfc9b063067603c788479ed8bb83ae794dd81b8c0785f3",
+    "freeze-inputs.py": "9d35b9d75bd7355b4b86f32aa85b3c1ef9f5cf88597305610b60e16109944c63",
+    "prepare-normal.mjs": "21b9ab86cbba5fbe2d828b02ae5955ae4c1746d8ca3a664c2cece00d97d579dd",
+    "worktree-upstream.mjs": "8f475e15d0ffc6a36bc758bd6d41f3c82e63b5806a92f6b4d9e36715df17c86c",
+    "root-inputs.draft.json": "2e74c661cf0763685dad0d25d460d121c575ca78ae7be0584e2baab04f3012ee",
+    "root-release.draft.json": "45c78ce50b0a9c356102b97fe81a0dbb109b4e23d78645155ce54029d6f7d21d",
+    "README.md": "a4fb15fede91ab6c8a5317082631e2faac073e04e6c0e2adbe623f1454c6621a"
+  },
+  "originalStaticReviewSha256": "a44fde174fee19c6b4f955a53e33dcbf2678738ce7e106dbaf95f29e02ad42b6",
+  "fixScope": {
+    "finding": "M1 profile deletion and interrupted multi-role cleanup",
+    "driverAndCaptureLogicChanged": false,
+    "requiredHelper": "run.v2.py plus unchanged play.mjs",
+    "profileLifecycle": "Explicit mkdtemp; no auto-deleting context manager",
+    "roleShutdown": "Every own Popen PGID receives an independent best-effort stop; every stop/log-close exception is retained and remaining roles still attempted",
+    "postKillEvidence": "Actual final OS PID and PGID inventory; a signal, wait return or missing inventory is not empty-process proof",
+    "profileRemoval": "Only after the actual owned PID and PGID snapshot is empty; otherwise retain profile path/logs/remaining and fail",
+    "cleanupReceipt": "Independent attempts to retain handles and process-exit, plus stdout closure; late diagnostic errors fail the supervisor",
+    "killBoundary": "Only new start_new_session PGIDs created by this supervisor; no foreign/escaped-group signals",
+    "escapedProcesses": "Root independent final OS/port/profile review still required"
+  },
+  "checks": {
+    "pythonASTExitCode": 0,
+    "whitespace": true,
+    "releaseAndInputGateCodeUnchangedExceptV2SelfBinding": true,
+    "oneConditionalProfileDeletionSite": true,
+    "allOriginalFilesExact": true,
+    "allDraftFlagsAndFinalBindingsUnchanged": true,
+    "originalDriverExactSha256": "87534ff2aea21ca0c0cfc9b063067603c788479ed8bb83ae794dd81b8c0785f3",
+    "noGameplayOrM2ScopeExpansion": true
+  },
+  "executions": {
+    "helperImport": false,
+    "freeze": false,
+    "api": false,
+    "server": false,
+    "browser": false,
+    "decoder": false,
+    "git": false,
+    "formalDataWrite": false,
+    "canonicalSourceWrite": false
+  },
+  "limitations": [
+    "This is static review and syntax only, not an executed cleanup control or browser run.",
+    "Physical diagnostic-write failure cannot guarantee a file; every write is attempted independently and closure/errors also go to stdout.",
+    "Root must add the exact new v2 binding to a separately reviewed release; old run.py remains blocked by M1.",
+    "No source program, route, clock, media, input or screenshot logic was changed."
+  ]
+}

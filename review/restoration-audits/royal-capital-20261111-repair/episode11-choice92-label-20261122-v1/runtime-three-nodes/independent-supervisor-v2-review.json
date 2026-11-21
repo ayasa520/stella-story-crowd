@@ -1,0 +1,270 @@
+{
+  "schema": "stella.episode11.choice92.saved-runtime.independent-static-peer.v3",
+  "reviewer": "/root/chart_edge_runtime",
+  "verdict": "static_peer_pass_M1_resolved_for_exact_run_v2_fresh_root_runtime_release_still_required",
+  "mustFix": [],
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "supersedesForM1": {
+    "path": "artifacts/stella-script-continuation-20261121/episode11-choice92-normal-saved-runtime-peer-v1/peer-review.v2.json",
+    "bytes": 16224,
+    "sha256": "6f968ad0e4fef9fdba2f260457d3afa7391022a70a7d66d97ff6563e47cda082"
+  },
+  "reviewedSupervisor": {
+    "path": "artifacts/stella-script-continuation-20261121/episode11-choice92-normal-saved-runtime-rootfalse-v1/run.v2.py",
+    "bytes": 19115,
+    "sha256": "97c849f37e801f0275bc5996f72f5b9d36b4f030278d4f5981b8083e70fd0b95"
+  },
+  "cleanupStaticReceipt": {
+    "path": "artifacts/stella-script-continuation-20261121/episode11-choice92-normal-saved-runtime-rootfalse-v1/supervisor-cleanup-v2.static-review.rootfalse.json",
+    "bytes": 3679,
+    "sha256": "cd63f0cb594c595e2c4636a309985610428b1d85841c0adf5bef5d9d416643f2"
+  },
+  "scope": "Only M1 cleanup and the exact supervisor diff were re-reviewed. Prior three-node route/text/input/render findings remain scoped to unchanged play.mjs; no other case or M2 expansion.",
+  "exactDiff": {
+    "originalSupervisor": {
+      "path": "artifacts/stella-script-continuation-20261121/episode11-choice92-normal-saved-runtime-rootfalse-v1/run.py",
+      "bytes": 12314,
+      "sha256": "6f3c48110bbaec65d1d22b69d5d5c68892ff11b9b953df74c5a47f01411a271d"
+    },
+    "original8SealedOutputsExact": [
+      {
+        "file": "run.py",
+        "sha256": "6f3c48110bbaec65d1d22b69d5d5c68892ff11b9b953df74c5a47f01411a271d"
+      },
+      {
+        "file": "play.mjs",
+        "sha256": "87534ff2aea21ca0c0cfc9b063067603c788479ed8bb83ae794dd81b8c0785f3"
+      },
+      {
+        "file": "freeze-inputs.py",
+        "sha256": "9d35b9d75bd7355b4b86f32aa85b3c1ef9f5cf88597305610b60e16109944c63"
+      },
+      {
+        "file": "prepare-normal.mjs",
+        "sha256": "21b9ab86cbba5fbe2d828b02ae5955ae4c1746d8ca3a664c2cece00d97d579dd"
+      },
+      {
+        "file": "worktree-upstream.mjs",
+        "sha256": "8f475e15d0ffc6a36bc758bd6d41f3c82e63b5806a92f6b4d9e36715df17c86c"
+      },
+      {
+        "file": "root-inputs.draft.json",
+        "sha256": "2e74c661cf0763685dad0d25d460d121c575ca78ae7be0584e2baab04f3012ee"
+      },
+      {
+        "file": "root-release.draft.json",
+        "sha256": "45c78ce50b0a9c356102b97fe81a0dbb109b4e23d78645155ce54029d6f7d21d"
+      },
+      {
+        "file": "README.md",
+        "sha256": "a4fb15fede91ab6c8a5317082631e2faac073e04e6c0e2adbe623f1454c6621a"
+      }
+    ],
+    "unchangedCommonFunctionASTs": [
+      "load",
+      "sha",
+      "git",
+      "write",
+      "inputs",
+      "check_inputs",
+      "processes",
+      "members"
+    ],
+    "all3PopenArgumentASTsExact": true,
+    "releaseAndInputGateTextExactExceptSelfBindingRunV2": true,
+    "newImport": "shutil",
+    "newOrRewrittenFunctions": [
+      "stop",
+      "owned_inventory"
+    ],
+    "otherChanges": [
+      "Explicit profile and before initialization",
+      "mkdtemp instead of automatically deleting TemporaryDirectory",
+      "Flattened unchanged browser/driver launch and driver.wait into the central supervisor try",
+      "Centralized best-effort per-role shutdown, post-input OS inventory, conditional profile retirement and resilient final evidence writes"
+    ],
+    "playDriverChanged": false,
+    "programRouteRendererInputOrClockChanged": false,
+    "M2ErrorScopeAdded": false
+  },
+  "M1Resolution": {
+    "result": "resolved_by_static_control_flow_review",
+    "citations": [
+      {
+        "path": "run.v2.py",
+        "lines": [
+          77,
+          87,
+          94,
+          100,
+          107,
+          110,
+          112,
+          114,
+          116,
+          119,
+          123,
+          126,
+          133,
+          135
+        ],
+        "finding": "stop records signal/wait/group-observation failures and returns structured evidence. Stop returning is never used as profile-exit proof; only this supervisor original PGIDs are signaled."
+      },
+      {
+        "path": "run.v2.py",
+        "lines": [
+          236,
+          237,
+          238,
+          239
+        ],
+        "finding": "Profile uses explicit mkdtemp with no automatically deleting context manager/finalizer."
+      },
+      {
+        "path": "run.v2.py",
+        "lines": [
+          280,
+          283,
+          284,
+          285,
+          286,
+          296,
+          297,
+          298,
+          299,
+          300,
+          301,
+          302,
+          303,
+          304,
+          305,
+          306,
+          307,
+          308
+        ],
+        "finding": "A stop exception is caught per role, log.close has its own finally/catch, and subsequent roles continue. Retain_json also catches individual diagnostic-write failures so cleanup/other evidence attempts continue."
+      },
+      {
+        "path": "run.v2.py",
+        "lines": [
+          325,
+          326,
+          327,
+          328,
+          329,
+          330,
+          331,
+          332,
+          333,
+          334,
+          335,
+          337,
+          338,
+          339,
+          341,
+          343,
+          347,
+          348,
+          349,
+          350,
+          352,
+          353
+        ],
+        "finding": "A fresh owned_inventory follows every stop attempt and input rehash. Inventory failure remains unknown, with None member fields and inventory_known false. all_pids_groups_empty requires both known empty PGID lists and known empty original PID lists. The single rmtree site is inside its true branch; otherwise the profile is retained with path/reason."
+      },
+      {
+        "path": "run.v2.py",
+        "lines": [
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          366,
+          367,
+          368,
+          373,
+          375,
+          376,
+          377,
+          378,
+          379,
+          380,
+          381,
+          382,
+          383,
+          384,
+          385,
+          386
+        ],
+        "finding": "Survivors, unknown inventory, input mismatch or cleanup errors make supervisor status nonzero. Handles are cleanup-incomplete without PID/PGID proof. Handles and process-exit writes are attempted independently and stdout receives closure; physical I/O failure cannot guarantee a file, but does not skip earlier role shutdowns."
+      }
+    ],
+    "failurePathTable": [
+      {
+        "condition": "One role stop raises",
+        "result": "Record error; independently close its log; continue all subsequent owned roles; collect final OS evidence; supervisor fails even if later evidence proves all exited."
+      },
+      {
+        "condition": "One log.close or evidence write raises",
+        "result": "Record error and continue; final receipt/stdout attempts remain independent; supervisor fails."
+      },
+      {
+        "condition": "Final OS inventory fails or any owned PID/PGID remains",
+        "result": "Never call rmtree; retain profile path/logs/errors and remaining or unknown fields; mark cleanup-incomplete and fail."
+      },
+      {
+        "condition": "Earlier stop failed, but final fresh PID/PGID evidence proves empty",
+        "result": "Profile deletion is now safe under that actual final proof; the earlier cleanup error still forces nonzero supervisor status. An exception itself is not treated as proof."
+      },
+      {
+        "condition": "Final fresh owned PID/PGID evidence proves empty with no cleanup/input errors",
+        "result": "Single guarded rmtree may remove the profile; normal closure evidence is attempted."
+      }
+    ],
+    "killScopeBroadened": false,
+    "escapedForeignPGIDsSignaled": false,
+    "rootIndependentEscapedProcessPortAndSupervisorExitReviewStillRequired": true
+  },
+  "preparedContextReportedByRootNotRerunHere": {
+    "publishedHeadPrefix": "530f7a55",
+    "exactMainACKReported": true,
+    "currentGlobalGuardCount": 952,
+    "dataInputs": 890,
+    "ordinaryPrepareSession": 36583,
+    "ordinaryPrepareExitCode": 0,
+    "status": 200,
+    "wholeProgramNodes": 5620,
+    "targetSceneNodes": 46,
+    "programSHA256": "ae3566175416a1e5f9415a43a8af0ade8b62333fd9930a0d944298d7d602e664",
+    "returnedBeforeRetained": true,
+    "seedOrOverrideIntroducedByV2": false
+  },
+  "remainingReleaseConditions": [
+    "Root must add exact run.v2.py97c849… to a new hash-bound runtime release; the old prepared binding to run.py is insufficient and old run.py remains M1-blocked.",
+    "Retain all current952/global and890/data plus full source/dist/model/resource/protected guards, normal program SHA and designated single owner.",
+    "No runtime/browser authorization follows from this static pass. Root independently verifies final OS PID/PGID/escaped/port closure before any delegated review of3 original JPEGs."
+  ],
+  "historicalEvidence": {
+    "oldSuccessfulFull46ClosureUnaffected": true,
+    "priorReportsAndOriginalHelpersUnmodified": true,
+    "newThreeNodeRuntimeNotExecutedByThisPeer": true
+  },
+  "peerExecution": {
+    "ASTOnlyNoHelperImportOrExecution": true,
+    "faultInjectionOrCleanupProcessTestPerformed": false,
+    "APIOrNetworkRequests": 0,
+    "GitOrBusinessCLICalls": 0,
+    "browserServerOrDecoderStarted": false,
+    "sourceDataHelpersOrOldEvidenceWritten": false,
+    "onlyNewSiblingPeerV3FilesWritten": true,
+    "syntaxNotUsedAsRuntimeAcceptance": true
+  }
+}

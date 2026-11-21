@@ -1,0 +1,239 @@
+{
+  "schema": "stella.choice92.saved-plan.v1",
+  "rootConfirmed": false,
+  "sceneId": 10110003,
+  "start": "node:10110003:1011000300008",
+  "steps": [
+    {
+      "id": "node:10110003:1011000300008",
+      "scenario": 8,
+      "native": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_subaru01",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "スバル",
+        "msg_text": "等、等等！我也没想到她会这么早来这里！",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 8,
+        "uniq_id": 1011000300008,
+        "is_root": 0,
+        "scenario_type": 2,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1011000310081,
+                "transition_id": 8101,
+                "next_scenario_id": 9,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1011000310081,
+            "branch_id": 81,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "expectedModel": "subaru01",
+      "branchId": 81,
+      "expectedTransition": {
+        "uniq_id": 1011000310081,
+        "transition_id": 8101,
+        "next_scenario_id": 9,
+        "next_scenario_label": ""
+      }
+    },
+    {
+      "id": "node:10110003:1011000300009",
+      "scenario": 9,
+      "native": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_rom01",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "ロム爺",
+        "msg_text": "也就是说，你和那姑娘认识？",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 9,
+        "uniq_id": 1011000300009,
+        "is_root": 0,
+        "scenario_type": 2,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [],
+            "uniq_id": 1011000310092,
+            "branch_id": 92,
+            "type": 2,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": "哀叹结果"
+          },
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1011000310093,
+                "transition_id": 9301,
+                "next_scenario_id": 10,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1011000310093,
+            "branch_id": 93,
+            "type": 3,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "脸是认识的。不过，她告诉我的名字，好像是假的……",
+            "msg_quote_subject": "回答问题"
+          }
+        ]
+      },
+      "expectedModel": "rom01",
+      "branchId": 93,
+      "expectedTransition": {
+        "uniq_id": 1011000310093,
+        "transition_id": 9301,
+        "next_scenario_id": 10,
+        "next_scenario_label": ""
+      }
+    },
+    {
+      "id": "node:10110003:1011000300010",
+      "scenario": 10,
+      "native": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_rom01",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "ロム爺",
+        "msg_text": "可对方看起来，并不认识你啊。",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 10,
+        "uniq_id": 1011000300010,
+        "is_root": 0,
+        "scenario_type": 2,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1011000310101,
+                "transition_id": 10101,
+                "next_scenario_id": 11,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1011000310101,
+            "branch_id": 101,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "expectedModel": "rom01",
+      "branchId": 101,
+      "expectedTransition": {
+        "uniq_id": 1011000310101,
+        "transition_id": 10101,
+        "next_scenario_id": 11,
+        "next_scenario_label": ""
+      }
+    }
+  ],
+  "sceneRows": 46,
+  "allLibraryNodes": 5620,
+  "recordedChoice": {
+    "scenario": 9,
+    "branchId": 93,
+    "label": "回答问题",
+    "quote": "脸是认识的。不过，她告诉我的名字，好像是假的……"
+  },
+  "unknownBranch": {
+    "scenario": 9,
+    "branchId": 92,
+    "label": "哀叹结果"
+  },
+  "expectedChoiceUI": {
+    "left": "← 哀叹结果 · 未恢复",
+    "right": "→ 回答问题"
+  },
+  "expectedEffectiveBackground": "bg/bg031b_stealshop",
+  "expectedBackgroundProvider": 2,
+  "stop": {
+    "scenario": 10,
+    "phase": "ready",
+    "forbiddenBranch": 101,
+    "forbiddenScenario": 11
+  },
+  "captureFormat": {
+    "type": "image/jpeg",
+    "quality": 0.9,
+    "viewport": {
+      "width": 440,
+      "height": 900
+    },
+    "count": 3,
+    "maximumCaptureBytes": 750000
+  },
+  "acceptanceScope": "Only saved choice92 label visibility/missing state, unchanged93 label/quote, and ordinary8→9→10 traversal with unchanged actors/store BG. No choice92 or101 execution, body/face/extra/audio/timing/FX or whole-scene/episode/goal acceptance."
+}
