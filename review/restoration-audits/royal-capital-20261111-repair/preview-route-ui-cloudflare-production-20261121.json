@@ -1,0 +1,109 @@
+{
+  "schema": "stella.production-preview-route-ui-publication.v1",
+  "rootConfirmed": true,
+  "sourceCommit": "7f32a3cde97d9a379828619242d2ba12f94f6514",
+  "sourceTreeSha256": "7df320297cdf60790e071d6fe2902235ec3d1488f83a29d12d2e8eef3ec6926c",
+  "worker": "stella-preview",
+  "workerVersionId": "7b70d22b-6bcf-43b5-8da2-4828f8260b69",
+  "workbench": "https://stella-preview.jaoushingan.com/studio/",
+  "deploymentLog": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/upstream-route-ui-deploy-20261121.log",
+    "sha256": "b02ea7dec41da759641499d47c244c2557c1f9d3800f7d0951ae952c2fb05e7d",
+    "exitCode": 0,
+    "existingWorkerAndDatabasePreserved": true,
+    "keepVars": true,
+    "newSiteOrRemoteCreated": false
+  },
+  "problem": {
+    "sceneId": 10100012,
+    "scenarioId": 2,
+    "studioNodeId": "node_869ba28d7d51",
+    "title": "前往贫民街",
+    "nativeScenarioIsRoot": true,
+    "originalAmbiguousFields": [
+      "bg_picture",
+      "body"
+    ],
+    "incoming11": {
+      "sceneId": 10100011,
+      "scenarioId": 33,
+      "branchId": 332,
+      "background": "bg/bg018a_bridge",
+      "body": "act_unazuku02"
+    },
+    "incoming19": {
+      "sceneId": 10100019,
+      "scenarioId": 18,
+      "branchId": 181,
+      "background": "bg/bg039a_castletown",
+      "body": "act_nayamu"
+    },
+    "diagnosis": "Two real predecessor states differ. The title uses inherited background, so preserve the required explicit route choice; do not clear the background or auto-select a predecessor."
+  },
+  "change": "Required route controls are visible directly below Play, outside optional collapsed asset settings. Chinese state labels, explicit user choice, retained selected joins, request-generation ownership, and previous-node notice clearing are implemented. Native scripts, edges and merge results are unchanged.",
+  "verifiedProductionBehavior": {
+    "driverExitCode": 0,
+    "AtoEAccepted": true,
+    "defaultRemainsComposite": true,
+    "currentPlayAndTitleAuditionErrorAccepted": true,
+    "selected19Branch181": {
+      "resolveAmbiguous": [],
+      "prepareHttp": 200,
+      "dataHead": "8778393cd74d76ae94e8d2141ef6ac1a23ab0070",
+      "titleStarted": "前往贫民街"
+    },
+    "returnCompositeRestoresConflict": true,
+    "upstreamJoinAloneDoesNotResolveRootConflict": true,
+    "selectedJoinRetainedUntilExplicitCompositeReset": true,
+    "cleanSingleIncomingRoutePanelHidesAfterReset": true,
+    "newNodeOwnNoticeAccepted": true,
+    "sixFullScreenshotsIndependentlyReviewedAfterClosure": true,
+    "sixScreenshotBytes": 2786784,
+    "actualLateResponseOverlapObserved": false,
+    "lateResponseSuppressionRuntimeAccepted": false,
+    "unexpectedJavaScriptExceptions": 0,
+    "repositoryMutations": 0,
+    "pureReadPosts": {
+      "commands/inspect": 16,
+      "resolve": 17,
+      "player/prepare": 4
+    },
+    "expectedCurrentPrepare422": 3,
+    "successfulPrepare200": 1,
+    "normalProgramSha256": "94b4d8109d4f8a967472d9134bf7be94828d9290d24e10434c4eee5b0ce07365"
+  },
+  "evidence": {
+    "productionDirectory": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/workbench-route-selector-runtime-v1/production-attempt-2",
+    "manifestSha256": "e11ac20624b327df3b3a32bbd76852c71b2a484ac3c3ca6ec50ec65fd34fe30e",
+    "evidenceFilesRehashedByRoot": 22,
+    "acceptanceSha256": "f0cfb9dfe2c6e535bc33a1d8febd8ed56d94af729dcf45e2b82cc7ceed6d1463",
+    "receiptSha256": "3c84e0f67ade86bcf2f56b7d24805ea915274afab27586df0240479697441130",
+    "closureSha256": "02da63e658801e85cbe59a57f7fa4c9832d8f3bbac955a30c0fe02bd256a7c78",
+    "independentReviewer": "/root/runtime_validation",
+    "mainThreadViewedImages": false,
+    "offlinePeerSha256": "08ccc0bbbe08846ce31ce635c8badd3860b0502e93947d70775af0fde7e92cb6",
+    "incrementalPeerSha256": "cb39952a81424d5aaef1156855a9f7a22a06a859c7e9e74d4107d8a20c770194",
+    "productionHttpReadbackSha256": "4036e81ee0d1788e4d1d3f65ab715e7bd9d8d70f4a504ba861bb025fe8e913d2",
+    "staticResourceReadbackSha256": "0e8f086c3c0109a9d58cc1a7322bf719b450dbed0fb854b0d899aea39779db85"
+  },
+  "binding": {
+    "capturedDataHead": "8778393cd74d76ae94e8d2141ef6ac1a23ab0070",
+    "parentAtAudit": "d08218e0ac4545e31e42a799e923552e4e032cbf",
+    "sourceFilesUnchanged": 309,
+    "distFilesUnchanged": 232,
+    "dataResourceInputsUnchangedDuringCapture": 17,
+    "protectedFirstThreeHashesUnchanged": 22,
+    "allOwnedProcessesExitedBeforeReview": true,
+    "noLocalServerFixtureKeyDbOrRecorder": true,
+    "noProgramFontClockRendererOrNetworkTimingReplacement": true,
+    "laterDataChange": "After capture closure, root published d08218e0 adding only the fuon01 catalog/package indexes. It does not relabel the historical877 capture."
+  },
+  "hostingHtml": "Production HTML adds only the observed Cloudflare analytics script and newline before closing body; canonical body prefix matches. app.js/media.js/style.css are byte-identical to committed source.",
+  "localHarnessFailures": "Two earlier local attempts ran0 UI cases and closed with identical input hashes: missing local installation context, then an incorrectly modeled query separator. A first production navigation attempt also ran0 target cases because the driver had not opened the real collapsed directory navigator. Those failures remain preserved; the successful production evidence uses normal trusted UI navigation.",
+  "limits": [
+    "Actual late-response suppression remains runtime-unaccepted because no old prepare response overlapped the new node; independent offline current/stale method replays cover the code paths.",
+    "Only1600x1100 layout was visually reviewed.",
+    "No auth/credential workflow, acting, geometry, original timing, subjective audio, unseen route, whole-scene or whole-episode acceptance.",
+    "The complete restoration goal remains active."
+  ]
+}
