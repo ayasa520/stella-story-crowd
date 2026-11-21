@@ -1,0 +1,23 @@
+--- a/lib/studio-state.ts
++++ b/lib/studio-state.ts
+@@ -144,8 +144,18 @@
+     const result={...apply(nodes.get(key)!,before),incoming};cache.set(key,result);visiting.delete(key);return result;
+   }
+   const result=visit(id);result.warnings=[...new Set(warnings)];
+-  result.ambiguous=Object.entries(result.display).filter(([key,value])=>value===null&&key!=="music_source").map(([key])=>key);
+-  for(const field of ["extras","ambient"])for(const [layer,value]of Object.entries(result.display[field]||{}))if(value===null)result.ambiguous.push(`${field}.${layer}`);
++  // An empty-actor title hides foreground and skips actor preparation.
++  // Filter only its blocking diagnostics; preserve all incoming/resolved
++  // state so later nodes still receive unknown predecessor values.
++  // Background, music, ambient sound and command effects remain relevant.
++  const target=nodes.get(id)!;
++  const hiddenFields=target.kind==="title"&&!target.model&&!target.actors.length?
++    new Set(["model","body","face","face_reset","extras","actors"]):new Set<string>();
++  result.ambiguous=Object.entries(result.display).filter(([key,value])=>value===null&&key!=="music_source"&&!hiddenFields.has(key)).map(([key])=>key);
++  for(const field of ["extras","ambient"]){
++    if(hiddenFields.has(field))continue;
++    for(const [layer,value]of Object.entries(result.display[field]||{}))if(value===null)result.ambiguous.push(`${field}.${layer}`);
++  }
+   // Keep machine-readable field identities for route resolution. Presentation
+   // labels are a separate projection so explaining a conflict never changes
+   // the merge result or silently chooses a predecessor on the user's behalf.

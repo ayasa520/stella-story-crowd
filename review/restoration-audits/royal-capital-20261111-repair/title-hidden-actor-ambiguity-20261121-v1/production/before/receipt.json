@@ -1,0 +1,63 @@
+{
+  "atUtc": "2026-11-21T06:59:23.749446+00:00",
+  "source": "7f32a3cde97d9a379828619242d2ba12f94f6514",
+  "dataHead": "db23843217c80693e893279c1f60760105997510",
+  "readOnly": true,
+  "browserStarted": false,
+  "rows": [
+    {
+      "case": "resolve-unselected",
+      "url": "https://stella-preview.jaoushingan.com/api/resolve",
+      "http": 200,
+      "bytes": 4157,
+      "sha256": "343734517d67ca0abd6441a3945fbf7a0f39cb75861ea72e99fb6dd03f00b31d",
+      "headers": {
+        "Content-Type": "application/json",
+        "CF-Ray": "a5ddcf96ffebcf2a-SJC"
+      },
+      "ambiguous": [
+        "bg_picture",
+        "body"
+      ],
+      "labels": [
+        "背景",
+        "身体动作"
+      ],
+      "error": null,
+      "headSha": null,
+      "start": null
+    },
+    {
+      "case": "prepare-unselected",
+      "url": "https://stella-preview.jaoushingan.com/api/player/prepare",
+      "http": 422,
+      "bytes": 81,
+      "sha256": "0343e96b9b842a34e095fa7f78d02db19c39dc28f2b11549f0f524132fea7eea",
+      "headers": {
+        "Content-Type": "application/json",
+        "CF-Ray": "a5ddcfa7590beb4b-SJC"
+      },
+      "ambiguous": null,
+      "labels": null,
+      "error": "请先选择预览入线，确定背景、身体动作后再播放。",
+      "headSha": null,
+      "start": null
+    },
+    {
+      "case": "prepare-selected19",
+      "url": "https://stella-preview.jaoushingan.com/api/player/prepare",
+      "http": 200,
+      "bytes": 1174438,
+      "sha256": "aecef590866af9b612e1d55aa47155b329b23ccc35543f3e5bd50b413c4fe7fa",
+      "headers": {
+        "Content-Type": "application/json",
+        "CF-Ray": "a5ddcfb4d97aebf1-SJC"
+      },
+      "ambiguous": null,
+      "labels": null,
+      "error": null,
+      "headSha": "db23843217c80693e893279c1f60760105997510",
+      "start": "node:10100012:node_869ba28d7d51"
+    }
+  ]
+}

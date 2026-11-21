@@ -1,0 +1,67 @@
+{
+  "atUtc": "2026-11-21T07:11:28.297038+00:00",
+  "sourceCommit": "4aeff7c5e7b72a79ea803d97f37c1f08a8218024",
+  "workerVersion": "fc8e36aa-db74-4f96-97c4-5460772a418b",
+  "dataHead": "db23843217c80693e893279c1f60760105997510",
+  "rows": [
+    {
+      "case": "resolve-unselected",
+      "http": 200,
+      "bytes": 4135,
+      "sha256": "edaf0fb0ae04f804d4e8a9266df6c8c17118e6ace7291dd252cedd240788427d",
+      "headers": {
+        "Content-Type": "application/json",
+        "CF-Ray": "a5dde14f6c3cc6c6-SJC"
+      },
+      "ambiguous": [
+        "bg_picture"
+      ],
+      "labels": [
+        "背景"
+      ],
+      "error": null,
+      "headSha": null,
+      "start": null
+    },
+    {
+      "case": "prepare-unselected",
+      "http": 422,
+      "bytes": 66,
+      "sha256": "668df7026438d38c0e1b2ff714b4ac2981a7e2782647ed4decd133c457109bfc",
+      "headers": {
+        "Content-Type": "application/json",
+        "CF-Ray": "a5dde15ab9b28e6a-SJC"
+      },
+      "ambiguous": null,
+      "labels": null,
+      "error": "请先选择预览入线，确定背景后再播放。",
+      "headSha": null,
+      "start": null
+    },
+    {
+      "case": "prepare-selected19",
+      "http": 200,
+      "bytes": 1174438,
+      "sha256": "aecef590866af9b612e1d55aa47155b329b23ccc35543f3e5bd50b413c4fe7fa",
+      "headers": {
+        "Content-Type": "application/json",
+        "CF-Ray": "a5dde15f58f45024-SJC"
+      },
+      "ambiguous": null,
+      "labels": null,
+      "error": null,
+      "headSha": "db23843217c80693e893279c1f60760105997510",
+      "start": "node:10100012:node_869ba28d7d51"
+    }
+  ],
+  "checks": {
+    "currentTitleOnlyBackgroundConflict": true,
+    "realBackgroundStillBlocksPrepare": true,
+    "selectedPrepare200SameDataHead": true,
+    "selectedCompleteProgramByteIdentical": true,
+    "allFourResolvedStatesIdentical": true
+  },
+  "passed": true,
+  "browserStarted": false,
+  "scope": "Production HTTP prepare/resolve only;no new GPU/acting/timing acceptance"
+}
