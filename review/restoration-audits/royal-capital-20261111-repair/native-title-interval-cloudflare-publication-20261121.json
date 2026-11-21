@@ -1,0 +1,62 @@
+{
+  "schema": "stella.native-title-interval-cloudflare-publication.v1",
+  "rootConfirmed": true,
+  "verifiedAtUtc": "2026-11-21T03:50:26Z",
+  "status": "deployed-and-production-readback-verified",
+  "worker": "stella-preview",
+  "productionWorkbench": "https://stella-preview.jaoushingan.com/studio/",
+  "cloudflareVersionId": "dbb8ef77-6517-456d-8c67-2d5cc46f5294",
+  "canonicalSourceCommit": "a5f0ff4637460ac14282572b3504a93814be3f44",
+  "dataRevisionAtVerification": "a8c30d52d6811fe94f1d6a0d93878d009d5b05ee",
+  "sourceAndBuildIdentity": {
+    "sourceTreeSha256": "5d0bbbff5fecd5ab132fb79121cf780488016c1f9129c3652a96b978e626565a",
+    "sourceFilesComparedWithRuntimeBinding": 309,
+    "distFilesComparedWithRuntimeBinding": 232,
+    "sourceOrDistDifferences": [],
+    "captureEpoch": "The eight-case capture used e4165f2 plus the five approved changes. Those exact bytes were subsequently committed as a5f0ff4 and deployed; the historical capture is not relabeled as a pristine a5 capture.",
+    "inputBindingPath": "artifacts/stella-script-continuation-20261121/native-title-interval-runtime-v2/input-binding.json",
+    "inputBindingSha256": "878dfc37f31a47b763de1d86715123460085b952e10fb2be9d9f6b9049ce9234",
+    "runtimeAcceptancePath": "artifacts/stella-script-continuation-20261121/native-title-interval-runtime-v2/runtime-acceptance.json",
+    "runtimeAcceptanceSha256": "5dd334606de38d04985fafc97626b7c54a330ef82b0acfee482a968fc744254e",
+    "buildPassed": true,
+    "typescriptPassed": true,
+    "functionalCasesPassed": 8
+  },
+  "deployment": {
+    "installedWranglerVersion": "4.92.0",
+    "configPath": "artifacts/stella-site-repair-source/cloudflare-preview-20261120/wrangler.json",
+    "usedExistingWorkerAndDatabase": true,
+    "keepVars": true,
+    "workersDev": false,
+    "previewUrls": false,
+    "deploymentExitCode": 0,
+    "logPath": "artifacts/stella-site-repair-source/native-title-interval-deploy-20261121.log",
+    "logSha256": "d8b3df2d8a2002baae682f7939963df2cd415792abaa65ed4bcea5dac9c61e3b",
+    "sitesConnectorPreviouslyReturnedProjectNotFound": true,
+    "newSiteOrRemoteCreated": false,
+    "sourceCheckoutHasConfiguredRemote": false
+  },
+  "authentication": {
+    "firstAttempt": "Wrangler received OAuth request_forbidden in the callback and exited; its callback listener then closed.",
+    "secondAttempt": "Installed Wrangler logged Successfully logged in at 2026-11-21T03:41:15.778Z. A separate whoami confirmed OAuth authentication before deployment.",
+    "callbackListenerClosedAfterCompletion": true,
+    "credentialsIncludedInThisReceipt": false
+  },
+  "productionReadback": [
+    {"path": "/studio/", "http": 200, "bytes": 29834, "sha256": "8c36af132249606e5ba335df90fc51452189985fe9a76ce0aa54db80b5a1b131"},
+    {"path": "/player/player.js", "http": 200, "sha256": "d7931354965fc43fa3a5a202bfb463c9e8d4175d1f693c80cebda68cccc6621c", "matchesCommittedSource": true},
+    {"path": "/studio/player.js", "http": 200, "sha256": "2bca4028e349ba024dafe3099cede8734ec1170ce9429c5c87b28ae2ff2c07e9", "matchesCommittedSource": true},
+    {"path": "/player/native_scene_interval.js", "http": 200, "sha256": "3132d0b484aa90e66ba3e0d100bd03d832c1be5f74aefa895f8382b806167758", "matchesCommittedSource": true},
+    {"path": "/api/scenes/10090015", "http": 200, "revision": "a8c30d52d6811fe94f1d6a0d93878d009d5b05ee", "nativeRows": 52, "sha256": "3f9b6182d3de4683a2c06c2de2f42152e0145d28c6436f9c63642de61e5d188a"},
+    {"path": "/api/state?sceneId=10010001&sceneOnly=1", "http": 200, "nativeInterval": {"is_root": 0, "next_scene_count": 2}, "sha256": "e6080a4752fddb26a10923ffba312d68590f80314eb3a5f5e5f3986919a0668c"},
+    {"path": "/api/state?sceneId=10090014&sceneOnly=1", "http": 200, "nativeInterval": {"is_root": 0, "next_scene_count": 1}, "sha256": "2a3200d388f83597fbc637364f2bdf675c95d73cc64087e37bc62e5cecf225b8"},
+    {"path": "/api/state?sceneId=10090015&sceneOnly=1", "http": 200, "nativeInterval": {"is_root": 0, "next_scene_count": 0}, "sha256": "8219d413d74d8c2b3171403197a153983962771df27143cb0bbe9832378ddec9"}
+  ],
+  "acceptedScope": "Original root/current-branch/previous-branch interval conditions, fresh-preview reset and end-title suppression; independent existing CardOut retirement predicate is retained. Production source bytes and backend interval projection are verified.",
+  "limits": [
+    "Production was checked through read-only HTTP responses, without opening another test browser.",
+    "Visible Pack fade and original timing remain unaccepted; actual CardOut path execution alone does not sign the original visual transition.",
+    "This publication does not accept complete acting, geometry, audio, unseen branches or the whole fifth episode.",
+    "The full restoration goal remains active."
+  ]
+}
