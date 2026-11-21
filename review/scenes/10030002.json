@@ -6480,20 +6480,6 @@
           "severity": "warning",
           "message": "Some text evidence still needs visual review.",
           "scenarioId": 39
-        },
-        {
-          "code": "missing_transition",
-          "severity": "warning",
-          "message": "The recording reaches CLEAR, but no next-section entry is recorded. Preserve the unknown executable destination.",
-          "scenarioId": 39,
-          "branchId": 391
-        },
-        {
-          "code": "transition_review_pending",
-          "severity": "warning",
-          "message": "This explicit route still needs evidence review.",
-          "scenarioId": 39,
-          "branchId": 391
         }
       ],
       "branches": [
@@ -6501,23 +6487,63 @@
           "branchId": 391,
           "stableKey": "s10030002-p21-at0347-next",
           "nativeIdOrigin": "authored",
-          "verification": "pending",
-          "state": "missing",
+          "verification": "observed",
+          "state": "confirmed",
           "evidence": [
             {
-              "segmentId": "p21-s10030002",
-              "start": 347.0,
-              "end": 349.0,
-              "sourceAnchorSeconds": 347,
-              "ocrReviewed": false,
-              "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/21/coarse-1hz/crops/010470-dialogue.png",
-              "ocrEventId": "merged-0083",
-              "sourceSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
-              "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/21 8本篇「再会的魔女」.mp4",
-              "originalOCRText": "……ホント、いつ会っても、な。",
-              "ocrConfidence": 0.99553,
-              "ocrReviewReasons": [],
-              "recordingId": "bili-capital-21"
+              "originalSourceReviewPacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode8-restore-20261121-v1/p21-ending-sequence.draft.json",
+                "bytes": 5622,
+                "sha256": "b087f5daeaa02480c97b17591b947d10ec8c2c75a8f0fe0f85a7ed36c331b36c"
+              },
+              "priorReviewer": "/root/episode8_restore",
+              "completeSourceReviewReusedWithoutNewImageInspection": true,
+              "sourceVideoSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+              "sourceWindow": [
+                345.023,
+                361.256
+              ],
+              "sourceIndexes": [
+                {
+                  "path": "p21-ending/index.json",
+                  "sha256": "f42c9423b10b51149e699afd9de3fd20d4496921ca3b21cb02850b4db1f9020e"
+                },
+                {
+                  "path": "p21-postclear/index.json",
+                  "sha256": "0afc4b9f8ac7abf114354b66b73b5ac04c4ea3cafddc05a6da003d3208e5c26b"
+                }
+              ],
+              "priorCompleteImagesReviewed": 517,
+              "rootConfirmed": false,
+              "originalPayloadRecovered": false,
+              "originalCommandPhasesRecovered": false
+            },
+            {
+              "kind": "saved-identity-prerequisite-and-unreleased-fresh-array",
+              "rootConfirmed": false,
+              "identityScriptCommit": "1224260757cb75f5ba13b8a7e46e07883a09738d",
+              "identityPublicationReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-p22-ten-image-fields-final-publication-receipt-v1.json",
+                "bytes": 3682,
+                "sha256": "85067fdf04b9ba4f6914a724e4f9841536a9ae5a84c85608cbdee2d1eab795a4"
+              },
+              "observedDataHead": "e5b643b8aacf972964af74fd1be2d8d0b7d2d6ce",
+              "observedSourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+              "sourceArray": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-ending-post-identities-rootfalse-20261122-v1/current-source-scenario-array.encoded.json",
+                "bytes": 40915,
+                "sha256": "d8b86b133e09594ab5e4ecf6264edd7ed5dc35b522479bcc318f39d3ddc0dc30",
+                "codec": "(json.dumps(value, ensure_ascii=False, indent=2) + LF).encode(UTF-8)",
+                "codecSource": {
+                  "path": "/home/rikka/Projects/stella/story_studio/crowd_seed.py",
+                  "bytes": 32302,
+                  "sha256": "01806188ca7391882d9d74c0a2cfaa3ab987fcd722a719c80f940b8f25386956"
+                },
+                "method": "Extract the complete scenario_list span from actual current native encoded bytes, remove exactly the enclosing two indentation spaces on subsequent lines, retain original literal content, key/array order and final LF.",
+                "wholeNativeNodeEncodingExact": true,
+                "arrayNodeEncodingExact": true
+              },
+              "doNotReinstallTenFields": true
             }
           ],
           "gainPointsRecovered": false
@@ -6816,6 +6842,482 @@
             }
           }
         ]
+      }
+    },
+    "41": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10030002-p21-ending-door-out",
+      "sourceText": "",
+      "translation": "",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "originalSourceReviewPacket": {
+            "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode8-restore-20261121-v1/p21-ending-sequence.draft.json",
+            "bytes": 5622,
+            "sha256": "b087f5daeaa02480c97b17591b947d10ec8c2c75a8f0fe0f85a7ed36c331b36c"
+          },
+          "priorReviewer": "/root/episode8_restore",
+          "completeSourceReviewReusedWithoutNewImageInspection": true,
+          "sourceVideoSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+          "sourceWindow": [
+            345.023,
+            361.256
+          ],
+          "sourceIndexes": [
+            {
+              "path": "p21-ending/index.json",
+              "sha256": "f42c9423b10b51149e699afd9de3fd20d4496921ca3b21cb02850b4db1f9020e"
+            },
+            {
+              "path": "p21-postclear/index.json",
+              "sha256": "0afc4b9f8ac7abf114354b66b73b5ac04c4ea3cafddc05a6da003d3208e5c26b"
+            }
+          ],
+          "priorCompleteImagesReviewed": 517,
+          "rootConfirmed": false,
+          "originalPayloadRecovered": false,
+          "originalCommandPhasesRecovered": false
+        },
+        {
+          "originalDoorResource": {
+            "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/movies/adv_dive01_out.mp4",
+            "bytes": 1199214,
+            "sha256": "b32614c0929effd463d14950b900f8eb370f780056e753581cb31410b1a53c5c"
+          },
+          "existingDoorReview": {
+            "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode8-source-reviewed-candidates-20261121-v1/p22-source-ending-review.json",
+            "bytes": 207869,
+            "sha256": "6e943bd95d02df44bbcf21d0fce3a5277bab0e2bc26bc877e66ae090dc6b1a25"
+          },
+          "noNewDoorOrP21ImageReviewClaimed": true
+        }
+      ],
+      "unknownFields": [
+        "bg_music",
+        "bg_picture",
+        "character",
+        "character_image",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 411,
+          "stableKey": "s10030002-p21-ending-door-out-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "observed",
+          "evidence": [
+            {
+              "originalSourceReviewPacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode8-restore-20261121-v1/p21-ending-sequence.draft.json",
+                "bytes": 5622,
+                "sha256": "b087f5daeaa02480c97b17591b947d10ec8c2c75a8f0fe0f85a7ed36c331b36c"
+              },
+              "priorReviewer": "/root/episode8_restore",
+              "completeSourceReviewReusedWithoutNewImageInspection": true,
+              "sourceVideoSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+              "sourceWindow": [
+                345.023,
+                361.256
+              ],
+              "sourceIndexes": [
+                {
+                  "path": "p21-ending/index.json",
+                  "sha256": "f42c9423b10b51149e699afd9de3fd20d4496921ca3b21cb02850b4db1f9020e"
+                },
+                {
+                  "path": "p21-postclear/index.json",
+                  "sha256": "0afc4b9f8ac7abf114354b66b73b5ac04c4ea3cafddc05a6da003d3208e5c26b"
+                }
+              ],
+              "priorCompleteImagesReviewed": 517,
+              "rootConfirmed": false,
+              "originalPayloadRecovered": false,
+              "originalCommandPhasesRecovered": false
+            },
+            {
+              "kind": "saved-identity-prerequisite-and-unreleased-fresh-array",
+              "rootConfirmed": false,
+              "identityScriptCommit": "1224260757cb75f5ba13b8a7e46e07883a09738d",
+              "identityPublicationReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-p22-ten-image-fields-final-publication-receipt-v1.json",
+                "bytes": 3682,
+                "sha256": "85067fdf04b9ba4f6914a724e4f9841536a9ae5a84c85608cbdee2d1eab795a4"
+              },
+              "observedDataHead": "e5b643b8aacf972964af74fd1be2d8d0b7d2d6ce",
+              "observedSourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+              "sourceArray": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-ending-post-identities-rootfalse-20261122-v1/current-source-scenario-array.encoded.json",
+                "bytes": 40915,
+                "sha256": "d8b86b133e09594ab5e4ecf6264edd7ed5dc35b522479bcc318f39d3ddc0dc30",
+                "codec": "(json.dumps(value, ensure_ascii=False, indent=2) + LF).encode(UTF-8)",
+                "codecSource": {
+                  "path": "/home/rikka/Projects/stella/story_studio/crowd_seed.py",
+                  "bytes": 32302,
+                  "sha256": "01806188ca7391882d9d74c0a2cfaa3ab987fcd722a719c80f940b8f25386956"
+                },
+                "method": "Extract the complete scenario_list span from actual current native encoded bytes, remove exactly the enclosing two indentation spaces on subsequent lines, retain original literal content, key/array order and final LF.",
+                "wholeNativeNodeEncodingExact": true,
+                "arrayNodeEncodingExact": true
+              },
+              "doNotReinstallTenFields": true
+            }
+          ]
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-ending-root-preparation-e5b643b8-v1/ending.root-approved-stage.json",
+          "evidence": [
+            {
+              "originalSourceReviewPacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode8-restore-20261121-v1/p21-ending-sequence.draft.json",
+                "bytes": 5622,
+                "sha256": "b087f5daeaa02480c97b17591b947d10ec8c2c75a8f0fe0f85a7ed36c331b36c"
+              },
+              "priorReviewer": "/root/episode8_restore",
+              "completeSourceReviewReusedWithoutNewImageInspection": true,
+              "sourceVideoSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+              "sourceWindow": [
+                345.023,
+                361.256
+              ],
+              "sourceIndexes": [
+                {
+                  "path": "p21-ending/index.json",
+                  "sha256": "f42c9423b10b51149e699afd9de3fd20d4496921ca3b21cb02850b4db1f9020e"
+                },
+                {
+                  "path": "p21-postclear/index.json",
+                  "sha256": "0afc4b9f8ac7abf114354b66b73b5ac04c4ea3cafddc05a6da003d3208e5c26b"
+                }
+              ],
+              "priorCompleteImagesReviewed": 517,
+              "rootConfirmed": false,
+              "originalPayloadRecovered": false,
+              "originalCommandPhasesRecovered": false
+            },
+            {
+              "kind": "saved-identity-prerequisite-and-unreleased-fresh-array",
+              "rootConfirmed": false,
+              "identityScriptCommit": "1224260757cb75f5ba13b8a7e46e07883a09738d",
+              "identityPublicationReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-p22-ten-image-fields-final-publication-receipt-v1.json",
+                "bytes": 3682,
+                "sha256": "85067fdf04b9ba4f6914a724e4f9841536a9ae5a84c85608cbdee2d1eab795a4"
+              },
+              "observedDataHead": "e5b643b8aacf972964af74fd1be2d8d0b7d2d6ce",
+              "observedSourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+              "sourceArray": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-ending-post-identities-rootfalse-20261122-v1/current-source-scenario-array.encoded.json",
+                "bytes": 40915,
+                "sha256": "d8b86b133e09594ab5e4ecf6264edd7ed5dc35b522479bcc318f39d3ddc0dc30",
+                "codec": "(json.dumps(value, ensure_ascii=False, indent=2) + LF).encode(UTF-8)",
+                "codecSource": {
+                  "path": "/home/rikka/Projects/stella/story_studio/crowd_seed.py",
+                  "bytes": 32302,
+                  "sha256": "01806188ca7391882d9d74c0a2cfaa3ab987fcd722a719c80f940b8f25386956"
+                },
+                "method": "Extract the complete scenario_list span from actual current native encoded bytes, remove exactly the enclosing two indentation spaces on subsequent lines, retain original literal content, key/array order and final LF.",
+                "wholeNativeNodeEncodingExact": true,
+                "arrayNodeEncodingExact": true
+              },
+              "doNotReinstallTenFields": true
+            }
+          ],
+          "originalScenarioIdRecovered": false
+        }
+      }
+    },
+    "42": {
+      "status": "draft",
+      "nativeIdOrigin": "authored",
+      "stableKey": "s10030002-p21-ending-clear",
+      "sourceText": "CLEAR",
+      "translation": "通关",
+      "sourceSpeaker": "",
+      "recordings": [
+        {
+          "originalSourceReviewPacket": {
+            "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode8-restore-20261121-v1/p21-ending-sequence.draft.json",
+            "bytes": 5622,
+            "sha256": "b087f5daeaa02480c97b17591b947d10ec8c2c75a8f0fe0f85a7ed36c331b36c"
+          },
+          "priorReviewer": "/root/episode8_restore",
+          "completeSourceReviewReusedWithoutNewImageInspection": true,
+          "sourceVideoSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+          "sourceWindow": [
+            345.023,
+            361.256
+          ],
+          "sourceIndexes": [
+            {
+              "path": "p21-ending/index.json",
+              "sha256": "f42c9423b10b51149e699afd9de3fd20d4496921ca3b21cb02850b4db1f9020e"
+            },
+            {
+              "path": "p21-postclear/index.json",
+              "sha256": "0afc4b9f8ac7abf114354b66b73b5ac04c4ea3cafddc05a6da003d3208e5c26b"
+            }
+          ],
+          "priorCompleteImagesReviewed": 517,
+          "rootConfirmed": false,
+          "originalPayloadRecovered": false,
+          "originalCommandPhasesRecovered": false
+        },
+        {
+          "independentAcceptedMusicIdentity": {
+            "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p21-p22-clear-bgm.json",
+            "bytes": 6483,
+            "sha256": "321d7f96eaa73254617ce504f10fee8880ab8bbdbf55803702425ab690cc813c"
+          },
+          "sourceSpecificBinding": {
+            "rootConfirmed": false,
+            "targetKind": "proposed_node_requires_ending_draft_install",
+            "sceneId": 10030002,
+            "stableKey": "s10030002-p21-ending-clear",
+            "sourceText": "CLEAR",
+            "expected": {
+              "bg_music": ""
+            },
+            "fields": {
+              "bg_music": "bgm_btl_adv_win01"
+            },
+            "acceptedFields": [
+              "bg_music"
+            ],
+            "baseNativeSceneSha256": "58c7deb41e57d7ee5dfa333c19e35c596007c6d30a9c5d0090c153e858118759",
+            "baseReviewSceneSha256": "adf1cdffb3a54c94ed2603be2b0eedfa074246966d9abe5b8e9ff54f6f2268ae",
+            "endingDraft": "episode8-restore-20261121-v1/p21-ending-sequence.draft.json",
+            "endingDraftSha256": "b087f5daeaa02480c97b17591b947d10ec8c2c75a8f0fe0f85a7ed36c331b36c",
+            "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/21 8本篇「再会的魔女」.mp4",
+            "sourceSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+            "evidence": {
+              "waveformMeasurements": "p21-ending-measurements.json",
+              "waveformMeasurementsSha256": "2f6087cf94544f844d089dbb0e507aad444c790bf36e053b8a6487706b262724",
+              "librarySize": 65,
+              "positiveControls": [
+                {
+                  "start": 356,
+                  "end": 359,
+                  "signedCorrelation": 0.9712375813561687,
+                  "exactReferenceSample": 306
+                },
+                {
+                  "start": 357,
+                  "end": 360,
+                  "signedCorrelation": 0.9896047296504858,
+                  "exactReferenceSample": 2306
+                }
+              ],
+              "sameLibraryNegativeControls": [
+                {
+                  "sourceStart": 356,
+                  "resource": "bgm_sim_event_travel",
+                  "signedCorrelation": 0.13731720405266215
+                },
+                {
+                  "sourceStart": 357,
+                  "resource": "bgm_sim_event_travel",
+                  "signedCorrelation": 0.13856990888722817
+                }
+              ],
+              "independentImageReview": {
+                "viewed": true,
+                "reviewer": "/root/chapter1_audio_4_8",
+                "path": "../episode8-restore-20261121-v1/p21-ending/frames/00345.jpg",
+                "sha256": "ad5b93435070c4ed4adee778f9e934d161362cbea7fbd15f167bc15a10814edc",
+                "sourceTime": 356.49,
+                "observedRoute": "本編"
+              },
+              "sourceEntryMeaning": "Music identity on the observed CLEAR card; no native sample-exact request phase is asserted."
+            }
+          },
+          "exactAudioRequestOrStopPhaseAccepted": false,
+          "sourceSpecificBindingIsHistoricalProvenanceOnly": true
+        }
+      ],
+      "unknownFields": [
+        "bg_picture",
+        "character",
+        "character_image",
+        "motion",
+        "native_array_order",
+        "original_command_phase",
+        "original_scenario_id",
+        "position",
+        "se",
+        "talk_chara",
+        "video",
+        "voice"
+      ],
+      "issues": [],
+      "branches": [
+        {
+          "branchId": 421,
+          "stableKey": "s10030002-p21-ending-clear-next",
+          "nativeIdOrigin": "authored",
+          "gainPointsRecovered": false,
+          "state": "confirmed",
+          "verification": "observed",
+          "evidence": [
+            {
+              "originalSourceReviewPacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode8-restore-20261121-v1/p21-ending-sequence.draft.json",
+                "bytes": 5622,
+                "sha256": "b087f5daeaa02480c97b17591b947d10ec8c2c75a8f0fe0f85a7ed36c331b36c"
+              },
+              "priorReviewer": "/root/episode8_restore",
+              "completeSourceReviewReusedWithoutNewImageInspection": true,
+              "sourceVideoSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+              "sourceWindow": [
+                345.023,
+                361.256
+              ],
+              "sourceIndexes": [
+                {
+                  "path": "p21-ending/index.json",
+                  "sha256": "f42c9423b10b51149e699afd9de3fd20d4496921ca3b21cb02850b4db1f9020e"
+                },
+                {
+                  "path": "p21-postclear/index.json",
+                  "sha256": "0afc4b9f8ac7abf114354b66b73b5ac04c4ea3cafddc05a6da003d3208e5c26b"
+                }
+              ],
+              "priorCompleteImagesReviewed": 517,
+              "rootConfirmed": false,
+              "originalPayloadRecovered": false,
+              "originalCommandPhasesRecovered": false
+            },
+            {
+              "kind": "saved-identity-prerequisite-and-unreleased-fresh-array",
+              "rootConfirmed": false,
+              "identityScriptCommit": "1224260757cb75f5ba13b8a7e46e07883a09738d",
+              "identityPublicationReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-p22-ten-image-fields-final-publication-receipt-v1.json",
+                "bytes": 3682,
+                "sha256": "85067fdf04b9ba4f6914a724e4f9841536a9ae5a84c85608cbdee2d1eab795a4"
+              },
+              "observedDataHead": "e5b643b8aacf972964af74fd1be2d8d0b7d2d6ce",
+              "observedSourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+              "sourceArray": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-ending-post-identities-rootfalse-20261122-v1/current-source-scenario-array.encoded.json",
+                "bytes": 40915,
+                "sha256": "d8b86b133e09594ab5e4ecf6264edd7ed5dc35b522479bcc318f39d3ddc0dc30",
+                "codec": "(json.dumps(value, ensure_ascii=False, indent=2) + LF).encode(UTF-8)",
+                "codecSource": {
+                  "path": "/home/rikka/Projects/stella/story_studio/crowd_seed.py",
+                  "bytes": 32302,
+                  "sha256": "01806188ca7391882d9d74c0a2cfaa3ab987fcd722a719c80f940b8f25386956"
+                },
+                "method": "Extract the complete scenario_list span from actual current native encoded bytes, remove exactly the enclosing two indentation spaces on subsequent lines, retain original literal content, key/array order and final LF.",
+                "wholeNativeNodeEncodingExact": true,
+                "arrayNodeEncodingExact": true
+              },
+              "doNotReinstallTenFields": true
+            }
+          ],
+          "nativeTransitionOrigin": "authored",
+          "originalPayloadRecovered": false,
+          "terminal": {
+            "kind": "finish-without-successor",
+            "nativeRepresentation": "omitted-destination-fields",
+            "rootConfirmed": true,
+            "originalPayloadRecovered": false,
+            "evidence": [
+              {
+                "kind": "direct-own-route-completion-and-original-master-end-identity",
+                "frame": "p21-postclear/frames/00051.jpg",
+                "frameSha256": "96b0cb35e28d3bf63de59ce1b0582e9ee06de0b4b078d6e917dc03799cdbec06",
+                "sourceAnchorSeconds": 359.69,
+                "directlyRead": [
+                  "サテラとの再会？",
+                  "またもチンピラと",
+                  "END",
+                  "本編"
+                ],
+                "masterEvidence": "data/native_recovery/royal-capital-20261110/native-directory.json",
+                "masterSceneId": 10030002,
+                "masterIsEnd": 1,
+                "representationBasis": "Current compiler supports a no-successor FINISH; this is an authored completion representation. Section successors1015/1004 do not establish an observed dialogue edge."
+              }
+            ]
+          }
+        }
+      ],
+      "repairEvidence": {
+        "ending": {
+          "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-ending-root-preparation-e5b643b8-v1/ending.root-approved-stage.json",
+          "evidence": [
+            {
+              "originalSourceReviewPacket": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/episode8-restore-20261121-v1/p21-ending-sequence.draft.json",
+                "bytes": 5622,
+                "sha256": "b087f5daeaa02480c97b17591b947d10ec8c2c75a8f0fe0f85a7ed36c331b36c"
+              },
+              "priorReviewer": "/root/episode8_restore",
+              "completeSourceReviewReusedWithoutNewImageInspection": true,
+              "sourceVideoSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+              "sourceWindow": [
+                345.023,
+                361.256
+              ],
+              "sourceIndexes": [
+                {
+                  "path": "p21-ending/index.json",
+                  "sha256": "f42c9423b10b51149e699afd9de3fd20d4496921ca3b21cb02850b4db1f9020e"
+                },
+                {
+                  "path": "p21-postclear/index.json",
+                  "sha256": "0afc4b9f8ac7abf114354b66b73b5ac04c4ea3cafddc05a6da003d3208e5c26b"
+                }
+              ],
+              "priorCompleteImagesReviewed": 517,
+              "rootConfirmed": false,
+              "originalPayloadRecovered": false,
+              "originalCommandPhasesRecovered": false
+            },
+            {
+              "kind": "saved-identity-prerequisite-and-unreleased-fresh-array",
+              "rootConfirmed": false,
+              "identityScriptCommit": "1224260757cb75f5ba13b8a7e46e07883a09738d",
+              "identityPublicationReceipt": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-p22-ten-image-fields-final-publication-receipt-v1.json",
+                "bytes": 3682,
+                "sha256": "85067fdf04b9ba4f6914a724e4f9841536a9ae5a84c85608cbdee2d1eab795a4"
+              },
+              "observedDataHead": "e5b643b8aacf972964af74fd1be2d8d0b7d2d6ce",
+              "observedSourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+              "sourceArray": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-ending-post-identities-rootfalse-20261122-v1/current-source-scenario-array.encoded.json",
+                "bytes": 40915,
+                "sha256": "d8b86b133e09594ab5e4ecf6264edd7ed5dc35b522479bcc318f39d3ddc0dc30",
+                "codec": "(json.dumps(value, ensure_ascii=False, indent=2) + LF).encode(UTF-8)",
+                "codecSource": {
+                  "path": "/home/rikka/Projects/stella/story_studio/crowd_seed.py",
+                  "bytes": 32302,
+                  "sha256": "01806188ca7391882d9d74c0a2cfaa3ab987fcd722a719c80f940b8f25386956"
+                },
+                "method": "Extract the complete scenario_list span from actual current native encoded bytes, remove exactly the enclosing two indentation spaces on subsequent lines, retain original literal content, key/array order and final LF.",
+                "wholeNativeNodeEncodingExact": true,
+                "arrayNodeEncodingExact": true
+              },
+              "doNotReinstallTenFields": true
+            }
+          ],
+          "originalScenarioIdRecovered": false
+        }
       }
     }
   },
@@ -7784,20 +8286,6 @@
       "scenarioId": 39
     },
     {
-      "code": "missing_transition",
-      "severity": "warning",
-      "message": "The recording reaches CLEAR, but no next-section entry is recorded. Preserve the unknown executable destination.",
-      "scenarioId": 39,
-      "branchId": 391
-    },
-    {
-      "code": "transition_review_pending",
-      "severity": "warning",
-      "message": "This explicit route still needs evidence review.",
-      "scenarioId": 39,
-      "branchId": 391
-    },
-    {
       "code": "performance_unrecovered",
       "severity": "warning",
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
@@ -7829,12 +8317,6 @@
       "branchId": 72,
       "stableKey": "s10030002-p21-at0180-left",
       "reason": "This side is not recorded here; reconcile its explicitly identified sibling recording before filling the destination."
-    },
-    {
-      "scenarioId": 39,
-      "branchId": 391,
-      "stableKey": "s10030002-p21-at0347-next",
-      "reason": "The recording reaches CLEAR, but no next-section entry is recorded. Preserve the unknown executable destination."
     }
   ],
   "restorationStatus": "rough",
@@ -8040,6 +8522,16 @@
       "stableKey": "s10030002-p22-at0009",
       "scenarioId": 40,
       "order": 10190.0
+    },
+    {
+      "stableKey": "s10030002-p21-ending-door-out",
+      "scenarioId": 41,
+      "order": 10191.0
+    },
+    {
+      "stableKey": "s10030002-p21-ending-clear",
+      "scenarioId": 42,
+      "order": 10192.0
     }
   ],
   "sceneSegments": [
@@ -8334,5 +8826,37 @@
       "rootReviewSha256": "138745dfe1d4b4adf2e012d1428aac2385f4358b6b06f06b9f56c2f30461d099"
     }
   ],
-  "transitionEvidence": []
+  "transitionEvidence": [],
+  "repairEvidence": {
+    "terminalEndings": [
+      {
+        "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-ending-root-preparation-e5b643b8-v1/ending.root-approved-stage.json",
+        "terminal": {
+          "kind": "finish-without-successor",
+          "nativeRepresentation": "omitted-destination-fields",
+          "rootConfirmed": true,
+          "originalPayloadRecovered": false,
+          "evidence": [
+            {
+              "kind": "direct-own-route-completion-and-original-master-end-identity",
+              "frame": "p21-postclear/frames/00051.jpg",
+              "frameSha256": "96b0cb35e28d3bf63de59ce1b0582e9ee06de0b4b078d6e917dc03799cdbec06",
+              "sourceAnchorSeconds": 359.69,
+              "directlyRead": [
+                "サテラとの再会？",
+                "またもチンピラと",
+                "END",
+                "本編"
+              ],
+              "masterEvidence": "data/native_recovery/royal-capital-20261110/native-directory.json",
+              "masterSceneId": 10030002,
+              "masterIsEnd": 1,
+              "representationBasis": "Current compiler supports a no-successor FINISH; this is an authored completion representation. Section successors1015/1004 do not establish an observed dialogue edge."
+            }
+          ]
+        },
+        "originalPayloadRecovered": false
+      }
+    ]
+  }
 }

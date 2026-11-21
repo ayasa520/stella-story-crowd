@@ -1,0 +1,46 @@
+--- a/story_studio/recovery/native_repair.py
++++ b/story_studio/recovery/native_repair.py
+@@ -238,6 +238,31 @@
+                 unknown.difference_update("motion." + part for part in components)
+                 review["unknownFields"] = sorted(unknown)
+ 
++    def _validate_ending_source_attachment(self, packet, document, source, branch):
++        """Keep suffix allocation separate from an explicitly reviewed route origin."""
++        guard = packet.get("nonTailAttachment")
++        if source is document["scenario_list"][-1]:
++            require(guard is None, "Non-tail attachment guard does not match an array-tail source")
++            return
++        # Native array order supplies persistent parameters independently of
++        # executable edges. An alternate-route row after the ending origin
++        # must therefore stay in place, even when this route jumps past it to
++        # newly appended VIDEO/TITLE rows. Existing tail-only packets receive
++        # no implicit permission to use a different route origin.
++        require(packet.get("version") == 2 and packet.get("terminal") is not None and
++                packet.get("finish") is None and isinstance(guard, dict) and
++                guard.get("kind") == "append-ending-from-existing-empty-branch" and
++                guard.get("rootConfirmed") is True and bool(guard.get("evidence")),
++                "Non-tail ending needs an explicit reviewed v2 terminal attachment")
++        # Bind the complete ordered array, not only its last node or maximum
++        # number: this also locks alternate-route transitions and parameter
++        # providers. The caller separately requires the selected branch to be
++        # empty; this guard never authorizes replacing an executable edge.
++        require(guard.get("expectedSourceUniqId") == source["uniq_id"] and
++                guard.get("expectedBranchUniqId") == branch["uniq_id"] and
++                guard.get("expectedScenarioArraySha256") == digest(encoded(document["scenario_list"])),
++                "Non-tail ending attachment source or ordered array changed")
++
+     def ending_sequence(self, path: Path, directory_path: Path):
+         """Append a directly reviewed ending while preserving installed IDs.
+ 
+@@ -254,10 +279,10 @@
+         scene = packet["sceneId"]
+         previous, previous_review = self.snapshot.node(scene, packet["afterScenarioId"], packet["afterStableKey"])
+         document, review = self.snapshot.documents[scene], self.snapshot.reviews[scene]
+-        require(previous is document["scenario_list"][-1], "Ending must extend the installed array suffix")
+         branch = next((row for row in previous["branch_list"] if row["branch_id"] == packet["branchId"]), None)
+         require(branch is not None and branch["transition_list"] == packet["expectedTransitions"] == [],
+                 "Ending cannot replace an existing executable continuation")
++        self._validate_ending_source_attachment(packet, document, previous, branch)
+         directory_raw = directory_path.read_bytes()
+         directory = OfficialDirectory(json.loads(directory_raw), 1)
+         finish, terminal = packet.get("finish"), packet.get("terminal")
