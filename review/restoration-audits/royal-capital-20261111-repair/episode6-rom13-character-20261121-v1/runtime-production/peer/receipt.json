@@ -1,0 +1,67 @@
+{
+  "schema": "stella.rom13-saved-runtime-independent-peer-receipt.v1",
+  "createdUTC": "2026-11-21T15:40:04.795587+00:00",
+  "rootConfirmed": false,
+  "decision": "conditional-static-pass-v2-and-full-guard-supplement",
+  "unresolvedMustFix": [],
+  "resolvedFindings": [
+    "M1",
+    "M2"
+  ],
+  "reviewedV2": {
+    "play.v2.mjs": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode6-rom13-normal-saved-runtime-rootfalse-v1/play.v2.mjs",
+      "bytes": 19766,
+      "sha256": "7fb667c5362a7f79944df96aa9f75b9913d86a8006212cbb1a902a7534064b1c"
+    },
+    "run.v2.py": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode6-rom13-normal-saved-runtime-rootfalse-v1/run.v2.py",
+      "bytes": 12229,
+      "sha256": "bca3464171f5259421409318130cb7c63519142c4adc2fd1a45e9bc272f61942"
+    }
+  },
+  "supplement": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode6-rom13-runtime-full-guard-supplement-v1.json",
+    "bytes": 180650,
+    "sha256": "d67a563af2a1e7bedd5d04f9c3803794c5e9fae0688002485223770f27e07248"
+  },
+  "all950CurrentHashesIndependentlyRecomputedExact": true,
+  "conditions": [
+    "Final root-owned runtime release must bind and invoke run.v2.py and play.v2.mjs at the reviewed exact SHA-256 values; the original v1 runtime helper list is superseded.",
+    "Final runtimeBindings must include every current 950 guard path/digest and the exact immutable supplement file itself, in addition to existing required helper/program/input/resource guards.",
+    "After supervisor exit, root must independently rehash the same950 and frozen inputs, verify exact before/after equality, all owned PID/PGIDs absent, no escaped descendants and closed server/BiDi ports before any delegated original JPEG review.",
+    "No new offline API preparation is required to adopt these helper/guard fixes; preserve the successful original prepare/raw response and any failed evidence.",
+    "Fresh root authorization and designated sole browser owner remain required; this peer does not grant them."
+  ],
+  "runtimeReleased": false,
+  "browserReleased": false,
+  "apiReleased": false,
+  "imagesReviewed": false,
+  "actions": {
+    "peerDirectoryWritten": true,
+    "kitWritten": false,
+    "canonicalSourceWritten": false,
+    "formalDataWritten": false,
+    "gitWritten": false,
+    "freezeExecuted": false,
+    "workerExecuted": false,
+    "apiCalled": false,
+    "serverStarted": false,
+    "browserStarted": false,
+    "decoderStarted": false,
+    "imagesViewed": false,
+    "stashed": false
+  },
+  "files": {
+    "REPORT.md": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode6-rom13-normal-saved-runtime-peer-v1/REPORT.md",
+      "bytes": 9771,
+      "sha256": "932229306856840ca8a434175a77abdc96020cdccd0cf60cb1bfc6d5938bc98c"
+    },
+    "review.rootfalse.json": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode6-rom13-normal-saved-runtime-peer-v1/review.rootfalse.json",
+      "bytes": 14216,
+      "sha256": "a34ef07ef2b3815090098609cc740766c41318e6668805b468456511d663d0b1"
+    }
+  }
+}
