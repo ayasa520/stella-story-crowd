@@ -1,0 +1,67 @@
+{
+  "schema": "stella.scene16-publication-audit-draft.v1",
+  "status": "draft-awaiting-saved-runtime-and-independent-visual-review",
+  "preparedAtUtc": "2026-11-21T05:52:53.511129+00:00",
+  "sceneId": 10490016,
+  "baseCommit": "f8a8441229ef579400830d117b31cbd43a30a26e",
+  "sourceHead": "7f32a3cde97d9a379828619242d2ba12f94f6514",
+  "installedBatchIds": [
+    "392fc8b485f75909c108",
+    "0c2a9f2f60c510a38e97"
+  ],
+  "rootPostapplyReceiptSha256": "95b02e3a30c8b9ff6bbfeea308c861a1da321265f010051c8ada26c925535bef",
+  "currentFormalFiles": {
+    "manifest.json": "71371910168159c62602dee9395de393627bd2b752ab5c4a75244d051b05797e",
+    "review/native-restoration.json": "edcf0228582a0f92619884a59dc4bd3d10bdc8555842fba8ddc1bb8055fc4e23",
+    "native/scenes/10490016.json": "5967db060c89f034e876d2a49b05c3bb90e69e46f58bff5729c0983f068a1740",
+    "review/scenes/10490016.json": "fbf8874520a65bf0966a93bbbe094b56839efcb9578e04e117c7388f417583f0",
+    "assets/catalog.json": "f99cb35c886a35d04f5da4698ae493984e3bf50ee6fb671cff873f0b108f2517",
+    "assets/package.json": "f7aa20a72df2d4510182db006a8d09eb5274cbe7a6b76df8ff4454bd37b8c555",
+    "assets/preview/catalog.json": "22cc9b08e6f086556562de1c12fa1594eda2adae2c28940512be74f72d3d4cce",
+    "review/restoration-batches/392fc8b485f75909c108.json": "0df6c812cd3f0240f6a84a8d5df5553d756cc3c32c2849538409d3662d45e5b1",
+    "review/restoration-batches/0c2a9f2f60c510a38e97.json": "bf385de8764b124eced5bced3b5a2f36e41e17d48592afd955f2d40c6de95782"
+  },
+  "acceptedScope": {
+    "characterResourceIdentity": 31,
+    "cgResourceIdentity": 1
+  },
+  "runtime": {
+    "status": "pending",
+    "savedPlaybackAccepted": false,
+    "evidence": null,
+    "independentVisualReview": null
+  },
+  "savedResourceAvailability": {
+    "status": "pending",
+    "accepted": false
+  },
+  "notAccepted": [
+    "motion",
+    "face",
+    "extraLayers",
+    "FX",
+    "commands",
+    "commandPhase",
+    "audio",
+    "geometry",
+    "timing",
+    "flowchartFidelity",
+    "wholeScene"
+  ],
+  "originalFourExclusionsWerePackageScopeOnly": true,
+  "all36NodesRemainOnPlaybackRoute": true,
+  "protectedBaselineFile": "protected-baseline.json",
+  "exactDiffFile": "exact-native-diff-from-f8a84412.json",
+  "staticRoutePlanFile": "route-boundary-plan.json",
+  "newPayloadFiles": 0,
+  "formalDataWrittenByThisDraft": false,
+  "browserStarted": false,
+  "commitOrPushPerformed": false,
+  "publicationReady": false,
+  "rootFinalizationNeeded": [
+    "Append actual saved36node route/program/resource/terminal-boundary receipt.",
+    "Append delegated current-render identity/CG availability verdict; preserve visual limits.",
+    "Bind both actual results to current native/review/resource guards; update pending statuses only to their real scope.",
+    "Copy this compact audit and actual runtime receipts into formal review/restoration-audits, commit responsible files and verify exact remote ACK."
+  ]
+}

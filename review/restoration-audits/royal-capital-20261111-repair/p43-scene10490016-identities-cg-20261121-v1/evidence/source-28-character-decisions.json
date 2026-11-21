@@ -1,0 +1,127 @@
+{
+  "10490016": {
+    "models": {
+      "rom01": [4],
+      "subaru01": [5, 21, 32],
+      "emilia01": [6, 7, 8, 28, 30, 31, 33],
+      "elsa_nomantle01": [11, 12, 14, 18, 19, 23, 24, 26, 35],
+      "reinhard01": [13, 15, 16, 20, 22, 25, 34, 36]
+    },
+    "pending": {
+      "9": "The reviewed full frame is almost black; inspect the complete card before assigning a model.",
+      "17": "The source displays an anime scene with a sword and Reinhard; identify the actual movie/picture resource instead of filling a Live2D actor.",
+      "27": "The reviewed frame is entirely white during an effect; complete entry/effect review required.",
+      "29": "The reviewed frame is mostly white with a faint Subaru silhouette; complete entry/effect review required."
+    },
+    "acceptedScope": "Character model identity only; no motion, expression, extra layer, geometry, timing or entire-part acceptance."
+  },
+  "10490017": {
+    "models": {
+      "elsa_nomantle01": [4, 24, 26, 27],
+      "reinhard01": [5, 6, 11, 12, 18, 25],
+      "subaru01": [7, 10, 14, 17, 19, 20, 21, 23, 28, 29],
+      "emilia01": [15, 16, 22]
+    },
+    "pending": {
+      "8": "White flash shows only a distorted Subaru face; review the full effect process before assigning the card model.",
+      "9": "The source displays an anime illustration of Reinhard in the ruins with Subaru foreground; identify the actual picture/movie resource.",
+      "13": "The source displays an anime close-up of a crumbling sword; identify the actual picture/movie resource."
+    },
+    "acceptedScope": "Character model identity only; no motion, expression, extra layer, geometry, timing or entire-part acceptance. Ring/flash effects and the interior-to-ruin background change remain separate gaps."
+  },
+  "10490018": {
+    "models": {
+      "subaru01": [4, 6, 7, 9, 11, 12, 14, 15, 18, 19, 20, 21, 23, 27, 28],
+      "emilia01": [5, 8, 10, 13, 16, 17, 26, 29, 32],
+      "reinhard01": [22, 24, 25]
+    },
+    "confirmedVisibleEmpty": [30, 31, 33],
+    "pending": {},
+    "acceptedScope": "Character model identity only; no motion, expression, extra layer, geometry, timing or entire-part acceptance. Nodes30/31/33 intentionally show only the ruined background during Subaru internal monologue; their empty character fields are preserved."
+  },
+  "10490019": {
+    "models": {
+      "emilia01": [4, 6, 9, 10, 12, 16, 19, 28, 33, 36],
+      "reinhard01": [5, 7, 8, 18, 21, 22, 24, 26, 27, 29, 31, 34, 35, 37],
+      "felt01": [11, 13, 14, 15, 20, 23, 25, 30, 32]
+    },
+    "pending": {
+      "17": "No cached full original frame lies within this one-second dialogue interval; requires new bounded extraction and direct review."
+    },
+    "acceptedScope": "Character model identity only; no motion, expression, extra layer, geometry, timing or entire-part acceptance. The visible sparkles on nodes4/32 require separate effect review."
+  },
+  "10200006": {
+    "models": {
+      "subaru_butler01": [5,9,11,22,24,25,29,30,32,35,38,40,42,44,46,47,50,53,55,57,62,65,66,73,83,86,87,88,91,93,94,97,99,101,102,103,105,106,108,111],
+      "ferris_dress01": [10]
+    },
+    "confirmedVisibleEmpty": [34],
+    "pending": {
+      "7": "Original selected frame is a nearly complete black transition. Requires original entry process; speaker name cannot establish actor.",
+      "63": "Original selected frame is the thought/mind-map interface with multiple Subaru portraits and SWIPE UI. Requires authored performance review, not a single Live2D guess."
+    },
+    "acceptedScope": "Character identity only for previously empty fields. All108 original dialogue frames and all19 cards of10200007 were directly viewed; existing model assignments match their visible actors. Node34 has blurred background only while an approaching off-screen Felt speaks. Butler Subaru's original01/02 texture and MOC are byte-identical (texture02ae03e617ebbc9dcd7a52fc7101502f2bafaacb82bf4b4774f4c2fbab6b85ab; moc9f1e58313b3ebb14649692d7977d316c1457105818b44bc7944fd28bffb3345e), so01 is the canonical visual resource choice; original native token is not recovered. No motion, expression, extra layer, geometry or timing accepted."
+  },
+  "10130005": {
+    "models": {
+      "subaru01": [4,5,7,8,10,13,16,18,20,22,45,47,49,50,52,55,57,58,60],
+      "otto01": [6,9,11,12,14,21,46,48,51,53,54,56,59],
+      "emilia01": [17,19]
+    },
+    "confirmedVisibleEmpty": [15],
+    "illustratedCards": [23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44],
+    "pending": {
+      "23-44": "All22 cards retain the same original full CG: merchant stall with Otto left, Subaru right, Emilia and Pack middle. Identify and bind the actual picture resource rather than assign individual speaker models."
+    },
+    "acceptedScope": "Character model identity only; no motion, expression, extra layer, geometry, timing or entire-part acceptance. All57 original dialogue frames were directly viewed. Node15 intentionally shows only the market background while an approaching off-screen customer speaks; preserve empty. Nodes23-44 are a continuous illustration sequence, withheld from Live2D assignment. Purple sparkles on node19 remain separate effect evidence."
+  },
+  "10130004": {
+    "models": {
+      "subaru01": [4,6,7,9,12,14,15,16,19,22,25,28,30,32,35,38,46,48,50,52,55,56,57,59],
+      "anastasia01": [5,8,10,11,13,17,18,20,21,23,24,26,27,29,31,33,34,36,37,39],
+      "ricardo01": [42],
+      "rowdy01": [43],
+      "rowdy02": [44],
+      "citizen_beast01": [45],
+      "otto01": [47,49,51,53,54,58,60]
+    },
+    "pending": {
+      "40": "Selected original frame is a nearly complete right-to-left black wipe with no identifiable actor. Requires new entry-process extraction; speaker text alone is insufficient."
+    },
+    "acceptedScope": "Character model identity only; no motion, expression, extra layer, geometry, timing or entire-part acceptance. All56 original dialogue frames were directly viewed. Node9 has a mayonnaise-jar picture over a still visible dimmed Subaru: only the actor identity is proposed, leaving the picture layer/timing unaccepted. Anastasia was directly compared against the original anastasia01 atlas."
+  },
+  "10130003": {
+    "models": {
+      "subaru01": [4,6,9,11,18,19,22,23,24,28,30,33,42,43,45,47,50,56,58,61,62,63,65,70,71,72,73,74,75,76,77,78,79,80,81,83,84,85,86,87,88,89,90,91,92,93],
+      "otto01": [5,7,8,10,13,21,27,34,36,41,44,48,51,55,57,60,64,67],
+      "rowdy01": [12,14,15,20,25,26,29,31,32,35,38,46,49,52,59,66],
+      "rowdy02": [16,39,53,68],
+      "citizen_beast01": [17,40,54]
+    },
+    "pending": {
+      "82": "Original frame is a thought/mind-map overlay with multiple Subaru portraits and swipe UI, not one normal dialogue actor. Preserve the character gap until the authored UI sequence is reviewed."
+    },
+    "acceptedScope": "Character model identity only; no motion, expression, extra layer, geometry, timing or entire-part acceptance. All88 original dialogue frames were directly viewed. Node52 is attributed to Otto in the dialogue panel but the visible actor is rowdy01, retained here by visual identity rather than speaker text. Dimmed nodes24/52 remain identifiable. Node82 is withheld because of the mind-map overlay."
+  },
+  "10130002": {
+    "models": {
+      "felt01": [4,6,9,11,12,15,20,21,22,24,27,30,31,33,36,37,42,43,47,53,66],
+      "rom01": [13,14,16,19,23,29,35,50,55,61,62,64,65,68],
+      "subaru01": [5,8,10,17,25,26,28,32,38,39,40,41,44,45,46,48,51,52,56,58,60,63,67,70,72,74,75,77],
+      "otto01": [7,18,34,49,54,57,59,69,73,76,78],
+      "rowdy02": [79]
+    },
+    "pending": {},
+    "acceptedScope": "Character model identity only; no motion, expression, extra layer, geometry, timing or entire-part acceptance. All75 dialogue cards were directly reviewed in original P40 frames. Node78 retains a right-side wipe but clearly shows Otto. Node79 is the stocky tied-hair/headband man in an open sleeveless vest and pale torn-hem shirt, directly compared with original rowdy02 atlas; ton01/chin01/kan01 and rowdy01 were also inspected and excluded. Sunset color grading is not a costume variant."
+  },
+  "10130001": {
+    "models": {
+      "soldier01": [4, 6],
+      "otto01": [8, 11, 12, 14, 18, 19, 20],
+      "subaru01": [10, 13, 15, 16, 17, 21]
+    },
+    "confirmedVisibleEmpty": [5, 7],
+    "pending": {},
+    "acceptedScope": "Character model identity only; no motion, expression, extra layer, geometry, timing or entire-part acceptance. The responding off-screen guard on nodes5/7 has no visible actor and remains empty. Otto/soldier resource catalog integration may be required."
+  }
+}
