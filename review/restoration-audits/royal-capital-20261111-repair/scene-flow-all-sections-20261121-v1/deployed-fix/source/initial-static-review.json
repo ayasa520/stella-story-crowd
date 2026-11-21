@@ -1,0 +1,76 @@
+{
+  "schema": "stella.directory-flow.initial-static-peer.v1",
+  "rootConfirmed": false,
+  "status": "one-head-binding-must-fix",
+  "mustFix": [
+    {
+      "id": "B1",
+      "severity": "high",
+      "at": [
+        "public/studio/app.js:768-787",
+        "public/studio/directory.js:49-60",
+        "public/studio/directory.js:199-216"
+      ],
+      "trigger": "Open map at headA; clean background refresh installs project headB; old SVG remains; click old cached edge and save.",
+      "finding": "refresh replaces state.project and calls renderLists→DirectoryEditor.update, which does not redraw the open map. edgeForm copies the drawn old edge but takes current project head/revision. This can submit old headA fields as a new edit based on headB, defeating normal stale-base conflict protection.",
+      "minimumFix": "Bind edge editing to the map/read head. Redraw open map on project head change without resetting forms; also reject/refresh an edge click whose map head no longer equals current head, or retain its actual read base for normal conflict handling."
+    }
+  ],
+  "otherStaticFindings": [
+    {
+      "area": "types",
+      "finding": "Pick<GitHubRepository,library|read> preserves generic native reads; section/manifest IDs are numeric; no static mismatch identified. No build/type compiler run."
+    },
+    {
+      "area": "multi-section and late heads",
+      "finding": "Each promise mutates its own entry object; map is keyed by section and cleared on head changes. Detached old promises cannot install data into the new map. updated only redraws matching section/head and open dialog. This does not cover already drawn head change B1."
+    },
+    {
+      "area": "error/reselect",
+      "finding": "error remains visible; focus/reselect retries an error entry; callback graph(false) does not itself retry indefinitely."
+    },
+    {
+      "area": "no-script",
+      "finding": "sources=[] is valid for storyDirectory; coverage lists missingSceneIds and UI says known0 plus restoration-needed, not confirmed original absence."
+    },
+    {
+      "area": "manual overrides/tombstones",
+      "finding": "Actual manifest currently has no deleted=true edges. Existing storyDirectory nativeTarget replacement and row.deleted branch are reused unchanged, preserving manual identity/deletion behavior by static source inspection."
+    },
+    {
+      "area": "form preservation",
+      "finding": "Read completion calls graph only; does not replace state.project or call form/choose/clean/clearEditor. Existing form dirtiness and base remain intact until B1 edge-open case."
+    },
+    {
+      "area": "view consistency",
+      "blocking": false,
+      "finding": "edgeList still consumes current project.directory.edges, so a selected off-scope scene can show graph lines while right-hand list says no recorded successor. Optional follow-up: share the detached same-head scoped list; map-line editing itself remains available."
+    },
+    {
+      "area": "resource cost",
+      "blocking": false,
+      "finding": "Native-only Promise.all has no explicit worker pool. Current manifest maximum imported sources per section is18 (section1002), so this is not identified as an actual limit failure; bounded concurrency would match existing reader policy."
+    }
+  ],
+  "syntaxOnly": {
+    "public/studio/directory_flow.js": {
+      "method": "node --check",
+      "exitCode": 0,
+      "toolChunk": "279ab4"
+    },
+    "public/studio/directory.js": {
+      "method": "node --check",
+      "exitCode": 0,
+      "toolChunk": "143311"
+    }
+  },
+  "reviewedBytes": {
+    "lib/directory-flow.ts": "9533434f9235ad65e745df3cf63ffff4b98a098f0bb1f706de48718dade2b5ce",
+    "lib/studio-api.ts": "847fc460dfc260a14b3a5e3e470855f77dd0d52d3133946caf6ba47cd1c576c3",
+    "public/studio/directory_flow.js": "e1fd8976032202d0dd0071db66d432a749f269c05de1ce0aa558ff0a131e7dab",
+    "public/studio/directory.js": "c5fa28f4691c2ff254a24d79fed4c65c2ee5ff47a386eb6cdcb60f52aadf4273",
+    "public/studio/app.js": "585971d3c0dc4360ed4ef6dc243e3c132aab92e641a64e03927d0a1fc4c6f6e8",
+    "lib/story-directory.ts": "64109a252b1eb86cf810deb386e86d6cb6db72a2bc5bae819cbe1b27532fd031"
+  },
+  "noFormalSourceDataGitApiBrowserBuildWritesOrExecutionByPeer": true
+}

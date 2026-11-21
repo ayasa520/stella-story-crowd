@@ -1,0 +1,62 @@
+{
+  "schema": "stella.directory-flow.final-static-peer.v1",
+  "rootConfirmed": false,
+  "status": "no-static-must-fix-found-after-head-binding-revision",
+  "mustFix": [],
+  "reviewedBytes": {
+    "lib/directory-flow.ts": "9533434f9235ad65e745df3cf63ffff4b98a098f0bb1f706de48718dade2b5ce",
+    "lib/studio-api.ts": "847fc460dfc260a14b3a5e3e470855f77dd0d52d3133946caf6ba47cd1c576c3",
+    "public/studio/directory_flow.js": "e1fd8976032202d0dd0071db66d432a749f269c05de1ce0aa558ff0a131e7dab",
+    "public/studio/directory.js": "097e490b6408f79ca20765469d218e9b471e4ebbe5c945e72e2ff2dd3a327459"
+  },
+  "priorReview": {
+    "path": "artifacts/stella-script-continuation-20261121/flow-scene-source-static-peer-20261121-v1/initial-review.json",
+    "sha256": "a1f904552e6b583c46e929c29ecd99005e1b821b52a85e5938c4d93392c543eb",
+    "retainedUnchanged": true
+  },
+  "closedFindings": [
+    {
+      "id": "B1",
+      "at": [
+        "public/studio/directory.js:62-68",
+        "public/studio/directory.js:19",
+        "public/studio/directory.js:199-225",
+        "public/studio/directory.js:278"
+      ],
+      "evidence": "Open dialog update detects head change and redraws only graph/list. Render records map head; map edge-open receives that head and list button captures read base. edgeForm rejects different current head before clearing dirty/creating form and stores the actual accepted base. Existing opened flow form and its original base are not replaced by read callbacks."
+    },
+    {
+      "id": "nonblocking-list-source-split",
+      "at": [
+        "public/studio/directory.js:11-16",
+        "public/studio/directory.js:199-217"
+      ],
+      "evidence": "Map and off-scope scene successor list now use the same revision/section reader. Ready callback refreshes only map/list, not form/choose/clean."
+    }
+  ],
+  "otherGates": {
+    "serverSelectedSectionNativeOnly": true,
+    "noReviewAssetsOrDialogueCompile": true,
+    "ownChartOnlyAndExistingManualOverrideDeletionSemanticsReused": true,
+    "noFinishToChartInference": true,
+    "sourceLessSectionReturnsLegalUnknownCoverage": true,
+    "lateOtherSectionOrHeadCannotReplaceCurrentProject": true,
+    "errorRequiresReselectToRetry": true,
+    "currentlyOpenFormsAndDirtyFieldsPreservedByReadRefresh": true
+  },
+  "syntaxOnly": {
+    "file": "public/studio/directory.js",
+    "method": "node --check",
+    "actualToolChunk": "13fe7c",
+    "exitCode": 0
+  },
+  "limits": {
+    "buildRunByPeer": false,
+    "apiBrowserRuntimeRunByPeer": false,
+    "rootV1BuildNotEvidenceOfTheseFinalBytes": true,
+    "newV2BuildAndAuthorizedUiComparisonStillRequired": true,
+    "noFormalSourceDataGitWrittenByPeer": true,
+    "originalSceneFlowOrWholeLibraryCompletenessAccepted": false
+  },
+  "nonblockingResourceNote": "Server native reads use Promise.all. Current largest imported section has18 source files; no actual limit failure was found. This static review does not claim production performance."
+}

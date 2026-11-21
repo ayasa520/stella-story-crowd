@@ -1,0 +1,2182 @@
+{
+  "revision": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+  "sourceParent": "643f88a0928fe6bda8ac1c6fac9409a2fbdbdf0f",
+  "guards": [
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/.gitignore",
+      "sha256": "0dea3d3eebbf529299c109b84cbba43dc4fd8210006ea162a6b952915c66e534"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/.npmrc",
+      "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/.openai/hosting.json",
+      "sha256": "39743ffcbe5ce26472b501a9b1288394c26a69cb26039c785a8444a4fa449198"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/README.md",
+      "sha256": "d5472ccf21716f26902799806732f37d87ee601645ce1090f1a5387d7d4e7c11"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/[...path]/route.ts",
+      "sha256": "203f202b0d03353e3ae822221ea7afe31bbefae5c36e548758105bdb38ed88cd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/assets/route.ts",
+      "sha256": "1b2d870a0fa7c7044b3158a7d213e6e0623c5db1e87ffa55101a9752d51f32e1"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/auth/github/callback/route.ts",
+      "sha256": "5b3c9bb93643936971ec24bd0a36ba8ffd5799222efd2e721b3d9f545287050c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/auth/github/logout/route.ts",
+      "sha256": "1b7fc3d3ba5d2c6f6bf33d01360fd38b7cb7cf69f5af0de34772d07c559efe0d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/auth/github/start/route.ts",
+      "sha256": "ad5a8303a4912c933b86021d4d6f683a43f057eae0986ee957a08674fa432516"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/drafts/[id]/route.ts",
+      "sha256": "f4ba799964c256def7c7807a419816e4dffa3baf42c9a40d443076298ad3420e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/library/route.ts",
+      "sha256": "bf1b9ec033484961889813216a01fba2450df42d730b65a19c599cd8e6edb588"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/model/[id]/route.ts",
+      "sha256": "d105b81350f60c53b072c44ca8f70797f4a22d575a9e7f01e313a3f8b65ea0ac"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/music/[id]/route.ts",
+      "sha256": "abe8a7912d72304bb271869b619f47077f702f9f134089e866588f7e65944a9d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/preview/route.ts",
+      "sha256": "8d3f2604dca2c1d8cc34412cba1aa6749f08e7fffb88c0b43735643a6a7dd3c2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/scenes/[id]/route.ts",
+      "sha256": "f910b66ee6637e1c04ebd19b150cc1c6f752ea4246775faef613331759e31a78"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/setup/begin/route.ts",
+      "sha256": "c3e293a080ec480929e48e9a01ac0ff2d8145927ad2dae881c9046d52f3e24d2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/setup/callback/route.ts",
+      "sha256": "8f2d8b554994ede569e8de546c0878474777570bc8040fc344e91e440872b940"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/setup/install/route.ts",
+      "sha256": "1b2e4d3076c23adc9dfaa3f004fd13557a385112fd82b06debc53a58dea28c70"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/setup/status/route.ts",
+      "sha256": "610131a0fe225623e99a38095335e833ae64ad5c078d8718938c286ca597d444"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/setup/unlock/route.ts",
+      "sha256": "34f7470a6dfd93f772505143af1f4b5aad4daac2323711dd6e1478d09d2864d9"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/submissions/route.ts",
+      "sha256": "77aa8aa53c6bf0538259f538226d6880537628fcd4f3a134016c1f3996e05859"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/api/voices/[bank]/route.ts",
+      "sha256": "eb394525bb6e5819f8d278ab708a00632ede0ab14cedb881047eed3ca2fe2469"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/asset/[...member]/route.ts",
+      "sha256": "8a4aaf5cba5b3ca5f44591bb86595215482f49d67bf49de1635a727e31c389f2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/background-thumb/[...id]/route.ts",
+      "sha256": "4378110ed98150a67346c8d697c51eb9ef7cbb033b00959e13ffa0f114df03d8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/background/[...id]/route.ts",
+      "sha256": "a48770aa9d6500a5c0e3dff0a01383b7ee98ec41821eca3cf66c4b2fad59374f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/chatgpt-auth.ts",
+      "sha256": "b8f5011518afac1e1cd06a89410d81934027bf798eaa74b010aad4ca8fafb6ed"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/directory-thumbnail/[kind]/[id]/route.ts",
+      "sha256": "317abeedbc7753d9e3da1b359ae3c5660efac0161796c75d8fad854278f16270"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/globals.css",
+      "sha256": "4bdd640a2f19913637ac03569936faaadc80e998497b7fdd30525d79273b93a7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/layout.tsx",
+      "sha256": "d9faf87f3714b25869ae155cd558befb97e5e270f1ac3d2c31290e2fc32ca4e1"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/movie/[id]/route.ts",
+      "sha256": "d3566c5889fa0d025a8e3642a5ab8c9176f8f6a61ac309dd8c39f89047631b61"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/music/[id]/route.ts",
+      "sha256": "6bcf44e0fd085d10949ec5a421c4078c9a36caab6d463f41c47cb1075a762e29"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/page.tsx",
+      "sha256": "18a4d4b4ced125489b0c68bbbcb073f9670be3bbefed8a8f2e69f0504a7a9862"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/picture-thumb/[id]/route.ts",
+      "sha256": "baecaa750586fe53a4aab6549f724330e73cfa7e20edd54a052961c5284efa2c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/picture/[id]/route.ts",
+      "sha256": "0f50f47144c4c371ddadf3e407552e30b76eae75035f038f4fdde529771f8921"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/player-assets/[...path]/route.ts",
+      "sha256": "60fccc978980fff86a70bd4589b156eed479613bc1ca9c99bd2ec68b58f6025f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/resource/[...path]/route.ts",
+      "sha256": "803351ff0053f89035d006872aab77039534887f0e39f5994b4941915d145ce2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/scene-thumbnail/[id]/route.ts",
+      "sha256": "4325b5c831ead37e5cf300681bc328eca4bbf580f713e0b4172a63c076b6492c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/app/setup/page.tsx",
+      "sha256": "cdd7c3f3848687bfb3cbbf4c34cace806bfba72b4fa688ef0c53a9967f995701"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/cloudflare-env.d.ts",
+      "sha256": "6517c9418573fc740663dcb20522840488c38fe6a04e88c2a50442e63687fa3c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components.json",
+      "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/connector-error.tsx",
+      "sha256": "2d0d04559952ce9c9a327cca499f4b99f35d885cccfce375230e116695d3f155"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/native-editor.tsx",
+      "sha256": "5f062992f5e4bb185dc9ab1cdbf822b22fa5da4cc2884d3942a61b1eab93766a"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/reference-panel.tsx",
+      "sha256": "4fd33c3537abc0362774f3360e2949afcddd7857937f5153f5b83d7b581ca114"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/setup.tsx",
+      "sha256": "627e1272e63e5f534ea7d544d439102a60c0af1efe1b487f90bdf0b060cec4e6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/accordion.tsx",
+      "sha256": "a4f153089ba886dfcf73fac26b5c01ca933fa12fbe88df6fb723912bfffdfbb0"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/alert-dialog.tsx",
+      "sha256": "9a8d950f2b9b4352d5ebb762fb44d5c28c2d353aa29712071973656a8736e311"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/alert.tsx",
+      "sha256": "2cc59b5f7bda91c1670884b1bf46bfc8a2a6f226cef184f5762acc037188885b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/aspect-ratio.tsx",
+      "sha256": "b1c157886236782cb92d8fbcd4749532aaf6d8aabefd6e157ca40358f902f407"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/attachment.tsx",
+      "sha256": "ae8a25dd1a896d3964e3ef54d97e51221b418cde287dfd794428b89951c5c790"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/avatar.tsx",
+      "sha256": "58a846bf1617b94b9681921db9b8461d0145f311424663d11678a06b6153cb34"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/badge.tsx",
+      "sha256": "46a0de5224f6a5d5d63d45246534288518dce888f031064bff925bbc7fe6ad97"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/breadcrumb.tsx",
+      "sha256": "d4c0831bba2212e778248f54a6ace6ef378df8bba4616d1abf27787a31eabae5"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/bubble.tsx",
+      "sha256": "870cc0c5cfc8a515053f7e41e706a6bd017a909b45f1305fd3b164a52cc4483b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/button-group.tsx",
+      "sha256": "784c89d8ee683e1bc972ae69e6ea8225a7f63abe22aa1b5fc3423ae8a2a399c0"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/button.tsx",
+      "sha256": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/calendar.tsx",
+      "sha256": "3855fbe0d3f8ad3a4b93071f98b76a9f6782d46ec8b05f5d2ddbee1e4e39bc84"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/card.tsx",
+      "sha256": "c48dd3b96be90a7066f1aebf294f0af9d00ebcdc367d5d4aca55429ade570c1c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/carousel.tsx",
+      "sha256": "b7ea0dda3903d972c186f739e23da61f547bc83b5a0bf13b16856577846d5fc3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/chart.tsx",
+      "sha256": "45aa5ea4a386f4fb5b8869ff4bab3a08cf89255190ee322043baf84c3e950b6a"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/checkbox.tsx",
+      "sha256": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/collapsible.tsx",
+      "sha256": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/combobox.tsx",
+      "sha256": "2d68e78b2dc7e38a085f222dede60a80b4f8229a6e91732c484605e204d46735"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/command.tsx",
+      "sha256": "361193df1e3d64a9e9b5048f045264782fcb387aab3f00f2b805fdcbf538b16a"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/context-menu.tsx",
+      "sha256": "2cf1fcf59df0649a3e2a126d1df2f639145f6b6bf5689ee54af1f40ab1245017"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/dialog.tsx",
+      "sha256": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/direction.tsx",
+      "sha256": "84ae2ad658207f0e0f367978e5508cd8027cd00c29c41d3d13db21a708c3d1e6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/drawer.tsx",
+      "sha256": "cb6eaf58eb0757ca91af284e5d925b89a42ad7eb19cb3f44c575a3487aa9350f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/dropdown-menu.tsx",
+      "sha256": "98f0dcdae38225b73734aceeb9213dd751fea2c72ea520df31003cd133deac8a"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/empty.tsx",
+      "sha256": "ae95bdcf367a076ae02e7925f14522a148798f72d9651749c6d55497dba584c0"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/field.tsx",
+      "sha256": "ba67d76f017ac059fc86cf8c344e0b2991c4322d3619e125498c19b87f6eefbd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/form.tsx",
+      "sha256": "315b46bb75ab7d1c6061b5d750aa4bedf6e7a455e15e2d7f9182f053d5972b1e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/hover-card.tsx",
+      "sha256": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/input-group.tsx",
+      "sha256": "6afbd58fea4c438e6252dc4568bddc122e84ababead4ad5cee50ace01100c9a0"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/input-otp.tsx",
+      "sha256": "161946daa89f0eda2575b9271c0494e35807c4ffb55598a49f67160c17fec299"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/input.tsx",
+      "sha256": "8c4612a7c41319ac5049daa3b34b080f9784b6245c17780eb87c127e58e473db"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/item.tsx",
+      "sha256": "6e2144d6d87142dbbe56d568810bf546318c8aa661447ebb0d76ebbf382cb45f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/kbd.tsx",
+      "sha256": "6088c3a5432338b1719c17e9b5d0e1fa74fd1f66060f248fc88909d33a82cd13"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/label.tsx",
+      "sha256": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/marker.tsx",
+      "sha256": "3d798763f094b2bb5e7ade2d5cd1b9bab498bc8ca7fd4cfaf4e5835bdedc34a0"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/menubar.tsx",
+      "sha256": "9243af8afcea03703398ccd1c2a8c0a87ad6cbaf2bd272fb609f5b79fe46aebb"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/message-scroller.tsx",
+      "sha256": "bb7660a248e4e9589c3816c7c1c199ea1381a70d2c8476ae895b567a7a4d86cf"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/message.tsx",
+      "sha256": "9d2952bf3b641081f09aa2739535e6bbd1be0a4946789752a2c20d8aaef43185"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/native-select.tsx",
+      "sha256": "007516b111fca8c98a6c40c94ab91bb68cc5b52afce1ed1f5e510c3d86e7347c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/navigation-menu.tsx",
+      "sha256": "889d358a77de88e9cb6f39ea4895ea4c76eaf01d731b74e44f1c41e97a78a044"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/pagination.tsx",
+      "sha256": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/popover.tsx",
+      "sha256": "31c350309ff5d3034e6ecf1b0eda75ba8855bdbf987fc7ad6d71f0ef07c5a447"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/progress.tsx",
+      "sha256": "c8c26e8f5f041c3cdf4915347dc1d9c022f9448f149990fadcaf303e952fa57d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/radio-group.tsx",
+      "sha256": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/resizable.tsx",
+      "sha256": "bc63958467aa00557c551bb0d96a5ae4c965c1e1ba2380e595949d933b132f7c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/scroll-area.tsx",
+      "sha256": "8bd9d986b2844c9a87de825c6de4787b6739b36c3dc9a05ccf3eb107160e4043"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/select.tsx",
+      "sha256": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/separator.tsx",
+      "sha256": "6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/sheet.tsx",
+      "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/sidebar.tsx",
+      "sha256": "4a8d73e7730a2b1fcecfca31299ed26db65c2307b84197a59c6ec7c01c7ad28e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/skeleton.tsx",
+      "sha256": "ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/slider.tsx",
+      "sha256": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/sonner.tsx",
+      "sha256": "13ccc9b0fe4248e622f83a1d3b2f0566b72b5e04162d7d0c8db8945ecc71b55f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/spinner.tsx",
+      "sha256": "3e6e6e8d37fb4069f8e43e55318f8db06fbc36e6c8be0096da3c9337c1c798b9"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/switch.tsx",
+      "sha256": "386d4d4deb39f34126f9700fe9bf5393d238485dd94018bba9d154dda84c62ae"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/table.tsx",
+      "sha256": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/tabs.tsx",
+      "sha256": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/textarea.tsx",
+      "sha256": "253cdeb487c73beaaccdf47fc163e36e7d5b7ae6ddf09a4f64998a109a112979"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/toggle-group.tsx",
+      "sha256": "69f643e889e933f05c1439084480d8646f66a161c7d1cf0730ee926382ade35e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/toggle.tsx",
+      "sha256": "ba4d0b0a2b2fee75dc36dfc19e32082e721024b919050c97fd5dc70faa924e16"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/ui/tooltip.tsx",
+      "sha256": "a0784eb77831a799fad7991df4f1b666f876201565a80175e1aa68733574a2e4"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/components/workbench.tsx",
+      "sha256": "237a97c95b8a2bf518eb76312efdc4585d7852f41b3a3e8943e30d9d88e0a2b6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/commands.json",
+      "sha256": "afd994e7a39fdcdf8f66c1f440d6ae7e8e4b9b773858aa1a5d5d5353eabcd3e9"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/effects.json",
+      "sha256": "b480d8bbba0a4db6ec989978d8502b125f049e86b460fc94c3918f5548dd1c56"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/lighting.json",
+      "sha256": "3fe7ad62a89c55752b4b22279f9fa9e70883a049dae3543adfdda5dae1d52bc2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/native-scene-interval.json",
+      "sha256": "49cc6f715afc16e90ef88ea816aed9d96c978009e094949e23affcf597efe651"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/preview-policy.json",
+      "sha256": "d73673a0ead542ac1b16fc2c2736d550e992ec3b91797cdf30ba11294d014ebf"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/semantics.json",
+      "sha256": "893eaf7e9a80387331c10d26891da69725b37c16d6561f5dcb169a8afe594c31"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/story-directory.json",
+      "sha256": "9ea34f7ca6c2b0965c520a7f85bdea67b2667b620ff82c3a1f964175e457d58e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/config/studio-online.json",
+      "sha256": "9238a34b029ec2344f7e49c4819e4151fa57ae6bf65144ebc8a9cba2019b659e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/db/index.ts",
+      "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/db/schema.ts",
+      "sha256": "fd2649bca572917d251df132be7c2ed38389f9cc03778e0e66e2985c3998cfdc"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/drizzle.config.ts",
+      "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/drizzle/0000_cheerful_cerebro.sql",
+      "sha256": "ccd94169e41ffe53c9cfdbfac9e52bc1a35415ff34a8078d3456d79fc0cc14fe"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/drizzle/0001_mean_invaders.sql",
+      "sha256": "6ee43e61956b20f9ce28e8237b68ec02988bc6bd06f91157c2c9ba74aaa9e0ee"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/drizzle/0002_chunky_terrax.sql",
+      "sha256": "7826b87f3d9a2793adc7bbc7ce92339bac4c2fab821d2d70e94f567074ad3103"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/drizzle/meta/0000_snapshot.json",
+      "sha256": "fa364ee7d0bffd6f1cd634199b85d21debdfdf03b3a69d2948b5184bab746aee"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/drizzle/meta/0001_snapshot.json",
+      "sha256": "759dcf4e75b9f0e36141a9c3bb45726bd7d8047f5e8c2c2cd276abfbda5d13be"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/drizzle/meta/0002_snapshot.json",
+      "sha256": "b6eeb8d355ba606eaea3f02e1153dbbd46f91bee622b09d1866f1be46b1d95f6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/drizzle/meta/_journal.json",
+      "sha256": "2f6a0d73d23186861c93fafefe62fa3f9a7e379bd888f6ef51e8383fb315e6c2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/eslint.config.mjs",
+      "sha256": "eeda7faabe9560fa9fdb26675b0011fa78461ca7061989732f5da9245b87e315"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/examples/d1/app/api/notes/route.ts",
+      "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/examples/d1/db/schema.ts",
+      "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/hooks/use-mobile.ts",
+      "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/client.ts",
+      "sha256": "fb22b7234a5ef220d97d39cc0c85f5e6d67b9adf890134284c420be8081263fc"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/connector-context.ts",
+      "sha256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/connector-contract.mts",
+      "sha256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/connector-errors.mts",
+      "sha256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/connector-preview.d.ts",
+      "sha256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/connectors.ts",
+      "sha256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/errors.ts",
+      "sha256": "7eac45a4c171002fcc93933be1ba1d3ea2b203bb905e0d5b280f83fa2335d259"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/github-auth.ts",
+      "sha256": "fd9472ac5be853f7240e065c5812c3afab03cee4e1308fda5c3cec3e104c6400"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/github-session.ts",
+      "sha256": "61eadd9986ad544f5d23152ce612e07bee58bb2980448fca67450b6b257b953d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/native-publication.ts",
+      "sha256": "73bc9590cbf2e41cba3518039c50da76193d9809786dbdd82eecd4141b77860d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/native.ts",
+      "sha256": "90df2675b0fec4e9fa853de0c380fa7b2f2c89a35d54cd2f04322f59dd669015"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/preview-commands.ts",
+      "sha256": "05a40a52b1b93f712cc49725f0355873f12efbc9373ede3e2ea1766e318bbdca"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/preview.ts",
+      "sha256": "a86d28a5fcb8d5e85ff53c8422eaa5d418c4e9b72f6552c6724a612b6ce50af8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/public-source.ts",
+      "sha256": "3ef1f35ded3a14ea7c4be7da069c554325d7ecfd07448a18d6605ce4359c6cf2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/repository.ts",
+      "sha256": "0b46a330fa9e9aea0b1f9fcfeea0169732bb4673f6de66864b86583c5f8891de"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/resources.ts",
+      "sha256": "b8001881014337470b8bf8d1903ba796bf09a95ebb16142a58517e0bbdbcc36b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/secrets.ts",
+      "sha256": "eb89891c79bf8e515466475b5cc3b96baad08a861a32392a54aa5bab64f53d30"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/server.ts",
+      "sha256": "d257532bd93c04a5c5a4990a0ee993fc3a3899c77ba5f5010f7e3973191aca1c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/setup-access.ts",
+      "sha256": "9f8bc3001f8b7b571d59b09917f5e16a8f1887ce3181af9a22168aa995f9d049"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/setup.ts",
+      "sha256": "d82d0ce81c7dc8b6410c3cea8866e6c9b258918a4d95653646c00f53b7b8c7e8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/story-directory.ts",
+      "sha256": "64109a252b1eb86cf810deb386e86d6cb6db72a2bc5bae819cbe1b27532fd031"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-api.ts",
+      "sha256": "847fc460dfc260a14b3a5e3e470855f77dd0d52d3133946caf6ba47cd1c576c3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-native.ts",
+      "sha256": "1c803e7df178f900f4d5cc0cac1728492703e0f8b4d8e898e2009a2a6507d0c8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/studio-state.ts",
+      "sha256": "baa6e590a9d29e8351fdff1507fda7f749088a770d14ebdde48aa2f8106fb2fb"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/utils.ts",
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/next.config.ts",
+      "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/package-lock.json",
+      "sha256": "eedaeab6870c0f70f9db869fcaa24abae9b0f945cbc9acb8a43b6e7ed6bcbfca"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/package.json",
+      "sha256": "eb7b53ec5bdce1db5a8576b2ffc3b63ddd8c5fdee0f97dcb341674abbf69843a"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/postcss.config.mjs",
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/favicon.svg",
+      "sha256": "6a3fe3d5d47268b9bdc14febb308067da2e00e022108cdd72a094efd8f6199d8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/lipsync.js",
+      "sha256": "5b5b6c52c347e57fad402fb8065d825d58910f4571f4d789be5d36b4c19c725d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/model_resources.js",
+      "sha256": "6d83f81d842ad91b7afc72286bfbbb9c658c119c512921c173c33534a397e98d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/motion.js",
+      "sha256": "d31113c55ab42788dc13500455faca716489f920f898e187dacdcbdfdb1bba9c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/motion_states.json",
+      "sha256": "9888be26838c9dd4b0ad093680ea719ab14e850436fa039ba977723c2ed00dda"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/preview_config.json",
+      "sha256": "26337592ea6402c809e1403fe797843d982dbf79761adc9f851b57bf9ee820ac"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/repository_assets.js",
+      "sha256": "a80a2df4846ca712056a4de7f8390aed832f664b1e2b826871557622ef819554"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/DISPLAY-LICENSE.txt",
+      "sha256": "8ccace668a041e78ed525d091b0b5daf8b623ff447f912616de535415e4f302f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/NOTICE.txt",
+      "sha256": "95bf5dcf9cb282fada0b03a1dc6aabb109e36a1122831d686d696a68095a5a3d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/PIXI-LICENSE.txt",
+      "sha256": "536a16e090f0b6c1454a7c0b47ee8414a39a2f1724a154f10ca1edc750a2dcfd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/cubism4.min.js",
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/live2dcubismcore.min.js",
+      "sha256": "25ae938cb4fe282ce189b357bcc97e603d1e1f7ec78bf04150d401c23cdc792f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/vendor/pixi.min.js",
+      "sha256": "403f2f2ee8145fa17f60c5c89403056efe2680e5096ec2762036486914ed19c5"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/pairing/viewer.js",
+      "sha256": "1e04787462b33059dbf8b5cbd6db411faa37b3e29d360d1dc206a771a1ccb60f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/actor_animation.js",
+      "sha256": "72a498223aecfbb3bdd9280bcdd578d8d8f777bff441426ea5e7bb481dafd9c5"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/actor_lighting.js",
+      "sha256": "87097e172b02a72ae831d733727178a0129bbbeabc0d8437c0c9adf66e509c06"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/actor_placement.js",
+      "sha256": "1e1828320ae1a0a7b2afdf725647efc5c75d1a48741ddbd557e5cfe01b14adf1"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/actor_stage.js",
+      "sha256": "2abdb064ff4241181a72a0739860e8148bfe3991c0ee570cd24237141aec0a10"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/background.js",
+      "sha256": "faf3ddc0a6f2ae2a18cc08e4c3f71070ae35e80c0551f027f2f39808e9e45fe8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/choice_card.js",
+      "sha256": "f98947986dcc1a4d9d39638d7e6db375b8cc8097f8c543b5fd43b89366779baf"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/choice_input.js",
+      "sha256": "1557a6ecc7aebc8742f7edf757c78695170575b60ed145389af2a4f2d5d53418"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/choice_view.js",
+      "sha256": "b5bb8a3474efcee137ad0dd4060387408d1a97063441db1518c5b9fc742e5801"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/command_clock.js",
+      "sha256": "caf96de94368530dbe7d9f716f2369bcd9cc99b5d11f71adce40b0b7dac4e2cd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/command_resources.js",
+      "sha256": "523f5a3d994b7589d6afd73dbf1572aad117209884fc15d32b90f107923ee308"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/dialogue_voice.js",
+      "sha256": "a5e67a96c1cef1ae3ed02c8f7e771020189847e47f52f5de525d5c625ad09427"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/directory_map_background.svg",
+      "sha256": "38e0244c7dd985c55680b221e3eb1d698512ce4ac42a02a15b6f4b6fb62fbff6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/effects.js",
+      "sha256": "d16cae53f4e1d80cf1ab297b5a6fd3b729d90fbe22f4ce63df49edcebeb3ab0c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/flow_layout.js",
+      "sha256": "7ddfc4d29503f6f54c0ccae0fa0b483f56fd890f4b464db9a242a4a90981320f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/flow_view.js",
+      "sha256": "5d69218e1e52631f1e3b78fd19cd94abc5021e675c77ab80d0f15329cb410f21"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/font_atlas.js",
+      "sha256": "d6a63626e7ba6345a5bce158f09f90b28a194712fabe64465796b5ecb7b045cb"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/item_cutins.js",
+      "sha256": "9374144d69c4500e76c1a3a2beee20efda702d289dd749b042b0faa18e72c100"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/motion_names.js",
+      "sha256": "4640dcfe53664cad1afb4659f0521727afed2597a98264b7c7455d9f9d12bbc2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/movie_playback.js",
+      "sha256": "87d81b6699ff519dd9e86a2a72a7b7db80e1efbd91eb9f4080844e5d61ecdf7e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/movie_view.js",
+      "sha256": "446f151b67a4a2805f14264a7e9098d2ccc83ace5e3d3ea49199e13e00c1545f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/music_player.js",
+      "sha256": "4697c5e9e9b63c80610a4a4f642d365f500fbfa34681aad3f07831981f7f30c3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/music_voice.js",
+      "sha256": "a2bd44ee5fd94899f196f94b60c349db8d924d9b04cf1873298d4bdc253abaae"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native-title.json",
+      "sha256": "ac2eee6d1db23fd8ec636d870672110ca570f1d326cd3364073e086d36bc4447"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native_scene_interval.js",
+      "sha256": "3132d0b484aa90e66ba3e0d100bd03d832c1be5f74aefa895f8382b806167758"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native_title_entry.js",
+      "sha256": "abb22083fe3d0d87986b227b97adc4edc9399496ea888a5f11e8bfd0dd30d00c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/native_title_view.js",
+      "sha256": "7d1452ca09aef9845f3ad8952b76f27c48a78071c2aca60feebe3004cd26a320"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/particle_math.js",
+      "sha256": "2cb9197bd10654ce64d04c8c0d23ab6eaef64a4a1d4c36619b4833b4a18d9493"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/particle_renderer.js",
+      "sha256": "2a89e35636e1a0922af15e090147558e4d0ba75ab8d65dc8ce2ee4298e2b946f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/particle_system.js",
+      "sha256": "2e79152e12de2d6afb2e6d83dbdf32c857690ec5cd25416d5e41fdc50e3209c2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/picture-presentation.json",
+      "sha256": "457c57a93c97da707de6353e16ef43c8716dbea5f0bf8769a087b7847b4a4540"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/picture_view.js",
+      "sha256": "961929ec4c0badb0fb1a60f35d03e4f14bac38b4c6b02b8515195d7811d54208"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.css",
+      "sha256": "4b0d0c4c2a34eb7392cecf17e0e2d48b8683dfc9bb3c62ad3167e51d9e465539"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.html",
+      "sha256": "39cc272f5bf2d65c355596e4588c25fd8ae0ca7ae83d28a2d086ecc42977c8fb"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player.js",
+      "sha256": "5f2ae9d24449d6dd7d197af05f6ae70fae9e7ca508f65c4ec8584d7920b0548c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player_config.json",
+      "sha256": "044f22e6a1ab661a916c959ea331ccee64b7c97f03976825936da1936bd63fa7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/player_scene.js",
+      "sha256": "f0775e42db50c1c6c56ee4f43b8932f974aa4fafff19a594d271db5ba4479ae4"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/sound_blocks.js",
+      "sha256": "ecfc6fa4d9c554cd19056057505302ce73259353975dc3a5a0b35a07d2166b00"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/sound_player.js",
+      "sha256": "05acdfc3e177133418a6b1fe93954348d24588f83c8c835f5f90636e0933a8ad"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/sound_sequence.js",
+      "sha256": "220dd9865f46e7e7f73dc9590214ba0ebeae7cd163ad2b182b9e1df71ae7a3a3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/sound_voice.js",
+      "sha256": "8e981d7f723a1c3164643665cc989247b8ac0fac8e5e0dc957e119f311d45068"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/text-panel-presentation.json",
+      "sha256": "613122f35b123cae67935644489d376cc54f48740ceddf1b02d5093024fa078c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/text_panel_presentation.js",
+      "sha256": "0743413d7f2df0a720993015fef695c5fa48cbb75791c0c77eab432a5f304d0e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/title-assets/adv_start_bg_if_01.png",
+      "sha256": "cb55a325249a99447a2ee30ed55c53b4575d1e904bb95f516deb35c285b98e88"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/title-assets/adv_start_bg_normal_01.png",
+      "sha256": "c2eb10457697e7d6928395a4e735b3a5be5dcfbe1297ad80f9707e6071bfe402"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/transitions.js",
+      "sha256": "de7e345541a7d79e42b0542a93a8b8bf529f539504891a5f0585f453dc0c1f7b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/player/visual_effects.js",
+      "sha256": "a519b3b6a04d7195593bc5c3a51b9a76d64b21987456fca083bf17e86d3fa209"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/quake_clips.json",
+      "sha256": "c7b8a7d2c0df2587204003fda085d5021c3eb97cf6ccaeb7d0691ff103258d1f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/speaker_names_zh.json",
+      "sha256": "8938065504ca1a55b2c994e15c5763537995960bb5c8ab994c7796ab66292400"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/actor_animation.js",
+      "sha256": "8f37f839a8658ff072ade7384e7b9dce6798b57717895c91deb3d99d5f4ff8f9"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/actor_lighting.js",
+      "sha256": "87097e172b02a72ae831d733727178a0129bbbeabc0d8437c0c9adf66e509c06"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/actor_placement.js",
+      "sha256": "ecd2f0afbbf9012399d992cc8bcc3078a19d3a4472c689616187df7fc81f991e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/actor_stage.js",
+      "sha256": "2abdb064ff4241181a72a0739860e8148bfe3991c0ee570cd24237141aec0a10"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/app.js",
+      "sha256": "585971d3c0dc4360ed4ef6dc243e3c132aab92e641a64e03927d0a1fc4c6f6e8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/background.js",
+      "sha256": "d45b594259a2e3c13e2edf6f3413d9e25f902749493f30076974f1c0b987f0a3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/cast_editor.js",
+      "sha256": "794a66d7c9ee52f91e6f3786482e2ca65e67802e0f8495014467ec7b901982e6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/choice_card.js",
+      "sha256": "f98947986dcc1a4d9d39638d7e6db375b8cc8097f8c543b5fd43b89366779baf"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/choice_input.js",
+      "sha256": "1557a6ecc7aebc8742f7edf757c78695170575b60ed145389af2a4f2d5d53418"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/choice_view.js",
+      "sha256": "5a66b100489de9b2f195b71eca217a55b616e8c58da5f172f85dbcae048e10a2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/command_clock.js",
+      "sha256": "caf96de94368530dbe7d9f716f2369bcd9cc99b5d11f71adce40b0b7dac4e2cd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/command_resources.js",
+      "sha256": "523f5a3d994b7589d6afd73dbf1572aad117209884fc15d32b90f107923ee308"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/commands.js",
+      "sha256": "1331b89750e8305fd2627d04132272ac3fca54e18a32a626364b78c7d4089f0f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/dialogue_cues.js",
+      "sha256": "fc1ca03efc3275dcfdbd456be0dff19029fcb4c416706312162ee445ba026e29"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/dialogue_voice.js",
+      "sha256": "eec3b7a52e3741ca55326cd50da3cb4f799f51dce3f080e7d2a27bf61cecd5db"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/directory.js",
+      "sha256": "097e490b6408f79ca20765469d218e9b471e4ebbe5c945e72e2ff2dd3a327459"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/directory_map.css",
+      "sha256": "3877547cfe8c72f2ca15440ff7bf8b39d1f90bddc284aea1c0beab096f46c7ea"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/directory_map.js",
+      "sha256": "15ce7d448cf44b8caa5f2590ff5d39682b5f0969a97ed143cf06ab1ae2324f07"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/directory_map_background.svg",
+      "sha256": "38e0244c7dd985c55680b221e3eb1d698512ce4ac42a02a15b6f4b6fb62fbff6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/effects.js",
+      "sha256": "b9b83876dd8ed788b8fce3584cfd01cc206f6fdd5ed9ef8bbc45784eb55fa0d8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/flow_editor.js",
+      "sha256": "02161c149b4328b79539db67cfe371e752b965625aa128cb33358958c7c15868"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/flow_view.js",
+      "sha256": "7747903663ca43cf02b40351df2361e1f6cee6cf0ad10bbaec2186c15c051815"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/icon.svg",
+      "sha256": "6bdd6e40dba2ed094259583ac88d3bef0315bce852f490a02b4172e933a0b8b1"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/index.html",
+      "sha256": "d155743f92d4170d248e3201cda53894483b094018d108a59e9a779390ac252f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/item_cutins.js",
+      "sha256": "9374144d69c4500e76c1a3a2beee20efda702d289dd749b042b0faa18e72c100"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/media.js",
+      "sha256": "d1cdf48eca266677e5094302e5a47ab6e80cd28e66b353686f56dc1762a6d053"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/motion_names.js",
+      "sha256": "4640dcfe53664cad1afb4659f0521727afed2597a98264b7c7455d9f9d12bbc2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/movie_view.js",
+      "sha256": "446f151b67a4a2805f14264a7e9098d2ccc83ace5e3d3ea49199e13e00c1545f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/movies.js",
+      "sha256": "8bafac41bf8dfa98c42f81804302029b631b173573ed20f2557bad0ed42e2994"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_player.js",
+      "sha256": "af479730d7938e37548efc62c3f9150d24d380e77102969efe40355e69b48804"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/music_voice.js",
+      "sha256": "a2bd44ee5fd94899f196f94b60c349db8d924d9b04cf1873298d4bdc253abaae"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/native_time_config.js",
+      "sha256": "685216db386a93150dbdbc796b57f8d3f7bbb797891b21f0c4e87f392ddfa9ca"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/native_typewriter.js",
+      "sha256": "caa2b27b0bff5498f63408fede7f3e1e939d87e57bff69a60f4bc247c970ad64"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/node_timing.js",
+      "sha256": "e30a936a7ec7a1308871d93b1486fcadac57be361baa476d29bce17b6265b989"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/online.css",
+      "sha256": "ef024661242348bc41975fe1479959afd55fb22c2e356e5521126066935d98b7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/online_session.js",
+      "sha256": "257d6526e749729afc807e97f8a5d70a1b81c4ec719198ed3ce6e731d9dbb984"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/particle_math.js",
+      "sha256": "2cb9197bd10654ce64d04c8c0d23ab6eaef64a4a1d4c36619b4833b4a18d9493"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/particle_renderer.js",
+      "sha256": "2a89e35636e1a0922af15e090147558e4d0ba75ab8d65dc8ce2ee4298e2b946f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/particle_system.js",
+      "sha256": "2e79152e12de2d6afb2e6d83dbdf32c857690ec5cd25416d5e41fdc50e3209c2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/pictures.js",
+      "sha256": "c3333097a5da1629e2f852a8fdfc67e3e0701611f9c9a9f4544996b619c60a6e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/player.css",
+      "sha256": "880182931274decf161d0c042c388cba76c45ce162fc57f909d42a96bf29f05d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/player.html",
+      "sha256": "72317cd81ba81ee844dc73fce95eb22bbfb9470f7df13516ea8fe10a2612abd2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/player.js",
+      "sha256": "4c16ac032ebd4dc48a504ca249874c31a4c04afe7eae81dd7b88f21761ad2414"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/player_config.json",
+      "sha256": "e5f64d2ac9a16f6a069d44e5a4e4f5466e86e4992d877579b971080d392c5429"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/player_panel.js",
+      "sha256": "5e3111a278f18518aa3189747f762e94dd092761fc31e4fb50cf1c414b93b033"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/player_scene.js",
+      "sha256": "e4f00438be91c40a2b410373ff4f56bca8a47b66ebb514ceb42742ed1fe76f61"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/pose_sampler.js",
+      "sha256": "289367f78db16ab868717302c66aaa267f2a036f536ead673cf88b8973826901"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/program_effects.js",
+      "sha256": "9008533374258012c7c2ddc40a9b81262707136b8569460c455c9a30c35ebb18"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/projects.js",
+      "sha256": "7e99563aa41d2c82febc32ddf385bdafcd147b0e0573459e805b2fa33ac9d2e3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/quake_clips.json",
+      "sha256": "c7b8a7d2c0df2587204003fda085d5021c3eb97cf6ccaeb7d0691ff103258d1f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/recording_reference.js",
+      "sha256": "bcefeb177d2d0ac9b6b57b5343767a750a72be7f11939d194c955dac70fab798"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/reference.html",
+      "sha256": "fba5730c24e6c76314ffc53c99805a5f0dc08654c956fa6627460f4fa322bcf2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/reference.js",
+      "sha256": "4e7d7b5ae40af62e80dc577678e88e540e1b024dca6ec334e05e7837319ea236"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/select_picker.js",
+      "sha256": "b03e262620f3926052ef736fe0f43348c1a0cd95eae99d7407774ec3cde4f62d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/sound_blocks.js",
+      "sha256": "ecfc6fa4d9c554cd19056057505302ce73259353975dc3a5a0b35a07d2166b00"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/sound_player.js",
+      "sha256": "05acdfc3e177133418a6b1fe93954348d24588f83c8c835f5f90636e0933a8ad"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/sound_sequence.js",
+      "sha256": "220dd9865f46e7e7f73dc9590214ba0ebeae7cd163ad2b182b9e1df71ae7a3a3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/sound_voice.js",
+      "sha256": "8e981d7f723a1c3164643665cc989247b8ac0fac8e5e0dc957e119f311d45068"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/speaker_names_zh.json",
+      "sha256": "4e2bb4a5d787a1ef59b74f0cec341a97dc75ace6f4315aded02f2d09c1f4dbda"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/style.css",
+      "sha256": "99fa1e7728e6f98e47bd177493f1568122d03978ca11cb045c32a6e3e681929f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/transitions.js",
+      "sha256": "0c50d407ea95db5589b2d506fb6e2e468aa2b29c900bdcb7f8e507f00e6baf75"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/visual_effects.js",
+      "sha256": "59c779d8a3c5f36e75ff44740a09f1962e0c781f198c496df5794d4731dbb818"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/visual_frame_clock.js",
+      "sha256": "b9a0694500c05e9175395c308fc9866530cb1c8e61caa81cce4073e97f05fbc2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/bootstrap-studio.py",
+      "sha256": "7a4672ccdcee7786c94908bc48d8374d03324f0650895954d7bc1df141128985"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/build-preview-catalog.py",
+      "sha256": "34a54519aa249df63e997ec39f17b1c4fcd8a69d12d257eab2244972864f2442"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/build-preview-media.py",
+      "sha256": "41df05d9f71e6f7586defe14c618a5cb7d12dc226ee2b2ae6064dd56b5b82058"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/build-verified.sh",
+      "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/connector-preview/connector-preview-session.mjs",
+      "sha256": "57224ad185a25115a14fccc68d3217e55b199260c3dd98a2c807beffec1a0a9b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/connector-preview/host-binding.mjs",
+      "sha256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/connector-preview/protocol.mjs",
+      "sha256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/connector-preview/worker.mjs",
+      "sha256": "bd9c98fc68f29d975fe10508dfc9029bb681dc5789a62861d5c938bdea2064bb"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/execution-profile.mjs",
+      "sha256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/install-ci.mjs",
+      "sha256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/install-ci.sh",
+      "sha256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/install-pnpm.sh",
+      "sha256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/npm-install.mjs",
+      "sha256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/pnpm-install.mjs",
+      "sha256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/run-framework.mjs",
+      "sha256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/sites-env.mjs",
+      "sha256": "21d7bde6acb9f716287e652c1b0e43ae4803d79be367ca2192fcba14740b5338"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/sites-env.sh",
+      "sha256": "d18af7b222db748c9de257d5955b9d7f77ec350dab6321f114f0bc44c20388ac"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/tool-environment.mjs",
+      "sha256": "6da99286e0eb7905595ca851e68983bedf94a0f93814819d61f2b1f3a0342ba2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/vendor-player.py",
+      "sha256": "01a1e11323dd3d2c834df60ac7a66f5d045d38a7153fefb8e9fbeb320fc7704c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/vite/connector-preview-plugin.mjs",
+      "sha256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/vite/sites-vite-plugin.LICENSE",
+      "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/scripts/vite/sites-vite-plugin.ts",
+      "sha256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/tsconfig.json",
+      "sha256": "a4c1cc83b63ef9d39641d3babaefffa063dccbbc93338e18017b5013d713163e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/vendor/shadcn-tailwind-4.13.0.css",
+      "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/vite.config.ts",
+      "sha256": "22ff558b1636d251e076f74c1697c7166079861667af10922d6bc505cb8f8290"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/worker/index.ts",
+      "sha256": "5584019c3b71d82ad2744d433d5e44b5d03c881d69bbbe6b4bbaccd8e30d4bf3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/lib/directory-flow.ts",
+      "sha256": "9533434f9235ad65e745df3cf63ffff4b98a098f0bb1f706de48718dade2b5ce"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/public/studio/directory_flow.js",
+      "sha256": "e1fd8976032202d0dd0071db66d432a749f269c05de1ce0aa558ff0a131e7dab"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/.openai/drizzle/0000_cheerful_cerebro.sql",
+      "sha256": "ccd94169e41ffe53c9cfdbfac9e52bc1a35415ff34a8078d3456d79fc0cc14fe"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/.openai/drizzle/0001_mean_invaders.sql",
+      "sha256": "6ee43e61956b20f9ce28e8237b68ec02988bc6bd06f91157c2c9ba74aaa9e0ee"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/.openai/drizzle/0002_chunky_terrax.sql",
+      "sha256": "7826b87f3d9a2793adc7bbc7ce92339bac4c2fab821d2d70e94f567074ad3103"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/.openai/drizzle/meta/0000_snapshot.json",
+      "sha256": "fa364ee7d0bffd6f1cd634199b85d21debdfdf03b3a69d2948b5184bab746aee"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/.openai/drizzle/meta/0001_snapshot.json",
+      "sha256": "759dcf4e75b9f0e36141a9c3bb45726bd7d8047f5e8c2c2cd276abfbda5d13be"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/.openai/drizzle/meta/0002_snapshot.json",
+      "sha256": "b6eeb8d355ba606eaea3f02e1153dbbd46f91bee622b09d1866f1be46b1d95f6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/.openai/drizzle/meta/_journal.json",
+      "sha256": "2f6a0d73d23186861c93fafefe62fa3f9a7e379bd888f6ef51e8383fb315e6c2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/.openai/hosting.json",
+      "sha256": "39743ffcbe5ce26472b501a9b1288394c26a69cb26039c785a8444a4fa449198"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/.assetsignore",
+      "sha256": "14ce8d5101f6d8f172242053466d44f5e2cd622dee81db53c14bd445c25d1942"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/.vite/manifest.json",
+      "sha256": "f2332b3821576dc9017d5990e8806501728a18d84d610b6fc5f22e885fee6ecc"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_headers",
+      "sha256": "2148fb62669525f5091532d36d4a48a8da95b08a5a797bacde75d2fe981351bb"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/252eb9d6-39a2-4dfc-b7cf-ea2bae8d20cb/_buildManifest.js",
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/252eb9d6-39a2-4dfc-b7cf-ea2bae8d20cb/_ssgManifest.js",
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/chunks/app-route-prefetch-policy-Je3FvORx.js",
+      "sha256": "ea15f8d4133c4316d16fa8bf4202977aac5d6aebe9ff421a78a1d825ae2bac38"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/chunks/framework-D_rUT4EX.js",
+      "sha256": "939d0fabebb3b2f01753bb866b067d8d3384fb06da19f0e6557609d3b1a9f4f7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/chunks/index-Bna5w-a1.js",
+      "sha256": "a7ecf987f96de53ba46ea9cad252536deda20906f6f6ef915bd76a4b46886c81"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/chunks/layout-segment-context-DKWSPR6s.js",
+      "sha256": "1c8a552d5cb2adaffce675d4e87090e14f91bddb985be90321fc8fd28b8f93b3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+      "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/chunks/setup-C2upWzGu.js",
+      "sha256": "753fbc9b5ae4a5c68bae3c4311afe5c8f0d13941ea2d168e1ab69046a24ce088"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/chunks/streamed-icons-Bumrcy-j.js",
+      "sha256": "7eb2a6b44b9c0faa7300c8dd36b0fae7a35d9f65e139dd9046b3df193aa83bc8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/_next/static/css/index.CawYebE2.css",
+      "sha256": "62f9e3ba7fbd53c43d2f64a8cd03363dc4ed5aaf33cf061bd1f80c5e8398c6c7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/favicon.svg",
+      "sha256": "6a3fe3d5d47268b9bdc14febb308067da2e00e022108cdd72a094efd8f6199d8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/lipsync.js",
+      "sha256": "5b5b6c52c347e57fad402fb8065d825d58910f4571f4d789be5d36b4c19c725d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/model_resources.js",
+      "sha256": "6d83f81d842ad91b7afc72286bfbbb9c658c119c512921c173c33534a397e98d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/motion.js",
+      "sha256": "d31113c55ab42788dc13500455faca716489f920f898e187dacdcbdfdb1bba9c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/motion_states.json",
+      "sha256": "9888be26838c9dd4b0ad093680ea719ab14e850436fa039ba977723c2ed00dda"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/preview_config.json",
+      "sha256": "26337592ea6402c809e1403fe797843d982dbf79761adc9f851b57bf9ee820ac"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/repository_assets.js",
+      "sha256": "a80a2df4846ca712056a4de7f8390aed832f664b1e2b826871557622ef819554"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/vendor/DISPLAY-LICENSE.txt",
+      "sha256": "8ccace668a041e78ed525d091b0b5daf8b623ff447f912616de535415e4f302f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/vendor/NOTICE.txt",
+      "sha256": "95bf5dcf9cb282fada0b03a1dc6aabb109e36a1122831d686d696a68095a5a3d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/vendor/PIXI-LICENSE.txt",
+      "sha256": "536a16e090f0b6c1454a7c0b47ee8414a39a2f1724a154f10ca1edc750a2dcfd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/vendor/cubism4.min.js",
+      "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/vendor/live2dcubismcore.min.js",
+      "sha256": "25ae938cb4fe282ce189b357bcc97e603d1e1f7ec78bf04150d401c23cdc792f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/vendor/pixi.min.js",
+      "sha256": "403f2f2ee8145fa17f60c5c89403056efe2680e5096ec2762036486914ed19c5"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/pairing/viewer.js",
+      "sha256": "1e04787462b33059dbf8b5cbd6db411faa37b3e29d360d1dc206a771a1ccb60f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/actor_animation.js",
+      "sha256": "72a498223aecfbb3bdd9280bcdd578d8d8f777bff441426ea5e7bb481dafd9c5"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/actor_lighting.js",
+      "sha256": "87097e172b02a72ae831d733727178a0129bbbeabc0d8437c0c9adf66e509c06"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/actor_placement.js",
+      "sha256": "1e1828320ae1a0a7b2afdf725647efc5c75d1a48741ddbd557e5cfe01b14adf1"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/actor_stage.js",
+      "sha256": "2abdb064ff4241181a72a0739860e8148bfe3991c0ee570cd24237141aec0a10"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/background.js",
+      "sha256": "faf3ddc0a6f2ae2a18cc08e4c3f71070ae35e80c0551f027f2f39808e9e45fe8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/choice_card.js",
+      "sha256": "f98947986dcc1a4d9d39638d7e6db375b8cc8097f8c543b5fd43b89366779baf"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/choice_input.js",
+      "sha256": "1557a6ecc7aebc8742f7edf757c78695170575b60ed145389af2a4f2d5d53418"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/choice_view.js",
+      "sha256": "b5bb8a3474efcee137ad0dd4060387408d1a97063441db1518c5b9fc742e5801"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/command_clock.js",
+      "sha256": "caf96de94368530dbe7d9f716f2369bcd9cc99b5d11f71adce40b0b7dac4e2cd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/command_resources.js",
+      "sha256": "523f5a3d994b7589d6afd73dbf1572aad117209884fc15d32b90f107923ee308"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/dialogue_voice.js",
+      "sha256": "a5e67a96c1cef1ae3ed02c8f7e771020189847e47f52f5de525d5c625ad09427"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/directory_map_background.svg",
+      "sha256": "38e0244c7dd985c55680b221e3eb1d698512ce4ac42a02a15b6f4b6fb62fbff6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/effects.js",
+      "sha256": "d16cae53f4e1d80cf1ab297b5a6fd3b729d90fbe22f4ce63df49edcebeb3ab0c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/flow_layout.js",
+      "sha256": "7ddfc4d29503f6f54c0ccae0fa0b483f56fd890f4b464db9a242a4a90981320f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/flow_view.js",
+      "sha256": "5d69218e1e52631f1e3b78fd19cd94abc5021e675c77ab80d0f15329cb410f21"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/font_atlas.js",
+      "sha256": "d6a63626e7ba6345a5bce158f09f90b28a194712fabe64465796b5ecb7b045cb"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/item_cutins.js",
+      "sha256": "9374144d69c4500e76c1a3a2beee20efda702d289dd749b042b0faa18e72c100"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/motion_names.js",
+      "sha256": "4640dcfe53664cad1afb4659f0521727afed2597a98264b7c7455d9f9d12bbc2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/movie_playback.js",
+      "sha256": "87d81b6699ff519dd9e86a2a72a7b7db80e1efbd91eb9f4080844e5d61ecdf7e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/movie_view.js",
+      "sha256": "446f151b67a4a2805f14264a7e9098d2ccc83ace5e3d3ea49199e13e00c1545f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/music_player.js",
+      "sha256": "4697c5e9e9b63c80610a4a4f642d365f500fbfa34681aad3f07831981f7f30c3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/music_voice.js",
+      "sha256": "a2bd44ee5fd94899f196f94b60c349db8d924d9b04cf1873298d4bdc253abaae"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/native-title.json",
+      "sha256": "ac2eee6d1db23fd8ec636d870672110ca570f1d326cd3364073e086d36bc4447"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/native_scene_interval.js",
+      "sha256": "3132d0b484aa90e66ba3e0d100bd03d832c1be5f74aefa895f8382b806167758"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/native_title_entry.js",
+      "sha256": "abb22083fe3d0d87986b227b97adc4edc9399496ea888a5f11e8bfd0dd30d00c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/native_title_view.js",
+      "sha256": "7d1452ca09aef9845f3ad8952b76f27c48a78071c2aca60feebe3004cd26a320"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/particle_math.js",
+      "sha256": "2cb9197bd10654ce64d04c8c0d23ab6eaef64a4a1d4c36619b4833b4a18d9493"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/particle_renderer.js",
+      "sha256": "2a89e35636e1a0922af15e090147558e4d0ba75ab8d65dc8ce2ee4298e2b946f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/particle_system.js",
+      "sha256": "2e79152e12de2d6afb2e6d83dbdf32c857690ec5cd25416d5e41fdc50e3209c2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/picture-presentation.json",
+      "sha256": "457c57a93c97da707de6353e16ef43c8716dbea5f0bf8769a087b7847b4a4540"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/picture_view.js",
+      "sha256": "961929ec4c0badb0fb1a60f35d03e4f14bac38b4c6b02b8515195d7811d54208"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/player.css",
+      "sha256": "4b0d0c4c2a34eb7392cecf17e0e2d48b8683dfc9bb3c62ad3167e51d9e465539"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/player.html",
+      "sha256": "39cc272f5bf2d65c355596e4588c25fd8ae0ca7ae83d28a2d086ecc42977c8fb"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/player.js",
+      "sha256": "5f2ae9d24449d6dd7d197af05f6ae70fae9e7ca508f65c4ec8584d7920b0548c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/player_config.json",
+      "sha256": "044f22e6a1ab661a916c959ea331ccee64b7c97f03976825936da1936bd63fa7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/player_scene.js",
+      "sha256": "f0775e42db50c1c6c56ee4f43b8932f974aa4fafff19a594d271db5ba4479ae4"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/sound_blocks.js",
+      "sha256": "ecfc6fa4d9c554cd19056057505302ce73259353975dc3a5a0b35a07d2166b00"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/sound_player.js",
+      "sha256": "05acdfc3e177133418a6b1fe93954348d24588f83c8c835f5f90636e0933a8ad"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/sound_sequence.js",
+      "sha256": "220dd9865f46e7e7f73dc9590214ba0ebeae7cd163ad2b182b9e1df71ae7a3a3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/sound_voice.js",
+      "sha256": "8e981d7f723a1c3164643665cc989247b8ac0fac8e5e0dc957e119f311d45068"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/text-panel-presentation.json",
+      "sha256": "613122f35b123cae67935644489d376cc54f48740ceddf1b02d5093024fa078c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/text_panel_presentation.js",
+      "sha256": "0743413d7f2df0a720993015fef695c5fa48cbb75791c0c77eab432a5f304d0e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/title-assets/adv_start_bg_if_01.png",
+      "sha256": "cb55a325249a99447a2ee30ed55c53b4575d1e904bb95f516deb35c285b98e88"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/title-assets/adv_start_bg_normal_01.png",
+      "sha256": "c2eb10457697e7d6928395a4e735b3a5be5dcfbe1297ad80f9707e6071bfe402"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/transitions.js",
+      "sha256": "de7e345541a7d79e42b0542a93a8b8bf529f539504891a5f0585f453dc0c1f7b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/player/visual_effects.js",
+      "sha256": "a519b3b6a04d7195593bc5c3a51b9a76d64b21987456fca083bf17e86d3fa209"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/quake_clips.json",
+      "sha256": "c7b8a7d2c0df2587204003fda085d5021c3eb97cf6ccaeb7d0691ff103258d1f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/speaker_names_zh.json",
+      "sha256": "8938065504ca1a55b2c994e15c5763537995960bb5c8ab994c7796ab66292400"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/actor_animation.js",
+      "sha256": "8f37f839a8658ff072ade7384e7b9dce6798b57717895c91deb3d99d5f4ff8f9"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/actor_lighting.js",
+      "sha256": "87097e172b02a72ae831d733727178a0129bbbeabc0d8437c0c9adf66e509c06"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/actor_placement.js",
+      "sha256": "ecd2f0afbbf9012399d992cc8bcc3078a19d3a4472c689616187df7fc81f991e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/actor_stage.js",
+      "sha256": "2abdb064ff4241181a72a0739860e8148bfe3991c0ee570cd24237141aec0a10"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/app.js",
+      "sha256": "585971d3c0dc4360ed4ef6dc243e3c132aab92e641a64e03927d0a1fc4c6f6e8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/background.js",
+      "sha256": "d45b594259a2e3c13e2edf6f3413d9e25f902749493f30076974f1c0b987f0a3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/cast_editor.js",
+      "sha256": "794a66d7c9ee52f91e6f3786482e2ca65e67802e0f8495014467ec7b901982e6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/choice_card.js",
+      "sha256": "f98947986dcc1a4d9d39638d7e6db375b8cc8097f8c543b5fd43b89366779baf"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/choice_input.js",
+      "sha256": "1557a6ecc7aebc8742f7edf757c78695170575b60ed145389af2a4f2d5d53418"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/choice_view.js",
+      "sha256": "5a66b100489de9b2f195b71eca217a55b616e8c58da5f172f85dbcae048e10a2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/command_clock.js",
+      "sha256": "caf96de94368530dbe7d9f716f2369bcd9cc99b5d11f71adce40b0b7dac4e2cd"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/command_resources.js",
+      "sha256": "523f5a3d994b7589d6afd73dbf1572aad117209884fc15d32b90f107923ee308"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/commands.js",
+      "sha256": "1331b89750e8305fd2627d04132272ac3fca54e18a32a626364b78c7d4089f0f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/dialogue_cues.js",
+      "sha256": "fc1ca03efc3275dcfdbd456be0dff19029fcb4c416706312162ee445ba026e29"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/dialogue_voice.js",
+      "sha256": "eec3b7a52e3741ca55326cd50da3cb4f799f51dce3f080e7d2a27bf61cecd5db"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/directory.js",
+      "sha256": "097e490b6408f79ca20765469d218e9b471e4ebbe5c945e72e2ff2dd3a327459"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/directory_flow.js",
+      "sha256": "e1fd8976032202d0dd0071db66d432a749f269c05de1ce0aa558ff0a131e7dab"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/directory_map.css",
+      "sha256": "3877547cfe8c72f2ca15440ff7bf8b39d1f90bddc284aea1c0beab096f46c7ea"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/directory_map.js",
+      "sha256": "15ce7d448cf44b8caa5f2590ff5d39682b5f0969a97ed143cf06ab1ae2324f07"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/directory_map_background.svg",
+      "sha256": "38e0244c7dd985c55680b221e3eb1d698512ce4ac42a02a15b6f4b6fb62fbff6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/effects.js",
+      "sha256": "b9b83876dd8ed788b8fce3584cfd01cc206f6fdd5ed9ef8bbc45784eb55fa0d8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/flow_editor.js",
+      "sha256": "02161c149b4328b79539db67cfe371e752b965625aa128cb33358958c7c15868"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/flow_view.js",
+      "sha256": "7747903663ca43cf02b40351df2361e1f6cee6cf0ad10bbaec2186c15c051815"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/icon.svg",
+      "sha256": "6bdd6e40dba2ed094259583ac88d3bef0315bce852f490a02b4172e933a0b8b1"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/index.html",
+      "sha256": "d155743f92d4170d248e3201cda53894483b094018d108a59e9a779390ac252f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/item_cutins.js",
+      "sha256": "9374144d69c4500e76c1a3a2beee20efda702d289dd749b042b0faa18e72c100"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/media.js",
+      "sha256": "d1cdf48eca266677e5094302e5a47ab6e80cd28e66b353686f56dc1762a6d053"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/motion_names.js",
+      "sha256": "4640dcfe53664cad1afb4659f0521727afed2597a98264b7c7455d9f9d12bbc2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/movie_view.js",
+      "sha256": "446f151b67a4a2805f14264a7e9098d2ccc83ace5e3d3ea49199e13e00c1545f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/movies.js",
+      "sha256": "8bafac41bf8dfa98c42f81804302029b631b173573ed20f2557bad0ed42e2994"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/music_player.js",
+      "sha256": "af479730d7938e37548efc62c3f9150d24d380e77102969efe40355e69b48804"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/music_voice.js",
+      "sha256": "a2bd44ee5fd94899f196f94b60c349db8d924d9b04cf1873298d4bdc253abaae"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/native_time_config.js",
+      "sha256": "685216db386a93150dbdbc796b57f8d3f7bbb797891b21f0c4e87f392ddfa9ca"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/native_typewriter.js",
+      "sha256": "caa2b27b0bff5498f63408fede7f3e1e939d87e57bff69a60f4bc247c970ad64"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/node_timing.js",
+      "sha256": "e30a936a7ec7a1308871d93b1486fcadac57be361baa476d29bce17b6265b989"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/online.css",
+      "sha256": "ef024661242348bc41975fe1479959afd55fb22c2e356e5521126066935d98b7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/online_session.js",
+      "sha256": "257d6526e749729afc807e97f8a5d70a1b81c4ec719198ed3ce6e731d9dbb984"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/particle_math.js",
+      "sha256": "2cb9197bd10654ce64d04c8c0d23ab6eaef64a4a1d4c36619b4833b4a18d9493"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/particle_renderer.js",
+      "sha256": "2a89e35636e1a0922af15e090147558e4d0ba75ab8d65dc8ce2ee4298e2b946f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/particle_system.js",
+      "sha256": "2e79152e12de2d6afb2e6d83dbdf32c857690ec5cd25416d5e41fdc50e3209c2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/pictures.js",
+      "sha256": "c3333097a5da1629e2f852a8fdfc67e3e0701611f9c9a9f4544996b619c60a6e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/player.css",
+      "sha256": "880182931274decf161d0c042c388cba76c45ce162fc57f909d42a96bf29f05d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/player.html",
+      "sha256": "72317cd81ba81ee844dc73fce95eb22bbfb9470f7df13516ea8fe10a2612abd2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/player.js",
+      "sha256": "4c16ac032ebd4dc48a504ca249874c31a4c04afe7eae81dd7b88f21761ad2414"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/player_config.json",
+      "sha256": "e5f64d2ac9a16f6a069d44e5a4e4f5466e86e4992d877579b971080d392c5429"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/player_panel.js",
+      "sha256": "5e3111a278f18518aa3189747f762e94dd092761fc31e4fb50cf1c414b93b033"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/player_scene.js",
+      "sha256": "e4f00438be91c40a2b410373ff4f56bca8a47b66ebb514ceb42742ed1fe76f61"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/pose_sampler.js",
+      "sha256": "289367f78db16ab868717302c66aaa267f2a036f536ead673cf88b8973826901"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/program_effects.js",
+      "sha256": "9008533374258012c7c2ddc40a9b81262707136b8569460c455c9a30c35ebb18"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/projects.js",
+      "sha256": "7e99563aa41d2c82febc32ddf385bdafcd147b0e0573459e805b2fa33ac9d2e3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/quake_clips.json",
+      "sha256": "c7b8a7d2c0df2587204003fda085d5021c3eb97cf6ccaeb7d0691ff103258d1f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/recording_reference.js",
+      "sha256": "bcefeb177d2d0ac9b6b57b5343767a750a72be7f11939d194c955dac70fab798"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/reference.html",
+      "sha256": "fba5730c24e6c76314ffc53c99805a5f0dc08654c956fa6627460f4fa322bcf2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/reference.js",
+      "sha256": "4e7d7b5ae40af62e80dc577678e88e540e1b024dca6ec334e05e7837319ea236"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/select_picker.js",
+      "sha256": "b03e262620f3926052ef736fe0f43348c1a0cd95eae99d7407774ec3cde4f62d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/sound_blocks.js",
+      "sha256": "ecfc6fa4d9c554cd19056057505302ce73259353975dc3a5a0b35a07d2166b00"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/sound_player.js",
+      "sha256": "05acdfc3e177133418a6b1fe93954348d24588f83c8c835f5f90636e0933a8ad"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/sound_sequence.js",
+      "sha256": "220dd9865f46e7e7f73dc9590214ba0ebeae7cd163ad2b182b9e1df71ae7a3a3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/sound_voice.js",
+      "sha256": "8e981d7f723a1c3164643665cc989247b8ac0fac8e5e0dc957e119f311d45068"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/speaker_names_zh.json",
+      "sha256": "4e2bb4a5d787a1ef59b74f0cec341a97dc75ace6f4315aded02f2d09c1f4dbda"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/style.css",
+      "sha256": "99fa1e7728e6f98e47bd177493f1568122d03978ca11cb045c32a6e3e681929f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/transitions.js",
+      "sha256": "0c50d407ea95db5589b2d506fb6e2e468aa2b29c900bdcb7f8e507f00e6baf75"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/visual_effects.js",
+      "sha256": "59c779d8a3c5f36e75ff44740a09f1962e0c781f198c496df5794d4731dbb818"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/studio/visual_frame_clock.js",
+      "sha256": "b9a0694500c05e9175395c308fc9866530cb1c8e61caa81cce4073e97f05fbc2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/client/vinext-client-entry-manifest.json",
+      "sha256": "df9dfeae2effdde66820f1f5337a4624f869a55fec133721b146aee174a191d5"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/.vite/manifest.json",
+      "sha256": "f83eba12b85f14e90f29ca2799a684832b19bd9dfbefd48f5d3c51fd062d3b6c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/BUILD_ID",
+      "sha256": "5b586555aa7561379f46b15d458add5a336bb7539ad619f75931f7a22d3e0c84"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/__vite_rsc_assets_manifest.js",
+      "sha256": "cc1b6ef8c154f07d3cc9a58ae8094db67b5c9a5eb72d09208f274e0903dbcf6b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-page-cache-CIDhXQAe.js",
+      "sha256": "4aa88f94515cc33f0e82d2cd454aa720ef90ee31a480101c21cc85a1b2a5a81d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-page-cache-finalizer-CTm4fIBk.js",
+      "sha256": "6e3a84dfa12bf223a9852315d71f98f6d0ec4eeec8210d72786f77ec81aaf532"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-page-cache-render-BPJWVCfI.js",
+      "sha256": "8d3400dc0a43ffab9a1091d52d43b1727a7453658c9149d43a7a772375e6f787"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-page-stream-CrhaAx50.js",
+      "sha256": "049817b232a0ed6cb1f4402d8f10ac42e1759e2d06b1e0e344e844a8e03e7d4f"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-prerender-endpoints-B3fcfagc.js",
+      "sha256": "759c1441a75cefe6860b9d503c1d2170dd51673a39cb77256a503a3c9dfb3e99"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-prerender-static-params-DvXNdgtR.js",
+      "sha256": "6e964aa8668f6471bbd61cbe0c35f634520f654c499cac14950709481f96c1d2"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-route-handler-dispatch-DzBS8eUx.js",
+      "sha256": "f9862832f73b037f4ef3be39afeec7abedfe027e0d16e60c8bb0156bedcf2187"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-segment-config-CGF1xiBQ.js",
+      "sha256": "2028df0c1f12b6a1822b546f47bb903897b8b5107a892719978f4b290eab51e9"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/app-static-generation-BrSgu0qX.js",
+      "sha256": "71451721ae4a42108e9ed32567cd9d9861beb4952215b0fd57ffc373cd3edc01"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/cache-headers-MeytvBf-.js",
+      "sha256": "a8a29632895e7903f7eea2404d677df9a9196844f2df59ba0a2c0c8aff2f99e4"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/css/index.CawYebE2.css",
+      "sha256": "62f9e3ba7fbd53c43d2f64a8cd03363dc4ed5aaf33cf061bd1f80c5e8398c6c7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/framework~index-CVkLJYjt.js",
+      "sha256": "2af86ae8dc84ce3e1ced004542996bac9213e877686f52c5f1282926eb62d85a"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/framework~index~layout~page~app-page-cache-render~app-page-cache~app-route-handler-dispatch-5pOwxoS7.js",
+      "sha256": "33aebe1a08934da5ea74b21b9f56cae2b17bd4863d74a39d1d292849bae600a3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/framework~index~page~app-route-handler-dispatch-CFIa0t4N.js",
+      "sha256": "2c9fd795bef9ae71e353cef56514d32198fcac69068ceb6b5223dde1aef7e747"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/framework~index~route~route~route~route~route~route~route~route~route~route~route~route~rou~l8f3oskk-DMPHYvvF.js",
+      "sha256": "4f686187dcd97b5d9eef7f152f93eaf0b53172f59e748a8ecf410a20b326e9f8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/github-auth-DC53QdtT.js",
+      "sha256": "8b283c0357452e06803d0086037313560776aca4bd9216c7d49475287e2c814a"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/github-session-aWzHcTPx.js",
+      "sha256": "3054ab3e72cc644f299ec7ca81df38794ef879f900143549e292ba1111f38f65"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/headers-BBgHuOI_.js",
+      "sha256": "dea2c425b42d7d36acb126e0f8925d1d3685c307257cb8c0924ae88718883baf"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/headers-BeRf_yWr.js",
+      "sha256": "2b2b024e370224dc59e97330ead0e3ee8ab5d27903778c2a5b0d5ab8d4751b1d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/implicit-tags-KRNIAVH5.js",
+      "sha256": "45ff4bd5cefddacddcc990064cf8abf40ac32009ac9ef6a9b860d231560c6125"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/isr-cache-D1oaVtnY.js",
+      "sha256": "18c23132981d05161034c3926c4c6b37628fbd1a6500779f307fb467bd922b10"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/navigation-errors-D-RgZ7zl.js",
+      "sha256": "3d883cbc44aa1b98e5c9b810474c91b86e8248320bd7614e885bb14a8eb224b7"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/navigation-runtime-BpYtrdXp.js",
+      "sha256": "dc04009936b716a3780d7ff22f4f754ce10e007e649f666f21f3b7a20bf7bead"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/navigation.react-server-B_U6MmE6.js",
+      "sha256": "6fc4457940a771e6b48cdc6d6680ebedd5ce2c22fff8e610fc01888fefed21f9"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/page-BohzLDDV.js",
+      "sha256": "557b28741b25585328ea78c79d74ad76d56e8bb90ef9e3df342916af2b6aff62"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/page-ClIwHlR9.js",
+      "sha256": "556ce4055e0242f229ced9a6bef15df10770e1358a2208948571d06ffac7ad7d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/preview-D0ahPJhp.js",
+      "sha256": "38f780a0c63b055e2552351efc2a4225a392d88ac0327af1dfd209138e07a280"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/record-Cz3MrZeO.js",
+      "sha256": "b9bdb7b7d0e4844d241dba61104d18111d61ef92af3f137d15749531d276f9cf"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/redirect-digest-C-06pD9r.js",
+      "sha256": "b92ec9aa7c6dcd33cfbe31e79016b8e95e069db3104601e782c0eab8aa9d331b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/resources-GgyVtBvx.js",
+      "sha256": "770cd4e39728d7bb7080bdffb00c86776c22a2afe0cb7306fdca0d19d64bec24"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/rolldown-runtime-DUnMT5BP.js",
+      "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/root-params-CarSBhWB.js",
+      "sha256": "b1dbb34ba341adf166a683d8a2382ddd30e511bbdc7099280f75771becf39a7e"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-0oETlNTK2.js",
+      "sha256": "237af1fb2c0cb22b332c590c70e37378f6548c4f7d9c6a16ed65044c5d43ebd4"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-B4QcOgXD.js",
+      "sha256": "4441175719a03f1194536dd368e7866f3f5809bee4f9167959682b84980346a1"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-BNHb-6nW.js",
+      "sha256": "db505fd055bbf08682508c061a543f546b44948751d1ae1d3b33084bcecf4736"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-BOHKiCiZ.js",
+      "sha256": "b04f06e8e26420fcb0b85c28a661be81e47d746de17f01997c40f4d30e61db94"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-BRa7fRWi.js",
+      "sha256": "58c5919a2b502b4e97b9e0ceae75584c9cf625a25086c473b3e9fd011a6adf03"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-Blxkiy4V.js",
+      "sha256": "63e8a4aca713b47583dc5333251ea6ca30485f8035361b1b6c1565cd7ce53a15"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-C7VUw1VB2.js",
+      "sha256": "0587d7c0a4307963d8191fa53160cd06ac2ea817774ec0cdcfed7981478b77a9"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-CYnEiOM4.js",
+      "sha256": "0494b3d1e34d5d7cf69824ecbdae339ef818fd24d9b4df13accca72795e71298"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-CnJIE2sM.js",
+      "sha256": "4f8cb56f3e1c7af8d60a63056e097d43f1f4c7fbad6adc13a5412a1995b449ba"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-Cw2mNg1q.js",
+      "sha256": "032c8387df62d07fd62545033bcf82cac1a86f0dd5ef239dcc703226863ac071"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-D-0-ylB5.js",
+      "sha256": "830f81cce62ff3435de35824d45ee62e777a2e55ebf61ffac93ab93fced097b3"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-DFBDi8Rf.js",
+      "sha256": "dc167d0699fa20c5cbc3a53a9f39cfb86fbcc086a07ac9f3c7e40034d7a03872"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-DJonLJiU.js",
+      "sha256": "c53d7c15be1bc0e9706f5a3fa6f0b543b55c9fe2540b75434f21c857c0e7fa74"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-DTt09NUU.js",
+      "sha256": "66541f2c7635e8de6f2abd96349e7adde096444b1c175c6648cf17e361313b11"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-D_9XnK4X.js",
+      "sha256": "3b633bcde505663205226371806fc6f925d4050c36a10da6a98e29c7de857726"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-DcnS9s7r.js",
+      "sha256": "449f15aee6f815892f31bede923cacbcd9e1f9037bdaa1dbcdd29cc0022c9223"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-Dd2ttOTm.js",
+      "sha256": "438895d143a60878c293278570b768b0ff8089c410fa74669ee089111e651e03"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-Df-98wKW.js",
+      "sha256": "b4781af335d8c97e9022d824bc0c3394b54dba75475575543a68b95c5f25c2e6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-DnousFx2.js",
+      "sha256": "4f72bde5102996fa66c66a312e7d5ae983cf0c49060dc15a235e613b8f3eb8a4"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-DpGpl93H2.js",
+      "sha256": "fd2aadec2e89276b905069d25a36638a8b3f79b50824405cc00dcbdf476363cc"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-F-r3A4ZU.js",
+      "sha256": "9ab7dd473b8951d68c4dd1dc60fc7912dc6aa5f5a5ff7af44837e7e2b5ac58fe"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-PC5HwozY2.js",
+      "sha256": "451252479d7876f25770bd30b0039df80d49120f92747417a1d1e2670c8e18ee"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-PnfBkBBO.js",
+      "sha256": "71365ab7751242d93ca8ecd323c5c36bbf35b2501c473ad3d528e6c4e4a18752"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-Q6v7-74c.js",
+      "sha256": "c9e0d0ab3879c49ce4170f064fad036ceaa0403d73d3fab58a3e2060a2f03550"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-QgF3fkTy.js",
+      "sha256": "be3acf1ceeca241605927b87ca2f7f9faab3cd225dfaa6409d10d2733fcd1a5d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-bRAgvvA9.js",
+      "sha256": "4ffa4c9dabd4508ed6eac4cc466912df18bb1e1d10c8ed2e6dc5a22ebb9dee77"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-iEcmsuLz.js",
+      "sha256": "f4cfe2e3767770f11ba4bd5840351fb0302d037afc44f527f8c5147f28804424"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-idRhGgtr2.js",
+      "sha256": "15b9078495667b777bd3cdf0d66439de73907ab2b2ae327ba63fa9d36d496210"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/route-pb-WWH4G.js",
+      "sha256": "e764ec68436a8689f55bb4d80324332c6d0d88fbf6f92b804b5fe604c64020c8"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/rsc-1p3vGLPh.js",
+      "sha256": "20ac33163b04be507f2d6d8d0f72391dc09be79234f37990ab0105d4ee66c671"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/server-Bvd-KAF9.js",
+      "sha256": "ee4f1c28ca201d629dd9482e2d5e597fbea810bd179d5d7607977db4bdf28103"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/setup-CRfgjO_1.js",
+      "sha256": "7ea819ce0562b99c168b218d158b64d9f3decbac602fd67184da3c9343f5bc5d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/setup-access-6b7k46Cm.js",
+      "sha256": "ea808646411efb943c904f2c768fe2cbcfe4af11960ace54828886dc80b60b7d"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/_next/static/text-stream-DXiEzJfX.js",
+      "sha256": "222817cffeebd9b97118984791ab651f63ad8d803e3158b04884d9931141fa4a"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/index.js",
+      "sha256": "a2381164e0b6f72d493fa4f5316aad37652946ace3a0d0a82d321cf8fbfff938"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/__vite_rsc_assets_manifest.js",
+      "sha256": "cc1b6ef8c154f07d3cc9a58ae8094db67b5c9a5eb72d09208f274e0903dbcf6b"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/_next/static/app-prefetch-fetch-queue-DxuBK-0j.js",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/_next/static/app-router-scroll-CVA6D-8y.js",
+      "sha256": "8aa68c48f347896ce1bc31ef186746a7cd9ae043f3e4e39a3856f13d1061bb3c"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/_next/static/error-boundary-CpKCYeaG.js",
+      "sha256": "013dad3c0ea62859d75ef290703dc2547d9df0b1222d9235cc9c6011c5b1d806"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/_next/static/layout-segment-context-uYKxdJGQ.js",
+      "sha256": "1621400fe5e17f387c4d38c41080771328053992ebc7c01f43b5ea78225580d6"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/_next/static/setup-BoF5EsB4.js",
+      "sha256": "ea4ea77b54b7c734052bb5e8cbe1127ad51f4b5a1aa8a69d6121500755d887ff"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/_next/static/static.edge-CKJjMt3N.js",
+      "sha256": "9aa4706e79212b5ce4072eb3d7600afd525dc33bf2f7a66f64a94ffbc9fd7149"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/_next/static/streamed-icons-CYdOGffu.js",
+      "sha256": "bc2f0e070a49732231e8516fd3b78f49de63dff63b5d27db4b5b5f7ea2a4b228"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/index.js",
+      "sha256": "465a9b591918844f8b503dd30d8b46b19cebe584b8d0c4f421042185ab930623"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/vinext-client-assets.js",
+      "sha256": "d0ac43fbf1c25425d3c95ad2157c6da59d78e103bb0f4b77a17d71e1ee02c656"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/ssr/vinext-server.json",
+      "sha256": "bf35fcc26844317c9c29b3de016d0f1fba5fadeb3b1f8a86569891a514c11a88"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/vinext-client-assets.js",
+      "sha256": "d0ac43fbf1c25425d3c95ad2157c6da59d78e103bb0f4b77a17d71e1ee02c656"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/vinext-externals.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/vinext-server.json",
+      "sha256": "bf35fcc26844317c9c29b3de016d0f1fba5fadeb3b1f8a86569891a514c11a88"
+    },
+    {
+      "file": "/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout/dist/server/wrangler.json",
+      "sha256": "40037e9c9498735a53ecbe4fcaecbf765e98afbbd00b35a63c311843592b8397"
+    }
+  ]
+}

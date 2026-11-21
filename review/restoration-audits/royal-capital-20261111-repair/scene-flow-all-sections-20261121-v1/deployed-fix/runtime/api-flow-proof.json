@@ -1,0 +1,982 @@
+{
+  "schema": "stella.scene-flow.actual-production-api.v1",
+  "allNormalApplicationGETs": true,
+  "noDriverAPIRequests": true,
+  "reads": [
+    {
+      "index": 4,
+      "url": "https://stella-preview.jaoushingan.com/api/directory/flow?sectionId=1001&sha=6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+      "path": "/api/directory/flow",
+      "query": {
+        "sectionId": "1001",
+        "sha": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3"
+      },
+      "method": "GET",
+      "started": {
+        "epochMilliseconds": 1795270568915,
+        "performanceMilliseconds": 13675,
+        "dialogOpen": false,
+        "navigatorOpen": false,
+        "selectedChapter": "chapter:1",
+        "selectedSection": "section:1001",
+        "selectedScene": "scene:10010001",
+        "workspaceName": "第1章　王都的一日篇 → 第1话[♪] → 异世界召唤[♪]",
+        "activeNode": "node:10010001:node_8db2a9bc43e0",
+        "mapTitle": "剧情流程",
+        "mapPath": "",
+        "mapCount": "",
+        "directoryMessage": "",
+        "notice": "已选择节点 1。",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": false,
+        "cardIds": [],
+        "edgeIds": [],
+        "lineCount": 0,
+        "hitCount": 0,
+        "allPathCount": 0,
+        "portalCount": 0,
+        "svgRect": null,
+        "svgViewBox": "",
+        "svgTransform": "",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10010001"
+          }
+        ]
+      },
+      "requestBody": null,
+      "responseHead": {
+        "epochMilliseconds": 1795270570155,
+        "performanceMilliseconds": 14914,
+        "dialogOpen": true,
+        "navigatorOpen": false,
+        "selectedChapter": "chapter:1",
+        "selectedSection": "section:1029",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第1话[♪] → 异世界召唤[♪]",
+        "activeNode": "node:10010001:node_8db2a9bc43e0",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第1章　王都的一日篇 → 第7話-後編[♪]",
+        "mapCount": "6 个场景 · 2 条已知连线 · 3 个场景的连线资料待恢复",
+        "directoryMessage": "",
+        "notice": "已选择节点 1。",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:10290008",
+          "scene:10290009",
+          "scene:10290057",
+          "scene:10290010",
+          "scene:10290058",
+          "scene:10290059"
+        ],
+        "edgeIds": [
+          "chart:10290008:10290009",
+          "chart:10290009:10290010"
+        ],
+        "lineCount": 2,
+        "hitCount": 2,
+        "allPathCount": 8,
+        "portalCount": 0,
+        "svgRect": {
+          "x": 466.933349609375,
+          "y": 367,
+          "width": 328.1333312988281,
+          "height": 544
+        },
+        "svgViewBox": "0 0 1292 2142",
+        "svgTransform": "translate(416.937px, 48px) scale(0.253968)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10010001"
+          }
+        ]
+      },
+      "status": 200,
+      "headers": {
+        "contentType": "application/json",
+        "cfRay": "a5e04f8b9de3af0d-SJC"
+      },
+      "bodyBytes": 1743,
+      "bodySha256": "2a9a24ee8096ac252d2f4ae7c68f19a4684a7d95d039038d7ee02a21bf4fae68",
+      "result": {
+        "headSha": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+        "sectionId": 1001,
+        "edges": [
+          {
+            "id": "scene-edge:10010001:10010016",
+            "source": "scene:10010001",
+            "target": "scene:10010016",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "capture",
+            "evidence": [
+              "data/story_directory/device-snapshot/rezelos-2020-scene-10010001.json",
+              "data/story_directory/device-snapshot/rezelos-2020-scene-10010020.json"
+            ],
+            "nativeTarget": {
+              "scene_id": 10010016,
+              "section_id": 1001
+            }
+          },
+          {
+            "id": "scene-edge:10010001:10140002",
+            "source": "scene:10010001",
+            "target": "scene:10140002",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "capture",
+            "evidence": [
+              "data/story_directory/device-snapshot/rezelos-2020-scene-10010001.json",
+              "data/story_directory/device-snapshot/rezelos-2020-scene-10010020.json"
+            ],
+            "nativeTarget": {
+              "scene_id": 10140002,
+              "section_id": 1014
+            }
+          },
+          {
+            "id": "scene-edge:10010016:10140002",
+            "source": "scene:10010016",
+            "target": "scene:10140002",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "capture",
+            "evidence": [
+              "data/story_directory/device-snapshot/rezelos-2020-scene-10010001.json",
+              "data/story_directory/device-snapshot/rezelos-2020-scene-10010020.json"
+            ],
+            "nativeTarget": {
+              "scene_id": 10140002,
+              "section_id": 1014
+            }
+          },
+          {
+            "id": "scene-edge:10010020:10010001",
+            "source": "scene:10010020",
+            "target": "scene:10010001",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "capture",
+            "evidence": [
+              "data/story_directory/device-snapshot/rezelos-2020-scene-10010001.json",
+              "data/story_directory/device-snapshot/rezelos-2020-scene-10010020.json"
+            ],
+            "nativeTarget": {
+              "scene_id": 10010001,
+              "section_id": 1001
+            }
+          }
+        ],
+        "coverage": {
+          "sceneCount": 3,
+          "loadedSceneIds": [
+            10010020,
+            10010001,
+            10010016
+          ],
+          "missingScriptSceneIds": [],
+          "missingChartSceneIds": [],
+          "knownInternalEdges": 2
+        }
+      },
+      "responseBody": {
+        "epochMilliseconds": 1795270570188,
+        "performanceMilliseconds": 14946,
+        "dialogOpen": true,
+        "navigatorOpen": false,
+        "selectedChapter": "chapter:1",
+        "selectedSection": "section:1029",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第1话[♪] → 异世界召唤[♪]",
+        "activeNode": "node:10010001:node_8db2a9bc43e0",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第1章　王都的一日篇 → 第7話-後編[♪]",
+        "mapCount": "6 个场景 · 2 条已知连线 · 3 个场景的连线资料待恢复",
+        "directoryMessage": "",
+        "notice": "已选择节点 1。",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:10290008",
+          "scene:10290009",
+          "scene:10290057",
+          "scene:10290010",
+          "scene:10290058",
+          "scene:10290059"
+        ],
+        "edgeIds": [
+          "chart:10290008:10290009",
+          "chart:10290009:10290010"
+        ],
+        "lineCount": 2,
+        "hitCount": 2,
+        "allPathCount": 8,
+        "portalCount": 0,
+        "svgRect": {
+          "x": 466.933349609375,
+          "y": 367,
+          "width": 328.1333312988281,
+          "height": 544
+        },
+        "svgViewBox": "0 0 1292 2142",
+        "svgTransform": "translate(416.937px, 48px) scale(0.253968)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10010001"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "url": "https://stella-preview.jaoushingan.com/api/directory/flow?sectionId=1029&sha=6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+      "path": "/api/directory/flow",
+      "query": {
+        "sectionId": "1029",
+        "sha": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3"
+      },
+      "method": "GET",
+      "started": {
+        "epochMilliseconds": 1795270569026,
+        "performanceMilliseconds": 13784,
+        "dialogOpen": true,
+        "navigatorOpen": true,
+        "selectedChapter": "chapter:1",
+        "selectedSection": "section:1029",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第1话[♪] → 异世界召唤[♪]",
+        "activeNode": "node:10010001:node_8db2a9bc43e0",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第1章　王都的一日篇 → 第7話-後編[♪]",
+        "mapCount": "3 个场景 · 连线读取中…",
+        "directoryMessage": "",
+        "notice": "已选择节点 1。",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:10010020",
+          "scene:10010001",
+          "scene:10010016"
+        ],
+        "edgeIds": [
+          "scene-edge:10010001:10010016",
+          "scene-edge:10010001:10140002",
+          "scene-edge:10010016:10140002",
+          "scene-edge:10010020:10010001"
+        ],
+        "lineCount": 4,
+        "hitCount": 4,
+        "allPathCount": 12,
+        "portalCount": 2,
+        "svgRect": {
+          "x": 406,
+          "y": 597.2999877929688,
+          "width": 1144.800048828125,
+          "height": 1042.199951171875
+        },
+        "svgViewBox": "0 0 1272 1158",
+        "svgTransform": "translate(356px, 10.3px) scale(0.9)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10010001"
+          }
+        ]
+      },
+      "requestBody": null,
+      "responseHead": {
+        "epochMilliseconds": 1795270569906,
+        "performanceMilliseconds": 14665,
+        "dialogOpen": true,
+        "navigatorOpen": true,
+        "selectedChapter": "chapter:1",
+        "selectedSection": "section:1029",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第1话[♪] → 异世界召唤[♪]",
+        "activeNode": "node:10010001:node_8db2a9bc43e0",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第1章　王都的一日篇 → 第7話-後編[♪]",
+        "mapCount": "6 个场景 · 连线读取中…",
+        "directoryMessage": "",
+        "notice": "已选择节点 1。",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:10290008",
+          "scene:10290009",
+          "scene:10290057",
+          "scene:10290010",
+          "scene:10290058",
+          "scene:10290059"
+        ],
+        "edgeIds": [],
+        "lineCount": 0,
+        "hitCount": 0,
+        "allPathCount": 4,
+        "portalCount": 0,
+        "svgRect": {
+          "x": -306.79998779296875,
+          "y": -276.29998779296875,
+          "width": 1162.800048828125,
+          "height": 1927.800048828125
+        },
+        "svgViewBox": "0 0 1292 2142",
+        "svgTransform": "translate(-356.8px, -863.3px) scale(0.9)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10010001"
+          }
+        ]
+      },
+      "status": 200,
+      "headers": {
+        "contentType": "application/json",
+        "cfRay": "a5e04f8c5e00af0d-SJC"
+      },
+      "bodyBytes": 713,
+      "bodySha256": "f1775ee5813ac8ddb43ed44383c4aa8b326a261b94896ca83cae26e25a5cbff1",
+      "result": {
+        "headSha": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+        "sectionId": 1029,
+        "edges": [
+          {
+            "id": "chart:10290008:10290009",
+            "source": "scene:10290008",
+            "target": "scene:10290009",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "native",
+            "evidence": {
+              "nativeTarget": {
+                "section_id": 1029,
+                "scene_id": 10290009
+              }
+            }
+          },
+          {
+            "id": "chart:10290009:10290010",
+            "source": "scene:10290009",
+            "target": "scene:10290010",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "native",
+            "evidence": {
+              "nativeTarget": {
+                "section_id": 1029,
+                "scene_id": 10290010
+              }
+            }
+          }
+        ],
+        "coverage": {
+          "sceneCount": 6,
+          "loadedSceneIds": [
+            10290008,
+            10290009,
+            10290010
+          ],
+          "missingScriptSceneIds": [
+            10290057,
+            10290058,
+            10290059
+          ],
+          "missingChartSceneIds": [],
+          "knownInternalEdges": 2
+        }
+      },
+      "responseBody": {
+        "epochMilliseconds": 1795270569913,
+        "performanceMilliseconds": 14672,
+        "dialogOpen": true,
+        "navigatorOpen": true,
+        "selectedChapter": "chapter:1",
+        "selectedSection": "section:1029",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第1话[♪] → 异世界召唤[♪]",
+        "activeNode": "node:10010001:node_8db2a9bc43e0",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第1章　王都的一日篇 → 第7話-後編[♪]",
+        "mapCount": "6 个场景 · 2 条已知连线 · 3 个场景的连线资料待恢复",
+        "directoryMessage": "",
+        "notice": "已选择节点 1。",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:10290008",
+          "scene:10290009",
+          "scene:10290057",
+          "scene:10290010",
+          "scene:10290058",
+          "scene:10290059"
+        ],
+        "edgeIds": [
+          "chart:10290008:10290009",
+          "chart:10290009:10290010"
+        ],
+        "lineCount": 2,
+        "hitCount": 2,
+        "allPathCount": 8,
+        "portalCount": 0,
+        "svgRect": {
+          "x": -306.79998779296875,
+          "y": -276.29998779296875,
+          "width": 1162.800048828125,
+          "height": 1927.800048828125
+        },
+        "svgViewBox": "0 0 1292 2142",
+        "svgTransform": "translate(-356.8px, -863.3px) scale(0.9)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10010001"
+          }
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "url": "https://stella-preview.jaoushingan.com/api/directory/flow?sectionId=2011&sha=6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+      "path": "/api/directory/flow",
+      "query": {
+        "sectionId": "2011",
+        "sha": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3"
+      },
+      "method": "GET",
+      "started": {
+        "epochMilliseconds": 1795270573634,
+        "performanceMilliseconds": 18393,
+        "dialogOpen": true,
+        "navigatorOpen": true,
+        "selectedChapter": "chapter:2",
+        "selectedSection": "section:2011",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "activeNode": "node:10290008:1029000800001",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第2章 屋敷の一週間編 → 第1話[♪]",
+        "mapCount": "46 话／路线",
+        "directoryMessage": "",
+        "notice": "已选择节点 1。",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "section:2011",
+          "section:2012",
+          "section:2013",
+          "section:2711",
+          "section:2021",
+          "section:2712",
+          "section:2024",
+          "section:2022",
+          "section:2713",
+          "section:2025",
+          "section:2023",
+          "section:2031",
+          "section:2032",
+          "section:2511",
+          "section:2611",
+          "section:2033",
+          "section:2512",
+          "section:2811",
+          "section:2041",
+          "section:2513",
+          "section:2812",
+          "section:2043",
+          "section:2042",
+          "section:2514",
+          "section:2813",
+          "section:2044",
+          "section:2515",
+          "section:2814",
+          "section:2051",
+          "section:2516",
+          "section:2052",
+          "section:2517",
+          "section:2053",
+          "section:2518",
+          "section:2054",
+          "section:2911",
+          "section:2056",
+          "section:2055",
+          "section:2912",
+          "section:2057",
+          "section:2061",
+          "section:2913",
+          "section:2058",
+          "section:2062",
+          "section:2063",
+          "section:2064"
+        ],
+        "edgeIds": [
+          "section-edge:2011:2012",
+          "section-edge:2012:2711",
+          "section-edge:2012:2013",
+          "section-edge:2013:2021",
+          "section-edge:2711:2712",
+          "section-edge:2021:2022",
+          "section-edge:2021:2024",
+          "section-edge:2712:2713",
+          "section-edge:2024:2025",
+          "section-edge:2022:2023",
+          "section-edge:2025:2031",
+          "section-edge:2023:2031",
+          "section-edge:2031:2032",
+          "section-edge:2031:2611",
+          "section-edge:2031:2511",
+          "section-edge:2032:2033",
+          "section-edge:2511:2512",
+          "section-edge:2511:2811",
+          "section-edge:2033:2041",
+          "section-edge:2512:2513",
+          "section-edge:2811:2812",
+          "section-edge:2041:2042",
+          "section-edge:2041:2043",
+          "section-edge:2513:2514",
+          "section-edge:2812:2813",
+          "section-edge:2043:2044",
+          "section-edge:2042:2051",
+          "section-edge:2514:2515",
+          "section-edge:2813:2814",
+          "section-edge:2044:2054",
+          "section-edge:2515:2516",
+          "section-edge:2051:2052",
+          "section-edge:2516:2517",
+          "section-edge:2052:2053",
+          "section-edge:2517:2518",
+          "section-edge:2053:2054",
+          "section-edge:2518:2911",
+          "section-edge:2054:2055",
+          "section-edge:2054:2056",
+          "section-edge:2911:2912",
+          "section-edge:2056:2057",
+          "section-edge:2055:2061",
+          "section-edge:2912:2913",
+          "section-edge:2057:2058",
+          "section-edge:2061:2062",
+          "section-edge:2062:2063",
+          "section-edge:2063:2064"
+        ],
+        "lineCount": 47,
+        "hitCount": 47,
+        "allPathCount": 106,
+        "portalCount": 0,
+        "svgRect": {
+          "x": 74.80000305175781,
+          "y": 387.8999938964844,
+          "width": 1774.800048828125,
+          "height": 4662
+        },
+        "svgViewBox": "0 0 1972 5180",
+        "svgTransform": "translate(24.8px, -199.1px) scale(0.9)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10290008"
+          }
+        ]
+      },
+      "requestBody": null,
+      "responseHead": {
+        "epochMilliseconds": 1795270575744,
+        "performanceMilliseconds": 20502,
+        "dialogOpen": true,
+        "navigatorOpen": true,
+        "selectedChapter": "chapter:2",
+        "selectedSection": "section:2011",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "activeNode": "node:10290008:1029000800001",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第2章 屋敷の一週間編 → 第1話[♪]",
+        "mapCount": "3 个场景 · 连线读取中…",
+        "directoryMessage": "",
+        "notice": "已切换到 第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:20110010",
+          "scene:20110020",
+          "scene:20110030"
+        ],
+        "edgeIds": [],
+        "lineCount": 0,
+        "hitCount": 0,
+        "allPathCount": 2,
+        "portalCount": 0,
+        "svgRect": {
+          "x": 406,
+          "y": 521.9000244140625,
+          "width": 450,
+          "height": 820.7999877929688
+        },
+        "svgViewBox": "0 0 500 912",
+        "svgTransform": "translate(356px, -65.1px) scale(0.9)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10290008"
+          }
+        ]
+      },
+      "status": 200,
+      "headers": {
+        "contentType": "application/json",
+        "cfRay": "a5e04faaabcaaf0d-SJC"
+      },
+      "bodyBytes": 232,
+      "bodySha256": "55dc1116a602b0f34b421c22365bb7b2f4b4ba938ae5b5722129c623f8e3b19c",
+      "result": {
+        "headSha": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+        "sectionId": 2011,
+        "edges": [],
+        "coverage": {
+          "sceneCount": 3,
+          "loadedSceneIds": [],
+          "missingScriptSceneIds": [
+            20110010,
+            20110020,
+            20110030
+          ],
+          "missingChartSceneIds": [],
+          "knownInternalEdges": 0
+        }
+      },
+      "responseBody": {
+        "epochMilliseconds": 1795270575770,
+        "performanceMilliseconds": 20529,
+        "dialogOpen": true,
+        "navigatorOpen": true,
+        "selectedChapter": "chapter:2",
+        "selectedSection": "section:2011",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "activeNode": "node:10290008:1029000800001",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第2章 屋敷の一週間編 → 第1話[♪]",
+        "mapCount": "3 个场景 · 0 条已知连线 · 3 个场景的连线资料待恢复",
+        "directoryMessage": "",
+        "notice": "已切换到 第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:20110010",
+          "scene:20110020",
+          "scene:20110030"
+        ],
+        "edgeIds": [],
+        "lineCount": 0,
+        "hitCount": 0,
+        "allPathCount": 2,
+        "portalCount": 0,
+        "svgRect": {
+          "x": 406,
+          "y": 521.9000244140625,
+          "width": 450,
+          "height": 820.7999877929688
+        },
+        "svgViewBox": "0 0 500 912",
+        "svgTransform": "translate(356px, -65.1px) scale(0.9)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10290008"
+          }
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "url": "https://stella-preview.jaoushingan.com/api/directory/flow?sectionId=1009&sha=6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+      "path": "/api/directory/flow",
+      "query": {
+        "sectionId": "1009",
+        "sha": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3"
+      },
+      "method": "GET",
+      "started": {
+        "epochMilliseconds": 1795270576478,
+        "performanceMilliseconds": 21237,
+        "dialogOpen": true,
+        "navigatorOpen": true,
+        "selectedChapter": "chapter:1",
+        "selectedSection": "section:1009",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "activeNode": "node:10290008:1029000800001",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第1章　王都的一日篇 → 第5話[♪]",
+        "mapCount": "6 个场景 · 2 条已知连线 · 3 个场景的连线资料待恢复",
+        "directoryMessage": "",
+        "notice": "已切换到 第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:10290008",
+          "scene:10290009",
+          "scene:10290057",
+          "scene:10290010",
+          "scene:10290058",
+          "scene:10290059"
+        ],
+        "edgeIds": [
+          "chart:10290008:10290009",
+          "chart:10290009:10290010"
+        ],
+        "lineCount": 2,
+        "hitCount": 2,
+        "allPathCount": 8,
+        "portalCount": 0,
+        "svgRect": {
+          "x": 366.3666687011719,
+          "y": 434.6000061035156,
+          "width": 328.1333312988281,
+          "height": 544
+        },
+        "svgViewBox": "0 0 1292 2142",
+        "svgTransform": "translate(316.365px, -152.394px) scale(0.253968)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10290008"
+          }
+        ]
+      },
+      "requestBody": null,
+      "responseHead": {
+        "epochMilliseconds": 1795270577928,
+        "performanceMilliseconds": 22687,
+        "dialogOpen": true,
+        "navigatorOpen": true,
+        "selectedChapter": "chapter:1",
+        "selectedSection": "section:1029",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "activeNode": "node:10290008:1029000800001",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第1章　王都的一日篇 → 第7話-後編[♪]",
+        "mapCount": "6 个场景 · 2 条已知连线 · 3 个场景的连线资料待恢复",
+        "directoryMessage": "",
+        "notice": "已切换到 第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:10290008",
+          "scene:10290009",
+          "scene:10290057",
+          "scene:10290010",
+          "scene:10290058",
+          "scene:10290059"
+        ],
+        "edgeIds": [
+          "chart:10290008:10290009",
+          "chart:10290009:10290010"
+        ],
+        "lineCount": 2,
+        "hitCount": 2,
+        "allPathCount": 8,
+        "portalCount": 0,
+        "svgRect": {
+          "x": 366.3666687011719,
+          "y": 434.6000061035156,
+          "width": 328.1333312988281,
+          "height": 544
+        },
+        "svgViewBox": "0 0 1292 2142",
+        "svgTransform": "translate(316.365px, -152.394px) scale(0.253968)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10290008"
+          }
+        ]
+      },
+      "status": 200,
+      "headers": {
+        "contentType": "application/json",
+        "cfRay": "a5e04fbadf2aaf0d-SJC"
+      },
+      "bodyBytes": 687,
+      "bodySha256": "bc2f8b00d58c7d2502078465a1b4f845485d5684166b22e6b423071ff7411126",
+      "result": {
+        "headSha": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+        "sectionId": 1009,
+        "edges": [
+          {
+            "id": "chart:10090013:10090014",
+            "source": "scene:10090013",
+            "target": "scene:10090014",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "native",
+            "evidence": {
+              "nativeTarget": {
+                "section_id": 1009,
+                "scene_id": 10090014
+              }
+            }
+          },
+          {
+            "id": "chart:10090014:10090015",
+            "source": "scene:10090014",
+            "target": "scene:10090015",
+            "label": "",
+            "condition": "",
+            "notes": "",
+            "state": "confirmed",
+            "origin": "native",
+            "evidence": {
+              "nativeTarget": {
+                "section_id": 1009,
+                "scene_id": 10090015
+              }
+            }
+          }
+        ],
+        "coverage": {
+          "sceneCount": 3,
+          "loadedSceneIds": [
+            10090013,
+            10090014,
+            10090015
+          ],
+          "missingScriptSceneIds": [],
+          "missingChartSceneIds": [],
+          "knownInternalEdges": 2
+        }
+      },
+      "responseBody": {
+        "epochMilliseconds": 1795270577946,
+        "performanceMilliseconds": 22705,
+        "dialogOpen": true,
+        "navigatorOpen": true,
+        "selectedChapter": "chapter:1",
+        "selectedSection": "section:1029",
+        "selectedScene": "",
+        "workspaceName": "第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "activeNode": "node:10290008:1029000800001",
+        "mapTitle": "本话各场景的流程",
+        "mapPath": "第1章　王都的一日篇 → 第7話-後編[♪]",
+        "mapCount": "6 个场景 · 2 条已知连线 · 3 个场景的连线资料待恢复",
+        "directoryMessage": "",
+        "notice": "已切换到 第1章　王都的一日篇 → 第7話-後編[♪] → 艰难的谈判",
+        "noticeError": false,
+        "workbenchDirty": false,
+        "directoryDirty": false,
+        "playerHidden": true,
+        "enterDisabled": true,
+        "cardIds": [
+          "scene:10290008",
+          "scene:10290009",
+          "scene:10290057",
+          "scene:10290010",
+          "scene:10290058",
+          "scene:10290059"
+        ],
+        "edgeIds": [
+          "chart:10290008:10290009",
+          "chart:10290009:10290010"
+        ],
+        "lineCount": 2,
+        "hitCount": 2,
+        "allPathCount": 8,
+        "portalCount": 0,
+        "svgRect": {
+          "x": 366.3666687011719,
+          "y": 434.6000061035156,
+          "width": 328.1333312988281,
+          "height": 544
+        },
+        "svgViewBox": "0 0 1292 2142",
+        "svgTransform": "translate(316.365px, -152.394px) scale(0.253968)",
+        "rememberedScenes": [
+          {
+            "key": "stella-scene:https://github.com/ayasa520/stella-story-crowd",
+            "value": "scene:10290008"
+          }
+        ]
+      }
+    }
+  ],
+  "allResultHeadsMatchActualProjectHead": true,
+  "stateReads": [
+    {
+      "url": "https://stella-preview.jaoushingan.com/api/state?sceneId=10010001",
+      "status": 200,
+      "head": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+      "scope": [
+        10010020,
+        10010001,
+        10010016
+      ],
+      "nodeCount": 57,
+      "bodySha256": "45ab5553a476cda432b52ee61b2515eaa4ed997c7b7c446b541971194e589206"
+    },
+    {
+      "url": "https://stella-preview.jaoushingan.com/api/state?sceneId=10290008",
+      "status": 200,
+      "head": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3",
+      "scope": [
+        10290008,
+        10290009,
+        10290010
+      ],
+      "nodeCount": 112,
+      "bodySha256": "9447741eb26b9e9439eddf0b7f78c2a3f105966628a3554802cd7daaade3d423"
+    }
+  ],
+  "failedResponses": [],
+  "sourceHead": "4c08cddcb5db57f9501938ce90b9f50ea2e67a8e",
+  "dataHead": "6466be8f80a3178714da5931ffeb3f1d1d0b86e3"
+}
