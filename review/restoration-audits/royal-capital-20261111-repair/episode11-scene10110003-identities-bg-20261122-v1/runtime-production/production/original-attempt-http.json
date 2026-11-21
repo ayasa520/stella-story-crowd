@@ -1,0 +1,72 @@
+{
+  "schema": "stella.episode11.production-http.v1",
+  "requestDeadlineMs": 60000,
+  "retries": 0,
+  "headerRepresentation": "Fetch-exposed headers; body bytes after Fetch transfer decoding",
+  "records": [
+    {
+      "name": "default-main-native-source",
+      "method": "GET",
+      "requestedUrl": "https://stella-preview.jaoushingan.com/api/native/source?sceneId=10110003",
+      "request": null,
+      "startedUtc": "2026-11-21T16:11:36.166Z",
+      "deadlineMs": 60000,
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "private, no-store",
+        "cf-ray": "a5e0f8ae58caf3db-SJC",
+        "content-type": "application/json",
+        "date": "Sat, 21 Nov 2026 16:11:39 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=VL9E4A69HgRRk4NEaiiW845w%2BM4uFRcjK0HuIW0dYywU%2B2scJii%2BHF7AphjA1p%2Be%2Ffs%2B2EMoNG6JB5VrV8VV3y3I2vDrcq1mEIWQwJjMcdsTy0cKm6%2B8lCdi6gAwMBh3iYixVpT4b7isY9UHdy7RtIGNDaktjuQwrApqDr4%3D\"}]}",
+        "server": "cloudflare",
+        "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode",
+        "x-content-type-options": "nosniff"
+      },
+      "bodyComplete": true,
+      "url": "https://stella-preview.jaoushingan.com/api/native/source?sceneId=10110003",
+      "statusText": "",
+      "decodedResponseBytes": 441444,
+      "decodedResponseSha256": "92cb19c124f86aaa5e62bfc4d84beff6523bc3112367ee2149ed3535b504ca8b",
+      "gzipFile": "default-main-native-source.response.gz",
+      "gzipBytes": 31986,
+      "gzipSha256": "362f33b291f3b3c47585485ad6876d9f55609630ef2bb945f66504117a274ce7",
+      "finishedUtc": "2026-11-21T16:11:39.712Z"
+    },
+    {
+      "name": "normal-saved-player-prepare",
+      "method": "POST",
+      "requestedUrl": "https://stella-preview.jaoushingan.com/api/player/prepare",
+      "request": {
+        "id": "node:10110003:1011000300001",
+        "baseSha": "debef87397ac10976e6fad96b1d14b28297cd754",
+        "choices": {}
+      },
+      "startedUtc": "2026-11-21T16:11:39.718Z",
+      "deadlineMs": 60000,
+      "status": 500,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "private, no-store",
+        "cf-ray": "a5e0f8c0dae6f3db-SJC",
+        "content-type": "application/json",
+        "date": "Sat, 21 Nov 2026 16:11:41 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=FjwEhs0Y4vLwQe2azX%2FmhuOr0WK77EBKZgZ9rDjXN%2FX8sATMz8u%2FIk4tPn2l1saoiE7gZLOhkyq%2FejDYjW%2FSxpyVZDDNoFVmBk42a3AEzJl8FPMTrhCuTSpsKlt10Lm9%2FroMbPKQuERINr9Ju81VVq9KB%2Bl98GhsVfZCsjo%3D\"}]}",
+        "server": "cloudflare",
+        "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode",
+        "x-content-type-options": "nosniff"
+      },
+      "bodyComplete": true,
+      "url": "https://stella-preview.jaoushingan.com/api/player/prepare",
+      "statusText": "",
+      "decodedResponseBytes": 84,
+      "decodedResponseSha256": "d07b316a0b4cf7dbfe30df47013c609c2f18bf0a4abd01e846f6d05d2998cdbd",
+      "gzipFile": "normal-saved-player-prepare.response.gz",
+      "gzipBytes": 107,
+      "gzipSha256": "47609ba9473b214ff823639004957b4b9abb10c2511499b45341a54c696d4576",
+      "finishedUtc": "2026-11-21T16:11:40.009Z"
+    }
+  ]
+}

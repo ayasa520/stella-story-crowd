@@ -1,0 +1,7 @@
+实际原始程序仅461的derived target不同：production为空，whole-library local为node:10120001:1012000100001；目标节点在production缺席、local存在。46目标nodes和48条非终止edge完整对象全等；49条native_transition及除target外字段全等。不能称49条完整edge对象相等。
+
+C9d lib/studio-native.ts:77–99按production section1011与local全库选择sources，实际90对5620节点；lib/preview.ts:70–76只从已加载sourceById解析目标root，同时允许FINISH section在无target节点时available。Studio idMap在lib/studio-native.ts:202继续仅映射已加载节点。
+
+public/player/player.js:782–797在FINISH section时完成当前section1011、显示其流程图并return；节点enter位于801行，已经在return之后，因此本差异不阻碍当前section结束，也不自动进入下一话。这是原始响应与源码控制流的解释，不是新实播结论。
+
+原500保持未解决；单次监控POST200不解释首次失败。未修改或归零任何program/response/before，未请求API、运行Git、启动browser/server或写源数据。必要原始字段、文件SHA及行引用见proof.json。

@@ -1,0 +1,225 @@
+{
+  "schema": "stella.episode11.section-terminal-projection-semantics.v1",
+  "status": "raw_projection_difference_preserved_source_semantics_explained",
+  "scriptCommit": "debef87397ac10976e6fad96b1d14b28297cd754",
+  "sourceHeadReportedByRoot": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+  "combinedRootProof": {
+    "path": "artifacts/stella-script-continuation-20261121/episode11-production-combined-root-proof-v1.json",
+    "sha256": "503d6b2b7dde4182185d04531e68513bb0f73f614b13f782cc6277a03a721ade"
+  },
+  "rawPrograms": {
+    "production": {
+      "path": "artifacts/stella-script-continuation-20261121/episode11-prepare-worker-tail-rootfalse-v1/attempt-1/single-replay.response.gz",
+      "gzipSha256": "300301365a30864a4346c95b47832adc7f1b4dd59cebca4a82e5b25e3707d255",
+      "rawSha256": "8f4bc80f45f51f4acdb8baca84ff3696b2bc45da44d76b5abaaef80489f168cc",
+      "rawBytes": 832062
+    },
+    "local": {
+      "path": "artifacts/stella-script-continuation-20261121/episode11-scene10110003-normal-saved-runtime-rootfalse-v1/normal-prepare-body.json.gz",
+      "gzipSha256": "7fe2b09ffcf46d2f3d5e13ac6c8c37b4fc1431f109c2ed0602591c9989d27eef",
+      "rawSha256": "b524ad6f0e6ec78e7a8ccb66b7298156e7ddb215a2faa375ba33905bc54bee14",
+      "rawBytes": 18743430
+    }
+  },
+  "actual": {
+    "productionNodes": 90,
+    "localLibraryNodes": 5620,
+    "all46TargetNodesExact": true,
+    "targetSourceEdges": 49,
+    "nonterminal48CompleteEdgesExact": true,
+    "all49NativeTransitionsExact": true,
+    "all49FieldsExceptDerivedTargetExact": true,
+    "all49CompleteEdgeObjectsExact": false,
+    "onlyDifference": [
+      {
+        "edgeId": "edge:node:10110003:1011000300046:1011000310461:461",
+        "differingKeys": [
+          "target"
+        ]
+      }
+    ],
+    "productionEdge": {
+      "id": "edge:node:10110003:1011000300046:1011000310461:461",
+      "source": "node:10110003:1011000300046",
+      "target": "",
+      "kind": "next",
+      "side": "",
+      "label": "",
+      "quote": "",
+      "label_translation": "",
+      "quote_translation": "",
+      "state": "confirmed",
+      "available": true,
+      "transition": {
+        "label": "FINISH",
+        "section": "section:1012",
+        "scene": "scene:10120001",
+        "entry": "root"
+      },
+      "flow_action": "section",
+      "source_scene": "scene:10110003",
+      "target_scene": "scene:10120001",
+      "native_transition": {
+        "uniq_id": 1011000310461,
+        "transition_id": 46101,
+        "next_scenario_id": 0,
+        "next_scenario_label": "FINISH",
+        "next_section_id": 1012,
+        "next_scene_id": 10120001
+      },
+      "flow_error": "",
+      "notes": "",
+      "origin": "native",
+      "score": null
+    },
+    "localEdge": {
+      "id": "edge:node:10110003:1011000300046:1011000310461:461",
+      "source": "node:10110003:1011000300046",
+      "target": "node:10120001:1012000100001",
+      "kind": "next",
+      "side": "",
+      "label": "",
+      "quote": "",
+      "label_translation": "",
+      "quote_translation": "",
+      "state": "confirmed",
+      "available": true,
+      "transition": {
+        "label": "FINISH",
+        "section": "section:1012",
+        "scene": "scene:10120001",
+        "entry": "root"
+      },
+      "flow_action": "section",
+      "source_scene": "scene:10110003",
+      "target_scene": "scene:10120001",
+      "native_transition": {
+        "uniq_id": 1011000310461,
+        "transition_id": 46101,
+        "next_scenario_id": 0,
+        "next_scenario_label": "FINISH",
+        "next_section_id": 1012,
+        "next_scene_id": 10120001
+      },
+      "flow_error": "",
+      "notes": "",
+      "origin": "native",
+      "score": null
+    },
+    "targetNodePresentInProduction": false,
+    "targetNodePresentInLocal": true,
+    "localTarget": [
+      {
+        "id": "node:10120001:1012000100001",
+        "sceneId": "scene:10120001",
+        "scenarioId": 1,
+        "kind": "title"
+      }
+    ],
+    "sourceDirectory": {
+      "id": "scene:10110003",
+      "parent": "section:1011"
+    },
+    "currentSection": "section:1011",
+    "returnedBeforeJSONExact": true
+  },
+  "sourceEvidence": {
+    "root": "artifacts/stella-site-repair-source/.sites-checkout",
+    "sha256": {
+      "lib/preview.ts": "a86d28a5fcb8d5e85ff53c8422eaa5d418c4e9b72f6552c6724a612b6ce50af8",
+      "lib/studio-native.ts": "5cad757a5b8c9ba1444ec466a9e44b9cbeadd0be24280d1189d1d9cfa814e396",
+      "public/player/player.js": "5f2ae9d24449d6dd7d197af05f6ae70fae9e7ca508f65c4ec8584d7920b0548c"
+    },
+    "citations": [
+      {
+        "path": "lib/studio-native.ts",
+        "lines": [
+          77,
+          80,
+          81,
+          82,
+          83,
+          94,
+          95,
+          96,
+          97
+        ],
+        "meaning": "Cloudflare reads the requested section sources; local non-hosted read uses manifest.scenes. The actual responses contain90 versus5620 nodes."
+      },
+      {
+        "path": "lib/preview.ts",
+        "lines": [
+          70,
+          71,
+          72,
+          73
+        ],
+        "meaning": "next_scenario_id0 resolves its destination root only through loaded sourceById. Absent next-section source leaves destinationId undefined and derived target empty; whole-library loading can resolve it."
+      },
+      {
+        "path": "lib/preview.ts",
+        "lines": [
+          74,
+          75,
+          76,
+          82,
+          83
+        ],
+        "meaning": "FINISH to a different section has flow_action section and remains available without target-node presence; native transition and section/scene/root metadata are retained."
+      },
+      {
+        "path": "lib/studio-native.ts",
+        "lines": [
+          163,
+          165,
+          166,
+          167,
+          168,
+          202,
+          206
+        ],
+        "meaning": "The Studio projection maps derived targets only through loaded idMap. It retains section availability, unless explicit review exclusion/missing status disables the edge; actual edge is available."
+      },
+      {
+        "path": "public/player/player.js",
+        "lines": [
+          692,
+          779,
+          782,
+          783,
+          784,
+          791,
+          792,
+          793,
+          794,
+          795,
+          796,
+          797,
+          800,
+          801
+        ],
+        "meaning": "available uses edge.available. follow handles FINISH section/complete, records the completed source, renders its chart, sets complete and returns at797 before enter(edge.target) at801."
+      }
+    ]
+  },
+  "conclusion": {
+    "sourceBoundInference": true,
+    "currentSectionCompletionBlockedByDerivedTargetDifference": false,
+    "reason": "The actual available FINISH section edge takes the return-before-enter path. Empty production target is not used for node lookup on that path.",
+    "nextSectionEntered": false,
+    "nextSectionRuntimeExecutedByThisInvestigation": false,
+    "wholeProgramEqualityClaimed": false,
+    "playbackEquivalenceClaimed": false,
+    "programOrStateNormalized": false,
+    "original500CauseResolved": false,
+    "monitored200DoesNotExplainOriginal500": true
+  },
+  "investigation": {
+    "networkRequests": 0,
+    "gitCommands": 0,
+    "browserOrServerStarted": false,
+    "sourceDataOrOriginalArtifactsWritten": false,
+    "actualPlaybackExecuted": false,
+    "onlyNewSiblingEvidenceWritten": true
+  }
+}

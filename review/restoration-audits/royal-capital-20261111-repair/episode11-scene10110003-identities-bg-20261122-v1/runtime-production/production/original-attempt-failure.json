@@ -1,0 +1,147 @@
+{
+  "schema": "stella.episode11.production-readback-failure.v1",
+  "stage": "normal-saved-player-prepare",
+  "error": {
+    "name": "AssertionError",
+    "message": "normal-saved-player-prepare HTTP status; original body retained\n\n500 !== 200\n",
+    "stack": "AssertionError [ERR_ASSERTION]: normal-saved-player-prepare HTTP status; original body retained\n\n500 !== 200\n\n    at request (file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode11-production-readback-rootfalse-v1/readback.mjs:78:9)\n    at async file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode11-production-readback-rootfalse-v1/readback.mjs:124:16",
+    "cause": null
+  },
+  "expectedHead": "debef87397ac10976e6fad96b1d14b28297cd754",
+  "inputs": {
+    "schema": "stella.episode11.production-input-binding.v1",
+    "expectedHead": "debef87397ac10976e6fad96b1d14b28297cd754",
+    "sourceHead": "9d39252bde3b57983fe9a1e9c563f891bb781622",
+    "start": "node:10110003:1011000300001",
+    "sceneId": 10110003,
+    "release": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode11-production-readback-root-release-v1.json",
+      "sha256": "a2e6e48135ac8cddf2184c86897f937024938033c8fe4365c823b9b3a3849b48"
+    },
+    "runtimeBindings": {
+      "artifacts/stella-script-continuation-20261121/episode11-production-readback-rootfalse-v1/readback.mjs": "b39757a0e8f91449919f2d79a4046520424866cb814f990593c2c3d12d3fb9cd",
+      "artifacts/stella-script-continuation-20261121/episode11-production-readback-rootfalse-v1/README.md": "86fe0a2b6d38624dfff64c8a02f16317f3a215b3dcf7355e95aca287709f3244"
+    },
+    "guards": {
+      "artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10110003.json": "773d5169d2c22d1225042004dbb2cd6475eedbe453781b41a6c6853d6965400b",
+      "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10110003.json": "edaa3a28b462398d2c2212fcb55510c3b15e0d078a8beeed39c589aa8c7c8a4a",
+      "artifacts/stella-site-repair-source/.sites-checkout/lib/studio-api.ts": "ab067c5cb0e37fc3727e909e6f0e96668facf457941395e7e6b447ab9ce5239c",
+      "artifacts/stella-script-continuation-20261121/episode11-scene10110003-normal-saved-runtime-rootfalse-v1/normal-prepare-body.json.gz": "7fe2b09ffcf46d2f3d5e13ac6c8c37b4fc1431f109c2ed0602591c9989d27eef",
+      "artifacts/stella-script-continuation-20261121/episode11-scene10110003-normal-saved-runtime-rootfalse-v1/normal-prepare-receipt.json": "99e2a067d9837bfe45e4c1b3fd91b6f07c33c0c9681c594d44bbb4242f192067",
+      "artifacts/stella-script-continuation-20261121/episode11-scene10110003-script-main-ACK-v1.json": "898285446f070b5a0ca2ce971ec178de108948feef7c75b7eee568152d93e7bf"
+    },
+    "reference": {
+      "path": "artifacts/stella-script-continuation-20261121/episode11-scene10110003-normal-saved-runtime-rootfalse-v1/normal-prepare-body.json.gz",
+      "gzipBytes": 1463776,
+      "gzipSha256": "7fe2b09ffcf46d2f3d5e13ac6c8c37b4fc1431f109c2ed0602591c9989d27eef",
+      "decodedBytes": 18743430,
+      "decodedSha256": "b524ad6f0e6ec78e7a8ccb66b7298156e7ddb215a2faa375ba33905bc54bee14",
+      "libraryNodes": 5620,
+      "targetNodes": 46,
+      "targetSourceEdges": 49
+    },
+    "ack": {
+      "path": "artifacts/stella-script-continuation-20261121/episode11-scene10110003-script-main-ACK-v1.json",
+      "sha256": "898285446f070b5a0ca2ce971ec178de108948feef7c75b7eee568152d93e7bf",
+      "exactRemoteAck": {
+        "head": "debef87397ac10976e6fad96b1d14b28297cd754",
+        "ref": "refs/heads/main",
+        "session": 21740,
+        "exitCode": 0
+      }
+    },
+    "localFiles": {
+      "native": {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10110003.json",
+        "bytes": 105471,
+        "sha256": "773d5169d2c22d1225042004dbb2cd6475eedbe453781b41a6c6853d6965400b"
+      },
+      "review": {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10110003.json",
+        "bytes": 524463,
+        "sha256": "edaa3a28b462398d2c2212fcb55510c3b15e0d078a8beeed39c589aa8c7c8a4a"
+      }
+    },
+    "localFilesBoundToCommittedSaveByRoot": true,
+    "networkRequestsMaximum": 2,
+    "retries": 0,
+    "browserStarted": false,
+    "serverStarted": false,
+    "gitExecuted": false
+  },
+  "http": [
+    {
+      "name": "default-main-native-source",
+      "method": "GET",
+      "requestedUrl": "https://stella-preview.jaoushingan.com/api/native/source?sceneId=10110003",
+      "request": null,
+      "startedUtc": "2026-11-21T16:11:36.166Z",
+      "deadlineMs": 60000,
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "private, no-store",
+        "cf-ray": "a5e0f8ae58caf3db-SJC",
+        "content-type": "application/json",
+        "date": "Sat, 21 Nov 2026 16:11:39 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=VL9E4A69HgRRk4NEaiiW845w%2BM4uFRcjK0HuIW0dYywU%2B2scJii%2BHF7AphjA1p%2Be%2Ffs%2B2EMoNG6JB5VrV8VV3y3I2vDrcq1mEIWQwJjMcdsTy0cKm6%2B8lCdi6gAwMBh3iYixVpT4b7isY9UHdy7RtIGNDaktjuQwrApqDr4%3D\"}]}",
+        "server": "cloudflare",
+        "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode",
+        "x-content-type-options": "nosniff"
+      },
+      "bodyComplete": true,
+      "url": "https://stella-preview.jaoushingan.com/api/native/source?sceneId=10110003",
+      "statusText": "",
+      "decodedResponseBytes": 441444,
+      "decodedResponseSha256": "92cb19c124f86aaa5e62bfc4d84beff6523bc3112367ee2149ed3535b504ca8b",
+      "gzipFile": "default-main-native-source.response.gz",
+      "gzipBytes": 31986,
+      "gzipSha256": "362f33b291f3b3c47585485ad6876d9f55609630ef2bb945f66504117a274ce7",
+      "finishedUtc": "2026-11-21T16:11:39.712Z"
+    },
+    {
+      "name": "normal-saved-player-prepare",
+      "method": "POST",
+      "requestedUrl": "https://stella-preview.jaoushingan.com/api/player/prepare",
+      "request": {
+        "id": "node:10110003:1011000300001",
+        "baseSha": "debef87397ac10976e6fad96b1d14b28297cd754",
+        "choices": {}
+      },
+      "startedUtc": "2026-11-21T16:11:39.718Z",
+      "deadlineMs": 60000,
+      "status": 500,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "private, no-store",
+        "cf-ray": "a5e0f8c0dae6f3db-SJC",
+        "content-type": "application/json",
+        "date": "Sat, 21 Nov 2026 16:11:41 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=FjwEhs0Y4vLwQe2azX%2FmhuOr0WK77EBKZgZ9rDjXN%2FX8sATMz8u%2FIk4tPn2l1saoiE7gZLOhkyq%2FejDYjW%2FSxpyVZDDNoFVmBk42a3AEzJl8FPMTrhCuTSpsKlt10Lm9%2FroMbPKQuERINr9Ju81VVq9KB%2Bl98GhsVfZCsjo%3D\"}]}",
+        "server": "cloudflare",
+        "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode",
+        "x-content-type-options": "nosniff"
+      },
+      "bodyComplete": true,
+      "url": "https://stella-preview.jaoushingan.com/api/player/prepare",
+      "statusText": "",
+      "decodedResponseBytes": 84,
+      "decodedResponseSha256": "d07b316a0b4cf7dbfe30df47013c609c2f18bf0a4abd01e846f6d05d2998cdbd",
+      "gzipFile": "normal-saved-player-prepare.response.gz",
+      "gzipBytes": 107,
+      "gzipSha256": "47609ba9473b214ff823639004957b4b9abb10c2511499b45341a54c696d4576",
+      "finishedUtc": "2026-11-21T16:11:40.009Z"
+    }
+  ],
+  "retries": 0,
+  "exactLastResponse": {
+    "gzipFile": "normal-saved-player-prepare.response.gz",
+    "decodedResponseSha256": "d07b316a0b4cf7dbfe30df47013c609c2f18bf0a4abd01e846f6d05d2998cdbd",
+    "bodyComplete": true
+  },
+  "sourceDataOrGitWrites": false,
+  "browserStarted": false,
+  "serverStarted": false
+}

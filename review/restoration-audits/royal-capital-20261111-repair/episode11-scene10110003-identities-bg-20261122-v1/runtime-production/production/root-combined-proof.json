@@ -1,0 +1,75 @@
+{
+  "schema": "stella.episode11.production-combined-root-proof.v1",
+  "createdUTC": "2026-11-21T16:30:47.259Z",
+  "scriptCommit": "debef87397ac10976e6fad96b1d14b28297cd754",
+  "originalAttempt": {
+    "session": 76286,
+    "exitCode": 1,
+    "nativeSourceStatus": 200,
+    "nativeSourceObjectsExact": true,
+    "failedPrepareStatus": 500,
+    "failedPrepareBytes": 84,
+    "failedPrepareSHA256": "d07b316a0b4cf7dbfe30df47013c609c2f18bf0a4abd01e846f6d05d2998cdbd",
+    "cfRay": "a5e0f8c0dae6f3db-SJC",
+    "preservedUnmodified": true,
+    "causeStillUnknown": true
+  },
+  "monitoredSingleReplay": {
+    "session": 35158,
+    "exitCode": 0,
+    "tailReady": true,
+    "requests": 1,
+    "status": 200,
+    "bodyComplete": true,
+    "rawBytes": 832062,
+    "rawSHA256": "8f4bc80f45f51f4acdb8baca84ff3696b2bc45da44d76b5abaaef80489f168cc",
+    "cfRay": "a5e10d284c6bd035-SJC",
+    "tailSeconds": 19.73581285699038,
+    "tailAndReplayPids": [
+      27987,
+      28025
+    ],
+    "allPidsGroupsExited": true,
+    "guardsUnchanged": true,
+    "noSuccessfulGETRepeated": true,
+    "noAutomaticRetries": true,
+    "sourceCodeOrScriptsChangedBetweenRequests": false
+  },
+  "all46TargetNodesExact": true,
+  "targetSourceEdges": 49,
+  "nonterminal48EdgesFullyExact": true,
+  "all49NativeTransitionObjectsAndOtherFieldsExact": true,
+  "all49CompleteEdgeObjectsExact": false,
+  "terminalDerivedTargetDifference": {
+    "edgeId": "edge:node:10110003:1011000300046:1011000310461:461",
+    "productionTarget": "",
+    "localTarget": "node:10120001:1012000100001",
+    "targetNodePresentInProduction": false,
+    "targetNodePresentInLocal": true,
+    "otherEdgeFieldsExactlyEqual": true,
+    "nativeTransition": {
+      "uniq_id": 1011000310461,
+      "transition_id": 46101,
+      "next_scenario_id": 0,
+      "next_scenario_label": "FINISH",
+      "next_section_id": 1012,
+      "next_scene_id": 10120001
+    },
+    "flowAction": "section",
+    "available": true,
+    "meaning": "Record the actual projection difference. Section-scoped production omits the next scene node; whole-library local contains it. Exact source semantics are checked separately. No program or state was normalized."
+  },
+  "returnedBeforeJSONExact": true,
+  "productionNodes": 90,
+  "localLibraryNodes": 5620,
+  "wholeProgramEqualityClaimed": false,
+  "playbackEquivalenceClaimed": false,
+  "original500CauseResolved": false,
+  "serverLoggingLimitation": "Current catch logs only error.message. The monitored request did not fail; no original500 stack or upstream path was captured.",
+  "previousRootComparisonFailure": {
+    "toolChunk": "457c23",
+    "reason": "Strict full-edge equality was contradicted by the single recorded section-terminal target projection difference.",
+    "newComparisonDoesNotHideOrRewriteDifference": true
+  },
+  "wholeSceneAccepted": false
+}
