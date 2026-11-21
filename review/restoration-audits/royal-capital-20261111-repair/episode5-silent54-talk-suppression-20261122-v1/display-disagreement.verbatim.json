@@ -1,0 +1,98 @@
+{
+  "schema": "stella.K5.image-review-display-observation.v1",
+  "rootConfirmed": false,
+  "cause": "unknown",
+  "JPEGRewriteOrIntegrityFailureEstablished": false,
+  "realPanelOutEstablished": false,
+  "frameRecords": [
+    {
+      "frame": 331,
+      "JPEG": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/54-talk0-only/frames/000331.jpg",
+        "bytes": 177971,
+        "sha256": "bf1414605380d36e1d713e3e951ecb6e6274fad73ab469654dc784180e8a6a5d"
+      },
+      "originalPTS": 11000,
+      "timeBase": "1/1000",
+      "rawRGB24BytesFromBoundDecoderIndex": 1500000,
+      "rawRGB24SHA256FromBoundDecoderIndex": "3738276c55f444230634998fb7f3b5b2124ee888cd73ce06b05c6cd84671ab03"
+    },
+    {
+      "frame": 333,
+      "JPEG": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/54-talk0-only/frames/000333.jpg",
+        "bytes": 177535,
+        "sha256": "99524606ee273a4a5f064ba5c603df43073fe889e4d5b2e6d4e9d965ad436fc7"
+      },
+      "originalPTS": 11067,
+      "timeBase": "1/1000",
+      "rawRGB24BytesFromBoundDecoderIndex": 1500000,
+      "rawRGB24SHA256FromBoundDecoderIndex": "f37ad9d59d52bf12de570783c15cff44170ebfafc2e56391ebac63bd57fa293d"
+    },
+    {
+      "frame": 336,
+      "JPEG": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/54-talk0-only/frames/000336.jpg",
+        "bytes": 177842,
+        "sha256": "4be51ec56fcfadd95290f99f457fb6c16caf92c331953f82a772f5940bd00eb7"
+      },
+      "originalPTS": 11167,
+      "timeBase": "1/1000",
+      "rawRGB24BytesFromBoundDecoderIndex": 1500000,
+      "rawRGB24SHA256FromBoundDecoderIndex": "fab296103addbc20deeadc1bdf76833a40def7fdb82f311c678e7ee3418484f7"
+    },
+    {
+      "frame": 338,
+      "JPEG": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/54-talk0-only/frames/000338.jpg",
+        "bytes": 178058,
+        "sha256": "47d50a06d63eb1abb1a223e2b4bca9d3aaf9a5a7d574180afa4c58e6926c46cd"
+      },
+      "originalPTS": 11233,
+      "timeBase": "1/1000",
+      "rawRGB24BytesFromBoundDecoderIndex": 1500000,
+      "rawRGB24SHA256FromBoundDecoderIndex": "7d3f2b2b5b41ee8a456d5df72f0cce8e1918ca72219bb8398dacd04144b26163"
+    },
+    {
+      "frame": 339,
+      "JPEG": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/54-talk0-only/frames/000339.jpg",
+        "bytes": 181445,
+        "sha256": "8e08ab7e4190564dd077f15e609c74f1dd7f05d15ac1099919e53ff0ced4cd25"
+      },
+      "originalPTS": 11267,
+      "timeBase": "1/1000",
+      "rawRGB24BytesFromBoundDecoderIndex": 1500000,
+      "rawRGB24SHA256FromBoundDecoderIndex": "cec6957d24e54a89d109880d01b1dcacc79a266fa2c5cd2191b1c59f5d076137"
+    }
+  ],
+  "rawRGBStreamRetained": false,
+  "observationSequence": [
+    {
+      "reviewer": "/root/episode11_images_31_46",
+      "mode": "complete chronological contacts, then batched direct native views",
+      "observation": "The upper region around the331–338 contact interval appeared partly absent/black. In the initial batched native views336 and338 appeared with an upper black region obscuring the pause panel;331/333/339 appeared with full panel. Mouth stayed readable and closed."
+    },
+    {
+      "reviewer": "/root/episode11_images_31_46",
+      "mode": "fresh raw JPEG hash, then single direct tools.view_image336",
+      "observation": "336 now showed the full completed pause panel; SHA and byte count exactly matched initial and manifest. This later view does not delete the earlier displayed observation."
+    },
+    {
+      "reviewer": "/root/episode11_images_31_46",
+      "mode": "fresh raw JPEG hash, then single direct tools.view_image338",
+      "observation": "338 still appeared with an upper black region obscuring the panel; the mouth remained visible and closed. SHA and byte count remained exact."
+    },
+    {
+      "reviewer": "/root/episode11_images_31_46/k5_mouth_peer",
+      "mode": "separate single direct tools.view_image336 and338, fresh SHA",
+      "observation": "Peer reported both336 and338 with a full completed pause panel and closed mouth; same exact JPEG bindings. Explicit338 display disagreement retained."
+    }
+  ],
+  "adjacentWitnesses": "331/333/339 full panel and closed mouth in direct native views; target54 remains in ready hold by logs. No source/native panel-out inference from this display discrepancy.",
+  "limits": [
+    "Indexed raw RGB SHA is retained decoder evidence; JPEG cannot reconstruct the lossy source RGB for a new equality proof.",
+    "No recapture, re-decode, new crop/contact, old-file edit or media investigation executed.",
+    "The display discrepancy prevents a clean all-capture/paint claim; the mouth remains readable in both reported displays."
+  ]
+}

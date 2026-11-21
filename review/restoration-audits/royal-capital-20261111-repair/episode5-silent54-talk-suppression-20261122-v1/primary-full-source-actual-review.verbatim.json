@@ -1,0 +1,410 @@
+{
+  "schema": "stella.episode5.K5.talk0-only.complete-source-actual-review.v1",
+  "rootConfirmed": false,
+  "createdUTC": "2026-11-21T22:00:29.523720+00:00",
+  "reviewer": "/root/episode11_images_31_46",
+  "mainAgentViewedImages": false,
+  "scope": {
+    "caseId": "54-talk0-only",
+    "sceneId": 10090015,
+    "targetScenario": 54,
+    "normalContext": [
+      45,
+      54,
+      46
+    ],
+    "onlyCandidateNativeDiff": {
+      "scenario": 54,
+      "field": "talk_chara",
+      "before": "",
+      "after": "0"
+    },
+    "nativeMotionRemainsEmpty": true,
+    "noPrivateBodyFaceTokenOrAutomaticSeed": true,
+    "actualFrames": 453,
+    "actualContacts": 23,
+    "actualPTSSeconds": [
+      0,
+      15.067
+    ],
+    "sourceUniquePTS": 366,
+    "sourcePhysicalJPEG": 371,
+    "sourceContactSlots": 407,
+    "sourceContacts": 15,
+    "sourcePTSSeconds": [
+      696.822,
+      708.988
+    ],
+    "stopsAt46Ready": true,
+    "no46Exit49MovieActual": true
+  },
+  "rootClosure": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-talk0-only-frames-root-closure-after-revalidation-v1.json",
+    "bytes": 3472,
+    "sha256": "a6bd0307ae51101cc9a5e61abf1ca5a03af7020b57f18af0871817caf61dc69e"
+  },
+  "coverage": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-full-source-actual-review-v1/coverage.json",
+    "bytes": 777464,
+    "sha256": "43fd296306c039c7331c9da55851e030437fa04f6bfb6122bf78ce16a2d1ecc1"
+  },
+  "traceCorrelation": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-full-source-actual-review-v1/trace-correlation.rootfalse.json",
+    "bytes": 10561,
+    "sha256": "5082d69d1e8dcd1ad2c2b312d6e417b85833c6fa9381e3f28913e949790d62e0"
+  },
+  "displayObservationAndDisagreement": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-full-source-actual-review-v1/display-observation.rootfalse.json",
+    "bytes": 5131,
+    "sha256": "a4b35ecf6f9c747ebde9a362078612754615601b012821deb7dd54ccbcc3d443"
+  },
+  "verdict": {
+    "reviewComplete": true,
+    "narrowTalkSuppressionIsolation": "limited_pass_for_this_private_run",
+    "source54AbsentTypingOpeningObserved": false,
+    "readable54MouthClosedEntryTypingHold": true,
+    "sourceSupportsSuppressing54TalkOpening": true,
+    "sourceExactMouthGeometryMatched": false,
+    "originalNativeTalkFlagRecovered": false,
+    "formalFlagInstalledOrAcceptedByThisReviewer": false,
+    "formalWritesAuthorizedByReceipt": false,
+    "bodyProcess": "unknown_original_provider_phase_and_token",
+    "faceProcess": "visible_eye_brow_and_mouth_corner_difference",
+    "bodyInstallable": false,
+    "faceInstallable": false,
+    "extraInstallable": false,
+    "formalMotionAccepted": false,
+    "wholeCaptureOrSceneAccepted": false,
+    "preferredBodyOrFaceWinner": null
+  },
+  "findings": [
+    {
+      "part": "54 mouth across complete process",
+      "source": "Across the complete54 source entry, pause-line reveal and hold, the mouth stays a thin slightly downturned closed line. Full originals698.355/699.488/700.488/701.988 confirm no visible oral interior.",
+      "actual": "All23 contacts account for453 frames. Faint target203–209 leads to readable opaque210; before and during pause typing230/241, complete249 and long hold through391 the mouth remains a closed short line. No obvious source-absent mouth opening seen in readable54 frames.",
+      "judgment": "Finite match of open/closed behavior. Lowest-opacity entry details, subpixel openings and exact lip geometry are not claimed."
+    },
+    {
+      "part": "54 flag isolation and current baseline",
+      "source": "The silent pause content and closed-mouth original process support suppressing automatic typing-mouth opening here.",
+      "actual": "Complete recursive native scene diff is only54 talk_chara empty→0. Motion and derived body/face/extras remain empty. Actual settled layer is unassigned default act_normal_w weight1; face effective weight0, no talk layer. Target54 has0 mouth start/stop events and29 settled Subaru rows talking=false/talk absent.",
+      "judgment": "This isolates a narrow current runtime result without choosing a body/face token. It does not recover an original CSV flag or native provider."
+    },
+    {
+      "part": "54 appearance counterexample",
+      "source": "Tighter sloping brows, narrower/tenser eye appearance, closed downturned lip line.",
+      "actual": "Ordinary/default brows and eyes, with a small upward-curving closed mouth at210/230/241/249/391. Same Subaru01 costume and fruitstall are recognizable.",
+      "judgment": "Visible facial appearance is different. Mouth closure cannot sign face, body token, geometry, exact native phase or whole performance."
+    },
+    {
+      "part": "54 body/entry and hold limits",
+      "source": "Fades in at698.155→698.355 with low sleeves/arms and subtle head/torso changes; holds until the next reaction.",
+      "actual": "Faint203–209→opaque210, low sleeves/arms and slight posture changes through hold. >=4actor seconds is supported only by logs (4.3382599999999965), not by a static-frame duration claim.",
+      "judgment": "Only a bounded posture family is visible. Hands/lower body are cropped/overlaid; neither the default current layer nor its source-native phase/provider is accepted as a required script value."
+    },
+    {
+      "part": "46 next boundary and counterexample",
+      "source": "The54 panel leaves before a distinct46 eye-narrowing/closed703.188/reopening-wide reaction, then46 panel704.055 and small puzzled mouth through the original hold.",
+      "actual": "54 panel/closed mouth remains through391;46 typing first visible392. Actual392 and405 clearly expose an oral opening;406 and tail453 close again. The ordinary eyes/brows continue without the source closure→wide-eye reaction.",
+      "judgment": "46 mouth activity is a separate bounded counter-control to54 closure, not a whole-model frozen-mouth result. The46 source process still differs and is not accepted; no46 exit/movie captured."
+    },
+    {
+      "part": "45 predecessor counterexample",
+      "source": "In the reviewed predecessor tail the vendor holds arms open/outward.",
+      "actual": "The current empty-motion baseline predecessor is arms-crossed before54.",
+      "judgment": "No45 motion or whole45→54→46 performance acceptance follows from this narrow54 flag result."
+    },
+    {
+      "part": "review display discrepancy",
+      "source": "Source pause panel and next panel boundaries were separately observed from complete original contacts/native anchors.",
+      "actual": "Initial contact/batched review displayed upper-region/panel obscuration around336/338. Later single336 shows full panel at identical SHA. Single338 differs between this reviewer (upper black region) and peer (full panel), with identical raw JPEG bindings; mouth remains readable/closed in both observations. Adjacent331/333/339 directly show full panel.",
+      "judgment": "Keep every earlier and later observation. Cause unknown; do not assert a JPEG rewrite, true panel-out, renderer/capture/asset cause, or clean all-capture/paint acceptance."
+    }
+  ],
+  "timelines": {
+    "actualObserved": [
+      [
+        "1–63",
+        "0–2.067",
+        "initial black/loading UI"
+      ],
+      [
+        "64–79",
+        "2.1–2.6",
+        "fruitstall blur and faint vendor entry"
+      ],
+      [
+        "80–184",
+        "2.633–6.1",
+        "vendor readable, typing then hold"
+      ],
+      [
+        "185–202",
+        "6.133–6.7",
+        "actorless/blur transition"
+      ],
+      [
+        "203–209",
+        "6.733–6.933",
+        "faint54 Subaru entry"
+      ],
+      [
+        "210–229",
+        "6.967–7.6",
+        "readable54 before pause panel"
+      ],
+      [
+        "230–248",
+        "7.633–8.233",
+        "pause line typing; closed mouth"
+      ],
+      [
+        "249–391",
+        "8.267–13",
+        "completed54 hold; closed mouth, with display discrepancy separately retained"
+      ],
+      [
+        "392–405",
+        "13.033–13.467",
+        "46 typing and visible mouth opening"
+      ],
+      [
+        "406–453",
+        "13.5–15.067",
+        "completed46 line and closed-mouth tail; stops ready"
+      ]
+    ],
+    "clockQualification": "CapturePTS locates image content only. SourcePTS, capturePTS, wall time, normal game time and actorSeconds are distinct; no affine/native phase calibration signed."
+  },
+  "logSummary": {
+    "entered": [
+      {
+        "sequence": 10,
+        "node": "node:10090015:node_dae6816ae851",
+        "wallEpochMilliseconds": 1795292813532,
+        "rawArguments": [
+          "STORY_PLAYER_ENTER",
+          "node:10090015:node_dae6816ae851",
+          "card"
+        ]
+      },
+      {
+        "sequence": 56,
+        "node": "node:10090015:node_869b7bc19352",
+        "wallEpochMilliseconds": 1795292817482,
+        "rawArguments": [
+          "STORY_PLAYER_ENTER",
+          "node:10090015:node_869b7bc19352",
+          "card"
+        ]
+      },
+      {
+        "sequence": 108,
+        "node": "node:10090015:node_4d90b64dba29",
+        "wallEpochMilliseconds": 1795292824229,
+        "rawArguments": [
+          "STORY_PLAYER_ENTER",
+          "node:10090015:node_4d90b64dba29",
+          "card"
+        ]
+      }
+    ],
+    "trustedInputs": [
+      {
+        "button": "advance",
+        "edge": null,
+        "isTrusted": true,
+        "node": "node:10090015:node_dae6816ae851",
+        "phase": "ready",
+        "wallMilliseconds": 11140
+      },
+      {
+        "button": "advance",
+        "edge": null,
+        "isTrusted": true,
+        "node": "node:10090015:node_869b7bc19352",
+        "phase": "ready",
+        "wallMilliseconds": 17889
+      }
+    ],
+    "completeNativeSceneDiff": [
+      {
+        "path": "/scenario_list/49/talk_chara",
+        "before": "",
+        "after": "0"
+      }
+    ],
+    "holds": [
+      {
+        "scenario": 45,
+        "minimumActorSeconds": 1,
+        "measuredActorSeconds": 1.2537199999999995
+      },
+      {
+        "scenario": 54,
+        "minimumActorSeconds": 4,
+        "measuredActorSeconds": 4.3382599999999965
+      },
+      {
+        "scenario": 46,
+        "minimumActorSeconds": 1,
+        "measuredActorSeconds": 1.2881399999999985
+      }
+    ],
+    "normalHitches": 2,
+    "productFatalErrors": [],
+    "traceDropped": 0,
+    "tapDropped": 0,
+    "ownerDropped": 0,
+    "sourceEventTarget54Entry": 56,
+    "sourceEventNext46Entry": 108,
+    "actualCurrentDefaultLayerKnown": "act_normal_w, unassigned,weight1; face0 at54 settled checkpoints",
+    "sourceNativeBodyFaceProviderAndPhase": "unknown",
+    "parameterPhase": "after-original-ActorAnimation.render-before-core-update-and-GL-draw",
+    "notPaintEvidence": true,
+    "audio": {
+      "captureHasAudio": false,
+      "mediaObserverRows": 0,
+      "BGMCommandCount": 1,
+      "BGMPlayCount": 1,
+      "voicePreparationCount": 9,
+      "voicePlayedAccepted": false,
+      "subjectiveListeningPerformed": false,
+      "meaning": "BGM/voice-preparation logs are retained but the screen recording is silent; no audible result or source audio synchronization is accepted."
+    },
+    "currentStoryPlayerGeneration": null
+  },
+  "independentMouthPeer": {
+    "review": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-mouth-peer-v1/review.rootfalse.json",
+      "bytes": 5489,
+      "sha256": "995af5b1784cb6b05e5935cc7e4812a54c2793938173ce394c2c0f790b121c01"
+    },
+    "coverage": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-mouth-peer-v1/coverage.rootfalse.json",
+      "bytes": 133522,
+      "sha256": "0dd4ae7a07a90fe55d3389606f053f29385a3e7f213f116bd6ccdfb66cede869"
+    },
+    "displayRecheck": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-mouth-peer-v1/display-recheck.rootfalse.json",
+      "bytes": 3720,
+      "sha256": "5b1a9cf62c4fa899cb365d16b0232a6b574b5de576359e33ac72575ad63f3086"
+    },
+    "method": "Peer independently viewed all453 actual and all366 source PTS plus native mouth originals before reading this reviewer current conclusion orK5 talk trace. Main review already completed full source/actual contacts and critical originals when peer notification arrived; report sealed after cross-message.",
+    "sameNarrowConclusion": true,
+    "peerConclusionAcceptedAsSubstituteForMainCoverage": false,
+    "display338Agreement": false
+  },
+  "sourceCoverageUnits": "Full222+existing ending180 share36PTS. Existing contacts show41 predecessor+186 boundary+180 ending=407slots;5 overlapping PTS have alternate physical JPEGs.371physical JPEG and366uniquePTS are preserved as different units.",
+  "preservedPriorEvidence": {
+    "oldK3DuplicatePTSFailureAndRawRGBCompleteEOF": "Not changed or rewritten. K5 has453 exact sequential frames,zero duplicate/decreasingPTS and strict EOF. This is not evidence of a player repair.",
+    "earlierK4Frame94DifferingJPEG": "Root closure retains the earlier observed JPEG separately and says anomaly cause unknown; K5 images and this display discrepancy do not erase or explain it.",
+    "oldFourFrameTrees": "Root revalidation confirms oldF1/F2/F3/K4 trees preserved; this reviewer wrote only this new directory and a separately delegated new mouth-peer directory."
+  },
+  "limits": [
+    "No source-native phase, body provider, separate face provider, exact mouth owner or original native talk flag recovered.",
+    "Normal hitches=2, X-surface30fps samples are not uniqueGL paints. Pre-Core/pre-GL taps/weights/curve proofs do not sign painted behavior.",
+    "No exact geometry/placement/scale/tint/color/timing/audio/lipsync/allglyph/whole-scene/whole-episode acceptance.",
+    "Actual ends46ready, so source46exit and49door prefix are source-only coverage, not an actual movie comparison.",
+    "Faint entry and same-SHA display disagreement are retained with specific witnesses; no automatic cause or repair suggested.",
+    "No new media decode/capture, browser/API/helper/build/Git, orD/C/old-file edits performed."
+  ],
+  "inputs": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-talk0-only-frames-root-closure-after-revalidation-v1.json",
+      "bytes": 3472,
+      "sha256": "a6bd0307ae51101cc9a5e61abf1ca5a03af7020b57f18af0871817caf61dc69e"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/54-talk0-only/frames-index.json",
+      "bytes": 193565,
+      "sha256": "106c17bda715e6116c321007fff7c174b9337b7b2db4b6a336cf45a725140a71"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/54-talk0-only/contact-index.json",
+      "bytes": 13784,
+      "sha256": "8cd79674b3e9aa4bf2c994e786877a52aaa103e6c730f8d711bc7005810450a0"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/receipt.json",
+      "bytes": 6444,
+      "sha256": "c516fb5e1eeba6423b5fc8ca60a8e8d6eed8986163a74d1e9399bd16103d8739"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-six-private-kitv3-complete-actual-frames-v1/existing-original-source-frame-bindings.rootfalse.json",
+      "bytes": 258835,
+      "sha256": "8ef3e62459e0f2fb01b64d1327a7a6404f50045f21ae7a0959f6f6a2c206f46a"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-k4-B-complete-source-actual-review-v1/coverage.json",
+      "bytes": 818152,
+      "sha256": "be2ffc89992fd4e999052ea9e5a6e2f731385f1f13477b0926377be1d07d9d52"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/result.json",
+      "bytes": 446851,
+      "sha256": "5c3eca0a3af85bb2c0b1d55ccff0924c5b12d6f924180469aaa339486c1323fa"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/target54-talk-isolation.json",
+      "bytes": 6281,
+      "sha256": "7c53843060fd41771a3f621f24e1d51eb4f0e32d034612312c7859405f617970"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/actual-empty-motion-baseline.json",
+      "bytes": 1926,
+      "sha256": "0c5267ec997cc5eef38a95ea550cee05349d720391b5172c29a861a470d4fa84"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/actual-decoded-curve-proof.json",
+      "bytes": 3213,
+      "sha256": "d918678cd8f728646a3de81203018ee08aaf5004e33fc0f035fa0621202aed17"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/owner-original-trace.json.gz",
+      "bytes": 40276,
+      "sha256": "fe1d9c01d7fa36c7ce612a28fd78ab9fb3f2d874203a2842f83c29cf340f3b81"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/owner-archive.json",
+      "bytes": 1292,
+      "sha256": "4783a0d9756aa44d3a955bd218f789e2ccd123bb5fe23cf63cd11cfd9538c3d2"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/capture-receipt.json",
+      "bytes": 1254,
+      "sha256": "69ac0b0c41caa721b78e9657d92f728c6449cf21f505fe36ec15bd05d28fc6a2"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/actual.mkv",
+      "bytes": 2145716,
+      "sha256": "9657796372fa0632b8c7810ae74c7fcdf4b8e2ff62802d0d045ff6e23121c8c8"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/inputs-before.json",
+      "bytes": 2063593,
+      "sha256": "4f50e44cb8b54394ae6f748be6c1fe69e8b1a46bd50a46c51aa1664b6642d3b9"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/inputs-after.json",
+      "bytes": 2063593,
+      "sha256": "4f50e44cb8b54394ae6f748be6c1fe69e8b1a46bd50a46c51aa1664b6642d3b9"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-mouth-peer-v1/review.rootfalse.json",
+      "bytes": 5489,
+      "sha256": "995af5b1784cb6b05e5935cc7e4812a54c2793938173ce394c2c0f790b121c01"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-mouth-peer-v1/coverage.rootfalse.json",
+      "bytes": 133522,
+      "sha256": "0dd4ae7a07a90fe55d3389606f053f29385a3e7f213f116bd6ccdfb66cede869"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-mouth-peer-v1/display-recheck.rootfalse.json",
+      "bytes": 3720,
+      "sha256": "5b1a9cf62c4fa899cb365d16b0232a6b574b5de576359e33ac72575ad63f3086"
+    }
+  ],
+  "formalDataOrCodeModified": false
+}

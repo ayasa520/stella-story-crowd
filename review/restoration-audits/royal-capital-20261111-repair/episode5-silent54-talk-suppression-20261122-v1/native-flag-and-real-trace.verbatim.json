@@ -1,0 +1,332 @@
+{
+  "rootConfirmed": false,
+  "semanticIsolation": {
+    "baseFormalNative": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10090015.json",
+      "bytes": 61043,
+      "sha256": "065eee96c73aabef2d3349478748ea3b6d8e2794f21bc927d3f184599afc82e7"
+    },
+    "privateOverlay": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/frozen/54-talk0-only/10090015.json",
+      "bytes": 61044,
+      "sha256": "60a8a73d1c2a32b9df3ed6ac4cc32cba84731d74fba7924192bd97d1e96d7e60"
+    },
+    "completeRecursiveSceneDiff": [
+      {
+        "path": "/scenario_list/49/talk_chara",
+        "before": "",
+        "after": "0"
+      }
+    ],
+    "allOtherNativeFieldsUnchanged": true,
+    "native54Motion": "",
+    "noAutomaticBodyFaceSeed": true
+  },
+  "result": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/result.json",
+    "bytes": 446851,
+    "sha256": "5c3eca0a3af85bb2c0b1d55ccff0924c5b12d6f924180469aaa339486c1323fa"
+  },
+  "ownerArchive": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/owner-original-trace.json.gz",
+    "bytes": 40276,
+    "sha256": "fe1d9c01d7fa36c7ce612a28fd78ab9fb3f2d874203a2842f83c29cf340f3b81"
+  },
+  "ownerRawBytes": 699182,
+  "ownerRawSHA256": "f1b3841cef3c47d5a3daec3c5f6185103282a0601781e2837b04dc9993d4a944",
+  "entered": [
+    {
+      "sequence": 10,
+      "node": "node:10090015:node_dae6816ae851",
+      "wallEpochMilliseconds": 1795292813532,
+      "rawArguments": [
+        "STORY_PLAYER_ENTER",
+        "node:10090015:node_dae6816ae851",
+        "card"
+      ]
+    },
+    {
+      "sequence": 56,
+      "node": "node:10090015:node_869b7bc19352",
+      "wallEpochMilliseconds": 1795292817482,
+      "rawArguments": [
+        "STORY_PLAYER_ENTER",
+        "node:10090015:node_869b7bc19352",
+        "card"
+      ]
+    },
+    {
+      "sequence": 108,
+      "node": "node:10090015:node_4d90b64dba29",
+      "wallEpochMilliseconds": 1795292824229,
+      "rawArguments": [
+        "STORY_PLAYER_ENTER",
+        "node:10090015:node_4d90b64dba29",
+        "card"
+      ]
+    }
+  ],
+  "trustedInputs": [
+    {
+      "button": "advance",
+      "edge": null,
+      "isTrusted": true,
+      "node": "node:10090015:node_dae6816ae851",
+      "phase": "ready",
+      "wallMilliseconds": 11140
+    },
+    {
+      "button": "advance",
+      "edge": null,
+      "isTrusted": true,
+      "node": "node:10090015:node_869b7bc19352",
+      "phase": "ready",
+      "wallMilliseconds": 17889
+    }
+  ],
+  "transitions": [
+    {
+      "sequence": 54,
+      "node": "node:10090015:node_dae6816ae851",
+      "rawArguments": [
+        "STORY_PLAYER_TRANSITION",
+        "{\"edge\":\"edge:node:10090015:node_dae6816ae851:1009001510451:451\",\"action\":\"continue\",\"native\":{\"uniq_id\":1009001510451,\"next_scenario_label\":\"\",\"next_scenario_id\":54,\"transition_id\":45101},\"target\":\"node:10090015:node_869b7bc19352\"}"
+      ]
+    },
+    {
+      "sequence": 106,
+      "node": "node:10090015:node_869b7bc19352",
+      "rawArguments": [
+        "STORY_PLAYER_TRANSITION",
+        "{\"edge\":\"edge:node:10090015:node_869b7bc19352:1009001510478:478\",\"action\":\"continue\",\"native\":{\"uniq_id\":1009001510478,\"transition_id\":47801,\"next_scenario_id\":46,\"next_scenario_label\":\"\"},\"target\":\"node:10090015:node_4d90b64dba29\"}"
+      ]
+    }
+  ],
+  "talkEvents": [
+    {
+      "sequence": 47,
+      "name": "STORY_TEXT_MOUTH_START",
+      "node": "node:10090015:node_dae6816ae851",
+      "rawArguments": [
+        "STORY_TEXT_MOUTH_START",
+        "kadomon01",
+        "face_talk_normal"
+      ]
+    },
+    {
+      "sequence": 51,
+      "name": "STORY_TEXT_MOUTH_STOP",
+      "node": "node:10090015:node_dae6816ae851",
+      "rawArguments": [
+        "STORY_TEXT_MOUTH_STOP",
+        "kadomon01"
+      ]
+    },
+    {
+      "sequence": 131,
+      "name": "STORY_TEXT_MOUTH_START",
+      "node": "node:10090015:node_4d90b64dba29",
+      "rawArguments": [
+        "STORY_TEXT_MOUTH_START",
+        "subaru01",
+        "face_talk_normal"
+      ]
+    },
+    {
+      "sequence": 135,
+      "name": "STORY_TEXT_MOUTH_STOP",
+      "node": "node:10090015:node_4d90b64dba29",
+      "rawArguments": [
+        "STORY_TEXT_MOUTH_STOP",
+        "subaru01"
+      ]
+    }
+  ],
+  "target54EntrySourceSequence": 56,
+  "next46EntrySourceSequence": 108,
+  "target54TalkStartEvents": 0,
+  "target54TalkStopEvents": 0,
+  "target54SettledSubaruRows": 29,
+  "target54SubaruRowsAllTalkingFalseAndTalkAbsent": true,
+  "priorKadomonUnsettledRowNotAssignedToNewTargetCommand": true,
+  "baseline": {
+    "nativeMotion": "",
+    "derivedBody": "",
+    "derivedFace": "",
+    "derivedExtras": [],
+    "observed": [
+      {
+        "label": "hold-start-54",
+        "rowSequence": 38,
+        "model": "subaru01",
+        "actorSeconds": 2.027533343267443,
+        "lastCommand": "",
+        "faceEffectiveWeight": 0,
+        "layers": [
+          {
+            "name": "motion",
+            "token": "act_normal_w",
+            "start": 0,
+            "offset": 0,
+            "weight": 1,
+            "fade": null,
+            "effectiveWeight": 1,
+            "assigned": false,
+            "state": {
+              "loop": true,
+              "speed": 1,
+              "offset": 0,
+              "speed_parameter": 0,
+              "transitions": [],
+              "selection": null
+            },
+            "loadedClip": {
+              "token": "act_normal_w",
+              "loaded": true,
+              "clipRecordId": 3
+            },
+            "blend": null
+          }
+        ]
+      },
+      {
+        "label": "hold-end-54",
+        "rowSequence": 58,
+        "model": "subaru01",
+        "actorSeconds": 6.365793343267439,
+        "lastCommand": "",
+        "faceEffectiveWeight": 0,
+        "layers": [
+          {
+            "name": "motion",
+            "token": "act_normal_w",
+            "start": 0,
+            "offset": 0,
+            "weight": 1,
+            "fade": null,
+            "effectiveWeight": 1,
+            "assigned": false,
+            "state": {
+              "loop": true,
+              "speed": 1,
+              "offset": 0,
+              "speed_parameter": 0,
+              "transitions": [],
+              "selection": null
+            },
+            "loadedClip": {
+              "token": "act_normal_w",
+              "loaded": true,
+              "clipRecordId": 3
+            },
+            "blend": null
+          }
+        ]
+      }
+    ],
+    "tokensSelectedByHelper": false,
+    "layersOrWeightsMutatedByHelper": false,
+    "bodyWinner": null,
+    "faceWinner": null,
+    "motionAccepted": false,
+    "formalFlagAccepted": false
+  },
+  "curveProof": {
+    "binding": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1/54-talk0-only/actual-decoded-curve-proof.json",
+      "bytes": 3213,
+      "sha256": "d918678cd8f728646a3de81203018ee08aaf5004e33fc0f035fa0621202aed17"
+    },
+    "actualCurveObjectsMatch": true,
+    "allSettledBaselineLayerClipsPresent": true,
+    "baselineLayerProofs": [
+      {
+        "checkpoint": "hold-start-54",
+        "tapSequence": 38,
+        "layer": "motion",
+        "weight": 1,
+        "effectiveWeight": 1,
+        "clipRecordId": 3,
+        "token": "act_normal_w",
+        "model": "subaru01",
+        "relative": "assets/models/subaru01/ac/motions/AC_subaru01_act_normal_w.motion3.json",
+        "rawSha256": "07376d34ec35ae991989ace5fcf258416949268cfd27f923414a3c66f6b289d5",
+        "actualDecodedSha256": "b7998ed3bbcaba7200ad291633151cffa778383a94f7ac49ec87d60995e21b4b",
+        "duration": 4,
+        "curveCount": 110
+      },
+      {
+        "checkpoint": "hold-end-54",
+        "tapSequence": 58,
+        "layer": "motion",
+        "weight": 1,
+        "effectiveWeight": 1,
+        "clipRecordId": 3,
+        "token": "act_normal_w",
+        "model": "subaru01",
+        "relative": "assets/models/subaru01/ac/motions/AC_subaru01_act_normal_w.motion3.json",
+        "rawSha256": "07376d34ec35ae991989ace5fcf258416949268cfd27f923414a3c66f6b289d5",
+        "actualDecodedSha256": "b7998ed3bbcaba7200ad291633151cffa778383a94f7ac49ec87d60995e21b4b",
+        "duration": 4,
+        "curveCount": 110
+      }
+    ]
+  },
+  "actorHolds": [
+    {
+      "scenario": 45,
+      "minimumActorSeconds": 1,
+      "measuredActorSeconds": 1.2537199999999995
+    },
+    {
+      "scenario": 54,
+      "minimumActorSeconds": 4,
+      "measuredActorSeconds": 4.3382599999999965
+    },
+    {
+      "scenario": 46,
+      "minimumActorSeconds": 1,
+      "measuredActorSeconds": 1.2881399999999985
+    }
+  ],
+  "normalHitches": 2,
+  "productFatalErrors": [],
+  "traceRows": 138,
+  "tapRows": 69,
+  "traceDropped": 0,
+  "tapDropped": 0,
+  "ownerDropped": 0,
+  "audio": {
+    "captureHasAudio": false,
+    "mediaObserverRows": 0,
+    "BGMCommandCount": 1,
+    "BGMPlayCount": 1,
+    "voicePreparationCount": 9,
+    "voicePlayedAccepted": false,
+    "subjectiveListeningPerformed": false,
+    "meaning": "BGM/voice-preparation logs are retained but the screen recording is silent; no audible result or source audio synchronization is accepted."
+  },
+  "parameterPhase": "after-original-ActorAnimation.render-before-core-update-and-GL-draw",
+  "currentStoryPlayerGeneration": null,
+  "parametersAreNotPaint": true,
+  "XSamplesAreNotUniqueGLPaints": true,
+  "finalNode": "node:10090015:node_4d90b64dba29",
+  "finalPhase": "ready",
+  "forbidden49NotEntered": true,
+  "sourceClockCapturePTSActorSecondsWallTimeDistinct": true,
+  "limits": [
+    "Pre-Core/pre-GL parameters/weight and raw-curve identity do not sign painted frames or native provider/phase.",
+    ">=4actor-second hold is a product-log measurement, not a duration inferred from still images.",
+    "Current private default act_normal_w layer is observed; original-source body/face provider is not recovered."
+  ],
+  "forbidden49NotEnteredBasis": {
+    "completeEnteredListEqualsOnlyPlanned45_54_46": [
+      "node:10090015:node_dae6816ae851",
+      "node:10090015:node_869b7bc19352",
+      "node:10090015:node_4d90b64dba29"
+    ],
+    "enteredCount": 3,
+    "stoppedAtReady46": true,
+    "forbiddenSuccessorNativeScenario": 49
+  }
+}
