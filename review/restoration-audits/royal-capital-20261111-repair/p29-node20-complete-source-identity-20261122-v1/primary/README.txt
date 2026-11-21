@@ -1,0 +1,11 @@
+P29 node20 — complete original-source identity candidate
+
+Scope: scene10040052 / scenario20 / UID1004005200020 / array19. Only character is proposed: live2d/AC_subaru_tshirt01. This directory does not install, execute an importer, modify formal data, or accept body, face, motion, phase, timing or saved playback. Every candidate keeps rootConfirmed=false and execution/installation unauthorized.
+
+Source coverage: 30 unchanged prior-capture JPEGs282.023..282.989 plus240 new unchanged JPEGs283.023..290.989, original1/16000 PTS. Their adjacent544tick join is retained. All270 appear exactly once in23 ordered, uncropped contact sheets. Contact CLI chunkfcbe93 actually exited0 before images were reviewed; exact generator argv token was then absent from /proc. Contact bytes8663153; all output remains below16MiB. No video was decoded during this review.
+
+I viewed all23 sheets sequentially, then16 selected480x856 originals, original01/02 texture atlases, existing original-model control image and a historical formally accepted source reference. This is full contact coverage plus selected native inspections, not270 separately opened native images. The target role is bounded: prior Rom tail; empty boundary; current actor complete entry, line hold and exit; empty boundary; following Rom entry and line. The following line remains unfinished at290.989, so full next-node performance is not claimed.
+
+Visible short sleeves cover both shoulders and terminate around both upper arms throughout the target. The actual original01 resources render those short sleeves;02 is sleeveless. Speaker labels/shared facial features were not used to choose the model. See visual-coverage.rootfalse.json and decision.rootfalse.json for exact frame ranges and limits. Independent reviewer conclusions were neither read nor supplied to this primary review before sealing.
+
+The candidate carries13 exact expected fields, the full current row, UID, array index,38-row authored order, branch digest, full native/review file hashes, source and resource bindings. baseSha is a read-only Git metadata observation; root must refresh release binding before normal stage. Head progress in unrelated audits does not invalidate this immutable source review.
