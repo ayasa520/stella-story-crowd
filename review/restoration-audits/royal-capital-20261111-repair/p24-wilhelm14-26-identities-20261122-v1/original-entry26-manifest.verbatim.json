@@ -1,0 +1,71 @@
+{
+  "video": "/home/rikka/Videos/re0/\u771f\u591c\u9ed1\u5154_Official_\u738b\u90fd\u4e00\u65e5\u6e38\u7bc7/24 10-IF\u5e93\u73e5\u4fee\u300c\u5669\u68a6\u7684\u7ee7\u7eed\u300d.mp4",
+  "videoSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+  "sourceStartSeconds": 144.5,
+  "sourceEndSeconds": 152.5,
+  "nice": 19,
+  "cpuAffinity": [
+    0,
+    1
+  ],
+  "ffmpegCommand": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "info",
+    "-threads",
+    "1",
+    "-ss",
+    "144.5",
+    "-i",
+    "/home/rikka/Videos/re0/\u771f\u591c\u9ed1\u5154_Official_\u738b\u90fd\u4e00\u65e5\u6e38\u7bc7/24 10-IF\u5e93\u73e5\u4fee\u300c\u5669\u68a6\u7684\u7ee7\u7eed\u300d.mp4",
+    "-t",
+    "8.0",
+    "-an",
+    "-sn",
+    "-dn",
+    "-filter_threads",
+    "1",
+    "-filter_complex_threads",
+    "1",
+    "-vf",
+    "showinfo,scale=240:-1",
+    "-fps_mode",
+    "passthrough",
+    "-threads",
+    "1",
+    "-q:v",
+    "3",
+    "data/native_recovery/royal-capital-20261110/repair-20261111/episode10-other-20261121-v1/p24-wilhelm26-entry/frames/%05d.jpg"
+  ],
+  "ffmpegExit": 0,
+  "frameCount": 239,
+  "frameDroppingRequested": false,
+  "timestamps": "ffmpeg.log showinfo pts_time is relative to sourceStartSeconds",
+  "sheets": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode10-other-20261121-v1/p24-wilhelm26-entry/contact-001.jpg",
+      "sha256": "080ac42b393f41b2bc8ea320dbc88574f0e47347efc0d8f24883334e7547a76e",
+      "firstFrame": 1,
+      "lastFrame": 60
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode10-other-20261121-v1/p24-wilhelm26-entry/contact-002.jpg",
+      "sha256": "c1fa97dc035a015876a3c68ee8634293af9094419b93e3ff96a0aef972102ef8",
+      "firstFrame": 61,
+      "lastFrame": 120
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode10-other-20261121-v1/p24-wilhelm26-entry/contact-003.jpg",
+      "sha256": "37bbf6f72e6cdef760bdfe5f5e74372a4470d03c647fa529791c830b1c685f1d",
+      "firstFrame": 121,
+      "lastFrame": 180
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode10-other-20261121-v1/p24-wilhelm26-entry/contact-004.jpg",
+      "sha256": "cb5c177582c0b567cd695879b0ce15a0cc949416b0235c1b4e1748210b6d35b3",
+      "firstFrame": 181,
+      "lastFrame": 239
+    }
+  ]
+}

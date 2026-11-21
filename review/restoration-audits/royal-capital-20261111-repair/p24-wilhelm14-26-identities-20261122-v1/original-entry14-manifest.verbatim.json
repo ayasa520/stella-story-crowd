@@ -1,0 +1,59 @@
+{
+  "video": "/home/rikka/Videos/re0/\u771f\u591c\u9ed1\u5154_Official_\u738b\u90fd\u4e00\u65e5\u6e38\u7bc7/24 10-IF\u5e93\u73e5\u4fee\u300c\u5669\u68a6\u7684\u7ee7\u7eed\u300d.mp4",
+  "videoSha256": "f2d737a8b4f4f144ecead5bc8cb1f9f63f1306f881273268dc78e12755ab0186",
+  "sourceStartSeconds": 69.0,
+  "sourceEndSeconds": 73.0,
+  "nice": 19,
+  "cpuAffinity": [
+    0,
+    1
+  ],
+  "ffmpegCommand": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "info",
+    "-threads",
+    "1",
+    "-ss",
+    "69.0",
+    "-i",
+    "/home/rikka/Videos/re0/\u771f\u591c\u9ed1\u5154_Official_\u738b\u90fd\u4e00\u65e5\u6e38\u7bc7/24 10-IF\u5e93\u73e5\u4fee\u300c\u5669\u68a6\u7684\u7ee7\u7eed\u300d.mp4",
+    "-t",
+    "4.0",
+    "-an",
+    "-sn",
+    "-dn",
+    "-filter_threads",
+    "1",
+    "-filter_complex_threads",
+    "1",
+    "-vf",
+    "showinfo,scale=240:-1",
+    "-fps_mode",
+    "passthrough",
+    "-threads",
+    "1",
+    "-q:v",
+    "3",
+    "data/native_recovery/royal-capital-20261110/repair-20261111/episode10-other-20261121-v1/p24-wilhelm14-entry/frames/%05d.jpg"
+  ],
+  "ffmpegExit": 0,
+  "frameCount": 119,
+  "frameDroppingRequested": false,
+  "timestamps": "ffmpeg.log showinfo pts_time is relative to sourceStartSeconds",
+  "sheets": [
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode10-other-20261121-v1/p24-wilhelm14-entry/contact-001.jpg",
+      "sha256": "c6019f3c9b6530b740e022d49f0301e7cff8d5bdf80f51670ab8c34cb77bb5fc",
+      "firstFrame": 1,
+      "lastFrame": 60
+    },
+    {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/episode10-other-20261121-v1/p24-wilhelm14-entry/contact-002.jpg",
+      "sha256": "502bc8a6105563b92a11fc844cfc2489bc6af6659df7868e4f3d84e35a6e84d9",
+      "firstFrame": 61,
+      "lastFrame": 119
+    }
+  ]
+}
