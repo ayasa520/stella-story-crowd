@@ -1,0 +1,126 @@
+{
+  "schema": "stella.P30.node4.face-bikkuri-source-actual-primary-review.v1",
+  "rootConfirmed": false,
+  "acceptance": false,
+  "executionAuthorized": false,
+  "installationAuthorized": false,
+  "status": "typing-and-held-face-match-supported-visible-entry-process-still-unresolved",
+  "reviewer": "/root/missing1007_source",
+  "target": {
+    "sceneId": 10450054,
+    "scenarioId": 4,
+    "uniqId": 1045005400004,
+    "arrayIndex": 3,
+    "stableKey": "s10450054-p30-at0027"
+  },
+  "coverage": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-source-actual-primary-review-v1/coverage.rootfalse.json",
+    "bytes": 135784,
+    "sha256": "c7c706ee5c40ae2023cd11c3439a17a1043e014479880577c78ae8cd8193ac17"
+  },
+  "nativeWitnesses": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-source-actual-primary-review-v1/native-witnesses.rootfalse.json",
+    "bytes": 13118,
+    "sha256": "68a2f5624d5698ca0dfda977ac02d7d01330c3d8a199c5c5d042ccd1324c4326"
+  },
+  "runtimeObservations": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-source-actual-primary-review-v1/runtime-resource-observations.rootfalse.json",
+    "bytes": 55532,
+    "sha256": "7d52cb26e5a3136405c377c7c8ea32905964bb6d4bc8de3d7922b77e64ae115a"
+  },
+  "targetGuard": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-source-actual-primary-review-v1/target-current-guard.rootfalse.json",
+    "bytes": 8044,
+    "sha256": "50ef8e310ac36fa8e2a63ab7177b56f0e80afa9489ca7d4777e92f052f1c7033"
+  },
+  "findings": [
+    {
+      "id": "TYPING_AND_READY_FACE_VISUALLY_SUPPORTED",
+      "status": "positive-limited-stages",
+      "source": [
+        41,
+        221
+      ],
+      "actual": [
+        162,
+        393
+      ],
+      "observation": "The candidate restores the enlarged eyes, converging eyebrows/forehead furrows, emphatic mouth geometry and open-mouth ready hold absent from the prior ordinary baseline. During typing both vary the mouth; after ready both preserve the wide-eyed furrowed face with an open mouth through their last visible hold.",
+      "notClaimed": "Frame-locked lip sync, body/head motion, equal text timing or original authored CSV/provider."
+    },
+    {
+      "id": "VISIBLE_CLOSED_TO_OPEN_ENTRANCE_NOT_RESTORED_IN_THIS_CAPTURE",
+      "status": "concrete-visible-process-gap",
+      "sourceCombinedIndices": [
+        31,
+        32,
+        35,
+        38,
+        40
+      ],
+      "actualFrameNumbers": [
+        147,
+        148,
+        149,
+        150,
+        151
+      ],
+      "observation": "The source visibly fades in with closed/narrow eyes then reopens through a partially open stage before the wide-eyed hold. This actual X-surface remains actorless through f148 and first clearly shows the actor at f149 with eyes already wide and mouth open. The closed-to-open entrance is not visible in the complete actual capture.",
+      "limits": "No unique GL-frame count, exact native phase, hitch root cause or globally wrong native face token is inferred. Four retained runtime hitches and X-surface sampling are recorded. Missing original provider uniqueness is not the reason for withholding full-process support."
+    },
+    {
+      "id": "LAST_VISIBLE_FACE_REMAINS_MATCHING_THEN_DISAPPEARS",
+      "status": "positive-face-until-absence; phase-unaccepted",
+      "sourceCombinedIndices": [
+        221,
+        222,
+        223,
+        224
+      ],
+      "actualFrameNumbers": [
+        391,
+        392,
+        393,
+        394
+      ],
+      "observation": "The candidate holds the matching facial expression until its last visible sample; it does not return to the old neutral face. Source includes dimming samples before absence; this actual remains clear through393 then absent394.",
+      "notClaimed": "Alpha curve, fade duration, trigger/paint phase or renderer cause."
+    },
+    {
+      "id": "FOLLOWING5_BOUNDARY_ONLY",
+      "status": "coverage",
+      "source": [
+        225,
+        254
+      ],
+      "actual": [
+        409,
+        484
+      ],
+      "observation": "Both proceed to following5. Its behavior is recorded as boundary coverage, without reaccepting Felt performance or installing further fields."
+    }
+  ],
+  "visualFitByStage": {
+    "wideEyeWrinkleAndMouthDuringTyping": true,
+    "naturalReadyAndHeldFace": true,
+    "faceUntilLastVisibleExitSample": true,
+    "sourceClosedToOpenVisibleEntry": false,
+    "completeFaceVisibleProcessCorrespondence": false
+  },
+  "originalAuthoredProviderOrLiteralCSVRecovered": false,
+  "bodyExtraOrOriginalPhaseTimingAccepted": false,
+  "matchingHoldNotRejectedDueToOriginalProviderNonuniqueness": true,
+  "fullFaceAcceptanceDeferredBecauseOfConcreteEntrySurfaceGap": true,
+  "fieldsProposed": {},
+  "verifiedMotionComponents": [],
+  "diagnosticCandidateRetained": ",face_bikkuri",
+  "nextGap": "Investigate/observe the same face-only native entry against existing complete source31..40 with the normal entry path; preserve the proven hold. Existing frame/commit/display/clock records may localize the missing visible interval, but do not fabricate missing GL samples or change face token solely because the surface skipped the entry. No new execution is authorized by this review.",
+  "otherReviewerConclusionsRead": false,
+  "newBrowserDecoderRendererPixelsFormalD_CGitOrAPIOperations": false,
+  "sourceFidelityScope": "Visible facial restoration in this one complete captured case; no body/extra/provider/phase/timing/whole-scene acceptance.",
+  "readOnlyMetadataAttemptFailure": {
+    "chunk": "aa765d",
+    "exitCode": 1,
+    "error": "IndexError from printing the first member of empty duplicate/decreasing PTS arrays; corrected guarded metadata read bf629e; no media or evidence writes in that attempt."
+  }
+}

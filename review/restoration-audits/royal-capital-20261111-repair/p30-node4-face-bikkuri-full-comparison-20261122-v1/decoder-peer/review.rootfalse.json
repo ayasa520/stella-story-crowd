@@ -1,0 +1,150 @@
+{
+  "schema": "stella.P30.face-only.actual-decode.independent-minimal-static-peer.v1",
+  "createdUTC": "2026-11-22T04:09:56.636605+00:00",
+  "reviewer": "/root/performance_peer",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "independentPeerAcceptedForExecution": false,
+  "decision": "STATIC_ONLY_NO_MUST_FIX_FOUND",
+  "mustFix": [],
+  "inputs": {
+    "sealed-preparation.rootfalse.json": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/sealed-preparation.rootfalse.json",
+      "bytes": 4941,
+      "sha256": "dc08ee5867c9608aeeaee4d32042382cfbf5e892d1c5c0f113396fffb7a5b147"
+    },
+    "decode.py": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/decode.py",
+      "bytes": 31791,
+      "sha256": "7300637a8d3b0b86b43f2fba6408b8c2751e6f1bcb22fe6ef8fc66b4538929ba"
+    },
+    "ordinary-to-face.minimal.diff": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/ordinary-to-face.minimal.diff",
+      "bytes": 2946,
+      "sha256": "493022c4f43782c8848d44af6c66528b07bcef1393c9886de6df7d4c144d9931"
+    },
+    "reuse-proof.rootfalse.json": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/reuse-proof.rootfalse.json",
+      "bytes": 5607,
+      "sha256": "e03c2b24b0b70fc6879fdf2f5df4b3c8a4e6c4f4875a6cd87dec0ba478c47d83"
+    },
+    "root-release.draft.json": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/root-release.draft.json",
+      "bytes": 7011,
+      "sha256": "4ad8df418e1403acd5201c08486de031d8d1ea604e7eb63fbc277636bef455bb"
+    },
+    "input-bindings.rootfalse.json": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/input-bindings.rootfalse.json",
+      "bytes": 8714,
+      "sha256": "3e80b1f43cc0ee11f37011d650210daedfe48910a4e0e6c3e98f08794f1668d9"
+    },
+    "proposal.rootfalse.json": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/proposal.rootfalse.json",
+      "bytes": 12000,
+      "sha256": "de0a94a2e4d79393c699ec77472e33daa48ba47faa205bb03806280a8f99f963"
+    },
+    "tool-closure.rootfalse.json": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/tool-closure.rootfalse.json",
+      "bytes": 3956,
+      "sha256": "83d67f3b8467c38610dfe3bd774e18802df9beb38c568c6ce899fd863b8602cf"
+    },
+    "files.sha256.json": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/files.sha256.json",
+      "bytes": 2521,
+      "sha256": "eb63dc71605e97ea18e1dde8abd0024fe4ea900662b2a3973d2a86f1913ef698"
+    }
+  },
+  "staticVerification": {
+    "completeDiffByteExact": true,
+    "sixLiteralChangesAndOnlyNewCommentReversedRestoreFullBaseBytes": true,
+    "restoredBaseSHA256": "3138b5001946aa5c410869c39b101605188d90b7ee220b0ab1b827e4b87366c9",
+    "sevenCoreFunctionsIndependentByteHashExact": [
+      {
+        "name": "OutputBudget",
+        "bytes": 1550,
+        "sha256": "db03ee7524f3d1f26d3bbca0771a3c8a642633fcd574ea32907f031a477df742"
+      },
+      {
+        "name": "StderrReader",
+        "bytes": 3537,
+        "sha256": "999c5af67dc6a6bb1e7c7dd93f1f4bc10f49a51257c146e5278d5ac49ab60085"
+      },
+      {
+        "name": "raw_command",
+        "bytes": 403,
+        "sha256": "0088664874b51f7a5ef1ab777eb8fe2f7fd324ad3252f92e710236da4e448040"
+      },
+      {
+        "name": "read_exact_or_eof",
+        "bytes": 1049,
+        "sha256": "fe10a4f3555f16cea64859eee34e8ea95df597fe0a42d2cd1c38e300ab9a23c1"
+      },
+      {
+        "name": "stop_owned",
+        "bytes": 689,
+        "sha256": "1d65666b22442967174acd4ecc96d9bf79603718ccb57d219a8c04aefe137496"
+      },
+      {
+        "name": "make_contacts",
+        "bytes": 1443,
+        "sha256": "8be0d071b7ac070d8e4d4a92cfda91a322771ea516031ebf36790d8a05ac93bd"
+      },
+      {
+        "name": "decode_case",
+        "bytes": 7602,
+        "sha256": "80e1101b6525a005f9e470b4da3d252bd289f5ec5b4364b12e8fd0ccc71fad35"
+      }
+    ],
+    "mainIncludingEntryGuard": "Only two453→484 count literals differ; reversing these restores exact full base main+entry bytes. Main is not claimed unchanged.",
+    "indexedPayloadCount": 8,
+    "allIndexedPayloadsAnd16DeclaredTextCodeMetadataRefsExact": true,
+    "run1AbsentAtRead": true
+  },
+  "scope": "Exactly one closed p30-node4-face-bikkuri-only capture,484 recorder expectation, fixed INPUT and CAPTURE_CLOSURE. No original source decode or second case.",
+  "captureClosure": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-face-bikkuri-root-preparation-e77938f6-v1/runtime.root-closure.json",
+    "bytes": 5919,
+    "sha256": "5c317cb50e433a33b492141c7d70cca1ad7dade42ee7521737f5fca9b2f067d0"
+  },
+  "inputBindingPaths": [
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1/p30-node4-face-bikkuri-only/actual.mkv",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1/p30-node4-face-bikkuri-only/capture-receipt.json",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1/p30-node4-face-bikkuri-only/recorder-command.json",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1/capture-index.json",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-face-bikkuri-root-preparation-e77938f6-v1/runtime.root-closure.json"
+  ],
+  "preservedMechanism": "Original full RGB24 blocks,500x1000 JPEG95/subsampling0, copyts/showinfo/fps_mode passthrough, no seek/frame-limit/fps/scale/crop/sampling filters. Strict post-count one-byteEOF, showinfo count/timebase and producerexit0 remain required. Contacts alone reduce tiles. All7 original function bytes, cancellation/owned cleanup/error/legacy-before-after/tool/input guards are unchanged.",
+  "budgets": {
+    "CAPBytes": 100663296,
+    "MARGINBytes": 25165824,
+    "ordinaryWriteExclusiveCeilingBytes": 75497472,
+    "stderrCapBytes": 8388608,
+    "rootExternalFreshDiskMinimumBytes": 125829120,
+    "rootExternalFreshMemoryMinimumBytes": 268435456,
+    "rootExternalWholeAttemptMonitoringSeconds": 300,
+    "CAPPlusMarginEquals120MiB": true,
+    "wholeNewFolderCountedIncludingSealedPreparation": true,
+    "rawRGBWrittenToDisk": false,
+    "diskBudgetIsNotRAMCap": true,
+    "noCapacityGuaranteeFromOld453FrameOutput": true,
+    "qualityOrCoverageMustNotBeLoweredToFit": true
+  },
+  "falseTemplate": "rootConfirmed and changedRawRGBDecoderAuthorized remain false; actualDecodedFrames and peerReceipt refs remain null. Exact code/closure/input/tool/legacy inventory refs are required. Historical K5/453/128/32 prose is provenance; current484/96/24 constants govern. No new authority is inferred.",
+  "rootReportedFreshPreflightSeparate": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-face-bikkuri-actual-decode-root-preparation-v1/root-fresh-preflight.json",
+    "bytes": 5944,
+    "sha256": "c00195a84ac1d523c177a8fe276867c5b744b7c5d29b4beee7d467a7f1dcd3d9",
+    "meaning": "Root supplied this completed fresh gate during review. Peer did not repeat actual tools/media/disk/memory/OS checks or sign that closure."
+  },
+  "acceptance": {
+    "actualDecode": false,
+    "actual484FramesOrPTS": false,
+    "images": false,
+    "faceBody": false,
+    "sourcePhase": false,
+    "timing": false,
+    "audio": false,
+    "wholeScene": false
+  },
+  "actions": "Only source/diff/metadata/hash reads and this new peer report/receipt. No decoder import, AST/syntax/test/build, FFmpeg/ffprobe/Pillow execution, tool payload/MKV/image read, API/browser/Git or D/C/sealed/old evidence write."
+}

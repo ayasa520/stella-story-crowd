@@ -1,0 +1,43 @@
+--- executed-P30-ordinary/decode.py
++++ P30-face-only/decode.py
+@@ -41,11 +41,18 @@
+ # must independently prove completeness. Historical K5 schema/message labels
+ # below identify the reused mechanism; actual caseId/input/closure bind P30.
+ # Native JPEGs stay 500x1000. Contact tiles alone are reduced for inspection.
+-INPUT = A / 'p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1'
+-CAPTURE_CLOSURE = A / 'ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json'
+-CASES = [('p30-node4-unchanged-ordinary', 453)]
++# Face-only scope: the new recorder reports 484 samples; decoded frame count
++# and original PTS are still unobserved until actual transport and strict EOF.
++# The six allowed literal edits are three scope inputs, CAP/MARGIN and two
++# main count gates. Every other function byte remains the executed base.
++# CAP/MARGIN below are authoritative: 96/24 MiB gives a 72 MiB ordinary disk
++# ceiling, not a RAM limit. Older 453/128/32/K5 prose is historical provenance.
++# This budget never changes native 500x1000 JPEG95, original PTS or sampling.
++INPUT = A / 'p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1'
++CAPTURE_CLOSURE = A / 'p30-face-bikkuri-root-preparation-e77938f6-v1/runtime.root-closure.json'
++CASES = [('p30-node4-face-bikkuri-only', 484)]
+ WIDTH, HEIGHT, BLOCK_BYTES = 500, 1000, 500*1000*3
+-CAP, MARGIN = 128*1024*1024, 32*1024*1024
++CAP, MARGIN = 96*1024*1024, 24*1024*1024
+ FFMPEG = '/usr/bin/ffmpeg'
+ FONT = Path('/usr/share/fonts/noto/NotoSans-Regular.ttf')
+ STDERR_CAP = 8*1024*1024
+@@ -419,7 +426,7 @@
+     release = json.loads(release_path.read_text())
+     require(release['rootConfirmed'] is True and release['changedRawRGBDecoderAuthorized'] is True,
+             'Separate root approval for this changed conversion mechanism is required')
+-    require(release['cases']==[case for case,_ in CASES] and release['expectedFrames']==[453], 'Exact one K5 case only')
++    require(release['cases']==[case for case,_ in CASES] and release['expectedFrames']==[484], 'Exact one K5 case only')
+     require(release['newOutputCapBytes']==CAP and release['stopMarginBytes']==MARGIN, 'Exact K5 output budget required')
+     require(release['codeSha256']==sha(Path(__file__)),'Reviewed code differs')
+     capture_closure = release['captureRootClosure']
+@@ -504,7 +511,7 @@
+             # budgeted FFmpeg header/showinfo, RGB count and genuine EOF.
+             # No source-recording decode or fresh ffprobe result is claimed.
+             results.append(decode_case(case,expected,source,output,budget,children,announce))
+-        require(sum(item['frames'] for item in results)==453, 'Exact complete K5 count required')
++        require(sum(item['frames'] for item in results)==484, 'Exact complete K5 count required')
+         announce('all-decoder-children-terminal')
+     except BaseException as error:
+         failure = dict(error=repr(error),traceback=traceback.format_exc())

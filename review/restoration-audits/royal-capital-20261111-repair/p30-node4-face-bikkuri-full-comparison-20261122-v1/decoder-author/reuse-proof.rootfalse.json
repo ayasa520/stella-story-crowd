@@ -1,0 +1,125 @@
+{
+  "schema": "stella.P30.face-only.actual-decode.executed-reuse-proof.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "executedBase": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/decode.py",
+    "bytes": 31261,
+    "sha256": "3138b5001946aa5c410869c39b101605188d90b7ee220b0ab1b827e4b87366c9"
+  },
+  "baseSuccessfulReceipt": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/run-1/receipt.json",
+    "bytes": 8542,
+    "sha256": "bc13ad0821a46f09d9412b4d3c174a737a2daf722f81840a218e736511cbafc9"
+  },
+  "baseIndependentRootDecodeClosure": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-root-preparation-v1/decode.root-closure.json",
+    "bytes": 4459,
+    "sha256": "45bdfc5ee44838525ad9aca6003695f3aaedc221a63675769237bc7a81eb9ac1"
+  },
+  "baseObservedResult": {
+    "actualFrames": 453,
+    "contacts": 23,
+    "decoderExitCode": 0,
+    "strictEOF": true,
+    "duplicatePairsRetained": 14,
+    "sourceFrameAndContactJPEGsNotReadHere": true
+  },
+  "candidate": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/decode.py",
+    "bytes": 31791,
+    "sha256": "7300637a8d3b0b86b43f2fba6408b8c2751e6f1bcb22fe6ef8fc66b4538929ba"
+  },
+  "fullDiff": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-actual-decode-preparation-rootfalse-v1/ordinary-to-face.minimal.diff",
+    "bytes": 2946,
+    "sha256": "493022c4f43782c8848d44af6c66528b07bcef1393c9886de6df7d4c144d9931"
+  },
+  "allowedSixLiteralChanges": [
+    {
+      "before": "INPUT = A / 'p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1'",
+      "after": "INPUT = A / 'p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1'"
+    },
+    {
+      "before": "CAPTURE_CLOSURE = A / 'ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json'",
+      "after": "CAPTURE_CLOSURE = A / 'p30-face-bikkuri-root-preparation-e77938f6-v1/runtime.root-closure.json'"
+    },
+    {
+      "before": "CASES = [('p30-node4-unchanged-ordinary', 453)]",
+      "after": "CASES = [('p30-node4-face-bikkuri-only', 484)]"
+    },
+    {
+      "before": "CAP, MARGIN = 128*1024*1024, 32*1024*1024",
+      "after": "CAP, MARGIN = 96*1024*1024, 24*1024*1024"
+    },
+    {
+      "before": "release['expectedFrames']==[453]",
+      "after": "release['expectedFrames']==[484]"
+    },
+    {
+      "before": "sum(item['frames'] for item in results)==453",
+      "after": "sum(item['frames'] for item in results)==484"
+    }
+  ],
+  "newEnglishCommentOnly": "# Face-only scope: the new recorder reports 484 samples; decoded frame count\n# and original PTS are still unobserved until actual transport and strict EOF.\n# The six allowed literal edits are three scope inputs, CAP/MARGIN and two\n# main count gates. Every other function byte remains the executed base.\n# CAP/MARGIN below are authoritative: 96/24 MiB gives a 72 MiB ordinary disk\n# ceiling, not a RAM limit. Older 453/128/32/K5 prose is historical provenance.\n# This budget never changes native 500x1000 JPEG95, original PTS or sampling.\n",
+  "inverseAllSixConstantsAndRemoveOnlyNewCommentRestoresFull3138Bytes": true,
+  "inverseFullCodeSHA256": "3138b5001946aa5c410869c39b101605188d90b7ee220b0ab1b827e4b87366c9",
+  "criticalFunctionsIndependentSHA": [
+    {
+      "name": "OutputBudget",
+      "bytes": 1550,
+      "sha256": "db03ee7524f3d1f26d3bbca0771a3c8a642633fcd574ea32907f031a477df742",
+      "byteExactToExecuted3138": true
+    },
+    {
+      "name": "StderrReader",
+      "bytes": 3537,
+      "sha256": "999c5af67dc6a6bb1e7c7dd93f1f4bc10f49a51257c146e5278d5ac49ab60085",
+      "byteExactToExecuted3138": true
+    },
+    {
+      "name": "raw_command",
+      "bytes": 403,
+      "sha256": "0088664874b51f7a5ef1ab777eb8fe2f7fd324ad3252f92e710236da4e448040",
+      "byteExactToExecuted3138": true
+    },
+    {
+      "name": "read_exact_or_eof",
+      "bytes": 1049,
+      "sha256": "fe10a4f3555f16cea64859eee34e8ea95df597fe0a42d2cd1c38e300ab9a23c1",
+      "byteExactToExecuted3138": true
+    },
+    {
+      "name": "stop_owned",
+      "bytes": 689,
+      "sha256": "1d65666b22442967174acd4ecc96d9bf79603718ccb57d219a8c04aefe137496",
+      "byteExactToExecuted3138": true
+    },
+    {
+      "name": "make_contacts",
+      "bytes": 1443,
+      "sha256": "8be0d071b7ac070d8e4d4a92cfda91a322771ea516031ebf36790d8a05ac93bd",
+      "byteExactToExecuted3138": true
+    },
+    {
+      "name": "decode_case",
+      "bytes": 7602,
+      "sha256": "80e1101b6525a005f9e470b4da3d252bd289f5ec5b4364b12e8fd0ccc71fad35",
+      "byteExactToExecuted3138": true
+    }
+  ],
+  "mainBoundary": {
+    "onlyTwoScopeCountLiteralsDiffer": true,
+    "baseMainBytes": 11052,
+    "baseMainSHA256": "0f773ee0ef21e6de51766fc0ab9dd6f742bf27c661b8235c8e1ce56192554a06",
+    "candidateMainSHA256": "79e8c38d51fbf1d34db132b119d7fbf400cc49c3cbd0838ebcf13d8ce656cee1",
+    "reverseOnlyTwoCountConstantsRestoresExactMain": true,
+    "entireMainByteExactClaimed": false
+  },
+  "remainingFunctionBytesExact": true,
+  "noRGBPTSWholeStreamEOFJPEGContactOrCleanupMechanismChange": true,
+  "currentFaceCapture484OnlyRecorderExpectation": true,
+  "newActualContainerDecoded": false,
+  "newPTSOrCountPreaccepted": false,
+  "candidateImportedCompiledASTSyntaxTestedOrExecuted": false
+}

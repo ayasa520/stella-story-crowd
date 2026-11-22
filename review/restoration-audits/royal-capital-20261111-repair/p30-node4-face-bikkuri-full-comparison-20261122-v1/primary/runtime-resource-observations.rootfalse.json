@@ -1,0 +1,2342 @@
+{
+  "schema": "stella.P30.node4.face-bikkuri-primary-actual-observations.v1",
+  "rootConfirmed": false,
+  "acceptance": false,
+  "executionAuthorized": false,
+  "installationAuthorized": false,
+  "preview": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1/p30-node4-face-bikkuri-only/actual-face-candidate-preview.json",
+    "bytes": 62855,
+    "sha256": "a7ca062f1ebdaddbb3cbbe0d8f62a74a1a9591d6273e9437c4145be4d46ee690"
+  },
+  "curveProof": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1/p30-node4-face-bikkuri-only/actual-decoded-curve-proof.json",
+    "bytes": 9059,
+    "sha256": "46ec2f94a695976ccfb6dbf519b2fcbc87b4235b6ea0383f83563946c7e4b438"
+  },
+  "result": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1/p30-node4-face-bikkuri-only/result.json",
+    "bytes": 472885,
+    "sha256": "886da1e310304e3ce463dfad6dd59942df9c4e942a8e5668887e2af6f47fb24c"
+  },
+  "formalNativeMotion": "",
+  "stagedNativeMotion": ",face_bikkuri",
+  "derivedMotion": {
+    "body": "",
+    "face": "face_bikkuri",
+    "extras": []
+  },
+  "normalBodyDefault": "act_normal_w; retained rather than a newly selected body winner",
+  "postLoadTokenOverridesByHelper": false,
+  "layersOrWeightsMutatedByHelper": false,
+  "checkpoints": [
+    {
+      "checkpoint": "first-observed",
+      "jsonPointer": "/visible/point/row",
+      "sequence": 3,
+      "node": "node:10450054:1045005400004",
+      "phase": "command",
+      "wallMilliseconds": 9825,
+      "normal": {
+        "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+        "frame": 322,
+        "frameTimestampMs": 9820.86,
+        "rawDeltaSeconds": 0.01694000000000051,
+        "deltaSeconds": 0.01694000000000051,
+        "gameSeconds": 9.221560029802335,
+        "previewRate": 1,
+        "maximumDeltaSeconds": 0.3333333432674408,
+        "rateOwner": "StoryActor"
+      },
+      "model": "subaru_tshirt01",
+      "actorSeconds": 0.2041000000000004,
+      "running": true,
+      "talking": false,
+      "lastCommand": "face_bikkuri",
+      "layers": [
+        {
+          "name": "motion",
+          "token": "act_normal_w",
+          "start": 0,
+          "offset": 0,
+          "weight": 1,
+          "fade": null,
+          "effectiveWeight": 1,
+          "assigned": false,
+          "state": {
+            "loop": true,
+            "speed": 1,
+            "offset": 0,
+            "speed_parameter": 0,
+            "transitions": [],
+            "selection": null
+          },
+          "loadedClip": {
+            "token": "act_normal_w",
+            "loaded": true,
+            "clipRecordId": 1
+          },
+          "blend": null
+        },
+        {
+          "name": "face",
+          "token": "face_bikkuri",
+          "start": 0.05156000000000027,
+          "offset": 0,
+          "weight": 1,
+          "fade": null,
+          "effectiveWeight": 1,
+          "assigned": true,
+          "state": {
+            "loop": false,
+            "speed": 1,
+            "offset": 0,
+            "speed_parameter": 0,
+            "transitions": [
+              {
+                "target": "face_bikkuri_w",
+                "duration": 0.10000000149011612,
+                "offset": 0,
+                "exit_time": 0.8999999761581421,
+                "has_exit_time": true,
+                "fixed_duration": true,
+                "conditions": []
+              }
+            ],
+            "selection": null
+          },
+          "loadedClip": {
+            "token": "face_bikkuri",
+            "loaded": true,
+            "clipRecordId": 2
+          },
+          "blend": null
+        }
+      ],
+      "faceEffectiveWeight": 1,
+      "parameters": [
+        {
+          "id": "ParamAngleX",
+          "value": 8.767995834350586
+        },
+        {
+          "id": "ParamAngleY",
+          "value": -16.755651473999023
+        },
+        {
+          "id": "ParamAngleZ",
+          "value": -0.9147825837135315
+        },
+        {
+          "id": "ParamCheek",
+          "value": 0
+        },
+        {
+          "id": "ParamAse",
+          "value": 0
+        },
+        {
+          "id": "ParamAse02",
+          "value": 0
+        },
+        {
+          "id": "ParamNamida",
+          "value": 0
+        },
+        {
+          "id": "ParamNamida02",
+          "value": 0
+        },
+        {
+          "id": "Paramface",
+          "value": 0
+        },
+        {
+          "id": "ParamnoseEX",
+          "value": 0
+        },
+        {
+          "id": "Paramwrinkle",
+          "value": 0
+        },
+        {
+          "id": "ParamfaceEX",
+          "value": 0
+        },
+        {
+          "id": "ParamfaceEX2",
+          "value": 0
+        },
+        {
+          "id": "Paramfacekizu",
+          "value": 0
+        },
+        {
+          "id": "Param_eye_shadow",
+          "value": 0
+        },
+        {
+          "id": "Param_eye_wrinkle",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeLOpen",
+          "value": 0.08658682554960251
+        },
+        {
+          "id": "ParamEyeLSmile",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeLDeformation02",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeLDeformation",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeROpen",
+          "value": 0.08658682554960251
+        },
+        {
+          "id": "ParamEyeRSmile",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeRDeformation",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeRDeformation02",
+          "value": 0
+        },
+        {
+          "id": "ParamBxEyeBallScaleY",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeBallScaleX",
+          "value": 0
+        },
+        {
+          "id": "Param",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeEX",
+          "value": 1
+        },
+        {
+          "id": "ParamEye_red",
+          "value": 0
+        },
+        {
+          "id": "ParamEye_kuma",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeBallX",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeBallY",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowRForm",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowRForm02",
+          "value": 0
+        },
+        {
+          "id": "Parameyebrowwrinkle",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowLForm",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowLForm02",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowLAngle",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowRAngle",
+          "value": 0
+        },
+        {
+          "id": "ParamBxBrowLScaleX",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowLX",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowLY",
+          "value": -0.30000001192092896
+        },
+        {
+          "id": "ParamBrowRX",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowRY",
+          "value": -0.30000001192092896
+        },
+        {
+          "id": "ParamBrowRScaleX",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthOpenY",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthForm",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthForm02",
+          "value": -1
+        },
+        {
+          "id": "ParamMouthForm03",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthForm04",
+          "value": 0
+        },
+        {
+          "id": "Paramclossetooth",
+          "value": 0
+        },
+        {
+          "id": "Paramopentooth",
+          "value": 1
+        },
+        {
+          "id": "ParamtoothEX",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthX",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthY",
+          "value": 0.30000001192092896
+        },
+        {
+          "id": "ParamBxMouthScaleX",
+          "value": -0.6000000238418579
+        },
+        {
+          "id": "ParamMouthScaleY",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthEX",
+          "value": 0
+        },
+        {
+          "id": "ParamHairFrontSmallL01",
+          "value": 5.489051342010498
+        },
+        {
+          "id": "ParamHairFrontSmallL02",
+          "value": 3.827975273132324
+        },
+        {
+          "id": "ParamHairFrontSmallR01",
+          "value": 3.8938817977905273
+        },
+        {
+          "id": "ParamHairFrontSmallR02",
+          "value": 4.141764163970947
+        },
+        {
+          "id": "ParamHairFront02",
+          "value": 1.6477426290512085
+        },
+        {
+          "id": "ParamHairFront01",
+          "value": 5.34768009185791
+        },
+        {
+          "id": "ParamHairFrontL01",
+          "value": 4.0420451164245605
+        },
+        {
+          "id": "ParamHairFrontL02",
+          "value": 2.389716148376465
+        },
+        {
+          "id": "ParamHairFrontR01",
+          "value": 6.2081475257873535
+        },
+        {
+          "id": "ParamHairFrontR02",
+          "value": 3.5070409774780273
+        },
+        {
+          "id": "ParamHairBack01",
+          "value": 4.082479476928711
+        },
+        {
+          "id": "ParamHairBack02",
+          "value": 2.1360533237457275
+        },
+        {
+          "id": "ParamBodyAngleX",
+          "value": 0.003000000026077032
+        },
+        {
+          "id": "ParamBodyAngleY",
+          "value": 0
+        },
+        {
+          "id": "ParamBodyAngleZ",
+          "value": 0.00800000037997961
+        },
+        {
+          "id": "ParamBreath",
+          "value": 0.21046720445156097
+        },
+        {
+          "id": "ParamUpperBody",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulder",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulderL",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulderR",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmR",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmL",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmLLong",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmRLong",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR_ex",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR02",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL_ex",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL02",
+          "value": 0
+        },
+        {
+          "id": "ParamArmLLong",
+          "value": 0
+        },
+        {
+          "id": "ParamArmRLong",
+          "value": 0
+        },
+        {
+          "id": "ParamArmR_Layar",
+          "value": 0
+        },
+        {
+          "id": "ParamArmL_Layar",
+          "value": 0
+        },
+        {
+          "id": "ParamHandL",
+          "value": 0
+        },
+        {
+          "id": "ParamHandR",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL1Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL2Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL3Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR1Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR2Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR3Angle",
+          "value": 0
+        },
+        {
+          "id": "Parameri01",
+          "value": 7.97535514831543
+        },
+        {
+          "id": "Parameri02",
+          "value": 3.2783870697021484
+        },
+        {
+          "id": "Paramfastener",
+          "value": -1.3797509670257568
+        },
+        {
+          "id": "ParamAllX",
+          "value": 0
+        },
+        {
+          "id": "ParamAllY",
+          "value": 0
+        },
+        {
+          "id": "ParamBxAllRot",
+          "value": 0
+        }
+      ],
+      "modelAlpha": 1
+    },
+    {
+      "checkpoint": "ready",
+      "jsonPointer": "/ready/row",
+      "sequence": 13,
+      "node": "node:10450054:1045005400004",
+      "phase": "ready",
+      "wallMilliseconds": 12394,
+      "normal": {
+        "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+        "frame": 332,
+        "frameTimestampMs": 12379.8,
+        "rawDeltaSeconds": 0.203,
+        "deltaSeconds": 0.203,
+        "gameSeconds": 11.504453373069776,
+        "previewRate": 1,
+        "maximumDeltaSeconds": 0.3333333432674408,
+        "rateOwner": "StoryActor"
+      },
+      "model": "subaru_tshirt01",
+      "actorSeconds": 2.486993343267441,
+      "running": true,
+      "talking": false,
+      "lastCommand": "face_bikkuri",
+      "layers": [
+        {
+          "name": "motion",
+          "token": "act_normal_w",
+          "start": 0,
+          "offset": 0,
+          "weight": 1,
+          "fade": null,
+          "effectiveWeight": 1,
+          "assigned": false,
+          "state": {
+            "loop": true,
+            "speed": 1,
+            "offset": 0,
+            "speed_parameter": 0,
+            "transitions": [],
+            "selection": null
+          },
+          "loadedClip": {
+            "token": "act_normal_w",
+            "loaded": true,
+            "clipRecordId": 1
+          },
+          "blend": null
+        },
+        {
+          "name": "face",
+          "token": "face_bikkuri_w",
+          "start": 0.651859984097481,
+          "offset": 0,
+          "weight": 1,
+          "fade": null,
+          "effectiveWeight": 1,
+          "assigned": true,
+          "state": {
+            "loop": true,
+            "speed": 1,
+            "offset": 0,
+            "speed_parameter": 0,
+            "transitions": [],
+            "selection": null
+          },
+          "loadedClip": {
+            "token": "face_bikkuri_w",
+            "loaded": true,
+            "clipRecordId": 3
+          },
+          "blend": null
+        }
+      ],
+      "faceEffectiveWeight": 1,
+      "parameters": [
+        {
+          "id": "ParamAngleX",
+          "value": -1
+        },
+        {
+          "id": "ParamAngleY",
+          "value": 9.680000305175781
+        },
+        {
+          "id": "ParamAngleZ",
+          "value": -4
+        },
+        {
+          "id": "ParamCheek",
+          "value": 0
+        },
+        {
+          "id": "ParamAse",
+          "value": 1
+        },
+        {
+          "id": "ParamAse02",
+          "value": 0
+        },
+        {
+          "id": "ParamNamida",
+          "value": 0
+        },
+        {
+          "id": "ParamNamida02",
+          "value": 0
+        },
+        {
+          "id": "Paramface",
+          "value": 0
+        },
+        {
+          "id": "ParamnoseEX",
+          "value": 0
+        },
+        {
+          "id": "Paramwrinkle",
+          "value": 1
+        },
+        {
+          "id": "ParamfaceEX",
+          "value": 0
+        },
+        {
+          "id": "ParamfaceEX2",
+          "value": 0
+        },
+        {
+          "id": "Paramfacekizu",
+          "value": 0
+        },
+        {
+          "id": "Param_eye_shadow",
+          "value": 0
+        },
+        {
+          "id": "Param_eye_wrinkle",
+          "value": 1
+        },
+        {
+          "id": "ParamEyeLOpen",
+          "value": 1.2999999523162842
+        },
+        {
+          "id": "ParamEyeLSmile",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeLDeformation02",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeLDeformation",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeROpen",
+          "value": 1.2999999523162842
+        },
+        {
+          "id": "ParamEyeRSmile",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeRDeformation",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeRDeformation02",
+          "value": 0
+        },
+        {
+          "id": "ParamBxEyeBallScaleY",
+          "value": -1
+        },
+        {
+          "id": "ParamEyeBallScaleX",
+          "value": -0.6000000238418579
+        },
+        {
+          "id": "Param",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeEX",
+          "value": 1
+        },
+        {
+          "id": "ParamEye_red",
+          "value": 0
+        },
+        {
+          "id": "ParamEye_kuma",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeBallX",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeBallY",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowRForm",
+          "value": -0.5
+        },
+        {
+          "id": "ParamBrowRForm02",
+          "value": 0
+        },
+        {
+          "id": "Parameyebrowwrinkle",
+          "value": -0.699999988079071
+        },
+        {
+          "id": "ParamBrowLForm",
+          "value": -1
+        },
+        {
+          "id": "ParamBrowLForm02",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowLAngle",
+          "value": -0.20000000298023224
+        },
+        {
+          "id": "ParamBrowRAngle",
+          "value": -0.4000000059604645
+        },
+        {
+          "id": "ParamBxBrowLScaleX",
+          "value": -0.5
+        },
+        {
+          "id": "ParamBrowLX",
+          "value": -0.20000000298023224
+        },
+        {
+          "id": "ParamBrowLY",
+          "value": 0.10000000149011612
+        },
+        {
+          "id": "ParamBrowRX",
+          "value": -0.6000000238418579
+        },
+        {
+          "id": "ParamBrowRY",
+          "value": 0.20000000298023224
+        },
+        {
+          "id": "ParamBrowRScaleX",
+          "value": -0.5
+        },
+        {
+          "id": "ParamMouthOpenY",
+          "value": 1
+        },
+        {
+          "id": "ParamMouthForm",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthForm02",
+          "value": -1
+        },
+        {
+          "id": "ParamMouthForm03",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthForm04",
+          "value": 0
+        },
+        {
+          "id": "Paramclossetooth",
+          "value": 0
+        },
+        {
+          "id": "Paramopentooth",
+          "value": 1
+        },
+        {
+          "id": "ParamtoothEX",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthX",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthY",
+          "value": 0.30000001192092896
+        },
+        {
+          "id": "ParamBxMouthScaleX",
+          "value": 0.5
+        },
+        {
+          "id": "ParamMouthScaleY",
+          "value": 1
+        },
+        {
+          "id": "ParamMouthEX",
+          "value": 0
+        },
+        {
+          "id": "ParamHairFrontSmallL01",
+          "value": -1.6767584085464478
+        },
+        {
+          "id": "ParamHairFrontSmallL02",
+          "value": -0.4719962477684021
+        },
+        {
+          "id": "ParamHairFrontSmallR01",
+          "value": 1.1440421342849731
+        },
+        {
+          "id": "ParamHairFrontSmallR02",
+          "value": 1.7436720132827759
+        },
+        {
+          "id": "ParamHairFront02",
+          "value": -3.102250337600708
+        },
+        {
+          "id": "ParamHairFront01",
+          "value": -0.695102870464325
+        },
+        {
+          "id": "ParamHairFrontL01",
+          "value": -0.6570312976837158
+        },
+        {
+          "id": "ParamHairFrontL02",
+          "value": -1.0029442310333252
+        },
+        {
+          "id": "ParamHairFrontR01",
+          "value": -0.9341557621955872
+        },
+        {
+          "id": "ParamHairFrontR02",
+          "value": -1.584725260734558
+        },
+        {
+          "id": "ParamHairBack01",
+          "value": -0.3979654312133789
+        },
+        {
+          "id": "ParamHairBack02",
+          "value": -1.0694026947021484
+        },
+        {
+          "id": "ParamBodyAngleX",
+          "value": 0.003000000026077032
+        },
+        {
+          "id": "ParamBodyAngleY",
+          "value": 0
+        },
+        {
+          "id": "ParamBodyAngleZ",
+          "value": 0.00800000037997961
+        },
+        {
+          "id": "ParamBreath",
+          "value": 0.4910973906517029
+        },
+        {
+          "id": "ParamUpperBody",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulder",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulderL",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulderR",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmR",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmL",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmLLong",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmRLong",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR_ex",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR02",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL_ex",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL02",
+          "value": 0
+        },
+        {
+          "id": "ParamArmLLong",
+          "value": 0
+        },
+        {
+          "id": "ParamArmRLong",
+          "value": 0
+        },
+        {
+          "id": "ParamArmR_Layar",
+          "value": 0
+        },
+        {
+          "id": "ParamArmL_Layar",
+          "value": 0
+        },
+        {
+          "id": "ParamHandL",
+          "value": 0
+        },
+        {
+          "id": "ParamHandR",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL1Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL2Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL3Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR1Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR2Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR3Angle",
+          "value": 0
+        },
+        {
+          "id": "Parameri01",
+          "value": 5.9067230224609375
+        },
+        {
+          "id": "Parameri02",
+          "value": 7.688649654388428
+        },
+        {
+          "id": "Paramfastener",
+          "value": -3.0367088317871094
+        },
+        {
+          "id": "ParamAllX",
+          "value": 0
+        },
+        {
+          "id": "ParamAllY",
+          "value": 0
+        },
+        {
+          "id": "ParamBxAllRot",
+          "value": 0
+        }
+      ],
+      "modelAlpha": 1
+    },
+    {
+      "checkpoint": "hold",
+      "jsonPointer": "/observations/0/row",
+      "sequence": 41,
+      "node": "node:10450054:1045005400004",
+      "phase": "ready",
+      "wallMilliseconds": 18470,
+      "normal": {
+        "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+        "frame": 360,
+        "frameTimestampMs": 18464.92,
+        "rawDeltaSeconds": 0.22089999999999782,
+        "deltaSeconds": 0.22089999999999782,
+        "gameSeconds": 17.589573373069772,
+        "previewRate": 1,
+        "maximumDeltaSeconds": 0.3333333432674408,
+        "rateOwner": "StoryActor"
+      },
+      "model": "subaru_tshirt01",
+      "actorSeconds": 8.572113343267437,
+      "running": true,
+      "talking": false,
+      "lastCommand": "face_bikkuri",
+      "layers": [
+        {
+          "name": "motion",
+          "token": "act_normal_w",
+          "start": 0,
+          "offset": 0,
+          "weight": 1,
+          "fade": null,
+          "effectiveWeight": 1,
+          "assigned": false,
+          "state": {
+            "loop": true,
+            "speed": 1,
+            "offset": 0,
+            "speed_parameter": 0,
+            "transitions": [],
+            "selection": null
+          },
+          "loadedClip": {
+            "token": "act_normal_w",
+            "loaded": true,
+            "clipRecordId": 1
+          },
+          "blend": null
+        },
+        {
+          "name": "face",
+          "token": "face_bikkuri_w",
+          "start": 0.651859984097481,
+          "offset": 0,
+          "weight": 1,
+          "fade": null,
+          "effectiveWeight": 1,
+          "assigned": true,
+          "state": {
+            "loop": true,
+            "speed": 1,
+            "offset": 0,
+            "speed_parameter": 0,
+            "transitions": [],
+            "selection": null
+          },
+          "loadedClip": {
+            "token": "face_bikkuri_w",
+            "loaded": true,
+            "clipRecordId": 3
+          },
+          "blend": null
+        }
+      ],
+      "faceEffectiveWeight": 1,
+      "parameters": [
+        {
+          "id": "ParamAngleX",
+          "value": -1
+        },
+        {
+          "id": "ParamAngleY",
+          "value": 9.680000305175781
+        },
+        {
+          "id": "ParamAngleZ",
+          "value": -4
+        },
+        {
+          "id": "ParamCheek",
+          "value": 0
+        },
+        {
+          "id": "ParamAse",
+          "value": 1
+        },
+        {
+          "id": "ParamAse02",
+          "value": 0
+        },
+        {
+          "id": "ParamNamida",
+          "value": 0
+        },
+        {
+          "id": "ParamNamida02",
+          "value": 0
+        },
+        {
+          "id": "Paramface",
+          "value": 0
+        },
+        {
+          "id": "ParamnoseEX",
+          "value": 0
+        },
+        {
+          "id": "Paramwrinkle",
+          "value": 1
+        },
+        {
+          "id": "ParamfaceEX",
+          "value": 0
+        },
+        {
+          "id": "ParamfaceEX2",
+          "value": 0
+        },
+        {
+          "id": "Paramfacekizu",
+          "value": 0
+        },
+        {
+          "id": "Param_eye_shadow",
+          "value": 0
+        },
+        {
+          "id": "Param_eye_wrinkle",
+          "value": 1
+        },
+        {
+          "id": "ParamEyeLOpen",
+          "value": 1.2999999523162842
+        },
+        {
+          "id": "ParamEyeLSmile",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeLDeformation02",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeLDeformation",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeROpen",
+          "value": 1.2999999523162842
+        },
+        {
+          "id": "ParamEyeRSmile",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeRDeformation",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeRDeformation02",
+          "value": 0
+        },
+        {
+          "id": "ParamBxEyeBallScaleY",
+          "value": -1
+        },
+        {
+          "id": "ParamEyeBallScaleX",
+          "value": -0.6000000238418579
+        },
+        {
+          "id": "Param",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeEX",
+          "value": 1
+        },
+        {
+          "id": "ParamEye_red",
+          "value": 0
+        },
+        {
+          "id": "ParamEye_kuma",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeBallX",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeBallY",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowRForm",
+          "value": -0.5
+        },
+        {
+          "id": "ParamBrowRForm02",
+          "value": 0
+        },
+        {
+          "id": "Parameyebrowwrinkle",
+          "value": -0.699999988079071
+        },
+        {
+          "id": "ParamBrowLForm",
+          "value": -1
+        },
+        {
+          "id": "ParamBrowLForm02",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowLAngle",
+          "value": -0.20000000298023224
+        },
+        {
+          "id": "ParamBrowRAngle",
+          "value": -0.4000000059604645
+        },
+        {
+          "id": "ParamBxBrowLScaleX",
+          "value": -0.5
+        },
+        {
+          "id": "ParamBrowLX",
+          "value": -0.20000000298023224
+        },
+        {
+          "id": "ParamBrowLY",
+          "value": 0.10000000149011612
+        },
+        {
+          "id": "ParamBrowRX",
+          "value": -0.6000000238418579
+        },
+        {
+          "id": "ParamBrowRY",
+          "value": 0.20000000298023224
+        },
+        {
+          "id": "ParamBrowRScaleX",
+          "value": -0.5
+        },
+        {
+          "id": "ParamMouthOpenY",
+          "value": 1
+        },
+        {
+          "id": "ParamMouthForm",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthForm02",
+          "value": -1
+        },
+        {
+          "id": "ParamMouthForm03",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthForm04",
+          "value": 0
+        },
+        {
+          "id": "Paramclossetooth",
+          "value": 0
+        },
+        {
+          "id": "Paramopentooth",
+          "value": 1
+        },
+        {
+          "id": "ParamtoothEX",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthX",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthY",
+          "value": 0.30000001192092896
+        },
+        {
+          "id": "ParamBxMouthScaleX",
+          "value": 0.5
+        },
+        {
+          "id": "ParamMouthScaleY",
+          "value": 1
+        },
+        {
+          "id": "ParamMouthEX",
+          "value": 0
+        },
+        {
+          "id": "ParamHairFrontSmallL01",
+          "value": -0.7599413394927979
+        },
+        {
+          "id": "ParamHairFrontSmallL02",
+          "value": -0.19681237637996674
+        },
+        {
+          "id": "ParamHairFrontSmallR01",
+          "value": 0.5022643804550171
+        },
+        {
+          "id": "ParamHairFrontSmallR02",
+          "value": 2.3912765979766846
+        },
+        {
+          "id": "ParamHairFront02",
+          "value": -2.4402294158935547
+        },
+        {
+          "id": "ParamHairFront01",
+          "value": -0.3171210289001465
+        },
+        {
+          "id": "ParamHairFrontL01",
+          "value": -0.2666953206062317
+        },
+        {
+          "id": "ParamHairFrontL02",
+          "value": -0.8269160389900208
+        },
+        {
+          "id": "ParamHairFrontR01",
+          "value": -0.10019119083881378
+        },
+        {
+          "id": "ParamHairFrontR02",
+          "value": -1.359245777130127
+        },
+        {
+          "id": "ParamHairBack01",
+          "value": -0.17700855433940887
+        },
+        {
+          "id": "ParamHairBack02",
+          "value": -0.46616098284721375
+        },
+        {
+          "id": "ParamBodyAngleX",
+          "value": 0.003000000026077032
+        },
+        {
+          "id": "ParamBodyAngleY",
+          "value": 0
+        },
+        {
+          "id": "ParamBodyAngleZ",
+          "value": 0.00800000037997961
+        },
+        {
+          "id": "ParamBreath",
+          "value": 0.5755364298820496
+        },
+        {
+          "id": "ParamUpperBody",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulder",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulderL",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulderR",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmR",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmL",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmLLong",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmRLong",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR_ex",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR02",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL_ex",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL02",
+          "value": 0
+        },
+        {
+          "id": "ParamArmLLong",
+          "value": 0
+        },
+        {
+          "id": "ParamArmRLong",
+          "value": 0
+        },
+        {
+          "id": "ParamArmR_Layar",
+          "value": 0
+        },
+        {
+          "id": "ParamArmL_Layar",
+          "value": 0
+        },
+        {
+          "id": "ParamHandL",
+          "value": 0
+        },
+        {
+          "id": "ParamHandR",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL1Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL2Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL3Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR1Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR2Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR3Angle",
+          "value": 0
+        },
+        {
+          "id": "Parameri01",
+          "value": 4.048220634460449
+        },
+        {
+          "id": "Parameri02",
+          "value": 7.121498107910156
+        },
+        {
+          "id": "Paramfastener",
+          "value": -2.5245790481567383
+        },
+        {
+          "id": "ParamAllX",
+          "value": 0
+        },
+        {
+          "id": "ParamAllY",
+          "value": 0
+        },
+        {
+          "id": "ParamBxAllRot",
+          "value": 0
+        }
+      ],
+      "modelAlpha": 1
+    },
+    {
+      "checkpoint": "ended",
+      "jsonPointer": "/ended/row",
+      "sequence": 41,
+      "node": "node:10450054:1045005400004",
+      "phase": "ready",
+      "wallMilliseconds": 18470,
+      "normal": {
+        "profile": "apk-1.19.7-unity-2019.4.21f1-normal-time-v1",
+        "frame": 360,
+        "frameTimestampMs": 18464.92,
+        "rawDeltaSeconds": 0.22089999999999782,
+        "deltaSeconds": 0.22089999999999782,
+        "gameSeconds": 17.589573373069772,
+        "previewRate": 1,
+        "maximumDeltaSeconds": 0.3333333432674408,
+        "rateOwner": "StoryActor"
+      },
+      "model": "subaru_tshirt01",
+      "actorSeconds": 8.572113343267437,
+      "running": true,
+      "talking": false,
+      "lastCommand": "face_bikkuri",
+      "layers": [
+        {
+          "name": "motion",
+          "token": "act_normal_w",
+          "start": 0,
+          "offset": 0,
+          "weight": 1,
+          "fade": null,
+          "effectiveWeight": 1,
+          "assigned": false,
+          "state": {
+            "loop": true,
+            "speed": 1,
+            "offset": 0,
+            "speed_parameter": 0,
+            "transitions": [],
+            "selection": null
+          },
+          "loadedClip": {
+            "token": "act_normal_w",
+            "loaded": true,
+            "clipRecordId": 1
+          },
+          "blend": null
+        },
+        {
+          "name": "face",
+          "token": "face_bikkuri_w",
+          "start": 0.651859984097481,
+          "offset": 0,
+          "weight": 1,
+          "fade": null,
+          "effectiveWeight": 1,
+          "assigned": true,
+          "state": {
+            "loop": true,
+            "speed": 1,
+            "offset": 0,
+            "speed_parameter": 0,
+            "transitions": [],
+            "selection": null
+          },
+          "loadedClip": {
+            "token": "face_bikkuri_w",
+            "loaded": true,
+            "clipRecordId": 3
+          },
+          "blend": null
+        }
+      ],
+      "faceEffectiveWeight": 1,
+      "parameters": [
+        {
+          "id": "ParamAngleX",
+          "value": -1
+        },
+        {
+          "id": "ParamAngleY",
+          "value": 9.680000305175781
+        },
+        {
+          "id": "ParamAngleZ",
+          "value": -4
+        },
+        {
+          "id": "ParamCheek",
+          "value": 0
+        },
+        {
+          "id": "ParamAse",
+          "value": 1
+        },
+        {
+          "id": "ParamAse02",
+          "value": 0
+        },
+        {
+          "id": "ParamNamida",
+          "value": 0
+        },
+        {
+          "id": "ParamNamida02",
+          "value": 0
+        },
+        {
+          "id": "Paramface",
+          "value": 0
+        },
+        {
+          "id": "ParamnoseEX",
+          "value": 0
+        },
+        {
+          "id": "Paramwrinkle",
+          "value": 1
+        },
+        {
+          "id": "ParamfaceEX",
+          "value": 0
+        },
+        {
+          "id": "ParamfaceEX2",
+          "value": 0
+        },
+        {
+          "id": "Paramfacekizu",
+          "value": 0
+        },
+        {
+          "id": "Param_eye_shadow",
+          "value": 0
+        },
+        {
+          "id": "Param_eye_wrinkle",
+          "value": 1
+        },
+        {
+          "id": "ParamEyeLOpen",
+          "value": 1.2999999523162842
+        },
+        {
+          "id": "ParamEyeLSmile",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeLDeformation02",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeLDeformation",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeROpen",
+          "value": 1.2999999523162842
+        },
+        {
+          "id": "ParamEyeRSmile",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeRDeformation",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeRDeformation02",
+          "value": 0
+        },
+        {
+          "id": "ParamBxEyeBallScaleY",
+          "value": -1
+        },
+        {
+          "id": "ParamEyeBallScaleX",
+          "value": -0.6000000238418579
+        },
+        {
+          "id": "Param",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeEX",
+          "value": 1
+        },
+        {
+          "id": "ParamEye_red",
+          "value": 0
+        },
+        {
+          "id": "ParamEye_kuma",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeBallX",
+          "value": 0
+        },
+        {
+          "id": "ParamEyeBallY",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowRForm",
+          "value": -0.5
+        },
+        {
+          "id": "ParamBrowRForm02",
+          "value": 0
+        },
+        {
+          "id": "Parameyebrowwrinkle",
+          "value": -0.699999988079071
+        },
+        {
+          "id": "ParamBrowLForm",
+          "value": -1
+        },
+        {
+          "id": "ParamBrowLForm02",
+          "value": 0
+        },
+        {
+          "id": "ParamBrowLAngle",
+          "value": -0.20000000298023224
+        },
+        {
+          "id": "ParamBrowRAngle",
+          "value": -0.4000000059604645
+        },
+        {
+          "id": "ParamBxBrowLScaleX",
+          "value": -0.5
+        },
+        {
+          "id": "ParamBrowLX",
+          "value": -0.20000000298023224
+        },
+        {
+          "id": "ParamBrowLY",
+          "value": 0.10000000149011612
+        },
+        {
+          "id": "ParamBrowRX",
+          "value": -0.6000000238418579
+        },
+        {
+          "id": "ParamBrowRY",
+          "value": 0.20000000298023224
+        },
+        {
+          "id": "ParamBrowRScaleX",
+          "value": -0.5
+        },
+        {
+          "id": "ParamMouthOpenY",
+          "value": 1
+        },
+        {
+          "id": "ParamMouthForm",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthForm02",
+          "value": -1
+        },
+        {
+          "id": "ParamMouthForm03",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthForm04",
+          "value": 0
+        },
+        {
+          "id": "Paramclossetooth",
+          "value": 0
+        },
+        {
+          "id": "Paramopentooth",
+          "value": 1
+        },
+        {
+          "id": "ParamtoothEX",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthX",
+          "value": 0
+        },
+        {
+          "id": "ParamMouthY",
+          "value": 0.30000001192092896
+        },
+        {
+          "id": "ParamBxMouthScaleX",
+          "value": 0.5
+        },
+        {
+          "id": "ParamMouthScaleY",
+          "value": 1
+        },
+        {
+          "id": "ParamMouthEX",
+          "value": 0
+        },
+        {
+          "id": "ParamHairFrontSmallL01",
+          "value": -0.7599413394927979
+        },
+        {
+          "id": "ParamHairFrontSmallL02",
+          "value": -0.19681237637996674
+        },
+        {
+          "id": "ParamHairFrontSmallR01",
+          "value": 0.5022643804550171
+        },
+        {
+          "id": "ParamHairFrontSmallR02",
+          "value": 2.3912765979766846
+        },
+        {
+          "id": "ParamHairFront02",
+          "value": -2.4402294158935547
+        },
+        {
+          "id": "ParamHairFront01",
+          "value": -0.3171210289001465
+        },
+        {
+          "id": "ParamHairFrontL01",
+          "value": -0.2666953206062317
+        },
+        {
+          "id": "ParamHairFrontL02",
+          "value": -0.8269160389900208
+        },
+        {
+          "id": "ParamHairFrontR01",
+          "value": -0.10019119083881378
+        },
+        {
+          "id": "ParamHairFrontR02",
+          "value": -1.359245777130127
+        },
+        {
+          "id": "ParamHairBack01",
+          "value": -0.17700855433940887
+        },
+        {
+          "id": "ParamHairBack02",
+          "value": -0.46616098284721375
+        },
+        {
+          "id": "ParamBodyAngleX",
+          "value": 0.003000000026077032
+        },
+        {
+          "id": "ParamBodyAngleY",
+          "value": 0
+        },
+        {
+          "id": "ParamBodyAngleZ",
+          "value": 0.00800000037997961
+        },
+        {
+          "id": "ParamBreath",
+          "value": 0.5755364298820496
+        },
+        {
+          "id": "ParamUpperBody",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulder",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulderL",
+          "value": 0
+        },
+        {
+          "id": "ParamShoulderR",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmR",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmL",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmLLong",
+          "value": 0
+        },
+        {
+          "id": "ParamUpperArmRLong",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR_ex",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmR02",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL_ex",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL",
+          "value": 0
+        },
+        {
+          "id": "ParamForeArmL02",
+          "value": 0
+        },
+        {
+          "id": "ParamArmLLong",
+          "value": 0
+        },
+        {
+          "id": "ParamArmRLong",
+          "value": 0
+        },
+        {
+          "id": "ParamArmR_Layar",
+          "value": 0
+        },
+        {
+          "id": "ParamArmL_Layar",
+          "value": 0
+        },
+        {
+          "id": "ParamHandL",
+          "value": 0
+        },
+        {
+          "id": "ParamHandR",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL1Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL2Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegL3Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR1Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR2Angle",
+          "value": 0
+        },
+        {
+          "id": "ParamLegR3Angle",
+          "value": 0
+        },
+        {
+          "id": "Parameri01",
+          "value": 4.048220634460449
+        },
+        {
+          "id": "Parameri02",
+          "value": 7.121498107910156
+        },
+        {
+          "id": "Paramfastener",
+          "value": -2.5245790481567383
+        },
+        {
+          "id": "ParamAllX",
+          "value": 0
+        },
+        {
+          "id": "ParamAllY",
+          "value": 0
+        },
+        {
+          "id": "ParamBxAllRot",
+          "value": 0
+        }
+      ],
+      "modelAlpha": 1
+    }
+  ],
+  "allActualTargetLayerProofs": [
+    {
+      "checkpoint": "4-first-observed-visible",
+      "tapSequence": 3,
+      "layerPath": "motion",
+      "layer": "motion",
+      "token": "act_normal_w",
+      "weight": 1,
+      "effectiveWeight": 1,
+      "state": {
+        "loop": true,
+        "speed": 1,
+        "offset": 0,
+        "speed_parameter": 0,
+        "transitions": [],
+        "selection": null
+      },
+      "blend": false,
+      "loaded": true,
+      "proof": {
+        "clipRecordId": 1,
+        "token": "act_normal_w",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_act_normal_w.motion3.json",
+        "rawSha256": "6537babd19b4c874285d05f7c0a87b3a755f36cdc0c6765ba4d86bcbfa6c0407",
+        "actualDecodedSha256": "17f79c3a3441d964faa9a712e23abb652520aa7d75d7d02f21b43b7e620b46bf",
+        "duration": 4,
+        "curveCount": 106
+      }
+    },
+    {
+      "checkpoint": "4-first-observed-visible",
+      "tapSequence": 3,
+      "layerPath": "face",
+      "layer": "face",
+      "token": "face_bikkuri",
+      "weight": 1,
+      "effectiveWeight": 1,
+      "state": {
+        "loop": false,
+        "speed": 1,
+        "offset": 0,
+        "speed_parameter": 0,
+        "transitions": [
+          {
+            "target": "face_bikkuri_w",
+            "duration": 0.10000000149011612,
+            "offset": 0,
+            "exit_time": 0.8999999761581421,
+            "has_exit_time": true,
+            "fixed_duration": true,
+            "conditions": []
+          }
+        ],
+        "selection": null
+      },
+      "blend": false,
+      "loaded": true,
+      "proof": {
+        "clipRecordId": 2,
+        "token": "face_bikkuri",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri.motion3.json",
+        "rawSha256": "76f990d192711bf7b6799049d1884321dee62a50fc1d7650304b46599c61f3f2",
+        "actualDecodedSha256": "ad1efdc1436899be093f5e3c1a9a7dcbd54b5bdc1a5a270ab0c740628b88f9b2",
+        "duration": 0.667,
+        "curveCount": 70
+      }
+    },
+    {
+      "checkpoint": "4-first-natural-ready",
+      "tapSequence": 13,
+      "layerPath": "motion",
+      "layer": "motion",
+      "token": "act_normal_w",
+      "weight": 1,
+      "effectiveWeight": 1,
+      "state": {
+        "loop": true,
+        "speed": 1,
+        "offset": 0,
+        "speed_parameter": 0,
+        "transitions": [],
+        "selection": null
+      },
+      "blend": false,
+      "loaded": true,
+      "proof": {
+        "clipRecordId": 1,
+        "token": "act_normal_w",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_act_normal_w.motion3.json",
+        "rawSha256": "6537babd19b4c874285d05f7c0a87b3a755f36cdc0c6765ba4d86bcbfa6c0407",
+        "actualDecodedSha256": "17f79c3a3441d964faa9a712e23abb652520aa7d75d7d02f21b43b7e620b46bf",
+        "duration": 4,
+        "curveCount": 106
+      }
+    },
+    {
+      "checkpoint": "4-first-natural-ready",
+      "tapSequence": 13,
+      "layerPath": "face",
+      "layer": "face",
+      "token": "face_bikkuri_w",
+      "weight": 1,
+      "effectiveWeight": 1,
+      "state": {
+        "loop": true,
+        "speed": 1,
+        "offset": 0,
+        "speed_parameter": 0,
+        "transitions": [],
+        "selection": null
+      },
+      "blend": false,
+      "loaded": true,
+      "proof": {
+        "clipRecordId": 3,
+        "token": "face_bikkuri_w",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri_w.motion3.json",
+        "rawSha256": "64fb887e7c06fc89e08ab48b315f2c6dd5707d58a722bfeec91f70be4f02102b",
+        "actualDecodedSha256": "2cfe452ed72b219b54cc77eb49088bd2058b46b8870ab10b0a64d7ae8795b87f",
+        "duration": 2,
+        "curveCount": 70
+      }
+    },
+    {
+      "checkpoint": "4-hold-observation-1",
+      "tapSequence": 41,
+      "layerPath": "motion",
+      "layer": "motion",
+      "token": "act_normal_w",
+      "weight": 1,
+      "effectiveWeight": 1,
+      "state": {
+        "loop": true,
+        "speed": 1,
+        "offset": 0,
+        "speed_parameter": 0,
+        "transitions": [],
+        "selection": null
+      },
+      "blend": false,
+      "loaded": true,
+      "proof": {
+        "clipRecordId": 1,
+        "token": "act_normal_w",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_act_normal_w.motion3.json",
+        "rawSha256": "6537babd19b4c874285d05f7c0a87b3a755f36cdc0c6765ba4d86bcbfa6c0407",
+        "actualDecodedSha256": "17f79c3a3441d964faa9a712e23abb652520aa7d75d7d02f21b43b7e620b46bf",
+        "duration": 4,
+        "curveCount": 106
+      }
+    },
+    {
+      "checkpoint": "4-hold-observation-1",
+      "tapSequence": 41,
+      "layerPath": "face",
+      "layer": "face",
+      "token": "face_bikkuri_w",
+      "weight": 1,
+      "effectiveWeight": 1,
+      "state": {
+        "loop": true,
+        "speed": 1,
+        "offset": 0,
+        "speed_parameter": 0,
+        "transitions": [],
+        "selection": null
+      },
+      "blend": false,
+      "loaded": true,
+      "proof": {
+        "clipRecordId": 3,
+        "token": "face_bikkuri_w",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri_w.motion3.json",
+        "rawSha256": "64fb887e7c06fc89e08ab48b315f2c6dd5707d58a722bfeec91f70be4f02102b",
+        "actualDecodedSha256": "2cfe452ed72b219b54cc77eb49088bd2058b46b8870ab10b0a64d7ae8795b87f",
+        "duration": 2,
+        "curveCount": 70
+      }
+    }
+  ],
+  "originalAndCurrentNativeFilesFreshExact": [
+    {
+      "token": "act_normal_w",
+      "original": {
+        "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt01/ac/motions/AC_subaru_tshirt01_act_normal_w.motion3.json",
+        "bytes": 25428,
+        "sha256": "6537babd19b4c874285d05f7c0a87b3a755f36cdc0c6765ba4d86bcbfa6c0407"
+      },
+      "current": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_act_normal_w.motion3.json",
+        "bytes": 25428,
+        "sha256": "6537babd19b4c874285d05f7c0a87b3a755f36cdc0c6765ba4d86bcbfa6c0407"
+      },
+      "actualDecodedProof": {
+        "clipRecordId": 1,
+        "token": "act_normal_w",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_act_normal_w.motion3.json",
+        "rawSha256": "6537babd19b4c874285d05f7c0a87b3a755f36cdc0c6765ba4d86bcbfa6c0407",
+        "actualDecodedSha256": "17f79c3a3441d964faa9a712e23abb652520aa7d75d7d02f21b43b7e620b46bf",
+        "duration": 4,
+        "curveCount": 106
+      }
+    },
+    {
+      "token": "face_bikkuri",
+      "original": {
+        "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri.motion3.json",
+        "bytes": 14807,
+        "sha256": "76f990d192711bf7b6799049d1884321dee62a50fc1d7650304b46599c61f3f2"
+      },
+      "current": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri.motion3.json",
+        "bytes": 14807,
+        "sha256": "76f990d192711bf7b6799049d1884321dee62a50fc1d7650304b46599c61f3f2"
+      },
+      "actualDecodedProof": {
+        "clipRecordId": 2,
+        "token": "face_bikkuri",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri.motion3.json",
+        "rawSha256": "76f990d192711bf7b6799049d1884321dee62a50fc1d7650304b46599c61f3f2",
+        "actualDecodedSha256": "ad1efdc1436899be093f5e3c1a9a7dcbd54b5bdc1a5a270ab0c740628b88f9b2",
+        "duration": 0.667,
+        "curveCount": 70
+      }
+    },
+    {
+      "token": "face_bikkuri_w",
+      "original": {
+        "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri_w.motion3.json",
+        "bytes": 14280,
+        "sha256": "64fb887e7c06fc89e08ab48b315f2c6dd5707d58a722bfeec91f70be4f02102b"
+      },
+      "current": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri_w.motion3.json",
+        "bytes": 14280,
+        "sha256": "64fb887e7c06fc89e08ab48b315f2c6dd5707d58a722bfeec91f70be4f02102b"
+      },
+      "actualDecodedProof": {
+        "clipRecordId": 3,
+        "token": "face_bikkuri_w",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri_w.motion3.json",
+        "rawSha256": "64fb887e7c06fc89e08ab48b315f2c6dd5707d58a722bfeec91f70be4f02102b",
+        "actualDecodedSha256": "2cfe452ed72b219b54cc77eb49088bd2058b46b8870ab10b0a64d7ae8795b87f",
+        "duration": 2,
+        "curveCount": 70
+      }
+    },
+    {
+      "token": "face_talk_normal",
+      "original": {
+        "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_talk_normal.motion3.json",
+        "bytes": 1228,
+        "sha256": "801e6b9ee6f3f12837a89b4065008eef74ae62daaa9b0774db5bdb5dba5b45eb"
+      },
+      "current": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_talk_normal.motion3.json",
+        "bytes": 1228,
+        "sha256": "801e6b9ee6f3f12837a89b4065008eef74ae62daaa9b0774db5bdb5dba5b45eb"
+      },
+      "actualDecodedProof": {
+        "clipRecordId": 4,
+        "token": "face_talk_normal",
+        "model": "subaru_tshirt01",
+        "relative": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_talk_normal.motion3.json",
+        "rawSha256": "801e6b9ee6f3f12837a89b4065008eef74ae62daaa9b0774db5bdb5dba5b45eb",
+        "actualDecodedSha256": "75a21f18624df3711a8c4f352285c1638e40c7e5d4a5884e77633f81c03acfb1",
+        "duration": 3,
+        "curveCount": 1
+      }
+    }
+  ],
+  "normalHitchesRetained": 4,
+  "normalHitchesNotRemovedOrAssignedSpeculativeCause": true,
+  "sourceCaptureOwnedStop255IsSeparateFromStrictEOFDecodeExit0": true,
+  "route": [
+    3,
+    4,
+    5
+  ],
+  "readyHoldIsQAObservationNotSourcePacing": true,
+  "allNumbersAreLoggedCheckpointsNotContinuousPixelOrUniqueGLProof": true
+}
