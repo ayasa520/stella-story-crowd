@@ -1,0 +1,103 @@
+{
+  "schema": "stella.p30.ordinary-entry-v2-lexical-revision.v1",
+  "rootConfirmed": false,
+  "freezeAuthorized": false,
+  "apiPreparationAuthorized": false,
+  "executionAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "diagnosticInstrumentationAuthorized": false,
+  "continuousRecorderAuthorized": false,
+  "status": "AUTHOR_STATIC_ONLY_PENDING_INDEPENDENT_PEER_AND_ROOT_FRESH_BINDING",
+  "directory": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2",
+  "basis": {
+    "directory": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1",
+    "authorReceiptSha256": "fd8ccd3aa7de75dd2ba86e64e0bcbb67b3d39c31bb8a45dd7a21c32981487212",
+    "oldDriverSha256": "6bf7386e3846190aece17b87f6fce2d2d021674c2c6f7b64c29c5574e18658ce",
+    "preparedOnlyReadinessReceiptSha256": "dcc433a032a095b66d25c40fa63278916c749417a8cb68a37c30507cde6f4546"
+  },
+  "knownOriginalFailure": {
+    "rootReportedSession": 57682,
+    "exitCode": 1,
+    "stage": "fresh-document",
+    "oldNavigationLine": 294,
+    "oldDeclarationLine": 357,
+    "mechanism": "The case try block declares const target after navigation; its entire block is the TDZ of that inner target. The earlier target.context cannot resolve to the initialized module target.",
+    "noRecorderProgramLoadOrCapture": true,
+    "oldFailureAndKitPreserved": true
+  },
+  "exactRevision": {
+    "changedExecutableFiles": [
+      "driver.mjs"
+    ],
+    "newDriverSha256": "5e54c79d8446b98f6cfd8ea249ecf274e32b02162e0f17e79cc88ebf14f6f122",
+    "newDriverBytes": 32230,
+    "changedIdentifierOccurrences": 5,
+    "renamedDeclaration": "const target → const targetHold",
+    "renamedFourPropertyReads": [
+      "visible",
+      "readyPoint",
+      "ended",
+      "observations"
+    ],
+    "addedEnglishCommentLines": 3,
+    "lookupPositionUnchanged": true,
+    "entireNewSourceEqualsPreciselyTwoBoundedTextReplacements": true,
+    "sourceDiffFile": "driver-v2-vs-v1.patch"
+  },
+  "staticSameClassRead": {
+    "wholeDriverRead": true,
+    "identifiedKnownShadowingCorrected": true,
+    "noSecondDefiniteLexicalTdzFound": true,
+    "notAnAstSyntaxOrExecutionCheck": true,
+    "details": [
+      "Module let target remains the BiDi browsing context target for navigation, input and evaluate closure.",
+      "targetHold is initialized after owner export/verification and read only in the following baseline artifact payload.",
+      "Two page callback ({node,target}) parameters are initialized numeric Normal-time thresholds in distinct function scopes.",
+      "step.target, event.target and plan.links[index].target are object properties and are untouched.",
+      "Other const/let blocks and multi-declaration initializers were read for same-scope earlier accesses; no additional definite match was found."
+    ]
+  },
+  "preservation": {
+    "originalSealedPayloadsCopied": 24,
+    "originalPayloadsByteIdentical": 23,
+    "allOtherTenExecutableFilesByteIdentical": true,
+    "original24PayloadsStillMatchOriginalReceipt": true,
+    "genericOwnerReadtapRecordingFirstRealFrameAckAndCleanupUnchanged": true,
+    "noPriorRuntimeAuthorizationOrStateCopied": true,
+    "excluded": [
+      "frozen/",
+      "prepared/",
+      "attempt-*",
+      "SQLite",
+      "root-release.prepared.draft.json",
+      "actual root-approved runtime/preparation releases"
+    ],
+    "route": "3→31→4→41→5 natural ready; no51/no6",
+    "node4Character": "live2d/AC_subaru_tshirt01",
+    "node4Motion": "",
+    "ordinaryCompleteProgramAndBeforeUnchanged": true,
+    "noModelClockPhaseWaitReadyLayerOrSourceNativeChanges": true
+  },
+  "copiedHistoricalDocuments": {
+    "names": [
+      "README.md",
+      "static-report.rootfalse.json",
+      "diff-*.patch"
+    ],
+    "meaning": "Original v1 author provenance, carried byte-identically; their old paths/hash assertions describe v1. REVISION.md, this report, the v1-to-v2 minimal patch and this directory's new receipt define the sole v2 change. Prior peer pass did not catch the TDZ and is not runtime acceptance."
+  },
+  "finalBinding": {
+    "finalDataHead": null,
+    "finalSourceHead": null,
+    "browserOwner": null,
+    "libraryNodes": null,
+    "preparationAuthorized": false,
+    "runtimeAuthorized": false,
+    "note": "Copied author templates remain false and final heads null. Root supplies fresh inputs after old failed-case independent closure; no old prepared/binding/release may authorize v2."
+  },
+  "noHelperScriptImportSyntaxAstTestFreezePrepareApiBrowserServerMediaDecodeBuildOrGitExecuted": true,
+  "noDOrCWrite": true,
+  "noImageView": true,
+  "performed": "Read complete source as text; selected copy of original author payloads; apply_patch for the lexical revision and report; ordinary read-only sha256sum/wc/diff comparisons."
+}
+

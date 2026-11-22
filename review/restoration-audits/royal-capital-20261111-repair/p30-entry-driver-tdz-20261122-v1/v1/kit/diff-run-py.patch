@@ -1,0 +1,88 @@
+--- /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/run.py	2026-11-22 03:59:14.983196906 +0800
++++ /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/run.py	2026-11-22 07:36:22.911191937 +0800
+@@ -1,4 +1,4 @@
+-"""Future single-browser, one-case talk0-only supervisor with owned-group cleanup.
++"""Future single-browser ordinary P30 supervisor with owned-group cleanup.
+ 
+ The one Firefox process opens one fresh document. A recorder
+ starts before each unchanged program load and stops only after its declared
+@@ -148,21 +148,21 @@
+ assert sha(release_path) == args.release_sha256
+ release = load(release_path)
+ for flag in ['rootConfirmed', 'executionAuthorized', 'browserLaunchAuthorized',
+-             'diagnosticInstrumentationAuthorized', 'continuousRecorderAuthorized', 'nativeFlagIsolationAuthorized']:
++             'diagnosticInstrumentationAuthorized', 'continuousRecorderAuthorized']:
+     assert release.get(flag) is True, flag
+-assert release['allow46DoorSuccessorBoundary'] is False
+ assert release['attempt'] == args.attempt
+ assert os.environ.get('STELLA_BROWSER_OWNER') == release['browserOwner']
+ binding = load(HERE / 'frozen/binding.json')
+-assert [p['id'] for p in binding['plans']] == ['54-talk0-only']
++assert [p['id'] for p in binding['plans']] == ['p30-node4-unchanged-ordinary']
++assert binding['noNativeOverlay'] is True and binding['noProgramMutation'] is True
+ for plan in binding['plans']:
+-    assert [step['scenario'] for step in plan['steps']] == [45, 54, 46]
+-    assert plan['stop']['scenario'] == 46 and plan['stop']['phase'] == 'ready'
+-    assert plan['allow46DoorSuccessorBoundary'] is False
+-    assert plan['nativeFlagIsolation']['after'] == '0'
+-    assert plan['emptyMotionBaseline'] is True
++    assert [step['scenario'] for step in plan['steps']] == [3, 4, 5]
++    assert plan['stop']['scenario'] == 5 and plan['stop']['phase'] == 'ready'
++    assert plan['stop']['forbiddenNext'] == 6 and plan['stop']['forbiddenEdge'].endswith(':51')
++    assert plan['ordinaryBaseline'] is True
+     target = next(step for step in plan['steps'] if step['target'])
+-    assert target['scenario'] == 54 and target['native']['motion'] == target['candidateMotion'] == ''
++    assert target['scenario'] == 4 and target['native']['character'] == 'live2d/AC_subaru_tshirt01'
++    assert target['native']['motion'] == ''
+     assert target['parsedMotion'] == {'body': '', 'face': '', 'extras': []}
+ assert release['bindingSha256'] == sha(HERE / 'frozen/binding.json')
+ assert release['normalPreparationIndexSha256'] == sha(HERE / 'prepared/index.json')
+@@ -173,8 +173,17 @@
+ for path, expected in binding['fileGuards'].items():
+     assert guards.get(path) == expected, path
+ for name in ['common.py', 'freeze.py', 'prepare.mjs', 'transport.mjs', 'server.mjs', 'workers-private.mjs', 'node-guards.mjs', 'owner-events.mjs',
+-             'curve-audit.mjs', 'driver.mjs', 'run.py', 'frozen/binding.json', 'prepared/index.json']:
++             'curve-audit.mjs', 'driver.mjs', 'run.py', 'README.md', 'plan.rootfalse.json', 'static-report.rootfalse.json',
++             'frozen/binding.json', 'frozen/plan.json', 'prepared/index.json',
++             'prepared/p30-node4-unchanged-ordinary.request.json',
++             'prepared/p30-node4-unchanged-ordinary.http.json',
++             'prepared/p30-node4-unchanged-ordinary.receipt.json',
++             'prepared/p30-node4-unchanged-ordinary.raw.json.gz']:
+     assert guards.get(str(HERE / name)) == sha(HERE / name), name
++# Bind the actual interpreter and both Node launches to the declared tools.
++# Checking another executable on PATH would not establish what ran this kit.
++assert Path(sys.executable).resolve() == Path(binding['tools']['python']['binaryPath']).resolve()
++assert sha(sys.executable) == binding['tools']['python']['sha256']
+ limits()
+ resource.setrlimit(resource.RLIMIT_CORE, (0, 0))
+ budgets = binding['budgets']
+@@ -283,7 +292,7 @@
+                OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1', STELLA_PRIVATE_OUTPUT=str(out),
+                STELLA_PRIVATE_ATTEMPT=args.attempt, STELLA_RUNTIME_RELEASE_PATH=str(release_path),
+                STELLA_RUNTIME_RELEASE_SHA256=args.release_sha256)
+-    server = spawn('server', ['node', '--import', str(HERE / 'transport.mjs'), str(HERE / 'server.mjs')], env, out / 'server.log')
++    server = spawn('server', [binding['tools']['node']['launchPath'], '--import', str(HERE / 'transport.mjs'), str(HERE / 'server.mjs')], env, out / 'server.log')
+     end = time.monotonic() + 20
+     while True:
+         assert server.poll() is None, 'Owned Worker host exited; inspect original server.log'
+@@ -316,7 +325,7 @@
+         assert address, 'Firefox did not announce BiDi; retain actual firefox.log'
+         driver_log = (out / 'driver.log').open('x')
+         logs.append(driver_log)
+-        driver = subprocess.Popen(['node', str(HERE / 'driver.mjs'), address], env=env, stdout=subprocess.PIPE,
++        driver = subprocess.Popen([binding['tools']['node']['launchPath'], str(HERE / 'driver.mjs'), address], env=env, stdout=subprocess.PIPE,
+             stderr=subprocess.STDOUT, stdin=subprocess.PIPE, text=True, bufsize=1, start_new_session=True)
+         owned.append(('driver', driver))
+         handles.update(state='capturing', address=address, display=display)
+@@ -388,6 +397,11 @@
+                 break
+         if status == 0:
+             assert len(captures) == 1 and recording is None
++            # An earlier result file may predate a late original fatal event.
++            # Driver exit0 also requires its post-session terminal decision;
++            # this remains distinct from the supervisor/root OS exit proof.
++            terminal = load(out / 'terminal-acceptance.json')
++            assert terminal['accepted'] is True and terminal['sessionRetired'] is True
+         write(out / 'capture-index.json', {'captures': captures, 'driverExitCode': status,
+               'oneBrowserSession': True, 'motionAccepted': False, 'containerDecodeVerified': False})
+     finally:

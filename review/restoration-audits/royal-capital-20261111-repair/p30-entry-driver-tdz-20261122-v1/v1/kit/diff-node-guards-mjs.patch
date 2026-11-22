@@ -1,0 +1,43 @@
+--- /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/node-guards.mjs	2026-11-22 03:59:14.983196906 +0800
++++ /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/node-guards.mjs	2026-11-22 07:36:22.911191937 +0800
+@@ -2,7 +2,7 @@
+ // than turning a prepared binding or a hash-shaped observer argument into
+ // execution authority. This module performs local reads only.
+ import assert from 'node:assert/strict';
+-import {readFile} from 'node:fs/promises';
++import {readFile,realpath} from 'node:fs/promises';
+ import {createHash} from 'node:crypto';
+ import {getPriority} from 'node:os';
+ import {fileURLToPath} from 'node:url';
+@@ -22,19 +22,21 @@
+   assert.ok(path&&expected,'Only the released supervisor may supply runtime authority');
+   const bytes=await readFile(path),release=JSON.parse(bytes);assert.equal(sha(bytes),expected);
+   for(const flag of ['rootConfirmed','executionAuthorized','browserLaunchAuthorized','diagnosticInstrumentationAuthorized',
+-    'continuousRecorderAuthorized','nativeFlagIsolationAuthorized'])assert.equal(release[flag],true,flag);
+-  assert.equal(release.allow46DoorSuccessorBoundary,false);
++    'continuousRecorderAuthorized'])assert.equal(release[flag],true,flag);
+   const bindingBytes=await readFile(new URL('frozen/binding.json',here)),binding=JSON.parse(bindingBytes);
++  assert.equal(await realpath(process.execPath),await realpath(binding.tools.node.binaryPath));
++  assert.equal(sha(await readFile(process.execPath)),binding.tools.node.sha256);
+   assert.equal(sha(bindingBytes),release.bindingSha256);
+-  assert.deepEqual(binding.plans.map(p=>p.id),['54-talk0-only']);
++  assert.deepEqual(binding.plans.map(p=>p.id),['p30-node4-unchanged-ordinary']);
++  assert.equal(binding.noNativeOverlay,true);assert.equal(binding.noProgramMutation,true);
+   for(const plan of binding.plans){
+-    assert.deepEqual(plan.steps.map(s=>s.scenario),[45,54,46]);
+-    assert.equal(plan.stop.scenario,46);assert.equal(plan.stop.phase,'ready');
+-    assert.equal(plan.allow46DoorSuccessorBoundary,false);
+-    assert.equal(plan.nativeFlagIsolation.after,'0');
+-    assert.equal(plan.emptyMotionBaseline,true);
+-    const target=plan.steps.find(s=>s.target);assert.equal(target.scenario,54);
+-    assert.equal(target.native.motion,'');assert.equal(target.candidateMotion,'');
++    assert.deepEqual(plan.steps.map(s=>s.scenario),[3,4,5]);
++    assert.equal(plan.stop.scenario,5);assert.equal(plan.stop.phase,'ready');
++    assert.equal(plan.stop.forbiddenNext,6);assert.ok(plan.stop.forbiddenEdge.endsWith(':51'));
++    assert.equal(plan.ordinaryBaseline,true);
++    const target=plan.steps.find(s=>s.target);assert.equal(target.scenario,4);
++    assert.equal(target.native.character,'live2d/AC_subaru_tshirt01');
++    assert.equal(target.native.motion,'');
+     assert.deepEqual(target.parsedMotion,{body:'',face:'',extras:[]});
+   }
+   assert.equal(sha(await readFile(new URL('prepared/index.json',here))),release.normalPreparationIndexSha256);

@@ -1,0 +1,18 @@
+--- v1/driver.mjs
++++ v2/driver.mjs
+@@ -354,9 +354,12 @@
+       const finalSurface=await surface();verifySurface(finalSurface,plan.steps.at(-1));
+       await mark('ordinary-observation-complete-no51');
+       const report=await exportOwner(folder);exported=true;verifyOwner(report,plan);
+-      const target=active.holds.find(h=>h.scenario===4);
++      // Keep the held observation separate from the outer BiDi context target.
++      // A block-scoped `target` here would shadow earlier target.context reads
++      // throughout this try block, including navigation before initialization.
++      const targetHold=active.holds.find(h=>h.scenario===4);
+       await save(folder,'actual-empty-motion-baseline.json',{nativeMotion:'',derivedMotion:{body:'',face:'',extras:[]},
+-        visible:target.visible,ready:target.readyPoint,ended:target.ended,observations:target.observations,
++        visible:targetHold.visible,ready:targetHold.readyPoint,ended:targetHold.ended,observations:targetHold.observations,
+         tokensSelectedByHelper:false,layersOrWeightsMutatedByHelper:false,
+         bodyWinner:null,faceWinner:null,motionAccepted:false,sourcePhaseAccepted:false});
+       await save(folder,'actual-decoded-curve-proof.json',await auditCurves(binding,report,plan));
+

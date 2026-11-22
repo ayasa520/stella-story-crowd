@@ -1,0 +1,155 @@
+{
+  "schema": "stella.P30.ordinary-driver.TDZ-independent-final-static-peer.v1",
+  "createdUTC": "2026-11-22T00:46:05.163329+00:00",
+  "reviewer": "/root/performance_peer",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "preparationAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "decision": "STATIC_PASS_LIMITED_LEXICAL_FIX_NO_NEW_EXECUTION_AUTHORIZATION",
+  "mustFix": [],
+  "scope": "Known v1 fresh-document target TDZ; full original driver manual same-class lexical read; exact sealed v2 minimal diff, final full source and payload preservation. No runtime validation.",
+  "evidence": {
+    "originalAnalysis": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-driver-tdz-peer-v1/original-tdz-analysis.rootfalse.json",
+      "bytes": 4529,
+      "sha256": "e99d039a7e264bbd1ceee8665a1793a6c22dde510381304bcad8c9d712514e38"
+    },
+    "originalAuthorReceipt": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/receipt.rootfalse.json",
+      "bytes": 9748,
+      "sha256": "fd8ccd3aa7de75dd2ba86e64e0bcbb67b3d39c31bb8a45dd7a21c32981487212"
+    },
+    "originalDriver": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/driver.mjs",
+      "bytes": 31970,
+      "sha256": "6bf7386e3846190aece17b87f6fce2d2d021674c2c6f7b64c29c5574e18658ce"
+    },
+    "originalFailureLog": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/driver.log",
+      "bytes": 872,
+      "sha256": "0080c4e9d7934d4db7eb7cd4fa456017909a62bd63dbf88567fb327db180c292"
+    },
+    "priorIndependentStaticReceipt": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-kit-static-peer-v1/receipt.rootfalse.json",
+      "bytes": 1454,
+      "sha256": "c78dcfe8f52097d3312e00034bb460c6ef44244bde0e3ab6e5aecb83c888a991"
+    },
+    "finalV2AuthorReceipt": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/receipt.rootfalse.json",
+      "bytes": 7978,
+      "sha256": "a1acad956d2b88fd6aca386ce9f8358beb2731b50b98fc19efc8263edcc96507"
+    },
+    "finalV2Driver": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/driver.mjs",
+      "bytes": 32230,
+      "sha256": "5e54c79d8446b98f6cfd8ea249ecf274e32b02162e0f17e79cc88ebf14f6f122"
+    },
+    "finalMinimalDiff": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/driver-v2-vs-v1.patch",
+      "bytes": 1275,
+      "sha256": "abcb57badc7358abee114850f3bd693bb4584eb0cd87d46c7c2fcad76cff788d"
+    },
+    "finalRevision": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/REVISION.md",
+      "bytes": 2587,
+      "sha256": "80adc46c69f98e9e6504a09ff7c6e0c39c1678c386696d49a4f3271acda698f0"
+    },
+    "finalAuthorRevisionReport": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/revision-static-report.rootfalse.json",
+      "bytes": 4878,
+      "sha256": "29706873abfac8fcb93c767c380d1228d3a44ccb34db8d66e783c51ecefc54fd"
+    }
+  },
+  "knownFailureAndCorrection": {
+    "actualSessionReportedByRoot": 57682,
+    "actualExitReportedByRoot": 1,
+    "observedLog": "ReferenceError: Cannot access target before initialization; driver.mjs:294:61; stage fresh-document",
+    "oldCause": "The const target at original357 shadows the initialized module target for the entire inner per-case try; the target.context access at294 occurs in its TDZ. Function argument evaluation throws before browsingContext.navigate is called.",
+    "earlierStaticPeerMissAcknowledged": true,
+    "v2Fix": "Only const target at original357 becomes targetHold at v2:360 and its following four property receivers become targetHold at362; three English comment lines explain the scope.",
+    "lookupPositionAndInitializationOrderPreserved": true,
+    "expectedTwoBoundedTextReplacementsEqualEntireV2": true,
+    "storedUnifiedHunksMatchCompleteActualDiff": true,
+    "diffTerminalFormattingNote": "Stored patch has one extra terminal blank line compared with Python unified_diff output; its hunk content and complete source transformation are exact.",
+    "noSecondDefiniteSameClassTDZFound": true
+  },
+  "sameClassAudit": {
+    "wholeOriginalAndFinalDriverManuallyRead": true,
+    "manualTextOnlyNotASTSyntaxOrExecution": true,
+    "moduleBrowserContextBinding": "let target at30; assigned253; evaluate39 and input71 close the module binding; context uses279/280/281/285/294 remain unchanged.",
+    "pageCallbackParameters": "Destructured numeric target parameters149/168 are initialized function arguments in separate scopes; uses150/169 and object keys151/170 are unchanged.",
+    "objectPropertyTargets": "event.target and plan.links[index].target221; step.target345 remain unchanged and do not create lexical bindings.",
+    "newHoldBinding": "targetHold initialized360 then used only for visible/readyPoint/ended/observations362.",
+    "otherLexicalScopes": "Module and function locals, multi-declarators, callback closures, timers, loops, try/catch/finally and terminal construction read; no additional definite same-class pre-initialization access found."
+  },
+  "exactPayloadVerification": {
+    "v1": {
+      "payloadCount": 24,
+      "payloadBytes": 247261,
+      "allPayloadRefsExact": true
+    },
+    "v2": {
+      "payloadCount": 27,
+      "payloadBytes": 256261,
+      "allPayloadRefsExact": true
+    },
+    "unchangedOriginalPayloadCount": 23,
+    "unchangedOriginalPayloadNames": [
+      "README.md",
+      "common.py",
+      "curve-audit.mjs",
+      "diff-curve-audit-mjs.patch",
+      "diff-driver-mjs.patch",
+      "diff-freeze-py.patch",
+      "diff-node-guards-mjs.patch",
+      "diff-prepare-mjs.patch",
+      "diff-run-py.patch",
+      "diff-server-mjs.patch",
+      "diff-transport-mjs.patch",
+      "freeze.py",
+      "node-guards.mjs",
+      "owner-events.mjs",
+      "plan.rootfalse.json",
+      "prepare.mjs",
+      "root-inputs.draft.json",
+      "root-release.draft.json",
+      "run.py",
+      "server.mjs",
+      "static-report.rootfalse.json",
+      "transport.mjs",
+      "workers-private.mjs"
+    ],
+    "soleChangedOriginalPayload": "driver.mjs",
+    "allOtherTenExecutableFilesExact": true,
+    "threeNewPayloads": [
+      "REVISION.md",
+      "driver-v2-vs-v1.patch",
+      "revision-static-report.rootfalse.json"
+    ],
+    "v2DirectoryExactly27PayloadsPlusNewReceipt": true,
+    "noStateDirectoriesOrNonFilesInV2": true,
+    "original24PayloadsStillExactAgainstOriginalSeal": true,
+    "historicalDocumentation": "Copied README/static-report/eight K5-to-v1 basis patches are v1 provenance. New v2 receipt, revision report and minimal v1-to-v2 patch define current bytes; old peer pass is not runtime acceptance.",
+    "siblingResolution": "driver imports its own ./curve-audit.mjs and ./node-guards.mjs and derives here from import.meta.url; common derives HERE from its own __file__. No v1 executable path added by this change."
+  },
+  "preservedRequirements": {
+    "ordinaryFullProgramActualBeforeNoAliasOverlaySeedOverride": true,
+    "route": "3 narration natural ready -> trusted31 ->4 real empty-motion entry/typing; actual same-animator Actor >=8 seconds and ready+>=2; trusted41 ->5 natural ready STOP, no51/no6",
+    "noModelBodyFaceWeightLoopTalkOrPhaseAssumptionsAdded": true,
+    "firstRealXFrameAckBeforeLoadRecorderFatalRawBudgetOwnershipCleanupGatesUnchanged": true,
+    "lateFatalAndSessionEndTerminalChecksUnchanged": true
+  },
+  "authorReleaseState": {
+    "allAuthorAuthorizationFlagsFalse": true,
+    "finalDataHead": null,
+    "finalSourceHead": null,
+    "browserOwner": null,
+    "noPriorPreparedRuntimeOrActualReleaseCopied": true
+  },
+  "limits": [
+    "No retry, preparation or runtime authorization. Root independently verifies failed-case OS/hash closure and supplies any fresh final input/release.",
+    "Original failed attempt, prior static peer and original sealed kit remain unchanged. No runtime success, phase/paint, body/face, source-motion or image acceptance claimed.",
+    "No helper import/execution, syntax/AST/test, freeze/prepare/API/browser/server/media/decode/image/Git or D/C writes. Only static text/hash/diff reads and this new peer metadata."
+  ]
+}

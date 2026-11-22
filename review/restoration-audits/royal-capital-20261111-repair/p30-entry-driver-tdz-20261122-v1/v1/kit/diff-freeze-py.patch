@@ -1,0 +1,348 @@
+--- /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/freeze.py	2026-11-22 03:59:14.983196906 +0800
++++ /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/freeze.py	2026-11-22 07:36:22.911191937 +0800
+@@ -1,99 +1,130 @@
+-"""Future root-gated native-only overlays and complete input freeze.
++"""Future root-released ordinary P30 snapshot; never a native overlay.
+ 
+-This does not run a Worker or browser. Only A-owned new files are written. The
+-root supplies final Git/ACK/status evidence; no Git command is hidden here.
+-The normal Worker will later project these complete native files itself.
++The caller supplies the final independently checked publication/global closure.
++No business module, Worker, browser or media tool is imported here. All native
++rows remain in their formal files; only new A-owned metadata is emitted. The
++three-node plan cannot turn an unknown original motion phase into input data.
+ """
+ import argparse
+-from copy import deepcopy
++from pathlib import Path
+ import re
+ import subprocess
+-from common import HERE, ROOT, DATA, SOURCE, load, sha, digest, write, field_differences, checked_guards, limits
++import sys
++from common import HERE, ROOT, DATA, SOURCE, load, sha, write, checked_guards, limits
+ 
+-PROPOSAL = HERE.parent / 'episode5-actor-private-read-tap-v2-20261121-v1/proposal.rootfalse.json'
+-PLAN = HERE.parent / 'episode5-actor-private-controls-plan-20261121-v1/plan.json'
+ TAP = HERE.parent / 'episode5-actor-private-read-tap-v2-20261121-v1/proposed-read-tap.v2.mjs'
++TAP_SHA = 'cc191d0433def9fbcbb5b9b4e556ff7e92e6c46f366ab9151d4aef860fdbc8c1'
++OWNER_SHA = 'cf74af705e98691eb2b66ca14d667598dc150dc6b77f9b9291ccd4e6ab32b57f'
++CASE = 'p30-node4-unchanged-ordinary'
++SCENE = 10450054
++
++def merge_guards(target, source):
++    """Reject inconsistent expectations instead of silently adopting drift."""
++    for name, expected in source.items():
++        path = str((ROOT / name).resolve())
++        assert path not in target or target[path] == expected, path
++        target[path] = expected
++
++def required_saved_members(manifest):
++    """Close actual ordinary resources, independently of the tested prefix.
++
++    The complete API library and renderer resource sets have different owners.
++    Preserve the established broad player/audio/image closure and all actual
++    section1045 models. The canonical thumbnail route uses catalog members;
++    completion/flow assets are normal dependencies even when this case stops
++    before its chart. No loaded clip is chosen to force a baseline pose.
++    """
++    result = {'manifest.json', 'review/native-restoration.json', 'assets/catalog.json',
++              'assets/package.json', 'assets/preview/catalog.json'}
++    result.update(scene[key] for scene in manifest['scenes'] for key in ('path', 'reviewPath'))
++    catalog = load(DATA / 'assets/catalog.json')
++    models = set()
++    for scene in manifest['scenes']:
++        if scene['sectionId'] != 1045:
++            continue
++        result.add('assets/' + catalog['thumbnails']['scene'][str(scene['id'])])
++        for row in load(DATA / scene['path'])['scenario_list']:
++            if row['character']:
++                models.add(row['character'].removeprefix('live2d/AC_'))
++    patterns = ['assets/player/**/*', 'assets/preview/player/**/*',
++                'assets/backgrounds/*', 'assets/preview/backgrounds/*',
++                'assets/music/*', 'assets/preview/music/*',
++                'assets/voices/**/*', 'assets/preview/voices/**/*',
++                'assets/sounds/**/*', 'assets/preview/sounds/**/*',
++                'assets/cutins/**/*', 'assets/preview/cutins/**/*',
++                'assets/pictures/**/*', 'assets/preview/pictures/**/*',
++                'assets/thumbnails/**/*', 'assets/preview/thumbnails/**/*',
++                'assets/movies/adv_dive01_out.*', 'assets/preview/movies/adv_dive01_out.*']
++    for model in models:
++        patterns.extend([f'assets/models/{model}/**/*', f'assets/preview/models/{model}/**/*',
++                         f'assets/portraits/{model}.*', f'assets/preview/portraits/{model}.*'])
++    for pattern in patterns:
++        result.update(str(path.relative_to(DATA)) for path in DATA.glob(pattern) if path.is_file())
++    return result
++
+ parser = argparse.ArgumentParser()
+ parser.add_argument('--root-inputs', required=True)
+ parser.add_argument('--root-inputs-sha256', required=True)
+ args = parser.parse_args()
+ limits()
+-release_path = __import__('pathlib').Path(args.root_inputs).resolve()
++release_path = Path(args.root_inputs).resolve()
+ assert sha(release_path) == args.root_inputs_sha256
+ release = load(release_path)
+-assert all(release[k] is True for k in ['rootConfirmed', 'freezeAuthorized', 'apiPreparationAuthorized', 'fullGlobalInventoryApproved'])
+-assert release['browserLaunchAuthorized'] is False and release['allow46DoorSuccessorBoundary'] is False
+-assert release['nativeFlagIsolationAuthorized'] is True
++for flag in ['rootConfirmed', 'freezeAuthorized', 'apiPreparationAuthorized', 'fullGlobalInventoryApproved']:
++    assert release.get(flag) is True, flag
++assert release['browserLaunchAuthorized'] is False
+ assert release['browserOwner']
+-for k in ['finalDataHead', 'finalSourceHead']:
+-    assert re.fullmatch('[a-f0-9]{40}', release[k] or ''), k
+-assert release['publicationGuards'], 'Root final HEAD/ACK/clean/source inventory evidence is required'
+-delta_ref = release['inputDelta']
+-assert sha(delta_ref['path']) == delta_ref['sha256'] == 'c11037ebece7c8ee16fe4d2b88a21bbff3e9254084afefe968b1e54635b86866'
+-delta = load(delta_ref['path'])
+-assert sha(PROPOSAL) == 'c6a26bc4759a770f495f761ff26bc32b0342f97531c8823001318369c127a04c'
+-assert sha(PLAN) == '64c9b8322a1b929b683e3ea985bda9bbcaae88dc5d28b09ef57c29ebe5cc1bf9'
+-assert sha(TAP) == 'cc191d0433def9fbcbb5b9b4e556ff7e92e6c46f366ab9151d4aef860fdbc8c1'
++assert set(release['tools']) == {'firefox', 'xvfb', 'ffmpeg', 'node', 'python'}
++assert Path(sys.executable).resolve() == Path(release['tools']['python']['binaryPath']).resolve()
++assert sha(sys.executable) == release['tools']['python']['sha256']
++for key in ['finalDataHead', 'finalSourceHead']:
++    assert re.fullmatch('[a-f0-9]{40}', release[key] or ''), key
++assert release['publicationGuards'], 'Final HEAD/ACK/source-status evidence must be separately root-bound'
+ global_ref = release['globalGuardsFile']
+ assert sha(global_ref['path']) == global_ref['sha256']
+-guards = dict(load(global_ref['path'])['guards'])
+-assert len(guards) >= 950
+-guards.update(release['publicationGuards'])
+-for name in ['common.py', 'freeze.py', 'prepare.mjs', 'transport.mjs', 'server.mjs', 'workers-private.mjs', 'node-guards.mjs',
+-             'owner-events.mjs', 'curve-audit.mjs', 'driver.mjs', 'run.py', 'README.md', 'plan.rootfalse.json']:
++global_document = load(global_ref['path'])
++guards = {}
++merge_guards(guards, global_document.get('guards', global_document.get('globalGuards', {})))
++assert guards
++# Completeness is separate from matching listed digests. A pure-audit followup
++# cannot vanish just because the previous listed files still match. Dist is
++# the actual compiled program and all of its static modules, not only index.js.
++for directory in [DATA / 'native', DATA / 'review', SOURCE / 'dist']:
++    assert {str(path.resolve()) for path in directory.rglob('*') if path.is_file()} <= set(guards)
++for relative in ['lib/preview.ts', 'lib/studio-api.ts', 'lib/studio-state.ts',
++                 'public/player/player.js', 'public/player/native_tap_panel_close.js',
++                 'public/studio/actor_animation.js', 'public/pairing/motion.js']:
++    assert str(SOURCE / relative) in guards, relative
++merge_guards(guards, release['publicationGuards'])
++merge_guards(guards, release['kitGuards'])
++protected = release['protectedFirstThree']
++assert len(protected) == 22
++for name, expected in protected.items():
++    path = str((DATA / name).resolve())
++    assert guards.get(path) == expected, path
++assert sha(TAP) == TAP_SHA and sha(HERE / 'owner-events.mjs') == OWNER_SHA
++for path, expected in [(TAP, TAP_SHA), (HERE / 'owner-events.mjs', OWNER_SHA)]:
++    assert release['kitGuards'].get(str(path)) == expected, str(path)
++for name in ['common.py', 'freeze.py', 'prepare.mjs', 'transport.mjs', 'server.mjs',
++             'workers-private.mjs', 'node-guards.mjs', 'owner-events.mjs', 'curve-audit.mjs',
++             'driver.mjs', 'run.py', 'README.md', 'plan.rootfalse.json', 'static-report.rootfalse.json']:
+     assert release['kitGuards'].get(str(HERE / name)) == sha(HERE / name), name
+-guards.update(release['kitGuards'])
+ for relative in ['artifacts/stella-local-deployment-3394828/d1-local.mjs',
+                  'artifacts/stella-p30-firefox-20261120/bidi.mjs',
+                  'artifacts/stella-p30-firefox-20261120/render-probe.mjs']:
+-    guards[str(ROOT / relative)] = sha(ROOT / relative)
+-# Bind the exact native-flag projection, real player gate and actor talk-event
+-# implementation used by this isolation, including installed client copies.
+-# Root's complete canonical-source/dist and global inventories remain required.
+-for relative in ['lib/preview.ts', 'lib/studio-api.ts', 'lib/studio-native.ts',
+-                 'public/player/player.js', 'public/studio/actor_animation.js',
+-                 'dist/client/player/player.js', 'dist/client/studio/actor_animation.js',
+-                 'dist/server/index.js']:
+-    guards[str(SOURCE / relative)] = sha(SOURCE / relative)
++    assert str(ROOT / relative) in release['kitGuards'], relative
+ guards[str(release_path)] = sha(release_path)
+ guards[global_ref['path']] = global_ref['sha256']
+-for ref in delta['referencesFreshlyHashed']:
+-    assert sha(ref['path']) == ref['sha256'], ref['path']
+-    guards[ref['path']] = ref['sha256']
+-for check in delta['scopedReferenceChecks']:
+-    # Reuse the newly observed current bytes, including the chart-only native
+-    # update. The superseded v1 native checksum is never an execution guard.
+-    assert sha(check['path']) == check['sha256'], check['path']
+-    guards[check['path']] = check['sha256']
+-guards[delta_ref['path']] = delta_ref['sha256']
+ proposal = load(HERE / 'plan.rootfalse.json')
+ assert proposal['rootConfirmed'] is False and proposal['executionAuthorized'] is False
+-assert proposal['finalDataHead'] is None and proposal['finalSourceHead'] is None
+-for ref in proposal['evidenceReferences']:
+-    assert sha(ref['path']) == ref['sha256'], ref['path']
+-    guards[ref['path']] = ref['sha256']
+-for relative, expected in delta['completeActorResources']['guardsRelativeToDataRoot'].items():
+-    assert sha(DATA / relative) == expected, relative
+-    guards[str(DATA / relative)] = expected
++assert proposal['observedSnapshot']['finalDataHead'] is None
++assert proposal['observedSnapshot']['finalSourceHead'] is None
++for path, expected in proposal['evidenceReferences'].items():
++    assert sha(path) == expected, path
++    guards[path] = expected
+ manifest = load(DATA / 'manifest.json')
+-data_paths = {'manifest.json', 'review/native-restoration.json', 'assets/catalog.json', 'assets/package.json'}
+-data_paths.update(s[k] for s in manifest['scenes'] for k in ['path', 'reviewPath'])
+-# Motion index/controller and every current asset required by these real saved
+-# routes are part of the freeze. Resource selection and original/preview
+-# fallback remain the unchanged Worker's responsibility, never the driver.
+-for pattern in ['assets/player/**/*', 'assets/preview/player/**/*',
+-                'assets/models/subaru01/**/*', 'assets/models/kadomon01/**/*',
+-                'assets/preview/models/subaru01/**/*', 'assets/preview/models/kadomon01/**/*',
+-                'assets/portraits/subaru01.*', 'assets/portraits/kadomon01.*',
+-                'assets/preview/portraits/subaru01.*', 'assets/preview/portraits/kadomon01.*',
+-                'assets/backgrounds/*', 'assets/preview/backgrounds/*', 'assets/music/*', 'assets/preview/music/*',
+-                'assets/voices/**/*', 'assets/preview/voices/**/*', 'assets/sounds/**/*', 'assets/preview/sounds/**/*',
+-                'assets/cutins/**/*', 'assets/preview/cutins/**/*', 'assets/pictures/**/*', 'assets/preview/pictures/**/*',
+-                'assets/thumbnails/**/*', 'assets/preview/thumbnails/**/*',
+-                'assets/movies/adv_dive01_out.*', 'assets/preview/movies/adv_dive01_out.*']:
+-    data_paths.update(str(p.relative_to(DATA)) for p in DATA.glob(pattern) if p.is_file())
+-data_guards = {p: sha(DATA / p) for p in sorted(data_paths)}
+-guards.update({str(DATA / p): h for p, h in data_guards.items()})
++data_guards = {name: sha(DATA / name) for name in sorted(required_saved_members(manifest))}
++merge_guards(guards, {str(DATA / name): expected for name, expected in data_guards.items()})
+ for tool in release['tools'].values():
+     assert sha(tool['binaryPath']) == tool['sha256']
+     report = subprocess.check_output(['file', tool['binaryPath']], text=True)
+@@ -108,89 +139,64 @@
+         'tapGzipBytesPerCase': 32000000, 'checkpointReadsPerCase': 8, 'httpRowsPerCase': 4000,
+         'providerRowsTotal': 20000, 'providerBytesTotal': 12000000}
+ for key, cap in caps.items():
+-    assert isinstance(release['budgets'][key], int) and 0 < release['budgets'][key] <= cap, key
++    assert type(release['budgets'][key]) is int and 0 < release['budgets'][key] <= cap, key
+ assert release['budgets']['screenshotsPerCase'] == 0
+-controller = load(DATA / 'assets/player/animation.json')['models']
+-for model in ['subaru01', 'kadomon01']:
+-    assert next(l for l in controller[model]['layers'] if l['name'] == 'face')['weight'] == 0
+-native_path = DATA / 'native/scenes/10090015.json'
+-native = load(native_path)
+-assert native_path.read_text() == __import__('json').dumps(native, ensure_ascii=False, indent=2) + '\n'
+-review = load(DATA / 'review/scenes/10090015.json')
+-rows = {r['scenario_id']: r for r in native['scenario_list']}
+-assert len(rows) == 53
+-assert rows[49]['video'] == 'adv_dive01_out' and rows[49]['command'] == ['', '', '']
+-# Isolate the existing native lip-motion flag with the formal motion field
+-# still empty. The prior private shinken controls only earned a limited mouth
+-# review; their body/face candidates must not enter this flag-only acceptance
+-# control. Native motion, derived body/face, controller weights and real clocks
+-# are untouched. All observed baseline layers come from the normal player.
+-specs = proposal['controls']
+-assert [case['id'] for case in specs] == ['54-talk0-only']
+-assert native['scenario_list'][49]['scenario_id'] == 54
+-assert rows[54]['talk_chara'] == '' and rows[54]['motion'] == ''
+-assert load(DATA / 'assets/player/player_config.json')['talk']['layer'] == 'talk'
+-plans = []
+-base_guard_digest = digest(guards)
+-for case in specs:
+-    name = case['id']
+-    overlay = deepcopy(native)
+-    expected = []
+-    assert case['sequence'] == [45, 54, 46]
+-    flag_mutation = {'scenarioId': 54, 'path': '/scenario_list/49/talk_chara', 'before': '', 'after': '0'}
+-    assert case['mutations'] == [flag_mutation]
+-    target54 = overlay['scenario_list'][49]
+-    assert target54['scenario_id'] == 54 and target54['talk_chara'] == ''
+-    target54['talk_chara'] = '0'
+-    expected.append({k: flag_mutation[k] for k in ['path', 'before', 'after']})
+-    assert sorted(field_differences(native, overlay), key=lambda x: x['path']) == sorted(expected, key=lambda x: x['path'])
+-    folder = HERE / 'frozen' / name
+-    overlay_path = folder / '10090015.json'
+-    write(overlay_path, overlay)
+-    alias = digest({'case': name, 'dataHead': release['finalDataHead'], 'sourceHead': release['finalSourceHead'],
+-                    'globalInputs': base_guard_digest, 'overlayNative': sha(overlay_path)})[:40]
+-    sequence = list(case['sequence'])
+-    target = int(name[:2])
+-    steps = []
+-    for s in sequence:
+-        row = rows[s]
+-        uid = review['scenarios'][str(s)].get('studioNodeId') or str(row['uniq_id'])
+-        expected_model = row['character'].removeprefix('live2d/AC_')
+-        candidate_motion = row['motion']
+-        slots = candidate_motion.split(',')
+-        steps.append({'scenario': s, 'id': 'node:10090015:' + uid, 'native': row,
+-                      'expectedModel': expected_model, 'candidateMotion': candidate_motion,
+-                      'parsedMotion': {'body': slots[0], 'face': slots[1] if len(slots) > 1 else '', 'extras': slots[2:]},
+-                      'holdActorSeconds': 4 if s == target else 1,
+-                      'expectedSuppressLipMotion': True if s == 54 else row['talk_chara'] == '0',
+-                      'target': s == target, 'movie': False})
+-    links = []
+-    for a, b in zip(steps, steps[1:]):
+-        branch = next(x for x in a['native']['branch_list'] if len(x['transition_list']) == 1 and x['transition_list'][0]['next_scenario_id'] == b['scenario'])
+-        links.append({'source': a['id'], 'target': b['id'], 'id': f"edge:{a['id']}:{branch['uniq_id']}:{branch['branch_id']}",
+-                      'branchId': branch['branch_id'], 'native_transition': branch['transition_list'][0]})
+-    plan = {'schema': 'stella.episode5-nativeflag-private-owner-case.v1', 'rootConfirmed': False, 'candidateOnly': True,
+-            'motionAccepted': False, 'id': name, 'alias': alias, 'aliasIsGitCommit': False,
+-            'overlay': {'path': str(overlay_path), 'sha256': sha(overlay_path)}, 'expectedSemanticDiff': expected,
+-            'steps': steps, 'links': links, 'target': target, 'start': steps[0]['id'], 'choices': {},
+-            'stop': {'node': steps[-1]['id'], 'scenario': steps[-1]['scenario'], 'phase': 'ready',
+-                     'forbiddenNext': rows[steps[-1]['scenario']]['branch_list'][0]['transition_list'][0]['next_scenario_id']},
+-            'allow46DoorSuccessorBoundary': False, 'noAutomaticSubaruSeed': True,
+-            'nativeFlagIsolation': {'scenario': 54, 'before': '', 'after': '0', 'formalFlagAccepted': False,
+-                                    'talkLayer': 'talk', 'paintedMouthClosedAccepted': False},
+-            'emptyMotionBaseline': True, 'bodyFaceCandidateAccepted': False}
+-    write(folder / 'plan.json', plan)
+-    guards[str(overlay_path)] = sha(overlay_path)
+-    guards[str(folder / 'plan.json')] = sha(folder / 'plan.json')
+-    plans.append(plan)
+-binding = {'schema': 'stella.episode5-private-owner-frozen-inputs.v1', 'rootConfirmed': False,
++assert release['budgets']['checkpointReadsPerCase'] == 8
++native_path, review_path = DATA / f'native/scenes/{SCENE}.json', DATA / f'review/scenes/{SCENE}.json'
++assert sha(native_path) == proposal['observedSnapshot']['native']['sha256']
++assert sha(review_path) == proposal['observedSnapshot']['review']['sha256']
++native, review = load(native_path), load(review_path)
++assert len(native['scenario_list']) == 52
++rows = {row['scenario_id']: row for row in native['scenario_list']}
++assert [step['scenario'] for step in proposal['steps']] == [3, 4, 5]
++steps = []
++for spec in proposal['steps']:
++    scenario = spec['scenario']
++    row = rows[scenario]
++    assert row == spec['native'], scenario
++    uid = str(review['scenarios'][str(scenario)].get('studioNodeId') or row['uniq_id'])
++    node_id = f'node:{SCENE}:{uid}'
++    assert node_id == spec['id']
++    slots = row['motion'].split(',')
++    motion = {'body': slots[0], 'face': slots[1] if len(slots) > 1 else '', 'extras': slots[2:]}
++    assert motion == spec['derivedMotion']
++    steps.append({'scenario': scenario, 'id': node_id, 'native': row, 'kind': spec['expectedKind'],
++                  'sourceText': spec['sourceText'], 'expectedModel': spec['expectedModel'],
++                  'parsedMotion': motion, 'target': scenario == 4,
++                  'expectedSuppressLipMotion': row['talk_chara'] == '0'})
++assert rows[4]['character'] == 'live2d/AC_subaru_tshirt01' and rows[4]['motion'] == ''
++assert rows[5]['character'] == 'live2d/AC_felt01' and rows[5]['motion'] == 'act_punpun'
++links = []
++for a, b, branch_id in zip(steps, steps[1:], [31, 41]):
++    branch = next(row for row in a['native']['branch_list'] if row['branch_id'] == branch_id)
++    transition = branch['transition_list']
++    assert len(transition) == 1 and transition[0]['next_scenario_id'] == b['scenario']
++    links.append({'source': a['id'], 'target': b['id'],
++                  'id': f"edge:{a['id']}:{branch['uniq_id']}:{branch_id}",
++                  'branchId': branch_id, 'native_transition': transition[0]})
++for actual, spec in zip(links, proposal['links']):
++    assert actual['id'] == spec['id'] and actual['native_transition'] == spec['native']
++forbidden = next(row for row in rows[5]['branch_list'] if row['branch_id'] == 51)
++assert len(forbidden['transition_list']) == 1 and forbidden['transition_list'][0]['next_scenario_id'] == 6
++plan = {'schema': 'stella.p30.ordinary-owner-case.v1', 'rootConfirmed': False, 'id': CASE,
++        'steps': steps, 'links': links, 'target': 4, 'start': steps[0]['id'], 'choices': {},
++        'stop': {'node': steps[-1]['id'], 'scenario': 5, 'phase': 'ready',
++                 'forbiddenNext': 6, 'forbiddenEdge': f"edge:{steps[-1]['id']}:{forbidden['uniq_id']}:51"},
++        'ordinaryBaseline': True, 'nativeMotionUnchanged': True,
++        'observation': {'narrationNormalSeconds': 1, 'targetVisibleActorSeconds': 8,
++                        'targetReadyActorSeconds': 2, 'maximumActorHoldChecks': 5},
++        'motionAccepted': False, 'sourcePhaseAccepted': False}
++write(HERE / 'frozen' / 'plan.json', plan)
++guards[str(HERE / 'frozen' / 'plan.json')] = sha(HERE / 'frozen' / 'plan.json')
++binding = {'schema': 'stella.p30.ordinary-owner-frozen-inputs.v1', 'rootConfirmed': False,
+            'dataRoot': str(DATA), 'sourceRoot': str(SOURCE), 'finalDataHead': release['finalDataHead'],
+            'finalSourceHead': release['finalSourceHead'], 'browserOwner': release['browserOwner'],
+-           'fileGuards': guards, 'dataGuards': data_guards, 'plans': plans, 'tools': release['tools'],
+-           'budgets': release['budgets'], 'tap': {'path': str(TAP), 'sha256': sha(TAP)},
+-           'allLibraryNodes': sum(len(load(DATA / s['path'])['scenario_list']) for s in manifest['scenes']),
++           'fileGuards': guards, 'dataGuards': data_guards, 'plans': [plan], 'tools': release['tools'],
++           'budgets': release['budgets'], 'tap': {'path': str(TAP), 'sha256': TAP_SHA},
++           'allLibraryNodes': sum(len(load(DATA / scene['path'])['scenario_list']) for scene in manifest['scenes']),
+            'preparationRelease': {'path': str(release_path), 'sha256': sha(release_path)},
+-           'noProgramMutation': True, 'browserOrServerStarted': False}
++           'protectedFirstThree': protected, 'noProgramMutation': True, 'noNativeOverlay': True,
++           'browserOrServerStarted': False}
+ write(HERE / 'frozen' / 'binding.json', binding)
+-print(__import__('json').dumps({'status': 'frozen-private-overlays-not-executed', 'cases': 1,
++print(__import__('json').dumps({'status': 'frozen-ordinary-not-executed', 'cases': 1,
+                               'bindingSha256': sha(HERE / 'frozen' / 'binding.json')}))

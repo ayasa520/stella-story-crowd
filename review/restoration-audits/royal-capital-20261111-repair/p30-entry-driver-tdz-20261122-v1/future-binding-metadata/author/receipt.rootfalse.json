@@ -1,0 +1,150 @@
+{
+  "schema": "stella.ordinary-qa.p30-v2-binding-preparation.author-receipt.v1",
+  "createdUTC": "2026-11-22T01:14:51.653Z",
+  "rootConfirmed": false,
+  "inventoryCollectionAuthorized": false,
+  "freezeAuthorized": false,
+  "apiPreparationAuthorized": false,
+  "executionAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "decision": "SEALED_UNEXECUTED_P30_V2_ONLY_METADATA_ADAPTATION_FOR_ROOT_REVIEW",
+  "collector": {
+    "bytes": 25117,
+    "sha256": "446d90ba90b04c18730aee39c570bb852e04661cac20802daa5ff1819f688275"
+  },
+  "requestTemplate": {
+    "bytes": 3569,
+    "sha256": "8cd252a774360f56fa4c2560472e2d8378612c1c8bc68ff41822d780270ce69c"
+  },
+  "filesIndex": {
+    "file": "files.sha256.json",
+    "bytes": 842,
+    "sha256": "faabd4ef5e99f62415295e4aab97cfe2123214bff9662534a08b6f1a21e66544"
+  },
+  "basis": {
+    "originalCollectorSHA256": "05c6d71ea34735377aca2ccdc95a0fa9344c4828f4fa16b7281acee7451d91f5",
+    "rootReportedSuccessfulMetadataSession": 92359,
+    "previousActualInventorySHA256": "3ea98dbb69cf07420347ab0639cb7dda824d6f28b80c3e82179952163ff4983a",
+    "previousActualDataHead": "6a6093e84895dd8292cdfbfb4154373bc36dc773",
+    "originalSeedSHA256": "a3ad8841a09b7c5cc2dbd6cbb683d833ca242db27553e006de6da1bd1ff4cf8f",
+    "p30V2AuthorReceiptSHA256": "a1acad956d2b88fd6aca386ce9f8358beb2731b50b98fc19efc8263edcc96507",
+    "p30V2DriverSHA256": "5e54c79d8446b98f6cfd8ea249ecf274e32b02162e0f17e79cc88ebf14f6f122",
+    "independentTDZPeerReceiptSHA256": "3afd6394f7e3b662fb398c975babd1109ce83b320e98ff5e917edcdafde51339",
+    "historicalBindingAndFailureNotRewritten": true,
+    "oldSuccessfulMetadataNotV2RuntimeAcceptance": true
+  },
+  "staticSourceComparisonOnly": {
+    "fixedMetadataSourceInputsRehashed": 13,
+    "driftCount": 0,
+    "unchangedBlocks": {
+      "jsonByteBindingAndOriginalFailureRetention": {
+        "byteIdentical": true,
+        "bytes": 1372,
+        "sha256": "c1054c31c3cd18a6ed2a71681ecba9f013d7840b8c1d63b5b5a55ef2939c9354"
+      },
+      "captureAndSameBytesJSON": {
+        "byteIdentical": true,
+        "bytes": 1718,
+        "sha256": "e21d36b112d280263a554d60162a90c32633bf4f78e5fd25befd531711e3cc06"
+      },
+      "dynamicAll140Counts": {
+        "byteIdentical": true,
+        "bytes": 293,
+        "sha256": "a8d43a9485d67f45c25d038f94ee6b415273f9c76cc67f625420bb1844d4b387"
+      },
+      "fiveARMTools": {
+        "byteIdentical": true,
+        "bytes": 1242,
+        "sha256": "400b3e5b3f8c796c193aaa993ad449a99aa8463475eabd8aaa7dc95b15fcdbab"
+      },
+      "finalByteMemberHEADChecks": {
+        "byteIdentical": true,
+        "bytes": 723,
+        "sha256": "d60d7f2542cc39d9f4e0a3955ffb738c4057afaffb1d3b36efdeaef6a231adcd"
+      }
+    },
+    "sourceAnchors": {
+      "old5536": {
+        "line": 159,
+        "text": "  need(old.size === 5536, 'Retain the complete approved Qv3 old-path baseline');"
+      },
+      "p30Only": {
+        "line": 134,
+        "text": "    request.p30Plan.path === resolve(P30_KIT, 'plan.rootfalse.json'), 'This adapter only binds the sealed P30 v2 kit');"
+      },
+      "controlledGitDelta": {
+        "line": 106,
+        "text": "      `Unapproved committed change since Qv3: ${status} ${path}`);"
+      },
+      "actualBlob": {
+        "line": 175,
+        "text": "      need(oid === member.oid, `Working bytes differ from final HEAD blob: ${path}`);"
+      },
+      "sameActualJSONBytes": {
+        "line": 185,
+        "text": "    return parseBytes(path, bytes, captured.sha256);"
+      },
+      "dynamicEdges": {
+        "line": 203,
+        "text": "    libraryEdges: [...documents.values()].reduce((n, doc) => n + doc.scenario_list.reduce((m, row) => m + row.branch_list.length, 0), 0) };"
+      },
+      "allNativeReview": {
+        "line": 241,
+        "text": "  const nativeReview = [...await walk(resolve(DATA, 'native')), ...await walk(resolve(DATA, 'review'))];"
+      },
+      "sourceDistMembership": {
+        "line": 193,
+        "text": "    equal(distPaths.map(path => relative(resolve(SOURCE, 'dist'), path)), sorted(Object.keys(seed.distFiles))), 'Source/dist membership drift');"
+      },
+      "rootfalseTemplates": {
+        "line": 316,
+        "text": "    p30.fullGlobalInventoryApproved === false && p30.browserLaunchAuthorized === false,"
+      }
+    },
+    "fullUnifiedDiff": "collector-v2-vs-v1.patch",
+    "syntaxASTOrExecutionClaim": false
+  },
+  "scope": {
+    "p30V2Only": true,
+    "noP22OutputOrProcessing": true,
+    "formalModifyPathAllowlistCount": 13,
+    "newSixPaths": [
+      "native/scenes/10020001.json",
+      "review/scenes/10020001.json",
+      "native/scenes/10020011.json",
+      "review/scenes/10020011.json",
+      "native/scenes/10020048.json",
+      "review/scenes/10020048.json"
+    ],
+    "oldQv3PathCountExplicitGuard": 5536,
+    "sourceCountGuard": 312,
+    "distCountGuard": 234,
+    "protected22Guard": true,
+    "dynamicAll140NodeAndRawBranchCounts": true,
+    "newAuditBatchMembershipAndActualHEADBlobChecksRetained": true,
+    "fiveActualARMToolsAndLaunchBindingsRetained": true,
+    "successfulHistoricalResourceUnionRetained": true
+  },
+  "binding": {
+    "finalDataHead": null,
+    "currentDataHeadNotRead": true,
+    "sourceHeadRequiredByFutureCollector": "6630ac70f17332efa031d021af00532d42307568",
+    "newInventoryCollected": false,
+    "freshRootAuthorizationRequired": true
+  },
+  "notPerformed": {
+    "collectorOrFreeze": false,
+    "helperImportOrBusinessGate": false,
+    "APIbrowserServerMedia": false,
+    "syntaxASTTestsBuild": false,
+    "GitCommandsOrMutation": false,
+    "D_C_OrOldFileWrite": false,
+    "currentResourceOrToolByteRead": false
+  },
+  "limitations": [
+    "This is a static source/metadata adaptation. Future inventory, HEAD blobs, tools, membership and byte guards have not been collected or executed here.",
+    "Root must select the final published/ACKed HEAD after pending BGM3/P29-node22/P30-failure audits and review exact code/request bytes before one collection.",
+    "The original request-read-before-output-directory failure boundary is unchanged. Subsequent hash/parse failures retain actual raw and decoded bytes and original error; no retry.",
+    "The collector preserves rootfalse output approvals; the original P30 v2 freeze/API and eventual sole-browser release remain separate. No motion/phase/source/actual playback acceptance."
+  ]
+}

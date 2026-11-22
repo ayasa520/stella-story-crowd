@@ -1,0 +1,107 @@
+{
+  "schema": "stella.P30.ordinary-driver.original-TDZ-static-finding.v1",
+  "createdUTC": "2026-11-22T00:38:20.735516+00:00",
+  "reviewer": "/root/performance_peer",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "originalDriver": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/driver.mjs",
+    "bytes": 31970,
+    "sha256": "6bf7386e3846190aece17b87f6fce2d2d021674c2c6f7b64c29c5574e18658ce"
+  },
+  "oldAuthorReceipt": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/receipt.rootfalse.json",
+    "bytes": 9748,
+    "sha256": "fd8ccd3aa7de75dd2ba86e64e0bcbb67b3d39c31bb8a45dd7a21c32981487212"
+  },
+  "priorIndependentStaticPass": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-kit-static-peer-v1/receipt.rootfalse.json",
+    "bytes": 1454,
+    "sha256": "c78dcfe8f52097d3312e00034bb460c6ef44244bde0e3ab6e5aecb83c888a991"
+  },
+  "originalFailureLog": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/driver.log",
+    "bytes": 872,
+    "sha256": "0080c4e9d7934d4db7eb7cd4fa456017909a62bd63dbf88567fb327db180c292"
+  },
+  "runtimeSessionReportedByRoot": 57682,
+  "runtimeExitReportedByRoot": 1,
+  "cause": {
+    "outerBinding": "driver.mjs:30 module let target; browser context assigned253",
+    "shadowingBinding": "driver.mjs:357 const target=active.holds.find(h=>h.scenario===4)",
+    "lexicalBlock": "inner per-case try beginning292 and ending376",
+    "firstObservedAccess": "driver.mjs:294:61 context:target.context",
+    "reason": "The inner const shadows the module target for the entire inner try and remains in TDZ until its initializer. The outer253 assignment cannot initialize the distinct inner binding. Fresh-document navigation therefore throws before its driver.call is invoked.",
+    "actualLog": "ReferenceError: Cannot access target before initialization at driver.mjs:294:61",
+    "causeKnownNotSpeculative": true
+  },
+  "limitedFix": {
+    "renameDeclaration": "const targetHold=active.holds.find(h=>h.scenario===4)",
+    "renameOnlyFourPropertyReads": [
+      "target.visible",
+      "target.readyPoint",
+      "target.ended",
+      "target.observations"
+    ],
+    "englishCommentExplainsLexicalShadowing": true,
+    "noOtherControlOrProviderPhaseHoldBodyFaceRuleChange": true
+  },
+  "completeSameClassReadOnlyAudit": {
+    "fullOriginal413LinesRead": true,
+    "noAdditionalDefiniteSameClassTDZFound": true,
+    "moduleBrowserContextUses": [
+      39,
+      71,
+      253,
+      279,
+      280,
+      281,
+      285,
+      294
+    ],
+    "unrelatedTargetIdentifiers": [
+      {
+        "lines": [
+          149,
+          150,
+          151,
+          168,
+          169,
+          170
+        ],
+        "meaning": "Numeric scheduling parameter/object key inside page-evaluated functions; separate function scopes, initialized formal values."
+      },
+      {
+        "lines": [
+          221,
+          345
+        ],
+        "meaning": "event.target/step.target object properties; no lexical target binding."
+      }
+    ],
+    "otherLexicalGroupsRead": [
+      "module await/destructuring/multi-declarators",
+      "reader/IPC async callbacks and delayed closures",
+      "evaluate/waitFor/click/mark/checkpoint",
+      "surface/visible/ready/narration/Actor hold functions",
+      "owner verification/export and event callbacks",
+      "case local initializers/loop/catch/finally/terminal receipt"
+    ],
+    "functionClosureQualification": "evaluate and click are defined in module scope and resolve the module browser target, not the caller inner try binding. The immediate failing navigation expression itself is in that inner try.",
+    "manualTextAuditNotASTOrExecution": true
+  },
+  "evidenceBoundary": {
+    "freshDocumentNavigationFailedBeforeRecorderOrProgramLoadReportedByRoot": true,
+    "noNewRuntimeAttemptByPeer": true,
+    "rootIndependentFailedOSHashClosureSeparate": true,
+    "originalKitFailedAttemptAndPriorPassUnchanged": true,
+    "priorStaticPassMissAcknowledged": true,
+    "rootFalseNewReportDoesNotAuthorizeRetry": true
+  },
+  "actions": {
+    "helperImportsASTTestsExecution": false,
+    "browserMediaAPIOrGit": false,
+    "D_C_OriginalKitOrFailedAttemptWrites": false,
+    "onlyThisNewPeerMetadataWritten": true
+  }
+}

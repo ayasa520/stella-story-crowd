@@ -1,0 +1,534 @@
+{
+  "schema": "stella.p30.ordinary-owner-unexecuted-plan.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "freezeAuthorized": false,
+  "apiPreparationAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "diagnosticInstrumentationAuthorized": false,
+  "continuousRecorderAuthorized": false,
+  "newLauncherCreated": false,
+  "caseId": "p30-node4-unchanged-ordinary",
+  "candidateNativeEdits": [],
+  "overlays": [],
+  "aliases": [],
+  "tokenOverrides": [],
+  "programMutationsAllowed": false,
+  "observedSnapshot": {
+    "dataHead": "71da3385c31ed81ad7af3e300ff9a4ecbafeea25",
+    "sourceHead": "6630ac70f17332efa031d021af00532d42307568",
+    "native": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10450054.json",
+      "sha256": "220268054497bf1463591298be7aa95841ce22b438580833a3c9b830215f1bea",
+      "bytes": 110756,
+      "rows": 52
+    },
+    "review": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10450054.json",
+      "sha256": "b751893f98cf0c63a8f98536f9c8d95cb73bf2f7b8372e428ed7c8f24b827f09",
+      "bytes": 494149
+    },
+    "unchangedVersusPriorSealedRows": {
+      "native": true,
+      "review": true
+    },
+    "finalDataHead": null,
+    "finalSourceHead": null,
+    "note": "Root reports a pending audit-only followup; final full closure/HEAD must be rebound, never inherited from this planning snapshot."
+  },
+  "request": {
+    "endpoint": "/api/player/prepare",
+    "method": "POST",
+    "body": {
+      "id": "node:10450054:1045005400003",
+      "baseSha": null,
+      "choices": {}
+    },
+    "baseShaSource": "Root final fresh published HEAD",
+    "overrideOmitted": true
+  },
+  "ordinaryProgram": {
+    "fullLibraryRequired": true,
+    "observedManifestScenes": 140,
+    "observedManifestNodeCountSum": 5622,
+    "targetSceneNodes": 52,
+    "allRowsAndUidsPreserved": true,
+    "beforeFromActualApiOnly": true,
+    "browserSecondReadMustMatchFullFreshProgramAndBefore": true,
+    "on422": "Retain raw/status/headers and one ordinary resolve response, then stop. Root separately decides root1-prefix; no automatic retry/entry substitution."
+  },
+  "steps": [
+    {
+      "id": "node:10450054:1045005400003",
+      "scenario": 3,
+      "stableKey": "s10450054-p30-at0024",
+      "sourceText": "――盗品蔵・夕方",
+      "native": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "",
+        "msg_text": "——赃物库·傍晚",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 3,
+        "uniq_id": 1045005400003,
+        "is_root": 0,
+        "scenario_type": 1,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1045005410031,
+                "transition_id": 3101,
+                "next_scenario_id": 4,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1045005410031,
+            "branch_id": 31,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "nativeWholeRowSemanticSha256FromSealedPrior": "fed58031d997c7c9b8168091dbcbf48b2d6658c72eff4a2a8ccaf854c7a260d5",
+      "expectedKind": "text",
+      "expectedModel": "",
+      "nativeMotion": "",
+      "derivedMotion": {
+        "body": "",
+        "face": "",
+        "extras": []
+      },
+      "role": "actorless predecessor"
+    },
+    {
+      "id": "node:10450054:1045005400004",
+      "scenario": 4,
+      "stableKey": "s10450054-p30-at0027",
+      "sourceText": "話が合ったかと思えば今度はケンカか！いい加減にしてくれ！今は俺との交渉の場面のはずだろ？",
+      "native": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_subaru_tshirt01",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "スバル",
+        "msg_text": "刚觉得你们谈得来，转头又吵起来了！适可而止吧！现在不是该和我谈交易吗？",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 4,
+        "uniq_id": 1045005400004,
+        "is_root": 0,
+        "scenario_type": 2,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1045005410041,
+                "transition_id": 4101,
+                "next_scenario_id": 5,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1045005410041,
+            "branch_id": 41,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "nativeWholeRowSemanticSha256FromSealedPrior": "87e670fef34a4edfebaa6d386f5114e877e9d8238028af41dbe798c42d5c33d4",
+      "expectedKind": "card",
+      "expectedModel": "subaru_tshirt01",
+      "nativeMotion": "",
+      "derivedMotion": {
+        "body": "",
+        "face": "",
+        "extras": []
+      },
+      "role": "unchanged empty-motion target"
+    },
+    {
+      "id": "node:10450054:1045005400005",
+      "scenario": 5,
+      "stableKey": "s10450054-p30-at0033",
+      "sourceText": "話は終わりだって言ってんだろ。大体、こっちも依頼されて盗んできたもんを勝手に横流しなんかできるわけね一よ",
+      "native": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_felt01",
+        "character_image": "",
+        "motion": "act_punpun",
+        "msg_character": "フェルト",
+        "msg_text": "不是说了，已经没什么好谈的。而且，人家委托我偷来的东西，怎么可能随便转卖啊。",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 5,
+        "uniq_id": 1045005400005,
+        "is_root": 0,
+        "scenario_type": 2,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1045005410051,
+                "transition_id": 5101,
+                "next_scenario_id": 6,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1045005410051,
+            "branch_id": 51,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "nativeWholeRowSemanticSha256FromSealedPrior": "e3f68010c3c31058ab71793a4a4d32d76b9423a3f2c78cc4d56d8e03b46280b7",
+      "expectedKind": "card",
+      "expectedModel": "felt01",
+      "nativeMotion": "act_punpun",
+      "derivedMotion": {
+        "body": "act_punpun",
+        "face": "",
+        "extras": []
+      },
+      "role": "existing-accepted Felt5 boundary only"
+    }
+  ],
+  "links": [
+    {
+      "id": "edge:node:10450054:1045005400003:1045005410031:31",
+      "source": "node:10450054:1045005400003",
+      "target": "node:10450054:1045005400004",
+      "native": {
+        "uniq_id": 1045005410031,
+        "transition_id": 3101,
+        "next_scenario_id": 4,
+        "next_scenario_label": ""
+      },
+      "branch": 31
+    },
+    {
+      "id": "edge:node:10450054:1045005400004:1045005410041:41",
+      "source": "node:10450054:1045005400004",
+      "target": "node:10450054:1045005400005",
+      "native": {
+        "uniq_id": 1045005410041,
+        "transition_id": 4101,
+        "next_scenario_id": 5,
+        "next_scenario_label": ""
+      },
+      "branch": 41
+    }
+  ],
+  "stop": {
+    "node": "node:10450054:1045005400005",
+    "scenario": 5,
+    "phase": "ready",
+    "requireOwnIncomingPanelComplete": true,
+    "requireOwnFreshActorDraw": true,
+    "noExtraFeltHoldRequired": true,
+    "forbiddenAdvance": 51,
+    "forbiddenEdge": "edge:node:10450054:1045005400005:1045005410051:51",
+    "forbiddenNode": "node:10450054:1045005400006"
+  },
+  "capture": {
+    "sessions": 1,
+    "documents": 1,
+    "continuousRecordings": 1,
+    "screenshots": 0,
+    "audioRecorded": false,
+    "surface": {
+      "width": 500,
+      "height": 1000,
+      "depth": 24,
+      "devicePixelRatio": 1,
+      "recorder": "existing K5 ARM Xvfb + x11grab30 + libx264"
+    },
+    "sameK5RecorderMechanism": true,
+    "firstRealSurfaceFrameAckRequiredBeforeProgramLoad": true,
+    "existingFirstFrameDeadlineSeconds": 10,
+    "loadOrder": [
+      "Fresh ready document and read-only owner/tap installed",
+      "Fetch ordinary full program but do not load",
+      "Assert no ENTER yet",
+      "Recorder capture-start IPC",
+      "Supervisor observes actual progress frame>0 and ACKs",
+      "Mark before complete program load",
+      "Post unchanged entire ordinary program once"
+    ],
+    "windows": [
+      {
+        "name": "3 actorless predecessor",
+        "policy": "Wait natural text ready + real narration panel token completion. Retain at least1 Normal second of stable actorless predecessor before ordinary trusted31.",
+        "actorGate": false,
+        "normalHoldSeconds": 1,
+        "noCharacterSeed": true
+      },
+      {
+        "name": "4 complete entry and typing",
+        "policy": "Continuous video/tap already running before31. Keep all ENTER/loading/old-owner rows, card/Normal events, actual model commit/draw, visible fade and natural typewriter. No wait for a selected body token or forced settlement.",
+        "actualVisibleMarker": "First observed positive card opacity and committed tshirt actor/new draw with same current node; marker is sampled, not exact first painted frame.",
+        "actualLayerAssertions": "Observe all actual body/face/extra/talk clips, weights, loop/blend and params; do not force faceWeight0, talk false, empty actual layer set or a chosen token."
+      },
+      {
+        "name": "4 bounded ready hold",
+        "minimumActorSecondsFromFirstObservedVisible": 8,
+        "minimumActorSecondsAfterFirstActualReady": 2,
+        "advancePredicate": "Both actual actor-time minima and natural ready hold, same current tshirt animator/model ownership, Auto false; then one normal trusted41.",
+        "clockMutation": false,
+        "scriptWaitAdded": false,
+        "readyManufactured": false,
+        "originalNativeHoldClaimed": false,
+        "targetRationale": "Source visible process is about26.056–32.523 (6.467s); longer QA observation permits a complete unchanged baseline without fitting wall time or inferring phase."
+      },
+      {
+        "name": "4 exit to5 boundary",
+        "policy": "Record trusted41, original transition/ENTER5, existing retirement/fade through actorless interval, Felt first actual visible/draw/panel entry and natural5-ready. Do not click51 or re-audit Felt5 act_punpun.",
+        "stopAsSoonAsReadyAndBoundaryGatesHold": true
+      }
+    ],
+    "budgets": {
+      "caseWallSeconds": 120,
+      "totalWallSeconds": 120,
+      "videoFramesPerCase": 3600,
+      "videoBytesPerCase": 18000000,
+      "tapRowsPerCase": 12000,
+      "ownerEventRowsPerCase": 512,
+      "consoleRowsPerCase": 6000,
+      "consoleBytesPerCase": 4000000,
+      "tapRawBytesPerCase": 160000000,
+      "tapGzipBytesPerCase": 32000000,
+      "checkpointReadsPerCase": 8,
+      "httpRowsPerCase": 4000,
+      "providerRowsTotal": 20000,
+      "providerBytesTotal": 12000000,
+      "screenshotsPerCase": 0
+    },
+    "timeCoordinates": [
+      "original recording PTS unchanged",
+      "actual x11 capture PTS/frame index",
+      "actual wall timestamps",
+      "actual Normal frame/gameSeconds",
+      "actual actorSeconds plus viewer/tap weak identity"
+    ],
+    "comparisonsByEventBoundaryOnly": true,
+    "sourceJpVsActualZhTypingLengthsNotEqual": true,
+    "checkpointBudget": {
+      "maximum": 8,
+      "recommended": [
+        "3-ready Normal mark(no actor checkpoint)",
+        "4-first observed visible",
+        "4-first natural ready",
+        "4-hold-end/pre41",
+        "5-own-ready boundary"
+      ]
+    },
+    "observationWindowQuality": "Original full surface capture, full raw owner/tap archive, untruncated console/provider/media/errors; bounded failures retained, no retry."
+  },
+  "sourceComparison": {
+    "reviewOwner": "/root/episode11_images_31_46",
+    "sourceWindow": {
+      "pts": [
+        25.023,
+        33.489
+      ],
+      "frameCount": 255,
+      "sourceTimeBase": "1/16000",
+      "sourceObservations": [
+        {
+          "indices": [
+            0,
+            24
+          ],
+          "PTS": [
+            25.023,
+            25.823
+          ],
+          "observation": "Actorless dim junkshop with narration card; the store background is visible before the target entry."
+        },
+        {
+          "indices": [
+            25,
+            30
+          ],
+          "PTS": [
+            25.856,
+            26.023
+          ],
+          "observation": "Narration panel dims and the shop blurs/darkens. No target actor is discernible before the faint entry."
+        },
+        {
+          "indices": [
+            31,
+            34
+          ],
+          "PTS": [
+            26.056,
+            26.156
+          ],
+          "observation": "Subaru becomes faintly visible, frontal with lowered/closed or nearly closed eyelids, low arms and intact dark short sleeves; opacity rises. The lowest-opacity frame does not support a precise eyelid threshold."
+        },
+        {
+          "indices": [
+            35,
+            40
+          ],
+          "PTS": [
+            26.189,
+            26.356
+          ],
+          "observation": "Lids open progressively, forehead/brows tense, head/upper body rise subtly; by26.356 the eyes are visibly wide. The mouth also changes. No high arm gesture is visible."
+        },
+        {
+          "indices": [
+            41,
+            176
+          ],
+          "PTS": [
+            26.389,
+            30.889
+          ],
+          "observation": "Japanese panel types the target line. Wide eyes and furrowed/angled brows remain, both arms stay down, with small head/torso changes and alternating closed/small-open mouth shapes."
+        },
+        {
+          "indices": [
+            177,
+            221
+          ],
+          "PTS": [
+            30.923,
+            32.389
+          ],
+          "observation": "The completed Japanese target line and continuation marker are visible; wide eyes/tense brow and low arms persist. The mouth becomes visibly larger and remains open in this late hold; no neutral-eye reset or extra gesture is visible."
+        },
+        {
+          "indices": [
+            222,
+            225
+          ],
+          "PTS": [
+            32.423,
+            32.523
+          ],
+          "observation": "Subaru and panel dim into a blurred actorless transition. A faint actor is clear at32.456; an exact last-visible opacity threshold is not assigned."
+        },
+        {
+          "indices": [
+            226,
+            229
+          ],
+          "PTS": [
+            32.556,
+            32.656
+          ],
+          "observation": "No actor is discernible. This brackets the target exit before the next accepted Felt5 entry."
+        },
+        {
+          "indices": [
+            230,
+            254
+          ],
+          "PTS": [
+            32.689,
+            33.489
+          ],
+          "observation": "The next blonde/scarf actor appears and its next panel starts. This is a lower-boundary witness only; no new acceptance or re-audit of Felt5 acting."
+        }
+      ]
+    },
+    "sourceRecaptureOrNewImageReview": false,
+    "node4OriginalProviderOrPhaseKnown": false,
+    "node4MotionRemainsEmpty": true,
+    "Felt5AlreadyAcceptedRetained": true,
+    "Felt5Reaudit": false
+  },
+  "safetyAndAcceptance": {
+    "rootIndependentOwnedProcessPortAndHashClosureBeforeAnyReview": true,
+    "profileDeleteOnlyAfterActualOwnedEmptyEvidence": true,
+    "allOriginalFatalDropsAndObserverErrorsRejectEvidenceCoverage": true,
+    "kernelRowsArePostComposePreCoreGlNotPaint": true,
+    "sourceBodyFaceExtraPhaseAccepted": false,
+    "exactTimingGeometryLipsyncAccepted": false,
+    "noDataSourceWrites": true,
+    "noNativeSuppressionFlagChange": true,
+    "noBikkuriTokenSelection": true
+  },
+  "finalDataHead": null,
+  "finalSourceHead": null,
+  "latestRootReported": {
+    "dataHead": "2eeacb38bea2b753665ba4bc0f5027fb8542f603",
+    "sourceHead": "6630ac70f17332efa031d021af00532d42307568",
+    "publicationAckRootReported": true,
+    "notAnExecutionBinding": true,
+    "pendingOtherSectionEndingMayChangeLibraryCount": true
+  },
+  "evidenceReferences": {
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-unchanged-actual-route-offline-rootfalse-v1/receipt.rootfalse.json": "ed9fa602069ed913e4b535261c979d0600608de3b13d8f63d869452c58d075f7",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-source-full-entry-review-v1/review.rootfalse.json": "8160355b8fbfab06c4eff8701aab5af2feb8be0edd6f00c95598176bd8dc0505",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-source-full-entry-review-v1/output-receipt.rootfalse.json": "96bccfb11dfce93a5d20e50dfd39a62bd2accf98f08481075e42b2b79e07193d",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-capture-plan-rootfalse-v1/receipt.rootfalse.json": "e7e23af9324716a47528f64b4e49b4de09443eb1df2e7640235c095a10064313"
+  },
+  "originPlan": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-capture-plan-rootfalse-v1/case-capture-plan.rootfalse.json",
+    "sha256": "2f4fedae42b8ccc7a4c8d9cf66d93b15d50349f66f1c61a9976068ce192df474",
+    "sourceOnlyMinimalChangeSpec": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-capture-plan-rootfalse-v1/MINIMAL_DIFF.md",
+    "rootAcceptedNarrowImplementationBoundary": true
+  }
+}

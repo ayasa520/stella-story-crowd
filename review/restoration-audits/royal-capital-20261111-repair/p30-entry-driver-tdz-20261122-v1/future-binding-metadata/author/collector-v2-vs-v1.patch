@@ -1,0 +1,135 @@
+--- ordinary-QA-root-binding-preparation-v1/prepare-bindings.mjs
++++ ordinary-QA-root-binding-preparation-v2/prepare-bindings.mjs
+@@ -10,15 +10,23 @@
+ const A = resolve(ROOT, 'artifacts/stella-script-continuation-20261121');
+ const DATA = resolve(A, 'data-checkout');
+ const SOURCE = resolve(ROOT, 'artifacts/stella-site-repair-source/.sites-checkout');
++const P30_KIT = resolve(A, 'p30-node4-ordinary-entry-owner-kit-rootfalse-v2');
+ const SELF = fileURLToPath(import.meta.url);
+ const need = (ok, message) => { if (!ok) throw Error(message); };
+ const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+ const sorted = values => [...values].sort();
+ const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+ const within = (path, base) => path.startsWith(base + sep);
++// Only the already reviewed formal publication families may differ from Qv3.
++// The three bare-BGM repairs add six native/review paths; the pending P29
++// identity remains in its existing pair. This allowlist grants no acceptance
++// to a particular delta: root must still review the exact committed changes.
+ const controlled = new Set(['native/scenes/10090015.json',
+   'native/scenes/10040052.json', 'review/scenes/10040052.json',
+   'native/scenes/10030006.json', 'review/scenes/10030006.json',
++  'native/scenes/10020001.json', 'review/scenes/10020001.json',
++  'native/scenes/10020011.json', 'review/scenes/10020011.json',
++  'native/scenes/10020048.json', 'review/scenes/10020048.json',
+   'manifest.json', 'review/native-restoration.json']);
+ const auditAddition = name => name.startsWith('review/restoration-audits/') ||
+   /^review\/restoration-batches\/[^/]+\.json$/.test(name);
+@@ -121,7 +129,10 @@
+   await mkdir(output); // Existing output is a failure; never overwrite/retry.
+   outputCreated = true;
+   const seed = await boundJSON(request.seedInventory), selection = await boundJSON(request.toolSelection);
+-  const p30 = await boundJSON(request.p30Template), p22 = await boundJSON(request.p22Template);
++  need(equal(Object.keys(request.kits || {}), ['p30']) && request.kits.p30.directory === P30_KIT &&
++    request.p30Template.path === resolve(P30_KIT, 'root-inputs.draft.json') &&
++    request.p30Plan.path === resolve(P30_KIT, 'plan.rootfalse.json'), 'This adapter only binds the sealed P30 v2 kit');
++  const p30 = await boundJSON(request.p30Template);
+   need(seed.dataRoot === DATA && seed.sourceRoot === SOURCE && seed.observedSourceHead === request.expectedSourceHead,
+     'The approved Qv3 source epoch cannot drift');
+   need(Object.keys(seed.sourceFiles).length === 312 && Object.keys(seed.distFiles).length === 234 &&
+@@ -145,6 +156,7 @@
+     for (const [path, value] of Object.entries(seed[group])) declareOld(path, value);
+   for (const [name, value] of Object.entries(seed.sourceFiles)) declareOld(resolve(SOURCE, name), value);
+   for (const [name, value] of Object.entries(seed.distFiles)) declareOld(resolve(SOURCE, 'dist', name), value);
++  need(old.size === 5536, 'Retain the complete approved Qv3 old-path baseline');
+   const changedOldPaths = [];
+   async function capture(path) {
+     path = resolve(path);
+@@ -196,9 +208,9 @@
+   for (const name of protectedNames) { const sha256 = (await capture(resolve(DATA, name))).sha256;
+     need(sha256 === seed.protectedFirstThree[name], `Protected original baseline changed: ${name}`); protectedFirstThree[name] = sha256; }
+ 
+-  /** Metadata-only union of both sealed required_saved_members contracts.
+-   * Old resources remain, while P30's broader media closure and current models
+-   * in sections1045/1003 are explicitly included before either freezer runs.
++  /** Retain the previously successful metadata resource union without removal.
++   * The section1003 resources remain historical closure, while this adapter
++   * only prepares P30 v2. No P22 template, freezer, API or browser is invoked.
+    */
+   const catalog = await json(resolve(DATA, 'assets/catalog.json'));
+   const dataNames = new Set([...Object.keys(seed.dataInputs), 'manifest.json', 'review/native-restoration.json',
+@@ -249,10 +261,9 @@
+     }
+   }
+   const evidenceGuards = { ...seed.evidenceGuards }, sharedClosure = { ...seed.sharedClosure };
+-  const p30Plan = await boundJSON(request.p30Plan), p22Route = await boundJSON(request.p22Route);
++  const p30Plan = await boundJSON(request.p30Plan);
+   const evidenceToBind = {};
+-  for (const group of [request.publicationGuards, request.additionalEvidence, p30Plan.evidenceReferences,
+-    { [request.p22Route.path]: request.p22Route.sha256 }]) for (const [path, sha256] of Object.entries(group)) {
++  for (const group of [request.publicationGuards, request.additionalEvidence, p30Plan.evidenceReferences]) for (const [path, sha256] of Object.entries(group)) {
+     need(!Object.hasOwn(evidenceToBind, path) || evidenceToBind[path] === sha256, `Conflicting evidence references: ${path}`);
+     evidenceToBind[path] = sha256;
+   }
+@@ -261,7 +272,7 @@
+   }
+   need(Object.keys(request.publicationGuards).length > 0, 'Bind final publication/ACK/source status receipts');
+   const kitMaps = {};
+-  for (const name of ['p30', 'p22']) {
++  for (const name of ['p30']) {
+     const item = request.kits[name], receipt = await boundJSON(item.receipt), map = {};
+     for (const [file, expected] of Object.entries(receipt.payloads)) {
+       const path = resolve(item.directory, file); need((await capture(path)).sha256 === expected.sha256, `Sealed kit payload differs: ${path}`); map[path] = expected.sha256;
+@@ -273,25 +284,22 @@
+   const tap = resolve(A, 'episode5-actor-private-read-tap-v2-20261121-v1/proposed-read-tap.v2.mjs');
+   need((await capture(tap)).sha256 === 'cc191d0433def9fbcbb5b9b4e556ff7e92e6c46f366ab9151d4aef860fdbc8c1', 'Original read tap changed');
+   kitMaps.p30[tap] = (await capture(tap)).sha256;
+-  const p22PlanPath = resolve(request.kits.p22.directory, 'capture-plan.json'), p22Plan = await json(p22PlanPath);
+-  need(p22Plan.routePlanSha256 === request.p22Route.sha256 && p22Route, 'P22 route source binding differs');
+   for (const [path, sha256] of boundInputs) globalGuards[path] = sha256;
+-  const inventory = { ...seed, schema: 'stella.ordinary-qa.fresh-guard-inventory-candidate.v1',
++  const inventory = { ...seed, schema: 'stella.ordinary-qa.p30-v2-fresh-guard-inventory-candidate.v1',
+     rootConfirmed: false, isExecutionBinding: false, preparationAuthorized: false, executionAuthorized: false, browserLaunchAuthorized: false,
+     observedAt: new Date().toISOString(), observedDataHead: request.finalDataHead, observedSourceHead: request.expectedSourceHead,
+     publishedHead: request.finalDataHead, dataStatus: '', sourceStatus, atomicFreeze: false, collectionWindowStable: true,
+     controlledDifferenceAcceptance: 'PENDING_ROOT_REVIEW_OF_THIS_FRESH_METADATA', dataInputs, globalGuards, sourceFiles, distFiles,
+-    protectedFirstThree, sharedClosure, evidenceGuards, toolFiles, routeSource: request.p22Route,
++    protectedFirstThree, sharedClosure, evidenceGuards, toolFiles, routeSource: request.p30Plan,
+     inheritedRouteSource: seed.routeSource, resourceDerivation: { models: sorted(models), sections: [1003, 1045],
+-      basis: 'Union of both sealed metadata dependency contracts, retaining Qv3 inputs; no API or before-state synthesis' },
++      basis: 'Retained successful historical resource union plus current P30 metadata, preserving Qv3 inputs; no P22 execution, API or before-state synthesis' },
+     counts: { ...counts, dataInputs: Object.keys(dataInputs).length, globalGuards: Object.keys(globalGuards).length,
+       globalNativeReview: nativeReview.length, sourceFiles: sourceNames.length, distFiles: distPaths.length,
+       protectedFirstThree: Object.keys(protectedFirstThree).length, sharedClosure: Object.keys(sharedClosure).length,
+       evidenceGuards: Object.keys(evidenceGuards).length, toolFiles: Object.keys(toolFiles).length },
+     inheritedMembershipDerivation: seed.membershipDerivation,
+     membershipDerivation: { collector: { path: SELF, sha256: options['--script-sha256'] },
+-      p30Freezer: { path: resolve(request.kits.p30.directory, 'freeze.py'), sha256: kitMaps.p30[resolve(request.kits.p30.directory, 'freeze.py')] },
+-      p22Freezer: { path: resolve(request.kits.p22.directory, 'freeze-inputs.py'), sha256: kitMaps.p22[resolve(request.kits.p22.directory, 'freeze-inputs.py')] } },
++      p30Freezer: { path: resolve(request.kits.p30.directory, 'freeze.py'), sha256: kitMaps.p30[resolve(request.kits.p30.directory, 'freeze.py')] } },
+     metadataDifferenceClassification: { knownControlledScopeOnly: true, unexpectedDifferenceCount: 0,
+       rootIndependentReviewStillRequired: true, changedOldPathCount: changedOldPaths.length,
+       committedAddedAuditOrBatchCount: delta.filter(row => row.status === 'A').length },
+@@ -302,11 +310,10 @@
+   const inventoryBytes = Buffer.from(JSON.stringify(inventory, null, 2) + '\n'), inventoryRef = { path: inventoryPath, sha256: hash(inventoryBytes) };
+   Object.assign(p30, { finalDataHead: request.finalDataHead, finalSourceHead: request.expectedSourceHead, browserOwner: request.browserOwner,
+     globalGuardsFile: inventoryRef, publicationGuards: request.publicationGuards, protectedFirstThree, kitGuards: kitMaps.p30, tools });
+-  Object.assign(p22, { publishedHead: request.finalDataHead, sourceHead: request.expectedSourceHead, sourceStatus, browserOwner: request.browserOwner,
+-    libraryCounts: counts, guardInventory: inventoryRef, planSha256: (await capture(p22PlanPath)).sha256, kitGuards: kitMaps.p22 });
+   // No approval bit is promoted by collecting hashes. Root must inspect the
+-  // candidate and separately authorize each original freezer/API step.
+-  need(p30.rootConfirmed === false && p30.freezeAuthorized === false && p22.rootConfirmed === false && p22.preparationAuthorized === false,
++  // candidate and separately authorize the original P30 freezer/API step.
++  need(p30.rootConfirmed === false && p30.freezeAuthorized === false && p30.apiPreparationAuthorized === false &&
++    p30.fullGlobalInventoryApproved === false && p30.browserLaunchAuthorized === false,
+     'Supply the original false templates');
+   for (const [path, record] of cache) need(hash(await readFile(path)) === record.sha256, `Final byte drift: ${path}`);
+   for (const [path, sha256] of boundInputs) need(hash(await readFile(path)) === sha256, `Final metadata drift: ${path}`);
+@@ -315,7 +322,7 @@
+   need(gitText(DATA, 'rev-parse', 'HEAD') === request.finalDataHead && gitText(DATA, 'status', '--short') === '' &&
+     gitText(SOURCE, 'rev-parse', 'HEAD') === request.expectedSourceHead && gitText(SOURCE, 'status', '--short') === sourceStatus, 'Final HEAD/status drift');
+   await writeFile(inventoryPath, inventoryBytes, { flag: 'wx' });
+-  for (const [name, value] of [['p30-inputs.filled.rootfalse.json', p30], ['p22-inputs.filled.rootfalse.json', p22], ['tools.fresh.json', tools]])
++  for (const [name, value] of [['p30-inputs.filled.rootfalse.json', p30], ['tools.fresh.json', tools]])
+     await writeFile(resolve(output, name), JSON.stringify(value, null, 2) + '\n', { flag: 'wx' });
+   await writeFile(resolve(output, 'collection-receipt.rootfalse.json'), JSON.stringify({ rootConfirmed: false, executionAuthorized: false,
+     finalDataHead: request.finalDataHead, sourceHead: request.expectedSourceHead, inventory: inventoryRef, counts,

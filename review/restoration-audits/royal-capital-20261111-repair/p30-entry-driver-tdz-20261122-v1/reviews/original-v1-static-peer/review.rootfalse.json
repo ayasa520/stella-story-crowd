@@ -1,0 +1,279 @@
+{
+  "schema": "stella.P30.node4.ordinary-entry-independent-static-peer.v1",
+  "createdUTC": "2026-11-21T23:47:57.779546+00:00",
+  "reviewer": "/root/performance_peer",
+  "rootConfirmed": false,
+  "freezeAuthorized": false,
+  "apiPreparationAuthorized": false,
+  "executionAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "diagnosticInstrumentationAuthorized": false,
+  "continuousRecorderAuthorized": false,
+  "finalDataHead": null,
+  "finalSourceHead": null,
+  "browserOwner": null,
+  "decision": "static-pass-no-must-fix-fresh-root-binding-required",
+  "mustFix": [],
+  "candidateReceipt": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/receipt.rootfalse.json",
+    "bytes": 9748,
+    "sha256": "fd8ccd3aa7de75dd2ba86e64e0bcbb67b3d39c31bb8a45dd7a21c32981487212"
+  },
+  "coreCode": {
+    "freeze.py": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/freeze.py",
+      "bytes": 12385,
+      "sha256": "843309cf3a308d40369a21c257210a660ec5d8c3b591258f9298b59dbc697e49"
+    },
+    "node-guards.mjs": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/node-guards.mjs",
+      "bytes": 3429,
+      "sha256": "faa67455f6fe9934871a921eb30df1dc3225fe8788323d12d5bec9d25ef2c2c2"
+    },
+    "prepare.mjs": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/prepare.mjs",
+      "bytes": 8122,
+      "sha256": "795ff79524dc32406b7c083cbf98ca848b319a999d5e8dfbf7d3612d4a9f9ad2"
+    },
+    "transport.mjs": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/transport.mjs",
+      "bytes": 3256,
+      "sha256": "8cd509b99a0689aa59cccbcf5d9610edb447485dd6ad9c306c50c3d4e6e52f67"
+    },
+    "server.mjs": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/server.mjs",
+      "bytes": 4640,
+      "sha256": "5176d4cf4c8f86a1cfe1e274c7eca68fd6455c5f7eba9dbcee8c7edfa89a5788"
+    },
+    "driver.mjs": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/driver.mjs",
+      "bytes": 31970,
+      "sha256": "6bf7386e3846190aece17b87f6fce2d2d021674c2c6f7b64c29c5574e18658ce"
+    },
+    "curve-audit.mjs": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/curve-audit.mjs",
+      "bytes": 3757,
+      "sha256": "532de2bb14cad61f7effd70ed52137084182d9958e7db7b6897fa1a12ab02ce0"
+    },
+    "run.py": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/run.py",
+      "bytes": 27209,
+      "sha256": "0ad9481e4237606f51219110dab29dae4bfbe6e05ecb06e857fe5d28098e3367"
+    }
+  },
+  "staticReport": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/static-report.rootfalse.json",
+    "bytes": 12285,
+    "sha256": "49967c4d39917c5b0fcb8a4767ff6581c4ce42a763b54717c99424adfb794930"
+  },
+  "plan": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/plan.rootfalse.json",
+    "bytes": 18851,
+    "sha256": "ee8d8afd13bea486301896a560449245e24dadf9642e5ef87d7d95f74f6cb183"
+  },
+  "all24SealedPayloadsIndependentlyExact": true,
+  "allEightStoredSourceDiffsApplyInMemoryToExactCandidate": true,
+  "allSevenReusedBlocksIndependentlyByteAndSHAExact": true,
+  "exactReusedBlocks": {
+    "run-stop-cleanup": {
+      "start": "def stop(process,",
+      "end": "def authority(path):",
+      "baseOffset": 876,
+      "newOffset": 868,
+      "baseEnd": 5647,
+      "newEnd": 5639,
+      "byteIdentical": true,
+      "sha256": "4b3ae5b160c25c1c42497bd5328064d3eeba38f05db105f6bb90835df1232d61",
+      "bytes": 4771
+    },
+    "run-stop-recorder": {
+      "start": "def stop_recorder(case_id):",
+      "end": "\ntry:\n    before = verify()",
+      "baseOffset": 9690,
+      "newOffset": 10393,
+      "baseEnd": 11678,
+      "newEnd": 12381,
+      "byteIdentical": true,
+      "sha256": "033bb69ae1f44d5ad7f9bd0d7b7f1443fe921fb3f822d10ffd42f0c29fe67b1d",
+      "bytes": 1988
+    },
+    "run-first-frame-ack": {
+      "start": "                    cap = budgets['videoBytesPerCase']",
+      "end": "                elif message['type'] == 'capture-end':",
+      "baseOffset": 17677,
+      "newOffset": 18444,
+      "baseEnd": 20287,
+      "newEnd": 21054,
+      "byteIdentical": true,
+      "sha256": "76ad6c73952f68a7b3a8e578da15f22a730d5da3fcddc837a804fc304865fa18",
+      "bytes": 2610
+    },
+    "run-outer-cleanup": {
+      "start": "\nfinally:\n    failure = sys.exc_info()[1]",
+      "end": null,
+      "baseOffset": 21473,
+      "newOffset": 22620,
+      "baseEnd": 26062,
+      "newEnd": 27209,
+      "byteIdentical": true,
+      "sha256": "b3e68fa8de556e156de5c88b1ed989236beb4add27d56556504b2ca38ce497ba",
+      "bytes": 4589
+    },
+    "driver-ipc": {
+      "start": "function supervisor(type,caseId){",
+      "end": "async function evaluate",
+      "baseOffset": 2426,
+      "newOffset": 2484,
+      "baseEnd": 2739,
+      "newEnd": 2797,
+      "byteIdentical": true,
+      "sha256": "4ea557a78ac6d0a595503f99de3029fec9454c4ffe8e87d56dcd00effeeee2b9",
+      "bytes": 313
+    },
+    "driver-trusted-click": {
+      "start": "async function click(selector,node,phase){",
+      "end": "async function mark",
+      "baseOffset": 4417,
+      "newOffset": 4475,
+      "baseEnd": 5277,
+      "newEnd": 5335,
+      "byteIdentical": true,
+      "sha256": "ee93e58b2a7bbb6c634367bb0a194270336352ef3f31562dcd05f81c8f5dc669",
+      "bytes": 860
+    },
+    "driver-owner-export": {
+      "start": "async function exportOwner(folder){",
+      "end": "function targetTalkDiagnostic",
+      "baseOffset": 10843,
+      "newOffset": 17300,
+      "baseEnd": 12199,
+      "newEnd": 18656,
+      "byteIdentical": true,
+      "sha256": "857e89d487f919d4de99dd9f37b418fc5f253d1b1525e5897017231b20cf3699",
+      "bytes": 1356
+    }
+  },
+  "genericReuse": {
+    "common.py": {
+      "byteIdentical": true,
+      "sha256": "366ce6e51895c96b19d75975e46d2d37d7a7d48d39f48a268a0d6bd7d0e16d45",
+      "basePath": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/common.py"
+    },
+    "owner-events.mjs": {
+      "byteIdentical": true,
+      "sha256": "cf74af705e98691eb2b66ca14d667598dc150dc6b77f9b9291ccd4e6ab32b57f",
+      "basePath": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/owner-events.mjs"
+    },
+    "workers-private.mjs": {
+      "byteIdentical": true,
+      "sha256": "78ff00bdd7101f6e42f8171c94c89b7fa9e3fcdbd7d48181856ee90383d0add6",
+      "basePath": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/workers-private.mjs"
+    },
+    "readTap": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-actor-private-read-tap-v2-20261121-v1/proposed-read-tap.v2.mjs",
+      "sha256": "cc191d0433def9fbcbb5b9b4e556ff7e92e6c46f366ab9151d4aef860fdbc8c1",
+      "bytes": 10943,
+      "notCopiedOrChanged": true
+    }
+  },
+  "threeReusedHelpersAndReadTapIndependentlyExact": true,
+  "planEvidenceRefsIndependentlyExact": true,
+  "currentTargetNativeAndReviewWholeFileHashExact": true,
+  "checks": [
+    {
+      "id": "WHOLE_ORDINARY_INPUT",
+      "result": "pass-static",
+      "citations": [
+        "freeze.py:79-123",
+        "freeze.py:142-199",
+        "prepare.mjs",
+        "transport.mjs",
+        "server.mjs:48-56",
+        "driver.mjs:308-340"
+      ],
+      "details": "One full ordinary final-HEAD prepare from narration3 with choices{}; no alias, overlay, native replacement, override, before seed or sliced program. Original raw/status/headers retained before parse; genuine before saved. Browser independently repeats exact request and must match complete program JSON SHA/before/count before unchanged whole-program load. A real422 stores one ordinary resolve witness and fails without entry fallback/retry."
+    },
+    {
+      "id": "OBSERVATION_BOUNDARY",
+      "result": "pass-static",
+      "citations": [
+        "driver.mjs:75-185",
+        "driver.mjs:341-355"
+      ],
+      "details": "3 requires real empty display/natural text ready, configured panel-entry ownership only when profile exists and a1Normal-second QA hold; no actor GL/checkpoint.4 sampled positive visible/model-commit anchor and natural-ready actual checkpoint share animator; final actualActor>=max(visibleActor+8,readyActor+2). Normal only schedules later bounded reads. Up to5hold reads plus visible/ready/5boundary give at most8 checkpoints. No clock/layer/phase/weight/loop/default body token/talk false prior.5 requires own panel/model/command/newdraw/naturalready then break, no51/no6."
+    },
+    {
+      "id": "TRUSTED_ROUTE",
+      "result": "pass-static",
+      "citations": [
+        "driver.mjs:64-73",
+        "driver.mjs:187-225",
+        "driver.mjs:341-355"
+      ],
+      "details": "Original trusted pointer input path is unchanged. Exact3→31→4→41→5 ENTER/transition/native/target/trusted ready Advance sequence checked, all unexpected ENTER fail. No Advance5 or forbidden51. Current formal4 model/motion and5 felt01/act_punpun are input facts, not fresh source performance acceptance."
+    },
+    {
+      "id": "ORIGINAL_OBSERVATION",
+      "result": "pass-static",
+      "citations": [
+        "owner-events.mjs",
+        "curve-audit.mjs",
+        "driver.mjs:187-240",
+        "driver.mjs:356-371"
+      ],
+      "details": "Common/owner/workers and external cc191d04 tap exact original bytes. Original render/console/forward once and original exceptions preserved. All original raw rows, previous/loading owners, archived clips/blend-source states retained; every actual archived decoded clip compared with guarded canonical resource using unchanged pure decoder. Actual layer weights/loop/blend/talk/unloaded state observed without invented expected provider. Weak identity remains artifact-local; direct StoryPlayer/animator generation null; post-compose/pre-core/pre-GL is not paint."
+    },
+    {
+      "id": "RECORDING_CLEANUP_ERRORS",
+      "result": "pass-static",
+      "citations": [
+        "run.py",
+        "driver.mjs:254-278",
+        "driver.mjs:372-413"
+      ],
+      "details": "First positive real X-surface progress frame before capture-start ACK/program load remains byte-identical to K5. One Firefox/Xvfb/document/recording, originalFFmpeg1-thread/caps/nice19CPU0,1 preserved. All7 recording/stop/IPC/trustedclick/export chunks independently exact. Fatal classification precedes archive caps; console.error/handled fatal/info-listener failures reject, drop/observer errors reject; hitches remain separate. capture-end and session-end late facts rechecked; terminal acceptance required for exit0. Owned stop/OS absence/profile-delete gate unchanged; root independent escaped/ports/full-guards closure still required."
+    },
+    {
+      "id": "FRESH_BINDING",
+      "result": "pass-static-conditional",
+      "citations": [
+        "freeze.py:20-141",
+        "node-guards.mjs",
+        "prepare.mjs",
+        "run.py:173-188",
+        "root-inputs.draft.json",
+        "root-release.draft.json"
+      ],
+      "details": "Root finalHEAD/sourceHEAD/owner remain null and all flags false. Native/review/dist key membership checked against fresh global set; target whole52-row document bound, full-library count dynamically sums actual final manifest/native arrays. Pending P22 additions therefore cannot be hidden by old5622/5624. Section1045 models/portraits, full player/image/audio resources and thumbnails guarded; complete ordinary before models must already be bound. Actual Python/Node executable paths and digests checked; server/driver use declared Node launch path. No old frozen/prepared/attempt/release copied."
+    }
+  ],
+  "sourceResourceSemanticsReadOnlyContext": {
+    "currentNarrationPanel": "adv_tell_system has no configured panel_entry profile; driver honestly records null token events for that original no-profile path and still requires natural ready/visible panel/empty display. Actor cards require original configured start/complete token linkage.",
+    "transitionNativeField": "Actual canonical STORY_PLAYER_TRANSITION JSON includes native and target; exact driver checks match it.",
+    "firstVisibleMarker": "Sampled checkpoint, not exact first paint/native phase zero; recording already covers earlier fade.",
+    "P22NewNodes": "Historical reported counts/HEADs are provenance, not runtime constants. Root must freshly bind actual current complete inventory."
+  },
+  "remainingScope": [
+    "Root supplies independent final publication/ACK/status and full current global/source/dist/resource/tool/protected22/kit closure before freeze.",
+    "Fresh complete ordinary prepare/raw before and exact browser second read must succeed; no automatic fallback if unknown/422.",
+    "Root separately releases unused one-owner attempt; actual execution/decoder/image review remain unperformed.",
+    "After unique runtime, root independently verifies all owned/escaped OS processes/ports/hashes before any full source/actual image review."
+  ],
+  "limits": [
+    "No freeze/prepare/helper import/AST/test/build/API/browser/media/Git run; no D/C/kit write by this peer.",
+    "No guessed model/motion from empty fields; only existing formal input values checked.",
+    "No original native phase/provider/cause, body/face/motion/token/geometry/timing/audio/paint/whole-scene acceptance.",
+    "Felt5 is a stopping boundary retaining its accepted existing field; this peer does not reaccept its performance."
+  ],
+  "actions": {
+    "candidateOrBusinessHelperImports": 0,
+    "ASTSyntaxTestsBuild": 0,
+    "freezeOrPrepareApiRuns": 0,
+    "browserServerMediaRuns": 0,
+    "imageReads": 0,
+    "gitCommands": 0,
+    "D_C_OriginalKitOrReadTapWrites": false,
+    "newWritesOnlyThisPeerSibling": true
+  },
+  "coordination": "Reviewed formed wrappers then driver before seal; one small setup binding clarification was incorporated within the same unsealed author kit. No new kit/repeated version/framework requested. Final decision binds only the unique sealed receipt fd8ccd3a…."
+}

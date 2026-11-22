@@ -1,0 +1,46 @@
+--- /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/transport.mjs	2026-11-22 03:59:14.971196906 +0800
++++ /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/transport.mjs	2026-11-22 07:23:02.755192242 +0800
+@@ -1,6 +1,6 @@
+-// Read-only upstream adapter. Only the complete native10090015 file differs
+-// for a named private alias. Every other returned byte is a frozen baseline
+-// member. No prepared program, business parser, clock or renderer is replaced.
++// Ordinary read-only upstream adapter: every native/review/asset byte comes
++// from the formal final-HEAD package and its released digest. The diagnostic
++// host cannot substitute a native row, revision, prepared program or renderer.
+ import assert from 'node:assert/strict';
+ import {readFile,appendFile,realpath} from 'node:fs/promises';
+ import {createHash} from 'node:crypto';
+@@ -9,7 +9,6 @@
+ const here=new URL('./',import.meta.url);
+ const binding=JSON.parse(await readFile(new URL('frozen/binding.json',here),'utf8'));
+ const root=await realpath(binding.dataRoot),repository='/ayasa520/stella-story-crowd';
+-const aliases=new Map(binding.plans.map(p=>[p.alias,p]));
+ const sha=b=>createHash('sha256').update(b).digest('hex');
+ let providerRows=0,providerBytes=0;
+ globalThis.fetch=async(input,init)=>{
+@@ -20,19 +19,18 @@
+   assert.ok(url.origin==='https://raw.githubusercontent.com'&&url.pathname.startsWith(repository+'/'),'Outbound upstream forbidden');
+   const [revision,...parts]=decodeURIComponent(url.pathname.slice(repository.length+1)).split('/');
+   const relative=parts.join('/');
+-  if(![binding.finalDataHead,'main'].includes(revision)&&!aliases.has(revision))return new Response(null,{status:404});
++  if(![binding.finalDataHead,'main'].includes(revision))return new Response(null,{status:404});
+   if(parts.some(p=>!p||p==='.'||p==='..')||!/^(?:manifest\.json|(?:native|review)\/scenes\/\d+\.json|assets\/[-\w./]+)$/.test(relative))
+     return new Response(null,{status:404});
+-  const overlay=aliases.get(revision),substituted=!!overlay&&relative==='native/scenes/10090015.json';
+-  const path=substituted?overlay.overlay.path:await realpath(resolve(root,relative)).catch(e=>{
++  const path=await realpath(resolve(root,relative)).catch(e=>{
+     if(['ENOENT','ENOTDIR'].includes(e.code))return null;throw e;});
+   if(!path)return new Response(null,{status:404});
+-  assert.ok(substituted||path.startsWith(root+sep));
++  assert.ok(path.startsWith(root+sep));
+   const bytes=await readFile(path),digest=sha(bytes);
+-  assert.equal(digest,substituted?overlay.overlay.sha256:binding.dataGuards[relative],'Unbound or changed upstream '+relative);
++  assert.equal(digest,binding.dataGuards[relative],'Unbound or changed upstream '+relative);
+   const folder=process.env.STELLA_PRIVATE_OUTPUT||fileURLToPath(new URL('frozen/',here));
+-  const record=JSON.stringify({wallEpochMilliseconds:Date.now(),revision,caseId:overlay?.id||null,relative,
+-    substituted,range:request.headers.get('range'),bytes:bytes.length,sha256:digest})+'\n';
++  const record=JSON.stringify({wallEpochMilliseconds:Date.now(),revision,caseId:binding.plans[0].id,relative,
++    range:request.headers.get('range'),bytes:bytes.length,sha256:digest})+'\n';
+   providerRows++;providerBytes+=Buffer.byteLength(record);
+   assert.ok(providerRows<=binding.budgets.providerRowsTotal&&providerBytes<=binding.budgets.providerBytesTotal,
+     'Provider trace budget exceeded; do not claim complete delivery');

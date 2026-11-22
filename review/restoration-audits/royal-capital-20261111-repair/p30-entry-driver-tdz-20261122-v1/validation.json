@@ -1,0 +1,77 @@
+{
+  "fullCheckStatus": 2,
+  "originalRawStdout": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/archive-plan.rootfalse.json:1858: new blank line at EOF.\nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/future-binding-metadata/author/collector-v2-vs-v1.patch:50: trailing whitespace.\n+ \nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/reviews/prepared-only/README.md:10: new blank line at EOF.\nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/reviews/prepared-only/readiness.rootfalse.json:92: new blank line at EOF.\nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/reviews/prepared-only/receipt.rootfalse.json:19: new blank line at EOF.\nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v1/attempt-1/firefox.log:4: trailing whitespace.\n+console.error: RSLoader: \nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v1/kit/diff-freeze-py.patch:6: trailing whitespace.\n+ \nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v1/kit/diff-freeze-py.patch:23: trailing whitespace.\n+ \nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v1/kit/diff-run-py.patch:6: trailing whitespace.\n+ \nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v2/REVISION.md:14: new blank line at EOF.\nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v2/driver-v2-vs-v1.patch:18: new blank line at EOF.\nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v2/receipt.rootfalse.json:205: new blank line at EOF.\nreview/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v2/revision-static-report.rootfalse.json:103: new blank line at EOF.\n",
+  "originalRawStderr": "",
+  "exceptions": [
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/archive-plan.rootfalse.json",
+      "line": 1858,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/future-binding-metadata/author/collector-v2-vs-v1.patch",
+      "line": 50,
+      "issue": "trailing whitespace."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/reviews/prepared-only/README.md",
+      "line": 10,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/reviews/prepared-only/readiness.rootfalse.json",
+      "line": 92,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/reviews/prepared-only/receipt.rootfalse.json",
+      "line": 19,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v1/attempt-1/firefox.log",
+      "line": 4,
+      "issue": "trailing whitespace."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v1/kit/diff-freeze-py.patch",
+      "line": 6,
+      "issue": "trailing whitespace."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v1/kit/diff-freeze-py.patch",
+      "line": 23,
+      "issue": "trailing whitespace."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v1/kit/diff-run-py.patch",
+      "line": 6,
+      "issue": "trailing whitespace."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v2/REVISION.md",
+      "line": 14,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v2/driver-v2-vs-v1.patch",
+      "line": 18,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v2/receipt.rootfalse.json",
+      "line": 205,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "review/restoration-audits/royal-capital-20261111-repair/p30-entry-driver-tdz-20261122-v1/v2/revision-static-report.rootfalse.json",
+      "line": 103,
+      "issue": "new blank line at EOF."
+    }
+  ],
+  "meaning": "Exact original diagnostic/diff/plan evidence whitespace retained; every other added audit file passes. No formal script or product source changes.",
+  "retainedRootCheckCorrection": {
+    "toolChunk": "ebb9c8",
+    "cause": "Root checked only the main archiveEntries but omitted the separately copied extraStaticMetadata helper diff. The helper diff is now validated against its original source SHA as well; no evidence normalized and no business/module/runtime rerun."
+  }
+}

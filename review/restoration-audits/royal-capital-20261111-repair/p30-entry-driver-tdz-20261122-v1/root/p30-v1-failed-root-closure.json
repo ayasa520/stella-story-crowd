@@ -1,0 +1,261 @@
+{
+  "schema": "stella.p30.ordinary-entry.failed-root-closure.v1",
+  "createdAt": "2026-11-22T00:36:20.839Z",
+  "session": 57682,
+  "exitCode": 1,
+  "release": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-6a6093e8-v1/p30-runtime-release.root-approved-v1.json",
+    "bytes": 3277585,
+    "sha256": "ce770aaccb43287658aa0cd9d5ff365acaac28e931cadddeb7a29cc58b68385f"
+  },
+  "dataHead": "6a6093e84895dd8292cdfbfb4154373bc36dc773",
+  "sourceHead": "6630ac70f17332efa031d021af00532d42307568",
+  "allRuntimeBindingsFreshExact": true,
+  "runtimeGuardCount": 13693,
+  "inputBefore": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/inputs-before.json",
+    "bytes": 3248104,
+    "sha256": "cd2900180d46e2110b8cf6527c1f8a263768ba515f61e69793a8cd82f96139a5"
+  },
+  "inputAfter": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/inputs-after.json",
+    "bytes": 3248104,
+    "sha256": "cd2900180d46e2110b8cf6527c1f8a263768ba515f61e69793a8cd82f96139a5"
+  },
+  "knownAbsentPIDs": [
+    21044,
+    21051,
+    21056,
+    21068,
+    21188
+  ],
+  "knownEmptyPGIDs": [
+    21051,
+    21056,
+    21068,
+    21188
+  ],
+  "escapedArgs": [],
+  "escapedEnvironment": [],
+  "environmentDenied": [
+    {
+      "pid": 1,
+      "code": "EACCES"
+    },
+    {
+      "pid": 103,
+      "code": "EACCES"
+    },
+    {
+      "pid": 20740,
+      "code": "EACCES"
+    },
+    {
+      "pid": 20775,
+      "code": "EACCES"
+    },
+    {
+      "pid": 208,
+      "code": "EACCES"
+    },
+    {
+      "pid": 20904,
+      "code": "EACCES"
+    },
+    {
+      "pid": 240,
+      "code": "EACCES"
+    },
+    {
+      "pid": 247,
+      "code": "EACCES"
+    },
+    {
+      "pid": 262,
+      "code": "EACCES"
+    },
+    {
+      "pid": 27,
+      "code": "EACCES"
+    },
+    {
+      "pid": 34,
+      "code": "EACCES"
+    },
+    {
+      "pid": 4340,
+      "code": "EACCES"
+    },
+    {
+      "pid": 450,
+      "code": "EACCES"
+    },
+    {
+      "pid": 52,
+      "code": "EACCES"
+    },
+    {
+      "pid": 56,
+      "code": "EACCES"
+    },
+    {
+      "pid": 63,
+      "code": "EACCES"
+    },
+    {
+      "pid": 77,
+      "code": "EACCES"
+    },
+    {
+      "pid": 78,
+      "code": "EACCES"
+    },
+    {
+      "pid": 79,
+      "code": "EACCES"
+    },
+    {
+      "pid": 869,
+      "code": "EACCES"
+    },
+    {
+      "pid": 88,
+      "code": "EACCES"
+    },
+    {
+      "pid": 96,
+      "code": "EACCES"
+    }
+  ],
+  "environmentRaced": [],
+  "environmentScanLimit": "Permission-denied environments were not inspected; explicit PID/PGID, command inventory, ports and temporary-path facts are independent.",
+  "allMediaAndTestBrowserProcessesAbsent": true,
+  "ports": [
+    {
+      "port": 5198,
+      "state": "ECONNREFUSED"
+    },
+    {
+      "port": 35913,
+      "state": "ECONNREFUSED"
+    }
+  ],
+  "temporaryAndDisplayPathsAbsent": [
+    "/tmp/stella-six-private-owner-21l9eltk",
+    "/tmp/stella-six-private-owner-21l9eltk/firefox-profile",
+    "/tmp/stella-six-private-owner-21l9eltk/authority",
+    "/tmp/.X11-unix/X2",
+    "/tmp/.X2-lock"
+  ],
+  "existingUserFloorp": [
+    {
+      "pid": 9671,
+      "pgid": 1625,
+      "comm": "floorp"
+    }
+  ],
+  "foreignProcessesSignalled": false,
+  "firstFailure": {
+    "stage": "p30-node4-unchanged-ordinary:fresh-document",
+    "error": "ReferenceError: Cannot access 'target' before initialization",
+    "stack": "ReferenceError: Cannot access 'target' before initialization\n    at file:///home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/driver.mjs:294:61",
+    "caseId": "p30-node4-unchanged-ordinary"
+  },
+  "cause": "The case try block declares a later const target hold record, shadowing the outer browser context target throughout that block. The first navigate access occurs in its temporal dead zone.",
+  "productFailureClaimed": false,
+  "programLoaded": false,
+  "recorderStarted": false,
+  "captureCount": 0,
+  "playbackAccepted": false,
+  "rootViewedImages": false,
+  "originalAttemptExhausted": true,
+  "additionalExecutionAuthorized": false,
+  "wholeEpisodeAccepted": false,
+  "references": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/binary-platform.json",
+      "bytes": 4774,
+      "sha256": "375e863218efc60b466b3b93d038faf41131cd003a150de897ebf44ddaf4dd3e"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/capture-index.json",
+      "bytes": 136,
+      "sha256": "64dc511cfcf5a34860b027750a223387f78c6fd9a376eb6f67495124c4904478"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/driver.log",
+      "bytes": 872,
+      "sha256": "0080c4e9d7934d4db7eb7cd4fa456017909a62bd63dbf88567fb327db180c292"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/firefox.log",
+      "bytes": 613,
+      "sha256": "56c44910ac15c38c35878b8f9a925722a13e4da626b1c77a8a2f16de80d29db5"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/handles.json",
+      "bytes": 884,
+      "sha256": "a33b551b1805ff772a7b4ef324242134f791cf240821c4c21bed0af9eccdbde6"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/inputs-after.json",
+      "bytes": 3248104,
+      "sha256": "cd2900180d46e2110b8cf6527c1f8a263768ba515f61e69793a8cd82f96139a5"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/inputs-before.json",
+      "bytes": 3248104,
+      "sha256": "cd2900180d46e2110b8cf6527c1f8a263768ba515f61e69793a8cd82f96139a5"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/local-runtime.sqlite",
+      "bytes": 65536,
+      "sha256": "52ab6a0f4fc0a1b5fca451936b8047f8667b7e1a5c96628d3fa26c09f23e9228"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/owned-cleanup-gate.json",
+      "bytes": 4533,
+      "sha256": "e69b58554cfa0592d98779b4cdd168259564c7abec2c5bbba16ecc3c781b502c"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/process-exit.json",
+      "bytes": 1620,
+      "sha256": "b4b6732a41b8d71e39c1a3539220f363b29f45c929e6d8b09ad03f0073f577d5"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/processes-after.txt",
+      "bytes": 14912,
+      "sha256": "1ec4fe7ec24178a05fccba5a5416642f48a4def4233de9c3ed67bc92369af0f4"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/processes-before.txt",
+      "bytes": 14843,
+      "sha256": "14bb6753ecac45ada008934c7897cb9beb3a6af0e28c9a1f96986bb940404e77"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/release-binding.json",
+      "bytes": 3275792,
+      "sha256": "d7042f89dfa183628cef3ee360540de02ff9df27cdc5a155d638a32496b916d4"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/server.log",
+      "bytes": 61,
+      "sha256": "1cdbaabfd3f41fdea8a40739f41751559cc460cee419995e19b37ba249309994"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/temporary-state-cleanup.json",
+      "bytes": 365,
+      "sha256": "5c0ae4283546ccd47b5acefa977326fb55ad57660f318b1f5cb88c106c7f401b"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/terminal-failure.json",
+      "bytes": 687,
+      "sha256": "b37327ee276336241f5f6090ab4d66477e521a3e9683c934d606d0dc0558345f"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/attempt-1/xvfb.log",
+      "bytes": 366,
+      "sha256": "ca068bf81cd2fb0e9248b5f49622999a7197133428d3f5f6fd86aa7b3769a91d"
+    }
+  ]
+}

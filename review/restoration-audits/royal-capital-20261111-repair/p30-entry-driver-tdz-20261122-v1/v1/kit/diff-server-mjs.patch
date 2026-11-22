@@ -1,0 +1,19 @@
+--- /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-owner-kit-rootfalse-v5/server.mjs	2026-11-22 03:59:14.971196906 +0800
++++ /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v1/server.mjs	2026-11-22 07:23:02.755192242 +0800
+@@ -51,8 +51,8 @@
+       const chunks=[];let length=0;
+       for await(const chunk of incoming){length+=chunk.length;assert.ok(length<=4096);chunks.push(chunk);}
+       body=Buffer.concat(chunks).toString('utf8');
+-      const value=JSON.parse(body),plan=binding.plans.find(p=>p.alias===value.baseSha);
+-      assert.ok(plan);assert.deepEqual(Object.keys(value).sort(),['baseSha','choices','id']);
++      const value=JSON.parse(body),plan=binding.plans[0];
++      assert.equal(value.baseSha,binding.finalDataHead,'Only the published ordinary revision is admitted');assert.deepEqual(Object.keys(value).sort(),['baseSha','choices','id']);
+       assert.equal(value.id,plan.start);assert.deepEqual(value.choices,{});
+     }else if(!['GET','HEAD'].includes(incoming.method)){outgoing.writeHead(405).end();return;}
+     const request=new Request(url,{method:incoming.method,headers,...(body===undefined?{}:{body})});
+@@ -66,4 +66,4 @@
+     if(outgoing.destroyed&&['ERR_STREAM_PREMATURE_CLOSE','ERR_STREAM_UNABLE_TO_PIPE'].includes(error.code))return;
+     console.error('PRIVATE_HOST_REQUEST_FAILED',error);if(!outgoing.headersSent)outgoing.writeHead(500);outgoing.end();
+   }
+-}).listen(5198,'127.0.0.1',()=>console.log('Private native-overlay host listening '+origin));
++}).listen(5198,'127.0.0.1',()=>console.log('Ordinary P30 diagnostic host listening '+origin));
