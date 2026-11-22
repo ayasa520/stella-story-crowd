@@ -1,0 +1,1308 @@
+{
+  "schema": "stella.closed-download-cache-followup-readonly-audit.v1",
+  "rootConfirmed": false,
+  "cleanupPerformed": false,
+  "createdUTC": "2026-11-22T02:57:15.197Z",
+  "freeSpaceChangeCause": "unknown",
+  "rootReportedPriorObservationsNotAttributed": [
+    378000000,
+    326000000,
+    250000000
+  ],
+  "currentFilesystemMetadata": {
+    "availableBytes": 220884992,
+    "freeBytes": 237662208,
+    "blockSize": 4096
+  },
+  "actualDirectoryInventories": [
+    {
+      "path": "/var/cache/pacman/pkg",
+      "logicalBytesIncludingDirs": 81920,
+      "allocatedBytesIncludingDirs": 86016,
+      "regularFiles": 4,
+      "directories": 1,
+      "symlinks": [],
+      "readErrors": []
+    },
+    {
+      "path": "/home/rikka/.cache/pip",
+      "logicalBytesIncludingDirs": 8538,
+      "allocatedBytesIncludingDirs": 20480,
+      "regularFiles": 3,
+      "directories": 2,
+      "symlinks": [],
+      "readErrors": []
+    },
+    {
+      "path": "/home/rikka/.cache/uv",
+      "logicalBytesIncludingDirs": 18169,
+      "allocatedBytesIncludingDirs": 28672,
+      "regularFiles": 6,
+      "directories": 4,
+      "symlinks": [],
+      "readErrors": []
+    },
+    {
+      "path": "/var/tmp/stella-arm64-packages-20261109",
+      "logicalBytesIncludingDirs": 152018,
+      "allocatedBytesIncludingDirs": 155648,
+      "regularFiles": 2,
+      "directories": 1,
+      "symlinks": [],
+      "readErrors": []
+    },
+    {
+      "path": "/home/rikka/.cache/cc-switch-3.20.1",
+      "logicalBytesIncludingDirs": 64177227,
+      "allocatedBytesIncludingDirs": 64221184,
+      "regularFiles": 14,
+      "directories": 16,
+      "symlinks": [
+        {
+          "path": "/home/rikka/.cache/cc-switch-3.20.1/src/CC-Switch-v3.20.1-Linux-arm64.deb",
+          "target": "/home/rikka/.cache/cc-switch-3.20.1/CC-Switch-v3.20.1-Linux-arm64.deb",
+          "realpath": "/home/rikka/.cache/cc-switch-3.20.1/CC-Switch-v3.20.1-Linux-arm64.deb"
+        }
+      ],
+      "readErrors": []
+    },
+    {
+      "path": "/home/rikka/.cache/paru-bootstrap",
+      "logicalBytesIncludingDirs": 21757543,
+      "allocatedBytesIncludingDirs": 21909504,
+      "regularFiles": 69,
+      "directories": 117,
+      "symlinks": [
+        {
+          "path": "/home/rikka/.cache/paru-bootstrap/src/paru-v2.2.0-aarch64.tar.zst",
+          "target": "/home/rikka/.cache/paru-bootstrap/paru-v2.2.0-aarch64.tar.zst",
+          "realpath": "/home/rikka/.cache/paru-bootstrap/paru-v2.2.0-aarch64.tar.zst"
+        }
+      ],
+      "readErrors": []
+    }
+  ],
+  "priorCleanup": {
+    "receipt": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/disk-closed-download-cache-cleanup-20261122-v1.json",
+      "bytes": 27086,
+      "sha256": "d6726390254ccaa34bdf5d71c787d51d9defbe4e5f50ac2ee478c373cab97e12"
+    },
+    "priorAudit": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/disk-generated-cache-audit-20261122-v2/audit.rootfalse.json",
+      "bytes": 60086,
+      "sha256": "1aeeb1d2af9bd217b065a9ffe7424d1638b51a347aa6978b3c44e842f8e83441"
+    },
+    "deletedCount": 37,
+    "deletedPathsStillPresent": 0,
+    "oldDeletedFilesNotRelistedAsCandidates": true,
+    "previousAllocatedRemoval": 429699072
+  },
+  "archiveAndInstalledCopyProof": {
+    "toolChunks": [
+      "7e3c73",
+      "2666e6"
+    ],
+    "commands": [
+      {
+        "argv": [
+          "bsdtar",
+          "-xOf",
+          "/home/rikka/.cache/cc-switch-3.20.1/cc-switch-bin-3.20.1-1-aarch64.pkg.tar.xz",
+          "usr/bin/cc-switch"
+        ],
+        "stdoutStreamSHA256": "e94d5ce69f5360686f1e5ceb234022c113c4188ad70cdb3692cc1c8e4d4af467",
+        "installedSHA256Equal": true
+      },
+      {
+        "argv": [
+          "bsdtar",
+          "-xOf",
+          "/home/rikka/.cache/paru-bootstrap/paru-bin-2.2.0-1-aarch64.pkg.tar.xz",
+          "usr/bin/paru"
+        ],
+        "stdoutStreamSHA256": "eb76318b1e5a86fb56e0df332719a78004740f21eb40ccad5bbc6582e31b2693",
+        "installedSHA256Equal": true
+      },
+      {
+        "argv": [
+          "bsdtar",
+          "-xOf",
+          "/home/rikka/.cache/cc-switch-3.20.1/src/data.tar.gz",
+          "usr/bin/cc-switch"
+        ],
+        "stdoutStreamSHA256": "e94d5ce69f5360686f1e5ceb234022c113c4188ad70cdb3692cc1c8e4d4af467",
+        "installedSHA256Equal": true
+      },
+      {
+        "argv": [
+          "bsdtar",
+          "-xOf",
+          "/home/rikka/.cache/cc-switch-3.20.1/CC-Switch-v3.20.1-Linux-arm64.deb",
+          "data.tar.gz"
+        ],
+        "stdoutStreamSHA256": "0ae23c7486218754dd7f6d344fc4f758520cd9851780906f55f09b541079b58f",
+        "retainedCompressedMemberExactlyEqualsCandidate": true
+      }
+    ],
+    "archivePayloadsOnlyStreamedToHashNoDiskExtraction": true,
+    "packageInfo": {
+      "toolChunk": "a0e972",
+      "ccSwitch": {
+        "name": "cc-switch-bin",
+        "version": "3.20.1-1",
+        "arch": "aarch64"
+      },
+      "paru": {
+        "name": "paru-bin",
+        "version": "2.2.0-1",
+        "arch": "aarch64"
+      }
+    },
+    "installedAppNotLaunchedOrRuntimeTested": true
+  },
+  "installedPackageFilesOnlyStatted": [
+    {
+      "name": "cc-switch-bin",
+      "version": "3.20.1-1",
+      "desc": {
+        "path": "/var/lib/pacman/local/cc-switch-bin-3.20.1-1/desc",
+        "bytes": 448,
+        "sha256": "ae87f7e2c645880d57ff178dca01043bc9652f7dbf78eff5e61dd0bc9dd6f5af"
+      },
+      "filesMetadata": {
+        "path": "/var/lib/pacman/local/cc-switch-bin-3.20.1-1/files",
+        "bytes": 525,
+        "sha256": "1d2ec587f318e30e6a365d8809389bd4017e32f272ca4b8b566805ea17d92b40"
+      },
+      "packageDatabaseFileCount": 17,
+      "pacmanQkObserved": {
+        "toolChunk": "3074e1",
+        "totalFiles": 17,
+        "missing": 0
+      },
+      "installedFileStatObservationsOnly": [
+        {
+          "path": "/usr",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/bin",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/bin",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/bin/cc-switch",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/bin/cc-switch",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/applications",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/applications",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/applications/CC Switch.desktop",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/applications/CC Switch.desktop",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor/128x128",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor/128x128",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor/128x128/apps",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor/128x128/apps",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor/128x128/apps/cc-switch.png",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor/128x128/apps/cc-switch.png",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor/256x256@2",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor/256x256@2",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor/256x256@2/apps",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor/256x256@2/apps",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor/256x256@2/apps/cc-switch.png",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor/256x256@2/apps/cc-switch.png",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor/32x32",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor/32x32",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor/32x32/apps",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor/32x32/apps",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/icons/hicolor/32x32/apps/cc-switch.png",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/icons/hicolor/32x32/apps/cc-switch.png",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        }
+      ],
+      "configurationOrLauncherContentsRead": false
+    },
+    {
+      "name": "paru-bin",
+      "version": "2.2.0-1",
+      "desc": {
+        "path": "/var/lib/pacman/local/paru-bin-2.2.0-1/desc",
+        "bytes": 485,
+        "sha256": "7e494deb585432ebe8128ab66faea529659ce212afc048109118e361849fffe0"
+      },
+      "filesMetadata": {
+        "path": "/var/lib/pacman/local/paru-bin-2.2.0-1/files",
+        "bytes": 2835,
+        "sha256": "6c3b19aa10252fa15a566c32ccea43bc1897493d0863a5d3129dcace720c8546"
+      },
+      "packageDatabaseFileCount": 93,
+      "pacmanQkObserved": {
+        "toolChunk": "3074e1",
+        "totalFiles": 93,
+        "missing": 0
+      },
+      "installedFileStatObservationsOnly": [
+        {
+          "path": "/etc",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/etc",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/etc/paru.conf",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/etc/paru.conf",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/bin",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/bin",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/bin/paru",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/bin/paru",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/bash-completion",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/bash-completion",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/bash-completion/completions",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/bash-completion/completions",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/bash-completion/completions/paru.bash",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/bash-completion/completions/paru.bash",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/fish",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/fish",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/fish/vendor_completions.d",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/fish/vendor_completions.d",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/fish/vendor_completions.d/paru.fish",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/fish/vendor_completions.d/paru.fish",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ca",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ca",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ca/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ca/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ca/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ca/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/cs",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/cs",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/cs/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/cs/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/cs/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/cs/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/de",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/de",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/de/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/de/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/de/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/de/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/es",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/es",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/es/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/es/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/es/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/es/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/fi",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/fi",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/fi/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/fi/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/fi/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/fi/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/fr",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/fr",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/fr/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/fr/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/fr/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/fr/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/hi",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/hi",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/hi/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/hi/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/hi/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/hi/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/hr",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/hr",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/hr/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/hr/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/hr/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/hr/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/hu",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/hu",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/hu/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/hu/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/hu/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/hu/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/it",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/it",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/it/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/it/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/it/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/it/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ja",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ja",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ja/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ja/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ja/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ja/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ko",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ko",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ko/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ko/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ko/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ko/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/nl",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/nl",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/nl/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/nl/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/nl/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/nl/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/pl",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/pl",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/pl/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/pl/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/pl/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/pl/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/pt",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/pt",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/pt/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/pt/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/pt/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/pt/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/pt_BR",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/pt_BR",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/pt_BR/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/pt_BR/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/pt_BR/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/pt_BR/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ro",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ro",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ro/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ro/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ro/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ro/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ru",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ru",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ru/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ru/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/ru/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/ru/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/sk",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/sk",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/sk/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/sk/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/sk/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/sk/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/sv",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/sv",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/sv/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/sv/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/sv/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/sv/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/tr",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/tr",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/tr/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/tr/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/tr/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/tr/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/uk",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/uk",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/uk/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/uk/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/uk/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/uk/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/zh_CN",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/zh_CN",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/zh_CN/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/zh_CN/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/zh_CN/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/zh_CN/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/zh_TW",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/zh_TW",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/zh_TW/LC_MESSAGES",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/zh_TW/LC_MESSAGES",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/locale/zh_TW/LC_MESSAGES/paru.mo",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/locale/zh_TW/LC_MESSAGES/paru.mo",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/man",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/man",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/man/man5",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/man/man5",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/man/man5/paru.conf.5.gz",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/man/man5/paru.conf.5.gz",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/man/man8",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/man/man8",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/man/man8/paru.8.gz",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/man/man8/paru.8.gz",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/zsh",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/zsh",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/zsh/site-functions",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/zsh/site-functions",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        },
+        {
+          "path": "/usr/share/zsh/site-functions/_paru",
+          "exists": true,
+          "symlink": false,
+          "realpath": "/usr/share/zsh/site-functions/_paru",
+          "dependsOnWhitelistedPath": false,
+          "sameCandidateInode": false
+        }
+      ],
+      "configurationOrLauncherContentsRead": false
+    }
+  ],
+  "packageDatabaseLockPresent": false,
+  "whitelistAllocatedBytes": 24363008,
+  "whitelistLogicalBytes": 24356407,
+  "preserved": {
+    "ARMStagingRemainder": "antlr wheel144590B and configure_target.py3332B retained; previous audit did not prove antlr version installation.",
+    "installerSourceRecipesAndAllInstallLogs": true,
+    "pkgSrcTreesAndExecutables": true,
+    "installedQtVenvTabletLaunchersSkillsPlugins": true,
+    "allOriginalVideosActualSourceFramesFailedEvidenceLogsCodexHistoryGitObjects": true,
+    "originalDebAndParuTarWithSrcSymlinks": true
+  },
+  "processScope": "Only comm/fd links/maps read; no argv/environ/credentials/mail or browser profiles. Denied/racing proc metadata retained, not escalated.",
+  "statStability": [
+    {
+      "path": "/home/rikka/.cache/cc-switch-3.20.1/cc-switch-bin-3.20.1-1-aarch64.pkg.tar.xz",
+      "initial": {
+        "bytes": 9026312,
+        "dev": 1050520,
+        "ino": 1688402,
+        "nlink": 1,
+        "mtimeMs": 1793895395146.9988,
+        "ctimeMs": 1793895395146.9988
+      },
+      "final": {
+        "bytes": 9026312,
+        "dev": 1050520,
+        "ino": 1688402,
+        "nlink": 1,
+        "mtimeMs": 1793895395146.9988,
+        "ctimeMs": 1793895395146.9988
+      },
+      "unchanged": true
+    },
+    {
+      "path": "/home/rikka/.cache/cc-switch-3.20.1/src/data.tar.gz",
+      "initial": {
+        "bytes": 13038811,
+        "dev": 1050520,
+        "ino": 1688378,
+        "nlink": 1,
+        "mtimeMs": 1787877321000,
+        "ctimeMs": 1793895387242.9988
+      },
+      "final": {
+        "bytes": 13038811,
+        "dev": 1050520,
+        "ino": 1688378,
+        "nlink": 1,
+        "mtimeMs": 1787877321000,
+        "ctimeMs": 1793895387242.9988
+      },
+      "unchanged": true
+    },
+    {
+      "path": "/home/rikka/.cache/paru-bootstrap/paru-bin-2.2.0-1-aarch64.pkg.tar.xz",
+      "initial": {
+        "bytes": 2291284,
+        "dev": 1050520,
+        "ino": 1688017,
+        "nlink": 1,
+        "mtimeMs": 1793894369854.999,
+        "ctimeMs": 1793894369854.999
+      },
+      "final": {
+        "bytes": 2291284,
+        "dev": 1050520,
+        "ino": 1688017,
+        "nlink": 1,
+        "mtimeMs": 1793894369854.999,
+        "ctimeMs": 1793894369854.999
+      },
+      "unchanged": true
+    },
+    {
+      "path": "/usr/bin/cc-switch",
+      "initial": {
+        "bytes": 28914200,
+        "dev": 1050520,
+        "ino": 4050759,
+        "nlink": 1,
+        "mtimeMs": 1793895385000,
+        "ctimeMs": 1793895474366.9985
+      },
+      "final": {
+        "bytes": 28914200,
+        "dev": 1050520,
+        "ino": 4050759,
+        "nlink": 1,
+        "mtimeMs": 1793895385000,
+        "ctimeMs": 1793895474366.9985
+      },
+      "unchanged": true
+    },
+    {
+      "path": "/usr/bin/paru",
+      "initial": {
+        "bytes": 7214392,
+        "dev": 1050520,
+        "ino": 4050727,
+        "nlink": 1,
+        "mtimeMs": 1793894355000,
+        "ctimeMs": 1793894464738.999
+      },
+      "final": {
+        "bytes": 7214392,
+        "dev": 1050520,
+        "ino": 4050727,
+        "nlink": 1,
+        "mtimeMs": 1793894355000,
+        "ctimeMs": 1793894464738.999
+      },
+      "unchanged": true
+    },
+    {
+      "path": "/home/rikka/.cache/cc-switch-3.20.1/pkg/cc-switch-bin/usr/bin/cc-switch",
+      "initial": {
+        "bytes": 28914200,
+        "dev": 1050520,
+        "ino": 1688384,
+        "nlink": 1,
+        "mtimeMs": 1793895385000,
+        "ctimeMs": 1793895389038.9988
+      },
+      "final": {
+        "bytes": 28914200,
+        "dev": 1050520,
+        "ino": 1688384,
+        "nlink": 1,
+        "mtimeMs": 1793895385000,
+        "ctimeMs": 1793895389038.9988
+      },
+      "unchanged": true
+    },
+    {
+      "path": "/home/rikka/.cache/paru-bootstrap/pkg/paru-bin/usr/bin/paru",
+      "initial": {
+        "bytes": 7214392,
+        "dev": 1050520,
+        "ino": 1687923,
+        "nlink": 1,
+        "mtimeMs": 1793894355000,
+        "ctimeMs": 1793894368358.999
+      },
+      "final": {
+        "bytes": 7214392,
+        "dev": 1050520,
+        "ino": 1687923,
+        "nlink": 1,
+        "mtimeMs": 1793894355000,
+        "ctimeMs": 1793894368358.999
+      },
+      "unchanged": true
+    },
+    {
+      "path": "/home/rikka/.cache/paru-bootstrap/src/paru",
+      "initial": {
+        "bytes": 7214392,
+        "dev": 1050520,
+        "ino": 1687918,
+        "nlink": 1,
+        "mtimeMs": 1793230220000,
+        "ctimeMs": 1793894364114.999
+      },
+      "final": {
+        "bytes": 7214392,
+        "dev": 1050520,
+        "ino": 1687918,
+        "nlink": 1,
+        "mtimeMs": 1793230220000,
+        "ctimeMs": 1793894364114.999
+      },
+      "unchanged": true
+    },
+    {
+      "path": "/home/rikka/.cache/cc-switch-3.20.1/CC-Switch-v3.20.1-Linux-arm64.deb",
+      "initial": {
+        "bytes": 13039518,
+        "dev": 1050520,
+        "ino": 1688369,
+        "nlink": 1,
+        "mtimeMs": 1793895304466.8918,
+        "ctimeMs": 1793895385602.9988
+      },
+      "final": {
+        "bytes": 13039518,
+        "dev": 1050520,
+        "ino": 1688369,
+        "nlink": 1,
+        "mtimeMs": 1793895304466.8918,
+        "ctimeMs": 1793895385602.9988
+      },
+      "unchanged": true
+    },
+    {
+      "path": "/home/rikka/.cache/paru-bootstrap/paru-v2.2.0-aarch64.tar.zst",
+      "initial": {
+        "bytes": 3266380,
+        "dev": 1050520,
+        "ino": 1687765,
+        "nlink": 1,
+        "mtimeMs": 1793894363982.999,
+        "ctimeMs": 1793894363994.999
+      },
+      "final": {
+        "bytes": 3266380,
+        "dev": 1050520,
+        "ino": 1687765,
+        "nlink": 1,
+        "mtimeMs": 1793894363982.999,
+        "ctimeMs": 1793894363994.999
+      },
+      "unchanged": true
+    }
+  ],
+  "noCredentialOrMailContentsRead": true,
+  "noDeletionMoveOverwriteInstallSudoGitOrFormalDCWrite": true
+}
