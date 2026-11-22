@@ -1,0 +1,9 @@
+# 第9、10话三条短语音
+
+新增10450054/26：vo_adv_subaru,advg_subaru_kyoufu；10450054/27：vo_adv_elsa,advg_elza_kantan；10040043/9：vo_adv_ricardo,advk_ricardo_kougi。10040043属于第1章第9话，10450054属于第10话。
+
+原声量化记录、负控、原生音频链（P30）、P31已有原图卡片见证经两名代理及根线程交叉审核。接受范围是短语音资源身份及保守对白放置；P31原ACB链索引仍未知。P30旧测量没有自带PCM摘要，后补摘要的来源与历史证据边界保留。未试听、未恢复原CSV/语音相位、gain、loop或整句配音。
+
+正常native_repair stage47658 exit0、native_install audit f1942a exit0、apply7ac495 exit0，批次5532643b4e935c9a7301。仅三个native voice叶值变化，完整52/110节点、分支、其他字段及138对其他场景均保留。目标角色字段仍为空；第27/9节点的text_review_pending保留。此包的连续实播、完整动作表情与整话验收尚未完成。
+
+首次wrapper启动因未提供项目PYTHONPATH，在模块导入前失败且未产生staging；原错误记录保留。修正启动参数后正常模块仅实际执行一次。父提交026a保存原native/review字节；全部实际JSON解析输入仍完整保留于本地，索引提供原字节摘要，当前保存结果与已审核stage完全相同。stage manifest在本目录使用lossless gzip，INDEX同时记录原始与存储摘要。

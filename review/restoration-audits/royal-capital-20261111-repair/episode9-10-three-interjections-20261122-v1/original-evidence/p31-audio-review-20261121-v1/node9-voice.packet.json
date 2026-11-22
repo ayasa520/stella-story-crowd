@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "status": "resource-identification-reviewed-awaiting-root-install-acceptance",
+  "changes": [
+    {
+      "sceneId": 10040043,
+      "scenarioId": 9,
+      "stableKey": "s10040043-p31-at0291",
+      "rootConfirmed": false,
+      "expected": {"voice": ""},
+      "fields": {"voice": "vo_adv_ricardo,advk_ricardo_kougi"},
+      "evidence": {
+        "recordingId": "bili-capital-31",
+        "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/31 9本篇「结束与开始」Ver蜜蜜.mp4",
+        "sourceSha256": "7f5bf8a6e10ad2afd02e53a039c60dfcdc378eec3b3062e1f75446437db7497f",
+        "freshSourceDecodeWindowSeconds": [288.0, 300.0],
+        "sourceCueZeroSeconds": 291.2615,
+        "cue": "vo_adv_ricardo/advk_ricardo_kougi",
+        "cueSha256": "35d8cd6523383045ab55aac5a1537abe054a95e9de47086341b02d65ab9a0881",
+        "signedCorrelation4000Hz": 0.996854686,
+        "signedCorrelation8000Hz": 0.994942585,
+        "signedCorrelation16000Hz": 0.994879973,
+        "sameCueZeroAcrossAllRates": true,
+        "negativeControls": {
+          "bank": "vo_adv_ricardo",
+          "otherCues": 35,
+          "maximumSignedCorrelationAcrossTwelveSeconds": 0.294241212,
+          "maximumSignedCorrelationNearCurrentCardCue": 0.191659866,
+          "nearCurrentCardCueZeroSeconds": [291.0, 291.8]
+        },
+        "visualBoundaryWitness": {
+          "reviewer": "p31_source_review",
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-source-review-20261121-v1/node9-at291p30.jpg",
+          "sourceSeconds": 291.30,
+          "observation": "Ricardo is visible; the panel names リカード and has begun うおい！. No prior card or choice overlay remains."
+        },
+        "resourceIdentityAccepted": true,
+        "subjectiveListeningPerformed": false,
+        "acceptanceBasis": "Fresh signed waveform match across three sample rates and unique same-bank controls, aligned to the directly witnessed current dialogue card.",
+        "limitations": "The cue is a short interjection, not a complete spoken version of the saved dialogue. Exact original node ID and command phase remain unrecovered. Saved-player transport has not yet been tested for this new binding.",
+        "measurements": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p31-audio-review-20261121-v1/measurements.json"
+      }
+    }
+  ]
+}
