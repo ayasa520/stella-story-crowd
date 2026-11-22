@@ -295,7 +295,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character",
         "character_image",
@@ -316,7 +315,6 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 3,
           "fields": [
-            "bg_music",
             "bg_picture",
             "character",
             "character_image",
@@ -372,7 +370,128 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/graphs/translations-21-31/10030001.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-bgm-root-preparation-610795a9-v1/node-fields.root-approved.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "existingResourceIdentityAcceptance": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p21-actual-entry-bgm.json",
+                "bytes": 4201,
+                "sha256": "d867a4f7f91d58178a4688497858b119d7419fc2536760d9b5536b2923ac5abd",
+                "status": "accepted_actual_card_music_entry_only",
+                "originalRootConfirmedPreserved": false,
+                "originalChangeRootConfirmedPreserved": false
+              },
+              "verifiedBGMComponents": [
+                "resource-id"
+              ],
+              "independentOfflineMeasurementReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-bare-bgm-normal-preparation-rootfalse-v1/measurement-review.rootfalse.json",
+                "sha256": "cb5454929585787fcc679f6c8c62e1e3efa048ea055483ef0feebb5648958d17"
+              },
+              "sourceAttribution": {
+                "segmentId": "p21-s10030001",
+                "start": 23,
+                "end": 25,
+                "sourceAnchorSeconds": 23,
+                "ocrReviewed": false,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/21/coarse-1hz/crops/000750-dialogue.png",
+                "ocrEventId": "merged-0004",
+                "sourceSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/21 8本篇「再会的魔女」.mp4",
+                "originalOCRText": "王都の商業街・昼",
+                "ocrConfidence": 0.99479,
+                "ocrReviewReasons": [],
+                "recordingId": "bili-capital-21"
+              },
+              "sourceVideoDeclared": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/21 8本篇「再会的魔女」.mp4",
+                "sha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+                "readOrHashedThisTask": false
+              },
+              "currentJapaneseReviewSource": "王都の商業街・昼",
+              "originalWrapperParametersNotCopiedOrAccepted": true,
+              "sourceExactCSVFieldRecovered": false,
+              "originalCommandPhaseRecovered": false,
+              "audioListened": false,
+              "resourceIdentityOnly": true,
+              "authoredFadeParameterRecovered": false,
+              "authoredRestartParameterRecovered": false,
+              "volumeOrLoopAuthoredByThisField": false,
+              "authoredOffsetOrSTOPRecovered": false,
+              "bareIDSyntaxEvidence": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/native-syntax-and-original-source.rootfalse.json",
+                "bytes": 16876,
+                "sha256": "5d2ddc9e0b88fd6943246323769fa19e784ac7a0cfd1258f79b3291a80acfa08"
+              },
+              "parameterProvenance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/csv-parameter-provenance.rootfalse.json",
+                "bytes": 9694,
+                "sha256": "4d01bd5a9fbc692e2681862af06857562a51df07a0b0a5c6d7740e00e227a504"
+              },
+              "registrationPrerequisite": {
+                "proposal": {
+                  "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-current-root-preparation-rootfalse-v2/proposal.rootfalse.json",
+                  "bytes": 11298,
+                  "sha256": "6c1f92af6373831d5e765d15f11764d3d4371391296215d0629c8ff62e5d26b3"
+                },
+                "receipt": {
+                  "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-current-root-preparation-rootfalse-v2/receipt.rootfalse.json",
+                  "bytes": 2585,
+                  "sha256": "5654c6d0824d1a122afe4501d7a39c3881cd447d04b4c66b8a385da8244d5db9"
+                },
+                "semanticDiff": {
+                  "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-current-root-preparation-rootfalse-v2/semantic-diff.rootfalse.json",
+                  "bytes": 2692,
+                  "sha256": "391045fbfd759ef450907da30e95eb609b7e9435785a42bde1781dc0cd15c909"
+                },
+                "appliedAndFreshPublishedHEADVerified": true,
+                "finalRegistrationReceipt": {
+                  "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-registration-final-publication-receipt-v1.json",
+                  "bytes": 1937,
+                  "sha256": "05849d0a35a9792c200d45d8441ea7f56fb9fea9bd91327aaaceb6036051be3e"
+                },
+                "installedResourceGuards": [
+                  {
+                    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/catalog.json",
+                    "bytes": 4606201,
+                    "sha256": "009fb8072b8cf56f6c95ade4587f4132cabd2eae9e7ee74af130c4582087ff87"
+                  },
+                  {
+                    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/package.json",
+                    "bytes": 1972951,
+                    "sha256": "47ca071baf350f30aff163b743e6c315e426e338537b7b09f8d8cd34c5cb5fde"
+                  },
+                  {
+                    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/preview/catalog.json",
+                    "bytes": 1099290,
+                    "sha256": "22cc9b08e6f086556562de1c12fa1594eda2adae2c28940512be74f72d3d4cce"
+                  },
+                  {
+                    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/preview/music/bgm_adv_every07_cd2_13.opus",
+                    "bytes": 1234086,
+                    "sha256": "a18e0d54d0ecc2fb7539252b846fbed3d896f87b1c01249d6be3458cd48e2617"
+                  },
+                  {
+                    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/preview/music/bgm_adv_every07_cd2_13.json",
+                    "bytes": 287,
+                    "sha256": "c7fbf10e16be73440337bdec9cd19b77c17618872473fc504914ee9f0a8b4f41"
+                  }
+                ]
+              },
+              "retainedSourceLimits": [
+                "Stored waveform measurements and previous narrow source-card image review only; no new listening or PCM computation.",
+                "No authored CSVfade/reset/gain/volume/loop/offset/STOP or command phase acceptance.",
+                "No voice/SE/motion/text/branch change or whole-scene/continuous-playback acceptance."
+              ],
+              "rootReviewedMinimalResourceIdentityOnly": true
+            }
+          }
+        ]
       }
     },
     "4": {
@@ -3741,7 +3860,6 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 3,
       "fields": [
-        "bg_music",
         "bg_picture",
         "character",
         "character_image",
