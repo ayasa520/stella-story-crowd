@@ -1,0 +1,7 @@
+# Episode10 Rom short cue at10450054/10
+
+Set only the empty voice leaf to vo_adv_rom,advg_rom_hikitomeru. The existing Rom model, all52 complete ordered native rows and branches, all other fields, previous evidence and text-review warnings remain intact. The source whole/active/three-piece comparison and40Rom+Felt controls support this short-cue identity and recorded64–70.5s card placement. The unchanged weakest middle piece is0.8505984972222078; NCC is not correctness probability. The observed cue zero64.13075s is not an authored script phase or offset. No listening, original CSV/phase/gain/loop, full sentence speech, body/face/timing or saved gameplay acceptance is made.
+
+The WAV and existing default Opus/indices/catalog were checked without new decoding or resource changes. The compressed file has no independent package SHA entry; its complete current SHA and committed blob were guarded without claiming codec equivalence. The historical original ACB/AWB extraction freeze is not invented.
+
+Root rebound the current complete native/review pair and all13 fields to a1ae3cb4. Original normal stage, audit and apply passed. Complete stage undo/review/summary and saved manifest/ownership/one-batch/protected22 checks passed; the other139 scene pairs remain unchanged. The earlier31section UI attempt is separately failed and fully closed before this apply; its exact independent closure is retained, not reclassified. All uncompressed evidence is losslessly gzip stored; existing gzip bodies remain exact.
