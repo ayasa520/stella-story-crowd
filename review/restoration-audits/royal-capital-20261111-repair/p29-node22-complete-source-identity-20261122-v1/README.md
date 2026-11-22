@@ -1,0 +1,7 @@
+# P29 node22: complete source identity review
+
+Scene10040052 node22, UID1004005200022, stableKey s10040052-p29-at0294p5: character empty → live2d/AC_subaru_tshirt01. Two independent reviewers covered all270 original frames and23 chronological contacts from292.023–300.989, with native-size witnesses, then compared intact shoulders and sleeves against the original01/02 resources. The window includes this node entry, typing, hold and exit plus its neighbouring boundaries. Node23 identity/performance is not accepted.
+
+Normal repair, audit and apply preserve the other37 authored rows, all IDs/branches/ordering, the other139 scene pairs and first22 protected files. Only one native character leaf changes; review metadata records that single accepted resource. Acting, facial expression, provider/native phase, exact timing, geometry, original CSV and saved continuous playback remain pending.
+
+All23 contacts cover the270 source frames once in order. Selected directly reviewed native witnesses are also included. Full original frames and video remain at the recorded local paths/hashes; no synthetic frame or cross-gap source stitch was used. Byte mappings are in archive-manifest.json; new gzip transports preserve original JSON byte streams. Historical pre-install native/review fingerprints are retained as historical guards, while root-saved-verification records the intentional installed change.

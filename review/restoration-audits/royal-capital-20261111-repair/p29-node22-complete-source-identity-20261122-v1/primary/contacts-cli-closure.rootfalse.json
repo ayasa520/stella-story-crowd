@@ -1,0 +1,59 @@
+{
+  "schema": "stella.P29.node22.contact-composition-cli-terminal.v1",
+  "rootConfirmed": false,
+  "observedUTC": "2026-11-22T00:52:33.242220+00:00",
+  "actualExecution": {
+    "tool": "exec_command",
+    "chunkId": "ce791a",
+    "sessionId": null,
+    "synchronousCompletion": true,
+    "exitCode": 0,
+    "wallTimeSeconds": 3.217332655,
+    "argv": [
+      "/usr/bin/env",
+      "OMP_NUM_THREADS=1",
+      "OPENBLAS_NUM_THREADS=1",
+      "MKL_NUM_THREADS=1",
+      "NUMEXPR_NUM_THREADS=1",
+      "/usr/bin/nice",
+      "-n",
+      "19",
+      "/usr/bin/taskset",
+      "-c",
+      "0,1",
+      "/home/rikka/Projects/stella/.venv-video-ocr/bin/python",
+      "-I",
+      "-B",
+      "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-complete-source-identity-review-v1/make_contacts.py"
+    ],
+    "stdout": {
+      "status": "contacts-ready-unreviewed",
+      "sheets": 23,
+      "frames": 270,
+      "contactBytes": 8669522,
+      "folderBytes": 8700081
+    }
+  },
+  "generator": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-complete-source-identity-review-v1/make_contacts.py",
+    "bytes": 6549,
+    "sha256": "d58c85f7256274ff153c9b738eb38c0d92b473cb746a3fd269436983896a9813"
+  },
+  "contactsIndex": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-complete-source-identity-review-v1/contacts-index.json",
+    "bytes": 14195,
+    "sha256": "06118fd891019b3d6d58deb5db65e76996f11172db9519ceccc7c76c2915f1c0"
+  },
+  "exactGeneratorArgvTokenProcessesAfterExit": [],
+  "generatorCLIAbsent": true,
+  "procPermissionDeniedPids": [],
+  "noProducerOrSupervisorPIDInvented": true,
+  "sourceCaptureRootClosure": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-source-root-closure-v1.json",
+    "bytes": 1640,
+    "sha256": "eb1130433860100b82354e238fe1c2420b33601b5b1a522323613d7fd05d119b"
+  },
+  "imagesViewed": false,
+  "rootIndependentContactCLIClosureConfirmationStillRequiredBeforeImageReview": true,
+  "videoDecodeBrowserAPIOrFormalWrites": false
+}

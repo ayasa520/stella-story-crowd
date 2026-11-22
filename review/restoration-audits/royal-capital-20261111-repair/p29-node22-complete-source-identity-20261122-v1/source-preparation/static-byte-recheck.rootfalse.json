@@ -1,0 +1,126 @@
+{
+  "schema": "stella.P29.node22.static-literal-diff-verification.v1",
+  "rootConfirmed": false,
+  "executedBase": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node20-source-capture-preparation-rootfalse-v1/capture.py",
+    "bytes": 23158,
+    "sha256": "9151cdad8699aba7e0f73f3c3e43290edf029226e5fd9b6511f2da3853cc15b7"
+  },
+  "newScript": {
+    "file": "capture.py",
+    "bytes": 23158,
+    "sha256": "1d7135622f82b39a8ba7c0c7698cc1d27f2f5a4aaf2a94a1e4a77a19e19cc962"
+  },
+  "baseLineCount": 445,
+  "newLineCount": 445,
+  "changedSingleLineReplacements": [
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        1,
+        1
+      ],
+      "newLinesOneBased": [
+        1,
+        1
+      ],
+      "before": [
+        "\"\"\"One unexecuted P29 node20 source-window adapter, prepared for an exact root release."
+      ],
+      "after": [
+        "\"\"\"One unexecuted P29 node22 source-window adapter, prepared for an exact root release."
+      ]
+    },
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        38,
+        38
+      ],
+      "newLinesOneBased": [
+        38,
+        38
+      ],
+      "before": [
+        "START, END, MAX_FRAMES = 283, 291, 300"
+      ],
+      "after": [
+        "START, END, MAX_FRAMES = 292, 301, 300"
+      ]
+    },
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        144,
+        144
+      ],
+      "newLinesOneBased": [
+        144,
+        144
+      ],
+      "before": [
+        "                        need(START <= exact < END, 'Original integer PTS is outside 283<=PTS<291')"
+      ],
+      "after": [
+        "                        need(START <= exact < END, 'Original integer PTS is outside 292<=PTS<301')"
+      ]
+    },
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        239,
+        239
+      ],
+      "newLinesOneBased": [
+        239,
+        239
+      ],
+      "before": [
+        "            '-vf', r'select=gte(t\\,283)*lt(t\\,291),showinfo', '-frames:v', str(MAX_FRAMES),"
+      ],
+      "after": [
+        "            '-vf', r'select=gte(t\\,292)*lt(t\\,301),showinfo', '-frames:v', str(MAX_FRAMES),"
+      ]
+    },
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        361,
+        361
+      ],
+      "newLinesOneBased": [
+        361,
+        361
+      ],
+      "before": [
+        "    parser = argparse.ArgumentParser(description='One root-reviewed P29 node20 283<=originalPTS<291 capture')"
+      ],
+      "after": [
+        "    parser = argparse.ArgumentParser(description='One root-reviewed P29 node22 292<=originalPTS<301 capture')"
+      ]
+    },
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        426,
+        426
+      ],
+      "newLinesOneBased": [
+        426,
+        426
+      ],
+      "before": [
+        "        receipt = dict(schema='stella.P29.node20.single-source-capture.v1',"
+      ],
+      "after": [
+        "        receipt = dict(schema='stella.P29.node22.single-source-capture.v1',"
+      ]
+    }
+  ],
+  "reverseRestoresBaseBytes": true,
+  "reverseSHA256": "9151cdad8699aba7e0f73f3c3e43290edf029226e5fd9b6511f2da3853cc15b7",
+  "unchangedLogicOutsideSixLiteralLines": true,
+  "captureNotImportedCompiledOrRun": true,
+  "newRunDirectoryExists": false,
+  "imagesVideoModelsAndToolBinariesNotRead": true
+}

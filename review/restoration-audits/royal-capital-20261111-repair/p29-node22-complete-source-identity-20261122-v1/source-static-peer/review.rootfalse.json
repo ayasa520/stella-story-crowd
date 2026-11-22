@@ -1,0 +1,292 @@
+{
+  "schema": "stella.P29.node22.source-capture-independent-static-review.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "installationAuthorized": false,
+  "verdict": "STATIC_PASS_NO_MUSTFIX_EXECUTION_NOT_AUTHORIZED",
+  "mustFix": [],
+  "script": {
+    "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/capture.py",
+    "bytes": 23158,
+    "sha256": "1d7135622f82b39a8ba7c0c7698cc1d27f2f5a4aaf2a94a1e4a77a19e19cc962"
+  },
+  "preparationReceipt": {
+    "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/preparation-receipt.rootfalse.json",
+    "bytes": 3701,
+    "sha256": "765863097dd0f14a72c2f7f857adb88ae752d9f4c7153be712fc9e506faa60be"
+  },
+  "completeSourceInspectedAsText": {
+    "physicalLines445": true,
+    "sourceParsedImportedCompiledASTTestedOrExecuted": false
+  },
+  "actualLiteralDiff": {
+    "base": {
+      "path": "artifacts/stella-script-continuation-20261121/p29-node20-source-capture-preparation-rootfalse-v1/capture.py",
+      "bytes": 23158,
+      "sha256": "9151cdad8699aba7e0f73f3c3e43290edf029226e5fd9b6511f2da3853cc15b7"
+    },
+    "baseExecutionReceipt": {
+      "path": "artifacts/stella-script-continuation-20261121/p29-node20-source-capture-preparation-rootfalse-v1/run-1/receipt.json",
+      "bytes": 3475,
+      "sha256": "b8bf315d50f06e2397009c18e88dfdd64ba30900b944c8e526bb71dcd7f43953"
+    },
+    "baseRootClosure": {
+      "path": "artifacts/stella-script-continuation-20261121/p29-node20-source-root-closure-v1.json",
+      "bytes": 1486,
+      "sha256": "214fc82e9d94dca811fcee164e4d67d87724c70843387cbba48e8a9fb3ed0d70"
+    },
+    "changedLines": [
+      {
+        "line": 1,
+        "before": "\"\"\"One unexecuted P29 node20 source-window adapter, prepared for an exact root release.",
+        "after": "\"\"\"One unexecuted P29 node22 source-window adapter, prepared for an exact root release."
+      },
+      {
+        "line": 38,
+        "before": "START, END, MAX_FRAMES = 283, 291, 300",
+        "after": "START, END, MAX_FRAMES = 292, 301, 300"
+      },
+      {
+        "line": 144,
+        "before": "                        need(START <= exact < END, 'Original integer PTS is outside 283<=PTS<291')",
+        "after": "                        need(START <= exact < END, 'Original integer PTS is outside 292<=PTS<301')"
+      },
+      {
+        "line": 239,
+        "before": "            '-vf', r'select=gte(t\\,283)*lt(t\\,291),showinfo', '-frames:v', str(MAX_FRAMES),",
+        "after": "            '-vf', r'select=gte(t\\,292)*lt(t\\,301),showinfo', '-frames:v', str(MAX_FRAMES),"
+      },
+      {
+        "line": 361,
+        "before": "    parser = argparse.ArgumentParser(description='One root-reviewed P29 node20 283<=originalPTS<291 capture')",
+        "after": "    parser = argparse.ArgumentParser(description='One root-reviewed P29 node22 292<=originalPTS<301 capture')"
+      },
+      {
+        "line": 426,
+        "before": "        receipt = dict(schema='stella.P29.node20.single-source-capture.v1',",
+        "after": "        receipt = dict(schema='stella.P29.node22.single-source-capture.v1',"
+      }
+    ],
+    "uniqueAllowedReplacements": [
+      {
+        "before": "One unexecuted P29 node20 source-window adapter, prepared for an exact root release.",
+        "after": "One unexecuted P29 node22 source-window adapter, prepared for an exact root release.",
+        "beforeOccurrenceCount": 1,
+        "afterOccurrenceCount": 1
+      },
+      {
+        "before": "START, END, MAX_FRAMES = 283, 291, 300",
+        "after": "START, END, MAX_FRAMES = 292, 301, 300",
+        "beforeOccurrenceCount": 1,
+        "afterOccurrenceCount": 1
+      },
+      {
+        "before": "Original integer PTS is outside 283<=PTS<291",
+        "after": "Original integer PTS is outside 292<=PTS<301",
+        "beforeOccurrenceCount": 1,
+        "afterOccurrenceCount": 1
+      },
+      {
+        "before": "select=gte(t\\,283)*lt(t\\,291),showinfo",
+        "after": "select=gte(t\\,292)*lt(t\\,301),showinfo",
+        "beforeOccurrenceCount": 1,
+        "afterOccurrenceCount": 1
+      },
+      {
+        "before": "One root-reviewed P29 node20 283<=originalPTS<291 capture",
+        "after": "One root-reviewed P29 node22 292<=originalPTS<301 capture",
+        "beforeOccurrenceCount": 1,
+        "afterOccurrenceCount": 1
+      },
+      {
+        "before": "stella.P29.node20.single-source-capture.v1",
+        "after": "stella.P29.node22.single-source-capture.v1",
+        "beforeOccurrenceCount": 1,
+        "afterOccurrenceCount": 1
+      }
+    ],
+    "reverseSha256": "9151cdad8699aba7e0f73f3c3e43290edf029226e5fd9b6511f2da3853cc15b7",
+    "reverseExactlyBaseBytes": true,
+    "storedUnifiedDiffExact": true,
+    "unmodifiedRemainderByteExact": true
+  },
+  "ownerArtifactHashChecks": [
+    {
+      "path": "README.zh-CN.md",
+      "expectedSha256": "c8b909e04d8f17099c5d162a68497a104532ef0872644c2d1dcba0d24162b1aa",
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/README.zh-CN.md",
+        "bytes": 2964,
+        "sha256": "c8b909e04d8f17099c5d162a68497a104532ef0872644c2d1dcba0d24162b1aa"
+      },
+      "passed": true
+    },
+    {
+      "path": "capture.py",
+      "expectedSha256": "1d7135622f82b39a8ba7c0c7698cc1d27f2f5a4aaf2a94a1e4a77a19e19cc962",
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/capture.py",
+        "bytes": 23158,
+        "sha256": "1d7135622f82b39a8ba7c0c7698cc1d27f2f5a4aaf2a94a1e4a77a19e19cc962"
+      },
+      "passed": true
+    },
+    {
+      "path": "input-bindings.rootfalse.json",
+      "expectedSha256": "ccf5413e466d69dadc6693334469537c2071174ba20625b721994cdc67383086",
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/input-bindings.rootfalse.json",
+        "bytes": 15116,
+        "sha256": "ccf5413e466d69dadc6693334469537c2071174ba20625b721994cdc67383086"
+      },
+      "passed": true
+    },
+    {
+      "path": "node20-to-node22.minimal.diff",
+      "expectedSha256": "564701c05a8d059c336c4840b765ca38da35f1ef785fd2e2f2026aff6e193c0a",
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/node20-to-node22.minimal.diff",
+        "bytes": 3343,
+        "sha256": "564701c05a8d059c336c4840b765ca38da35f1ef785fd2e2f2026aff6e193c0a"
+      },
+      "passed": true
+    },
+    {
+      "path": "plan.rootfalse.json",
+      "expectedSha256": "d1b005468a0dc8aaf34d201b78a45f95ea87cdce9a6fe49ee0bf20cc41bd7175",
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/plan.rootfalse.json",
+        "bytes": 9943,
+        "sha256": "d1b005468a0dc8aaf34d201b78a45f95ea87cdce9a6fe49ee0bf20cc41bd7175"
+      },
+      "passed": true
+    },
+    {
+      "path": "static-byte-recheck.rootfalse.json",
+      "expectedSha256": "84382e89a53dc38ba4e115e9708d8271cc58844788bec89376a73cd2b6c58974",
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/static-byte-recheck.rootfalse.json",
+        "bytes": 3315,
+        "sha256": "84382e89a53dc38ba4e115e9708d8271cc58844788bec89376a73cd2b6c58974"
+      },
+      "passed": true
+    }
+  ],
+  "currentTarget": {
+    "sceneId": 10040052,
+    "scenarioId": 22,
+    "uniqId": 1004005200022,
+    "arrayIndex": 21,
+    "stableKey": "s10040052-p29-at0294p5",
+    "sourceText": "恩に着るぜ。ほら、いくぞ、ユーリ",
+    "expected13": {
+      "bg_music": "",
+      "bg_picture": "",
+      "character": "",
+      "character_image": "",
+      "motion": "",
+      "msg_character": "スバル",
+      "msg_text": "谢啦。走吧，尤里。",
+      "position": "",
+      "se": "",
+      "talk_chara": "",
+      "video": "",
+      "voice": "",
+      "command": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "nativeFile": {
+      "path": "artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10040052.json",
+      "bytes": 97472,
+      "sha256": "1c044ebc08a09fccdb6bf651af5f5f156f6bc44b201d67c090f38094bf5229a5"
+    },
+    "reviewFile": {
+      "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10040052.json",
+      "bytes": 381847,
+      "sha256": "6ddb99f19a111032f125a663fc437f6097183cd13722e4c0d7c673084168e015"
+    },
+    "ownershipLedger": {
+      "path": "artifacts/stella-script-continuation-20261121/data-checkout/review/native-restoration.json",
+      "bytes": 38859,
+      "sha256": "0259488c7a9d171ed3b1e9244a2b9283597fbe7cad3592ac63e548239163c96c"
+    },
+    "fullRowAndSidecarMatchOwner": true,
+    "matchSealedNextWindow": {
+      "path": "artifacts/stella-script-continuation-20261121/p29-next-source-window-after-node20-rootfalse-v1/next-window.rootfalse.json",
+      "bytes": 37422,
+      "sha256": "9c408cdd5f04f8a28515bcb40323433fa008f0e6eb136ef2467be30829bfdbd3"
+    },
+    "characterStillEmpty": true,
+    "modelChosen": null,
+    "fieldsProposed": {}
+  },
+  "codeChecks": {
+    "isolation": {
+      "line": 365,
+      "source": "main -I/-B and original venv gates"
+    },
+    "scheduler": {
+      "line": 367,
+      "source": "nice19 CPU[0,1] and native env1, producer inherited values independently checked"
+    },
+    "originalPTS": {
+      "line": 143,
+      "source": "actual showinfo timebase, ordered original integerPTS,292<=PTS<301 gate"
+    },
+    "sharedBudget": {
+      "line": 82,
+      "source": "HERE recursive preparation+run total; RAM complete payload, locked pre-write<80MiB/<96MiB emergency, reserve16MiB"
+    },
+    "noSampling": {
+      "line": 239,
+      "source": "copyts/select/showinfo, passthrough,480x856 fullframe; no fps/scale/crop/PTS rewrite"
+    },
+    "capFailure": {
+      "line": 282,
+      "source": "1..299 only;300 sentinel fails; this is not expected-frame-count/visual-coverage acceptance"
+    },
+    "ownedCleanup": {
+      "line": 195,
+      "source": "new PID-named session only;TERM/KILL/wait/reap/PID&PG plus reader observations; original error kept"
+    },
+    "freshPins": {
+      "line": 390,
+      "source": "runtime source/tool/script/Pillow before/independent after; peer only metadata/code reads"
+    },
+    "outputOnlyNewHere": {
+      "line": 27,
+      "source": "fresh run-1 no retry/overwrite; no D/C/Git/API/browser paths as output"
+    },
+    "EOF": {
+      "line": 356,
+      "source": "selected producer EOF only; never whole original video EOF or visible actor/source-exit proof"
+    }
+  },
+  "budgetSnapshot": {
+    "preparationBytes": 62712,
+    "ordinaryCeilingBytes": 83886080,
+    "hardCapBytes": 100663296,
+    "failureReserveBytes": 16777216,
+    "stderrCapBytes": 1048576,
+    "filesystemFreeBytesMetadataOnly": 187564032,
+    "currentMetadataFreeAtLeastCap": true,
+    "futureRuntimeFreshFreeCheckRequiredByScript": true,
+    "diskCapacityPredictionOrGuarantee": false
+  },
+  "limits": [
+    "Static adaptation review only; no new execution approval.",
+    "120s is capture-transport deadline, not a total CLI bound including hash/cleanup observations.",
+    "Natural EOF below300 proves selected producer ended without sentinel truncation, not physical whole-video EOF, source actor exit or complete target-boundary coverage.",
+    "The technical completion criterion allows1..299 frames. Actual original PTS/count and complete boundary sufficiency remain future result/review evidence.",
+    "Original image/identity/action/phase/timing/audio and saved playback acceptance remain false.",
+    "Preparation flags are metadata, not a built-in CLI approval gate; exact root invocation remains separate.",
+    "Source video, images, MOC/texture, tool ELF and Pillow package bytes were not read by this peer; only existing metadata and Python source were read."
+  ],
+  "runDirectoryAbsent": true,
+  "oldFramesNotJoinedOrRead": true,
+  "noBusinessHelperAPIOrBrowserUsed": true,
+  "noDCOrOldEvidenceWritten": true
+}

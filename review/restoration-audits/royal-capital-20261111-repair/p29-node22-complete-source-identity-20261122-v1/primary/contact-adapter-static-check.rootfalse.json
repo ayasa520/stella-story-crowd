@@ -1,0 +1,143 @@
+{
+  "schema": "stella.P29.node22.contact-adapter-static-check.v1",
+  "rootConfirmed": false,
+  "baseScript": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node18-complete-source-identity-review-v1/make_contacts.py",
+    "bytes": 6535,
+    "sha256": "3534ee4c93f47ef3e53bbea27c78062be720507e61e178f832b3e470d22e7f88"
+  },
+  "newScript": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-complete-source-identity-review-v1/make_contacts.py",
+    "bytes": 6549,
+    "sha256": "d58c85f7256274ff153c9b738eb38c0d92b473cb746a3fd269436983896a9813"
+  },
+  "minimalDiff": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-complete-source-identity-review-v1/node18-to-node22.contacts.minimal.diff",
+    "bytes": 3486,
+    "sha256": "c0a9e6d4f3e8a07ee56028e4242e70d96c64a7cd574a3f14c8b372277f5bf7ce"
+  },
+  "changedLines": [
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        17,
+        18
+      ],
+      "newLinesOneBased": [
+        17,
+        18
+      ],
+      "before": [
+        "SOURCE = A / 'p29-node18-source-capture-preparation-rootfalse-v1/run-1'",
+        "CLOSURE = A / 'p29-node18-source-root-closure-v1.json'"
+      ],
+      "after": [
+        "SOURCE = A / 'p29-node22-source-capture-preparation-rootfalse-v1/run-1'",
+        "CLOSURE = A / 'p29-node22-source-root-closure-v1.json'"
+      ]
+    },
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        42,
+        43
+      ],
+      "newLinesOneBased": [
+        42,
+        43
+      ],
+      "before": [
+        "    need(sha(CLOSURE) == 'b84197aec6c4991ecebd896048e21376cd6f873d98826dfec1fa36793a5abb03', 'Root closure differs')",
+        "    need(sha(SOURCE / 'frames-index.json') == '63eb6f44a5b5138e9caf89852540427aee3f858b9b71044cfd65e3988d5a0b6c', 'Original frame index differs')"
+      ],
+      "after": [
+        "    need(sha(CLOSURE) == 'eb1130433860100b82354e238fe1c2420b33601b5b1a522323613d7fd05d119b', 'Root closure differs')",
+        "    need(sha(SOURCE / 'frames-index.json') == '17ef6a541fabbc82e35fb43d879ef1f8bc5214d9ad7d47975098edab569e3c34', 'Original frame index differs')"
+      ]
+    },
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        45,
+        45
+      ],
+      "newLinesOneBased": [
+        45,
+        45
+      ],
+      "before": [
+        "    need(closure['allRecordedAndEscapedMediaOrTestBrowserProcessesAbsent'] and closure['CLIExitVerifiedWithoutInventedSupervisorPID'], 'Root OS closure is missing')"
+      ],
+      "after": [
+        "    need(closure['decoderAbsent'] and closure['captureCLIAbsent'] and closure['allMediaAndTestBrowserProcessesAbsent'] and closure['exitCode'] == 0, 'Root OS closure is missing')"
+      ]
+    },
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        76,
+        76
+      ],
+      "newLinesOneBased": [
+        76,
+        76
+      ],
+      "before": [
+        "        draw.text((6, 5), f\"P29 node18 ORIGINAL | S{batch[0]['frameNumber']:03d}-S{batch[-1]['frameNumber']:03d} | complete row-major\", font=font, fill='white')"
+      ],
+      "after": [
+        "        draw.text((6, 5), f\"P29 node22 ORIGINAL | S{batch[0]['frameNumber']:03d}-S{batch[-1]['frameNumber']:03d} | complete row-major\", font=font, fill='white')"
+      ]
+    },
+    {
+      "tag": "replace",
+      "oldLinesOneBased": [
+        95,
+        95
+      ],
+      "newLinesOneBased": [
+        95,
+        95
+      ],
+      "before": [
+        "    result = dict(schema='stella.P29.node18.all270-original-frame-contacts.v1', rootConfirmed=False,"
+      ],
+      "after": [
+        "    result = dict(schema='stella.P29.node22.all270-original-frame-contacts.v1', rootConfirmed=False,"
+      ]
+    }
+  ],
+  "sevenScopeClosureSchemaLabelLinesOnly": true,
+  "reverseByteExactBaseSHA256": "3534ee4c93f47ef3e53bbea27c78062be720507e61e178f832b3e470d22e7f88",
+  "sourceIndexShapeUnchanged": true,
+  "sourceIndex": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/run-1/frames-index.json",
+    "bytes": 126168,
+    "sha256": "17ef6a541fabbc82e35fb43d879ef1f8bc5214d9ad7d47975098edab569e3c34"
+  },
+  "sourceCaptureReceipt": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/run-1/receipt.json",
+    "bytes": 3475,
+    "sha256": "d89cfaefe039778f69e968628a733696e796abc94308e0feaa878b5ed769c375"
+  },
+  "sourceRootClosure": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-source-root-closure-v1.json",
+    "bytes": 1640,
+    "sha256": "eb1130433860100b82354e238fe1c2420b33601b5b1a522323613d7fd05d119b"
+  },
+  "frameCount": 270,
+  "frameNumberRange": [
+    1,
+    270
+  ],
+  "originalPTS": [
+    "292.023",
+    "300.989"
+  ],
+  "originalTimeBase": "1/16000",
+  "onlyThisRun1ReferencedNoOldFramesJoined": true,
+  "contactPixelKernelBudgetPillowAndOriginalBeforeAfterChecksByteUnchanged": true,
+  "candidateImportedCompiledOrExecutedDuringStaticCheck": false,
+  "imageReviewStarted": false,
+  "rootAuthorizationScope": "One contact composition invocation only; no identity review until root independently confirms contact CLI closed."
+}

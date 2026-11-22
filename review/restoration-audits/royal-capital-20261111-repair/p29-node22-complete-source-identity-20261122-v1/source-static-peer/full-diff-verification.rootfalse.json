@@ -1,0 +1,93 @@
+{
+  "schema": "stella.P29.node22.full-source-diff-independent-static.v1",
+  "rootConfirmed": false,
+  "base": {
+    "path": "artifacts/stella-script-continuation-20261121/p29-node20-source-capture-preparation-rootfalse-v1/capture.py",
+    "bytes": 23158,
+    "sha256": "9151cdad8699aba7e0f73f3c3e43290edf029226e5fd9b6511f2da3853cc15b7"
+  },
+  "candidate": {
+    "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/capture.py",
+    "bytes": 23158,
+    "sha256": "1d7135622f82b39a8ba7c0c7698cc1d27f2f5a4aaf2a94a1e4a77a19e19cc962"
+  },
+  "changedLines": [
+    {
+      "line": 1,
+      "before": "\"\"\"One unexecuted P29 node20 source-window adapter, prepared for an exact root release.",
+      "after": "\"\"\"One unexecuted P29 node22 source-window adapter, prepared for an exact root release."
+    },
+    {
+      "line": 38,
+      "before": "START, END, MAX_FRAMES = 283, 291, 300",
+      "after": "START, END, MAX_FRAMES = 292, 301, 300"
+    },
+    {
+      "line": 144,
+      "before": "                        need(START <= exact < END, 'Original integer PTS is outside 283<=PTS<291')",
+      "after": "                        need(START <= exact < END, 'Original integer PTS is outside 292<=PTS<301')"
+    },
+    {
+      "line": 239,
+      "before": "            '-vf', r'select=gte(t\\,283)*lt(t\\,291),showinfo', '-frames:v', str(MAX_FRAMES),",
+      "after": "            '-vf', r'select=gte(t\\,292)*lt(t\\,301),showinfo', '-frames:v', str(MAX_FRAMES),"
+    },
+    {
+      "line": 361,
+      "before": "    parser = argparse.ArgumentParser(description='One root-reviewed P29 node20 283<=originalPTS<291 capture')",
+      "after": "    parser = argparse.ArgumentParser(description='One root-reviewed P29 node22 292<=originalPTS<301 capture')"
+    },
+    {
+      "line": 426,
+      "before": "        receipt = dict(schema='stella.P29.node20.single-source-capture.v1',",
+      "after": "        receipt = dict(schema='stella.P29.node22.single-source-capture.v1',"
+    }
+  ],
+  "allowedReplacementCounts": [
+    {
+      "before": "One unexecuted P29 node20 source-window adapter, prepared for an exact root release.",
+      "after": "One unexecuted P29 node22 source-window adapter, prepared for an exact root release.",
+      "beforeOccurrenceCount": 1,
+      "afterOccurrenceCount": 1
+    },
+    {
+      "before": "START, END, MAX_FRAMES = 283, 291, 300",
+      "after": "START, END, MAX_FRAMES = 292, 301, 300",
+      "beforeOccurrenceCount": 1,
+      "afterOccurrenceCount": 1
+    },
+    {
+      "before": "Original integer PTS is outside 283<=PTS<291",
+      "after": "Original integer PTS is outside 292<=PTS<301",
+      "beforeOccurrenceCount": 1,
+      "afterOccurrenceCount": 1
+    },
+    {
+      "before": "select=gte(t\\,283)*lt(t\\,291),showinfo",
+      "after": "select=gte(t\\,292)*lt(t\\,301),showinfo",
+      "beforeOccurrenceCount": 1,
+      "afterOccurrenceCount": 1
+    },
+    {
+      "before": "One root-reviewed P29 node20 283<=originalPTS<291 capture",
+      "after": "One root-reviewed P29 node22 292<=originalPTS<301 capture",
+      "beforeOccurrenceCount": 1,
+      "afterOccurrenceCount": 1
+    },
+    {
+      "before": "stella.P29.node20.single-source-capture.v1",
+      "after": "stella.P29.node22.single-source-capture.v1",
+      "beforeOccurrenceCount": 1,
+      "afterOccurrenceCount": 1
+    }
+  ],
+  "reverseExactlyBaseBytes": true,
+  "reverseSHA256": "9151cdad8699aba7e0f73f3c3e43290edf029226e5fd9b6511f2da3853cc15b7",
+  "storedUnifiedDiff": {
+    "path": "artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/node20-to-node22.minimal.diff",
+    "bytes": 3343,
+    "sha256": "564701c05a8d059c336c4840b765ca38da35f1ef785fd2e2f2026aff6e193c0a"
+  },
+  "storedUnifiedDiffExact": true,
+  "sourceReadOnlyNotParsedOrExecuted": true
+}

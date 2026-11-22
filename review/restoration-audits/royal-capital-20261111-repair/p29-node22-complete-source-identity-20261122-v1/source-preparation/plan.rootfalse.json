@@ -1,0 +1,275 @@
+{
+  "schema": "stella.P29.node22.one-standalone-source-preparation.v1",
+  "status": "OWNER_READY_SOURCE_ONLY_AWAIT_PEER_AND_ROOT_EXACT_EXECUTION",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "installationAuthorized": false,
+  "target": {
+    "sceneId": 10040052,
+    "scenarioId": 22,
+    "uniqId": 1004005200022,
+    "arrayIndex": 21,
+    "stableKey": "s10040052-p29-at0294p5",
+    "sourceText": "恩に着るぜ。ほら、いくぞ、ユーリ",
+    "sourceSpeakerOnlyLocatorNotIdentity": "スバル",
+    "expected13": {
+      "bg_music": "",
+      "bg_picture": "",
+      "character": "",
+      "character_image": "",
+      "motion": "",
+      "msg_character": "スバル",
+      "msg_text": "谢啦。走吧，尤里。",
+      "position": "",
+      "se": "",
+      "talk_chara": "",
+      "video": "",
+      "voice": "",
+      "command": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "fullRow": {
+      "bg_music": "",
+      "bg_picture": "",
+      "character": "",
+      "character_image": "",
+      "motion": "",
+      "msg_character": "スバル",
+      "msg_text": "谢啦。走吧，尤里。",
+      "position": "",
+      "se": "",
+      "talk_chara": "",
+      "video": "",
+      "voice": "",
+      "scenario_id": 22,
+      "uniq_id": 1004005200022,
+      "is_root": 0,
+      "scenario_type": 2,
+      "battle_stage_id": 0,
+      "command": [
+        "",
+        "",
+        ""
+      ],
+      "branch_list": [
+        {
+          "transition_list": [
+            {
+              "uniq_id": 1004005210221,
+              "transition_id": 22101,
+              "next_scenario_id": 23,
+              "next_scenario_label": ""
+            }
+          ],
+          "uniq_id": 1004005210221,
+          "branch_id": 221,
+          "type": 1,
+          "quote_voice": "",
+          "gain_points": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "msg_quote": "",
+          "msg_quote_subject": ""
+        }
+      ]
+    },
+    "modelChosen": null,
+    "fieldsProposed": {}
+  },
+  "sourceMetadata": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-next-source-window-after-node20-rootfalse-v1/next-window.rootfalse.json",
+    "bytes": 37422,
+    "sha256": "9c408cdd5f04f8a28515bcb40323433fa008f0e6eb136ef2467be30829bfdbd3"
+  },
+  "executedBaseScript": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node20-source-capture-preparation-rootfalse-v1/capture.py",
+    "bytes": 23158,
+    "sha256": "9151cdad8699aba7e0f73f3c3e43290edf029226e5fd9b6511f2da3853cc15b7"
+  },
+  "newScript": {
+    "file": "capture.py",
+    "bytes": 23158,
+    "sha256": "1d7135622f82b39a8ba7c0c7698cc1d27f2f5a4aaf2a94a1e4a77a19e19cc962"
+  },
+  "fullMinimalDiff": {
+    "file": "node20-to-node22.minimal.diff",
+    "bytes": 3343,
+    "sha256": "564701c05a8d059c336c4840b765ca38da35f1ef785fd2e2f2026aff6e193c0a"
+  },
+  "allowedLiteralEdits": [
+    {
+      "before": "One unexecuted P29 node20 source-window adapter, prepared for an exact root release.",
+      "after": "One unexecuted P29 node22 source-window adapter, prepared for an exact root release."
+    },
+    {
+      "before": "START, END, MAX_FRAMES = 283, 291, 300",
+      "after": "START, END, MAX_FRAMES = 292, 301, 300"
+    },
+    {
+      "before": "Original integer PTS is outside 283<=PTS<291",
+      "after": "Original integer PTS is outside 292<=PTS<301"
+    },
+    {
+      "before": "select=gte(t\\,283)*lt(t\\,291),showinfo",
+      "after": "select=gte(t\\,292)*lt(t\\,301),showinfo"
+    },
+    {
+      "before": "One root-reviewed P29 node20 283<=originalPTS<291 capture",
+      "after": "One root-reviewed P29 node22 292<=originalPTS<301 capture"
+    },
+    {
+      "before": "stella.P29.node20.single-source-capture.v1",
+      "after": "stella.P29.node22.single-source-capture.v1"
+    }
+  ],
+  "reversingOnlySixSingleLineReplacementsRestoresExactBaseSHA256": "9151cdad8699aba7e0f73f3c3e43290edf029226e5fd9b6511f2da3853cc15b7",
+  "unmodifiedKernelIncludesAllBudgetPTSAndFailureCleanupLogic": true,
+  "targetGuard": {
+    "file": "input-bindings.rootfalse.json",
+    "bytes": 15116,
+    "sha256": "ccf5413e466d69dadc6693334469537c2071174ba20625b721994cdc67383086"
+  },
+  "oneFutureCapture": {
+    "originalPTSHalfOpenSeconds": [
+      292,
+      301
+    ],
+    "durationSeconds": 9,
+    "integerPTSPredicate": "292 <= pts * actual_showinfo_timebase < 301",
+    "originalWidthHeight": [
+      480,
+      856
+    ],
+    "approximatelyExpectedFrames": 270,
+    "actualCountOnlyFromFutureDecode": true,
+    "maxFrames": 300,
+    "reaching300IsFailureNotSuccess": true,
+    "minimumSuccessfulCount": 1,
+    "successRequiresNaturalSelectedStreamEOFAndPTSRowsExact": "1 <= actualFrames < 300; noRGBtruncation; producerexit0; exactPTS/RGBcounts; original integerPTSordered",
+    "wholePreparationAndRunHardCapBytes": 100663296,
+    "ordinaryWriteCeilingBytes": 83886080,
+    "failureReserveBytes": 16777216,
+    "stderrHardCapBytes": 1048576,
+    "wallTimeSeconds": 120,
+    "estimatedNewDiskMiB": [
+      32,
+      56
+    ],
+    "availableBytesMetadataSnapshot": 185831424,
+    "runtimeFreeBytesMustFreshBeAtLeast": 100663296,
+    "rawRGBFrameBytes": 1232640,
+    "rawRGBOnlyInRAM": true,
+    "jpegQuality": 95,
+    "jpegSubsampling": 0,
+    "allPayloadsEncodeInRAMAndCheckSharedBudgetBeforeWrite": true,
+    "sameSourceAndToolsFreshWholeSHAandPillow105TreeChecksBeforeAndAfter": true,
+    "sameAArch64OriginalVenvIsolationCPUAndThreadGates": true,
+    "noFPSScaleCropPTSRewriteOrSampling": true,
+    "noProbeBrowserAPIContactOrReferenceImageGeneration": true,
+    "outputDirectory": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/run-1",
+    "outputMustBeFreshNoRetryOrOverwrite": true
+  },
+  "boundaryLocatorsOnly": [
+    {
+      "scenarioId": 21,
+      "uniqId": 1004005200021,
+      "stableKey": "s10040052-p29-at0289",
+      "sourceText": "ふむ……取引、か。いささか怪しい風体じゃが……まあ、いいじゃろう。入れ",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-29",
+          "start": 289,
+          "end": 294,
+          "sourceAnchorSeconds": 289,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/coarse-1hz/crops/008790-dialogue.png",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+          "sourceSha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90"
+        }
+      ],
+      "identityEvidence": false
+    },
+    {
+      "scenarioId": 23,
+      "uniqId": 1004005200023,
+      "stableKey": "s10040052-p29-at0299",
+      "sourceText": "ああ、わかった。すまないな、ご老人",
+      "recordings": [
+        {
+          "recordingId": "bili-capital-29",
+          "start": 299,
+          "end": 301.5,
+          "sourceAnchorSeconds": 299,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/29/coarse-1hz/crops/009000-dialogue.png",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/29 9本篇「结束与开始」Ver尤里乌斯.mp4",
+          "sourceSha256": "2301181cfd466b5126f1a37df45194b6b1fac71c15ffdd7ee90146f5109e6a90"
+        }
+      ],
+      "identityEvidence": false
+    }
+  ],
+  "targetDialogueLocator": [
+    294.5,
+    297.5
+  ],
+  "prior21DialogueLocator": [
+    289,
+    294
+  ],
+  "following23DialogueLocator": [
+    299,
+    301.5
+  ],
+  "sourceWindowIsStandalone": true,
+  "oldWindowContextOnly": {
+    "index": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node20-source-capture-preparation-rootfalse-v1/run-1/frames-index.json",
+      "bytes": 112148,
+      "sha256": "5a7408b977673d9c8dccac85afecadf25785c2a2e8706553738db8f008089601"
+    },
+    "oldActualPTS": [
+      "283.023",
+      "290.989"
+    ],
+    "oldMergedActualPTS": [
+      "282.023",
+      "290.989"
+    ],
+    "noOldJPEGsReadRehashedCopiedOrRegenerated": true,
+    "uncapturedGapAfterOldSourceBeforeNewWindowExists": true,
+    "neverJoinAcrossGapAsContinuous": true,
+    "newWindowMustBeReviewedAloneForOwnTarget22EntryHoldExit": true
+  },
+  "entryHoldExitOrSuccessorBoundaryAccepted": false,
+  "boundarySufficiency": "Unknown until future original292-301 source frames are actually captured, the producer fully closes, and delegated full-window image review runs. If entry or exit is missing, retain this bounded failed-or-unreviewed result and report the observed gap; do not infer or auto-extend. Following23 full performance is outside acceptance.",
+  "noNode18Or20ReinstallAndNoModelInheritedFromThem": true,
+  "plannedCLIArgvNotExecuted": [
+    "/usr/bin/env",
+    "OMP_NUM_THREADS=1",
+    "OPENBLAS_NUM_THREADS=1",
+    "MKL_NUM_THREADS=1",
+    "NUMEXPR_NUM_THREADS=1",
+    "/usr/bin/nice",
+    "-n",
+    "19",
+    "/usr/bin/taskset",
+    "-c",
+    "0,1",
+    "/home/rikka/Projects/stella/.venv-video-ocr/bin/python",
+    "-I",
+    "-B",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p29-node22-source-capture-preparation-rootfalse-v1/capture.py",
+    "--script-sha256",
+    "1d7135622f82b39a8ba7c0c7698cc1d27f2f5a4aaf2a94a1e4a77a19e19cc962"
+  ],
+  "permissionSemantics": "All false flags describe this preparation only. The copied capture CLI has integrity/resource gates, not an embedded root-approval gate. No automatic executor, launcher or release is created; invoking this argv requires a separate explicit exact root execution instruction.",
+  "sourceBytesNotReadHashedProbedDecodedOrReencodedInPreparation": true,
+  "noImagesOrModelPixelsInterpretedInPreparation": true,
+  "runtimeFreezePreserved": true,
+  "noD_CWritesGitTestsBuildASTAPIOrHelperImport": true
+}

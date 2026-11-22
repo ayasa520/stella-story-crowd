@@ -1,0 +1,53 @@
+--- executed-node20/capture.py
++++ prepared-node22/capture.py
+@@ -1,4 +1,4 @@
+-"""One unexecuted P29 node20 source-window adapter, prepared for an exact root release.
++"""One unexecuted P29 node22 source-window adapter, prepared for an exact root release.
+ 
+ The P30 extract-source.py copyts/select/showinfo mechanism supplies original
+ timestamps. The existing strict RGB/JPEG writer supplies bounded transport,
+@@ -35,7 +35,7 @@
+ PIL_DIR = VENV / 'lib/python3.11/site-packages/PIL'
+ PIL_TREE_SHA = '4c32f6181e53b8aa29c77529bb75c225f23526dae31965b1d700a02e27fc4d5e'
+ WIDTH, HEIGHT, BLOCK = 480, 856, 480 * 856 * 3
+-START, END, MAX_FRAMES = 283, 291, 300
++START, END, MAX_FRAMES = 292, 301, 300
+ CAP, RESERVE, STDERR_CAP = 96 * 1024**2, 16 * 1024**2, 1024**2
+ STOP = None
+ 
+@@ -141,7 +141,7 @@
+                         need((int(width), int(height)) == (WIDTH, HEIGHT), 'Original dimensions differ')
+                         need(self.timebase is not None, 'Original showinfo has no timebase')
+                         exact = int(pts) * Fraction(self.timebase)
+-                        need(START <= exact < END, 'Original integer PTS is outside 283<=PTS<291')
++                        need(START <= exact < END, 'Original integer PTS is outside 292<=PTS<301')
+                         self.rows.append(dict(sourceDecodedIndex=int(n), pts=int(pts), ptsTime=seconds,
+                                               exactPTSSeconds=str(exact), width=int(width), height=int(height)))
+                     self.condition.notify_all()
+@@ -236,7 +236,7 @@
+             '-threads', '1', '-filter_threads', '1', '-filter_complex_threads', '1',
+             '-copyts', '-ss', str(START), '-to', str(END), '-i', str(SOURCE),
+             '-map', '0:v:0', '-an', '-sn', '-dn',
+-            '-vf', r'select=gte(t\,283)*lt(t\,291),showinfo', '-frames:v', str(MAX_FRAMES),
++            '-vf', r'select=gte(t\,292)*lt(t\,301),showinfo', '-frames:v', str(MAX_FRAMES),
+             '-pix_fmt', 'rgb24', '-c:v', 'rawvideo', '-threads:v', '1',
+             '-fps_mode', 'passthrough', '-f', 'rawvideo', 'pipe:1']
+     budget.json('decoder-command.json', dict(argv=argv, frameCapIsFailureSentinel=True,
+@@ -358,7 +358,7 @@
+ 
+ 
+ def main():
+-    parser = argparse.ArgumentParser(description='One root-reviewed P29 node20 283<=originalPTS<291 capture')
++    parser = argparse.ArgumentParser(description='One root-reviewed P29 node22 292<=originalPTS<301 capture')
+     parser.add_argument('--script-sha256', required=True)
+     args = parser.parse_args()
+     need(digest(Path(__file__)) == args.script_sha256, 'Reviewed script SHA differs')
+@@ -423,7 +423,7 @@
+         observe('pillowAfter', pillow_record, lambda value: value['treeSHA256'] == PIL_TREE_SHA)
+         if after_errors and failure is None:
+             failure = 'Final input byte checks failed; see each independent after observation'
+-        receipt = dict(schema='stella.P29.node20.single-source-capture.v1',
++        receipt = dict(schema='stella.P29.node22.single-source-capture.v1',
+                        status='failed-retained' if failure else 'complete-unreviewed', failure=failure,
+                        requestedOriginalPTSSeconds=[START, END], frameLimit=MAX_FRAMES,
+                        actualFrames=len(index['frames']) if index is not None else state.get('framesWritten', 0),
