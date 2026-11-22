@@ -1,0 +1,101 @@
+{
+  "schema": "stella.delegated-audio-bindings.v1",
+  "reviewer": "/root/chapter1_audio_4_8",
+  "rootConfirmed": false,
+  "formalDataWritten": false,
+  "status": "accepted_actual_card_music_entry_only",
+  "baseCommit": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/21 8本篇「再会的魔女」.mp4",
+  "sourceSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+  "audioListened": false,
+  "nativeSceneSha256": "cd22c03ce0e6892111b08984d1c79007555efa56f41ba8ed5697682c9bb1514b",
+  "reviewSceneSha256": "25a358968a98727a2b21dc3186eb045c13385c3fc749dc5b8d4048e3a431e9f7",
+  "changes": [
+    {
+      "rootConfirmed": false,
+      "sceneId": 10030001,
+      "scenarioId": 3,
+      "uniqueId": 1003000100003,
+      "stableKey": "s10030001-p21-at0023",
+      "sourceText": "王都の商業街・昼",
+      "expected": {
+        "bg_music": ""
+      },
+      "fields": {
+        "bg_music": "bgm_adv_every07_cd2_13,1,false"
+      },
+      "acceptedFields": [
+        "bg_music"
+      ],
+      "evidence": {
+        "sourceInterval": {
+          "segmentId": "p21-s10030001",
+          "start": 23.0,
+          "end": 25.0,
+          "sourceAnchorSeconds": 23,
+          "ocrReviewed": false,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/21/coarse-1hz/crops/000750-dialogue.png",
+          "ocrEventId": "merged-0004",
+          "sourceSha256": "b3893cabaa51fd06a943f1faabcf4455af46ee1ba68fa0099a0c7e9ba0c37d4b",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/21 8本篇「再会的魔女」.mp4",
+          "originalOCRText": "王都の商業街・昼",
+          "ocrConfidence": 0.99479,
+          "ocrReviewReasons": [],
+          "recordingId": "bili-capital-21"
+        },
+        "entryBracketSeconds": [
+          22.5,
+          23
+        ],
+        "entryMeaning": "Observed card entry bracket only; no sample-exact native command phase asserted.",
+        "waveformMeasurements": "p21-location-measurements.json",
+        "waveformMeasurementsSha256": "50a8aa7e9a2716c5b4232af112e153ef5082c1a3950c057b83cafd359dd20345",
+        "entryRefinement": "p21-opening-entry-refinement.json",
+        "entryRefinementSha256": "c589950a2aa06d42abb317372d2505b2b7bcd2149722cef8163a14f18679a9ae",
+        "librarySize": 65,
+        "positiveControls": [
+          {
+            "start": 23,
+            "end": 26.0,
+            "signedCorrelation": 0.7314580997542443,
+            "exactReferenceSample": 363
+          },
+          {
+            "start": 32,
+            "end": 35.0,
+            "signedCorrelation": 0.9394449314712879,
+            "exactReferenceSample": 564596
+          }
+        ],
+        "sameLibraryNegativeControls": [
+          {
+            "sourceStart": 23,
+            "track": "bgm_adv_heartwarm03_cd2_16",
+            "signedCorrelation": 0.25289731000829374
+          },
+          {
+            "sourceStart": 32,
+            "track": "bgm_adv_heartwarm04_cd3_19",
+            "signedCorrelation": -0.34117605472333573
+          }
+        ],
+        "sourceImageReview": {
+          "viewed": true,
+          "reviewer": "/root/chapter1_audio_4_8",
+          "observation": "Fresh original P21 frames: 12s title, 14–18s narration, 23s 王都の商業街・昼 location card. Music is measured from the location entry; it is not retroactively assigned to the silent narration.",
+          "contact": "route-opening-source-contact.jpg",
+          "contactSha256": "992978b8219af4ab1a3fc74e15513ffaee4927a50b22d6d7f514c470baa1541a",
+          "frameIndex": "route-opening-source-frames.json",
+          "frameIndexSha256": "76031fe5a25a738797475fea92e6a55ff6988a654c7acf577406b0f52f715126"
+        },
+        "resourceAvailable": true,
+        "catalogResource": "bgm_adv_every07_cd2_13"
+      }
+    }
+  ],
+  "limitations": [
+    "Scores are signed normalized waveform measurements, not probabilities.",
+    "No voice, SE, STOP, authored offset, native command phase or acting acceptance.",
+    "No whole-scene or continuous-playback acceptance; root review required."
+  ]
+}

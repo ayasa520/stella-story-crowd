@@ -1,0 +1,71 @@
+{
+  "schema": "stella.P21.every07.registration-independent-static-peer-receipt.v2",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "installationAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "sourceFieldAccepted": false,
+  "runtimePlaybackAccepted": false,
+  "audioAccepted": false,
+  "wholeSceneAccepted": false,
+  "finalHEAD": null,
+  "decision": "STATIC_PASS_EXACT_TWO_FILE_RESOURCE_REGISTRATION_ONLY",
+  "mustFixCount": 0,
+  "reviewedCandidate": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-current-root-preparation-rootfalse-v2/receipt.rootfalse.json",
+    "sha256": "5654c6d0824d1a122afe4501d7a39c3881cd447d04b4c66b8a385da8244d5db9"
+  },
+  "reviewedFullCandidates": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-current-root-preparation-rootfalse-v2/assets/catalog.json",
+      "bytes": 4606201,
+      "sha256": "009fb8072b8cf56f6c95ade4587f4132cabd2eae9e7ee74af130c4582087ff87"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-current-root-preparation-rootfalse-v2/assets/package.json",
+      "bytes": 1972951,
+      "sha256": "47ca071baf350f30aff163b743e6c315e426e338537b7b09f8d8cd34c5cb5fde"
+    }
+  ],
+  "installer": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/apply-asset-plan.py",
+    "bytes": 3500,
+    "sha256": "ff5ef8fa4a20ac5d5f222be7164b8bc961cafda5a4fc1cbeed235efb0322feb2",
+    "fullyReadAsText": true,
+    "importedOrExecuted": false
+  },
+  "payloads": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-registration-static-peer-v2/review.rootfalse.json",
+      "bytes": 14906,
+      "sha256": "cdcae8c70a8cec0859e3820302fe290940b1a89617d69568ce06c0cf76e7cf93"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p21-every07-registration-static-peer-v2/README.md",
+      "bytes": 2005,
+      "sha256": "665020edc2a4c49999b64ebafa09391f4929470b9bd28c059c9640639adfc6d5"
+    }
+  ],
+  "verified": {
+    "exactPlusOneMusic": true,
+    "exactPlusTwoExistingPreviewRecords": true,
+    "onlyCatalogDigestAndPackageBytesAccountingChanged": true,
+    "packageAggregateBytes": 538769567,
+    "packageAggregateEqualsMemberSum": true,
+    "catalogRawOriginalOnly169ByteInsertion": true,
+    "catalogOriginalBytesRemovedOrRewritten": 0,
+    "packageCandidateByteExactToDeclaredDelta": true,
+    "all19ExistingInputHashesExact": true,
+    "allOldValuesAndKeyOrderPreserved": true,
+    "previewManifestOwnershipNativeAndReviewUnchanged": true,
+    "node3BgmStillEmpty": true,
+    "payloadsOpaqueHashOnlyNoDecodeOrReencoding": true
+  },
+  "limits": [
+    "Root must bind actual final HEAD and independently decide formal application; template remains rootfalse/headnull.",
+    "This receipt does not authorize a BGM script field, source timing/loop/fade/phase, playback or whole-scene acceptance.",
+    "No original helper/API/browser/media decode/image/test/build/Git executed; no D/C, payload, P30 or old evidence writes."
+  ],
+  "performed": "Independent built-in Node immutable JSON/deep-equality/SHA reads and exact raw-byte comparisons; original installer full-source interface read. New peer metadata only."
+}
+

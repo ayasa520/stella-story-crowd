@@ -1,0 +1,266 @@
+{
+  "schema": "stella.P21.every07.existing-preview-metadata-proposal.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "finalHEAD": null,
+  "expectedBaseHead": null,
+  "finalSourceHead": null,
+  "rootReportedCurrentDataPrefix": "7cf",
+  "materializedCandidateCatalogOrPackageWritten": false,
+  "currentQAFrozenInputSetChanged": false,
+  "target": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets",
+  "resourceId": "bgm_adv_every07_cd2_13",
+  "oldEntryGuards": {
+    "wholeFileBindings": {
+      "catalog.json": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/catalog.json",
+        "bytes": 4606032,
+        "sha256": "8bc553f5d67a0740466e0e75c23bfa5cda9504e1b95c40fa504482f9c86d9e7c",
+        "role": "current full catalog; metadata only"
+      },
+      "package.json": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/package.json",
+        "bytes": 1972679,
+        "sha256": "55f78e9a5035544e6bfc9b2ed63cb3bb0c619be482e90ade4c84f5b277f67e1b",
+        "role": "current package index; metadata only"
+      },
+      "preview/catalog.json": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/preview/catalog.json",
+        "bytes": 1099290,
+        "sha256": "22cc9b08e6f086556562de1c12fa1594eda2adae2c28940512be74f72d3d4cce",
+        "role": "current compact catalog; metadata only"
+      }
+    },
+    "fullCatalogMusicEntry": {
+      "resourceId": "bgm_adv_every07_cd2_13",
+      "mustBeAbsent": true,
+      "observed": null
+    },
+    "packagePreviewEntries": {
+      "preview/music/bgm_adv_every07_cd2_13.opus": {
+        "mustBeAbsent": true,
+        "observed": null
+      },
+      "preview/music/bgm_adv_every07_cd2_13.json": {
+        "mustBeAbsent": true,
+        "observed": null
+      }
+    },
+    "packageCatalogRecord": {
+      "bytes": 4606032,
+      "sha256": "8bc553f5d67a0740466e0e75c23bfa5cda9504e1b95c40fa504482f9c86d9e7c"
+    },
+    "packageAggregateBytes": 537535025,
+    "packageFileCount": 5449,
+    "catalogMusicCount": 20,
+    "manifestAssets": {
+      "mustRemainAbsent": true,
+      "observed": null,
+      "wholeManifestBinding": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/manifest.json",
+        "bytes": 4487752,
+        "sha256": "6a60bced4eb73a1b29a77df8707f276a641b5da35759f02f54ba6779ee685fa3",
+        "role": "current manifest.assets absence and external read-only guard"
+      }
+    },
+    "allExistingCatalogSectionsAndValuesMustRemainDeepExactExceptOneAddedMusicKey": true,
+    "allExistingPackageRecordsMustRemainDeepExactExceptCatalogDigestAccounting": true,
+    "unchangedAssetMetadataLocks": {
+      "catalog.json": "8bc553f5d67a0740466e0e75c23bfa5cda9504e1b95c40fa504482f9c86d9e7c",
+      "package.json": "55f78e9a5035544e6bfc9b2ed63cb3bb0c619be482e90ade4c84f5b277f67e1b",
+      "preview/catalog.json": "22cc9b08e6f086556562de1c12fa1594eda2adae2c28940512be74f72d3d4cce",
+      "player/manifest.json": "b7737a1db7820af433d070ed5f4731883760c5c74909b125fdf607c6ba5954a1",
+      "player/animation.json": "a8d4ff6b24b9a545a0d20d5a234c7f4ed59afbee815fb3fafab81e3d1c74bd40",
+      "player/motion_states.json": "e4c91d88fa8cbfd319f7c9caf2b2ca098112bf0b5a6c514573a507bdc318c582"
+    },
+    "payloads": [
+      {
+        "relativePath": "preview/music/bgm_adv_every07_cd2_13.opus",
+        "bytes": 1234086,
+        "dev": 1050520,
+        "inode": 5563303,
+        "mtimeNs": 1795195395835233436,
+        "ctimeNs": 1795195395835233436,
+        "nlink": 1,
+        "freshPayloadContentSHARead": false,
+        "sealedSHA256": "a18e0d54d0ecc2fb7539252b846fbed3d896f87b1c01249d6be3458cd48e2617",
+        "SHA256Authority": "old sealed preflight payload binding; Opus not reopened in this preparation"
+      },
+      {
+        "relativePath": "preview/music/bgm_adv_every07_cd2_13.json",
+        "bytes": 287,
+        "dev": 1050520,
+        "inode": 5563302,
+        "mtimeNs": 1795195395831233436,
+        "ctimeNs": 1795195395831233436,
+        "nlink": 1,
+        "freshPayloadContentSHARead": true,
+        "sealedSHA256": "c7fbf10e16be73440337bdec9cd19b77c17618872473fc504914ee9f0a8b4f41",
+        "SHA256Authority": "old sealed preflight payload binding; Opus not reopened in this preparation"
+      }
+    ]
+  },
+  "proposedChanges": [
+    {
+      "file": "assets/catalog.json",
+      "operation": "add-one-missing-music-entry",
+      "key": "bgm_adv_every07_cd2_13",
+      "expectedOldEntry": null,
+      "expectedOldEntryAbsent": true,
+      "newEntry": {
+        "label": "bgm_adv_every07_cd2_13",
+        "url": "preview/music/bgm_adv_every07_cd2_13.opus",
+        "metadata_url": "preview/music/bgm_adv_every07_cd2_13.json"
+      }
+    },
+    {
+      "file": "assets/package.json",
+      "operation": "add-two-existing-payload-records",
+      "expectedOldEntriesAbsent": true,
+      "newRecords": {
+        "preview/music/bgm_adv_every07_cd2_13.opus": {
+          "bytes": 1234086,
+          "sha256": "a18e0d54d0ecc2fb7539252b846fbed3d896f87b1c01249d6be3458cd48e2617"
+        },
+        "preview/music/bgm_adv_every07_cd2_13.json": {
+          "bytes": 287,
+          "sha256": "c7fbf10e16be73440337bdec9cd19b77c17618872473fc504914ee9f0a8b4f41"
+        }
+      }
+    },
+    {
+      "file": "assets/package.json",
+      "operation": "replace-only-catalog-summary-record",
+      "key": "files/catalog.json",
+      "completeExpectedOldEntry": {
+        "bytes": 4606032,
+        "sha256": "8bc553f5d67a0740466e0e75c23bfa5cda9504e1b95c40fa504482f9c86d9e7c"
+      },
+      "newEntryDerivedAfterRootSerializesCatalog": {
+        "bytes": "exact byte length of new assets/catalog.json",
+        "sha256": "SHA256 of exact new assets/catalog.json bytes"
+      },
+      "newLiteralNotMaterialized": true
+    },
+    {
+      "file": "assets/package.json",
+      "operation": "recompute-aggregate-byte-accounting",
+      "expectedOldValue": 537535025,
+      "newValueFormula": "537535025 + 1234373 + (newCatalogBytes - 4606032)",
+      "equivalent": "sum(all resulting files[*].bytes)",
+      "expectedNewFileCount": 5451
+    }
+  ],
+  "onlyFormalFilesToChange": [
+    "assets/catalog.json",
+    "assets/package.json"
+  ],
+  "payloadFilesAddedOrCopied": [],
+  "mediaBytesAdded": 0,
+  "reencode": false,
+  "previewCatalogChanged": false,
+  "fullMemberAliasesChanged": false,
+  "existingCompactOriginalMemberAlias": {
+    "LIMEOS/audio/bgm_adv_every07_cd2_13/bgm_adv_every07_cd2_13.wav": "preview/music/bgm_adv_every07_cd2_13.opus"
+  },
+  "manifestAssetsCatalogSummaryMechanism": {
+    "currentManifestHasAssets": false,
+    "manifestAssetsCreatedOrUpdated": false,
+    "actualCatalogDigestRecord": "assets/package.json.files[\"catalog.json\"]",
+    "currentRecord": {
+      "bytes": 4606032,
+      "sha256": "8bc553f5d67a0740466e0e75c23bfa5cda9504e1b95c40fa504482f9c86d9e7c"
+    },
+    "packageBytesIsSumOfMemberBytes": true,
+    "definitionSources": [
+      "story_studio/crowd_assets.py:69-77 AssetWriter.record",
+      "story_studio/crowd_assets.py:96-103 AssetWriter.json",
+      "story_studio/crowd_assets.py:425-430 catalog record then package index/sum"
+    ],
+    "canonicalReadContract": "lib/resources.ts:26-38 reads preview/catalog.json for Cloudflare studio or full catalog.json at the same immutable revision; no manifest.assets digest gate in this reader.",
+    "precedent": "Successful bg070b original metadata-only integrator changed catalog/package and preserved whole manifest/ownership."
+  },
+  "ordinaryBGMReadContract": {
+    "resourceValidator": "native_resources.py:34-47 requires full music key then metadata_url file; native_install.py:95,108-109 supplies full catalog",
+    "HTTPMetadataGET": "/api/music/bgm_adv_every07_cd2_13?revision=<final-commit>",
+    "HTTPAudioGET": "/music/bgm_adv_every07_cd2_13?revision=<final-commit>",
+    "HTTPFullCatalogGET": "/api/assets",
+    "performed": false,
+    "entryResolver": "lib/resources.ts:161-165 uses music.metadata_url and music.url; a new full archive-member alias is not needed for these logical music routes."
+  },
+  "existingSuccessfulWorkflow": {
+    "installer": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/apply-asset-plan.py",
+      "bytes": 3500,
+      "sha256": "ff5ef8fa4a20ac5d5f222be7164b8bc961cafda5a4fc1cbeed235efb0322feb2",
+      "role": "existing successful asset integrator source, read only; not imported/executed"
+    },
+    "argvTemplate": [
+      "/home/rikka/Projects/stella/.venv-video-ocr/bin/python",
+      "-B",
+      "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/apply-asset-plan.py",
+      "<ROOT_MATERIALIZED_REVIEWED_INTEGRATION_PLAN>",
+      "<NEW_RECEIPT_PATH>"
+    ],
+    "positionalArguments": [
+      "reviewed plan JSON",
+      "new receipt JSON"
+    ],
+    "invokingWouldWriteImmediately": true,
+    "dryRunSwitchDefined": false,
+    "executionDeferredUntilRootClosesCurrentBoundedQAAndFreshlyBindsExactHEAD": true,
+    "actualChecks": [
+      "expectedBaseHead equals git rev-parse HEAD",
+      "all sourceMetadataLocks exact bytes SHA",
+      "all reusedPayloadLocks including existing Opus SHA exact",
+      "all source candidate bytes/SHA and old destination hashes exact",
+      "existing catalog entries deep-equal preserved",
+      "ordered atomic writes/readback"
+    ],
+    "notClaimed": [
+      "No new registration helper/API implemented",
+      "No helper imported or executed",
+      "No normal resource validation/runtime test performed here"
+    ]
+  },
+  "laterStoryFieldContextOnly": {
+    "sceneId": 10030001,
+    "scenarioId": 3,
+    "uniqueId": 1003000100003,
+    "stableKey": "s10030001-p21-at0023",
+    "currentRawBGMusic": "",
+    "laterBareIDCandidate": "bgm_adv_every07_cd2_13",
+    "fieldPatchGenerated": false,
+    "sourceJapanese": "王都の商業街・昼",
+    "nativeTranslation": "王都商业街·白天",
+    "sourcePacket": {
+      "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p21-actual-entry-bgm.json",
+      "bytes": 4201,
+      "sha256": "d867a4f7f91d58178a4688497858b119d7419fc2536760d9b5536b2923ac5abd",
+      "role": "existing narrow PCM/resource identity acceptance; scope preserved"
+    },
+    "packetStatus": "accepted_actual_card_music_entry_only",
+    "originalRootConfirmed": false,
+    "audioListened": false,
+    "originalCSVFadeResetVolumeLoopPhaseOffsetSTOPAccepted": false,
+    "limits": "Keep existing resource-identity/card attribution scope only. No original CSV suffix, subjective audition, exact phase, gain, authored loop, offset, STOP, acting or whole-scene/episode acceptance."
+  },
+  "payloadIdentityEvidence": {
+    "existingSeal": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-audio-five-remaining-offline-preflight-v1/receipt.rootfalse.json",
+      "bytes": 1374,
+      "sha256": "582a117eb0b4111043f4c19ccd66e7b1b34f69f1d33056d832f4d3e17c0a75b1",
+      "role": "existing metadata seal of prior fresh payload bindings"
+    },
+    "sealedPreflight": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-audio-five-remaining-offline-preflight-v1/preflight.rootfalse.json",
+      "bytes": 66559,
+      "sha256": "8a29886106ea4018b7b416183004da40d9aa88ca163da08d93c71c1b6b5fb7e4",
+      "role": "old sealed preflight member; no new audio read"
+    },
+    "freshOpusReadOrSHAComputed": false,
+    "metadataJSON287BytesFreshMatchesSeal": true,
+    "currentStatOnlyDoesNotProveCurrentOpusSHA": true,
+    "rootPostQAFreshReusedPayloadCheckRequired": true
+  }
+}
