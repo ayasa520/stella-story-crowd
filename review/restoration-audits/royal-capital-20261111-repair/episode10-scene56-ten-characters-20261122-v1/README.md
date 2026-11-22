@@ -1,0 +1,9 @@
+# Episode10 scene10450056 ten source-reviewed character identities
+
+Fill only character at4–13: julius01 on4/6/7/9/13, elsa01 on5/11, subaru_tshirt01 on8/10/12. Original full source JPEGs were directly viewed by the primary and independent delegated image reviewers. Visible complete T-shirt sleeves exclude torn tshirt02; knight cape and Elsa cloak features were compared against original texture variants and separately closed model references. Root never viewed images. Original/current descriptor, MOC and texture bytes were checked; no model/resource import was needed.
+
+These are static model/costume identities only. A single full frame does not accept action, expression, additional layers, entry/hold/exit, timing, phase, geometry or saved gameplay. Existing source-review warnings, voices and all other fields remain intact. Root uses complete13-field guards per target and preserves53 ordered rows, IDs, every branch and all unrelated139 scene pairs/protected22 files. Normal stage/audit/apply and complete saved manifest/ownership/one-batch checks passed.
+
+The independent peer directly reviewed pixels and original variants. It received neutral input records; no claim is made that conversation context was a formally blinded experiment. The three primary closed model references are included as identity references only, not saved gameplay for these rows. Additional variant textures and independent references remain byte-bound in the peer inputs and existing assets rather than duplicated wholesale.
+
+Non-image evidence is losslessly gzip stored; original images and prior compressed parse inputs retain exact bytes. A metadata preparation error mistook a peer image-count field for a list; it happened before any plan/archive write and did not repeat a business gate. The original error is retained.
