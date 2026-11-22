@@ -1,0 +1,41 @@
+{
+  "argv": [
+    "/usr/bin/ffmpeg",
+    "-hide_banner",
+    "-nostdin",
+    "-nostats",
+    "-loglevel",
+    "info",
+    "-threads",
+    "1",
+    "-filter_threads",
+    "1",
+    "-filter_complex_threads",
+    "1",
+    "-i",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/preview/voices/vo_adv_julius/advk_julius_emilia.opus",
+    "-map",
+    "0:a:0",
+    "-vn",
+    "-sn",
+    "-dn",
+    "-c:a",
+    "pcm_s16le",
+    "-threads:a",
+    "1",
+    "-f",
+    "s16le",
+    "pipe:1"
+  ],
+  "cwd": "/home/rikka/Projects/stella",
+  "nice": 19,
+  "affinity": [
+    0,
+    1
+  ],
+  "inputEOFRequired": true,
+  "pcmRAMCap": 1048576,
+  "stderrCap": 131072,
+  "totalArtifactCap": 1048576,
+  "automaticRetry": false
+}

@@ -1,0 +1,98 @@
+{
+  "schema": "stella.p30.voice58-6.opus-source-check.post-terminal-observation.v1",
+  "rootConfirmed": false,
+  "rootReportedPublishedDataHEAD": "026a7c4ca58ff3f7be483b0976d7807de3d55732",
+  "observedUTC": "2026-11-22T04:59:55.975011+00:00",
+  "originalExecution": {
+    "functionsCell": "g8:311",
+    "execCompletionChunk": "3d6f68",
+    "execExitCode": 0,
+    "execWallSeconds": 0.436464479,
+    "execSessionId": null,
+    "reasonNoLiveSession": "Command completed within original tool wait; no continuing exec session was returned.",
+    "supervisorPid": 25930,
+    "supervisorPgid": 25930,
+    "decoderPid": 25931,
+    "decoderPgid": 25931,
+    "decoderExitCode": 0,
+    "decoderExecutions": 1,
+    "automaticRetry": false
+  },
+  "postTerminalOS": {
+    "knownPIDsAbsent": [
+      25930,
+      25931
+    ],
+    "remainingOwnedGroupMembers": [],
+    "activeFFmpegProcesses": [],
+    "decoderBothStreamsEOF": true,
+    "forcedStop": false
+  },
+  "pcmGzip": {
+    "artifact": {
+      "path": "artifacts/stella-script-continuation-20261121/p30-voice58-6-opus-source-check-v1/decoded-native-s16le.pcm.gz",
+      "bytes": 61040,
+      "sha256": "1fd558511b925644ff452ed749e93e0dc5a2202f73d5440bd64e2758df3f586e"
+    },
+    "uncompressedBytes": 78692,
+    "uncompressedSHA256": "8858ab7f964582e8ba09ad99959dc264b7b0ec26575c9ae11f19ac78c13a1c98",
+    "exactDecompressionReadback": true,
+    "channels": 1,
+    "sampleFormat": "s16le",
+    "rate": 48000,
+    "samples": 39346
+  },
+  "sampleCountDifference": {
+    "nativeWAVSamples": 26230,
+    "nativeWAVRate": 32000,
+    "nativeWAVSeconds": 0.8196875,
+    "decodedOpusSamples": 39346,
+    "decodedOpusRate": 48000,
+    "decodedOpusSeconds": 0.8197083333333334,
+    "nativeCountScaledTo48k": 39345,
+    "decodedMinusRateScaledNativeSamples": 1,
+    "durationDifferenceRational": "1/48000 second",
+    "cause": "unknown; no further decode, resampling variant or codec experiment performed",
+    "native4kSamples": 3279,
+    "decoded4kSamples": 3279,
+    "nativeAndDecodedActiveSamplesAt4k": 2694,
+    "eachOfThreeActivePiecesSamplesAt4k": 898
+  },
+  "identityEvidence": {
+    "scope": "vo_adv_julius/advk_julius_emilia encoded-preview cue identity only",
+    "authorInferenceEncodedCueIdentitySupported": true,
+    "rootAcceptanceGrantedByThisReport": false,
+    "directWhole4kSignedNCC": 0.991505774437285,
+    "directWhole4kLagSamples": 0,
+    "nativeSourceActiveSignedNCC": 0.9913230675051048,
+    "opusSourceActiveSignedNCC": 0.9819307649091797,
+    "nativeSourceWholeSignedNCC": 0.9863980569267277,
+    "opusSourceWholeSignedNCC": 0.977041476092342,
+    "allNativeAndOpusSourceWinningCueZeroSamplesAt4k": 3249571,
+    "allSourceWinningWindowRelativeCueZeroSamplesAt4k": 5571,
+    "sourceWindowSeconds": [
+      811,
+      818
+    ],
+    "wholeAndAllThreePiecesShareCueZero": true,
+    "originalNativeSignedValuesReproduced": true,
+    "sourceCoordinatesAreAuthoredTriggerOffsets": false
+  },
+  "originalPeakMechanismNote": {
+    "directAvailableLagPositions": 1,
+    "originalFivePeakCountAndMinimumScoreZeroRetained": true,
+    "directPeakRowsAfterFirst": "Original peak suppression returns four absolute-score-zero placeholders at the only lag. Their recomputed signed values are retained verbatim; these are not additional matches.",
+    "rawNCCOrPeakRowsEdited": false
+  },
+  "limits": {
+    "listeningPerformed": false,
+    "originalCsvRecovered": false,
+    "originalPhaseOffsetGainOrTimingRecovered": false,
+    "codecQualityAccepted": false,
+    "wholeSceneAccepted": false,
+    "sourceVideoDecoded": false,
+    "browserOrAPIUsed": false,
+    "originalAssetsOrD_C_EnvironmentWritten": false
+  },
+  "pending": "Root independently reviews the signed-NCC evidence and chooses any publication; no new trigger offset, CSV parameters or broader acceptance follows."
+}

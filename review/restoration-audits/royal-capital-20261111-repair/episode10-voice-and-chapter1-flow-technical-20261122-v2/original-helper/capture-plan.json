@@ -1,0 +1,375 @@
+{
+  "schema": "stella.p30.voice58-6.production-saved-plan.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "preparationAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "finalDataHead": null,
+  "finalSourceHead": null,
+  "aliases": [],
+  "overlays": [],
+  "programMutationsAllowed": false,
+  "beforeSeedAllowed": false,
+  "countsFromFreshBinding": true,
+  "allLibraryNodes": null,
+  "expectedNativeRows": 37,
+  "expectedSavedNativeOrderedCanonicalSha256": "c625e80d138fcb33ed6e5c1434f030e6e7c24da02e7a052bcb17438e2ae101d8",
+  "cue": {
+    "bank": "vo_adv_julius",
+    "cue": "advk_julius_emilia",
+    "label": "",
+    "member": "LIMEOS/audio/vo_adv_julius/advk_julius_emilia.wav",
+    "url": "voices/vo_adv_julius/advk_julius_emilia.wav",
+    "samples": 26230,
+    "sampleRate": 32000,
+    "durationSeconds": 0.8196875,
+    "previewDescriptor": {
+      "cue": "advk_julius_emilia",
+      "label": "",
+      "member": "LIMEOS/audio/vo_adv_julius/advk_julius_emilia.wav",
+      "url": "preview/voices/vo_adv_julius/advk_julius_emilia.opus"
+    },
+    "resources": {
+      "assets/voices/vo_adv_julius/index.json": {
+        "bytes": 8654,
+        "sha256": "af186a853fdf77609a5a874fd747523a802e64871c3206c40e6b92c8e58bc4ee"
+      },
+      "assets/preview/voices/vo_adv_julius/index.json": {
+        "bytes": 9149,
+        "sha256": "90cdb64720527e47c45585f7763a2a8e111965bd0dd4a2c2685920d93759404a"
+      },
+      "assets/voices/vo_adv_julius/advk_julius_emilia.wav": {
+        "bytes": 52504,
+        "sha256": "b7ab09e687e7783e982ce565706d32b6214da29cc71458ddf130373a597c3318"
+      },
+      "assets/preview/voices/vo_adv_julius/advk_julius_emilia.opus": {
+        "bytes": 3885,
+        "sha256": "82e52de64d8e553ecd591f36f7588944e4aa8ab108122b3254a05860762e2718"
+      }
+    },
+    "knownDecodedOpus": {
+      "samples": 39346,
+      "sampleRate": 48000,
+      "durationSeconds": 0.8197083333333334,
+      "fullNaturalEof": true,
+      "rootReported": true,
+      "browserDurationStillRequiresActualObservation": true
+    }
+  },
+  "expectedTargetFields": {
+    "bg_music": "",
+    "bg_picture": "",
+    "character": "live2d/AC_julius01",
+    "character_image": "",
+    "motion": "",
+    "msg_character": "ユリウス",
+    "msg_text": "爱蜜莉雅大人，此事便交给我处理。我会尽量，不让事情闹大。",
+    "position": "",
+    "se": "",
+    "talk_chara": "",
+    "video": "",
+    "voice": "vo_adv_julius,advk_julius_emilia",
+    "command": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "evidenceGuards": {},
+  "captureFormat": {
+    "viewport": {
+      "width": 500,
+      "height": 1000
+    },
+    "screenshots": 0,
+    "video": false,
+    "audioRecording": false
+  },
+  "cases": [
+    {
+      "id": "p30-voice58-6-saved-opus",
+      "start": "node:10450058:1045005800005",
+      "choices": {},
+      "steps": [
+        {
+          "id": "node:10450058:1045005800005",
+          "scene": 10450058,
+          "scenario": 5,
+          "stableKey": "s10450058-p30-at0807",
+          "sourceText": "あ、ありがとう……って、この場合、\nお礼を言う必要はあるのかしら……？",
+          "native": {
+            "bg_music": "",
+            "bg_picture": "",
+            "character": "live2d/AC_emilia01",
+            "character_image": "",
+            "motion": "",
+            "msg_character": "銀髪の少女",
+            "msg_text": "谢、谢谢……等等，这种时候，我有必要道谢吗……？",
+            "position": "",
+            "se": "",
+            "talk_chara": "",
+            "video": "",
+            "voice": "",
+            "scenario_id": 5,
+            "uniq_id": 1045005800005,
+            "is_root": 0,
+            "scenario_type": 2,
+            "battle_stage_id": 0,
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "branch_list": [
+              {
+                "transition_list": [
+                  {
+                    "uniq_id": 1045005810051,
+                    "transition_id": 5101,
+                    "next_scenario_id": 6,
+                    "next_scenario_label": ""
+                  }
+                ],
+                "uniq_id": 1045005810051,
+                "branch_id": 51,
+                "type": 1,
+                "quote_voice": "",
+                "gain_points": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "msg_quote": "",
+                "msg_quote_subject": ""
+              }
+            ]
+          },
+          "expectedModel": "emilia01",
+          "edge": {
+            "id": "edge:node:10450058:1045005800005:1045005810051:51",
+            "target": "node:10450058:1045005800006",
+            "branchId": 51,
+            "flow_action": "continue",
+            "native": {
+              "uniq_id": 1045005810051,
+              "transition_id": 5101,
+              "next_scenario_id": 6,
+              "next_scenario_label": ""
+            }
+          }
+        },
+        {
+          "id": "node:10450058:1045005800006",
+          "scene": 10450058,
+          "scenario": 6,
+          "stableKey": "s10450058-p30-at0812p5",
+          "sourceText": "エミリア様、今回の件に関してはお任せを。\n大事には至らぬよう計らっておきます",
+          "native": {
+            "bg_music": "",
+            "bg_picture": "",
+            "character": "live2d/AC_julius01",
+            "character_image": "",
+            "motion": "",
+            "msg_character": "ユリウス",
+            "msg_text": "爱蜜莉雅大人，此事便交给我处理。我会尽量，不让事情闹大。",
+            "position": "",
+            "se": "",
+            "talk_chara": "",
+            "video": "",
+            "voice": "vo_adv_julius,advk_julius_emilia",
+            "scenario_id": 6,
+            "uniq_id": 1045005800006,
+            "is_root": 0,
+            "scenario_type": 2,
+            "battle_stage_id": 0,
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "branch_list": [
+              {
+                "transition_list": [
+                  {
+                    "uniq_id": 1045005810061,
+                    "transition_id": 6101,
+                    "next_scenario_id": 7,
+                    "next_scenario_label": ""
+                  }
+                ],
+                "uniq_id": 1045005810061,
+                "branch_id": 61,
+                "type": 1,
+                "quote_voice": "",
+                "gain_points": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "msg_quote": "",
+                "msg_quote_subject": ""
+              }
+            ]
+          },
+          "expectedModel": "julius01",
+          "edge": {
+            "id": "edge:node:10450058:1045005800006:1045005810061:61",
+            "target": "node:10450058:1045005800007",
+            "branchId": 61,
+            "flow_action": "continue",
+            "native": {
+              "uniq_id": 1045005810061,
+              "transition_id": 6101,
+              "next_scenario_id": 7,
+              "next_scenario_label": ""
+            }
+          }
+        },
+        {
+          "id": "node:10450058:1045005800007",
+          "scene": 10450058,
+          "scenario": 7,
+          "stableKey": "s10450058-p30-at0818",
+          "sourceText": "ええ、ありがとうユリウス……\nじゃなくて、ユーリ……？\nあなたには何から何までしてもらって……",
+          "native": {
+            "bg_music": "",
+            "bg_picture": "",
+            "character": "live2d/AC_emilia01",
+            "character_image": "",
+            "motion": "",
+            "msg_character": "銀髪の少女",
+            "msg_text": "嗯，谢谢，尤里乌斯……不，是尤里……？你真是，帮我做了好多事……",
+            "position": "",
+            "se": "",
+            "talk_chara": "",
+            "video": "",
+            "voice": "",
+            "scenario_id": 7,
+            "uniq_id": 1045005800007,
+            "is_root": 0,
+            "scenario_type": 2,
+            "battle_stage_id": 0,
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "branch_list": [
+              {
+                "transition_list": [
+                  {
+                    "uniq_id": 1045005810071,
+                    "transition_id": 7101,
+                    "next_scenario_id": 8,
+                    "next_scenario_label": ""
+                  }
+                ],
+                "uniq_id": 1045005810071,
+                "branch_id": 71,
+                "type": 1,
+                "quote_voice": "",
+                "gain_points": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "msg_quote": "",
+                "msg_quote_subject": ""
+              }
+            ]
+          },
+          "expectedModel": "emilia01"
+        }
+      ],
+      "stop": {
+        "node": "node:10450058:1045005800007",
+        "phase": "ready",
+        "forbiddenEdge": "edge:node:10450058:1045005800007:1045005810071:71",
+        "forbiddenNode": "node:10450058:1045005800008",
+        "normalStopAfterReady": true
+      }
+    }
+  ],
+  "budgets": {
+    "maximumDriverSeconds": 120,
+    "expectedTotalOutputBytes": 16777216,
+    "programGzipBytes": 2097152,
+    "providerTraceBytes": 2097152,
+    "diagnosticTraceBytes": 2097152,
+    "mediaEvents": 120
+  },
+  "acceptanceScope": {
+    "mechanicalSavedVoiceOnly": true,
+    "originalPhaseAccepted": false,
+    "sourceGainAccepted": false,
+    "sourceLoopAccepted": false,
+    "wholeLineSpeechAccepted": false,
+    "audibleListeningAccepted": false,
+    "bodyFaceAccepted": false,
+    "wholeSceneAccepted": false,
+    "productionDefaultOpusMechanicalOnly": true
+  },
+  "productionOrigin": "https://stella-preview.jaoushingan.com",
+  "productionBaseline": {
+    "raw": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-prepare-v1/response.raw.json.gz",
+      "bytes": 90662,
+      "sha256": "0385899f91eeb476d09ef6bf9b4310c29d16a6fab760cc1414fff6a98f3b1d06"
+    },
+    "http": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-prepare-v1/http.json",
+      "bytes": 1044,
+      "sha256": "50a9eeb9a04a761a4a4866a77e8d5936dd5cbb4b5958431349161d4df116caf0"
+    },
+    "request": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-prepare-v1/request.json",
+      "bytes": 116,
+      "sha256": "4edba5ad512551c2656fe3504cd47f2e1d708a2b6db11972e4118a46a5e4ea4b"
+    },
+    "review": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-prepare-v1/verified.json",
+      "bytes": 4472,
+      "sha256": "d31b0c005d675a6db2b7e5c3526c177927a55a0540e62dd5e30aeaf1f346a58c"
+    },
+    "rawBodySha256": "b81f4bd4638d5837633374394ad008d6213d248e23f8ca1687099c77a5e48a99",
+    "observedHead": "026a7c4ca58ff3f7be483b0976d7807de3d55732",
+    "observedKeyOrder": [
+      "version",
+      "revision",
+      "headSha",
+      "updated_at",
+      "videos",
+      "nodes",
+      "edges",
+      "links",
+      "scopeSceneIds",
+      "directory",
+      "preview_policy",
+      "start",
+      "before",
+      "scene_thumbnails",
+      "semantics",
+      "sound_effects",
+      "flow_issues",
+      "warnings"
+    ],
+    "observedScopeSceneIds": [
+      10450054,
+      10450055,
+      10450056,
+      10450057,
+      10450058
+    ]
+  },
+  "programScope": {
+    "section": 1045,
+    "countsFromFreshNativeArrays": true,
+    "observedNodes": 180,
+    "observedEdges": 186,
+    "wholeCanonicalResponseRequired": true
+  },
+  "productionDefaultCompressedResourcesRequired": true
+}

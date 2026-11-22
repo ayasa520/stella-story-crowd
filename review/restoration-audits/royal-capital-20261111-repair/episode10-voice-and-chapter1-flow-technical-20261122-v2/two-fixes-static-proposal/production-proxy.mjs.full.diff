@@ -1,0 +1,23 @@
+--- sealed-v1/production-proxy.mjs
++++ static-v2/production-proxy.mjs
+@@ -77,7 +77,9 @@
+     const row={...base,phase:'response-complete',responseEpochMilliseconds:Date.now(),status:response.status,statusText:response.statusText,
+       upstreamHeaders:originalHeaders,upstreamSetCookie:response.headers.getSetCookie(),
+       forwardedResponseHeaders:Object.fromEntries(outgoingHeaders),
+-      bodyBytes:body.length,bodySha256:sha(body),bodyTransferred:request.method!=='HEAD',
++      // HEAD and body-forbidden statuses transfer no response body; keep
++      // the original status/headers and observed zero-byte body facts intact.
++      bodyBytes:body.length,bodySha256:sha(body),bodyTransferred:request.method!=='HEAD'&&![204,205,304].includes(response.status),
+       observedBody:'Node fetch delivered bytes; no application decode/rewrite',
+       upstreamContentEncoding:response.headers.get('content-encoding')||null};
+     const targetPath='/asset/'+plan.cue.member.split('/').map(encodeURIComponent).join('/');
+@@ -87,7 +89,8 @@
+       row.bodyArchive={file,bytes:compressed.length,sha256:sha(compressed)};
+     }
+     await record(row);
+-    if(response.status>=300&&response.status<400)
++    // 304 is a conditional representation response, not a redirect.
++    if([301,302,303,307,308].includes(response.status))
+       console.error('PRODUCTION_PROXY_REDIRECT_RETAINED',row);
+     return new Response(request.method==='HEAD'||[204,205,304].includes(response.status)?null:body,{
+       status:response.status,statusText:response.statusText,headers:outgoingHeaders});

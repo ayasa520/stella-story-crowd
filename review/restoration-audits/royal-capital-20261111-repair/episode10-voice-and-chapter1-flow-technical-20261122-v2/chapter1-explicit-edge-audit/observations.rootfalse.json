@@ -1,0 +1,26 @@
+{
+  "rootConfirmed": false,
+  "observations": [
+    {
+      "kind": "original-master-read-failure",
+      "toolHandle": "063104",
+      "exitCode": 1,
+      "path": "/home/rikka/Projects/stella/data/story_directory/device-snapshot/Adv.d",
+      "operation": "sqlite3.connect(file:...mode=ro), then PRAGMA table_info(AdventureSection)",
+      "originalError": "Traceback (most recent call last):\n  File \"<stdin>\", line 5, in <module>\nsqlite3.DatabaseError: file is not a database",
+      "formatOrCauseKnown": false,
+      "retried": false
+    },
+    {
+      "kind": "inspection-code-path-key-mistake",
+      "toolHandle": null,
+      "exitCode": 1,
+      "originalError": "Error: ENOENT: no such file or directory, open 'artifacts/stella-script-continuation-20261121/data-checkout/undefined'",
+      "explanation": "This inspection used nativePath before reading the actual manifest scene schema. The real member is path. No native input was read at that failed locator; a corrected metadata-only inspection read the existing path. This is not a parser failure or a business-gate retry.",
+      "toolHandleUnavailableReason": "Only command output was forwarded for this read; no chunk identifier was retained. No handle is invented."
+    }
+  ],
+  "dataStatus": "",
+  "sourceStatus": "?? scripts/__pycache__/",
+  "allCapturedInputBytesStableAtFinish": true
+}

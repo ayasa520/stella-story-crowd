@@ -1,0 +1,97 @@
+{
+  "schema": "stella.p30.voice58.two-helper.static-byte-reuse.v2",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "finalDataHead": null,
+  "finalSourceHead": null,
+  "baseAuthorSeal": {
+    "path": "../p30-voice58-6-production-owner-kit-rootfalse-v1/receipt.rootfalse.json",
+    "sha256": "57988c57ececd4a8be62654f49ddead540da70b76cbbba7ac5e756c0906bf8d6"
+  },
+  "baseSources": {
+    "play.mjs": "fbe360eb2179375b8fc5fac0b7ec99b4b8ed117eab400559e74389c25c92c3df",
+    "production-proxy.mjs": "34f54daa5211c590199542baebc2e9a48b07bf8279d820e80a4bfa8ab1fb1181"
+  },
+  "unchangedSegments": [
+    {
+      "file": "play.mjs",
+      "oldRange": "1,364",
+      "newRange": "1,364",
+      "label": "All setup, media-owner/natural-play/next/Stop gates before the URL builder",
+      "bytes": 25690,
+      "sha256": "6533bd2a8da34a8d4d1478ab0a87a19e20f848bc07710d26f9c4b2f25bd26d9b",
+      "byteExact": true
+    },
+    {
+      "file": "play.mjs",
+      "oldRange": "366,$",
+      "newRange": "368,$",
+      "label": "Strict href/header/provider and original error/terminal gates after the builder",
+      "bytes": 5562,
+      "sha256": "1d294e8d9f876d54f0c6ba8661019f58dcc3230bf199ed9dcc996d945e5a2a9b",
+      "byteExact": true
+    },
+    {
+      "file": "production-proxy.mjs",
+      "oldRange": "1,79",
+      "newRange": "1,79",
+      "label": "Fixed-origin forwarding, request/raw/header handling before body metadata",
+      "bytes": 5198,
+      "sha256": "ef77112cdbe57ee63e3836b324a8a8d73ecaeb20596a9adbb3f2f5644c4fa849",
+      "byteExact": true
+    },
+    {
+      "file": "production-proxy.mjs",
+      "oldRange": "81,89",
+      "newRange": "83,91",
+      "label": "Original response headers/body archives and record between corrected metadata/classifier",
+      "bytes": 583,
+      "sha256": "27b32d88435b348fbb3659da39b4642a3e0149aedcbf9e4487a166149367c1e1",
+      "byteExact": true
+    },
+    {
+      "file": "production-proxy.mjs",
+      "oldRange": "91,$",
+      "newRange": "94,$",
+      "label": "Original redirect/error return, static guard and host methods after the classifier",
+      "bytes": 4258,
+      "sha256": "861ee8ec7535e23910e7889f5a1bbef316abd0655f259d1a8c0ac1b4ece3fd7f",
+      "byteExact": true
+    }
+  ],
+  "totalByteExactMechanismBytes": 41291,
+  "onlyReplacementLines": {
+    "play": {
+      "old": 365,
+      "new": [
+        365,
+        367
+      ],
+      "change": "Fixed-origin expected URL constructor; same full-href assertion"
+    },
+    "proxy": [
+      {
+        "old": 80,
+        "new": [
+          80,
+          82
+        ],
+        "change": "Accurate HEAD/204/205/304 bodyTransferred metadata"
+      },
+      {
+        "old": 90,
+        "new": [
+          92,
+          93
+        ],
+        "change": "Only301/302/303/307/308 are redirect events"
+      }
+    ]
+  },
+  "oldFailedAttemptUnmodified": true,
+  "otherHelperFilesCopied": 0,
+  "largeGuardMapsCopied": 0,
+  "codeOrKernelExecuted": false,
+  "syntaxAstTestsBuildsRun": false,
+  "browserOrMediaOrApiStarted": false
+}

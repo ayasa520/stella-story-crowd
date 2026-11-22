@@ -1,0 +1,13 @@
+--- sealed-v1/play.mjs
++++ static-v2/play.mjs
+@@ -362,7 +362,9 @@
+   assert.ok(deliveries.some(row=>row.status===200));
+   assert.ok(deliveries.every(row=>row.status===200&&row.bodySha256===opus.sha256&&row.bodyBytes===opus.bytes&&row.bodyTransferred));
+   for(const row of deliveries){
+-    const wanted=new URL(directURL);wanted.protocol='https:';wanted.host=new URL(binding.productionOrigin).host;
++    // Rebuild the fixed production origin so the local :5198 port cannot
++    // survive; the unchanged full-href assertion still checks path/query/host/port.
++    const localURL=new URL(directURL),wanted=new URL(localURL.pathname+localURL.search,binding.productionOrigin);
+     assert.equal(row.upstreamURL,wanted.href);assert.equal(row.forwardedRequestHeaders['accept-encoding'],'identity');
+     assert.equal(row.forwardedResponseHeaders['content-encoding'],undefined);
+     assert.equal(row.forwardedResponseHeaders['content-length'],String(opus.bytes));

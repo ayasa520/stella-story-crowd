@@ -1,0 +1,102 @@
+{
+  "owned": [
+    {
+      "kind": "server",
+      "pid": 28947,
+      "pgid": 28947,
+      "exitCode": -15,
+      "remainingOwnedPid": [],
+      "remainingGroupMembers": []
+    },
+    {
+      "kind": "browser",
+      "pid": 28966,
+      "pgid": 28966,
+      "exitCode": -15,
+      "remainingOwnedPid": [],
+      "remainingGroupMembers": []
+    },
+    {
+      "kind": "driver",
+      "pid": 29053,
+      "pgid": 29053,
+      "exitCode": 1,
+      "remainingOwnedPid": [],
+      "remainingGroupMembers": []
+    }
+  ],
+  "stopAttempts": [
+    {
+      "kind": "driver",
+      "pid": 29053,
+      "pgid": 29053,
+      "signals": [
+        {
+          "signal": 15,
+          "outcome": "group-not-found"
+        }
+      ],
+      "errors": [],
+      "lastGroupObservation": []
+    },
+    {
+      "kind": "browser",
+      "pid": 28966,
+      "pgid": 28966,
+      "signals": [
+        {
+          "signal": 15,
+          "outcome": "sent"
+        }
+      ],
+      "errors": [],
+      "lastGroupObservation": []
+    },
+    {
+      "kind": "server",
+      "pid": 28947,
+      "pgid": 28947,
+      "signals": [
+        {
+          "signal": 15,
+          "outcome": "sent"
+        }
+      ],
+      "errors": [],
+      "lastGroupObservation": []
+    }
+  ],
+  "osInventoryKnown": true,
+  "allOwnedGroupsEmpty": true,
+  "allOwnedPidsAndGroupsEmpty": true,
+  "inputsUnchanged": true,
+  "outputBytesBeforeFinalReceipts": 1638804,
+  "outputByteCap": 16777216,
+  "guardInventory": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-fresh-inventory-026a7c4c-v1/inventory.rootfalse.json",
+    "sha256": "b19aca0877dadcc7182c7d873d0d35269a2e822014ac4e2ac51eb3c37cab214c"
+  },
+  "allGuardsCheckedWithoutMapCopies": true,
+  "driverExitCode": 1,
+  "supervisorExitCode": 1,
+  "cleanupErrors": [
+    {
+      "operation": "post-server-original-proxy-trace",
+      "error": "Original server fatal marker retained",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/run.py\", line 434, in <module>\n    assert not server_log_proof['fatalMarkers'], 'Original server fatal marker retained'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Original server fatal marker retained\n"
+    }
+  ],
+  "profileCleanup": {
+    "path": "/dev/shm/stella-p30-voice58-normal-qa-j14yr2wk",
+    "removed": true,
+    "retained": false,
+    "ownedPidPgidExitProven": true,
+    "escapedProcessReview": "Root independent review is still required; no foreign group is signalled.",
+    "reason": "removed-after-os-exit-proof"
+  },
+  "recorderStarted": false,
+  "xvfbStarted": false,
+  "imageReviewStarted": false,
+  "requiresIndependentClosureAfterSupervisorExit": true,
+  "supervisorPid": 28915
+}

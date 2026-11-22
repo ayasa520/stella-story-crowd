@@ -1,0 +1,221 @@
+{
+  "schema": "stella.p30.voice58-6.production-preparation-independent-readback-peer.v1",
+  "reviewer": "/root/performance_peer",
+  "status": "complete-preparation-evidence-verified-root-release-needs-explicit-shared-refs",
+  "rootConfirmed": false,
+  "preparationAuthorized": false,
+  "executionAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "diagnosticInstrumentationAuthorized": false,
+  "productionProxyAuthorized": false,
+  "runtimeAccepted": false,
+  "opinion": "No further preparation/code blocker found. The new separate root runtime release must include the two existing frozen shared bindings below, alongside the70 unchanged prepared bindings. The historical allfalse draft alone fails the sealed run.py required-path gate. Root has recorded the exact completion; no new kit, API repetition or old-evidence edit is needed.",
+  "onlyNecessaryReleaseCompletion": {
+    "artifacts/stella-p30-firefox-20261120/bidi.mjs": "da12eee70aecc03178bfcaa29b1e7f6ddac9f9ebb1bbdc98bc21b2d4b751e7d6",
+    "artifacts/stella-p30-firefox-20261120/render-probe.mjs": "e7872ada7ef8e20aeef2d59d45a25e10a6777b35eb67f6428ff37566b7cc1db6"
+  },
+  "exactRootCompletionRecord": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-root-preparation-026a7c4c-v1/explicit-runtime-shared-bindings.root-reviewed.json",
+    "bytes": 636,
+    "sha256": "87218284aa0f2f5f0cbc4de4a8c0f2d4b78facad963fc604f06c6a22a4806e9c"
+  },
+  "otherMustFix": [],
+  "inputRefs": {
+    "preparationApproval": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-root-preparation-026a7c4c-v1/preparation.root-approved.json",
+      "bytes": 14735,
+      "sha256": "2a8e428082e9b37f6b03c118fc1408dec1a7c2f3ba493174e881f3e23565e5d7"
+    },
+    "inputBinding": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/input-binding.json",
+      "bytes": 19825,
+      "sha256": "fa5213cf9aa9bec286beaa022d82864341595edecb02d3c2c55ba6c13112089a"
+    },
+    "rootPreparationReview": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-root-preparation-026a7c4c-v1/normal-preparation.root-review.json",
+      "bytes": 1430,
+      "sha256": "6307aaa8296122ce55d229ec2ac8e196468dafa1c6de9b1d9470fba3f647b4b0"
+    },
+    "priorIndependentStaticPeer": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-static-peer-v1/receipt.rootfalse.json",
+      "bytes": 1451,
+      "sha256": "32b9fc1ea0fe0939ce1802f22365769c42001a8a7fc1074bda7fd2138fde5ece"
+    }
+  },
+  "inventory": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-fresh-inventory-026a7c4c-v1/inventory.rootfalse.json",
+    "sha256": "b19aca0877dadcc7182c7d873d0d35269a2e822014ac4e2ac51eb3c37cab214c",
+    "bytes": 4780305,
+    "counts": {
+      "dataInputs": 9165,
+      "globalGuards": 14501,
+      "protectedFirstThree": 22,
+      "sourceFiles": 312,
+      "distFiles": 234,
+      "toolFiles": 10
+    },
+    "oneReferenceOnly": true,
+    "fullMapsPersistedInBinding": false,
+    "ramMergeDigestConflicts": []
+  },
+  "bindingContract": {
+    "approvalSha256": "2a8e428082e9b37f6b03c118fc1408dec1a7c2f3ba493174e881f3e23565e5d7",
+    "inputBindingBytes": 19825,
+    "inputBindingSha256": "fa5213cf9aa9bec286beaa022d82864341595edecb02d3c2c55ba6c13112089a",
+    "publishedHead": "026a7c4ca58ff3f7be483b0976d7807de3d55732",
+    "source": {
+      "head": "6630ac70f17332efa031d021af00532d42307568",
+      "status": "?? scripts/__pycache__/"
+    },
+    "toolsAndBudgetsAndAdditionalGuardsExactApprovalDerivation": true,
+    "kitAndPeerGuardCountFreshVerified": 26,
+    "directFirefoxLaunchPath": "/usr/lib/firefox/firefox",
+    "unchangedFirefoxDeclaredSha256": "6beee2c5424da050601795980581135404e2565edaf59e8e5dca710a212eb572",
+    "onlyPreparationApprovedBrowserFalse": true
+  },
+  "closedOriginalPrepare": {
+    "sessionReportedByRoot": 3623,
+    "exitCodeReportedByRoot": 0,
+    "completionReportedByRoot": "238e04",
+    "request": {
+      "method": "POST",
+      "localUrl": "http://127.0.0.1:5198/api/player/prepare",
+      "upstreamUrl": "https://stella-preview.jaoushingan.com/api/player/prepare",
+      "bodyKeys": [
+        "id",
+        "baseSha",
+        "choices"
+      ],
+      "bodyBytes": 102,
+      "bodySha256": "9253bb4ded85900371a6bf13ff650c33587e1960e234f607c342a5095102fab7",
+      "choices": {},
+      "acceptEncoding": "identity",
+      "redirect": "manual"
+    },
+    "providerRows": 2,
+    "pairedId": "000001",
+    "startedAndOneCompleteResponseNoErrorOrResolve": true,
+    "httpStatus": 200,
+    "contentType": "application/json",
+    "upstreamContentEncoding": null,
+    "forwardedContentLength": "1099476",
+    "bodyTransferred": true,
+    "rawBodyBytes": 1099476,
+    "rawBodySha256": "b81f4bd4638d5837633374394ad008d6213d248e23f8ca1687099c77a5e48a99",
+    "gzipBytes": 90662,
+    "gzipSha256": "0385899f91eeb476d09ef6bf9b4310c29d16a6fab760cc1414fff6a98f3b1d06",
+    "bothResponseGzipsAndOriginalBaselineCompressedBytesEqual": true,
+    "inflatedOriginalBytesAndWholeObjectAndKeyOrderEqual": true,
+    "nativeProgramRevisionNumeric": 2656375186831,
+    "programNodes": 180,
+    "programEdges": 186,
+    "sceneNodes": [
+      52,
+      20,
+      53,
+      18,
+      37
+    ],
+    "sceneNativeBranches": [
+      53,
+      20,
+      54,
+      20,
+      39
+    ],
+    "targetNativeRows": 37,
+    "targetOrderedNativeSha256": "c625e80d138fcb33ed6e5c1434f030e6e7c24da02e7a052bcb17438e2ae101d8",
+    "wholeBefore": {
+      "bg_picture": "bg/bg046c_stealshop",
+      "clut": "",
+      "bg_music": "bgm_adv_kinpaku02_cd2_18",
+      "music_source": "node:10450056:1045005600002",
+      "model": "felt01",
+      "body": "",
+      "face": "",
+      "face_reset": false,
+      "extras": {},
+      "actors": [],
+      "ambient": {},
+      "wipe_name": "",
+      "wipe_image": "",
+      "wipe_covered": false,
+      "junction": false
+    },
+    "steps5_6_7FullNativeRowsAndProgramChecksExact": true,
+    "target6BankCue": "vo_adv_julius,advk_julius_emilia",
+    "threeStepsBodyFaceEmptyExtraMotionsEmptySuppressFalseDelay0": true,
+    "programLoaded": false,
+    "browserStarted": false
+  },
+  "preparedRefs": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/prepared/p30-voice58-6-saved-opus.http.json",
+      "bytes": 1375,
+      "sha256": "c25141c8d6b0a8a117d6aefc1f478531f5e1ea6181df0ff61edbdf6188d3aefc"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/prepared/p30-voice58-6-saved-opus.receipt.json",
+      "bytes": 2015,
+      "sha256": "072c5697c022a957e69b933c221652d3ce796bd63be2a2b918aba75266f2a028"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/prepared/p30-voice58-6-saved-opus.request.json",
+      "bytes": 116,
+      "sha256": "4edba5ad512551c2656fe3504cd47f2e1d708a2b6db11972e4118a46a5e4ea4b"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/prepared/p30-voice58-6-saved-opus.response.json.gz",
+      "bytes": 90662,
+      "sha256": "0385899f91eeb476d09ef6bf9b4310c29d16a6fab760cc1414fff6a98f3b1d06"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/prepared/p30-voice58-6-saved-opus.route.json",
+      "bytes": 14875,
+      "sha256": "e01111f52ff91a517736f41262d7b9d56396748152d28b60c53268dda5c13239"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/prepared/proxy/000001.request.body.bin",
+      "bytes": 102,
+      "sha256": "9253bb4ded85900371a6bf13ff650c33587e1960e234f607c342a5095102fab7"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/prepared/proxy/000001.response.body.gz",
+      "bytes": 90662,
+      "sha256": "0385899f91eeb476d09ef6bf9b4310c29d16a6fab760cc1414fff6a98f3b1d06"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/prepared/proxy/proxy-events.jsonl",
+      "bytes": 3090,
+      "sha256": "6290850c220501014d2868d1805bbb87b9c1f6a235ad2352d4b50a8ce49c4fab"
+    }
+  ],
+  "releaseDraft": {
+    "ref": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/root-release.prepared.draft.json",
+      "bytes": 14103,
+      "sha256": "d3c4c1dc886d9268c0ea5dab237dc99c5bae0d8f5ce44fad5a717faa96501463"
+    },
+    "normalPrepareReceipt": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-production-owner-kit-rootfalse-v1/normal-prepare-receipt.json",
+      "bytes": 2488,
+      "sha256": "8ccb7d5f1653ef7e7b9ab4e010d57059f9cdc9b5a7c2b2ba6d2ad201a5fed28e"
+    },
+    "runtimeBindings": 70,
+    "all70MatchExpectedDerivedSetAndFreshCurrentSha": true,
+    "allApprovalRuntimeFlagsFalse": true,
+    "attempt": "attempt-1",
+    "maximumDriverSeconds": 120,
+    "programGzipCapBytes": 2097152,
+    "providerAndDiagnosticTraceCapsBytesEach": 2097152,
+    "expectedOutputCapBytes": 16777216,
+    "freshReserveBytesRequiredByRun": 4194304,
+    "twoSharedDependenciesAlreadyInInventoryAndShaVerified": true
+  },
+  "limits": [
+    "Read only closed output after explicit terminal notice. No project helper/import/test/AST/syntax/build, API/browser/media/renderer/recording/Git/D/C action or resource-payload reread; only metadata/text/hash plus in-memory original JSON gzip. Only this new peer file written.",
+    "No actual playback, listening, whole-line speech, source offset/phase/gain/loop, body/face or whole-scene acceptance. Root alone decides a fresh one-owner runtime release and later independent OS/guard closure.",
+    "Full guard maps were read for structure/ref/count; this peer did not repeat all9165/14501 resource byte hashes or live Git/tool ELF checks. Original freeze and future run remain the complete fresh verifiers.",
+    "Own static comparison utilities initially assumed program revision was Git SHA and scene_id numeric; actual metadata establishes numeric revision and prefixed scene IDs. Those utility assertions were corrected without modifying or rerunning any business input/program/process."
+  ]
+}
