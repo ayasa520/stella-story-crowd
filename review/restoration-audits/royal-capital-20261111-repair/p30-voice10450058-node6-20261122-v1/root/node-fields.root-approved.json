@@ -1,0 +1,184 @@
+{
+  "schema": "native_repair.node_fields",
+  "status": "root-accepted-single-short-cue-identity-normal-stage-only",
+  "rootReviewed": true,
+  "rootConfirmed": true,
+  "executionAuthorized": true,
+  "installationAuthorized": false,
+  "installable": true,
+  "baseSha": "a1ea68eeed36d7ded087e8455d6c89bb722c0c54",
+  "requiresFinalFreshRootBinding": true,
+  "changes": [
+    {
+      "sceneId": 10450058,
+      "scenarioId": 6,
+      "uniqueId": 1045005800006,
+      "arrayIndex": 5,
+      "stableKey": "s10450058-p30-at0812p5",
+      "sourceText": "エミリア様、今回の件に関してはお任せを。\n大事には至らぬよう計らっておきます",
+      "rootReviewed": true,
+      "rootConfirmed": true,
+      "expected": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_julius01",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "ユリウス",
+        "msg_text": "爱蜜莉雅大人，此事便交给我处理。我会尽量，不让事情闹大。",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "command": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "fields": {
+        "voice": "vo_adv_julius,advk_julius_emilia"
+      },
+      "evidence": {
+        "classification": "Root accepted native/source quantitative identity of the original0.8196875s short cue and conservative placement within this recorded dialogue; authored voice field only.",
+        "sourceEvidence": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-normal-preparation-rootfalse-v1/source-evidence.rootfalse.json",
+          "sha256": "385cc1ab210dbbc17f2b1f5f7821f9f39e1288ba4d7cc93d661c177ee494e8af"
+        },
+        "originalCandidate": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-gap-audit-20261121-v1/next-voice58-6.packet.json",
+          "bytes": 8001,
+          "sha256": "091b30fdaaae0957178c0451010ee9282d9ede5c02408258a1ae936cf037e9c1"
+        },
+        "sourceAttribution": [
+          {
+            "segmentId": "p30-s10450058",
+            "start": 811.9,
+            "end": 817,
+            "sourceAnchorSeconds": 812.5,
+            "ocrReviewed": true,
+            "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/30/coarse-1hz/crops/024510-dialogue.png",
+            "ocrEventId": "merged-0204",
+            "sourceSha256": "d7d29c63dc09f0e4942aa6c89e7ee2f9badc5d6f53757e587993ce46d301c3ee",
+            "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/30 10本篇Ver尤里乌斯 「『最优』的义务」.mp4",
+            "originalOCRText": "エミリア様、今回の件に関してはお任せを。大事には至らぬよう計らっておきます",
+            "ocrConfidence": 0.99957,
+            "ocrReviewReasons": [],
+            "visualReviewer": "root",
+            "rootDecision": {
+              "interval": [
+                811.9,
+                817
+              ],
+              "canonicalAnchorSeconds": 812.5,
+              "action": "merge-typewriter-parts",
+              "speaker": "ユリウス",
+              "text": "エミリア様、今回の件に関してはお任せを。\n大事には至らぬよう計らっておきます",
+              "witnessTime": 816.998
+            },
+            "rootReviewWitnessTime": 816.998,
+            "recordingId": "bili-capital-30"
+          }
+        ],
+        "sourceVideo": {
+          "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/30 10本篇Ver尤里乌斯 「『最优』的义务」.mp4",
+          "bytes": 116796723,
+          "mtimeMs": 1791024935000,
+          "sha256DeclaredFromExistingSeal": "d7d29c63dc09f0e4942aa6c89e7ee2f9badc5d6f53757e587993ce46d301c3ee",
+          "freshHashOrPayloadRead": false,
+          "statOnly": true
+        },
+        "sourcePCMByteBinding": {
+          "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/p30-bgm-identification-20261113-v1/p30-original-source.wav",
+          "bytes": 8053500,
+          "sha256": "ce16138f1b12168383cdb88c7bdb7e390b7b0c0fb67b2fad9c6d7eac53e01831",
+          "expectedFromOriginalPacket": "ce16138f1b12168383cdb88c7bdb7e390b7b0c0fb67b2fad9c6d7eac53e01831",
+          "matchesOriginalSeal": true,
+          "readWholeBytesForSHA": true,
+          "sampleValuesDecodedOrInterpreted": false,
+          "decodedOrResampledOrCorrelationRecomputed": false
+        },
+        "installedShortCueByteBinding": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/assets/voices/vo_adv_julius/advk_julius_emilia.wav",
+          "bytes": 52504,
+          "sha256": "b7ab09e687e7783e982ce565706d32b6214da29cc71458ddf130373a597c3318",
+          "expectedFromOriginalPacket": "b7ab09e687e7783e982ce565706d32b6214da29cc71458ddf130373a597c3318",
+          "matchesOriginalSeal": true,
+          "readWholeBytesForSHA": true,
+          "listeningPerformed": false
+        },
+        "nativeCue": {
+          "nameRow": {
+            "CueName": "advk_julius_emilia",
+            "CueIndex": 29
+          },
+          "cue": {
+            "CueId": 29,
+            "ReferenceType": 3,
+            "ReferenceIndex": 29,
+            "UserData": "",
+            "Worksize": 0,
+            "AisacControlMap": "",
+            "Length": 819,
+            "NumAisacControlMaps": 0,
+            "HeaderVisibility": 1
+          },
+          "waveformIndex": 29,
+          "streamAwbId": 38,
+          "awbBegin": 233120,
+          "awbEnd": 239872
+        },
+        "reference": {
+          "bank": "vo_adv_julius",
+          "cue": "advk_julius_emilia",
+          "member": "LIMEOS/audio/vo_adv_julius/advk_julius_emilia.wav",
+          "url": "voices/vo_adv_julius/advk_julius_emilia.wav",
+          "wavSha256": "b7ab09e687e7783e982ce565706d32b6214da29cc71458ddf130373a597c3318",
+          "channels": 1,
+          "sampleRate": 32000,
+          "samples": 26230,
+          "durationSeconds": 0.8196875
+        },
+        "localActiveNcc": 0.9913230675051017,
+        "localWholeCueNcc": 0.986398056926725,
+        "threePieceNcc": [
+          0.9928451743374137,
+          0.9913173909654716,
+          0.9357775795297242
+        ],
+        "strongestNamedCompetitorNcc": 0.22248584855356943,
+        "namedCompetitorCount": 3,
+        "bankWideSearch": false,
+        "sourceTextIntervalSeconds": [
+          811.9,
+          817
+        ],
+        "sourcePcmWindowSeconds": [
+          811,
+          818
+        ],
+        "cueZeroOnPcmAxisSeconds": 812.39275,
+        "cueZeroIsNativeCommandTime": false,
+        "listeningPerformed": false,
+        "originalCsvRecovered": false,
+        "originalScenarioIdRecovered": false,
+        "originalVoiceFieldRecovered": false,
+        "phaseOffsetGainOrSourceTimingRecovered": false,
+        "fullDialogueSpokenByCueAccepted": false,
+        "motionOrFaceAccepted": false,
+        "normalSavedPlaybackAccepted": false,
+        "wholeEpisodeAccepted": false,
+        "independentStaticPeerReceipt": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-voice58-6-existing-evidence-static-peer-v1/receipt.rootfalse.json",
+          "bytes": 4000,
+          "sha256": "c08d6b23cc3d6720c60ba57dfb9eecdd966fe5ffb1191552679218a4af573002"
+        },
+        "rootReviewedMinimalResourceIdentityAndLinePlacementOnly": true
+      }
+    }
+  ],
+  "preserve": "All other native leaves,37rows,UID/array order/branches,voice quote_voice,SE,motion,command and original unknowns outside the explicit voice identity remain unchanged.",
+  "listeningPerformed": false,
+  "wholeEpisodeAccepted": false
+}
