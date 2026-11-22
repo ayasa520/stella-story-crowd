@@ -1,0 +1,12 @@
+# P30 v2 saved full program: independent static structure read
+
+The saved complete ordinary response matches the inspected canonical projection of all 140 guarded native/review pairs: 5,624 nodes, 5,870 edges, 42 node fields and 20 edge fields, including complete key sets and source order. The independent read compared 236,208 node-field values and 117,400 edge-field values with zero mismatches. All 246 unavailable edges remain as saved; no unknown branch is repaired or executed.
+
+The fresh head is `edd4afedf2dd2720da1c0f873ed1ad6caeac2e50`, start is node 3 of scene 10450054, and the real returned before has `bg/bg031b_stealshop`, empty model/actors and empty BGM. Raw and normalized SHA-256 are `8b0e5c802d43f5a323dc656c63f06ebc4040139af32bd1b6ca8e67e9a58f750e` (18,755,440 bytes). Gzip SHA-256 is `b0d1b3fafd2cc2a1e22d1865d20716fd67ab8c09fadf5d9b4289df496ed8b989` (1,466,548 bytes). HTTP, request, receipt, index and frozen binding summaries match these bytes, the complete counts and actual before.
+
+The three complete saved target native rows and compiled nodes, edges 31/41/51, native UID identities, every source command phase, model/motion/voice/background/music/movie field, review text and metadata, full branch transitions/labels/quotes/state/availability were checked. Node 4 still has the tshirt model and empty motion. Node 5 keeps Felt/act_punpun. Edge 51 remains in the full program for provenance and is forbidden during the proposed bounded route. The compiled response has no global `resources` property; actual asset catalog entries, thumbnails and target model resource counts are reported without inventing that schema.
+
+Root reported actual prepare session 37376 ran `/usr/bin/node K/prepare.mjs` without `--import K/transport.mjs`. Original outputs are preserved and were not regenerated. This report establishes static payload/source equivalence only. It does not claim a transport provider trace, approve reuse of that preparation, grant a release, or accept runtime/playback/acting/source phase. The independent deviation peer and root make that separate decision.
+
+The exact read-only Node command is retained as text. It used built-in fs/crypto/zlib/util, read and hashed the saved gzip plus all 140 native/review pairs and inspected canonical TS/JSON, and independently compared immutable field values. It did not import or call the original compiler, project helper, API, state resolver, browser, media, test or build. Only this new metadata directory was written; D/C, sealed kit and original evidence remain unchanged.
+

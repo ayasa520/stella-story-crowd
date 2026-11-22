@@ -1,0 +1,437 @@
+{
+  "schema": "stella.P30.v2.full-ordinary-program-review-checklist.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "freezeAuthorized": false,
+  "apiPreparationAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "diagnosticInstrumentationAuthorized": false,
+  "continuousRecorderAuthorized": false,
+  "programAccepted": false,
+  "playbackAccepted": false,
+  "motionAccepted": false,
+  "sourcePhaseAccepted": false,
+  "wholeSceneAccepted": false,
+  "wholeEpisodeAccepted": false,
+  "status": "OFFLINE_CHECKLIST_ONLY_NOT_PROGRAM_REVIEW_OR_EXECUTION",
+  "bindingToReview": {
+    "dataHead": "edd4afedf2dd2720da1c0f873ed1ad6caeac2e50",
+    "sourceHead": "6630ac70f17332efa031d021af00532d42307568",
+    "scope": "Root has separately authorized original v2 freeze/ordinary API preparation only; this checklist grants no authorization."
+  },
+  "sources": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-bindings-edd4afed-p30v2-v1/inventory.rootfalse.json",
+      "sha256": "e843f58d52500b77631cec6cffc2ec78a03c0d82ee628b94efc52071c49c78e8"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-preparation.root-approved.json",
+      "sha256": "a719b39e04153c258d49d9b0ef22ef4709cfaa380a5738608cf798c93c0516c3"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/plan.rootfalse.json",
+      "sha256": "ee8d8afd13bea486301896a560449245e24dadf9642e5ef87d7d95f74f6cb183"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/prepare.mjs",
+      "sha256": "795ff79524dc32406b7c083cbf98ca848b319a999d5e8dfbf7d3612d4a9f9ad2"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/freeze.py",
+      "sha256": "843309cf3a308d40369a21c257210a660ec5d8c3b591258f9298b59dbc697e49"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/driver.mjs",
+      "sha256": "5e54c79d8446b98f6cfd8ea249ecf274e32b02162e0f17e79cc88ebf14f6f122"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/receipt.rootfalse.json",
+      "sha256": "a1acad956d2b88fd6aca386ce9f8358beb2731b50b98fc19efc8263edcc96507"
+    }
+  ],
+  "inputFacts": {
+    "inventoryAndApprovalDigestMatch": true,
+    "inventoryCounts": {
+      "libraryScenes": 140,
+      "libraryNodes": 5624,
+      "libraryEdges": 5870,
+      "dataInputs": 9163,
+      "globalGuards": 14044,
+      "globalNativeReview": 4681,
+      "sourceFiles": 312,
+      "distFiles": 234,
+      "protectedFirstThree": 22,
+      "sharedClosure": 8,
+      "evidenceGuards": 45,
+      "toolFiles": 10
+    },
+    "routeNativeAndReviewDigestsMatchSealedPlan": true,
+    "historicalPlanObservedNodeCount5622IsNotCurrentExpectedCount": true,
+    "stableKeyAndUidMeaning": "stableKey/source native UID are sealed source identities, not assertions of an unobserved compiled property name."
+  },
+  "ordinaryRequest": {
+    "endpoint": "/api/player/prepare",
+    "method": "POST",
+    "body": {
+      "id": "node:10450054:1045005400003",
+      "baseSha": "edd4afedf2dd2720da1c0f873ed1ad6caeac2e50",
+      "choices": {}
+    },
+    "overrideFieldMustBeAbsent": true,
+    "programSliceOrSeedOrAliasOrOverlayAllowed": false,
+    "on422": "Keep exact original raw/status/headers plus the original helper's ordinary resolve response, then stop; no automatic root1 fallback/retry."
+  },
+  "wholeProgramChecks": {
+    "headShaEquals": "edd4afedf2dd2720da1c0f873ed1ad6caeac2e50",
+    "revisionRule": "parseInt(headSha.slice(0,12),16), per original prepare.mjs:70",
+    "startEquals": "node:10450054:1045005400003",
+    "expectedFromCurrentInventory": {
+      "libraryScenes": 140,
+      "nodes": 5624,
+      "edges": 5870
+    },
+    "actualProgramCountsReviewed": false,
+    "targetSceneFilter": {
+      "property": "scene_id",
+      "equals": "scene:10450054",
+      "nodeCount": 52
+    },
+    "all52OriginalTargetRowsAndUIDsPreserved": true,
+    "wholeLibraryMustNotBeReducedToThreeNodes": true,
+    "maxRawProgramBytesFromOriginalHelper": 25000000,
+    "rawShaAndNormalizedProgramShaBothRecorded": true,
+    "genuineBefore": "Keep the entire actual ordinary before object unchanged and bind browser second-read equality to it. Do not seed the old v1 before or infer it from source PTS.",
+    "freshBeforeValueKnown": false,
+    "beforeDependencyCheck": "Any nonempty before.model or before.actors[].model must already have frozen assets/models/<model>/ membership; original prepare.mjs:77–79 rejects silent widening."
+  },
+  "targetNodeChecks": [
+    {
+      "nodeId": "node:10450054:1045005400003",
+      "scenarioId": 3,
+      "nativeUid": 1045005400003,
+      "sourceStableKey": "s10450054-p30-at0024",
+      "sourceJapanese": "――盗品蔵・夕方",
+      "sealedNativeWholeRowSemanticSha256": "fed58031d997c7c9b8168091dbcbf48b2d6658c72eff4a2a8ccaf854c7a260d5",
+      "expectedNativeFullRow": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "",
+        "msg_text": "——赃物库·傍晚",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 3,
+        "uniq_id": 1045005400003,
+        "is_root": 0,
+        "scenario_type": 1,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1045005410031,
+                "transition_id": 3101,
+                "next_scenario_id": 4,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1045005410031,
+            "branch_id": 31,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "expectedKnownCompiledFields": {
+        "kind": "text",
+        "model": "",
+        "body": "",
+        "face": "",
+        "extra_motions": [],
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "translation": "——赃物库·傍晚",
+        "suppress_lip_motion": false
+      },
+      "sourceFieldValidation": "Compare the saved full native row to the sealed expected row; only the compiled fields proven by prepare.mjs:80–85 are named here. Do not invent a compiled native UID/stableKey property.",
+      "compiledUidOrStableKeyPropertyName": null
+    },
+    {
+      "nodeId": "node:10450054:1045005400004",
+      "scenarioId": 4,
+      "nativeUid": 1045005400004,
+      "sourceStableKey": "s10450054-p30-at0027",
+      "sourceJapanese": "話が合ったかと思えば今度はケンカか！いい加減にしてくれ！今は俺との交渉の場面のはずだろ？",
+      "sealedNativeWholeRowSemanticSha256": "87e670fef34a4edfebaa6d386f5114e877e9d8238028af41dbe798c42d5c33d4",
+      "expectedNativeFullRow": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_subaru_tshirt01",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "スバル",
+        "msg_text": "刚觉得你们谈得来，转头又吵起来了！适可而止吧！现在不是该和我谈交易吗？",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 4,
+        "uniq_id": 1045005400004,
+        "is_root": 0,
+        "scenario_type": 2,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1045005410041,
+                "transition_id": 4101,
+                "next_scenario_id": 5,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1045005410041,
+            "branch_id": 41,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "expectedKnownCompiledFields": {
+        "kind": "card",
+        "model": "subaru_tshirt01",
+        "body": "",
+        "face": "",
+        "extra_motions": [],
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "translation": "刚觉得你们谈得来，转头又吵起来了！适可而止吧！现在不是该和我谈交易吗？",
+        "suppress_lip_motion": false
+      },
+      "sourceFieldValidation": "Compare the saved full native row to the sealed expected row; only the compiled fields proven by prepare.mjs:80–85 are named here. Do not invent a compiled native UID/stableKey property.",
+      "compiledUidOrStableKeyPropertyName": null
+    },
+    {
+      "nodeId": "node:10450054:1045005400005",
+      "scenarioId": 5,
+      "nativeUid": 1045005400005,
+      "sourceStableKey": "s10450054-p30-at0033",
+      "sourceJapanese": "話は終わりだって言ってんだろ。大体、こっちも依頼されて盗んできたもんを勝手に横流しなんかできるわけね一よ",
+      "sealedNativeWholeRowSemanticSha256": "e3f68010c3c31058ab71793a4a4d32d76b9423a3f2c78cc4d56d8e03b46280b7",
+      "expectedNativeFullRow": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_felt01",
+        "character_image": "",
+        "motion": "act_punpun",
+        "msg_character": "フェルト",
+        "msg_text": "不是说了，已经没什么好谈的。而且，人家委托我偷来的东西，怎么可能随便转卖啊。",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 5,
+        "uniq_id": 1045005400005,
+        "is_root": 0,
+        "scenario_type": 2,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1045005410051,
+                "transition_id": 5101,
+                "next_scenario_id": 6,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1045005410051,
+            "branch_id": 51,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "expectedKnownCompiledFields": {
+        "kind": "card",
+        "model": "felt01",
+        "body": "act_punpun",
+        "face": "",
+        "extra_motions": [],
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "translation": "不是说了，已经没什么好谈的。而且，人家委托我偷来的东西，怎么可能随便转卖啊。",
+        "suppress_lip_motion": false
+      },
+      "sourceFieldValidation": "Compare the saved full native row to the sealed expected row; only the compiled fields proven by prepare.mjs:80–85 are named here. Do not invent a compiled native UID/stableKey property.",
+      "compiledUidOrStableKeyPropertyName": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:node:10450054:1045005400003:1045005410031:31",
+      "source": "node:10450054:1045005400003",
+      "target": "node:10450054:1045005400004",
+      "branchId": 31,
+      "available": true,
+      "native_transition": {
+        "uniq_id": 1045005410031,
+        "transition_id": 3101,
+        "next_scenario_id": 4,
+        "next_scenario_label": ""
+      }
+    },
+    {
+      "id": "edge:node:10450054:1045005400004:1045005410041:41",
+      "source": "node:10450054:1045005400004",
+      "target": "node:10450054:1045005400005",
+      "branchId": 41,
+      "available": true,
+      "native_transition": {
+        "uniq_id": 1045005410041,
+        "transition_id": 4101,
+        "next_scenario_id": 5,
+        "next_scenario_label": ""
+      }
+    }
+  ],
+  "savedButForbiddenOutgoingEdge": {
+    "id": "edge:node:10450054:1045005400005:1045005410051:51",
+    "source": "node:10450054:1045005400005",
+    "target": "node:10450054:1045005400006",
+    "branchId": 51,
+    "branchUid": 1045005410051,
+    "native_transition": {
+      "uniq_id": 1045005410051,
+      "transition_id": 5101,
+      "next_scenario_id": 6,
+      "next_scenario_label": ""
+    },
+    "available": true,
+    "inspectOnly": true,
+    "execute": false
+  },
+  "resourceChecks": {
+    "inventoryRelativePathGuards": {
+      "assets/backgrounds/ADV_bg031b_stealshop.png": "be0cb9f08a752bbf06925edfd726483ebc783d745bfde9f5cd836e300022b342",
+      "assets/catalog.json": "8bc553f5d67a0740466e0e75c23bfa5cda9504e1b95c40fa504482f9c86d9e7c",
+      "assets/models/felt01/ac/ac.moc3": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935",
+      "assets/models/felt01/ac/ac.model3.json": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549",
+      "assets/models/felt01/ac/motions/AC_felt01_act_punpun.motion3.json": "855e339c0e291b3ec35cc6483cf6f1e2d799a8dfd265d665cd6452c4e14d9448",
+      "assets/models/felt01/ac/textures/texture_00.png": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6",
+      "assets/models/felt01/detail.json": "b65c6dfacf46ca4f3f6c281a72eb2a0076e3d1cfe70348bb9968bcd2cc534cec",
+      "assets/models/subaru_tshirt01/ac/ac.moc3": "268c58da526c7225cb602c90e2b8e73996cbe131a858824e4a75abb696c0b222",
+      "assets/models/subaru_tshirt01/ac/ac.model3.json": "adc631e25933731a2f0e40652f36ebf9deec3eb2728648a5decbe4992c5aba31",
+      "assets/models/subaru_tshirt01/ac/textures/texture_00.png": "4a2de4996241b180331b630901065420d947662e4d71a4dde229f746d778889e",
+      "assets/models/subaru_tshirt01/detail.json": "015420ef7bfa01158a668334b3aa6695df6fb1215c966e9adf3396c5603ae99b",
+      "assets/preview/backgrounds/ADV_bg031b_stealshop.webp": "112d3091b36d6f4f69aa5c3dd878b2abf2b82c217d7bba594e4cb4da3527b6b3",
+      "assets/preview/catalog.json": "22cc9b08e6f086556562de1c12fa1594eda2adae2c28940512be74f72d3d4cce",
+      "assets/preview/models/felt01/ac/ac.moc3.gz": "cdcc63193f971e91393a9ea45f281cc128462544373664e4e2356e22ff26ea44",
+      "assets/preview/models/felt01/ac/textures/texture_00.webp": "fcc8043b772a8fad26c1ff984d42467f6ff4e14489c3da4baac3145a115e2902",
+      "assets/preview/models/subaru_tshirt01/ac/ac.moc3.gz": "aa757c4d49c1da584b1c0c33f17c80fc8251270a68370e1b4ae0dc82799f3738",
+      "assets/preview/models/subaru_tshirt01/ac/textures/texture_00.webp": "b7bb4866b729bf42b54819952b7929edb94b421c38f2ef4bdae0b67caf5b8ec1",
+      "assets/preview/thumbnails/scene/10450054.webp": "b6385c8c40debcc10d180bd575c7c4e21ffe054ec2b45bfe3bddae556842cbb3",
+      "assets/thumbnails/scene/10450054.png": "af703c424b689d8e8f9ff3d4d1b5c50852420f0570316f255ed843e13769ef60",
+      "manifest.json": "6a60bced4eb73a1b29a77df8707f276a641b5da35759f02f54ba6779ee685fa3",
+      "native/scenes/10450054.json": "220268054497bf1463591298be7aa95841ce22b438580833a3c9b830215f1bea",
+      "review/scenes/10450054.json": "b751893f98cf0c63a8f98536f9c8d95cb73bf2f7b8372e428ed7c8f24b827f09"
+    },
+    "programMustExposeUsableResourcesForModels": [
+      "subaru_tshirt01",
+      "felt01"
+    ],
+    "actualCompiledResourceObjectShape": null,
+    "actualCompiledResourceEntryFieldsReviewed": false,
+    "instruction": "Review the fresh complete ordinary response's actual resource layout, record exact entries for the two model IDs and genuine-before background, and compare URLs/provider paths to the listed catalog/controller/core/texture/preview assets. This checklist does not invent resource property names.",
+    "backgroundCandidateFromBoundAssets": {
+      "token": "bg/bg031b_stealshop",
+      "condition": "Require it if the genuine fresh before selects it; do not synthesize before from this candidate."
+    },
+    "fullControllerMotionMembership": "Original freezer binds every original/preview file under all section1045 models, plus the retained inventory resource union. Preserve full actual controller/motion resources, not only Felt act_punpun. Empty node4 motion does not mean no actual default/persisted layers and is not a request to select bikkuri.",
+    "inventoryModelUnionCount": 15,
+    "routeTargetModels": 2,
+    "selectedMotionAssertionOnly": {
+      "node4": "",
+      "node5": "act_punpun"
+    },
+    "node3To5SavedBgmVoiceVideoFieldsEmpty": true,
+    "actualBeforeBgmMustBeRecordedRatherThanAssumed": "Do not add BGM, voice or video to target source rows; preserve any actual upstream before state.",
+    "sceneThumbnailBindingsIncluded": true
+  },
+  "futureRuntimeBoundary": {
+    "plannedRoute": "3→31→4→41→5 own natural ready STOP",
+    "startNode3Actorless": true,
+    "node4Character": "live2d/AC_subaru_tshirt01",
+    "node4NativeMotion": "",
+    "node5Character": "live2d/AC_felt01",
+    "node5NativeMotion": "act_punpun",
+    "node5AcceptedPerformanceReaudit": false,
+    "advance51Allowed": false,
+    "node6EnterAllowed": false,
+    "node4Observation": "Original owner observes actual entry/typing/layers, >=8 actual Actor seconds from first observed visible and >=2 after natural ready. No Wait, phase/clock/token/model/ready change.",
+    "newRuntimeReleasePresent": false
+  },
+  "uncertainties": [
+    "This checklist does not read/decompress any newly prepared program; actual raw/before/resource layout and current response hashes are pending root's ordinary preparation/review.",
+    "Global counts are exact inventory expectations, not a claim that current complete response was reviewed.",
+    "Original source node4 provider, command automaticity and animation phase remain unknown; v2 static lexical pass does not accept acting.",
+    "Prior v1 failed before load/recorder/capture. Its prepared program and exhausted release must not authorize v2."
+  ],
+  "performed": "Read-only text/metadata source inspection and sha256sum; wrote only this new checklist metadata. No original helper/import/syntax/test/freeze/prepare/API/browser/server/media/decode/image/build/Git executed; D/C and original evidence unchanged."
+}
+

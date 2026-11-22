@@ -1,0 +1,159 @@
+node --input-type=module <<'P30_STATIC_AUDIT'
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {gunzipSync} from 'node:zlib';
+import {isDeepStrictEqual as same} from 'node:util';
+const A='/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121';
+const K=A+'/p30-node4-ordinary-entry-owner-kit-rootfalse-v2';
+const D=A+'/data-checkout',C='/home/rikka/Projects/stella/artifacts/stella-site-repair-source/.sites-checkout';
+const head='edd4afedf2dd2720da1c0f873ed1ad6caeac2e50',sourceHead='6630ac70f17332efa031d021af00532d42307568';
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const ledger=[],mismatches=[];
+async function read(path){const bytes=await readFile(path);return {path,bytes:bytes.length,sha256:sha(bytes),value:JSON.parse(bytes)};}
+function check(label,actual,expected){if(!same(actual,expected))mismatches.push({label,actual,expected});}
+const inventory=await read(A+'/ordinary-QA-root-bindings-edd4afed-p30v2-v1/inventory.rootfalse.json');
+const approval=await read(A+'/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-preparation.root-approved.json');
+const binding=await read(K+'/frozen/binding.json');
+const index=await read(K+'/prepared/index.json'),req=await read(K+'/prepared/p30-node4-unchanged-ordinary.request.json');
+const http=await read(K+'/prepared/p30-node4-unchanged-ordinary.http.json'),receipt=await read(K+'/prepared/p30-node4-unchanged-ordinary.receipt.json');
+const authored=await read(K+'/plan.rootfalse.json');
+const zipped=await readFile(K+'/prepared/p30-node4-unchanged-ordinary.raw.json.gz'),raw=gunzipSync(zipped),program=JSON.parse(raw.toString('utf8'));
+const actualSha=sha(raw),normalizedSha=sha(JSON.stringify(program));
+check('binding digest',binding.sha256,'5b47605977cbf9514c523f2392c5d950ce05020af2f61893ea4d09be5da6df0a');
+check('approval inventory',inventory.sha256,approval.value.globalGuardsFile.sha256);
+check('current D',binding.value.finalDataHead,head);check('current C',binding.value.finalSourceHead,sourceHead);
+check('program head',program.headSha,head);check('program revision',program.revision,parseInt(head.slice(0,12),16));
+check('program start',program.start,'node:10450054:1045005400003');
+check('actual request',req.value,{id:program.start,baseSha:head,choices:{}});
+check('raw bytes receipt',raw.length,receipt.value.rawResponseBytes);check('raw SHA receipt',actualSha,receipt.value.rawResponseSha256);
+check('normalized SHA receipt',normalizedSha,receipt.value.programSha256);check('receipt/index',receipt.value,index.value.receipts[0]);
+check('index binding',index.value.bindingSha256,binding.sha256);check('index allSucceeded',index.value.allSucceeded,true);
+check('HTTP status',http.value.status,200);check('receipt status',receipt.value.status,200);
+for(const field of Object.keys(http.value))check('HTTP/receipt '+field,http.value[field],receipt.value[field]);
+check('before receipt',program.before,receipt.value.before);check('receipt start',receipt.value.start,program.start);check('receipt head',receipt.value.headSha,head);
+check('receipt nodes',receipt.value.wholeLibraryNodes,program.nodes.length);check('receipt edges',receipt.value.wholeLibraryEdges,program.edges.length);
+check('not old v1 program',actualSha==='c77eae6cf782b4470e99532b3a4c6f6b2e334caa4d3b495c2b012931ed1507a9',false);
+async function data(relative){const row=await read(D+'/'+relative);check('frozen data SHA '+relative,row.sha256,binding.value.dataGuards[relative]);check('inventory data SHA '+relative,row.sha256,inventory.value.dataInputs[relative]);return row;}
+const manifest=await data('manifest.json'),catalog=await data('assets/catalog.json');
+const configFiles=['config/semantics.json','config/commands.json','config/lighting.json','config/effects.json','config/preview-policy.json'];
+const cfg={};const canonicalSources=[];
+for(const relative of configFiles){const record=await read(C+'/'+relative);check('frozen canonical SHA '+relative,record.sha256,binding.value.fileGuards[record.path]);cfg[relative]=record.value;canonicalSources.push({path:record.path,bytes:record.bytes,sha256:record.sha256});}
+for(const relative of ['lib/preview.ts','lib/preview-commands.ts','lib/studio-native.ts','lib/native.ts','lib/studio-api.ts','lib/resources.ts']){
+ const bytes=await readFile(C+'/'+relative),record={path:C+'/'+relative,bytes:bytes.length,sha256:sha(bytes)};
+ check('frozen canonical SHA '+relative,record.sha256,binding.value.fileGuards[record.path]);canonicalSources.push(record);
+}
+const semantics=cfg['config/semantics.json'],commandData=cfg['config/commands.json'],lighting=cfg['config/lighting.json'].profiles;
+const effects=catalog.value.visual_effects||cfg['config/effects.json'].resources;
+const defs=new Map(commandData.definitions.map(d=>[d.name,d]));
+// This independent read-only audit translates the inspected immutable grammar
+// to expected values; it never imports or calls the product compiler/helper.
+function parameter(p,raw){
+ if(!raw){if(p.required)throw Error(p.label+'不能为空');return null;}
+ const v=p.type==='symbol'?raw:JSON.parse(raw);
+ if(p.type==='string'&&typeof v!=='string')throw Error(p.label+'须为引号包围的字符串');
+ if(p.type==='number'&&(typeof v!=='number'||!Number.isFinite(v)))throw Error(p.label+'须为有限数值');
+ if(p.type==='number'&&(p.min!==undefined&&v<p.min||p.max!==undefined&&v>p.max))throw Error(p.label+'超出允许范围');
+ if(p.type==='boolean'&&typeof v!=='boolean')throw Error(p.label+'须为 true 或 false');
+ if(p.type==='symbol'&&!p.choices?.includes(v))throw Error(p.label+'不是原版有效值');return v;
+}
+function commands(block){return block.split(/\r\n|\r|\n|<BR>/).flatMap((line,index)=>{
+ if(!line.trim())return [];const parts=line.split(','),name=parts[0].trim(),d=defs.get(name);
+ const r={command:line,line:index,name,label:d?.label||name,values:[],error:'',kind:'unsupported',reason:'尚未实现原生演出预览'};
+ if(!d){r.reason='未收录的指令，按原文保存';return[r];}
+ r.terminates_block=d.terminates_block||false;
+ try{
+  if(parts.length-1>d.params.length)throw Error('参数数量超过原指令定义');
+  r.values=d.params.map((p,i)=>parameter(p,(parts[i+1]||'').trim()));const[a,b,c]=r.values;
+  switch(d.preview){
+   case'wait':Object.assign(r,{kind:'wait',duration:Number(a)/1000,can_skip:b!==false});break;
+   case'music':Object.assign(r,{kind:'music',fade:a??commandData.preview.music.fade_seconds});break;
+   case'tap':case'junction':case'card_out':r.kind=d.preview;break;
+   case'sound':Object.assign(r,{kind:'sound',action:name==='SE'?'play':'stop',cue:a||''});break;
+   case'fx':{const resource=String(a);if(effects[resource])Object.assign(r,{kind:'fx',resource,offset:r.values.slice(1).map(v=>v??0),blocking:effects[resource].blocking});else r.reason='尚未提取此画面特效：'+resource;break;}
+   case'lighting':{const resource=String(a),profile=lighting[resource.split('/').at(-1).toLowerCase().replace(/\.asset$/,'')];if(resource==='OFF'||profile?.lookup&&!profile.legacy&&!profile.ghost&&!profile.shadow)Object.assign(r,{kind:'lighting',resource});else r.reason='未找到可预览的原版角色光照资源：'+resource;break;}
+   case'wipe':Object.assign(r,{kind:'wipe',action:name==='WipeOut'?'out':'in',resource:a||'',image:b||'',start:c||0});break;
+   case'quake':{const q=commandData.preview.quake;if(q.states.includes(String(a)))Object.assign(r,{kind:'quake',state:a,scale:b||q.default_scale,direction:c||q.default_directions[String(a)]});else r.reason='持续震动及其停止转换暂只保存；单次震动可以预览';break;}
+  }if(r.kind!=='unsupported')r.reason='可预览';
+ }catch(error){r.error=error.message;r.reason='参数待修正：'+r.error;}return[r];
+});}
+function music(value){const fadeDefault=semantics.bgm_fade_seconds;if(!value.trim())return{action:'inherit',resource:'',fade:fadeDefault,restart:false};
+ const parts=value.split(',').map(s=>s.trim().replace(/^"(.*)"$/,'$1'));
+ const fade=parts[1]?Number(parts[1]):fadeDefault,restart=parts[2]?JSON.parse(parts[2]):false;
+ return{action:parts[0]==='STOP'?'stop':'play',resource:parts[0]==='STOP'?'':parts[0],fade,restart};
+}
+const visible=v=>v==='未設定'?'':String(v??'');
+const sources=[];for(const entry of manifest.value.scenes){const native=await data(entry.path),review=await data(entry.reviewPath);sources.push({entry,document:native.value,review:review.value});ledger.push({sceneId:entry.id,nodeCount:native.value.scenario_list.length,edgeCount:native.value.scenario_list.reduce((n,r)=>n+r.branch_list.length,0),nativeSHA256:native.sha256,reviewSHA256:review.sha256});}
+const stable=(s,row)=>'node:'+s.entry.id+':'+(s.review.scenarios[String(row.scenario_id)]?.studioNodeId||row.uniq_id);
+const byScene=new Map(sources.map(s=>[s.entry.id,s])),sections=new Map();
+for(const chapter of manifest.value.chapters)for(const section of chapter.sections)for(const id of section.sceneIds)sections.set(id,section.id);
+const baseMap=new Map(),sourceMap=new Map(),expectedNodes=[],expectedEdges=[];
+for(const s of sources)for(const row of s.document.scenario_list){baseMap.set(s.entry.id+':'+row.scenario_id,stable(s,row));sourceMap.set(stable(s,row),{s,row});}
+for(const s of sources){let background='',provider=null;for(const row of s.document.scenario_list){
+ if(row.bg_picture){background=row.bg_picture;provider=row.scenario_id;}
+ const review=s.review.scenarios[String(row.scenario_id)]||{},anchor=review.recordings?.[0],ext=review.studioExtensions||{};
+ const[body='',face='',...extra]=row.motion.split(',').map(x=>x.trim()),[bank='',cue='']=row.voice.split(',').map(x=>x.trim());
+ const kind=semantics.scenario_types.find(t=>t.value===row.scenario_type)?.kind;
+ const phases=row.command.map(commands),unsupported=[row.position&&'position',row.talk_chara&&row.talk_chara!=='0'&&'talk_chara'].filter(Boolean);
+ expectedNodes.push({
+  id:stable(s,row),scenario_id:row.scenario_id,scene_id:'scene:'+s.entry.id,kind,title_mode:kind==='title'?(row.branch_list.some(b=>b.transition_list.some(t=>t.next_scenario_label==='FINISH'))?'end':'scene'):'',
+  speaker:visible(row.msg_character),text:visible(review.sourceText||row.msg_text),translation:visible(row.msg_text),model:row.character.replace(/^live2d\/AC_/,''),body,face,extra_motions:extra.filter(Boolean),bank,cue,
+  bg_picture:row.bg_picture,bg_music:row.bg_music,character_image:row.character_image,movie_resource:Object.keys(catalog.value.movies).find(k=>k.toLowerCase()===row.video.toLowerCase())||row.video,
+  actors:ext.actors||[],voice_delay_ms:ext.voice_delay_ms||0,fx_emission_times:ext.fx_emission_times||[],command:row.command,phases,music:music(row.bg_music),script_background:{mode:'native_array',resource:background,source_scenario_id:provider},
+  native_video:s.document.video_list.find(v=>typeof v==='object'&&v!==null&&'name'in v&&String(v.name).toLowerCase()===row.video.toLowerCase())||null,
+  suppress_lip_motion:row.talk_chara==='0',native_unsupported:unsupported.length?'此节点包含尚未接入预览的原生 '+unsupported.join(' / ')+' 参数':'',
+  video_id:'recording:'+s.entry.id+':'+(anchor?.recordingId||'none'),start:anchor?.start||0,end:anchor?.end||0,time:anchor?.start||0,visual_time:anchor?.visualTime??anchor?.start??0,
+  background_time:review.backgroundTime??anchor?.visualTime??anchor?.start??0,bgm_time:review.bgmTime??anchor?.start??0,frame:typeof review.frame==='string'&&review.frame?'/resource/'+review.frame:'',notes:review.notes||'',
+  review_state:['reviewed','excluded'].includes(review.status||'')?review.status:'draft',critical:review.critical??phases.some(rows=>rows.some(r=>r.kind==='junction')),ocr_score:review.ocrScore??null,
+  candidates:{model:[],voice:[],body:[],face:[],background:[],bgm:[],cast:[],...(review.candidates||{})},evidence:{...(review.evidence||{}),origin:s.entry.source,issues:review.issues||[],recordings:review.recordings||[]}
+ });
+}}
+const excluded=new Set(expectedNodes.filter(n=>n.review_state==='excluded').map(n=>n.id));
+function classify(t){if(!t||t.next_scenario_label!=='FINISH'||!Number.isSafeInteger(t.next_scenario_id)||t.next_scenario_id<0)return{kind:'invalid'};
+ const absent=!Object.hasOwn(t,'next_section_id')&&!Object.hasOwn(t,'next_scene_id'),sentinel=t.next_section_id===-1&&t.next_scene_id===-1;
+ if(t.next_scenario_id===0&&(absent||sentinel))return{kind:'terminal'};
+ if(Number.isSafeInteger(t.next_section_id)&&t.next_section_id>0&&Number.isSafeInteger(t.next_scene_id)&&t.next_scene_id>0)return{kind:'target',sectionId:t.next_section_id,sceneId:t.next_scene_id};
+ return{kind:'invalid'};}
+for(const s of sources)for(const row of s.document.scenario_list)for(const b of row.branch_list){
+ const t=b.transition_list.length===1?b.transition_list[0]:null,finish=t?.next_scenario_label==='FINISH',d=finish?classify(t):null;
+ const owner=d?.kind==='target'?sections.get(d.sceneId):null;
+ const directoryError=d?.kind==='target'?(owner===undefined?'FINISH 目标场景 '+d.sceneId+' 未登记在流程图目录中':owner===d.sectionId?'':'FINISH 目标场景 '+d.sceneId+' 属于 '+owner+' 话，转移却指定了 '+d.sectionId+' 话'):'';
+ const terminal=d?.kind==='terminal',invalid=d?.kind==='invalid'||!!directoryError;
+ const destinationScene=d?.kind==='target'?d.sceneId:finish?null:s.entry.id,ds=destinationScene===null?undefined:byScene.get(destinationScene);
+ const destId=t?.next_scenario_id===0?ds?.document.scenario_list.find(n=>n.is_root===1)?.scenario_id:t?.next_scenario_id;
+ const baseTarget=!invalid&&destinationScene!==null&&destId!==undefined?destinationScene+':'+destId:'';
+ const action=invalid?'invalid':terminal?'complete':d?.kind==='target'?(d.sectionId===s.entry.sectionId?'scene':'section'):'continue';
+ const baseAvailable=!!t&&!invalid&&(action==='complete'||action==='section'||baseMap.has(baseTarget));
+ const source=stable(s,row),target=baseMap.get(baseTarget)||'',review=s.review.scenarios[String(row.scenario_id)]||{},ev=(review.branches||[]).find(e=>e.branchId===b.branch_id)||{},state=ev.state||(baseAvailable?'confirmed':'missing');
+ expectedEdges.push({id:'edge:'+source+':'+b.uniq_id+':'+b.branch_id,source,target,kind:b.type===2||b.type===3?'choice':'next',side:b.type===2?'left':b.type===3?'right':'',
+  label:visible(ev.sourceLabel??b.msg_quote_subject),quote:visible(ev.sourceQuote??b.msg_quote),label_translation:visible(b.msg_quote_subject),quote_translation:visible(b.msg_quote),
+  state,available:baseAvailable&&state!=='excluded'&&state!=='missing'&&!excluded.has(source)&&!excluded.has(target),transition:{label:t?.next_scenario_label||'',section:d?.kind==='target'?'section:'+d.sectionId:'',scene:d?.kind==='target'?'scene:'+d.sceneId:'',entry:t?.next_scenario_id===0?'root':'node'},
+  flow_action:action,source_scene:'scene:'+s.entry.id,target_scene:finish?(d?.kind==='target'?'scene:'+d.sceneId:''):'scene:'+s.entry.id,native_transition:t,
+  flow_error:baseAvailable?'':directoryError||(invalid?'FINISH 的目标字段组合无效，请保留原稿并补充证据':b.transition_list.length>1?'此分支的原生条件转移尚未接入预览':'后续节点尚未恢复，请保留此分支并补充证据'),notes:ev.notes||'',origin:'native',score:null});
+}
+check('source scene count',sources.length,140);check('source node count',expectedNodes.length,5624);check('source edge count',expectedEdges.length,5870);
+check('binding global nodes',binding.value.allLibraryNodes,expectedNodes.length);
+check('program global nodes',program.nodes.length,expectedNodes.length);check('program global edges',program.edges.length,expectedEdges.length);
+check('all ordered node IDs',program.nodes.map(n=>n.id),expectedNodes.map(n=>n.id));check('all ordered edge IDs',program.edges.map(e=>e.id),expectedEdges.map(e=>e.id));
+let nodeFieldChecks=0,edgeFieldChecks=0;
+for(let i=0;i<expectedNodes.length;i++){const actual=program.nodes[i],expected=expectedNodes[i];check('node keys '+expected.id,Object.keys(actual).sort(),Object.keys(expected).sort());for(const key of Object.keys(expected)){nodeFieldChecks++;check('node '+expected.id+' '+key,actual[key],expected[key]);}}
+for(let i=0;i<expectedEdges.length;i++){const actual=program.edges[i],expected=expectedEdges[i];check('edge keys '+expected.id,Object.keys(actual).sort(),Object.keys(expected).sort());for(const key of Object.keys(expected)){edgeFieldChecks++;check('edge '+expected.id+' '+key,actual[key],expected[key]);}}
+for(const step of authored.value.steps){const source=byScene.get(10450054),row=source.document.scenario_list.find(r=>r.scenario_id===step.scenario);check('full target native '+step.scenario,row,step.native);check('target source text '+step.scenario,source.review.scenarios[String(step.scenario)].sourceText,step.sourceText);}
+check('target52',program.nodes.filter(n=>n.scene_id==='scene:10450054').length,52);check('all empty project links',program.links,[]);
+check('full thumbnails',program.scene_thumbnails,catalog.value.thumbnails.scene);check('full sounds',program.sound_effects,Object.values(catalog.value.sound_effects));check('preview policy',program.preview_policy,cfg['config/preview-policy.json']);
+const targetNodes=program.nodes.filter(n=>[3,4,5].some(id=>n.id==='node:10450054:104500540000'+id));
+const targetEdges=program.edges.filter(e=>[31,41,51].some(id=>e.id==='edge:node:10450054:104500540000'+Math.floor(id/10)+':10450054100'+id+':'+id));
+const resources={compiledGlobalResourcesPropertyPresent:Object.hasOwn(program,'resources'),models:{},background:catalog.value.backgrounds[program.before.bg_picture],sceneThumbnail:program.scene_thumbnails['10450054']};
+for(const id of ['subaru_tshirt01','felt01']){const m=catalog.value.models['live2d/AC_'+id];resources.models[id]={id:m.id,label:m.label,url:m.url,model_url:m.model_url,detail_url:m.detail_url,motionCount:m.motions?.length,scriptMotionCount:m.script_motions?.length};check('catalog model '+id,!!m,true);}
+const desc=r=>({path:r.path,bytes:r.bytes,sha256:r.sha256});
+const report={schema:'stella.P30.v2.actual-full-program-readonly-structure-review.v1',rootConfirmed:false,executionAuthorized:false,browserLaunchAuthorized:false,programAccepted:false,playbackAccepted:false,motionAccepted:false,sourcePhaseAccepted:false,wholeSceneAccepted:false,wholeEpisodeAccepted:false,
+ status:mismatches.length?'STATIC_STRUCTURE_MISMATCHES_RECORDED':'STATIC_COMPLETE_PROGRAM_STRUCTURE_MATCHES_INSPECTED_CANONICAL_SOURCES_ONLY',
+ actualInputs:{inventory:desc(inventory),approval:desc(approval),binding:desc(binding),index:desc(index),request:desc(req),http:desc(http),receipt:desc(receipt),authorPlan:desc(authored),manifest:desc(manifest),catalog:desc(catalog),canonicalSources},
+ rawProgram:{path:K+'/prepared/p30-node4-unchanged-ordinary.raw.json.gz',gzipBytes:zipped.length,gzipSha256:sha(zipped),rawBytes:raw.length,rawSha256:actualSha,normalizedSha256:normalizedSha,headSha:program.headSha,revision:program.revision,start:program.start,before:program.before,programTopLevelKeys:Object.keys(program)},
+ counts:{scenes:sources.length,nodes:program.nodes.length,edges:program.edges.length,targetSceneNodes:52,uniqueNodeIds:new Set(program.nodes.map(n=>n.id)).size,uniqueEdgeIds:new Set(program.edges.map(e=>e.id)).size,nodeFieldComparisons:nodeFieldChecks,edgeFieldComparisons:edgeFieldChecks,availableEdges:program.edges.filter(e=>e.available).length,unavailableEdges:program.edges.filter(e=>!e.available).length},
+ comparisons:{all140NativeAndReviewRawShaMatchFreshBindingAndInventory:true,allNodesCanonicalStableIdsOrderAndCompleteKeySetChecked:true,allNativeAndReviewNodeProjectionFieldsChecked:true,allEdgesCanonicalBranchUidIdsOrderAndCompleteKeySetChecked:true,allEdgeLabelsQuotesTranslationsStateNativeTransitionAvailabilityChecked:true,allCommandPhaseRowsAndNativeArrayBackgroundProvidersChecked:true,fullActualTargetNativeRowsChecked:true,httpRawNormalizedReceiptIndexBindingCompared:true,noOldHeadOrProgramReplacementInCheckedProjection:true,sourceFieldsNotProjectedRemainInOriginalNativeGuardedDocuments:true},perScene:ledger,targetNodes,targetEdges,resources,mismatches,
+ independentComparisonMethod:'Built-in Node fs/crypto/zlib/util only. Read complete saved gzip in memory and all140 guarded native/review sources plus inspected canonical TS/JSON. Independently compare expected immutable projection fields; do not import/call product compiler, project helper, API or state resolver. The genuine returned before is retained and crosschecked against original receipt/index, not re-synthesized.',
+ executionDeviation:{rootReportedPrepareSession:37376,command:'/usr/bin/node K/prepare.mjs',missingPreimport:'--import K/transport.mjs',originalHTTP200AndOutputsPreserved:true,providerTraceClaimed:false,deviationAcceptance:false,noRerun:true,independentPeerDecisionRequired:true},
+ limits:['This is complete static payload/source equivalence, not playback/runtime acceptance.','Missing transport preimport is retained; this report does not decide whether preparation can be reused.','No provider transport trace, model/texture draw, recorder, browser, audio or animation phase is established.','No source node4 motion/provider/phase acceptance; native motion stays empty.','Saved edge51 remains in full program but must not be executed; future ordinary route stops at5ready.','No product source/import/compile/gate/API/browser/media/test/build/Git or D/C write was performed.']};
+console.log(JSON.stringify(report));
+
+P30_STATIC_AUDIT

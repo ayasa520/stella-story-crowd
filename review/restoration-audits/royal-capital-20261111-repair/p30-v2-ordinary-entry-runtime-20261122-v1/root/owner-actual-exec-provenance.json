@@ -1,0 +1,156 @@
+{
+  "schema": "stella.p30.v2-runtime.actual-exec-provenance.v1",
+  "author": "/root/rom13_runtime",
+  "scope": "Closed P30 v2 session87926 original execution-tool provenance only; no new execution.",
+  "rootConfirmed": false,
+  "preparationAuthorized": false,
+  "executionAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "provenanceSource": "The author's own assistant-visible original tool-call arguments and returned metadata in this thread. The command was not re-executed to create this record.",
+  "actualExecution": {
+    "evidenceKind": "original-submitted-tool-command-and-returned-session-results",
+    "outerTool": "functions.exec",
+    "nestedTool": "tools.exec_command",
+    "originalToolCallId": null,
+    "originalToolCallIdAvailability": "No raw tool-call envelope ID was exposed in the assistant-visible transcript. The returned original chunk IDs and session ID below are directly observed; no ID is invented.",
+    "toolArguments": {
+      "cmd": "set -C\nenv -u STELLA_HOSTING -u STELLA_PRIVATE_OUTPUT PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 STELLA_BROWSER_OWNER=/root/rom13_runtime nice -n 19 taskset -c 0,1 /usr/bin/python -B /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/run.py --release /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-approved.json --release-sha256 7ea4687649bd4a94a319b9a61b0ad6bb5f770f792821d79988f07d650373c772 --attempt attempt-1 > /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/runtime.original.stdout.log 2> /home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/runtime.original.stderr.log",
+      "workdir": "/home/rikka/Projects/stella",
+      "yield_time_ms": 1000,
+      "max_output_tokens": 1000
+    },
+    "firstReturnedResult": {
+      "chunk_id": "1ec067",
+      "wall_time_seconds": 1.000991718,
+      "session_id": 87926,
+      "original_token_count": 0,
+      "output": ""
+    },
+    "sessionId": 87926,
+    "attempt": "attempt-1",
+    "dispatchCount": 1,
+    "polls": [
+      {
+        "nestedTool": "tools.write_stdin",
+        "arguments": {
+          "session_id": 87926,
+          "chars": "",
+          "yield_time_ms": 1000,
+          "max_output_tokens": 1000
+        },
+        "returnedResult": {
+          "chunk_id": "0e10fa",
+          "wall_time_seconds": 5.00237755,
+          "session_id": 87926,
+          "original_token_count": 0,
+          "output": ""
+        }
+      },
+      {
+        "nestedTool": "tools.write_stdin",
+        "arguments": {
+          "session_id": 87926,
+          "chars": "",
+          "yield_time_ms": 1000,
+          "max_output_tokens": 1000
+        },
+        "returnedResult": {
+          "chunk_id": "c7f9ec",
+          "wall_time_seconds": 5.001149738,
+          "session_id": 87926,
+          "original_token_count": 0,
+          "output": ""
+        }
+      },
+      {
+        "nestedTool": "tools.write_stdin",
+        "arguments": {
+          "session_id": 87926,
+          "chars": "",
+          "yield_time_ms": 1000,
+          "max_output_tokens": 1000
+        },
+        "returnedResult": {
+          "chunk_id": "0bc94c",
+          "wall_time_seconds": 5.001464842,
+          "session_id": 87926,
+          "original_token_count": 0,
+          "output": ""
+        }
+      },
+      {
+        "nestedTool": "tools.write_stdin",
+        "arguments": {
+          "session_id": 87926,
+          "chars": "",
+          "yield_time_ms": 10000,
+          "max_output_tokens": 1000
+        },
+        "returnedResult": {
+          "chunk_id": "96cf0b",
+          "wall_time_seconds": 0.000019531,
+          "exit_code": 0,
+          "original_token_count": 0,
+          "output": ""
+        }
+      }
+    ],
+    "terminalExitCode": 0,
+    "terminalExitSource": "Original tools.write_stdin terminal return for session87926, chunk96cf0b, exit_code=0. This is not inferred from a result JSON, a recommendation or an empty stderr.",
+    "noRetryOrSecondDispatch": true,
+    "stdoutStderrExplanation": "The submitted shell command contains set -C and the root-prescribed output redirections. Therefore this exec session's returned output strings were empty while original stdout/stderr were retained in their separate files.",
+    "kernelExecveArgvSeparatelyCaptured": false,
+    "qualification": "This preserves the exact submitted shell command, not an independently captured kernel execve argv vector."
+  },
+  "authorizationContext": {
+    "evidenceKind": "root-message-context-distinct-from-observed-tool-execution",
+    "runtimeReleasePath": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-approved.json",
+    "runtimeReleaseSha256": "7ea4687649bd4a94a319b9a61b0ad6bb5f770f792821d79988f07d650373c772",
+    "rootAuthorizedSingleAttempt": true,
+    "rootSpecifiedOwner": "/root/rom13_runtime",
+    "rootSpecifiedAttempt": "attempt-1",
+    "rootCommandContext": "Root authorized the original K2 run.py with --release/--release-sha256/--attempt, the recorded env, nice19/CPU0,1, and exclusive original stdout/stderr paths. Authorization alone is not execution evidence; actual arguments/results are recorded separately above."
+  },
+  "previouslyObservedOriginalLogMetadata": {
+    "evidenceKind": "Prior read-only observations already returned in this author's tool history; not re-read for this package",
+    "stdout": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/runtime.original.stdout.log",
+      "bytes": 3690,
+      "sha256": "3742c850accc50ee4cae6552a3541d142228e7e7f672430aa86aba0f2ed96fc4"
+    },
+    "stderr": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/runtime.original.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "rootClosureContext": {
+    "evidenceKind": "Parent root's communicated independent closure receipt; not rehashed by this provenance task",
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json",
+    "bytes": 5041,
+    "sha256": "c6db91bd357c2935a2452ee5864ce736af388ff103e77c181230ebdf5b8dbc86",
+    "rootReportedSession": 28106,
+    "rootReportedExitCode": 0,
+    "rootReportedCompletionChunk": "ecd7c2",
+    "authorizationClosed": true
+  },
+  "creationActions": {
+    "newDirectoryOnly": true,
+    "reexecutedCommand": false,
+    "helperExecuted": false,
+    "apiOrServerStarted": false,
+    "browserStarted": false,
+    "recorderStarted": false,
+    "mediaReadOrDecoded": false,
+    "imagesViewed": false,
+    "osTraversalRepeated": false,
+    "allInputsRehashed": false,
+    "boundFilesOrOriginalLogsWritten": false
+  },
+  "acceptance": {
+    "motionAccepted": false,
+    "sourcePhaseAccepted": false,
+    "visualAcceptanceClaimed": false,
+    "preparationProviderTraceRetroactivelyClaimed": false
+  }
+}
