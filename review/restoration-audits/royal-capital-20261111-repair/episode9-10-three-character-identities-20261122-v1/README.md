@@ -1,0 +1,9 @@
+# 第9、10话三处角色资源身份
+
+10450054/26补live2d/AC_subaru_tshirt01；10450054/27补live2d/AC_elsa01；10040043/9补live2d/AC_ricardo01。原片清晰人像、真实模型纹理及已有闭合外观参考分别经主审与独立盲审。昴的完整短袖与无袖/运动服版本区分；艾尔莎的披肩/羽毛领/金扣与nomantle版本区分；里卡多的兽耳、辫绳、胸毛与肩甲正向对应。
+
+仅接受character资源绑定。已有闭合参考中的临时model/body覆盖仅用于外观对照，未复用执行；原片still不能签完整入场、动作、表情、几何或时序。参考纹理原/当前字节相同；原图与模型资源的摘要、来源和显示限制保留。未新增媒体解码或浏览器采集。
+
+三条此前729a发布的短语音保持原值；第27/9节点的text_review_pending保留。Ricardo主审packet早于这次语音提交，其中空voice只作历史记录；根线程已重新绑定当前完整13字段及新voice，未将旧预期重放覆盖新值。
+
+正常native_repair stage2133 exit0、native_install audit9a7d8e exit0、apply1642f4 exit0。完整52/110节点与分支顺序、其他138对场景及前三话保护文件均核对。连续实播和整话验收尚未完成。父提交729a保留操作前完整native/review，当前保存文件与已完整审阅stage字节相同。完整解析输入保留于本地并列出摘要；stage manifest在此lossless gzip，INDEX同时列原始和存储摘要。
