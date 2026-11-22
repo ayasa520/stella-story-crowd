@@ -1056,7 +1056,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "bg_picture",
         "character_image",
         "command",
@@ -1076,7 +1075,6 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 7,
           "fields": [
-            "bg_music",
             "bg_picture",
             "character_image",
             "command",
@@ -1254,6 +1252,97 @@
                   "character"
                 ]
               }
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p09-p10-p17-bgm-root-preparation-95e16e70-v1/node-fields.root-approved.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "existingResourceIdentityAcceptance": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p17-actual-entry-bgm.json",
+                "bytes": 4588,
+                "sha256": "609ecf369a9d4c70ec52273b203b0c00af60c751d18c0dd3c3b52c032a7bd2ec",
+                "role": "existing signed narrow resource-identity packet; rootfalse flags preserved",
+                "status": "accepted_actual_card_music_entry_only",
+                "originalRootConfirmedPreserved": false,
+                "originalChangeRootConfirmedPreserved": false
+              },
+              "verifiedBGMComponents": [
+                "resource-id"
+              ],
+              "sourceAttribution": {
+                "segmentId": "p17-s10020048",
+                "start": 48,
+                "end": 51.5,
+                "sourceAnchorSeconds": 48,
+                "ocrReviewed": true,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/17/dialogue-completion-2hz/crops/001545-dialogue.png",
+                "ocrEventId": "merged-0016",
+                "sourceSha256": "d06e5c4fc3ef0060a760b28f58ba63cedbc1688289ff3268be70c239f7984a57",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/17 6本篇「不可理解的再会」Ver尤里乌斯.mp4",
+                "originalOCRText": "いかにも、私は騎士だが……どこかで会ったかな?",
+                "ocrConfidence": 0.85044,
+                "ocrReviewReasons": [
+                  "low_confidence"
+                ],
+                "visualReviewer": "root",
+                "rootDecision": {
+                  "interval": [
+                    48,
+                    51.5
+                  ],
+                  "canonicalAnchorSeconds": 48,
+                  "action": "replace",
+                  "speaker": "ユリウス",
+                  "text": "いかにも、私は騎士だが……。\nどこかで会ったかな？",
+                  "witnessTime": 51.5
+                },
+                "rootReviewWitnessTime": 51.5,
+                "recordingId": "bili-capital-17"
+              },
+              "sourceVideoDeclared": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/17 6本篇「不可理解的再会」Ver尤里乌斯.mp4",
+                "sha256": "d06e5c4fc3ef0060a760b28f58ba63cedbc1688289ff3268be70c239f7984a57",
+                "newlyReadOrHashed": false
+              },
+              "originalSourceTextBinding": {
+                "packetSourceText": "いかにも、私は騎士だが……。\nどこかで会ったかな？",
+                "matchesCurrentJapaneseReviewSource": true,
+                "matchesCurrentNativeText": false,
+                "JapaneseOriginalNotReplacedByChinesePacketText": true
+              },
+              "currentJapaneseReviewSource": "いかにも、私は騎士だが……。\nどこかで会ったかな？",
+              "oldPacketDidNotDeclareUID": false,
+              "originalWrapperParametersNotCopiedOrAccepted": true,
+              "sourceExactCSVFieldRecovered": false,
+              "originalCommandPhaseRecovered": false,
+              "audioListened": false,
+              "resourceIdentityOnly": true,
+              "authoredFadeParameterRecovered": false,
+              "authoredRestartParameterRecovered": false,
+              "volumeOrLoopAuthoredByThisField": false,
+              "sourceMeasurementPreflight": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-audio-five-remaining-offline-preflight-v1/preflight.rootfalse.json",
+                "sha256": "8a29886106ea4018b7b416183004da40d9aa88ca163da08d93c71c1b6b5fb7e4",
+                "part": 17
+              },
+              "bareIDSyntaxEvidence": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/native-syntax-and-original-source.rootfalse.json",
+                "bytes": 16876,
+                "sha256": "5d2ddc9e0b88fd6943246323769fa19e784ac7a0cfd1258f79b3291a80acfa08"
+              },
+              "parameterProvenance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/csv-parameter-provenance.rootfalse.json",
+                "sha256": "4d01bd5a9fbc692e2681862af06857562a51df07a0b0a5c6d7740e00e227a504"
+              },
+              "retainedSourceLimits": [
+                "Scores are signed normalized waveform measurements, not probabilities.",
+                "No voice, SE, STOP, authored offset, native command phase or acting acceptance.",
+                "No whole-scene or continuous-playback acceptance; root review required."
+              ],
+              "rootReviewedMinimalResourceIdentityOnly": true
             }
           }
         ]
@@ -4212,7 +4301,6 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 7,
       "fields": [
-        "bg_music",
         "bg_picture",
         "character_image",
         "command",

@@ -128,7 +128,6 @@
       ],
       "unknownFields": [
         "battle_stage_id",
-        "bg_music",
         "character",
         "character_image",
         "command",
@@ -149,7 +148,6 @@
           "scenarioId": 2,
           "fields": [
             "battle_stage_id",
-            "bg_music",
             "character",
             "character_image",
             "command",
@@ -219,6 +217,91 @@
                 "time": 24.85
               },
               "decision": "Original recording and native background visually match."
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p09-p10-p17-bgm-root-preparation-95e16e70-v1/node-fields.root-approved.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "existingResourceIdentityAcceptance": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p09-opening-bgm.json",
+                "bytes": 7082,
+                "sha256": "9ad890a53c2f9d0b3429d6939ae594db566b334dfd4d2a97f9dc34dfa1bfb962",
+                "role": "existing signed narrow resource-identity packet; rootfalse flags preserved",
+                "status": "accepted_music_identity_at_route_narration_only",
+                "originalRootConfirmedPreserved": false,
+                "originalChangeRootConfirmedPreserved": false
+              },
+              "verifiedBGMComponents": [
+                "resource-id"
+              ],
+              "sourceAttribution": {
+                "segmentId": "p09-s10020001-opening",
+                "start": 14,
+                "end": 25,
+                "frame": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p09-first-scene/0024.00.jpg",
+                "ocrReviewed": true,
+                "visualReviewer": "root",
+                "rootReviewPending": false,
+                "reviewedFieldOverride": {
+                  "reviewer": "root",
+                  "ledger": "data/native_recovery/royal-capital-20261110/root-review/low-narrative-decisions.json",
+                  "ledgerSha256": "3019878a0ec539718280a1883f1940373db72fb42b2b7a96cf640b32752a9af4",
+                  "entry": {
+                    "sceneId": 10020001,
+                    "stableKey": "s10020001-p09-summary",
+                    "expectedScenarioType": 2,
+                    "fields": {
+                      "scenario_type": 1,
+                      "msg_text": "――盗品蔵にいたはずなのに、気づけば昼間\n話した果物屋の前に立っていたスバル。その\n場を離れて辺りを見回すが……"
+                    }
+                  }
+                },
+                "recordingId": "bili-capital-09"
+              },
+              "sourceVideoDeclared": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                "sha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                "newlyReadOrHashed": false
+              },
+              "originalSourceTextBinding": {
+                "packetSourceText": "——明明刚才还在赃物库，回过神来，昴却站在了白天聊过天的水果摊前。他离开那里，环顾四周……",
+                "matchesCurrentJapaneseReviewSource": false,
+                "matchesCurrentNativeText": true,
+                "JapaneseOriginalNotReplacedByChinesePacketText": true
+              },
+              "currentJapaneseReviewSource": "――盗品蔵にいたはずなのに、気づけば昼間\n話した果物屋の前に立っていたスバル。その\n場を離れて辺りを見回すが……",
+              "oldPacketDidNotDeclareUID": false,
+              "originalWrapperParametersNotCopiedOrAccepted": true,
+              "sourceExactCSVFieldRecovered": false,
+              "originalCommandPhaseRecovered": false,
+              "audioListened": false,
+              "resourceIdentityOnly": true,
+              "authoredFadeParameterRecovered": false,
+              "authoredRestartParameterRecovered": false,
+              "volumeOrLoopAuthoredByThisField": false,
+              "sourceMeasurementPreflight": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-audio-five-remaining-offline-preflight-v1/preflight.rootfalse.json",
+                "sha256": "8a29886106ea4018b7b416183004da40d9aa88ca163da08d93c71c1b6b5fb7e4",
+                "part": 9
+              },
+              "bareIDSyntaxEvidence": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/native-syntax-and-original-source.rootfalse.json",
+                "bytes": 16876,
+                "sha256": "5d2ddc9e0b88fd6943246323769fa19e784ac7a0cfd1258f79b3291a80acfa08"
+              },
+              "parameterProvenance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/csv-parameter-provenance.rootfalse.json",
+                "sha256": "4d01bd5a9fbc692e2681862af06857562a51df07a0b0a5c6d7740e00e227a504"
+              },
+              "retainedSourceLimits": [
+                "No voice/SE audition or acceptance.",
+                "No STOP, command phase, envelope or authored reference offset is inferred.",
+                "No continuous-playback or whole-scene acceptance; root review is required."
+              ],
+              "rootReviewedMinimalResourceIdentityOnly": true
             }
           }
         ]
@@ -5405,7 +5488,6 @@
       "scenarioId": 2,
       "fields": [
         "battle_stage_id",
-        "bg_music",
         "character",
         "character_image",
         "command",

@@ -1,0 +1,51 @@
+{
+  "schema": "stella.delegated-audio-bindings.v1",
+  "reviewer": "/root/chapter1_audio_4_8",
+  "rootConfirmed": false,
+  "formalDataWritten": false,
+  "status": "accepted_unique_coherent_multiwindow_music_identity_with_moderate_correlations",
+  "baseCommit": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/10 6本编「不可理解的再会」Ver拉姆.mp4",
+  "sourceSha256": "96a3db9d785b238488c9bc5776542fde797673af94aa5a431b0f75e743c9f7f8",
+  "nativeSceneSha256": "92e604d76c5a93dd0ee8e989346c4730b0d1d95b29e3bb296f3527701ca7576a",
+  "reviewSceneSha256": "7141199be578ab540dad7fe71687418e9cf75713fb78b6daf5a2c47e6a74e026",
+  "audioListened": false,
+  "changes": [
+    {
+      "rootConfirmed": false,
+      "sceneId": 10020011,
+      "scenarioId": 2,
+      "stableKey": "s10020011-p10-at0022",
+      "sourceText": "――銀髪の少女サテラを見つけるため、スバ\nルは街中を探し始めた。",
+      "expected": {"bg_music": ""},
+      "fields": {"bg_music": "bgm_adv_fuon02_cd2_14,1,false"},
+      "acceptedFields": ["bg_music"],
+      "evidence": {
+        "sourceBoundary": "Fresh original 20s title 銀髪を探せ？, 22s narration entry, 26s same completed narration, 30s Subaru next dialogue. The field is bound to the narration, not the title.",
+        "sourceImageReview": {"viewed": true, "reviewer": "/root/chapter1_audio_4_8", "contact": "p10-opening-source-contact.jpg", "contactSha256": "53755da68d881f9673e59f4e1f9098987b7b0b3fa0f77b599265640cbc29064e", "frameIndex": "p10-opening-source-frames.json", "frameIndexSha256": "b79a993f16ad7ff91f6a7354667d3453d8dbdc8f755e2b4ddf21d43ef5cb0310"},
+        "fullLibraryMeasurements": "p10-opening-measurements.json",
+        "fullLibraryMeasurementsSha256": "da4a3fdce7882234b6180032e3282a926de2792c00198b25224f6b1d5e53153a",
+        "librarySize": 65,
+        "positiveControls": [
+          {"start": 22, "duration": 3, "signedCorrelation": 0.578518593510606, "exactReferenceTime": 0.0715},
+          {"start": 27, "duration": 3, "signedCorrelation": 0.6139783772419116, "exactReferenceTime": 5.0715},
+          {"start": 30, "duration": 3, "signedCorrelation": 0.6351468694414714, "exactReferenceTime": 8.0715}
+        ],
+        "sameLibraryNegativeControls": [
+          {"sourceStart": 22, "track": "bgm_adv_only02_cd2_25", "signedCorrelation": 0.1243176058262855},
+          {"sourceStart": 27, "track": "bgm_adv_heartwarm02_cd1_21", "signedCorrelation": -0.14328883199932355},
+          {"sourceStart": 30, "track": "bgm_adv_fuon04_cd2_15", "signedCorrelation": -0.18655813428703663}
+        ],
+        "independentRateRefinement": {"path": "p10-opening-8khz-refinement.json", "sha256": "fc602a35bd21a7b4b11b9fe956cfd83d482b3da1d334a9505f5296c9637589ec", "sampleRate": 8000, "sameLibraryTracksCompared": ["bgm_adv_fuon02_cd2_14", "bgm_adv_fuon01_cd2_03", "bgm_adv_battle01_cd2_12", "bgm_adv_every02_cd2_07"], "positiveSignedCorrelations": [0.5539791912762176, 0.49828277502291457, 0.5360587219599299, 0.6169338935935439]},
+        "acceptanceReason": "One resource uniquely leads the 65-track library across three nonadjacent windows and advances by exactly the source elapsed time: source22→27→30 corresponds to reference0.0715→5.0715→8.0715. The independent 8kHz probes confirm the same resource. Correlations are moderate, and their cause is not guessed; this is not a claim of clean or near-perfect audio.",
+        "resourceAvailable": true,
+        "catalogResource": "bgm_adv_fuon02_cd2_14",
+        "limitations": [
+          "Scores are measurements, not correctness probabilities; the moderate scores are retained explicitly.",
+          "No audition, voice, SE, STOP, native command phase, envelope or authored offset acceptance.",
+          "No continuous-playback or whole-scene acceptance; root review remains required."
+        ]
+      }
+    }
+  ]
+}

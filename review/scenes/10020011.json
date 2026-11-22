@@ -158,7 +158,6 @@
         }
       ],
       "unknownFields": [
-        "bg_music",
         "character",
         "character_image",
         "command",
@@ -178,7 +177,6 @@
           "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
           "scenarioId": 2,
           "fields": [
-            "bg_music",
             "character",
             "character_image",
             "command",
@@ -269,6 +267,68 @@
                 "time": 25.85
               },
               "decision": "Original recording and native background visually match."
+            }
+          },
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p09-p10-p17-bgm-root-preparation-95e16e70-v1/node-fields.root-approved.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "existingResourceIdentityAcceptance": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p10-opening-bgm.json",
+                "bytes": 3941,
+                "sha256": "f34f1377af4660f1180952ba1103a7b0866c12a39f5ed17e1620f7544671fb84",
+                "role": "existing signed narrow resource-identity packet; rootfalse flags preserved",
+                "status": "accepted_unique_coherent_multiwindow_music_identity_with_moderate_correlations",
+                "originalRootConfirmedPreserved": false,
+                "originalChangeRootConfirmedPreserved": false
+              },
+              "verifiedBGMComponents": [
+                "resource-id"
+              ],
+              "sourceAttribution": "Fresh original 20s title 銀髪を探せ？, 22s narration entry, 26s same completed narration, 30s Subaru next dialogue. The field is bound to the narration, not the title.",
+              "sourceVideoDeclared": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/10 6本编「不可理解的再会」Ver拉姆.mp4",
+                "sha256": "96a3db9d785b238488c9bc5776542fde797673af94aa5a431b0f75e743c9f7f8",
+                "newlyReadOrHashed": false
+              },
+              "originalSourceTextBinding": {
+                "packetSourceText": "――銀髪の少女サテラを見つけるため、スバ\nルは街中を探し始めた。",
+                "matchesCurrentJapaneseReviewSource": true,
+                "matchesCurrentNativeText": false,
+                "JapaneseOriginalNotReplacedByChinesePacketText": true
+              },
+              "currentJapaneseReviewSource": "――銀髪の少女サテラを見つけるため、スバ\nルは街中を探し始めた。",
+              "oldPacketDidNotDeclareUID": true,
+              "originalWrapperParametersNotCopiedOrAccepted": true,
+              "sourceExactCSVFieldRecovered": false,
+              "originalCommandPhaseRecovered": false,
+              "audioListened": false,
+              "resourceIdentityOnly": true,
+              "authoredFadeParameterRecovered": false,
+              "authoredRestartParameterRecovered": false,
+              "volumeOrLoopAuthoredByThisField": false,
+              "sourceMeasurementPreflight": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-audio-five-remaining-offline-preflight-v1/preflight.rootfalse.json",
+                "sha256": "8a29886106ea4018b7b416183004da40d9aa88ca163da08d93c71c1b6b5fb7e4",
+                "part": 10
+              },
+              "bareIDSyntaxEvidence": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/native-syntax-and-original-source.rootfalse.json",
+                "bytes": 16876,
+                "sha256": "5d2ddc9e0b88fd6943246323769fa19e784ac7a0cfd1258f79b3291a80acfa08"
+              },
+              "parameterProvenance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/csv-parameter-provenance.rootfalse.json",
+                "sha256": "4d01bd5a9fbc692e2681862af06857562a51df07a0b0a5c6d7740e00e227a504"
+              },
+              "retainedSourceLimits": [
+                "Scores are measurements, not correctness probabilities; the moderate scores are retained explicitly.",
+                "No audition, voice, SE, STOP, native command phase, envelope or authored offset acceptance.",
+                "No continuous-playback or whole-scene acceptance; root review remains required."
+              ],
+              "rootReviewedMinimalResourceIdentityOnly": true
             }
           }
         ]
@@ -8490,7 +8550,6 @@
       "message": "Unrecovered performance fields stay empty/default; this does not block a rough dialogue draft.",
       "scenarioId": 2,
       "fields": [
-        "bg_music",
         "character",
         "character_image",
         "command",

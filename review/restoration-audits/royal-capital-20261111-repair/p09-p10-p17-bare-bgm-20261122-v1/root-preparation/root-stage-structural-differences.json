@@ -1,0 +1,835 @@
+{
+  "stageSession": 20802,
+  "stageExitCode": 0,
+  "report": {
+    "version": 1,
+    "scope": "Reviewed incremental repairs; full restoration remains in progress",
+    "scenes": 3,
+    "counts": {
+      "bg_music": 3
+    },
+    "inputs": [
+      {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p09-p10-p17-bgm-root-preparation-95e16e70-v1/node-fields.root-approved.json",
+        "sha256": "e35cc77c67a539f297856c8b77084d18e542d6c7f4d4f06b377a1700fa932328"
+      }
+    ],
+    "sourceOwnershipSha256": "0259488c7a9d171ed3b1e9244a2b9283597fbe7cad3592ac63e548239163c96c"
+  },
+  "scenes": [
+    {
+      "sceneId": 10020001,
+      "nativeChanges": [
+        {
+          "path": "/scenario_list/1/bg_music",
+          "before": "",
+          "after": "bgm_adv_fuon01_cd2_03"
+        }
+      ],
+      "reviewChanges": [
+        {
+          "path": "/scenarios/2/unknownFields/1",
+          "before": "bg_music",
+          "after": "character"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/2",
+          "before": "character",
+          "after": "character_image"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/3",
+          "before": "character_image",
+          "after": "command"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/4",
+          "before": "command",
+          "after": "motion"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/5",
+          "before": "motion",
+          "after": "native_array_order"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/6",
+          "before": "native_array_order",
+          "after": "original_scenario_id"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/7",
+          "before": "original_scenario_id",
+          "after": "position"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/8",
+          "before": "position",
+          "after": "se"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/9",
+          "before": "se",
+          "after": "talk_chara"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/10",
+          "before": "talk_chara",
+          "after": "video"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/11",
+          "before": "video",
+          "after": "voice"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/12",
+          "before": "voice"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/1",
+          "before": "bg_music",
+          "after": "character"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/2",
+          "before": "character",
+          "after": "character_image"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/3",
+          "before": "character_image",
+          "after": "command"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/4",
+          "before": "command",
+          "after": "motion"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/5",
+          "before": "motion",
+          "after": "native_array_order"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/6",
+          "before": "native_array_order",
+          "after": "original_scenario_id"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/7",
+          "before": "original_scenario_id",
+          "after": "position"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/8",
+          "before": "position",
+          "after": "se"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/9",
+          "before": "se",
+          "after": "talk_chara"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/10",
+          "before": "talk_chara",
+          "after": "video"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/11",
+          "before": "video",
+          "after": "voice"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/12",
+          "before": "voice"
+        },
+        {
+          "path": "/scenarios/2/repairEvidence/performance/1",
+          "after": {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p09-p10-p17-bgm-root-preparation-95e16e70-v1/node-fields.root-approved.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "existingResourceIdentityAcceptance": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p09-opening-bgm.json",
+                "bytes": 7082,
+                "sha256": "9ad890a53c2f9d0b3429d6939ae594db566b334dfd4d2a97f9dc34dfa1bfb962",
+                "role": "existing signed narrow resource-identity packet; rootfalse flags preserved",
+                "status": "accepted_music_identity_at_route_narration_only",
+                "originalRootConfirmedPreserved": false,
+                "originalChangeRootConfirmedPreserved": false
+              },
+              "verifiedBGMComponents": [
+                "resource-id"
+              ],
+              "sourceAttribution": {
+                "segmentId": "p09-s10020001-opening",
+                "start": 14,
+                "end": 25,
+                "frame": "data/native_recovery/royal-capital-20261110/plans/09-20/evidence/p09-first-scene/0024.00.jpg",
+                "ocrReviewed": true,
+                "visualReviewer": "root",
+                "rootReviewPending": false,
+                "reviewedFieldOverride": {
+                  "reviewer": "root",
+                  "ledger": "data/native_recovery/royal-capital-20261110/root-review/low-narrative-decisions.json",
+                  "ledgerSha256": "3019878a0ec539718280a1883f1940373db72fb42b2b7a96cf640b32752a9af4",
+                  "entry": {
+                    "sceneId": 10020001,
+                    "stableKey": "s10020001-p09-summary",
+                    "expectedScenarioType": 2,
+                    "fields": {
+                      "scenario_type": 1,
+                      "msg_text": "――盗品蔵にいたはずなのに、気づけば昼間\n話した果物屋の前に立っていたスバル。その\n場を離れて辺りを見回すが……"
+                    }
+                  }
+                },
+                "recordingId": "bili-capital-09"
+              },
+              "sourceVideoDeclared": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/09 6本编「不可理解的再会」.mp4",
+                "sha256": "3893c4825dd2f9fa87e5e48baa031fbab62ca648c449696ce1a1d87155bfb463",
+                "newlyReadOrHashed": false
+              },
+              "originalSourceTextBinding": {
+                "packetSourceText": "——明明刚才还在赃物库，回过神来，昴却站在了白天聊过天的水果摊前。他离开那里，环顾四周……",
+                "matchesCurrentJapaneseReviewSource": false,
+                "matchesCurrentNativeText": true,
+                "JapaneseOriginalNotReplacedByChinesePacketText": true
+              },
+              "currentJapaneseReviewSource": "――盗品蔵にいたはずなのに、気づけば昼間\n話した果物屋の前に立っていたスバル。その\n場を離れて辺りを見回すが……",
+              "oldPacketDidNotDeclareUID": false,
+              "originalWrapperParametersNotCopiedOrAccepted": true,
+              "sourceExactCSVFieldRecovered": false,
+              "originalCommandPhaseRecovered": false,
+              "audioListened": false,
+              "resourceIdentityOnly": true,
+              "authoredFadeParameterRecovered": false,
+              "authoredRestartParameterRecovered": false,
+              "volumeOrLoopAuthoredByThisField": false,
+              "sourceMeasurementPreflight": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-audio-five-remaining-offline-preflight-v1/preflight.rootfalse.json",
+                "sha256": "8a29886106ea4018b7b416183004da40d9aa88ca163da08d93c71c1b6b5fb7e4",
+                "part": 9
+              },
+              "bareIDSyntaxEvidence": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/native-syntax-and-original-source.rootfalse.json",
+                "bytes": 16876,
+                "sha256": "5d2ddc9e0b88fd6943246323769fa19e784ac7a0cfd1258f79b3291a80acfa08"
+              },
+              "parameterProvenance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/csv-parameter-provenance.rootfalse.json",
+                "sha256": "4d01bd5a9fbc692e2681862af06857562a51df07a0b0a5c6d7740e00e227a504"
+              },
+              "retainedSourceLimits": [
+                "No voice/SE audition or acceptance.",
+                "No STOP, command phase, envelope or authored reference offset is inferred.",
+                "No continuous-playback or whole-scene acceptance; root review is required."
+              ],
+              "rootReviewedMinimalResourceIdentityOnly": true
+            }
+          }
+        },
+        {
+          "path": "/issues/3/fields/1",
+          "before": "bg_music",
+          "after": "character"
+        },
+        {
+          "path": "/issues/3/fields/2",
+          "before": "character",
+          "after": "character_image"
+        },
+        {
+          "path": "/issues/3/fields/3",
+          "before": "character_image",
+          "after": "command"
+        },
+        {
+          "path": "/issues/3/fields/4",
+          "before": "command",
+          "after": "motion"
+        },
+        {
+          "path": "/issues/3/fields/5",
+          "before": "motion",
+          "after": "native_array_order"
+        },
+        {
+          "path": "/issues/3/fields/6",
+          "before": "native_array_order",
+          "after": "original_scenario_id"
+        },
+        {
+          "path": "/issues/3/fields/7",
+          "before": "original_scenario_id",
+          "after": "position"
+        },
+        {
+          "path": "/issues/3/fields/8",
+          "before": "position",
+          "after": "se"
+        },
+        {
+          "path": "/issues/3/fields/9",
+          "before": "se",
+          "after": "talk_chara"
+        },
+        {
+          "path": "/issues/3/fields/10",
+          "before": "talk_chara",
+          "after": "video"
+        },
+        {
+          "path": "/issues/3/fields/11",
+          "before": "video",
+          "after": "voice"
+        },
+        {
+          "path": "/issues/3/fields/12",
+          "before": "voice"
+        }
+      ]
+    },
+    {
+      "sceneId": 10020011,
+      "nativeChanges": [
+        {
+          "path": "/scenario_list/1/bg_music",
+          "before": "",
+          "after": "bgm_adv_fuon02_cd2_14"
+        }
+      ],
+      "reviewChanges": [
+        {
+          "path": "/scenarios/2/unknownFields/0",
+          "before": "bg_music",
+          "after": "character"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/1",
+          "before": "character",
+          "after": "character_image"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/2",
+          "before": "character_image",
+          "after": "command"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/3",
+          "before": "command",
+          "after": "motion"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/4",
+          "before": "motion",
+          "after": "native_array_order"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/5",
+          "before": "native_array_order",
+          "after": "original_scenario_id"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/6",
+          "before": "original_scenario_id",
+          "after": "position"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/7",
+          "before": "position",
+          "after": "se"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/8",
+          "before": "se",
+          "after": "talk_chara"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/9",
+          "before": "talk_chara",
+          "after": "video"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/10",
+          "before": "video",
+          "after": "voice"
+        },
+        {
+          "path": "/scenarios/2/unknownFields/11",
+          "before": "voice"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/0",
+          "before": "bg_music",
+          "after": "character"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/1",
+          "before": "character",
+          "after": "character_image"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/2",
+          "before": "character_image",
+          "after": "command"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/3",
+          "before": "command",
+          "after": "motion"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/4",
+          "before": "motion",
+          "after": "native_array_order"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/5",
+          "before": "native_array_order",
+          "after": "original_scenario_id"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/6",
+          "before": "original_scenario_id",
+          "after": "position"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/7",
+          "before": "position",
+          "after": "se"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/8",
+          "before": "se",
+          "after": "talk_chara"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/9",
+          "before": "talk_chara",
+          "after": "video"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/10",
+          "before": "video",
+          "after": "voice"
+        },
+        {
+          "path": "/scenarios/2/issues/0/fields/11",
+          "before": "voice"
+        },
+        {
+          "path": "/scenarios/2/repairEvidence/performance/1",
+          "after": {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p09-p10-p17-bgm-root-preparation-95e16e70-v1/node-fields.root-approved.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "existingResourceIdentityAcceptance": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p10-opening-bgm.json",
+                "bytes": 3941,
+                "sha256": "f34f1377af4660f1180952ba1103a7b0866c12a39f5ed17e1620f7544671fb84",
+                "role": "existing signed narrow resource-identity packet; rootfalse flags preserved",
+                "status": "accepted_unique_coherent_multiwindow_music_identity_with_moderate_correlations",
+                "originalRootConfirmedPreserved": false,
+                "originalChangeRootConfirmedPreserved": false
+              },
+              "verifiedBGMComponents": [
+                "resource-id"
+              ],
+              "sourceAttribution": "Fresh original 20s title 銀髪を探せ？, 22s narration entry, 26s same completed narration, 30s Subaru next dialogue. The field is bound to the narration, not the title.",
+              "sourceVideoDeclared": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/10 6本编「不可理解的再会」Ver拉姆.mp4",
+                "sha256": "96a3db9d785b238488c9bc5776542fde797673af94aa5a431b0f75e743c9f7f8",
+                "newlyReadOrHashed": false
+              },
+              "originalSourceTextBinding": {
+                "packetSourceText": "――銀髪の少女サテラを見つけるため、スバ\nルは街中を探し始めた。",
+                "matchesCurrentJapaneseReviewSource": true,
+                "matchesCurrentNativeText": false,
+                "JapaneseOriginalNotReplacedByChinesePacketText": true
+              },
+              "currentJapaneseReviewSource": "――銀髪の少女サテラを見つけるため、スバ\nルは街中を探し始めた。",
+              "oldPacketDidNotDeclareUID": true,
+              "originalWrapperParametersNotCopiedOrAccepted": true,
+              "sourceExactCSVFieldRecovered": false,
+              "originalCommandPhaseRecovered": false,
+              "audioListened": false,
+              "resourceIdentityOnly": true,
+              "authoredFadeParameterRecovered": false,
+              "authoredRestartParameterRecovered": false,
+              "volumeOrLoopAuthoredByThisField": false,
+              "sourceMeasurementPreflight": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-audio-five-remaining-offline-preflight-v1/preflight.rootfalse.json",
+                "sha256": "8a29886106ea4018b7b416183004da40d9aa88ca163da08d93c71c1b6b5fb7e4",
+                "part": 10
+              },
+              "bareIDSyntaxEvidence": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/native-syntax-and-original-source.rootfalse.json",
+                "bytes": 16876,
+                "sha256": "5d2ddc9e0b88fd6943246323769fa19e784ac7a0cfd1258f79b3291a80acfa08"
+              },
+              "parameterProvenance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/csv-parameter-provenance.rootfalse.json",
+                "sha256": "4d01bd5a9fbc692e2681862af06857562a51df07a0b0a5c6d7740e00e227a504"
+              },
+              "retainedSourceLimits": [
+                "Scores are measurements, not correctness probabilities; the moderate scores are retained explicitly.",
+                "No audition, voice, SE, STOP, native command phase, envelope or authored offset acceptance.",
+                "No continuous-playback or whole-scene acceptance; root review remains required."
+              ],
+              "rootReviewedMinimalResourceIdentityOnly": true
+            }
+          }
+        },
+        {
+          "path": "/issues/3/fields/0",
+          "before": "bg_music",
+          "after": "character"
+        },
+        {
+          "path": "/issues/3/fields/1",
+          "before": "character",
+          "after": "character_image"
+        },
+        {
+          "path": "/issues/3/fields/2",
+          "before": "character_image",
+          "after": "command"
+        },
+        {
+          "path": "/issues/3/fields/3",
+          "before": "command",
+          "after": "motion"
+        },
+        {
+          "path": "/issues/3/fields/4",
+          "before": "motion",
+          "after": "native_array_order"
+        },
+        {
+          "path": "/issues/3/fields/5",
+          "before": "native_array_order",
+          "after": "original_scenario_id"
+        },
+        {
+          "path": "/issues/3/fields/6",
+          "before": "original_scenario_id",
+          "after": "position"
+        },
+        {
+          "path": "/issues/3/fields/7",
+          "before": "position",
+          "after": "se"
+        },
+        {
+          "path": "/issues/3/fields/8",
+          "before": "se",
+          "after": "talk_chara"
+        },
+        {
+          "path": "/issues/3/fields/9",
+          "before": "talk_chara",
+          "after": "video"
+        },
+        {
+          "path": "/issues/3/fields/10",
+          "before": "video",
+          "after": "voice"
+        },
+        {
+          "path": "/issues/3/fields/11",
+          "before": "voice"
+        }
+      ]
+    },
+    {
+      "sceneId": 10020048,
+      "nativeChanges": [
+        {
+          "path": "/scenario_list/6/bg_music",
+          "before": "",
+          "after": "bgm_adv_fuon02_cd2_14"
+        }
+      ],
+      "reviewChanges": [
+        {
+          "path": "/scenarios/7/unknownFields/0",
+          "before": "bg_music",
+          "after": "bg_picture"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/1",
+          "before": "bg_picture",
+          "after": "character_image"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/2",
+          "before": "character_image",
+          "after": "command"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/3",
+          "before": "command",
+          "after": "motion"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/4",
+          "before": "motion",
+          "after": "native_array_order"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/5",
+          "before": "native_array_order",
+          "after": "original_scenario_id"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/6",
+          "before": "original_scenario_id",
+          "after": "position"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/7",
+          "before": "position",
+          "after": "se"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/8",
+          "before": "se",
+          "after": "talk_chara"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/9",
+          "before": "talk_chara",
+          "after": "video"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/10",
+          "before": "video",
+          "after": "voice"
+        },
+        {
+          "path": "/scenarios/7/unknownFields/11",
+          "before": "voice"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/0",
+          "before": "bg_music",
+          "after": "bg_picture"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/1",
+          "before": "bg_picture",
+          "after": "character_image"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/2",
+          "before": "character_image",
+          "after": "command"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/3",
+          "before": "command",
+          "after": "motion"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/4",
+          "before": "motion",
+          "after": "native_array_order"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/5",
+          "before": "native_array_order",
+          "after": "original_scenario_id"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/6",
+          "before": "original_scenario_id",
+          "after": "position"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/7",
+          "before": "position",
+          "after": "se"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/8",
+          "before": "se",
+          "after": "talk_chara"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/9",
+          "before": "talk_chara",
+          "after": "video"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/10",
+          "before": "video",
+          "after": "voice"
+        },
+        {
+          "path": "/scenarios/7/issues/0/fields/11",
+          "before": "voice"
+        },
+        {
+          "path": "/scenarios/7/repairEvidence/performance/1",
+          "after": {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p09-p10-p17-bgm-root-preparation-95e16e70-v1/node-fields.root-approved.json",
+            "fields": [
+              "bg_music"
+            ],
+            "evidence": {
+              "existingResourceIdentityAcceptance": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/chapter1-audio-4-8-20261121-v1/accepted-p17-actual-entry-bgm.json",
+                "bytes": 4588,
+                "sha256": "609ecf369a9d4c70ec52273b203b0c00af60c751d18c0dd3c3b52c032a7bd2ec",
+                "role": "existing signed narrow resource-identity packet; rootfalse flags preserved",
+                "status": "accepted_actual_card_music_entry_only",
+                "originalRootConfirmedPreserved": false,
+                "originalChangeRootConfirmedPreserved": false
+              },
+              "verifiedBGMComponents": [
+                "resource-id"
+              ],
+              "sourceAttribution": {
+                "segmentId": "p17-s10020048",
+                "start": 48,
+                "end": 51.5,
+                "sourceAnchorSeconds": 48,
+                "ocrReviewed": true,
+                "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/17/dialogue-completion-2hz/crops/001545-dialogue.png",
+                "ocrEventId": "merged-0016",
+                "sourceSha256": "d06e5c4fc3ef0060a760b28f58ba63cedbc1688289ff3268be70c239f7984a57",
+                "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/17 6本篇「不可理解的再会」Ver尤里乌斯.mp4",
+                "originalOCRText": "いかにも、私は騎士だが……どこかで会ったかな?",
+                "ocrConfidence": 0.85044,
+                "ocrReviewReasons": [
+                  "low_confidence"
+                ],
+                "visualReviewer": "root",
+                "rootDecision": {
+                  "interval": [
+                    48,
+                    51.5
+                  ],
+                  "canonicalAnchorSeconds": 48,
+                  "action": "replace",
+                  "speaker": "ユリウス",
+                  "text": "いかにも、私は騎士だが……。\nどこかで会ったかな？",
+                  "witnessTime": 51.5
+                },
+                "rootReviewWitnessTime": 51.5,
+                "recordingId": "bili-capital-17"
+              },
+              "sourceVideoDeclared": {
+                "path": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/17 6本篇「不可理解的再会」Ver尤里乌斯.mp4",
+                "sha256": "d06e5c4fc3ef0060a760b28f58ba63cedbc1688289ff3268be70c239f7984a57",
+                "newlyReadOrHashed": false
+              },
+              "originalSourceTextBinding": {
+                "packetSourceText": "いかにも、私は騎士だが……。\nどこかで会ったかな？",
+                "matchesCurrentJapaneseReviewSource": true,
+                "matchesCurrentNativeText": false,
+                "JapaneseOriginalNotReplacedByChinesePacketText": true
+              },
+              "currentJapaneseReviewSource": "いかにも、私は騎士だが……。\nどこかで会ったかな？",
+              "oldPacketDidNotDeclareUID": false,
+              "originalWrapperParametersNotCopiedOrAccepted": true,
+              "sourceExactCSVFieldRecovered": false,
+              "originalCommandPhaseRecovered": false,
+              "audioListened": false,
+              "resourceIdentityOnly": true,
+              "authoredFadeParameterRecovered": false,
+              "authoredRestartParameterRecovered": false,
+              "volumeOrLoopAuthoredByThisField": false,
+              "sourceMeasurementPreflight": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-audio-five-remaining-offline-preflight-v1/preflight.rootfalse.json",
+                "sha256": "8a29886106ea4018b7b416183004da40d9aa88ca163da08d93c71c1b6b5fb7e4",
+                "part": 17
+              },
+              "bareIDSyntaxEvidence": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/native-syntax-and-original-source.rootfalse.json",
+                "bytes": 16876,
+                "sha256": "5d2ddc9e0b88fd6943246323769fa19e784ac7a0cfd1258f79b3291a80acfa08"
+              },
+              "parameterProvenance": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-p12-p15-bgm-id-only-node-fields-rootfalse-20261122-v1/csv-parameter-provenance.rootfalse.json",
+                "sha256": "4d01bd5a9fbc692e2681862af06857562a51df07a0b0a5c6d7740e00e227a504"
+              },
+              "retainedSourceLimits": [
+                "Scores are signed normalized waveform measurements, not probabilities.",
+                "No voice, SE, STOP, authored offset, native command phase or acting acceptance.",
+                "No whole-scene or continuous-playback acceptance; root review required."
+              ],
+              "rootReviewedMinimalResourceIdentityOnly": true
+            }
+          }
+        },
+        {
+          "path": "/issues/11/fields/0",
+          "before": "bg_music",
+          "after": "bg_picture"
+        },
+        {
+          "path": "/issues/11/fields/1",
+          "before": "bg_picture",
+          "after": "character_image"
+        },
+        {
+          "path": "/issues/11/fields/2",
+          "before": "character_image",
+          "after": "command"
+        },
+        {
+          "path": "/issues/11/fields/3",
+          "before": "command",
+          "after": "motion"
+        },
+        {
+          "path": "/issues/11/fields/4",
+          "before": "motion",
+          "after": "native_array_order"
+        },
+        {
+          "path": "/issues/11/fields/5",
+          "before": "native_array_order",
+          "after": "original_scenario_id"
+        },
+        {
+          "path": "/issues/11/fields/6",
+          "before": "original_scenario_id",
+          "after": "position"
+        },
+        {
+          "path": "/issues/11/fields/7",
+          "before": "position",
+          "after": "se"
+        },
+        {
+          "path": "/issues/11/fields/8",
+          "before": "se",
+          "after": "talk_chara"
+        },
+        {
+          "path": "/issues/11/fields/9",
+          "before": "talk_chara",
+          "after": "video"
+        },
+        {
+          "path": "/issues/11/fields/10",
+          "before": "video",
+          "after": "voice"
+        },
+        {
+          "path": "/issues/11/fields/11",
+          "before": "voice"
+        }
+      ]
+    }
+  ]
+}

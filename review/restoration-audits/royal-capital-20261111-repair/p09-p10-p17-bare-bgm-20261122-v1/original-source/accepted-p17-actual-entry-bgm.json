@@ -1,0 +1,105 @@
+{
+  "schema": "stella.delegated-audio-bindings.v1",
+  "reviewer": "/root/chapter1_audio_4_8",
+  "rootConfirmed": false,
+  "formalDataWritten": false,
+  "status": "accepted_actual_card_music_entry_only",
+  "baseCommit": "f0bb09ce90bbc57a89712ebc803b307547dba56c",
+  "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/17 6本篇「不可理解的再会」Ver尤里乌斯.mp4",
+  "sourceSha256": "d06e5c4fc3ef0060a760b28f58ba63cedbc1688289ff3268be70c239f7984a57",
+  "audioListened": false,
+  "nativeSceneSha256": "fa3ef0afc415c4800389419d6ef9fe36b2f041eabebb74935e95d6b439da8dd3",
+  "reviewSceneSha256": "b7eb64ab36bafb7490171ebefcb2494d3ff46945b62dc278bfbf31c8b6ec7b59",
+  "changes": [
+    {
+      "rootConfirmed": false,
+      "sceneId": 10020048,
+      "scenarioId": 7,
+      "uniqueId": 1002004800007,
+      "stableKey": "s10020048-p17-at0048",
+      "sourceText": "いかにも、私は騎士だが……。\nどこかで会ったかな？",
+      "expected": {
+        "bg_music": ""
+      },
+      "fields": {
+        "bg_music": "bgm_adv_fuon02_cd2_14,1,false"
+      },
+      "acceptedFields": [
+        "bg_music"
+      ],
+      "evidence": {
+        "sourceInterval": {
+          "segmentId": "p17-s10020048",
+          "start": 48.0,
+          "end": 51.5,
+          "sourceAnchorSeconds": 48,
+          "ocrReviewed": true,
+          "frame": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/17/dialogue-completion-2hz/crops/001545-dialogue.png",
+          "ocrEventId": "merged-0016",
+          "sourceSha256": "d06e5c4fc3ef0060a760b28f58ba63cedbc1688289ff3268be70c239f7984a57",
+          "sourceVideo": "/home/rikka/Videos/re0/真夜黑兔_Official_王都一日游篇/17 6本篇「不可理解的再会」Ver尤里乌斯.mp4",
+          "originalOCRText": "いかにも、私は騎士だが……どこかで会ったかな?",
+          "ocrConfidence": 0.85044,
+          "ocrReviewReasons": [
+            "low_confidence"
+          ],
+          "visualReviewer": "root",
+          "rootDecision": {
+            "interval": [
+              48,
+              51.5
+            ],
+            "canonicalAnchorSeconds": 48,
+            "action": "replace",
+            "speaker": "ユリウス",
+            "text": "いかにも、私は騎士だが……。\nどこかで会ったかな？",
+            "witnessTime": 51.5
+          },
+          "rootReviewWitnessTime": 51.5,
+          "recordingId": "bili-capital-17"
+        },
+        "entryBracketSeconds": [
+          47,
+          48
+        ],
+        "entryMeaning": "Observed card entry bracket only; no sample-exact native command phase asserted.",
+        "waveformMeasurements": "p17-opening-measurements.json",
+        "waveformMeasurementsSha256": "ce6af8aab42c7c19a7b5672165eaaa122afaee2991669615154a53e7d40a4936",
+        "entryRefinement": "p17-julius-entry-refinement.json",
+        "entryRefinementSha256": "373bc57a845ff5fc02e59a89af14f5a58674e6e42a730153b0fa638cb4543b2d",
+        "librarySize": 65,
+        "positiveControls": [
+          {
+            "start": 48,
+            "end": 51.0,
+            "signedCorrelation": 0.8110736885182566,
+            "exactReferenceSample": 500556
+          }
+        ],
+        "sameLibraryNegativeControls": [
+          {
+            "sourceStart": 48,
+            "track": "bgm_adv_battle02_cd2_17",
+            "signedCorrelation": -0.16770679564994115
+          }
+        ],
+        "sourceImageReview": {
+          "viewed": true,
+          "reviewer": "/root/chapter1_audio_4_8",
+          "observation": "Fresh original frames: 44–46s Subaru knight-recognition line, 47s card exit, 48–50s Julius answers いかにも、私は騎士だが……どこかで会ったかな？. Positive music begins with this Julius card; opening narration and location probes had no corresponding positive music measurement.",
+          "contact": "p17-julius-source-contact.jpg",
+          "contactSha256": "eb7a7c6f53de4bd0316822a844105726cab7c09b88eff1ee14f534f5c4c23a48",
+          "frameIndex": "p17-julius-source-frames.json",
+          "frameIndexSha256": "ce92cefe7bf462a4c4c60e4747c59caec0708c2bab35dd10558b686398419993"
+        },
+        "resourceAvailable": true,
+        "catalogResource": "bgm_adv_fuon02_cd2_14"
+      }
+    }
+  ],
+  "limitations": [
+    "Scores are signed normalized waveform measurements, not probabilities.",
+    "No voice, SE, STOP, authored offset, native command phase or acting acceptance.",
+    "No whole-scene or continuous-playback acceptance; root review required."
+  ]
+}
