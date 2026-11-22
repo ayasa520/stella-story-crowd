@@ -1,0 +1,182 @@
+{
+  "schema": "stella.P30.node8.tshirt-identity-current-source-review.v1",
+  "createdUTC": "2026-11-22T07:29:00.380076+00:00",
+  "rootConfirmed": false,
+  "acceptance": false,
+  "executionAuthorized": false,
+  "installationAuthorized": false,
+  "status": "new-character-only-visual-support-closes-old-exact-reference-pending",
+  "reviewer": "/root/missing1007_source",
+  "target": {
+    "chapterId": 1,
+    "sectionId": 1045,
+    "sceneId": 10450054,
+    "scenarioId": 8,
+    "arrayIndex": 7,
+    "uniqId": 1045005400008,
+    "stableKey": "s10450054-p30-at0051"
+  },
+  "oldReview": {
+    "file": {
+      "path": "data/native_recovery/royal-capital-20261110/repair-20261111/visual-high/agent-reviewed-p30-first15-identity-v1/first15-coverage.json",
+      "bytes": 108696,
+      "sha256": "c840ae527c92ee05f4b25022781fc8ffae164b45f301f53085ab33ceb469dfa5"
+    },
+    "jsonPointer": "/decisions/4",
+    "classification": "tshirt_model_variant_and_assembled_reference_pending",
+    "oldIdentityAccepted": false,
+    "oldCandidateModel": null,
+    "reason": "The entire actor is visible in the plain dark crew-neck tee with bare arms and no jacket stripe or N emblem. Exact tshirt01/02 identity remains pending despite the familiar face; use the existing separate candidate requests.",
+    "oldReviewNotRewrittenOrRelabelledAccepted": true
+  },
+  "source": {
+    "fullFrame": {
+      "path": "data/native_recovery/royal-capital-20261110/ocr/30/root-review/frames/d7d29c63dc09-001725.jpg",
+      "bytes": 152916,
+      "sha256": "bd05793ec1dc963f124299ed72a749782597b918f2d024dba3e1bfa6378788ad"
+    },
+    "sourceIndex": {
+      "path": "data/native_recovery/royal-capital-20261110/ocr/30/root-review/index.json",
+      "bytes": 399187,
+      "sha256": "351599b2f576c9609cb1bdc1828d27f850b51aedbd8b6dae21508bcaa830a392"
+    },
+    "eventId": "merged-0009",
+    "sourceFrameTime": 57.5,
+    "sourceFrameIndex": 1725,
+    "recordedSourceRange": [
+      51,
+      57.5
+    ],
+    "sourceVideoSHA256Inherited": "d7d29c63dc09f0e4942aa6c89e7ee2f9badc5d6f53757e587993ce46d301c3ee",
+    "sourceFrameTimeIsExistingSparseIndexTimeNotFreshNativePTSMeasurement": true,
+    "wholeSourceVideoNotReadOrDecodedHere": true
+  },
+  "identityCandidate": "live2d/AC_subaru_tshirt01",
+  "identityVisualSupport": true,
+  "features": [
+    "The newly directly viewed source full frame clearly exposes both intact short sleeves, sleeve hems, plain dark shirt front and round crew neckline; the actor has bare forearms below the sleeve hems.",
+    "This matches the actual closed subaru_tshirt01 reference and its real source model atlas. The actual subaru_tshirt02 reference instead exposes the upper arms at gathered/ripped sleeveless shoulder edges; that garment silhouette is absent in the source.",
+    "No white zip-up front, orange collar/stripe or N emblem of the default tracksuit is visible. Familiar face, speaker text and source audio are not used to decide the garment variant."
+  ],
+  "resources": [
+    {
+      "nativeId": "live2d/AC_subaru_tshirt01",
+      "descriptor": {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/assets/models/subaru_tshirt01/ac/ac.model3.json",
+        "bytes": 13206,
+        "sha256": "adc631e25933731a2f0e40652f36ebf9deec3eb2728648a5decbe4992c5aba31"
+      },
+      "texture": {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/assets/models/subaru_tshirt01/ac/textures/texture_00.png",
+        "bytes": 1157969,
+        "sha256": "4a2de4996241b180331b630901065420d947662e4d71a4dde229f746d778889e"
+      },
+      "originalDescriptor": {
+        "path": "data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt01/ac/ac.model3.json",
+        "bytes": 13206,
+        "sha256": "adc631e25933731a2f0e40652f36ebf9deec3eb2728648a5decbe4992c5aba31"
+      },
+      "originalTexture": {
+        "path": "data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt01/ac/textures/texture_00.png",
+        "bytes": 1157969,
+        "sha256": "4a2de4996241b180331b630901065420d947662e4d71a4dde229f746d778889e"
+      },
+      "originalPackagedDescriptorAndTextureFreshExact": true
+    },
+    {
+      "nativeId": "live2d/AC_subaru_tshirt02",
+      "descriptor": {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/assets/models/subaru_tshirt02/ac/ac.model3.json",
+        "bytes": 13206,
+        "sha256": "9e6cc8968acbbbf4faaf32e669e77baf3b451722dd792e87a970746afdadd402"
+      },
+      "texture": {
+        "path": "artifacts/stella-script-continuation-20261121/data-checkout/assets/models/subaru_tshirt02/ac/textures/texture_00.png",
+        "bytes": 1183892,
+        "sha256": "ae9238116be98fbbdd1c0953e0fb3dc35c341fa4883832c5c59b6645157841ec"
+      },
+      "originalDescriptor": {
+        "path": "data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt02/ac/ac.model3.json",
+        "bytes": 13206,
+        "sha256": "9e6cc8968acbbbf4faaf32e669e77baf3b451722dd792e87a970746afdadd402"
+      },
+      "originalTexture": {
+        "path": "data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt02/ac/textures/texture_00.png",
+        "bytes": 1183892,
+        "sha256": "ae9238116be98fbbdd1c0953e0fb3dc35c341fa4883832c5c59b6645157841ec"
+      },
+      "originalPackagedDescriptorAndTextureFreshExact": true
+    }
+  ],
+  "existingClosedActualModelReferences": [
+    {
+      "modelId": "subaru_tshirt01",
+      "image": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-four-reference-runtime-20261112-v1/subaru_tshirt01-normal-actor.png",
+        "bytes": 338603,
+        "sha256": "7c281d1eff6792ac4cfae75a2e3b169250f2a9a33cffe61b67cafa9c73f1bf3b"
+      },
+      "metadata": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-four-reference-runtime-20261112-v1/model-captures.json",
+        "bytes": 8929,
+        "sha256": "ba9188267194325aae81501f12e8159e3a53b0dd249329918ed4dd8641329dd7"
+      },
+      "jsonPointer": "/captures/2",
+      "actualModelResponses": [
+        {
+          "url": "http://127.0.0.1:5192/asset/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt01/ac/ac.model3.json",
+          "status": 200
+        }
+      ],
+      "actualModelReadyLog": [
+        "MODEL_READY subaru_tshirt01 106 4800 9000 visible=false"
+      ],
+      "actualReferenceViewedEarlierThisTurn": true,
+      "referenceNormalMotionNotAcceptedForStory": true
+    },
+    {
+      "modelId": "subaru_tshirt02",
+      "image": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-four-reference-runtime-20261112-v1/subaru_tshirt02-normal-actor.png",
+        "bytes": 342914,
+        "sha256": "8a04beb67d582ca50fbe2730f4bab203dba6d6d38c8e52b3864ad0f4424ad15b"
+      },
+      "metadata": {
+        "path": "data/native_recovery/royal-capital-20261110/repair-20261111/p30-four-reference-runtime-20261112-v1/model-captures.json",
+        "bytes": 8929,
+        "sha256": "ba9188267194325aae81501f12e8159e3a53b0dd249329918ed4dd8641329dd7"
+      },
+      "jsonPointer": "/captures/3",
+      "actualModelResponses": [
+        {
+          "url": "http://127.0.0.1:5192/asset/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru_tshirt02/ac/ac.model3.json",
+          "status": 200
+        }
+      ],
+      "actualModelReadyLog": [
+        "MODEL_READY subaru_tshirt02 106 4800 9000 visible=false"
+      ],
+      "actualReferenceViewedEarlierThisTurn": true,
+      "referenceNormalMotionNotAcceptedForStory": true
+    }
+  ],
+  "whyOldGapNowCanClose": "The old delegated review already observed the full actor but left exact01/02 disambiguation pending for missing assembled model controls. Those exact native model controls now exist and were directly compared earlier in this turn; this source frame adds unambiguous sleeve evidence. This is a new bounded identity decision, not an assertion that the old packet had accepted8.",
+  "coverage": {
+    "newSourceImagesViewed": 1,
+    "newAtlasOrReferenceImagesProduced": 0,
+    "existingAtlasAndReferenceImagesNotRepeated": true,
+    "existingReferenceAndAtlasViewsReusedFromEarlierNode26-27Task": true,
+    "completeEntryHoldExitNotEstablished": true
+  },
+  "fieldsProposed": {
+    "character": "live2d/AC_subaru_tshirt01"
+  },
+  "reviewChanges": {},
+  "existingReviewIssueCodesPreserved": [
+    "performance_unrecovered",
+    "text_review_pending"
+  ],
+  "textReviewPendingMustRemainIfPresent": true,
+  "sourceTextTranslationMotionFaceBodyExtraGeometryPhaseTimingVoiceOrWholeSceneAccepted": false,
+  "newBrowserDecoderHelperAPIPixelsOrFormalD_CGitWrites": false
+}
