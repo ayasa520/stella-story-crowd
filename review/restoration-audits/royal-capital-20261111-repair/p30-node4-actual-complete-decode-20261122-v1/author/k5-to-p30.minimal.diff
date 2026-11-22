@@ -1,0 +1,22 @@
+--- executed-K5/decode.py
++++ P30-actual/decode.py
+@@ -34,9 +34,16 @@
+ OLD_F2 = A / 'episode5-six-private-kitv3-complete-actual-frames-v2'
+ OLD_F3 = A / 'episode5-six-private-kitv3-complete-actual-frames-v3'
+ OLD_K4_OUTPUT = A / 'episode5-silent54-nativeflag-complete-actual-frames-v2/run-1'
+-INPUT = A / 'episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1'
+-CAPTURE_CLOSURE = A / 'episode5-talk0-only-runtime-root-closure-v1.json'
+-CASES = [('54-talk0-only', 453)]
++# P30 scope adapter: only INPUT, CAPTURE_CLOSURE and CASES differ from the
++# executed K5 configuration. All extraction/contact/EOF/cleanup code remains
++# unchanged. The recorder's 453 samples are an expectation, never a decoded
++# result: real showinfo/RGB counts, one-byte EOF, exit0 and a terminal reader
++# must independently prove completeness. Historical K5 schema/message labels
++# below identify the reused mechanism; actual caseId/input/closure bind P30.
++# Native JPEGs stay 500x1000. Contact tiles alone are reduced for inspection.
++INPUT = A / 'p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1'
++CAPTURE_CLOSURE = A / 'ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json'
++CASES = [('p30-node4-unchanged-ordinary', 453)]
+ WIDTH, HEIGHT, BLOCK_BYTES = 500, 1000, 500*1000*3
+ CAP, MARGIN = 128*1024*1024, 32*1024*1024
+ FFMPEG = '/usr/bin/ffmpeg'

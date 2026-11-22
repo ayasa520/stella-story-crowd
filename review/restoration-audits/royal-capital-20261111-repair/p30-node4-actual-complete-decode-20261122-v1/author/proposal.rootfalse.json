@@ -1,0 +1,212 @@
+{
+  "schema": "stella.P30.node4.complete-ordinary-actual-decode.preparation.v1",
+  "createdUTC": "2026-11-22T02:13:36.568353+00:00",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "installationAuthorized": false,
+  "status": "SEALED_OFFLINE_PREPARATION_AWAIT_STATIC_PEER_AND_SEPARATE_ROOT_RELEASE",
+  "targetActualCapture": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/actual.mkv",
+    "bytes": 1439679,
+    "sha256": "87d2e3215997dc8cc7ea067280188da35adac4f9429bd83ed092a9674c1fec51"
+  },
+  "captureMetadataAndRootClosure": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/input-bindings.rootfalse.json",
+    "bytes": 7820,
+    "sha256": "311e6aa528cae873333730f18d81b87d47fb3b135680691bae4d5434b4cc7904"
+  },
+  "runtimeClosure": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json",
+    "bytes": 5041,
+    "sha256": "c6db91bd357c2935a2452ee5864ce736af388ff103e77c181230ebdf5b8dbc86"
+  },
+  "recorderExpectation": {
+    "recordedSamples": 453,
+    "width": 500,
+    "height": 1000,
+    "recordingFPS": 30,
+    "actualDecodedFrames": null,
+    "actualTimeBaseAndPTSUnknown": true,
+    "453NotPreacceptedAsDecodedCount": true,
+    "recorderExit255IsClosedRecordingFactNotDecodeOutcome": true
+  },
+  "successfulExecutedBase": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/decode.py",
+    "bytes": 30684,
+    "sha256": "7274cb291b2de93bddc879fb65710d316df53741589e5b1625a4888d2f4daba0"
+  },
+  "baseRunAndClosure": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/receipt.json",
+      "bytes": 6444,
+      "sha256": "c516fb5e1eeba6423b5fc8ca60a8e8d6eed8986163a74d1e9399bd16103d8739"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-talk0-only-frames-root-closure-after-revalidation-v1.json",
+      "bytes": 3472,
+      "sha256": "a6bd0307ae51101cc9a5e61abf1ca5a03af7020b57f18af0871817caf61dc69e"
+    }
+  ],
+  "whyDataOnlyUnmodifiedScriptCannotAcceptThisInput": "The successful K5 script hardcodesINPUT,CAPTURE_CLOSURE andCASES. Its genuine root/input gates reject a different capture. Only those three configuration literals and an explanatory7-line English comment are changed; no new decoder or wrapper is written.",
+  "newCode": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/decode.py",
+    "bytes": 31261,
+    "sha256": "3138b5001946aa5c410869c39b101605188d90b7ee220b0ab1b827e4b87366c9"
+  },
+  "minimalDiff": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/k5-to-p30.minimal.diff",
+    "bytes": 1369,
+    "sha256": "bb0c5c6fc8b61468112c978fd8f872c08ccdf55cf6992a7948e47c76a3520c01"
+  },
+  "inverseRestoresBaseSHA256": "7274cb291b2de93bddc879fb65710d316df53741589e5b1625a4888d2f4daba0",
+  "unchangedOperationalKernel": {
+    "startAnchor": "def request_stop(signum,frame):",
+    "bytes": 28906,
+    "sha256": "a3456d9723e1495e7b770847756b3470f2ef4560162e043c49cc05d198560cb7",
+    "allFunctionsThroughMainAndEntryByteExactToExecutedK5": true
+  },
+  "mechanismProof": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/mechanism-proof.rootfalse.json",
+    "bytes": 4619,
+    "sha256": "137bf1e1d92743e38e03462c17e90042bbab9ff02bc674c9a7e87fe1128b0f59"
+  },
+  "toolClosure": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/tool-closure.rootfalse.json",
+    "bytes": 3515,
+    "sha256": "0ddb9913860f2f32bc26773f8dd35b67e49aa9e08db1b9b9cd23f09bb73d6abe"
+  },
+  "rootFalseReleaseTemplate": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/root-release.draft.json",
+    "bytes": 7064,
+    "sha256": "0c2ec6de7a135ffdfc003dc1a156bf7a00bbbc21192406939746dc944695ca99"
+  },
+  "futureCompleteDecodeSuccessRequirements": [
+    "Fresh exact actualMKV1439679B/SHA87d2e3215997dc8cc7ea067280188da35adac4f9429bd83ed092a9674c1fec51 plus original capture receipt/recorder command/index andc6db runtime closure.",
+    "No ffprobe,source-recording extraction,seek/time limit/frames limit/fps/scale/crop filter. One complete actualMKV video stream is consumed through natural EOF.",
+    "Every500x1000x3 RGB block and original showinfo integerPTS/timebase must arrive; early/extra/truncated bytes or inconsistent showinfo fail.453 is only the recorder contract being tested, not an accepted result.",
+    "Independent producerexit0,readerterminal,ownedPID/PGID disappearance,all before/after input/code and legacy preservation gates are required.",
+    "All produced original nativeJPEGs and sequential contact coverage/indices need independent root hash/OS closure before delegated pixels are viewed. No retry or count/PTS substitution."
+  ],
+  "outputBudget": {
+    "scope": "HERE preparation+run-1 cumulative disk files only; no legacy input tree copies",
+    "hardCapBytes": 134217728,
+    "ordinaryWriteExclusiveCeilingBytes": 100663296,
+    "emergencyMarginBytes": 33554432,
+    "stderrCapBytes": 8388608,
+    "everyJPEGContactAndDiagnosticPrechargedAfterEncodingInRAM": true,
+    "rawRGBWrittenToDisk": false,
+    "actualOutputBytesUnknown": true,
+    "baseK5ObservedOutputBytesOnlyForCapacityContext": 82869117,
+    "noGuaranteedP30OutputSizeFromCompressedMKV": true,
+    "rootFreshFreeDiskMinimumBytes": 167772160,
+    "rootExternalFreeDiskGateNotAddedToKernel": true
+  },
+  "memoryBoundary": {
+    "nativeRawFrameBytes": 1500000,
+    "conditionalTotalRawStreamBytesIf453Verified": 679500000,
+    "allRawFramesAccumulatedInMemory": false,
+    "maximumRetainedRawFrameUnitBytes": 1500000,
+    "readBytearrayAndReturnedBytesMayCoexist": true,
+    "singlePillowImageAndEncodedJPEGAlsoInMemory": true,
+    "contactCanvasRGBBytes": 7890000,
+    "singleContactTileRGBBytes": 375000,
+    "residentFFmpegPythonPillowAndLibraryOverheadNotMeasuredHere": true,
+    "noInheritedRLIMITASOrRSSHardCap": true,
+    "diskCapIsNotMemoryCap": true,
+    "rootExternalFreshAvailableMemoryMinimumBytes": 268435456,
+    "includeAnyCgroupRemainingCapacityInRootCheck": true,
+    "externalGateNotKernelEnforcement": true
+  },
+  "timingAndCleanup": {
+    "inheritedDecodeTransportDeadlineSeconds": 180,
+    "contactsLegacyHashesAndCleanupOutsideThatDeadline": true,
+    "rootExternalWholeAttemptMonitoringBudgetSeconds": 300,
+    "oneOwnedDecoderNewSessionOnly": true,
+    "originalTERM5sThenKILL5sAndActualOSObservationRetained": true,
+    "signalsDeferredUntilOwnedRegistration": true,
+    "readerMustTerminateBeforeNormalSuccess": true,
+    "unknownOrFailedClosureMeansNoImageReview": true
+  },
+  "futureContactCoverage": {
+    "tilesPerSheet": 20,
+    "tileSize": [
+      250,
+      500
+    ],
+    "canvasSize": [
+      1250,
+      2104
+    ],
+    "nativeJPEGSize": [
+      500,
+      1000
+    ],
+    "contactSheetCountPlanningOnlyIf453Verified": 23,
+    "actualContactsUnknown": true,
+    "contactResizeDoesNotAlterOriginalNativeJPEGs": true
+  },
+  "preservedLegacyInventories": {
+    "legacyF1Inventory": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-six-private-kitv3-complete-actual-frames-v3/v1-preservation-inventory.rootfalse.json",
+      "bytes": 335600,
+      "sha256": "1597f79dc79e1ee12f9cb268bf918068a8336a2256ae442cad9cbf62b3a59cc1"
+    },
+    "legacyF2Inventory": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-six-private-kitv3-complete-actual-frames-v3/v2-preservation-inventory.rootfalse.json",
+      "bytes": 1297,
+      "sha256": "540d4b148388e8ba069833f5ba9a3db5844b6c836fb2e298f94fdff507552ea4"
+    },
+    "legacyF3Inventory": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-nativeflag-complete-actual-frames-v1/legacy-f3-preservation-inventory.rootfalse.json",
+      "bytes": 219805,
+      "sha256": "679e93ec8c7e7a79130dbccc548ac2a0e18d836044a89e6d456609fbbd211457"
+    },
+    "legacyK4Inventory": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-k4-completed-output-preservation-for-k5-v1.json",
+      "bytes": 171636,
+      "sha256": "67b9cd42c4c130a066b4eaa4ce2852331e799ddc9bdb9819a94c3a91a470e746"
+    }
+  },
+  "historicalSchemaAndLabels": "K5/silent54 schema,newK5OutputBytes and message/freshMetadata text remain exact inherited mechanism labels. P30 output path,caseId,input binding and root closure identify this new attempt; no old54 result is relabelled or reused.",
+  "noCurrentDOrCExecutionDependency": true,
+  "originalSourceNode4Complete255FramesAreSeparateAndUnchanged": true,
+  "originalSourceFramesReadOrReDecoded": false,
+  "futureCommandNotExecuted": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "OMP_NUM_THREADS=1",
+    "OPENBLAS_NUM_THREADS=1",
+    "MKL_NUM_THREADS=1",
+    "NUMEXPR_NUM_THREADS=1",
+    "nice",
+    "-n",
+    "19",
+    "taskset",
+    "-c",
+    "0,1",
+    "/home/rikka/Projects/stella/.venv-video-ocr/bin/python",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/decode.py",
+    "--release",
+    "<separate root-approved external release>",
+    "--release-sha256",
+    "<exact root-approved release SHA256>"
+  ],
+  "scopeAcceptance": {
+    "actualContainerDecodeVerified": false,
+    "actualImagesReviewed": false,
+    "sourceMotionFacePhaseTimingOrWholeSceneAccepted": false
+  },
+  "actions": {
+    "metadataAndCodeReadOnly": true,
+    "actualMKVBytesReadOrCopied": false,
+    "FFprobeFFmpegPillowOrDecoderExecuted": false,
+    "ASTSyntaxTestBuild": false,
+    "imageViewOrContactGeneration": false,
+    "APIOrBrowser": false,
+    "Git": false,
+    "DWrite": false,
+    "CWrite": false,
+    "oldEvidenceWrite": false,
+    "newDirectoryOnly": true
+  }
+}

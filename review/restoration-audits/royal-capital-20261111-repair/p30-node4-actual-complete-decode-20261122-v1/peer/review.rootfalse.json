@@ -1,0 +1,451 @@
+{
+  "schema": "stella.P30.ordinary-actual-decode.static-peer.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "installationAuthorized": false,
+  "verdict": "STATIC_PASS_NO_CODE_MUSTFIX_REQUIRES_NEW_ROOT_RELEASE_AND_FRESH_EXTERNAL_GATES",
+  "mustFix": [],
+  "code": {
+    "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/decode.py",
+    "bytes": 31261,
+    "sha256": "3138b5001946aa5c410869c39b101605188d90b7ee220b0ab1b827e4b87366c9"
+  },
+  "sealedPreparation": {
+    "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/sealed-preparation.rootfalse.json",
+    "bytes": 4111,
+    "sha256": "57a0d018d46a20ecde8304a294bd82854100ef416e102c0c5cf5e7e66d88f645"
+  },
+  "proposal": {
+    "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/proposal.rootfalse.json",
+    "bytes": 10610,
+    "sha256": "ae26823dec934864d265b21b688621b8551b2b4e899ad3828eab655ce3e25fc7"
+  },
+  "fullSourceStaticInspection": true,
+  "noASTImportCompileTestOrExecution": true,
+  "kernelProof": {
+    "executedBase": {
+      "path": "artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/decode.py",
+      "bytes": 30684,
+      "sha256": "7274cb291b2de93bddc879fb65710d316df53741589e5b1625a4888d2f4daba0"
+    },
+    "successfulReceipt": {
+      "path": "artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/run-1/receipt.json",
+      "bytes": 6444,
+      "sha256": "c516fb5e1eeba6423b5fc8ca60a8e8d6eed8986163a74d1e9399bd16103d8739"
+    },
+    "rootClosure": {
+      "path": "artifacts/stella-script-continuation-20261121/episode5-talk0-only-frames-root-closure-after-revalidation-v1.json",
+      "bytes": 3472,
+      "sha256": "a6bd0307ae51101cc9a5e61abf1ca5a03af7020b57f18af0871817caf61dc69e"
+    },
+    "threeConfigChanges": [
+      {
+        "before": "INPUT = A / 'episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1'",
+        "after": "INPUT = A / 'p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1'",
+        "beforeCount": 1,
+        "afterCount": 1
+      },
+      {
+        "before": "CAPTURE_CLOSURE = A / 'episode5-talk0-only-runtime-root-closure-v1.json'",
+        "after": "CAPTURE_CLOSURE = A / 'ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json'",
+        "beforeCount": 1,
+        "afterCount": 1
+      },
+      {
+        "before": "CASES = [('54-talk0-only', 453)]",
+        "after": "CASES = [('p30-node4-unchanged-ordinary', 453)]",
+        "beforeCount": 1,
+        "afterCount": 1
+      }
+    ],
+    "sevenCommentLines": [
+      "# P30 scope adapter: only INPUT, CAPTURE_CLOSURE and CASES differ from the",
+      "# executed K5 configuration. All extraction/contact/EOF/cleanup code remains",
+      "# unchanged. The recorder's 453 samples are an expectation, never a decoded",
+      "# result: real showinfo/RGB counts, one-byte EOF, exit0 and a terminal reader",
+      "# must independently prove completeness. Historical K5 schema/message labels",
+      "# below identify the reused mechanism; actual caseId/input/closure bind P30.",
+      "# Native JPEGs stay 500x1000. Contact tiles alone are reduced for inspection."
+    ],
+    "reverseExactlyBase": true,
+    "reverseSHA256": "7274cb291b2de93bddc879fb65710d316df53741589e5b1625a4888d2f4daba0",
+    "kernelBytes": 28906,
+    "kernelSHA256": "a3456d9723e1495e7b770847756b3470f2ef4560162e043c49cc05d198560cb7",
+    "allFunctionsMainAndEntryExactlyBase": true,
+    "storedFullDiff": {
+      "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/k5-to-p30.minimal.diff",
+      "bytes": 1369,
+      "sha256": "bb0c5c6fc8b61468112c978fd8f872c08ccdf55cf6992a7948e47c76a3520c01"
+    },
+    "storedDiffMatchesChanges": true
+  },
+  "sealedFileChecks": [
+    {
+      "expected": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/decode.py",
+        "bytes": 31261,
+        "sha256": "3138b5001946aa5c410869c39b101605188d90b7ee220b0ab1b827e4b87366c9"
+      },
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/decode.py",
+        "bytes": 31261,
+        "sha256": "3138b5001946aa5c410869c39b101605188d90b7ee220b0ab1b827e4b87366c9"
+      },
+      "passed": true
+    },
+    {
+      "expected": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/k5-to-p30.minimal.diff",
+        "bytes": 1369,
+        "sha256": "bb0c5c6fc8b61468112c978fd8f872c08ccdf55cf6992a7948e47c76a3520c01"
+      },
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/k5-to-p30.minimal.diff",
+        "bytes": 1369,
+        "sha256": "bb0c5c6fc8b61468112c978fd8f872c08ccdf55cf6992a7948e47c76a3520c01"
+      },
+      "passed": true
+    },
+    {
+      "expected": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/input-bindings.rootfalse.json",
+        "bytes": 7820,
+        "sha256": "311e6aa528cae873333730f18d81b87d47fb3b135680691bae4d5434b4cc7904"
+      },
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/input-bindings.rootfalse.json",
+        "bytes": 7820,
+        "sha256": "311e6aa528cae873333730f18d81b87d47fb3b135680691bae4d5434b4cc7904"
+      },
+      "passed": true
+    },
+    {
+      "expected": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/tool-closure.rootfalse.json",
+        "bytes": 3515,
+        "sha256": "0ddb9913860f2f32bc26773f8dd35b67e49aa9e08db1b9b9cd23f09bb73d6abe"
+      },
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/tool-closure.rootfalse.json",
+        "bytes": 3515,
+        "sha256": "0ddb9913860f2f32bc26773f8dd35b67e49aa9e08db1b9b9cd23f09bb73d6abe"
+      },
+      "passed": true
+    },
+    {
+      "expected": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/mechanism-proof.rootfalse.json",
+        "bytes": 4619,
+        "sha256": "137bf1e1d92743e38e03462c17e90042bbab9ff02bc674c9a7e87fe1128b0f59"
+      },
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/mechanism-proof.rootfalse.json",
+        "bytes": 4619,
+        "sha256": "137bf1e1d92743e38e03462c17e90042bbab9ff02bc674c9a7e87fe1128b0f59"
+      },
+      "passed": true
+    },
+    {
+      "expected": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/root-release.draft.json",
+        "bytes": 7064,
+        "sha256": "0c2ec6de7a135ffdfc003dc1a156bf7a00bbbc21192406939746dc944695ca99"
+      },
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/root-release.draft.json",
+        "bytes": 7064,
+        "sha256": "0c2ec6de7a135ffdfc003dc1a156bf7a00bbbc21192406939746dc944695ca99"
+      },
+      "passed": true
+    },
+    {
+      "expected": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/proposal.rootfalse.json",
+        "bytes": 10610,
+        "sha256": "ae26823dec934864d265b21b688621b8551b2b4e899ad3828eab655ce3e25fc7"
+      },
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/proposal.rootfalse.json",
+        "bytes": 10610,
+        "sha256": "ae26823dec934864d265b21b688621b8551b2b4e899ad3828eab655ce3e25fc7"
+      },
+      "passed": true
+    },
+    {
+      "expected": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/static-byte-check.rootfalse.json",
+        "bytes": 2960,
+        "sha256": "6d705abed5b9cfc88ea5126022062775a61364bc624cffb6e6c2d45672cf3e6f"
+      },
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/static-byte-check.rootfalse.json",
+        "bytes": 2960,
+        "sha256": "6d705abed5b9cfc88ea5126022062775a61364bc624cffb6e6c2d45672cf3e6f"
+      },
+      "passed": true
+    },
+    {
+      "expected": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/README.md",
+        "bytes": 3524,
+        "sha256": "bd294aa2471dfc96cbe5b66faf1b8a819f2e7fbb9992022feed814881a70a1b6"
+      },
+      "current": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/README.md",
+        "bytes": 3524,
+        "sha256": "bd294aa2471dfc96cbe5b66faf1b8a819f2e7fbb9992022feed814881a70a1b6"
+      },
+      "passed": true
+    }
+  ],
+  "captureScope": {
+    "actualMKVDeclared": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/actual.mkv",
+      "bytes": 1439679,
+      "sha256": "87d2e3215997dc8cc7ea067280188da35adac4f9429bd83ed092a9674c1fec51"
+    },
+    "metadataOnlyStat": {
+      "bytes": 1439679
+    },
+    "MKVBytesNotReadOrRehashed": true,
+    "recorderExpectation": 453,
+    "actualDecodedFrames": null,
+    "actualTimebaseAndPTS": null,
+    "containerDecodeVerified": false,
+    "rootClosure": {
+      "path": "artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json",
+      "bytes": 5041,
+      "sha256": "c6db91bd357c2935a2452ee5864ce736af388ff103e77c181230ebdf5b8dbc86"
+    },
+    "recorderExit255IsExistingClosedStopFact": true,
+    "xSurfaceSamplesAreNotUniqueGLFrames": true,
+    "audioCaptured": false,
+    "fiveSourceBindings": [
+      {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/actual.mkv",
+        "bytes": 1439679,
+        "sha256": "87d2e3215997dc8cc7ea067280188da35adac4f9429bd83ed092a9674c1fec51",
+        "metadataStatSize": 1439679,
+        "bytesReadOrHashedByPeer": false,
+        "futureKernelFreshHashRequired": true
+      },
+      {
+        "declared": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/capture-receipt.json",
+          "bytes": 1273,
+          "sha256": "a6272d7573dab6c31726212af6cbba0e56a1d1cb84bd9f548e2b2336c6d0781d"
+        },
+        "currentMetadata": {
+          "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/capture-receipt.json",
+          "bytes": 1273,
+          "sha256": "a6272d7573dab6c31726212af6cbba0e56a1d1cb84bd9f548e2b2336c6d0781d"
+        },
+        "passed": true
+      },
+      {
+        "declared": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/recorder-command.json",
+          "bytes": 1150,
+          "sha256": "ab87f03caadc0335e48291bdad0d6e2fac00bd5d82d07c70faa50d4727e7c306"
+        },
+        "currentMetadata": {
+          "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/recorder-command.json",
+          "bytes": 1150,
+          "sha256": "ab87f03caadc0335e48291bdad0d6e2fac00bd5d82d07c70faa50d4727e7c306"
+        },
+        "passed": true
+      },
+      {
+        "declared": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/capture-index.json",
+          "bytes": 1616,
+          "sha256": "fb426ec9c75b51344186bc3564965822958660ccaf3b3acc1f6bf32ffd5040e5"
+        },
+        "currentMetadata": {
+          "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/capture-index.json",
+          "bytes": 1616,
+          "sha256": "fb426ec9c75b51344186bc3564965822958660ccaf3b3acc1f6bf32ffd5040e5"
+        },
+        "passed": true
+      },
+      {
+        "declared": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json",
+          "bytes": 5041,
+          "sha256": "c6db91bd357c2935a2452ee5864ce736af388ff103e77c181230ebdf5b8dbc86"
+        },
+        "currentMetadata": {
+          "path": "artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json",
+          "bytes": 5041,
+          "sha256": "c6db91bd357c2935a2452ee5864ce736af388ff103e77c181230ebdf5b8dbc86"
+        },
+        "passed": true
+      }
+    ]
+  },
+  "futureRelease": {
+    "template": {
+      "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/root-release.draft.json",
+      "bytes": 7064,
+      "sha256": "0c2ec6de7a135ffdfc003dc1a156bf7a00bbbc21192406939746dc944695ca99"
+    },
+    "rootConfirmed": false,
+    "changedRawRGBDecoderAuthorized": false,
+    "independentPeerPlaceholderUnfilled": true,
+    "exactRequiredCaseAndFiveInputPathsMatch": true,
+    "sevenDeclaredToolPathsAndHashesMatchInheritedContract": true,
+    "toolsNotReadByPeer": true,
+    "fourLegacyInventories": [
+      {
+        "key": "legacyF1Inventory",
+        "binding": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-six-private-kitv3-complete-actual-frames-v3/v1-preservation-inventory.rootfalse.json",
+          "bytes": 335600,
+          "sha256": "1597f79dc79e1ee12f9cb268bf918068a8336a2256ae442cad9cbf62b3a59cc1"
+        },
+        "currentMetadata": {
+          "path": "artifacts/stella-script-continuation-20261121/episode5-six-private-kitv3-complete-actual-frames-v3/v1-preservation-inventory.rootfalse.json",
+          "bytes": 335600,
+          "sha256": "1597f79dc79e1ee12f9cb268bf918068a8336a2256ae442cad9cbf62b3a59cc1"
+        },
+        "legacyImageTreesNotReadByPeer": true,
+        "futureWholeTreeGatesRemainRequired": true
+      },
+      {
+        "key": "legacyF2Inventory",
+        "binding": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-six-private-kitv3-complete-actual-frames-v3/v2-preservation-inventory.rootfalse.json",
+          "bytes": 1297,
+          "sha256": "540d4b148388e8ba069833f5ba9a3db5844b6c836fb2e298f94fdff507552ea4"
+        },
+        "currentMetadata": {
+          "path": "artifacts/stella-script-continuation-20261121/episode5-six-private-kitv3-complete-actual-frames-v3/v2-preservation-inventory.rootfalse.json",
+          "bytes": 1297,
+          "sha256": "540d4b148388e8ba069833f5ba9a3db5844b6c836fb2e298f94fdff507552ea4"
+        },
+        "legacyImageTreesNotReadByPeer": true,
+        "futureWholeTreeGatesRemainRequired": true
+      },
+      {
+        "key": "legacyF3Inventory",
+        "binding": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-silent54-nativeflag-complete-actual-frames-v1/legacy-f3-preservation-inventory.rootfalse.json",
+          "bytes": 219805,
+          "sha256": "679e93ec8c7e7a79130dbccc548ac2a0e18d836044a89e6d456609fbbd211457"
+        },
+        "currentMetadata": {
+          "path": "artifacts/stella-script-continuation-20261121/episode5-silent54-nativeflag-complete-actual-frames-v1/legacy-f3-preservation-inventory.rootfalse.json",
+          "bytes": 219805,
+          "sha256": "679e93ec8c7e7a79130dbccc548ac2a0e18d836044a89e6d456609fbbd211457"
+        },
+        "legacyImageTreesNotReadByPeer": true,
+        "futureWholeTreeGatesRemainRequired": true
+      },
+      {
+        "key": "legacyK4Inventory",
+        "binding": {
+          "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode5-k4-completed-output-preservation-for-k5-v1.json",
+          "bytes": 171636,
+          "sha256": "67b9cd42c4c130a066b4eaa4ce2852331e799ddc9bdb9819a94c3a91a470e746"
+        },
+        "currentMetadata": {
+          "path": "artifacts/stella-script-continuation-20261121/episode5-k4-completed-output-preservation-for-k5-v1.json",
+          "bytes": 171636,
+          "sha256": "67b9cd42c4c130a066b4eaa4ce2852331e799ddc9bdb9819a94c3a91a470e746"
+        },
+        "legacyImageTreesNotReadByPeer": true,
+        "futureWholeTreeGatesRemainRequired": true
+      }
+    ],
+    "noCurrentDOrCExecutionDependency": true,
+    "externalDiskRAMAndWholeAttemptGatesAreNotKernelEnforcement": true
+  },
+  "codeFacts": {
+    "originalDemuxPTSAndNativeDimensions": {
+      "showinfoLine": 172,
+      "dimensionGateLine": 180,
+      "rawWidth": 500,
+      "rawHeight": 1000,
+      "rawBytesPerFrame": 1500000,
+      "PTSNotPredictedFromFPS": true,
+      "duplicateAndDecreasingOriginalPairsRetained": true
+    },
+    "completeFileEOF": {
+      "commandLine": 206,
+      "expectedBlocksLine": 326,
+      "independentOneByteEOFLine": 344,
+      "exitZeroLine": 349,
+      "showinfoCountLine": 350,
+      "noProducerFrameTimeSeekLimit": true,
+      "expected453NotDecodedFact": true
+    },
+    "contacts": {
+      "line": 257,
+      "nativeJPEG": [
+        500,
+        1000
+      ],
+      "tile": [
+        250,
+        500
+      ],
+      "canvas": [
+        1250,
+        2104
+      ],
+      "twentyFramesPerSheet": true,
+      "everyProducedFrameCoveredOnceInSequence": true,
+      "onlyContactsResize": true
+    },
+    "budget": {
+      "classLine": 107,
+      "HEREOnlyCumulativeBytes": true,
+      "hardCapBytes": 134217728,
+      "ordinaryExclusiveCeilingBytes": 100663296,
+      "marginBytes": 33554432,
+      "stderrCapBytes": 8388608,
+      "payloadRAMEncodedThenSharedPreWriteCheck": true,
+      "rawRGBNotWrittenToDisk": true,
+      "noHardRSSOrASLimit": true,
+      "oneRawBlockBytes": 1500000,
+      "contactCanvasRGBBytes": 7890000
+    },
+    "cleanup": {
+      "deferredSignalLine": 55,
+      "ownedRegistrationLine": 310,
+      "finallyLine": 355,
+      "stopLine": 240,
+      "originalFailureAndCleanupFailureBothRecorded": true,
+      "producerPIDPGReaderClosureRequired": true
+    },
+    "authorization": {
+      "rootReleaseGateLine": 420,
+      "falseDraftCannotPassGate": true,
+      "separateExactReleaseRequired": true,
+      "legacyAndToolBeforeAfterGatesUnchanged": true
+    }
+  },
+  "resourceMetadataSnapshot": {
+    "preparedDirectoryBytes": 79645,
+    "freeDiskBytesMetadata": 388108288,
+    "freshRootMinimumDiskBytes": 167772160,
+    "minimumAvailableMemoryBytes": 268435456,
+    "wholeAttemptMonitoringSeconds": 300,
+    "futureResourceStatusNotCertified": true
+  },
+  "limits": [
+    "453 is only the captured sample expectation until every real block, exact showinfo count/timebase, one-byte natural EOF and decoderexit0/reader closure actually pass.",
+    "The decoded complete MKV may preserve repeated surface/PTS observations; no uniqueGL-frame, source-motion/face/phase/timing or whole-scene acceptance is implied.",
+    "128MiB is cumulative new-directory disk output only. Frame buffers and contacts are finite streaming allocations, not a hard process RSS/AS guarantee.",
+    "180s is transport only; contacts/legacy hashes/cleanup are additional work. Root must freshly enforce the proposed external160MiB disk/256MiB available+cgroup memory/300s attempt obligations.",
+    "Native500x1000 JPEGs are kept; only contact tiles resize. Raw command has no seek/time/frame/fps/scale/crop truncation.",
+    "K5/silent54 labels are inherited mechanism text only; actual case,input,closure and new HERE bind P30.",
+    "Old image trees and toolELF/Pillow/font bytes were not read by this peer; their future exact checks are still required.",
+    "The false template is not a release; a new separately named exact root release and independent after-run hash/OS closure precede any image review."
+  ],
+  "runDirectoryAbsent": true,
+  "sealedPreparationNotModified": true,
+  "source255OriginalFramesNotReadOrChanged": true,
+  "source23ArtifactsNotTouched": true,
+  "noMediaPixelsToolsAPIBrowserGitOrDCOrOldEvidenceWrite": true
+}

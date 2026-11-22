@@ -1,0 +1,166 @@
+{
+  "schema": "stella.P30.actual-decode.exact-core-input-static-proof.v1",
+  "rootConfirmed": false,
+  "base": {
+    "path": "artifacts/stella-script-continuation-20261121/episode5-silent54-talk0-only-complete-actual-frames-v1/decode.py",
+    "bytes": 30684,
+    "sha256": "7274cb291b2de93bddc879fb65710d316df53741589e5b1625a4888d2f4daba0"
+  },
+  "candidate": {
+    "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-preparation-rootfalse-v1/decode.py",
+    "bytes": 31261,
+    "sha256": "3138b5001946aa5c410869c39b101605188d90b7ee220b0ab1b827e4b87366c9"
+  },
+  "threeConfigChanges": [
+    {
+      "before": "INPUT = A / 'episode5-silent54-talk0-only-owner-kit-rootfalse-v5/attempt-1'",
+      "after": "INPUT = A / 'p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1'",
+      "beforeCount": 1,
+      "afterCount": 1
+    },
+    {
+      "before": "CAPTURE_CLOSURE = A / 'episode5-talk0-only-runtime-root-closure-v1.json'",
+      "after": "CAPTURE_CLOSURE = A / 'ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json'",
+      "beforeCount": 1,
+      "afterCount": 1
+    },
+    {
+      "before": "CASES = [('54-talk0-only', 453)]",
+      "after": "CASES = [('p30-node4-unchanged-ordinary', 453)]",
+      "beforeCount": 1,
+      "afterCount": 1
+    }
+  ],
+  "comment": "# P30 scope adapter: only INPUT, CAPTURE_CLOSURE and CASES differ from the\n# executed K5 configuration. All extraction/contact/EOF/cleanup code remains\n# unchanged. The recorder's 453 samples are an expectation, never a decoded\n# result: real showinfo/RGB counts, one-byte EOF, exit0 and a terminal reader\n# must independently prove completeness. Historical K5 schema/message labels\n# below identify the reused mechanism; actual caseId/input/closure bind P30.\n# Native JPEGs stay 500x1000. Contact tiles alone are reduced for inspection.\n",
+  "reverseExactlyBaseBytes": true,
+  "kernelBytes": 28906,
+  "kernelSHA256": "a3456d9723e1495e7b770847756b3470f2ef4560162e043c49cc05d198560cb7",
+  "rawCommandText": "def raw_command(source):\n    return [FFMPEG,'-hide_banner','-nostdin','-loglevel','info','-xerror',\n            '-threads','1','-filter_threads','1','-filter_complex_threads','1','-copyts',\n            '-i',str(source),'-map','0:v:0','-an','-sn','-dn','-vf','showinfo',\n            '-pix_fmt','rgb24','-c:v','rawvideo','-threads:v','1',\n            '-fps_mode','passthrough','-f','rawvideo','pipe:1']\n",
+  "sourceBindings": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/actual.mkv",
+      "bytes": 1439679,
+      "sha256": "87d2e3215997dc8cc7ea067280188da35adac4f9429bd83ed092a9674c1fec51",
+      "metadataStatSize": 1439679,
+      "bytesReadOrHashedByPeer": false,
+      "futureKernelFreshHashRequired": true
+    },
+    {
+      "declared": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/capture-receipt.json",
+        "bytes": 1273,
+        "sha256": "a6272d7573dab6c31726212af6cbba0e56a1d1cb84bd9f548e2b2336c6d0781d"
+      },
+      "currentMetadata": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/capture-receipt.json",
+        "bytes": 1273,
+        "sha256": "a6272d7573dab6c31726212af6cbba0e56a1d1cb84bd9f548e2b2336c6d0781d"
+      },
+      "passed": true
+    },
+    {
+      "declared": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/recorder-command.json",
+        "bytes": 1150,
+        "sha256": "ab87f03caadc0335e48291bdad0d6e2fac00bd5d82d07c70faa50d4727e7c306"
+      },
+      "currentMetadata": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/p30-node4-unchanged-ordinary/recorder-command.json",
+        "bytes": 1150,
+        "sha256": "ab87f03caadc0335e48291bdad0d6e2fac00bd5d82d07c70faa50d4727e7c306"
+      },
+      "passed": true
+    },
+    {
+      "declared": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/capture-index.json",
+        "bytes": 1616,
+        "sha256": "fb426ec9c75b51344186bc3564965822958660ccaf3b3acc1f6bf32ffd5040e5"
+      },
+      "currentMetadata": {
+        "path": "artifacts/stella-script-continuation-20261121/p30-node4-ordinary-entry-owner-kit-rootfalse-v2/attempt-1/capture-index.json",
+        "bytes": 1616,
+        "sha256": "fb426ec9c75b51344186bc3564965822958660ccaf3b3acc1f6bf32ffd5040e5"
+      },
+      "passed": true
+    },
+    {
+      "declared": {
+        "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json",
+        "bytes": 5041,
+        "sha256": "c6db91bd357c2935a2452ee5864ce736af388ff103e77c181230ebdf5b8dbc86"
+      },
+      "currentMetadata": {
+        "path": "artifacts/stella-script-continuation-20261121/ordinary-QA-root-preparation-edd4afed-p30v2-v1/p30-runtime.root-closure.json",
+        "bytes": 5041,
+        "sha256": "c6db91bd357c2935a2452ee5864ce736af388ff103e77c181230ebdf5b8dbc86"
+      },
+      "passed": true
+    }
+  ],
+  "codeFacts": {
+    "originalDemuxPTSAndNativeDimensions": {
+      "showinfoLine": 172,
+      "dimensionGateLine": 180,
+      "rawWidth": 500,
+      "rawHeight": 1000,
+      "rawBytesPerFrame": 1500000,
+      "PTSNotPredictedFromFPS": true,
+      "duplicateAndDecreasingOriginalPairsRetained": true
+    },
+    "completeFileEOF": {
+      "commandLine": 206,
+      "expectedBlocksLine": 326,
+      "independentOneByteEOFLine": 344,
+      "exitZeroLine": 349,
+      "showinfoCountLine": 350,
+      "noProducerFrameTimeSeekLimit": true,
+      "expected453NotDecodedFact": true
+    },
+    "contacts": {
+      "line": 257,
+      "nativeJPEG": [
+        500,
+        1000
+      ],
+      "tile": [
+        250,
+        500
+      ],
+      "canvas": [
+        1250,
+        2104
+      ],
+      "twentyFramesPerSheet": true,
+      "everyProducedFrameCoveredOnceInSequence": true,
+      "onlyContactsResize": true
+    },
+    "budget": {
+      "classLine": 107,
+      "HEREOnlyCumulativeBytes": true,
+      "hardCapBytes": 134217728,
+      "ordinaryExclusiveCeilingBytes": 100663296,
+      "marginBytes": 33554432,
+      "stderrCapBytes": 8388608,
+      "payloadRAMEncodedThenSharedPreWriteCheck": true,
+      "rawRGBNotWrittenToDisk": true,
+      "noHardRSSOrASLimit": true,
+      "oneRawBlockBytes": 1500000,
+      "contactCanvasRGBBytes": 7890000
+    },
+    "cleanup": {
+      "deferredSignalLine": 55,
+      "ownedRegistrationLine": 310,
+      "finallyLine": 355,
+      "stopLine": 240,
+      "originalFailureAndCleanupFailureBothRecorded": true,
+      "producerPIDPGReaderClosureRequired": true
+    },
+    "authorization": {
+      "rootReleaseGateLine": 420,
+      "falseDraftCannotPassGate": true,
+      "separateExactReleaseRequired": true,
+      "legacyAndToolBeforeAfterGatesUnchanged": true
+    }
+  }
+}

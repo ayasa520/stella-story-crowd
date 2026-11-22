@@ -1,0 +1,105 @@
+{
+  "schema": "stella.P30.actual-decode.declared-tool-closure.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "inheritedExactSevenFileContract": {
+    "ffmpeg": {
+      "path": "/usr/bin/ffmpeg",
+      "bytes": 461248,
+      "sha256": "fc5db7b88a2a96e9a9036fbc9533d8b3ec16abbc31526b285e996ae1d81b9fcd"
+    },
+    "python": {
+      "path": "/home/rikka/Projects/stella/.venv-video-ocr/bin/python",
+      "bytes": 22278952,
+      "sha256": "ae4d2688a80846776aff8045a17a980b57027318e33a68c17f5c2b280c6aa84a"
+    },
+    "font": {
+      "path": "/usr/share/fonts/noto/NotoSans-Regular.ttf",
+      "bytes": 621572,
+      "sha256": "478c558ea716033cd60c03438f628dfa75694dcf6b5f6d505a2f05fd2b4f3823"
+    },
+    "pillow_init": {
+      "path": "/home/rikka/Projects/stella/.venv-video-ocr/lib/python3.11/site-packages/PIL/__init__.py",
+      "bytes": 2035,
+      "sha256": "7361b6ad3878589affe5956e4a4da24d71398b0891fd3a8c15e9362217b4ca01"
+    },
+    "pillow_image": {
+      "path": "/home/rikka/Projects/stella/.venv-video-ocr/lib/python3.11/site-packages/PIL/Image.py",
+      "bytes": 153786,
+      "sha256": "04af3f2db7ffdd61e829fa7aa8f5481d394a0a4129a8fd8aa5b13908928fcd6d"
+    },
+    "pillow_imaging": {
+      "path": "/home/rikka/Projects/stella/.venv-video-ocr/lib/python3.11/site-packages/PIL/_imaging.cpython-311-aarch64-linux-gnu.so",
+      "bytes": 3484265,
+      "sha256": "791d62a487f29e146a4b0e5aa6558b4c70e2593d6fe763d98901962968b4bd97"
+    },
+    "pillow_font": {
+      "path": "/home/rikka/Projects/stella/.venv-video-ocr/lib/python3.11/site-packages/PIL/ImageFont.py",
+      "bytes": 63750,
+      "sha256": "24fa5feeb91b4bf63eaad0ebba08a8161e9c889d9fd056a37c928134097b9649"
+    }
+  },
+  "inheritedLauncherUtilities": {
+    "env": {
+      "path": "/usr/bin/env",
+      "bytes": 68456,
+      "sha256": "900212eb81c0bcbe41767fd91963ae98e8304637e21d2ae53b2c361974b95f94"
+    },
+    "nice": {
+      "path": "/usr/bin/nice",
+      "bytes": 68024,
+      "sha256": "60da7350d81d8da541f9993bde0b055b0d70e19732f98795ba49e62e21c87c16"
+    },
+    "taskset": {
+      "path": "/usr/bin/taskset",
+      "bytes": 133336,
+      "sha256": "9f270b650e33fc39d1806efbfa46bec47c0866dbf5c1d2ade0bc43b0fcd4d64c"
+    }
+  },
+  "pillowVersionExpectedFromExecutedK5": "12.3.0",
+  "sourceDeclaredStdlibImports": [
+    "argparse",
+    "datetime",
+    "hashlib",
+    "io.BytesIO",
+    "json",
+    "os",
+    "pathlib.Path",
+    "re",
+    "selectors",
+    "signal",
+    "subprocess",
+    "sys",
+    "threading",
+    "time",
+    "traceback"
+  ],
+  "sourceDeclaredPillowImports": [
+    "PIL.Image",
+    "PIL.ImageDraw",
+    "PIL.ImageFont",
+    "PIL.__version__"
+  ],
+  "newRuntimeDependenciesIntroduced": [],
+  "toolPillowFontOrELFBytesReadOrExecutedByPreparation": false,
+  "futureRootMustFreshBindAllActualInstalledPathsAndBytesBeforeImportAndExecution": true,
+  "kernelAlsoChecksExactSevenPathsAndHashesAtRuntime": true,
+  "subprocesses": [
+    "one sequential FFmpeg rawRGB producer; no ffprobe"
+  ],
+  "rawCommandInheritedUnchanged": "-copyts -i actual.mkv -map0:v:0 -vfshowinfo -pix_fmtrgb24 -c:vrawvideo -fps_modepassthrough pipe:1; no frame limit/seek/time/scale/crop/fps filter",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "nice": 19,
+  "cpuAffinity": [
+    0,
+    1
+  ],
+  "ffmpegDecoderFilterEncoderThreadsEach": 1,
+  "noTransitiveOSSharedLibraryHashClosureClaimed": true
+}
