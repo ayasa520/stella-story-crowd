@@ -1,0 +1,71 @@
+--- QAv3/freeze-inputs.py
++++ P22/freeze-inputs.py
+@@ -1,8 +1,9 @@
+ """Future root-authorized snapshot only; never execute this draft during design.
+ 
+-The observed inventory intentionally describes the old C9d source/dist. Root
+-must provide a separately reviewed fresh inventory after the known panel-Close
+-publication. A changed file is not waived and a previous release is not reused.
++This P22 case requires a newly reviewed inventory and final published heads.
++Library counts are independently derived from every saved native array, then
++matched to both root-approved counts and inventory counts. An older P21 count
++or release cannot authorize this four-node suffix.
+ No business restoration module is imported, no API is called and no D/C file is
+ written. Only a new private input-binding.json is emitted after all checks.
+ """
+@@ -97,10 +98,16 @@
+ assert git(source, 'status', '--short') == release['sourceStatus']
+ assert git(source, 'diff', '--name-only', 'HEAD') == ''
+ assert isinstance(release['browserOwner'], str) and release['browserOwner'].startswith('/root/')
+-assert inventory['counts']['libraryNodes'] == 5622
++# Counts are a fresh root input, never an inherited5622 or a guessed5624.
++# Three independent representations must agree before a normal API is called.
++approved_counts = release['libraryCounts']
++assert set(approved_counts) == {'libraryScenes', 'libraryNodes', 'libraryEdges'}
++assert all(type(value) is int and value > 0 for value in approved_counts.values())
++assert {key: inventory['counts'][key] for key in approved_counts} == approved_counts
+ assert len(inventory['protectedFirstThree']) == 22
+ assert sha(HERE / 'capture-plan.json') == release['planSha256']
+-assert inventory['routeSource']['sha256'] == '504238ef7f2306364e03ac337ba776e84b42eeccc8cc7cac4e70ed9226418591'
++assert inventory['routeSource']['sha256'] == '1ab1479b757c15b9e97a58171bf0da512c9b7aa1fd8e4794da006a7d8063758f'
++assert sha(inventory['routeSource']['path']) == inventory['routeSource']['sha256']
+ data_inputs = inventory['dataInputs']
+ for name, digest in data_inputs.items():
+     assert sha(data / name) == digest, name
+@@ -139,18 +146,31 @@
+ plan = load(HERE / 'capture-plan.json')
+ for name, digest in plan['expectedSectionFiles'].items():
+     assert sha(data / name) == digest, name
+-assert len(plan['cases']) == 2 and sum(len(c['steps']) for c in plan['cases']) == 16
+-assert plan['allLibraryNodes'] == 5622
++assert len(plan['cases']) == 1 and len(plan['cases'][0]['steps']) == 4
++assert plan['cases'][0]['id'] == 'p22-ending23-to26'
++assert plan['allLibraryNodes'] is None and plan['countsFromFreshBinding'] is True
+ manifest = load(data / 'manifest.json')
+ assert required_saved_members(data, manifest) <= set(data_inputs)
+-assert sum(len(load(data / e['path'])['scenario_list']) for e in manifest['scenes']) == 5622
++documents = {str(entry['id']): load(data / entry['path']) for entry in manifest['scenes']}
++scene_counts = {scene: len(document['scenario_list']) for scene, document in documents.items()}
++derived_counts = {'libraryScenes': len(manifest['scenes']),
++    'libraryNodes': sum(scene_counts.values()),
++    'libraryEdges': sum(len(row['branch_list']) for document in documents.values()
++                        for row in document['scenario_list'])}
++# The ordinary compiler emits one edge for every raw branch, including missing
++# branches. Counting only reachable edges would silently slice this contract.
++assert derived_counts == approved_counts
++assert scene_counts['10030006'] == 26
+ for case in plan['cases']:
+     for step in case['steps']:
+         native = load(data / ('native/scenes/' + str(step['scene']) + '.json'))
+         actual = next(row for row in native['scenario_list'] if row['scenario_id'] == step['scenario'])
+         assert actual == step['native'], step['id']
+-assert all(c == '' for c in plan['cases'][0]['steps'][2]['native']['command'])
+-binding = {'schema': 'stella.p21.normal-qa.saved-inputs.v1', 'rootConfirmed': False,
++assert all(c == '' for step in plan['cases'][0]['steps'] for c in step['native']['command'])
++assert plan['closeCoverage']['expectedPositiveWitnesses'] == 0
++assert plan['closeCoverage']['positiveEdges'] == []
++binding = {'schema': 'stella.p22.ending-normal-qa.saved-inputs.v1', 'rootConfirmed': False,
++    'libraryCounts': derived_counts, 'sceneCounts': scene_counts,
+     'dataRoot': str(data), 'sourceRoot': str(source), 'dataHead': release['publishedHead'], 'dataStatus': '',
+     'revision': release['publishedHead'], 'browserOwner': release['browserOwner'],
+     'dataInputs': data_inputs, 'protectedFirstThree': protected,

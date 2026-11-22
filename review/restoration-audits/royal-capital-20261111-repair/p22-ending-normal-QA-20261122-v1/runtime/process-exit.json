@@ -1,0 +1,93 @@
+{
+  "owned": [
+    {
+      "kind": "server",
+      "pid": 19488,
+      "pgid": 19488,
+      "exitCode": -15,
+      "remainingOwnedPid": [],
+      "remainingGroupMembers": []
+    },
+    {
+      "kind": "browser",
+      "pid": 19500,
+      "pgid": 19500,
+      "exitCode": -15,
+      "remainingOwnedPid": [],
+      "remainingGroupMembers": []
+    },
+    {
+      "kind": "driver",
+      "pid": 19600,
+      "pgid": 19600,
+      "exitCode": 0,
+      "remainingOwnedPid": [],
+      "remainingGroupMembers": []
+    }
+  ],
+  "stopAttempts": [
+    {
+      "kind": "driver",
+      "pid": 19600,
+      "pgid": 19600,
+      "signals": [
+        {
+          "signal": 15,
+          "outcome": "group-not-found"
+        }
+      ],
+      "errors": [],
+      "lastGroupObservation": []
+    },
+    {
+      "kind": "browser",
+      "pid": 19500,
+      "pgid": 19500,
+      "signals": [
+        {
+          "signal": 15,
+          "outcome": "sent"
+        },
+        {
+          "signal": 9,
+          "outcome": "sent"
+        }
+      ],
+      "errors": [],
+      "lastGroupObservation": []
+    },
+    {
+      "kind": "server",
+      "pid": 19488,
+      "pgid": 19488,
+      "signals": [
+        {
+          "signal": 15,
+          "outcome": "sent"
+        }
+      ],
+      "errors": [],
+      "lastGroupObservation": []
+    }
+  ],
+  "osInventoryKnown": true,
+  "allOwnedGroupsEmpty": true,
+  "allOwnedPidsAndGroupsEmpty": true,
+  "inputsUnchanged": true,
+  "driverExitCode": 0,
+  "supervisorExitCode": 0,
+  "cleanupErrors": [],
+  "profileCleanup": {
+    "path": "/tmp/stella-p22-ending-normal-qa-q_2kbmp7",
+    "removed": true,
+    "retained": false,
+    "ownedPidPgidExitProven": true,
+    "escapedProcessReview": "Root independent review is still required; no foreign group is signalled.",
+    "reason": "removed-after-os-exit-proof"
+  },
+  "recorderStarted": false,
+  "xvfbStarted": false,
+  "imageReviewStarted": false,
+  "requiresIndependentClosureAfterSupervisorExit": true,
+  "supervisorPid": 19461
+}

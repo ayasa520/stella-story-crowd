@@ -1,0 +1,220 @@
+--- QAv3/play.mjs
++++ P22/play.mjs
+@@ -25,10 +25,12 @@
+ const rawConsole=[],fatalFacts=[],hitches=[],cancellations=[],diagnosticFailures=[];
+ const fatalProductNames=new Set(['STORY_PLAYER_ERROR','STORY_NORMAL_CLOCK_LISTENER_ERROR','STORY_NORMAL_CLOCK_REPORT_ERROR',
+   'STORY_FX_ERROR','STORY_BACKGROUND_ERROR','STORY_PICTURE_ERROR','STORY_BGM_LOAD_FAILED']);
+-const positiveCloseTargets=new Map([
+-  ['node:10030002:1003000200038','node:10030002:1003000200039'],
+-  ['node:10030005:1003000500007','node:10030005:1003000500008'],
+-]);
++// P22 has no eligible same-foreground ordinary Close edge. Validate the
++// two exclusions against real input/transition/entry events below; never use
++// an empty witness list to claim the earlier381/71 positive scope was covered.
++assert.deepEqual(plan.closeCoverage.positiveEdges,[]);
++assert.equal(plan.closeCoverage.expectedPositiveWitnesses,0);
++const positiveCloseTargets=new Map(plan.closeCoverage.positiveEdges);
+ let target,stage='connect',capabilities,prepared,panelConfig,totalCaptureBytes=0;
+ let firstFailure=null,pendingResult=null,lastKnownDocumentIdentity=null,sessionRetired=false;
+ const failureExports=[],savedFailureNames=new Set();
+@@ -174,7 +176,7 @@
+   assert.ok(display?.startsWith('STORY_DISPLAY_COMMIT '+step.id+' movie '));
+ }
+ async function capture(step,gate=null,movieMetadata=null){
+-  assert.ok(captures.length<plan.captureFormat.count,'At most16 original JPEGs');
++  assert.ok(captures.length<plan.captureFormat.count,'At most4 original JPEGs');
+   const beforeReadiness=gate?await waitFor(({method,args})=>{
+     const value=window.reviewCaptureReadiness[method](args);return value.ready?value:null;
+   },gate,20000):null;
+@@ -273,6 +275,39 @@
+     diagnosticFailures,errors,http,actions});}
+   catch(error){diagnosticFailures.push({operation:'failure-receipt-write',name,error:String(error),stack:error.stack});}
+ }
++function closeExclusions(item,caseActions,trusted){
++  const caseRecords=records.filter(row=>row.sequence>=traceStart);
++  assert.equal(route.closeExclusions.length,2);
++  return route.closeExclusions.map(policy=>{
++    assert.equal(policy.skipInOut,false);assert.equal(policy.positiveNativeTapPanelClose,false);
++    const step=item.steps.find(s=>s.id===policy.source);
++    assert.equal(step.edge.id,policy.edge);assert.equal(step.edge.target,policy.target);
++    const inputs=trusted.filter(e=>e.button==='advance'&&e.node===policy.source);
++    const attempts=caseActions.filter(e=>e.selector==='#advance'&&e.before.body.node===policy.source);
++    assert.equal(inputs.length,1);assert.equal(attempts.length,1);
++    assert.equal(inputs[0].trusted,true);assert.equal(inputs[0].phase,'ready');
++    const sourceEnter=caseRecords.find(e=>e.line.startsWith('STORY_PLAYER_ENTER '+policy.source+' '));
++    const transition=caseRecords.find(e=>e.line.startsWith('STORY_PLAYER_TRANSITION ')&&
++      JSON.parse(e.line.slice('STORY_PLAYER_TRANSITION '.length)).edge===policy.edge);
++    const nextEnter=caseRecords.find(e=>e.line.startsWith('STORY_PLAYER_ENTER '+policy.target+' '));
++    const change=caseRecords.find(e=>e.line.startsWith('STORY_CARD_CHANGE ')&&
++      ((v)=>v.source===policy.source&&v.target===policy.target)(JSON.parse(e.line.slice('STORY_CARD_CHANGE '.length))));
++    assert.ok(sourceEnter&&transition&&nextEnter&&change);
++    assert.ok(sourceEnter.sequence<transition.sequence&&transition.sequence<nextEnter.sequence);
++    const actual=JSON.parse(change.line.slice('STORY_CARD_CHANGE '.length));
++    assert.deepEqual(actual.from,policy.from);assert.deepEqual(actual.to,policy.to);
++    // Default foreground retirement may emit OUT after follow/ENTER. It must
++    // not be relabelled as a NativeTapPanelClose request before this input's
++    // transition. Keep original records and never wait for an OUT completion.
++    const preFollowOut=caseRecords.filter(e=>e.line.startsWith('STORY_PANEL_OUT_START ')&&
++      e.sequence>sourceEnter.sequence&&e.sequence<transition.sequence&&
++      Number(e.line.split(/\s+/)[1])>=inputs[0].performanceMilliseconds);
++    assert.equal(preFollowOut.length,0,'Excluded Close edge has no source tap OUT before follow');
++    return {policy,sourceEnter,trustedInput:inputs[0],inputAttempt:attempts[0],
++      transition,nextEnter,foregroundChange:change,preFollowOut,
++      positiveCoverageClaimed:false,completionAwaitedBeforeFollow:false};
++  });
++}
+ function closeCoverage(item,casePlayed,caseActions,trusted){
+   const caseRecords=records.filter(row=>row.sequence>=traceStart),witnesses=[];
+   const detail=(row,prefix)=>JSON.parse(row.line.slice(prefix.length));
+@@ -319,7 +354,7 @@
+         provenance:'Separate subsequent original out completion fact; the product emits no completion node/token identity'},
+       sameBgTextOrStayCoverage:false});
+   }
+-  assert.equal(witnesses.length,1,'Each unchanged core route contains one declared positive Close case');
++  assert.equal(witnesses.length,plan.closeCoverage.expectedPositiveWitnesses,'P22 explicitly excludes positive Close coverage');
+   return witnesses;
+ }
+ try{
+@@ -374,7 +409,7 @@
+   }).toString()});
+   await driver.call('browsingContext.setViewport',{context:target.context,viewport:plan.captureFormat.viewport,devicePixelRatio:1});
+ 
+-  assert.equal(plan.cases.length,2);
++  assert.equal(plan.cases.length,1);
+   for(const item of plan.cases){
+     await flushDiagnosticWrites();rejectFatalDiagnostics('before next case');
+     activeCase=item;traceStart=traces.length;
+@@ -388,7 +423,7 @@
+       url:origin+'/player/player.html?assetRevision='+binding.revision,wait:'interactive'});
+     await waitFor(()=>window.reviewReady===true);
+     await evaluate(()=>window.reviewEndingObserver.attachClock());
+-    await evaluate(name=>window.reviewEndingObserver.beginCase(name,{scope:'Saved P21 ending/recorded IF only'}),item.id);
++    await evaluate(name=>window.reviewEndingObserver.beginCase(name,{scope:'Saved P22 ending23-to26 only'}),item.id);
+     lastKnownDocumentIdentity=await evaluate(()=>({href:location.href,timeOrigin:performance.timeOrigin,
+       actualObserverCaseName:window.reviewEndingObserver.snapshot().caseName}));
+     assert.equal(await evaluate(()=>document.getElementById('language').value),'zh');
+@@ -423,7 +458,8 @@
+     }
+     assert.equal(actual.status,200);assert.equal(actual.loaded,true);
+     prepared=JSON.parse(actual.raw);assert.equal(prepared.start,item.start);
+-    assert.equal(prepared.headSha,binding.revision);assert.equal(prepared.nodes.length,5622);
++    assert.equal(prepared.headSha,binding.revision);assert.equal(prepared.nodes.length,binding.libraryCounts.libraryNodes);
++    assert.equal(prepared.edges.length,binding.libraryCounts.libraryEdges);
+     assert.deepEqual(prepared.before,route.before);
+     for(const [index,step] of item.steps.entries()){
+       stage=item.id+'-'+step.scene+'-'+step.scenario;
+@@ -433,8 +469,8 @@
+       const routeNode=route.nodes[index];assert.equal(routeNode.node.id,step.id);
+       if(node.kind==='title'){
+         const decision=await waitTrace(()=>parsed('STORY_NATIVE_INTERVAL_DECISION ').find(e=>e.node===step.id));
+-        // Both current ordinary scenes have master root0 and one raw chart
+-        // successor. Scenario1's is_root is not the chart-display condition.
++        // This saved end-title owns its automatic261. Its interval decision
++        // remains a real product event; no chart or title state is seeded.
+         assert.equal(decision.show,false);
+         assert.equal(decision.reason,node.title_mode==='end'?'end-title':'linear-scene');
+         const bg=await background(step);
+@@ -448,11 +484,11 @@
+           .find(e=>e.node===step.id&&e.stage==='completed'),20000);
+         assert.equal(complete.durationMilliseconds,2500);
+         played.push({caseId:item.id,id:step.id,kind:node.kind,decision,complete,...bg,state});
+-        continue; // The actual title owns11 or421. Never click its edge.
++        continue; // The actual P22 title owns261. Never click its edge.
+       }
+       const bg=await background(step);
+       if(node.kind==='movie'){
+-        assert.equal(step.id,'node:10030002:1003000200041');
++        assert.equal(step.id,'node:10030006:1003000600025');
+         assert.deepEqual(node.command,['','','']);
+         const metadata=await waitTrace(()=>parsed('STORY_PLAYER_MOVIE ').find(e=>e.node===step.id),30000);
+         assert.equal(metadata.resource,'adv_dive01_out');assert.equal(metadata.presentation,'door');
+@@ -470,9 +506,9 @@
+         assert.equal(state.backdrop?.resource,routeNode.expectedDisplayBackground);
+         const natural=await mediaEnded(step);
+         await waitTrace(()=>parsed('STORY_PLAYER_TIMING ').find(e=>e.node===step.id&&e.stage==='movie_play_complete'),15000);
+-        // Unlike historical45 with CardOut, saved41 resets cardOut and has no
+-        // phase commands. Only a genuine ready state after real ended permits
+-        // the normal user411 tap. No synthetic ready, wait or autoplay is used.
++        // Saved25 has three empty command phases, like the reviewed P21 door.
++        // Real ended and an actual ready state must precede the ordinary251
++        // user input. A movie event alone neither advances nor fabricates ready.
+         const ready=await waitFor(id=>document.body.dataset.node===id&&document.body.dataset.phase==='ready'&&
+           document.getElementById('movie').ended&&
+           document.getElementById('auto').getAttribute('aria-pressed')==='false'&&
+@@ -480,7 +516,7 @@
+         assert.ok(ready.epochMilliseconds>=natural.ended.epochMilliseconds);
+         assert.equal(parsed('STORY_PLAYER_TRANSITION ').filter(e=>e.edge===step.edge.id).length,0);
+         played.push({caseId:item.id,id:step.id,kind:node.kind,metadata,middle,natural,ready,...bg,state,
+-          automaticMovieTransitionOwnsNext:false,userReadyAdvanceOwns411:true});
++          automaticMovieTransitionOwnsNext:false,userReadyAdvanceOwns251:true});
+         await click('#advance');
+         const movieInput=actions.at(-1);
+         assert.equal(movieInput.before.body.node,step.id);
+@@ -549,8 +585,8 @@
+       }
+       await capture(step);
+       played.push({caseId:item.id,id:step.id,kind:node.kind,panel,render,picture,...bg,state,selected});
+-      // The IF case ends on its actual10-ready card. Its saved101 remains in
+-      // the complete program but is never dispatched or hidden by a slice.
++      // This one case ends only at its own automatic title completion.
++      // Keep the generic ready-stop branch unchanged; no extra route is added.
+       if(index===item.steps.length-1&&item.stop.phase==='ready')break;
+       assert.ok(step.edge);await click('#advance');
+     }
+@@ -585,11 +621,18 @@
+       assert.equal(finalState.body.phase,'complete');
+       const complete=traces.slice(traceStart).filter(e=>e.startsWith('STORY_PLAYER_SECTION_COMPLETE '));
+       assert.equal(complete.length,1);
++      const event=records.find(e=>e.sequence>=traceStart&&e.line===complete[0]);
++      assert.equal(event.rawEntry.args[1].value,'section:1003');
++      assert.deepEqual(event.rawEntry.args[2].value.map(e=>e.value),[item.stop.completedOwnScene]);
++      assert.deepEqual(event.rawEntry.args[3].value.map(e=>e.value),wantedEdges.map(e=>e.id));
++      assert.equal(finalState.body.node,item.steps.at(-1).id);
+     }
+     const trusted=await evaluate(()=>window.reviewTrustedInputs);assert.ok(trusted.every(e=>e.trusted));
+     assert.deepEqual(trusted.filter(e=>e.edge).map(e=>e.edge),item.steps.filter(s=>s.choice).map(s=>s.edge.id));
+     for(const step of item.steps.filter(s=>s.kind==='title'))
+       assert.equal(actions.slice(firstAction).filter(e=>e.selector==='#advance'&&e.before.body.node===step.id).length,0);
++    assert.equal(trusted.filter(e=>e.button==='advance').length,3);
++    const ordinaryCloseExclusions=closeExclusions(item,actions.slice(firstAction),trusted);
+     const ordinaryClose=closeCoverage(item,played.slice(firstPlayed),actions.slice(firstAction),trusted);
+     // Stop retires only a completed QA case. Keep the original passive
+     // observers alive through it, then archive their complete retained rows
+@@ -604,10 +647,10 @@
+     await save(item.id+'-result.json',{caseId:item.id,prepared:{headSha:prepared.headSha,start:prepared.start,
+       programSha256:actual.programSha256,before:prepared.before},played:played.slice(firstPlayed),
+       captures:captures.slice(firstCapture),enters,transitions,finalState,actions:actions.slice(firstAction),trustedInputs:trusted,
+-      ordinaryClose,renderHistoryAtBoundary,observer,clearMusic,scope:plan.acceptanceScope,sourceAutomaticityAccepted:false,originalCommandPhasesAccepted:false});
++      ordinaryClose,ordinaryCloseExclusions,renderHistoryAtBoundary,observer,clearMusic,scope:plan.acceptanceScope,sourceAutomaticityAccepted:false,originalCommandPhasesAccepted:false});
+     await flushDiagnosticWrites();rejectFatalDiagnostics('case output flushed before next case');
+   }
+-  assert.equal(played.length,16);assert.equal(captures.length,16);assert.deepEqual(errors,[]);
++  assert.equal(played.length,4);assert.equal(captures.length,4);assert.deepEqual(errors,[]);
+   const providerEvents=(await readFile(resolve(output,'provider-events.jsonl'),'utf8')).trim().split('\n').filter(Boolean).map(e=>JSON.parse(e));
+   const modelDelivery={};
+   const expectedModels=[...new Set(plan.cases.flatMap(c=>c.steps.map(s=>s.expectedModel).filter(Boolean)))];
+@@ -619,10 +662,10 @@
+     assert.ok(definition&&moc&&texture,'Actual model delivery '+model);
+     modelDelivery[model]={definition,moc,texture,members};
+   }
+-  for(const resource of ['ADV_still_001','adv_dive01_out','bgm_btl_adv_win01'])
++  for(const resource of ['adv_dive01_out','bgm_btl_adv_win01'])
+     assert.ok(providerEvents.some(e=>e.relative.includes(resource)),'Actual resource delivery '+resource);
+   await save('provider-proof.json',{modelDelivery,events:providerEvents});
+-  await save('image-manifest.json',{format:'original-browser-viewport-jpeg',count:16,totalCaptureBytes,
++  await save('image-manifest.json',{format:'original-browser-viewport-jpeg',count:4,totalCaptureBytes,
+     captures:captures.map(({caseId,scenario,file,bytes,sha256,model,kind})=>({caseId,scenario,file,bytes,sha256,model,kind})),
+     requiresIndependentClosureBeforeReview:true});
+   pendingResult={revision:binding.revision,sourceHead:binding.source.head,
+@@ -661,9 +704,9 @@
+   await flushDiagnosticWrites();rejectFatalDiagnostics('after final result write');
+   await save('terminal-acceptance.json',{accepted:true,sessionRetired,diagnosticWritesFlushed:true,
+     fatalFacts,hitches,cancellations,diagnosticFailures,rawConsoleCount:rawConsole.length,
+-    cases:2,entered:16,captures:16,requiresRootIndependentOsClosure:true});
++    cases:1,entered:4,captures:4,requiresRootIndependentOsClosure:true});
+   await flushDiagnosticWrites();rejectFatalDiagnostics('after terminal receipt write');
+-  console.log(JSON.stringify({cases:2,entered:16,captures:16,totalCaptureBytes,errors,terminalAccepted:true}));
++  console.log(JSON.stringify({cases:1,entered:4,captures:4,totalCaptureBytes,errors,terminalAccepted:true}));
+ }catch(error){
+   retainFirstFailure(error,'terminal diagnostics');await retainFailureEvidence('terminal-failure.json');
+   process.exitCode=1;

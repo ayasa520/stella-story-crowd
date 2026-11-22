@@ -1,0 +1,42 @@
+{
+  "schema": "stella.audit-original-byte-whitespace-validation.v1",
+  "rootConfirmed": true,
+  "originalFirstCheckToolChunk": "86dd02",
+  "currentCheckStatus": 2,
+  "currentCheckRawStdout": "review/restoration-audits/royal-capital-20261111-repair/p22-ending-normal-QA-20261122-v1/archive-plan.rootfalse.json:1265: new blank line at EOF.\nreview/restoration-audits/royal-capital-20261111-repair/p22-ending-normal-QA-20261122-v1/kit/freeze-inputs.py.vs-QAv3.diff:5: trailing whitespace.\n+ \nreview/restoration-audits/royal-capital-20261111-repair/p22-ending-normal-QA-20261122-v1/kit/play.mjs.vs-QAv3.diff:81: trailing whitespace.\n+ \nreview/restoration-audits/royal-capital-20261111-repair/p22-ending-normal-QA-20261122-v1/kit/run.py.vs-QAv3.diff:5: trailing whitespace.\n+ \nreview/restoration-audits/royal-capital-20261111-repair/p22-ending-normal-QA-20261122-v1/runtime/firefox.log:7: trailing whitespace.\n+console.error: RSLoader: \n",
+  "currentCheckRawStderr": "",
+  "exactExceptions": [
+    {
+      "path": "archive-plan.rootfalse.json",
+      "line": 1265,
+      "issue": "new blank line at EOF.",
+      "sha256": "9950a0d175226c4579d8c9a8475f409a41527b7f7061cfdff752ee7483f2decb"
+    },
+    {
+      "path": "kit/freeze-inputs.py.vs-QAv3.diff",
+      "line": 5,
+      "issue": "trailing whitespace.",
+      "sha256": "75947426df20026a316fd264d3af6b1b0588ed7d577423225000eeb3dedbb79b"
+    },
+    {
+      "path": "kit/play.mjs.vs-QAv3.diff",
+      "line": 81,
+      "issue": "trailing whitespace.",
+      "sha256": "6ca1e45c47f374dd7a2685eaa2db5c010b85049b7b49c509c7b7c127ac4b61a8"
+    },
+    {
+      "path": "kit/run.py.vs-QAv3.diff",
+      "line": 5,
+      "issue": "trailing whitespace.",
+      "sha256": "39ae36b9bc78c804cc5c45445060de2fe32c73d9d7bbf3934a355842b800eb08"
+    },
+    {
+      "path": "runtime/firefox.log",
+      "line": 7,
+      "issue": "trailing whitespace.",
+      "sha256": "292c05b78d0e1b4ad875fe6f46e094f16894df902a8307c79adf4f1e27cfc8c5"
+    }
+  ],
+  "reason": "Verbatim original diff context lines, original Firefox log whitespace, and the sealed original archive plan EOF are evidence. Their bytes are retained rather than normalized. All other staged files pass diff --check; no product source change is part of this audit.",
+  "allOtherStagedFilesPass": true
+}

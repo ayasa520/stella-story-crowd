@@ -1,0 +1,28 @@
+--- QAv3/run.py
++++ P22/run.py
+@@ -1,6 +1,6 @@
+ """One future root-released saved Worker/ARM Firefox session.
+ 
+-This P21 supervisor binds one new two-case16-node driver and exact ordinary API programs.
++This P22 supervisor binds one new one-case4-node driver and its exact ordinary API program.
+ Profile retirement is conditional on fresh OS evidence after every role has
+ received an independent best-effort stop attempt; errors never imply closure.
+ Historical choice92/Rom13/full46 helpers remain immutable reuse provenance.
+@@ -176,7 +176,7 @@
+ assert prepared_receipt['allStatus200'] is True
+ assert release['normalProgramSha256ByCase'] == {
+     key: value['programSha256'] for key, value in prepared_receipt['programs'].items()}
+-assert set(prepared_receipt['programs']) == {'p21-ending38-to42', 'p21-if16-through-p22-cg-to10'}
++assert set(prepared_receipt['programs']) == {'p22-ending23-to26'}
+ bindings = release['runtimeBindings']
+ required = [HERE / name for name in ['run.py', 'play.mjs', 'guards.mjs', 'prepare-normal.mjs',
+              'freeze-inputs.py', 'worktree-upstream.mjs', 'input-binding.json', 'capture-plan.json',
+@@ -247,7 +247,7 @@
+             time.sleep(.1)
+     # No auto-cleaning context manager: a surviving browser must retain its
+     # actual profile and logs. Only the final OS-proven cleanup may remove it.
+-    profile = Path(tempfile.mkdtemp(prefix='stella-p21-normal-qa-'))
++    profile = Path(tempfile.mkdtemp(prefix='stella-p22-ending-normal-qa-'))
+     (profile / 'user.js').write_text('''user_pref("browser.shell.checkDefaultBrowser",false);
+ user_pref("network.proxy.type",1);
+ user_pref("network.proxy.http","127.0.0.1");

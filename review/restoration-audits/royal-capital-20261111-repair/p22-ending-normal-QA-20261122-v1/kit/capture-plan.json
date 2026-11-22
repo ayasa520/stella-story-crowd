@@ -1,0 +1,548 @@
+{
+  "schema": "stella.p22.ending-normal-qa.capture-plan.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "finalPublishedHead": null,
+  "finalSourceHead": null,
+  "expectedSectionFiles": {
+    "native/scenes/10030001.json": "cd22c03ce0e6892111b08984d1c79007555efa56f41ba8ed5697682c9bb1514b",
+    "native/scenes/10030002.json": "209f4f5e8e7c4338f3e2bc5e16f7d6c570382ff453129616a63c372a6478af23",
+    "native/scenes/10030005.json": "afea5d9d41439de8e5eff3cafe61f0046566f9e5b699da8021c2fdfd1ea8cd98",
+    "native/scenes/10030006.json": "e3ed887732f79127e62b634ac62701141ef36b8b25be2d6d27c931218c06bd45",
+    "review/scenes/10030001.json": "25a358968a98727a2b21dc3186eb045c13385c3fc749dc5b8d4048e3a431e9f7",
+    "review/scenes/10030002.json": "08d41cedef438784697319a65e35fcf05dc4e34799b286b409a8af685c415f9c",
+    "review/scenes/10030005.json": "9eab1aa77e3a125f9248732efc3abaf8de3ee53ff63f07bd76d7592c406ea8a9",
+    "review/scenes/10030006.json": "5812de801c3df0b47632300a70d19932e8b170ff1129005962b6354891d2c337"
+  },
+  "allLibraryNodes": null,
+  "countsFromFreshBinding": true,
+  "routePlanSha256": "1ab1479b757c15b9e97a58171bf0da512c9b7aa1fd8e4794da006a7d8063758f",
+  "unknownBranches": [
+    {
+      "sceneId": 10030001,
+      "scenarioId": 4,
+      "branchId": 43,
+      "transitions": [],
+      "nodeId": "node:10030001:1003000100004",
+      "edgeId": "edge:node:10030001:1003000100004:1003000110043:43"
+    },
+    {
+      "sceneId": 10030001,
+      "scenarioId": 8,
+      "branchId": 82,
+      "transitions": [],
+      "nodeId": "node:10030001:1003000100008",
+      "edgeId": "edge:node:10030001:1003000100008:1003000110082:82"
+    },
+    {
+      "sceneId": 10030001,
+      "scenarioId": 17,
+      "branchId": 172,
+      "transitions": [],
+      "nodeId": "node:10030001:1003000100017",
+      "edgeId": "edge:node:10030001:1003000100017:1003000110172:172"
+    },
+    {
+      "sceneId": 10030002,
+      "scenarioId": 7,
+      "branchId": 72,
+      "transitions": [],
+      "nodeId": "node:10030002:1003000200007",
+      "edgeId": "edge:node:10030002:1003000200007:1003000210072:72"
+    },
+    {
+      "sceneId": 10030005,
+      "scenarioId": 9,
+      "branchId": 92,
+      "transitions": [],
+      "nodeId": "node:10030005:1003000500009",
+      "edgeId": "edge:node:10030005:1003000500009:1003000510092:92"
+    },
+    {
+      "sceneId": 10030005,
+      "scenarioId": 14,
+      "branchId": 143,
+      "transitions": [],
+      "nodeId": "node:10030005:1003000500014",
+      "edgeId": "edge:node:10030005:1003000500014:1003000510143:143"
+    },
+    {
+      "sceneId": 10030005,
+      "scenarioId": 18,
+      "branchId": 182,
+      "transitions": [],
+      "nodeId": "node:10030005:1003000500018",
+      "edgeId": "edge:node:10030005:1003000500018:1003000510182:182"
+    }
+  ],
+  "captureFormat": {
+    "type": "image/jpeg",
+    "quality": 0.9,
+    "viewport": {
+      "width": 440,
+      "height": 900
+    },
+    "count": 4,
+    "maximumEachCaptureBytes": 750000,
+    "maximumCaptureBytes": 3000000
+  },
+  "captureReadiness": {
+    "referenceWidth": 1080,
+    "titleStableStart": 2,
+    "titleStableEnd": 2.3333332538604736
+  },
+  "acceptanceScope": "Current saved normal P22 ending23-to26 only.25 requires natural ended/fullplayed then actual ready then trusted251;26 automatic261 completes its own scene. No original automaticity, command phases, body/face/motion/pan/wipe/audio timing or whole episode is accepted. No positive381/71 Close coverage.",
+  "closeCoverage": {
+    "expectedPositiveWitnesses": 0,
+    "positiveEdges": [],
+    "exclusions": [
+      {
+        "source": "node:10030006:1003000600023",
+        "target": "node:10030006:1003000600024",
+        "edge": "edge:node:10030006:1003000600023:1003000610231:231",
+        "from": {
+          "kind": "actor",
+          "models": [
+            "ferris_dress01"
+          ]
+        },
+        "to": {
+          "kind": "actor",
+          "models": [
+            "subaru_gown01"
+          ]
+        },
+        "reason": "different-complete-actor-identities"
+      },
+      {
+        "source": "node:10030006:1003000600024",
+        "target": "node:10030006:1003000600025",
+        "edge": "edge:node:10030006:1003000600024:1003000610241:241",
+        "from": {
+          "kind": "actor",
+          "models": [
+            "subaru_gown01"
+          ]
+        },
+        "to": {
+          "kind": "movie",
+          "resource": "adv_dive01_out"
+        },
+        "reason": "actor-to-movie"
+      }
+    ]
+  },
+  "protectedHandoff": {
+    "id": "edge:node:10030005:1003000500026:1003000510261:261",
+    "target": "node:10030006:1003000600001",
+    "native": {
+      "uniq_id": 1003000510261,
+      "transition_id": 26101,
+      "next_scenario_id": 0,
+      "next_scenario_label": "FINISH",
+      "next_section_id": 1003,
+      "next_scene_id": 10030006
+    }
+  },
+  "cases": [
+    {
+      "id": "p22-ending23-to26",
+      "start": "node:10030006:1003000600023",
+      "stop": {
+        "phase": "complete",
+        "completedOwnScene": "scene:10030006",
+        "terminalEdge": "edge:node:10030006:1003000600026:1003000610261:261",
+        "doNotEnterAnyOtherScene": true
+      },
+      "steps": [
+        {
+          "id": "node:10030006:1003000600023",
+          "scenario": 23,
+          "scene": 10030006,
+          "index": 0,
+          "native": {
+            "bg_music": "",
+            "bg_picture": "",
+            "character": "live2d/AC_ferris_dress01",
+            "character_image": "",
+            "motion": "",
+            "msg_character": "フェリス",
+            "msg_text": "就是就是。身体半好不好的，到处乱跑，我们也很困扰。彻底养好之前都要乖乖的喵。",
+            "position": "",
+            "se": "",
+            "talk_chara": "",
+            "video": "",
+            "voice": "",
+            "scenario_id": 23,
+            "uniq_id": 1003000600023,
+            "is_root": 0,
+            "scenario_type": 2,
+            "battle_stage_id": 0,
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "branch_list": [
+              {
+                "transition_list": [
+                  {
+                    "uniq_id": 1003000610231,
+                    "transition_id": 23101,
+                    "next_scenario_id": 24,
+                    "next_scenario_label": ""
+                  }
+                ],
+                "uniq_id": 1003000610231,
+                "branch_id": 231,
+                "type": 1,
+                "quote_voice": "",
+                "gain_points": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "msg_quote": "",
+                "msg_quote_subject": ""
+              }
+            ]
+          },
+          "sourceText": "そうそう。それに中途半端な状態で\nうろうろされても困るし、\nちゃんと治るまで大人しくしててネ",
+          "stableKey": "s10030006-p22-at0334",
+          "expectedModel": "ferris_dress01",
+          "kind": "card",
+          "expectedCompiled": {
+            "kind": "card",
+            "title_mode": "",
+            "model": "ferris_dress01",
+            "body": "",
+            "face": "",
+            "character_image": "",
+            "movie_resource": "",
+            "bg_music": "",
+            "script_background": {
+              "mode": "native_array",
+              "resource": "bg/bg076d_roswaal",
+              "source_scenario_id": 2
+            }
+          },
+          "phasePolicy": {
+            "owner": "trusted-user-advance-after-ready",
+            "requiredOrder": [
+              "real ENTER",
+              "real owned display/primary actor draw",
+              "natural text and owned panel complete",
+              "actual ready",
+              "original JPEG",
+              "one trusted saved advance"
+            ]
+          },
+          "edge": {
+            "id": "edge:node:10030006:1003000600023:1003000610231:231",
+            "target": "node:10030006:1003000600024",
+            "flow_action": "continue",
+            "native": {
+              "uniq_id": 1003000610231,
+              "transition_id": 23101,
+              "next_scenario_id": 24,
+              "next_scenario_label": ""
+            }
+          },
+          "choice": null
+        },
+        {
+          "id": "node:10030006:1003000600024",
+          "scenario": 24,
+          "scene": 10030006,
+          "index": 1,
+          "native": {
+            "bg_music": "",
+            "bg_picture": "",
+            "character": "live2d/AC_subaru_gown01",
+            "character_image": "",
+            "motion": "",
+            "msg_character": "スバル",
+            "msg_text": "……也是。我知道了。",
+            "position": "",
+            "se": "",
+            "talk_chara": "",
+            "video": "",
+            "voice": "",
+            "scenario_id": 24,
+            "uniq_id": 1003000600024,
+            "is_root": 0,
+            "scenario_type": 2,
+            "battle_stage_id": 0,
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "branch_list": [
+              {
+                "transition_list": [
+                  {
+                    "uniq_id": 1003000610241,
+                    "transition_id": 24101,
+                    "next_scenario_id": 25,
+                    "next_scenario_label": ""
+                  }
+                ],
+                "uniq_id": 1003000610241,
+                "branch_id": 241,
+                "type": 1,
+                "quote_voice": "",
+                "gain_points": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "msg_quote": "",
+                "msg_quote_subject": ""
+              }
+            ]
+          },
+          "sourceText": "……そうだな。わかったよ",
+          "stableKey": "s10030006-p22-at0341",
+          "expectedModel": "subaru_gown01",
+          "kind": "card",
+          "expectedCompiled": {
+            "kind": "card",
+            "title_mode": "",
+            "model": "subaru_gown01",
+            "body": "",
+            "face": "",
+            "character_image": "",
+            "movie_resource": "",
+            "bg_music": "",
+            "script_background": {
+              "mode": "native_array",
+              "resource": "bg/bg076d_roswaal",
+              "source_scenario_id": 2
+            }
+          },
+          "phasePolicy": {
+            "owner": "trusted-user-advance-after-ready",
+            "requiredOrder": [
+              "real ENTER",
+              "real owned display/primary actor draw",
+              "natural text and owned panel complete",
+              "actual ready",
+              "original JPEG",
+              "one trusted saved advance"
+            ]
+          },
+          "edge": {
+            "id": "edge:node:10030006:1003000600024:1003000610241:241",
+            "target": "node:10030006:1003000600025",
+            "flow_action": "continue",
+            "native": {
+              "uniq_id": 1003000610241,
+              "transition_id": 24101,
+              "next_scenario_id": 25,
+              "next_scenario_label": ""
+            }
+          },
+          "choice": null
+        },
+        {
+          "id": "node:10030006:1003000600025",
+          "scenario": 25,
+          "scene": 10030006,
+          "index": 2,
+          "native": {
+            "bg_music": "",
+            "bg_picture": "",
+            "character": "",
+            "character_image": "",
+            "motion": "",
+            "msg_character": "",
+            "msg_text": "",
+            "position": "",
+            "se": "",
+            "talk_chara": "",
+            "video": "adv_dive01_out",
+            "voice": "",
+            "scenario_id": 25,
+            "uniq_id": 1003000600025,
+            "is_root": 0,
+            "scenario_type": 3,
+            "battle_stage_id": 0,
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "branch_list": [
+              {
+                "branch_id": 251,
+                "uniq_id": 1003000610251,
+                "type": 1,
+                "msg_quote": "",
+                "msg_quote_subject": "",
+                "quote_voice": "",
+                "gain_points": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "transition_list": [
+                  {
+                    "uniq_id": 1003000610251,
+                    "transition_id": 25101,
+                    "next_scenario_id": 26,
+                    "next_scenario_label": ""
+                  }
+                ]
+              }
+            ]
+          },
+          "sourceText": "",
+          "stableKey": "s10030006-p22-ending-door-out",
+          "expectedModel": "",
+          "kind": "movie",
+          "expectedCompiled": {
+            "kind": "movie",
+            "title_mode": "",
+            "model": "",
+            "body": "",
+            "face": "",
+            "character_image": "",
+            "movie_resource": "adv_dive01_out",
+            "bg_music": "",
+            "script_background": {
+              "mode": "native_array",
+              "resource": "bg/bg076d_roswaal",
+              "source_scenario_id": 2
+            }
+          },
+          "phasePolicy": {
+            "owner": "natural-movie-then-user-ready",
+            "requiredOrder": [
+              "real ENTER25",
+              "real CardIn complete",
+              "full natural movie",
+              "trusted ended/full played/no seek/rate1",
+              "movie_play_complete",
+              "actual25 ready Auto off",
+              "trusted251",
+              "real ENTER26"
+            ]
+          },
+          "edge": {
+            "id": "edge:node:10030006:1003000600025:1003000610251:251",
+            "target": "node:10030006:1003000600026",
+            "flow_action": "continue",
+            "native": {
+              "uniq_id": 1003000610251,
+              "transition_id": 25101,
+              "next_scenario_id": 26,
+              "next_scenario_label": ""
+            }
+          },
+          "choice": null
+        },
+        {
+          "id": "node:10030006:1003000600026",
+          "scenario": 26,
+          "scene": 10030006,
+          "index": 3,
+          "native": {
+            "bg_music": "bgm_btl_adv_win01",
+            "bg_picture": "",
+            "character": "",
+            "character_image": "",
+            "motion": "",
+            "msg_character": "",
+            "msg_text": "通关",
+            "position": "",
+            "se": "",
+            "talk_chara": "",
+            "video": "",
+            "voice": "",
+            "scenario_id": 26,
+            "uniq_id": 1003000600026,
+            "is_root": 0,
+            "scenario_type": 0,
+            "battle_stage_id": 0,
+            "command": [
+              "",
+              "",
+              ""
+            ],
+            "branch_list": [
+              {
+                "branch_id": 261,
+                "uniq_id": 1003000610261,
+                "type": 1,
+                "msg_quote": "",
+                "msg_quote_subject": "",
+                "quote_voice": "",
+                "gain_points": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "transition_list": [
+                  {
+                    "uniq_id": 1003000610261,
+                    "transition_id": 26101,
+                    "next_scenario_id": 0,
+                    "next_scenario_label": "FINISH"
+                  }
+                ]
+              }
+            ]
+          },
+          "sourceText": "CLEAR",
+          "stableKey": "s10030006-p22-ending-clear",
+          "expectedModel": "",
+          "kind": "title",
+          "expectedCompiled": {
+            "kind": "title",
+            "title_mode": "end",
+            "model": "",
+            "body": "",
+            "face": "",
+            "character_image": "",
+            "movie_resource": "",
+            "bg_music": "bgm_btl_adv_win01",
+            "script_background": {
+              "mode": "native_array",
+              "resource": "bg/bg076d_roswaal",
+              "source_scenario_id": 2
+            }
+          },
+          "phasePolicy": {
+            "owner": "original-automatic-title261",
+            "requiredOrder": [
+              "real ENTER26",
+              "real end-title decision",
+              "native title readiness and original JPEG",
+              "original title complete",
+              "automatic261",
+              "own section complete"
+            ]
+          },
+          "edge": {
+            "id": "edge:node:10030006:1003000600026:1003000610261:261",
+            "target": "",
+            "flow_action": "complete",
+            "native": {
+              "uniq_id": 1003000610261,
+              "transition_id": 26101,
+              "next_scenario_id": 0,
+              "next_scenario_label": "FINISH"
+            }
+          },
+          "choice": null
+        }
+      ]
+    }
+  ]
+}
