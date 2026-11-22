@@ -1,0 +1,118 @@
+--- ordinary-QA-root-binding-preparation-v2/prepare-bindings.mjs
++++ controlled-QA-root-binding-preparation-v3/prepare-bindings.mjs
+@@ -10,7 +10,11 @@
+ const A = resolve(ROOT, 'artifacts/stella-script-continuation-20261121');
+ const DATA = resolve(A, 'data-checkout');
+ const SOURCE = resolve(ROOT, 'artifacts/stella-site-repair-source/.sites-checkout');
+-const P30_KIT = resolve(A, 'p30-node4-ordinary-entry-owner-kit-rootfalse-v2');
++const P30_KIT = resolve(A, 'p30-node4-face-bikkuri-owner-kit-rootfalse-v1');
++const SOURCE_REVIEW_PATHS = [
++  resolve(A, 'p30-node4-ordinary-source-actual-primary-review-v1/receipt.rootfalse.json'),
++  resolve(A, 'p30-node4-ordinary-source-actual-independent-review-v1/receipt.rootfalse.json')
++].sort();
+ const SELF = fileURLToPath(import.meta.url);
+ const need = (ok, message) => { if (!ok) throw Error(message); };
+ const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+@@ -18,15 +22,18 @@
+ const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+ const within = (path, base) => path.startsWith(base + sep);
+ // Only the already reviewed formal publication families may differ from Qv3.
+-// The three bare-BGM repairs add six native/review paths; the pending P29
+-// identity remains in its existing pair. This allowlist grants no acceptance
+-// to a particular delta: root must still review the exact committed changes.
++// Retain the prior13 paths and admit only the published every07 catalog/package
++// registration plus its P21 native/review pair. This list covers formal bytes
++// only: the private face stage and alias belong to the later approved freezer.
++// Root must still review the exact committed delta; no motion is accepted here.
+ const controlled = new Set(['native/scenes/10090015.json',
+   'native/scenes/10040052.json', 'review/scenes/10040052.json',
+   'native/scenes/10030006.json', 'review/scenes/10030006.json',
+   'native/scenes/10020001.json', 'review/scenes/10020001.json',
+   'native/scenes/10020011.json', 'review/scenes/10020011.json',
+   'native/scenes/10020048.json', 'review/scenes/10020048.json',
++  'assets/catalog.json', 'assets/package.json',
++  'native/scenes/10030001.json', 'review/scenes/10030001.json',
+   'manifest.json', 'review/native-restoration.json']);
+ const auditAddition = name => name.startsWith('review/restoration-audits/') ||
+   /^review\/restoration-batches\/[^/]+\.json$/.test(name);
+@@ -122,16 +129,19 @@
+   need(getPriority() >= 19 && /^Cpus_allowed_list:\s*(?:0-1|0,1)\s*$/m.test(await readFile('/proc/self/status', 'utf8')), 'Use nice19/CPU0,1');
+   const request = await boundJSON({ path: resolve(options['--request']), sha256: options['--request-sha256'] });
+   need(request.rootConfirmed === true && request.inventoryCollectionAuthorized === true, 'No root authorization for metadata collection');
++  need(['executionAuthorized', 'freezeAuthorized', 'apiPreparationAuthorized', 'controlledNativeCandidateAuthorized',
++    'diagnosticInstrumentationAuthorized', 'continuousRecorderAuthorized'].every(flag => request[flag] === false),
++    'Metadata collection cannot authorize candidate generation, API or runtime');
+   need(request.browserLaunchAuthorized === false && /^[a-f0-9]{40}$/.test(request.finalDataHead || '') &&
+     /^[a-f0-9]{40}$/.test(request.expectedSourceHead || ''), 'Final exact heads are required; browser stays false');
+   output = resolve(request.outDirectory || '');
+-  need(dirname(output) === A && output.split(sep).at(-1).startsWith('ordinary-QA-root-bindings-'), 'Use a fresh direct A-owned output directory');
++  need(dirname(output) === A && output.split(sep).at(-1).startsWith('controlled-QA-root-bindings-'), 'Use a fresh direct A-owned output directory');
+   await mkdir(output); // Existing output is a failure; never overwrite/retry.
+   outputCreated = true;
+   const seed = await boundJSON(request.seedInventory), selection = await boundJSON(request.toolSelection);
+   need(equal(Object.keys(request.kits || {}), ['p30']) && request.kits.p30.directory === P30_KIT &&
+     request.p30Template.path === resolve(P30_KIT, 'root-inputs.draft.json') &&
+-    request.p30Plan.path === resolve(P30_KIT, 'plan.rootfalse.json'), 'This adapter only binds the sealed P30 v2 kit');
++    request.p30Plan.path === resolve(P30_KIT, 'plan.rootfalse.json'), 'This adapter only binds the sealed P30 face-bikkuri kit');
+   const p30 = await boundJSON(request.p30Template);
+   need(seed.dataRoot === DATA && seed.sourceRoot === SOURCE && seed.observedSourceHead === request.expectedSourceHead,
+     'The approved Qv3 source epoch cannot drift');
+@@ -210,7 +220,8 @@
+ 
+   /** Retain the previously successful metadata resource union without removal.
+    * The section1003 resources remain historical closure, while this adapter
+-   * only prepares P30 v2. No P22 template, freezer, API or browser is invoked.
++   * only binds formal bytes for the private P30 face candidate. No candidate
++   * native file, alias, P22 template, freezer, API or browser is generated.
+    */
+   const catalog = await json(resolve(DATA, 'assets/catalog.json'));
+   const dataNames = new Set([...Object.keys(seed.dataInputs), 'manifest.json', 'review/native-restoration.json',
+@@ -262,8 +273,12 @@
+   }
+   const evidenceGuards = { ...seed.evidenceGuards }, sharedClosure = { ...seed.sharedClosure };
+   const p30Plan = await boundJSON(request.p30Plan);
++  // Both existing complete source/closed-baseline reviews remain false receipts.
++  // Binding their exact bytes is provenance, never a face-token acceptance.
++  need(equal(sorted(Object.keys(request.sourceReviewGuards || {})), SOURCE_REVIEW_PATHS),
++    'Bind exactly the two completed source/actual review receipts');
+   const evidenceToBind = {};
+-  for (const group of [request.publicationGuards, request.additionalEvidence, p30Plan.evidenceReferences]) for (const [path, sha256] of Object.entries(group)) {
++  for (const group of [request.publicationGuards, request.additionalEvidence, request.sourceReviewGuards, p30Plan.evidenceReferences]) for (const [path, sha256] of Object.entries(group)) {
+     need(!Object.hasOwn(evidenceToBind, path) || evidenceToBind[path] === sha256, `Conflicting evidence references: ${path}`);
+     evidenceToBind[path] = sha256;
+   }
+@@ -285,14 +300,15 @@
+   need((await capture(tap)).sha256 === 'cc191d0433def9fbcbb5b9b4e556ff7e92e6c46f366ab9151d4aef860fdbc8c1', 'Original read tap changed');
+   kitMaps.p30[tap] = (await capture(tap)).sha256;
+   for (const [path, sha256] of boundInputs) globalGuards[path] = sha256;
+-  const inventory = { ...seed, schema: 'stella.ordinary-qa.p30-v2-fresh-guard-inventory-candidate.v1',
++  const inventory = { ...seed, schema: 'stella.controlled-qa.p30-face-fresh-formal-guard-inventory-candidate.v1',
+     rootConfirmed: false, isExecutionBinding: false, preparationAuthorized: false, executionAuthorized: false, browserLaunchAuthorized: false,
++    controlledNativeCandidateAuthorized: false, sourceReviewGuards: request.sourceReviewGuards,
+     observedAt: new Date().toISOString(), observedDataHead: request.finalDataHead, observedSourceHead: request.expectedSourceHead,
+     publishedHead: request.finalDataHead, dataStatus: '', sourceStatus, atomicFreeze: false, collectionWindowStable: true,
+     controlledDifferenceAcceptance: 'PENDING_ROOT_REVIEW_OF_THIS_FRESH_METADATA', dataInputs, globalGuards, sourceFiles, distFiles,
+     protectedFirstThree, sharedClosure, evidenceGuards, toolFiles, routeSource: request.p30Plan,
+     inheritedRouteSource: seed.routeSource, resourceDerivation: { models: sorted(models), sections: [1003, 1045],
+-      basis: 'Retained successful historical resource union plus current P30 metadata, preserving Qv3 inputs; no P22 execution, API or before-state synthesis' },
++      basis: 'Retained successful resource union and current formal P30 metadata, preserving Qv3 inputs; no staged native, alias, program, API or before-state synthesis' },
+     counts: { ...counts, dataInputs: Object.keys(dataInputs).length, globalGuards: Object.keys(globalGuards).length,
+       globalNativeReview: nativeReview.length, sourceFiles: sourceNames.length, distFiles: distPaths.length,
+       protectedFirstThree: Object.keys(protectedFirstThree).length, sharedClosure: Object.keys(sharedClosure).length,
+@@ -309,11 +325,14 @@
+   const inventoryPath = resolve(output, 'inventory.rootfalse.json');
+   const inventoryBytes = Buffer.from(JSON.stringify(inventory, null, 2) + '\n'), inventoryRef = { path: inventoryPath, sha256: hash(inventoryBytes) };
+   Object.assign(p30, { finalDataHead: request.finalDataHead, finalSourceHead: request.expectedSourceHead, browserOwner: request.browserOwner,
+-    globalGuardsFile: inventoryRef, publicationGuards: request.publicationGuards, protectedFirstThree, kitGuards: kitMaps.p30, tools });
++    globalGuardsFile: inventoryRef, publicationGuards: request.publicationGuards, sourceReviewGuards: request.sourceReviewGuards,
++    protectedFirstThree, kitGuards: kitMaps.p30, tools });
+   // No approval bit is promoted by collecting hashes. Root must inspect the
+   // candidate and separately authorize the original P30 freezer/API step.
+   need(p30.rootConfirmed === false && p30.freezeAuthorized === false && p30.apiPreparationAuthorized === false &&
+-    p30.fullGlobalInventoryApproved === false && p30.browserLaunchAuthorized === false,
++    p30.fullGlobalInventoryApproved === false && p30.browserLaunchAuthorized === false && p30.executionAuthorized === false &&
++    p30.controlledNativeCandidateAuthorized === false && p30.diagnosticInstrumentationAuthorized === false &&
++    p30.continuousRecorderAuthorized === false && p30.candidateAlias === null && p30.budgets === null,
+     'Supply the original false templates');
+   for (const [path, record] of cache) need(hash(await readFile(path)) === record.sha256, `Final byte drift: ${path}`);
+   for (const [path, sha256] of boundInputs) need(hash(await readFile(path)) === sha256, `Final metadata drift: ${path}`);

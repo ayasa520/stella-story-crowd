@@ -1,0 +1,168 @@
+{
+  "schema": "stella.controlled-qa.p30-face-collector-preparation.author-seal.v3",
+  "createdUTC": "2026-11-22T03:35:00.552Z",
+  "rootConfirmed": false,
+  "inventoryCollectionAuthorized": false,
+  "freezeAuthorized": false,
+  "apiPreparationAuthorized": false,
+  "executionAuthorized": false,
+  "controlledNativeCandidateAuthorized": false,
+  "diagnosticInstrumentationAuthorized": false,
+  "continuousRecorderAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "finalDataHead": null,
+  "decision": "SEALED_STATIC_METADATA_ONLY_ADAPTER_FOR_PEER_AND_ROOT_REVIEW_NOT_EXECUTED",
+  "collector": {
+    "bytes": 26712,
+    "sha256": "79345156ff52eed5192146bd5c0c1819c53b3da316779234b0e09868ce656334"
+  },
+  "collectorLines": 356,
+  "request": {
+    "bytes": 5640,
+    "sha256": "15743c526c2fa4d9229709ae93f8e2354d97b6ed16e624f60f5985862c1e01fe"
+  },
+  "completeDiff": {
+    "bytes": 9984,
+    "sha256": "8368d6618cb16bcd73c90251fbdc71634ebe9949b3a062ff7e9c1e9a76b0a997"
+  },
+  "reuseProof": {
+    "bytes": 1506,
+    "sha256": "1d401daf19ed7d0336c52482ddeefcae2eeac2cfb7457b38a49ad7eac06dc180"
+  },
+  "basis": {
+    "collectorV2SHA256": "446d90ba90b04c18730aee39c570bb852e04661cac20802daa5ff1819f688275",
+    "rootReportedV2ActualCollectionSession": 10742,
+    "newKitReceiptSHA256": "6aabc29bbb69ab8632856de3a64935706d7b987673c125b817b3e47c12c4381f",
+    "primarySourceActualReviewSHA256": "f4ede1817c2fc13136c835306d6b450c1c7b08e9a29673da3fd1b1c2ee65af14",
+    "independentSourceActualReviewSHA256": "0973607d0dcb65fa633d2341d08c45399080a9b4f58e3762c2ef22a3fe01132b",
+    "sourceExpectedFromApprovedSeed": "6630ac70f17332efa031d021af00532d42307568",
+    "rootReportedAssignmentHeadHistoricalOnly": "e77938f6a90986d24fa30a9c329bf78eb5164472",
+    "currentHEADNotReadOrBound": true
+  },
+  "scope": {
+    "onlyNewP30FaceKit": true,
+    "noP22Processing": true,
+    "formalModifyAllowlistCount": 17,
+    "exactFourAddedPaths": [
+      "assets/catalog.json",
+      "assets/package.json",
+      "native/scenes/10030001.json",
+      "review/scenes/10030001.json"
+    ],
+    "allOriginal13FormalPathsRetained": true,
+    "explicitOldPathCountGuard": 5536,
+    "source312Dist234AndProtected22GuardsRetained": true,
+    "HEADStatusAndActualSHA1GitBlobChecksRetained": true,
+    "allNativeReviewNewAuditBatchMembershipAndResourceUnionRetained": true,
+    "dynamicAll140NativeNodeAndRawBranchCountsRetained": true,
+    "actualFiveARMToolsAndLaunchGuardsRetained": true,
+    "fiveCoreBlocksByteIdentical": true,
+    "sameActualJSONBytesHashBeforeParseAndRawDecodedOriginalErrorPreserved": true,
+    "twoSourceReviewRefsBoundWithoutAcceptingTheirTokens": true,
+    "filledCandidateFlagsRemainFalse": true,
+    "filledAliasAndBudgetsRemainNull": true,
+    "stagedNativeAliasProgramGenerationNotImplemented": true
+  },
+  "staticInspection": {
+    "fixedMetadataSourceInputs": 21,
+    "allSameAtSeal": true,
+    "sourceTextReadAndFullDiffCompared": true,
+    "sourceAnchors": {
+      "kit": {
+        "line": 13,
+        "text": "const P30_KIT = resolve(A, 'p30-node4-face-bikkuri-owner-kit-rootfalse-v1');"
+      },
+      "sourceReviews": {
+        "line": 279,
+        "text": "    'Bind exactly the two completed source/actual review receipts');"
+      },
+      "old5536": {
+        "line": 169,
+        "text": "  need(old.size === 5536, 'Retain the complete approved Qv3 old-path baseline');"
+      },
+      "newFourFormalPaths": {
+        "line": 35,
+        "text": "  'assets/catalog.json', 'assets/package.json',"
+      },
+      "metadataOnlyAuthority": {
+        "line": 134,
+        "text": "    'Metadata collection cannot authorize candidate generation, API or runtime');"
+      },
+      "outputPrefix": {
+        "line": 138,
+        "text": "  need(dirname(output) === A && output.split(sep).at(-1).startsWith('controlled-QA-root-bindings-'), 'Use a fresh direct A-owned output directory');"
+      },
+      "falseCandidateAliasBudget": {
+        "line": 335,
+        "text": "    p30.continuousRecorderAuthorized === false && p30.candidateAlias === null && p30.budgets === null,"
+      },
+      "source312dist234": {
+        "line": 148,
+        "text": "  need(Object.keys(seed.sourceFiles).length === 312 && Object.keys(seed.distFiles).length === 234 &&"
+      },
+      "dynamicEdges": {
+        "line": 213,
+        "text": "    libraryEdges: [...documents.values()].reduce((n, doc) => n + doc.scenario_list.reduce((m, row) => m + row.branch_list.length, 0), 0) };"
+      },
+      "actualHEADBlob": {
+        "line": 185,
+        "text": "      need(oid === member.oid, `Working bytes differ from final HEAD blob: ${path}`);"
+      },
+      "freshAllNativeReview": {
+        "line": 252,
+        "text": "  const nativeReview = [...await walk(resolve(DATA, 'native')), ...await walk(resolve(DATA, 'review'))];"
+      }
+    },
+    "syntaxASTOrCodeExecution": false
+  },
+  "payloads": {
+    "prepare-bindings.mjs": {
+      "bytes": 26712,
+      "sha256": "79345156ff52eed5192146bd5c0c1819c53b3da316779234b0e09868ce656334"
+    },
+    "collection-request.template.rootfalse.json": {
+      "bytes": 5640,
+      "sha256": "15743c526c2fa4d9229709ae93f8e2354d97b6ed16e624f60f5985862c1e01fe"
+    },
+    "collector-v3-vs-v2.patch": {
+      "bytes": 9984,
+      "sha256": "8368d6618cb16bcd73c90251fbdc71634ebe9949b3a062ff7e9c1e9a76b0a997"
+    },
+    "reuse-proof.rootfalse.json": {
+      "bytes": 1506,
+      "sha256": "1d401daf19ed7d0336c52482ddeefcae2eeac2cfb7457b38a49ad7eac06dc180"
+    },
+    "input-bindings.rootfalse.json": {
+      "bytes": 9141,
+      "sha256": "54bbf2e7d6f93f5bb69bef20d86b1b772b84081040bd7af0f144ce78c4313ccf"
+    },
+    "README.md": {
+      "bytes": 5395,
+      "sha256": "661089923be8935a5b5df8d6f1448fe60abd1284ac81c47726c9c2f865774d39"
+    }
+  },
+  "filesIndex": {
+    "bytes": 1002,
+    "sha256": "1dd1dcccbbb233337b4d81a771454e196a4ad7deffe3708651cac2e055c24fb9"
+  },
+  "notPerformed": {
+    "collectorOrFreezerExecution": false,
+    "helperOrBusinessImport": false,
+    "APIorNetwork": false,
+    "browserServerMedia": false,
+    "toolELFOrResourcePayloadRead": false,
+    "syntaxASTTestsBuild": false,
+    "formalD_CReadOrWrite": false,
+    "GitCommandsOrMutation": false,
+    "oldArtifactsOrNewKitChanged": false,
+    "newInventoryStageAliasProgramGenerated": false
+  },
+  "limits": [
+    "Static source and metadata preparation only. Actual final HEAD/status/blobs/membership/tool/resource checks remain future original collector work after root review and authorization.",
+    "Root must bind its final published/ACKed HEAD, publication evidence and exact request SHA; metadata collection cannot authorize controlled native creation, API or browser.",
+    "Original before-output request-read error boundary is preserved; after output creation actual hash/parse failure raw/decoded/error witnesses remain unchanged.",
+    "Review receipts retain negative/noninstallable face/phase conclusions. Only the future separately approved original freeze may create one private native stage and non-Git alias; formal installation and source/actual acceptance remain false."
+  ],
+  "independentPeerPending": true,
+  "peerRequestedByRoot": "missing1006_source"
+}

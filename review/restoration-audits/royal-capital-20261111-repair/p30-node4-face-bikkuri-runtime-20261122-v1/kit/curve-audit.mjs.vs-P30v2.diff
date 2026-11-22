@@ -1,0 +1,21 @@
+--- P30v2/curve-audit.mjs
++++ P30-face-bikkuri/curve-audit.mjs
+@@ -21,12 +21,13 @@
+     proofs.push({clipRecordId:clip.id,token:clip.token,...source,rawSha256:sha(bytes),
+       actualDecodedSha256:sha(JSON.stringify(clip.actualDecodedClip)),duration:expected.duration,curveCount:expected.curves.length});
+   }
+-  // Empty formal motion is an input fact, not a promise about default
+-  // weights, loop state or a particular provider. Bind only the clips that the
+-  // untouched player actually archived, including entry/blend source states.
+-  assert.equal(plan.id,'p30-node4-unchanged-ordinary');
++  // A root-requested native face token is an input, not a runtime winner or
++  // a weight/loop promise. Bind only clips the unchanged player actually
++  // archived, including defaults and entry/blend source states.
++  assert.equal(plan.id,'p30-node4-face-bikkuri-only');
+   const target=plan.steps.find(s=>s.target);assert.equal(target.scenario,4);
+-  assert.equal(target.native.motion,'');assert.deepEqual(target.parsedMotion,{body:'',face:'',extras:[]});
++  assert.equal(target.native.motion,'');assert.equal(target.candidateMotion,',face_bikkuri');
++  assert.deepEqual(target.parsedMotion,{body:'',face:'face_bikkuri',extras:[]});
+   const targetPoints=report.checkpoints.filter(c=>c.node===target.id);
+   const observations=[];
+   function observeLayer(checkpoint,layer,path){

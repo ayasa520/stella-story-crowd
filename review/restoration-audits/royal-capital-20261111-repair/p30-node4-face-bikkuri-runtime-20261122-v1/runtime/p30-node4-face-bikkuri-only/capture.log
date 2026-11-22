@@ -1,0 +1,27 @@
+Input #0, x11grab, from ':2':
+  Duration: N/A, start: 1795319913.558052, bitrate: 480000 kb/s
+  Stream #0:0: Video: rawvideo (BGR[0] / 0x524742), bgr0, 500x1000, 480000 kb/s, 30 fps, 30 tbr, 1000k tbn, start 1795319913.558052
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+[libx264 @ 0x5d2af5b1d0] using cpu capabilities: ARMv8 NEON DotProd I8MM
+[libx264 @ 0x5d2af5b1d0] profile Constrained Baseline, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x5d2af5b1d0] 264 - core 165 r3222M b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=0:0:0 analyse=0:0 me=dia subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=250 keyint_min=25 scenecut=0 intra_refresh=0 rc_lookahead=0 rc=crf mbtree=0 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=1200 vbv_bufsize=2400 crf_max=0.0 nal_hrd=none filler=0 ip_ratio=1.40 aq=0
+Output #0, matroska, to '/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-bikkuri-owner-kit-rootfalse-v1/attempt-1/p30-node4-face-bikkuri-only/actual.mkv':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (H264 / 0x34363248), yuv420p(tv, progressive), 500x1000, q=2-31, 30 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 1200000/0/0 buffer size: 2400000 vbv_delay: N/A
+[out#0/matroska @ 0x5d2af5a800] video:1308KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.290394%
+frame=  484 fps= 30 q=15.0 Lsize=    1312KiB time=00:00:16.13 bitrate= 666.2kbits/s speed=   1x elapsed=0:00:16.06    
+[libx264 @ 0x5d2af5b1d0] frame I:2     Avg QP:15.50  size: 44572
+[libx264 @ 0x5d2af5b1d0] frame P:482   Avg QP:14.51  size:  2593
+[libx264 @ 0x5d2af5b1d0] mb I  I16..4: 100.0%  0.0%  0.0%
+[libx264 @ 0x5d2af5b1d0] mb P  I16..4:  1.7%  0.0%  0.0%  P16..4: 10.2%  0.0%  0.0%  0.0%  0.0%    skip:88.1%
+[libx264 @ 0x5d2af5b1d0] coded y,uvDC,uvAC intra: 23.9% 36.1% 15.8% inter: 4.0% 3.9% 1.4%
+[libx264 @ 0x5d2af5b1d0] i16 v,h,dc,p: 45% 28% 11% 16%
+[libx264 @ 0x5d2af5b1d0] i8c dc,h,v,p: 51% 27% 17%  5%
+[libx264 @ 0x5d2af5b1d0] kb/s:663.91
+Exiting normally, received signal 2.

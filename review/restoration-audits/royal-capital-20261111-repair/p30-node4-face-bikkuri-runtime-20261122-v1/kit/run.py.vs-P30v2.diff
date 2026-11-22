@@ -1,0 +1,63 @@
+--- P30v2/run.py
++++ P30-face-bikkuri/run.py
+@@ -1,4 +1,4 @@
+-"""Future single-browser ordinary P30 supervisor with owned-group cleanup.
++"""Future single-browser controlled P30 face-native supervisor with owned-group cleanup.
+ 
+ The one Firefox process opens one fresh document. A recorder
+ starts before each unchanged program load and stops only after its declared
+@@ -148,22 +148,30 @@
+ assert sha(release_path) == args.release_sha256
+ release = load(release_path)
+ for flag in ['rootConfirmed', 'executionAuthorized', 'browserLaunchAuthorized',
+-             'diagnosticInstrumentationAuthorized', 'continuousRecorderAuthorized']:
++             'diagnosticInstrumentationAuthorized', 'continuousRecorderAuthorized', 'controlledNativeCandidateAuthorized']:
+     assert release.get(flag) is True, flag
+ assert release['attempt'] == args.attempt
+ assert os.environ.get('STELLA_BROWSER_OWNER') == release['browserOwner']
+ binding = load(HERE / 'frozen/binding.json')
+-assert [p['id'] for p in binding['plans']] == ['p30-node4-unchanged-ordinary']
+-assert binding['noNativeOverlay'] is True and binding['noProgramMutation'] is True
++assert [p['id'] for p in binding['plans']] == ['p30-node4-face-bikkuri-only']
++assert binding['nativeOnlyOverlay'] is True and binding['controlledNativeCandidate'] is True
++assert binding['noProgramMutation'] is True
+ for plan in binding['plans']:
+     assert [step['scenario'] for step in plan['steps']] == [3, 4, 5]
+     assert plan['stop']['scenario'] == 5 and plan['stop']['phase'] == 'ready'
+     assert plan['stop']['forbiddenNext'] == 6 and plan['stop']['forbiddenEdge'].endswith(':51')
+-    assert plan['ordinaryBaseline'] is True
++    assert plan['ordinaryBaseline'] is False and plan['controlledNativeCandidate'] is True
++    assert plan['aliasIsGitCommit'] is False and re.fullmatch('[a-f0-9]{40}', plan['alias'])
++    assert plan['alias'] != binding['finalDataHead']
++    assert plan['expectedSemanticDiff'] == [{'path': '/scenario_list/3/motion', 'before': '', 'after': ',face_bikkuri'}]
++    assert plan['overlay']['path'] == str(HERE / 'frozen' / 'p30-node4-face-bikkuri-only' / '10450054.json')
++    assert plan['overlay']['sha256'] == sha(plan['overlay']['path'])
++    assert binding['fileGuards'][plan['overlay']['path']] == plan['overlay']['sha256']
+     target = next(step for step in plan['steps'] if step['target'])
+     assert target['scenario'] == 4 and target['native']['character'] == 'live2d/AC_subaru_tshirt01'
+     assert target['native']['motion'] == ''
+-    assert target['parsedMotion'] == {'body': '', 'face': '', 'extras': []}
++    assert target['candidateMotion'] == ',face_bikkuri'
++    assert target['parsedMotion'] == {'body': '', 'face': 'face_bikkuri', 'extras': []}
+ assert release['bindingSha256'] == sha(HERE / 'frozen/binding.json')
+ assert release['normalPreparationIndexSha256'] == sha(HERE / 'prepared/index.json')
+ assert load(HERE / 'prepared/index.json')['allSucceeded'] is True
+@@ -175,10 +183,14 @@
+ for name in ['common.py', 'freeze.py', 'prepare.mjs', 'transport.mjs', 'server.mjs', 'workers-private.mjs', 'node-guards.mjs', 'owner-events.mjs',
+              'curve-audit.mjs', 'driver.mjs', 'run.py', 'README.md', 'plan.rootfalse.json', 'static-report.rootfalse.json',
+              'frozen/binding.json', 'frozen/plan.json', 'prepared/index.json',
+-             'prepared/p30-node4-unchanged-ordinary.request.json',
+-             'prepared/p30-node4-unchanged-ordinary.http.json',
+-             'prepared/p30-node4-unchanged-ordinary.receipt.json',
+-             'prepared/p30-node4-unchanged-ordinary.raw.json.gz']:
++             'prepared/p30-node4-face-bikkuri-only.request.json',
++             'prepared/p30-node4-face-bikkuri-only.http.json',
++             'prepared/p30-node4-face-bikkuri-only.receipt.json',
++             'prepared/p30-node4-face-bikkuri-only.raw.json.gz',
++             'prepared/p30-node4-face-bikkuri-only.complete-program-diff.json',
++             'prepared/baseline.request.json', 'prepared/baseline.http.json',
++             'prepared/baseline.receipt.json', 'prepared/baseline.raw.json.gz',
++             'frozen/provider-events.jsonl']:
+     assert guards.get(str(HERE / name)) == sha(HERE / name), name
+ # Bind the actual interpreter and both Node launches to the declared tools.
+ # Checking another executable on PATH would not establish what ran this kit.

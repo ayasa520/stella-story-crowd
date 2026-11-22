@@ -1,0 +1,29 @@
+--- P30v2/server.mjs
++++ P30-face-bikkuri/server.mjs
+@@ -12,7 +12,10 @@
+ import {pipeline} from 'node:stream/promises';
+ import {runtimeGate} from './node-guards.mjs';
+ const here=new URL('./',import.meta.url),origin='http://127.0.0.1:5198';
+-const {binding}=await runtimeGate(here,import.meta.url);
++const {binding,bindingBytes}=await runtimeGate(here,import.meta.url);
++assert.deepEqual(globalThis[Symbol.for('stella.p30.face-bikkuri.native-transport')],{
++  kind:'native-only-controlled-face',bindingSha256:createHash('sha256').update(bindingBytes).digest('hex'),
++  caseId:binding.plans[0].id,alias:binding.plans[0].alias});
+ const workersModule=new URL('workers-private.mjs',here).href;
+ registerHooks({resolve(specifier,context,next){return specifier==='cloudflare:workers'?{url:workersModule,shortCircuit:true}:next(specifier,context);}});
+ const {env}=await import(workersModule);assert.equal(env.STELLA_HOSTING,undefined);
+@@ -52,7 +55,7 @@
+       for await(const chunk of incoming){length+=chunk.length;assert.ok(length<=4096);chunks.push(chunk);}
+       body=Buffer.concat(chunks).toString('utf8');
+       const value=JSON.parse(body),plan=binding.plans[0];
+-      assert.equal(value.baseSha,binding.finalDataHead,'Only the published ordinary revision is admitted');assert.deepEqual(Object.keys(value).sort(),['baseSha','choices','id']);
++      assert.equal(value.baseSha,plan.alias,'Only the bound controlled native alias is admitted');assert.deepEqual(Object.keys(value).sort(),['baseSha','choices','id']);
+       assert.equal(value.id,plan.start);assert.deepEqual(value.choices,{});
+     }else if(!['GET','HEAD'].includes(incoming.method)){outgoing.writeHead(405).end();return;}
+     const request=new Request(url,{method:incoming.method,headers,...(body===undefined?{}:{body})});
+@@ -66,4 +69,4 @@
+     if(outgoing.destroyed&&['ERR_STREAM_PREMATURE_CLOSE','ERR_STREAM_UNABLE_TO_PIPE'].includes(error.code))return;
+     console.error('PRIVATE_HOST_REQUEST_FAILED',error);if(!outgoing.headersSent)outgoing.writeHead(500);outgoing.end();
+   }
+-}).listen(5198,'127.0.0.1',()=>console.log('Ordinary P30 diagnostic host listening '+origin));
++}).listen(5198,'127.0.0.1',()=>console.log('Controlled P30 face-native diagnostic host listening '+origin));

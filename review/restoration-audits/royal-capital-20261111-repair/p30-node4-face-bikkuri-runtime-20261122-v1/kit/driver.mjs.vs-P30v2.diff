@@ -1,0 +1,78 @@
+--- P30v2/driver.mjs
++++ P30-face-bikkuri/driver.mjs
+@@ -1,4 +1,4 @@
+-// One ordinary final-HEAD P30 document, observed from predecessor through
++// One controlled face-native P30 document, observed from predecessor through
+ // the unchanged target's complete entry/typing/hold/exit and accepted boundary.
+ // QA input delays add no script Wait, clock/layer change, token or ready state.
+ import assert from 'node:assert/strict';
+@@ -153,7 +153,10 @@
+   return {scenario:3,ready,began,ended,visual,actorCheckpointRequired:false,reviewNormalHoldOnly:true,scriptWaitAdded:false};
+ }
+ async function targetObservation(step,configuration){
+-  assert.equal(step.native.motion,'');assert.deepEqual(step.parsedMotion,{body:'',face:'',extras:[]});
++  // Formal body/motion stays empty; only the native face CSV input is staged.
++  // The unchanged player owns all physical parameters, layer weights and loops.
++  assert.equal(step.native.motion,'');assert.equal(step.candidateMotion,',face_bikkuri');
++  assert.deepEqual(step.parsedMotion,{body:'',face:'face_bikkuri',extras:[]});
+   const visible=await visibleTarget(step),ready=await readySurface(step,configuration);
+   const readyPoint=await checkpoint('4-first-natural-ready',step);
+   assert.equal(readyPoint.row.observerIdentity.animator,visible.point.row.observerIdentity.animator);
+@@ -291,7 +294,7 @@
+     let recording=false,exported=false,captureEndRequested=false;
+     try{
+       stage=plan.id+':fresh-document';
+-      await driver.call('browsingContext.navigate',{context:target.context,url:origin+'/player/player.html?assetRevision='+binding.finalDataHead,wait:'interactive'});
++      await driver.call('browsingContext.navigate',{context:target.context,url:origin+'/player/player.html?assetRevision='+plan.alias,wait:'interactive'});
+       await waitFor(()=>window.reviewReady===true);
+       assert.equal(await evaluate(()=>document.getElementById('auto').getAttribute('aria-pressed')),'false');
+       assert.equal(await evaluate(()=>document.getElementById('language').value),'zh');
+@@ -306,7 +309,7 @@
+         player:await(await fetch('/player/player_config.json')).json(),
+         transitions:await(await fetch('/player-assets/transitions.json')).json()}));
+       const expected=preparations.receipts.find(r=>r.caseId===plan.id);assert.ok(expected);
+-      assert.deepEqual(expected.request,{id:plan.start,baseSha:binding.finalDataHead,choices:{}});
++      assert.deepEqual(expected.request,{id:plan.start,baseSha:plan.alias,choices:{}});
+       stage=plan.id+':normal-prepare';
+       const response=await evaluate(async({request,expectedSha})=>{
+         const reply=await fetch('/api/player/prepare',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(request)});
+@@ -330,8 +333,9 @@
+       }
+       assert.equal(response.status,200);assert.equal(response.stored,true);assert.equal(response.programSha256,expected.programSha256);
+       const program=JSON.parse(response.raw);
+-      assert.equal(program.headSha,binding.finalDataHead);assert.equal(program.start,plan.start);
+-      assert.equal(program.nodes.length,binding.allLibraryNodes);assert.deepEqual(program.before,expected.before);
++      assert.equal(program.headSha,plan.alias);assert.equal(program.start,plan.start);
++      assert.equal(program.nodes.length,binding.allLibraryNodes);assert.equal(program.edges.length,binding.allLibraryEdges);
++      assert.deepEqual(program.before,expected.before);
+       assert.equal(program.nodes.filter(n=>n.scene_id==='scene:10450054').length,52);
+       assert.deepEqual((await state()).entered,[],'No product entry before continuous recording begins');
+       await supervisor('capture-start',plan.id);recording=true;
+@@ -358,13 +362,15 @@
+       // A block-scoped `target` here would shadow earlier target.context reads
+       // throughout this try block, including navigation before initialization.
+       const targetHold=active.holds.find(h=>h.scenario===4);
+-      await save(folder,'actual-empty-motion-baseline.json',{nativeMotion:'',derivedMotion:{body:'',face:'',extras:[]},
++      await save(folder,'actual-face-candidate-preview.json',{candidateOnly:true,aliasIsGitCommit:false,
++        formalNativeMotion:'',stagedNativeMotion:',face_bikkuri',nativeInputFaceToken:'face_bikkuri',
++        derivedMotion:{body:'',face:'face_bikkuri',extras:[]},
+         visible:targetHold.visible,ready:targetHold.readyPoint,ended:targetHold.ended,observations:targetHold.observations,
+-        tokensSelectedByHelper:false,layersOrWeightsMutatedByHelper:false,
++        postLoadTokenOverridesByHelper:false,layersOrWeightsMutatedByHelper:false,
+         bodyWinner:null,faceWinner:null,motionAccepted:false,sourcePhaseAccepted:false});
+       await save(folder,'actual-decoded-curve-proof.json',await auditCurves(binding,report,plan));
+       assert.deepEqual(active.errors,[]);rejectOriginalProductErrors();
+-      await save(folder,'result.json',{status:'ordinary-unchanged-observation-pending-source-review',
++      await save(folder,'result.json',{status:'controlled-face-native-observation-pending-source-review',candidateOnly:true,aliasIsGitCommit:false,
+         motionAccepted:false,sourcePhaseAccepted:false,requiresTerminalAcceptanceReceipt:true,
+         plan,prepared:expected,finalState,finalSurface,holds:active.holds,surfaces:active.surfaces,marks:active.marks,actions:active.actions,
+         bidi:active.bidi,http:active.http,browser:capabilities,runLabel,rawGenerationLinksVerified:true,currentStoryPlayerGeneration:null,
+@@ -406,7 +412,7 @@
+   await save(output,'terminal-acceptance.json',{accepted:true,sessionRetired,
+     originalFatalFactsEmpty:true,requiresRootIndependentOsPortsGuards:true,caseId:binding.plans[0].id});
+   if(active){assert.deepEqual(active.errors,[]);rejectOriginalProductErrors();}
+-  console.log('ORDINARY_P30_CASE_COMPLETE_PENDING_INDEPENDENT_SOURCE_REVIEW');
++  console.log('CONTROLLED_P30_FACE_CASE_COMPLETE_PENDING_INDEPENDENT_SOURCE_REVIEW');
+ }catch(error){
+   retainFirstFailure(error);process.exitCode=1;
+   await save(output,'terminal-failure.json',{firstFailure,sessionRetired,errors:active?.errors||[],

@@ -1,0 +1,35 @@
+--- P30v2/node-guards.mjs
++++ P30-face-bikkuri/node-guards.mjs
+@@ -22,22 +22,27 @@
+   assert.ok(path&&expected,'Only the released supervisor may supply runtime authority');
+   const bytes=await readFile(path),release=JSON.parse(bytes);assert.equal(sha(bytes),expected);
+   for(const flag of ['rootConfirmed','executionAuthorized','browserLaunchAuthorized','diagnosticInstrumentationAuthorized',
+-    'continuousRecorderAuthorized'])assert.equal(release[flag],true,flag);
++    'continuousRecorderAuthorized','controlledNativeCandidateAuthorized'])assert.equal(release[flag],true,flag);
+   const bindingBytes=await readFile(new URL('frozen/binding.json',here)),binding=JSON.parse(bindingBytes);
+   assert.equal(await realpath(process.execPath),await realpath(binding.tools.node.binaryPath));
+   assert.equal(sha(await readFile(process.execPath)),binding.tools.node.sha256);
+   assert.equal(sha(bindingBytes),release.bindingSha256);
+-  assert.deepEqual(binding.plans.map(p=>p.id),['p30-node4-unchanged-ordinary']);
+-  assert.equal(binding.noNativeOverlay,true);assert.equal(binding.noProgramMutation,true);
++  assert.deepEqual(binding.plans.map(p=>p.id),['p30-node4-face-bikkuri-only']);
++  assert.equal(binding.nativeOnlyOverlay,true);assert.equal(binding.controlledNativeCandidate,true);
++  assert.equal(binding.noProgramMutation,true);
+   for(const plan of binding.plans){
+     assert.deepEqual(plan.steps.map(s=>s.scenario),[3,4,5]);
+     assert.equal(plan.stop.scenario,5);assert.equal(plan.stop.phase,'ready');
+     assert.equal(plan.stop.forbiddenNext,6);assert.ok(plan.stop.forbiddenEdge.endsWith(':51'));
+-    assert.equal(plan.ordinaryBaseline,true);
++    assert.equal(plan.ordinaryBaseline,false);assert.equal(plan.controlledNativeCandidate,true);
++    assert.equal(plan.aliasIsGitCommit,false);assert.match(plan.alias,/^[a-f0-9]{40}$/);
++    assert.notEqual(plan.alias,binding.finalDataHead);
++    assert.deepEqual(plan.expectedSemanticDiff,[{path:'/scenario_list/3/motion',before:'',after:',face_bikkuri'}]);
+     const target=plan.steps.find(s=>s.target);assert.equal(target.scenario,4);
+     assert.equal(target.native.character,'live2d/AC_subaru_tshirt01');
+     assert.equal(target.native.motion,'');
+-    assert.deepEqual(target.parsedMotion,{body:'',face:'',extras:[]});
++    assert.equal(target.candidateMotion,',face_bikkuri');
++    assert.deepEqual(target.parsedMotion,{body:'',face:'face_bikkuri',extras:[]});
+   }
+   assert.equal(sha(await readFile(new URL('prepared/index.json',here))),release.normalPreparationIndexSha256);
+   assert.equal(process.env.STELLA_BROWSER_OWNER,release.browserOwner);assert.equal(release.browserOwner,binding.browserOwner);

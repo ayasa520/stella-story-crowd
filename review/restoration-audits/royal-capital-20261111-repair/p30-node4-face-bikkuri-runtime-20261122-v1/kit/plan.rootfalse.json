@@ -1,0 +1,450 @@
+{
+  "schema": "stella.p30.face-native-candidate-unexecuted-plan.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "freezeAuthorized": false,
+  "apiPreparationAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "diagnosticInstrumentationAuthorized": false,
+  "continuousRecorderAuthorized": false,
+  "newLauncherCreated": true,
+  "caseId": "p30-node4-face-bikkuri-only",
+  "candidateNativeEdits": [
+    {
+      "path": "/scenario_list/3/motion",
+      "before": "",
+      "after": ",face_bikkuri"
+    }
+  ],
+  "overlays": [
+    {
+      "nativePath": "native/scenes/10450054.json",
+      "stagePath": null,
+      "sha256": null,
+      "semanticLeafCount": 1
+    }
+  ],
+  "aliases": null,
+  "tokenOverrides": [],
+  "programMutationsAllowed": false,
+  "observedSnapshot": {
+    "dataHead": null,
+    "sourceHead": null,
+    "native": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/native/scenes/10450054.json",
+      "sha256": "220268054497bf1463591298be7aa95841ce22b438580833a3c9b830215f1bea",
+      "bytes": 110756,
+      "rows": 52
+    },
+    "review": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/data-checkout/review/scenes/10450054.json",
+      "sha256": "b751893f98cf0c63a8f98536f9c8d95cb73bf2f7b8372e428ed7c8f24b827f09",
+      "bytes": 494149
+    },
+    "unchangedVersusPriorSealedRows": {
+      "native": true,
+      "review": true
+    },
+    "finalDataHead": null,
+    "finalSourceHead": null,
+    "note": "Only unchanged formal P30 native/review content is observed here. Final published heads and complete current inventory are provided solely by a future root freeze approval."
+  },
+  "request": {
+    "endpoint": "/api/player/prepare",
+    "method": "POST",
+    "body": {
+      "id": "node:10450054:1045005400003",
+      "baseSha": null,
+      "choices": {}
+    },
+    "baseShaSource": "The future root-bound private native alias, explicitly not a Git commit; baseline uses the future real final head.",
+    "overrideOmitted": true
+  },
+  "ordinaryProgram": {
+    "fullLibraryRequired": true,
+    "observedManifestScenes": null,
+    "observedManifestNodeCountSum": null,
+    "targetSceneNodes": 52,
+    "allRowsAndUidsPreserved": true,
+    "beforeFromActualApiOnly": true,
+    "browserSecondReadMustMatchFullFreshProgramAndBefore": true,
+    "on422": "Retain raw/status/headers and one ordinary resolve response, then stop. Root separately decides root1-prefix; no automatic retry/entry substitution.",
+    "formalBaselineAndCandidateBothFresh": true,
+    "allowedSemanticDifference": "Only exact canonical target node4 face empty->face_bikkuri",
+    "allowedExistingAliasMetadataPaths": [
+      "/headSha",
+      "/revision",
+      "/semantics/effect_manifest"
+    ],
+    "exactNestedEffectUrlShape": "/player-assets/effects.json?revision=<bound-revision>",
+    "noMissingFieldCreationOrNormalization": true
+  },
+  "steps": [
+    {
+      "id": "node:10450054:1045005400003",
+      "scenario": 3,
+      "stableKey": "s10450054-p30-at0024",
+      "sourceText": "――盗品蔵・夕方",
+      "native": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "",
+        "msg_text": "——赃物库·傍晚",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 3,
+        "uniq_id": 1045005400003,
+        "is_root": 0,
+        "scenario_type": 1,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1045005410031,
+                "transition_id": 3101,
+                "next_scenario_id": 4,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1045005410031,
+            "branch_id": 31,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "nativeWholeRowSemanticSha256FromSealedPrior": "fed58031d997c7c9b8168091dbcbf48b2d6658c72eff4a2a8ccaf854c7a260d5",
+      "expectedKind": "text",
+      "expectedModel": "",
+      "nativeMotion": "",
+      "derivedMotion": {
+        "body": "",
+        "face": "",
+        "extras": []
+      },
+      "role": "actorless predecessor",
+      "candidateMotion": ""
+    },
+    {
+      "id": "node:10450054:1045005400004",
+      "scenario": 4,
+      "stableKey": "s10450054-p30-at0027",
+      "sourceText": "話が合ったかと思えば今度はケンカか！いい加減にしてくれ！今は俺との交渉の場面のはずだろ？",
+      "native": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_subaru_tshirt01",
+        "character_image": "",
+        "motion": "",
+        "msg_character": "スバル",
+        "msg_text": "刚觉得你们谈得来，转头又吵起来了！适可而止吧！现在不是该和我谈交易吗？",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 4,
+        "uniq_id": 1045005400004,
+        "is_root": 0,
+        "scenario_type": 2,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1045005410041,
+                "transition_id": 4101,
+                "next_scenario_id": 5,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1045005410041,
+            "branch_id": 41,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "nativeWholeRowSemanticSha256FromSealedPrior": "87e670fef34a4edfebaa6d386f5114e877e9d8238028af41dbe798c42d5c33d4",
+      "expectedKind": "card",
+      "expectedModel": "subaru_tshirt01",
+      "nativeMotion": "",
+      "derivedMotion": {
+        "body": "",
+        "face": "face_bikkuri",
+        "extras": []
+      },
+      "role": "controlled face-only native target; formal body/motion stays empty",
+      "candidateMotion": ",face_bikkuri"
+    },
+    {
+      "id": "node:10450054:1045005400005",
+      "scenario": 5,
+      "stableKey": "s10450054-p30-at0033",
+      "sourceText": "話は終わりだって言ってんだろ。大体、こっちも依頼されて盗んできたもんを勝手に横流しなんかできるわけね一よ",
+      "native": {
+        "bg_music": "",
+        "bg_picture": "",
+        "character": "live2d/AC_felt01",
+        "character_image": "",
+        "motion": "act_punpun",
+        "msg_character": "フェルト",
+        "msg_text": "不是说了，已经没什么好谈的。而且，人家委托我偷来的东西，怎么可能随便转卖啊。",
+        "position": "",
+        "se": "",
+        "talk_chara": "",
+        "video": "",
+        "voice": "",
+        "scenario_id": 5,
+        "uniq_id": 1045005400005,
+        "is_root": 0,
+        "scenario_type": 2,
+        "battle_stage_id": 0,
+        "command": [
+          "",
+          "",
+          ""
+        ],
+        "branch_list": [
+          {
+            "transition_list": [
+              {
+                "uniq_id": 1045005410051,
+                "transition_id": 5101,
+                "next_scenario_id": 6,
+                "next_scenario_label": ""
+              }
+            ],
+            "uniq_id": 1045005410051,
+            "branch_id": 51,
+            "type": 1,
+            "quote_voice": "",
+            "gain_points": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "msg_quote": "",
+            "msg_quote_subject": ""
+          }
+        ]
+      },
+      "nativeWholeRowSemanticSha256FromSealedPrior": "e3f68010c3c31058ab71793a4a4d32d76b9423a3f2c78cc4d56d8e03b46280b7",
+      "expectedKind": "card",
+      "expectedModel": "felt01",
+      "nativeMotion": "act_punpun",
+      "derivedMotion": {
+        "body": "act_punpun",
+        "face": "",
+        "extras": []
+      },
+      "role": "existing-accepted Felt5 boundary only",
+      "candidateMotion": "act_punpun"
+    }
+  ],
+  "links": [
+    {
+      "id": "edge:node:10450054:1045005400003:1045005410031:31",
+      "source": "node:10450054:1045005400003",
+      "target": "node:10450054:1045005400004",
+      "native": {
+        "uniq_id": 1045005410031,
+        "transition_id": 3101,
+        "next_scenario_id": 4,
+        "next_scenario_label": ""
+      },
+      "branch": 31
+    },
+    {
+      "id": "edge:node:10450054:1045005400004:1045005410041:41",
+      "source": "node:10450054:1045005400004",
+      "target": "node:10450054:1045005400005",
+      "native": {
+        "uniq_id": 1045005410041,
+        "transition_id": 4101,
+        "next_scenario_id": 5,
+        "next_scenario_label": ""
+      },
+      "branch": 41
+    }
+  ],
+  "stop": {
+    "node": "node:10450054:1045005400005",
+    "scenario": 5,
+    "phase": "ready",
+    "requireOwnIncomingPanelComplete": true,
+    "requireOwnFreshActorDraw": true,
+    "noExtraFeltHoldRequired": true,
+    "forbiddenAdvance": 51,
+    "forbiddenEdge": "edge:node:10450054:1045005400005:1045005410051:51",
+    "forbiddenNode": "node:10450054:1045005400006"
+  },
+  "capture": {
+    "sessions": 1,
+    "documents": 1,
+    "continuousRecordings": 1,
+    "screenshots": 0,
+    "audioRecorded": false,
+    "surface": {
+      "width": 500,
+      "height": 1000,
+      "depth": 24,
+      "devicePixelRatio": 1,
+      "recorder": "existing K5 ARM Xvfb + x11grab30 + libx264"
+    },
+    "sameK5RecorderMechanism": true,
+    "firstRealSurfaceFrameAckRequiredBeforeProgramLoad": true,
+    "existingFirstFrameDeadlineSeconds": 10,
+    "loadOrder": [
+      "Fresh ready document and read-only owner/tap installed",
+      "Fetch ordinary full program but do not load",
+      "Assert no ENTER yet",
+      "Recorder capture-start IPC",
+      "Supervisor observes actual progress frame>0 and ACKs",
+      "Mark before complete program load",
+      "Post unchanged entire ordinary program once"
+    ],
+    "windows": [
+      {
+        "name": "3 actorless predecessor",
+        "policy": "Wait natural text ready + real narration panel token completion. Retain at least1 Normal second of stable actorless predecessor before ordinary trusted31.",
+        "actorGate": false,
+        "normalHoldSeconds": 1,
+        "noCharacterSeed": true
+      },
+      {
+        "name": "4 complete entry and typing",
+        "policy": "Continuous video/tap already running before31. Keep all ENTER/loading/old-owner rows, card/Normal events, actual model commit/draw, visible fade and natural typewriter. No wait for a selected body token or forced settlement.",
+        "actualVisibleMarker": "First observed positive card opacity and committed tshirt actor/new draw with same current node; marker is sampled, not exact first painted frame.",
+        "actualLayerAssertions": "Observe all actual body/face/extra/talk clips, weights, loop/blend and params; do not force faceWeight0, talk false, empty actual layer set or a chosen token."
+      },
+      {
+        "name": "4 bounded ready hold",
+        "minimumActorSecondsFromFirstObservedVisible": 8,
+        "minimumActorSecondsAfterFirstActualReady": 2,
+        "advancePredicate": "Both actual actor-time minima and natural ready hold, same current tshirt animator/model ownership, Auto false; then one normal trusted41.",
+        "clockMutation": false,
+        "scriptWaitAdded": false,
+        "readyManufactured": false,
+        "originalNativeHoldClaimed": false,
+        "targetRationale": "Source visible process is about26.056–32.523 (6.467s); longer QA observation permits a complete unchanged baseline without fitting wall time or inferring phase."
+      },
+      {
+        "name": "4 exit to5 boundary",
+        "policy": "Record trusted41, original transition/ENTER5, existing retirement/fade through actorless interval, Felt first actual visible/draw/panel entry and natural5-ready. Do not click51 or re-audit Felt5 act_punpun.",
+        "stopAsSoonAsReadyAndBoundaryGatesHold": true
+      }
+    ],
+    "budgets": null,
+    "timeCoordinates": [
+      "original recording PTS unchanged",
+      "actual x11 capture PTS/frame index",
+      "actual wall timestamps",
+      "actual Normal frame/gameSeconds",
+      "actual actorSeconds plus viewer/tap weak identity"
+    ],
+    "comparisonsByEventBoundaryOnly": true,
+    "sourceJpVsActualZhTypingLengthsNotEqual": true,
+    "checkpointBudget": {
+      "maximum": 8,
+      "recommended": [
+        "3-ready Normal mark(no actor checkpoint)",
+        "4-first observed visible",
+        "4-first natural ready",
+        "4-hold-end/pre41",
+        "5-own-ready boundary"
+      ]
+    },
+    "observationWindowQuality": "Original full surface capture, full raw owner/tap archive, untruncated console/provider/media/errors; bounded failures retained, no retry.",
+    "finalBudgetsFromRootOnly": true
+  },
+  "sourceComparison": {
+    "exactReceiptsBoundByRootViaSourceReviewGuards": true,
+    "rootReportsCompletedSourceAndClosedActualReviews": true,
+    "sourceFrameCount": 255,
+    "closedBaselineActualFrames": 453,
+    "sourceFaceTokenUniquelyAccepted": false,
+    "formalNode4MotionRemainsEmpty": true,
+    "privateRequestedCandidate": ",face_bikkuri",
+    "sourceOrActualImagesViewedByThisAuthor": false,
+    "Felt5AlreadyAcceptedRetained": true,
+    "Felt5Reaudit": false
+  },
+  "safetyAndAcceptance": {
+    "rootIndependentOwnedProcessPortAndHashClosureBeforeAnyReview": true,
+    "profileDeleteOnlyAfterActualOwnedEmptyEvidence": true,
+    "allOriginalFatalDropsAndObserverErrorsRejectEvidenceCoverage": true,
+    "kernelRowsArePostComposePreCoreGlNotPaint": true,
+    "sourceBodyFaceExtraPhaseAccepted": false,
+    "exactTimingGeometryLipsyncAccepted": false,
+    "noDataSourceWrites": true,
+    "noNativeSuppressionFlagChange": true,
+    "nativeFaceTokenRequestedByRoot": "face_bikkuri",
+    "postLoadTokenOverrideAllowed": false,
+    "formalCandidateInstallAuthorized": false
+  },
+  "finalDataHead": null,
+  "finalSourceHead": null,
+  "latestRootReported": {
+    "notAnExecutionBinding": true,
+    "finalPublicationPending": true,
+    "formalNode4MotionStillEmpty": true
+  },
+  "evidenceReferences": {
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-candidate-preview-preparation-rootfalse-v1/plan.rootfalse.json": "4e4a5e19d2607ccbb03f78605150100fb49a5eb5baa9f71fbd3f12a963911f56",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-candidate-preview-preparation-rootfalse-v1/function-edit-map.rootfalse.json": "4243c9cac0120c0cb2f86ea0f27bd82cb2f708540bbb4933f41f1486bdc0b5fa",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-candidate-preview-preparation-rootfalse-v1/program-schema-evidence.rootfalse.json": "8d70b0e6c90d904dc7dfe39024042f085c91a5b8ccf363e50fb12300e498e339",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-candidate-preview-preparation-rootfalse-v1/reuse-proof.rootfalse.json": "c310d41dfc4e8e453ae555f18d647d6467357cdde686cfd6573c392381d6b5c1",
+    "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-candidate-preview-preparation-rootfalse-v1/receipt.rootfalse.json": "92ed1b09ea7d9e6a50d35ae72be419094fd8dd6cf30e2d466a57922350cd4dd8"
+  },
+  "originPlan": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-face-candidate-preview-preparation-rootfalse-v1/plan.rootfalse.json",
+    "sha256": "4e4a5e19d2607ccbb03f78605150100fb49a5eb5baa9f71fbd3f12a963911f56",
+    "rootAcceptedNarrowImplementationBoundary": true
+  },
+  "controlledCandidatePreview": true,
+  "requestedFaceResource": {
+    "token": "face_bikkuri",
+    "path": "assets/models/subaru_tshirt01/ac/motions/AC_subaru_tshirt01_face_bikkuri.motion3.json",
+    "sha256": "76f990d192711bf7b6799049d1884321dee62a50fc1d7650304b46599c61f3f2"
+  },
+  "controlledNativeCandidateAuthorized": false,
+  "aliasIsGitCommit": false,
+  "owner": null,
+  "runtimeBudgets": null,
+  "postLoadParameterOrLayerOverridesAllowed": false
+}

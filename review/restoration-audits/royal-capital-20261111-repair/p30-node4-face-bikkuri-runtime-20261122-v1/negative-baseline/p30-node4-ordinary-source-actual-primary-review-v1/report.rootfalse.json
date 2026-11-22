@@ -1,0 +1,116 @@
+{
+  "schema": "stella.P30.node4.source-versus-ordinary-actual-primary-report.v1",
+  "rootConfirmed": false,
+  "acceptance": false,
+  "executionAuthorized": false,
+  "installationAuthorized": false,
+  "status": "complete-visual-review-baseline-face-mismatch-no-unique-installable-motion",
+  "reviewer": "/root/missing1007_source",
+  "target": {
+    "sceneId": 10450054,
+    "scenarioId": 4,
+    "uniqId": 1045005400004,
+    "arrayIndex": 3
+  },
+  "sourceCoverage": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-primary-review-v1/coverage.rootfalse.json",
+    "bytes": 38135,
+    "sha256": "448b7807e1ac5dbb21b6f98dc27bd4cd46d67fbecb8f493b37ffa37f9a63e26b"
+  },
+  "nativeWitnesses": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-primary-review-v1/native-witnesses.rootfalse.json",
+    "bytes": 15977,
+    "sha256": "fce0107588a03521e0bbcb98a5110949a49010c29f2fd01f44b5aacc671641a7"
+  },
+  "nativeAllFaceFamilyMatrix": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-primary-review-v1/all-native-face-families.rootfalse.json",
+    "bytes": 479108,
+    "sha256": "bbf1665ea173f1b226f3ea1c02dfca671173077bce8c0282c5dd3fc9e1b52cfa"
+  },
+  "actualObservations": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-primary-review-v1/actual-and-native-resource-observations.rootfalse.json",
+    "bytes": 12046,
+    "sha256": "eef5ea023c46fa7002e106a63360c67677db61e2deba54711141484fe73f7fd9"
+  },
+  "currentGuard": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-primary-review-v1/target-current-guard.rootfalse.json",
+    "bytes": 7441,
+    "sha256": "2c3ea97134bccc6071da097c9ab1d84f474942c20acfb7297688dd60f0b9d974"
+  },
+  "findings": [
+    {
+      "id": "FACE_BASELINE_MISMATCH",
+      "severity": "must-fix-for-source-restoration",
+      "observed": "Source entry visibly closes/narrows eyes before opening widely and developing forehead/brow furrows. The emphatic wide-eyed/furrowed pattern persists through typing and hold. Actual ordinary baseline retains normal eyes, no matching forehead furrows and a neutral/slightly smiling mouth.",
+      "sourceWitnessCombinedIndices": [
+        31,
+        32,
+        35,
+        39,
+        42,
+        176,
+        218,
+        221
+      ],
+      "actualWitnessFrameNumbers": [
+        124,
+        125,
+        126,
+        127,
+        135,
+        174,
+        176,
+        200,
+        368,
+        369
+      ],
+      "causeClaim": "Current empty motion resolves to act_normal_w in the recorded target observations. No cache/install/user fault or deeper renderer cause is inferred."
+    },
+    {
+      "id": "READY_MOUTH_STATE_DIFFERS",
+      "severity": "must-fix-for-source-restoration",
+      "observed": "Source completed-line hold keeps a visibly open mouth through departure; actual mouth closes at ready and stays closed during the controlled hold.",
+      "sourceWitnessCombinedIndices": [
+        176,
+        218,
+        221
+      ],
+      "actualWitnessFrameNumbers": [
+        174,
+        176,
+        200,
+        368,
+        369
+      ],
+      "unknown": "Source voice/talk/provider command and original timing are not recovered. Do not replace missing provenance with a forced mouth parameter."
+    },
+    {
+      "id": "ENTRY_EXIT_PHASE_NOT_SIGNED",
+      "severity": "separate-observation",
+      "observed": "Source has faint closed-eye entry then wide-eyed hold, and visible dimming atcombined222/223 before disappearance224. Actual native f124/f125 are faint, f126 is fully visible with a neutral face; f369 visible then f370/f371 absent while other surfaces fade.",
+      "causeClaim": "No global transition-bug or exact opacity/timing root cause claimed from X-surface captures. Preserve for a separate phase diagnostic; no phase constant patch."
+    },
+    {
+      "id": "BODY_NOT_ESTABLISHED",
+      "severity": "unaccepted",
+      "observed": "Both display the coarse downward-arm posture. Source head/shoulder/torso transition and exact provider are not isolated by that shared posture. Bikkuri body and face files share all70 face curves, while body adds36 curves.",
+      "bodyTokenAccepted": false
+    },
+    {
+      "id": "NATURAL_TYPING_AND_NODE5_BOUNDARY_RECORDED",
+      "severity": "coverage-only",
+      "observed": "Both record complete target text progression, ready, hold, disappearance and following5 entry. Actual retains all14 duplicate-PTS pairs and453 samples. This establishes observation coverage, not equal source timing or next5 performance acceptance."
+    }
+  ],
+  "fieldsProposed": {},
+  "importableCandidateCreated": false,
+  "singleBodyFaceOrProviderWinner": null,
+  "hardExcludedAsMatchingPlayback": [
+    "the actually captured empty-motion act_normal_w baseline"
+  ],
+  "other13WrinkleEntryFamiliesGloballyExcluded": [],
+  "whyNoInstallableField": "Complete source and normal-baseline images prove the missing facial performance, but no controlled counterfactual native face/body application has been observed. Multiple same-model wrinkle/eye-entry families exist, and body/face files share face curves. Resource parameter signatures motivate bounded tests; they do not uniquely prove the authored provider/token.",
+  "motionBodyFaceProvidersPhaseTimingNormalSavedPlaybackOrWholeSceneAccepted": false,
+  "anotherImageReviewConclusionRead": false,
+  "newMediaBrowserAPIOrFormalWrites": false
+}

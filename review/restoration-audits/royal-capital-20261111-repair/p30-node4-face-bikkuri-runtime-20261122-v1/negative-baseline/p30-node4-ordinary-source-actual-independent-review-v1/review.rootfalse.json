@@ -1,0 +1,194 @@
+{
+  "schema": "stella.P30.node4.independent-full-source-actual-review.v1",
+  "rootConfirmed": false,
+  "createdUTC": "2026-11-22T02:43:03.423196+00:00",
+  "reviewer": "/root/episode11_images_31_46",
+  "mainAgentViewedImages": false,
+  "independence": {
+    "primarySourceOrActualCandidateConclusionRead": false,
+    "oldSourceReviewConclusionReadDuringThisTask": false,
+    "oldResourceComparisonConclusionReadDuringThisTask": false,
+    "newRendererOrMediaRun": false
+  },
+  "target": {
+    "sceneId": 10450054,
+    "scenarioId": 4,
+    "nativeUID": 1045005400004,
+    "stableKey": "s10450054-p30-at0027",
+    "sourceText": "話が合ったかと思えば今度はケンカか！いい加減にしてくれ！今は俺との交渉の場面のはずだろ？",
+    "currentNativeNode": {
+      "bg_music": "",
+      "bg_picture": "",
+      "character": "live2d/AC_subaru_tshirt01",
+      "character_image": "",
+      "motion": "",
+      "msg_character": "スバル",
+      "msg_text": "刚觉得你们谈得来，转头又吵起来了！适可而止吧！现在不是该和我谈交易吗？",
+      "position": "",
+      "se": "",
+      "talk_chara": "",
+      "video": "",
+      "voice": "",
+      "scenario_id": 4,
+      "uniq_id": 1045005400004,
+      "is_root": 0,
+      "scenario_type": 2,
+      "battle_stage_id": 0,
+      "command": [
+        "",
+        "",
+        ""
+      ],
+      "branch_list": [
+        {
+          "transition_list": [
+            {
+              "uniq_id": 1045005410041,
+              "transition_id": 4101,
+              "next_scenario_id": 5,
+              "next_scenario_label": ""
+            }
+          ],
+          "uniq_id": 1045005410041,
+          "branch_id": 41,
+          "type": 1,
+          "quote_voice": "",
+          "gain_points": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "msg_quote": "",
+          "msg_quote_subject": ""
+        }
+      ]
+    }
+  },
+  "rootDecodeClosure": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-actual-decode-root-preparation-v1/decode.root-closure.json",
+    "bytes": 4459,
+    "sha256": "45bdfc5ee44838525ad9aca6003695f3aaedc221a63675769237bc7a81eb9ac1"
+  },
+  "coverage": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-independent-review-v1/coverage.rootfalse.json",
+    "bytes": 26057,
+    "sha256": "b67ca40c1a9e1fa14686e13688c3dc7f91074f66742264930fed7c0f50c0b277"
+  },
+  "nativeModelBindings": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-independent-review-v1/native-model-byte-bindings.rootfalse.json",
+    "bytes": 2464,
+    "sha256": "7538d42cfef3f28b41865f5314d24d335543d706bdc32adf951d57c017abe5a6"
+  },
+  "currentDDrift": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-independent-review-v1/controlled-unrelated-registration-note.rootfalse.json",
+    "bytes": 1966,
+    "sha256": "a13f2f5e7bc73907d06f96515e1fc4ce61cc0c90206e8fa45baf5487203996e4"
+  },
+  "fullProcessObservations": [
+    {
+      "phase": "prior boundary",
+      "source": "The255-frame window starts on the actorless loot-house evening title and covers its fade.",
+      "actual": "The453-frame capture includes launch-dark region, the same actorless title/background and title departure. Title/background are visible on native86..95 data despite some tool black display.",
+      "acceptance": "Boundary visible; no startup timing equivalence."
+    },
+    {
+      "phase": "entry",
+      "source": "Source34@26.123 shows closed/narrow initial eyes and a low head during blend;36@26.189 shows reopening and appearing forehead lines;40@26.323 is wide-eyed with strong forehead/inner-eye wrinkles and inward brow shape.",
+      "actual": "124/125 are faint behind blur;126@4.171 and130@4.308 are readable, forward-facing with open normal-sized eyes, little smile/neutral mouth and no forehead wrinkle group. The observed source closed/narrow→wide/wrinkled sequence is not reproduced.",
+      "acceptance": "Face-entry mismatch observed; native phase/provider and scheduling cause unknown."
+    },
+    {
+      "phase": "typing",
+      "source": "Forehead/eye wrinkles, furrowed brows and rounder/wider eyes persist while Japanese types. Mouth changes occur; source80@27.656 provides a clear native anchor.",
+      "actual": "Chinese types at135..173 with smaller mouth changes and without the source forehead/eye-wrinkle group; native150@4.957 confirms the contrast.",
+      "acceptance": "Face process mismatch; no lipsync/audio timing claim."
+    },
+    {
+      "phase": "completed hold",
+      "source": "Source178@30.923 and201@31.689 retain wide eyes/wrinkles and a distinctly large open mouth after the Japanese line is complete.",
+      "actual": "After complete Chinese173, actual180..360 has a much more neutral closed-mouth held expression and no source wrinkle group. Native180/201/206/240/360 directly verify it.",
+      "acceptance": "Held face mismatch; exact source elapsed duration is not installed."
+    },
+    {
+      "phase": "body",
+      "source": "Visible shoulders remain roughly level, both arms remain low, and the head/upper torso show a small dip/rise and continuing low-amplitude movement; hands/lower body are cropped or HUD-hidden.",
+      "actual": "Visible body also remains upright/low-armed with small head/torso movement. No large arm gesture is shown that would uniquely require a named act resource.",
+      "acceptance": "Broad visible body family is compatible, but a specific body token, entrance trajectory, lower limbs and native provider/phase are not identified. Empty motion does not itself establish a missing body field."
+    },
+    {
+      "phase": "exit and5 boundary",
+      "source": "Source223@32.423 still has the wrinkled open-mouth actor fading; a blur follows, then5 is faint by231@32.689 and readable by241@33.023.",
+      "actual": "Around370@12.308 the neutral actor has gone into the outgoing blurred state;5 appears faint at383 and is clear/closed-eyed at388, then remains to453.",
+      "acceptance": "Both4 exit and5 arrival are covered. The5 entrance eye ordering differs between these windows (source faint closed/narrow then open, actual faint open then closed); no5 acting reacceptance, rejection of its old receipts or formal field change is made."
+    }
+  ],
+  "textTrace": {
+    "binding": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-independent-review-v1/text-trace-correlation.rootfalse.json",
+      "bytes": 6366,
+      "sha256": "31b5a39f2607715b453882c44253513c35befb30b28823b9333c4aa37ba0188b"
+    },
+    "ordinaryRoute": "3→4→5, with normal advance at3 and4 in the closed trace.",
+    "actualCurveFact": "Actual preGL checkpoints identify act_normal_w at weight/effectiveWeight1. Its raw resourceSHA6537babd19b4c874285d05f7c0a87b3a755f36cdc0c6765ba4d86bcbfa6c0407 matches the native normal resource. That fact is not source/native phase or paint proof.",
+    "normalHitchesRetained": 3,
+    "XSurfaceSamplesAreNotUniqueGLFrames": true,
+    "tapBeforeCoreAndGLNotPaint": true
+  },
+  "nativeResourceAssessment": {
+    "all72SameModelFaceResourceSurvey": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-independent-review-v1/all72-native-face-curve-inventory.rootfalse.json",
+      "bytes": 545143,
+      "sha256": "2da19abb9223f90dd20856ddc703ff8fa4b58aa89d3738bf45b520b74279ba57"
+    },
+    "endpointThresholdClarification": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-independent-review-v1/face-endpoint-threshold-clarification.rootfalse.json",
+      "bytes": 9762,
+      "sha256": "e5ddac0b905ac07a4fbdd2d9a38a81ad196ffc54da3cd45d94c5c533a7b24111"
+    },
+    "exploratory14ResourceSubset": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-independent-review-v1/selected-native-curve-metadata.rootfalse.json",
+      "bytes": 167568,
+      "sha256": "dfb6e15637cbeade8f4bcd3b8e99a72a522b45df19a489f7efd2b7785ff426b5"
+    },
+    "allFamilyComparisonAndNextEvidence": {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/p30-node4-ordinary-source-actual-independent-review-v1/face-family-comparison-and-next-evidence.rootfalse.json",
+      "bytes": 69562,
+      "sha256": "2526f11ef4bfdf683206d40a54623ba3db56c8468599c890f0d6cd268fdeda3b"
+    },
+    "wrinkleOrEyeWrinkleRows": 29,
+    "whyNotUnique": [
+      "Wrinkle and closed→open endpoints occur in bikkuri,ikaru variants,kessin,kandou/kanrui,uru variants,zetsubou and other surveyed face resources; they are not an ikaru-only signature.",
+      "Different entry curves can share terminal wrinkle/mouth state.02/03 also delay onset; native start point, mask/provider and source phase remain unknown.",
+      "All70 shared curves of face_bikkuri/act_bikkuri and face_ikaru/act_ikaru are exactly equal, so even a face match would not distinguish separate face provider from full body resource.",
+      "No original-model full-entry control for these candidate faces was painted/reviewed in this task. JSON values/parameter names do not prove the rendered source shape."
+    ],
+    "minimumNextEvidence": "Proposal only: first a complete face_bikkuri face-only original-model ordinary entry/typing/hold/exit comparison with body kept empty/default; an orthogonal face_ikaru_hai case distinguishes wide-eye wrinkle-ramp from always-wrinkled/Z0 alternatives if separately released. kessin/uru/other families remain uneliminated. No controls are executed here."
+  },
+  "decision": {
+    "verdict": "not_accepted_for_native_motion_installation_face_process_mismatch_and_body_nonunique",
+    "fullSourceAndActualCoverageComplete": true,
+    "sourceCharacterAndBackgroundRecognizable": true,
+    "emptyMotionActualFaceMatchesSource": false,
+    "visibleBodyFamilyCoarselyCompatible": true,
+    "specificBodyInstallable": false,
+    "specificFaceInstallable": false,
+    "extraInstallable": false,
+    "nativeMotionInstallable": false,
+    "proposedNativeMotionValue": null,
+    "currentNativeMotionLeftEmpty": true,
+    "nativeProviderOrPhaseAccepted": false,
+    "geometryTintTimingAudioAccepted": false,
+    "wholeSceneAccepted": false,
+    "formalDataWritten": false,
+    "blockingForClaimingFullRestoration": "The current ordinary baseline lacks the observed source face-entry/typing/held expression; exact native body/face/provider cannot yet be installed from this evidence."
+  },
+  "limits": [
+    "Source255 and actual453 are complete within their separate bounded windows; original source EOF means this selected stream/window, not whole P30. Actual strict EOF is capture EOF, not story termination.",
+    "Actual14 duplicate PTS pairs are retained;439 unique PTS does not identify unique GL frames. Normal hitches and sampling/pacing remain explicit.",
+    "Geometry, color/tint, audio, exact native timing, all glyphs and full5/full-scene acceptance are outside this receipt. Source showsSPEED×5.0; ordinary actual timing cannot be substituted for native source timing.",
+    "Viewer black/partial display discrepancies remain preserved with all affected86..95 direct calls, exact equal original/RGB hashes and nonblack stats. Causes remain unknown, and no real black-screen or panel-out event is inferred.",
+    "D received Root approved unrelated every07 catalog/package registration. Old wholecatalog binding is not claimed current exact; P30native/review guards remain byte-exact and no sample/resource changed.",
+    "No API/browser/FFmpeg/renderer/helper/build/test/Git/formalD/C write or new image/contact/video generation. Old source/actual images, old reports and preparation packets remain unchanged."
+  ]
+}

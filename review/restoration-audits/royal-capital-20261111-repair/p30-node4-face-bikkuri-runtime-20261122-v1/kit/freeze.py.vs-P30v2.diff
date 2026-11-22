@@ -1,0 +1,151 @@
+--- P30v2/freeze.py
++++ P30-face-bikkuri/freeze.py
+@@ -1,21 +1,23 @@
+-"""Future root-released ordinary P30 snapshot; never a native overlay.
++"""Future root-released P30 face-only private native snapshot.
+ 
+ The caller supplies the final independently checked publication/global closure.
+-No business module, Worker, browser or media tool is imported here. All native
+-rows remain in their formal files; only new A-owned metadata is emitted. The
+-three-node plan cannot turn an unknown original motion phase into input data.
++No business module, Worker, browser or media tool is imported here. Formal
++native rows are read-only. One complete A-owned52-row staged file changes only
++the root-requested node4 face CSV leaf; the canonical Worker parses it later.
++This controlled candidate is not a formal motion or source-phase acceptance.
+ """
+ import argparse
++from copy import deepcopy
+ from pathlib import Path
+ import re
+ import subprocess
+ import sys
+-from common import HERE, ROOT, DATA, SOURCE, load, sha, write, checked_guards, limits
++from common import HERE, ROOT, DATA, SOURCE, load, sha, digest, write, field_differences, checked_guards, limits
+ 
+ TAP = HERE.parent / 'episode5-actor-private-read-tap-v2-20261121-v1/proposed-read-tap.v2.mjs'
+ TAP_SHA = 'cc191d0433def9fbcbb5b9b4e556ff7e92e6c46f366ab9151d4aef860fdbc8c1'
+ OWNER_SHA = 'cf74af705e98691eb2b66ca14d667598dc150dc6b77f9b9291ccd4e6ab32b57f'
+-CASE = 'p30-node4-unchanged-ordinary'
++CASE = 'p30-node4-face-bikkuri-only'
+ SCENE = 10450054
+ 
+ def merge_guards(target, source):
+@@ -73,6 +75,9 @@
+ for flag in ['rootConfirmed', 'freezeAuthorized', 'apiPreparationAuthorized', 'fullGlobalInventoryApproved']:
+     assert release.get(flag) is True, flag
+ assert release['browserLaunchAuthorized'] is False
++assert release['controlledNativeCandidateAuthorized'] is True
++source_reviews = release['sourceReviewGuards']
++assert len(source_reviews) == 2, 'Bind both completed source/actual review receipts'
+ assert release['browserOwner']
+ assert set(release['tools']) == {'firefox', 'xvfb', 'ffmpeg', 'node', 'python'}
+ assert Path(sys.executable).resolve() == Path(release['tools']['python']['binaryPath']).resolve()
+@@ -96,6 +101,7 @@
+                  'public/studio/actor_animation.js', 'public/pairing/motion.js']:
+     assert str(SOURCE / relative) in guards, relative
+ merge_guards(guards, release['publicationGuards'])
++merge_guards(guards, source_reviews)
+ merge_guards(guards, release['kitGuards'])
+ protected = release['protectedFirstThree']
+ assert len(protected) == 22
+@@ -119,6 +125,8 @@
+ assert proposal['rootConfirmed'] is False and proposal['executionAuthorized'] is False
+ assert proposal['observedSnapshot']['finalDataHead'] is None
+ assert proposal['observedSnapshot']['finalSourceHead'] is None
++assert proposal['controlledCandidatePreview'] is True
++assert proposal['candidateNativeEdits'] == [{'path': '/scenario_list/3/motion', 'before': '', 'after': ',face_bikkuri'}]
+ for path, expected in proposal['evidenceReferences'].items():
+     assert sha(path) == expected, path
+     guards[path] = expected
+@@ -149,6 +157,36 @@
+ assert len(native['scenario_list']) == 52
+ rows = {row['scenario_id']: row for row in native['scenario_list']}
+ assert [step['scenario'] for step in proposal['steps']] == [3, 4, 5]
++# Isolate the native input before invoking the unchanged canonical parser.
++# Leading comma is deliberate: the body CSV slot is empty, face is requested,
++# and no extra slot/talk/command/weight or physical parameter is supplied.
++assert native_path.read_text() == __import__('json').dumps(native, ensure_ascii=False, indent=2) + '\n'
++assert native['scenario_list'][3]['scenario_id'] == 4
++assert native['scenario_list'][3]['uniq_id'] == 1045005400004
++assert native['scenario_list'][3]['motion'] == ''
++catalog = load(DATA / 'assets/catalog.json')
++face_rows = [item for item in catalog['models']['live2d/AC_subaru_tshirt01']['motions']
++             if item['token'] == 'face_bikkuri']
++assert len(face_rows) == 1 and face_rows[0]['kind'] == 'face'
++resource = proposal['requestedFaceResource']
++assert resource['token'] == 'face_bikkuri'
++assert resource['path'] == 'assets/' + face_rows[0]['url']
++assert data_guards[resource['path']] == resource['sha256']
++staged = deepcopy(native)
++staged['scenario_list'][3]['motion'] = ',face_bikkuri'
++expected_diff = [{'path': '/scenario_list/3/motion', 'before': '', 'after': ',face_bikkuri'}]
++assert field_differences(native, staged) == expected_diff
++restored = deepcopy(staged)
++restored['scenario_list'][3]['motion'] = ''
++assert restored == native
++overlay_path = HERE / 'frozen' / CASE / '10450054.json'
++base_guard_digest = digest(guards)
++write(overlay_path, staged)
++alias = digest({'case': CASE, 'dataHead': release['finalDataHead'],
++                'sourceHead': release['finalSourceHead'], 'globalInputs': base_guard_digest,
++                'overlayNative': sha(overlay_path)})[:40]
++assert alias != release['finalDataHead']
++guards[str(overlay_path)] = sha(overlay_path)
+ steps = []
+ for spec in proposal['steps']:
+     scenario = spec['scenario']
+@@ -157,12 +195,14 @@
+     uid = str(review['scenarios'][str(scenario)].get('studioNodeId') or row['uniq_id'])
+     node_id = f'node:{SCENE}:{uid}'
+     assert node_id == spec['id']
+-    slots = row['motion'].split(',')
++    candidate_motion = ',face_bikkuri' if scenario == 4 else row['motion']
++    assert candidate_motion == spec['candidateMotion']
++    slots = candidate_motion.split(',')
+     motion = {'body': slots[0], 'face': slots[1] if len(slots) > 1 else '', 'extras': slots[2:]}
+     assert motion == spec['derivedMotion']
+     steps.append({'scenario': scenario, 'id': node_id, 'native': row, 'kind': spec['expectedKind'],
+                   'sourceText': spec['sourceText'], 'expectedModel': spec['expectedModel'],
+-                  'parsedMotion': motion, 'target': scenario == 4,
++                  'candidateMotion': candidate_motion, 'parsedMotion': motion, 'target': scenario == 4,
+                   'expectedSuppressLipMotion': row['talk_chara'] == '0'})
+ assert rows[4]['character'] == 'live2d/AC_subaru_tshirt01' and rows[4]['motion'] == ''
+ assert rows[5]['character'] == 'live2d/AC_felt01' and rows[5]['motion'] == 'act_punpun'
+@@ -178,25 +218,32 @@
+     assert actual['id'] == spec['id'] and actual['native_transition'] == spec['native']
+ forbidden = next(row for row in rows[5]['branch_list'] if row['branch_id'] == 51)
+ assert len(forbidden['transition_list']) == 1 and forbidden['transition_list'][0]['next_scenario_id'] == 6
+-plan = {'schema': 'stella.p30.ordinary-owner-case.v1', 'rootConfirmed': False, 'id': CASE,
++plan = {'schema': 'stella.p30.face-native-candidate-case.v1', 'rootConfirmed': False, 'id': CASE,
++        'candidateOnly': True, 'alias': alias, 'aliasIsGitCommit': False,
++        'overlay': {'path': str(overlay_path), 'sha256': sha(overlay_path)},
++        'formalNative': {'path': str(native_path), 'sha256': sha(native_path)},
++        'expectedSemanticDiff': expected_diff,
+         'steps': steps, 'links': links, 'target': 4, 'start': steps[0]['id'], 'choices': {},
+         'stop': {'node': steps[-1]['id'], 'scenario': 5, 'phase': 'ready',
+                  'forbiddenNext': 6, 'forbiddenEdge': f"edge:{steps[-1]['id']}:{forbidden['uniq_id']}:51"},
+-        'ordinaryBaseline': True, 'nativeMotionUnchanged': True,
++        'ordinaryBaseline': False, 'controlledNativeCandidate': True, 'noProgramMutation': True,
+         'observation': {'narrationNormalSeconds': 1, 'targetVisibleActorSeconds': 8,
+                         'targetReadyActorSeconds': 2, 'maximumActorHoldChecks': 5},
+         'motionAccepted': False, 'sourcePhaseAccepted': False}
+ write(HERE / 'frozen' / 'plan.json', plan)
+ guards[str(HERE / 'frozen' / 'plan.json')] = sha(HERE / 'frozen' / 'plan.json')
+-binding = {'schema': 'stella.p30.ordinary-owner-frozen-inputs.v1', 'rootConfirmed': False,
++binding = {'schema': 'stella.p30.face-native-candidate-frozen-inputs.v1', 'rootConfirmed': False,
+            'dataRoot': str(DATA), 'sourceRoot': str(SOURCE), 'finalDataHead': release['finalDataHead'],
+            'finalSourceHead': release['finalSourceHead'], 'browserOwner': release['browserOwner'],
+            'fileGuards': guards, 'dataGuards': data_guards, 'plans': [plan], 'tools': release['tools'],
+            'budgets': release['budgets'], 'tap': {'path': str(TAP), 'sha256': TAP_SHA},
+            'allLibraryNodes': sum(len(load(DATA / scene['path'])['scenario_list']) for scene in manifest['scenes']),
++           'allLibraryEdges': sum(len(row['branch_list']) for scene in manifest['scenes']
++                                  for row in load(DATA / scene['path'])['scenario_list']),
+            'preparationRelease': {'path': str(release_path), 'sha256': sha(release_path)},
+-           'protectedFirstThree': protected, 'noProgramMutation': True, 'noNativeOverlay': True,
++           'protectedFirstThree': protected, 'noProgramMutation': True, 'nativeOnlyOverlay': True,
++           'controlledNativeCandidate': True, 'sourceReviewGuards': source_reviews,
+            'browserOrServerStarted': False}
+ write(HERE / 'frozen' / 'binding.json', binding)
+-print(__import__('json').dumps({'status': 'frozen-ordinary-not-executed', 'cases': 1,
++print(__import__('json').dumps({'status': 'frozen-face-native-candidate-not-executed', 'cases': 1,
+                               'bindingSha256': sha(HERE / 'frozen' / 'binding.json')}))
