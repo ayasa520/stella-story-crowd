@@ -1,0 +1,17 @@
+# Mimi105 full-process four-candidate comparison
+
+The original single-owner run47179 exited0(c5b877). Four complete104->105->106 captures total8,928,040 bytes/1707frames. Root independently closed all owned process groups, ports, X2/profile state and reverified all34,007 tracked data files,312 canonical files,234 dist files,22 protected files and9 tool guards. Foreign environment permission limits remain explicit.
+
+Both independent reviews viewed every original126 source frame and every actual1707frame in original order. B1F0 contradicts the sustained closed-eye source hold; both B2 variants keep a low hand/staff rather than the source raised-hand pose. B1F1 supports raised-hand geometry and open->narrow->closed smile, but visible lower-arm entry/lift and intermediate exit fade remain unproven, with a held-mouth difference. No motion/body/face/source-phase or saved-playback acceptance, no candidate winner, no script/asset/frontend change follows.
+
+The unchanged Normal CardOut interval was actually one frame(67.70/67.44ms), with texture release later. Original controller extraction supports0.25 fixed seconds, but fresh raw flags/cold-create ordering/equivalent blending are not established. No invented Wait, duration, clock or field was added to conceal these gaps.
+
+Original Python first-result parsing remains failed: original held raw/current bytes match and parse in independent Node, while exception.doc contains six NUL replacements. Mechanism remains unknown. The first technical reviewer schema-assumption error and its42-check continuation remain distinct. Original Firefox shader/context warnings are retained without canvas/time causality.
+
+All four equal PTS are preserved. The first strict-PTS assertion and B2F0 MJPEG encoder exit234 remain failed. Separately sealed RGB24/Pillow recovery covered every original ordinal/PTS throughEOF, without dropping, filling or retiming. Both independent reviews closed before1931 derived frame/contact/partial images were retired; exact retirement manifest/receipt and30 compact witnesses accompany all original MKVs and indices. The witnesses are aids, not substitutes for the full reviewed process. Original source frames/videos, OCR, scripts and ARM environment remain.
+
+Complete actual received programs plus the formal baseline are archived with the independent whole-program equality proof. Four duplicate candidate-preparation raw responses remain locally intact and hash-bound rather than duplicated here. Full-machine process argument snapshots and SQLite caches also remain local. Full restoration remains active and unlimited.
+
+A separate blind source-only geometry review clarifies that source10->14 shows outward hands/sleeves rising relative to a nearly stable face/chin/bow. It does not prove an earlier fully relaxed/downward-arm pose: source9 hands are unknown and source10 is already outward, with part of the right hand cropped. Shoulder/elbow joints remain obscured. This refines source geometry without selecting a token or changing either original visual report.
+
+The unpublished archive-v1 Git whitespace check rejected four immutable producer files with an extra EOF blank line. V2 stores those same bytes as gzip; original source hashes, the first archive plan/index and actual diff-check output are preserved. Neither executed source nor a test result was normalized or relabeled. The first relative-path committer invocation also failed before Git mutation and is recorded separately. No rejected payload duplicate tree was kept.
