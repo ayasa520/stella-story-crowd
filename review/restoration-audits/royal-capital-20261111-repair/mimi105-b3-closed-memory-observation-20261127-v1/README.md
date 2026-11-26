@@ -1,0 +1,11 @@
+# Mimi105 B3 original initialization stopped at the summed RSS ceiling
+
+Original exec24046 ended exit1 (terminal2af957), with no completed case, recorder or media. The first failure was the unchanged2GiB summed-per-process RSS assertion:2,226,176,000 bytes at sample55. All21 PID attributions and page-size arithmetic are complete: browser1,803,685,888, driver205,164,544, server188,362,752, Xvfb28,962,816 bytes. These sums count shared pages per process.
+
+Subsequent smaps_rollup reads cover only the eight largest observed PIDs and took later timestamps. Their PSS sum1,303,207,936 bytes is not an all-process or atomic unique-physical total. The full sample took39.75776ms. No OOM, shader-failure cause, image result or performance match is inferred; the complete Firefox shader/context-loss messages and every original runtime log are preserved. The old B2/51543 failure remains failed too.
+
+Root independently reverified all33,878 tracked D files and actual Git blob/membership identities,312 canonical tracked files,234 dist files,22 protected files and9 tool guards against the single inventory; all owned/escaped markers, ports5198/36651, X2 locks/sockets and private profile/authority were absent after termination. The unrelated user's Floorp group was preserved. Full-machine process argument snapshots stay local; original owned cleanup/role identities, source/input/OS checks and bounded memory files are included here.
+
+The four private native-only overlays changed only node105.motion and normal native/check plus complete program preparations passed. All frozen inputs and preparation metadata/diffs are preserved here; the five large complete-program raw responses remain locally intact and hash-bound by the exact runtime release rather than duplicated into an initialization-failure archive. No formal script, asset or frontend was edited, and no body/face or full-scene acceptance follows.
+
+Two delegated full-entry source criteria and the new164-byte original PlayAnim forwarding proof are included as source-only evidence. The latter proves original model_path and the same motion_list pointer reach SetMotion, with name/nonempty guards; it does not identify original CSV fields, choose body/face layers, or prove empty-motion Animator clearing.
