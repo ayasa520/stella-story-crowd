@@ -1,0 +1,15 @@
+# B1F1 lossless recording reached its original file bound
+
+Original direct runtime36594 exited1, terminal097803. The source-v3 server reached listen-ready14.396180s after the first Node preload marker, within the unchanged20-second readiness gate. This proves this startup only and does not explain the earlier empty-log failure.
+
+The recorder then exited-25(SIGXFSZ) with actual.mkv exactly18,000,000B, before the requested natural boundary. The actual argv and original source enforce both RLIMIT_FSIZE and FFmpeg -fs at that same cap. Last complete progress was302frames/10.066667s; encoder-input showinfo recorded318observations through10.566550s. Neither count is a decoded/fully muxed frame count. There is no progress=end, terminal acceptance, result or completed accepted case. No lossless roundtrip, full entry/exit, acting or source phase is accepted. The partial original MKV remains local and hash-bound in ARCHIVE-PLAN; no replay or codec-quality reduction followed.
+
+The original early-recorder cleanup assertion is preserved. All five owned groups and both ports were closed, but the owner correctly retained private state because of that recorded error. The first root checker rejected its overly broad no-cleanup-errors assertion before input/OS checks; that source and failure reference remain. The separate root checker-v2 retained the recording failure, verified every frozen input and independently proved PID/PGID, readable escaped markers,5198/41009, actual X display:2, and private paths. Only then did root delete the exact owned temporary profile/authority tree. Foreign environment permission limits are explicit; no user Floorp was touched. D hold is released and the original runtime remains exit1.
+
+Summed owned-RSS peak was3,183,079,424B below the3GiB cap;139 valid per-read MemAvailable observations had minimum1,302,433,792B. These bounded observations do not prove continuous resource headroom. Original Firefox warnings and all failure logs remain unedited.
+
+Full preparation and independent byte comparison cover5624nodes/5870edges/110scene rows, before/other-node preservation, the single native motion overlay and three alias metadata leaves. No formal script, asset or frontend was changed. The two prepared large raw responses remain local; the identical actual received candidate response is archived once. Original SQLite and full-machine process arguments are excluded.
+
+New narrow original-asset proofs establish default-disabled MouthController, conditional native multiplication, exact talk clip binding, and real constant1 mouth channels in the body/face original Unity clips matching canonical curves. They rule out inventing an always-on talk_off patch or deleting those original mouth channels. They do not prove original105activation/mode/final-composition cause. Full restoration remains active.
+
+An initial archive-plan enum error (copy instead of identity) was rejected before any repository write. Its exact failed plan and small failure receipt are preserved; corrected plan uses the original archiver without weakening guards.
