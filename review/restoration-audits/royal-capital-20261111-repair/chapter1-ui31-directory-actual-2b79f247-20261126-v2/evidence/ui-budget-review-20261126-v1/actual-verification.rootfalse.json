@@ -1,0 +1,232 @@
+{
+  "schema": "stella.ui-budget.actual-offline-verification.rootfalse.v1",
+  "rootConfirmed": false,
+  "executionAuthorized": false,
+  "browserLaunchAuthorized": false,
+  "independentPeerAccepted": false,
+  "executionProcessObserved": {
+    "nice": 19,
+    "cpuAffinity": [
+      0,
+      1
+    ]
+  },
+  "syntaxChecks": [
+    {
+      "file": "diagnostic-storage.mjs",
+      "command": [
+        "nice",
+        "-n",
+        "19",
+        "taskset",
+        "-c",
+        "0,1",
+        "node",
+        "--check",
+        "diagnostic-storage.mjs"
+      ],
+      "exitCode": 0,
+      "stdoutBytes": 0,
+      "stderrBytes": 0
+    },
+    {
+      "file": "sweep.mjs",
+      "command": [
+        "nice",
+        "-n",
+        "19",
+        "taskset",
+        "-c",
+        "0,1",
+        "node",
+        "--check",
+        "sweep.mjs"
+      ],
+      "exitCode": 0,
+      "stdoutBytes": 0,
+      "stderrBytes": 0
+    },
+    {
+      "file": "play.mjs",
+      "command": [
+        "nice",
+        "-n",
+        "19",
+        "taskset",
+        "-c",
+        "0,1",
+        "node",
+        "--check",
+        "play.mjs"
+      ],
+      "exitCode": 0,
+      "stdoutBytes": 0,
+      "stderrBytes": 0
+    },
+    {
+      "file": "reference-fetch-scope.mjs",
+      "command": [
+        "nice",
+        "-n",
+        "19",
+        "taskset",
+        "-c",
+        "0,1",
+        "node",
+        "--check",
+        "reference-fetch-scope.mjs"
+      ],
+      "exitCode": 0,
+      "stdoutBytes": 0,
+      "stderrBytes": 0
+    }
+  ],
+  "roundtripAndStorage": {
+    "schema": "stella.ui-budget.offline-checks.v1",
+    "passed": true,
+    "node": "v26.13.0",
+    "arch": "arm64",
+    "nice": 19,
+    "affinity": "0,1",
+    "checks": [
+      {
+        "name": "unicode-and-original-row-shapes",
+        "passed": true,
+        "rawBytes": 306,
+        "storedBytes": 243,
+        "indexBytes": 410,
+        "rawSha256": "3ee0998adb535bbd081120fa52140e3d0b56044d1631bf608da5eedf55572a06",
+        "storedSha256": "c5b5073981e578b52dcd02fff477ddde69e450cb654e50b83399c13a730a6b01"
+      },
+      {
+        "name": "historical-36551-storage-roundtrip-only",
+        "passed": true,
+        "rawBytes": 2242168,
+        "storedBytes": 600874,
+        "indexBytes": 417,
+        "rawSha256": "a41e6950b9d65879749d4357723b8292ac0b0001ce4f6e033afc3af242ba4da2",
+        "storedSha256": "cf7749d6a3d26a06b18837a0625d7606a59cc2032d3ade6226924daf9d2f4baf"
+      },
+      {
+        "name": "old-plan-without-explicit-policy-rejected",
+        "passed": true
+      },
+      {
+        "name": "stored-cap-crossing-fails-with-complete-compressed-packet",
+        "passed": true,
+        "rawBytes": 3333351,
+        "storedBytes": 2580302,
+        "indexBytes": 417
+      },
+      {
+        "name": "decoded-cap-crossing-fatal-and-bounded-decoder-refuses",
+        "passed": true,
+        "rawBytes": 16777231,
+        "storedBytes": 73252
+      },
+      {
+        "name": "exclusive-write-complete-fallback-and-conflict-preserve-first-file",
+        "passed": true
+      },
+      {
+        "name": "complete-crossing-archive-and-index-exist-before-budget-failure",
+        "passed": true,
+        "rawBytes": 16777231,
+        "storedBytesIncludingIndex": 73668
+      }
+    ],
+    "historical36551Accepted": false,
+    "browserOrCollectorExecuted": false,
+    "completeSourceRoundtripOnly": true,
+    "temporaryArchiveDirectoryRemoved": true
+  },
+  "staticChecks": {
+    "observerFunctionByteExact": true,
+    "ordinaryTraversalAndObserverStopDrainByteExact": true,
+    "finalReadonlyFatalRawCleanupGatesByteExact": true,
+    "completeThrownFallbackAttachmentByteExact": true,
+    "ownerOriginalCollectorsByteExact": true,
+    "noTrailingWhitespaceInNewSources": true
+  },
+  "whitespaceCommands": [
+    {
+      "command": "git diff --no-index --check v5/sweep.mjs candidate/sweep.mjs",
+      "exitCode": 1,
+      "outputBytes": 0
+    },
+    {
+      "command": "git diff --no-index --check v5/play.mjs candidate/play.mjs",
+      "exitCode": 1,
+      "outputBytes": 0
+    }
+  ],
+  "note": "No-index commands returned 1 with empty output. The independent exact-source line check found no trailing whitespace. Only the new diagnostic storage helper was executed; the sweep, owner and collectors were never imported or run.",
+  "sources": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ui-budget-review-20261126-v1/diagnostic-storage.mjs",
+      "bytes": 3643,
+      "sha256": "f204acbfee9fdbe10ce63fd0d42f4e26c959190b58b75dab1a1c26cc5c3fa7b0"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ui-budget-review-20261126-v1/sweep.mjs",
+      "bytes": 36573,
+      "sha256": "c493e564be723d0a7edfa035dbd984cbcd4b1184b4dde96a62aefa5629db3d57"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ui-budget-review-20261126-v1/play.mjs",
+      "bytes": 18262,
+      "sha256": "8c87dddd817ef2926c89074687f53e25a69ddaee713b0aa489e3bb6de7881014"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ui-budget-review-20261126-v1/reference-fetch-scope.mjs",
+      "bytes": 16571,
+      "sha256": "a7539a14ea582056b5d2759207b75d251cf85f49ee87f0977205f24673df760a"
+    }
+  ],
+  "originalSourcesUnchangedAfterChecks": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-directory-ui-sweep-console-provenance-proposal-rootfalse-v5/sweep.mjs",
+      "bytes": 36219,
+      "sha256": "11bf830e0b44c1d94e75c4b0711816be6464351b46bc1302541f66b6b53d7670"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-directory-ui-sweep-console-provenance-proposal-rootfalse-v5/play.mjs",
+      "bytes": 17736,
+      "sha256": "3c308f3e58cf675f19922363acbb7c3929cbad64b01d64f38a95cd0e44859a30"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-directory-ui-sweep-console-provenance-proposal-rootfalse-v5/reference-fetch-scope.mjs",
+      "bytes": 16571,
+      "sha256": "a7539a14ea582056b5d2759207b75d251cf85f49ee87f0977205f24673df760a"
+    }
+  ],
+  "originalReceiptBindings": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-directory-ui-sweep-console-provenance-proposal-rootfalse-v5/receipt.rootfalse.json",
+      "bytes": 11317,
+      "sha256": "4b2846bfe3893ce9fa8ecb5eab386b7ac533cf5bf0b50608fba583f37873694d"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/chapter1-directory-ui-sweep-console-realm-static-peer-v5/receipt.rootfalse.json",
+      "bytes": 3277,
+      "sha256": "75017457a947b1320200d5ee14fa62cb030cbc17563228b769952a17ca8402d0"
+    }
+  ],
+  "peerCorrectionVerification": {
+    "playSyntaxExitCode": 0,
+    "exactSourceCatchBranchOnly": true,
+    "ownerImportedOrExecuted": false,
+    "retainedArchiveBranchPreservesNewExportErrorAndStack": true,
+    "writeFailureBranchRetainsFullPacketAndStack": true,
+    "originalErrorIdentityAndBoundaryRetained": true,
+    "initialHarnessAttempt": {
+      "exitCode": 1,
+      "reason": "deepStrictEqual compared a JSON-parsed main-realm value with an otherwise identical VM-realm object and rejected their prototypes; no source change followed this harness failure"
+    },
+    "correctedHarnessAttempt": {
+      "exitCode": 0,
+      "comparison": "Complete JSON serialization equality for the cross-realm packet; exact operation/error/stack and original error identity also asserted"
+    },
+    "readmeBoundedCheckCountCorrectedToActual": 7
+  }
+}

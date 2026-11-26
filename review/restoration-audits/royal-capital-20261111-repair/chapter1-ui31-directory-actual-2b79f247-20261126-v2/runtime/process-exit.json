@@ -1,0 +1,99 @@
+{
+  "owned": [
+    {
+      "kind": "browser",
+      "pid": 26239,
+      "pgid": 26239,
+      "exitCode": -15,
+      "remainingOwnedPid": [],
+      "remainingGroupMembers": []
+    },
+    {
+      "kind": "driver",
+      "pid": 26334,
+      "pgid": 26334,
+      "exitCode": 0,
+      "remainingOwnedPid": [],
+      "remainingGroupMembers": []
+    }
+  ],
+  "stopAttempts": [
+    {
+      "kind": "driver",
+      "pid": 26334,
+      "pgid": 26334,
+      "signals": [
+        {
+          "signal": 15,
+          "outcome": "group-not-found"
+        }
+      ],
+      "errors": [],
+      "lastGroupObservation": []
+    },
+    {
+      "kind": "browser",
+      "pid": 26239,
+      "pgid": 26239,
+      "signals": [
+        {
+          "signal": 15,
+          "outcome": "sent"
+        }
+      ],
+      "errors": [],
+      "lastGroupObservation": []
+    }
+  ],
+  "osInventoryKnown": true,
+  "allOwnedGroupsEmpty": true,
+  "allOwnedPidsAndGroupsEmpty": true,
+  "announcedPortProof": {
+    "address": "ws://127.0.0.1:36251",
+    "browserSpawnAttempted": true,
+    "browserRegistered": true,
+    "connectEx": 111,
+    "known": true,
+    "closed": true
+  },
+  "inputsUnchanged": true,
+  "outputBytesBeforeFinalReceipts": 1968913,
+  "outputByteCap": 16777216,
+  "guardInventory": {
+    "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/ui31-root-preparation-2b79f247-20261126-v1/inventory.rootfalse.json",
+    "bytes": 6475278,
+    "sha256": "f23aecfd00bb5e42750c67bb7967ad7f1414c44d3117bdeb5ab4d2f23b7135ad"
+  },
+  "beforeGuardsVerified": true,
+  "afterGuardsVerified": true,
+  "allGuardsCheckedWithoutMapCopies": true,
+  "normalGuardSummariesUseInventoryReference": true,
+  "failedActualGuardMapArchives": [],
+  "deferredStopRequests": [],
+  "deferredStopBoundary": null,
+  "driverExitCode": 0,
+  "supervisorExitCode": 0,
+  "cleanupErrors": [],
+  "profileCleanup": {
+    "path": "/dev/shm/stella-directory-ui-qa-151zsp5o",
+    "removed": true,
+    "retained": false,
+    "ownedPidPgidExitProven": true,
+    "announcedPortProof": {
+      "address": "ws://127.0.0.1:36251",
+      "browserSpawnAttempted": true,
+      "browserRegistered": true,
+      "connectEx": 111,
+      "known": true,
+      "closed": true
+    },
+    "escapedProcessReview": "Root independent review is still required; no foreign group is signalled.",
+    "reason": "removed-after-os-exit-proof"
+  },
+  "localServerStarted": false,
+  "recorderStarted": false,
+  "xvfbStarted": false,
+  "imageReviewStarted": false,
+  "requiresIndependentClosureAfterSupervisorExit": true,
+  "supervisorPid": 26202
+}
