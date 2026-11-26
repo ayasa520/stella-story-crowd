@@ -1,0 +1,81 @@
+{
+  "schema": "stella.user-requested-investigation-temp-cleanup.v1",
+  "rootConfirmed": true,
+  "userRequest": "Delete investigation temporary files, logs and screenshots to free disk space.",
+  "atUTC": "2026-11-26T00:16:54.891449+00:00",
+  "baseDataCommit": "372b679c56092375156e132fc09746f3a73bf497",
+  "deletedFiles": 19612,
+  "deletedLogicalBytes": 3211361142,
+  "selectedAllocatedBytes": 3275223040,
+  "diskAvailableBefore": 0,
+  "diskAvailableAfter": 3214094336,
+  "actualFreeGainsAcrossBatches": 3226157056,
+  "deletionMetadata": {
+    "path": "deleted-file-metadata.jsonl.gz",
+    "rawBytes": 4538289,
+    "rawSHA256": "86116442c6bab6372f5e582c9f920135360e98a77d9971e4a00922f3ee0fb04a",
+    "storedBytes": 184527,
+    "storedSHA256": "3b4b2b60432ec25799cc1609c001971cb3df9e60444f17ad6281f4de538d4402"
+  },
+  "deletedOnlyTemporaryWorkingFiles": true,
+  "originalVideosSourceFramesOCRModelAssetsAndArmEnvironmentPreserved": true,
+  "formalNativeReviewAssetsAndCanonicalSourcePreserved": true,
+  "allSelectedPathsVerifiedAbsent": true,
+  "oldCaptureReferencesMayNowBeAbsentByExplicitCleanupRequest": true,
+  "historicalAcceptanceNotChanged": true,
+  "futureRuntimeRequiresFreshGuardsAndNewOutput": true,
+  "oldRuntimeMustNotBeRerunUsingRemovedFiles": true,
+  "knownBoundary": "Two old temporary visual request JSON files were already malformed when read; both were deleted as requested temporary inline-image payloads. No root cause was inferred or source data repaired.",
+  "batches": [
+    {
+      "deletedFiles": 4981,
+      "deletedLogicalBytes": 661296369,
+      "selectedAllocatedBytes": 675340288,
+      "freeBefore": 0,
+      "freeAfter": 647790592,
+      "actualFreeGain": 647790592,
+      "manifest": "/tmp/stella-cleanup-20261126-first.json"
+    },
+    {
+      "deletedFiles": 188,
+      "selectedAllocatedBytes": 702693376,
+      "freeBefore": 638181376,
+      "freeAfter": 1340874752,
+      "actualFreeGain": 702693376,
+      "manifest": "/tmp/stella-cleanup-20261126-compiler.json"
+    },
+    {
+      "deletedFiles": 13806,
+      "selectedAllocatedBytes": 1171210240,
+      "freeBefore": 1339572224,
+      "freeAfter": 2510778368,
+      "actualFreeGain": 1171206144,
+      "originalVideosSourceFramesOCRScriptAndReviewConclusionsPreserved": true
+    },
+    {
+      "deletedFiles": 609,
+      "selectedAllocatedBytes": 157900800,
+      "freeBefore": 2510495744,
+      "freeAfter": 2648399872,
+      "actualFreeGain": 137904128,
+      "formalReposPreserved": true
+    },
+    {
+      "deletedFiles": 11,
+      "selectedAllocatedBytes": 3678208,
+      "actualFreeGain": 2162688,
+      "freeAfter": 2650390528,
+      "allByteIdenticalInputsBeforeCopiesRetained": true
+    },
+    {
+      "deletedFiles": 17,
+      "deletedLogicalBytes": 564367982,
+      "selectedAllocatedBytes": 564400128,
+      "freeBefore": 2650345472,
+      "freeAfter": 3214745600,
+      "actualFreeGain": 564400128,
+      "existingMalformedTemporaryJsonFiles": 2,
+      "manifest": "/tmp/stella-cleanup-20261126-visual-request-candidates.json"
+    }
+  ]
+}
