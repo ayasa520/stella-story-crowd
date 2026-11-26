@@ -10600,7 +10600,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -10621,7 +10620,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -10683,7 +10681,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/0",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/0",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-031740.jpg",
+                "bytes": 181241,
+                "sha256": "9794337bc62d07d72f9f19dec23cfea3cbdb50ee1c34be8befae35efaff9e4b2"
+              },
+              "sourceNominalCacheSeconds": 1057.999,
+              "sourceRecordedInterval": [
+                1055.999,
+                1058.999
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/265",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows a pink bob covering one eye, a floral headband, crossed hairpins and the black/white frilled maid uniform.",
+                "The visible black sleeves, scalloped white collar, neck ribbon and fitted front correspond to the directly viewed ram01 texture atlas. The source has no raised hood.",
+                "Only the model/costume identity is proposed; the visible pose, eyes and mouth do not select a motion or face field."
+              ],
+              "independentPeerObservation": "Pink one-eye bob, crossed hairpins/side flower and flower headband, black-white frilled maid collar/bows/front lacing visible.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_ram01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 6847,
+                "sha256": "a588c39a6e3990a28a703f1d688327c69fab7373b292728d3db2125296ccd0f1"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 639360,
+                "sha256": "c7f92a06dfe09efb11acdea7942ed55bed0fe2babb0135c62c7e1dc34431de46"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1627247,
+                  "sha256": "5cb7d53b4ab7d2ba9c37fcfea70756f30a572ae9e9e22a945d0dfbc3f048bf82"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/2",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "64": {
@@ -10713,7 +10807,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -10734,7 +10827,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -10788,7 +10880,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/1",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/1",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-031890.jpg",
+                "bytes": 173884,
+                "sha256": "8021990c1e6603895b3a6114a245fb47a5ee0bfe4aab9ba066f3dca33b0b4177"
+              },
+              "sourceNominalCacheSeconds": 1062.999,
+              "sourceRecordedInterval": [
+                1059.999,
+                1062.999
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/266",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame exposes a white zip-up tracksuit front with black sleeves, orange collar/shoulder stripe and the N chest emblem.",
+                "Those garment features match the directly viewed original-byte-equivalent subaru01 texture and existing assembled subaru01 reference.",
+                "The tracksuit body is directly visible. No speaker-name, dialogue crop, audio or inherited preceding actor is used for this decision."
+              ],
+              "independentPeerObservation": "Spiky brown hair, complete dark long sleeves and intact pale zip-front track jacket with orange collar/stripes and N chest emblem.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_subaru01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 14595,
+                "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 1156992,
+                "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1273039,
+                  "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/3",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "65": {
@@ -10818,7 +11006,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -10839,7 +11026,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -10893,7 +11079,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/2",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/2",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-031950.jpg",
+                "bytes": 162167,
+                "sha256": "5df47f0067dd44b1fdbc380852cd3f4340a91618048bd9715e01e9ab67b81112"
+              },
+              "sourceNominalCacheSeconds": 1064.999,
+              "sourceRecordedInterval": [
+                1063.499,
+                1064.999
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/268",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame exposes a white zip-up tracksuit front with black sleeves, orange collar/shoulder stripe and the N chest emblem.",
+                "Those garment features match the directly viewed original-byte-equivalent subaru01 texture and existing assembled subaru01 reference.",
+                "The tracksuit body is directly visible. No speaker-name, dialogue crop, audio or inherited preceding actor is used for this decision."
+              ],
+              "independentPeerObservation": "Same intact pale-front N-emblem, black long-sleeved track jacket and orange collar/stripe, directly visible.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_subaru01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 14595,
+                "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 1156992,
+                "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1273039,
+                  "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/3",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "66": {
@@ -11050,7 +11332,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -11071,7 +11352,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -11125,7 +11405,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/4",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/4",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-032130.jpg",
+                "bytes": 186113,
+                "sha256": "14ffba0f4e4fb7874c8dfd45edbc08e84fbf4ca3c010bbbdc735059f1c1e2b2c"
+              },
+              "sourceNominalCacheSeconds": 1070.999,
+              "sourceRecordedInterval": [
+                1068.999,
+                1071.499
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/270",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows a pink bob covering one eye, a floral headband, crossed hairpins and the black/white frilled maid uniform.",
+                "The visible black sleeves, scalloped white collar, neck ribbon and fitted front correspond to the directly viewed ram01 texture atlas. The source has no raised hood.",
+                "Only the model/costume identity is proposed; the visible pose, eyes and mouth do not select a motion or face field."
+              ],
+              "independentPeerObservation": "Pink bob/flower headband/side crossed pins, black-white maid shoulder frills and front bows/lacing.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_ram01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 6847,
+                "sha256": "a588c39a6e3990a28a703f1d688327c69fab7373b292728d3db2125296ccd0f1"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 639360,
+                "sha256": "c7f92a06dfe09efb11acdea7942ed55bed0fe2babb0135c62c7e1dc34431de46"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1627247,
+                  "sha256": "5cb7d53b4ab7d2ba9c37fcfea70756f30a572ae9e9e22a945d0dfbc3f048bf82"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/2",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "68": {
@@ -11173,7 +11549,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -11194,7 +11569,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -11260,7 +11634,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/5",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/5",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-032220.jpg",
+                "bytes": 163702,
+                "sha256": "1edc4c3862e3d8dbf00e1571c1efa7b46c429c17e86e44e2a2fd97b1e16b8d36"
+              },
+              "sourceNominalCacheSeconds": 1073.999,
+              "sourceRecordedInterval": [
+                1073.999,
+                1074.499
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/271",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The source exposes both bare shoulders, the deep open front of the black/purple dress, detached arm sleeves and a long braid over the image-right torso.",
+                "The source has neither the shoulder mantle/clasp nor the large purple hair flower of the separately viewed elsa01 assembled control.",
+                "Its bare-shoulder silhouette and braid match the directly viewed elsa_nomantle01 assembled control and original-byte-equivalent texture atlas. This is a costume/model decision only."
+              ],
+              "independentPeerObservation": "Long brown side braid, bare shoulders/neck with no rose/feathers/mantle/clasp, purple-striped plunging bodice and long gloves.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_elsa_nomantle01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 4686,
+                "sha256": "799b279bf14f8066a318c7a42c5f6411d6273ff97ba897db01c82a6a9a621eda"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 511680,
+                "sha256": "e408cc29c8b53bcfa9e68a76888cfe5dceab83d5d5f980d71e0870e3878e76f8"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1111164,
+                  "sha256": "d88a623a4aaee07c4b5b1066f51644c0ee933c706df0aa6058f4c560168f5970"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/0",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "69": {
@@ -11290,7 +11760,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -11311,7 +11780,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -11365,7 +11833,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/6",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/6",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-032340.jpg",
+                "bytes": 180343,
+                "sha256": "94209cfe5b1a718649754b6a4c6cd0b323de0f2d1942362fd3e6947ef1a62202"
+              },
+              "sourceNominalCacheSeconds": 1077.999,
+              "sourceRecordedInterval": [
+                1075.999,
+                1079.499
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/273",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows blonde short hair with a large dark bow, red scarf, an open brown/red vest with pale fur edging and a black bandeau.",
+                "The matching bow, red scarf, bare midriff, bandeau and fur-trimmed garment pieces are visible in the directly viewed felt01 original-byte-equivalent texture atlas.",
+                "The exact static costume identity is proposed without accepting the observed arm, face or body pose."
+              ],
+              "independentPeerObservation": "Blond dark-bow crown braid, red scarf/gold tabs, brown sleeveless vest/black bandeau, bare midriff and fur wrist cuffs.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_felt01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 5680,
+                "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 536128,
+                "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1012102,
+                  "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/1",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "70": {
@@ -11395,7 +11959,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -11416,7 +11979,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -11470,7 +12032,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/7",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/7",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-032460.jpg",
+                "bytes": 167597,
+                "sha256": "aadf9e2e80396d3585e5a6864ff51451233c1c32b903e163b1aa1f86955ead76"
+              },
+              "sourceNominalCacheSeconds": 1081.999,
+              "sourceRecordedInterval": [
+                1080.999,
+                1082.499
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/274",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame exposes a white zip-up tracksuit front with black sleeves, orange collar/shoulder stripe and the N chest emblem.",
+                "Those garment features match the directly viewed original-byte-equivalent subaru01 texture and existing assembled subaru01 reference.",
+                "The tracksuit body is directly visible. No speaker-name, dialogue crop, audio or inherited preceding actor is used for this decision."
+              ],
+              "independentPeerObservation": "Spiky brown hair and intact black/orange jacket with pale zip front and N emblem, long dark sleeves.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_subaru01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 14595,
+                "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 1156992,
+                "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1273039,
+                  "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/3",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "71": {
@@ -11710,7 +12368,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -11731,7 +12388,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -11785,7 +12441,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/10",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/10",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-032910.jpg",
+                "bytes": 186187,
+                "sha256": "436b837c15efb60411ef2f06682af3f7752ad6456c38e76f7943cfd475a0f9bc"
+              },
+              "sourceNominalCacheSeconds": 1096.998,
+              "sourceRecordedInterval": [
+                1093.998,
+                1097.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/277",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The source exposes both bare shoulders, the deep open front of the black/purple dress, detached arm sleeves and a long braid over the image-right torso.",
+                "The source has neither the shoulder mantle/clasp nor the large purple hair flower of the separately viewed elsa01 assembled control.",
+                "Its bare-shoulder silhouette and braid match the directly viewed elsa_nomantle01 assembled control and original-byte-equivalent texture atlas. This is a costume/model decision only."
+              ],
+              "independentPeerObservation": "Brown side braid, bare shoulders/neck, purple-striped plunging bodice and gloves; no mantle/rose/feathers/clasp.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_elsa_nomantle01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 4686,
+                "sha256": "799b279bf14f8066a318c7a42c5f6411d6273ff97ba897db01c82a6a9a621eda"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 511680,
+                "sha256": "e408cc29c8b53bcfa9e68a76888cfe5dceab83d5d5f980d71e0870e3878e76f8"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1111164,
+                  "sha256": "d88a623a4aaee07c4b5b1066f51644c0ee933c706df0aa6058f4c560168f5970"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/0",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "74": {
@@ -11815,7 +12567,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -11836,7 +12587,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -11890,7 +12640,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/11",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/11",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-033030.jpg",
+                "bytes": 180153,
+                "sha256": "4041b67b6087cd1f8ce973a834e82c3765dc81215e784f2c148726e9c9f54870"
+              },
+              "sourceNominalCacheSeconds": 1100.998,
+              "sourceRecordedInterval": [
+                1098.998,
+                1101.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/278",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The source exposes both bare shoulders, the deep open front of the black/purple dress, detached arm sleeves and a long braid over the image-right torso.",
+                "The source has neither the shoulder mantle/clasp nor the large purple hair flower of the separately viewed elsa01 assembled control.",
+                "Its bare-shoulder silhouette and braid match the directly viewed elsa_nomantle01 assembled control and original-byte-equivalent texture atlas. This is a costume/model decision only."
+              ],
+              "independentPeerObservation": "Same long brown braid, bare shoulder costume with purple-striped bodice/gloves and no mantle/ruff.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_elsa_nomantle01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 4686,
+                "sha256": "799b279bf14f8066a318c7a42c5f6411d6273ff97ba897db01c82a6a9a621eda"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 511680,
+                "sha256": "e408cc29c8b53bcfa9e68a76888cfe5dceab83d5d5f980d71e0870e3878e76f8"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1111164,
+                  "sha256": "d88a623a4aaee07c4b5b1066f51644c0ee933c706df0aa6058f4c560168f5970"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/0",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "75": {
@@ -11920,7 +12766,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -11941,7 +12786,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -11995,7 +12839,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/12",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/12",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-033165.jpg",
+                "bytes": 176663,
+                "sha256": "0c75367c12c787d223d9881c158bc41cd097a8ddd0322209be796c0fa1de1120"
+              },
+              "sourceNominalCacheSeconds": 1105.498,
+              "sourceRecordedInterval": [
+                1102.998,
+                1105.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/279",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The source exposes both bare shoulders, the deep open front of the black/purple dress, detached arm sleeves and a long braid over the image-right torso.",
+                "The source has neither the shoulder mantle/clasp nor the large purple hair flower of the separately viewed elsa01 assembled control.",
+                "Its bare-shoulder silhouette and braid match the directly viewed elsa_nomantle01 assembled control and original-byte-equivalent texture atlas. This is a costume/model decision only."
+              ],
+              "independentPeerObservation": "Brown long side braid, bare neck/shoulders, purple-striped bodice and long gloves; cloak/rose/feathers absent.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_elsa_nomantle01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 4686,
+                "sha256": "799b279bf14f8066a318c7a42c5f6411d6273ff97ba897db01c82a6a9a621eda"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 511680,
+                "sha256": "e408cc29c8b53bcfa9e68a76888cfe5dceab83d5d5f980d71e0870e3878e76f8"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_elsa_nomantle01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1111164,
+                  "sha256": "d88a623a4aaee07c4b5b1066f51644c0ee933c706df0aa6058f4c560168f5970"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/0",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "76": {
@@ -12025,7 +12965,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -12046,7 +12985,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -12100,7 +13038,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/13",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/13",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-033345.jpg",
+                "bytes": 182390,
+                "sha256": "670905b2e21db3eb9985fc75419a7c2055e3f61f72228b12a3a14155e5c4a64d"
+              },
+              "sourceNominalCacheSeconds": 1111.498,
+              "sourceRecordedInterval": [
+                1107.998,
+                1111.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/280",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame exposes a white zip-up tracksuit front with black sleeves, orange collar/shoulder stripe and the N chest emblem.",
+                "Those garment features match the directly viewed original-byte-equivalent subaru01 texture and existing assembled subaru01 reference.",
+                "The tracksuit body is directly visible. No speaker-name, dialogue crop, audio or inherited preceding actor is used for this decision."
+              ],
+              "independentPeerObservation": "Intact pale zip-front track jacket/N chest emblem, orange high inner collar/stripe, black long sleeves.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_subaru01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 14595,
+                "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 1156992,
+                "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1273039,
+                  "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/3",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "77": {
@@ -12130,7 +13164,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -12151,7 +13184,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -12205,7 +13237,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/14",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/14",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-033450.jpg",
+                "bytes": 189035,
+                "sha256": "2e6fce036f46ef3e3fb95c1379bedf9b6241476574bb11fb71cab9ad8f82f11a"
+              },
+              "sourceNominalCacheSeconds": 1114.998,
+              "sourceRecordedInterval": [
+                1112.998,
+                1116.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/281",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows a pink bob covering one eye, a floral headband, crossed hairpins and the black/white frilled maid uniform.",
+                "The visible black sleeves, scalloped white collar, neck ribbon and fitted front correspond to the directly viewed ram01 texture atlas. The source has no raised hood.",
+                "Only the model/costume identity is proposed; the visible pose, eyes and mouth do not select a motion or face field."
+              ],
+              "independentPeerObservation": "Pink one-eye bob/floral band/side flower-cross pins, black-white frilled maid neckline/shoulders/front lacing.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_ram01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 6847,
+                "sha256": "a588c39a6e3990a28a703f1d688327c69fab7373b292728d3db2125296ccd0f1"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 639360,
+                "sha256": "c7f92a06dfe09efb11acdea7942ed55bed0fe2babb0135c62c7e1dc34431de46"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1627247,
+                  "sha256": "5cb7d53b4ab7d2ba9c37fcfea70756f30a572ae9e9e22a945d0dfbc3f048bf82"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/2",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "78": {
@@ -12235,7 +13363,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -12256,7 +13383,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -12310,7 +13436,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/15",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/15",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-033645.jpg",
+                "bytes": 188350,
+                "sha256": "20d1c889a0217f9353d1f0d71a5f296d8696eefd1d12aff5bd5019fbd317b2f6"
+              },
+              "sourceNominalCacheSeconds": 1121.498,
+              "sourceRecordedInterval": [
+                1117.998,
+                1121.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/282",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows blonde short hair with a large dark bow, red scarf, an open brown/red vest with pale fur edging and a black bandeau.",
+                "The matching bow, red scarf, bare midriff, bandeau and fur-trimmed garment pieces are visible in the directly viewed felt01 original-byte-equivalent texture atlas.",
+                "The exact static costume identity is proposed without accepting the observed arm, face or body pose."
+              ],
+              "independentPeerObservation": "Blond dark-bow crown braid, red scarf, brown vest/black bandeau, bare midriff/arms, white fur cuffs.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_felt01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 5680,
+                "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 536128,
+                "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1012102,
+                  "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/1",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "79": {
@@ -12445,7 +13667,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -12466,7 +13687,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -12520,7 +13740,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/17",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/17",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-033990.jpg",
+                "bytes": 185796,
+                "sha256": "c5571f90a0476e946e34e85cbf50ee89bd75132c2e4b3727eae74dc33698432e"
+              },
+              "sourceNominalCacheSeconds": 1132.998,
+              "sourceRecordedInterval": [
+                1128.998,
+                1133.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/284",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame exposes a white zip-up tracksuit front with black sleeves, orange collar/shoulder stripe and the N chest emblem.",
+                "Those garment features match the directly viewed original-byte-equivalent subaru01 texture and existing assembled subaru01 reference.",
+                "The tracksuit body is directly visible. No speaker-name, dialogue crop, audio or inherited preceding actor is used for this decision."
+              ],
+              "independentPeerObservation": "Spiky hair, orange-collar/striped dark long sleeves, pale zip front and N chest emblem directly visible.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_subaru01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 14595,
+                "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 1156992,
+                "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1273039,
+                  "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/3",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "81": {
@@ -12679,7 +13995,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -12700,7 +14015,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -12754,7 +14068,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/19",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/19",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-034155.jpg",
+                "bytes": 163997,
+                "sha256": "30c2edc0ccb8b6153863bc6675bf0727bcbbf98da8bf3884b7f849feceb185be"
+              },
+              "sourceNominalCacheSeconds": 1138.498,
+              "sourceRecordedInterval": [
+                1136.998,
+                1138.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/287",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame exposes a white zip-up tracksuit front with black sleeves, orange collar/shoulder stripe and the N chest emblem.",
+                "Those garment features match the directly viewed original-byte-equivalent subaru01 texture and existing assembled subaru01 reference.",
+                "The tracksuit body is directly visible. No speaker-name, dialogue crop, audio or inherited preceding actor is used for this decision."
+              ],
+              "independentPeerObservation": "Intact pale-front zip/N-emblem black/orange jacket with long sleeves and high orange inner collar.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_subaru01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 14595,
+                "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 1156992,
+                "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1273039,
+                  "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/3",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "83": {
@@ -12784,7 +14194,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -12805,7 +14214,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -12859,7 +14267,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/20",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/20",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-034230.jpg",
+                "bytes": 173011,
+                "sha256": "d246eeaecea173140f7819bc7f0f6af4618b1647732b6f0d8fdc8bb3fb00b561"
+              },
+              "sourceNominalCacheSeconds": 1140.998,
+              "sourceRecordedInterval": [
+                1139.998,
+                1140.998
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/288",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows blonde short hair with a large dark bow, red scarf, an open brown/red vest with pale fur edging and a black bandeau.",
+                "The matching bow, red scarf, bare midriff, bandeau and fur-trimmed garment pieces are visible in the directly viewed felt01 original-byte-equivalent texture atlas.",
+                "The exact static costume identity is proposed without accepting the observed arm, face or body pose."
+              ],
+              "independentPeerObservation": "Blond dark bow/braid crown, red scarf, sleeveless brown vest/black bandeau and white fur wrist cuffs.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_felt01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 5680,
+                "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 536128,
+                "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1012102,
+                  "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/1",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "84": {
@@ -13099,7 +14603,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -13120,7 +14623,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -13174,7 +14676,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/23",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/23",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-034680.jpg",
+                "bytes": 193925,
+                "sha256": "bfed7a15062ee606732e5024c97a4c15d7a69cd22697ceb24665465275777515"
+              },
+              "sourceNominalCacheSeconds": 1155.998,
+              "sourceRecordedInterval": [
+                1151.998,
+                1156.998
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/291",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows blonde short hair with a large dark bow, red scarf, an open brown/red vest with pale fur edging and a black bandeau.",
+                "The matching bow, red scarf, bare midriff, bandeau and fur-trimmed garment pieces are visible in the directly viewed felt01 original-byte-equivalent texture atlas.",
+                "The exact static costume identity is proposed without accepting the observed arm, face or body pose."
+              ],
+              "independentPeerObservation": "Blond crown braid/dark bow, red scarf/gold tabs, brown vest/black bandeau/bare midriff and fur cuffs.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_felt01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 5680,
+                "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 536128,
+                "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1012102,
+                  "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/1",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "87": {
@@ -13218,7 +14816,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -13239,7 +14836,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -13301,7 +14897,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/24",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/24",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-034830.jpg",
+                "bytes": 192245,
+                "sha256": "afb3c2cf91fe76b4a417e096164412f29b17e63ec0c6e64fe8d13a28d27bcbc3"
+              },
+              "sourceNominalCacheSeconds": 1160.998,
+              "sourceRecordedInterval": [
+                1157.498,
+                1161.998
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/292",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows blonde short hair with a large dark bow, red scarf, an open brown/red vest with pale fur edging and a black bandeau.",
+                "The matching bow, red scarf, bare midriff, bandeau and fur-trimmed garment pieces are visible in the directly viewed felt01 original-byte-equivalent texture atlas.",
+                "The exact static costume identity is proposed without accepting the observed arm, face or body pose."
+              ],
+              "independentPeerObservation": "Blond dark bow/braid crown, red scarf, sleeveless brown vest/bandeau and fur cuffs visible.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_felt01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 5680,
+                "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 536128,
+                "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1012102,
+                  "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/1",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "88": {
@@ -13331,7 +15023,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -13352,7 +15043,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -13406,7 +15096,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/25",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/25",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-034920.jpg",
+                "bytes": 179001,
+                "sha256": "76049e0ddaff20888fbfbf981bc9b55bb6c86a610519c3afe9ab787f643a783e"
+              },
+              "sourceNominalCacheSeconds": 1163.998,
+              "sourceRecordedInterval": [
+                1162.498,
+                1167.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/293",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows blonde short hair with a large dark bow, red scarf, an open brown/red vest with pale fur edging and a black bandeau.",
+                "The matching bow, red scarf, bare midriff, bandeau and fur-trimmed garment pieces are visible in the directly viewed felt01 original-byte-equivalent texture atlas.",
+                "The exact static costume identity is proposed without accepting the observed arm, face or body pose."
+              ],
+              "independentPeerObservation": "Same dark bow/blond hair, red scarf/gold tabs, brown vest, bare midriff and black bandeau.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_felt01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 5680,
+                "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 536128,
+                "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1012102,
+                  "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/1",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "89": {
@@ -13765,7 +15551,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -13786,7 +15571,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -13848,7 +15632,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/29",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/29",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-035610.jpg",
+                "bytes": 200521,
+                "sha256": "9084bd24199e9aa3d7956f580e72667535959e1d934753402a8f8844f00c59b8"
+              },
+              "sourceNominalCacheSeconds": 1186.998,
+              "sourceRecordedInterval": [
+                1181.998,
+                1187.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/297",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows blonde short hair with a large dark bow, red scarf, an open brown/red vest with pale fur edging and a black bandeau.",
+                "The matching bow, red scarf, bare midriff, bandeau and fur-trimmed garment pieces are visible in the directly viewed felt01 original-byte-equivalent texture atlas.",
+                "The exact static costume identity is proposed without accepting the observed arm, face or body pose."
+              ],
+              "independentPeerObservation": "Blond braid-crown/dark bow, red scarf, sleeveless brown vest, black bandeau and fur cuffs.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_felt01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 5680,
+                "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 536128,
+                "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1012102,
+                  "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/1",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "93": {
@@ -13892,7 +15772,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -13913,7 +15792,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -13975,7 +15853,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/30",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/30",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-035715.jpg",
+                "bytes": 175536,
+                "sha256": "c0eeb4631e188f5c6f7cbe5df0c9c933543c184bd55aab8bc314618c45ba4ef3"
+              },
+              "sourceNominalCacheSeconds": 1190.498,
+              "sourceRecordedInterval": [
+                1187.998,
+                1190.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/298",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows blonde short hair with a large dark bow, red scarf, an open brown/red vest with pale fur edging and a black bandeau.",
+                "The matching bow, red scarf, bare midriff, bandeau and fur-trimmed garment pieces are visible in the directly viewed felt01 original-byte-equivalent texture atlas.",
+                "The exact static costume identity is proposed without accepting the observed arm, face or body pose."
+              ],
+              "independentPeerObservation": "Same blond bow and red scarf/brown vest/bandeau/bare midriff costume visible.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_felt01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 5680,
+                "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 536128,
+                "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1012102,
+                  "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/1",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "94": {
@@ -14110,7 +16084,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -14131,7 +16104,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -14185,7 +16157,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/32",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/32",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-036075.jpg",
+                "bytes": 204334,
+                "sha256": "ae1370e97be360f44536cd9c62396f394f3cd2e89b3e46570d32aab036f97dfb"
+              },
+              "sourceNominalCacheSeconds": 1202.498,
+              "sourceRecordedInterval": [
+                1196.998,
+                1202.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/300",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows a pink bob covering one eye, a floral headband, crossed hairpins and the black/white frilled maid uniform.",
+                "The visible black sleeves, scalloped white collar, neck ribbon and fitted front correspond to the directly viewed ram01 texture atlas. The source has no raised hood.",
+                "Only the model/costume identity is proposed; the visible pose, eyes and mouth do not select a motion or face field."
+              ],
+              "independentPeerObservation": "Pink one-eye bob/floral headband/side crossed pins, black-white frilled maid collar/shoulders and laced bodice.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_ram01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 6847,
+                "sha256": "a588c39a6e3990a28a703f1d688327c69fab7373b292728d3db2125296ccd0f1"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 639360,
+                "sha256": "c7f92a06dfe09efb11acdea7942ed55bed0fe2babb0135c62c7e1dc34431de46"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1627247,
+                  "sha256": "5cb7d53b4ab7d2ba9c37fcfea70756f30a572ae9e9e22a945d0dfbc3f048bf82"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/2",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "96": {
@@ -15444,7 +17512,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -15465,7 +17532,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -15519,7 +17585,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/44",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/44",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-037560.jpg",
+                "bytes": 185134,
+                "sha256": "43e55898aab7a815ba785c1e646edcc6b567f73711f5d2a5bc2611c8a8e30f02"
+              },
+              "sourceNominalCacheSeconds": 1251.998,
+              "sourceRecordedInterval": [
+                1248.998,
+                1252.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/316",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows a pink bob covering one eye, a floral headband, crossed hairpins and the black/white frilled maid uniform.",
+                "The visible black sleeves, scalloped white collar, neck ribbon and fitted front correspond to the directly viewed ram01 texture atlas. The source has no raised hood.",
+                "Only the model/costume identity is proposed; the visible pose, eyes and mouth do not select a motion or face field."
+              ],
+              "independentPeerObservation": "Pink bob/cross pins/side flower and flower headband; frilled black-white maid neckline/shoulders/laced bodice.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_ram01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 6847,
+                "sha256": "a588c39a6e3990a28a703f1d688327c69fab7373b292728d3db2125296ccd0f1"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 639360,
+                "sha256": "c7f92a06dfe09efb11acdea7942ed55bed0fe2babb0135c62c7e1dc34431de46"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1627247,
+                  "sha256": "5cb7d53b4ab7d2ba9c37fcfea70756f30a572ae9e9e22a945d0dfbc3f048bf82"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/2",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "108": {
@@ -15878,7 +18040,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -15899,7 +18060,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -15961,7 +18121,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/48",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/48",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-038040.jpg",
+                "bytes": 189546,
+                "sha256": "095087fd00e2900ec46dd1dfd659a05ad83209f001fc538edb0ca5c37c80df22"
+              },
+              "sourceNominalCacheSeconds": 1267.998,
+              "sourceRecordedInterval": [
+                1264.998,
+                1268.998
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/320",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows blonde short hair with a large dark bow, red scarf, an open brown/red vest with pale fur edging and a black bandeau.",
+                "The matching bow, red scarf, bare midriff, bandeau and fur-trimmed garment pieces are visible in the directly viewed felt01 original-byte-equivalent texture atlas.",
+                "The exact static costume identity is proposed without accepting the observed arm, face or body pose."
+              ],
+              "independentPeerObservation": "Blond braid-crown/dark bow, red scarf/gold tabs, brown vest/black bandeau/bare midriff and fur cuffs.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_felt01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 5680,
+                "sha256": "ebfe2b163d9a754adf771182377646afb675edb16e2a721c1beeacac0c974549"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 536128,
+                "sha256": "0fd54de92a2ad142370fcac303d6583e4ea825fe1d0b2feba54ec39154d81935"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_felt01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1012102,
+                  "sha256": "8504c46933916b36ea64e6ec60af31848d3608374deee50ce62b2b5fffa24da6"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/1",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "112": {
@@ -16111,7 +18367,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -16132,7 +18387,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -16195,7 +18449,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/50",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/50",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-038220.jpg",
+                "bytes": 159343,
+                "sha256": "ec5985be3810a4fbd95e7ee8fd5555dfbf22e5360df22aa8d1eef0e93e51889c"
+              },
+              "sourceNominalCacheSeconds": 1273.998,
+              "sourceRecordedInterval": [
+                1272.998,
+                1273.998
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/322",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame exposes a white zip-up tracksuit front with black sleeves, orange collar/shoulder stripe and the N chest emblem.",
+                "Those garment features match the directly viewed original-byte-equivalent subaru01 texture and existing assembled subaru01 reference.",
+                "The tracksuit body is directly visible. No speaker-name, dialogue crop, audio or inherited preceding actor is used for this decision."
+              ],
+              "independentPeerObservation": "Spiky brown hair and intact N-emblem pale zip-front track jacket with orange collar/stripes and dark long sleeves.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_subaru01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 14595,
+                "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 1156992,
+                "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1273039,
+                  "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/3",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "114": {
@@ -16239,7 +18589,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -16260,7 +18609,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -16322,7 +18670,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/51",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/51",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-038430.jpg",
+                "bytes": 190351,
+                "sha256": "ffa7fd62e67aca474055fed99cb4f8755a35b35cf974b30c93513e9af02ff9d9"
+              },
+              "sourceNominalCacheSeconds": 1280.998,
+              "sourceRecordedInterval": [
+                1275.998,
+                1281.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/323",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame exposes a white zip-up tracksuit front with black sleeves, orange collar/shoulder stripe and the N chest emblem.",
+                "Those garment features match the directly viewed original-byte-equivalent subaru01 texture and existing assembled subaru01 reference.",
+                "The tracksuit body is directly visible. No speaker-name, dialogue crop, audio or inherited preceding actor is used for this decision."
+              ],
+              "independentPeerObservation": "Pale-front zip/N emblem intact black/orange long-sleeved track jacket directly visible; torso/arms tilted.",
+              "independentPeerOcclusionOrLimit": "Pose excluded; identity static only.",
+              "exactModelAgreedByBoth": "live2d/AC_subaru01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 14595,
+                "sha256": "3a2b352f14ae28941e8eec4bc7f77b2fbed7e4803a82c3b40d74a46fc7f27cb2"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 1156992,
+                "sha256": "f128efaef72bc832c0dcaf4ebab64a11b31d67fefe018653fab2581809cbc149"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_subaru01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1273039,
+                  "sha256": "65ffbc12f0a0d855ec4843a1c2efe9d057334b5bad3814375a72642b2d5c5f7c"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/3",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     },
     "115": {
@@ -16366,7 +18810,6 @@
       "unknownFields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -16387,7 +18830,6 @@
           "fields": [
             "bg_music",
             "bg_picture",
-            "character",
             "character_image",
             "command",
             "motion",
@@ -16452,7 +18894,103 @@
           "packet": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/repair-20261111/translations-high/10480027.json",
           "language": "zh-CN",
           "originalSourcePreserved": true
-        }
+        },
+        "performance": [
+          {
+            "packet": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/episode10-ram-last27-characters-root-preparation-9e080eda-v1/node-fields.root-approved.json",
+            "fields": [
+              "character"
+            ],
+            "evidence": {
+              "postReviewIntersectionOfSealedPerRowDecisions": true,
+              "notBlindAssembly": true,
+              "primaryReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/review.rootfalse.json",
+                "bytes": 365159,
+                "sha256": "fadb8bba8b5dfc97c23ad6fec74d1224907349313e1f516373fd26b5f918b0af"
+              },
+              "primaryReviewJSONPointer": "/perRowLedger/52",
+              "primaryCandidatePacket": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-static-identity-source-rootfalse-v1/candidate.packet.rootfalse.json",
+                "bytes": 130455,
+                "sha256": "f4a2430e31a3d88ac0340330185aa15efe7f85f11289167e44ecc639d1362395"
+              },
+              "independentPeerReview": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/review.rootfalse.json",
+                "bytes": 22903,
+                "sha256": "66221ca06ed5a5c2d142a763cb78ce05922b50a84043d0e27c1f92886622b1e6"
+              },
+              "independentPeerCoverage": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last53-independent-image-peer-v1/coverage.rootfalse.json",
+                "bytes": 238149,
+                "sha256": "01dfeac19816e3cb3ea343d83becbfaf7686b15ca98d3854a4368cc8ac04ea1f"
+              },
+              "independentPeerJSONPointer": "/rows/52",
+              "sourceOriginalFullFrame": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/frames/a768567c946a-038490.jpg",
+                "bytes": 171267,
+                "sha256": "5376c9abd6b76abfef2b0ffc3ccb33e6a0c82a2529359b1de0662380a3fd1921"
+              },
+              "sourceNominalCacheSeconds": 1282.998,
+              "sourceRecordedInterval": [
+                1282.998,
+                1283.498
+              ],
+              "sourceIndex": {
+                "path": "/home/rikka/Projects/stella/data/native_recovery/royal-capital-20261110/ocr/36/root-review/index.json",
+                "bytes": 602650,
+                "sha256": "e908a254a2545af23cc542ea84da9489504347bafd5302e1721a6697f4f622a2"
+              },
+              "sourceIndexJSONPointer": "/events/325",
+              "sourceOriginalPTSNewlyEstablished": false,
+              "sourceVideoSHA256InheritedNotRehashed": "a768567c946aea2c46c9b09479dc9b06261d1e76cfbf3ef6d23f7361a1b4d237",
+              "primarySourceFullFrameViewedInSealedReview": true,
+              "independentPeerSourceFullFrameViewedInSealedReview": true,
+              "primaryStaticVisualBasis": [
+                "The full frame shows a pink bob covering one eye, a floral headband, crossed hairpins and the black/white frilled maid uniform.",
+                "The visible black sleeves, scalloped white collar, neck ribbon and fitted front correspond to the directly viewed ram01 texture atlas. The source has no raised hood.",
+                "Only the model/costume identity is proposed; the visible pose, eyes and mouth do not select a motion or face field."
+              ],
+              "independentPeerObservation": "Pink one-eye bob, floral headband/side crossed pins and flower, black-white frilled/laced maid outfit.",
+              "independentPeerOcclusionOrLimit": null,
+              "exactModelAgreedByBoth": "live2d/AC_ram01",
+              "positiveOriginalModelDescriptor": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.model3.json",
+                "exists": true,
+                "bytes": 6847,
+                "sha256": "a588c39a6e3990a28a703f1d688327c69fab7373b292728d3db2125296ccd0f1"
+              },
+              "positiveOriginalModelOpaqueMoc": {
+                "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/ac.moc3",
+                "exists": true,
+                "bytes": 639360,
+                "sha256": "c7f92a06dfe09efb11acdea7942ed55bed0fe2babb0135c62c7e1dc34431de46"
+              },
+              "positiveOriginalModelTextures": [
+                {
+                  "path": "/home/rikka/Projects/stella/data/extracted_archives/limeos/LIMEOS/assets/downloadassets/assetbundle/models/ac/ac_ram01/ac/textures/texture_00.png",
+                  "exists": true,
+                  "bytes": 1627247,
+                  "sha256": "5cb7d53b4ab7d2ba9c37fcfea70756f30a572ae9e9e22a945d0dfbc3f048bf82"
+                }
+              ],
+              "resourceClosure": {
+                "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/scene10480027-last27-character-install-candidates-rootfalse-v1/resource-closure.rootfalse.json",
+                "bytes": 1006498,
+                "sha256": "3024b9fb9b4e3d89a43cae6f6bfd33793459df2e7a89eaa70044e93676b593e8"
+              },
+              "resourceClosureJSONPointer": "/resources/2",
+              "staticIdentityOnly": true,
+              "motionAccepted": false,
+              "bodyAccepted": false,
+              "faceAccepted": false,
+              "extraAccepted": false,
+              "geometryTimingOrPhaseAccepted": false,
+              "sourceOriginalCommandPhaseRecovered": false,
+              "fullEntryOrWholeSceneAccepted": false
+            }
+          }
+        ]
       }
     }
   },
@@ -18001,7 +20539,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18022,7 +20559,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18049,7 +20585,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18097,7 +20632,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18124,7 +20658,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18145,7 +20678,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18172,7 +20704,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18253,7 +20784,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18280,7 +20810,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18307,7 +20836,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18334,7 +20862,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18361,7 +20888,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18388,7 +20914,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18442,7 +20967,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18490,7 +21014,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18517,7 +21040,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18598,7 +21120,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18625,7 +21146,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18646,7 +21166,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18754,7 +21273,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18775,7 +21293,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -18823,7 +21340,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -19129,7 +21645,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -19237,7 +21752,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -19285,7 +21799,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -19306,7 +21819,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
@@ -19327,7 +21839,6 @@
       "fields": [
         "bg_music",
         "bg_picture",
-        "character",
         "character_image",
         "command",
         "motion",
