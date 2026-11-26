@@ -1,0 +1,9 @@
+# Retired investigation logs and screenshots removed
+
+At the user's explicit request, root deleted 80 old generated model/render dumps (including embedded preview PNGs) and 985 JPEGs derived from two completed P30 browser recordings. The exact 1,065-path allowlist, original byte hashes, retained review references and before-state are in deletion-manifest.json.gz. These generated outputs were deliberately removed without replacement backups. Historical references to their paths now identify retired temporary files and must not be treated as current required inputs.
+
+Released inode allocation: 832,675,840 bytes (794.10 MiB). Per-path allocations are larger because some JPEGs had hardlinks; surviving external links were preserved. Available filesystem space immediately after deletion was 4,401,963,008 bytes. Background filesystem activity and this small audit may change the displayed free-space total.
+
+Every selected file was byte-hashed and checked before unlink; no selected file was open by another process. All 34 retained text/recording/decoder/index proofs passed their original hashes before and after deletion. Original game recordings, source frames and OCR, original model/audio/script assets, pending accepted restoration packets, the ARM environment and the latest small Mimi105 failure diagnostics were excluded. Formal data and canonical front-end source were unchanged by cleanup; this commit adds only this audit directory.
+
+The first preflight stopped before deletion because one candidate report grouped retained references by case. The one-shot maintenance script was corrected to preserve and validate every nested file proof, then the complete allowlist passed and was removed. No browser was launched, and cleanup does not accept any character performance or complete the restoration goal.
