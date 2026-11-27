@@ -1,0 +1,33 @@
+{
+  "schema": "stella.cleanup.independent-verification.v6",
+  "reviewer": "/root/cleanup_other_artifacts",
+  "status": "PASS",
+  "createdUTC": "2026-11-27T02:32:30Z",
+  "receiptSHA256": "7c47a730a41b9230d23fd8f84e6d5ef43ca11376cc0168097fea1c5b56bccabb",
+  "deletionManifestSHA256": "9387679eecb6dc92270344f6457eec7a7ae5fa11e2b2c0d79942982548e876be",
+  "deletedPathsFreshlyAbsent": 1542,
+  "categoryCounts": {
+    "oldTmp": 35,
+    "testImages": 1485,
+    "logs": 3,
+    "oldFullProgramDebugDumps": 19
+  },
+  "perGroupSumsEqualReceipt": true,
+  "recordedStatBlockFieldsChecked": 1523,
+  "otherRowsAllocatedBytesMultiple512": 19,
+  "releasedDiskBytesFromPreUnlinkLedger": 516935680,
+  "releasedTmpfsBytesFromPreUnlinkLedger": 14610432,
+  "retainedProofsFreshHashAndSizeExact": 97,
+  "dataHead": "60341167f30532dd066e2a45e85b0c83974bfc8c",
+  "dataClean": true,
+  "sourceHead": "6630ac70f17332efa031d021af00532d42307568",
+  "sourceStatusExact": "?? scripts/__pycache__/\n",
+  "rootTrackedStatusAndDiffHashEqualBefore": true,
+  "rootTrackedDiffSHA256": "262f95aadf493cccf59098a746d2d8e11a8299888b1b47ad8be43b666d692bab",
+  "firstPreflightRejectionAndRejectedSourcePreserved": true,
+  "noImageViewedOrDecoded": true,
+  "noBrowserStarted": true,
+  "deletionPerformedByThisReviewer": false,
+  "initialVerifierAssumptionCorrected": "First metadata check expected homogeneous blocks/category keys; no receipt or data mutation occurred. Final check explicitly handles the three sealed row schemas.",
+  "limitations": "Deleted files cannot be freshly statted or hashed; allocation totals are recomputed from the pre-unlink ledger, while path absence, 97 retained hashes and Git state are freshly checked. No independent replay of the first rejected execution."
+}
