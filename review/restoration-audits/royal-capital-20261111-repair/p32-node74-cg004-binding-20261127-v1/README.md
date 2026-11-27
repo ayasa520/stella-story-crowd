@@ -1,0 +1,9 @@
+# Bind P32 node74 to the registered CG ADV_still_004
+
+After source-reviewed resource registratione572f6da, scene10470047/node74's empty character_image is now ADV_still_004. The exact native row, all74ordered IDs/UIDs, Japanese/Chinese text and all13expected fields were rebound to that actual clean resource epoch. Primary and independent source-art evidence support this picture identity. The independent reviewer viewed17existing images including the full source PNG/WebP and14two-Hz source overview frames. This accepts the art resource, not30fps entry, cropping or transition timing.
+
+Fresh native_repair stage, full stage review, native_install audit and one normal apply all exited0. Saved native and sidecar bytes exactly equal the reviewed stage. A separate Node undo of only scenario_list[73].character_image restores the entire prior native document; all281other formal guards and22protected files remain exact. The normal restoration-batch receipt is part of the five-file normal write set. Resource registration, original PNG, preview and main catalog/package remain untouched by this field save.
+
+The prior resource commit's public raw PNG, public WebP and default picture alias all returned200 and exact registered payload bytes. The default alias selected the existing compressed WebP. No frontend deployment was required for that resource publication. This audit binds the resource final receipt; it does not pretend that asset HTTP success is saved continuous playback.
+
+Branch741, target-free/missing ending structure and every other native field, including commands, BGM, voice, crop/wipe data, remain byte/semantically unchanged as scoped by the native undo. Their visible timing and the complete ending route remain unaccepted. No door/ending node, guessed Wait, motion or face value was added. Full restoration remains active.
