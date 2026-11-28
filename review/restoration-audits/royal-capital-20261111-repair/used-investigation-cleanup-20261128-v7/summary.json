@@ -1,0 +1,112 @@
+{
+  "schema": "stella.used-investigation-cleanup.20261128.v1",
+  "status": "deleted_and_verified",
+  "userRequestedDeletion": true,
+  "deletedOldFiles": 172013,
+  "releasedOldFileAllocationBytes": 10304970752,
+  "diskAvailableAtStart": 4511576064,
+  "diskAvailableAfterDeletion": 14843060224,
+  "availableGainAtThisCheckpoint": 10331484160,
+  "groups": {
+    "failed_decoder_partial_images": {
+      "files": 149,
+      "allocatedBytes": 58130432
+    },
+    "byte_identical_door_frame_copy": {
+      "files": 150,
+      "allocatedBytes": 8552448
+    },
+    "failed-intermediate-recording": {
+      "files": 7,
+      "allocatedBytes": 24842240
+    },
+    "byte-identical-runtime-freeze-copy": {
+      "files": 2,
+      "allocatedBytes": 4128768
+    },
+    "byte-identical-API-response-copy": {
+      "files": 22,
+      "allocatedBytes": 33554432
+    },
+    "closed-private-test-D1-database": {
+      "files": 24,
+      "allocatedBytes": 1581056
+    },
+    "obsolete-x86-dependencies": {
+      "files": 52165,
+      "allocatedBytes": 981897216
+    },
+    "completed-pose-evaluation-request-payloads": {
+      "files": 44,
+      "allocatedBytes": 2004164608
+    },
+    "old_offline_packaged_apk": {
+      "files": 1,
+      "allocatedBytes": 3791294464
+    },
+    "old_offline_packaged_apk_signature": {
+      "files": 1,
+      "allocatedBytes": 29868032
+    },
+    "legacy_x86_reinstallable_dependencies": {
+      "files": 52225,
+      "allocatedBytes": 991944704
+    },
+    "old_android_gradle_intermediates": {
+      "files": 828,
+      "allocatedBytes": 118407168
+    },
+    "old_android_local_gradle_cache": {
+      "files": 15,
+      "allocatedBytes": 2727936
+    },
+    "old_android_generated_report": {
+      "files": 1,
+      "allocatedBytes": 139264
+    },
+    "completed-ocr-text-crops": {
+      "files": 66379,
+      "allocatedBytes": 2253737984
+    }
+  },
+  "batchReceipts": [
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/space-cleanup-20261128/01-receipt.json",
+      "sha256": "48be1b773f351906c907ce8c5f233f2a26257304ffd4f1a8cc217445dfdf65eb"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/space-cleanup-20261128/02-receipt.json",
+      "sha256": "7c44278313585c680735d6b91454bf0ff54b46582fbc9676c787a75011f81257"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/space-cleanup-20261128/03-receipt.json",
+      "sha256": "984fdefd17c046a9da6e079adb8081ab842ef6422e1c0a4240baedb08735f4b0"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/space-cleanup-20261128/04-receipt.json",
+      "sha256": "efbdd8ffd0fedb3649515c5f4b909e0e03a9b24efe5e06fc18d555f9981b82e6"
+    },
+    {
+      "path": "/home/rikka/Projects/stella/artifacts/stella-script-continuation-20261121/space-cleanup-20261128/05-receipt.json",
+      "sha256": "dda547157117ddd7715640a20e2f1c4000500223cbc55419fb707ad86de75f18"
+    }
+  ],
+  "preserved": [
+    "original game recordings and extracted assets",
+    "full-frame visual evidence and OCR results",
+    "formal native/review scripts and unrelated dirty source",
+    "ARM .venv-video-ocr and canonical ARM dependencies",
+    "Android signing key, sources and build receipt",
+    "current complete Mimi105 v5 capture and source video"
+  ],
+  "noBrowserOrMediaGeneration": true,
+  "currentDataHead": "4de5d91d88b17c23e19ffe2c8e12b6ee9f92bdbe",
+  "wholeRestorationAccepted": false,
+  "wholeRestorationGoalStillActive": true,
+  "notes": [
+    "Only this turn is counted; earlier cleanups excluded.",
+    "Hardlinks that would release no blocks excluded.",
+    "Directory block release is additional to file allocation; final disk measurement also includes small new receipts.",
+    "Retired paths in historical reports remain provenance, not live-file availability claims."
+  ]
+}
